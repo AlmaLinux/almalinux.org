@@ -39,3 +39,8 @@ Each module should contain a README.md file to document features, use and depend
 - `page_*` must not depend on code in another `_page*`
 - `feature_*` can depend on another `feature_*`.
 
+## Code style
+
+Rules are fairly simple - follow common sense, decouple things where possible, and custom CSS/HTML should
+always be prefixed with `al-*` prefix to distinguish between those and framework classes/id's. Same
+applies to SCSS functions, mixins, variables.

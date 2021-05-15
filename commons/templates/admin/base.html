@@ -1,0 +1,157 @@
+<!--This template is used to modify admin panel for a slightly more "native" feel-->
+{% extends "admin/base.html" %}
+{% block extrahead %}
+    <style>
+        :root {
+            --primary: #004bbc;
+            --primary-fg: #fefefe;
+            --accent: #0069DA;
+            --body-fg: #444444;
+            --body-bg: #fefefe;
+            --body-quiet-color: #444444;
+            --body-loud-color: #111111;
+            --breadcrumbs-link-fg: #e0e0e0;
+            --breadcrumbs-bg: #264154;
+            --link-fg: #004bbc;
+            --link-hover-color: #004bbc;
+            --link-selected-fg: #004bbc;
+            --hairline-color: transparent;
+            --border-color: #dedede;
+            --error-fg: #fefefe;
+            --message-success-bg: #68bc11;
+            --message-warning-bg: #e1ad00;
+            --message-error-bg: #e1282b;
+            --darkened-bg: #efefef;
+            --selected-bg: rgba(40, 145, 255, 0.13);
+            --selected-row: rgba(40, 145, 255, 0.13);
+            --close-button-bg: #333333;
+            --close-button-hover-bg: #666666;
+            --header-bg: #082336;
+            --header-color: #fefefe;
+            --default-button-bg: #555;
+            --button-hover-bg: #0069DA;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'segoe ui', roboto, oxygen-sans, ubuntu, cantarell, 'helvetica neue', 'arial', sans-serif, 'apple color emoji', 'segoe ui emoji', 'segoe ui symbol';
+            font-size: 16px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'segoe ui', roboto, oxygen-sans, ubuntu, cantarell, 'helvetica neue', 'arial', sans-serif, 'apple color emoji', 'segoe ui emoji', 'segoe ui symbol';
+            font-weight: normal;
+        }
+
+        div.breadcrumbs {
+            margin-bottom: 22px;
+            font-size: 15px;
+        }
+
+        h1#site-name a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1#site-name a img {
+            height: 32px;
+            vertical-align: unset;
+        }
+
+        #user-tools {
+            font-weight: normal;
+            text-transform: none;
+            font-size: 14px;
+        }
+
+        .submit-row {
+            text-align: left;
+        }
+
+        .button.default, input[type="submit"].default, .submit-row input.default {
+            float: left;
+        }
+
+        p.deletelink-box {
+            padding-left: 5px;
+        }
+
+        input, button, a.addlink, a.deletelink, select, textarea {
+            border-radius: 2px !important;
+        }
+
+        p.datetime br {
+            display: none;
+        }
+
+        p.datetime span.timezonewarning {
+            display: block;
+        }
+
+        div.checkbox-row label {
+            font-weight: bold;
+        }
+
+        /** Editor customizations **/
+        .colM .aligned .vLargeTextField.django-quill-widget-container {
+            width: unset;
+            display: block;
+            box-sizing: border-box;
+            float: none;
+            overflow: hidden;
+        }
+
+        .ql-editor {
+            min-height: 400px;
+            background: #0F4266;
+            color: #fefefe;
+        }
+
+        .help, p.help, form p.help, div.help, form div.help, div.help li {
+            color: #9d5f00;
+            font-size: 13px;
+        }
+
+        .admin-section {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .admin-section h2 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .admin-section .fixed-text {
+            max-width: 800px;
+        }
+
+        #main-footer {
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        @media (min-width: 767px) {
+            #main-footer {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            footer#main-footer {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }
+    </style>
+{% endblock %}
+{% block footer %}
+    {% if has_permission %}
+        <footer id="main-footer">
+            &copy; 2021 AlmaLinux OS Foundation | <a href="{% url 'admin:manual' %}">Admin manual</a>
+        </footer>
+    {% else %}
+        <div id="footer"></div>
+    {% endif %}
+{% endblock %}

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: almalinuxorg/1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-05 13:46+0000\n"
+"POT-Creation-Date: 2021-05-15 12:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,6 +15,326 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: www/templates/index.html:3
-msgid "Hello World"
-msgstr "Привет мир"
+#: www/templates/404.html:6
+msgid "404 Not Found - AlmaLinux OS"
+msgstr ""
+
+#: www/templates/404.html:8 www/templates/blog/index.html:9
+#: www/templates/index.html:8 www/templates/layouts/base.html:18
+#: www/templates/subscribe_post.html:8
+msgid ""
+"An open-source RHEL fork built by the team at CloudLinux, inspired by the "
+"community."
+msgstr ""
+
+#: www/templates/404.html:15
+msgid "404 Not Found"
+msgstr ""
+
+#: www/templates/404.html:18
+msgid "Sorry, but the page you were trying to access could not be found."
+msgstr ""
+
+#: www/templates/_partial/footer.html:11 www/templates/_partial/navbar.html:37
+msgid "Resources"
+msgstr ""
+
+#: www/templates/_partial/footer.html:13 www/templates/_partial/navbar.html:27
+msgid "Wiki"
+msgstr ""
+
+#: www/templates/_partial/footer.html:15
+msgid "Bugs"
+msgstr ""
+
+#: www/templates/_partial/footer.html:16
+msgid "Repository"
+msgstr ""
+
+#: www/templates/_partial/footer.html:17
+msgid "Downloads"
+msgstr ""
+
+#: www/templates/_partial/footer.html:21
+msgid "Community"
+msgstr ""
+
+#: www/templates/_partial/footer.html:25
+msgid "Forums"
+msgstr ""
+
+#: www/templates/_partial/footer.html:26
+msgid "Chat"
+msgstr ""
+
+#: www/templates/_partial/footer.html:31
+msgid "Legal"
+msgstr ""
+
+#: www/templates/_partial/footer.html:33 www/templates/index.html:315
+msgid "Privacy Policy"
+msgstr ""
+
+#: www/templates/_partial/footer.html:34
+msgid "Terms of Service"
+msgstr ""
+
+#: www/templates/_partial/navbar.html:7
+msgid "AlmaLinux OS logo"
+msgstr ""
+
+#: www/templates/_partial/navbar.html:15
+msgid "Toggle navigation"
+msgstr ""
+
+#: www/templates/_partial/navbar.html:22
+msgid "Blog"
+msgstr ""
+
+#: www/templates/_partial/navbar.html:43
+msgid "Migrate from CentOS 8"
+msgstr ""
+
+#: www/templates/_partial/navbar.html:48
+msgid "Report Bugs"
+msgstr ""
+
+#: www/templates/_partial/navbar.html:56
+msgid "Shop"
+msgstr ""
+
+#: www/templates/_partial/navbar.html:61
+msgid "Commercial Support"
+msgstr ""
+
+#: www/templates/_partial/navbar.html:69
+msgid "Language"
+msgstr ""
+
+#: www/templates/_partial/navbar.html:90 www/templates/index.html:49
+msgid "Download"
+msgstr ""
+
+#: www/templates/blog/index.html:7
+msgid "AlmaLinux OS Blog"
+msgstr ""
+
+#: www/templates/blog/index.html:40
+msgid "Continue reading"
+msgstr ""
+
+#: www/templates/blog/index.html:53 www/templates/blog/index.html:59
+msgid "Previous"
+msgstr ""
+
+#: www/templates/blog/index.html:71 www/templates/blog/index.html:77
+msgid "Next"
+msgstr ""
+
+#: www/templates/index.html:6
+msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
+msgstr ""
+
+#: www/templates/index.html:31
+msgid "Free Linux OS for the community, by the community"
+msgstr ""
+
+#: www/templates/index.html:34
+msgid ""
+"An Open Source, community-governed and forever-free enterprise Linux "
+"distribution, focused on long-term stability, providing a robust production-"
+"grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL&reg; and pre-"
+"Stream CentOS."
+msgstr ""
+
+#: www/templates/index.html:44
+msgid "Contribute"
+msgstr ""
+
+#: www/templates/index.html:53
+#, python-format
+msgid "Founded by the team behind the <a href=\"%(link)s\">CloudLinux OS</a>."
+msgstr ""
+
+#: www/templates/index.html:70
+msgid ""
+"Our GitHub organization contains source code and tools used to build "
+"AlmaLinux OS and related infrastructure."
+msgstr ""
+
+#: www/templates/index.html:78
+msgid "Explore"
+msgstr ""
+
+#: www/templates/index.html:90
+msgid ""
+"Join our vibrant Reddit community, interact with other AlmaLinux OS users, "
+"receive updates, find and provide help."
+msgstr ""
+
+#: www/templates/index.html:98
+msgid "Join"
+msgstr ""
+
+#: www/templates/index.html:107
+msgid "Community chat"
+msgstr ""
+
+#: www/templates/index.html:110
+msgid ""
+"Join a real time discussing with other AlmaLinux OS community members, "
+"governance team and AlmaLinux OS developers."
+msgstr ""
+
+#: www/templates/index.html:118
+msgid "Engage"
+msgstr ""
+
+#: www/templates/index.html:126
+msgid "Community forums"
+msgstr ""
+
+#: www/templates/index.html:128
+msgid ""
+"Ask questions, get answers and contribute community support to others in "
+"AlmaLinux OS community and developers alike."
+msgstr ""
+
+#: www/templates/index.html:136
+msgid "Discover"
+msgstr ""
+
+#: www/templates/index.html:150
+msgid "About AlmaLinux OS"
+msgstr ""
+
+#: www/templates/index.html:152
+msgid ""
+"AlmaLinux OS is an open-source, community-driven Linux operating system that "
+"fills the gap left by the discontinuation of the CentOS Linux stable "
+"release. AlmaLinux OS is a 1:1 binary compatible fork of RHEL&reg; guided "
+"and built by the community."
+msgstr ""
+
+#: www/templates/index.html:159
+msgid ""
+"As a standalone, completely free OS, AlmaLinux OS enjoys $1M in annual "
+"sponsorship from CloudLinux Inc and support from other sponsors. Ongoing "
+"development efforts are governed by the members of the community."
+msgstr ""
+
+#: www/templates/index.html:166
+msgid ""
+"The AlmaLinux OS Foundation is a 501(c)(6) non-profit created for the "
+"benefit of the AlmaLinux OS community."
+msgstr ""
+
+#: www/templates/index.html:183
+msgid "Production-ready"
+msgstr ""
+
+#: www/templates/index.html:185
+msgid ""
+"AlmaLinux OS is an enterprise-grade server OS and a stable Linux "
+"distribution with regular releases that come with a long support windows. "
+"You can rely on AlmaLinux OS to run any and every critical workloads."
+msgstr ""
+
+#: www/templates/index.html:196
+msgid "Fully supported, always free"
+msgstr ""
+
+#: www/templates/index.html:198
+msgid ""
+"AlmaLinux OS Foundation members, sponsors and partners back the AlmaLinux OS "
+"with investments and long support commitments to ensure the distribution is "
+"free of limitations, fees and charges."
+msgstr ""
+
+#: www/templates/index.html:209
+msgid "Effortless to switch to"
+msgstr ""
+
+#: www/templates/index.html:212
+#, python-format
+msgid ""
+"Switching distributions is usually costly and time-consuming, but that’s not "
+"the case when switching from CentOS and other RHEL&reg; forks to AlmaLinux "
+"OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</a>"
+msgstr ""
+
+#: www/templates/index.html:228
+msgid "Backed by"
+msgstr ""
+
+#: www/templates/index.html:249
+msgid "Answers to Key Questions"
+msgstr ""
+
+#: www/templates/index.html:283
+msgid "Stay updated!"
+msgstr ""
+
+#: www/templates/index.html:286
+msgid ""
+"Subscribe to our newsletter and never miss out on the latest in AlmaLinux OS "
+"development!"
+msgstr ""
+
+#: www/templates/index.html:300
+msgid "Your email"
+msgstr ""
+
+#: www/templates/index.html:304
+msgid "Subscribe"
+msgstr ""
+
+#: www/templates/index.html:311
+msgid ""
+"By filling this form you agree to be contacted by AlmaLinux OS Foundation "
+"regarding your request. You can unsubscribe at any time."
+msgstr ""
+
+#: www/templates/index.html:326
+msgid "AlmaLinux OS in the Press"
+msgstr ""
+
+#: www/templates/page/page.html:27
+msgid "Published"
+msgstr ""
+
+#: www/templates/subscribe_post.html:6
+msgid "Mailing list subscription - AlmaLinux OS"
+msgstr ""
+
+#: www/templates/subscribe_post.html:16
+msgid "Something went wrong..."
+msgstr ""
+
+#: www/templates/subscribe_post.html:22 www/templates/subscribe_post.html:33
+msgid "Return home"
+msgstr ""
+
+#: www/templates/subscribe_post.html:27
+msgid "Thank you!"
+msgstr ""
+
+#: www/templates/subscribe_post.html:30
+msgid ""
+"You have successfully subscribed to AlmaLinux OS announcement mailing list!"
+msgstr ""
+
+#: www/views.py:47
+msgid "Email address is not valid"
+msgstr ""
+
+#: www/views.py:71
+msgid "Failed to subscribe to mailing list, please try again later"
+msgstr ""
+
+#: www/views.py:73
+msgid "You are already subscribed to this mailing list!"
+msgstr ""
+
+#~ msgid "Hello World"
+#~ msgstr "Привет мир"

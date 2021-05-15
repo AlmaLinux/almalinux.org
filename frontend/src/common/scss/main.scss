@@ -1,2 +1,101 @@
-@import "~normalize.css";
+@import "./variables";
+@import "./functions";
+@import "./bootstrap";
 
+body, html {
+  line-height: initial;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-shadow: none;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $al-body-background;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $al-font-family-accent;
+}
+
+.al-body-container {
+  min-height: 65vh;
+}
+
+.al-primary-navbar {
+  background: $al-c-black-pearl;
+  font-family: $al-font-family-accent;
+  font-weight: 500;
+  box-shadow: al-shadow(3, 0.5);
+
+  .dropdown-menu-dark {
+    background: $al-c-black-pearl;
+    border: 0;
+
+    .dropdown-divider {
+      border-color: $al-c-black-pearl-lighter;
+    }
+  }
+
+  .nav-link.al-download-button {
+    font-weight: 500;
+    background: $al-c-atlantis;
+    color: $al-font-color-light;
+
+    &:hover {
+      color: $al-font-color-light;
+      background: darken($al-c-atlantis, 5%);
+    }
+  }
+
+  .al-language-switch {
+    img {
+      height: 24px;
+    }
+  }
+
+  .al-language-link {
+    text-transform: capitalize;
+  }
+
+  @include media-breakpoint-up(md) {
+    li.nav-item {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+section h1.al-section-title {
+  font-size: 2.6rem;
+  font-weight: 300;
+}
+
+.al-primary-footer {
+  background: #0D3654;
+  padding-top: 122px;
+  padding-bottom: 132px;
+}
+
+.al-py-lg {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
+.al-py-md {
+  padding-top: 3.5rem !important;
+  padding-bottom: 3.5rem !important;
+}
+
+.al-text-shadow-dark {
+  text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+}

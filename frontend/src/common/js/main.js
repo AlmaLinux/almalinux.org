@@ -1,3 +1,3 @@
 import '@common/scss/main.scss';
-
-console.log(gettext('Hello World'));
+// noinspection ES6UnusedImports
+import {Dropdown} from 'bootstrap';

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: almalinuxorg/1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-05 14:23+0000\n"
+"POT-Creation-Date: 2021-05-15 12:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,6 +15,6 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: frontend/src/common/js/main.js:1
+#: frontend/src/common/js/main.js:7
 msgid "Hello World"
 msgstr "Привет мир"

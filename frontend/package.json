@@ -21,9 +21,12 @@
         "core-js": "^3.11.2",
         "eslint": "^7.25.0",
         "node-sass": "^5.0.0",
-        "normalize.css": "^8.0.1",
         "postcss-loader": "^5.2.0",
         "sass-loader": "^11.0.1"
     },
-    "dependencies": {}
+    "dependencies": {
+        "@popperjs/core": "^2.9.2",
+        "bootstrap": "^5.0.0",
+        "bootstrap-icons": "^1.4.1"
+    }
 }

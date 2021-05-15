@@ -13,22 +13,29 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 # TODO: .env support for all major settings that could change between envs
 
 from pathlib import Path
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+from typing import List, Tuple, Union, Any
+
+from dotenv import dotenv_values
+
 BASE_DIR = Path(__file__).resolve().parent.parent
+DOTENV = dotenv_values(BASE_DIR / '.env')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'fm31y+qa5eg74*frj#37_6*cc^g)xg(x(@u(^5m*_qam@_74p!'
+SECRET_KEY = DOTENV['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = DOTENV['DEBUG'] == 'true'
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'localhost'
+    'localhost',
+    'almalinux.org',
+    'www.almalinux.org',
+    'staging.almalinux.org',
 ]
 
 # Application definition
@@ -39,9 +46,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
     'commons',
+    'django_quill',
     'almalinux.apps.AlmaLinuxAdminConfig',
-    'www'
+    'www',
 ]
 
 MIDDLEWARE = [
@@ -57,10 +66,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'almalinux.urls'
 
-template_loaders = [
+template_loaders: List[Any] = [
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader'
 ]
+
+effective_loaders: List[Union[str, Tuple]]
 
 if DEBUG:
     effective_loaders = template_loaders
@@ -93,12 +104,12 @@ WSGI_APPLICATION = 'almalinux.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'devel',
-        'USER': 'devel',
-        'PASSWORD': 'devel',
-        'HOST': 'mariadb',
-        'PORT': 3306,
+        'ENGINE': DOTENV['DB_ENGINE'],
+        'NAME': DOTENV['DB_NAME'],
+        'USER': DOTENV['DB_USER'],
+        'PASSWORD': DOTENV['DB_PASSWORD'],
+        'HOST': DOTENV['DB_HOST'],
+        'PORT': int(DOTENV['DB_PORT']),  # type: ignore
     }
 }
 
@@ -147,6 +158,7 @@ LOCALE_PATHS = [
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'public/static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
@@ -154,5 +166,9 @@ STATICFILES_DIRS = [
 
 ENCORE_BUILD_DIR = BASE_DIR / 'static/build/'
 
-MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_ROOT = BASE_DIR / 'media' if 0 == len(DOTENV['MEDIA_ROOT']) else DOTENV['MEDIA_ROOT']  # type: ignore
 MEDIA_URL = 'media/'
+
+# Custom settings
+HUBSPOT_APIKEY = DOTENV['HUBSPOT_APIKEY']
+HUBSPOT_SUB_ID = DOTENV['HUBSPOT_SUB_ID']

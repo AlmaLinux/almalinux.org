@@ -1,15 +1,19 @@
+from typing import List
+
 from django.contrib import admin
 
-# from django.conf.urls import url
+from .models import *
 
 # Register your models here.
 
-# admin.site.register(...)
+admin.site.register(Backer)
+admin.site.register(PressArticle)
+admin.site.register(Page)
+admin.site.register(BlogPost)
+admin.site.register(FAQEntry)
 
-# Admin customizations
-frontpage_admin_urls = [
-    # url(r'^tweet/process/$', admin.site.admin_view(...CUSTOM_ADMIN_VIEW))
+
+# Admin special URLs (path, template, name, context)
+www_admin_urls: List = [
+    ('manual/', 'admin/manual.html', 'manual', {'title': 'Admin manual'})
 ]
-
-_original_urls_reader = admin.site.get_urls
-admin.site.get_urls = lambda: (_original_urls_reader() + frontpage_admin_urls)

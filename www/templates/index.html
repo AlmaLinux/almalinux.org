@@ -1,6 +1,344 @@
 {% extends 'layouts/base.html' %}
 {% load i18n %}
+{% load static %}
+{% load encore %}
+
+{% block title %}{% translate 'AlmaLinux OS - Forever-Free Enterprise-Grade Operating System' %}{% endblock %}
+{% block description %}
+    {% translate 'An open-source RHEL fork built by the team at CloudLinux, inspired by the community.' %}{% endblock %}
+
+{% block head_end %}
+    {% encore_entrypoint_css 'page_index' %}
+{% endblock %}
+{% block body_end %}
+    {% encore_entrypoint_js 'page_index' %}
+{% endblock %}
 
 {% block body %}
-<span>{% translate "Hello World" %}</span>
+    <section class="al-page-index">
+        <!-- HERO -->
+        <div class="container al-py-lg">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-2 py-md-5">
+                <div class="d-none d-lg-block col-10 col-sm-8 col-lg-6">
+                    <img src="{% static 'images/hero.png' %}"
+                         class="d-block mx-lg-auto img-fluid"
+                         alt="Hero image"
+                         width="1480"
+                         height="1019">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-5 mb-md-3">
+                        {% translate 'Free Linux OS for the community, by the community' %}
+                    </h1>
+                    <p class="lead mb-5 mb-md-3">
+                        {% blocktranslate trimmed %}
+                            An Open Source, community-governed and forever-free enterprise Linux distribution,
+                            focused on long-term stability, providing a robust production-grade platform.
+                            AlmaLinux OS is 1:1 binary compatible with RHEL&reg; and pre-Stream CentOS.
+                        {% endblocktranslate %}
+                    </p>
+                    <div class="d-grid gap-3 d-md-flex justify-content-md-start pt-2">
+                        <a href="{% url 'page' 'contribute' %}"
+                           class="btn btn-lg px-4 me-md-2 al-hero-cta-primary">
+                            <i class="bi bi-people pe-1"></i>
+                            {% translate 'Contribute' %}
+                        </a>
+                        <a href="https://mirrors.almalinux.org/isos.html"
+                           class="btn btn-lg px-4 al-hero-cta-secondary">
+                            <i class="bi bi-download pe-1"></i>
+                            {% translate 'Download' %}
+                        </a>
+                    </div>
+                    <div class="pt-5 pt-md-4 fw-light">
+                        {% blocktranslate trimmed with link='https://www.cloudlinux.com/?utm_source=almalinuxorg&utm_medium=web&utm_campaign=almalinuxorg_organic' %}
+                            Founded by the team behind the <a href="{{ link }}">CloudLinux OS</a>.
+                        {% endblocktranslate %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMMUNITY -->
+        <div class="al-index-community-container">
+            <div class="container al-py-md">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-2 py-md-5">
+                    <div class="col d-flex align-items-start">
+                        <i class="bi bi-github al-index-community-icon"></i>
+                        <div>
+                            <h4 class="fw-bold mb-0 pb-2">GitHub</h4>
+                            <p>
+                                {% blocktranslate trimmed %}
+                                    Our GitHub organization contains source code and tools used to
+                                    build AlmaLinux OS and related infrastructure.
+                                {% endblocktranslate %}
+                            </p>
+                            <div class="pt-1">
+                                <a href="https://github.com/AlmaLinux/"
+                                   class="btn btn-primary al-community-cta">
+                                    {% translate 'Explore' %}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <img loading="lazy" class="al-index-community-icon img"
+                             src="{% static 'images/icon-reddit.svg' %}"
+                             alt="Reddit">
+                        <div>
+                            <h4 class="fw-bold mb-0 pb-2">Reddit</h4>
+                            <p>
+                                {% blocktranslate trimmed %}
+                                    Join our vibrant Reddit community, interact with other AlmaLinux OS users, receive
+                                    updates, find and provide help.
+                                {% endblocktranslate %}
+                            </p>
+                            <div class="pt-1">
+                                <a href="https://www.reddit.com/r/almalinux"
+                                   class="btn btn-primary al-community-cta reddit">
+                                    {% translate 'Join' %}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <i class="bi bi-chat-dots al-index-community-icon"></i>
+                        <div>
+                            <h4 class="fw-bold mb-0 pb-2">
+                                {% translate 'Community chat' %}
+                            </h4>
+                            <p>
+                                {% blocktranslate trimmed %}
+                                    Join a real time discussing with other AlmaLinux OS community members,
+                                    governance team and AlmaLinux OS developers.
+                                {% endblocktranslate %}
+                            </p>
+                            <div class="pt-1">
+                                <a href="https://chat.almalinux.org"
+                                   class="btn btn-primary al-community-cta">
+                                    {% translate 'Engage' %}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <i class="bi bi-journals al-index-community-icon"></i>
+                        <div>
+                            <h4 class="fw-bold mb-0 pb-2">{% translate 'Community forums' %}</h4>
+                            <p>
+                                {% blocktranslate trimmed %}
+                                    Ask questions, get answers and contribute community support to others in
+                                    AlmaLinux OS community and developers alike.
+                                {% endblocktranslate %}
+                            </p>
+                            <div class="pt-1">
+                                <a href="https://almalinux.discourse.group"
+                                   class="btn btn-primary al-community-cta">
+                                    {% translate 'Discover' %}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT SHORT -->
+        <div class="al-index-about">
+            <div class="container al-py-md">
+                <div class="row d-flex align-items-center justify-content-center py-2 py-md-5">
+                    <div class="col-12 col-md-12">
+                        <h2 class="pb-3">{% translate 'About AlmaLinux OS' %}</h2>
+                        <p>
+                            {% blocktranslate trimmed %}
+                                AlmaLinux OS is an open-source, community-driven Linux operating system that fills
+                                the gap left by the discontinuation of the CentOS Linux stable release. AlmaLinux OS
+                                is a 1:1 binary compatible fork of RHEL&reg; guided and built by the community.
+                            {% endblocktranslate %}
+                        </p>
+                        <p>
+                            {% blocktranslate trimmed %}
+                                As a standalone, completely free OS, AlmaLinux OS enjoys $1M in annual sponsorship
+                                from CloudLinux Inc and support from other sponsors. Ongoing development efforts are
+                                governed by the members of the community.
+                            {% endblocktranslate %}
+                        </p>
+                        <p>
+                            {% blocktranslate trimmed %}
+                                The AlmaLinux OS Foundation is a 501(c)(6) non-profit created for the benefit of the
+                                AlmaLinux OS community.
+                            {% endblocktranslate %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FEATURES -->
+        <div class="al-index-feature-container">
+            <div class="container al-py-md">
+                <div class="row row-cols-1 row-cols-md-3 py-2 py-md-5">
+                    <div class="col d-flex align-items-start">
+                        <i class="bi bi-battery-charging al-index-feature-icon"></i>
+                        <div>
+                            <h4 class="fw-bold mb-0 pb-2">{% translate 'Production-ready' %}</h4>
+                            <p>
+                                {% blocktranslate trimmed %}
+                                    AlmaLinux OS is an enterprise-grade server OS and a stable Linux distribution
+                                    with regular releases that come with a long support windows. You can rely
+                                    on AlmaLinux OS to run any and every critical workloads.
+                                {% endblocktranslate %}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <i class="bi bi-people al-index-feature-icon"></i>
+                        <div>
+                            <h4 class="fw-bold mb-0 pb-2">{% translate 'Fully supported, always free' %}</h4>
+                            <p>
+                                {% blocktranslate trimmed %}
+                                    AlmaLinux OS Foundation members, sponsors and partners back the AlmaLinux OS with
+                                    investments and long support commitments to ensure the distribution
+                                    is free of limitations, fees and charges.
+                                {% endblocktranslate %}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <i class="bi bi-emoji-smile al-index-feature-icon"></i>
+                        <div>
+                            <h4 class="fw-bold mb-0 pb-2">{% translate 'Effortless to switch to' %}</h4>
+                            <p>
+                                {% url 'page' 'migrate' as migrate_link %}
+                                {% blocktranslate trimmed with migrate_link=migrate_link %}
+                                    Switching distributions is usually costly and time-consuming, but that’s not the
+                                    case when switching from CentOS and other RHEL&reg; forks to AlmaLinux OS.
+                                    Switching is easy - <a href="{{ migrate_link }}">read how.</a>
+                                {% endblocktranslate %}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BACKERS -->
+        <div class="al-index-backed-by al-py-lg">
+            <div class="container">
+                <h2 class="pb-2 mb-5 text-center border-bottom">
+                    {% translate 'Backed by' %}
+                </h2>
+                <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 g-5 al-backed-by-list">
+                    {% for backer in backers %}
+                        <a href="{{ backer.url }}">
+                            <div class="col d-flex flex-fill align-items-center justify-content-center">
+                                <img loading="lazy"
+                                     src="{{ backer.logo.url }}"
+                                     alt="{{ backer.display_name }}"
+                                     class="al-backer-logo">
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="al-index-faq">
+            <div class="container al-py-lg">
+                <h2 class="mb-5">
+                    {% translate 'Answers to Key Questions' %}
+                </h2>
+                <div class="accordion accordion-flush" id="accordionFAQ">
+                    {% for faq_entry in faq_entries %}
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="flush-heading-{{ faq_entry.id }}">
+                                <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse-{{ faq_entry.id }}"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapse-{{ faq_entry.id }}">
+                                    {{ faq_entry.question }}
+                                </button>
+                            </h2>
+                            <div id="flush-collapse-{{ faq_entry.id }}"
+                                 class="accordion-collapse collapse {% if forloop.counter0 == 0 %}show{% endif %}"
+                                 aria-labelledby="flush-heading-{{ faq_entry.id }}"
+                                 data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    {{ faq_entry.answer | safe }}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="al-index-newsletter">
+            <div class="container al-py-lg">
+                <div class="row">
+                    <div class="col-12 col-md-6 mx-auto">
+                        <h2 class="mb-2">
+                            {% translate 'Stay updated!' %}
+                        </h2>
+                        <h6 class="mb-4">
+                            {% blocktranslate trimmed %}
+                                Subscribe to our newsletter and never miss out on the latest in
+                                AlmaLinux OS development!
+                            {% endblocktranslate %}
+                        </h6>
+                        <div class="form-group bg-white border px-2 py-2 mb-2">
+                            <form action="{% url 'subscribe_post' %}" method="post">
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="email"
+                                               name="email"
+                                               required="required"
+                                               class="form-control pl-3 shadow-none border-0"
+                                               placeholder="{% translate 'Your email' %}"></div>
+                                    <div class="col-auto">
+                                        <button type="submit" class="btn btn-block al-newsletter-button">
+                                            <i class="bi bi-envelope pe-1"></i>
+                                            {% translate 'Subscribe' %}
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="mt-3">
+                            {% blocktranslate trimmed %}
+                                By filling this form you agree to be contacted by AlmaLinux OS Foundation regarding
+                                your request. You can unsubscribe at any time.
+                            {% endblocktranslate %}
+                            <a href="{% url 'page' 'privacy-policy' %}">{% translate 'Privacy Policy' %}</a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRESS -->
+        <div class="al-index-press al-py-lg">
+            <div class="container">
+                <h2 class="pb-2 mb-3">
+                    {% translate 'AlmaLinux OS in the Press' %}
+                </h2>
+                <div class="row">
+                    {% for article in press_articles %}
+                        <div class="al-index-press-item">
+                            <figure>
+                                <blockquote class="blockquote">{{ article.excerpt.strip }}</blockquote>
+                                <figcaption class="blockquote-footer">
+                                    <a href="{{ article.url }}">
+                                        <cite title="{{ article.publication }}">{{ article.publication.strip }}</cite>
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+    </section>
 {% endblock %}

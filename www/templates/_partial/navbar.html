@@ -1,0 +1,96 @@
+{% load static %}
+{% load i18n %}
+{% load i18n_utils %}
+<nav class="al-primary-navbar navbar sticky-top navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'index' %}">
+            <img src="{% static 'images/logo.svg' %}" alt="{% translate 'AlmaLinux OS logo' %}" height="32">
+        </a>
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#main-navbar"
+                aria-controls="main-navbar"
+                aria-expanded="false"
+                aria-label="{% translate 'Toggle navigation' %}">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="main-navbar">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'blog_index' %}">
+                        {% translate 'Blog' %}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://wiki.almalinux.org">
+                        {% translate 'Wiki' %}
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="navbarDropResources"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        {% translate 'Resources' %}
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-start"
+                        aria-labelledby="navbarDropResources">
+                        <li>
+                            <a class="dropdown-item" href="{% url 'page' 'migrate' %}">
+                                {% translate 'Migrate from CentOS 8' %}
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="https://bugs.almalinux.org">
+                                {% translate 'Report Bugs' %}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="https://shop.almalinux.org/?utm_source=almalinuxorg&utm_medium=web&utm_campaign=almalinuxorg_navbar">
+                        {% translate 'Shop' %}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'page' 'commercial-support' %}">
+                        {% translate 'Commercial Support' %}
+                    </a>
+                </li>
+                <li class="nav-item dropdown ps-md-2">
+                    <button class="btn nav-link dropdown-toggle al-language-switch"
+                            id="navbarDropLanguages"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                        <img src="{% static 'images/lang.svg' %}" alt="{% translate 'Language' %}">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-start"
+                        aria-labelledby="navbarDropLanguages">
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% get_available_languages as LANGUAGES %}
+                        {% get_language_info_list for LANGUAGES as languages %}
+                        {% for language in languages %}
+                            <li>
+                                <a class="dropdown-item al-language-link {% if language.code == LANGUAGE_CODE %}active{% endif %}"
+                                   href="{% current_path_for_language_code language.code %}"
+                                   hreflang="{{ language.code }}">
+                                    {{ language.name_local }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li class="nav-item ps-md-2">
+                    <a class="nav-link btn btn al-download-button" href="https://mirrors.almalinux.org/isos.html">
+                        <i class="bi bi-download pe-1 d-none d-xl-inline"></i>
+                        {% translate 'Download' %}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

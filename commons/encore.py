@@ -1,5 +1,6 @@
 import json
 from os import path
+from typing import Dict, List
 
 from django.conf import settings
 
@@ -7,7 +8,7 @@ from django.conf import settings
 # Methods in this class should remain non-static as later there might be some instance level cache here.
 class Encore:
     # noinspection PyMethodMayBeStatic
-    def load_json(self):
+    def load_json(self) -> Dict:
         entry_points_path = settings.ENCORE_BUILD_DIR / 'entrypoints.json'
         if not path.isfile(entry_points_path):
             raise RuntimeError('Missing entry points - %s' % entry_points_path)
@@ -15,7 +16,7 @@ class Encore:
         with open(entry_points_path) as it:
             return json.load(it)
 
-    def get_js(self, entrypoint):
+    def get_js(self, entrypoint: str) -> List[str]:
         data = self.load_json()
 
         if 'entrypoints' not in data:
@@ -31,7 +32,7 @@ class Encore:
 
         return manifest[entrypoint]['js']
 
-    def get_css(self, entrypoint):
+    def get_css(self, entrypoint: str) -> List[str]:
         data = self.load_json()
 
         if 'entrypoints' not in data:

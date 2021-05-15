@@ -1,0 +1,30 @@
+- model: www.blogpost
+  pk: 1
+  fields:
+    lang: en
+    date: '2021-01-01T15:25:10+00:00'
+    published: true
+    title: This is a blog entry 1
+    slug: this-is-a-blog-entry-1
+    excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    content: ~
+- model: www.blogpost
+  pk: 2
+  fields:
+    lang: en
+    date: '2021-01-01T15:25:10+00:00'
+    published: true
+    title: This is a blog entry 2
+    slug: this-is-a-blog-entry-2
+    excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    content: ~
+- model: www.blogpost
+  pk: 3
+  fields:
+    lang: en
+    date: '2021-01-01T15:25:10+00:00'
+    published: true
+    title: This is a blog entry 3
+    slug: this-is-a-blog-entry-3
+    excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    content: ~

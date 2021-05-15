@@ -1,0 +1,32 @@
+{% extends 'layouts/base.html' %}
+{% load i18n %}
+{% load static %}
+{% load encore %}
+{% load humanize %}
+
+{% block title %}{{ post.title }} - AlmaLinux OS Blog{% endblock %}
+{% block description %}An open-source RHEL fork built by the team at CloudLinux, inspired by the community.{% endblock %}
+
+{% block head_end %}
+    {% encore_entrypoint_css 'page_blog' %}
+{% endblock %}
+{% block body_end %}
+    {% encore_entrypoint_js 'page_blog' %}
+{% endblock %}
+
+{% block body %}
+    <section class="al-page-blog-post">
+        <div class="container py-5">
+            <h1 class="al-section-title mb-3">{{ post.title }}</h1>
+            <article>
+                <div class="al-article-date d-flex align-items-center pb-4" title="{{ post.date|date }} {{ post.date|time }}">
+                    <i class="bi bi-calendar pe-1"></i>
+                    <span>{{ post.date|naturaltime }}</span>
+                </div>
+                <div class="al-article-content pb-5">
+                    {{ post.content.html|safe }}
+                </div>
+            </article>
+        </div>
+    </section>
+{% endblock %}

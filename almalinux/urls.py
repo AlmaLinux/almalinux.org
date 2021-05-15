@@ -13,18 +13,24 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from typing import List
+
 from django.conf import settings
 from django.conf.urls.i18n import i18n_patterns
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
+from django.views.generic.base import RedirectView
 from django.views.i18n import JavaScriptCatalog
 
-urlpatterns = []
+handler404 = 'www.views.not_found'
+
+urlpatterns: List = []
 urlpatterns += i18n_patterns(path('', include('www.urls')), prefix_default_language=False)
 
 urlpatterns += [
     path('admin/', admin.site.urls),
+    path('favicon.ico', RedirectView.as_view(url='/static/fav/favicon.ico'))
 ]
 
 urlpatterns += i18n_patterns(path(

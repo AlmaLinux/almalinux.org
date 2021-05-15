@@ -1,0 +1,90 @@
+@import "~bootstrap/scss/bootstrap-utilities";
+@import "../../common/scss/variables";
+@import "../../common/scss/functions";
+
+.al-page-blog-index {
+  .al-page-blog-posts {
+    article {
+      @include media-breakpoint-up(md) {
+        padding-left: 28px;
+        border-left: 2px solid darken($al-body-background, 2%);
+      }
+
+      a.al-article-title-link {
+        text-decoration: none;
+
+        h2 {
+          font-weight: 400;
+          font-size: 1.5rem;
+        }
+      }
+
+      .al-article-date {
+        color: #efefef;
+        font-size: 0.82rem;
+
+        i {
+          font-size: 0.8rem;
+        }
+      }
+
+      .al-article-excerpt {
+        color: $al-font-color;
+      }
+
+      .al-article-actions {
+        a.al-article-continue {
+          text-decoration: none;
+          font-size: 0.9rem;
+          color: #C4E1FF;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .pagination {
+    .page-item {
+      .page-link {
+        background: lighten($al-body-background, 15%);
+        border: none;
+
+        &:hover {
+          color: #efefef;
+        }
+      }
+
+      &.active {
+        .page-link {
+          background: lighten($al-body-background, 25%);
+        }
+      }
+
+      &.disabled {
+        .page-link {
+          color: darken($al-body-background, 15%);
+        }
+      }
+    }
+  }
+}
+
+.al-page-blog-post {
+  article {
+    .al-article-date {
+      color: #efefef;
+      font-size: 0.82rem;
+
+      i {
+        font-size: 0.8rem;
+      }
+    }
+
+    .al-article-content {
+      color: $al-font-color;
+    }
+  }
+}

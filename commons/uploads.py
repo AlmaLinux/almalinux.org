@@ -1,11 +1,13 @@
 import hashlib
 from os import path
 
+from django.db.models import Model
+
 
 # This method allows for file uploads to live in segmented folders,
 # instead of placing all uploads in a single folder.
 # noinspection PyUnusedLocal
-def segmented_upload_to(instance, file_name) -> str:
+def segmented_upload_to(instance: Model, file_name: str) -> str:
     """
     :param instance:
     :param file_name: string

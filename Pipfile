@@ -6,8 +6,15 @@ name = "pypi"
 [packages]
 Django = "~=3.2"
 mysqlclient = "~=2.0.3"
+Pillow = "~=8.2.0"
+python-dotenv = "~=0.17.1"
+PyYAML = "~=5.4.1"
+django-quill-editor = "~=0.1.22"
+uWSGI = "~=2.0"
 
 [dev-packages]
+mypy = "*"
+django-stubs = "*"
 
 [requires]
 python_version = "3.8"

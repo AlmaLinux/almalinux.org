@@ -1,0 +1,23 @@
+{% extends 'layouts/base.html' %}
+{% load i18n %}
+{% load static %}
+{% load encore %}
+
+{% block title %}{% translate '404 Not Found - AlmaLinux OS' %}{% endblock %}
+{% block description %}
+    {% translate 'An open-source RHEL fork built by the team at CloudLinux, inspired by the community.' %}{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="py-5">
+            <section class="d-flex flex-column flex-fill align-items-center justify-content-center py-3">
+                <h1 class="al-section-title">
+                    {% translate '404 Not Found' %}
+                </h1>
+                <div>
+                    {% translate 'Sorry, but the page you were trying to access could not be found.' %}
+                </div>
+            </section>
+        </div>
+    </div>
+{% endblock %}

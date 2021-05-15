@@ -1,0 +1,32 @@
+{% extends 'layouts/base.html' %}
+{% load i18n %}
+{% load static %}
+{% load encore %}
+{% load humanize %}
+
+{% block title %}{{ page.title }}{% endblock %}
+
+{% block head_end %}
+    {% encore_entrypoint_css 'page_page' %}
+{% endblock %}
+{% block body_end %}
+    {% encore_entrypoint_js 'page_page' %}
+{% endblock %}
+
+{% block body %}
+    <section class="al-page-page">
+        <div class="container py-5">
+            <h1 class="al-section-title mb-4">{{ page.title }}</h1>
+            <article>
+                <div class="al-page-content pb-5">
+                    {{ page.content.html|safe }}
+                </div>
+                <div class="al-page-date d-flex align-items-center"
+                     title="{{ page.date|date }} {{ page.date|time }}">
+                    <i class="bi bi-calendar pe-1"></i>
+                    <span>{% translate 'Published' %} {{ page.date|naturaltime }}</span>
+                </div>
+            </article>
+        </div>
+    </section>
+{% endblock %}

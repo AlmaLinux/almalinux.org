@@ -1,0 +1,39 @@
+{% extends 'layouts/base.html' %}
+{% load i18n %}
+{% load static %}
+{% load encore %}
+
+{% block title %}{% translate 'Mailing list subscription - AlmaLinux OS' %}{% endblock %}
+{% block description %}
+    {% translate 'An open-source RHEL fork built by the team at CloudLinux, inspired by the community.' %}{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="py-5">
+            <section class="d-flex flex-column flex-fill align-items-center justify-content-center py-3">
+                {% if error is not None %}
+                    <h1 class="al-section-title mb-1">
+                        {% translate 'Something went wrong...' %}
+                    </h1>
+                    <div class="mb-3">{{ error }}</div>
+                    <div>
+                        <a class="btn btn btn-primary" href="{% url 'index' %}">
+                            <i class="bi bi-arrow-left-short"></i>
+                            {% translate 'Return home' %}
+                        </a>
+                    </div>
+                {% else %}
+                    <h1 class="al-section-title mb-1">
+                        {% translate 'Thank you!' %}
+                    </h1>
+                    <div class="mb-3">
+                        {% translate 'You have successfully subscribed to AlmaLinux OS announcement mailing list!' %}
+                    </div>
+                    <div>
+                        <a href="{% url 'index' %}">{% translate 'Return home' %}</a>
+                    </div>
+                {% endif %}
+            </section>
+        </div>
+    </div>
+{% endblock %}

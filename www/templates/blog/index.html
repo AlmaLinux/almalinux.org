@@ -1,0 +1,86 @@
+{% extends 'layouts/base.html' %}
+{% load i18n %}
+{% load static %}
+{% load encore %}
+{% load humanize %}
+
+{% block title %}{% translate 'AlmaLinux OS Blog' %}{% endblock %}
+{% block description %}
+    {% translate 'An open-source RHEL fork built by the team at CloudLinux, inspired by the community.' %}{% endblock %}
+
+
+{% block head_end %}
+    {% encore_entrypoint_css 'page_blog' %}
+{% endblock %}
+{% block body_end %}
+    {% encore_entrypoint_js 'page_blog' %}
+{% endblock %}
+
+{% block body %}
+    <section class="al-page-blog-index">
+        <div class="container py-5">
+            <div class="al-page-blog-posts">
+                {% for post in posts %}
+                    <article class="mb-5">
+                        <a class="al-article-title-link" href="{% url 'blog_post' post.slug %}">
+                            <h2>{{ post.title }}</h2>
+                        </a>
+                        <div class="al-article-date d-flex align-items-center my-3"
+                             title="{{ post.date|date }} {{ post.date|time }}">
+                            <i class="bi bi-calendar pe-1"></i>
+                            <span>{{ post.date|naturaltime }}</span>
+                        </div>
+                        <div class="al-article-excerpt mb-4">
+                            {{ post.excerpt }}
+                        </div>
+                        <div class="al-article-actions">
+                            <a href="{% url 'blog_post' post.slug %}"
+                               class="al-article-continue d-flex align-items-center">
+                                <i class="bi bi-chevron-double-right pe-1"></i>
+                                <span>{% translate 'Continue reading' %}</span>
+                            </a>
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+
+            {% if posts.has_other_pages %}
+                <nav class="pt-5">
+                    <ul class="pagination justify-content-start">
+                        {% if posts.has_previous %}
+                            <li class="page-item">
+                                <a class="page-link" href="{% url 'blog_index_page' posts.previous_page_number %}">
+                                    {% translate 'Previous' %}
+                                </a>
+                            </li>
+                        {% else %}
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                    {% translate 'Previous' %}
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% for i in posts.paginator.page_range %}
+                            <li class="page-item {% if posts.number == i %}active{% endif %}">
+                                <a class="page-link" href="{% url 'blog_index_page' i %}">{{ i }}</a>
+                            </li>
+                        {% endfor %}
+                        {% if posts.has_next %}
+                            <li class="page-item">
+                                <a class="page-link" href="{% url 'blog_index_page' posts.next_page_number %}">
+                                    {% translate 'Next' %}
+                                </a>
+                            </li>
+                        {% else %}
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" aria-disabled="true">
+                                    {% translate 'Next' %}
+                                </a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+            {% endif %}
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% load static %}
+{% load i18n %}
+<footer class="al-primary-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md">
+                <img src="{% static 'images/icon.svg' %}" alt="AlmaLinux OS icon" height="64" class="mb-3">
+                <div class="d-block mb-3">&copy; 2021 AlmaLinux OS Foundation</div>
+            </div>
+            <div class="col-6 col-md">
+                <h5>{% translate 'Resources' %}</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://wiki.almalinux.org">{% translate 'Wiki' %}</a></li>
+                    <li><a href="https://github.com/AlmaLinux/">GitHub</a></li>
+                    <li><a href="https://bugs.almalinux.org/">{% translate 'Bugs' %}</a></li>
+                    <li><a href="https://repo.almalinux.org/">{% translate 'Repository' %}</a></li>
+                    <li><a href="https://mirrors.almalinux.org/isos.html">{% translate 'Downloads' %}</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>{% translate 'Community' %}</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://www.reddit.com/r/AlmaLinux/">Reddit</a></li>
+                    <li><a href="https://twitter.com/AlmaLinux">Twitter</a></li>
+                    <li><a href="https://almalinux.discourse.group/">{% translate 'Forums' %}</a></li>
+                    <li><a href="https://chat.rockylinux.org">{% translate 'Chat' %}</a></li>
+                    <li><a href="https://webchat.freenode.net/#almalinux">#almalinux IRC</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>{% translate 'Legal' %}</h5>
+                <ul class="list-unstyled">
+                    <li><a href="{% url 'page' 'privacy-policy' %}">{% translate 'Privacy Policy' %}</a></li>
+                    <li><a href="{% url 'page' 'terms-of-service' %}">{% translate 'Terms of Service' %}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
