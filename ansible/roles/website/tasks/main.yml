@@ -1,0 +1,5 @@
+---
+- import_tasks: docker.yml
+- import_tasks: users.yml
+- import_tasks: nginx.yml
+- import_tasks: website.yml

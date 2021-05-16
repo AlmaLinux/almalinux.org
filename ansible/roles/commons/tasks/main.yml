@@ -1,0 +1,20 @@
+---
+- import_tasks: users.yml
+- import_tasks: packages.yml
+- import_tasks: services.yml
+- import_tasks: journal.yml
+
+- name: Set timezone to UTC
+  timezone:
+    name: 'Etc/UTC'
+  become: yes
+
+- name: Set tuned profile
+  shell: tuned-adm profile '{{ performance_profile }}'
+  when: performance_profile is defined
+  changed_when: False
+  become: yes
+
+- hostname:
+    name: '{{ inventory_hostname }}'
+  become: yes

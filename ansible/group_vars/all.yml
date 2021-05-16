@@ -1,0 +1,7 @@
+users:
+  - username: matiss
+    pubkey: '{{ lookup("file", "../files/ssh/id_rsa.matiss.pub") }}'
+    state: present
+
+deployment_keys:
+  - '{{ lookup("file", "../files/ssh/id_rsa.matiss.pub") }}'

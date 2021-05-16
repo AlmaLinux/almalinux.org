@@ -1,0 +1,2 @@
+Contact: https://almalinux.atlassian.net/browse/SEC
+Preferred-Languages: en

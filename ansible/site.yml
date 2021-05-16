@@ -1,0 +1,11 @@
+---
+- hosts: production_web_servers
+  roles:
+    - role: commons
+    - role: website
+
+- hosts: staging_web_servers
+  roles:
+    - role: commons
+    - role: website
+

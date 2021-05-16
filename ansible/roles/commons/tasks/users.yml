@@ -1,0 +1,42 @@
+---
+- name: Configure users
+  user:
+    name: '{{ item.username }}'
+    create_home: yes
+    shell: /bin/bash
+    groups: wheel
+    append: yes
+    update_password: always
+    state: '{{ item.state }}'
+  loop: '{{ users }}'
+  become: yes
+  tags: [ 'users' ]
+
+- name: Configure user SSH keys
+  authorized_key:
+    user: '{{ item.username }}'
+    state: present
+    key: '{{ item.pubkey }}'
+    exclusive: true
+  loop: '{{ users | selectattr("state", "equalto", "present") | list }}'
+  become: yes
+  tags: [ 'users' ]
+
+- name: Allow 'wheel' group to have passwordless sudo
+  lineinfile:
+    dest: /etc/sudoers
+    state: present
+    regexp: '^%wheel'
+    line: '%wheel ALL=(ALL) NOPASSWD: ALL'
+    validate: 'visudo -cf %s'
+  become: yes
+
+- name: Disable root login over SSH
+  lineinfile: dest=/etc/ssh/sshd_config regexp="^PermitRootLogin" line="PermitRootLogin no" state=present
+  notify: ['Restart SSH']
+  become: yes
+
+- name: Disable password login
+  lineinfile: dest=/etc/ssh/sshd_config regexp="^PasswordAuthentication" line="PasswordAuthentication no" state=present
+  notify: [ 'Restart SSH' ]
+  become: yes

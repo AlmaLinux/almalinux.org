@@ -1,0 +1,12 @@
+---
+- name: Reload NGINX
+  service: name='nginx' state='reloaded'
+  become: yes
+
+- name: Restart NGINX
+  service: name='nginx' state='restarted'
+  become: yes
+
+- name: Generate temporary SSL
+  command: /opt/tempcrt.sh
+  become: yes

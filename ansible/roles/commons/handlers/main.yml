@@ -1,0 +1,8 @@
+---
+- name: Restart journald
+  service: name='systemd-journald' state='restarted'
+  become: yes
+
+- name: Restart SSH
+  service: name='sshd' state='restarted'
+  become: yes

@@ -1,0 +1,12 @@
+---
+- name: Ensure common system packages
+  package: name='{{item}}' state=latest
+  loop:
+    - iotop
+    - tuned
+    - chrony
+    - traceroute
+    - bind-utils
+    - net-tools
+    - policycoreutils-python-utils
+  become: yes

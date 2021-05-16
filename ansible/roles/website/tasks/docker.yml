@@ -1,0 +1,37 @@
+---
+- name: Remove not-Docker
+  package: name='{{item}}' state=absent
+  loop:
+    - docker
+    - docker-client
+    - docker-client-latest
+    - docker-common
+    - docker-latest
+    - docker-latest-logrotate
+    - docker-logrotate
+    - docker-engine
+  become: yes
+
+- name: Configure Docker upstream repository
+  copy: src='docker.repo' dest='/etc/yum.repos.d/docker.repo' mode='0644' owner=root group=root
+  become: yes
+
+- name: Install Docker
+  package: name='{{item}}' state=latest
+  loop:
+    - docker-ce
+    - docker-ce-cli
+    - containerd.io
+  become: yes
+
+- name: Ensure latest pip
+  pip: name='pip' executable='pip3' extra_args='--upgrade'
+  become: yes
+
+- name: Install docker-compose
+  pip: name='docker-compose' executable='pip3'
+  become: yes
+
+- name: Enable and start Docker service
+  service: name='docker' state=started enabled=yes
+  become: yes
