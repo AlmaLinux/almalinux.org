@@ -71,6 +71,7 @@ assemble: # INTERNAL: assemble deployment asset for deployment
 	rm -rf tmp/deploy/.gitignore
 	rm -rf tmp/deploy/README.md
 	rm -rf tmp/deploy/CONTRIBUTING.md
+	rm -rf tmp/deploy/screenshot.png
 	# Build production docker image
 	docker build --rm -f ./Dockerfile-production -t almalinux.org:latest .
 	# Exporting image for deployment...
