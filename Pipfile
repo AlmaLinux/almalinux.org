@@ -11,6 +11,7 @@ python-dotenv = "~=0.17.1"
 PyYAML = "~=5.4.1"
 django-quill-editor = "~=0.1.22"
 uWSGI = "~=2.0"
+requests = "~=2.25"
 
 [dev-packages]
 mypy = "*"
