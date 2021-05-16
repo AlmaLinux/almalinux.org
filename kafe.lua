@@ -35,6 +35,7 @@ k.task('deploy', function()
         k.shell('/usr/local/bin/docker-compose up -d mariadb && sleep 5')
         k.shell('/usr/local/bin/docker-compose run web python3 ./manage.py migrate')
         k.shell('/usr/local/bin/docker-compose up -d web')
+        k.shell('docker system prune -f')
     end
 
     local symlink_www = function()

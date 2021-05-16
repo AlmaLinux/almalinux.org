@@ -30,5 +30,3 @@ services:
 volumes:
   mariadb:
     driver: local
-  media:
-    driver: local
