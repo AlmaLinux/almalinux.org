@@ -52,9 +52,6 @@ assemble: # INTERNAL: assemble deployment asset for deployment
 	# Use local install .venv and node_modules to reuse local install as sort of a cache
 	cp -R .venv tmp/deploy
 	cp -R frontend/node_modules tmp/deploy/frontend
-	# Use local Makefile within the build TODO rm
-	cp Makefile tmp/deploy
-	cp docker-compose.production.yml tmp/deploy/docker-compose.production.yml
 	# Build dependencies
 	LOCAL_UID=${CURRENT_UID} LOCAL_GID=${CURRENT_GID} docker-compose run -u ${CURRENT_UID} frontend /bin/bash -c 'cd /app/tmp/deploy/ && make assemble-frontend'
 	LOCAL_UID=${CURRENT_UID} LOCAL_GID=${CURRENT_GID} docker-compose run -u ${CURRENT_UID} web /bin/bash -c 'cd /app/tmp/deploy/ && make assemble-web'
@@ -107,6 +104,8 @@ uwsgi: # INTERNAL - start UWSGI server, within production image
 		--pidfile=/tmp/almalinux.org.pid \
 		--socket=0.0.0.0:9000 \
 		--processes=4 \
+		--enable-threads \
+		--threads=2 \
 		--harakiri=20 \
 		--max-requests=5000 \
 		--vacuum
