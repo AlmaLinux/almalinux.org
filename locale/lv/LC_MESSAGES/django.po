@@ -261,7 +261,7 @@ msgstr ""
 
 #: www/templates/index.html:183
 msgid "Production-ready"
-msgstr ""
+msgstr "Gatava lietošanai"
 
 #: www/templates/index.html:185
 msgid ""
