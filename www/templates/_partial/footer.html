@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-12 col-md">
                 <img src="{% static 'images/icon.svg' %}" alt="AlmaLinux OS icon" height="64" class="mb-3">
-                <div class="d-block mb-3">&copy; 2021 AlmaLinux OS Foundation</div>
+                <div class="d-block mb-3">&copy; {% now 'Y' %} AlmaLinux OS Foundation</div>
             </div>
             <div class="col-6 col-md">
                 <h5>{% translate 'Resources' %}</h5>
@@ -24,7 +24,7 @@
                     <li><a href="https://twitter.com/AlmaLinux">Twitter</a></li>
                     <li><a href="https://almalinux.discourse.group/">{% translate 'Forums' %}</a></li>
                     <li><a href="https://chat.rockylinux.org">{% translate 'Chat' %}</a></li>
-                    <li><a href="https://webchat.freenode.net/#almalinux">#almalinux IRC</a></li>
+                    <li><a href="ircs://irc.libera.chat:6697/almalinux">#almalinux IRC</a></li>
                 </ul>
             </div>
             <div class="col-6 col-md">

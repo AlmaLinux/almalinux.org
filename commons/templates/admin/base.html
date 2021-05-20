@@ -149,7 +149,7 @@
 {% block footer %}
     {% if has_permission %}
         <footer id="main-footer">
-            &copy; 2021 AlmaLinux OS Foundation | <a href="{% url 'admin:manual' %}">Admin manual</a>
+            &copy; {% now 'Y' %} AlmaLinux OS Foundation | <a href="{% url 'admin:manual' %}">Admin manual</a>
         </footer>
     {% else %}
         <div id="footer"></div>

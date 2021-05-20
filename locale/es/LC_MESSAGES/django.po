@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-15 12:41+0000\n"
+"POT-Creation-Date: 2021-05-20 20:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,23 +17,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: www/templates/404.html:6
+#: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
 msgstr ""
 
-#: www/templates/404.html:8 www/templates/blog/index.html:9
-#: www/templates/index.html:8 www/templates/layouts/base.html:18
+#: www/templates/404.html:6 www/templates/blog/index.html:9
+#: www/templates/index.html:8 www/templates/layouts/base.html:19
 #: www/templates/subscribe_post.html:8
 msgid ""
 "An open-source RHEL fork built by the team at CloudLinux, inspired by the "
 "community."
 msgstr ""
 
-#: www/templates/404.html:15
+#: www/templates/404.html:13
 msgid "404 Not Found"
 msgstr ""
 
-#: www/templates/404.html:18
+#: www/templates/404.html:16
 msgid "Sorry, but the page you were trying to access could not be found."
 msgstr ""
 
@@ -184,7 +184,7 @@ msgstr ""
 
 #: www/templates/index.html:110
 msgid ""
-"Join a real time discussing with other AlmaLinux OS community members, "
+"Join a real time discussion with other AlmaLinux OS community members, "
 "governance team and AlmaLinux OS developers."
 msgstr ""
 
@@ -326,15 +326,15 @@ msgid ""
 "You have successfully subscribed to AlmaLinux OS announcement mailing list!"
 msgstr ""
 
-#: www/views.py:47
+#: www/views.py:51
 msgid "Email address is not valid"
 msgstr ""
 
-#: www/views.py:71
+#: www/views.py:75
 msgid "Failed to subscribe to mailing list, please try again later"
 msgstr ""
 
-#: www/views.py:73
+#: www/views.py:77
 msgid "You are already subscribed to this mailing list!"
 msgstr ""
 

@@ -149,6 +149,7 @@ LANGUAGES = (
     ('en', 'English (US)'),
     ('es', 'Español (España)'),
     ('ru', 'Русский'),
+    ('lv', 'Latviešu'),
 )
 
 LOCALE_PATHS = [

@@ -1,23 +1,27 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: almalinuxorg/1.0\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-20 20:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: ru\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
-"%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
-msgstr ""
+msgstr "404 Nav Atrasts - AlmaLinux OS"
 
 #: www/templates/404.html:6 www/templates/blog/index.html:9
 #: www/templates/index.html:8 www/templates/layouts/base.html:19
@@ -26,118 +30,120 @@ msgid ""
 "An open-source RHEL fork built by the team at CloudLinux, inspired by the "
 "community."
 msgstr ""
+"Bezmaksas Linux distribūcija kas atvasināta no RHEL, ko veido komūna "
+"piedaloties CloudLinux."
 
 #: www/templates/404.html:13
 msgid "404 Not Found"
-msgstr ""
+msgstr "404 Nav Atrasts"
 
 #: www/templates/404.html:16
 msgid "Sorry, but the page you were trying to access could not be found."
-msgstr ""
+msgstr "Atvaino, bet šī lapa nav pieejama"
 
 #: www/templates/_partial/footer.html:11 www/templates/_partial/navbar.html:37
 msgid "Resources"
-msgstr ""
+msgstr "Resursi"
 
 #: www/templates/_partial/footer.html:13 www/templates/_partial/navbar.html:27
 msgid "Wiki"
-msgstr ""
+msgstr "Wiki"
 
 #: www/templates/_partial/footer.html:15
 msgid "Bugs"
-msgstr ""
+msgstr "Kļūdas un atbalsts"
 
 #: www/templates/_partial/footer.html:16
 msgid "Repository"
-msgstr ""
+msgstr "Repozitorija"
 
 #: www/templates/_partial/footer.html:17
 msgid "Downloads"
-msgstr ""
+msgstr "Lejupielādes"
 
 #: www/templates/_partial/footer.html:21
 msgid "Community"
-msgstr ""
+msgstr "Kopiena"
 
 #: www/templates/_partial/footer.html:25
 msgid "Forums"
-msgstr ""
+msgstr "Forumi"
 
 #: www/templates/_partial/footer.html:26
 msgid "Chat"
-msgstr ""
+msgstr "Čats"
 
 #: www/templates/_partial/footer.html:31
 msgid "Legal"
-msgstr ""
+msgstr "Noteikumi"
 
 #: www/templates/_partial/footer.html:33 www/templates/index.html:315
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Privātuma politika"
 
 #: www/templates/_partial/footer.html:34
 msgid "Terms of Service"
-msgstr ""
+msgstr "Lietošanas noteikumi"
 
 #: www/templates/_partial/navbar.html:7
 msgid "AlmaLinux OS logo"
-msgstr ""
+msgstr "AlmaLinux OS logo"
 
 #: www/templates/_partial/navbar.html:15
 msgid "Toggle navigation"
-msgstr ""
+msgstr "Atvērt navigāciju"
 
 #: www/templates/_partial/navbar.html:22
 msgid "Blog"
-msgstr ""
+msgstr "Blogs"
 
 #: www/templates/_partial/navbar.html:43
 msgid "Migrate from CentOS 8"
-msgstr ""
+msgstr "Migrēt no CentOS 8"
 
 #: www/templates/_partial/navbar.html:48
 msgid "Report Bugs"
-msgstr ""
+msgstr "Kļūdu paziņojumi"
 
 #: www/templates/_partial/navbar.html:56
 msgid "Shop"
-msgstr ""
+msgstr "Veikals"
 
 #: www/templates/_partial/navbar.html:61
 msgid "Commercial Support"
-msgstr ""
+msgstr "Komerciāls atbalsts"
 
 #: www/templates/_partial/navbar.html:69
 msgid "Language"
-msgstr ""
+msgstr "Valoda"
 
 #: www/templates/_partial/navbar.html:90 www/templates/index.html:49
 msgid "Download"
-msgstr ""
+msgstr "Lejupielādēt"
 
 #: www/templates/blog/index.html:7
 msgid "AlmaLinux OS Blog"
-msgstr ""
+msgstr "AlmaLinux OS blogs"
 
 #: www/templates/blog/index.html:40
 msgid "Continue reading"
-msgstr ""
+msgstr "Lasīt tālāk"
 
 #: www/templates/blog/index.html:53 www/templates/blog/index.html:59
 msgid "Previous"
-msgstr ""
+msgstr "Atpakaļ"
 
 #: www/templates/blog/index.html:71 www/templates/blog/index.html:77
 msgid "Next"
-msgstr ""
+msgstr "Uz priekšu"
 
 #: www/templates/index.html:6
 msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
-msgstr ""
+msgstr "AlmaLinux OS - vienmēr-bezmaksas komerciāla līmeņa operētājsistēma"
 
 #: www/templates/index.html:31
 msgid "Free Linux OS for the community, by the community"
-msgstr ""
+msgstr "Bezmaksas Linux operētājsistēma"
 
 #: www/templates/index.html:34
 msgid ""
@@ -146,67 +152,81 @@ msgid ""
 "grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL&reg; and pre-"
 "Stream CentOS."
 msgstr ""
+"Atvērta koda kopienas vadīta un vienmēr bezmaksas Linux distribūcija ar "
+"fokusu uz ilgtermiņa stabilitāti. AlmaLinux OS piedāvā biznesa klases, "
+"produkcijas platformu un ir 1:1 bināri saderīga ar RHEL&reg; un pirms-Stream "
+"CentOS operētājsistēmām."
 
 #: www/templates/index.html:44
 msgid "Contribute"
-msgstr ""
+msgstr "Piedalīties projektā"
 
 #: www/templates/index.html:53
 #, python-format
 msgid "Founded by the team behind the <a href=\"%(link)s\">CloudLinux OS</a>."
 msgstr ""
+"AlmaLinux OS dibināja komanda kas veido <a href=\"%(link)s\">CloudLinux OS</"
+"a>."
 
 #: www/templates/index.html:70
 msgid ""
 "Our GitHub organization contains source code and tools used to build "
 "AlmaLinux OS and related infrastructure."
 msgstr ""
+"Mūsu GitHub organizācija satur izejas kodu un instrumentus kurus lietojam "
+"AlmaLinux un infrastruktūras izveidei."
 
 #: www/templates/index.html:78
 msgid "Explore"
-msgstr ""
+msgstr "Izpētīt"
 
 #: www/templates/index.html:90
 msgid ""
 "Join our vibrant Reddit community, interact with other AlmaLinux OS users, "
 "receive updates, find and provide help."
 msgstr ""
+"Pievienojies mūsu Reddit kopienai, sazinies ar citiem AlmaLinux OS "
+"lietotājiem, saņem jaunākās ziņas, atrodi un sniedz palīdzību."
 
 #: www/templates/index.html:98
 msgid "Join"
-msgstr ""
+msgstr "Pievienoties"
 
 #: www/templates/index.html:107
 msgid "Community chat"
-msgstr ""
+msgstr "Kopienas čats"
 
 #: www/templates/index.html:110
 msgid ""
 "Join a real time discussion with other AlmaLinux OS community members, "
 "governance team and AlmaLinux OS developers."
 msgstr ""
+"Pievienojieties reāllaika diskusijai ar citiem AlmaLinux OS lietotājiem, "
+"pārvaldes komandu un AlmaLinux OS izstrādātājiem."
 
 #: www/templates/index.html:118
 msgid "Engage"
-msgstr ""
+msgstr "Iesaistīties"
 
 #: www/templates/index.html:126
 msgid "Community forums"
-msgstr ""
+msgstr "Kopienas forumi"
 
 #: www/templates/index.html:128
 msgid ""
 "Ask questions, get answers and contribute community support to others in "
 "AlmaLinux OS community and developers alike."
 msgstr ""
+"Uzdodiet jautājumus, saņemiet atbildes un sniedziet atbalstu citiem "
+"AlmaLinux OS kopienā un kopā ar izstrādātājiem."
 
 #: www/templates/index.html:136
 msgid "Discover"
-msgstr ""
+msgstr "Apmeklēt"
 
 #: www/templates/index.html:150
 msgid "About AlmaLinux OS"
-msgstr ""
+msgstr "Par AlmaLinux OS"
 
 #: www/templates/index.html:152
 msgid ""
@@ -215,6 +235,10 @@ msgid ""
 "release. AlmaLinux OS is a 1:1 binary compatible fork of RHEL&reg; guided "
 "and built by the community."
 msgstr ""
+"AlmaLinux OS ir atvērtā koda, kopienas virzīta Linux operētājsistēma, "
+"kaspiedāvā CentOS alternatīvu pēc tās ne-Stream varianta izstrādes beigām. "
+"AlmaLinux OS ir bināri saderīga ar RHEL&reg;, to vada un izstrādā AlmaLinux "
+"OS kopiena."
 
 #: www/templates/index.html:159
 msgid ""
@@ -222,12 +246,18 @@ msgid ""
 "sponsorship from CloudLinux Inc and support from other sponsors. Ongoing "
 "development efforts are governed by the members of the community."
 msgstr ""
+"AlmaLinux OS kā atsevišķa, pilnīgi bezmaksas operētājsistēma ik gadu saņem 1 "
+"miljonu ASV dolāruizstrādes finansējumu no CloudLinux Inc, kā arī citu "
+"sponsoru atbalstu. AlmaLinux OS attīstību un izstrādi vada kopiena."
 
 #: www/templates/index.html:166
 msgid ""
 "The AlmaLinux OS Foundation is a 501(c)(6) non-profit created for the "
 "benefit of the AlmaLinux OS community."
 msgstr ""
+"AlmaLinux OS Foundation ir ASV reģistrēta  501(c)(6) bezpeļņas organizācija, "
+"un izveidota AlmaLinux OS kopienas organizācijai un kopienas interešu "
+"pārstāvībai."
 
 #: www/templates/index.html:183
 msgid "Production-ready"
@@ -239,10 +269,14 @@ msgid ""
 "distribution with regular releases that come with a long support windows. "
 "You can rely on AlmaLinux OS to run any and every critical workloads."
 msgstr ""
+"AlmaLinux OS ir augsta līmeņa servera operētājsistēma un stabila Linux "
+"distribūcija ar regulāriem atjauninājumiem un ilgu atbalsta intervālu.Jūs "
+"varat paļauties uz AlmaLinux OS visa veida kritiskas infrastruktūras "
+"uzturēšanai."
 
 #: www/templates/index.html:196
 msgid "Fully supported, always free"
-msgstr ""
+msgstr "Pilnībā atbalstīta, vienmēr bezmaksas"
 
 #: www/templates/index.html:198
 msgid ""
@@ -250,10 +284,13 @@ msgid ""
 "with investments and long support commitments to ensure the distribution is "
 "free of limitations, fees and charges."
 msgstr ""
+"AlmaLinux OS Foundation dalībnieki, sponsori un partneri atbalsta AlmaLinux "
+"OS ar investīcijām un ilgām atbalsta saistībām, lai nodrošinātu AlmaLinux OS "
+"distribūcijas pieejamību bez ierobežojumiem, nodevām un maksas"
 
 #: www/templates/index.html:209
 msgid "Effortless to switch to"
-msgstr ""
+msgstr "Vienkāršota migrācija"
 
 #: www/templates/index.html:212
 #, python-format
@@ -262,79 +299,86 @@ msgid ""
 "the case when switching from CentOS and other RHEL&reg; forks to AlmaLinux "
 "OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</a>"
 msgstr ""
+"Distribūcijas maiņa parasti ir dārga un laikietilpīga, taču ar AlmaLinux OS,"
+"pāreja no CentOS un citām RHEL&reg; bāzētām Linux distribūcijām ir "
+"vienkārša. <a href=\"%(migrate_link)s\">Uzzināt kā</a>."
 
 #: www/templates/index.html:228
 msgid "Backed by"
-msgstr ""
+msgstr "Atbalsta"
 
 #: www/templates/index.html:249
 msgid "Answers to Key Questions"
-msgstr ""
+msgstr "Atbildes uz svarīgākajiem jautājumiem"
 
 #: www/templates/index.html:283
 msgid "Stay updated!"
-msgstr ""
+msgstr "Pieraksties uz jaunumu saņemšanu!"
 
 #: www/templates/index.html:286
 msgid ""
 "Subscribe to our newsletter and never miss out on the latest in AlmaLinux OS "
 "development!"
 msgstr ""
+"Pievienojies saņemt jaunumus no AlmaLinux OS izstrādātājiem un nekad "
+"nepalaidiet garām jaunāko AlmaLinux OS attīstība!"
 
 #: www/templates/index.html:300
 msgid "Your email"
-msgstr ""
+msgstr "Tavs epasts"
 
 #: www/templates/index.html:304
 msgid "Subscribe"
-msgstr ""
+msgstr "Parakstīties"
 
 #: www/templates/index.html:311
 msgid ""
 "By filling this form you agree to be contacted by AlmaLinux OS Foundation "
 "regarding your request. You can unsubscribe at any time."
 msgstr ""
+"Aizpildot šo veidlapu, Tu piekrīti, ka ar Tevi sazināsies AlmaLinux OS "
+"Foundation attiecībā uz Tavu pieprasījumu. Abonamentu vari atcelt jebkurā "
+"brīdī."
 
 #: www/templates/index.html:326
 msgid "AlmaLinux OS in the Press"
-msgstr ""
+msgstr "AlmaLinux OS presē"
 
 #: www/templates/page/page.html:27
 msgid "Published"
-msgstr ""
+msgstr "Publicēts"
 
 #: www/templates/subscribe_post.html:6
 msgid "Mailing list subscription - AlmaLinux OS"
-msgstr ""
+msgstr "Abonēšana - AlmaLinux OS"
 
 #: www/templates/subscribe_post.html:16
 msgid "Something went wrong..."
-msgstr ""
+msgstr "Notika kļūme"
 
 #: www/templates/subscribe_post.html:22 www/templates/subscribe_post.html:33
 msgid "Return home"
-msgstr ""
+msgstr "Atgriezties uz sākumu"
 
 #: www/templates/subscribe_post.html:27
 msgid "Thank you!"
-msgstr ""
+msgstr "Paldies!"
 
 #: www/templates/subscribe_post.html:30
 msgid ""
 "You have successfully subscribed to AlmaLinux OS announcement mailing list!"
-msgstr ""
+msgstr "Pierakstīšanās uz AlmaLinux OS jaunumu saņemšanu veiksmīga!"
 
 #: www/views.py:51
 msgid "Email address is not valid"
-msgstr ""
+msgstr "Ievadītā epasta adrese nav derīga!"
 
 #: www/views.py:75
 msgid "Failed to subscribe to mailing list, please try again later"
 msgstr ""
+"Nebija iespējams parakstīties uz atjauninājumu saņemšanu, lūdzu mēģini "
+"vēlreiz"
 
 #: www/views.py:77
 msgid "You are already subscribed to this mailing list!"
-msgstr ""
-
-#~ msgid "Hello World"
-#~ msgstr "Привет мир"
+msgstr "Tu jau esi parakstījies uz jaunumu saņemšanu!"

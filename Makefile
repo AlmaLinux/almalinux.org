@@ -31,6 +31,11 @@ web-attach: #: Attach to backend shell within docker, as a regular user, running
 web-root-attach: #: Attach to backend shell within docker, as root, running instance
 	docker exec -ti web /bin/bash
 
+messages: #: Update message files for all translations in known domains
+	LOCAL_UID=${CURRENT_UID} LOCAL_GID=${CURRENT_GID} docker-compose run -u ${CURRENT_UID} web pipenv run ./manage.py makemessages -a --domain django
+	LOCAL_UID=${CURRENT_UID} LOCAL_GID=${CURRENT_GID} docker-compose run -u ${CURRENT_UID} web pipenv run ./manage.py makemessages -a --domain djangojs --ignore "frontend/node_modules/**"
+	LOCAL_UID=${CURRENT_UID} LOCAL_GID=${CURRENT_GID} docker-compose run -u ${CURRENT_UID} web pipenv run ./manage.py compilemessages
+
 frontend-shell: #: Enter frontend shell within docker, as a regular user, new service instance
 	LOCAL_UID=${CURRENT_UID} LOCAL_GID=${CURRENT_GID} docker-compose run -u ${CURRENT_UID} frontend /bin/bash
 
