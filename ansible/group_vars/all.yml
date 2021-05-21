@@ -2,6 +2,18 @@ users:
   - username: matiss
     pubkey: '{{ lookup("file", "../files/ssh/id_rsa.matiss.pub") }}'
     state: present
+  - username: jack
+    pubkey: '{{ lookup("file", "../files/ssh/id_rsa.jack.pub") }}'
+    state: present
+  - username: eugene
+    pubkey: '{{ lookup("file", "../files/ssh/id_rsa.eugene.pub") }}'
+    state: present
+  - username: leonid
+    pubkey: '{{ lookup("file", "../files/ssh/id_rsa.leonid.pub") }}'
+    state: present
 
 deployment_keys:
   - '{{ lookup("file", "../files/ssh/id_rsa.matiss.pub") }}'
+  - '{{ lookup("file", "../files/ssh/id_rsa.jack.pub") }}'
+  - '{{ lookup("file", "../files/ssh/id_rsa.jack.pub") }}'
+  - '{{ lookup("file", "../files/ssh/id_rsa.leonid.pub") }}'

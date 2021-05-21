@@ -3,6 +3,7 @@ ansible_connection=ssh
 ansible_python_interpreter=/usr/bin/python3
 
 [production_web_servers]
+almalinux.org ansible_ssh_host=3.210.88.35
 
 [staging_web_servers]
-staging.almalinux.org ansible_ssh_host=159.65.52.14
+staging.almalinux.org ansible_ssh_host=18.213.64.210

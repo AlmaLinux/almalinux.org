@@ -3,7 +3,8 @@
 local k = require('kafe')
 k.require_api(1)
 
-k.add_inventory('deploy', '159.65.52.14', 22, 'staging', 'website')
+k.add_inventory('deploy', '18.213.64.210', 22, 'staging', 'website')
+k.add_inventory('deploy', '3.210.88.35', 22, 'production', 'website')
 
 k.task('deploy', function()
     local version = os.time(os.date('!*t'))
