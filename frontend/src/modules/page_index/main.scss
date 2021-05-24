@@ -61,8 +61,14 @@
     }
 
     .al-backed-by-list {
+      justify-content: center;
+
       div.col {
         text-align: center;
+      }
+
+      .al-backer-logo-container {
+        height: 100%;
       }
 
       .al-backer-logo {
