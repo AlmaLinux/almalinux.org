@@ -46,6 +46,11 @@ k.task('deploy', function()
             then error('Failed to update the symlink to the new version') end
     end
 
+    local restart_web = function()
+        k.within('{{deploy_to}}')
+        k.shell('/usr/local/bin/docker-compose restart web')
+    end
+
     local remove_old_public_releases = function()
         k.within('{{public}}/release/')
 
@@ -62,6 +67,7 @@ k.task('deploy', function()
 
     if k.on('website', deploy) then
         k.on('website', symlink_www)
+        k.on('website', restart_web)
         k.on('website', remove_old_public_releases)
         k.on('website', remove_old_app_releases)
     end
