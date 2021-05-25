@@ -149,6 +149,7 @@ LANGUAGES = (
     ('en', 'English (US)'),
     ('es', 'Español (España)'),
     ('ru', 'Русский'),
+    ('uk', 'Украї́нська'),
     ('lv', 'Latviešu'),
 )
 
