@@ -2,10 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: almalinuxorg/1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-25 17:47+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2021-05-20 20:15+0000\n"
+"PO-Revision-Date: 2021-05-25 17:48+0000\n"
+"Last-Translator: Eugene Zamriy <eugene@zamriy.info>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/almalinux/"
+"website-backend/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -174,7 +175,7 @@ msgstr ""
 
 #: www/templates/index.html:98
 msgid "Join"
-msgstr ""
+msgstr "Присоединиться"
 
 #: www/templates/index.html:107
 msgid "Community chat"
@@ -287,7 +288,7 @@ msgstr ""
 
 #: www/templates/index.html:304
 msgid "Subscribe"
-msgstr ""
+msgstr "Подписаться"
 
 #: www/templates/index.html:311
 msgid ""
@@ -297,7 +298,7 @@ msgstr ""
 
 #: www/templates/index.html:326
 msgid "AlmaLinux OS in the Press"
-msgstr ""
+msgstr "Пресса об AlmaLinux ОС"
 
 #: www/templates/page/page.html:27
 msgid "Published"
@@ -309,7 +310,7 @@ msgstr ""
 
 #: www/templates/subscribe_post.html:16
 msgid "Something went wrong..."
-msgstr ""
+msgstr "Что-то пошло не так..."
 
 #: www/templates/subscribe_post.html:22 www/templates/subscribe_post.html:33
 msgid "Return home"
@@ -317,7 +318,7 @@ msgstr ""
 
 #: www/templates/subscribe_post.html:27
 msgid "Thank you!"
-msgstr ""
+msgstr "Спасибо!"
 
 #: www/templates/subscribe_post.html:30
 msgid ""
@@ -326,7 +327,7 @@ msgstr ""
 
 #: www/views.py:51
 msgid "Email address is not valid"
-msgstr ""
+msgstr "Неверный адрес электронной почты"
 
 #: www/views.py:75
 msgid "Failed to subscribe to mailing list, please try again later"
