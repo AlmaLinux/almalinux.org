@@ -3,21 +3,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-25 17:47+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2021-05-20 20:15+0000\n"
+"PO-Revision-Date: 2021-05-21 20:33+0000\n"
+"Last-Translator: Matīss Treinis <matiss@hub256.com>\n"
+"Language-Team: Latvian <https://hosted.weblate.org/projects/almalinux/"
+"website-backend/lv/>\n"
+"Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
-"2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2;\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
@@ -39,7 +39,7 @@ msgstr "404 Nav Atrasts"
 
 #: www/templates/404.html:16
 msgid "Sorry, but the page you were trying to access could not be found."
-msgstr "Atvaino, bet šī lapa nav pieejama"
+msgstr "Atvaino, bet šī lapa nav pieejama."
 
 #: www/templates/_partial/footer.html:11 www/templates/_partial/navbar.html:37
 msgid "Resources"
@@ -255,8 +255,8 @@ msgid ""
 "The AlmaLinux OS Foundation is a 501(c)(6) non-profit created for the "
 "benefit of the AlmaLinux OS community."
 msgstr ""
-"AlmaLinux OS Foundation ir ASV reģistrēta  501(c)(6) bezpeļņas organizācija, "
-"un izveidota AlmaLinux OS kopienas organizācijai un kopienas interešu "
+"AlmaLinux OS Foundation ir ASV reģistrēta, 501(c)(6) bezpeļņas organizācija, "
+"kas izveidota AlmaLinux OS kopienas organizācijai un kopienas interešu "
 "pārstāvībai."
 
 #: www/templates/index.html:183
@@ -286,7 +286,7 @@ msgid ""
 msgstr ""
 "AlmaLinux OS Foundation dalībnieki, sponsori un partneri atbalsta AlmaLinux "
 "OS ar investīcijām un ilgām atbalsta saistībām, lai nodrošinātu AlmaLinux OS "
-"distribūcijas pieejamību bez ierobežojumiem, nodevām un maksas"
+"distribūcijas pieejamību bez ierobežojumiem, nodevām un maksas."
 
 #: www/templates/index.html:209
 msgid "Effortless to switch to"
@@ -299,9 +299,9 @@ msgid ""
 "the case when switching from CentOS and other RHEL&reg; forks to AlmaLinux "
 "OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</a>"
 msgstr ""
-"Distribūcijas maiņa parasti ir dārga un laikietilpīga, taču ar AlmaLinux OS,"
-"pāreja no CentOS un citām RHEL&reg; bāzētām Linux distribūcijām ir "
-"vienkārša. <a href=\"%(migrate_link)s\">Uzzināt kā</a>."
+"Distribūcijas maiņa parasti ir dārga un laikietilpīga, taču ar AlmaLinux "
+"OS,pāreja no CentOS un citām RHEL&reg; bāzētām Linux distribūcijām ir "
+"vienkārša. <a href=\"%(migrate_link)s\">Uzzināt kā.</a>"
 
 #: www/templates/index.html:228
 msgid "Backed by"
@@ -354,7 +354,7 @@ msgstr "Abonēšana - AlmaLinux OS"
 
 #: www/templates/subscribe_post.html:16
 msgid "Something went wrong..."
-msgstr "Notika kļūme"
+msgstr "Notika kļūda..."
 
 #: www/templates/subscribe_post.html:22 www/templates/subscribe_post.html:33
 msgid "Return home"
@@ -371,7 +371,7 @@ msgstr "Pierakstīšanās uz AlmaLinux OS jaunumu saņemšanu veiksmīga!"
 
 #: www/views.py:51
 msgid "Email address is not valid"
-msgstr "Ievadītā epasta adrese nav derīga!"
+msgstr "Ievadītā epasta adrese nav derīga"
 
 #: www/views.py:75
 msgid "Failed to subscribe to mailing list, please try again later"
