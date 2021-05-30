@@ -150,6 +150,8 @@ LANGUAGES = (
     ('es', 'Español (España)'),
     ('ru', 'Русский'),
     ('uk', 'Украї́нська'),
+    ('it', 'Italiano'),
+    ('he', 'עִבְרִית'),
     ('lv', 'Latviešu'),
 )
 
