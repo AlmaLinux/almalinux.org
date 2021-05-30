@@ -148,11 +148,11 @@ USE_TZ = True
 LANGUAGES = (
     ('en', 'English (US)'),
     ('es', 'Español (España)'),
+    ('he', 'עִבְרִית'),
+    ('it', 'Italiano'),
+    ('lv', 'Latviešu'),
     ('ru', 'Русский'),
     ('uk', 'Украї́нська'),
-    ('it', 'Italiano'),
-    ('he', 'עִבְרִית'),
-    ('lv', 'Latviešu'),
 )
 
 LOCALE_PATHS = [
