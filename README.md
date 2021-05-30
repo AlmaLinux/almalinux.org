@@ -35,5 +35,14 @@ Executing `make dev` will deploy a complete, ready to go development environment
 - `/www/` - Django app that contains all logic for the website.
 - `/frontend/` - JavaScript and SCSS frontend code.
 
+### Localization and translation
+
+AlmaLinux OS localization and translation is managed using [Weblate](https://hosted.weblate.org/engage/almalinux/).
+
+To contribute translations see [AlmaLinux OS](https://hosted.weblate.org/projects/almalinux/) localization project in Weblate.
+
+You can request new languages to be added by creating a ticket in [GitHub issues](https://github.com/AlmaLinux/almalinux.org/issues).
+
+[![Translation status](https://hosted.weblate.org/widgets/almalinux/-/287x66-white.png)](https://hosted.weblate.org/engage/almalinux/)
 
 Copyright (c) 2021 AlmaLinux OS Foundation
