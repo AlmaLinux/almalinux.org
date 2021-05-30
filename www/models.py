@@ -41,6 +41,40 @@ class Backer(models.Model):
         return self.display_name
 
 
+class CommercialSupportVendor(models.Model):
+    id: models.AutoField = models.AutoField(
+        primary_key=True
+    )
+
+    display_name: models.CharField = models.CharField(
+        max_length=100,
+        null=False,
+        help_text='Name of the vendor'
+    )
+
+    logo: models.FileField = models.FileField(
+        null=False,
+        upload_to=segmented_upload_to,
+        help_text='Logo of the vendor. MUST be a zero-margin SVG file!',
+        validators=[FileExtensionValidator(['svg'])]
+    )
+
+    url: models.URLField = models.URLField(
+        null=False,
+        help_text='URL of the vendor'
+    )
+
+    priority: models.PositiveIntegerField = models.PositiveIntegerField(
+        null=False,
+        default=0,
+        help_text='Absolute priority of the vendor relative to other vendors. The higher the priority, the earlier '
+                  'the vendor will appear.'
+    )
+
+    def __str__(self) -> str:
+        return self.display_name
+
+
 class PressArticle(models.Model):
     id: models.AutoField = models.AutoField(
         primary_key=True
@@ -201,3 +235,44 @@ class FAQEntry(models.Model):
 
     def __str__(self) -> str:
         return self.question
+
+
+class ShowcaseFeature(models.Model):
+    id: models.AutoField = models.AutoField(
+        primary_key=True
+    )
+
+    lang: models.CharField = models.CharField(
+        max_length=7,
+        choices=LANGUAGES,
+        db_index=True,
+        default='en',
+        verbose_name='Content language'
+    )
+
+    title: models.CharField = models.CharField(
+        max_length=255,
+        null=False,
+        help_text='Feature title'
+    )
+
+    description: models.TextField = models.TextField(
+        null=False,
+        help_text='Feature description'
+    )
+
+    screenshot: models.ImageField = models.ImageField(
+        null=False,
+        upload_to=segmented_upload_to,
+        help_text='Feature screenshot',
+    )
+
+    priority: models.PositiveIntegerField = models.PositiveIntegerField(
+        null=False,
+        default=0,
+        help_text='Absolute priority of the feature relative to other features. The higher the priority, the earlier '
+                  'the feature will appear.'
+    )
+
+    def __str__(self) -> str:
+        return self.title

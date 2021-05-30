@@ -146,11 +146,17 @@ USE_L10N = True
 USE_TZ = True
 
 LANGUAGES = (
-    ('en', 'English (US)'),
-    ('es', 'Español (España)'),
+    ('de', 'Deutsch'),
+    ('en', 'English'),  # English (US), default
+    ('es', 'Español'),  # Spanish (ES)
+    ('fr', 'Français'),
     ('he', 'עִבְרִית'),
     ('it', 'Italiano'),
+    ('ja', '日本語'),  # Japanese
     ('lv', 'Latviešu'),
+    ('pl', 'Polski'),
+    ('pt', 'Português'),  # Portuguese (PT)
+    ('pt-br', 'Português Brasileiro'),  # Portuguese (BR)
     ('ru', 'Русский'),
     ('uk', 'Украї́нська'),
 )

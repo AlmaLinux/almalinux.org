@@ -1,0 +1,41 @@
+{% extends 'layouts/base.html' %}
+{% load i18n %}
+{% load static %}
+{% load encore %}
+
+{% block title %}{% translate 'AlmaLinux OS feature showcase' %}{% endblock %}
+{% block description %}{% translate 'Feature showcase' %}{% endblock %}
+
+{% block head_end %}
+    {% encore_entrypoint_css 'page_showcase' %}
+{% endblock %}
+{% block body_end %}
+    {% encore_entrypoint_js 'page_showcase' %}
+{% endblock %}
+
+{% block body %}
+    <section class="al-page-showcase-index">
+        <div class="container g-5 py-5 align-items-center">
+            {% for feature in showcase_features %}
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="{{ feature.screenshot.url }}"
+                             class="d-block mx-lg-auto img-fluid"
+                             alt="{{ feature.title }}"
+                             loading="lazy"
+                             width="700"
+                             height="500">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold lh-1 mb-3">
+                            {{ feature.title }}
+                        </h2>
+                        <div class="lead">
+                            {{ feature.description }}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}

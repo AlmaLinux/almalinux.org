@@ -9,4 +9,6 @@ urlpatterns = [
     path('blog/', views.blog_index, name='blog_index'),
     path('blog/page/<int:page_num>/', views.blog_index, name='blog_index_page'),
     path('blog/<slug:slug>/', views.blog_post, name='blog_post'),
+    path('showcase/', views.showcase_index, name='showcase_index'),
+    path('contribute/', views.contribute_index, name='contribute_index'),
 ]

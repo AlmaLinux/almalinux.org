@@ -4,11 +4,11 @@
 
 .al-page-index {
   .al-hero-cta-primary {
-    background: $al-c-science-blue;
-    color: $al-font-color;
+    background: #24c2ff;
+    color: #222222;
 
     &:hover {
-      background: darken($al-c-science-blue, 5%);
+      background: darken(#24c2ff, 5%);
     }
   }
 
@@ -18,6 +18,20 @@
 
     &:hover {
       background: darken($al-c-atlantis, 5%);
+    }
+  }
+
+  .al-hero-cta-tertiary {
+    background: $al-c-candlelight;
+    color: #222222;
+
+    img {
+      display: inline;
+      height: 1em;
+    }
+
+    &:hover {
+      background: darken($al-c-candlelight, 5%);
     }
   }
 
@@ -38,10 +52,23 @@
       color: $al-font-color;
       font-size: 32px;
       padding-right: 22px;
+      flex: 0;
 
       &.img {
         height: 32px;
         box-sizing: border-box;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      .al-index-community-content-wrap {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        p {
+          flex: 1;
+        }
       }
     }
 
@@ -72,6 +99,34 @@
       }
 
       .al-backer-logo {
+        max-width: 120px;
+        width: 100%;
+      }
+    }
+  }
+
+  .al-index-commercial-support {
+    h2.border-bottom {
+      border-bottom-color: lighten($al-body-background, 8%) !important;
+    }
+
+    @include media-breakpoint-up(md) {
+      padding-top: 72px !important;
+      padding-bottom: 102px !important;
+    }
+
+    .al-commercial-supporter-list {
+      justify-content: center;
+
+      div.col {
+        text-align: center;
+      }
+
+      .al-commercial-supporter-logo-container {
+        height: 100%;
+      }
+
+      .al-commercial-supporter-logo {
         max-width: 120px;
         width: 100%;
       }

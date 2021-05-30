@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-30 13:21+0000\n"
+"POT-Creation-Date: 2021-05-30 16:16+0000\n"
 "PO-Revision-Date: 2021-05-27 11:33+0000\n"
 "Last-Translator: Ruslan Pisarev <ruslan@rpisarev.org.ua>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/almalinux/"
@@ -45,11 +45,11 @@ msgid "Sorry, but the page you were trying to access could not be found."
 msgstr ""
 "Вибачте, але сторінка до якої ви намагалися отримати доступ не була знайдена."
 
-#: www/templates/_partial/footer.html:11 www/templates/_partial/navbar.html:37
+#: www/templates/_partial/footer.html:11 www/templates/_partial/navbar.html:38
 msgid "Resources"
 msgstr "Ресурси"
 
-#: www/templates/_partial/footer.html:13 www/templates/_partial/navbar.html:27
+#: www/templates/_partial/footer.html:13 www/templates/_partial/navbar.html:28
 msgid "Wiki"
 msgstr "Вікіпедія"
 
@@ -81,7 +81,7 @@ msgstr "Чат"
 msgid "Legal"
 msgstr "Угоди"
 
-#: www/templates/_partial/footer.html:33 www/templates/index.html:315
+#: www/templates/_partial/footer.html:33 www/templates/index.html:351
 msgid "Privacy Policy"
 msgstr "Політика конфіденційності"
 
@@ -93,35 +93,31 @@ msgstr "Умови надання послуг"
 msgid "AlmaLinux OS logo"
 msgstr "Логотип ОС AlmaLinux"
 
-#: www/templates/_partial/navbar.html:15
+#: www/templates/_partial/navbar.html:16
 msgid "Toggle navigation"
 msgstr "Перемкнути навігацію"
 
-#: www/templates/_partial/navbar.html:22
+#: www/templates/_partial/navbar.html:23
 msgid "Blog"
 msgstr "Блог"
 
-#: www/templates/_partial/navbar.html:43
+#: www/templates/_partial/navbar.html:44
 msgid "Migrate from CentOS 8"
 msgstr "Мігрувати з CentOS 8"
 
-#: www/templates/_partial/navbar.html:48
+#: www/templates/_partial/navbar.html:49
 msgid "Report Bugs"
 msgstr "Повідомити про помилки"
 
-#: www/templates/_partial/navbar.html:56
+#: www/templates/_partial/navbar.html:57
 msgid "Shop"
 msgstr "Крамниця"
 
-#: www/templates/_partial/navbar.html:61
-msgid "Commercial Support"
-msgstr "Комерційна підтримка"
-
-#: www/templates/_partial/navbar.html:69
+#: www/templates/_partial/navbar.html:65
 msgid "Language"
 msgstr "Мова"
 
-#: www/templates/_partial/navbar.html:90 www/templates/index.html:49
+#: www/templates/_partial/navbar.html:87 www/templates/index.html:51
 msgid "Download"
 msgstr "Завантажити"
 
@@ -141,15 +137,71 @@ msgstr "Назад"
 msgid "Next"
 msgstr "Далі"
 
+#: www/templates/contribute/index.html:6
+#, fuzzy
+#| msgid "AlmaLinux OS in the Press"
+msgid "AlmaLinux OS - Contribute"
+msgstr "ОС AlmaLinux у пресі"
+
+#: www/templates/contribute/index.html:7 www/templates/contribute/index.html:22
+msgid "Contribute to AlmaLinux OS development"
+msgstr ""
+
+#: www/templates/contribute/index.html:26
+msgid ""
+"AlmaLinux OS and infrastructure development are organized using our "
+"community chat. There are many ways to contribute to AlmaLinux OS - testing, "
+"quality assurance, documentation, and more."
+msgstr ""
+
+#: www/templates/contribute/index.html:33
+#, python-format
+msgid ""
+"<a href=\"%(intro_link)s\">Introduce yourself</a> or join one of the topical "
+"channels below to find out more!"
+msgstr ""
+
+#: www/templates/contribute/index.html:43
+msgid "General chat"
+msgstr ""
+
+#: www/templates/contribute/index.html:48
+msgid "Development"
+msgstr ""
+
+#: www/templates/contribute/index.html:53
+msgid "Infrastructure"
+msgstr ""
+
+#: www/templates/contribute/index.html:58
+msgid "Security"
+msgstr ""
+
+#: www/templates/contribute/index.html:63
+msgid "Documentation"
+msgstr ""
+
+#: www/templates/contribute/index.html:68
+msgid "Marketing"
+msgstr ""
+
+#: www/templates/contribute/index.html:73
+msgid "Web presence"
+msgstr ""
+
+#: www/templates/contribute/index.html:82
+msgid "Join AlmaLinux OS community chat"
+msgstr ""
+
 #: www/templates/index.html:6
 msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
 msgstr "ОС AlmaLinux - назавжди вільна операційна система промислового рівня"
 
-#: www/templates/index.html:31
+#: www/templates/index.html:33
 msgid "Free Linux OS for the community, by the community"
 msgstr "Вільна ОС Linux для спільноти, від спільноти"
 
-#: www/templates/index.html:34
+#: www/templates/index.html:36
 msgid ""
 "An Open Source, community-governed and forever-free enterprise Linux "
 "distribution, focused on long-term stability, providing a robust production-"
@@ -161,17 +213,21 @@ msgstr ""
 "надійну платформу виробничого рівня. ОС AlmaLinux є 1:1 бінарно сумісною з "
 "RHEL&reg; та pre-Stream CentOS."
 
-#: www/templates/index.html:44
+#: www/templates/index.html:46
 msgid "Contribute"
 msgstr "Зробити внесок"
 
-#: www/templates/index.html:53
+#: www/templates/index.html:56
+msgid "Migrate"
+msgstr ""
+
+#: www/templates/index.html:60
 #, python-format
 msgid "Founded by the team behind the <a href=\"%(link)s\">CloudLinux OS</a>."
 msgstr ""
 "Заснована командою, що стоїть за <a href=\"%(link)s\">ОС CloudLinux</a>."
 
-#: www/templates/index.html:70
+#: www/templates/index.html:77
 msgid ""
 "Our GitHub organization contains source code and tools used to build "
 "AlmaLinux OS and related infrastructure."
@@ -179,11 +235,11 @@ msgstr ""
 "Наша організація на GitHub містить вихідний код та інструменти, що "
 "використовуються для побудови ОС AlmaLinux та супутньої інфраструктури."
 
-#: www/templates/index.html:78
+#: www/templates/index.html:85
 msgid "Explore"
 msgstr "Дослідити"
 
-#: www/templates/index.html:90
+#: www/templates/index.html:97
 msgid ""
 "Join our vibrant Reddit community, interact with other AlmaLinux OS users, "
 "receive updates, find and provide help."
@@ -192,15 +248,15 @@ msgstr ""
 "користувачами ОС AlmaLinux, отримуйте оновлення, знаходьте та надавайте "
 "допомогу."
 
-#: www/templates/index.html:98
+#: www/templates/index.html:105
 msgid "Join"
 msgstr "Приєднатись"
 
-#: www/templates/index.html:107
+#: www/templates/index.html:114
 msgid "Community chat"
 msgstr "Чат спільноти"
 
-#: www/templates/index.html:110
+#: www/templates/index.html:117
 msgid ""
 "Join a real time discussion with other AlmaLinux OS community members, "
 "governance team and AlmaLinux OS developers."
@@ -208,15 +264,15 @@ msgstr ""
 "Приєднуйтесь до обговорення в режимі реального часу з іншими членами "
 "спільноти ОС AlmaLinux, командою керування та розробниками ОС AlmaLinux."
 
-#: www/templates/index.html:118
+#: www/templates/index.html:125
 msgid "Engage"
 msgstr "Залучитися"
 
-#: www/templates/index.html:126
+#: www/templates/index.html:133
 msgid "Community forums"
 msgstr "Форуми спільноти"
 
-#: www/templates/index.html:128
+#: www/templates/index.html:135
 msgid ""
 "Ask questions, get answers and contribute community support to others in "
 "AlmaLinux OS community and developers alike."
@@ -224,15 +280,15 @@ msgstr ""
 "Запитуйте, отримуйте відповіді та надавайте підтримку іншим у спільноті ОС "
 "AlmaLinux та розробникам."
 
-#: www/templates/index.html:136
+#: www/templates/index.html:143
 msgid "Discover"
 msgstr "Відкривайте"
 
-#: www/templates/index.html:150
+#: www/templates/index.html:157
 msgid "About AlmaLinux OS"
 msgstr "Про ОС AlmaLinux"
 
-#: www/templates/index.html:152
+#: www/templates/index.html:159
 msgid ""
 "AlmaLinux OS is an open-source, community-driven Linux operating system that "
 "fills the gap left by the discontinuation of the CentOS Linux stable "
@@ -244,7 +300,7 @@ msgstr ""
 "випуску CentOS Linux. ОС AlmaLinux - це 1:1 бінарно сумісний форк RHEL&reg; "
 "що керується та будується спільнотою."
 
-#: www/templates/index.html:159
+#: www/templates/index.html:166
 msgid ""
 "As a standalone, completely free OS, AlmaLinux OS enjoys $1M in annual "
 "sponsorship from CloudLinux Inc and support from other sponsors. Ongoing "
@@ -255,7 +311,7 @@ msgstr ""
 "та підтримкою інших спонсорів. Постійними зусиллями щодо розвитку керують "
 "члени спільноти."
 
-#: www/templates/index.html:166
+#: www/templates/index.html:173
 msgid ""
 "The AlmaLinux OS Foundation is a 501(c)(6) non-profit created for the "
 "benefit of the AlmaLinux OS community."
@@ -263,11 +319,15 @@ msgstr ""
 "AlmaLinux OS Foundation - це некомерційна організація 501 (c) (6), створена "
 "на благо спільноти ОС AlmaLinux."
 
-#: www/templates/index.html:183
+#: www/templates/index.html:187
+msgid "Backed by"
+msgstr "Підтримано"
+
+#: www/templates/index.html:211
 msgid "Production-ready"
 msgstr "Готовий до виробництва"
 
-#: www/templates/index.html:185
+#: www/templates/index.html:213
 msgid ""
 "AlmaLinux OS is an enterprise-grade server OS and a stable Linux "
 "distribution with regular releases that come with a long support windows. "
@@ -277,11 +337,11 @@ msgstr ""
 "Linux із регулярними випусками, що мають довгі вікна підтримки. Ви можете "
 "покладатися на ОС AlmaLinux для запуску будь-яких критичних навантажень."
 
-#: www/templates/index.html:196
+#: www/templates/index.html:224
 msgid "Fully supported, always free"
 msgstr "Повністю підтримується, завжди вільна"
 
-#: www/templates/index.html:198
+#: www/templates/index.html:226
 msgid ""
 "AlmaLinux OS Foundation members, sponsors and partners back the AlmaLinux OS "
 "with investments and long support commitments to ensure the distribution is "
@@ -291,11 +351,11 @@ msgstr ""
 "AlmaLinux інвестиціями та довгими зобов’язаннями щодо підтримки, щоб "
 "гарантувати розповсюдження без обмежень, зборів та стягнень."
 
-#: www/templates/index.html:209
+#: www/templates/index.html:237
 msgid "Effortless to switch to"
 msgstr "Легко перейти на"
 
-#: www/templates/index.html:212
+#: www/templates/index.html:240
 #, python-format
 msgid ""
 "Switching distributions is usually costly and time-consuming, but that’s not "
@@ -306,19 +366,23 @@ msgstr ""
 "переході від CentOS та інших RHEL&reg; форків до ОС AlmaLinux. Мігрувати "
 "просто - <a href=\"%(migrate_link)s\">прочитайте як.</a>"
 
-#: www/templates/index.html:228
-msgid "Backed by"
-msgstr "Підтримано"
+#: www/templates/index.html:253 www/templates/showcase/index.html:7
+msgid "Feature showcase"
+msgstr ""
 
-#: www/templates/index.html:249
+#: www/templates/index.html:264
+msgid "Commercial Support"
+msgstr "Комерційна підтримка"
+
+#: www/templates/index.html:285
 msgid "Answers to Key Questions"
 msgstr "Відповіді на ключові питання"
 
-#: www/templates/index.html:283
+#: www/templates/index.html:319
 msgid "Stay updated!"
 msgstr "Слідкуйте за оновленнями!"
 
-#: www/templates/index.html:286
+#: www/templates/index.html:322
 msgid ""
 "Subscribe to our newsletter and never miss out on the latest in AlmaLinux OS "
 "development!"
@@ -326,15 +390,15 @@ msgstr ""
 "Підпишіться на нашу розсилку новин і ніколи не пропускайте останні новини "
 "щодо розробки ОС AlmaLinux!"
 
-#: www/templates/index.html:300
+#: www/templates/index.html:336
 msgid "Your email"
 msgstr "Ваша електронна адреса"
 
-#: www/templates/index.html:304
+#: www/templates/index.html:340
 msgid "Subscribe"
 msgstr "Підписатися"
 
-#: www/templates/index.html:311
+#: www/templates/index.html:347
 msgid ""
 "By filling this form you agree to be contacted by AlmaLinux OS Foundation "
 "regarding your request. You can unsubscribe at any time."
@@ -342,13 +406,19 @@ msgstr ""
 "Заповнивши цю форму, ви погоджуєтесь що з вами зв’яжуться AlmaLinux OS "
 "Foundation щодо вашого запиту. Ви можете будь-коли скасувати підписку."
 
-#: www/templates/index.html:326
+#: www/templates/index.html:362
 msgid "AlmaLinux OS in the Press"
 msgstr "ОС AlmaLinux у пресі"
 
 #: www/templates/page/page.html:27
 msgid "Published"
 msgstr "Опубліковано"
+
+#: www/templates/showcase/index.html:6
+#, fuzzy
+#| msgid "AlmaLinux OS in the Press"
+msgid "AlmaLinux OS feature showcase"
+msgstr "ОС AlmaLinux у пресі"
 
 #: www/templates/subscribe_post.html:6
 msgid "Mailing list subscription - AlmaLinux OS"
@@ -371,15 +441,15 @@ msgid ""
 "You have successfully subscribed to AlmaLinux OS announcement mailing list!"
 msgstr "Ви успішно підписалися на список розсилки оголошень ОС AlmaLinux!"
 
-#: www/views.py:51
+#: www/views.py:53
 msgid "Email address is not valid"
 msgstr "Адреса електронної пошти недійсна"
 
-#: www/views.py:75
+#: www/views.py:77
 msgid "Failed to subscribe to mailing list, please try again later"
 msgstr ""
 "Не вдалося підписатися на список розсилки, будь-ласка спробуйте пізніше"
 
-#: www/views.py:77
+#: www/views.py:79
 msgid "You are already subscribed to this mailing list!"
 msgstr "Ви вже підписані на цей список розсилки!"

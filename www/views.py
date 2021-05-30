@@ -14,7 +14,7 @@ from django.views.decorators.cache import never_cache
 from django.views.decorators.http import require_POST, require_safe
 
 from almalinux.settings import HUBSPOT_APIKEY, HUBSPOT_SUB_ID
-from .models import Backer, PressArticle, BlogPost, Page, FAQEntry
+from .models import Backer, PressArticle, BlogPost, Page, FAQEntry, CommercialSupportVendor, ShowcaseFeature
 
 
 # Public views
@@ -22,12 +22,13 @@ from .models import Backer, PressArticle, BlogPost, Page, FAQEntry
 @never_cache
 def index(request: HttpRequest) -> HttpResponse:
     backers = Backer.objects.order_by('-priority').all()
+    commercial_support_vendors = CommercialSupportVendor.objects.order_by('-priority').all()
     press_articles = PressArticle.objects.order_by('-priority').all()
 
     lang_code = request.LANGUAGE_CODE  # type: ignore
 
     if lang_code != 'en':
-        # If the slug does not exist in this language, use EN
+        # If the entries does not exist in this language, use EN
         if 0 == FAQEntry.objects.filter(lang=lang_code).count():
             lang_code = 'en'
 
@@ -35,6 +36,7 @@ def index(request: HttpRequest) -> HttpResponse:
 
     return render(request, 'index.html', {
         'backers': backers,
+        'commercial_support_vendors': commercial_support_vendors,
         'press_articles': press_articles,
         'faq_entries': faq_entries
     })
@@ -154,6 +156,30 @@ def blog_post(request: HttpRequest, slug: str = None) -> HttpResponse:
 
     return render(request, 'blog/post.html', {
         'post': post
+    })
+
+
+@require_safe
+@never_cache
+def showcase_index(request: HttpRequest) -> HttpResponse:
+    lang_code = request.LANGUAGE_CODE  # type: ignore
+
+    if lang_code != 'en':
+        # If the features does not exist in this language, use EN
+        if 0 == ShowcaseFeature.objects.filter(lang=lang_code).count():
+            lang_code = 'en'
+
+    showcase_features = ShowcaseFeature.objects.filter(lang=lang_code).order_by('-priority').all()
+
+    return render(request, 'showcase/index.html', {
+        'showcase_features': showcase_features,
+    })
+
+
+@require_safe
+@never_cache
+def contribute_index(request: HttpRequest) -> HttpResponse:
+    return render(request, 'contribute/index.html', {
     })
 
 

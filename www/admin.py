@@ -7,10 +7,12 @@ from .models import *
 # Register your models here.
 
 admin.site.register(Backer)
+admin.site.register(CommercialSupportVendor)
 admin.site.register(PressArticle)
 admin.site.register(Page)
 admin.site.register(BlogPost)
 admin.site.register(FAQEntry)
+admin.site.register(ShowcaseFeature)
 
 
 # Admin special URLs (path, template, name, context)

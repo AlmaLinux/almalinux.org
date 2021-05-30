@@ -35,6 +35,8 @@ Encore
     .addEntry('page_index', __dirname + '/src/modules/page_index/main.js')
     .addEntry('page_page', __dirname + '/src/modules/page_page/main.js')
     .addEntry('page_blog', __dirname + '/src/modules/page_blog/main.js')
+    .addEntry('page_showcase', __dirname + '/src/modules/page_showcase/main.js')
+    .addEntry('page_contribute', __dirname + '/src/modules/page_contribute/main.js')
 ;
 
 if (Encore.isDevServer() || Encore.isDev()) {

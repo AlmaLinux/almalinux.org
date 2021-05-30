@@ -20,11 +20,13 @@
         <div class="container al-py-lg">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-2 py-md-5">
                 <div class="d-none d-lg-block col-10 col-sm-8 col-lg-6">
-                    <img src="{% static 'images/hero.png' %}"
-                         class="d-block mx-lg-auto img-fluid"
-                         alt="Hero image"
-                         width="624"
-                         height="430">
+                    <a href="{% url 'showcase_index' %}">
+                        <img src="{% static 'images/hero.png' %}"
+                             class="d-block mx-lg-auto img-fluid"
+                             alt="Hero image"
+                             width="624"
+                             height="430">
+                    </a>
                 </div>
                 <div class="col-lg-6">
                     <h1 class="display-5 fw-bold lh-1 mb-5 mb-md-3">
@@ -37,8 +39,8 @@
                             AlmaLinux OS is 1:1 binary compatible with RHEL&reg; and pre-Stream CentOS.
                         {% endblocktranslate %}
                     </p>
-                    <div class="d-grid gap-3 d-md-flex justify-content-md-start pt-2">
-                        <a href="{% url 'page' 'contribute' %}"
+                    <div class="d-grid gap-3 d-md-flex justify-content-md-start pt-3">
+                        <a href="{% url 'contribute_index' %}"
                            class="btn btn-lg px-4 me-md-2 al-hero-cta-primary">
                             <i class="bi bi-people pe-1"></i>
                             {% translate 'Contribute' %}
@@ -48,8 +50,13 @@
                             <i class="bi bi-download pe-1"></i>
                             {% translate 'Download' %}
                         </a>
+                        <a href="https://github.com/AlmaLinux/almalinux-deploy"
+                           class="btn btn-lg px-4 al-hero-cta-tertiary">
+                            <img src="{% static 'images/icon-migrate.svg' %}" alt="Icon" class="pe-1">
+                            {% translate 'Migrate' %}
+                        </a>
                     </div>
-                    <div class="pt-5 pt-md-4 fw-light">
+                    <div class="pt-4 fw-light">
                         {% blocktranslate trimmed with link='https://www.cloudlinux.com/?utm_source=almalinuxorg&utm_medium=web&utm_campaign=almalinuxorg_organic' %}
                             Founded by the team behind the <a href="{{ link }}">CloudLinux OS</a>.
                         {% endblocktranslate %}
@@ -62,9 +69,9 @@
         <div class="al-index-community-container">
             <div class="container al-py-md">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-2 py-md-5">
-                    <div class="col d-flex align-items-start">
+                    <div class="col d-flex align-items-stretch">
                         <i class="bi bi-github al-index-community-icon"></i>
-                        <div>
+                        <div class="al-index-community-content-wrap">
                             <h4 class="fw-bold mb-0 pb-2">GitHub</h4>
                             <p>
                                 {% blocktranslate trimmed %}
@@ -80,11 +87,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col d-flex align-items-start">
+                    <div class="col d-flex align-items-stretch">
                         <img loading="lazy" class="al-index-community-icon img"
                              src="{% static 'images/icon-reddit.svg' %}"
                              alt="Reddit">
-                        <div>
+                        <div class="al-index-community-content-wrap">
                             <h4 class="fw-bold mb-0 pb-2">Reddit</h4>
                             <p>
                                 {% blocktranslate trimmed %}
@@ -100,9 +107,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col d-flex align-items-start">
+                    <div class="col d-flex align-items-stretch">
                         <i class="bi bi-chat-dots al-index-community-icon"></i>
-                        <div>
+                        <div class="al-index-community-content-wrap">
                             <h4 class="fw-bold mb-0 pb-2">
                                 {% translate 'Community chat' %}
                             </h4>
@@ -120,9 +127,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col d-flex align-items-start">
+                    <div class="col d-flex align-items-stretch">
                         <i class="bi bi-journals al-index-community-icon"></i>
-                        <div>
+                        <div class="al-index-community-content-wrap">
                             <h4 class="fw-bold mb-0 pb-2">{% translate 'Community forums' %}</h4>
                             <p>
                                 {% blocktranslate trimmed %}
@@ -173,10 +180,31 @@
             </div>
         </div>
 
+        <!-- BACKERS -->
+        <div class="al-index-backed-by al-py-lg">
+            <div class="container">
+                <h2 class="pb-2 mb-5 text-center border-bottom">
+                    {% translate 'Backed by' %}
+                </h2>
+                <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 g-5 al-backed-by-list">
+                    {% for backer in backers %}
+                        <a href="{{ backer.url }}">
+                            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                                <img loading="lazy"
+                                     src="{{ backer.logo.url }}"
+                                     alt="{{ backer.display_name }}"
+                                     class="al-backer-logo">
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
         <!-- FEATURES -->
         <div class="al-index-feature-container">
             <div class="container al-py-md">
-                <div class="row row-cols-1 row-cols-md-3 py-2 py-md-5">
+                <div class="row row-cols-1 row-cols-md-3 pt-2 pt-md-5">
                     <div class="col d-flex align-items-start">
                         <i class="bi bi-battery-charging al-index-feature-icon"></i>
                         <div>
@@ -218,23 +246,31 @@
                         </div>
                     </div>
                 </div>
+                <div class="row pb-2 pb-md-3 pt-4">
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <a href="{% url 'showcase_index' %}" class="btn btn-primary">
+                            <i class="bi bi-stars"></i>
+                            {% translate 'Feature showcase' %}
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- BACKERS -->
-        <div class="al-index-backed-by al-py-lg">
+        <!-- COMMERCIAL SUPPORT -->
+        <div class="al-index-commercial-support al-py-lg">
             <div class="container">
                 <h2 class="pb-2 mb-5 text-center border-bottom">
-                    {% translate 'Backed by' %}
+                    {% translate 'Commercial Support' %}
                 </h2>
-                <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 g-5 al-backed-by-list">
-                    {% for backer in backers %}
-                        <a href="{{ backer.url }}">
-                            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 g-5 al-commercial-supporter-list">
+                    {% for vendor in commercial_support_vendors %}
+                        <a href="{{ vendor.url }}">
+                            <div class="col d-flex flex-fill align-items-center justify-content-center al-commercial-supporter-logo-container">
                                 <img loading="lazy"
-                                     src="{{ backer.logo.url }}"
-                                     alt="{{ backer.display_name }}"
-                                     class="al-backer-logo">
+                                     src="{{ vendor.logo.url }}"
+                                     alt="{{ vendor.display_name }}"
+                                     class="al-commercial-supporter-logo">
                             </div>
                         </a>
                     {% endfor %}
