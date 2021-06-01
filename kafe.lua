@@ -71,6 +71,7 @@ k.task('deploy', function()
     if k.on('website', deploy) then
         k.on('website', symlink_www)
         k.on('website', restart_web)
+        k.on('website', prune_docker)
         k.on('website', remove_old_public_releases)
         k.on('website', remove_old_app_releases)
     end
