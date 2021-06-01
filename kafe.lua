@@ -35,8 +35,7 @@ k.task('deploy', function()
         k.shell('mv release/{{version}}/public {{public}}/release/{{version}}')
         k.shell('/usr/local/bin/docker-compose up -d mariadb && sleep 5')
         k.shell('/usr/local/bin/docker-compose run web python3 ./manage.py migrate')
-        k.shell('/usr/local/bin/docker-compose up -d web')
-        k.shell('docker system prune -f')
+        k.shell('/usr/local/bin/docker-compose up --no-start --scale web=3 web')
     end
 
     local symlink_www = function()
@@ -49,6 +48,10 @@ k.task('deploy', function()
     local restart_web = function()
         k.within('{{deploy_to}}')
         k.shell('/usr/local/bin/docker-compose restart web')
+    end
+
+    local prune_docker = function()
+        k.shell('docker system prune -f')
     end
 
     local remove_old_public_releases = function()

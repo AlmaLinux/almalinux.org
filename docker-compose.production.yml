@@ -11,7 +11,7 @@ services:
       - /var/www/almalinux.org/current/public/static/:/app/static/
       - .env:/app/.env
     ports:
-      - '127.0.0.1:9000:9000' # uWSGI
+      - '127.0.0.1:9000-9002:9000' # uWSGI
 
   mariadb:
     image: mariadb:10
