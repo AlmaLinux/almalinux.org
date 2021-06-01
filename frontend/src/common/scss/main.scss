@@ -33,6 +33,7 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 65vh;
 }
 
+// Main navigation
 .al-primary-navbar {
   background: $al-c-black-pearl;
   font-family: $al-font-family-accent;
@@ -77,17 +78,20 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+// Section titles
 section h1.al-section-title {
   font-size: 2.6rem;
   font-weight: 300;
 }
 
+// Footer
 .al-primary-footer {
   background: #0D3654;
   padding-top: 122px;
   padding-bottom: 132px;
 }
 
+// Utilities
 .al-py-lg {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
@@ -107,4 +111,33 @@ a, .btn {
   transition-property: all;
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
   transition-duration: .12s;
+}
+
+// WYSIWYG
+.al-wysiwyg {
+  $al-wysiwyg-font-size: $al-font-base-size - 1px;
+  all: revert;
+  font-family: $al-font-family;
+  font-size: $al-wysiwyg-font-size;
+
+  h1, h2, h3, h4, h5, h6 {
+    all: revert;
+    font-family: $al-font-family-accent;
+  }
+
+  ul,
+  ol,
+  ul li,
+  ol li,
+  p,
+  pre,
+  blockquote {
+    all: revert;
+    font-family: $al-font-family;
+    font-size: $al-wysiwyg-font-size;
+  }
+
+  pre, code {
+    font-family: $al-font-family-mono;
+  }
 }
