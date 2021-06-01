@@ -1,0 +1,190 @@
+@import "../../common/scss/variables";
+
+:root {
+  --primary: #004bbc;
+  --primary-fg: #fefefe;
+  --accent: #0069da;
+  --body-fg: #444444;
+  --body-bg: #fefefe;
+  --body-quiet-color: #444444;
+  --body-loud-color: #111111;
+  --breadcrumbs-link-fg: #e0e0e0;
+  --breadcrumbs-bg: #264154;
+  --link-fg: #004bbc;
+  --link-hover-color: #004bbc;
+  --link-selected-fg: #004bbc;
+  --hairline-color: transparent;
+  --border-color: #dedede;
+  --message-success-bg: #68bc11;
+  --message-warning-bg: #e1ad00;
+  --message-error-bg: #e1282b;
+  --error-fg: #e1282b;
+  --darkened-bg: #efefef;
+  --selected-bg: rgba(40, 145, 255, 0.13);
+  --selected-row: rgba(40, 145, 255, 0.13);
+  --close-button-bg: #333333;
+  --close-button-hover-bg: #666666;
+  --header-bg: #082336;
+  --header-color: #fefefe;
+  --default-button-bg: #555;
+  --button-hover-bg: #0069da;
+}
+
+body {
+  font-family: $al-font-family;
+  font-size: $al-font-base-size;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $al-font-family-accent;
+  font-weight: normal;
+}
+
+div.breadcrumbs {
+  margin-bottom: 22px;
+  font-size: 15px;
+}
+
+h1#site-name a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1#site-name a img {
+  height: 32px;
+  vertical-align: unset;
+}
+
+#user-tools {
+  font-weight: normal;
+  text-transform: none;
+  font-size: 14px;
+}
+
+.submit-row {
+  text-align: left;
+}
+
+.button.default, input[type="submit"].default, .submit-row input.default {
+  float: left;
+}
+
+p.deletelink-box {
+  padding-left: 5px;
+}
+
+input, button, a.addlink, a.deletelink, select, textarea {
+  border-radius: 2px !important;
+}
+
+p.datetime br {
+  display: none;
+}
+
+p.datetime span.timezonewarning {
+  display: block;
+}
+
+div.checkbox-row label {
+  font-weight: bold;
+}
+
+.help, p.help, form p.help, div.help, form div.help, div.help li {
+  color: #9d5f00;
+  font-size: 13px;
+}
+
+.admin-section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.admin-section h2 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.admin-section .fixed-text {
+  max-width: 800px;
+}
+
+#main-footer {
+  padding: 15px;
+  font-size: 14px;
+}
+
+@media (min-width: 767px) {
+  #main-footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer#main-footer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+/** Editor customizations **/
+.colM .aligned .vLargeTextField.django-quill-widget-container {
+  width: unset;
+  display: block;
+  box-sizing: border-box;
+  float: none;
+  overflow: hidden;
+}
+
+form {
+  .ql-editor, .ql-snow .ql-editor {
+    min-height: 400px;
+    background: $al-body-background;
+    color: $al-font-color;
+    font-size: $al-font-base-size;
+    font-family: $al-font-family;
+    @import "../../common/scss/bootstrap";
+    @import "~bootstrap/scss/bootstrap-reboot";
+    @import "~bootstrap/scss/type";
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ul,
+    ul li,
+    a,
+    blockquote {
+      all: revert;
+      font-family: $al-font-family-accent;
+    }
+
+    a {
+      color: #c4e1ff !important;
+      text-decoration: underline;
+    }
+
+    a:hover,
+    a:active {
+      color: #9db4cc !important;
+    }
+
+    ul, ol {
+      padding-left: revert;
+      margin-left: revert;
+
+      li {
+        padding-left: revert !important;
+        margin-left: revert !important;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}

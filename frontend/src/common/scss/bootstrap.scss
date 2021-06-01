@@ -42,13 +42,3 @@ $dropdown-border-radius: 0;
 
 // Inputs
 $input-color: $al-font-color-light;
-
-@import "~bootstrap/scss/bootstrap";
-@import "~bootstrap-icons/font/bootstrap-icons.css";
-
-// Smooth out buttons and links
-a, .btn {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-  transition-duration: .12s;
-}

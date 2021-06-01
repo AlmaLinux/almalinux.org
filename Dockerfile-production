@@ -6,15 +6,6 @@ FROM almalinux/almalinux:8
 RUN groupadd -g 900 web && \
     useradd -d /app -M -r -s /bin/bash web -g 900 -u 900
 
-COPY tmp/deploy /app
-
-# We don't need any static files inside this image
-RUN rm -rf /app/public/*
-
-RUN chown web:web -Rf /app
-
-WORKDIR /app
-
 RUN dnf -y install \
     gcc \
     make \
@@ -23,14 +14,21 @@ RUN dnf -y install \
     python38-devel \
     mariadb-devel
 
-RUN su - web -c 'pip3 install -r requirements.txt --user'
+COPY tmp/deploy /app
+WORKDIR /app
 
 # Use our local env
 ENV PYTHONPATH=/app/.local/lib/python3.8/site-packages:$PYTHONPATH
 ENV PATH=/app/.local/bin:$PATH
 
-# Cleanup
-RUN dnf -y remove gcc \
+# Remove static images from build
+RUN rm -rf /app/public/* \
+    # Fix perms
+    && chown web:web -Rf /app \
+    # Install dependencies
+    && su - web -c 'pip3 install -r requirements.txt --user' \
+    # Cleanup dependencies
+    && dnf -y remove gcc \
     && dnf -y clean all \
     && rm -rf /var/cache/yum
 

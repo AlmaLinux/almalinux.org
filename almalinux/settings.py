@@ -48,8 +48,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
-    'commons',
     'django_quill',
+    'commons',
     'almalinux.apps.AlmaLinuxAdminConfig',
     'www',
 ]

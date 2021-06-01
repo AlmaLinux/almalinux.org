@@ -1,6 +1,8 @@
 @import "./variables";
 @import "./functions";
 @import "./bootstrap";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
 
 body, html {
   line-height: initial;
@@ -98,4 +100,11 @@ section h1.al-section-title {
 
 .al-text-shadow-dark {
   text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+// Smooth out buttons and links
+a, .btn {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .12s;
 }

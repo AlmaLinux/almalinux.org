@@ -31,6 +31,7 @@ Encore
 
     // Common CSS and JavaScript for the whole website
     .addEntry('common', __dirname + '/src/common/js/main.js')
+    .addEntry('admin', __dirname + '/src/admin/js/main.js')
     // Page modules
     .addEntry('page_index', __dirname + '/src/modules/page_index/main.js')
     .addEntry('page_page', __dirname + '/src/modules/page_page/main.js')
