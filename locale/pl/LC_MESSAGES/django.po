@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-01 21:14+0000\n"
-"PO-Revision-Date: 2021-06-03 19:34+0000\n"
-"Last-Translator: Henio Szewczyk <henryk.szewczyk09@gmail.com>\n"
+"PO-Revision-Date: 2021-06-09 12:34+0000\n"
+"Last-Translator: gnu-ewm <gnu.ewm@protonmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/pl/>\n"
 "Language: pl\n"
@@ -143,7 +143,7 @@ msgstr "AlmaLinux OS - Wkład"
 
 #: www/templates/contribute/index.html:7 www/templates/contribute/index.html:22
 msgid "Contribute to AlmaLinux OS development"
-msgstr ""
+msgstr "Wspomóż rozwój AlmaLinux OS"
 
 #: www/templates/contribute/index.html:26
 msgid ""
@@ -161,7 +161,7 @@ msgstr ""
 
 #: www/templates/contribute/index.html:43
 msgid "General chat"
-msgstr ""
+msgstr "Czat ogólny"
 
 #: www/templates/contribute/index.html:48
 msgid "Development"
@@ -169,19 +169,19 @@ msgstr ""
 
 #: www/templates/contribute/index.html:53
 msgid "Infrastructure"
-msgstr ""
+msgstr "Infrastruktura"
 
 #: www/templates/contribute/index.html:58
 msgid "Security"
-msgstr ""
+msgstr "Bezpieczeństwo"
 
 #: www/templates/contribute/index.html:63
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentacja"
 
 #: www/templates/contribute/index.html:68
 msgid "Marketing"
-msgstr ""
+msgstr "Marketing"
 
 #: www/templates/contribute/index.html:73
 msgid "Web presence"
@@ -189,15 +189,16 @@ msgstr ""
 
 #: www/templates/contribute/index.html:82
 msgid "Join AlmaLinux OS community chat"
-msgstr ""
+msgstr "Dołącz do czatu społeczności AlmaLinux OS"
 
 #: www/templates/index.html:6
 msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
-msgstr ""
+msgstr "AlmaLinux OS - Zawsze Wolny System Operacyjny Klasy Biznesowej"
 
 #: www/templates/index.html:33
 msgid "Free Linux OS for the community, by the community"
 msgstr ""
+"Wolny system operacyjny Linux tworzony przez społeczność, dla społeczności"
 
 #: www/templates/index.html:36
 msgid ""
@@ -225,10 +226,12 @@ msgid ""
 "Our GitHub organization contains source code and tools used to build "
 "AlmaLinux OS and related infrastructure."
 msgstr ""
+"Nasza organizacja GitHub zawiera kod źródłowy i narzędzia używane do budowy "
+"AlmaLinux OS i związanej z nim infrastruktury."
 
 #: www/templates/index.html:85
 msgid "Explore"
-msgstr ""
+msgstr "Odkrywaj"
 
 #: www/templates/index.html:97
 msgid ""
@@ -238,11 +241,11 @@ msgstr ""
 
 #: www/templates/index.html:105
 msgid "Join"
-msgstr ""
+msgstr "Dołącz"
 
 #: www/templates/index.html:114
 msgid "Community chat"
-msgstr ""
+msgstr "Czat społeczności"
 
 #: www/templates/index.html:117
 msgid ""
@@ -252,17 +255,19 @@ msgstr ""
 
 #: www/templates/index.html:125
 msgid "Engage"
-msgstr ""
+msgstr "Zaangażuj się"
 
 #: www/templates/index.html:133
 msgid "Community forums"
-msgstr ""
+msgstr "Forum społeczności"
 
 #: www/templates/index.html:135
 msgid ""
 "Ask questions, get answers and contribute community support to others in "
 "AlmaLinux OS community and developers alike."
 msgstr ""
+"Zadawaj pytania, otrzymuj odpowiedzi i udzielaj wsparcia innym członkom "
+"społeczności oraz deweloperom AlmaLinux OS."
 
 #: www/templates/index.html:143
 msgid "Discover"
@@ -270,7 +275,7 @@ msgstr ""
 
 #: www/templates/index.html:157
 msgid "About AlmaLinux OS"
-msgstr ""
+msgstr "O AlmaLinux OS"
 
 #: www/templates/index.html:159
 msgid ""
