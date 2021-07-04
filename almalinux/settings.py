@@ -186,3 +186,31 @@ MEDIA_URL = 'media/'
 # Custom settings
 HUBSPOT_APIKEY = DOTENV['HUBSPOT_APIKEY']
 HUBSPOT_SUB_ID = DOTENV['HUBSPOT_SUB_ID']
+
+# Quill editor
+QUILL_CONFIGS = {
+    'default': {
+        'theme': 'snow',
+        'modules': {
+            'syntax': True,
+            'toolbar': [
+                [
+                    {'font': []},
+                    {'header': []},
+                    {'align': []},
+                    'bold',
+                    'italic',
+                    'underline',
+                    'strike',
+                    'blockquote',
+                    {'color': []},
+                    {'background': []},
+                    {'list': 'ordered'},
+                    {'list': 'bullet'},
+                ],
+                ['code-block', 'link', 'image'],
+                ['clean'],
+            ],
+        },
+    }
+}
