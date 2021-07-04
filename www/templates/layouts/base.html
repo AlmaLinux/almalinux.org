@@ -52,5 +52,17 @@
 <script src="{% url 'javascript-catalog' %}" defer></script>
 {% encore_entrypoint_js 'common' %}
 {% block body_end %}{% endblock %}
+
+{% if not dnt_is_enabled %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1C1KF63NYM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1C1KF63NYM');
+    </script>
+{% endif %}
+
 </body>
 </html>
