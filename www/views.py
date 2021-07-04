@@ -159,21 +159,22 @@ def blog_post(request: HttpRequest, slug: str = None) -> HttpResponse:
     })
 
 
-@require_safe
-@never_cache
-def showcase_index(request: HttpRequest) -> HttpResponse:
-    lang_code = request.LANGUAGE_CODE  # type: ignore
-
-    if lang_code != 'en':
-        # If the features does not exist in this language, use EN
-        if 0 == ShowcaseFeature.objects.filter(lang=lang_code).count():
-            lang_code = 'en'
-
-    showcase_features = ShowcaseFeature.objects.filter(lang=lang_code).order_by('-priority').all()
-
-    return render(request, 'showcase/index.html', {
-        'showcase_features': showcase_features,
-    })
+# TODO
+# @require_safe
+# @never_cache
+# def showcase_index(request: HttpRequest) -> HttpResponse:
+#     lang_code = request.LANGUAGE_CODE  # type: ignore
+#
+#     if lang_code != 'en':
+#         # If the features does not exist in this language, use EN
+#         if 0 == ShowcaseFeature.objects.filter(lang=lang_code).count():
+#             lang_code = 'en'
+#
+#     showcase_features = ShowcaseFeature.objects.filter(lang=lang_code).order_by('-priority').all()
+#
+#     return render(request, 'showcase/index.html', {
+#         'showcase_features': showcase_features,
+#     })
 
 
 @require_safe

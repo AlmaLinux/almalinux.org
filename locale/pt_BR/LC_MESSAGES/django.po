@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-01 21:14+0000\n"
+"POT-Creation-Date: 2021-07-04 19:12+0000\n"
 "PO-Revision-Date: 2021-06-14 05:32+0000\n"
 "Last-Translator: Deleted User <noreply+32631@weblate.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
@@ -226,7 +226,8 @@ msgstr "Migre"
 #: www/templates/index.html:60
 #, python-format
 msgid "Founded by the team behind the <a href=\"%(link)s\">CloudLinux OS</a>."
-msgstr "Fundado pela equipe por trás do <a href=\"%(link)s\">CloudLinux OS</a>."
+msgstr ""
+"Fundado pela equipe por trás do <a href=\"%(link)s\">CloudLinux OS</a>."
 
 #: www/templates/index.html:77
 msgid ""
@@ -365,8 +366,8 @@ msgid ""
 msgstr ""
 "Mudar de distribuições geralmente é custoso, tanto em tempo quanto em "
 "dinheiro, mas esse não é o caso ao migrar do CentOS e outros forks do "
-"RHEL&reg; para a AlmaLinux OS. Migrar é fácil - <a href=\"%(migrate_link)s\""
-">saiba como.</a>"
+"RHEL&reg; para a AlmaLinux OS. Migrar é fácil - <a href=\"%(migrate_link)s"
+"\">saiba como.</a>"
 
 #: www/templates/index.html:253 www/templates/showcase/index.html:7
 msgid "Feature showcase"
