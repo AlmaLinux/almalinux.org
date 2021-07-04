@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-01 21:14+0000\n"
-"PO-Revision-Date: 2021-05-21 20:33+0000\n"
+"PO-Revision-Date: 2021-07-04 19:07+0000\n"
 "Last-Translator: Matīss Treinis <matiss@hub256.com>\n"
 "Language-Team: Latvian <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/lv/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"X-Generator: Weblate 4.8-dev\n"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
@@ -134,14 +134,12 @@ msgid "Next"
 msgstr "Uz priekšu"
 
 #: www/templates/contribute/index.html:6
-#, fuzzy
-#| msgid "AlmaLinux OS in the Press"
 msgid "AlmaLinux OS - Contribute"
-msgstr "AlmaLinux OS presē"
+msgstr "AlmaLinux OS - Veicināt"
 
 #: www/templates/contribute/index.html:7 www/templates/contribute/index.html:22
 msgid "Contribute to AlmaLinux OS development"
-msgstr ""
+msgstr "Ieguldījums AlmaLinux OS attīstībā"
 
 #: www/templates/contribute/index.html:26
 msgid ""
@@ -149,6 +147,10 @@ msgid ""
 "community chat. There are many ways to contribute to AlmaLinux OS - testing, "
 "quality assurance, documentation, and more."
 msgstr ""
+"AlmaLinux OS un infrastruktūras attīstība tiek organizēta izmantojot mūsu "
+"kopienas čatu. Ir daudz veidu, kā sniegt savu ieguldījumu AlmaLinux OS "
+"istrādē - testēšana, kvalitātes nodrošināšana, dokumentācija un daudz kas "
+"cits."
 
 #: www/templates/contribute/index.html:33
 #, python-format
@@ -156,38 +158,40 @@ msgid ""
 "<a href=\"%(intro_link)s\">Introduce yourself</a> or join one of the topical "
 "channels below to find out more!"
 msgstr ""
+"<a href=\"%(intro_link)s\">Iepazīstini ar sevi</a> vai pievienojieties kādam "
+"no tālāk minētajiem tematiskajiem kanāliem, lai uzzinātu vairāk!"
 
 #: www/templates/contribute/index.html:43
 msgid "General chat"
-msgstr ""
+msgstr "Kopējais čats"
 
 #: www/templates/contribute/index.html:48
 msgid "Development"
-msgstr ""
+msgstr "Izstrāde"
 
 #: www/templates/contribute/index.html:53
 msgid "Infrastructure"
-msgstr ""
+msgstr "Infrastruktūra"
 
 #: www/templates/contribute/index.html:58
 msgid "Security"
-msgstr ""
+msgstr "Drošība"
 
 #: www/templates/contribute/index.html:63
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentācija"
 
 #: www/templates/contribute/index.html:68
 msgid "Marketing"
-msgstr ""
+msgstr "Mārketings"
 
 #: www/templates/contribute/index.html:73
 msgid "Web presence"
-msgstr ""
+msgstr "Tīmekļa klātbūtne"
 
 #: www/templates/contribute/index.html:82
 msgid "Join AlmaLinux OS community chat"
-msgstr ""
+msgstr "Pievienoties AlmaLinux OS kopienas čatam"
 
 #: www/templates/index.html:6
 msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
@@ -215,7 +219,7 @@ msgstr "Piedalīties projektā"
 
 #: www/templates/index.html:56
 msgid "Migrate"
-msgstr ""
+msgstr "Migrēt"
 
 #: www/templates/index.html:60
 #, python-format
@@ -365,7 +369,7 @@ msgstr ""
 
 #: www/templates/index.html:253 www/templates/showcase/index.html:7
 msgid "Feature showcase"
-msgstr ""
+msgstr "Funkciju pārskats"
 
 #: www/templates/index.html:264
 msgid "Commercial Support"
@@ -413,10 +417,8 @@ msgid "Published"
 msgstr "Publicēts"
 
 #: www/templates/showcase/index.html:6
-#, fuzzy
-#| msgid "AlmaLinux OS in the Press"
 msgid "AlmaLinux OS feature showcase"
-msgstr "AlmaLinux OS presē"
+msgstr "AlmaLinux OS funkciju pārskats"
 
 #: www/templates/subscribe_post.html:6
 msgid "Mailing list subscription - AlmaLinux OS"
