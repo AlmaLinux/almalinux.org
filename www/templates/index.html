@@ -237,8 +237,7 @@
                         <div>
                             <h4 class="fw-bold mb-0 pb-2">{% translate 'Effortless to switch to' %}</h4>
                             <p>
-                                {% url 'page' 'migrate' as migrate_link %}
-                                {% blocktranslate trimmed with migrate_link=migrate_link %}
+                                {% blocktranslate trimmed with migrate_link='https://github.com/AlmaLinux/almalinux-deploy' %}
                                     Switching distributions is usually costly and time-consuming, but that’s not the
                                     case when switching from CentOS and other RHEL&reg; forks to AlmaLinux OS.
                                     Switching is easy - <a href="{{ migrate_link }}">read how.</a>
