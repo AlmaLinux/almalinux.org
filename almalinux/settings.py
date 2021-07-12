@@ -36,7 +36,6 @@ ALLOWED_HOSTS = [
     'almalinux.org',
     'www.almalinux.org',
     'staging.almalinux.org',
-    'pre.almalinux.org',
 ]
 
 # Application definition
