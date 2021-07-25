@@ -81,6 +81,10 @@
 
     .al-article-content {
       color: $al-font-color;
+
+      img {
+        max-width: 100%;
+      }
     }
   }
 }
