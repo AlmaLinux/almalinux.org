@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-04 19:12+0000\n"
+"POT-Creation-Date: 2021-07-25 14:16+0000\n"
 "PO-Revision-Date: 2021-07-13 17:32+0000\n"
 "Last-Translator: WaldiS <sto@tutanota.de>\n"
-"Language-Team: Polish <https://hosted.weblate.org/projects/almalinux/"
-"website-backend/pl/>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/almalinux/website-"
+"backend/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -81,13 +81,27 @@ msgstr "Czat"
 msgid "Legal"
 msgstr "Legalne"
 
-#: www/templates/_partial/footer.html:33 www/templates/index.html:351
+#: www/templates/_partial/footer.html:33
+msgid "Legal Notice"
+msgstr ""
+
+#: www/templates/_partial/footer.html:34 www/templates/index.html:352
 msgid "Privacy Policy"
 msgstr "Polityka Prywatności"
 
-#: www/templates/_partial/footer.html:34
+#: www/templates/_partial/footer.html:35
 msgid "Terms of Service"
 msgstr "Warunki Usługi"
+
+#: www/templates/_partial/footer.html:38
+#, fuzzy
+#| msgid "Privacy Policy"
+msgid "Licensing Policy"
+msgstr "Polityka Prywatności"
+
+#: www/templates/_partial/footer.html:43
+msgid " Trademark Usage Policy"
+msgstr ""
 
 #: www/templates/_partial/navbar.html:7
 msgid "AlmaLinux OS logo"
@@ -117,7 +131,7 @@ msgstr "Sklep"
 msgid "Language"
 msgstr "Język"
 
-#: www/templates/_partial/navbar.html:87 www/templates/index.html:51
+#: www/templates/_partial/navbar.html:87 www/templates/index.html:52
 msgid "Download"
 msgstr "Pobierz"
 
@@ -125,15 +139,15 @@ msgstr "Pobierz"
 msgid "AlmaLinux OS Blog"
 msgstr "Blog AlmaLinux OS"
 
-#: www/templates/blog/index.html:40
+#: www/templates/blog/index.html:48
 msgid "Continue reading"
 msgstr "Kontynuuj czytanie"
 
-#: www/templates/blog/index.html:53 www/templates/blog/index.html:59
+#: www/templates/blog/index.html:61 www/templates/blog/index.html:67
 msgid "Previous"
 msgstr "Poprzedni"
 
-#: www/templates/blog/index.html:71 www/templates/blog/index.html:77
+#: www/templates/blog/index.html:79 www/templates/blog/index.html:85
 msgid "Next"
 msgstr "Następny"
 
@@ -200,12 +214,12 @@ msgstr "Dołącz do czatu społeczności AlmaLinux OS"
 msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
 msgstr "AlmaLinux OS - Zawsze Wolny System Operacyjny Klasy Biznesowej"
 
-#: www/templates/index.html:33
+#: www/templates/index.html:34
 msgid "Free Linux OS for the community, by the community"
 msgstr ""
 "Wolny system operacyjny Linux tworzony przez społeczność, dla społeczności"
 
-#: www/templates/index.html:36
+#: www/templates/index.html:37
 msgid ""
 "An Open Source, community-governed and forever-free enterprise Linux "
 "distribution, focused on long-term stability, providing a robust production-"
@@ -217,22 +231,22 @@ msgstr ""
 "zapewniająca solidną platformę klasy produkcyjnej. AlmaLinux OS jest "
 "kompatybilny binarnie 1:1 z RHEL&reg; i Pre-Stream CentOS."
 
-#: www/templates/index.html:46
+#: www/templates/index.html:47
 msgid "Contribute"
 msgstr "Weź udział w projekcie"
 
-#: www/templates/index.html:56
+#: www/templates/index.html:57
 msgid "Migrate"
 msgstr "Migracja"
 
-#: www/templates/index.html:60
+#: www/templates/index.html:61
 #, python-format
 msgid "Founded by the team behind the <a href=\"%(link)s\">CloudLinux OS</a>."
 msgstr ""
 "Założony przez zespół stojący za systemem <a href=\"%(link)s\">CloudLinux "
 "OS</a>."
 
-#: www/templates/index.html:77
+#: www/templates/index.html:78
 msgid ""
 "Our GitHub organization contains source code and tools used to build "
 "AlmaLinux OS and related infrastructure."
@@ -240,11 +254,11 @@ msgstr ""
 "Nasza organizacja GitHub zawiera kod źródłowy i narzędzia używane do budowy "
 "AlmaLinux OS i związanej z nim infrastruktury."
 
-#: www/templates/index.html:85
+#: www/templates/index.html:86
 msgid "Explore"
 msgstr "Odkrywaj"
 
-#: www/templates/index.html:97
+#: www/templates/index.html:98
 msgid ""
 "Join our vibrant Reddit community, interact with other AlmaLinux OS users, "
 "receive updates, find and provide help."
@@ -253,15 +267,15 @@ msgstr ""
 "użytkownikami Systemu Operacyjnego AlmaLinux, otrzymuj aktualizacje, znajdź "
 "i zapewnij pomoc."
 
-#: www/templates/index.html:105
+#: www/templates/index.html:106
 msgid "Join"
 msgstr "Dołącz"
 
-#: www/templates/index.html:114
+#: www/templates/index.html:115
 msgid "Community chat"
 msgstr "Czat społeczności"
 
-#: www/templates/index.html:117
+#: www/templates/index.html:118
 msgid ""
 "Join a real time discussion with other AlmaLinux OS community members, "
 "governance team and AlmaLinux OS developers."
@@ -269,15 +283,15 @@ msgstr ""
 "Dołącz do dyskusji w czasie rzeczywistym z innymi członkami społeczności "
 "AlmaLinux OS, zespołem zarządzania i programistami AlmaLinux OS."
 
-#: www/templates/index.html:125
+#: www/templates/index.html:126
 msgid "Engage"
 msgstr "Zaangażuj się"
 
-#: www/templates/index.html:133
+#: www/templates/index.html:134
 msgid "Community forums"
 msgstr "Forum społeczności"
 
-#: www/templates/index.html:135
+#: www/templates/index.html:136
 msgid ""
 "Ask questions, get answers and contribute community support to others in "
 "AlmaLinux OS community and developers alike."
@@ -285,15 +299,15 @@ msgstr ""
 "Zadawaj pytania, otrzymuj odpowiedzi i udzielaj wsparcia innym członkom "
 "społeczności oraz deweloperom AlmaLinux OS."
 
-#: www/templates/index.html:143
+#: www/templates/index.html:144
 msgid "Discover"
 msgstr "Odkryj"
 
-#: www/templates/index.html:157
+#: www/templates/index.html:158
 msgid "About AlmaLinux OS"
 msgstr "O AlmaLinux OS"
 
-#: www/templates/index.html:159
+#: www/templates/index.html:160
 msgid ""
 "AlmaLinux OS is an open-source, community-driven Linux operating system that "
 "fills the gap left by the discontinuation of the CentOS Linux stable "
@@ -305,7 +319,7 @@ msgstr ""
 "Linux. AlmaLinux OS jest 1:1 kompatybilnym binarnie forkiem RHEL&reg; "
 "prowadzonym i zbudowanym przez społeczność."
 
-#: www/templates/index.html:166
+#: www/templates/index.html:167
 msgid ""
 "As a standalone, completely free OS, AlmaLinux OS enjoys $1M in annual "
 "sponsorship from CloudLinux Inc and support from other sponsors. Ongoing "
@@ -316,7 +330,7 @@ msgstr ""
 "wsparciem innych sponsorów. Bieżące wysiłki rozwojowe są regulowane przez "
 "członków społeczności."
 
-#: www/templates/index.html:173
+#: www/templates/index.html:174
 msgid ""
 "The AlmaLinux OS Foundation is a 501(c)(6) non-profit created for the "
 "benefit of the AlmaLinux OS community."
@@ -324,15 +338,15 @@ msgstr ""
 "AlmaLinux OS Foundation jest organizacją non-profit 501(c)(6) stworzoną na "
 "rzecz społeczności AlmaLinux OS."
 
-#: www/templates/index.html:187
+#: www/templates/index.html:188
 msgid "Backed by"
 msgstr "Wspierany przez"
 
-#: www/templates/index.html:211
+#: www/templates/index.html:212
 msgid "Production-ready"
 msgstr "Gotowy do produkcji"
 
-#: www/templates/index.html:213
+#: www/templates/index.html:214
 msgid ""
 "AlmaLinux OS is an enterprise-grade server OS and a stable Linux "
 "distribution with regular releases that come with a long support windows. "
@@ -343,11 +357,11 @@ msgstr ""
 "Możesz polegać na systemie AlmaLinux OS, który uruchomi każde krytyczne "
 "obciążenie."
 
-#: www/templates/index.html:224
+#: www/templates/index.html:225
 msgid "Fully supported, always free"
 msgstr "W pełni wspierany, zawsze za darmo"
 
-#: www/templates/index.html:226
+#: www/templates/index.html:227
 msgid ""
 "AlmaLinux OS Foundation members, sponsors and partners back the AlmaLinux OS "
 "with investments and long support commitments to ensure the distribution is "
@@ -357,7 +371,7 @@ msgstr ""
 "AlmaLinux OS inwestycjami i długimi zobowiązaniami wsparcia, aby zapewnić, "
 "że dystrybucja jest wolna od ograniczeń, opłat i prowizji."
 
-#: www/templates/index.html:237
+#: www/templates/index.html:238
 msgid "Effortless to switch to"
 msgstr "Łatwe przełączanie na"
 
@@ -372,23 +386,19 @@ msgstr ""
 "w przypadku zmiany z CentOS i innych forków RHEL&reg; na AlmaLinux OS. "
 "Zmiana jest łatwa - <a href=\"%(migrate_link)s\">przeczytaj jak.</a>"
 
-#: www/templates/index.html:253 www/templates/showcase/index.html:7
-msgid "Feature showcase"
-msgstr "Prezentacja funkcji"
-
-#: www/templates/index.html:264
+#: www/templates/index.html:265
 msgid "Commercial Support"
 msgstr "Wsparcie komercyjne"
 
-#: www/templates/index.html:285
+#: www/templates/index.html:286
 msgid "Answers to Key Questions"
 msgstr "Odpowiedzi na kluczowe pytania"
 
-#: www/templates/index.html:319
+#: www/templates/index.html:320
 msgid "Stay updated!"
 msgstr "Bądź na bieżąco!"
 
-#: www/templates/index.html:322
+#: www/templates/index.html:323
 msgid ""
 "Subscribe to our newsletter and never miss out on the latest in AlmaLinux OS "
 "development!"
@@ -396,15 +406,15 @@ msgstr ""
 "Zapisz się do naszego newslettera i nigdy nie przegap najnowszych informacji "
 "na temat rozwoju systemu operacyjnego AlmaLinux!"
 
-#: www/templates/index.html:336
+#: www/templates/index.html:337
 msgid "Your email"
 msgstr "Twój adres e-mail"
 
-#: www/templates/index.html:340
+#: www/templates/index.html:341
 msgid "Subscribe"
 msgstr "Subskrybuj"
 
-#: www/templates/index.html:347
+#: www/templates/index.html:348
 msgid ""
 "By filling this form you agree to be contacted by AlmaLinux OS Foundation "
 "regarding your request. You can unsubscribe at any time."
@@ -413,7 +423,7 @@ msgstr ""
 "skontaktowała się z Tobą w sprawie Twojego zapytania. Możesz zrezygnować z "
 "subskrypcji w dowolnym momencie."
 
-#: www/templates/index.html:362
+#: www/templates/index.html:363
 msgid "AlmaLinux OS in the Press"
 msgstr "AlmaLinux OS w prasie"
 
@@ -424,6 +434,10 @@ msgstr "Opublikowany"
 #: www/templates/showcase/index.html:6
 msgid "AlmaLinux OS feature showcase"
 msgstr "Prezentacja funkcji AlmaLinux OS"
+
+#: www/templates/showcase/index.html:7
+msgid "Feature showcase"
+msgstr "Prezentacja funkcji"
 
 #: www/templates/subscribe_post.html:6
 msgid "Mailing list subscription - AlmaLinux OS"

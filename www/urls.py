@@ -1,6 +1,7 @@
 from django.urls import path
 
 from . import views
+from .feeds import BlogPostFeed
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -11,4 +12,5 @@ urlpatterns = [
     path('blog/<slug:slug>/', views.blog_post, name='blog_post'),
     # path('showcase/', views.showcase_index, name='showcase_index'),
     path('contribute/', views.contribute_index, name='contribute_index'),
+    path('feed/', BlogPostFeed(), name='feed'),
 ]

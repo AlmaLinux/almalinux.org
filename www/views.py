@@ -150,7 +150,7 @@ def blog_post(request: HttpRequest, slug: str = None) -> HttpResponse:
             lang_code = 'en'
 
     try:
-        post = BlogPost.objects.filter(date__lte=now, published=True, lang=lang_code, slug=slug).get()
+        post = BlogPost.objects.filter(date__lte=now, published=True, lang=lang_code, slug=slug).first()
     except BlogPost.DoesNotExist:
         raise Http404
 

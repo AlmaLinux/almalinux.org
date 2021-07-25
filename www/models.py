@@ -176,6 +176,13 @@ class BlogPost(models.Model):
         verbose_name='Content language'
     )
 
+    featured_image: models.ImageField = models.ImageField(
+        null=False,
+        upload_to=segmented_upload_to,
+        help_text='Feature image - any web-safe format',
+        blank=True
+    )
+
     title: models.CharField = models.CharField(
         max_length=255
     )

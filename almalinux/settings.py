@@ -154,7 +154,7 @@ LANGUAGES = (
     ('it', 'Italiano'),
     # ('ja', '日本語'),  # Japanese
     ('lv', 'Latviešu'),
-    # ('pl', 'Polski'),
+    ('pl', 'Polski'),
     # ('pt', 'Português'),  # Portuguese (PT)
     ('pt-br', 'Português Brasileiro'),  # Portuguese (BR)
     ('ru', 'Русский'),

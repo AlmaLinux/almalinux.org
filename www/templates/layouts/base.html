@@ -18,6 +18,9 @@
     <meta name="description"
           content="{% block description %}{% translate 'An open-source RHEL fork built by the team at CloudLinux, inspired by the community.' %}{% endblock %}">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="alternate" type="application/rss+xml"
+          title="RSS Feed for AlmaLinux OS"
+          href="{% url 'feed' %}" />
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'fav/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'fav/favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'fav/favicon-16x16.png' %}">

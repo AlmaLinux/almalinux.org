@@ -4,12 +4,8 @@
 
 .al-page-blog-index {
   .al-page-blog-posts {
-    article {
-      @include media-breakpoint-up(md) {
-        padding-left: 28px;
-        border-left: 2px solid darken($al-body-background, 2%);
-      }
 
+    article {
       a.al-article-title-link {
         text-decoration: none;
 
@@ -87,4 +83,9 @@
       color: $al-font-color;
     }
   }
+}
+
+.al-page-blog-index, .al-page-blog-post {
+  max-width: $al-page-readable-max-width;
+  margin: auto;
 }

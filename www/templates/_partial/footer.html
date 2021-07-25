@@ -30,8 +30,19 @@
             <div class="col-6 col-md">
                 <h5>{% translate 'Legal' %}</h5>
                 <ul class="list-unstyled">
+                    <li><a href="{% url 'page' 'legal-notice' %}">{% translate 'Legal Notice' %}</a></li>
                     <li><a href="{% url 'page' 'privacy-policy' %}">{% translate 'Privacy Policy' %}</a></li>
                     <li><a href="{% url 'page' 'terms-of-service' %}">{% translate 'Terms of Service' %}</a></li>
+                    <li>
+                        <a href="{% url 'page' 'the-almalinux-os-licensing-policy' %}">
+                            {% translate 'Licensing Policy' %}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'page' 'the-almalinux-os-trademark-usage-policy' %}">
+                            {% translate ' Trademark Usage Policy' %}
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
