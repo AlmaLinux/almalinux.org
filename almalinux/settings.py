@@ -36,7 +36,6 @@ ALLOWED_HOSTS = [
     'almalinux.org',
     'www.almalinux.org',
     'staging.almalinux.org',
-    'pre.almalinux.org',
 ]
 
 # Application definition
@@ -93,6 +92,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'commons.context.dnt.is_dnt_enabled'
             ],
         },
     },
@@ -185,3 +185,31 @@ MEDIA_URL = 'media/'
 # Custom settings
 HUBSPOT_APIKEY = DOTENV['HUBSPOT_APIKEY']
 HUBSPOT_SUB_ID = DOTENV['HUBSPOT_SUB_ID']
+
+# Quill editor
+QUILL_CONFIGS = {
+    'default': {
+        'theme': 'snow',
+        'modules': {
+            'syntax': True,
+            'toolbar': [
+                [
+                    {'font': []},
+                    {'header': []},
+                    {'align': []},
+                    'bold',
+                    'italic',
+                    'underline',
+                    'strike',
+                    'blockquote',
+                    {'color': []},
+                    {'background': []},
+                    {'list': 'ordered'},
+                    {'list': 'bullet'},
+                ],
+                ['code-block', 'link', 'image'],
+                ['clean'],
+            ],
+        },
+    }
+}
