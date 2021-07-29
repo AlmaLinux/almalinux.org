@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-25 14:16+0000\n"
-"PO-Revision-Date: 2021-06-03 19:34+0000\n"
-"Last-Translator: Hanife <hdiktas@cloudlinux.com>\n"
+"PO-Revision-Date: 2021-07-29 08:43+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/almalinux/"
 "website-frontend/tr/>\n"
 "Language: tr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"X-Generator: Weblate 4.7.2-dev\n"
 
 #: frontend/src/common/js/main.js:7
 msgid "Hello World"
@@ -25,37 +25,37 @@ msgstr "Merhaba Dünya"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:105
 msgid "is not a finite number"
-msgstr ""
+msgstr "sonlu bir sayı değil"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:172
 #: tmp/node_modules/webidl-conversions/lib/index.js:188
 msgid "is not a finite floating-point value"
-msgstr ""
+msgstr "sonlu bir ondalık sayı değeri değil"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:198
 msgid "is outside the range of a single-precision floating-point value"
-msgstr ""
+msgstr "tek hassasiyetli ondalık sayı değer aralığının dışında"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:228
 msgid "is a symbol, which cannot be converted to a string"
-msgstr ""
+msgstr "dizgeye dönüştürülemeyen bir sembol"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:239
 msgid "is not a valid ByteString"
-msgstr ""
+msgstr "geçerli bir ByteString değil"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:276
 msgid "is not an object"
-msgstr ""
+msgstr "bir nesne değil"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:288
 msgid "is not a function"
-msgstr ""
+msgstr "bir işlev değil"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:314
 msgid "is not a view on an ArrayBuffer object"
-msgstr ""
+msgstr "ArrayBuffer nesnesindeki bir görünüm değil"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:322
 msgid "is not an ArrayBuffer object or a view on one"
-msgstr ""
+msgstr "bir ArrayBuffer nesnesi veya onun üzerinde bir görünüm değil"
