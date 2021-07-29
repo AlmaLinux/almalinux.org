@@ -8,19 +8,19 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-25 14:16+0000\n"
-"PO-Revision-Date: 2021-05-31 17:33+0000\n"
-"Last-Translator: Matīss Treinis <matiss@hub256.com>\n"
+"PO-Revision-Date: 2021-07-29 08:43+0000\n"
+"Last-Translator: gz83 <uioptt24@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
-"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
-"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
-"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
-"X-Generator: Weblate 4.7-dev\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 "
+"? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > "
+"14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % "
+"100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"X-Generator: Weblate 4.7.2-dev\n"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
@@ -83,7 +83,7 @@ msgstr "Угоди"
 
 #: www/templates/_partial/footer.html:33
 msgid "Legal Notice"
-msgstr ""
+msgstr "Юридичне повідомлення"
 
 #: www/templates/_partial/footer.html:34 www/templates/index.html:352
 msgid "Privacy Policy"
@@ -94,14 +94,12 @@ msgid "Terms of Service"
 msgstr "Умови надання послуг"
 
 #: www/templates/_partial/footer.html:38
-#, fuzzy
-#| msgid "Privacy Policy"
 msgid "Licensing Policy"
-msgstr "Політика конфіденційності"
+msgstr "Політика ліцензування"
 
 #: www/templates/_partial/footer.html:43
 msgid " Trademark Usage Policy"
-msgstr ""
+msgstr " Політика використання торговельних марок"
 
 #: www/templates/_partial/navbar.html:7
 msgid "AlmaLinux OS logo"
@@ -152,14 +150,12 @@ msgid "Next"
 msgstr "Далі"
 
 #: www/templates/contribute/index.html:6
-#, fuzzy
-#| msgid "AlmaLinux OS in the Press"
 msgid "AlmaLinux OS - Contribute"
-msgstr "ОС AlmaLinux - Сприяйте"
+msgstr "ОС AlmaLinux - внесіть вклад"
 
 #: www/templates/contribute/index.html:7 www/templates/contribute/index.html:22
 msgid "Contribute to AlmaLinux OS development"
-msgstr ""
+msgstr "Сприяйте розвитку ОС AlmaLinux"
 
 #: www/templates/contribute/index.html:26
 msgid ""
@@ -167,6 +163,9 @@ msgid ""
 "community chat. There are many ways to contribute to AlmaLinux OS - testing, "
 "quality assurance, documentation, and more."
 msgstr ""
+"Розробка ОС та інфраструктури AlmaLinux організована за допомогою нашого "
+"спільноти. Існує багато способів зробити внесок в ОС AlmaLinux - тестування, "
+"забезпечення якості, документація тощо."
 
 #: www/templates/contribute/index.html:33
 #, python-format
@@ -174,38 +173,40 @@ msgid ""
 "<a href=\"%(intro_link)s\">Introduce yourself</a> or join one of the topical "
 "channels below to find out more!"
 msgstr ""
+"<a href=\"%(intro_link)s\"> Представтесь </a> або приєднайтесь до одного з "
+"актуальних каналів нижче, щоб дізнатися більше!"
 
 #: www/templates/contribute/index.html:43
 msgid "General chat"
-msgstr ""
+msgstr "Загальний чат"
 
 #: www/templates/contribute/index.html:48
 msgid "Development"
-msgstr ""
+msgstr "Розвиток"
 
 #: www/templates/contribute/index.html:53
 msgid "Infrastructure"
-msgstr ""
+msgstr "Інфраструктура"
 
 #: www/templates/contribute/index.html:58
 msgid "Security"
-msgstr ""
+msgstr "Безпека"
 
 #: www/templates/contribute/index.html:63
 msgid "Documentation"
-msgstr ""
+msgstr "Документація"
 
 #: www/templates/contribute/index.html:68
 msgid "Marketing"
-msgstr ""
+msgstr "Маркетинг"
 
 #: www/templates/contribute/index.html:73
 msgid "Web presence"
-msgstr ""
+msgstr "Присутність у мережі"
 
 #: www/templates/contribute/index.html:82
 msgid "Join AlmaLinux OS community chat"
-msgstr ""
+msgstr "Приєднуйтесь до спільноти спільноти ОС AlmaLinux"
 
 #: www/templates/index.html:6
 msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
@@ -233,7 +234,7 @@ msgstr "Зробити внесок"
 
 #: www/templates/index.html:57
 msgid "Migrate"
-msgstr ""
+msgstr "Мігрувати"
 
 #: www/templates/index.html:61
 #, python-format
@@ -425,14 +426,12 @@ msgid "Published"
 msgstr "Опубліковано"
 
 #: www/templates/showcase/index.html:6
-#, fuzzy
-#| msgid "AlmaLinux OS in the Press"
 msgid "AlmaLinux OS feature showcase"
-msgstr "ОС AlmaLinux у пресі"
+msgstr "Вітрина функцій ОС AlmaLinux"
 
 #: www/templates/showcase/index.html:7
 msgid "Feature showcase"
-msgstr ""
+msgstr "Вітрина функцій"
 
 #: www/templates/subscribe_post.html:6
 msgid "Mailing list subscription - AlmaLinux OS"

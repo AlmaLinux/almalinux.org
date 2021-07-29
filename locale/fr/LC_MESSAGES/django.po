@@ -8,20 +8,20 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-25 14:16+0000\n"
-"PO-Revision-Date: 2021-07-04 19:07+0000\n"
-"Last-Translator: Matīss Treinis <matiss@hub256.com>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/almalinux/website-"
-"backend/fr/>\n"
+"PO-Revision-Date: 2021-07-29 08:43+0000\n"
+"Last-Translator: Natacha Rault <n.rault@me.com>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/almalinux/"
+"website-backend/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.8-dev\n"
+"X-Generator: Weblate 4.7.2-dev\n"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
-msgstr "404 Page Non Trouvée - AlmaLinux OS"
+msgstr "404 Page non trouvée - AlmaLinux OS"
 
 #: www/templates/404.html:6 www/templates/blog/index.html:9
 #: www/templates/index.html:8 www/templates/layouts/base.html:19
@@ -80,7 +80,7 @@ msgstr "Mentions légales"
 
 #: www/templates/_partial/footer.html:33
 msgid "Legal Notice"
-msgstr ""
+msgstr "Mentions légales"
 
 #: www/templates/_partial/footer.html:34 www/templates/index.html:352
 msgid "Privacy Policy"
@@ -91,14 +91,12 @@ msgid "Terms of Service"
 msgstr "Conditions d'utilisation"
 
 #: www/templates/_partial/footer.html:38
-#, fuzzy
-#| msgid "Privacy Policy"
 msgid "Licensing Policy"
-msgstr "Politique de confidentialité"
+msgstr "Politique de license"
 
 #: www/templates/_partial/footer.html:43
 msgid " Trademark Usage Policy"
-msgstr ""
+msgstr " Politique d'utilisation des marques"
 
 #: www/templates/_partial/navbar.html:7
 msgid "AlmaLinux OS logo"
@@ -260,8 +258,8 @@ msgid ""
 "receive updates, find and provide help."
 msgstr ""
 "Rejoignez notre vibrante communauté sur Reddit, interagissez avec d'autres "
-"utilisateurs d'AlmaLinux OS, recevez des actualités, trouvez et proposez de "
-"l'aide."
+"utilisateurs et utilisatrices d'AlmaLinux OS, recevez des actualités, "
+"trouvez et proposez de l'aide."
 
 #: www/templates/index.html:106
 msgid "Join"
@@ -277,8 +275,8 @@ msgid ""
 "governance team and AlmaLinux OS developers."
 msgstr ""
 "Participez à une discussion en temps réel avec d'autres membres de la "
-"communauté d'AlmaLinux OS, l'équipe de gouvernance et les développeurs "
-"d'AlmaLinux OS."
+"communauté d'AlmaLinux OS, l'équipe de gouvernance et les développeurs et "
+"développeuses d'AlmaLinux OS."
 
 #: www/templates/index.html:126
 msgid "Engage"
@@ -294,7 +292,8 @@ msgid ""
 "AlmaLinux OS community and developers alike."
 msgstr ""
 "Posez des questions, obtenez des réponses et apportez votre soutien aux "
-"autres membres de la communauté d'AlmaLinux OS et aux développeurs."
+"autres membres de la communauté d'AlmaLinux OS et aux développeurs et "
+"développeuses."
 
 #: www/templates/index.html:144
 msgid "Discover"
@@ -395,7 +394,7 @@ msgstr "Réponses aux questions clés"
 
 #: www/templates/index.html:320
 msgid "Stay updated!"
-msgstr "Tenez-vous informé !"
+msgstr "Tenez-vous informé·e·s !"
 
 #: www/templates/index.html:323
 msgid ""
@@ -418,7 +417,7 @@ msgid ""
 "By filling this form you agree to be contacted by AlmaLinux OS Foundation "
 "regarding your request. You can unsubscribe at any time."
 msgstr ""
-"En complétant ce formulaire vous acceptez d'être contacté par la fondation "
+"En complétant ce formulaire vous acceptez d'être contacté·e par la fondation "
 "AlmaLinux OS pour votre demande. Vous pouvez vous désabonner à tout moment."
 
 #: www/templates/index.html:363
@@ -457,7 +456,7 @@ msgstr "Merci !"
 msgid ""
 "You have successfully subscribed to AlmaLinux OS announcement mailing list!"
 msgstr ""
-"Vous vous êtes inscrit avec succès à la liste de diffusion pour l'annonce "
+"Vous vous êtes inscrit·e avec succès à la liste de diffusion pour l'annonce "
 "d'AlmaLinux OS !"
 
 #: www/views.py:53

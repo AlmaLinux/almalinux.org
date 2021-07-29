@@ -3,24 +3,25 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-25 14:16+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-07-29 08:43+0000\n"
+"Last-Translator: gz83 <uioptt24@gmail.com>\n"
+"Language-Team: Japanese <https://hosted.weblate.org/projects/almalinux/"
+"website-backend/ja/>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.7.2-dev\n"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
-msgstr ""
+msgstr "404が見つかりません-AlmaLinuxOS"
 
 #: www/templates/404.html:6 www/templates/blog/index.html:9
 #: www/templates/index.html:8 www/templates/layouts/base.html:19
@@ -28,51 +29,51 @@ msgstr ""
 msgid ""
 "An open-source RHEL fork built by the team at CloudLinux, inspired by the "
 "community."
-msgstr ""
+msgstr "コミュニティに触発されたCloudLinuxのチームによって構築されたオープンソースのRHELフォーク。"
 
 #: www/templates/404.html:13
 msgid "404 Not Found"
-msgstr ""
+msgstr "404お探しのページが見つかりませんでした"
 
 #: www/templates/404.html:16
 msgid "Sorry, but the page you were trying to access could not be found."
-msgstr ""
+msgstr "申し訳ありませんが、アクセスしようとしたページが見つかりませんでした。"
 
 #: www/templates/_partial/footer.html:11 www/templates/_partial/navbar.html:38
 msgid "Resources"
-msgstr ""
+msgstr "資力"
 
 #: www/templates/_partial/footer.html:13 www/templates/_partial/navbar.html:28
 msgid "Wiki"
-msgstr ""
+msgstr "ウィキ"
 
 #: www/templates/_partial/footer.html:15
 msgid "Bugs"
-msgstr ""
+msgstr "バグ"
 
 #: www/templates/_partial/footer.html:16
 msgid "Repository"
-msgstr ""
+msgstr "リポジトリ"
 
 #: www/templates/_partial/footer.html:17
 msgid "Downloads"
-msgstr ""
+msgstr "ダウンロード"
 
 #: www/templates/_partial/footer.html:21
 msgid "Community"
-msgstr ""
+msgstr "コミュニティ"
 
 #: www/templates/_partial/footer.html:25
 msgid "Forums"
-msgstr ""
+msgstr "フォーラム"
 
 #: www/templates/_partial/footer.html:26
 msgid "Chat"
-msgstr ""
+msgstr "チャット"
 
 #: www/templates/_partial/footer.html:31
 msgid "Legal"
-msgstr ""
+msgstr "リーガル"
 
 #: www/templates/_partial/footer.html:33
 msgid "Legal Notice"
