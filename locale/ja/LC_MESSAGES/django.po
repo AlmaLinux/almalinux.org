@@ -375,7 +375,7 @@ msgid ""
 msgstr ""
 "ディストリビューションの切り替えは通常、コストと時間がかかりますが、CentOSや"
 "他のRHEL&reg;から切り替える場合はそうではありません。 AlmaLinux OSへのフォー"
-"ク。 切り替えは簡単です- <a herf=\"％(migrate_link)s\">方法をお読みください。"
+"ク。 切り替えは簡単です- <a herf=\"%(migrate_link)s\">方法をお読みください。"
 "</a>"
 
 #: www/templates/index.html:265
