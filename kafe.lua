@@ -6,14 +6,25 @@ k.require_api(1)
 k.add_inventory('deploy', '18.213.64.210', 22, 'staging', 'website')
 k.add_inventory('deploy', '3.210.88.35', 22, 'production', 'website')
 
-k.task('deploy', function()
+k.task('deploy', function(repo, branch)
     local version = os.time(os.date('!*t'))
 
     k.define('deploy_to', '/opt/almalinux.org')
     k.define('public', '/var/www/almalinux.org')
     k.define('version', version)
 
-    k.local_shell('make assemble')
+    if repo == nil then
+        repo = 'git@github.com:AlmaLinux/almalinux.org.git'
+    end
+
+    if branch == nil then
+        branch = 'master'
+    end
+
+    k.define('repo', repo)
+    k.define('branch', branch)
+
+    k.local_shell('TARGET_REPO={{repo}} TARGET_BRANCH={{branch}} make assemble')
 
     local deploy = function()
         k.within('{{deploy_to}}')

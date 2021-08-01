@@ -1,6 +1,8 @@
 ROOT_DIR		:= $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 CURRENT_UID 	:= $(shell id -u)
 CURRENT_GID 	:= $(shell id -g)
+TARGET_REPO		?= "git@github.com:AlmaLinux/almalinux.org.git"
+TARGET_BRANCH	?= "master"
 
 .PHONY:		default
 default:	dev ;
@@ -56,7 +58,7 @@ assemble: # INTERNAL: assemble deployment asset for deployment
 	rm -rf tmp/deploy_out
 	mkdir -p tmp
 	mkdir -p tmp/deploy_out
-	git clone git@github.com:AlmaLinux/almalinux.org.git tmp/deploy
+	git clone ${TARGET_REPO} tmp/deploy --branch ${TARGET_BRANCH}
 	# Use local install .venv and node_modules to reuse local install as sort of a cache
 	cp -R .venv tmp/deploy
 	cp -R frontend/node_modules tmp/deploy/frontend
