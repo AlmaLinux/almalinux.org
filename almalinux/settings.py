@@ -152,7 +152,7 @@ LANGUAGES = (
     ('fr', 'Français'),
     # ('he', 'עִבְרִית'), # Hebrew
     ('it', 'Italiano'),
-    # ('ja', '日本語'),  # Japanese
+    ('ja', '日本語'),  # Japanese
     ('lv', 'Latviešu'),
     ('pl', 'Polski'),
     # ('pt', 'Português'),  # Portuguese (PT)
@@ -160,7 +160,7 @@ LANGUAGES = (
     ('ru', 'Русский'),
     ('tr', 'Türkçe'),
     ('uk', 'Украї́нська'),
-
+    # ('zh_Hans', 'Chinese (Simplified)'),
 )
 
 LOCALE_PATHS = [
