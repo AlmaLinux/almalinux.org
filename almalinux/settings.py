@@ -160,7 +160,7 @@ LANGUAGES = (
     ('ru', 'Русский'),
     ('tr', 'Türkçe'),
     ('uk', 'Украї́нська'),
-    ('zh_Hans', 'Chinese (Simplified)'),
+    ('zh-hans', 'Chinese (Simplified)'),
 )
 
 LOCALE_PATHS = [
