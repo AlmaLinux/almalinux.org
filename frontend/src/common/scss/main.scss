@@ -70,6 +70,21 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: capitalize;
   }
 
+  .al-translate-callout {
+    font-size: 0.92rem;
+
+    a {
+      display: flex;
+      align-items: center;
+      color: #69b1ff;
+
+      i {
+        margin-right: 0.4rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
   @include media-breakpoint-up(md) {
     li.nav-item {
       display: flex;
