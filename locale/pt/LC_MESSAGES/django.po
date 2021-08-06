@@ -3,24 +3,25 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-02 20:26+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-08-06 22:14+0000\n"
+"Last-Translator: Ana Carla Vasconcelos <anacarlavgs@gmail.com>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/almalinux/"
+"website-backend/pt/>\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.8-dev\n"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
-msgstr ""
+msgstr "404 Não Encontrado - AlmaLinux OS"
 
 #: www/templates/404.html:6 www/templates/blog/index.html:9
 #: www/templates/index.html:8 www/templates/layouts/base.html:19
@@ -29,98 +30,101 @@ msgid ""
 "An open-source RHEL fork built by the team at CloudLinux, inspired by the "
 "community."
 msgstr ""
+"Um fork RHEL de código aberto construído pela equipe do CloudLinux, "
+"inspirado pela comunidade."
 
 #: www/templates/404.html:13
 msgid "404 Not Found"
-msgstr ""
+msgstr "404 Não Encontrado"
 
 #: www/templates/404.html:16
 msgid "Sorry, but the page you were trying to access could not be found."
 msgstr ""
+"Desculpe, mas a página que você estava tentando acessar não foi encontrada."
 
 #: www/templates/_partial/footer.html:11 www/templates/_partial/navbar.html:38
 msgid "Resources"
-msgstr ""
+msgstr "Recursos"
 
 #: www/templates/_partial/footer.html:13 www/templates/_partial/navbar.html:28
 msgid "Wiki"
-msgstr ""
+msgstr "Wiki"
 
 #: www/templates/_partial/footer.html:15
 msgid "Bugs"
-msgstr ""
+msgstr "Bugs"
 
 #: www/templates/_partial/footer.html:16
 msgid "Repository"
-msgstr ""
+msgstr "Repositório"
 
 #: www/templates/_partial/footer.html:17
 msgid "Downloads"
-msgstr ""
+msgstr "Downloads"
 
 #: www/templates/_partial/footer.html:21
 msgid "Community"
-msgstr ""
+msgstr "Comunidade"
 
 #: www/templates/_partial/footer.html:25
 msgid "Forums"
-msgstr ""
+msgstr "Fóruns"
 
 #: www/templates/_partial/footer.html:26
 msgid "Chat"
-msgstr ""
+msgstr "Bate-papo"
 
 #: www/templates/_partial/footer.html:31
 msgid "Legal"
-msgstr ""
+msgstr "Legal"
 
 #: www/templates/_partial/footer.html:33
 msgid "Legal Notice"
-msgstr ""
+msgstr "Aviso legal"
 
 #: www/templates/_partial/footer.html:34 www/templates/index.html:352
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Política de Privacidade"
 
 #: www/templates/_partial/footer.html:35
 msgid "Terms of Service"
-msgstr ""
+msgstr "Termos de Serviço"
 
 #: www/templates/_partial/footer.html:38
 msgid "Licensing Policy"
-msgstr ""
+msgstr "Política de Licenciamento"
 
 #: www/templates/_partial/footer.html:43
 msgid " Trademark Usage Policy"
-msgstr ""
+msgstr " Política de Uso de Marcas Registradas"
 
 #: www/templates/_partial/navbar.html:7
 msgid "AlmaLinux OS logo"
-msgstr ""
+msgstr "Logotipo do AlmaLinux OS"
 
 #: www/templates/_partial/navbar.html:16
 msgid "Toggle navigation"
-msgstr ""
+msgstr "Alternar navegação"
 
 #: www/templates/_partial/navbar.html:23
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
 #: www/templates/_partial/navbar.html:44
 msgid "Migrate from CentOS 8"
-msgstr ""
+msgstr "Migrar do CentOS 8"
 
 #: www/templates/_partial/navbar.html:49
 msgid "Report Bugs"
-msgstr ""
+msgstr "Reportar Bugs"
 
 #: www/templates/_partial/navbar.html:57
 msgid "Shop"
-msgstr ""
+msgstr "Loja"
 
 #: www/templates/_partial/navbar.html:65
 msgid "Language"
-msgstr ""
+msgstr "Idioma"
 
 #: www/templates/_partial/navbar.html:86
 msgid "Translate"
@@ -128,31 +132,31 @@ msgstr ""
 
 #: www/templates/_partial/navbar.html:94 www/templates/index.html:52
 msgid "Download"
-msgstr ""
+msgstr "Download"
 
 #: www/templates/blog/index.html:7
 msgid "AlmaLinux OS Blog"
-msgstr ""
+msgstr "Blog AlmaLinux OS"
 
 #: www/templates/blog/index.html:48
 msgid "Continue reading"
-msgstr ""
+msgstr "Continuar lendo"
 
 #: www/templates/blog/index.html:61 www/templates/blog/index.html:67
 msgid "Previous"
-msgstr ""
+msgstr "Anterior"
 
 #: www/templates/blog/index.html:79 www/templates/blog/index.html:85
 msgid "Next"
-msgstr ""
+msgstr "Próximo"
 
 #: www/templates/contribute/index.html:6
 msgid "AlmaLinux OS - Contribute"
-msgstr ""
+msgstr "AlmaLinux OS - Contribua"
 
 #: www/templates/contribute/index.html:7 www/templates/contribute/index.html:22
 msgid "Contribute to AlmaLinux OS development"
-msgstr ""
+msgstr "Contribua para o desenvolvimento do AlmaLinux OS"
 
 #: www/templates/contribute/index.html:26
 msgid ""
