@@ -1,0 +1,166 @@
+{% extends 'layouts/base.html' %}
+{% load i18n %}
+{% load static %}
+{% load encore %}
+
+{% block title %}{% translate 'AlmaLinux OS Foundation - membership' %}{% endblock %}
+{% block description %}{% translate 'AlmaLinux OS Foundation - membership' %}{% endblock %}
+
+{% block head_end %}
+    {% encore_entrypoint_css 'page_foundation' %}
+{% endblock %}
+{% block body_end %}
+    {% encore_entrypoint_js 'page_foundation' %}
+{% endblock %}
+
+{% block body %}
+    <section class="al-page-foundation-members-index">
+        <div class="px-3 py-5 mt-5 text-center">
+            <div class="row">
+                <h1 class="display-5 fw-bold mb-4">
+                    {% translate 'Join the AlmaLinux OS Foundation' %}
+                </h1>
+                <div class="col-lg-5 mx-auto">
+                    <p class="lead mb-4 pb-2 fs-5">
+                        {% blocktranslate trimmed %}
+                        Be heard! Join the AlmaLinux Foundation as a Member or Sponsor.
+                        Own and vote on shaping the future of AlmaLinux OS!
+                        {% endblocktranslate %}
+                    </p>
+                    <div class="d-flex justify-content-center mb-4 pb-4">
+                        <a href="#apply" class="btn btn-primary btn-lg">
+                            {% translate 'Apply for membership' %}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 mx-auto">
+                    <div class="fw-light fs-6">
+                        <p>
+                            {% blocktranslate trimmed %}
+                            The AlmaLinux Foundation is the entity behind AlmaLinux OS, the forever-free
+                            Enterprise-grade Linux distribution. As a member, you will have a voice in the
+                            direction of the project, and can vote for and be voted into the Board of Directors
+                            by other members. There are several pathways available for becoming a member,
+                            including project contributors, mirror maintainers/sponsors and service providers
+                            to the community, as well as official sponsors for the project.
+                            {% endblocktranslate %}
+                        </p>
+                        <p>
+                            {% blocktranslate trimmed %}
+                            The merit of each application will be reviewed on a case-by-case basis by the Board or by a
+                            committee appointed for this purpose, according to the Bylaws established by the Board.
+                            {% endblocktranslate %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="apply"></div>
+        </div>
+
+        <div class="container al-py-md">
+            <h6 class="pt-5 pb-3 mb-3 text-uppercase border-bottom">{% translate 'Join AlmaLinux OS Foundation' %}</h6>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-4 py-2 py-md-5">
+                <div class="col d-flex align-items-stretch">
+                    <i class="bi bi-suit-heart-fill al-member-apply-category-icon"></i>
+                    <div class="al-foundation-members-apply-content-wrap">
+                        <h4 class="fw-bold mb-0 pb-2">
+                            {% translate 'Contributor' %}
+                        </h4>
+                        <p>
+                            {% blocktranslate trimmed %}
+                                An individual application for anyone who uses AlmaLinux OS, contributes to AlmaLinux OS,
+                                provides services to the AlmaLinux OS community or otherwise supports the AlmaLinux OS.
+                            {% endblocktranslate %}
+                        </p>
+                        <div class="pt-1">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScJx_mgkkWgBLr-jF1X6VBizXxQxboy1l5jVS-5eP6d2n5ThA/viewform?usp=sf_link"
+                               class="btn btn-primary al-member-apply-cta"
+                               target="_blank">
+                                {% translate 'Apply' %}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-stretch">
+                    <i class="bi  bi-cloud-arrow-down-fill al-member-apply-category-icon"></i>
+                    <div class="al-foundation-members-apply-content-wrap">
+                        <h4 class="fw-bold mb-0 pb-2">
+                            {% translate 'Mirror Sponsorship' %}
+                        </h4>
+                        <p>
+                            {% blocktranslate trimmed %}
+                                An individual or entity that provides the project with mirror(s) for content
+                                distribution. Only one member application per individual or entity will be accepted,
+                                irrespective of contributed number of mirrors.
+                            {% endblocktranslate %}
+                        </p>
+                        <div class="pt-1">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdulxH8cv5fzqkIyLanxzvxoBTnrz8Y0JPbseXjzPXRsPT_kQ/viewform?usp=sf_link"
+                               class="btn btn-primary al-member-apply-cta"
+                               target="_blank">
+                                {% translate 'Apply' %}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-stretch">
+                    <i class="bi bi-building al-member-apply-category-icon"></i>
+                    <div class="al-foundation-members-apply-content-wrap">
+                        <h4 class="fw-bold mb-0 pb-2">{% translate 'Sponsor' %}</h4>
+                        <p>
+                            {% blocktranslate trimmed %}
+                                Entities who wish to contribute funding for the project through sponsorship.
+                            {% endblocktranslate %}
+                        </p>
+                        <div class="pt-1">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSddSD32Feb2KUvPTktZNpY_LInyDBRpXxt6XEIjiYIHmP3t7Q/viewform?usp=sf_link"
+                               class="btn btn-primary al-member-apply-cta"
+                               target="_blank">
+                                {% translate 'Apply' %}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pb-5 mb-5">
+            <div class="lead text-center fs-6">
+                {% translate 'Do you have membership related questions?' %}
+                <a href="mailto:info@almalinux.org">{% translate 'Contact us' %}</a>.
+            </div>
+        </div>
+
+        {% if board_of_directors %}
+            <div class="container al-members">
+                <div class="row">
+                    <div class="col-12">
+                        <h6 class="pb-2 mb-5 border-bottom text-uppercase">
+                            {% translate 'Board of Directors' %}
+                        </h6>
+                    </div>
+                    {% for member in board_of_directors %}
+                        <div class="col-xl-3 col-sm-6 mb-5">
+                            <div class="py-5 px-4 text-center al-member-item">
+                                <div>
+                                    <img class="img-fluid rounded-circle mb-3 img-thumbnail"
+                                         src="{{ member.image.url }}"
+                                         alt="{{ member.name }}"
+                                         style="max-width: 180px;">
+                                </div>
+                                <h5 class="mb-1">{{ member.name }}</h5>
+                                {% if member.about %}
+                                    <div class="small text-uppercase mb-1">{{ member.about }}</div>
+                                {% endif %}
+                                <div class="small text-uppercase mb-1">{{ member.organization_position }}</div>
+                                <div class="small fw-light">{{ member.organization }}</div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+    </section>
+{% endblock %}

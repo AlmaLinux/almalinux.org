@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-02 20:26+0000\n"
+"POT-Creation-Date: 2021-10-04 22:07+0000\n"
 "PO-Revision-Date: 2021-09-02 06:32+0000\n"
 "Last-Translator: Srijan <srijanchtrvd18@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/almalinux/"
@@ -94,8 +94,14 @@ msgid "Licensing Policy"
 msgstr "ライセンスポリシー"
 
 #: www/templates/_partial/footer.html:43
-msgid " Trademark Usage Policy"
+#, fuzzy
+#| msgid " Trademark Usage Policy"
+msgid "Trademark Usage Policy"
 msgstr " 商標使用ポリシー"
+
+#: www/templates/_partial/footer.html:48
+msgid "Foundation Bylaws"
+msgstr ""
 
 #: www/templates/_partial/navbar.html:7
 msgid "AlmaLinux OS logo"
@@ -117,19 +123,23 @@ msgstr "CentOS 8から移行する"
 msgid "Report Bugs"
 msgstr "バグを報告する"
 
-#: www/templates/_partial/navbar.html:57
+#: www/templates/_partial/navbar.html:54
+msgid "Membership"
+msgstr ""
+
+#: www/templates/_partial/navbar.html:62
 msgid "Shop"
 msgstr "ショップ"
 
-#: www/templates/_partial/navbar.html:65
+#: www/templates/_partial/navbar.html:70
 msgid "Language"
 msgstr "言語"
 
-#: www/templates/_partial/navbar.html:86
+#: www/templates/_partial/navbar.html:91
 msgid "Translate"
 msgstr "訳する"
 
-#: www/templates/_partial/navbar.html:94 www/templates/index.html:52
+#: www/templates/_partial/navbar.html:99 www/templates/index.html:52
 msgid "Download"
 msgstr "ダウンロード"
 
@@ -207,6 +217,104 @@ msgstr "Webプレゼンス"
 #: www/templates/contribute/index.html:82
 msgid "Join AlmaLinux OS community chat"
 msgstr "AlmaLinux OSコミュニティチャットに参加する"
+
+#: www/templates/foundation/members/index.html:6
+#: www/templates/foundation/members/index.html:7
+#, fuzzy
+#| msgid "AlmaLinux OS - Contribute"
+msgid "AlmaLinux OS Foundation - membership"
+msgstr "AlmaLinux OS - 貢献する"
+
+#: www/templates/foundation/members/index.html:21
+#, fuzzy
+#| msgid "Join AlmaLinux OS community chat"
+msgid "Join the AlmaLinux OS Foundation"
+msgstr "AlmaLinux OSコミュニティチャットに参加する"
+
+#: www/templates/foundation/members/index.html:25
+msgid ""
+"Be heard! Join the AlmaLinux Foundation as a Member or Sponsor. Own and vote "
+"on shaping the future of AlmaLinux OS!"
+msgstr ""
+
+#: www/templates/foundation/members/index.html:32
+msgid "Apply for membership"
+msgstr ""
+
+#: www/templates/foundation/members/index.html:41
+msgid ""
+"The AlmaLinux Foundation is the entity behind AlmaLinux OS, the forever-free "
+"Enterprise-grade Linux distribution. As a member, you will have a voice in "
+"the direction of the project, and can vote for and be voted into the Board "
+"of Directors by other members. There are several pathways available for "
+"becoming a member, including project contributors, mirror maintainers/"
+"sponsors and service providers to the community, as well as official "
+"sponsors for the project."
+msgstr ""
+
+#: www/templates/foundation/members/index.html:51
+msgid ""
+"The merit of each application will be reviewed on a case-by-case basis by "
+"the Board or by a committee appointed for this purpose, according to the "
+"Bylaws established by the Board."
+msgstr ""
+
+#: www/templates/foundation/members/index.html:63
+#, fuzzy
+#| msgid "Join AlmaLinux OS community chat"
+msgid "Join AlmaLinux OS Foundation"
+msgstr "AlmaLinux OSコミュニティチャットに参加する"
+
+#: www/templates/foundation/members/index.html:69
+#, fuzzy
+#| msgid "Contribute"
+msgid "Contributor"
+msgstr "助ける"
+
+#: www/templates/foundation/members/index.html:72
+msgid ""
+"An individual application for anyone who uses AlmaLinux OS, contributes to "
+"AlmaLinux OS, provides services to the AlmaLinux OS community or otherwise "
+"supports the AlmaLinux OS."
+msgstr ""
+
+#: www/templates/foundation/members/index.html:81
+#: www/templates/foundation/members/index.html:103
+#: www/templates/foundation/members/index.html:121
+msgid "Apply"
+msgstr ""
+
+#: www/templates/foundation/members/index.html:90
+msgid "Mirror Sponsorship"
+msgstr ""
+
+#: www/templates/foundation/members/index.html:93
+msgid ""
+"An individual or entity that provides the project with mirror(s) for content "
+"distribution. Only one member application per individual or entity will be "
+"accepted, irrespective of contributed number of mirrors."
+msgstr ""
+
+#: www/templates/foundation/members/index.html:111
+msgid "Sponsor"
+msgstr ""
+
+#: www/templates/foundation/members/index.html:113
+msgid ""
+"Entities who wish to contribute funding for the project through sponsorship."
+msgstr ""
+
+#: www/templates/foundation/members/index.html:131
+msgid "Do you have membership related questions?"
+msgstr ""
+
+#: www/templates/foundation/members/index.html:132
+msgid "Contact us"
+msgstr ""
+
+#: www/templates/foundation/members/index.html:141
+msgid "Board of Directors"
+msgstr ""
 
 #: www/templates/index.html:6
 msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
@@ -455,16 +563,16 @@ msgstr ""
 "これで、AlmaLinux OSアナウンスメーリングリストが正常にサブスクライブされまし"
 "た!"
 
-#: www/views.py:53
+#: www/views.py:54
 msgid "Email address is not valid"
 msgstr "メールアドレスが無効です"
 
-#: www/views.py:77
+#: www/views.py:78
 msgid "Failed to subscribe to mailing list, please try again later"
 msgstr ""
 "メーリングリストへの登録に失敗しました。しばらくしてからもう一度お試しくださ"
 "い"
 
-#: www/views.py:79
+#: www/views.py:80
 msgid "You are already subscribed to this mailing list!"
 msgstr "あなたはすでにこのメーリングリストに登録しています！"

@@ -1,0 +1,34 @@
+@import "~bootstrap/scss/bootstrap-utilities";
+@import "../../common/scss/variables";
+@import "../../common/scss/functions";
+
+.al-page-foundation-members-index {
+  .al-members {
+    .al-member-item {
+      height: 100%;
+      background: rgb(14, 59, 92);
+    }
+  }
+
+  .al-member-apply-category-icon {
+    color: lighten($al-font-color, 10%);
+    font-size: 32px;
+    padding-right: 22px;
+  }
+
+  .al-member-apply-cta {
+    min-width: 120px;
+  }
+
+  @include media-breakpoint-up(md) {
+    .al-foundation-members-apply-content-wrap {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      p {
+        flex: 1;
+      }
+    }
+  }
+}

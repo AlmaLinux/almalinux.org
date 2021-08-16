@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-01 07:13+0000\n"
+"POT-Creation-Date: 2021-10-04 22:07+0000\n"
 "PO-Revision-Date: 2021-08-02 20:28+0000\n"
 "Last-Translator: gz83 <uioptt24@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -92,8 +92,14 @@ msgid "Licensing Policy"
 msgstr "许可政策"
 
 #: www/templates/_partial/footer.html:43
-msgid " Trademark Usage Policy"
+#, fuzzy
+#| msgid " Trademark Usage Policy"
+msgid "Trademark Usage Policy"
 msgstr " 商标使用政策"
+
+#: www/templates/_partial/footer.html:48
+msgid "Foundation Bylaws"
+msgstr ""
 
 #: www/templates/_partial/navbar.html:7
 msgid "AlmaLinux OS logo"
@@ -115,19 +121,23 @@ msgstr "从 CentOS 8 迁移"
 msgid "Report Bugs"
 msgstr "报告错误"
 
-#: www/templates/_partial/navbar.html:57
+#: www/templates/_partial/navbar.html:54
+msgid "Membership"
+msgstr ""
+
+#: www/templates/_partial/navbar.html:62
 msgid "Shop"
 msgstr "商店"
 
-#: www/templates/_partial/navbar.html:65
+#: www/templates/_partial/navbar.html:70
 msgid "Language"
 msgstr "语言"
 
-#: www/templates/_partial/navbar.html:86
+#: www/templates/_partial/navbar.html:91
 msgid "Translate"
 msgstr ""
 
-#: www/templates/_partial/navbar.html:94 www/templates/index.html:52
+#: www/templates/_partial/navbar.html:99 www/templates/index.html:52
 msgid "Download"
 msgstr "下载"
 
@@ -161,14 +171,16 @@ msgid ""
 "community chat. There are many ways to contribute to AlmaLinux OS - testing, "
 "quality assurance, documentation, and more."
 msgstr ""
-"AlmaLinux OS和基础设施开发使用我们的社区聊天进行组织。 有很多方法可以为 AlmaLinux OS 做出贡献——测试、质量保证、文档等等。"
+"AlmaLinux OS和基础设施开发使用我们的社区聊天进行组织。 有很多方法可以为 "
+"AlmaLinux OS 做出贡献——测试、质量保证、文档等等。"
 
 #: www/templates/contribute/index.html:33
 #, python-format
 msgid ""
 "<a href=\"%(intro_link)s\">Introduce yourself</a> or join one of the topical "
 "channels below to find out more!"
-msgstr "<a href=\"%(intro_link)s\">自我介绍</a>或加入以下主题频道之一以了解更多信息！"
+msgstr ""
+"<a href=\"%(intro_link)s\">自我介绍</a>或加入以下主题频道之一以了解更多信息！"
 
 #: www/templates/contribute/index.html:43
 msgid "General chat"
@@ -202,6 +214,104 @@ msgstr "网络状态"
 msgid "Join AlmaLinux OS community chat"
 msgstr "加入 AlmaLinux OS 社区聊天"
 
+#: www/templates/foundation/members/index.html:6
+#: www/templates/foundation/members/index.html:7
+#, fuzzy
+#| msgid "AlmaLinux OS - Contribute"
+msgid "AlmaLinux OS Foundation - membership"
+msgstr "AlmaLinux OS - 贡献"
+
+#: www/templates/foundation/members/index.html:21
+#, fuzzy
+#| msgid "Join AlmaLinux OS community chat"
+msgid "Join the AlmaLinux OS Foundation"
+msgstr "加入 AlmaLinux OS 社区聊天"
+
+#: www/templates/foundation/members/index.html:25
+msgid ""
+"Be heard! Join the AlmaLinux Foundation as a Member or Sponsor. Own and vote "
+"on shaping the future of AlmaLinux OS!"
+msgstr ""
+
+#: www/templates/foundation/members/index.html:32
+msgid "Apply for membership"
+msgstr ""
+
+#: www/templates/foundation/members/index.html:41
+msgid ""
+"The AlmaLinux Foundation is the entity behind AlmaLinux OS, the forever-free "
+"Enterprise-grade Linux distribution. As a member, you will have a voice in "
+"the direction of the project, and can vote for and be voted into the Board "
+"of Directors by other members. There are several pathways available for "
+"becoming a member, including project contributors, mirror maintainers/"
+"sponsors and service providers to the community, as well as official "
+"sponsors for the project."
+msgstr ""
+
+#: www/templates/foundation/members/index.html:51
+msgid ""
+"The merit of each application will be reviewed on a case-by-case basis by "
+"the Board or by a committee appointed for this purpose, according to the "
+"Bylaws established by the Board."
+msgstr ""
+
+#: www/templates/foundation/members/index.html:63
+#, fuzzy
+#| msgid "Join AlmaLinux OS community chat"
+msgid "Join AlmaLinux OS Foundation"
+msgstr "加入 AlmaLinux OS 社区聊天"
+
+#: www/templates/foundation/members/index.html:69
+#, fuzzy
+#| msgid "Contribute"
+msgid "Contributor"
+msgstr "贡献"
+
+#: www/templates/foundation/members/index.html:72
+msgid ""
+"An individual application for anyone who uses AlmaLinux OS, contributes to "
+"AlmaLinux OS, provides services to the AlmaLinux OS community or otherwise "
+"supports the AlmaLinux OS."
+msgstr ""
+
+#: www/templates/foundation/members/index.html:81
+#: www/templates/foundation/members/index.html:103
+#: www/templates/foundation/members/index.html:121
+msgid "Apply"
+msgstr ""
+
+#: www/templates/foundation/members/index.html:90
+msgid "Mirror Sponsorship"
+msgstr ""
+
+#: www/templates/foundation/members/index.html:93
+msgid ""
+"An individual or entity that provides the project with mirror(s) for content "
+"distribution. Only one member application per individual or entity will be "
+"accepted, irrespective of contributed number of mirrors."
+msgstr ""
+
+#: www/templates/foundation/members/index.html:111
+msgid "Sponsor"
+msgstr ""
+
+#: www/templates/foundation/members/index.html:113
+msgid ""
+"Entities who wish to contribute funding for the project through sponsorship."
+msgstr ""
+
+#: www/templates/foundation/members/index.html:131
+msgid "Do you have membership related questions?"
+msgstr ""
+
+#: www/templates/foundation/members/index.html:132
+msgid "Contact us"
+msgstr ""
+
+#: www/templates/foundation/members/index.html:141
+msgid "Board of Directors"
+msgstr ""
+
 #: www/templates/index.html:6
 msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
 msgstr "AlmaLinux OS - 永远免费的企业级操作系统"
@@ -217,8 +327,8 @@ msgid ""
 "grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL&reg; and pre-"
 "Stream CentOS."
 msgstr ""
-"一个开源、社区治理且永久免费的企业 Linux 发行版，专注于长期稳定性，提供强大的生产级平台。 AlmaLinux OS与 RHEL 1:1 "
-"二进制兼容&reg; 和 pre-Stream CentOS。"
+"一个开源、社区治理且永久免费的企业 Linux 发行版，专注于长期稳定性，提供强大的"
+"生产级平台。 AlmaLinux OS与 RHEL 1:1 二进制兼容&reg; 和 pre-Stream CentOS。"
 
 #: www/templates/index.html:47
 msgid "Contribute"
@@ -237,7 +347,8 @@ msgstr "由 <a href=\"%(link)s\">CloudLinux OS</a> 背后的团队创立。"
 msgid ""
 "Our GitHub organization contains source code and tools used to build "
 "AlmaLinux OS and related infrastructure."
-msgstr "我们的 GitHub 组织包含用于构建 AlmaLinux OS和相关基础设施的源代码和工具。"
+msgstr ""
+"我们的 GitHub 组织包含用于构建 AlmaLinux OS和相关基础设施的源代码和工具。"
 
 #: www/templates/index.html:86
 msgid "Explore"
@@ -247,7 +358,9 @@ msgstr "探索"
 msgid ""
 "Join our vibrant Reddit community, interact with other AlmaLinux OS users, "
 "receive updates, find and provide help."
-msgstr "加入我们充满活力的 Reddit 社区，与其他 AlmaLinux OS用户互动，接收更新，寻找并提供帮助。"
+msgstr ""
+"加入我们充满活力的 Reddit 社区，与其他 AlmaLinux OS用户互动，接收更新，寻找并"
+"提供帮助。"
 
 #: www/templates/index.html:106
 msgid "Join"
@@ -261,7 +374,8 @@ msgstr "社区聊天"
 msgid ""
 "Join a real time discussion with other AlmaLinux OS community members, "
 "governance team and AlmaLinux OS developers."
-msgstr "加入与其他 AlmaLinux OS社区成员、管理团队和 AlmaLinux OS开发人员的实时讨论。"
+msgstr ""
+"加入与其他 AlmaLinux OS社区成员、管理团队和 AlmaLinux OS开发人员的实时讨论。"
 
 #: www/templates/index.html:126
 msgid "Engage"
@@ -275,7 +389,8 @@ msgstr "社区论坛"
 msgid ""
 "Ask questions, get answers and contribute community support to others in "
 "AlmaLinux OS community and developers alike."
-msgstr "向 AlmaLinux OS 社区中的其他人和开发人员提出问题、获得答案并提供社区支持。"
+msgstr ""
+"向 AlmaLinux OS 社区中的其他人和开发人员提出问题、获得答案并提供社区支持。"
 
 #: www/templates/index.html:144
 msgid "Discover"
@@ -292,8 +407,9 @@ msgid ""
 "release. AlmaLinux OS is a 1:1 binary compatible fork of RHEL&reg; guided "
 "and built by the community."
 msgstr ""
-"AlmaLinux OS 是一个开源的、社区驱动的 Linux 操作系统，它填补了 CentOS Linux 稳定版本停产留下的空白。 "
-"AlmaLinux OS 是 RHEL&reg; 的 1:1 二进制兼容分支。 由社区引导和建设。"
+"AlmaLinux OS 是一个开源的、社区驱动的 Linux 操作系统，它填补了 CentOS Linux "
+"稳定版本停产留下的空白。 AlmaLinux OS 是 RHEL&reg; 的 1:1 二进制兼容分支。 由"
+"社区引导和建设。"
 
 #: www/templates/index.html:167
 msgid ""
@@ -301,14 +417,16 @@ msgid ""
 "sponsorship from CloudLinux Inc and support from other sponsors. Ongoing "
 "development efforts are governed by the members of the community."
 msgstr ""
-"作为一个独立的、完全免费的操作系统，AlmaLinux OS享有 CloudLinux Inc 每年 100 万美元的赞助和其他赞助商的支持。 "
-"正在进行的开发工作由社区成员管理。"
+"作为一个独立的、完全免费的操作系统，AlmaLinux OS享有 CloudLinux Inc 每年 100 "
+"万美元的赞助和其他赞助商的支持。 正在进行的开发工作由社区成员管理。"
 
 #: www/templates/index.html:174
 msgid ""
 "The AlmaLinux OS Foundation is a 501(c)(6) non-profit created for the "
 "benefit of the AlmaLinux OS community."
-msgstr "AlmaLinux OS基金会是一个 501(c)(6) 非营利组织，旨在为 AlmaLinux OS社区带来利益。"
+msgstr ""
+"AlmaLinux OS基金会是一个 501(c)(6) 非营利组织，旨在为 AlmaLinux OS社区带来利"
+"益。"
 
 #: www/templates/index.html:188
 msgid "Backed by"
@@ -324,8 +442,8 @@ msgid ""
 "distribution with regular releases that come with a long support windows. "
 "You can rely on AlmaLinux OS to run any and every critical workloads."
 msgstr ""
-"AlmaLinux OS 是一个企业级服务器操作系统和一个稳定的 Linux 发行版，定期发布，支持窗口很长。 您可以依靠 AlmaLinux OS "
-"来运行任何关键工作负载。"
+"AlmaLinux OS 是一个企业级服务器操作系统和一个稳定的 Linux 发行版，定期发布，"
+"支持窗口很长。 您可以依靠 AlmaLinux OS 来运行任何关键工作负载。"
 
 #: www/templates/index.html:225
 msgid "Fully supported, always free"
@@ -336,7 +454,9 @@ msgid ""
 "AlmaLinux OS Foundation members, sponsors and partners back the AlmaLinux OS "
 "with investments and long support commitments to ensure the distribution is "
 "free of limitations, fees and charges."
-msgstr "AlmaLinux OS 基金会成员、赞助商和合作伙伴通过投资和长期支持承诺支持 AlmaLinux OS，以确保分发不受限制、费用和收费。"
+msgstr ""
+"AlmaLinux OS 基金会成员、赞助商和合作伙伴通过投资和长期支持承诺支持 "
+"AlmaLinux OS，以确保分发不受限制、费用和收费。"
 
 #: www/templates/index.html:238
 msgid "Effortless to switch to"
@@ -349,8 +469,8 @@ msgid ""
 "the case when switching from CentOS and other RHEL&reg; forks to AlmaLinux "
 "OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</a>"
 msgstr ""
-"切换发行版通常既昂贵又耗时，但从 CentOS 和其他 RHEL 切换时则并非如此。 分叉到 AlmaLinux OS。 切换很容易 - <a href="
-"\"%(migrate_link)s\">阅读方法。</a>"
+"切换发行版通常既昂贵又耗时，但从 CentOS 和其他 RHEL 切换时则并非如此。 分叉"
+"到 AlmaLinux OS。 切换很容易 - <a href=\"%(migrate_link)s\">阅读方法。</a>"
 
 #: www/templates/index.html:265
 msgid "Commercial Support"
@@ -382,7 +502,9 @@ msgstr "订阅"
 msgid ""
 "By filling this form you agree to be contacted by AlmaLinux OS Foundation "
 "regarding your request. You can unsubscribe at any time."
-msgstr "填写此表格即表示您同意 AlmaLinux OS Foundation 就您的请求与您联系。 您可以随时取消订阅。"
+msgstr ""
+"填写此表格即表示您同意 AlmaLinux OS Foundation 就您的请求与您联系。 您可以随"
+"时取消订阅。"
 
 #: www/templates/index.html:363
 msgid "AlmaLinux OS in the Press"
@@ -421,14 +543,14 @@ msgid ""
 "You have successfully subscribed to AlmaLinux OS announcement mailing list!"
 msgstr "您已成功订阅 AlmaLinux OS 公告邮件列表！"
 
-#: www/views.py:53
+#: www/views.py:54
 msgid "Email address is not valid"
 msgstr "电子邮件地址无效"
 
-#: www/views.py:77
+#: www/views.py:78
 msgid "Failed to subscribe to mailing list, please try again later"
 msgstr "订阅邮件列表失败，请稍后再试"
 
-#: www/views.py:79
+#: www/views.py:80
 msgid "You are already subscribed to this mailing list!"
 msgstr "您已经订阅了这个邮件列表！"

@@ -1,3 +1,7 @@
+import uuid
+
+from django.contrib import admin
+from django.contrib.admin.decorators import display
 from django.core.validators import FileExtensionValidator
 from django.db import models
 from django.utils.text import slugify
@@ -307,3 +311,81 @@ class ShowcaseFeature(models.Model):
 
     def __str__(self) -> str:
         return self.title
+
+
+class GovernanceMember(models.Model):
+    id: models.AutoField = models.AutoField(
+        primary_key=True
+    )
+
+    type: models.CharField = models.CharField(
+        max_length=100,
+        choices=[
+            ('governance_board', 'Board of Directors'),
+        ],
+        db_index=True,
+        default='governance_board',
+        verbose_name='Member of the'
+    )
+
+    name: models.CharField = models.CharField(
+        max_length=255,
+        null=False,
+    )
+
+    image: models.ImageField = models.ImageField(
+        null=False,
+        upload_to=segmented_upload_to,
+        help_text='Must be an image with aspect ratio of 1:1, at least 200px * 200px'
+    )
+
+    organization: models.CharField = models.CharField(
+        max_length=255,
+        null=False,
+        blank=True,
+        help_text='Organization of the member'
+    )
+
+    organization_position: models.CharField = models.CharField(
+        max_length=255,
+        null=False,
+        blank=True,
+        help_text='Position in the organization'
+    )
+
+    about: models.CharField = models.CharField(
+        max_length=255,
+        null=False,
+        blank=True,
+        help_text='Short about, if no organization applies etc.'
+    )
+
+    priority: models.PositiveIntegerField = models.PositiveIntegerField(
+        null=False,
+        default=0,
+        help_text='Absolute priority of the individual in the listing relative to other individuals. '
+                  'The higher the priority, the earlier the feature will appear.'
+    )
+
+    def __str__(self) -> str:
+        return self.name
+
+
+class MediaElement(models.Model):
+    class Meta:
+        verbose_name_plural = 'Media Files'
+        verbose_name = 'Media File'
+
+    id: models.AutoField = models.AutoField(
+        primary_key=True
+    )
+
+    file: models.FileField = models.FileField(
+        null=False,
+        upload_to=segmented_upload_to,
+        help_text='A file to upload (any type)',
+    )
+
+    def __str__(self) -> str:
+        return self.file.name
+

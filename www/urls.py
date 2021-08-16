@@ -12,5 +12,7 @@ urlpatterns = [
     path('blog/<slug:slug>/', views.blog_post, name='blog_post'),
     # path('showcase/', views.showcase_index, name='showcase_index'),
     path('contribute/', views.contribute_index, name='contribute_index'),
+    path('foundation/members/', views.foundation_members, name='foundation_members'),
     path('feed/', BlogPostFeed(), name='feed'),
+    path('media/<int:media_id>', views.media_element, name='media_element'),
 ]

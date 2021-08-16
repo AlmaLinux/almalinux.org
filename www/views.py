@@ -7,14 +7,15 @@ from django.core.paginator import Paginator, EmptyPage
 from django.core.validators import validate_email
 from django.http import Http404
 from django.http import HttpResponse, HttpRequest
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.utils.timezone import make_aware
 from django.utils.translation import gettext as _
 from django.views.decorators.cache import never_cache
 from django.views.decorators.http import require_POST, require_safe
 
 from almalinux.settings import HUBSPOT_APIKEY, HUBSPOT_SUB_ID
-from .models import Backer, PressArticle, BlogPost, Page, FAQEntry, CommercialSupportVendor, ShowcaseFeature
+from .models import Backer, PressArticle, BlogPost, Page, FAQEntry, CommercialSupportVendor, ShowcaseFeature, \
+    GovernanceMember, MediaElement
 
 
 # Public views
@@ -176,12 +177,30 @@ def blog_post(request: HttpRequest, slug: str = None) -> HttpResponse:
 #         'showcase_features': showcase_features,
 #     })
 
-
 @require_safe
 @never_cache
 def contribute_index(request: HttpRequest) -> HttpResponse:
-    return render(request, 'contribute/index.html', {
+    return render(request, 'contribute/index.html', {})
+
+
+@require_safe
+@never_cache
+def foundation_members(request: HttpRequest) -> HttpResponse:
+    board_of_directors = GovernanceMember.objects.filter(type='governance_board').order_by('-priority').all()
+    return render(request, 'foundation/members/index.html', {
+        'board_of_directors': board_of_directors,
     })
+
+
+@never_cache
+@require_safe
+def media_element(_: HttpRequest, media_id: int) -> HttpResponse:
+    element = MediaElement.objects.get(id=media_id)
+
+    if element is None:
+        raise Http404
+
+    return redirect(element.file.url)
 
 
 def not_found(request: HttpRequest, exception: Exception) -> HttpResponse:
