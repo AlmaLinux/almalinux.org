@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-02 20:26+0000\n"
-"PO-Revision-Date: 2021-07-29 08:43+0000\n"
-"Last-Translator: gz83 <uioptt24@gmail.com>\n"
+"PO-Revision-Date: 2021-08-19 21:35+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/tr/>\n"
 "Language: tr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.7.2-dev\n"
+"X-Generator: Weblate 4.8-dev\n"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
@@ -31,7 +31,7 @@ msgid ""
 "community."
 msgstr ""
 "CloudLinux ekibi tarafından topluluktan ilham alınarak oluşturulmuş açık "
-"kaynaklı,RHEL kaynak kodları üzerine kurulu bir dağıtım sistemidir."
+"kaynaklı, RHEL kaynak kodları üzerine kurulu bir dağıtım sistemidir."
 
 #: www/templates/404.html:13
 msgid "404 Not Found"
@@ -127,7 +127,7 @@ msgstr "Dil"
 
 #: www/templates/_partial/navbar.html:86
 msgid "Translate"
-msgstr ""
+msgstr "Çevir"
 
 #: www/templates/_partial/navbar.html:94 www/templates/index.html:52
 msgid "Download"
