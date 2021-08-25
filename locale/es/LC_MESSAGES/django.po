@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-02 20:26+0000\n"
-"PO-Revision-Date: 2021-08-19 12:34+0000\n"
-"Last-Translator: Mokhtar Garmehi <Mokhtar_garmeh@yahoo.com>\n"
+"PO-Revision-Date: 2021-08-25 16:34+0000\n"
+"Last-Translator: Francisco Jose Rey <fcojreyg@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/es/>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8-dev\n"
+"X-Generator: Weblate 4.8.1-dev\n"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
@@ -104,7 +104,7 @@ msgstr "AlmaLinux OS logo"
 
 #: www/templates/_partial/navbar.html:16
 msgid "Toggle navigation"
-msgstr ""
+msgstr "Alternar la navegación"
 
 #: www/templates/_partial/navbar.html:23
 msgid "Blog"
@@ -136,7 +136,7 @@ msgstr "دانلود"
 
 #: www/templates/blog/index.html:7
 msgid "AlmaLinux OS Blog"
-msgstr ""
+msgstr "Blog de AlmaLinux OS"
 
 #: www/templates/blog/index.html:48
 msgid "Continue reading"
@@ -152,11 +152,11 @@ msgstr "پسین"
 
 #: www/templates/contribute/index.html:6
 msgid "AlmaLinux OS - Contribute"
-msgstr ""
+msgstr "AlmaLinux OS - Contribuir"
 
 #: www/templates/contribute/index.html:7 www/templates/contribute/index.html:22
 msgid "Contribute to AlmaLinux OS development"
-msgstr ""
+msgstr "Contribuir al desarrollo de AlmaLinux OS"
 
 #: www/templates/contribute/index.html:26
 msgid ""
@@ -164,6 +164,9 @@ msgid ""
 "community chat. There are many ways to contribute to AlmaLinux OS - testing, "
 "quality assurance, documentation, and more."
 msgstr ""
+"AlmaLinux OS y el desarrollo de la infraestructura se organizan utilizando "
+"nuestro chat de la comunidad. Hay muchas maneras de contribuir a AlmaLinux "
+"OS - pruebas, control de calidad, documentación, y más."
 
 #: www/templates/contribute/index.html:33
 #, python-format
