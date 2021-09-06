@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-02 20:26+0000\n"
-"PO-Revision-Date: 2021-08-27 07:34+0000\n"
-"Last-Translator: Ana Carla Vasconcelos <anacarlavgs@gmail.com>\n"
+"PO-Revision-Date: 2021-09-06 22:34+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/pt/>\n"
 "Language: pt\n"
@@ -140,7 +140,7 @@ msgstr "Blog AlmaLinux OS"
 
 #: www/templates/blog/index.html:48
 msgid "Continue reading"
-msgstr "Continuar lendo"
+msgstr "Continuar a ler"
 
 #: www/templates/blog/index.html:61 www/templates/blog/index.html:67
 msgid "Previous"
@@ -269,7 +269,7 @@ msgstr "Junte-se"
 
 #: www/templates/index.html:115
 msgid "Community chat"
-msgstr "Bate-papo da comunidade"
+msgstr "Chat da comunidade"
 
 #: www/templates/index.html:118
 msgid ""
@@ -277,11 +277,11 @@ msgid ""
 "governance team and AlmaLinux OS developers."
 msgstr ""
 "Junte-se a uma discussão em tempo real com outros membros da comunidade do "
-"AlmaLinux OS, equipe de governança e desenvolvedores do AlmaLinux OS."
+"AlmaLinux OS, equipa de governação e programadores do AlmaLinux OS."
 
 #: www/templates/index.html:126
 msgid "Engage"
-msgstr "Engaje"
+msgstr "Participe"
 
 #: www/templates/index.html:134
 msgid "Community forums"
@@ -293,7 +293,7 @@ msgid ""
 "AlmaLinux OS community and developers alike."
 msgstr ""
 "Faça perguntas, obtenha respostas e contribua com o apoio da comunidade para "
-"outros na comunidade AlmaLinux OS e desenvolvedores."
+"outros na comunidade AlmaLinux OS e programadores."
 
 #: www/templates/index.html:144
 msgid "Discover"
@@ -445,7 +445,7 @@ msgstr "Algo deu errado..."
 
 #: www/templates/subscribe_post.html:22 www/templates/subscribe_post.html:33
 msgid "Return home"
-msgstr ""
+msgstr "Voltar ao início"
 
 #: www/templates/subscribe_post.html:27
 msgid "Thank you!"
