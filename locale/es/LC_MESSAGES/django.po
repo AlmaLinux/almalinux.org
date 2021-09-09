@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-02 20:26+0000\n"
-"PO-Revision-Date: 2021-08-31 05:32+0000\n"
+"PO-Revision-Date: 2021-09-09 03:33+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/es/>\n"
@@ -387,7 +387,7 @@ msgstr ""
 
 #: www/templates/index.html:265
 msgid "Commercial Support"
-msgstr "Asistencia comercial"
+msgstr "Servicio técnico comercial"
 
 #: www/templates/index.html:286
 msgid "Answers to Key Questions"
@@ -418,6 +418,8 @@ msgid ""
 "By filling this form you agree to be contacted by AlmaLinux OS Foundation "
 "regarding your request. You can unsubscribe at any time."
 msgstr ""
+"Al cumplimentar este formulario, acepta que la AlmaLinuxOS Foundation le "
+"contacte. Puede darse de baja en cualquier momento."
 
 #: www/templates/index.html:363
 msgid "AlmaLinux OS in the Press"
@@ -425,7 +427,7 @@ msgstr "AlmaLinux OS en la prensa"
 
 #: www/templates/page/page.html:27
 msgid "Published"
-msgstr ""
+msgstr "Publicado"
 
 #: www/templates/showcase/index.html:6
 msgid "AlmaLinux OS feature showcase"
@@ -465,10 +467,11 @@ msgstr "La dirección de correo electrónico no es válida"
 #: www/views.py:77
 msgid "Failed to subscribe to mailing list, please try again later"
 msgstr ""
+"No se pudo suscribir a la lista de correo. Inténtelo nuevamente más tarde"
 
 #: www/views.py:79
 msgid "You are already subscribed to this mailing list!"
-msgstr ""
+msgstr "Ya se ha suscrito a esta lista de distribución de correo."
 
 #~ msgid "Hello World"
 #~ msgstr "Hola Mundo"
