@@ -14,7 +14,7 @@
 - meta: flush_handlers
 
 - name: Install certbot
-  pip: name='certbot' executable='pip3'
+  pip: name='certbot' executable='/usr/local/bin/pip3'
   become: yes
 
 - name: Configure NGINX upstream repository

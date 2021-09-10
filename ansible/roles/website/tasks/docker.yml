@@ -25,11 +25,11 @@
   become: yes
 
 - name: Ensure latest pip
-  pip: name='pip' executable='pip3' extra_args='--upgrade'
+  pip: name='pip' executable='/usr/local/bin/pip3' extra_args='--upgrade'
   become: yes
 
 - name: Install docker-compose
-  pip: name='docker-compose' executable='pip3'
+  pip: name='docker-compose' executable='/usr/local/bin/pip3'
   become: yes
 
 - name: Enable and start Docker service

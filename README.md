@@ -2,7 +2,7 @@
 
 [![almalinux.org](./screenshot.png)](https://almalinux.org)
 
-This repository contains website source code for future https://almalinux.org.
+This repository contains website source code for https://almalinux.org.
 
 This website is built with Python using Django web framework. It uses MariaDB as database backend,
 Docker and docker-compose for development environment deployment, and Pipenv is used to track project 
