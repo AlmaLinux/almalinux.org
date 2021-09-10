@@ -148,14 +148,14 @@ USE_TZ = True
 LANGUAGES = (
     # ('de', 'Deutsch'),
     ('en', 'English'),  # English (US), default
-    # ('es', 'Español'),  # Spanish (ES)
+    ('es', 'Español'),  # Spanish (ES)
     ('fr', 'Français'),
     # ('he', 'עִבְרִית'), # Hebrew
     ('it', 'Italiano'),
     ('ja', '日本語'),  # Japanese
     ('lv', 'Latviešu'),
     ('pl', 'Polski'),
-    # ('pt', 'Português'),  # Portuguese (PT)
+    ('pt', 'Português'),  # Portuguese (PT)
     ('pt-br', 'Português Brasileiro'),  # Portuguese (BR)
     ('ru', 'Русский'),
     ('tr', 'Türkçe'),
