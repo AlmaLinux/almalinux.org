@@ -81,3 +81,4 @@
   copy: src='nginx.conf.d/almalinux.org.conf' dest='/etc/nginx/conf.d/almalinux.org.conf' mode='0644' owner=root group=root
   notify: [ 'Reload NGINX' ]
   become: yes
+  tags: [ 'www_conf' ]
