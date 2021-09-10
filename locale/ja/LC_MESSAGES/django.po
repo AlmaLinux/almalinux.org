@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-02 20:26+0000\n"
-"PO-Revision-Date: 2021-08-01 04:32+0000\n"
-"Last-Translator: gz83 <uioptt24@gmail.com>\n"
+"PO-Revision-Date: 2021-09-02 06:32+0000\n"
+"Last-Translator: Srijan <srijanchtrvd18@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/ja/>\n"
 "Language: ja\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.8-dev\n"
+"X-Generator: Weblate 4.8.1-dev\n"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
@@ -127,7 +127,7 @@ msgstr "言語"
 
 #: www/templates/_partial/navbar.html:86
 msgid "Translate"
-msgstr ""
+msgstr "訳する"
 
 #: www/templates/_partial/navbar.html:94 www/templates/index.html:52
 msgid "Download"

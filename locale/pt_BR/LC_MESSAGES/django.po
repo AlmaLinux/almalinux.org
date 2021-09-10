@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-02 20:26+0000\n"
-"PO-Revision-Date: 2021-08-01 04:32+0000\n"
-"Last-Translator: gz83 <uioptt24@gmail.com>\n"
+"PO-Revision-Date: 2021-08-05 22:34+0000\n"
+"Last-Translator: Deleted User <noreply+32631@weblate.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "almalinux/website-backend/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -105,7 +105,7 @@ msgstr "logo da AlmaLinux OS"
 
 #: www/templates/_partial/navbar.html:16
 msgid "Toggle navigation"
-msgstr "Conmutar a navegação"
+msgstr "Ative a navegação"
 
 #: www/templates/_partial/navbar.html:23
 msgid "Blog"
@@ -424,7 +424,7 @@ msgstr ""
 
 #: www/templates/index.html:363
 msgid "AlmaLinux OS in the Press"
-msgstr "AlmaLinux OS na imprensa"
+msgstr "AlmaLinux OS na Imprensa"
 
 #: www/templates/page/page.html:27
 msgid "Published"
@@ -436,7 +436,7 @@ msgstr "Mostração de funcionalidades do AlmaLinux OS"
 
 #: www/templates/showcase/index.html:7
 msgid "Feature showcase"
-msgstr "Mostração de características"
+msgstr "Showcase das funcionalidades"
 
 #: www/templates/subscribe_post.html:6
 msgid "Mailing list subscription - AlmaLinux OS"
