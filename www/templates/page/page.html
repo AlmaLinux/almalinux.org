@@ -19,11 +19,7 @@
             <h1 class="al-section-title mb-4">{{ page.title }}</h1>
             <article>
                 <div class="al-page-content pb-5 al-wysiwyg">
-                    {% if page.content_html %}
-                        {{ page.content_html|safe }}
-                    {% else %}
-                        {{ page.content.html|safe }}
-                    {% endif %}
+                    {{ page.content_html|safe }}
                 </div>
                 <div class="al-page-date d-flex align-items-center"
                      title="{{ page.date|date }} {{ page.date|time }}">

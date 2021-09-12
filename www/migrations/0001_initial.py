@@ -2,7 +2,6 @@
 from typing import List
 
 import django.core.validators
-import django_quill.fields  # type: ignore
 from django.db import migrations, models
 
 import commons.uploads
@@ -44,7 +43,7 @@ class Migration(migrations.Migration):
                                   max_length=255, verbose_name='Canonical title (slug)')),
                 ('excerpt',
                  models.TextField(help_text='An excerpt to display in the article list view of the blog index.')),
-                ('content', django_quill.fields.QuillField()),
+                ('content', models.TextField()),
             ],
         ),
         migrations.CreateModel(
@@ -79,7 +78,7 @@ class Migration(migrations.Migration):
                 ('slug',
                  models.SlugField(blank=True, help_text='Optional - leave empty to set automatically from Title.',
                                   max_length=255, verbose_name='Canonical title (slug)')),
-                ('content', django_quill.fields.QuillField()),
+                ('content', models.TextField()),
             ],
         ),
         migrations.CreateModel(

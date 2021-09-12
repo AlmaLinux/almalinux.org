@@ -1,7 +1,6 @@
 from django.core.validators import FileExtensionValidator
 from django.db import models
 from django.utils.text import slugify
-from django_quill.fields import QuillField  # type: ignore
 from markdown import markdown
 
 from almalinux.settings import LANGUAGES
@@ -142,8 +141,6 @@ class Page(models.Model):
         help_text='Optional - leave empty to set automatically from Title.'
     )
 
-    content: QuillField = QuillField()
-
     content_md: models.TextField = models.TextField(
         verbose_name='Content (Markdown)',
         help_text='Markdown content of the page content',
@@ -212,8 +209,6 @@ class BlogPost(models.Model):
     excerpt: models.TextField = models.TextField(
         help_text='An excerpt to display in the article list view of the blog index.'
     )
-
-    content: QuillField = QuillField()
 
     content_md: models.TextField = models.TextField(
         verbose_name='Content (Markdown)',
