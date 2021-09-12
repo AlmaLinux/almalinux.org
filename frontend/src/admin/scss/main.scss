@@ -129,64 +129,11 @@ div.checkbox-row label {
 }
 
 /** Editor customizations **/
-.colM .aligned .vLargeTextField.django-quill-widget-container {
-  width: unset;
+textarea[name="content_md"] {
+  width: 656px !important;
   display: block;
   box-sizing: border-box;
   float: none;
-  overflow: hidden;
-}
-
-form {
-  .ql-editor, .ql-snow .ql-editor {
-    min-height: 400px;
-    background: $al-body-background;
-    color: $al-font-color;
-    font-size: $al-font-base-size;
-    font-family: $al-font-family;
-    @import "../../common/scss/bootstrap";
-    @import "~bootstrap/scss/bootstrap-reboot";
-    @import "~bootstrap/scss/type";
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    ul,
-    ul li,
-    ol,
-    ol li,
-    a,
-    blockquote {
-      all: revert;
-      font-family: $al-font-family-accent;
-    }
-
-    a {
-      color: #c4e1ff !important;
-      text-decoration: underline;
-    }
-
-    a:hover,
-    a:active {
-      color: #9db4cc !important;
-    }
-
-    ul, ol {
-      padding-left: revert;
-      margin-left: revert;
-
-      li {
-        padding-left: revert !important;
-        margin-left: revert !important;
-
-        &:before {
-          display: none;
-        }
-      }
-    }
-  }
+  overflow: auto;
+  min-height: 600px;
 }

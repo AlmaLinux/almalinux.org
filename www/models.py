@@ -2,6 +2,7 @@ from django.core.validators import FileExtensionValidator
 from django.db import models
 from django.utils.text import slugify
 from django_quill.fields import QuillField  # type: ignore
+from markdown import markdown
 
 from almalinux.settings import LANGUAGES
 from commons.uploads import segmented_upload_to
@@ -143,10 +144,24 @@ class Page(models.Model):
 
     content: QuillField = QuillField()
 
+    content_md: models.TextField = models.TextField(
+        verbose_name='Content (Markdown)',
+        help_text='Markdown content of the page content',
+        blank=True,
+    )
+
+    content_html: models.TextField = models.TextField(
+        editable=False,
+        blank=True,
+    )
+
     def save(self, *args, **kwargs) -> None:  # type: ignore
         if 0 == len(self.slug):
             # noinspection PyTypeChecker
             self.slug = slugify(self.title, allow_unicode=False)
+
+        self.content_html = markdown(self.content_md, extensions=['extra'])
+
         super().save(*args, **kwargs)
 
     def __str__(self) -> str:
@@ -200,10 +215,24 @@ class BlogPost(models.Model):
 
     content: QuillField = QuillField()
 
+    content_md: models.TextField = models.TextField(
+        verbose_name='Content (Markdown)',
+        help_text='Markdown content of the blog entry',
+        blank=True,
+    )
+
+    content_html: models.TextField = models.TextField(
+        editable=False,
+        blank=True,
+    )
+
     def save(self, *args, **kwargs) -> None:  # type: ignore
         if 0 == len(self.slug):
             # noinspection PyTypeChecker
             self.slug = slugify(self.title, allow_unicode=False)
+
+        self.content_html = markdown(self.content_md, extensions=['extra'])
+
         super().save(*args, **kwargs)
 
     def __str__(self) -> str:

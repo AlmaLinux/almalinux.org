@@ -32,7 +32,11 @@
                     </div>
                 {% endif %}
                 <div class="al-article-content pb-5 al-wysiwyg">
-                    {{ post.content.html|safe }}
+                    {% if post.content_html %}
+                        {{ post.content_html|safe }}
+                    {% else %}
+                        {{ post.content.html|safe }}
+                    {% endif %}
                 </div>
             </article>
         </div>
