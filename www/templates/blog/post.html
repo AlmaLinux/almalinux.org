@@ -6,7 +6,7 @@
 {% load humanize %}
 
 {% block title %}{{ post.title }} - AlmaLinux OS Blog{% endblock %}
-{% block description %}An Open Source, community owned and governed, forever-free enterprise Linux distribution.{% endblock %}
+{% block description %}{% if post.excerpt %}{{ post.excerpt }}{% else %}{% translate 'An Open Source, community owned and governed, forever-free enterprise Linux distribution.' %}{% endif %}{% endblock %}
 
 {% block head_end %}
     {% encore_entrypoint_css 'page_blog' %}
