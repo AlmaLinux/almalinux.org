@@ -3,25 +3,26 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-02 20:26+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-10-05 08:08+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/almalinux/"
+"website-backend/he/>\n"
+"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % "
-"1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
+"n % 10 == 0) ? 2 : 3));\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
-msgstr ""
+msgstr "404 לא נמצא - AlmaLinux OS"
 
 #: www/templates/404.html:6 www/templates/blog/index.html:9
 #: www/templates/index.html:8 www/templates/layouts/base.html:19
@@ -29,131 +30,131 @@ msgstr ""
 msgid ""
 "An open-source RHEL fork built by the team at CloudLinux, inspired by the "
 "community."
-msgstr ""
+msgstr "פיצול של RHEL שנבנה על ידי הצוות ב־CloudLinux, בהשראת הקהילה."
 
 #: www/templates/404.html:13
 msgid "404 Not Found"
-msgstr ""
+msgstr "404 לא נמצא"
 
 #: www/templates/404.html:16
 msgid "Sorry, but the page you were trying to access could not be found."
-msgstr ""
+msgstr "מחילה אך הדף אליו ניסית לגשת לא נמצא."
 
 #: www/templates/_partial/footer.html:11 www/templates/_partial/navbar.html:38
 msgid "Resources"
-msgstr ""
+msgstr "משאבים"
 
 #: www/templates/_partial/footer.html:13 www/templates/_partial/navbar.html:28
 msgid "Wiki"
-msgstr ""
+msgstr "ויקי"
 
 #: www/templates/_partial/footer.html:15
 msgid "Bugs"
-msgstr ""
+msgstr "תקלות"
 
 #: www/templates/_partial/footer.html:16
 msgid "Repository"
-msgstr ""
+msgstr "מאגר"
 
 #: www/templates/_partial/footer.html:17
 msgid "Downloads"
-msgstr ""
+msgstr "הורדות"
 
 #: www/templates/_partial/footer.html:21
 msgid "Community"
-msgstr ""
+msgstr "קהילה"
 
 #: www/templates/_partial/footer.html:25
 msgid "Forums"
-msgstr ""
+msgstr "פורומים"
 
 #: www/templates/_partial/footer.html:26
 msgid "Chat"
-msgstr ""
+msgstr "צ׳אט"
 
 #: www/templates/_partial/footer.html:31
 msgid "Legal"
-msgstr ""
+msgstr "משפטי"
 
 #: www/templates/_partial/footer.html:33
 msgid "Legal Notice"
-msgstr ""
+msgstr "הצהרה משפטית"
 
 #: www/templates/_partial/footer.html:34 www/templates/index.html:352
 msgid "Privacy Policy"
-msgstr ""
+msgstr "מדיניות פרטיות"
 
 #: www/templates/_partial/footer.html:35
 msgid "Terms of Service"
-msgstr ""
+msgstr "תנאי השירות"
 
 #: www/templates/_partial/footer.html:38
 msgid "Licensing Policy"
-msgstr ""
+msgstr "מדיניות הרישוי"
 
 #: www/templates/_partial/footer.html:43
 msgid " Trademark Usage Policy"
-msgstr ""
+msgstr " מדיניות שימוש בסימני מסחר"
 
 #: www/templates/_partial/navbar.html:7
 msgid "AlmaLinux OS logo"
-msgstr ""
+msgstr "הלוגו של AlmaLinux OS"
 
 #: www/templates/_partial/navbar.html:16
 msgid "Toggle navigation"
-msgstr ""
+msgstr "החלפת מצב ניווט"
 
 #: www/templates/_partial/navbar.html:23
 msgid "Blog"
-msgstr ""
+msgstr "בלוג"
 
 #: www/templates/_partial/navbar.html:44
 msgid "Migrate from CentOS 8"
-msgstr ""
+msgstr "הגירה מ־CentOS 8"
 
 #: www/templates/_partial/navbar.html:49
 msgid "Report Bugs"
-msgstr ""
+msgstr "דיווח על תקלות"
 
 #: www/templates/_partial/navbar.html:57
 msgid "Shop"
-msgstr ""
+msgstr "חנות"
 
 #: www/templates/_partial/navbar.html:65
 msgid "Language"
-msgstr ""
+msgstr "שפה"
 
 #: www/templates/_partial/navbar.html:86
 msgid "Translate"
-msgstr ""
+msgstr "תרגום"
 
 #: www/templates/_partial/navbar.html:94 www/templates/index.html:52
 msgid "Download"
-msgstr ""
+msgstr "הורדות"
 
 #: www/templates/blog/index.html:7
 msgid "AlmaLinux OS Blog"
-msgstr ""
+msgstr "הבלוג של AlmaLinux OS"
 
 #: www/templates/blog/index.html:48
 msgid "Continue reading"
-msgstr ""
+msgstr "להמשיך בקריאה"
 
 #: www/templates/blog/index.html:61 www/templates/blog/index.html:67
 msgid "Previous"
-msgstr ""
+msgstr "הקודם"
 
 #: www/templates/blog/index.html:79 www/templates/blog/index.html:85
 msgid "Next"
-msgstr ""
+msgstr "הבא"
 
 #: www/templates/contribute/index.html:6
 msgid "AlmaLinux OS - Contribute"
-msgstr ""
+msgstr "AlmaLinux OS - תרומה"
 
 #: www/templates/contribute/index.html:7 www/templates/contribute/index.html:22
 msgid "Contribute to AlmaLinux OS development"
-msgstr ""
+msgstr "תרומה לפיתוח של AlmaLinux OS"
 
 #: www/templates/contribute/index.html:26
 msgid ""
@@ -161,6 +162,8 @@ msgid ""
 "community chat. There are many ways to contribute to AlmaLinux OS - testing, "
 "quality assurance, documentation, and more."
 msgstr ""
+"הפיתוח של AlmaLinux OS ושל התשתיות מאורגנים באמצעות הצ׳אט הקהילתי שלנו. יש "
+"מגוון דרכים לתרום ל־AlmaLinux OS - בדיקות, אבטחת איכות, תיעוד ועוד."
 
 #: www/templates/contribute/index.html:33
 #, python-format
@@ -168,46 +171,48 @@ msgid ""
 "<a href=\"%(intro_link)s\">Introduce yourself</a> or join one of the topical "
 "channels below to find out more!"
 msgstr ""
+"ניתן <a href=\"%(intro_link)s\">להציג את עצמך</a> או להצטרף לאחד מהערוצים "
+"שלהלן המחולקים לנושאים כדי ללמוד עוד!"
 
 #: www/templates/contribute/index.html:43
 msgid "General chat"
-msgstr ""
+msgstr "צ׳אט כללי"
 
 #: www/templates/contribute/index.html:48
 msgid "Development"
-msgstr ""
+msgstr "פיתוח"
 
 #: www/templates/contribute/index.html:53
 msgid "Infrastructure"
-msgstr ""
+msgstr "תשתית"
 
 #: www/templates/contribute/index.html:58
 msgid "Security"
-msgstr ""
+msgstr "אבטחה"
 
 #: www/templates/contribute/index.html:63
 msgid "Documentation"
-msgstr ""
+msgstr "תיעוד"
 
 #: www/templates/contribute/index.html:68
 msgid "Marketing"
-msgstr ""
+msgstr "שיווק"
 
 #: www/templates/contribute/index.html:73
 msgid "Web presence"
-msgstr ""
+msgstr "נוכחות ברשת"
 
 #: www/templates/contribute/index.html:82
 msgid "Join AlmaLinux OS community chat"
-msgstr ""
+msgstr "הצטרפות לצ׳אט הקהילתי של AlmaLinux OS"
 
 #: www/templates/index.html:6
 msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
-msgstr ""
+msgstr "AlmaLinux OS - מערכת הפעלה ברמה תאגידית בחינם לעד"
 
 #: www/templates/index.html:34
 msgid "Free Linux OS for the community, by the community"
-msgstr ""
+msgstr "מערכת הפעלה מבוססת לינוקס עבור הקהילה, מאת הקהילה"
 
 #: www/templates/index.html:37
 msgid ""
@@ -219,68 +224,74 @@ msgstr ""
 
 #: www/templates/index.html:47
 msgid "Contribute"
-msgstr ""
+msgstr "תרומה"
 
 #: www/templates/index.html:57
 msgid "Migrate"
-msgstr ""
+msgstr "הגירה"
 
 #: www/templates/index.html:61
 #, python-format
 msgid "Founded by the team behind the <a href=\"%(link)s\">CloudLinux OS</a>."
-msgstr ""
+msgstr "נוסד על ידי הצוות שמאחורי <a href=\"%(link)s\">CloudLinux OS</a>."
 
 #: www/templates/index.html:78
 msgid ""
 "Our GitHub organization contains source code and tools used to build "
 "AlmaLinux OS and related infrastructure."
 msgstr ""
+"הארגון שלנו ב־GitHub מכיל את קוד המקור והכלים בהם נעשה שימוש לבנות את "
+"AlmaLinux OS ואת התשתית המתאימה."
 
 #: www/templates/index.html:86
 msgid "Explore"
-msgstr ""
+msgstr "סקירה"
 
 #: www/templates/index.html:98
 msgid ""
 "Join our vibrant Reddit community, interact with other AlmaLinux OS users, "
 "receive updates, find and provide help."
 msgstr ""
+"ניתן להצטרף לקהילה התוססת שלנו ב־Reddit, ליצור קשר עם משתמשי AlmaLinux OS "
+"נוספים, לקבל עדכונים, למצוא ולקבל עזרה."
 
 #: www/templates/index.html:106
 msgid "Join"
-msgstr ""
+msgstr "הצטרפות"
 
 #: www/templates/index.html:115
 msgid "Community chat"
-msgstr ""
+msgstr "הצ׳אט הקהילתי"
 
 #: www/templates/index.html:118
 msgid ""
 "Join a real time discussion with other AlmaLinux OS community members, "
 "governance team and AlmaLinux OS developers."
 msgstr ""
+"ניתן להצטרף לדיון בזמן אמת עם חברים נוספים בקהילת AlmaLinux OS, צוות ההיגוי "
+"ומפתח AlmaLinux OS."
 
 #: www/templates/index.html:126
 msgid "Engage"
-msgstr ""
+msgstr "להתערבב"
 
 #: www/templates/index.html:134
 msgid "Community forums"
-msgstr ""
+msgstr "פורומים קהילתיים"
 
 #: www/templates/index.html:136
 msgid ""
 "Ask questions, get answers and contribute community support to others in "
 "AlmaLinux OS community and developers alike."
-msgstr ""
+msgstr "לשאול שאלות, לקבל תשובות ולתמוך באחרים בקהילת AlmaLinux OS ובמפתחיה."
 
 #: www/templates/index.html:144
 msgid "Discover"
-msgstr ""
+msgstr "חשיפה"
 
 #: www/templates/index.html:158
 msgid "About AlmaLinux OS"
-msgstr ""
+msgstr "על AlmaLinux OS"
 
 #: www/templates/index.html:160
 msgid ""
@@ -305,11 +316,11 @@ msgstr ""
 
 #: www/templates/index.html:188
 msgid "Backed by"
-msgstr ""
+msgstr "מגובה על ידי"
 
 #: www/templates/index.html:212
 msgid "Production-ready"
-msgstr ""
+msgstr "מוכנה לשרת לקוחות"
 
 #: www/templates/index.html:214
 msgid ""
@@ -320,7 +331,7 @@ msgstr ""
 
 #: www/templates/index.html:225
 msgid "Fully supported, always free"
-msgstr ""
+msgstr "בתמיכה מלאה, תמיד בחינם"
 
 #: www/templates/index.html:227
 msgid ""
@@ -331,7 +342,7 @@ msgstr ""
 
 #: www/templates/index.html:238
 msgid "Effortless to switch to"
-msgstr ""
+msgstr "מעבר שקוף"
 
 #: www/templates/index.html:240
 #, python-format
@@ -340,18 +351,21 @@ msgid ""
 "the case when switching from CentOS and other RHEL&reg; forks to AlmaLinux "
 "OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</a>"
 msgstr ""
+"מעבר בין הפצות לינוקס היא בדרך כלל יקרה וגוזלת זמן, אך זה לא המקרה במעבר מ־"
+"CentOS ופיצולים אחרים מ־RHEL&reg; אל AlmaLinux OS. המעבר הוא פשוט - <a href="
+"\"%(migrate_link)s\">כך עושים זאת</a>."
 
 #: www/templates/index.html:265
 msgid "Commercial Support"
-msgstr ""
+msgstr "תמיכה מסחרית"
 
 #: www/templates/index.html:286
 msgid "Answers to Key Questions"
-msgstr ""
+msgstr "תשובות לשאלות מפתח"
 
 #: www/templates/index.html:320
 msgid "Stay updated!"
-msgstr ""
+msgstr "להתעדכן!"
 
 #: www/templates/index.html:323
 msgid ""
@@ -361,11 +375,11 @@ msgstr ""
 
 #: www/templates/index.html:337
 msgid "Your email"
-msgstr ""
+msgstr "כתובת הדוא״ל שלך"
 
 #: www/templates/index.html:341
 msgid "Subscribe"
-msgstr ""
+msgstr "רישום"
 
 #: www/templates/index.html:348
 msgid ""
@@ -375,49 +389,49 @@ msgstr ""
 
 #: www/templates/index.html:363
 msgid "AlmaLinux OS in the Press"
-msgstr ""
+msgstr "AlmaLinux OS בתקשורת"
 
 #: www/templates/page/page.html:27
 msgid "Published"
-msgstr ""
+msgstr "פורסם"
 
 #: www/templates/showcase/index.html:6
 msgid "AlmaLinux OS feature showcase"
-msgstr ""
+msgstr "מצגת היכולות של AlmaLinux OS"
 
 #: www/templates/showcase/index.html:7
 msgid "Feature showcase"
-msgstr ""
+msgstr "מצגת יכולות"
 
 #: www/templates/subscribe_post.html:6
 msgid "Mailing list subscription - AlmaLinux OS"
-msgstr ""
+msgstr "מינוי לרשימת דיוור - AlmaLinux OS"
 
 #: www/templates/subscribe_post.html:16
 msgid "Something went wrong..."
-msgstr ""
+msgstr "משהו השתבש…"
 
 #: www/templates/subscribe_post.html:22 www/templates/subscribe_post.html:33
 msgid "Return home"
-msgstr ""
+msgstr "חזרה לדף הבית"
 
 #: www/templates/subscribe_post.html:27
 msgid "Thank you!"
-msgstr ""
+msgstr "תודה רבה!"
 
 #: www/templates/subscribe_post.html:30
 msgid ""
 "You have successfully subscribed to AlmaLinux OS announcement mailing list!"
-msgstr ""
+msgstr "נרשמת בהצלחה לרשימת הדיוור להכרזות של AlmaLinux OS!"
 
 #: www/views.py:53
 msgid "Email address is not valid"
-msgstr ""
+msgstr "כתובת הדוא״ל שגויה"
 
 #: www/views.py:77
 msgid "Failed to subscribe to mailing list, please try again later"
-msgstr ""
+msgstr "ההרשמה לרשימת הדיוור נכשלה, נא לנסות שוב בהמשך"
 
 #: www/views.py:79
 msgid "You are already subscribed to this mailing list!"
-msgstr ""
+msgstr "כבר נרשמת לרשימת דיוור זו!"
