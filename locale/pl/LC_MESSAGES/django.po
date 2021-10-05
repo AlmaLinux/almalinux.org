@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-04 22:07+0000\n"
+"POT-Creation-Date: 2021-10-05 20:01+0000\n"
 "PO-Revision-Date: 2021-08-25 16:34+0000\n"
 "Last-Translator: A M <augim3@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/almalinux/website-"
@@ -26,14 +26,12 @@ msgid "404 Not Found - AlmaLinux OS"
 msgstr "404 Nie Znalezniono - AlmaLinux OS"
 
 #: www/templates/404.html:6 www/templates/blog/index.html:9
-#: www/templates/index.html:8 www/templates/layouts/base.html:19
+#: www/templates/index.html:8 www/templates/layouts/base.html:21
 #: www/templates/subscribe_post.html:8
 msgid ""
-"An open-source RHEL fork built by the team at CloudLinux, inspired by the "
-"community."
+"An Open Source, community owned and governed, forever-free enterprise Linux "
+"distribution."
 msgstr ""
-"Widelec RHEL o otwartym kodzie źródłowym zbudowany przez zespół CloudLinux, "
-"zainspirowany przez społeczność."
 
 #: www/templates/404.html:13
 msgid "404 Not Found"
@@ -272,7 +270,7 @@ msgstr "Dołącz do czatu społeczności AlmaLinux OS"
 #: www/templates/foundation/members/index.html:69
 #, fuzzy
 #| msgid "Contribute"
-msgid "Contributor"
+msgid "Contributor Member"
 msgstr "Weź udział w projekcie"
 
 #: www/templates/foundation/members/index.html:72
@@ -289,7 +287,7 @@ msgid "Apply"
 msgstr ""
 
 #: www/templates/foundation/members/index.html:90
-msgid "Mirror Sponsorship"
+msgid "Mirror Member"
 msgstr ""
 
 #: www/templates/foundation/members/index.html:93
@@ -300,7 +298,7 @@ msgid ""
 msgstr ""
 
 #: www/templates/foundation/members/index.html:111
-msgid "Sponsor"
+msgid "Sponsor Member"
 msgstr ""
 
 #: www/templates/foundation/members/index.html:113
@@ -330,8 +328,14 @@ msgstr ""
 "Wolny system operacyjny Linux tworzony przez społeczność, dla społeczności"
 
 #: www/templates/index.html:37
+#, fuzzy
+#| msgid ""
+#| "An Open Source, community-governed and forever-free enterprise Linux "
+#| "distribution, focused on long-term stability, providing a robust "
+#| "production-grade platform. AlmaLinux OS is 1:1 binary compatible with "
+#| "RHEL&reg; and pre-Stream CentOS."
 msgid ""
-"An Open Source, community-governed and forever-free enterprise Linux "
+"An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution, focused on long-term stability, providing a robust production-"
 "grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL&reg; and pre-"
 "Stream CentOS."
@@ -581,3 +585,10 @@ msgstr "Nie udało się zapisać na listę mailingową, spróbuj ponownie późn
 #: www/views.py:80
 msgid "You are already subscribed to this mailing list!"
 msgstr "Jesteś już zapisany do tej listy mailingowej!"
+
+#~ msgid ""
+#~ "An open-source RHEL fork built by the team at CloudLinux, inspired by the "
+#~ "community."
+#~ msgstr ""
+#~ "Widelec RHEL o otwartym kodzie źródłowym zbudowany przez zespół "
+#~ "CloudLinux, zainspirowany przez społeczność."

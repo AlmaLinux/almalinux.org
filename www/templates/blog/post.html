@@ -2,16 +2,32 @@
 {% load i18n %}
 {% load static %}
 {% load encore %}
+{% load urls %}
 {% load humanize %}
 
 {% block title %}{{ post.title }} - AlmaLinux OS Blog{% endblock %}
-{% block description %}An open-source RHEL fork built by the team at CloudLinux, inspired by the community.{% endblock %}
+{% block description %}An Open Source, community owned and governed, forever-free enterprise Linux distribution.{% endblock %}
 
 {% block head_end %}
     {% encore_entrypoint_css 'page_blog' %}
 {% endblock %}
 {% block body_end %}
     {% encore_entrypoint_js 'page_blog' %}
+{% endblock %}
+{% block og_properties %}
+    {% get_current_language as CURRENT_LANG %}
+
+    <meta property="og:title" content="{{ post.title }} - AlmaLinux OS Blog">
+    <meta property="og:description" content="{{ post.excerpt }}">
+    {% if post.featured_image %}
+        <meta property="og:image" content="{% absolute_url_from_relative post.featured_image.url %}">
+    {% else %}
+        <meta property="og:image" content="{% absolute_url_from_relative '/static/images/hero.png' %}">
+    {% endif %}
+    <meta property="og:url" content="{% absolute_url_from_relative request.get_full_path %}">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:locale" content="{{ CURRENT_LANG }}" />
 {% endblock %}
 
 {% block body %}

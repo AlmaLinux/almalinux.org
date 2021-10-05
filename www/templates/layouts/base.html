@@ -1,6 +1,7 @@
 {% load encore %}
 {% load static %}
 {% load i18n %}
+{% load urls %}
 {% get_current_language as CURRENT_LANG %}
 <!doctype html>
 <html lang="{{ CURRENT_LANG }}">
@@ -15,8 +16,9 @@
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>{% block title %}AlmaLinux OS{% endblock %}</title>
+    <meta property="og:site_name" content="AlmaLinux OS">
     <meta name="description"
-          content="{% block description %}{% translate 'An open-source RHEL fork built by the team at CloudLinux, inspired by the community.' %}{% endblock %}">
+          content="{% block description %}{% translate 'An Open Source, community owned and governed, forever-free enterprise Linux distribution.' %}{% endblock %}">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="alternate" type="application/rss+xml"
           title="RSS Feed for AlmaLinux OS"
@@ -45,6 +47,14 @@
     </style>
     {% encore_entrypoint_css 'common' %}
     {% block head_end %}{% endblock %}
+    {% block og_properties %}
+        {% get_current_language as CURRENT_LANG %}
+        <meta property="og:image" content="{% absolute_url_from_relative '/static/images/hero.png' %}">
+        <meta property="og:url" content="{% absolute_url_from_relative request.get_full_path %}">
+        <meta property="og:type" content="website">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="og:locale" content="{{ CURRENT_LANG }}" />
+    {% endblock %}
 </head>
 <body>
 {% include '_partial/navbar.html' %}

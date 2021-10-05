@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-04 22:07+0000\n"
+"POT-Creation-Date: 2021-10-05 20:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,11 +24,11 @@ msgid "404 Not Found - AlmaLinux OS"
 msgstr ""
 
 #: www/templates/404.html:6 www/templates/blog/index.html:9
-#: www/templates/index.html:8 www/templates/layouts/base.html:19
+#: www/templates/index.html:8 www/templates/layouts/base.html:21
 #: www/templates/subscribe_post.html:8
 msgid ""
-"An open-source RHEL fork built by the team at CloudLinux, inspired by the "
-"community."
+"An Open Source, community owned and governed, forever-free enterprise Linux "
+"distribution."
 msgstr ""
 
 #: www/templates/404.html:13
@@ -251,7 +251,7 @@ msgid "Join AlmaLinux OS Foundation"
 msgstr ""
 
 #: www/templates/foundation/members/index.html:69
-msgid "Contributor"
+msgid "Contributor Member"
 msgstr ""
 
 #: www/templates/foundation/members/index.html:72
@@ -268,7 +268,7 @@ msgid "Apply"
 msgstr ""
 
 #: www/templates/foundation/members/index.html:90
-msgid "Mirror Sponsorship"
+msgid "Mirror Member"
 msgstr ""
 
 #: www/templates/foundation/members/index.html:93
@@ -279,7 +279,7 @@ msgid ""
 msgstr ""
 
 #: www/templates/foundation/members/index.html:111
-msgid "Sponsor"
+msgid "Sponsor Member"
 msgstr ""
 
 #: www/templates/foundation/members/index.html:113
@@ -309,7 +309,7 @@ msgstr ""
 
 #: www/templates/index.html:37
 msgid ""
-"An Open Source, community-governed and forever-free enterprise Linux "
+"An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution, focused on long-term stability, providing a robust production-"
 "grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL&reg; and pre-"
 "Stream CentOS."
