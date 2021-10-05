@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8-dev\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
@@ -424,9 +424,12 @@ msgid ""
 "release. AlmaLinux OS is a 1:1 binary compatible fork of RHEL&reg; guided "
 "and built by the community."
 msgstr ""
+"AlmaLinux OS ist ein community-basiertes open-source Linux-Betriebssystem, "
+"dass die Lücke füllt, die die Einstellung vom CentOS Linux stable release "
+"hinterlassen hat. AlmaLinux OS ist ein 1:1 binary-kompatibeler Fork von "
+"RHEL, der von der Community gesteuert und gebaut wird."
 
 #: www/templates/index.html:167
-#, fuzzy
 msgid ""
 "As a standalone, completely free OS, AlmaLinux OS enjoys $1M in annual "
 "sponsorship from CloudLinux Inc and support from other sponsors. Ongoing "
@@ -445,7 +448,7 @@ msgstr ""
 
 #: www/templates/index.html:188
 msgid "Backed by"
-msgstr ""
+msgstr "Unterstützt durch"
 
 #: www/templates/index.html:212
 msgid "Production-ready"

@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 4.7-dev\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 #: frontend/src/common/js/main.js:7
 msgid "Hello World"
@@ -26,37 +26,37 @@ msgstr "שלום עולם"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:105
 msgid "is not a finite number"
-msgstr ""
+msgstr "אינו מספר סופי"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:172
 #: tmp/node_modules/webidl-conversions/lib/index.js:188
 msgid "is not a finite floating-point value"
-msgstr ""
+msgstr "אינו ערך סופי עם נקודה צפה"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:198
 msgid "is outside the range of a single-precision floating-point value"
-msgstr ""
+msgstr "הוא מחוץ לתחום עבור ערך נקודה צפה עם ייצוג יחיד"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:228
 msgid "is a symbol, which cannot be converted to a string"
-msgstr ""
+msgstr "הוא סמל, שאותו לא ניתן להמיר למחרוזת"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:239
 msgid "is not a valid ByteString"
-msgstr ""
+msgstr "אינו מחרוזת בתים (ByteString) תקנית"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:276
 msgid "is not an object"
-msgstr ""
+msgstr "אינו עצם"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:288
 msgid "is not a function"
-msgstr ""
+msgstr "אינה פונקציה"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:314
 msgid "is not a view on an ArrayBuffer object"
-msgstr ""
+msgstr "אינו תצוגה על עצם מסוג מכלא מערך (ArrayBuffer)"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:322
 msgid "is not an ArrayBuffer object or a view on one"
-msgstr ""
+msgstr "אינו עצם מסוג מכלא מערך (ArrayBuffer) או תצוגה על אחד כזה"
