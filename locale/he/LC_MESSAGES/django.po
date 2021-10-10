@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-05 20:01+0000\n"
-"PO-Revision-Date: 2021-10-09 20:05+0000\n"
+"PO-Revision-Date: 2021-10-10 00:04+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/he/>\n"
@@ -122,7 +122,7 @@ msgstr "דיווח על תקלות"
 
 #: www/templates/_partial/navbar.html:54
 msgid "Membership"
-msgstr ""
+msgstr "חברות"
 
 #: www/templates/_partial/navbar.html:62 www/templates/_partial/navbar.html:57
 msgid "Shop"
@@ -218,11 +218,11 @@ msgstr "הצטרפות לצ׳אט הקהילתי של AlmaLinux OS"
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7
 msgid "AlmaLinux OS Foundation - membership"
-msgstr ""
+msgstr "קרן AlmaLinux OS - חברות"
 
 #: www/templates/foundation/members/index.html:21
 msgid "Join the AlmaLinux OS Foundation"
-msgstr ""
+msgstr "הצטרפות לקרן AlmaLinux OS"
 
 #: www/templates/foundation/members/index.html:25
 msgid ""
@@ -232,7 +232,7 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:32
 msgid "Apply for membership"
-msgstr ""
+msgstr "הגשת מועמדות לחברות"
 
 #: www/templates/foundation/members/index.html:41
 msgid ""
@@ -254,7 +254,7 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:63
 msgid "Join AlmaLinux OS Foundation"
-msgstr ""
+msgstr "הצטרפות לקרן AlmaLinux OS"
 
 #: www/templates/foundation/members/index.html:69
 msgid "Contributor Member"
@@ -271,7 +271,7 @@ msgstr ""
 #: www/templates/foundation/members/index.html:103
 #: www/templates/foundation/members/index.html:121
 msgid "Apply"
-msgstr ""
+msgstr "הגשה"
 
 #: www/templates/foundation/members/index.html:90
 msgid "Mirror Member"
@@ -291,19 +291,19 @@ msgstr ""
 #: www/templates/foundation/members/index.html:113
 msgid ""
 "Entities who wish to contribute funding for the project through sponsorship."
-msgstr ""
+msgstr "ישויות שמעוניינות לספק מימון כלכלי למיזם."
 
 #: www/templates/foundation/members/index.html:131
 msgid "Do you have membership related questions?"
-msgstr ""
+msgstr "יש לך שאלות שקשורות בחברות?"
 
 #: www/templates/foundation/members/index.html:132
 msgid "Contact us"
-msgstr ""
+msgstr "ניתן ליצור אתנו קשר"
 
 #: www/templates/foundation/members/index.html:141
 msgid "Board of Directors"
-msgstr ""
+msgstr "דירקטוריון"
 
 #: www/templates/index.html:6
 msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
