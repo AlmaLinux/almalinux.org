@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-05 20:01+0000\n"
-"PO-Revision-Date: 2021-08-19 21:35+0000\n"
+"PO-Revision-Date: 2021-10-11 09:27+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.8-dev\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
@@ -30,6 +30,8 @@ msgid ""
 "An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution."
 msgstr ""
+"Açık kaynaklı, topluluğun sahip olduğu ve yönettiği, sonsuza kadar ücretsiz "
+"kurumsal Linux dağıtımı."
 
 #: www/templates/404.html:13
 msgid "404 Not Found"
@@ -92,14 +94,12 @@ msgid "Licensing Policy"
 msgstr "Lisans Politikası"
 
 #: www/templates/_partial/footer.html:43
-#, fuzzy
-#| msgid " Trademark Usage Policy"
 msgid "Trademark Usage Policy"
-msgstr " Ticari Marka Kullanım Politikası"
+msgstr "Ticari Marka Kullanım Politikası"
 
 #: www/templates/_partial/footer.html:48
 msgid "Foundation Bylaws"
-msgstr ""
+msgstr "Vakıf Yönetmeliği"
 
 #: www/templates/_partial/navbar.html:7
 msgid "AlmaLinux OS logo"
@@ -123,7 +123,7 @@ msgstr "Yazılım Hata Raporu"
 
 #: www/templates/_partial/navbar.html:54
 msgid "Membership"
-msgstr ""
+msgstr "Üyelik"
 
 #: www/templates/_partial/navbar.html:62
 msgid "Shop"
@@ -218,26 +218,24 @@ msgstr "AlmaLinux OS topluluk sohbetine katılınız"
 
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7
-#, fuzzy
-#| msgid "AlmaLinux OS - Contribute"
 msgid "AlmaLinux OS Foundation - membership"
-msgstr "AlmaLinux OS - Katkıda Bulunuz"
+msgstr "AlmaLinux OS Vakfı - üyelik"
 
 #: www/templates/foundation/members/index.html:21
-#, fuzzy
-#| msgid "Join AlmaLinux OS community chat"
 msgid "Join the AlmaLinux OS Foundation"
-msgstr "AlmaLinux OS topluluk sohbetine katılınız"
+msgstr "AlmaLinux OS Vakfına katıl"
 
 #: www/templates/foundation/members/index.html:25
 msgid ""
 "Be heard! Join the AlmaLinux Foundation as a Member or Sponsor. Own and vote "
 "on shaping the future of AlmaLinux OS!"
 msgstr ""
+"Sesiniz duyulsun! AlmaLinux Vakfına Üye veya Sponsor olarak katılın. "
+"AlmaLinux OS'nin geleceğini şekillendirmek için sahiplenin ve oy verin!"
 
 #: www/templates/foundation/members/index.html:32
 msgid "Apply for membership"
-msgstr ""
+msgstr "Üyelik için başvur"
 
 #: www/templates/foundation/members/index.html:41
 msgid ""
@@ -249,6 +247,13 @@ msgid ""
 "sponsors and service providers to the community, as well as official "
 "sponsors for the project."
 msgstr ""
+"AlmaLinux Vakfı, sonsuza kadar ücretsiz kurumsal düzeyde Linux dağıtımı olan "
+"AlmaLinux OS'nin arkasındaki varlıktır. Bir üye olarak projenin gidişatında "
+"söz sahibi olacak, oy kullanabilecek ve diğer üyeler tarafından Yönetim "
+"Kuruluna seçilebileceksiniz. Projeye katkıda bulunanlar, yansı bakımcıları/"
+"sponsorlar ve topluluğa hizmet sağlayıcıların yanı sıra proje için resmi "
+"sponsorlar da dahil olmak üzere üye olmak için kullanılabilecek çeşitli "
+"yollar vardır."
 
 #: www/templates/foundation/members/index.html:51
 msgid ""
@@ -256,18 +261,16 @@ msgid ""
 "the Board or by a committee appointed for this purpose, according to the "
 "Bylaws established by the Board."
 msgstr ""
+"Her başvurunun esası, Kurul tarafından oluşturulan Yönetmeliklere göre Kurul "
+"veya bu amaçla atanan bir heyet tarafından duruma göre incelenecektir."
 
 #: www/templates/foundation/members/index.html:63
-#, fuzzy
-#| msgid "Join AlmaLinux OS community chat"
 msgid "Join AlmaLinux OS Foundation"
-msgstr "AlmaLinux OS topluluk sohbetine katılınız"
+msgstr "AlmaLinux OS Vakfına katıl"
 
 #: www/templates/foundation/members/index.html:69
-#, fuzzy
-#| msgid "Contribute"
 msgid "Contributor Member"
-msgstr "Katkıda Bulunuz"
+msgstr "Katkıda Bulunan Üye"
 
 #: www/templates/foundation/members/index.html:72
 msgid ""
@@ -275,16 +278,19 @@ msgid ""
 "AlmaLinux OS, provides services to the AlmaLinux OS community or otherwise "
 "supports the AlmaLinux OS."
 msgstr ""
+"AlmaLinux OS kullanan, AlmaLinux OS'ye katkıda bulunan, AlmaLinux OS "
+"topluluğuna hizmet sağlayan veya AlmaLinux OS'yi destekleyen herkes için "
+"bireysel bir başvuru."
 
 #: www/templates/foundation/members/index.html:81
 #: www/templates/foundation/members/index.html:103
 #: www/templates/foundation/members/index.html:121
 msgid "Apply"
-msgstr ""
+msgstr "Başvur"
 
 #: www/templates/foundation/members/index.html:90
 msgid "Mirror Member"
-msgstr ""
+msgstr "Yansı Üyesi"
 
 #: www/templates/foundation/members/index.html:93
 msgid ""
@@ -292,27 +298,30 @@ msgid ""
 "distribution. Only one member application per individual or entity will be "
 "accepted, irrespective of contributed number of mirrors."
 msgstr ""
+"Projeye içerik dağıtımı için yansı(lar) sağlayan bir kişi veya varlık. "
+"Katkıda bulunulan yansı sayısına bakılmaksızın, kişi veya kuruluş başına "
+"yalnızca bir üye başvurusu kabul edilecektir."
 
 #: www/templates/foundation/members/index.html:111
 msgid "Sponsor Member"
-msgstr ""
+msgstr "Sponsor Üye"
 
 #: www/templates/foundation/members/index.html:113
 msgid ""
 "Entities who wish to contribute funding for the project through sponsorship."
-msgstr ""
+msgstr "Sponsorluk yoluyla projeye parasal destek sağlamak isteyen kuruluşlar."
 
 #: www/templates/foundation/members/index.html:131
 msgid "Do you have membership related questions?"
-msgstr ""
+msgstr "Üyelikle ilgili sorularınız mı var?"
 
 #: www/templates/foundation/members/index.html:132
 msgid "Contact us"
-msgstr ""
+msgstr "Bizimle iletişime geçin"
 
 #: www/templates/foundation/members/index.html:141
 msgid "Board of Directors"
-msgstr ""
+msgstr "Yönetim Kurulu"
 
 #: www/templates/index.html:6
 msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
@@ -323,21 +332,16 @@ msgid "Free Linux OS for the community, by the community"
 msgstr "Topluluk tarafından, topluluk için ücretsiz Linux işletim sistemi"
 
 #: www/templates/index.html:37
-#, fuzzy
-#| msgid ""
-#| "An Open Source, community-governed and forever-free enterprise Linux "
-#| "distribution, focused on long-term stability, providing a robust "
-#| "production-grade platform. AlmaLinux OS is 1:1 binary compatible with "
-#| "RHEL&reg; and pre-Stream CentOS."
 msgid ""
 "An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution, focused on long-term stability, providing a robust production-"
 "grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL&reg; and pre-"
 "Stream CentOS."
 msgstr ""
-"Açık Kaynak, topluluk tarafından yönetilen ve sonsuza kadar ücretsiz "
-"kurumsal Linux dağıtımı, uzun vadeli istikrara odaklanarak, üretim düzeyinde "
-"sağlam bir platform sağlar. AlmaLinux OS, RHEL&reg; ve yayın öncesi CentOS."
+"Açık kaynaklı, topluluğun sahip olduğu ve yönettiği, sonsuza kadar ücretsiz "
+"kurumsal Linux dağıtımı, uzun vadeli kararlılığa odaklanarak, üretim "
+"düzeyinde sağlam bir platform sağlar. AlmaLinux OS, RHEL&reg; ve Stream "
+"öncesi CentOS ile yazılımsal olarak bire bir uyumludur."
 
 #: www/templates/index.html:47
 msgid "Contribute"
@@ -438,12 +442,12 @@ msgid ""
 "The AlmaLinux OS Foundation is a 501(c)(6) non-profit created for the "
 "benefit of the AlmaLinux OS community."
 msgstr ""
-"AlmaLinux OS Foundation, AlmaLinux OS topluluğunun yararına oluşturulmuş bir "
+"AlmaLinux OS Vakfı, AlmaLinux OS topluluğunun yararına oluşturulmuş bir "
 "501(c)(6) kar amacı gütmeyen kuruluştur."
 
 #: www/templates/index.html:188
 msgid "Backed by"
-msgstr "Tarafından desteklenen"
+msgstr "Destekleyenler"
 
 #: www/templates/index.html:212
 msgid "Production-ready"
@@ -521,9 +525,9 @@ msgid ""
 "By filling this form you agree to be contacted by AlmaLinux OS Foundation "
 "regarding your request. You can unsubscribe at any time."
 msgstr ""
-"Bu formu doldurarak, talebinizle ilgili olarak AlmaLinux OS Foundation "
-"tarafından sizinle iletişime geçilmesini kabul etmiş olursunuz. İstediğiniz "
-"zaman abonelikten çıkabilirsiniz."
+"Bu formu doldurarak, talebinizle ilgili olarak AlmaLinux OS Vakfı tarafından "
+"sizinle iletişime geçilmesini kabul etmiş olursunuz. İstediğiniz zaman "
+"abonelikten çıkabilirsiniz."
 
 #: www/templates/index.html:363
 msgid "AlmaLinux OS in the Press"
