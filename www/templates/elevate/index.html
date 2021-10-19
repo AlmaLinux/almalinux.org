@@ -1,0 +1,262 @@
+{% extends 'layouts/base.html' %}
+{% load i18n %}
+{% load static %}
+{% load encore %}
+
+{% block title %}{% translate 'AlmaLinux OS - ELevate Your Distribution' %}{% endblock %}
+{% block description %}
+    {% translate 'ELevate enables migration between major versions of RHEL(r) derivatives. Easily go from CentOS 7.x to any 8.x of your choice' %}{% endblock %}
+
+{% block head_end %}
+    {% encore_entrypoint_css 'page_elevate' %}
+{% endblock %}
+{% block body_end %}
+    {% encore_entrypoint_js 'page_elevate' %}
+{% endblock %}
+
+{% block body %}
+    <section class="al-page-elevate-index">
+        <div class="container">
+            <div class="row al-py-lg align-items-center">
+                <div class="col-12 col-lg-4 al-py-lg pe-md-3">
+                    <h3 class="fw-bold pb-3">
+                        {% translate 'ELevate Your Distribution' %}
+                    </h3>
+                    <div class="al-subtle-links pb-2">
+                        <p>
+                            {% blocktranslate trimmed %}
+                                ELevate enables migration between major versions of RHEL&reg; derivatives.
+                                Easily go from CentOS 7.x to any 8.x of your choice
+                            {% endblocktranslate %}
+                        </p>
+                    </div>
+                    <div>
+                        <a href="https://wiki.almalinux.org/elevate"
+                           class="btn al-cta-learn-how btn-md px-4 me-2">
+                            <i class="bi bi-arrow-up-right-square pe-1"></i>
+                            {% translate 'Get Started' %}
+                        </a>
+                        <a href="https://chat.almalinux.org/almalinux/channels/migration"
+                           class="btn al-cta-discuss btn-md px-4">
+                            <i class="bi bi-chat-left-dots pe-1"></i>
+                            {% translate 'Discuss' %}
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="ratio ratio-16x9">
+                        <iframe
+                            src="https://www.youtube-nocookie.com/embed/WJpa1E6jnok"
+                            title="AlmaLinux OS ELevate" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-2">
+            <h6 class="pt-5 pb-2 mb-2 text-uppercase border-bottom">{% translate 'About' %}</h6>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-4 py-2 py-md-3">
+                <div class="col d-flex align-items-stretch">
+                    <div>
+                        <h4 class="fw-bold mb-0 pb-3">
+                            {% translate 'Major Version Upgrades' %}
+                        </h4>
+                        <p>
+                            {% blocktranslate trimmed %}
+                                It wasn't possible--until now. Easily migrate between major versions of RHEL-based
+                                distributions from 7.x to 8.x. Preserve your applications, your data, and your sanity.
+                                Run the most recent version of the OS and software you need.
+                            {% endblocktranslate %}
+                        </p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-stretch">
+                    <div>
+                        <h4 class="fw-bold mb-0 pb-3">
+                            {% translate 'Package Evolution Service' %}
+                        </h4>
+                        <p>
+                            {% blocktranslate trimmed with pes_link="https://pes.almalinux.org" %}
+                                The beating heart of ELevate is the
+                                <a href="{{ pes_link }}">Package Evolution Service</a>
+                                (PES) which allows you to download, customize and even submit new data sets for
+                                packages. Users and maintainers can both utilize the PES to help make migrations smooth
+                                and easy.
+                            {% endblocktranslate %}
+                        </p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-stretch">
+                    <div>
+                        <h4 class="fw-bold mb-0 pb-3">
+                            {% translate 'Community-wide Project' %}
+                        </h4>
+                        <p>
+                            {% blocktranslate trimmed %}
+                                ELevate is developed in a distribution agnostic way and is built as a tool for the whole
+                                ecosystem, not just AlmaLinux. ELevate supports migrating to/from other distributions
+                                and is open for all to contribute to and enhance.
+                            {% endblocktranslate %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-2 faq-container">
+            <h6 class="pt-5 pb-2 mb-2 text-uppercase border-bottom">{% translate 'FAQ' %}</h6>
+            <div class="al-faq-slim">
+                <!--Item-->
+                <div>
+                    <div class="question">
+                        {% blocktranslate trimmed %}
+                            What is ELevate?
+                        {% endblocktranslate %}
+                    </div>
+                    <div class="answer">
+                        {% blocktranslate trimmed %}
+                            ELevate is a project aimed to provide the ability to migrate between major versions of
+                            RHEL-based distributions from 7.x to 8.x. It combines Red Hat's Leapp framework with a
+                            community created library and service for the migration metadata set required for it.
+                        {% endblocktranslate %}
+                    </div>
+                </div>
+                <!--Item-->
+                <div>
+                    <div class="question">
+                        {% blocktranslate trimmed %}
+                            This looks awesome. How can I contribute?
+                        {% endblocktranslate %}
+                    </div>
+                    <div class="answer">
+                        {% blocktranslate trimmed with chat_link='https://chat.almalinux.org/almalinux/channels/migration' github_link='https://github.com/AlmaLinux/leapp-repository/tree/almalinux' pes_link='https://pes.almalinux.org' %}
+                            First, join us at <a href="{{ chat_link }}">#migration</a> Mattermost channel. You can find
+                            the tool code here:
+                            <a href="{{ github_link }}">{{ github_link }}</a> and you can add/edit/interact
+                            with package metadata at <a href="{{ pes_link }}">{{ pes_link }}</a>.
+                        {% endblocktranslate %}
+                    </div>
+                </div>
+                <!--Item-->
+                <div>
+                    <div class="question">
+                        {% blocktranslate trimmed %}
+                            Is this ready for production?
+                        {% endblocktranslate %}
+                    </div>
+                    <div class="answer">
+                        {% blocktranslate trimmed %}
+                            YMMV.  Every environment is different and unique based on applications and configurations.
+                            Since this is still under development, to avoid any surprises, we highly recommend that you
+                            test migrations scenarios in a VM or sandbox before running a migration in production.
+                        {% endblocktranslate %}
+                    </div>
+                </div>
+                <!--Item-->
+                <div>
+                    <div class="question">
+                        {% blocktranslate trimmed %}
+                            What operating systems does ELevate support?
+                        {% endblocktranslate %}
+                    </div>
+                    <div class="answer">
+                        {% blocktranslate trimmed %}
+                            Currently ELevate provides Leapp data for migration from CentOS 7 to the following OS:
+                            <ul>
+                                <li>AlmaLinux OS 8</li>
+                                <li>CentOS Stream 8</li>
+                                <li>Oracle Linux 8</li>
+                                <li>Rocky Linux 8</li>
+                            </ul>
+                        {% endblocktranslate %}
+                    </div>
+                </div>
+                <!--Item-->
+                <div>
+                    <div class="question">
+                        {% blocktranslate trimmed %}
+                            Will migration be "in-place?"
+                        {% endblocktranslate %}
+                    </div>
+                    <div class="answer">
+                        {% blocktranslate trimmed %}
+                            Yes. All your data, applications and settings will be kept.
+                        {% endblocktranslate %}
+                    </div>
+                </div>
+                <!--Item-->
+                <div>
+                    <div class="question">
+                        {% blocktranslate trimmed %}
+                            Is this live or does it require a reboot?
+                        {% endblocktranslate %}
+                    </div>
+                    <div class="answer">
+                        {% blocktranslate trimmed %}
+                            Migrations will require your system to reboot twice.
+                        {% endblocktranslate %}
+                    </div>
+                </div>
+                <!--Item-->
+                <div>
+                    <div class="question">
+                        {% blocktranslate trimmed %}
+                            What does the Package Evolution Service do?
+                        {% endblocktranslate %}
+                    </div>
+                    <div class="answer">
+                        {% blocktranslate trimmed %}
+                            The Package Evolution Service stores package migration metadata. Metadata answers questions
+                            about how packages evolve between major distribution releases. PES supports several classes
+                            of rules for packages such as added, removed, renamed, split, merged, and so on. The service
+                            also allows everyone to improve the data by adding new actions or even create a custom
+                            dataset for packages from third-party or private repositories.
+                        {% endblocktranslate %}
+                    </div>
+                </div>
+                <!--Item-->
+                <div>
+                    <div class="question">
+                        {% blocktranslate trimmed %}
+                            Red Hat offers a data set which is non-freely licensed. Are you using this same data set?
+                        {% endblocktranslate %}
+                    </div>
+                    <div class="answer">
+                        {% blocktranslate trimmed %}
+                            No. We respect Red Hat’s work and our initial data set was provided by the AlmaLinux
+                            Foundation and contributions from Oracle.
+                        {% endblocktranslate %}
+                    </div>
+                </div>
+                <!--Item-->
+                <div>
+                    <div class="question">
+                        {% blocktranslate trimmed %}
+                            What license is your metadata under?
+                        {% endblocktranslate %}
+                    </div>
+                    <div class="answer">
+                        {% blocktranslate trimmed %}
+                            The metadata is provided under an Apache License.
+                        {% endblocktranslate %}
+                    </div>
+                </div>
+                <!--Item-->
+                <div>
+                    <div class="question">
+                        {% blocktranslate trimmed %}
+                            Why are you supporting migration to other distributions?
+                        {% endblocktranslate %}
+                    </div>
+                    <div class="answer">
+                        {% blocktranslate trimmed %}
+                            The CentOS ecosystem is a very large and diverse community. We’ve developed this project in
+                            good faith in the hope that everyone in the community can use and contribute to, no matter
+                            which distro you prefer. That’s the open source way.
+                        {% endblocktranslate %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

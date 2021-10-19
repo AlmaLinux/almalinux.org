@@ -1,7 +1,10 @@
 {% load static %}
 {% load i18n %}
 {% load i18n_utils %}
-<nav class="al-primary-navbar navbar sticky-top navbar-expand-lg navbar-dark">
+{% load motd %}
+{% motd as current_motd %}
+<nav id="al-primary-navbar"
+     class="al-primary-navbar navbar sticky-top navbar-expand-lg navbar-dark flex-column {% if current_motd %}with-motd{% endif %}">
     <div class="container">
         <a class="navbar-brand" href="{% url 'index' %}">
             <img src="{% static 'images/logo.svg' %}" alt="{% translate 'AlmaLinux OS logo' %}" width="165.93"
@@ -54,6 +57,11 @@
                                 {% translate 'Membership' %}
                             </a>
                         </li>
+                        <li>
+                            <a class="dropdown-item" href="{% url 'elevate' %}">
+                                {% translate 'ELevate' %}
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -84,9 +92,12 @@
                                 </a>
                             </li>
                         {% endfor %}
-                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
                         <li class="al-translate-callout">
-                            <a class="dropdown-item al-language-link" href="https://hosted.weblate.org/engage/almalinux/">
+                            <a class="dropdown-item al-language-link"
+                               href="https://hosted.weblate.org/engage/almalinux/">
                                 <i class="bi bi-pencil"></i>
                                 {% translate 'Translate' %}
                             </a>
@@ -102,4 +113,12 @@
             </ul>
         </div>
     </div>
+    {% if current_motd %}
+        <div id="al-motd" data-nosnippet>
+            <div class="container">
+                <i class="bi bi-info-circle"></i>
+                <div class="text">{{ current_motd }}</div>
+            </div>
+        </div>
+    {% endif %}
 </nav>

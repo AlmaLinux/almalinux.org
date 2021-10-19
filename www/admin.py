@@ -1,4 +1,6 @@
 from typing import List
+from django.contrib import admin
+from django.contrib.admin.decorators import display
 
 from .models import *
 
@@ -31,6 +33,7 @@ admin.site.register(FAQEntry)
 admin.site.register(ShowcaseFeature)
 admin.site.register(GovernanceMember)
 admin.site.register(MediaElement, MediaElementAdmin)
+admin.site.register(MOTD)
 
 # Admin special URLs (path, template, name, context)
 www_admin_urls: List = [

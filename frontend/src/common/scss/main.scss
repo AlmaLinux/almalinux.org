@@ -40,6 +40,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   box-shadow: al-shadow(3, 0.5);
 
+  &.with-motd {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
   .dropdown-menu-dark {
     background: $al-c-black-pearl;
     border: 0;
@@ -89,6 +94,36 @@ h1, h2, h3, h4, h5, h6 {
     li.nav-item {
       display: flex;
       align-items: center;
+    }
+  }
+}
+
+#al-motd {
+  width: 100%;
+  background: darken($al-c-black-pearl, 5%);
+  margin-top: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 0.8rem;
+
+  & > .container {
+    display: flex;
+
+    & > i {
+      padding-right: 8px;
+    }
+
+    & > .text {
+      display: block;
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+          color: inherit;
+        }
+      }
     }
   }
 }

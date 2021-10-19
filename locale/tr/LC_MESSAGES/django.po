@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-05 20:01+0000\n"
+"POT-Creation-Date: 2021-10-19 06:19+0000\n"
 "PO-Revision-Date: 2021-08-19 21:35+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/almalinux/"
@@ -19,13 +19,17 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.8-dev\n"
 
+#: commons/templatetags/motd.py:20
+msgid "Read more"
+msgstr ""
+
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
 msgstr "404 Sayfa Bulunamadı - AlmaLinux OS"
 
 #: www/templates/404.html:6 www/templates/blog/index.html:9
-#: www/templates/index.html:8 www/templates/layouts/base.html:21
-#: www/templates/subscribe_post.html:8
+#: www/templates/blog/post.html:9 www/templates/index.html:8
+#: www/templates/layouts/base.html:21 www/templates/subscribe_post.html:8
 msgid ""
 "An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution."
@@ -39,11 +43,11 @@ msgstr "404 Sayfa Bulunamadı"
 msgid "Sorry, but the page you were trying to access could not be found."
 msgstr "Üzgünüm, aradığınız sayfa bulunamadı."
 
-#: www/templates/_partial/footer.html:11 www/templates/_partial/navbar.html:38
+#: www/templates/_partial/footer.html:11 www/templates/_partial/navbar.html:41
 msgid "Resources"
 msgstr "Kaynaklar"
 
-#: www/templates/_partial/footer.html:13 www/templates/_partial/navbar.html:28
+#: www/templates/_partial/footer.html:13 www/templates/_partial/navbar.html:31
 msgid "Wiki"
 msgstr "Wiki"
 
@@ -59,85 +63,89 @@ msgstr "Depo"
 msgid "Downloads"
 msgstr "Kurulum"
 
-#: www/templates/_partial/footer.html:21
+#: www/templates/_partial/footer.html:18 www/templates/_partial/navbar.html:57
+msgid "Membership"
+msgstr ""
+
+#: www/templates/_partial/footer.html:19 www/templates/_partial/navbar.html:62
+msgid "ELevate"
+msgstr ""
+
+#: www/templates/_partial/footer.html:23
 msgid "Community"
 msgstr "Topluluk"
 
-#: www/templates/_partial/footer.html:25
+#: www/templates/_partial/footer.html:27
 msgid "Forums"
 msgstr "Forumlar"
 
-#: www/templates/_partial/footer.html:26
+#: www/templates/_partial/footer.html:28
 msgid "Chat"
 msgstr "Sohbet"
 
-#: www/templates/_partial/footer.html:31
+#: www/templates/_partial/footer.html:33
 msgid "Legal"
 msgstr "Yasal"
 
-#: www/templates/_partial/footer.html:33
+#: www/templates/_partial/footer.html:35
 msgid "Legal Notice"
 msgstr "Yasal Uyarı"
 
-#: www/templates/_partial/footer.html:34 www/templates/index.html:352
+#: www/templates/_partial/footer.html:36 www/templates/index.html:352
 msgid "Privacy Policy"
 msgstr "Gizlilik Politikası"
 
-#: www/templates/_partial/footer.html:35
+#: www/templates/_partial/footer.html:37
 msgid "Terms of Service"
 msgstr "Kullanım Şartları"
 
-#: www/templates/_partial/footer.html:38
+#: www/templates/_partial/footer.html:40
 msgid "Licensing Policy"
 msgstr "Lisans Politikası"
 
-#: www/templates/_partial/footer.html:43
+#: www/templates/_partial/footer.html:45
 #, fuzzy
 #| msgid " Trademark Usage Policy"
 msgid "Trademark Usage Policy"
 msgstr " Ticari Marka Kullanım Politikası"
 
-#: www/templates/_partial/footer.html:48
+#: www/templates/_partial/footer.html:50
 msgid "Foundation Bylaws"
 msgstr ""
 
-#: www/templates/_partial/navbar.html:7
+#: www/templates/_partial/navbar.html:10
 msgid "AlmaLinux OS logo"
 msgstr "AlmaLinux OS logo"
 
-#: www/templates/_partial/navbar.html:16
+#: www/templates/_partial/navbar.html:19
 msgid "Toggle navigation"
 msgstr "Gezinmeyi aç/kapat"
 
-#: www/templates/_partial/navbar.html:23
+#: www/templates/_partial/navbar.html:26
 msgid "Blog"
 msgstr "Blog"
 
-#: www/templates/_partial/navbar.html:44
+#: www/templates/_partial/navbar.html:47
 msgid "Migrate from CentOS 8"
 msgstr "CentOS 8'den geçiş yapın"
 
-#: www/templates/_partial/navbar.html:49
+#: www/templates/_partial/navbar.html:52
 msgid "Report Bugs"
 msgstr "Yazılım Hata Raporu"
 
-#: www/templates/_partial/navbar.html:54
-msgid "Membership"
-msgstr ""
-
-#: www/templates/_partial/navbar.html:62
+#: www/templates/_partial/navbar.html:70
 msgid "Shop"
 msgstr "Mağaza"
 
-#: www/templates/_partial/navbar.html:70
+#: www/templates/_partial/navbar.html:78
 msgid "Language"
 msgstr "Dil"
 
-#: www/templates/_partial/navbar.html:91
+#: www/templates/_partial/navbar.html:102
 msgid "Translate"
 msgstr "Çevir"
 
-#: www/templates/_partial/navbar.html:99 www/templates/index.html:52
+#: www/templates/_partial/navbar.html:110 www/templates/index.html:52
 msgid "Download"
 msgstr "Kurulum"
 
@@ -215,6 +223,191 @@ msgstr "Web varlığı"
 #: www/templates/contribute/index.html:82
 msgid "Join AlmaLinux OS community chat"
 msgstr "AlmaLinux OS topluluk sohbetine katılınız"
+
+#: www/templates/elevate/index.html:6
+#, fuzzy
+#| msgid "AlmaLinux OS - Contribute"
+msgid "AlmaLinux OS - ELevate Your Distribution"
+msgstr "AlmaLinux OS - Katkıda Bulunuz"
+
+#: www/templates/elevate/index.html:8
+msgid ""
+"ELevate enables migration between major versions of RHEL(r) derivatives. "
+"Easily go from CentOS 7.x to any 8.x of your choice"
+msgstr ""
+
+#: www/templates/elevate/index.html:23
+msgid "ELevate Your Distribution"
+msgstr ""
+
+#: www/templates/elevate/index.html:27
+msgid ""
+"ELevate enables migration between major versions of RHEL&reg; derivatives. "
+"Easily go from CentOS 7.x to any 8.x of your choice"
+msgstr ""
+
+#: www/templates/elevate/index.html:37
+msgid "Get Started"
+msgstr ""
+
+#: www/templates/elevate/index.html:42
+msgid "Discuss"
+msgstr ""
+
+#: www/templates/elevate/index.html:58
+msgid "About"
+msgstr ""
+
+#: www/templates/elevate/index.html:63
+msgid "Major Version Upgrades"
+msgstr ""
+
+#: www/templates/elevate/index.html:66
+msgid ""
+"It wasn't possible--until now. Easily migrate between major versions of RHEL-"
+"based distributions from 7.x to 8.x. Preserve your applications, your data, "
+"and your sanity. Run the most recent version of the OS and software you need."
+msgstr ""
+
+#: www/templates/elevate/index.html:77
+msgid "Package Evolution Service"
+msgstr ""
+
+#: www/templates/elevate/index.html:80
+#, python-format
+msgid ""
+"The beating heart of ELevate is the <a href=\"%(pes_link)s\">Package "
+"Evolution Service</a> (PES) which allows you to download, customize and even "
+"submit new data sets for packages. Users and maintainers can both utilize "
+"the PES to help make migrations smooth and easy."
+msgstr ""
+
+#: www/templates/elevate/index.html:93
+#, fuzzy
+#| msgid "Community chat"
+msgid "Community-wide Project"
+msgstr "Topluluk Sohbeti"
+
+#: www/templates/elevate/index.html:96
+msgid ""
+"ELevate is developed in a distribution agnostic way and is built as a tool "
+"for the whole ecosystem, not just AlmaLinux. ELevate supports migrating to/"
+"from other distributions and is open for all to contribute to and enhance."
+msgstr ""
+
+#: www/templates/elevate/index.html:107
+msgid "FAQ"
+msgstr ""
+
+#: www/templates/elevate/index.html:112
+msgid "What is ELevate?"
+msgstr ""
+
+#: www/templates/elevate/index.html:117
+msgid ""
+"ELevate is a project aimed to provide the ability to migrate between major "
+"versions of RHEL-based distributions from 7.x to 8.x. It combines Red Hat's "
+"Leapp framework with a community created library and service for the "
+"migration metadata set required for it."
+msgstr ""
+
+#: www/templates/elevate/index.html:127
+msgid "This looks awesome. How can I contribute?"
+msgstr ""
+
+#: www/templates/elevate/index.html:132
+#, python-format
+msgid ""
+"First, join us at <a href=\"%(chat_link)s\">#migration</a> Mattermost "
+"channel. You can find the tool code here: <a href=\"%(github_link)s\">"
+"%(github_link)s</a> and you can add/edit/interact with package metadata at "
+"<a href=\"%(pes_link)s\">%(pes_link)s</a>."
+msgstr ""
+
+#: www/templates/elevate/index.html:143
+msgid "Is this ready for production?"
+msgstr ""
+
+#: www/templates/elevate/index.html:148
+msgid ""
+"YMMV.  Every environment is different and unique based on applications and "
+"configurations. Since this is still under development, to avoid any "
+"surprises, we highly recommend that you test migrations scenarios in a VM or "
+"sandbox before running a migration in production."
+msgstr ""
+
+#: www/templates/elevate/index.html:158
+msgid "What operating systems does ELevate support?"
+msgstr ""
+
+#: www/templates/elevate/index.html:163
+msgid ""
+"Currently ELevate provides Leapp data for migration from CentOS 7 to the "
+"following OS: <ul> <li>AlmaLinux OS 8</li> <li>CentOS Stream 8</li> "
+"<li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
+msgstr ""
+
+#: www/templates/elevate/index.html:177
+msgid "Will migration be \"in-place?\""
+msgstr ""
+
+#: www/templates/elevate/index.html:182
+msgid "Yes. All your data, applications and settings will be kept."
+msgstr ""
+
+#: www/templates/elevate/index.html:190
+msgid "Is this live or does it require a reboot?"
+msgstr ""
+
+#: www/templates/elevate/index.html:195
+msgid "Migrations will require your system to reboot twice."
+msgstr ""
+
+#: www/templates/elevate/index.html:203
+msgid "What does the Package Evolution Service do?"
+msgstr ""
+
+#: www/templates/elevate/index.html:208
+msgid ""
+"The Package Evolution Service stores package migration metadata. Metadata "
+"answers questions about how packages evolve between major distribution "
+"releases. PES supports several classes of rules for packages such as added, "
+"removed, renamed, split, merged, and so on. The service also allows everyone "
+"to improve the data by adding new actions or even create a custom dataset "
+"for packages from third-party or private repositories."
+msgstr ""
+
+#: www/templates/elevate/index.html:220
+msgid ""
+"Red Hat offers a data set which is non-freely licensed. Are you using this "
+"same data set?"
+msgstr ""
+
+#: www/templates/elevate/index.html:225
+msgid ""
+"No. We respect Red Hat’s work and our initial data set was provided by the "
+"AlmaLinux Foundation and contributions from Oracle."
+msgstr ""
+
+#: www/templates/elevate/index.html:234
+msgid "What license is your metadata under?"
+msgstr ""
+
+#: www/templates/elevate/index.html:239
+msgid "The metadata is provided under an Apache License."
+msgstr ""
+
+#: www/templates/elevate/index.html:247
+msgid "Why are you supporting migration to other distributions?"
+msgstr ""
+
+#: www/templates/elevate/index.html:252
+msgid ""
+"The CentOS ecosystem is a very large and diverse community. We’ve developed "
+"this project in good faith in the hope that everyone in the community can "
+"use and contribute to, no matter which distro you prefer. That’s the open "
+"source way."
+msgstr ""
 
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7

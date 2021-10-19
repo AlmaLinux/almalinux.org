@@ -1,7 +1,3 @@
-import uuid
-
-from django.contrib import admin
-from django.contrib.admin.decorators import display
 from django.core.validators import FileExtensionValidator
 from django.db import models
 from django.utils.text import slugify
@@ -389,3 +385,32 @@ class MediaElement(models.Model):
     def __str__(self) -> str:
         return self.file.name
 
+
+class MOTD(models.Model):
+    class Meta:
+        verbose_name_plural = 'MOTDs'
+        verbose_name = 'MOTD'
+
+    id: models.AutoField = models.AutoField(
+        primary_key=True
+    )
+
+    published: models.BooleanField = models.BooleanField(
+        default=True,
+        help_text='Uncheck to hide'
+    )
+
+    text: models.CharField = models.TextField(
+        max_length=160,
+        null=False,
+        help_text='Maximum 160 characters'
+    )
+
+    link: models.CharField = models.CharField(
+        max_length=255,
+        null=True,
+        blank=True,
+    )
+
+    def __str__(self) -> str:
+        return self.text

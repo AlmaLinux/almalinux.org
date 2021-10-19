@@ -14,8 +14,8 @@ from django.views.decorators.cache import never_cache
 from django.views.decorators.http import require_POST, require_safe
 
 from almalinux.settings import HUBSPOT_APIKEY, HUBSPOT_SUB_ID
-from .models import Backer, PressArticle, BlogPost, Page, FAQEntry, CommercialSupportVendor, ShowcaseFeature, \
-    GovernanceMember, MediaElement
+from .models import Backer, PressArticle, BlogPost, Page, FAQEntry, CommercialSupportVendor, GovernanceMember, \
+    MediaElement
 
 
 # Public views
@@ -201,6 +201,12 @@ def media_element(_: HttpRequest, media_id: int) -> HttpResponse:
         raise Http404
 
     return redirect(element.file.url)
+
+
+@require_safe
+@never_cache
+def elevate(request: HttpRequest) -> HttpResponse:
+    return render(request, 'elevate/index.html', {})
 
 
 def not_found(request: HttpRequest, exception: Exception) -> HttpResponse:

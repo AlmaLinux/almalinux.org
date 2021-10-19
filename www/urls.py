@@ -15,4 +15,5 @@ urlpatterns = [
     path('foundation/members/', views.foundation_members, name='foundation_members'),
     path('feed/', BlogPostFeed(), name='feed'),
     path('media-link/<int:media_id>', views.media_element, name='media_element'),
+    path('elevate', views.elevate, name='elevate'),
 ]
