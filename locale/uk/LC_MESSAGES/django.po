@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-19 20:18+0000\n"
+"POT-Creation-Date: 2021-10-19 21:04+0000\n"
 "PO-Revision-Date: 2021-07-29 08:43+0000\n"
 "Last-Translator: gz83 <uioptt24@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/almalinux/"
@@ -30,9 +30,9 @@ msgstr ""
 msgid "404 Not Found - AlmaLinux OS"
 msgstr "404 Не знайдено - AlmaLinux OS"
 
-#: www/templates/404.html:6 www/templates/blog/index.html:9
-#: www/templates/blog/post.html:9 www/templates/index.html:8
-#: www/templates/layouts/base.html:21 www/templates/subscribe_post.html:8
+#: www/templates/404.html:6 www/templates/blog/index.html:10
+#: www/templates/blog/post.html:10 www/templates/index.html:8
+#: www/templates/layouts/base.html:22 www/templates/subscribe_post.html:8
 msgid ""
 "An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution."
@@ -153,19 +153,19 @@ msgstr ""
 msgid "Download"
 msgstr "Завантажити"
 
-#: www/templates/blog/index.html:7
+#: www/templates/blog/index.html:8
 msgid "AlmaLinux OS Blog"
 msgstr "Блог ОС AlmaLinux"
 
-#: www/templates/blog/index.html:48
+#: www/templates/blog/index.html:51
 msgid "Continue reading"
 msgstr "Продовжити читання"
 
-#: www/templates/blog/index.html:61 www/templates/blog/index.html:67
+#: www/templates/blog/index.html:64 www/templates/blog/index.html:70
 msgid "Previous"
 msgstr "Назад"
 
-#: www/templates/blog/index.html:79 www/templates/blog/index.html:85
+#: www/templates/blog/index.html:82 www/templates/blog/index.html:88
 msgid "Next"
 msgstr "Далі"
 
@@ -730,7 +730,7 @@ msgstr ""
 msgid "AlmaLinux OS in the Press"
 msgstr "ОС AlmaLinux у пресі"
 
-#: www/templates/page/page.html:27
+#: www/templates/page/page.html:31
 msgid "Published"
 msgstr "Опубліковано"
 
