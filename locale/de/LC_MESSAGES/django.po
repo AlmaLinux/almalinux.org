@@ -27,13 +27,15 @@ msgstr ""
 msgid "404 Not Found - AlmaLinux OS"
 msgstr "404 Nicht gefunden - AlmaLinux OS"
 
-#: www/templates/404.html:6 www/templates/blog/index.html:10
-#: www/templates/blog/post.html:10 www/templates/index.html:8
-#: www/templates/layouts/base.html:22 www/templates/subscribe_post.html:8
+#: www/templates/404.html:6 www/templates/blog/index.html:9
+#: www/templates/index.html:8 www/templates/layouts/base.html:21
+#: www/templates/subscribe_post.html:8
 msgid ""
 "An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution."
 msgstr ""
+"Eine quelloffene, Community-eigene und Community-betreute, sowie für-immer-"
+"kostenlose Enterprise-Linux-Distribution."
 
 #: www/templates/404.html:13
 msgid "404 Not Found"
@@ -46,124 +48,129 @@ msgstr ""
 "gefunden werden."
 
 #: www/templates/_partial/footer.html:11 www/templates/_partial/navbar.html:41
+#: www/templates/_partial/navbar.html:38
 msgid "Resources"
 msgstr "Ressourcen"
 
 #: www/templates/_partial/footer.html:13 www/templates/_partial/navbar.html:31
+#: www/templates/_partial/navbar.html:28
 msgid "Wiki"
 msgstr "Wiki"
 
 #: www/templates/_partial/footer.html:15
 msgid "Bugs"
-msgstr "Bugs"
+msgstr "Fehler"
 
 #: www/templates/_partial/footer.html:16
 msgid "Repository"
-msgstr ""
+msgstr "Repository"
 
 #: www/templates/_partial/footer.html:17
 msgid "Downloads"
 msgstr "Downloads"
 
-#: www/templates/_partial/footer.html:18 www/templates/_partial/navbar.html:57
+#: www/templates/_partial/navbar.html:54
 msgid "Membership"
-msgstr ""
+msgstr "Mitgliedschaft"
 
 #: www/templates/_partial/footer.html:19 www/templates/_partial/navbar.html:62
 msgid "ELevate"
 msgstr ""
 
-#: www/templates/_partial/footer.html:23
+#: www/templates/_partial/footer.html:23 www/templates/_partial/footer.html:21
 msgid "Community"
 msgstr "Community"
 
-#: www/templates/_partial/footer.html:27
+#: www/templates/_partial/footer.html:27 www/templates/_partial/footer.html:25
 msgid "Forums"
 msgstr "Foren"
 
-#: www/templates/_partial/footer.html:28
+#: www/templates/_partial/footer.html:28 www/templates/_partial/footer.html:26
 msgid "Chat"
 msgstr "Chat"
 
-#: www/templates/_partial/footer.html:33
+#: www/templates/_partial/footer.html:33 www/templates/_partial/footer.html:31
 msgid "Legal"
 msgstr "Legal"
 
-#: www/templates/_partial/footer.html:35
+#: www/templates/_partial/footer.html:35 www/templates/_partial/footer.html:33
 msgid "Legal Notice"
 msgstr "Rechtlicher Hinweis"
 
 #: www/templates/_partial/footer.html:36 www/templates/index.html:352
+#: www/templates/_partial/footer.html:34
 msgid "Privacy Policy"
 msgstr "Datenschutz-Bestimmungen"
 
-#: www/templates/_partial/footer.html:37
+#: www/templates/_partial/footer.html:37 www/templates/_partial/footer.html:35
 msgid "Terms of Service"
 msgstr "Nutzungsbedingungen"
 
-#: www/templates/_partial/footer.html:40
+#: www/templates/_partial/footer.html:40 www/templates/_partial/footer.html:38
 msgid "Licensing Policy"
 msgstr "Lizenzbestimmungen"
 
-#: www/templates/_partial/footer.html:45
+#: www/templates/_partial/footer.html:45 www/templates/_partial/footer.html:43
 #, fuzzy
-#| msgid " Trademark Usage Policy"
 msgid "Trademark Usage Policy"
 msgstr " Markennutzungsrichtlinie"
 
-#: www/templates/_partial/footer.html:50
+#: www/templates/_partial/footer.html:50 www/templates/_partial/footer.html:48
 msgid "Foundation Bylaws"
 msgstr ""
 
-#: www/templates/_partial/navbar.html:10
+#: www/templates/_partial/navbar.html:10 www/templates/_partial/navbar.html:7
 msgid "AlmaLinux OS logo"
 msgstr "AlmaLinux OS Logo"
 
-#: www/templates/_partial/navbar.html:19
+#: www/templates/_partial/navbar.html:19 www/templates/_partial/navbar.html:16
 msgid "Toggle navigation"
 msgstr "Navigation umschalten"
 
-#: www/templates/_partial/navbar.html:26
+#: www/templates/_partial/navbar.html:26 www/templates/_partial/navbar.html:23
 msgid "Blog"
 msgstr "Blog"
 
-#: www/templates/_partial/navbar.html:47
+#: www/templates/_partial/navbar.html:47 www/templates/_partial/navbar.html:44
 msgid "Migrate from CentOS 8"
 msgstr "Von CentOS 8 migrieren"
 
-#: www/templates/_partial/navbar.html:52
+#: www/templates/_partial/navbar.html:52 www/templates/_partial/navbar.html:49
 msgid "Report Bugs"
 msgstr "Fehler melden"
 
-#: www/templates/_partial/navbar.html:70
+#: www/templates/_partial/navbar.html:70 www/templates/_partial/navbar.html:62
 msgid "Shop"
 msgstr "Shop"
 
-#: www/templates/_partial/navbar.html:78
+#: www/templates/_partial/navbar.html:78 www/templates/_partial/navbar.html:70
 msgid "Language"
 msgstr "Sprache"
 
-#: www/templates/_partial/navbar.html:102
+#: www/templates/_partial/navbar.html:91
 msgid "Translate"
-msgstr ""
+msgstr "Übersetzen"
 
 #: www/templates/_partial/navbar.html:110 www/templates/index.html:52
+#: www/templates/_partial/navbar.html:99
 msgid "Download"
 msgstr "Download"
 
-#: www/templates/blog/index.html:8
+#: www/templates/blog/index.html:8 www/templates/blog/index.html:7
 msgid "AlmaLinux OS Blog"
 msgstr "AlmaLinux OS Blog"
 
-#: www/templates/blog/index.html:51
+#: www/templates/blog/index.html:51 www/templates/blog/index.html:48
 msgid "Continue reading"
 msgstr "Weiterlesen"
 
 #: www/templates/blog/index.html:64 www/templates/blog/index.html:70
+#: www/templates/blog/index.html:61 www/templates/blog/index.html:67
 msgid "Previous"
 msgstr "Vorherige"
 
 #: www/templates/blog/index.html:82 www/templates/blog/index.html:88
+#: www/templates/blog/index.html:79 www/templates/blog/index.html:85
 msgid "Next"
 msgstr "Nächste"
 
@@ -228,7 +235,6 @@ msgstr "AlmaLinux OS-Community-Chat beitreten"
 
 #: www/templates/elevate/index.html:6
 #, fuzzy
-#| msgid "AlmaLinux OS - Contribute"
 msgid "AlmaLinux OS - ELevate Your Distribution"
 msgstr "AlmaLinux OS - Unterstützen"
 
@@ -286,7 +292,6 @@ msgstr ""
 
 #: www/templates/elevate/index.html:93
 #, fuzzy
-#| msgid "Community chat"
 msgid "Community-wide Project"
 msgstr "Gemeinschafts-Chat"
 
@@ -414,13 +419,11 @@ msgstr ""
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7
 #, fuzzy
-#| msgid "AlmaLinux OS - Contribute"
 msgid "AlmaLinux OS Foundation - membership"
 msgstr "AlmaLinux OS - Unterstützen"
 
 #: www/templates/foundation/members/index.html:21
 #, fuzzy
-#| msgid "Join AlmaLinux OS community chat"
 msgid "Join the AlmaLinux OS Foundation"
 msgstr "AlmaLinux OS-Community-Chat beitreten"
 
@@ -454,13 +457,11 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:63
 #, fuzzy
-#| msgid "Join AlmaLinux OS community chat"
 msgid "Join AlmaLinux OS Foundation"
 msgstr "AlmaLinux OS-Community-Chat beitreten"
 
 #: www/templates/foundation/members/index.html:69
 #, fuzzy
-#| msgid "Contribute"
 msgid "Contributor Member"
 msgstr "Mitmachen"
 
@@ -519,11 +520,6 @@ msgstr "Ein freies Linux OS für die Gemeinschaft - von der Gemeinschaft"
 
 #: www/templates/index.html:37
 #, fuzzy
-#| msgid ""
-#| "An Open Source, community-governed and forever-free enterprise Linux "
-#| "distribution, focused on long-term stability, providing a robust "
-#| "production-grade platform. AlmaLinux OS is 1:1 binary compatible with "
-#| "RHEL&reg; and pre-Stream CentOS."
 msgid ""
 "An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution, focused on long-term stability, providing a robust production-"
@@ -713,7 +709,7 @@ msgstr ""
 msgid "AlmaLinux OS in the Press"
 msgstr ""
 
-#: www/templates/page/page.html:31
+#: www/templates/page/page.html:31 www/templates/page/page.html:27
 msgid "Published"
 msgstr ""
 
