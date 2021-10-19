@@ -102,6 +102,9 @@ def content_page(request: HttpRequest, slug: str = None) -> HttpResponse:
     except Page.DoesNotExist:
         raise Http404
 
+    if not page:
+        raise Http404
+
     return render(request, 'page/page.html', {
         'page': page
     })
@@ -153,6 +156,9 @@ def blog_post(request: HttpRequest, slug: str = None) -> HttpResponse:
     try:
         post = BlogPost.objects.filter(date__lte=now, published=True, lang=lang_code, slug=slug).first()
     except BlogPost.DoesNotExist:
+        raise Http404
+
+    if not post:
         raise Http404
 
     return render(request, 'blog/post.html', {
