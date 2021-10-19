@@ -1,6 +1,8 @@
 from typing import Dict, Optional
 
 from django import template
+from django.urls import resolve, reverse
+from django.utils import translation
 from django.utils.safestring import SafeString
 from django.utils.translation import gettext as _
 
@@ -17,6 +19,23 @@ def motd(context: Dict) -> Optional[SafeString]:
 
     message = show_motd.text
     if show_motd.link:
-        message += (' <a href="%s">' % show_motd.link) + _('Read more') + '</a>'
+        href = show_motd.link
+
+        # If not an absolute link, try resolve for current locale
+        if href[0:7] != 'http://' and href[0:8] != 'https://':
+            request_language = translation.get_language()
+
+            try:
+                if request_language == 'en':
+                    view, args, kwargs = resolve(href)
+                else:
+                    view, args, kwargs = resolve('/%s%s' % (request_language, href))
+
+                href = reverse(view, args=args, kwargs=kwargs)
+            except:
+                # NOOP - can't do anything here...
+                pass
+
+        message += (' <a href="%s">' % href) + _('Read more') + '</a>'
 
     return SafeString(message)
