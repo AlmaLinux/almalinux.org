@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-05 20:01+0000\n"
+"POT-Creation-Date: 2021-10-19 20:12+0000\n"
 "PO-Revision-Date: 2021-10-11 09:27+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/almalinux/"
@@ -67,7 +67,7 @@ msgstr "Kurulum"
 
 #: www/templates/_partial/footer.html:18 www/templates/_partial/navbar.html:57
 msgid "Membership"
-msgstr ""
+msgstr "Üyelik"
 
 #: www/templates/_partial/footer.html:19 www/templates/_partial/navbar.html:62
 msgid "ELevate"
@@ -105,7 +105,7 @@ msgstr "Kullanım Şartları"
 msgid "Licensing Policy"
 msgstr "Lisans Politikası"
 
-#: www/templates/_partial/footer.html:43
+#: www/templates/_partial/footer.html:45
 msgid "Trademark Usage Policy"
 msgstr "Ticari Marka Kullanım Politikası"
 
@@ -133,11 +133,7 @@ msgstr "CentOS 8'den geçiş yapın"
 msgid "Report Bugs"
 msgstr "Yazılım Hata Raporu"
 
-#: www/templates/_partial/navbar.html:54
-msgid "Membership"
-msgstr "Üyelik"
-
-#: www/templates/_partial/navbar.html:62
+#: www/templates/_partial/navbar.html:70
 msgid "Shop"
 msgstr "Mağaza"
 
