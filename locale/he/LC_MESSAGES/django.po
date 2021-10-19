@@ -7,11 +7,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-19 20:07+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2021-10-05 20:01+0000\n"
+"PO-Revision-Date: 2021-10-11 09:27+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/almalinux/"
+"website-backend/he/>\n"
+"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,7 +34,7 @@ msgstr "404 לא נמצא - AlmaLinux OS"
 msgid ""
 "An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution."
-msgstr ""
+msgstr "הפצת לינוקס ברמה תעשייתית, חופשית בקוד פתוח בבעלות ובהנהגת הקהילה."
 
 #: www/templates/404.html:13
 msgid "404 Not Found"
@@ -105,11 +106,11 @@ msgstr "מדיניות הרישוי"
 
 #: www/templates/_partial/footer.html:45
 msgid "Trademark Usage Policy"
-msgstr ""
+msgstr "מדיניות השימוש בסימני המסחר"
 
 #: www/templates/_partial/footer.html:50
 msgid "Foundation Bylaws"
-msgstr ""
+msgstr "תקנוני הקרן"
 
 #: www/templates/_partial/navbar.html:10
 msgid "AlmaLinux OS logo"
@@ -131,19 +132,24 @@ msgstr "הגירה מ־CentOS 8"
 msgid "Report Bugs"
 msgstr "דיווח על תקלות"
 
-#: www/templates/_partial/navbar.html:70
+#: www/templates/_partial/navbar.html:54
+msgid "Membership"
+msgstr "חברות"
+
+#: www/templates/_partial/navbar.html:62 www/templates/_partial/navbar.html:57
 msgid "Shop"
 msgstr "חנות"
 
-#: www/templates/_partial/navbar.html:78
+#: www/templates/_partial/navbar.html:70 www/templates/_partial/navbar.html:65
 msgid "Language"
 msgstr "שפה"
 
-#: www/templates/_partial/navbar.html:102
+#: www/templates/_partial/navbar.html:91 www/templates/_partial/navbar.html:86
 msgid "Translate"
 msgstr "תרגום"
 
-#: www/templates/_partial/navbar.html:110 www/templates/index.html:52
+#: www/templates/_partial/navbar.html:99 www/templates/index.html:52
+#: www/templates/_partial/navbar.html:94
 msgid "Download"
 msgstr "הורדות"
 
@@ -409,21 +415,23 @@ msgstr ""
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7
 msgid "AlmaLinux OS Foundation - membership"
-msgstr ""
+msgstr "קרן AlmaLinux OS - חברות"
 
 #: www/templates/foundation/members/index.html:21
 msgid "Join the AlmaLinux OS Foundation"
-msgstr ""
+msgstr "הצטרפות לקרן AlmaLinux OS"
 
 #: www/templates/foundation/members/index.html:25
 msgid ""
 "Be heard! Join the AlmaLinux Foundation as a Member or Sponsor. Own and vote "
 "on shaping the future of AlmaLinux OS!"
 msgstr ""
+"קולך חשוב! אפשר להצטרף לקרן AlmaLinux במסגרת חברות או להציע מימון. אפשר לקחת "
+"בעלות על עיצוב העתיד של AlmaLinux OS!"
 
 #: www/templates/foundation/members/index.html:32
 msgid "Apply for membership"
-msgstr ""
+msgstr "הגשת מועמדות לחברות"
 
 #: www/templates/foundation/members/index.html:41
 msgid ""
@@ -435,6 +443,11 @@ msgid ""
 "sponsors and service providers to the community, as well as official "
 "sponsors for the project."
 msgstr ""
+"קרן AlmaLinux היא היישות שמאחורי AlmaLinux OS, הפצת הלינוקס ברמה תעשייתית "
+"שתהיה בחינם לעד. הצטרפות לחברות מעניקה לך קול בהחלטות שקשורות בניווט המיזם, "
+"יש לך אפשרות להצביע לחברים אחרים ושיצביעו לך בדירקטוריון. יש מספר דרכים "
+"אפשריות להתקבל לחברות, לרבות תרומה למיזמים, תחזוקה/מימון של אתרי מראה וספקי "
+"שירות לקהילה לרבות מימון רשמי של המיזם."
 
 #: www/templates/foundation/members/index.html:51
 msgid ""
@@ -442,14 +455,16 @@ msgid ""
 "the Board or by a committee appointed for this purpose, according to the "
 "Bylaws established by the Board."
 msgstr ""
+"כל זכאות תיסקר לגופה על ידי הדירקטוריון או על ידי ועדה שמונתה למטרות אלה, "
+"בהתאם לתקנונים שנוסחו על ידי הדירקטוריון."
 
 #: www/templates/foundation/members/index.html:63
 msgid "Join AlmaLinux OS Foundation"
-msgstr ""
+msgstr "הצטרפות לקרן AlmaLinux OS"
 
 #: www/templates/foundation/members/index.html:69
 msgid "Contributor Member"
-msgstr ""
+msgstr "חברות למתנדבים"
 
 #: www/templates/foundation/members/index.html:72
 msgid ""
@@ -457,16 +472,18 @@ msgid ""
 "AlmaLinux OS, provides services to the AlmaLinux OS community or otherwise "
 "supports the AlmaLinux OS."
 msgstr ""
+"בקשה שמיועדת למשתמשי AlmaLinux OS, מתנדבי AlmaLinux OS, ספקי שירותים לקהילת "
+"AlmaLinux OS או כל סוג אחר של תמיכה ב־AlmaLinux OS."
 
 #: www/templates/foundation/members/index.html:81
 #: www/templates/foundation/members/index.html:103
 #: www/templates/foundation/members/index.html:121
 msgid "Apply"
-msgstr ""
+msgstr "הגשה"
 
 #: www/templates/foundation/members/index.html:90
 msgid "Mirror Member"
-msgstr ""
+msgstr "חברות דרך אתרי מראה"
 
 #: www/templates/foundation/members/index.html:93
 msgid ""
@@ -474,27 +491,29 @@ msgid ""
 "distribution. Only one member application per individual or entity will be "
 "accepted, irrespective of contributed number of mirrors."
 msgstr ""
+"תומך בודד או יישות שמספקת אתר או אתרי מראה להפצת התכנים. מותר להגיש בקשה אחת "
+"לכל תומך או יישות, ללא תלות בכמות אתרי המראה שסופקו."
 
 #: www/templates/foundation/members/index.html:111
 msgid "Sponsor Member"
-msgstr ""
+msgstr "חברות בזכות מימון"
 
 #: www/templates/foundation/members/index.html:113
 msgid ""
 "Entities who wish to contribute funding for the project through sponsorship."
-msgstr ""
+msgstr "ישויות שמעוניינות לספק מימון כלכלי למיזם."
 
 #: www/templates/foundation/members/index.html:131
 msgid "Do you have membership related questions?"
-msgstr ""
+msgstr "יש לך שאלות שקשורות בחברות?"
 
 #: www/templates/foundation/members/index.html:132
 msgid "Contact us"
-msgstr ""
+msgstr "ניתן ליצור אתנו קשר"
 
 #: www/templates/foundation/members/index.html:141
 msgid "Board of Directors"
-msgstr ""
+msgstr "דירקטוריון"
 
 #: www/templates/index.html:6
 msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
@@ -511,6 +530,9 @@ msgid ""
 "grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL&reg; and pre-"
 "Stream CentOS."
 msgstr ""
+"הפצת לינוקס ברמה תעשייתית שתהיה חינם לעד, בהנהגת ובבעלות הקהילה, בקוד פתוח, "
+"שממוקדת על יציבות לטווח ארוך, מספקת פלטפורמה ברמת צורכי הפעילות השוטפת. "
+"AlmaLinux OS תואם ברמה הבינרית 1:1 מול RHEL&reg; ו־CentOS טרום Stream."
 
 #: www/templates/index.html:47
 msgid "Contribute"
@@ -590,6 +612,9 @@ msgid ""
 "release. AlmaLinux OS is a 1:1 binary compatible fork of RHEL&reg; guided "
 "and built by the community."
 msgstr ""
+"AlmaLinux OS היא מערכת הפעלה מבוססת לינוקס בקוד פתוח ובהנהגת הקהילה שממלאה "
+"את החלל שנוצר עקב הפסקת הפיתוח של הגרסה היציבה של לינוקס CentOS. ‏AlmaLinux "
+"OS היא פיצול עם תאימות בינרית של 1:1 מול RHEL&reg; בהנחיית והרכבת הקהילה."
 
 #: www/templates/index.html:167
 msgid ""
@@ -597,12 +622,17 @@ msgid ""
 "sponsorship from CloudLinux Inc and support from other sponsors. Ongoing "
 "development efforts are governed by the members of the community."
 msgstr ""
+"כמערכת הפעלה עצמאית וחופשית לחלוטין, נהנית AlmaLinux OS ממימון שנתי של "
+"מיליון דולר מ־CloudLinux ותמיכה ממממנים נוספים. מאמצי הפיתוח שמתרחשים כל העת "
+"נעשים בהובלת חברי הקהילה."
 
 #: www/templates/index.html:174
 msgid ""
 "The AlmaLinux OS Foundation is a 501(c)(6) non-profit created for the "
 "benefit of the AlmaLinux OS community."
 msgstr ""
+"קרן AlmaLinux OS היא ארגון ללא מטרות רווח בכפוף ל־‎501(c)(6) שנוצר לטובת "
+"קהילת AlmaLinux OS."
 
 #: www/templates/index.html:188
 msgid "Backed by"
@@ -618,6 +648,9 @@ msgid ""
 "distribution with regular releases that come with a long support windows. "
 "You can rely on AlmaLinux OS to run any and every critical workloads."
 msgstr ""
+"AlmaLinux OS היא מערכת הפעלה לשרתים ברמה תעשייתית והפצת לינוקס יציבה עם "
+"עדכונים תקופתיים שמגיעים עם חלונות תמיכה ארוכי טווח. ניתן לסמוך על AlmaLinux "
+"OS שתישא כל עומס משמעותי עבורך."
 
 #: www/templates/index.html:225
 msgid "Fully supported, always free"
@@ -629,6 +662,8 @@ msgid ""
 "with investments and long support commitments to ensure the distribution is "
 "free of limitations, fees and charges."
 msgstr ""
+"חברי, ממני ושותפי קרן AlmaLinux OS מגבים את AlmaLinux OS עם השקעות "
+"והתחייבויות לתמיכה לטווח ארוך כדי לוודא שההפצה חופשיה ממגבלות, עמלות ועלויות."
 
 #: www/templates/index.html:238
 msgid "Effortless to switch to"
@@ -662,6 +697,8 @@ msgid ""
 "Subscribe to our newsletter and never miss out on the latest in AlmaLinux OS "
 "development!"
 msgstr ""
+"ניתן להירשם לרשימת הדיוור שלנו כדי לא לפספס את החדשות החמות ביותר על הפיתוח "
+"של AlmaLinux OS!"
 
 #: www/templates/index.html:337
 msgid "Your email"
@@ -676,6 +713,8 @@ msgid ""
 "By filling this form you agree to be contacted by AlmaLinux OS Foundation "
 "regarding your request. You can unsubscribe at any time."
 msgstr ""
+"מילוי הטופס הזה מהווה את הסכמתך לכך שקרן AlmaLinux OS תפנה אליך בנוגע לבקשה "
+"שלך. ניתן לבטל את ההתקשרות בכל עת."
 
 #: www/templates/index.html:363
 msgid "AlmaLinux OS in the Press"
@@ -714,14 +753,37 @@ msgid ""
 "You have successfully subscribed to AlmaLinux OS announcement mailing list!"
 msgstr "נרשמת בהצלחה לרשימת הדיוור להכרזות של AlmaLinux OS!"
 
-#: www/views.py:54
+#: www/views.py:54 www/views.py:53
 msgid "Email address is not valid"
 msgstr "כתובת הדוא״ל שגויה"
 
-#: www/views.py:78
+#: www/views.py:78 www/views.py:77
 msgid "Failed to subscribe to mailing list, please try again later"
 msgstr "ההרשמה לרשימת הדיוור נכשלה, נא לנסות שוב בהמשך"
 
-#: www/views.py:80
+#: www/views.py:80 www/views.py:79
 msgid "You are already subscribed to this mailing list!"
 msgstr "כבר נרשמת לרשימת דיוור זו!"
+
+#: www/templates/404.html:6 www/templates/blog/index.html:9
+#: www/templates/index.html:8 www/templates/layouts/base.html:19
+#: www/templates/subscribe_post.html:8
+msgid ""
+"An open-source RHEL fork built by the team at CloudLinux, inspired by the "
+"community."
+msgstr "פיצול של RHEL שנבנה על ידי הצוות ב־CloudLinux, בהשראת הקהילה."
+
+#: www/templates/_partial/footer.html:43
+msgid " Trademark Usage Policy"
+msgstr " מדיניות שימוש בסימני מסחר"
+
+#: www/templates/index.html:37
+msgid ""
+"An Open Source, community-governed and forever-free enterprise Linux "
+"distribution, focused on long-term stability, providing a robust production-"
+"grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL&reg; and pre-"
+"Stream CentOS."
+msgstr ""
+"הפצת לינוקס ברמה תעשייתית חופשית בקוד פתוח ובהנהגת הקהילה, ממוקדת על יציבות "
+"לטווח ארוך תוך אספת פלטפורמה לרמה תעשייתית. AlmaLinux OS שומרת על תאימות של "
+"1:1 מול RHEL&reg; ו־CentOS שלפני גרסת Stream."

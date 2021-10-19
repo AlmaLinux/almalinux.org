@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8.1-dev\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 #: commons/templatetags/motd.py:20
 msgid "Read more"
@@ -34,6 +34,8 @@ msgid ""
 "An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution."
 msgstr ""
+"Una distribución Linux para empresas abierta, comunal y por siempre libre y "
+"gratuita."
 
 #: www/templates/404.html:13
 msgid "404 Not Found"
@@ -104,15 +106,13 @@ msgstr "Términos del servicio"
 msgid "Licensing Policy"
 msgstr "Normativa de licencias"
 
-#: www/templates/_partial/footer.html:45
-#, fuzzy
-#| msgid " Trademark Usage Policy"
+#: www/templates/_partial/footer.html:43
 msgid "Trademark Usage Policy"
-msgstr " Normativa de uso de marcas comerciales"
+msgstr "Normativa de uso de marcas comerciales"
 
 #: www/templates/_partial/footer.html:50
 msgid "Foundation Bylaws"
-msgstr ""
+msgstr "Estatutos de la fundación"
 
 #: www/templates/_partial/navbar.html:10
 msgid "AlmaLinux OS logo"
@@ -134,7 +134,11 @@ msgstr "Migrar desde CentOS 8"
 msgid "Report Bugs"
 msgstr "Informar de defectos"
 
-#: www/templates/_partial/navbar.html:70
+#: www/templates/_partial/navbar.html:54
+msgid "Membership"
+msgstr "Membresía"
+
+#: www/templates/_partial/navbar.html:62
 msgid "Shop"
 msgstr "Tienda"
 
@@ -144,7 +148,7 @@ msgstr "Idioma"
 
 #: www/templates/_partial/navbar.html:102
 msgid "Translate"
-msgstr ""
+msgstr "Traducir"
 
 #: www/templates/_partial/navbar.html:110 www/templates/index.html:52
 msgid "Download"
@@ -412,26 +416,24 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7
-#, fuzzy
-#| msgid "AlmaLinux OS - Contribute"
 msgid "AlmaLinux OS Foundation - membership"
-msgstr "AlmaLinux OS • Contribuir"
+msgstr "AlmaLinux OS Foundation • Membresía"
 
 #: www/templates/foundation/members/index.html:21
-#, fuzzy
-#| msgid "Join AlmaLinux OS community chat"
 msgid "Join the AlmaLinux OS Foundation"
-msgstr "Únase a la charla comunitaria de AlmaLinux OS"
+msgstr "Únase a la AlmaLinux OS Foundation"
 
 #: www/templates/foundation/members/index.html:25
 msgid ""
 "Be heard! Join the AlmaLinux Foundation as a Member or Sponsor. Own and vote "
 "on shaping the future of AlmaLinux OS!"
 msgstr ""
+"¡Hágase oír! Incorpórese a la AlmaLinux Foundation como miembro o "
+"patrocinador. ¡Haga suyo el futuro de AlmaLinux OS!"
 
 #: www/templates/foundation/members/index.html:32
 msgid "Apply for membership"
-msgstr ""
+msgstr "Solicitar membresía"
 
 #: www/templates/foundation/members/index.html:41
 msgid ""
@@ -443,6 +445,13 @@ msgid ""
 "sponsors and service providers to the community, as well as official "
 "sponsors for the project."
 msgstr ""
+"La AlmaLinux Foundation es la organización tras AlmaLinux OS, la "
+"distribución Linux empresarial y por siempre gratuita. Como miembro, tendrá "
+"voz para influir en el rumbo del proyecto, y podrá votar y ser votadx en la "
+"Junta directiva por otros miembros. Existen varias formas de convertirse en "
+"miembro: si es contribuyente, mantiene o patrocina un servidor réplica, "
+"brinda un servicio a la comunidad o si auspicia de manera oficial el "
+"proyecto, puede unirse."
 
 #: www/templates/foundation/members/index.html:51
 msgid ""
@@ -450,18 +459,17 @@ msgid ""
 "the Board or by a committee appointed for this purpose, according to the "
 "Bylaws established by the Board."
 msgstr ""
+"El mérito de cada una de las solicitudes será evaluado de manera "
+"individualizada por la Junta o un comité designado para este fin, conforme a "
+"los Estatutos que la Junta ha adoptado."
 
 #: www/templates/foundation/members/index.html:63
-#, fuzzy
-#| msgid "Join AlmaLinux OS community chat"
 msgid "Join AlmaLinux OS Foundation"
-msgstr "Únase a la charla comunitaria de AlmaLinux OS"
+msgstr "Únase a la AlmaLinux OS Foundation"
 
 #: www/templates/foundation/members/index.html:69
-#, fuzzy
-#| msgid "Contribute"
 msgid "Contributor Member"
-msgstr "Contribuir"
+msgstr "Miembro contribuyente"
 
 #: www/templates/foundation/members/index.html:72
 msgid ""
@@ -474,11 +482,11 @@ msgstr ""
 #: www/templates/foundation/members/index.html:103
 #: www/templates/foundation/members/index.html:121
 msgid "Apply"
-msgstr ""
+msgstr "Solicitar"
 
 #: www/templates/foundation/members/index.html:90
 msgid "Mirror Member"
-msgstr ""
+msgstr "Miembro espejo"
 
 #: www/templates/foundation/members/index.html:93
 msgid ""
@@ -489,7 +497,7 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:111
 msgid "Sponsor Member"
-msgstr ""
+msgstr "Miembro patrocinador"
 
 #: www/templates/foundation/members/index.html:113
 msgid ""
@@ -498,40 +506,34 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:131
 msgid "Do you have membership related questions?"
-msgstr ""
+msgstr "¿Tiene alguna pregunta relacionada con la membresía?"
 
 #: www/templates/foundation/members/index.html:132
 msgid "Contact us"
-msgstr ""
+msgstr "Póngase en contacto con nosotros"
 
 #: www/templates/foundation/members/index.html:141
 msgid "Board of Directors"
-msgstr ""
+msgstr "Junta directiva"
 
 #: www/templates/index.html:6
 msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
-msgstr "AlmaLinux OS: sistema operativo empresarial y gratuito para siempre"
+msgstr "AlmaLinux OS: sistema operativo empresarial y por siempre gratuito"
 
 #: www/templates/index.html:34
 msgid "Free Linux OS for the community, by the community"
 msgstr "Sistema operativo Linux de la comunidad para la comunidad"
 
 #: www/templates/index.html:37
-#, fuzzy
-#| msgid ""
-#| "An Open Source, community-governed and forever-free enterprise Linux "
-#| "distribution, focused on long-term stability, providing a robust "
-#| "production-grade platform. AlmaLinux OS is 1:1 binary compatible with "
-#| "RHEL&reg; and pre-Stream CentOS."
 msgid ""
 "An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution, focused on long-term stability, providing a robust production-"
 "grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL&reg; and pre-"
 "Stream CentOS."
 msgstr ""
-"Una distribución Linux empresarial de código abierto, de gobernanza "
-"comunitaria y gratuita de por vida, orientada a la estabilidad de largo "
-"plazo, que brinda una plataforma robusta para entornos de producción. "
+"Una distribución Linux empresarial de código abierto, de gobernanza y "
+"propiedad comunitarias y gratuita de por vida, orientada a la estabilidad de "
+"largo plazo, que brinda una plataforma robusta para entornos de producción. "
 "AlmaLinux OS es compatible binariamente 1∶1 con RHEL&reg; y CentOS pre-"
 "Stream."
 
