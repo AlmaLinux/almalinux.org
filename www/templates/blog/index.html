@@ -1,5 +1,6 @@
 {% extends 'layouts/base.html' %}
 {% load i18n %}
+{% load i18n_utils %}
 {% load static %}
 {% load encore %}
 {% load humanize %}
@@ -17,16 +18,18 @@
 {% endblock %}
 
 {% block body %}
+    {% get_current_language as CURRENT_LANG %}
     <section class="al-page-blog-index">
         <div class="container py-5">
             <div class="al-page-blog-posts">
                 {% for post in posts %}
-                    <article class="mb-5">
+                    <article class="mb-5" dir="{% text_direction post.language %}">
                         <a class="al-article-title-link" href="{% url 'blog_post' post.slug %}">
                             <h2>{{ post.title }}</h2>
                         </a>
                         <div class="al-article-date d-flex align-items-center my-3"
-                             title="{{ post.date|date }} {{ post.date|time }}">
+                             title="{{ post.date|date }} {{ post.date|time }}"
+                             dir="{% text_direction CURRENT_LANG %}">
                             <i class="bi bi-calendar pe-1"></i>
                             <span>{{ post.date|naturaltime }}</span>
                         </div>
@@ -41,7 +44,7 @@
                         <div class="al-article-excerpt mb-4">
                             {{ post.excerpt }}
                         </div>
-                        <div class="al-article-actions">
+                        <div class="al-article-actions" dir="{% text_direction CURRENT_LANG %}">
                             <a href="{% url 'blog_post' post.slug %}"
                                class="al-article-continue d-flex align-items-center">
                                 <i class="bi bi-chevron-double-right pe-1"></i>

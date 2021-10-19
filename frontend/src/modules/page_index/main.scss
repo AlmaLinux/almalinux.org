@@ -42,6 +42,13 @@
       color: lighten($al-font-color, 10%);
       font-size: 32px;
       padding-right: 22px;
+
+      @at-root {
+        [dir=rtl] & {
+          padding-right: 0;
+          padding-left: 22px;
+        }
+      }
     }
   }
 
@@ -53,6 +60,13 @@
       font-size: 32px;
       padding-right: 22px;
       flex: 0;
+
+      @at-root {
+        [dir=rtl] & {
+          padding-right: 0;
+          padding-left: 22px;
+        }
+      }
 
       &.img {
         height: 32px;

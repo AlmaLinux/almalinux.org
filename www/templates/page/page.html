@@ -1,5 +1,6 @@
 {% extends 'layouts/base.html' %}
 {% load i18n %}
+{% load i18n_utils %}
 {% load static %}
 {% load encore %}
 {% load humanize %}
@@ -14,7 +15,9 @@
 {% endblock %}
 
 {% block body %}
-    <section class="al-page-page">
+    {% get_current_language as CURRENT_LANG %}
+
+    <section class="al-page-page" dir="{% text_direction page.language %}">
         <div class="container py-5">
             <h1 class="al-section-title mb-4">{{ page.title }}</h1>
             <article>
@@ -22,7 +25,8 @@
                     {{ page.content_html|safe }}
                 </div>
                 <div class="al-page-date d-flex align-items-center"
-                     title="{{ page.date|date }} {{ page.date|time }}">
+                     title="{{ page.date|date }} {{ page.date|time }}"
+                     dir="{% text_direction CURRENT_LANG %}">
                     <i class="bi bi-calendar pe-1"></i>
                     <span>{% translate 'Published' %} {{ page.date|naturaltime }}</span>
                 </div>

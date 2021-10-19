@@ -34,12 +34,15 @@ web-root-attach: #: Attach to backend shell within docker, as root, running inst
 	docker exec -ti web /bin/bash
 
 messages: #: Update message files for all translations in known domains
-	LOCAL_UID=${CURRENT_UID} LOCAL_GID=${CURRENT_GID} docker-compose run -u ${CURRENT_UID} web pipenv run ./manage.py makemessages -a --domain django
-	LOCAL_UID=${CURRENT_UID} LOCAL_GID=${CURRENT_GID} docker-compose run -u ${CURRENT_UID} web pipenv run ./manage.py makemessages -a --domain djangojs --ignore "frontend/node_modules/**"
-	LOCAL_UID=${CURRENT_UID} LOCAL_GID=${CURRENT_GID} docker-compose run -u ${CURRENT_UID} web pipenv run ./manage.py compilemessages
+	LOCAL_UID=${CURRENT_UID} LOCAL_GID=${CURRENT_GID} docker-compose run -u ${CURRENT_UID} web pipenv run python3 ./manage.py makemessages -a --domain django
+	LOCAL_UID=${CURRENT_UID} LOCAL_GID=${CURRENT_GID} docker-compose run -u ${CURRENT_UID} web pipenv run python3 ./manage.py makemessages -a --domain djangojs --ignore "frontend/node_modules/**"
+	LOCAL_UID=${CURRENT_UID} LOCAL_GID=${CURRENT_GID} docker-compose run -u ${CURRENT_UID} web pipenv run python3 ./manage.py compilemessages
 
 compile-messages: #: Compile messages without source extraction
-	LOCAL_UID=${CURRENT_UID} LOCAL_GID=${CURRENT_GID} docker-compose run -u ${CURRENT_UID} web pipenv run ./manage.py compilemessages
+	LOCAL_UID=${CURRENT_UID} LOCAL_GID=${CURRENT_GID} docker-compose run -u ${CURRENT_UID} web pipenv run python3 ./manage.py compilemessages
+
+migrations: #: Update message files for all translations in known domains
+	LOCAL_UID=${CURRENT_UID} LOCAL_GID=${CURRENT_GID} docker-compose run -u ${CURRENT_UID} web pipenv run python3 ./manage.py makemigrations
 
 frontend-shell: #: Enter frontend shell within docker, as a regular user, new service instance
 	LOCAL_UID=${CURRENT_UID} LOCAL_GID=${CURRENT_GID} docker-compose run -u ${CURRENT_UID} frontend /bin/bash
@@ -103,8 +106,8 @@ assemble-web: # INTERNAL - package and build web
 	cp /app/tmp/deploy/.env.dist /app/tmp/deploy/.env
 	cd /app/tmp/deploy/ && pipenv sync
 	cd /app/tmp/deploy/ && pipenv clean
-	cd /app/tmp/deploy/ && pipenv run ./manage.py collectstatic
-	cd /app/tmp/deploy/ && pipenv run ./manage.py compilemessages
+	cd /app/tmp/deploy/ && pipenv run python3 ./manage.py collectstatic
+	cd /app/tmp/deploy/ && pipenv run python3 ./manage.py compilemessages
 	cd /app/tmp/deploy/ && pipenv lock -r > requirements.txt
 
 uwsgi: # INTERNAL - start UWSGI server, within production image

@@ -1,10 +1,11 @@
 {% load encore %}
 {% load static %}
 {% load i18n %}
+{% load i18n_utils %}
 {% load urls %}
 {% get_current_language as CURRENT_LANG %}
 <!doctype html>
-<html lang="{{ CURRENT_LANG }}">
+<html lang="{{ CURRENT_LANG }}" dir="{% text_direction CURRENT_LANG %}">
 <head>
     <!-- Interested in what makes this website tick?      -->
     <!-- Are you looking to contribute?                   -->

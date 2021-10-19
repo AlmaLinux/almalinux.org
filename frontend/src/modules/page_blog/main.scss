@@ -21,6 +21,13 @@
 
         i {
           font-size: 0.8rem;
+
+          @at-root {
+            [dir=rtl] & {
+              padding-right: 0;
+              padding-left: 6px;
+            }
+          }
         }
       }
 
@@ -76,6 +83,13 @@
 
       i {
         font-size: 0.8rem;
+
+        @at-root {
+          [dir=rtl] & {
+            padding-right: 0;
+            padding-left: 6px;
+          }
+        }
       }
     }
 
