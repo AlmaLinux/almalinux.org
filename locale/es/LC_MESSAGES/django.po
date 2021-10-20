@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-19 21:04+0000\n"
-"PO-Revision-Date: 2021-09-09 03:33+0000\n"
+"PO-Revision-Date: 2021-10-20 02:54+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/es/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: commons/templatetags/motd.py:20
 msgid "Read more"
-msgstr ""
+msgstr "Conocer más"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
@@ -72,7 +72,7 @@ msgstr "Membresía"
 
 #: www/templates/_partial/footer.html:19 www/templates/_partial/navbar.html:62
 msgid "ELevate"
-msgstr ""
+msgstr "ELevate"
 
 #: www/templates/_partial/footer.html:23
 msgid "Community"
@@ -191,7 +191,7 @@ msgid ""
 "channels below to find out more!"
 msgstr ""
 "<a href=\"%(intro_link)s\">Preséntese</a> o añádase a uno de los canales "
-"temáticos para participar."
+"temáticos para participar!"
 
 #: www/templates/contribute/index.html:43
 msgid "General chat"
@@ -226,10 +226,8 @@ msgid "Join AlmaLinux OS community chat"
 msgstr "Únase a la charla comunitaria de AlmaLinux OS"
 
 #: www/templates/elevate/index.html:6
-#, fuzzy
-#| msgid "AlmaLinux OS - Contribute"
 msgid "AlmaLinux OS - ELevate Your Distribution"
-msgstr "AlmaLinux OS • Contribuir"
+msgstr "AlmaLinux OS • ELeve su distribución"
 
 #: www/templates/elevate/index.html:8
 msgid ""
@@ -707,7 +705,7 @@ msgid ""
 "development!"
 msgstr ""
 "Suscríbase a nuestro boletín y no se pierda de las novedades de desarrollo "
-"de AlmaLinux OS."
+"de AlmaLinux OS!"
 
 #: www/templates/index.html:337
 msgid "Your email"
@@ -762,7 +760,7 @@ msgid ""
 "You have successfully subscribed to AlmaLinux OS announcement mailing list!"
 msgstr ""
 "Se ha suscrito correctamente a la lista de correo de anuncios de AlmaLinux "
-"OS."
+"OS!"
 
 #: www/views.py:54
 msgid "Email address is not valid"
