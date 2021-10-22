@@ -3,28 +3,29 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-19 21:04+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-10-22 11:43+0000\n"
+"Last-Translator: Luna Jernberg <droidbittin@gmail.com>\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/almalinux/"
+"website-backend/sv/>\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 #: commons/templatetags/motd.py:20
 msgid "Read more"
-msgstr ""
+msgstr "Läs mer"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
-msgstr ""
+msgstr "404 hittades inte - AlmaLinux OS"
 
 #: www/templates/404.html:6 www/templates/blog/index.html:10
 #: www/templates/blog/post.html:10 www/templates/index.html:8
@@ -36,51 +37,51 @@ msgstr ""
 
 #: www/templates/404.html:13
 msgid "404 Not Found"
-msgstr ""
+msgstr "404 hittades inte"
 
 #: www/templates/404.html:16
 msgid "Sorry, but the page you were trying to access could not be found."
-msgstr ""
+msgstr "Tyvärr, men sidan du försökte komma åt kunde inte hittas."
 
 #: www/templates/_partial/footer.html:11 www/templates/_partial/navbar.html:41
 msgid "Resources"
-msgstr ""
+msgstr "Resurser"
 
 #: www/templates/_partial/footer.html:13 www/templates/_partial/navbar.html:31
 msgid "Wiki"
-msgstr ""
+msgstr "Wiki"
 
 #: www/templates/_partial/footer.html:15
 msgid "Bugs"
-msgstr ""
+msgstr "Buggar"
 
 #: www/templates/_partial/footer.html:16
 msgid "Repository"
-msgstr ""
+msgstr "Förråd"
 
 #: www/templates/_partial/footer.html:17
 msgid "Downloads"
-msgstr ""
+msgstr "Nedladdningar"
 
 #: www/templates/_partial/footer.html:18 www/templates/_partial/navbar.html:57
 msgid "Membership"
-msgstr ""
+msgstr "Medlemskap"
 
 #: www/templates/_partial/footer.html:19 www/templates/_partial/navbar.html:62
 msgid "ELevate"
-msgstr ""
+msgstr "ELevate"
 
 #: www/templates/_partial/footer.html:23
 msgid "Community"
-msgstr ""
+msgstr "Gemenskap"
 
 #: www/templates/_partial/footer.html:27
 msgid "Forums"
-msgstr ""
+msgstr "Forum"
 
 #: www/templates/_partial/footer.html:28
 msgid "Chat"
-msgstr ""
+msgstr "Chatt"
 
 #: www/templates/_partial/footer.html:33
 msgid "Legal"
@@ -100,75 +101,75 @@ msgstr ""
 
 #: www/templates/_partial/footer.html:40
 msgid "Licensing Policy"
-msgstr ""
+msgstr "Licenspolicy"
 
 #: www/templates/_partial/footer.html:45
 msgid "Trademark Usage Policy"
-msgstr ""
+msgstr "Varumärkesanvändningspolicy"
 
 #: www/templates/_partial/footer.html:50
 msgid "Foundation Bylaws"
-msgstr ""
+msgstr "Stiftelsens stadgar"
 
 #: www/templates/_partial/navbar.html:10
 msgid "AlmaLinux OS logo"
-msgstr ""
+msgstr "AlmaLinux OS-logotyp"
 
 #: www/templates/_partial/navbar.html:19
 msgid "Toggle navigation"
-msgstr ""
+msgstr "Växla navigering"
 
 #: www/templates/_partial/navbar.html:26
 msgid "Blog"
-msgstr ""
+msgstr "Blogg"
 
 #: www/templates/_partial/navbar.html:47
 msgid "Migrate from CentOS 8"
-msgstr ""
+msgstr "AlmaLinux OS-logotyp"
 
 #: www/templates/_partial/navbar.html:52
 msgid "Report Bugs"
-msgstr ""
+msgstr "Rapportera buggar"
 
 #: www/templates/_partial/navbar.html:70
 msgid "Shop"
-msgstr ""
+msgstr "Butik"
 
 #: www/templates/_partial/navbar.html:78
 msgid "Language"
-msgstr ""
+msgstr "Språk"
 
 #: www/templates/_partial/navbar.html:102
 msgid "Translate"
-msgstr ""
+msgstr "Översätt"
 
 #: www/templates/_partial/navbar.html:110 www/templates/index.html:52
 msgid "Download"
-msgstr ""
+msgstr "Ladda ned"
 
 #: www/templates/blog/index.html:8
 msgid "AlmaLinux OS Blog"
-msgstr ""
+msgstr "AlmaLinux OS Blogg"
 
 #: www/templates/blog/index.html:51
 msgid "Continue reading"
-msgstr ""
+msgstr "Fortsätt läsa"
 
 #: www/templates/blog/index.html:64 www/templates/blog/index.html:70
 msgid "Previous"
-msgstr ""
+msgstr "Föregående"
 
 #: www/templates/blog/index.html:82 www/templates/blog/index.html:88
 msgid "Next"
-msgstr ""
+msgstr "Nästa"
 
 #: www/templates/contribute/index.html:6
 msgid "AlmaLinux OS - Contribute"
-msgstr ""
+msgstr "AlmaLinux OS - Bidra"
 
 #: www/templates/contribute/index.html:7 www/templates/contribute/index.html:22
 msgid "Contribute to AlmaLinux OS development"
-msgstr ""
+msgstr "Bidra till AlmaLinux OS-utveckling"
 
 #: www/templates/contribute/index.html:26
 msgid ""
@@ -186,35 +187,35 @@ msgstr ""
 
 #: www/templates/contribute/index.html:43
 msgid "General chat"
-msgstr ""
+msgstr "Allmän chatt"
 
 #: www/templates/contribute/index.html:48
 msgid "Development"
-msgstr ""
+msgstr "Utveckling"
 
 #: www/templates/contribute/index.html:53
 msgid "Infrastructure"
-msgstr ""
+msgstr "Infrastruktur"
 
 #: www/templates/contribute/index.html:58
 msgid "Security"
-msgstr ""
+msgstr "Säkerhet"
 
 #: www/templates/contribute/index.html:63
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentation"
 
 #: www/templates/contribute/index.html:68
 msgid "Marketing"
-msgstr ""
+msgstr "Marknadsföring"
 
 #: www/templates/contribute/index.html:73
 msgid "Web presence"
-msgstr ""
+msgstr "Webbnärvaro"
 
 #: www/templates/contribute/index.html:82
 msgid "Join AlmaLinux OS community chat"
-msgstr ""
+msgstr "Gå med i AlmaLinux OS gemenskapschatt"
 
 #: www/templates/elevate/index.html:6
 msgid "AlmaLinux OS - ELevate Your Distribution"
@@ -228,7 +229,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:23
 msgid "ELevate Your Distribution"
-msgstr ""
+msgstr "ELevera din distribution"
 
 #: www/templates/elevate/index.html:27
 msgid ""
@@ -238,19 +239,19 @@ msgstr ""
 
 #: www/templates/elevate/index.html:37
 msgid "Get Started"
-msgstr ""
+msgstr "Kom igång"
 
 #: www/templates/elevate/index.html:42
 msgid "Discuss"
-msgstr ""
+msgstr "Diskutera"
 
 #: www/templates/elevate/index.html:58
 msgid "About"
-msgstr ""
+msgstr "Om"
 
 #: www/templates/elevate/index.html:63
 msgid "Major Version Upgrades"
-msgstr ""
+msgstr "Större versionsuppgraderingar"
 
 #: www/templates/elevate/index.html:66
 msgid ""
@@ -274,7 +275,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:93
 msgid "Community-wide Project"
-msgstr ""
+msgstr "Gemenskapsövergripande projekt"
 
 #: www/templates/elevate/index.html:96
 msgid ""
@@ -285,11 +286,11 @@ msgstr ""
 
 #: www/templates/elevate/index.html:107
 msgid "FAQ"
-msgstr ""
+msgstr "Vanliga frågor"
 
 #: www/templates/elevate/index.html:112
 msgid "What is ELevate?"
-msgstr ""
+msgstr "Vad är ELevate?"
 
 #: www/templates/elevate/index.html:117
 msgid ""
@@ -314,7 +315,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:143
 msgid "Is this ready for production?"
-msgstr ""
+msgstr "Är detta redo för produktion?"
 
 #: www/templates/elevate/index.html:148
 msgid ""
@@ -326,7 +327,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:158
 msgid "What operating systems does ELevate support?"
-msgstr ""
+msgstr "Vilka operativsystem stöder ELevate?"
 
 #: www/templates/elevate/index.html:163
 msgid ""
@@ -342,14 +343,15 @@ msgstr ""
 #: www/templates/elevate/index.html:182
 msgid "Yes. All your data, applications and settings will be kept."
 msgstr ""
+"Ja. Alla dina data, applikationer och inställningar kommer att behållas."
 
 #: www/templates/elevate/index.html:190
 msgid "Is this live or does it require a reboot?"
-msgstr ""
+msgstr "Är detta live eller krävs det en omstart?"
 
 #: www/templates/elevate/index.html:195
 msgid "Migrations will require your system to reboot twice."
-msgstr ""
+msgstr "Migreringen kräver att systemet startas om två gånger."
 
 #: www/templates/elevate/index.html:203
 msgid "What does the Package Evolution Service do?"
@@ -383,11 +385,11 @@ msgstr ""
 
 #: www/templates/elevate/index.html:239
 msgid "The metadata is provided under an Apache License."
-msgstr ""
+msgstr "Metadata tillhandahålls under en Apache-licens."
 
 #: www/templates/elevate/index.html:247
 msgid "Why are you supporting migration to other distributions?"
-msgstr ""
+msgstr "Varför stöder ni migrering till andra distributioner?"
 
 #: www/templates/elevate/index.html:252
 msgid ""
@@ -400,11 +402,11 @@ msgstr ""
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7
 msgid "AlmaLinux OS Foundation - membership"
-msgstr ""
+msgstr "AlmaLinux OS stiftelsen - medlemskap"
 
 #: www/templates/foundation/members/index.html:21
 msgid "Join the AlmaLinux OS Foundation"
-msgstr ""
+msgstr "Gå med i AlmaLinux OS stiftelsen"
 
 #: www/templates/foundation/members/index.html:25
 msgid ""
@@ -414,7 +416,7 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:32
 msgid "Apply for membership"
-msgstr ""
+msgstr "Ansök om medlemskap"
 
 #: www/templates/foundation/members/index.html:41
 msgid ""
@@ -436,11 +438,11 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:63
 msgid "Join AlmaLinux OS Foundation"
-msgstr ""
+msgstr "Gå med i AlmaLinux OS stiftelsen"
 
 #: www/templates/foundation/members/index.html:69
 msgid "Contributor Member"
-msgstr ""
+msgstr "Bidragsgivande medlem"
 
 #: www/templates/foundation/members/index.html:72
 msgid ""
@@ -453,11 +455,11 @@ msgstr ""
 #: www/templates/foundation/members/index.html:103
 #: www/templates/foundation/members/index.html:121
 msgid "Apply"
-msgstr ""
+msgstr "Ansök"
 
 #: www/templates/foundation/members/index.html:90
 msgid "Mirror Member"
-msgstr ""
+msgstr "Spegelmedlem"
 
 #: www/templates/foundation/members/index.html:93
 msgid ""
@@ -468,7 +470,7 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:111
 msgid "Sponsor Member"
-msgstr ""
+msgstr "Sponsormedlem"
 
 #: www/templates/foundation/members/index.html:113
 msgid ""
@@ -477,15 +479,15 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:131
 msgid "Do you have membership related questions?"
-msgstr ""
+msgstr "Har du medlemsrelaterade frågor?"
 
 #: www/templates/foundation/members/index.html:132
 msgid "Contact us"
-msgstr ""
+msgstr "Kontakta oss"
 
 #: www/templates/foundation/members/index.html:141
 msgid "Board of Directors"
-msgstr ""
+msgstr "Styrelse"
 
 #: www/templates/index.html:6
 msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
@@ -493,7 +495,7 @@ msgstr ""
 
 #: www/templates/index.html:34
 msgid "Free Linux OS for the community, by the community"
-msgstr ""
+msgstr "Gratis Linux OS för gemenskapen, skapat av gemenskapen"
 
 #: www/templates/index.html:37
 msgid ""
@@ -505,26 +507,28 @@ msgstr ""
 
 #: www/templates/index.html:47
 msgid "Contribute"
-msgstr ""
+msgstr "Bidra"
 
 #: www/templates/index.html:57
 msgid "Migrate"
-msgstr ""
+msgstr "Migrera"
 
 #: www/templates/index.html:61
 #, python-format
 msgid "Founded by the team behind the <a href=\"%(link)s\">CloudLinux OS</a>."
-msgstr ""
+msgstr "Grundades av teamet bakom <a href=\"%(link)s\">CloudLinux OS</a>."
 
 #: www/templates/index.html:78
 msgid ""
 "Our GitHub organization contains source code and tools used to build "
 "AlmaLinux OS and related infrastructure."
 msgstr ""
+"Vår GitHub-organisation innehåller källkod och verktyg som används för att "
+"bygga AlmaLinux OS och relaterad infrastruktur."
 
 #: www/templates/index.html:86
 msgid "Explore"
-msgstr ""
+msgstr "Utforska"
 
 #: www/templates/index.html:98
 msgid ""
@@ -534,11 +538,11 @@ msgstr ""
 
 #: www/templates/index.html:106
 msgid "Join"
-msgstr ""
+msgstr "Gå med"
 
 #: www/templates/index.html:115
 msgid "Community chat"
-msgstr ""
+msgstr "Gemenskapschatt"
 
 #: www/templates/index.html:118
 msgid ""
@@ -548,11 +552,11 @@ msgstr ""
 
 #: www/templates/index.html:126
 msgid "Engage"
-msgstr ""
+msgstr "Engagera"
 
 #: www/templates/index.html:134
 msgid "Community forums"
-msgstr ""
+msgstr "Gemenskapsforum"
 
 #: www/templates/index.html:136
 msgid ""
@@ -562,11 +566,11 @@ msgstr ""
 
 #: www/templates/index.html:144
 msgid "Discover"
-msgstr ""
+msgstr "Upptäck"
 
 #: www/templates/index.html:158
 msgid "About AlmaLinux OS"
-msgstr ""
+msgstr "Om AlmaLinux OS"
 
 #: www/templates/index.html:160
 msgid ""
@@ -591,11 +595,11 @@ msgstr ""
 
 #: www/templates/index.html:188
 msgid "Backed by"
-msgstr ""
+msgstr "Sponsras av"
 
 #: www/templates/index.html:212
 msgid "Production-ready"
-msgstr ""
+msgstr "Produktionsredo"
 
 #: www/templates/index.html:214
 msgid ""
@@ -606,7 +610,7 @@ msgstr ""
 
 #: www/templates/index.html:225
 msgid "Fully supported, always free"
-msgstr ""
+msgstr "Fullt stöd, alltid gratis"
 
 #: www/templates/index.html:227
 msgid ""
@@ -617,7 +621,7 @@ msgstr ""
 
 #: www/templates/index.html:238
 msgid "Effortless to switch to"
-msgstr ""
+msgstr "Enkelt att byta till"
 
 #: www/templates/index.html:240
 #, python-format
@@ -633,25 +637,27 @@ msgstr ""
 
 #: www/templates/index.html:286
 msgid "Answers to Key Questions"
-msgstr ""
+msgstr "Svar på viktiga frågor"
 
 #: www/templates/index.html:320
 msgid "Stay updated!"
-msgstr ""
+msgstr "Håll dig uppdaterad!"
 
 #: www/templates/index.html:323
 msgid ""
 "Subscribe to our newsletter and never miss out on the latest in AlmaLinux OS "
 "development!"
 msgstr ""
+"Prenumerera på vårt nyhetsbrev och missa aldrig det senaste inom "
+"utvecklingen av AlmaLinux OS!"
 
 #: www/templates/index.html:337
 msgid "Your email"
-msgstr ""
+msgstr "Din e-postadress"
 
 #: www/templates/index.html:341
 msgid "Subscribe"
-msgstr ""
+msgstr "Prenumerera"
 
 #: www/templates/index.html:348
 msgid ""
@@ -661,11 +667,11 @@ msgstr ""
 
 #: www/templates/index.html:363
 msgid "AlmaLinux OS in the Press"
-msgstr ""
+msgstr "AlmaLinux OS i pressen"
 
 #: www/templates/page/page.html:31
 msgid "Published"
-msgstr ""
+msgstr "Publicerad"
 
 #: www/templates/showcase/index.html:6
 msgid "AlmaLinux OS feature showcase"
@@ -677,11 +683,11 @@ msgstr ""
 
 #: www/templates/subscribe_post.html:6
 msgid "Mailing list subscription - AlmaLinux OS"
-msgstr ""
+msgstr "Prenumeration på e-postlista - AlmaLinux OS"
 
 #: www/templates/subscribe_post.html:16
 msgid "Something went wrong..."
-msgstr ""
+msgstr "Något gick fel..."
 
 #: www/templates/subscribe_post.html:22 www/templates/subscribe_post.html:33
 msgid "Return home"
@@ -689,21 +695,23 @@ msgstr ""
 
 #: www/templates/subscribe_post.html:27
 msgid "Thank you!"
-msgstr ""
+msgstr "Tack!"
 
 #: www/templates/subscribe_post.html:30
 msgid ""
 "You have successfully subscribed to AlmaLinux OS announcement mailing list!"
 msgstr ""
+"Du har framgångsrikt prenumererat på sändlistan för tillkännagivanden om "
+"AlmaLinux OS!"
 
 #: www/views.py:54
 msgid "Email address is not valid"
-msgstr ""
+msgstr "E-postadressen är inte giltig"
 
 #: www/views.py:78
 msgid "Failed to subscribe to mailing list, please try again later"
-msgstr ""
+msgstr "Det gick inte att prenumerera på e-postlistan, försök igen senare"
 
 #: www/views.py:80
 msgid "You are already subscribed to this mailing list!"
-msgstr ""
+msgstr "Du prenumererar redan på den här e-postlistan!"

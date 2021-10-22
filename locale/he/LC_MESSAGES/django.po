@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-19 21:04+0000\n"
-"PO-Revision-Date: 2021-10-11 09:27+0000\n"
+"PO-Revision-Date: 2021-10-22 11:43+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://hosted.weblate.org/projects/almalinux/website-"
-"backend/he/>\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/almalinux/"
+"website-backend/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: commons/templatetags/motd.py:20
 msgid "Read more"
-msgstr ""
+msgstr "מידע נוסף"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
@@ -70,7 +70,7 @@ msgstr "חברות"
 
 #: www/templates/_partial/footer.html:19 www/templates/_partial/navbar.html:62
 msgid "ELevate"
-msgstr ""
+msgstr "ELevate"
 
 #: www/templates/_partial/footer.html:23
 msgid "Community"
@@ -223,42 +223,44 @@ msgid "Join AlmaLinux OS community chat"
 msgstr "הצטרפות לצ׳אט הקהילתי של AlmaLinux OS"
 
 #: www/templates/elevate/index.html:6
-#, fuzzy
-#| msgid "AlmaLinux OS - Contribute"
 msgid "AlmaLinux OS - ELevate Your Distribution"
-msgstr "AlmaLinux OS - תרומה"
+msgstr "AlmaLinux OS - הפצה אחת קדימה"
 
 #: www/templates/elevate/index.html:8
 msgid ""
 "ELevate enables migration between major versions of RHEL(r) derivatives. "
 "Easily go from CentOS 7.x to any 8.x of your choice"
 msgstr ""
+"ELevate מאפשרת הגירה בין נגזרות שונות של RHEL(r). אפשר לעבור בקלות מ־CentOS "
+"7.x לכל גרסת ‎8.x לבחירתך"
 
 #: www/templates/elevate/index.html:23
 msgid "ELevate Your Distribution"
-msgstr ""
+msgstr "הפצה אחת קדימה"
 
 #: www/templates/elevate/index.html:27
 msgid ""
 "ELevate enables migration between major versions of RHEL&reg; derivatives. "
 "Easily go from CentOS 7.x to any 8.x of your choice"
 msgstr ""
+"ELevate מאפשרת הגירה בין נגזרות שונות של RHEL&reg;‎. אפשר לעבור בקלות מ־"
+"CentOS 7.x לכל גרסת ‎8.x לבחירתך"
 
 #: www/templates/elevate/index.html:37
 msgid "Get Started"
-msgstr ""
+msgstr "איך מתחילים"
 
 #: www/templates/elevate/index.html:42
 msgid "Discuss"
-msgstr ""
+msgstr "דיונים"
 
 #: www/templates/elevate/index.html:58
 msgid "About"
-msgstr ""
+msgstr "על ההפצה"
 
 #: www/templates/elevate/index.html:63
 msgid "Major Version Upgrades"
-msgstr ""
+msgstr "שדרוגים לגרסאות עיקריות"
 
 #: www/templates/elevate/index.html:66
 msgid ""
@@ -266,10 +268,13 @@ msgid ""
 "based distributions from 7.x to 8.x. Preserve your applications, your data, "
 "and your sanity. Run the most recent version of the OS and software you need."
 msgstr ""
+"לא היתה אפשרות כזאת--עד עכשיו. אפשר להגר בין נגזרות שונות של הפצות מבוססת "
+"RHEL מ־‎7.x ל־‎8.x. לשמור על היישומים, הנתונים והשפיות. ניתן להריץ את הגרסה "
+"העדכנית ביותר של מערכת ההפעלה והתכניות הנחוצות לך."
 
 #: www/templates/elevate/index.html:77
 msgid "Package Evolution Service"
-msgstr ""
+msgstr "שירות קידום חבילות"
 
 #: www/templates/elevate/index.html:80
 #, python-format
@@ -279,12 +284,13 @@ msgid ""
 "submit new data sets for packages. Users and maintainers can both utilize "
 "the PES to help make migrations smooth and easy."
 msgstr ""
+"הלב הפועם של ELevate הוא <a href=\"%(pes_link)s\">שירות קידום החבילות</a> "
+"(PES) שמאפשר להוריד, להתאים ולהגיש סדרות נתונים חדשות לחבילות. משתמשים "
+"ומתחזקים יכולים להשתמש ב־PES כדי לסייע לערוך הגירות בצורה חלקה ופשוטה."
 
 #: www/templates/elevate/index.html:93
-#, fuzzy
-#| msgid "Community chat"
 msgid "Community-wide Project"
-msgstr "הצ׳אט הקהילתי"
+msgstr "מיזם חוצה קהילות"
 
 #: www/templates/elevate/index.html:96
 msgid ""
@@ -292,14 +298,17 @@ msgid ""
 "for the whole ecosystem, not just AlmaLinux. ELevate supports migrating to/"
 "from other distributions and is open for all to contribute to and enhance."
 msgstr ""
+"ELevate מפותחת באופן שאינו מזוהה עם אף הפצה והוא נבנה ככלי עבור כלל התשתית "
+"העוטפת, לא רק עבור AlmaLinux. ל־ELevate יש תמיכה בהגירה מתוך/אל הפצות אחרות "
+"והיא פתוחה כדי שכולם יוכלו לתרום ולשפר."
 
 #: www/templates/elevate/index.html:107
 msgid "FAQ"
-msgstr ""
+msgstr "שו״ת"
 
 #: www/templates/elevate/index.html:112
 msgid "What is ELevate?"
-msgstr ""
+msgstr "מה זה ELevate?"
 
 #: www/templates/elevate/index.html:117
 msgid ""
@@ -308,10 +317,13 @@ msgid ""
 "Leapp framework with a community created library and service for the "
 "migration metadata set required for it."
 msgstr ""
+"ELevate הוא מיזם שמיועד לספק יכולת להגר בין הפצות שונות מבוססות RHEL מ־7‎.x "
+"אל ‎8.x. הוא משלב את תשתית Leapp מבית Red Hat עם ספריה ושירות שנוצרו על ידי "
+"הקהילת לטובת סדרת נתוני על להגירה שנדרשים לה."
 
 #: www/templates/elevate/index.html:127
 msgid "This looks awesome. How can I contribute?"
-msgstr ""
+msgstr "נראה מגניב. איך אפשר לתרום?"
 
 #: www/templates/elevate/index.html:132
 #, python-format
@@ -321,10 +333,14 @@ msgid ""
 "%(github_link)s</a> and you can add/edit/interact with package metadata at "
 "<a href=\"%(pes_link)s\">%(pes_link)s</a>."
 msgstr ""
+"תחילה אפשר להצטרף אלינו בערוץ <a href=\"%(chat_link)s\">‎#migration</a> ב־"
+"Mattermost. אפשר למצוא את הקוד של הכלי כאן: <a href=\"%(github_link)s\""
+">%(github_link)s</a> וניתן להוסיף/לערוך/לשחק עם נתוני העל של החבילות דרך <a "
+"href=\"%(pes_link)s\">%(pes_link)s</a>."
 
 #: www/templates/elevate/index.html:143
 msgid "Is this ready for production?"
-msgstr ""
+msgstr "זה מוכן לסביבה תעשייתית?"
 
 #: www/templates/elevate/index.html:148
 msgid ""
@@ -333,10 +349,14 @@ msgid ""
 "surprises, we highly recommend that you test migrations scenarios in a VM or "
 "sandbox before running a migration in production."
 msgstr ""
+"כל מקרה לגופו. כל סביבה תעשייתית שונה וייחודית כתלות ביישומים ובהגדרות שלה. "
+"מאחר שעדיין מדובר במוצר בתהליכי פיתוח, כדי להימנע מהפתעות, אנו ממליצים לבדוק "
+"את תרחישי ההגירה במכונה וירטואלית או בסביבה מבודדת בטרם הרצת ההגירה בסביבה "
+"התעשייתית."
 
 #: www/templates/elevate/index.html:158
 msgid "What operating systems does ELevate support?"
-msgstr ""
+msgstr "באילו מערכת הפעלה תומכת ELevate?"
 
 #: www/templates/elevate/index.html:163
 msgid ""
@@ -344,26 +364,29 @@ msgid ""
 "following OS: <ul> <li>AlmaLinux OS 8</li> <li>CentOS Stream 8</li> "
 "<li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
 msgstr ""
+"ELevate מספקת כיום נתוני Leapp להגירה מ־CentOS 7 למערכות ההפעלה הבאות: <ul> "
+"<li>AlmaLinux OS 8</li>‏ <li>CentOS Stream 8</li> ‏<li>Oracle Linux 8</li>‏ "
+"<li>Rocky Linux 8</li> </ul>"
 
 #: www/templates/elevate/index.html:177
 msgid "Will migration be \"in-place?\""
-msgstr ""
+msgstr "האם ההגירה תתבצע בו במקום?"
 
 #: www/templates/elevate/index.html:182
 msgid "Yes. All your data, applications and settings will be kept."
-msgstr ""
+msgstr "כן. כל הנתונים, היישומים וההגדרות שלך יישמרו."
 
 #: www/templates/elevate/index.html:190
 msgid "Is this live or does it require a reboot?"
-msgstr ""
+msgstr "אפשר לבצע את זה על מערכת פועלת או שנדרשת הפעלה מחדש?"
 
 #: www/templates/elevate/index.html:195
 msgid "Migrations will require your system to reboot twice."
-msgstr ""
+msgstr "ההגירות ידרשו את הפעלת המערכת שלך מחדש פעמיים."
 
 #: www/templates/elevate/index.html:203
 msgid "What does the Package Evolution Service do?"
-msgstr ""
+msgstr "מה עושה שירות קידום החבילות?"
 
 #: www/templates/elevate/index.html:208
 msgid ""
@@ -374,30 +397,39 @@ msgid ""
 "to improve the data by adding new actions or even create a custom dataset "
 "for packages from third-party or private repositories."
 msgstr ""
+"שירות עדכון החבילות מאחסן נתונים על הגירת חבילות. נתוני על עונים על שאלות "
+"בנוגע לאופן בו החבילה התפתחה בין מהדורות עיקריות של ההפצה. ל־PES יש תמיכה "
+"במגוון מחלקות של כללים לחבילות כגון: נוספה, הוסרה, שמה השתנה, פוצלה, מוזגה "
+"וכן הלאה. השירות גם מאפשר לכולם לשפר את הנתונים על ידי הוספת פעולות חדשות או "
+"אפילו יצירת סדרת נתונים משלך לחבילות שמקורן בגופי צד־שלישי או מאגרים פרטיים."
 
 #: www/templates/elevate/index.html:220
 msgid ""
 "Red Hat offers a data set which is non-freely licensed. Are you using this "
 "same data set?"
 msgstr ""
+"Red Hat מציעה סדרת נתונים ברישיון שאינו חופשי. האם סדרת נתונים זו משמשת גם "
+"אתכם?"
 
 #: www/templates/elevate/index.html:225
 msgid ""
 "No. We respect Red Hat’s work and our initial data set was provided by the "
 "AlmaLinux Foundation and contributions from Oracle."
 msgstr ""
+"לא. אנו מכבדים את עבודתם של Red Hat וסדרת הנתונים הראשונית שלנו סופקה על ידי "
+"קרן AlmaLinux ותרומות מ־Oracle."
 
 #: www/templates/elevate/index.html:234
 msgid "What license is your metadata under?"
-msgstr ""
+msgstr "לאיזה רישיון כפופים נתוני העל שלכם?"
 
 #: www/templates/elevate/index.html:239
 msgid "The metadata is provided under an Apache License."
-msgstr ""
+msgstr "נתוני העל כפופים לרישיון Apache."
 
 #: www/templates/elevate/index.html:247
 msgid "Why are you supporting migration to other distributions?"
-msgstr ""
+msgstr "למה אתם תומכים בהגירה להפצות לינוקס אחרות?"
 
 #: www/templates/elevate/index.html:252
 msgid ""
@@ -406,6 +438,9 @@ msgid ""
 "use and contribute to, no matter which distro you prefer. That’s the open "
 "source way."
 msgstr ""
+"התשתית הרחבה שמסביב ל־CentOS היא גדולה ומכוונת. פיתחנו את המיזם הזה מתוך "
+"כוונה טובה ובתקווה שכולם בקהילה יוכלו להשתמש ולתרום לה. לא משנה מה ההפצה "
+"העדיפה עליך. זאת דרכו של הקוד הפתוח."
 
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7
@@ -527,7 +562,7 @@ msgid ""
 msgstr ""
 "הפצת לינוקס ברמה תעשייתית שתהיה חינם לעד, בהנהגת ובבעלות הקהילה, בקוד פתוח, "
 "שממוקדת על יציבות לטווח ארוך, מספקת פלטפורמה ברמת צורכי הפעילות השוטפת. "
-"AlmaLinux OS תואם ברמה הבינרית 1:1 מול RHEL&reg; ו־CentOS טרום Stream."
+"AlmaLinux OS תואם ברמה הבינרית 1:1 מול RHEL&reg;‎ ו־CentOS טרום Stream."
 
 #: www/templates/index.html:47
 msgid "Contribute"
@@ -609,7 +644,7 @@ msgid ""
 msgstr ""
 "AlmaLinux OS היא מערכת הפעלה מבוססת לינוקס בקוד פתוח ובהנהגת הקהילה שממלאה "
 "את החלל שנוצר עקב הפסקת הפיתוח של הגרסה היציבה של לינוקס CentOS. ‏AlmaLinux "
-"OS היא פיצול עם תאימות בינרית של 1:1 מול RHEL&reg; בהנחיית והרכבת הקהילה."
+"OS היא פיצול עם תאימות בינרית של 1:1 מול RHEL&reg;‎ בהנחיית והרכבת הקהילה."
 
 #: www/templates/index.html:167
 msgid ""
@@ -672,7 +707,7 @@ msgid ""
 "OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</a>"
 msgstr ""
 "מעבר בין הפצות לינוקס היא בדרך כלל יקרה וגוזלת זמן, אך זה לא המקרה במעבר מ־"
-"CentOS ופיצולים אחרים מ־RHEL&reg; אל AlmaLinux OS. המעבר הוא פשוט - <a href="
+"CentOS ופיצולים אחרים מ־RHEL&reg;‎ אל AlmaLinux OS. המעבר הוא פשוט - <a href="
 "\"%(migrate_link)s\">כך עושים זאת</a>."
 
 #: www/templates/index.html:265
