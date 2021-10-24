@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-19 21:04+0000\n"
-"PO-Revision-Date: 2021-10-11 09:27+0000\n"
+"PO-Revision-Date: 2021-10-24 18:57+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/tr/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: commons/templatetags/motd.py:20
 msgid "Read more"
-msgstr ""
+msgstr "Devamını okuyun"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
@@ -71,7 +71,7 @@ msgstr "Üyelik"
 
 #: www/templates/_partial/footer.html:19 www/templates/_partial/navbar.html:62
 msgid "ELevate"
-msgstr ""
+msgstr "ELevate"
 
 #: www/templates/_partial/footer.html:23
 msgid "Community"
@@ -225,42 +225,44 @@ msgid "Join AlmaLinux OS community chat"
 msgstr "AlmaLinux OS topluluk sohbetine katılınız"
 
 #: www/templates/elevate/index.html:6
-#, fuzzy
-#| msgid "AlmaLinux OS - Contribute"
 msgid "AlmaLinux OS - ELevate Your Distribution"
-msgstr "AlmaLinux OS - Katkıda Bulunuz"
+msgstr "AlmaLinux OS - Dağıtımınızı ELevate Yapın"
 
 #: www/templates/elevate/index.html:8
 msgid ""
 "ELevate enables migration between major versions of RHEL(r) derivatives. "
 "Easily go from CentOS 7.x to any 8.x of your choice"
 msgstr ""
+"ELevate, RHEL(r) türevlerinin ana sürümleri arasında geçişi sağlar. CentOS "
+"7.x'ten istediğiniz herhangi bir 8.x'e kolayca geçin"
 
 #: www/templates/elevate/index.html:23
 msgid "ELevate Your Distribution"
-msgstr ""
+msgstr "Dağıtımınızı ELevate Yapın"
 
 #: www/templates/elevate/index.html:27
 msgid ""
 "ELevate enables migration between major versions of RHEL&reg; derivatives. "
 "Easily go from CentOS 7.x to any 8.x of your choice"
 msgstr ""
+"ELevate, RHEL&reg; türevlerinin ana sürümleri arasında geçişi sağlar. CentOS "
+"7.x'ten istediğiniz herhangi bir 8.x'e kolayca geçin"
 
 #: www/templates/elevate/index.html:37
 msgid "Get Started"
-msgstr ""
+msgstr "Başlayın"
 
 #: www/templates/elevate/index.html:42
 msgid "Discuss"
-msgstr ""
+msgstr "Tartışın"
 
 #: www/templates/elevate/index.html:58
 msgid "About"
-msgstr ""
+msgstr "Hakkında"
 
 #: www/templates/elevate/index.html:63
 msgid "Major Version Upgrades"
-msgstr ""
+msgstr "Ana Sürüm Yükseltmeleri"
 
 #: www/templates/elevate/index.html:66
 msgid ""
@@ -268,10 +270,14 @@ msgid ""
 "based distributions from 7.x to 8.x. Preserve your applications, your data, "
 "and your sanity. Run the most recent version of the OS and software you need."
 msgstr ""
+"Mümkün değildi -- ta ki şimdiye kadar. 7.x'ten 8.x'e RHEL tabanlı "
+"dağıtımların ana sürümleri arasında kolayca geçiş yapın. Uygulamalarınızı, "
+"verilerinizi ve akıl sağlığınızı koruyun. İhtiyacınız olan işletim "
+"sisteminin ve yazılımların en son sürümünü çalıştırın."
 
 #: www/templates/elevate/index.html:77
 msgid "Package Evolution Service"
-msgstr ""
+msgstr "Paket Değişim Hizmeti"
 
 #: www/templates/elevate/index.html:80
 #, python-format
@@ -281,12 +287,15 @@ msgid ""
 "submit new data sets for packages. Users and maintainers can both utilize "
 "the PES to help make migrations smooth and easy."
 msgstr ""
+"ELevate'in atan kalbi, paketler için yeni veri kümelerini indirmenize, "
+"özelleştirmenize ve hatta göndermenize olanak tanıyan <a href=\"%(pes_link)"
+"s\">Paket Değişim Hizmeti</a> (Package Evolution Service - PES)'dir. "
+"Kullanıcılar ve bakımcılar, geçişleri sorunsuz ve kolay hale getirmeye "
+"yardımcı olmak için PES'i kullanabilir."
 
 #: www/templates/elevate/index.html:93
-#, fuzzy
-#| msgid "Community chat"
 msgid "Community-wide Project"
-msgstr "Topluluk Sohbeti"
+msgstr "Topluluk Çapında Proje"
 
 #: www/templates/elevate/index.html:96
 msgid ""
@@ -294,14 +303,18 @@ msgid ""
 "for the whole ecosystem, not just AlmaLinux. ELevate supports migrating to/"
 "from other distributions and is open for all to contribute to and enhance."
 msgstr ""
+"ELevate, dağıtımdan bağımsız bir şekilde geliştirilmiştir ve yalnızca "
+"AlmaLinux için değil, tüm ekosistem için bir araç olarak oluşturulmuştur. "
+"ELevate, diğer dağıtımlara/dağıtımlardan geçişi destekler ve herkesin "
+"katkıda bulunmasına ve geliştirmesine açıktır."
 
 #: www/templates/elevate/index.html:107
 msgid "FAQ"
-msgstr ""
+msgstr "SSS"
 
 #: www/templates/elevate/index.html:112
 msgid "What is ELevate?"
-msgstr ""
+msgstr "ELevate nedir?"
 
 #: www/templates/elevate/index.html:117
 msgid ""
@@ -310,10 +323,14 @@ msgid ""
 "Leapp framework with a community created library and service for the "
 "migration metadata set required for it."
 msgstr ""
+"ELevate, RHEL tabanlı dağıtımların ana sürümleri arasında 7.x'ten 8.x'e "
+"geçiş imkanı sağlamayı amaçlayan bir projedir. Red Hat'in Leapp çerçevesini, "
+"topluluk tarafından oluşturulan bir kütüphane ve bunun için gerekli olan "
+"geçiş üst veri seti için hizmet ile birleştirir."
 
 #: www/templates/elevate/index.html:127
 msgid "This looks awesome. How can I contribute?"
-msgstr ""
+msgstr "Bu harika görünüyor. Nasıl katkıda bulunabilirim?"
 
 #: www/templates/elevate/index.html:132
 #, python-format
@@ -323,10 +340,14 @@ msgid ""
 "%(github_link)s</a> and you can add/edit/interact with package metadata at "
 "<a href=\"%(pes_link)s\">%(pes_link)s</a>."
 msgstr ""
+"Önce <a href=\"%(chat_link)s\">#migration</a> Mattermost kanalında bize "
+"katılın. Araç kodunu burada bulabilirsiniz: <a href=\"%(github_link)s\""
+">%(github_link)s</a> ve <a href=\"%(pes_link)s\">%(pes_link)s</a> adresinde "
+"paket üst verileri ekleyebilir/düzenleyebilir/etkileşim kurabilirsiniz."
 
 #: www/templates/elevate/index.html:143
 msgid "Is this ready for production?"
-msgstr ""
+msgstr "Bu gerçek çalışma ortamları için hazır mı?"
 
 #: www/templates/elevate/index.html:148
 msgid ""
@@ -335,10 +356,15 @@ msgid ""
 "surprises, we highly recommend that you test migrations scenarios in a VM or "
 "sandbox before running a migration in production."
 msgstr ""
+"Sizin tecrübeniz farklı olabilir.  Her ortam, uygulamalara ve "
+"yapılandırmalara dayalı olarak farklı ve benzersizdir. Bu hala geliştirme "
+"aşamasında olduğundan, herhangi bir sürpriz yaşamamak için geçiş "
+"senaryolarını gerçek ortamlarda çalıştırmadan önce bir sanal makinede veya "
+"korumalı alanda test etmenizi önemle tavsiye ederiz."
 
 #: www/templates/elevate/index.html:158
 msgid "What operating systems does ELevate support?"
-msgstr ""
+msgstr "ELevate hangi işletim sistemlerini destekliyor?"
 
 #: www/templates/elevate/index.html:163
 msgid ""
@@ -346,26 +372,29 @@ msgid ""
 "following OS: <ul> <li>AlmaLinux OS 8</li> <li>CentOS Stream 8</li> "
 "<li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
 msgstr ""
+"Şu anda ELevate, CentOS 7'den aşağıdaki işletim sistemlerine geçiş için "
+"Leapp verileri sağlamaktadır: <ul> <li>AlmaLinux OS 8</li> <li>CentOS Stream "
+"8</li> <li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
 
 #: www/templates/elevate/index.html:177
 msgid "Will migration be \"in-place?\""
-msgstr ""
+msgstr "Geçiş \"yerinde\" mi olacak?"
 
 #: www/templates/elevate/index.html:182
 msgid "Yes. All your data, applications and settings will be kept."
-msgstr ""
+msgstr "Evet. Tüm verileriniz, uygulamalarınız ve ayarlarınız korunacak."
 
 #: www/templates/elevate/index.html:190
 msgid "Is this live or does it require a reboot?"
-msgstr ""
+msgstr "Bu canlı mı yoksa yeniden başlatma mı gerektiriyor?"
 
 #: www/templates/elevate/index.html:195
 msgid "Migrations will require your system to reboot twice."
-msgstr ""
+msgstr "Geçişler, sisteminizin iki kez yeniden başlatılmasını gerektirecektir."
 
 #: www/templates/elevate/index.html:203
 msgid "What does the Package Evolution Service do?"
-msgstr ""
+msgstr "Paket Değişim Hizmeti ne yapıyor?"
 
 #: www/templates/elevate/index.html:208
 msgid ""
@@ -376,30 +405,41 @@ msgid ""
 "to improve the data by adding new actions or even create a custom dataset "
 "for packages from third-party or private repositories."
 msgstr ""
+"Paket Değişim Hizmeti, paket geçiş üst verilerini depolar. Üst veriler, "
+"paketlerin ana dağıtım sürümleri arasında nasıl değiştiğine ilişkin soruları "
+"yanıtlar. PES, eklenen, kaldırılan, yeniden adlandırılan, bölünmüş, "
+"birleştirilmiş vb. gibi paketler için çeşitli kural sınıflarını destekler. "
+"Hizmet ayrıca herkesin yeni eylemler ekleyerek verileri iyileştirmesine ve "
+"hatta üçüncü taraf veya özel depolardaki paketler için özel bir veri kümesi "
+"oluşturmasına olanak tanır."
 
 #: www/templates/elevate/index.html:220
 msgid ""
 "Red Hat offers a data set which is non-freely licensed. Are you using this "
 "same data set?"
 msgstr ""
+"Red Hat, özgürce lisanslanmayan bir veri seti sunuyor. Aynı veri setini mi "
+"kullanıyorsunuz?"
 
 #: www/templates/elevate/index.html:225
 msgid ""
 "No. We respect Red Hat’s work and our initial data set was provided by the "
 "AlmaLinux Foundation and contributions from Oracle."
 msgstr ""
+"Hayır. Red Hat'in çalışmasına saygı duyuyoruz ve ilk veri setimiz AlmaLinux "
+"Vakfı ve Oracle'ın katkıları tarafından sağlandı."
 
 #: www/templates/elevate/index.html:234
 msgid "What license is your metadata under?"
-msgstr ""
+msgstr "Üst verileriniz hangi lisans altında?"
 
 #: www/templates/elevate/index.html:239
 msgid "The metadata is provided under an Apache License."
-msgstr ""
+msgstr "Üst veriler Apache Lisansı altında sağlanmaktadır."
 
 #: www/templates/elevate/index.html:247
 msgid "Why are you supporting migration to other distributions?"
-msgstr ""
+msgstr "Neden diğer dağıtımlara geçişi destekliyorsunuz?"
 
 #: www/templates/elevate/index.html:252
 msgid ""
@@ -408,6 +448,10 @@ msgid ""
 "use and contribute to, no matter which distro you prefer. That’s the open "
 "source way."
 msgstr ""
+"CentOS ekosistemi çok geniş ve çeşitli bir topluluktur. Hangi dağıtımı "
+"tercih ederseniz edin, topluluktaki herkesin kullanabileceği ve katkıda "
+"bulunabileceği umuduyla bu projeyi iyi niyetle geliştirdik. Açık kaynak yolu "
+"budur."
 
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7

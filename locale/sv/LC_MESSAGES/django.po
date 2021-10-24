@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-19 21:04+0000\n"
-"PO-Revision-Date: 2021-10-22 11:43+0000\n"
+"PO-Revision-Date: 2021-10-24 18:57+0000\n"
 "Last-Translator: Luna Jernberg <droidbittin@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/sv/>\n"
@@ -85,19 +85,19 @@ msgstr "Chatt"
 
 #: www/templates/_partial/footer.html:33
 msgid "Legal"
-msgstr ""
+msgstr "Juridisk"
 
 #: www/templates/_partial/footer.html:35
 msgid "Legal Notice"
-msgstr ""
+msgstr "Juridiskt meddelande"
 
 #: www/templates/_partial/footer.html:36 www/templates/index.html:352
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Integritetspolicy"
 
 #: www/templates/_partial/footer.html:37
 msgid "Terms of Service"
-msgstr ""
+msgstr "Användarvillkor"
 
 #: www/templates/_partial/footer.html:40
 msgid "Licensing Policy"
@@ -219,7 +219,7 @@ msgstr "Gå med i AlmaLinux OS gemenskapschatt"
 
 #: www/templates/elevate/index.html:6
 msgid "AlmaLinux OS - ELevate Your Distribution"
-msgstr ""
+msgstr "AlmaLinux OS - ELevera din distribution"
 
 #: www/templates/elevate/index.html:8
 msgid ""
@@ -283,6 +283,10 @@ msgid ""
 "for the whole ecosystem, not just AlmaLinux. ELevate supports migrating to/"
 "from other distributions and is open for all to contribute to and enhance."
 msgstr ""
+"ELevate är utvecklat på ett distributionsagnostiskt sätt och är byggt som "
+"ett verktyg för hela ekosystemet, inte bara AlmaLinux. ELevate stöder "
+"migrering till/från andra distributioner och är öppen för alla att bidra "
+"till och förbättra."
 
 #: www/templates/elevate/index.html:107
 msgid "FAQ"
@@ -302,7 +306,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:127
 msgid "This looks awesome. How can I contribute?"
-msgstr ""
+msgstr "Det här ser fantastiskt ut. Hur kan jag bidra?"
 
 #: www/templates/elevate/index.html:132
 #, python-format
@@ -335,6 +339,9 @@ msgid ""
 "following OS: <ul> <li>AlmaLinux OS 8</li> <li>CentOS Stream 8</li> "
 "<li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
 msgstr ""
+"För närvarande tillhandahåller ELevate Leapp data för migrering från CentOS "
+"7 till följande OS: <ul><li>AlmaLinux OS 8</li> <li>CentOS Stream 8</li> "
+"<li>Oracle Linux 8</li> <li>Rocky Linux 8</li></ul>"
 
 #: www/templates/elevate/index.html:177
 msgid "Will migration be \"in-place?\""
