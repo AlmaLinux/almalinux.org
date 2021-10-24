@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-19 21:04+0000\n"
-"PO-Revision-Date: 2021-10-22 11:43+0000\n"
+"PO-Revision-Date: 2021-10-24 18:57+0000\n"
 "Last-Translator: Luna Jernberg <droidbittin@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/almalinux/"
 "website-frontend/sv/>\n"
@@ -38,7 +38,7 @@ msgstr ""
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:228
 msgid "is a symbol, which cannot be converted to a string"
-msgstr ""
+msgstr "är en symbol som inte kan konverteras till en sträng"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:239
 msgid "is not a valid ByteString"
@@ -50,7 +50,7 @@ msgstr "är inte ett objekt"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:288
 msgid "is not a function"
-msgstr ""
+msgstr "är inte en funktion"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:314
 msgid "is not a view on an ArrayBuffer object"
