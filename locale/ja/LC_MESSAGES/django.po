@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-19 21:04+0000\n"
-"PO-Revision-Date: 2021-10-22 11:43+0000\n"
-"Last-Translator: Matīss Treinis <matiss@hub256.com>\n"
+"PO-Revision-Date: 2021-10-24 05:37+0000\n"
+"Last-Translator: nanomzsw <fuminori@mizphses.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/ja/>\n"
 "Language: ja\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: commons/templatetags/motd.py:20
 msgid "Read more"
-msgstr ""
+msgstr "もっと見る"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
@@ -33,7 +33,7 @@ msgstr "404が見つかりません-AlmaLinuxOS"
 msgid ""
 "An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution."
-msgstr ""
+msgstr "オープンソースの，コミュニティー主導の，永久に無料の商用Linuxディストリビューション。"
 
 #: www/templates/404.html:13
 msgid "404 Not Found"
@@ -65,11 +65,11 @@ msgstr "ダウンロード"
 
 #: www/templates/_partial/footer.html:18 www/templates/_partial/navbar.html:57
 msgid "Membership"
-msgstr ""
+msgstr "メンバーシップ"
 
 #: www/templates/_partial/footer.html:19 www/templates/_partial/navbar.html:62
 msgid "ELevate"
-msgstr ""
+msgstr "高める"
 
 #: www/templates/_partial/footer.html:23
 msgid "Community"
@@ -104,14 +104,12 @@ msgid "Licensing Policy"
 msgstr "ライセンスポリシー"
 
 #: www/templates/_partial/footer.html:45
-#, fuzzy
-#| msgid " Trademark Usage Policy"
 msgid "Trademark Usage Policy"
-msgstr " 商標使用ポリシー"
+msgstr "-商標使用ポリシー"
 
 #: www/templates/_partial/footer.html:50
 msgid "Foundation Bylaws"
-msgstr ""
+msgstr "運営団体の規則"
 
 #: www/templates/_partial/navbar.html:10
 msgid "AlmaLinux OS logo"
@@ -143,7 +141,7 @@ msgstr "言語"
 
 #: www/templates/_partial/navbar.html:102
 msgid "Translate"
-msgstr "訳する"
+msgstr "翻訳する"
 
 #: www/templates/_partial/navbar.html:110 www/templates/index.html:52
 msgid "Download"
@@ -155,7 +153,7 @@ msgstr "AlmaLinux OS ブログ"
 
 #: www/templates/blog/index.html:51
 msgid "Continue reading"
-msgstr "読み続けて"
+msgstr "読むのを継続する"
 
 #: www/templates/blog/index.html:64 www/templates/blog/index.html:70
 msgid "Previous"
@@ -194,7 +192,7 @@ msgstr ""
 
 #: www/templates/contribute/index.html:43
 msgid "General chat"
-msgstr "一般的なチャット"
+msgstr "一般チャット"
 
 #: www/templates/contribute/index.html:48
 msgid "Development"
@@ -225,10 +223,8 @@ msgid "Join AlmaLinux OS community chat"
 msgstr "AlmaLinux OSコミュニティチャットに参加する"
 
 #: www/templates/elevate/index.html:6
-#, fuzzy
-#| msgid "AlmaLinux OS - Contribute"
 msgid "AlmaLinux OS - ELevate Your Distribution"
-msgstr "AlmaLinux OS - 貢献する"
+msgstr "AlmaLinux OS - ディストリビューションを向上する"
 
 #: www/templates/elevate/index.html:8
 msgid ""
