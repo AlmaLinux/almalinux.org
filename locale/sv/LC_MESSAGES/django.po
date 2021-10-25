@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-19 21:04+0000\n"
-"PO-Revision-Date: 2021-10-24 18:57+0000\n"
+"PO-Revision-Date: 2021-10-25 19:43+0000\n"
 "Last-Translator: Luna Jernberg <droidbittin@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/sv/>\n"
@@ -34,6 +34,8 @@ msgid ""
 "An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution."
 msgstr ""
+"En öppen källkod, gemenskapsägd och styrd, evigt fri Linux-distribution för "
+"företag."
 
 #: www/templates/404.html:13
 msgid "404 Not Found"
@@ -316,6 +318,10 @@ msgid ""
 "%(github_link)s</a> and you can add/edit/interact with package metadata at "
 "<a href=\"%(pes_link)s\">%(pes_link)s</a>."
 msgstr ""
+"Gå först med i <a href=\"%(chat_link)s\">migration</a> Mattermost-kanalen. "
+"Du kan hitta verktygets kod här: <a href=\"%(github_link)s\"></a> och du kan "
+"lägga till/redigera/interagera med paketmetadata på <a href=\"%(pes_link)s\""
+">%(pes_link)s</a>."
 
 #: www/templates/elevate/index.html:143
 msgid "Is this ready for production?"
@@ -442,6 +448,9 @@ msgid ""
 "the Board or by a committee appointed for this purpose, according to the "
 "Bylaws established by the Board."
 msgstr ""
+"En individuell ansökan för alla som använder AlmaLinux OS, bidrar till "
+"AlmaLinux OS, tillhandahåller tjänster till AlmaLinux OS-gemenskapen eller "
+"på annat sätt stöder AlmaLinux OS."
 
 #: www/templates/foundation/members/index.html:63
 msgid "Join AlmaLinux OS Foundation"
@@ -457,6 +466,9 @@ msgid ""
 "AlmaLinux OS, provides services to the AlmaLinux OS community or otherwise "
 "supports the AlmaLinux OS."
 msgstr ""
+"En individuell ansökan för alla som använder AlmaLinux OS, bidrar till "
+"AlmaLinux OS, tillhandahåller tjänster till AlmaLinux OS-gemenskapen eller "
+"på annat sätt stöder AlmaLinux OS."
 
 #: www/templates/foundation/members/index.html:81
 #: www/templates/foundation/members/index.html:103
@@ -474,6 +486,9 @@ msgid ""
 "distribution. Only one member application per individual or entity will be "
 "accepted, irrespective of contributed number of mirrors."
 msgstr ""
+"En individuell ansökan för alla som använder AlmaLinux OS, bidrar till "
+"AlmaLinux OS, tillhandahåller tjänster till AlmaLinux OS-gemenskapen eller "
+"på annat sätt stöder AlmaLinux OS."
 
 #: www/templates/foundation/members/index.html:111
 msgid "Sponsor Member"
@@ -542,6 +557,8 @@ msgid ""
 "Join our vibrant Reddit community, interact with other AlmaLinux OS users, "
 "receive updates, find and provide help."
 msgstr ""
+"Gå med i vårt levande Reddit-community, interagera med andra AlmaLinux OS-"
+"användare, få uppdateringar, hitta och ge hjälp."
 
 #: www/templates/index.html:106
 msgid "Join"
@@ -556,6 +573,8 @@ msgid ""
 "Join a real time discussion with other AlmaLinux OS community members, "
 "governance team and AlmaLinux OS developers."
 msgstr ""
+"Gå med i en realtidsdiskussion med andra AlmalinuxOS gemenskapsmedlemmar, "
+"styrgruppen och AlmaLinux OS-utvecklare."
 
 #: www/templates/index.html:126
 msgid "Engage"
@@ -570,6 +589,8 @@ msgid ""
 "Ask questions, get answers and contribute community support to others in "
 "AlmaLinux OS community and developers alike."
 msgstr ""
+"Ställ frågor, få svar och bidra med gemenskapsstöd till andra i AlmaLinux OS-"
+"gemenskapen samt även utvecklare."
 
 #: www/templates/index.html:144
 msgid "Discover"
@@ -599,6 +620,8 @@ msgid ""
 "The AlmaLinux OS Foundation is a 501(c)(6) non-profit created for the "
 "benefit of the AlmaLinux OS community."
 msgstr ""
+"AlmaLinux OS Stiftelsen är en 501 (c)(6) ideell förening är skapad till "
+"förmån för AlmaLinux OS-gemenskapen."
 
 #: www/templates/index.html:188
 msgid "Backed by"
@@ -625,6 +648,9 @@ msgid ""
 "with investments and long support commitments to ensure the distribution is "
 "free of limitations, fees and charges."
 msgstr ""
+"AlmaLinux OS stiftelsemedlemmar, sponsorer och partners stöder AlmaLinux OS "
+"med investeringar och långa stödåtaganden för att säkerställa att "
+"distributionen är fri från begränsningar, avgifter och kostnader."
 
 #: www/templates/index.html:238
 msgid "Effortless to switch to"
@@ -640,7 +666,7 @@ msgstr ""
 
 #: www/templates/index.html:265
 msgid "Commercial Support"
-msgstr ""
+msgstr "Kommersiell Support"
 
 #: www/templates/index.html:286
 msgid "Answers to Key Questions"
@@ -671,6 +697,9 @@ msgid ""
 "By filling this form you agree to be contacted by AlmaLinux OS Foundation "
 "regarding your request. You can unsubscribe at any time."
 msgstr ""
+"Genom att fylla i detta formulär godkänner du att bli kontaktad av AlmaLinux "
+"OS Stiftelsen angående din begäran. Du kan när som helst avsluta "
+"prenumerationen."
 
 #: www/templates/index.html:363
 msgid "AlmaLinux OS in the Press"
@@ -682,11 +711,11 @@ msgstr "Publicerad"
 
 #: www/templates/showcase/index.html:6
 msgid "AlmaLinux OS feature showcase"
-msgstr ""
+msgstr "AlmaLinux OS funktionsutställning"
 
 #: www/templates/showcase/index.html:7
 msgid "Feature showcase"
-msgstr ""
+msgstr "Funktionsutställning"
 
 #: www/templates/subscribe_post.html:6
 msgid "Mailing list subscription - AlmaLinux OS"
@@ -698,7 +727,7 @@ msgstr "Något gick fel..."
 
 #: www/templates/subscribe_post.html:22 www/templates/subscribe_post.html:33
 msgid "Return home"
-msgstr ""
+msgstr "Återvänd hem"
 
 #: www/templates/subscribe_post.html:27
 msgid "Thank you!"
