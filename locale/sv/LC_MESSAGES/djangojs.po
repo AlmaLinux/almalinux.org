@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-19 21:04+0000\n"
-"PO-Revision-Date: 2021-10-24 18:57+0000\n"
+"PO-Revision-Date: 2021-10-25 19:43+0000\n"
 "Last-Translator: Luna Jernberg <droidbittin@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/almalinux/"
 "website-frontend/sv/>\n"
@@ -54,7 +54,7 @@ msgstr "är inte en funktion"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:314
 msgid "is not a view on an ArrayBuffer object"
-msgstr ""
+msgstr "är inte en vy på ett ArrayBuffer-objekt"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:322
 msgid "is not an ArrayBuffer object or a view on one"
