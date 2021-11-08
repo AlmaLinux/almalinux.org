@@ -8,19 +8,19 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-19 21:04+0000\n"
-"PO-Revision-Date: 2021-07-29 08:43+0000\n"
-"Last-Translator: gz83 <uioptt24@gmail.com>\n"
+"PO-Revision-Date: 2021-11-08 22:52+0000\n"
+"Last-Translator: Taras Panchenko <top39@ukr.net>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
-"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
-"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
-"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
-"X-Generator: Weblate 4.7.2-dev\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 "
+"? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > "
+"14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % "
+"100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 #: commons/templatetags/motd.py:20
 msgid "Read more"
@@ -108,10 +108,8 @@ msgid "Licensing Policy"
 msgstr "Політика ліцензування"
 
 #: www/templates/_partial/footer.html:45
-#, fuzzy
-#| msgid " Trademark Usage Policy"
 msgid "Trademark Usage Policy"
-msgstr " Політика використання торговельних марок"
+msgstr "Політика використання торговельних марок"
 
 #: www/templates/_partial/footer.html:50
 msgid "Foundation Bylaws"
@@ -226,13 +224,11 @@ msgstr "Присутність у мережі"
 
 #: www/templates/contribute/index.html:82
 msgid "Join AlmaLinux OS community chat"
-msgstr "Приєднуйтесь до спільноти спільноти ОС AlmaLinux"
+msgstr "Приєднуйтесь до чату спільноти ОС AlmaLinux"
 
 #: www/templates/elevate/index.html:6
-#, fuzzy
-#| msgid "AlmaLinux OS - Contribute"
 msgid "AlmaLinux OS - ELevate Your Distribution"
-msgstr "ОС AlmaLinux - внесіть вклад"
+msgstr "ОС AlmaLinux - підвищить розповсюдження"
 
 #: www/templates/elevate/index.html:8
 msgid ""
@@ -287,10 +283,8 @@ msgid ""
 msgstr ""
 
 #: www/templates/elevate/index.html:93
-#, fuzzy
-#| msgid "Community chat"
 msgid "Community-wide Project"
-msgstr "Чат спільноти"
+msgstr "Проект всієї спільноти"
 
 #: www/templates/elevate/index.html:96
 msgid ""
@@ -415,16 +409,12 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7
-#, fuzzy
-#| msgid "AlmaLinux OS - Contribute"
 msgid "AlmaLinux OS Foundation - membership"
-msgstr "ОС AlmaLinux - внесіть вклад"
+msgstr "Спільнота ОС AlmaLinux - членство"
 
 #: www/templates/foundation/members/index.html:21
-#, fuzzy
-#| msgid "Join AlmaLinux OS community chat"
 msgid "Join the AlmaLinux OS Foundation"
-msgstr "Приєднуйтесь до спільноти спільноти ОС AlmaLinux"
+msgstr "Приєднуйтесь до спільноти ОС AlmaLinux"
 
 #: www/templates/foundation/members/index.html:25
 msgid ""
@@ -455,16 +445,12 @@ msgid ""
 msgstr ""
 
 #: www/templates/foundation/members/index.html:63
-#, fuzzy
-#| msgid "Join AlmaLinux OS community chat"
 msgid "Join AlmaLinux OS Foundation"
-msgstr "Приєднуйтесь до спільноти спільноти ОС AlmaLinux"
+msgstr "Приєднуйтесь до спільноти ОС AlmaLinux"
 
 #: www/templates/foundation/members/index.html:69
-#, fuzzy
-#| msgid "Contribute"
 msgid "Contributor Member"
-msgstr "Зробити внесок"
+msgstr "Учасник"
 
 #: www/templates/foundation/members/index.html:72
 msgid ""
@@ -520,22 +506,16 @@ msgid "Free Linux OS for the community, by the community"
 msgstr "Вільна ОС Linux для спільноти, від спільноти"
 
 #: www/templates/index.html:37
-#, fuzzy
-#| msgid ""
-#| "An Open Source, community-governed and forever-free enterprise Linux "
-#| "distribution, focused on long-term stability, providing a robust "
-#| "production-grade platform. AlmaLinux OS is 1:1 binary compatible with "
-#| "RHEL&reg; and pre-Stream CentOS."
 msgid ""
 "An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution, focused on long-term stability, providing a robust production-"
 "grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL&reg; and pre-"
 "Stream CentOS."
 msgstr ""
-"Відкритий код, керований спільнотою і назавжди вільний корпоративний "
-"дистрибутив Linux, орієнтований на довгострокову стабільність, що забезпечує "
-"надійну платформу виробничого рівня. ОС AlmaLinux є 1:1 бінарно сумісною з "
-"RHEL&reg; та pre-Stream CentOS."
+"Назавжди безкоштовний корпоративний дистрибутив Linux з відкритим вихідним "
+"кодом, який належить і керується спільнотою, зосереджений на довгостроковій "
+"стабільності, забезпечуючи надійну платформу виробничого рівня. ОС AlmaLinux "
+"є 1:1 двійково сумісним із RHEL&reg; та pre-Stream CentOS."
 
 #: www/templates/index.html:47
 msgid "Contribute"
@@ -640,8 +620,8 @@ msgid ""
 "The AlmaLinux OS Foundation is a 501(c)(6) non-profit created for the "
 "benefit of the AlmaLinux OS community."
 msgstr ""
-"AlmaLinux OS Foundation - це некомерційна організація 501 (c) (6), створена "
-"на благо спільноти ОС AlmaLinux."
+"AlmaLinux OS Foundation - це некомерційна організація 501(c)(6), створена на "
+"користь спільноти ОС AlmaLinux."
 
 #: www/templates/index.html:188
 msgid "Backed by"
