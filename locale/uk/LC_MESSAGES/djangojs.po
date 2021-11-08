@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-19 21:04+0000\n"
-"PO-Revision-Date: 2021-11-07 21:52+0000\n"
+"PO-Revision-Date: 2021-11-08 22:52+0000\n"
 "Last-Translator: Taras Panchenko <top39@ukr.net>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/almalinux/"
 "website-frontend/uk/>\n"
@@ -38,27 +38,28 @@ msgstr "не є кінцевим значенням із рухомою комо
 #: tmp/node_modules/webidl-conversions/lib/index.js:198
 msgid "is outside the range of a single-precision floating-point value"
 msgstr ""
+"знаходиться за межами діапазону значення одинарної точності з рухомою комою"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:228
 msgid "is a symbol, which cannot be converted to a string"
-msgstr ""
+msgstr "є символом, який не можна перетворити на рядок (літерал)"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:239
 msgid "is not a valid ByteString"
-msgstr ""
+msgstr "не є дійсним ByteString"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:276
 msgid "is not an object"
-msgstr ""
+msgstr "не є об'єктом"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:288
 msgid "is not a function"
-msgstr ""
+msgstr "не є функцією"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:314
 msgid "is not a view on an ArrayBuffer object"
-msgstr ""
+msgstr "не є видом об'єкта ArrayBuffer"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:322
 msgid "is not an ArrayBuffer object or a view on one"
-msgstr ""
+msgstr "не є об'єктом ArrayBuffer або його видом"
