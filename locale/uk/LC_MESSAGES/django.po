@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-19 21:04+0000\n"
-"PO-Revision-Date: 2021-11-08 22:52+0000\n"
+"PO-Revision-Date: 2021-11-11 19:50+0000\n"
 "Last-Translator: Taras Panchenko <top39@ukr.net>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/uk/>\n"
@@ -20,11 +20,11 @@ msgstr ""
 "? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > "
 "14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % "
 "100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.9.1-dev\n"
 
 #: commons/templatetags/motd.py:20
 msgid "Read more"
-msgstr ""
+msgstr "Детальніше"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
@@ -37,6 +37,8 @@ msgid ""
 "An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution."
 msgstr ""
+"Назавжди вільний дистрибутив Linux промислового рівня з відкритим вихідним "
+"кодом, який належить і керується спільнотою."
 
 #: www/templates/404.html:13
 msgid "404 Not Found"
@@ -69,11 +71,11 @@ msgstr "Завантаження"
 
 #: www/templates/_partial/footer.html:18 www/templates/_partial/navbar.html:57
 msgid "Membership"
-msgstr ""
+msgstr "Членство"
 
 #: www/templates/_partial/footer.html:19 www/templates/_partial/navbar.html:62
 msgid "ELevate"
-msgstr ""
+msgstr "ELevate (підвищуй свій EL)"
 
 #: www/templates/_partial/footer.html:23
 msgid "Community"
@@ -113,7 +115,7 @@ msgstr "Політика використання торговельних ма�
 
 #: www/templates/_partial/footer.html:50
 msgid "Foundation Bylaws"
-msgstr ""
+msgstr "Статут фонду"
 
 #: www/templates/_partial/navbar.html:10
 msgid "AlmaLinux OS logo"
@@ -145,7 +147,7 @@ msgstr "Мова"
 
 #: www/templates/_partial/navbar.html:102
 msgid "Translate"
-msgstr ""
+msgstr "Перекласти"
 
 #: www/templates/_partial/navbar.html:110 www/templates/index.html:52
 msgid "Download"
@@ -228,39 +230,43 @@ msgstr "Приєднуйтесь до чату спільноти ОС AlmaLinux
 
 #: www/templates/elevate/index.html:6
 msgid "AlmaLinux OS - ELevate Your Distribution"
-msgstr "ОС AlmaLinux - підвищить розповсюдження"
+msgstr "AlmaLinux ОС - підвищуй свій дистрибутив"
 
 #: www/templates/elevate/index.html:8
 msgid ""
 "ELevate enables migration between major versions of RHEL(r) derivatives. "
 "Easily go from CentOS 7.x to any 8.x of your choice"
 msgstr ""
+"ELevate (підвищення) забезпечує міграцію між основними версіями похідних від "
+"RHEL(r). Легко перейдіть із CentOS 7.x до будь-якої 8.x на ваш вибір"
 
 #: www/templates/elevate/index.html:23
 msgid "ELevate Your Distribution"
-msgstr ""
+msgstr "ELevate - підвищуй свій дистрибутив"
 
 #: www/templates/elevate/index.html:27
 msgid ""
 "ELevate enables migration between major versions of RHEL&reg; derivatives. "
 "Easily go from CentOS 7.x to any 8.x of your choice"
 msgstr ""
+"ELevate (підвищення) забезпечує міграцію між основними версіями похідних від "
+"RHEL(r). Легко перейдіть із CentOS 7.x до будь-якої 8.x на ваш вибір"
 
 #: www/templates/elevate/index.html:37
 msgid "Get Started"
-msgstr ""
+msgstr "Почати"
 
 #: www/templates/elevate/index.html:42
 msgid "Discuss"
-msgstr ""
+msgstr "Обговорити"
 
 #: www/templates/elevate/index.html:58
 msgid "About"
-msgstr ""
+msgstr "Про ELevate"
 
 #: www/templates/elevate/index.html:63
 msgid "Major Version Upgrades"
-msgstr ""
+msgstr "Оновлення основної версії"
 
 #: www/templates/elevate/index.html:66
 msgid ""
@@ -268,10 +274,14 @@ msgid ""
 "based distributions from 7.x to 8.x. Preserve your applications, your data, "
 "and your sanity. Run the most recent version of the OS and software you need."
 msgstr ""
+"Це було неможливо - дотепер. Легко переходьте між основними версіями "
+"дистрибутивів на основі RHEL з 7.x на 8.x. Збережіть свої програми, свої "
+"дані та свій глузд. Запускайте останню версію ОС та програмного "
+"забезпечення, які вам потрібні."
 
 #: www/templates/elevate/index.html:77
 msgid "Package Evolution Service"
-msgstr ""
+msgstr "Package Evolution Service (служба еволюції пакунків)"
 
 #: www/templates/elevate/index.html:80
 #, python-format
@@ -281,6 +291,11 @@ msgid ""
 "submit new data sets for packages. Users and maintainers can both utilize "
 "the PES to help make migrations smooth and easy."
 msgstr ""
+"Живим серцем ELevate є <a href=\"%(pes_link)s\">Package Evolution Service</"
+"a> (PES - служба еволюції пакунків), яка дозволяє завантажувати, "
+"налаштовувати і навіть надсилати нові набори даних для пакунків. Користувачі "
+"та супроводжувачі можуть використовувати PES, щоб зробити міграцію плавною "
+"та легкою."
 
 #: www/templates/elevate/index.html:93
 msgid "Community-wide Project"
@@ -292,14 +307,17 @@ msgid ""
 "for the whole ecosystem, not just AlmaLinux. ELevate supports migrating to/"
 "from other distributions and is open for all to contribute to and enhance."
 msgstr ""
+"ELevate розроблено без прив'язки до дистрибутиву та створено як інструмент "
+"для всієї екосистеми, а не лише для AlmaLinux. ELevate підтримує перехід до/"
+"із інших дистрибутивів та відкритий для всіх щодо їх участі та покращення."
 
 #: www/templates/elevate/index.html:107
 msgid "FAQ"
-msgstr ""
+msgstr "Часті питання"
 
 #: www/templates/elevate/index.html:112
 msgid "What is ELevate?"
-msgstr ""
+msgstr "Що таке ELevate?"
 
 #: www/templates/elevate/index.html:117
 msgid ""
@@ -308,10 +326,14 @@ msgid ""
 "Leapp framework with a community created library and service for the "
 "migration metadata set required for it."
 msgstr ""
+"ELevate — це проект, покликаний надати можливість переходу між основними "
+"версіями дистрибутивів на основі RHEL від 7.x до 8.x. Він поєднує фреймворк "
+"Red Hat Leapp зі створеною спільнотою бібліотекою та службою для міграції "
+"набору метаданих, необхідного для неї."
 
 #: www/templates/elevate/index.html:127
 msgid "This looks awesome. How can I contribute?"
-msgstr ""
+msgstr "Це виглядає приголомшливо. Як я можу взяти участь?"
 
 #: www/templates/elevate/index.html:132
 #, python-format
@@ -321,10 +343,15 @@ msgid ""
 "%(github_link)s</a> and you can add/edit/interact with package metadata at "
 "<a href=\"%(pes_link)s\">%(pes_link)s</a>."
 msgstr ""
+"Спочатку приєднуйтесь до нас на каналі <a href=\"%(chat_link)s\">#migration</"
+"a> у Mattermost. Ви можете знайти код цього інструменту на: <a href=\""
+"%(github_link)s\">%(github_link)s</a> і ще ви можете додавати/редагувати/"
+"взаємодіяти з метаданими пакунку за адресою<a href=\"%(pes_link)s\""
+">%(pes_link)s</a>."
 
 #: www/templates/elevate/index.html:143
 msgid "Is this ready for production?"
-msgstr ""
+msgstr "Воно вже готове до продукування?"
 
 #: www/templates/elevate/index.html:148
 msgid ""
@@ -333,10 +360,15 @@ msgid ""
 "surprises, we highly recommend that you test migrations scenarios in a VM or "
 "sandbox before running a migration in production."
 msgstr ""
+"Кінцевий результат може бути різним.  Кожне середовище різне та унікальне "
+"відповідно до додатків та конфігурацій. Оскільки код все ще знаходиться на "
+"стадії розробки, щоб уникнути будь-яких несподіванок, ми настійно "
+"рекомендуємо вам перевірити сценарії міграції на віртуальній машині або "
+"пісочниці, перш ніж запускати міграцію у продукування."
 
 #: www/templates/elevate/index.html:158
 msgid "What operating systems does ELevate support?"
-msgstr ""
+msgstr "Які операційні системи підтримує ELevate?"
 
 #: www/templates/elevate/index.html:163
 msgid ""
@@ -344,26 +376,29 @@ msgid ""
 "following OS: <ul> <li>AlmaLinux OS 8</li> <li>CentOS Stream 8</li> "
 "<li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
 msgstr ""
+"Наразі ELevate надає дані Leapp для міграції з CentOS 7 до таких ОС: <ul> "
+"<li>AlmaLinux OS 8</li> <li>CentOS Stream 8</li> <li>Oracle Linux 8</li> "
+"<li>Rocky Linux 8</li> </ul>"
 
 #: www/templates/elevate/index.html:177
 msgid "Will migration be \"in-place?\""
-msgstr ""
+msgstr "Міграція відбувається за сценарієм \"на місці\" (in-place)?"
 
 #: www/templates/elevate/index.html:182
 msgid "Yes. All your data, applications and settings will be kept."
-msgstr ""
+msgstr "Так. Усі ваші дані, програми та налаштування будуть збережені."
 
 #: www/templates/elevate/index.html:190
 msgid "Is this live or does it require a reboot?"
-msgstr ""
+msgstr "Цей сценарій міграції \"живий\" чи вимагає перезавантаження?"
 
 #: www/templates/elevate/index.html:195
 msgid "Migrations will require your system to reboot twice."
-msgstr ""
+msgstr "Міграція вимагає перезавантаження системи двічі."
 
 #: www/templates/elevate/index.html:203
 msgid "What does the Package Evolution Service do?"
-msgstr ""
+msgstr "Що робить Package Evolution Service (служба еволюції пакунків)?"
 
 #: www/templates/elevate/index.html:208
 msgid ""
@@ -374,30 +409,41 @@ msgid ""
 "to improve the data by adding new actions or even create a custom dataset "
 "for packages from third-party or private repositories."
 msgstr ""
+"Package Evolution Service (PES - служба еволюції пакунків) - зберігає "
+"метадані міграції пакунків. Метадані відповідають на питання про те, як "
+"пакунки розвиваються між основними випусками дистрибутиву. PES підтримує "
+"кілька класів правил для пакунків, таких як додані, видалені, перейменовані, "
+"розділені, об’єднані тощо. Служба також дозволяє будь-кому покращувати дані, "
+"додаючи нові дії або навіть створюючи власний набір даних для пакунків із "
+"сторонніх або приватних сховищ."
 
 #: www/templates/elevate/index.html:220
 msgid ""
 "Red Hat offers a data set which is non-freely licensed. Are you using this "
 "same data set?"
 msgstr ""
+"Red Hat пропонує набір даних, який не ліцензується безкоштовно. Ви "
+"використовуєте цей самий набір даних?"
 
 #: www/templates/elevate/index.html:225
 msgid ""
 "No. We respect Red Hat’s work and our initial data set was provided by the "
 "AlmaLinux Foundation and contributions from Oracle."
 msgstr ""
+"Ні. Ми поважаємо роботу Red Hat, але наш початковий набір даних надано "
+"Фондом AlmaLinux та за сприяння Oracle."
 
 #: www/templates/elevate/index.html:234
 msgid "What license is your metadata under?"
-msgstr ""
+msgstr "Під якою ліцензією знаходяться ваші метадані?"
 
 #: www/templates/elevate/index.html:239
 msgid "The metadata is provided under an Apache License."
-msgstr ""
+msgstr "Метадані надаються за ліцензією Apache."
 
 #: www/templates/elevate/index.html:247
 msgid "Why are you supporting migration to other distributions?"
-msgstr ""
+msgstr "Чому ви підтримуєте перехід на інші дистрибутиви?"
 
 #: www/templates/elevate/index.html:252
 msgid ""
@@ -406,6 +452,11 @@ msgid ""
 "use and contribute to, no matter which distro you prefer. That’s the open "
 "source way."
 msgstr ""
+"Екосистема CentOS – це дуже велика і різноманітна спільнота. Ми сумлінно "
+"розробили цей проект, сподіваючись, що кожен у спільноті зможе "
+"використовувати та зробити свій внесок, незалежно від того, якому "
+"дистрибутиву ви віддаєте перевагу. Це і є шлях відкритого програмного "
+"забезпечення."
 
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7
@@ -421,10 +472,12 @@ msgid ""
 "Be heard! Join the AlmaLinux Foundation as a Member or Sponsor. Own and vote "
 "on shaping the future of AlmaLinux OS!"
 msgstr ""
+"Будьте почуті! Приєднуйтесь до Фонду AlmaLinux як член або спонсор. Особисто "
+"голосуйте за формування майбутнього випуску AlmaLinux ОС!"
 
 #: www/templates/foundation/members/index.html:32
 msgid "Apply for membership"
-msgstr ""
+msgstr "Заявка на членство"
 
 #: www/templates/foundation/members/index.html:41
 msgid ""
@@ -436,6 +489,12 @@ msgid ""
 "sponsors and service providers to the community, as well as official "
 "sponsors for the project."
 msgstr ""
+"Фонд AlmaLinux — це організація, яка стоїть за AlmaLinux ОС, назавжди "
+"вільного дистрибутиву Linux промислового рівня. Як член, ви матимете право "
+"голосу в керуванні проектом, можете голосувати за та бути внесеними в Раду "
+"директорів іншими членами. Є кілька шляхів, доступних для того, щоб стати "
+"учасником, включаючи учасників проекту, супроводжувачів/спонсорів дзеркал та "
+"постачальників послуг для спільноти, а також офіційних спонсорів проекту."
 
 #: www/templates/foundation/members/index.html:51
 msgid ""
@@ -443,6 +502,9 @@ msgid ""
 "the Board or by a committee appointed for this purpose, according to the "
 "Bylaws established by the Board."
 msgstr ""
+"Достовірність кожної заявки буде розглядатися в кожному окремому випадку "
+"Радою або призначеним для цієї мети комітетом відповідно до Статуту, "
+"створеного Радою."
 
 #: www/templates/foundation/members/index.html:63
 msgid "Join AlmaLinux OS Foundation"
@@ -450,7 +512,7 @@ msgstr "Приєднуйтесь до спільноти ОС AlmaLinux"
 
 #: www/templates/foundation/members/index.html:69
 msgid "Contributor Member"
-msgstr "Учасник"
+msgstr "Учасник - вкладник"
 
 #: www/templates/foundation/members/index.html:72
 msgid ""
@@ -458,16 +520,19 @@ msgid ""
 "AlmaLinux OS, provides services to the AlmaLinux OS community or otherwise "
 "supports the AlmaLinux OS."
 msgstr ""
+"Індивідуальний застосунок для кожного, хто використовує ОС AlmaLinux, робить "
+"внесок у AlmaLinux OS, надає послуги спільноті AlmaLinux OS або іншим чином "
+"підтримує ОС AlmaLinux."
 
 #: www/templates/foundation/members/index.html:81
 #: www/templates/foundation/members/index.html:103
 #: www/templates/foundation/members/index.html:121
 msgid "Apply"
-msgstr ""
+msgstr "Подати заяву"
 
 #: www/templates/foundation/members/index.html:90
 msgid "Mirror Member"
-msgstr ""
+msgstr "Учасник Дзеркал розміщення"
 
 #: www/templates/foundation/members/index.html:93
 msgid ""
@@ -475,27 +540,30 @@ msgid ""
 "distribution. Only one member application per individual or entity will be "
 "accepted, irrespective of contributed number of mirrors."
 msgstr ""
+"Фізична чи юридична особа, яка надає проекту дзеркало(а) для розміщення "
+"дистрибутивів. Приймається лише одна заявка від кожної фізичної або "
+"юридичної особи, незалежно від кількості дзеркал."
 
 #: www/templates/foundation/members/index.html:111
 msgid "Sponsor Member"
-msgstr ""
+msgstr "Учасник - спонсор"
 
 #: www/templates/foundation/members/index.html:113
 msgid ""
 "Entities who wish to contribute funding for the project through sponsorship."
-msgstr ""
+msgstr "Суб'єкти, які бажають фінансувати проект через спонсорство."
 
 #: www/templates/foundation/members/index.html:131
 msgid "Do you have membership related questions?"
-msgstr ""
+msgstr "У вас є питання щодо членства?"
 
 #: www/templates/foundation/members/index.html:132
 msgid "Contact us"
-msgstr ""
+msgstr "Зв'яжіться з нами"
 
 #: www/templates/foundation/members/index.html:141
 msgid "Board of Directors"
-msgstr ""
+msgstr "Рада директорів"
 
 #: www/templates/index.html:6
 msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
@@ -512,10 +580,10 @@ msgid ""
 "grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL&reg; and pre-"
 "Stream CentOS."
 msgstr ""
-"Назавжди безкоштовний корпоративний дистрибутив Linux з відкритим вихідним "
-"кодом, який належить і керується спільнотою, зосереджений на довгостроковій "
-"стабільності, забезпечуючи надійну платформу виробничого рівня. ОС AlmaLinux "
-"є 1:1 двійково сумісним із RHEL&reg; та pre-Stream CentOS."
+"Назавжди вільний дистрибутив Linux з відкритим вихідним кодом, який належить "
+"і керується спільнотою, зосереджений на довгостроковій стабільності, "
+"забезпечуючи надійну платформу промислового рівня. ОС AlmaLinux є 1:1 "
+"двійково-сумісним із RHEL&reg; та pre-Stream CentOS."
 
 #: www/templates/index.html:47
 msgid "Contribute"
@@ -638,8 +706,9 @@ msgid ""
 "You can rely on AlmaLinux OS to run any and every critical workloads."
 msgstr ""
 "ОС AlmaLinux - це серверна ОС промислового рівня та стабільний дистрибутив "
-"Linux із регулярними випусками, що мають довгі вікна підтримки. Ви можете "
-"покладатися на ОС AlmaLinux для запуску будь-яких критичних навантажень."
+"Linux із регулярними випусками, що мають довгий інтервал підтримки. Ви "
+"можете покладатися на ОС AlmaLinux для запуску будь-яких критичних "
+"навантажень."
 
 #: www/templates/index.html:225
 msgid "Fully supported, always free"
