@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-19 21:04+0000\n"
-"PO-Revision-Date: 2021-09-06 22:34+0000\n"
+"PO-Revision-Date: 2021-11-14 17:52+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/pt/>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8.1-dev\n"
+"X-Generator: Weblate 4.9.1-dev\n"
 
 #: commons/templatetags/motd.py:20
 msgid "Read more"
-msgstr ""
+msgstr "Leia mais"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
@@ -41,8 +41,7 @@ msgstr "404 Não Encontrado"
 
 #: www/templates/404.html:16
 msgid "Sorry, but the page you were trying to access could not be found."
-msgstr ""
-"Desculpe, mas a página que você estava tentando acessar não foi encontrada."
+msgstr "Desculpe, mas a página que estava a tentar aceder não foi encontrada."
 
 #: www/templates/_partial/footer.html:11 www/templates/_partial/navbar.html:41
 msgid "Resources"
@@ -62,7 +61,7 @@ msgstr "Repositório"
 
 #: www/templates/_partial/footer.html:17
 msgid "Downloads"
-msgstr "Downloads"
+msgstr "Transferências"
 
 #: www/templates/_partial/footer.html:18 www/templates/_partial/navbar.html:57
 msgid "Membership"
@@ -82,7 +81,7 @@ msgstr "Fóruns"
 
 #: www/templates/_partial/footer.html:28
 msgid "Chat"
-msgstr "Bate-papo"
+msgstr "Chat"
 
 #: www/templates/_partial/footer.html:33
 msgid "Legal"
@@ -105,10 +104,8 @@ msgid "Licensing Policy"
 msgstr "Política de Licenciamento"
 
 #: www/templates/_partial/footer.html:45
-#, fuzzy
-#| msgid " Trademark Usage Policy"
 msgid "Trademark Usage Policy"
-msgstr " Política de Uso de Marcas Registradas"
+msgstr "Política de Uso de Marcas Registadas"
 
 #: www/templates/_partial/footer.html:50
 msgid "Foundation Bylaws"
