@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-19 21:04+0000\n"
-"PO-Revision-Date: 2021-08-01 04:32+0000\n"
-"Last-Translator: gz83 <uioptt24@gmail.com>\n"
+"PO-Revision-Date: 2021-11-14 21:52+0000\n"
+"Last-Translator: Kyotaro Iijima <kyotaro.eyes@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/almalinux/"
 "website-frontend/ja/>\n"
 "Language: ja\n"
@@ -17,45 +17,45 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.8-dev\n"
+"X-Generator: Weblate 4.9.1-dev\n"
 
 #: frontend/src/common/js/main.js:7
 msgid "Hello World"
-msgstr "こんにちは世界"
+msgstr "Hello World"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:105
 msgid "is not a finite number"
-msgstr "有限数ではありません"
+msgstr "は、有限数ではありません"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:172
 #: tmp/node_modules/webidl-conversions/lib/index.js:188
 msgid "is not a finite floating-point value"
-msgstr "は有限の浮動小数点値ではありません"
+msgstr "は、有限の浮動小数点値ではありません"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:198
 msgid "is outside the range of a single-precision floating-point value"
-msgstr "単精度浮動小数点値の範囲外です"
+msgstr "は、単精度浮動小数点値の範囲外です"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:228
 msgid "is a symbol, which cannot be converted to a string"
-msgstr "文字列に変換できない記号です"
+msgstr "は、文字列に変換できない記号です"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:239
 msgid "is not a valid ByteString"
-msgstr "有効なByteStringではありません"
+msgstr "は、有効な ByteString ではありません"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:276
 msgid "is not an object"
-msgstr "オブジェクトではありません"
+msgstr "は、オブジェクトではありません"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:288
 msgid "is not a function"
-msgstr "機能ではありません"
+msgstr "は、関数ではありません"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:314
 msgid "is not a view on an ArrayBuffer object"
-msgstr "ArrayBufferオブジェクトのビューではありません"
+msgstr "は、ArrayBuffer オブジェクトのビューではありません"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:322
 msgid "is not an ArrayBuffer object or a view on one"
-msgstr "ArrayBufferオブジェクトまたは1つのビューではありません"
+msgstr "は、ArrayBuffer オブジェクトでもなければ、ビューでもありません"
