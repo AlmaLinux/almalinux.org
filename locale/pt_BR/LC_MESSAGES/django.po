@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-19 21:04+0000\n"
-"PO-Revision-Date: 2021-11-17 12:40+0000\n"
+"PO-Revision-Date: 2021-11-17 14:42+0000\n"
 "Last-Translator: Daimar Stein <570cxat11@relay.firefox.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "almalinux/website-backend/pt_BR/>\n"
@@ -558,11 +558,11 @@ msgstr "Você tem perguntas relacionadas à filiação?"
 
 #: www/templates/foundation/members/index.html:132
 msgid "Contact us"
-msgstr ""
+msgstr "Contate-nos"
 
 #: www/templates/foundation/members/index.html:141
 msgid "Board of Directors"
-msgstr ""
+msgstr "Conselho de Diretores"
 
 #: www/templates/index.html:6
 msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
@@ -790,7 +790,7 @@ msgstr "Mostração de funcionalidades do AlmaLinux OS"
 
 #: www/templates/showcase/index.html:7
 msgid "Feature showcase"
-msgstr "Showcase das funcionalidades"
+msgstr "Demonstração das funcionalidades"
 
 #: www/templates/subscribe_post.html:6
 msgid "Mailing list subscription - AlmaLinux OS"
@@ -812,7 +812,7 @@ msgstr "Obrigado!"
 msgid ""
 "You have successfully subscribed to AlmaLinux OS announcement mailing list!"
 msgstr ""
-"Você se inscreveu com sucesso na lista de emails de anúncio da AlmaLinux OS!"
+"Você se inscreveu com sucesso na lista de emails de anúncios do AlmaLinux OS!"
 
 #: www/views.py:54
 msgid "Email address is not valid"
