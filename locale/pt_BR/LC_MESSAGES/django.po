@@ -811,7 +811,8 @@ msgstr "Obrigado!"
 #: www/templates/subscribe_post.html:30
 msgid ""
 "You have successfully subscribed to AlmaLinux OS announcement mailing list!"
-msgstr "Você se inscreveu com sucesso à lista de anúncios de AlmaLinux OS!"
+msgstr ""
+"Você se inscreveu com sucesso na lista de emails de anúncio da AlmaLinux OS!"
 
 #: www/views.py:54
 msgid "Email address is not valid"
