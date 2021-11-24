@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-19 21:04+0000\n"
-"PO-Revision-Date: 2021-11-16 12:51+0000\n"
-"Last-Translator: Imes <emkqson@outlook.com>\n"
+"PO-Revision-Date: 2021-11-24 23:53+0000\n"
+"Last-Translator: 嫦悅 <lomombwlo@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "almalinux/website-backend/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.9.1-dev\n"
+"X-Generator: Weblate 4.10-dev\n"
 
 #: commons/templatetags/motd.py:20
 msgid "Read more"
@@ -449,6 +449,8 @@ msgid ""
 "sponsors and service providers to the community, as well as official "
 "sponsors for the project."
 msgstr ""
+"AlmaLinux基金会是AlmaLinux OS（永久免费的企业级Linux）背后的实体。作为一个成员，你将对项目的发展方向有发言权，并可以投票选举和被"
+"其他成员选入董事会。有几种途径可以成为成员，包括项目贡献者、镜像维护者/赞助者和社区的服务提供者，以及项目的官方赞助商。"
 
 #: www/templates/foundation/members/index.html:51
 msgid ""
@@ -458,16 +460,12 @@ msgid ""
 msgstr ""
 
 #: www/templates/foundation/members/index.html:63
-#, fuzzy
-#| msgid "Join AlmaLinux OS community chat"
 msgid "Join AlmaLinux OS Foundation"
-msgstr "加入 AlmaLinux OS 社区聊天"
+msgstr "加入 AlmaLinux OS 基金会"
 
 #: www/templates/foundation/members/index.html:69
-#, fuzzy
-#| msgid "Contribute"
 msgid "Contributor Member"
-msgstr "贡献"
+msgstr "贡献者成员"
 
 #: www/templates/foundation/members/index.html:72
 msgid ""
