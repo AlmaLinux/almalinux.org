@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-19 21:04+0000\n"
-"PO-Revision-Date: 2021-11-24 23:53+0000\n"
-"Last-Translator: 嫦悅 <lomombwlo@qq.com>\n"
+"PO-Revision-Date: 2021-11-27 03:53+0000\n"
+"Last-Translator: lomom楼猫 <snc@turbohk.cc>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "almalinux/website-backend/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -21,11 +21,11 @@ msgstr ""
 
 #: commons/templatetags/motd.py:20
 msgid "Read more"
-msgstr "阅读更多"
+msgstr "阅读详情"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
-msgstr "404 未找到 - AlmaLinux OS"
+msgstr "404 网页已不存在 - AlmaLinux OS"
 
 #: www/templates/404.html:6 www/templates/blog/index.html:10
 #: www/templates/blog/post.html:10 www/templates/index.html:8
@@ -53,7 +53,7 @@ msgstr "百科"
 
 #: www/templates/_partial/footer.html:15
 msgid "Bugs"
-msgstr "错误"
+msgstr "缺陷追踪"
 
 #: www/templates/_partial/footer.html:16
 msgid "Repository"
@@ -69,7 +69,7 @@ msgstr "会员"
 
 #: www/templates/_partial/footer.html:19 www/templates/_partial/navbar.html:62
 msgid "ELevate"
-msgstr "提升"
+msgstr "轻松迁移"
 
 #: www/templates/_partial/footer.html:23
 msgid "Community"
@@ -228,7 +228,7 @@ msgstr "AlmaLinux OS - 升级你的发行版"
 msgid ""
 "ELevate enables migration between major versions of RHEL(r) derivatives. "
 "Easily go from CentOS 7.x to any 8.x of your choice"
-msgstr "升级能够在主要的RHEL分支之间迁移。轻松地从CentOS 7.x到任何你选择的8.x"
+msgstr "轻松迁移能够在主要的RHEL分支之间迁移。轻松地从CentOS 7.x到任何你选择的8.x"
 
 #: www/templates/elevate/index.html:23
 msgid "ELevate Your Distribution"
@@ -238,7 +238,7 @@ msgstr "升级你的发行版"
 msgid ""
 "ELevate enables migration between major versions of RHEL&reg; derivatives. "
 "Easily go from CentOS 7.x to any 8.x of your choice"
-msgstr "升级能够在主要的RHEL衍生版中迁移。轻松从CentOS7.x到任何你选择的8.x"
+msgstr "轻松迁移能够在主要的RHEL衍生版中迁移。轻松从CentOS7.x到任何你选择的8.x"
 
 #: www/templates/elevate/index.html:37
 msgid "Get Started"
@@ -351,8 +351,8 @@ msgid ""
 "following OS: <ul> <li>AlmaLinux OS 8</li> <li>CentOS Stream 8</li> "
 "<li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
 msgstr ""
-"目前，ELevate提供Leapp数据以从CentOS7迁移到下列操作系统： <ul> <li>AlmaLinux OS 8</li> "
-"<li>CentOS Stream 8</li> <li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
+"目前，轻松迁移提供Leapp数据以从CentOS7迁移到下列操作系统： <ul> <li>AlmaLinux OS 8</li> <li>CentOS "
+"Stream 8</li> <li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
 
 #: www/templates/elevate/index.html:177
 msgid "Will migration be \"in-place?\""
@@ -423,7 +423,7 @@ msgstr ""
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7
 msgid "AlmaLinux OS Foundation - membership"
-msgstr "AlmaLinux OS - 会员"
+msgstr "AlmaLinux OS 基金会 - 会员资格"
 
 #: www/templates/foundation/members/index.html:21
 msgid "Join the AlmaLinux OS Foundation"
@@ -457,7 +457,7 @@ msgid ""
 "The merit of each application will be reviewed on a case-by-case basis by "
 "the Board or by a committee appointed for this purpose, according to the "
 "Bylaws established by the Board."
-msgstr ""
+msgstr "每份申请，将由董事会或由此专门指定的委员会，根据董事会制定的规章制度逐一核查。"
 
 #: www/templates/foundation/members/index.html:63
 msgid "Join AlmaLinux OS Foundation"
@@ -465,7 +465,7 @@ msgstr "加入 AlmaLinux OS 基金会"
 
 #: www/templates/foundation/members/index.html:69
 msgid "Contributor Member"
-msgstr "贡献者成员"
+msgstr "贡献者会员"
 
 #: www/templates/foundation/members/index.html:72
 msgid ""
@@ -473,44 +473,46 @@ msgid ""
 "AlmaLinux OS, provides services to the AlmaLinux OS community or otherwise "
 "supports the AlmaLinux OS."
 msgstr ""
+"任何使用 AlmaLinux OS、为 AlmaLinux OS 做出贡献、为 AlmaLinux OS 社区提供服务或以其他方式支持 "
+"AlmaLinux OS 的人的个人申请。"
 
 #: www/templates/foundation/members/index.html:81
 #: www/templates/foundation/members/index.html:103
 #: www/templates/foundation/members/index.html:121
 msgid "Apply"
-msgstr ""
+msgstr "申请"
 
 #: www/templates/foundation/members/index.html:90
 msgid "Mirror Member"
-msgstr ""
+msgstr "镜像站会员"
 
 #: www/templates/foundation/members/index.html:93
 msgid ""
 "An individual or entity that provides the project with mirror(s) for content "
 "distribution. Only one member application per individual or entity will be "
 "accepted, irrespective of contributed number of mirrors."
-msgstr ""
+msgstr "为项目提供内容发布镜像的个人或实体。每个人或实体只接受一份会员申请，而不考虑镜像的数量。"
 
 #: www/templates/foundation/members/index.html:111
 msgid "Sponsor Member"
-msgstr ""
+msgstr "赞助会员"
 
 #: www/templates/foundation/members/index.html:113
 msgid ""
 "Entities who wish to contribute funding for the project through sponsorship."
-msgstr ""
+msgstr "希望通过赞助为项目贡献资金的实体。"
 
 #: www/templates/foundation/members/index.html:131
 msgid "Do you have membership related questions?"
-msgstr ""
+msgstr "你有与会员有关的问题吗？"
 
 #: www/templates/foundation/members/index.html:132
 msgid "Contact us"
-msgstr ""
+msgstr "联系我们"
 
 #: www/templates/foundation/members/index.html:141
 msgid "Board of Directors"
-msgstr ""
+msgstr "董事会成员"
 
 #: www/templates/index.html:6
 msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
@@ -518,23 +520,17 @@ msgstr "AlmaLinux OS - 永远免费的企业级操作系统"
 
 #: www/templates/index.html:34
 msgid "Free Linux OS for the community, by the community"
-msgstr "社区提供的免费 Linux 操作系统"
+msgstr "源于社区，服务于社区的自由 Linux 操作系统"
 
 #: www/templates/index.html:37
-#, fuzzy
-#| msgid ""
-#| "An Open Source, community-governed and forever-free enterprise Linux "
-#| "distribution, focused on long-term stability, providing a robust "
-#| "production-grade platform. AlmaLinux OS is 1:1 binary compatible with "
-#| "RHEL&reg; and pre-Stream CentOS."
 msgid ""
 "An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution, focused on long-term stability, providing a robust production-"
 "grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL&reg; and pre-"
 "Stream CentOS."
 msgstr ""
-"一个开源、社区治理且永久免费的企业 Linux 发行版，专注于长期稳定性，提供强大的"
-"生产级平台。 AlmaLinux OS与 RHEL 1:1 二进制兼容&reg; 和 pre-Stream CentOS。"
+"一个开源的、由社区拥有并治理且永久免费的企业 Linux 发行版，专注于长期稳定性，提供一个强大的生产级平台。AlmaLinux OS 与 "
+"RHEL&reg; 和 CentOS Stream 是 1:1 的二进制兼容。"
 
 #: www/templates/index.html:47
 msgid "Contribute"
