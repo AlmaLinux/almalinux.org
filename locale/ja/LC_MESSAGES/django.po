@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-19 21:04+0000\n"
-"PO-Revision-Date: 2021-09-02 06:32+0000\n"
-"Last-Translator: Srijan <srijanchtrvd18@gmail.com>\n"
+"PO-Revision-Date: 2021-11-14 21:52+0000\n"
+"Last-Translator: Kyotaro Iijima <kyotaro.eyes@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/ja/>\n"
 "Language: ja\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.8.1-dev\n"
+"X-Generator: Weblate 4.9.1-dev\n"
 
 #: commons/templatetags/motd.py:20
 msgid "Read more"
-msgstr ""
+msgstr "もっと見る"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
-msgstr "404が見つかりません-AlmaLinuxOS"
+msgstr "404 ページが見つかりません - AlmaLinux OS"
 
 #: www/templates/404.html:6 www/templates/blog/index.html:10
 #: www/templates/blog/post.html:10 www/templates/index.html:8
@@ -33,11 +33,11 @@ msgstr "404が見つかりません-AlmaLinuxOS"
 msgid ""
 "An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution."
-msgstr ""
+msgstr "コミュニティーが所有権を持ち、管理しているオープンソースの永久に無料の商用 Linux ディストリビューションです。"
 
 #: www/templates/404.html:13
 msgid "404 Not Found"
-msgstr "404お探しのページが見つかりませんでした"
+msgstr "404 ページが見つかりません"
 
 #: www/templates/404.html:16
 msgid "Sorry, but the page you were trying to access could not be found."
@@ -45,11 +45,11 @@ msgstr "申し訳ありませんが、アクセスしようとしたページが
 
 #: www/templates/_partial/footer.html:11 www/templates/_partial/navbar.html:41
 msgid "Resources"
-msgstr "資力"
+msgstr "リソース"
 
 #: www/templates/_partial/footer.html:13 www/templates/_partial/navbar.html:31
 msgid "Wiki"
-msgstr "ウィキ"
+msgstr "Wiki"
 
 #: www/templates/_partial/footer.html:15
 msgid "Bugs"
@@ -65,11 +65,11 @@ msgstr "ダウンロード"
 
 #: www/templates/_partial/footer.html:18 www/templates/_partial/navbar.html:57
 msgid "Membership"
-msgstr ""
+msgstr "メンバーシップ"
 
 #: www/templates/_partial/footer.html:19 www/templates/_partial/navbar.html:62
 msgid "ELevate"
-msgstr ""
+msgstr "ELevate"
 
 #: www/templates/_partial/footer.html:23
 msgid "Community"
@@ -85,11 +85,11 @@ msgstr "チャット"
 
 #: www/templates/_partial/footer.html:33
 msgid "Legal"
-msgstr "リーガル"
+msgstr "法的"
 
 #: www/templates/_partial/footer.html:35
 msgid "Legal Notice"
-msgstr "法律のお知らせ"
+msgstr "法的なお知らせ"
 
 #: www/templates/_partial/footer.html:36 www/templates/index.html:352
 msgid "Privacy Policy"
@@ -101,17 +101,15 @@ msgstr "利用規約"
 
 #: www/templates/_partial/footer.html:40
 msgid "Licensing Policy"
-msgstr "ライセンスポリシー"
+msgstr "ライセンス ポリシー"
 
 #: www/templates/_partial/footer.html:45
-#, fuzzy
-#| msgid " Trademark Usage Policy"
 msgid "Trademark Usage Policy"
-msgstr " 商標使用ポリシー"
+msgstr "商標使用ポリシー"
 
 #: www/templates/_partial/footer.html:50
 msgid "Foundation Bylaws"
-msgstr ""
+msgstr "財団法人の規約"
 
 #: www/templates/_partial/navbar.html:10
 msgid "AlmaLinux OS logo"
@@ -127,7 +125,7 @@ msgstr "ブログ"
 
 #: www/templates/_partial/navbar.html:47
 msgid "Migrate from CentOS 8"
-msgstr "CentOS 8から移行する"
+msgstr "CentOS 8 から移行する"
 
 #: www/templates/_partial/navbar.html:52
 msgid "Report Bugs"
@@ -143,7 +141,7 @@ msgstr "言語"
 
 #: www/templates/_partial/navbar.html:102
 msgid "Translate"
-msgstr "訳する"
+msgstr "翻訳する"
 
 #: www/templates/_partial/navbar.html:110 www/templates/index.html:52
 msgid "Download"
@@ -155,7 +153,7 @@ msgstr "AlmaLinux OS ブログ"
 
 #: www/templates/blog/index.html:51
 msgid "Continue reading"
-msgstr "読み続けて"
+msgstr "続きを読む"
 
 #: www/templates/blog/index.html:64 www/templates/blog/index.html:70
 msgid "Previous"
@@ -179,18 +177,15 @@ msgid ""
 "community chat. There are many ways to contribute to AlmaLinux OS - testing, "
 "quality assurance, documentation, and more."
 msgstr ""
-"AlmaLinux OSとインフラストラクチャの開発は、コミュニティチャットを使用して整"
-"理されています。 AlmaLinux OSに貢献する方法はたくさんあります-テスト、品質保"
-"証、ドキュメントなど。"
+"AlmaLinux OSとインフラストラクチャの開発は、コミュニティ チャットを使用して体系化されています。 テスト、品質保証、ドキュメントなど、"
+"AlmaLinux OS に貢献する方法はたくさんあります。"
 
 #: www/templates/contribute/index.html:33
 #, python-format
 msgid ""
 "<a href=\"%(intro_link)s\">Introduce yourself</a> or join one of the topical "
 "channels below to find out more!"
-msgstr ""
-"<a href=\"%(intro_link)s\">自己紹介</a>するか、以下のトピックチャネルのいずれ"
-"かに参加して詳細を確認してください！"
+msgstr "<a href=\"%(intro_link)s\">自己紹介</a>をするか、下記の話題のチャンネルに参加して詳細を確認してください！"
 
 #: www/templates/contribute/index.html:43
 msgid "General chat"
@@ -210,7 +205,7 @@ msgstr "セキュリティ"
 
 #: www/templates/contribute/index.html:63
 msgid "Documentation"
-msgstr "ドキュメンテーション"
+msgstr "ドキュメント"
 
 #: www/templates/contribute/index.html:68
 msgid "Marketing"
@@ -218,49 +213,49 @@ msgstr "マーケティング"
 
 #: www/templates/contribute/index.html:73
 msgid "Web presence"
-msgstr "Webプレゼンス"
+msgstr "Web プレゼンス"
 
 #: www/templates/contribute/index.html:82
 msgid "Join AlmaLinux OS community chat"
-msgstr "AlmaLinux OSコミュニティチャットに参加する"
+msgstr "AlmaLinux OS コミュニティ チャットに参加する"
 
 #: www/templates/elevate/index.html:6
-#, fuzzy
-#| msgid "AlmaLinux OS - Contribute"
 msgid "AlmaLinux OS - ELevate Your Distribution"
-msgstr "AlmaLinux OS - 貢献する"
+msgstr "AlmaLinux OS - ディストリビューションを向上させる"
 
 #: www/templates/elevate/index.html:8
 msgid ""
 "ELevate enables migration between major versions of RHEL(r) derivatives. "
 "Easily go from CentOS 7.x to any 8.x of your choice"
 msgstr ""
+"ELevate を使用すると RHEL(r) の主要な派生バージョンの間を移行できます。CentOS 7.x から任意の 8.x へ簡単に移行できます"
 
 #: www/templates/elevate/index.html:23
 msgid "ELevate Your Distribution"
-msgstr ""
+msgstr "ご使用のディストリビューションを ELevate する"
 
 #: www/templates/elevate/index.html:27
 msgid ""
 "ELevate enables migration between major versions of RHEL&reg; derivatives. "
 "Easily go from CentOS 7.x to any 8.x of your choice"
 msgstr ""
+"ELevate は、RHEL&reg; の主要な派生バージョンの間の移行を可能にします。CentOS 7.x から任意の 8.x へ簡単に移行できます"
 
 #: www/templates/elevate/index.html:37
 msgid "Get Started"
-msgstr ""
+msgstr "はじめましょう"
 
 #: www/templates/elevate/index.html:42
 msgid "Discuss"
-msgstr ""
+msgstr "議論"
 
 #: www/templates/elevate/index.html:58
 msgid "About"
-msgstr ""
+msgstr "概要"
 
 #: www/templates/elevate/index.html:63
 msgid "Major Version Upgrades"
-msgstr ""
+msgstr "主要な派生バージョンの更新"
 
 #: www/templates/elevate/index.html:66
 msgid ""
@@ -268,10 +263,12 @@ msgid ""
 "based distributions from 7.x to 8.x. Preserve your applications, your data, "
 "and your sanity. Run the most recent version of the OS and software you need."
 msgstr ""
+"これは「今までは」できなかったことです。RHEL ベースのディストリビューションの 7.x から 8.x "
+"までの主要な派生バージョンの間を簡単に移行できます。必要な OS やソフトウェアの最新バージョンを実行できます。"
 
 #: www/templates/elevate/index.html:77
 msgid "Package Evolution Service"
-msgstr ""
+msgstr "パッケージ展開サービス"
 
 #: www/templates/elevate/index.html:80
 #, python-format
@@ -281,12 +278,13 @@ msgid ""
 "submit new data sets for packages. Users and maintainers can both utilize "
 "the PES to help make migrations smooth and easy."
 msgstr ""
+"ELevate の心臓部は<a href=\"%(pes_link)s\">パッケージ展開サービス</a>（PES）であり、パッケージ用の新しいデータセッ"
+"トをダウンロード、カスタマイズ、さらには提出できます。ユーザーとメンテナンス担当者は、両方とも、移行をスムーズかつ簡単にするために PES "
+"を使用できます。"
 
 #: www/templates/elevate/index.html:93
-#, fuzzy
-#| msgid "Community chat"
 msgid "Community-wide Project"
-msgstr "コミュニティチャット"
+msgstr "コミュニティ全体のプロジェクト"
 
 #: www/templates/elevate/index.html:96
 msgid ""
@@ -294,14 +292,17 @@ msgid ""
 "for the whole ecosystem, not just AlmaLinux. ELevate supports migrating to/"
 "from other distributions and is open for all to contribute to and enhance."
 msgstr ""
+"ELevate はディストリビューションにとらわれない方法で開発されており、AlmaLinux "
+"だけでなく、エコシステム全体のためのツールとして構築されています。ELevate "
+"は他のディストリビューションからの移行にも対応しており、すべての人が貢献し、強化できるためオープンです。"
 
 #: www/templates/elevate/index.html:107
 msgid "FAQ"
-msgstr ""
+msgstr "よくある質問"
 
 #: www/templates/elevate/index.html:112
 msgid "What is ELevate?"
-msgstr ""
+msgstr "ELevate とは？"
 
 #: www/templates/elevate/index.html:117
 msgid ""
@@ -310,10 +311,13 @@ msgid ""
 "Leapp framework with a community created library and service for the "
 "migration metadata set required for it."
 msgstr ""
+"ELevate は、7.x から 8.x へと RHEL "
+"ベースのディストリビューションの主要バージョンの間での移行機能を提供することを目的としたプロジェクトです。Red Hat の Leapp "
+"フレームワークと、それに必要な移行メタデータセット用のコミュニティで作成されたライブラリとサービスが組み合わさっています。"
 
 #: www/templates/elevate/index.html:127
 msgid "This looks awesome. How can I contribute?"
-msgstr ""
+msgstr "素晴らしいですね。どのように貢献すればいいですか？"
 
 #: www/templates/elevate/index.html:132
 #, python-format
@@ -323,10 +327,13 @@ msgid ""
 "%(github_link)s</a> and you can add/edit/interact with package metadata at "
 "<a href=\"%(pes_link)s\">%(pes_link)s</a>."
 msgstr ""
+"まずは Mattermost の <a href=\"%(chat_link)s\">#migration</a> チャンネルに参加してください。<a "
+"href=\"%(github_link)s\">%(github_link)s</a> からツールのリンクを確認できます。また、<a href=\""
+"%(pes_link)s\">%(pes_link)s</a> からメタデータを追加、変更、操作できます。"
 
 #: www/templates/elevate/index.html:143
 msgid "Is this ready for production?"
-msgstr ""
+msgstr "商用環境でも十分に使用可能ですか？"
 
 #: www/templates/elevate/index.html:148
 msgid ""
@@ -335,10 +342,12 @@ msgid ""
 "surprises, we highly recommend that you test migrations scenarios in a VM or "
 "sandbox before running a migration in production."
 msgstr ""
+"人によって異なります。全ての環境は、アプリケーションや設定などにより異なります。ArumaLinux "
+"は開発中であるため、不測の事態を避けるためにも、本番環境で移行を実行する前に、VM またはサンドボックスで移行シナリオをテストすることを強くお勧めします。"
 
 #: www/templates/elevate/index.html:158
 msgid "What operating systems does ELevate support?"
-msgstr ""
+msgstr "ELevate はどのような OS に対応していますか？"
 
 #: www/templates/elevate/index.html:163
 msgid ""
@@ -346,26 +355,29 @@ msgid ""
 "following OS: <ul> <li>AlmaLinux OS 8</li> <li>CentOS Stream 8</li> "
 "<li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
 msgstr ""
+"現在、ELEVate は CentOS 7 から以下の OS へ移行するための Leapp データを提供しています: <ul> <li>Alma "
+"Linux OS 8</li> <li>CentOS Stream 8</li> <li>Oracle Linux 8</li> <li>Rocky "
+"Linux 8</li> </ul>"
 
 #: www/templates/elevate/index.html:177
 msgid "Will migration be \"in-place?\""
-msgstr ""
+msgstr "移行は「in-place」で行われますか？"
 
 #: www/templates/elevate/index.html:182
 msgid "Yes. All your data, applications and settings will be kept."
-msgstr ""
+msgstr "はい。すべてのデータ、アプリケーション、および設定は保持されます。"
 
 #: www/templates/elevate/index.html:190
 msgid "Is this live or does it require a reboot?"
-msgstr ""
+msgstr "これは起動したまま可能ですか、それとも再起動が必要ですか？"
 
 #: www/templates/elevate/index.html:195
 msgid "Migrations will require your system to reboot twice."
-msgstr ""
+msgstr "移行には 2 回の再起動が必要です。"
 
 #: www/templates/elevate/index.html:203
 msgid "What does the Package Evolution Service do?"
-msgstr ""
+msgstr "パッケージ展開サービスは何をするのでしょうか？"
 
 #: www/templates/elevate/index.html:208
 msgid ""
@@ -376,30 +388,36 @@ msgid ""
 "to improve the data by adding new actions or even create a custom dataset "
 "for packages from third-party or private repositories."
 msgstr ""
+"パッケージ展開サービス（PES）は、パッケージ移行のメタデータを保存します。メタデータは、主要なディストリビューションのリリース間でパッケージがどのように"
+"進化するかについての質問に答えるものです。PES は、追加、削除、名前の変更、分割、マージなど、パッケージに関するいくつかのクラスの規則をサポートしていま"
+"す。また、このサービスでは、新しいアクションを追加してデータを改善したり、サードパーティやプライベート リポジトリのパッケージ用にカスタム "
+"データセットの作成もできます。"
 
 #: www/templates/elevate/index.html:220
 msgid ""
 "Red Hat offers a data set which is non-freely licensed. Are you using this "
 "same data set?"
-msgstr ""
+msgstr "Red Had は、自由ではないライセンスのデータセットを提供しています。同じデータセットを使用していますか？"
 
 #: www/templates/elevate/index.html:225
 msgid ""
 "No. We respect Red Hat’s work and our initial data set was provided by the "
 "AlmaLinux Foundation and contributions from Oracle."
 msgstr ""
+"いいえ。私たちは Red Hat の取り組みを尊重しており、最初のデータセットは AlmaLinux 財団から提供されたものであり、Oracle "
+"の貢献によるものです。"
 
 #: www/templates/elevate/index.html:234
 msgid "What license is your metadata under?"
-msgstr ""
+msgstr "メタデータはどのようなライセンスに基づいているのですか？"
 
 #: www/templates/elevate/index.html:239
 msgid "The metadata is provided under an Apache License."
-msgstr ""
+msgstr "メタデータは Apache ライセンスで提供されます。"
 
 #: www/templates/elevate/index.html:247
 msgid "Why are you supporting migration to other distributions?"
-msgstr ""
+msgstr "なぜ他のディストリビューションへの移行に対応しているのですか？"
 
 #: www/templates/elevate/index.html:252
 msgid ""
@@ -408,29 +426,28 @@ msgid ""
 "use and contribute to, no matter which distro you prefer. That’s the open "
 "source way."
 msgstr ""
+"CentOS エコシステムは、非常に大きく多様なコミュニティです。私たちは、コミュニティのすべての人が、どのディストリビューションを好むかにかかわらず、利"
+"用し、貢献できることを願って、このプロジェクトを誠実に開発しました。オープンソースというのはそういうものです。"
 
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7
-#, fuzzy
-#| msgid "AlmaLinux OS - Contribute"
 msgid "AlmaLinux OS Foundation - membership"
-msgstr "AlmaLinux OS - 貢献する"
+msgstr "AlmaLinux OS 財団 - メンバーシップ"
 
 #: www/templates/foundation/members/index.html:21
-#, fuzzy
-#| msgid "Join AlmaLinux OS community chat"
 msgid "Join the AlmaLinux OS Foundation"
-msgstr "AlmaLinux OSコミュニティチャットに参加する"
+msgstr "AlmaLinux OS 財団に参加する"
 
 #: www/templates/foundation/members/index.html:25
 msgid ""
 "Be heard! Join the AlmaLinux Foundation as a Member or Sponsor. Own and vote "
 "on shaping the future of AlmaLinux OS!"
 msgstr ""
+"お願いします！AlmaLinux 財団の会員やスポンサーになってください。AlmaLinux OS の未来を形作るために会員になり、投票しましょう！"
 
 #: www/templates/foundation/members/index.html:32
 msgid "Apply for membership"
-msgstr ""
+msgstr "会員に登録する"
 
 #: www/templates/foundation/members/index.html:41
 msgid ""
@@ -442,25 +459,24 @@ msgid ""
 "sponsors and service providers to the community, as well as official "
 "sponsors for the project."
 msgstr ""
+"AlmaLinux Foundationは、永久に無料の商用レベルの Linux ディストリビューションである AlmaLinuxOS を支える存在です。"
+" 会員として、あなたはプロジェクトの方向性について発言権を持ち、他のメンバーが投票したり、運営委員会に投票できます。 プロジェクトの貢献者、ミラー "
+"メンテナ/スポンサー、コミュニティへのサービスプロバイダー、プロジェクトの公式スポンサーなど、会員になるには複数の方法があります。"
 
 #: www/templates/foundation/members/index.html:51
 msgid ""
 "The merit of each application will be reviewed on a case-by-case basis by "
 "the Board or by a committee appointed for this purpose, according to the "
 "Bylaws established by the Board."
-msgstr ""
+msgstr "申請は、理事会によって制定された細則に従って、理事会またはこの目的のために任命された委員会によって個別に審査されます。"
 
 #: www/templates/foundation/members/index.html:63
-#, fuzzy
-#| msgid "Join AlmaLinux OS community chat"
 msgid "Join AlmaLinux OS Foundation"
-msgstr "AlmaLinux OSコミュニティチャットに参加する"
+msgstr "AlmaLinux OS 財団に参加する"
 
 #: www/templates/foundation/members/index.html:69
-#, fuzzy
-#| msgid "Contribute"
 msgid "Contributor Member"
-msgstr "助ける"
+msgstr "コントリビューター会員"
 
 #: www/templates/foundation/members/index.html:72
 msgid ""
@@ -468,16 +484,18 @@ msgid ""
 "AlmaLinux OS, provides services to the AlmaLinux OS community or otherwise "
 "supports the AlmaLinux OS."
 msgstr ""
+"AlmaLinux OSを使用する人、AlmaLinux OS に貢献する人、AlmaLinux OS コミュニティにサービスを提供する人、"
+"あるいはその他の方法で AlmaLinux OS をサポートするすべての人のための会員制度。"
 
 #: www/templates/foundation/members/index.html:81
 #: www/templates/foundation/members/index.html:103
 #: www/templates/foundation/members/index.html:121
 msgid "Apply"
-msgstr ""
+msgstr "申し込む"
 
 #: www/templates/foundation/members/index.html:90
 msgid "Mirror Member"
-msgstr ""
+msgstr "ミラー会員"
 
 #: www/templates/foundation/members/index.html:93
 msgid ""
@@ -485,58 +503,52 @@ msgid ""
 "distribution. Only one member application per individual or entity will be "
 "accepted, irrespective of contributed number of mirrors."
 msgstr ""
+"コンテンツ配信用のミラーをプロジェクトに提供する個人または団体のための会員権制度。 提供されたミラーの数に関係なく、個人または団体ごとに 1 "
+"申請のみが受け入れられます。"
 
 #: www/templates/foundation/members/index.html:111
 msgid "Sponsor Member"
-msgstr ""
+msgstr "賛助会員"
 
 #: www/templates/foundation/members/index.html:113
 msgid ""
 "Entities who wish to contribute funding for the project through sponsorship."
-msgstr ""
+msgstr "スポンサーシップを通じてプロジェクトに資金を提供したいと考えている企業。"
 
 #: www/templates/foundation/members/index.html:131
 msgid "Do you have membership related questions?"
-msgstr ""
+msgstr "会員に関する質問はありますか？"
 
 #: www/templates/foundation/members/index.html:132
 msgid "Contact us"
-msgstr ""
+msgstr "ご連絡ください"
 
 #: www/templates/foundation/members/index.html:141
 msgid "Board of Directors"
-msgstr ""
+msgstr "運営委員会"
 
 #: www/templates/index.html:6
 msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
-msgstr ""
-"AlmaLinux OS - 永遠に無料のエンタープライズグレードのオペレーティングシステム"
+msgstr "AlmaLinux OS - 永遠に無料の商用レベルのオペレーティングシステム"
 
 #: www/templates/index.html:34
 msgid "Free Linux OS for the community, by the community"
-msgstr "コミュニティによるコミュニティ向けの無料のLinux OS"
+msgstr "コミュニティによるコミュニティのための無料の Linux OS"
 
 #: www/templates/index.html:37
-#, fuzzy
-#| msgid ""
-#| "An Open Source, community-governed and forever-free enterprise Linux "
-#| "distribution, focused on long-term stability, providing a robust "
-#| "production-grade platform. AlmaLinux OS is 1:1 binary compatible with "
-#| "RHEL&reg; and pre-Stream CentOS."
 msgid ""
 "An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution, focused on long-term stability, providing a robust production-"
 "grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL&reg; and pre-"
 "Stream CentOS."
 msgstr ""
-"オープンソースで、コミュニティが管理し、永久に無料のエンタープライズLinuxディ"
-"ストリビューションであり、長期的な安定性に重点を置いており、堅牢な本番環境グ"
-"レードのプラットフォームを提供します。 AlmaLinux OSは、RHEL&reg;と1：1のバイ"
-"ナリ互換性があります。 およびプレストリームCentOS。"
+"オープンソースであり、コミュニティにより運営されており、長期的な安定性を重視し、堅牢な商用環境にも耐えうるプラットフォームを提供する永久に無料の商用 "
+"Linux ディストリビューションです。AlmaLinux OS は，RHEL &reg; および pre-Stream CentOS と 1:1 "
+"のバイナリレベルで完全な互換性があります。"
 
 #: www/templates/index.html:47
 msgid "Contribute"
-msgstr "助ける"
+msgstr "貢献する"
 
 #: www/templates/index.html:57
 msgid "Migrate"
@@ -545,17 +557,13 @@ msgstr "移行する"
 #: www/templates/index.html:61
 #, python-format
 msgid "Founded by the team behind the <a href=\"%(link)s\">CloudLinux OS</a>."
-msgstr ""
-"<a href=\"%(link)s\"> CloudLinux OS </a>の背後にあるチームによって設立されま"
-"した。"
+msgstr "<a href=\"%(link)s\"> CloudLinux OS </a>運営チームにより設立されました。"
 
 #: www/templates/index.html:78
 msgid ""
 "Our GitHub organization contains source code and tools used to build "
 "AlmaLinux OS and related infrastructure."
-msgstr ""
-"GitHub組織には、AlmaLinux OSと関連インフラストラクチャの構築に使用されるソー"
-"スコードとツールが含まれています。"
+msgstr "GitHub には、AlmaLinux OS と関連インフラの構築に使用するソースコードとツールが含まれています。"
 
 #: www/templates/index.html:86
 msgid "Explore"
@@ -566,24 +574,24 @@ msgid ""
 "Join our vibrant Reddit community, interact with other AlmaLinux OS users, "
 "receive updates, find and provide help."
 msgstr ""
-"活気のあるRedditコミュニティに参加し、他のAlmaLinux OSユーザーと対話し、アッ"
-"プデートを受け取り、ヘルプを見つけて提供します。"
+"活気のある Reddit コミュニティに参加し、他の AlmaLinux O "
+"Sユーザーと交流し、アップデートを受け取り、ヘルプを見つけたり提供したりしましょう。"
 
 #: www/templates/index.html:106
 msgid "Join"
-msgstr "加入"
+msgstr "参加する"
 
 #: www/templates/index.html:115
 msgid "Community chat"
-msgstr "コミュニティチャット"
+msgstr "コミュニティ チャット"
 
 #: www/templates/index.html:118
 msgid ""
 "Join a real time discussion with other AlmaLinux OS community members, "
 "governance team and AlmaLinux OS developers."
 msgstr ""
-"他のAlmaLinux OSコミュニティメンバー、ガバナンスチーム、AlmaLinux OS開発者と"
-"のリアルタイムディスカッションに参加してください。"
+"他の AlmaLinux OS コミュニティ メンバー、ガバナンス チーム、AlmaLinux OS 開発者とのリアルタイム "
+"ディスカッションに参加してください。"
 
 #: www/templates/index.html:126
 msgid "Engage"
@@ -591,15 +599,13 @@ msgstr "従事する"
 
 #: www/templates/index.html:134
 msgid "Community forums"
-msgstr "コミュニティフォーラム"
+msgstr "コミュニティ フォーラム"
 
 #: www/templates/index.html:136
 msgid ""
 "Ask questions, get answers and contribute community support to others in "
 "AlmaLinux OS community and developers alike."
-msgstr ""
-"質問をしたり、回答を得たり、AlmaLinux OSコミュニティの他の人や開発者にコミュ"
-"ニティサポートを提供したりします。"
+msgstr "質問をしたり、回答を得たり、AlmaLinux OS コミュニティの他の人や開発者にコミュニティ サポートを提供します。"
 
 #: www/templates/index.html:144
 msgid "Discover"
@@ -607,7 +613,7 @@ msgstr "発見する"
 
 #: www/templates/index.html:158
 msgid "About AlmaLinux OS"
-msgstr "AlmaLinux OSについて"
+msgstr "AlmaLinux OS について"
 
 #: www/templates/index.html:160
 msgid ""
@@ -616,10 +622,9 @@ msgid ""
 "release. AlmaLinux OS is a 1:1 binary compatible fork of RHEL&reg; guided "
 "and built by the community."
 msgstr ""
-"AlmaLinux OSは、CentOS Linux安定版リリースの廃止によって残されたギャップを埋"
-"める、オープンソースのコミュニティ主導のLinuxオペレーティングシステムです。 "
-"AlmaLinux OSは、RHEL&reg;の1：1バイナリ互換フォークです。 コミュニティによっ"
-"て導かれ、構築されました。"
+"AlmaLinux OS は、CentOS Linux 安定版リリースの廃止によって残された溝を埋めるための、オープンソースのコミュニティ主導の "
+"Linux オペレーティングシステムです。 AlmaLinux OS は、RHEL&reg; の 1:1 のバイナリ レベルで完全に互換なフォークです。 "
+"コミュニティ主導で構築されました。"
 
 #: www/templates/index.html:167
 msgid ""
@@ -627,25 +632,23 @@ msgid ""
 "sponsorship from CloudLinux Inc and support from other sponsors. Ongoing "
 "development efforts are governed by the members of the community."
 msgstr ""
-"スタンドアロンの完全に無料のOSとして、AlmaLinux OSはCloudLinux Incからの年間"
-"スポンサーシップと他のスポンサーからのサポートで100万ドルを享受しています。 "
-"進行中の開発努力は、コミュニティのメンバーによって管理されています。"
+"AlmaLinux OS は、単独の完全無料の OS として、CloudLinux Inc. から年間 100 万ドルの支援を受けています。 "
+"進行中の開発は、コミュニティのメンバーによって管理されています。"
 
 #: www/templates/index.html:174
 msgid ""
 "The AlmaLinux OS Foundation is a 501(c)(6) non-profit created for the "
 "benefit of the AlmaLinux OS community."
 msgstr ""
-"AlmaLinux OS Foundationは、AlmaLinux OSコミュニティの利益のために作成された"
-"501（c）（6）非営利団体です。"
+"AlmaLinux OS 財団は、AlmaLinux OS コミュニティの利益のために作成された、米国歳入法 501(c)(6) に基づく非営利団体です。"
 
 #: www/templates/index.html:188
 msgid "Backed by"
-msgstr "に支えられて"
+msgstr "支援者"
 
 #: www/templates/index.html:212
 msgid "Production-ready"
-msgstr "生産準備"
+msgstr "商用環境に対応"
 
 #: www/templates/index.html:214
 msgid ""
@@ -653,13 +656,12 @@ msgid ""
 "distribution with regular releases that come with a long support windows. "
 "You can rely on AlmaLinux OS to run any and every critical workloads."
 msgstr ""
-"AlmaLinux OSは、エンタープライズグレードのサーバーOSであり、安定したLinuxディ"
-"ストリビューションであり、通常のリリースには長いサポートウィンドウが付属して"
-"います。 AlmaLinux OSを利用して、あらゆる重要なワークロードを実行できます。"
+"AlmaLinux OS は、商用レベルのサーバー OS であり、通常のリリースに長いサポートが付属する安定した Linux ディストリビューションです。"
+"AlmaLinux OS を利用して、あらゆる重要なワークロードを実行できます。"
 
 #: www/templates/index.html:225
 msgid "Fully supported, always free"
-msgstr "完全にサポートされ、常に無料"
+msgstr "完全にサポート、常に無料"
 
 #: www/templates/index.html:227
 msgid ""
@@ -667,13 +669,12 @@ msgid ""
 "with investments and long support commitments to ensure the distribution is "
 "free of limitations, fees and charges."
 msgstr ""
-"AlmaLinux OS Foundationのメンバー、スポンサー、パートナーは、AlmaLinux OSを支"
-"援し、配布に制限、料金、料金がかからないようにするための投資と長期にわたるサ"
-"ポートを約束します。"
+"AlmaLinux OS 財団のメンバー・スポンサー・パートナーは、AlmaLinux OS "
+"を支援し、配布に制限・料金がかからないようにするための投資と長期にわたるサポートを約束します。"
 
 #: www/templates/index.html:238
 msgid "Effortless to switch to"
-msgstr "に切り替えるのは簡単"
+msgstr "切り替えは簡単"
 
 #: www/templates/index.html:240
 #, python-format
@@ -682,10 +683,8 @@ msgid ""
 "the case when switching from CentOS and other RHEL&reg; forks to AlmaLinux "
 "OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</a>"
 msgstr ""
-"ディストリビューションの切り替えは通常、コストと時間がかかりますが、CentOSや"
-"他のRHEL&reg;から切り替える場合はそうではありません。 AlmaLinux OSへのフォー"
-"ク。 切り替えは簡単です- <a herf=\"%(migrate_link)s\">方法をお読みください。"
-"</a>"
+"ディストリビューションの切り替えは通常、コストと時間がかかりますが、CentOS や他の RHEL&reg; のフォークから AlmaLinux OS "
+"へ切り替える場合は簡単です。切り替え方法は <a href=\"%(migrate_link)s\"> をお読みください。</a>"
 
 #: www/templates/index.html:265
 msgid "Commercial Support"
@@ -693,21 +692,21 @@ msgstr "商用サポート"
 
 #: www/templates/index.html:286
 msgid "Answers to Key Questions"
-msgstr "重要な質問への回答"
+msgstr "よくある質問と回答"
 
 #: www/templates/index.html:320
 msgid "Stay updated!"
-msgstr "最新情報を入手してください!"
+msgstr "最新の情報を入手しましょう！"
 
 #: www/templates/index.html:323
 msgid ""
 "Subscribe to our newsletter and never miss out on the latest in AlmaLinux OS "
 "development!"
-msgstr "ニュースレターを購読して、AlmaLinux OS開発の最新情報をお見逃しなく！"
+msgstr "ニュースレターを購読して、AlmaLinux OS の最新情報をお見逃しなく！"
 
 #: www/templates/index.html:337
 msgid "Your email"
-msgstr "あなたのメール"
+msgstr "メールアドレス"
 
 #: www/templates/index.html:341
 msgid "Subscribe"
@@ -718,12 +717,12 @@ msgid ""
 "By filling this form you agree to be contacted by AlmaLinux OS Foundation "
 "regarding your request. You can unsubscribe at any time."
 msgstr ""
-"このフォームに記入することにより、リクエストに関してAlmaLinux OS Foundationか"
-"ら連絡を受けることに同意したことになります。 いつでも退会できます。"
+"このフォームに入力することにより、リクエストに関してAlmaLinux OS 財団から連絡を受けることに同意したことになります。 "
+"受信はいつでも停止できます。"
 
 #: www/templates/index.html:363
 msgid "AlmaLinux OS in the Press"
-msgstr "プレスのAlmaLinux OS"
+msgstr "AlmaLinux OS のプレスリリース"
 
 #: www/templates/page/page.html:31
 msgid "Published"
@@ -731,23 +730,23 @@ msgstr "公開"
 
 #: www/templates/showcase/index.html:6
 msgid "AlmaLinux OS feature showcase"
-msgstr "AlmaLinux OS機能のショーケース"
+msgstr "AlmaLinux OS の機能紹介"
 
 #: www/templates/showcase/index.html:7
 msgid "Feature showcase"
-msgstr "機能ショーケース"
+msgstr "機能紹介"
 
 #: www/templates/subscribe_post.html:6
 msgid "Mailing list subscription - AlmaLinux OS"
-msgstr "メーリングリストのサブスクリプション - AlmaLinux OS"
+msgstr "AlmaLinux OS メーリングリストの購読"
 
 #: www/templates/subscribe_post.html:16
 msgid "Something went wrong..."
-msgstr "何かがうまくいかなかった..."
+msgstr "何かおかしい..."
 
 #: www/templates/subscribe_post.html:22 www/templates/subscribe_post.html:33
 msgid "Return home"
-msgstr "ホームページに戻ります"
+msgstr "ホームに戻る"
 
 #: www/templates/subscribe_post.html:27
 msgid "Thank you!"
@@ -756,9 +755,7 @@ msgstr "ありがとうございました！"
 #: www/templates/subscribe_post.html:30
 msgid ""
 "You have successfully subscribed to AlmaLinux OS announcement mailing list!"
-msgstr ""
-"これで、AlmaLinux OSアナウンスメーリングリストが正常にサブスクライブされまし"
-"た!"
+msgstr "これで、AlmaLinux OS の案内メーリングリスト購読への登録に成功しました！"
 
 #: www/views.py:54
 msgid "Email address is not valid"
@@ -766,9 +763,7 @@ msgstr "メールアドレスが無効です"
 
 #: www/views.py:78
 msgid "Failed to subscribe to mailing list, please try again later"
-msgstr ""
-"メーリングリストへの登録に失敗しました。しばらくしてからもう一度お試しくださ"
-"い"
+msgstr "メーリングリストの購読の登録に失敗しました。しばらくしてからもう一度お試しください"
 
 #: www/views.py:80
 msgid "You are already subscribed to this mailing list!"

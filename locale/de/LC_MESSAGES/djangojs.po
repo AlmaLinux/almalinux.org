@@ -35,6 +35,8 @@ msgstr "ist kein endlicher Gleitkommawert"
 #: tmp/node_modules/webidl-conversions/lib/index.js:198
 msgid "is outside the range of a single-precision floating-point value"
 msgstr ""
+"befindet sich außerhalb des Bereichs eines Fließkommawerts einfacher "
+"Präzision"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:228
 msgid "is a symbol, which cannot be converted to a string"
@@ -59,4 +61,4 @@ msgstr "ist kein View auf ein ArrayBuffer-Objekt"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:322
 msgid "is not an ArrayBuffer object or a view on one"
-msgstr ""
+msgstr "ist kein ArrayBuffer-Objekt oder eine View eines solchen"

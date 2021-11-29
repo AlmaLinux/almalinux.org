@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-19 21:04+0000\n"
-"PO-Revision-Date: 2021-09-09 03:33+0000\n"
+"PO-Revision-Date: 2021-10-22 11:43+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/es/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: commons/templatetags/motd.py:20
 msgid "Read more"
-msgstr ""
+msgstr "Conocer más"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
@@ -72,7 +72,7 @@ msgstr "Membresía"
 
 #: www/templates/_partial/footer.html:19 www/templates/_partial/navbar.html:62
 msgid "ELevate"
-msgstr ""
+msgstr "ELevate"
 
 #: www/templates/_partial/footer.html:23
 msgid "Community"
@@ -226,42 +226,46 @@ msgid "Join AlmaLinux OS community chat"
 msgstr "Únase a la charla comunitaria de AlmaLinux OS"
 
 #: www/templates/elevate/index.html:6
-#, fuzzy
-#| msgid "AlmaLinux OS - Contribute"
 msgid "AlmaLinux OS - ELevate Your Distribution"
-msgstr "AlmaLinux OS • Contribuir"
+msgstr "AlmaLinux OS • ELeve su distribución"
 
 #: www/templates/elevate/index.html:8
 msgid ""
 "ELevate enables migration between major versions of RHEL(r) derivatives. "
 "Easily go from CentOS 7.x to any 8.x of your choice"
 msgstr ""
+"ELevate habilita la migración entre versiones principales de distribuciones "
+"derivadas de RHEL®. Cambie fácilmente de CentOS 7.x a cualquier 8.x que haya "
+"escogido"
 
 #: www/templates/elevate/index.html:23
 msgid "ELevate Your Distribution"
-msgstr ""
+msgstr "ELeve su distribución"
 
 #: www/templates/elevate/index.html:27
 msgid ""
 "ELevate enables migration between major versions of RHEL&reg; derivatives. "
 "Easily go from CentOS 7.x to any 8.x of your choice"
 msgstr ""
+"ELevate habilita la migración entre versiones principales de distribuciones "
+"derivadas de RHEL®. Cambie fácilmente de CentOS 7.x a cualquier 8.x que haya "
+"escogido"
 
 #: www/templates/elevate/index.html:37
 msgid "Get Started"
-msgstr ""
+msgstr "Primeros pasos"
 
 #: www/templates/elevate/index.html:42
 msgid "Discuss"
-msgstr ""
+msgstr "Debatir"
 
 #: www/templates/elevate/index.html:58
 msgid "About"
-msgstr ""
+msgstr "Acerca de"
 
 #: www/templates/elevate/index.html:63
 msgid "Major Version Upgrades"
-msgstr ""
+msgstr "Actualizaciones de versiones principales"
 
 #: www/templates/elevate/index.html:66
 msgid ""
@@ -272,7 +276,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:77
 msgid "Package Evolution Service"
-msgstr ""
+msgstr "Servicio de evolución de paquetes"
 
 #: www/templates/elevate/index.html:80
 #, python-format
@@ -282,12 +286,15 @@ msgid ""
 "submit new data sets for packages. Users and maintainers can both utilize "
 "the PES to help make migrations smooth and easy."
 msgstr ""
+"El corazón de ELevate es el <a href=\"%(pes_link)s\">Servicio de evolución "
+"de paquetes</a> (PES, siglas en inglés), que permite descargar, personalizar "
+"e incluso enviar conjuntos de datos nuevos para cada paquete. Usuarios y "
+"responsables de mantenimiento pueden servirse del PES para ayudar a crear "
+"migraciones fluidas y sencillas."
 
 #: www/templates/elevate/index.html:93
-#, fuzzy
-#| msgid "Community chat"
 msgid "Community-wide Project"
-msgstr "Charla comunitaria"
+msgstr "Proyecto a escala comunitaria"
 
 #: www/templates/elevate/index.html:96
 msgid ""
@@ -298,11 +305,11 @@ msgstr ""
 
 #: www/templates/elevate/index.html:107
 msgid "FAQ"
-msgstr ""
+msgstr "Preguntas frecuentes"
 
 #: www/templates/elevate/index.html:112
 msgid "What is ELevate?"
-msgstr ""
+msgstr "¿Qué es ELevate?"
 
 #: www/templates/elevate/index.html:117
 msgid ""
@@ -314,7 +321,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:127
 msgid "This looks awesome. How can I contribute?"
-msgstr ""
+msgstr "Suena genial. ¿Cómo puedo colaborar?"
 
 #: www/templates/elevate/index.html:132
 #, python-format
@@ -339,7 +346,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:158
 msgid "What operating systems does ELevate support?"
-msgstr ""
+msgstr "¿Cuáles sistemas operativos admite ELevate?"
 
 #: www/templates/elevate/index.html:163
 msgid ""
@@ -350,19 +357,19 @@ msgstr ""
 
 #: www/templates/elevate/index.html:177
 msgid "Will migration be \"in-place?\""
-msgstr ""
+msgstr "¿La migración se efectuará «in situ»?"
 
 #: www/templates/elevate/index.html:182
 msgid "Yes. All your data, applications and settings will be kept."
-msgstr ""
+msgstr "Sí. Se conservarán todos sus datos, aplicaciones y configuraciones."
 
 #: www/templates/elevate/index.html:190
 msgid "Is this live or does it require a reboot?"
-msgstr ""
+msgstr "¿El proceso es directo o necesita reiniciar?"
 
 #: www/templates/elevate/index.html:195
 msgid "Migrations will require your system to reboot twice."
-msgstr ""
+msgstr "Las migraciones requieren dos reinicios de su sistema."
 
 #: www/templates/elevate/index.html:203
 msgid "What does the Package Evolution Service do?"
@@ -392,11 +399,11 @@ msgstr ""
 
 #: www/templates/elevate/index.html:234
 msgid "What license is your metadata under?"
-msgstr ""
+msgstr "¿Con qué licencia se han publicado los metadatos?"
 
 #: www/templates/elevate/index.html:239
 msgid "The metadata is provided under an Apache License."
-msgstr ""
+msgstr "Hemos publicado los metadatos en virtud de la licencia Apache."
 
 #: www/templates/elevate/index.html:247
 msgid "Why are you supporting migration to other distributions?"
@@ -473,6 +480,9 @@ msgid ""
 "AlmaLinux OS, provides services to the AlmaLinux OS community or otherwise "
 "supports the AlmaLinux OS."
 msgstr ""
+"Una solicitud a título individual para cualquiera que utilice AlmaLinux OS, "
+"contribuya a AlmaLinux OS, brinde servicios a la comunidad o apoye el "
+"proyecto de alguna otra manera."
 
 #: www/templates/foundation/members/index.html:81
 #: www/templates/foundation/members/index.html:103
@@ -490,6 +500,9 @@ msgid ""
 "distribution. Only one member application per individual or entity will be "
 "accepted, irrespective of contributed number of mirrors."
 msgstr ""
+"Una persona u organización que brinda uno o varios servidores espejo para la "
+"distribución de contenidos. Se aceptará únicamente una solicitud por persona "
+"u organización, sin importar la cantidad de servidores contribuidos."
 
 #: www/templates/foundation/members/index.html:111
 msgid "Sponsor Member"
@@ -499,6 +512,8 @@ msgstr "Miembro patrocinador"
 msgid ""
 "Entities who wish to contribute funding for the project through sponsorship."
 msgstr ""
+"Organizaciones que deseen colaborar con recursos monetarios en el proyecto a "
+"través de patrocinios."
 
 #: www/templates/foundation/members/index.html:131
 msgid "Do you have membership related questions?"
