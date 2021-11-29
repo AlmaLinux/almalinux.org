@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-19 21:04+0000\n"
-"PO-Revision-Date: 2021-11-27 03:53+0000\n"
+"PO-Revision-Date: 2021-11-29 10:26+0000\n"
 "Last-Translator: lomom楼猫 <snc@turbohk.cc>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "almalinux/website-backend/zh_Hans/>\n"
@@ -69,7 +69,7 @@ msgstr "会员"
 
 #: www/templates/_partial/footer.html:19 www/templates/_partial/navbar.html:62
 msgid "ELevate"
-msgstr "轻松迁移"
+msgstr "EL易升"
 
 #: www/templates/_partial/footer.html:23
 msgid "Community"
@@ -228,7 +228,7 @@ msgstr "AlmaLinux OS - 升级你的发行版"
 msgid ""
 "ELevate enables migration between major versions of RHEL(r) derivatives. "
 "Easily go from CentOS 7.x to any 8.x of your choice"
-msgstr "轻松迁移能够在主要的RHEL分支之间迁移。轻松地从CentOS 7.x到任何你选择的8.x"
+msgstr "EL易升能够在主要的RHEL分支之间迁移。轻松地从CentOS 7.x到任何你选择的8.x"
 
 #: www/templates/elevate/index.html:23
 msgid "ELevate Your Distribution"
@@ -238,7 +238,7 @@ msgstr "升级你的发行版"
 msgid ""
 "ELevate enables migration between major versions of RHEL&reg; derivatives. "
 "Easily go from CentOS 7.x to any 8.x of your choice"
-msgstr "轻松迁移能够在主要的RHEL衍生版中迁移。轻松从CentOS7.x到任何你选择的8.x"
+msgstr "EL易升能够在主要的RHEL衍生版中迁移。轻松从CentOS7.x到任何你选择的8.x"
 
 #: www/templates/elevate/index.html:37
 msgid "Get Started"
@@ -270,7 +270,7 @@ msgid "Package Evolution Service"
 msgstr "包演化服务"
 
 #: www/templates/elevate/index.html:80
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "The beating heart of ELevate is the <a href=\"%(pes_link)s\">Package "
 "Evolution Service</a> (PES) which allows you to download, customize and even "
@@ -290,8 +290,8 @@ msgid ""
 "for the whole ecosystem, not just AlmaLinux. ELevate supports migrating to/"
 "from other distributions and is open for all to contribute to and enhance."
 msgstr ""
-"ELevate是以一种与发行版无关的方式开发的，它是作为整个生态系统的工具而构建的，而不仅仅是 AlmaLinux。 "
-"ELevate支持迁移到/出其他发行版，并且对所有人开放以做出贡献和增强。"
+"EL易升是以一种与发行版无关的方式开发的，它是作为整个生态系统的工具而构建的，而不仅仅是 AlmaLinux。 "
+"EL易升支持迁移到/出其他发行版，并且对所有人开放以做出贡献和增强。"
 
 #: www/templates/elevate/index.html:107
 msgid "FAQ"
@@ -299,7 +299,7 @@ msgstr "常问问题"
 
 #: www/templates/elevate/index.html:112
 msgid "What is ELevate?"
-msgstr "什么是ELevate？"
+msgstr "什么是EL易升？"
 
 #: www/templates/elevate/index.html:117
 msgid ""
@@ -308,7 +308,7 @@ msgid ""
 "Leapp framework with a community created library and service for the "
 "migration metadata set required for it."
 msgstr ""
-"ELevate是一个旨在提供在基于RHEL的发行版的主要版本之间从 7.x 迁移到 8.x 的能力的项目。 它将Red "
+"EL易升是一个旨在提供在基于RHEL的发行版的主要版本之间从 7.x 迁移到 8.x 的能力的项目。 它将Red "
 "Hat的Leapp框架与社区创建的库和服务相结合，用于迁移所需的元数据集。"
 
 #: www/templates/elevate/index.html:127
@@ -343,7 +343,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:158
 msgid "What operating systems does ELevate support?"
-msgstr "ELevate支持哪些操作系统？"
+msgstr "EL易升支持哪些操作系统？"
 
 #: www/templates/elevate/index.html:163
 msgid ""
@@ -351,7 +351,7 @@ msgid ""
 "following OS: <ul> <li>AlmaLinux OS 8</li> <li>CentOS Stream 8</li> "
 "<li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
 msgstr ""
-"目前，轻松迁移提供Leapp数据以从CentOS7迁移到下列操作系统： <ul> <li>AlmaLinux OS 8</li> <li>CentOS "
+"目前，EL易升提供Leapp数据以从CentOS7迁移到下列操作系统： <ul> <li>AlmaLinux OS 8</li> <li>CentOS "
 "Stream 8</li> <li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
 
 #: www/templates/elevate/index.html:177
