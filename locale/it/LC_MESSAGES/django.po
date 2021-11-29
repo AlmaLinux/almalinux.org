@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-19 21:04+0000\n"
+"POT-Creation-Date: 2021-11-29 21:29+0000\n"
 "PO-Revision-Date: 2021-11-04 17:36+0000\n"
 "Last-Translator: G R <gradaellig@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/almalinux/"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.9-dev\n"
 
-#: commons/templatetags/motd.py:20
+#: commons/templatetags/motd.py:39
 msgid "Read more"
 msgstr "Di più"
 
@@ -95,7 +95,7 @@ msgstr "Note Legali"
 msgid "Legal Notice"
 msgstr "Avviso legale"
 
-#: www/templates/_partial/footer.html:36 www/templates/index.html:352
+#: www/templates/_partial/footer.html:36 www/templates/index.html:347
 msgid "Privacy Policy"
 msgstr "Policy sulla Privacy"
 
@@ -135,19 +135,23 @@ msgstr "Trasferisci da CentOS 8"
 msgid "Report Bugs"
 msgstr "Segnala dei Bug"
 
-#: www/templates/_partial/navbar.html:70
+#: www/templates/_partial/navbar.html:67
+msgid "Mailing Lists"
+msgstr ""
+
+#: www/templates/_partial/navbar.html:75
 msgid "Shop"
 msgstr "Negozio"
 
-#: www/templates/_partial/navbar.html:78
+#: www/templates/_partial/navbar.html:83
 msgid "Language"
 msgstr "Lingua"
 
-#: www/templates/_partial/navbar.html:102
+#: www/templates/_partial/navbar.html:107
 msgid "Translate"
 msgstr "Traduci"
 
-#: www/templates/_partial/navbar.html:110 www/templates/index.html:52
+#: www/templates/_partial/navbar.html:115 www/templates/index.html:52
 msgid "Download"
 msgstr "Scarica"
 
@@ -343,11 +347,11 @@ msgid ""
 "%(github_link)s</a> and you can add/edit/interact with package metadata at "
 "<a href=\"%(pes_link)s\">%(pes_link)s</a>."
 msgstr ""
-"Per prima cosa unisciti a noi al canale <a href=\"%(chat_link)s\""
-">#migration</a> di Mattermost. Puoi trovare il codice qui: <a href=\""
-"%(github_link)s\">%(github_link)s</a> e puoi aggiungere/modificare/"
-"interagire con i metadati del pacchetto in <a href=\"%(pes_link)s\""
-">%(pes_link)s</a>."
+"Per prima cosa unisciti a noi al canale <a href=\"%(chat_link)s"
+"\">#migration</a> di Mattermost. Puoi trovare il codice qui: <a href="
+"\"%(github_link)s\">%(github_link)s</a> e puoi aggiungere/modificare/"
+"interagire con i metadati del pacchetto in <a href=\"%(pes_link)s\">"
+"%(pes_link)s</a>."
 
 #: www/templates/elevate/index.html:143
 msgid "Is this ready for production?"
@@ -380,7 +384,9 @@ msgstr ""
 "8</li> <li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
 
 #: www/templates/elevate/index.html:177
-msgid "Will migration be \"in-place?\""
+#, fuzzy
+#| msgid "Will migration be \"in-place?\""
+msgid "Will migration be \"in-place\"?"
 msgstr "La migrazione sarà \"in-place?\""
 
 #: www/templates/elevate/index.html:182
@@ -596,12 +602,7 @@ msgstr "Contribuisci"
 msgid "Migrate"
 msgstr "Migra"
 
-#: www/templates/index.html:61
-#, python-format
-msgid "Founded by the team behind the <a href=\"%(link)s\">CloudLinux OS</a>."
-msgstr "Fondato dal team dietro a <a href=\"%(link)s\">CloudLinuxOS</a>."
-
-#: www/templates/index.html:78
+#: www/templates/index.html:73
 msgid ""
 "Our GitHub organization contains source code and tools used to build "
 "AlmaLinux OS and related infrastructure."
@@ -609,11 +610,11 @@ msgstr ""
 "La nostra organizzazione di GitHub contiene codice sorgente e strumenti "
 "utilizzati per creare AlmaLinuxOS e infrastrutture collegate."
 
-#: www/templates/index.html:86
+#: www/templates/index.html:81
 msgid "Explore"
 msgstr "Esplora"
 
-#: www/templates/index.html:98
+#: www/templates/index.html:93
 msgid ""
 "Join our vibrant Reddit community, interact with other AlmaLinux OS users, "
 "receive updates, find and provide help."
@@ -621,15 +622,15 @@ msgstr ""
 "Entra nella nostra vivace community di Reddit, interagisci con altri utenti "
 "di AlmaLinuxOS, ricevi aggiornamenti, dai e ricevi aiuto."
 
-#: www/templates/index.html:106
+#: www/templates/index.html:101
 msgid "Join"
 msgstr "Partecipa"
 
-#: www/templates/index.html:115
+#: www/templates/index.html:110
 msgid "Community chat"
 msgstr "Chat della community"
 
-#: www/templates/index.html:118
+#: www/templates/index.html:113
 msgid ""
 "Join a real time discussion with other AlmaLinux OS community members, "
 "governance team and AlmaLinux OS developers."
@@ -637,15 +638,15 @@ msgstr ""
 "Entra in una discussione in tempo reale con gli altri membri della community "
 "di AlmaLinuxOS, con anche il team di governance e gli sviluppatori."
 
-#: www/templates/index.html:126
+#: www/templates/index.html:121
 msgid "Engage"
 msgstr "Partecipa"
 
-#: www/templates/index.html:134
+#: www/templates/index.html:129
 msgid "Community forums"
 msgstr "Forums della community"
 
-#: www/templates/index.html:136
+#: www/templates/index.html:131
 msgid ""
 "Ask questions, get answers and contribute community support to others in "
 "AlmaLinux OS community and developers alike."
@@ -653,15 +654,15 @@ msgstr ""
 "Chiedi, ricevi risposte e contribuisci al supporto della community di "
 "AlmaLinuxOS agli altri e agli sviluppatori."
 
-#: www/templates/index.html:144
+#: www/templates/index.html:139
 msgid "Discover"
 msgstr "Scopri"
 
-#: www/templates/index.html:158
+#: www/templates/index.html:153
 msgid "About AlmaLinux OS"
 msgstr "Su AlmaLinuxOS"
 
-#: www/templates/index.html:160
+#: www/templates/index.html:155
 msgid ""
 "AlmaLinux OS is an open-source, community-driven Linux operating system that "
 "fills the gap left by the discontinuation of the CentOS Linux stable "
@@ -673,7 +674,7 @@ msgstr ""
 "del rilascio stabile di CentOS. AlmaLinuxOS è un fork compatibile 1:1 con "
 "RHEL&reg; creato dalla community."
 
-#: www/templates/index.html:167
+#: www/templates/index.html:162
 msgid ""
 "As a standalone, completely free OS, AlmaLinux OS enjoys $1M in annual "
 "sponsorship from CloudLinux Inc and support from other sponsors. Ongoing "
@@ -684,7 +685,7 @@ msgstr ""
 "supporto di altri sponsor. Gli sforzi dello sviluppo in corso sono governati "
 "dai membri della comunità."
 
-#: www/templates/index.html:174
+#: www/templates/index.html:169
 msgid ""
 "The AlmaLinux OS Foundation is a 501(c)(6) non-profit created for the "
 "benefit of the AlmaLinux OS community."
@@ -692,15 +693,15 @@ msgstr ""
 "La fondazione AlmaLinuxOS è un'organizzazione non-profit 501(c)(6) creata a "
 "beneficio della community AlmaLinuxOS."
 
-#: www/templates/index.html:188
+#: www/templates/index.html:183
 msgid "Backed by"
 msgstr "Sostenuto da"
 
-#: www/templates/index.html:212
+#: www/templates/index.html:207
 msgid "Production-ready"
 msgstr "Pronto per la produzione"
 
-#: www/templates/index.html:214
+#: www/templates/index.html:209
 msgid ""
 "AlmaLinux OS is an enterprise-grade server OS and a stable Linux "
 "distribution with regular releases that come with a long support windows. "
@@ -711,11 +712,11 @@ msgstr ""
 "di supporto. Puoi fare affidamento su AlmaLinuxOS per eseguire qualsiasi "
 "carico di lavoro critico."
 
-#: www/templates/index.html:225
+#: www/templates/index.html:220
 msgid "Fully supported, always free"
 msgstr "Totalmente supportato, sempre gratuito"
 
-#: www/templates/index.html:227
+#: www/templates/index.html:222
 msgid ""
 "AlmaLinux OS Foundation members, sponsors and partners back the AlmaLinux OS "
 "with investments and long support commitments to ensure the distribution is "
@@ -725,11 +726,11 @@ msgstr ""
 "AlmaLinuxOS con investimenti e lunghi impegni di supporto per garantire che "
 "la distribuzione sia priva di limitazioni, commissioni e oneri."
 
-#: www/templates/index.html:238
+#: www/templates/index.html:233
 msgid "Effortless to switch to"
 msgstr "Facile a passare a"
 
-#: www/templates/index.html:240
+#: www/templates/index.html:235
 #, python-format
 msgid ""
 "Switching distributions is usually costly and time-consuming, but that’s not "
@@ -740,19 +741,19 @@ msgstr ""
 "è così quando si passa da CentOS e altri RHEL&reg; fork a AlmaLinuxOS. "
 "Cambiare è facile -<a href=\"%(migrate_link)s\">leggi come.</a>"
 
-#: www/templates/index.html:265
+#: www/templates/index.html:260
 msgid "Commercial Support"
 msgstr "Supporto Commerciale"
 
-#: www/templates/index.html:286
+#: www/templates/index.html:281
 msgid "Answers to Key Questions"
 msgstr "Rispondi alle domande chiave"
 
-#: www/templates/index.html:320
+#: www/templates/index.html:315
 msgid "Stay updated!"
 msgstr "Rimani aggiornato!"
 
-#: www/templates/index.html:323
+#: www/templates/index.html:318
 msgid ""
 "Subscribe to our newsletter and never miss out on the latest in AlmaLinux OS "
 "development!"
@@ -760,15 +761,15 @@ msgstr ""
 "Iscriviti alla nostra newsletter per non perderti tutte le novità sullo "
 "sviluppo di AlmaLinuxOS!"
 
-#: www/templates/index.html:337
+#: www/templates/index.html:332
 msgid "Your email"
 msgstr "La tua email"
 
-#: www/templates/index.html:341
+#: www/templates/index.html:336
 msgid "Subscribe"
 msgstr "Iscriviti"
 
-#: www/templates/index.html:348
+#: www/templates/index.html:343
 msgid ""
 "By filling this form you agree to be contacted by AlmaLinux OS Foundation "
 "regarding your request. You can unsubscribe at any time."
@@ -777,7 +778,7 @@ msgstr ""
 "AlmaLinuxOS per quanto riguarda la tua richiesta. Puoi disiscriverti in "
 "qualsiasi momento."
 
-#: www/templates/index.html:363
+#: www/templates/index.html:358
 msgid "AlmaLinux OS in the Press"
 msgstr "AlmaLinuxOS nella Stampa"
 
@@ -826,6 +827,10 @@ msgstr "Impossibile iscriversi alla mailing list, riprova più tardi"
 #: www/views.py:80
 msgid "You are already subscribed to this mailing list!"
 msgstr "Sei già iscritto a questa mailing list!"
+
+#~ msgid ""
+#~ "Founded by the team behind the <a href=\"%(link)s\">CloudLinux OS</a>."
+#~ msgstr "Fondato dal team dietro a <a href=\"%(link)s\">CloudLinuxOS</a>."
 
 #~ msgid ""
 #~ "An open-source RHEL fork built by the team at CloudLinux, inspired by the "

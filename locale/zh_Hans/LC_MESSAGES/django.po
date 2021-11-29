@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-19 21:04+0000\n"
+"POT-Creation-Date: 2021-11-29 21:29+0000\n"
 "PO-Revision-Date: 2021-11-29 10:26+0000\n"
 "Last-Translator: lomom楼猫 <snc@turbohk.cc>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.10-dev\n"
 
-#: commons/templatetags/motd.py:20
+#: commons/templatetags/motd.py:39
 msgid "Read more"
 msgstr "阅读详情"
 
@@ -91,7 +91,7 @@ msgstr "法律"
 msgid "Legal Notice"
 msgstr "法律通知"
 
-#: www/templates/_partial/footer.html:36 www/templates/index.html:352
+#: www/templates/_partial/footer.html:36 www/templates/index.html:347
 msgid "Privacy Policy"
 msgstr "隐私政策"
 
@@ -131,19 +131,23 @@ msgstr "从 CentOS 8 迁移"
 msgid "Report Bugs"
 msgstr "报告错误"
 
-#: www/templates/_partial/navbar.html:70
+#: www/templates/_partial/navbar.html:67
+msgid "Mailing Lists"
+msgstr ""
+
+#: www/templates/_partial/navbar.html:75
 msgid "Shop"
 msgstr "商店"
 
-#: www/templates/_partial/navbar.html:78
+#: www/templates/_partial/navbar.html:83
 msgid "Language"
 msgstr "语言"
 
-#: www/templates/_partial/navbar.html:102
+#: www/templates/_partial/navbar.html:107
 msgid "Translate"
 msgstr "翻译"
 
-#: www/templates/_partial/navbar.html:110 www/templates/index.html:52
+#: www/templates/_partial/navbar.html:115 www/templates/index.html:52
 msgid "Download"
 msgstr "下载"
 
@@ -228,7 +232,8 @@ msgstr "AlmaLinux OS - 升级你的发行版"
 msgid ""
 "ELevate enables migration between major versions of RHEL(r) derivatives. "
 "Easily go from CentOS 7.x to any 8.x of your choice"
-msgstr "EL易升能够在主要的RHEL分支之间迁移。轻松地从CentOS 7.x到任何你选择的8.x"
+msgstr ""
+"EL易升能够在主要的RHEL分支之间迁移。轻松地从CentOS 7.x到任何你选择的8.x"
 
 #: www/templates/elevate/index.html:23
 msgid "ELevate Your Distribution"
@@ -262,8 +267,8 @@ msgid ""
 "based distributions from 7.x to 8.x. Preserve your applications, your data, "
 "and your sanity. Run the most recent version of the OS and software you need."
 msgstr ""
-"它曾是不可能的---直到现在。轻松地在几个基于RHEL的主要发行版从7.x迁移到8.x。保护您的应用程序、数据和理智。 "
-"运行您需要的最新版本的操作系统和软件。"
+"它曾是不可能的---直到现在。轻松地在几个基于RHEL的主要发行版从7.x迁移到8.x。保"
+"护您的应用程序、数据和理智。 运行您需要的最新版本的操作系统和软件。"
 
 #: www/templates/elevate/index.html:77
 msgid "Package Evolution Service"
@@ -277,8 +282,9 @@ msgid ""
 "submit new data sets for packages. Users and maintainers can both utilize "
 "the PES to help make migrations smooth and easy."
 msgstr ""
-"提升的跳动核心是 <a href=\"%(pes_link)s\">包演化服务</a> "
-"(PES)，这运行你下载，自定义，甚至是为包提交新的数据设置。用户和维护者都可以使用PES来帮助和实现平滑和简易的迁移。"
+"提升的跳动核心是 <a href=\"%(pes_link)s\">包演化服务</a> (PES)，这运行你下"
+"载，自定义，甚至是为包提交新的数据设置。用户和维护者都可以使用PES来帮助和实现"
+"平滑和简易的迁移。"
 
 #: www/templates/elevate/index.html:93
 msgid "Community-wide Project"
@@ -290,8 +296,9 @@ msgid ""
 "for the whole ecosystem, not just AlmaLinux. ELevate supports migrating to/"
 "from other distributions and is open for all to contribute to and enhance."
 msgstr ""
-"EL易升是以一种与发行版无关的方式开发的，它是作为整个生态系统的工具而构建的，而不仅仅是 AlmaLinux。 "
-"EL易升支持迁移到/出其他发行版，并且对所有人开放以做出贡献和增强。"
+"EL易升是以一种与发行版无关的方式开发的，它是作为整个生态系统的工具而构建的，"
+"而不仅仅是 AlmaLinux。 EL易升支持迁移到/出其他发行版，并且对所有人开放以做出"
+"贡献和增强。"
 
 #: www/templates/elevate/index.html:107
 msgid "FAQ"
@@ -308,8 +315,9 @@ msgid ""
 "Leapp framework with a community created library and service for the "
 "migration metadata set required for it."
 msgstr ""
-"EL易升是一个旨在提供在基于RHEL的发行版的主要版本之间从 7.x 迁移到 8.x 的能力的项目。 它将Red "
-"Hat的Leapp框架与社区创建的库和服务相结合，用于迁移所需的元数据集。"
+"EL易升是一个旨在提供在基于RHEL的发行版的主要版本之间从 7.x 迁移到 8.x 的能力"
+"的项目。 它将Red Hat的Leapp框架与社区创建的库和服务相结合，用于迁移所需的元数"
+"据集。"
 
 #: www/templates/elevate/index.html:127
 msgid "This looks awesome. How can I contribute?"
@@ -323,9 +331,9 @@ msgid ""
 "%(github_link)s</a> and you can add/edit/interact with package metadata at "
 "<a href=\"%(pes_link)s\">%(pes_link)s</a>."
 msgstr ""
-"首先加入我们的 <a href=\"%(chat_link)s\">#migration</a> Mattermost 频道。 您可以在此处找到工具代码："
-"<a href=\"%(github_link)s\">%(github_link)s</a> 并且您可以在<a href=\"%(pes_link)"
-"s\">%(pes_link)s</a>添加/编辑/和包的元数据交互。"
+"首先加入我们的 <a href=\"%(chat_link)s\">#migration</a> Mattermost 频道。 您"
+"可以在此处找到工具代码：<a href=\"%(github_link)s\">%(github_link)s</a> 并且"
+"您可以在<a href=\"%(pes_link)s\">%(pes_link)s</a>添加/编辑/和包的元数据交互。"
 
 #: www/templates/elevate/index.html:143
 msgid "Is this ready for production?"
@@ -338,8 +346,9 @@ msgid ""
 "surprises, we highly recommend that you test migrations scenarios in a VM or "
 "sandbox before running a migration in production."
 msgstr ""
-"见仁见智。根据应用程序和配置，每个环境都是不同且独特的。 "
-"由于这仍在开发中，为了避免任何意外，我们强烈建议您在生产机器运行迁移之前在虚拟机或沙箱中测试迁移方案。"
+"见仁见智。根据应用程序和配置，每个环境都是不同且独特的。 由于这仍在开发中，为"
+"了避免任何意外，我们强烈建议您在生产机器运行迁移之前在虚拟机或沙箱中测试迁移"
+"方案。"
 
 #: www/templates/elevate/index.html:158
 msgid "What operating systems does ELevate support?"
@@ -351,11 +360,14 @@ msgid ""
 "following OS: <ul> <li>AlmaLinux OS 8</li> <li>CentOS Stream 8</li> "
 "<li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
 msgstr ""
-"目前，EL易升提供Leapp数据以从CentOS7迁移到下列操作系统： <ul> <li>AlmaLinux OS 8</li> <li>CentOS "
-"Stream 8</li> <li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
+"目前，EL易升提供Leapp数据以从CentOS7迁移到下列操作系统： <ul> <li>AlmaLinux "
+"OS 8</li> <li>CentOS Stream 8</li> <li>Oracle Linux 8</li> <li>Rocky Linux "
+"8</li> </ul>"
 
 #: www/templates/elevate/index.html:177
-msgid "Will migration be \"in-place?\""
+#, fuzzy
+#| msgid "Will migration be \"in-place?\""
+msgid "Will migration be \"in-place\"?"
 msgstr "迁移将是“到位？”"
 
 #: www/templates/elevate/index.html:182
@@ -383,8 +395,10 @@ msgid ""
 "to improve the data by adding new actions or even create a custom dataset "
 "for packages from third-party or private repositories."
 msgstr ""
-"包演化服务储存包迁移的元数据。元数据回答了有关软件包在主要发行版之间如何演变的问题。 PES 支持多种类型的包规则，例如添加、删除、重命名、拆分、合并等。"
-" 该服务还允许每个人通过添加新操作来改进数据，甚至为来自第三方或私有存储库的包创建自定义数据集。"
+"包演化服务储存包迁移的元数据。元数据回答了有关软件包在主要发行版之间如何演变"
+"的问题。 PES 支持多种类型的包规则，例如添加、删除、重命名、拆分、合并等。 该"
+"服务还允许每个人通过添加新操作来改进数据，甚至为来自第三方或私有存储库的包创"
+"建自定义数据集。"
 
 #: www/templates/elevate/index.html:220
 msgid ""
@@ -396,7 +410,9 @@ msgstr "Red Hat提供了一个非免费授权的数据集。你们使用相同�
 msgid ""
 "No. We respect Red Hat’s work and our initial data set was provided by the "
 "AlmaLinux Foundation and contributions from Oracle."
-msgstr "不。我们尊重Red Hat的工作，并且我们初始的数据集是来自源于甲骨文的AlmaLinux基金会和贡献者提供的。"
+msgstr ""
+"不。我们尊重Red Hat的工作，并且我们初始的数据集是来自源于甲骨文的AlmaLinux基"
+"金会和贡献者提供的。"
 
 #: www/templates/elevate/index.html:234
 msgid "What license is your metadata under?"
@@ -417,8 +433,8 @@ msgid ""
 "use and contribute to, no matter which distro you prefer. That’s the open "
 "source way."
 msgstr ""
-"CentOS 生态系统是一个非常庞大且多元化的社区。 我们真诚地开发了这个项目，希望社区中的每个人都可以使用和贡献，无论您喜欢哪个发行版。 "
-"这就是开源之路。"
+"CentOS 生态系统是一个非常庞大且多元化的社区。 我们真诚地开发了这个项目，希望"
+"社区中的每个人都可以使用和贡献，无论您喜欢哪个发行版。 这就是开源之路。"
 
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7
@@ -433,7 +449,9 @@ msgstr "加入 AlmaLinux OS 基金会"
 msgid ""
 "Be heard! Join the AlmaLinux Foundation as a Member or Sponsor. Own and vote "
 "on shaping the future of AlmaLinux OS!"
-msgstr "要注意！ 作为会员或赞助商加入AlmaLinux基金会。 拥有并投票塑造 AlmaLinux OS 的未来！"
+msgstr ""
+"要注意！ 作为会员或赞助商加入AlmaLinux基金会。 拥有并投票塑造 AlmaLinux OS 的"
+"未来！"
 
 #: www/templates/foundation/members/index.html:32
 msgid "Apply for membership"
@@ -449,15 +467,19 @@ msgid ""
 "sponsors and service providers to the community, as well as official "
 "sponsors for the project."
 msgstr ""
-"AlmaLinux基金会是AlmaLinux OS（永久免费的企业级Linux）背后的实体。作为一个成员，你将对项目的发展方向有发言权，并可以投票选举和被"
-"其他成员选入董事会。有几种途径可以成为成员，包括项目贡献者、镜像维护者/赞助者和社区的服务提供者，以及项目的官方赞助商。"
+"AlmaLinux基金会是AlmaLinux OS（永久免费的企业级Linux）背后的实体。作为一个成"
+"员，你将对项目的发展方向有发言权，并可以投票选举和被其他成员选入董事会。有几"
+"种途径可以成为成员，包括项目贡献者、镜像维护者/赞助者和社区的服务提供者，以及"
+"项目的官方赞助商。"
 
 #: www/templates/foundation/members/index.html:51
 msgid ""
 "The merit of each application will be reviewed on a case-by-case basis by "
 "the Board or by a committee appointed for this purpose, according to the "
 "Bylaws established by the Board."
-msgstr "每份申请，将由董事会或由此专门指定的委员会，根据董事会制定的规章制度逐一核查。"
+msgstr ""
+"每份申请，将由董事会或由此专门指定的委员会，根据董事会制定的规章制度逐一核"
+"查。"
 
 #: www/templates/foundation/members/index.html:63
 msgid "Join AlmaLinux OS Foundation"
@@ -473,8 +495,8 @@ msgid ""
 "AlmaLinux OS, provides services to the AlmaLinux OS community or otherwise "
 "supports the AlmaLinux OS."
 msgstr ""
-"任何使用 AlmaLinux OS、为 AlmaLinux OS 做出贡献、为 AlmaLinux OS 社区提供服务或以其他方式支持 "
-"AlmaLinux OS 的人的个人申请。"
+"任何使用 AlmaLinux OS、为 AlmaLinux OS 做出贡献、为 AlmaLinux OS 社区提供服务"
+"或以其他方式支持 AlmaLinux OS 的人的个人申请。"
 
 #: www/templates/foundation/members/index.html:81
 #: www/templates/foundation/members/index.html:103
@@ -491,7 +513,9 @@ msgid ""
 "An individual or entity that provides the project with mirror(s) for content "
 "distribution. Only one member application per individual or entity will be "
 "accepted, irrespective of contributed number of mirrors."
-msgstr "为项目提供内容发布镜像的个人或实体。每个人或实体只接受一份会员申请，而不考虑镜像的数量。"
+msgstr ""
+"为项目提供内容发布镜像的个人或实体。每个人或实体只接受一份会员申请，而不考虑"
+"镜像的数量。"
 
 #: www/templates/foundation/members/index.html:111
 msgid "Sponsor Member"
@@ -529,8 +553,9 @@ msgid ""
 "grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL&reg; and pre-"
 "Stream CentOS."
 msgstr ""
-"一个开源的、由社区拥有并治理且永久免费的企业 Linux 发行版，专注于长期稳定性，提供一个强大的生产级平台。AlmaLinux OS 与 "
-"RHEL&reg; 和 CentOS Stream 是 1:1 的二进制兼容。"
+"一个开源的、由社区拥有并治理且永久免费的企业 Linux 发行版，专注于长期稳定性，"
+"提供一个强大的生产级平台。AlmaLinux OS 与 RHEL&reg; 和 CentOS Stream 是 1:1 "
+"的二进制兼容。"
 
 #: www/templates/index.html:47
 msgid "Contribute"
@@ -540,23 +565,18 @@ msgstr "贡献"
 msgid "Migrate"
 msgstr "迁移"
 
-#: www/templates/index.html:61
-#, python-format
-msgid "Founded by the team behind the <a href=\"%(link)s\">CloudLinux OS</a>."
-msgstr "由 <a href=\"%(link)s\">CloudLinux OS</a> 背后的团队创立。"
-
-#: www/templates/index.html:78
+#: www/templates/index.html:73
 msgid ""
 "Our GitHub organization contains source code and tools used to build "
 "AlmaLinux OS and related infrastructure."
 msgstr ""
 "我们的 GitHub 组织包含用于构建 AlmaLinux OS和相关基础设施的源代码和工具。"
 
-#: www/templates/index.html:86
+#: www/templates/index.html:81
 msgid "Explore"
 msgstr "探索"
 
-#: www/templates/index.html:98
+#: www/templates/index.html:93
 msgid ""
 "Join our vibrant Reddit community, interact with other AlmaLinux OS users, "
 "receive updates, find and provide help."
@@ -564,45 +584,45 @@ msgstr ""
 "加入我们充满活力的 Reddit 社区，与其他 AlmaLinux OS用户互动，接收更新，寻找并"
 "提供帮助。"
 
-#: www/templates/index.html:106
+#: www/templates/index.html:101
 msgid "Join"
 msgstr "加入"
 
-#: www/templates/index.html:115
+#: www/templates/index.html:110
 msgid "Community chat"
 msgstr "社区聊天"
 
-#: www/templates/index.html:118
+#: www/templates/index.html:113
 msgid ""
 "Join a real time discussion with other AlmaLinux OS community members, "
 "governance team and AlmaLinux OS developers."
 msgstr ""
 "加入与其他 AlmaLinux OS社区成员、管理团队和 AlmaLinux OS开发人员的实时讨论。"
 
-#: www/templates/index.html:126
+#: www/templates/index.html:121
 msgid "Engage"
 msgstr "从事"
 
-#: www/templates/index.html:134
+#: www/templates/index.html:129
 msgid "Community forums"
 msgstr "社区论坛"
 
-#: www/templates/index.html:136
+#: www/templates/index.html:131
 msgid ""
 "Ask questions, get answers and contribute community support to others in "
 "AlmaLinux OS community and developers alike."
 msgstr ""
 "向 AlmaLinux OS 社区中的其他人和开发人员提出问题、获得答案并提供社区支持。"
 
-#: www/templates/index.html:144
+#: www/templates/index.html:139
 msgid "Discover"
 msgstr "发现"
 
-#: www/templates/index.html:158
+#: www/templates/index.html:153
 msgid "About AlmaLinux OS"
 msgstr "关于 AlmaLinux OS"
 
-#: www/templates/index.html:160
+#: www/templates/index.html:155
 msgid ""
 "AlmaLinux OS is an open-source, community-driven Linux operating system that "
 "fills the gap left by the discontinuation of the CentOS Linux stable "
@@ -613,7 +633,7 @@ msgstr ""
 "稳定版本停产留下的空白。 AlmaLinux OS 是 RHEL&reg; 的 1:1 二进制兼容分支。 由"
 "社区引导和建设。"
 
-#: www/templates/index.html:167
+#: www/templates/index.html:162
 msgid ""
 "As a standalone, completely free OS, AlmaLinux OS enjoys $1M in annual "
 "sponsorship from CloudLinux Inc and support from other sponsors. Ongoing "
@@ -622,7 +642,7 @@ msgstr ""
 "作为一个独立的、完全免费的操作系统，AlmaLinux OS享有 CloudLinux Inc 每年 100 "
 "万美元的赞助和其他赞助商的支持。 正在进行的开发工作由社区成员管理。"
 
-#: www/templates/index.html:174
+#: www/templates/index.html:169
 msgid ""
 "The AlmaLinux OS Foundation is a 501(c)(6) non-profit created for the "
 "benefit of the AlmaLinux OS community."
@@ -630,15 +650,15 @@ msgstr ""
 "AlmaLinux OS基金会是一个 501(c)(6) 非营利组织，旨在为 AlmaLinux OS社区带来利"
 "益。"
 
-#: www/templates/index.html:188
+#: www/templates/index.html:183
 msgid "Backed by"
 msgstr "支持"
 
-#: www/templates/index.html:212
+#: www/templates/index.html:207
 msgid "Production-ready"
 msgstr "生产就绪"
 
-#: www/templates/index.html:214
+#: www/templates/index.html:209
 msgid ""
 "AlmaLinux OS is an enterprise-grade server OS and a stable Linux "
 "distribution with regular releases that come with a long support windows. "
@@ -647,11 +667,11 @@ msgstr ""
 "AlmaLinux OS 是一个企业级服务器操作系统和一个稳定的 Linux 发行版，定期发布，"
 "支持窗口很长。 您可以依靠 AlmaLinux OS 来运行任何关键工作负载。"
 
-#: www/templates/index.html:225
+#: www/templates/index.html:220
 msgid "Fully supported, always free"
 msgstr "完全支持，永远免费"
 
-#: www/templates/index.html:227
+#: www/templates/index.html:222
 msgid ""
 "AlmaLinux OS Foundation members, sponsors and partners back the AlmaLinux OS "
 "with investments and long support commitments to ensure the distribution is "
@@ -660,11 +680,11 @@ msgstr ""
 "AlmaLinux OS 基金会成员、赞助商和合作伙伴通过投资和长期支持承诺支持 "
 "AlmaLinux OS，以确保分发不受限制、费用和收费。"
 
-#: www/templates/index.html:238
+#: www/templates/index.html:233
 msgid "Effortless to switch to"
 msgstr "毫不费力地切换到"
 
-#: www/templates/index.html:240
+#: www/templates/index.html:235
 #, python-format
 msgid ""
 "Switching distributions is usually costly and time-consuming, but that’s not "
@@ -674,33 +694,33 @@ msgstr ""
 "切换发行版通常既昂贵又耗时，但从 CentOS 和其他 RHEL 切换时则并非如此。 分叉"
 "到 AlmaLinux OS。 切换很容易 - <a href=\"%(migrate_link)s\">阅读方法。</a>"
 
-#: www/templates/index.html:265
+#: www/templates/index.html:260
 msgid "Commercial Support"
 msgstr "商业支持"
 
-#: www/templates/index.html:286
+#: www/templates/index.html:281
 msgid "Answers to Key Questions"
 msgstr "关键问题的答案"
 
-#: www/templates/index.html:320
+#: www/templates/index.html:315
 msgid "Stay updated!"
 msgstr "保持更新！"
 
-#: www/templates/index.html:323
+#: www/templates/index.html:318
 msgid ""
 "Subscribe to our newsletter and never miss out on the latest in AlmaLinux OS "
 "development!"
 msgstr "订阅我们的时事资讯，不要错过 AlmaLinux OS开发的最新消息！"
 
-#: www/templates/index.html:337
+#: www/templates/index.html:332
 msgid "Your email"
 msgstr "你的邮箱"
 
-#: www/templates/index.html:341
+#: www/templates/index.html:336
 msgid "Subscribe"
 msgstr "订阅"
 
-#: www/templates/index.html:348
+#: www/templates/index.html:343
 msgid ""
 "By filling this form you agree to be contacted by AlmaLinux OS Foundation "
 "regarding your request. You can unsubscribe at any time."
@@ -708,7 +728,7 @@ msgstr ""
 "填写此表格即表示您同意 AlmaLinux OS Foundation 就您的请求与您联系。 您可以随"
 "时取消订阅。"
 
-#: www/templates/index.html:363
+#: www/templates/index.html:358
 msgid "AlmaLinux OS in the Press"
 msgstr "媒体上的 AlmaLinux OS"
 
@@ -756,6 +776,10 @@ msgstr "订阅邮件列表失败，请稍后再试"
 #: www/views.py:80
 msgid "You are already subscribed to this mailing list!"
 msgstr "您已经订阅了这个邮件列表！"
+
+#~ msgid ""
+#~ "Founded by the team behind the <a href=\"%(link)s\">CloudLinux OS</a>."
+#~ msgstr "由 <a href=\"%(link)s\">CloudLinux OS</a> 背后的团队创立。"
 
 #~ msgid ""
 #~ "An open-source RHEL fork built by the team at CloudLinux, inspired by the "

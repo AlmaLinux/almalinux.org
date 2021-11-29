@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-19 21:04+0000\n"
+"POT-Creation-Date: 2021-11-29 21:29+0000\n"
 "PO-Revision-Date: 2021-10-24 18:57+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/almalinux/"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.9-dev\n"
 
-#: commons/templatetags/motd.py:20
+#: commons/templatetags/motd.py:39
 msgid "Read more"
 msgstr "Devamını okuyun"
 
@@ -93,7 +93,7 @@ msgstr "Yasal"
 msgid "Legal Notice"
 msgstr "Yasal Uyarı"
 
-#: www/templates/_partial/footer.html:36 www/templates/index.html:352
+#: www/templates/_partial/footer.html:36 www/templates/index.html:347
 msgid "Privacy Policy"
 msgstr "Gizlilik Politikası"
 
@@ -133,19 +133,23 @@ msgstr "CentOS 8'den geçiş yapın"
 msgid "Report Bugs"
 msgstr "Yazılım Hata Raporu"
 
-#: www/templates/_partial/navbar.html:70
+#: www/templates/_partial/navbar.html:67
+msgid "Mailing Lists"
+msgstr ""
+
+#: www/templates/_partial/navbar.html:75
 msgid "Shop"
 msgstr "Mağaza"
 
-#: www/templates/_partial/navbar.html:78
+#: www/templates/_partial/navbar.html:83
 msgid "Language"
 msgstr "Dil"
 
-#: www/templates/_partial/navbar.html:102
+#: www/templates/_partial/navbar.html:107
 msgid "Translate"
 msgstr "Çevir"
 
-#: www/templates/_partial/navbar.html:110 www/templates/index.html:52
+#: www/templates/_partial/navbar.html:115 www/templates/index.html:52
 msgid "Download"
 msgstr "Kurulum"
 
@@ -233,8 +237,8 @@ msgid ""
 "ELevate enables migration between major versions of RHEL(r) derivatives. "
 "Easily go from CentOS 7.x to any 8.x of your choice"
 msgstr ""
-"ELevate, RHEL(r) türevlerinin ana sürümleri arasında geçişi sağlar. CentOS "
-"7.x'ten istediğiniz herhangi bir 8.x'e kolayca geçin"
+"ELevate, RHEL(r) türevlerinin ana sürümleri arasında geçişi sağlar. CentOS 7."
+"x'ten istediğiniz herhangi bir 8.x'e kolayca geçin"
 
 #: www/templates/elevate/index.html:23
 msgid "ELevate Your Distribution"
@@ -288,8 +292,8 @@ msgid ""
 "the PES to help make migrations smooth and easy."
 msgstr ""
 "ELevate'in atan kalbi, paketler için yeni veri kümelerini indirmenize, "
-"özelleştirmenize ve hatta göndermenize olanak tanıyan <a href=\"%(pes_link)"
-"s\">Paket Değişim Hizmeti</a> (Package Evolution Service - PES)'dir. "
+"özelleştirmenize ve hatta göndermenize olanak tanıyan <a href=\"%(pes_link)s"
+"\">Paket Değişim Hizmeti</a> (Package Evolution Service - PES)'dir. "
 "Kullanıcılar ve bakımcılar, geçişleri sorunsuz ve kolay hale getirmeye "
 "yardımcı olmak için PES'i kullanabilir."
 
@@ -341,8 +345,8 @@ msgid ""
 "<a href=\"%(pes_link)s\">%(pes_link)s</a>."
 msgstr ""
 "Önce <a href=\"%(chat_link)s\">#migration</a> Mattermost kanalında bize "
-"katılın. Araç kodunu burada bulabilirsiniz: <a href=\"%(github_link)s\""
-">%(github_link)s</a> ve <a href=\"%(pes_link)s\">%(pes_link)s</a> adresinde "
+"katılın. Araç kodunu burada bulabilirsiniz: <a href=\"%(github_link)s\">"
+"%(github_link)s</a> ve <a href=\"%(pes_link)s\">%(pes_link)s</a> adresinde "
 "paket üst verileri ekleyebilir/düzenleyebilir/etkileşim kurabilirsiniz."
 
 #: www/templates/elevate/index.html:143
@@ -377,7 +381,9 @@ msgstr ""
 "8</li> <li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
 
 #: www/templates/elevate/index.html:177
-msgid "Will migration be \"in-place?\""
+#, fuzzy
+#| msgid "Will migration be \"in-place?\""
+msgid "Will migration be \"in-place\"?"
 msgstr "Geçiş \"yerinde\" mi olacak?"
 
 #: www/templates/elevate/index.html:182
@@ -588,12 +594,7 @@ msgstr "Katkıda Bulunuz"
 msgid "Migrate"
 msgstr "Taşıma"
 
-#: www/templates/index.html:61
-#, python-format
-msgid "Founded by the team behind the <a href=\"%(link)s\">CloudLinux OS</a>."
-msgstr "<a href=\"%(link)s\">CloudLinux OS</a> tarafından kurulmuştur."
-
-#: www/templates/index.html:78
+#: www/templates/index.html:73
 msgid ""
 "Our GitHub organization contains source code and tools used to build "
 "AlmaLinux OS and related infrastructure."
@@ -601,11 +602,11 @@ msgstr ""
 "GitHub organizasyonumuz, AlmaLinux OS ve ilgili altyapıyı oluşturmak için "
 "kullanılan kaynak kodu ve araçları içerir."
 
-#: www/templates/index.html:86
+#: www/templates/index.html:81
 msgid "Explore"
 msgstr "Keşfet"
 
-#: www/templates/index.html:98
+#: www/templates/index.html:93
 msgid ""
 "Join our vibrant Reddit community, interact with other AlmaLinux OS users, "
 "receive updates, find and provide help."
@@ -613,15 +614,15 @@ msgstr ""
 "Enerjik Reddit topluluğumuza katılın, diğer AlmaLinux OS kullanıcılarıyla "
 "etkileşim kurun, güncellemeler alın, yardım isteyin ve sağlayın."
 
-#: www/templates/index.html:106
+#: www/templates/index.html:101
 msgid "Join"
 msgstr "Katıl"
 
-#: www/templates/index.html:115
+#: www/templates/index.html:110
 msgid "Community chat"
 msgstr "Topluluk Sohbeti"
 
-#: www/templates/index.html:118
+#: www/templates/index.html:113
 msgid ""
 "Join a real time discussion with other AlmaLinux OS community members, "
 "governance team and AlmaLinux OS developers."
@@ -629,15 +630,15 @@ msgstr ""
 "Diğer AlmaLinux OS topluluk üyeleri, yönetim ekibi ve AlmaLinux OS "
 "geliştiricileri ile gerçek zamanlı bir tartışmaya katılın."
 
-#: www/templates/index.html:126
+#: www/templates/index.html:121
 msgid "Engage"
 msgstr "Uğraşın"
 
-#: www/templates/index.html:134
+#: www/templates/index.html:129
 msgid "Community forums"
 msgstr "Topluluk Forumları"
 
-#: www/templates/index.html:136
+#: www/templates/index.html:131
 msgid ""
 "Ask questions, get answers and contribute community support to others in "
 "AlmaLinux OS community and developers alike."
@@ -645,15 +646,15 @@ msgstr ""
 "AlmaLinux OS topluluğundaki ve geliştiricilerdeki diğer kişilere sorular "
 "sorun, yanıtlar alın ve topluluk desteğine katkıda bulunun."
 
-#: www/templates/index.html:144
+#: www/templates/index.html:139
 msgid "Discover"
 msgstr "Keşfet"
 
-#: www/templates/index.html:158
+#: www/templates/index.html:153
 msgid "About AlmaLinux OS"
 msgstr "AlmaLinux OS Hakkında"
 
-#: www/templates/index.html:160
+#: www/templates/index.html:155
 msgid ""
 "AlmaLinux OS is an open-source, community-driven Linux operating system that "
 "fills the gap left by the discontinuation of the CentOS Linux stable "
@@ -664,7 +665,7 @@ msgstr ""
 "dolduran açık kaynaklı, topluluk odaklı bir Linux işletim sistemidir. "
 "AlmaLinux OS, RHEL&reg; topluluk tarafından yönlendirilir ve inşa edilir."
 
-#: www/templates/index.html:167
+#: www/templates/index.html:162
 msgid ""
 "As a standalone, completely free OS, AlmaLinux OS enjoys $1M in annual "
 "sponsorship from CloudLinux Inc and support from other sponsors. Ongoing "
@@ -674,7 +675,7 @@ msgstr ""
 "Inc'den yıllık 1 milyon dolarlık sponsorluk ve diğer sponsorlardan destek "
 "alıyor. Devam eden geliştirme çabaları topluluk üyeleri tarafından yönetilir."
 
-#: www/templates/index.html:174
+#: www/templates/index.html:169
 msgid ""
 "The AlmaLinux OS Foundation is a 501(c)(6) non-profit created for the "
 "benefit of the AlmaLinux OS community."
@@ -682,15 +683,15 @@ msgstr ""
 "AlmaLinux OS Vakfı, AlmaLinux OS topluluğunun yararına oluşturulmuş bir "
 "501(c)(6) kar amacı gütmeyen kuruluştur."
 
-#: www/templates/index.html:188
+#: www/templates/index.html:183
 msgid "Backed by"
 msgstr "Destekleyenler"
 
-#: www/templates/index.html:212
+#: www/templates/index.html:207
 msgid "Production-ready"
 msgstr "Üretime hazır"
 
-#: www/templates/index.html:214
+#: www/templates/index.html:209
 msgid ""
 "AlmaLinux OS is an enterprise-grade server OS and a stable Linux "
 "distribution with regular releases that come with a long support windows. "
@@ -700,11 +701,11 @@ msgstr ""
 "penceresiyle gelen düzenli sürümleri olan kararlı bir Linux dağıtımıdır. Her "
 "türlü kritik iş yükünü çalıştırmak için AlmaLinux OS'ye güvenebilirsiniz."
 
-#: www/templates/index.html:225
+#: www/templates/index.html:220
 msgid "Fully supported, always free"
 msgstr "Tam destek, daima ücretsiz"
 
-#: www/templates/index.html:227
+#: www/templates/index.html:222
 msgid ""
 "AlmaLinux OS Foundation members, sponsors and partners back the AlmaLinux OS "
 "with investments and long support commitments to ensure the distribution is "
@@ -714,11 +715,11 @@ msgstr ""
 "sınırlamalardan, ücretlerden ve masraflardan muaf olmasını sağlamak için "
 "AlmaLinux OS'yi yatırımlar ve uzun destek taahhütleriyle destekliyor."
 
-#: www/templates/index.html:238
+#: www/templates/index.html:233
 msgid "Effortless to switch to"
 msgstr "Geçiş yapmak için zahmetsiz"
 
-#: www/templates/index.html:240
+#: www/templates/index.html:235
 #, python-format
 msgid ""
 "Switching distributions is usually costly and time-consuming, but that’s not "
@@ -729,19 +730,19 @@ msgstr ""
 "ve diğer RHEL&reg; AlmaLinux OS'ye çatallar. Geçiş yapmak kolaydır - <a href="
 "\"%(migrate_link)s\">nasıl yapıldığını okuyun.</a>"
 
-#: www/templates/index.html:265
+#: www/templates/index.html:260
 msgid "Commercial Support"
 msgstr "Ticari Destek"
 
-#: www/templates/index.html:286
+#: www/templates/index.html:281
 msgid "Answers to Key Questions"
 msgstr "Sıkça Sorulan Sorular"
 
-#: www/templates/index.html:320
+#: www/templates/index.html:315
 msgid "Stay updated!"
 msgstr "Güncel kalın!"
 
-#: www/templates/index.html:323
+#: www/templates/index.html:318
 msgid ""
 "Subscribe to our newsletter and never miss out on the latest in AlmaLinux OS "
 "development!"
@@ -749,15 +750,15 @@ msgstr ""
 "Bültenimize abone olun ve AlmaLinux OS ile ilgili en son gelişmeleri "
 "kaçırmayın!"
 
-#: www/templates/index.html:337
+#: www/templates/index.html:332
 msgid "Your email"
 msgstr "E-posta adresiniz"
 
-#: www/templates/index.html:341
+#: www/templates/index.html:336
 msgid "Subscribe"
 msgstr "Abone ol"
 
-#: www/templates/index.html:348
+#: www/templates/index.html:343
 msgid ""
 "By filling this form you agree to be contacted by AlmaLinux OS Foundation "
 "regarding your request. You can unsubscribe at any time."
@@ -766,7 +767,7 @@ msgstr ""
 "sizinle iletişime geçilmesini kabul etmiş olursunuz. İstediğiniz zaman "
 "abonelikten çıkabilirsiniz."
 
-#: www/templates/index.html:363
+#: www/templates/index.html:358
 msgid "AlmaLinux OS in the Press"
 msgstr "Basında AlmaLinux OS"
 
@@ -814,6 +815,10 @@ msgstr "Posta listesine abone olunamadı, lütfen daha sonra tekrar deneyin"
 #: www/views.py:80
 msgid "You are already subscribed to this mailing list!"
 msgstr "Bu e-posta listesine zaten abonesiniz!"
+
+#~ msgid ""
+#~ "Founded by the team behind the <a href=\"%(link)s\">CloudLinux OS</a>."
+#~ msgstr "<a href=\"%(link)s\">CloudLinux OS</a> tarafından kurulmuştur."
 
 #~ msgid ""
 #~ "An open-source RHEL fork built by the team at CloudLinux, inspired by the "

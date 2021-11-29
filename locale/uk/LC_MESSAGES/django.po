@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-19 21:04+0000\n"
+"POT-Creation-Date: 2021-11-29 21:29+0000\n"
 "PO-Revision-Date: 2021-11-11 19:50+0000\n"
 "Last-Translator: Taras Panchenko <top39@ukr.net>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/almalinux/"
@@ -16,13 +16,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 "
-"? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > "
-"14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % "
-"100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
+"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
+"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
+"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 "X-Generator: Weblate 4.9.1-dev\n"
 
-#: commons/templatetags/motd.py:20
+#: commons/templatetags/motd.py:39
 msgid "Read more"
 msgstr "Детальніше"
 
@@ -97,7 +97,7 @@ msgstr "Угоди"
 msgid "Legal Notice"
 msgstr "Юридичне повідомлення"
 
-#: www/templates/_partial/footer.html:36 www/templates/index.html:352
+#: www/templates/_partial/footer.html:36 www/templates/index.html:347
 msgid "Privacy Policy"
 msgstr "Політика конфіденційності"
 
@@ -137,19 +137,23 @@ msgstr "Мігрувати з CentOS 8"
 msgid "Report Bugs"
 msgstr "Повідомити про помилки"
 
-#: www/templates/_partial/navbar.html:70
+#: www/templates/_partial/navbar.html:67
+msgid "Mailing Lists"
+msgstr ""
+
+#: www/templates/_partial/navbar.html:75
 msgid "Shop"
 msgstr "Крамниця"
 
-#: www/templates/_partial/navbar.html:78
+#: www/templates/_partial/navbar.html:83
 msgid "Language"
 msgstr "Мова"
 
-#: www/templates/_partial/navbar.html:102
+#: www/templates/_partial/navbar.html:107
 msgid "Translate"
 msgstr "Перекласти"
 
-#: www/templates/_partial/navbar.html:110 www/templates/index.html:52
+#: www/templates/_partial/navbar.html:115 www/templates/index.html:52
 msgid "Download"
 msgstr "Завантажити"
 
@@ -344,10 +348,10 @@ msgid ""
 "<a href=\"%(pes_link)s\">%(pes_link)s</a>."
 msgstr ""
 "Спочатку приєднуйтесь до нас на каналі <a href=\"%(chat_link)s\">#migration</"
-"a> у Mattermost. Ви можете знайти код цього інструменту на: <a href=\""
-"%(github_link)s\">%(github_link)s</a> і ще ви можете додавати/редагувати/"
-"взаємодіяти з метаданими пакунку за адресою<a href=\"%(pes_link)s\""
-">%(pes_link)s</a>."
+"a> у Mattermost. Ви можете знайти код цього інструменту на: <a href="
+"\"%(github_link)s\">%(github_link)s</a> і ще ви можете додавати/редагувати/"
+"взаємодіяти з метаданими пакунку за адресою<a href=\"%(pes_link)s\">"
+"%(pes_link)s</a>."
 
 #: www/templates/elevate/index.html:143
 msgid "Is this ready for production?"
@@ -381,7 +385,9 @@ msgstr ""
 "<li>Rocky Linux 8</li> </ul>"
 
 #: www/templates/elevate/index.html:177
-msgid "Will migration be \"in-place?\""
+#, fuzzy
+#| msgid "Will migration be \"in-place?\""
+msgid "Will migration be \"in-place\"?"
 msgstr "Міграція відбувається за сценарієм \"на місці\" (in-place)?"
 
 #: www/templates/elevate/index.html:182
@@ -593,13 +599,7 @@ msgstr "Зробити внесок"
 msgid "Migrate"
 msgstr "Мігрувати"
 
-#: www/templates/index.html:61
-#, python-format
-msgid "Founded by the team behind the <a href=\"%(link)s\">CloudLinux OS</a>."
-msgstr ""
-"Заснована командою, що стоїть за <a href=\"%(link)s\">ОС CloudLinux</a>."
-
-#: www/templates/index.html:78
+#: www/templates/index.html:73
 msgid ""
 "Our GitHub organization contains source code and tools used to build "
 "AlmaLinux OS and related infrastructure."
@@ -607,11 +607,11 @@ msgstr ""
 "Наша організація на GitHub містить вихідний код та інструменти, що "
 "використовуються для побудови ОС AlmaLinux та супутньої інфраструктури."
 
-#: www/templates/index.html:86
+#: www/templates/index.html:81
 msgid "Explore"
 msgstr "Дослідити"
 
-#: www/templates/index.html:98
+#: www/templates/index.html:93
 msgid ""
 "Join our vibrant Reddit community, interact with other AlmaLinux OS users, "
 "receive updates, find and provide help."
@@ -620,15 +620,15 @@ msgstr ""
 "користувачами ОС AlmaLinux, отримуйте оновлення, знаходьте та надавайте "
 "допомогу."
 
-#: www/templates/index.html:106
+#: www/templates/index.html:101
 msgid "Join"
 msgstr "Приєднатись"
 
-#: www/templates/index.html:115
+#: www/templates/index.html:110
 msgid "Community chat"
 msgstr "Чат спільноти"
 
-#: www/templates/index.html:118
+#: www/templates/index.html:113
 msgid ""
 "Join a real time discussion with other AlmaLinux OS community members, "
 "governance team and AlmaLinux OS developers."
@@ -636,15 +636,15 @@ msgstr ""
 "Приєднуйтесь до обговорення в режимі реального часу з іншими членами "
 "спільноти ОС AlmaLinux, командою керування та розробниками ОС AlmaLinux."
 
-#: www/templates/index.html:126
+#: www/templates/index.html:121
 msgid "Engage"
 msgstr "Залучитися"
 
-#: www/templates/index.html:134
+#: www/templates/index.html:129
 msgid "Community forums"
 msgstr "Форуми спільноти"
 
-#: www/templates/index.html:136
+#: www/templates/index.html:131
 msgid ""
 "Ask questions, get answers and contribute community support to others in "
 "AlmaLinux OS community and developers alike."
@@ -652,15 +652,15 @@ msgstr ""
 "Запитуйте, отримуйте відповіді та надавайте підтримку іншим у спільноті ОС "
 "AlmaLinux та розробникам."
 
-#: www/templates/index.html:144
+#: www/templates/index.html:139
 msgid "Discover"
 msgstr "Відкривайте"
 
-#: www/templates/index.html:158
+#: www/templates/index.html:153
 msgid "About AlmaLinux OS"
 msgstr "Про ОС AlmaLinux"
 
-#: www/templates/index.html:160
+#: www/templates/index.html:155
 msgid ""
 "AlmaLinux OS is an open-source, community-driven Linux operating system that "
 "fills the gap left by the discontinuation of the CentOS Linux stable "
@@ -672,7 +672,7 @@ msgstr ""
 "випуску CentOS Linux. ОС AlmaLinux - це 1:1 бінарно сумісний форк RHEL&reg; "
 "що керується та будується спільнотою."
 
-#: www/templates/index.html:167
+#: www/templates/index.html:162
 msgid ""
 "As a standalone, completely free OS, AlmaLinux OS enjoys $1M in annual "
 "sponsorship from CloudLinux Inc and support from other sponsors. Ongoing "
@@ -683,7 +683,7 @@ msgstr ""
 "та підтримкою інших спонсорів. Постійними зусиллями щодо розвитку керують "
 "члени спільноти."
 
-#: www/templates/index.html:174
+#: www/templates/index.html:169
 msgid ""
 "The AlmaLinux OS Foundation is a 501(c)(6) non-profit created for the "
 "benefit of the AlmaLinux OS community."
@@ -691,15 +691,15 @@ msgstr ""
 "AlmaLinux OS Foundation - це некомерційна організація 501(c)(6), створена на "
 "користь спільноти ОС AlmaLinux."
 
-#: www/templates/index.html:188
+#: www/templates/index.html:183
 msgid "Backed by"
 msgstr "Підтримано"
 
-#: www/templates/index.html:212
+#: www/templates/index.html:207
 msgid "Production-ready"
 msgstr "Готовий до виробництва"
 
-#: www/templates/index.html:214
+#: www/templates/index.html:209
 msgid ""
 "AlmaLinux OS is an enterprise-grade server OS and a stable Linux "
 "distribution with regular releases that come with a long support windows. "
@@ -710,11 +710,11 @@ msgstr ""
 "можете покладатися на ОС AlmaLinux для запуску будь-яких критичних "
 "навантажень."
 
-#: www/templates/index.html:225
+#: www/templates/index.html:220
 msgid "Fully supported, always free"
 msgstr "Повністю підтримується, завжди вільна"
 
-#: www/templates/index.html:227
+#: www/templates/index.html:222
 msgid ""
 "AlmaLinux OS Foundation members, sponsors and partners back the AlmaLinux OS "
 "with investments and long support commitments to ensure the distribution is "
@@ -724,11 +724,11 @@ msgstr ""
 "AlmaLinux інвестиціями та довгими зобов’язаннями щодо підтримки, щоб "
 "гарантувати розповсюдження без обмежень, зборів та стягнень."
 
-#: www/templates/index.html:238
+#: www/templates/index.html:233
 msgid "Effortless to switch to"
 msgstr "Легко перейти на"
 
-#: www/templates/index.html:240
+#: www/templates/index.html:235
 #, python-format
 msgid ""
 "Switching distributions is usually costly and time-consuming, but that’s not "
@@ -739,19 +739,19 @@ msgstr ""
 "переході від CentOS та інших RHEL&reg; форків до ОС AlmaLinux. Мігрувати "
 "просто - <a href=\"%(migrate_link)s\">прочитайте як.</a>"
 
-#: www/templates/index.html:265
+#: www/templates/index.html:260
 msgid "Commercial Support"
 msgstr "Комерційна підтримка"
 
-#: www/templates/index.html:286
+#: www/templates/index.html:281
 msgid "Answers to Key Questions"
 msgstr "Відповіді на ключові питання"
 
-#: www/templates/index.html:320
+#: www/templates/index.html:315
 msgid "Stay updated!"
 msgstr "Слідкуйте за оновленнями!"
 
-#: www/templates/index.html:323
+#: www/templates/index.html:318
 msgid ""
 "Subscribe to our newsletter and never miss out on the latest in AlmaLinux OS "
 "development!"
@@ -759,15 +759,15 @@ msgstr ""
 "Підпишіться на нашу розсилку новин і ніколи не пропускайте останні новини "
 "щодо розробки ОС AlmaLinux!"
 
-#: www/templates/index.html:337
+#: www/templates/index.html:332
 msgid "Your email"
 msgstr "Ваша електронна адреса"
 
-#: www/templates/index.html:341
+#: www/templates/index.html:336
 msgid "Subscribe"
 msgstr "Підписатися"
 
-#: www/templates/index.html:348
+#: www/templates/index.html:343
 msgid ""
 "By filling this form you agree to be contacted by AlmaLinux OS Foundation "
 "regarding your request. You can unsubscribe at any time."
@@ -775,7 +775,7 @@ msgstr ""
 "Заповнивши цю форму, ви погоджуєтесь що з вами зв’яжуться AlmaLinux OS "
 "Foundation щодо вашого запиту. Ви можете будь-коли скасувати підписку."
 
-#: www/templates/index.html:363
+#: www/templates/index.html:358
 msgid "AlmaLinux OS in the Press"
 msgstr "ОС AlmaLinux у пресі"
 
@@ -824,6 +824,11 @@ msgstr ""
 #: www/views.py:80
 msgid "You are already subscribed to this mailing list!"
 msgstr "Ви вже підписані на цей список розсилки!"
+
+#~ msgid ""
+#~ "Founded by the team behind the <a href=\"%(link)s\">CloudLinux OS</a>."
+#~ msgstr ""
+#~ "Заснована командою, що стоїть за <a href=\"%(link)s\">ОС CloudLinux</a>."
 
 #~ msgid ""
 #~ "An open-source RHEL fork built by the team at CloudLinux, inspired by the "

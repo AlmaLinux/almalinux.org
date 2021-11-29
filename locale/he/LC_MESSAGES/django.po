@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-19 21:04+0000\n"
+"POT-Creation-Date: 2021-11-29 21:29+0000\n"
 "PO-Revision-Date: 2021-10-22 11:43+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://hosted.weblate.org/projects/almalinux/"
-"website-backend/he/>\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/almalinux/website-"
+"backend/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 "n % 10 == 0) ? 2 : 3));\n"
 "X-Generator: Weblate 4.9-dev\n"
 
-#: commons/templatetags/motd.py:20
+#: commons/templatetags/motd.py:39
 msgid "Read more"
 msgstr "מידע נוסף"
 
@@ -92,7 +92,7 @@ msgstr "משפטי"
 msgid "Legal Notice"
 msgstr "הצהרה משפטית"
 
-#: www/templates/_partial/footer.html:36 www/templates/index.html:352
+#: www/templates/_partial/footer.html:36 www/templates/index.html:347
 msgid "Privacy Policy"
 msgstr "מדיניות פרטיות"
 
@@ -132,19 +132,23 @@ msgstr "הגירה מ־CentOS 8"
 msgid "Report Bugs"
 msgstr "דיווח על תקלות"
 
-#: www/templates/_partial/navbar.html:70
+#: www/templates/_partial/navbar.html:67
+msgid "Mailing Lists"
+msgstr ""
+
+#: www/templates/_partial/navbar.html:75
 msgid "Shop"
 msgstr "חנות"
 
-#: www/templates/_partial/navbar.html:78
+#: www/templates/_partial/navbar.html:83
 msgid "Language"
 msgstr "שפה"
 
-#: www/templates/_partial/navbar.html:102
+#: www/templates/_partial/navbar.html:107
 msgid "Translate"
 msgstr "תרגום"
 
-#: www/templates/_partial/navbar.html:110 www/templates/index.html:52
+#: www/templates/_partial/navbar.html:115 www/templates/index.html:52
 msgid "Download"
 msgstr "הורדות"
 
@@ -317,8 +321,8 @@ msgid ""
 "Leapp framework with a community created library and service for the "
 "migration metadata set required for it."
 msgstr ""
-"ELevate הוא מיזם שמיועד לספק יכולת להגר בין הפצות שונות מבוססות RHEL מ־7‎.x "
-"אל ‎8.x. הוא משלב את תשתית Leapp מבית Red Hat עם ספריה ושירות שנוצרו על ידי "
+"ELevate הוא מיזם שמיועד לספק יכולת להגר בין הפצות שונות מבוססות RHEL מ־7‎.x אל"
+" ‎8.x. הוא משלב את תשתית Leapp מבית Red Hat עם ספריה ושירות שנוצרו על ידי "
 "הקהילת לטובת סדרת נתוני על להגירה שנדרשים לה."
 
 #: www/templates/elevate/index.html:127
@@ -334,8 +338,8 @@ msgid ""
 "<a href=\"%(pes_link)s\">%(pes_link)s</a>."
 msgstr ""
 "תחילה אפשר להצטרף אלינו בערוץ <a href=\"%(chat_link)s\">‎#migration</a> ב־"
-"Mattermost. אפשר למצוא את הקוד של הכלי כאן: <a href=\"%(github_link)s\""
-">%(github_link)s</a> וניתן להוסיף/לערוך/לשחק עם נתוני העל של החבילות דרך <a "
+"Mattermost. אפשר למצוא את הקוד של הכלי כאן: <a href=\"%(github_link)s\">"
+"%(github_link)s</a> וניתן להוסיף/לערוך/לשחק עם נתוני העל של החבילות דרך <a "
 "href=\"%(pes_link)s\">%(pes_link)s</a>."
 
 #: www/templates/elevate/index.html:143
@@ -369,7 +373,9 @@ msgstr ""
 "<li>Rocky Linux 8</li> </ul>"
 
 #: www/templates/elevate/index.html:177
-msgid "Will migration be \"in-place?\""
+#, fuzzy
+#| msgid "Will migration be \"in-place?\""
+msgid "Will migration be \"in-place\"?"
 msgstr "האם ההגירה תתבצע בו במקום?"
 
 #: www/templates/elevate/index.html:182
@@ -572,12 +578,7 @@ msgstr "תרומה"
 msgid "Migrate"
 msgstr "הגירה"
 
-#: www/templates/index.html:61
-#, python-format
-msgid "Founded by the team behind the <a href=\"%(link)s\">CloudLinux OS</a>."
-msgstr "נוסד על ידי הצוות שמאחורי <a href=\"%(link)s\">CloudLinux OS</a>."
-
-#: www/templates/index.html:78
+#: www/templates/index.html:73
 msgid ""
 "Our GitHub organization contains source code and tools used to build "
 "AlmaLinux OS and related infrastructure."
@@ -585,11 +586,11 @@ msgstr ""
 "הארגון שלנו ב־GitHub מכיל את קוד המקור והכלים בהם נעשה שימוש לבנות את "
 "AlmaLinux OS ואת התשתית המתאימה."
 
-#: www/templates/index.html:86
+#: www/templates/index.html:81
 msgid "Explore"
 msgstr "סקירה"
 
-#: www/templates/index.html:98
+#: www/templates/index.html:93
 msgid ""
 "Join our vibrant Reddit community, interact with other AlmaLinux OS users, "
 "receive updates, find and provide help."
@@ -597,15 +598,15 @@ msgstr ""
 "ניתן להצטרף לקהילה התוססת שלנו ב־Reddit, ליצור קשר עם משתמשי AlmaLinux OS "
 "נוספים, לקבל עדכונים, למצוא ולקבל עזרה."
 
-#: www/templates/index.html:106
+#: www/templates/index.html:101
 msgid "Join"
 msgstr "הצטרפות"
 
-#: www/templates/index.html:115
+#: www/templates/index.html:110
 msgid "Community chat"
 msgstr "הצ׳אט הקהילתי"
 
-#: www/templates/index.html:118
+#: www/templates/index.html:113
 msgid ""
 "Join a real time discussion with other AlmaLinux OS community members, "
 "governance team and AlmaLinux OS developers."
@@ -613,29 +614,29 @@ msgstr ""
 "ניתן להצטרף לדיון בזמן אמת עם חברים נוספים בקהילת AlmaLinux OS, צוות ההיגוי "
 "ומפתח AlmaLinux OS."
 
-#: www/templates/index.html:126
+#: www/templates/index.html:121
 msgid "Engage"
 msgstr "להתערבב"
 
-#: www/templates/index.html:134
+#: www/templates/index.html:129
 msgid "Community forums"
 msgstr "פורומים קהילתיים"
 
-#: www/templates/index.html:136
+#: www/templates/index.html:131
 msgid ""
 "Ask questions, get answers and contribute community support to others in "
 "AlmaLinux OS community and developers alike."
 msgstr "לשאול שאלות, לקבל תשובות ולתמוך באחרים בקהילת AlmaLinux OS ובמפתחיה."
 
-#: www/templates/index.html:144
+#: www/templates/index.html:139
 msgid "Discover"
 msgstr "חשיפה"
 
-#: www/templates/index.html:158
+#: www/templates/index.html:153
 msgid "About AlmaLinux OS"
 msgstr "על AlmaLinux OS"
 
-#: www/templates/index.html:160
+#: www/templates/index.html:155
 msgid ""
 "AlmaLinux OS is an open-source, community-driven Linux operating system that "
 "fills the gap left by the discontinuation of the CentOS Linux stable "
@@ -646,7 +647,7 @@ msgstr ""
 "את החלל שנוצר עקב הפסקת הפיתוח של הגרסה היציבה של לינוקס CentOS. ‏AlmaLinux "
 "OS היא פיצול עם תאימות בינרית של 1:1 מול RHEL&reg;‎ בהנחיית והרכבת הקהילה."
 
-#: www/templates/index.html:167
+#: www/templates/index.html:162
 msgid ""
 "As a standalone, completely free OS, AlmaLinux OS enjoys $1M in annual "
 "sponsorship from CloudLinux Inc and support from other sponsors. Ongoing "
@@ -656,7 +657,7 @@ msgstr ""
 "מיליון דולר מ־CloudLinux ותמיכה ממממנים נוספים. מאמצי הפיתוח שמתרחשים כל העת "
 "נעשים בהובלת חברי הקהילה."
 
-#: www/templates/index.html:174
+#: www/templates/index.html:169
 msgid ""
 "The AlmaLinux OS Foundation is a 501(c)(6) non-profit created for the "
 "benefit of the AlmaLinux OS community."
@@ -664,15 +665,15 @@ msgstr ""
 "קרן AlmaLinux OS היא ארגון ללא מטרות רווח בכפוף ל־‎501(c)(6) שנוצר לטובת "
 "קהילת AlmaLinux OS."
 
-#: www/templates/index.html:188
+#: www/templates/index.html:183
 msgid "Backed by"
 msgstr "מגובה על ידי"
 
-#: www/templates/index.html:212
+#: www/templates/index.html:207
 msgid "Production-ready"
 msgstr "מוכנה לשרת לקוחות"
 
-#: www/templates/index.html:214
+#: www/templates/index.html:209
 msgid ""
 "AlmaLinux OS is an enterprise-grade server OS and a stable Linux "
 "distribution with regular releases that come with a long support windows. "
@@ -682,11 +683,11 @@ msgstr ""
 "עדכונים תקופתיים שמגיעים עם חלונות תמיכה ארוכי טווח. ניתן לסמוך על AlmaLinux "
 "OS שתישא כל עומס משמעותי עבורך."
 
-#: www/templates/index.html:225
+#: www/templates/index.html:220
 msgid "Fully supported, always free"
 msgstr "בתמיכה מלאה, תמיד בחינם"
 
-#: www/templates/index.html:227
+#: www/templates/index.html:222
 msgid ""
 "AlmaLinux OS Foundation members, sponsors and partners back the AlmaLinux OS "
 "with investments and long support commitments to ensure the distribution is "
@@ -695,11 +696,11 @@ msgstr ""
 "חברי, ממני ושותפי קרן AlmaLinux OS מגבים את AlmaLinux OS עם השקעות "
 "והתחייבויות לתמיכה לטווח ארוך כדי לוודא שההפצה חופשיה ממגבלות, עמלות ועלויות."
 
-#: www/templates/index.html:238
+#: www/templates/index.html:233
 msgid "Effortless to switch to"
 msgstr "מעבר שקוף"
 
-#: www/templates/index.html:240
+#: www/templates/index.html:235
 #, python-format
 msgid ""
 "Switching distributions is usually costly and time-consuming, but that’s not "
@@ -710,19 +711,19 @@ msgstr ""
 "CentOS ופיצולים אחרים מ־RHEL&reg;‎ אל AlmaLinux OS. המעבר הוא פשוט - <a href="
 "\"%(migrate_link)s\">כך עושים זאת</a>."
 
-#: www/templates/index.html:265
+#: www/templates/index.html:260
 msgid "Commercial Support"
 msgstr "תמיכה מסחרית"
 
-#: www/templates/index.html:286
+#: www/templates/index.html:281
 msgid "Answers to Key Questions"
 msgstr "תשובות לשאלות מפתח"
 
-#: www/templates/index.html:320
+#: www/templates/index.html:315
 msgid "Stay updated!"
 msgstr "להתעדכן!"
 
-#: www/templates/index.html:323
+#: www/templates/index.html:318
 msgid ""
 "Subscribe to our newsletter and never miss out on the latest in AlmaLinux OS "
 "development!"
@@ -730,15 +731,15 @@ msgstr ""
 "ניתן להירשם לרשימת הדיוור שלנו כדי לא לפספס את החדשות החמות ביותר על הפיתוח "
 "של AlmaLinux OS!"
 
-#: www/templates/index.html:337
+#: www/templates/index.html:332
 msgid "Your email"
 msgstr "כתובת הדוא״ל שלך"
 
-#: www/templates/index.html:341
+#: www/templates/index.html:336
 msgid "Subscribe"
 msgstr "רישום"
 
-#: www/templates/index.html:348
+#: www/templates/index.html:343
 msgid ""
 "By filling this form you agree to be contacted by AlmaLinux OS Foundation "
 "regarding your request. You can unsubscribe at any time."
@@ -746,7 +747,7 @@ msgstr ""
 "מילוי הטופס הזה מהווה את הסכמתך לכך שקרן AlmaLinux OS תפנה אליך בנוגע לבקשה "
 "שלך. ניתן לבטל את ההתקשרות בכל עת."
 
-#: www/templates/index.html:363
+#: www/templates/index.html:358
 msgid "AlmaLinux OS in the Press"
 msgstr "AlmaLinux OS בתקשורת"
 
@@ -794,6 +795,10 @@ msgstr "ההרשמה לרשימת הדיוור נכשלה, נא לנסות שו�
 #: www/views.py:80
 msgid "You are already subscribed to this mailing list!"
 msgstr "כבר נרשמת לרשימת דיוור זו!"
+
+#~ msgid ""
+#~ "Founded by the team behind the <a href=\"%(link)s\">CloudLinux OS</a>."
+#~ msgstr "נוסד על ידי הצוות שמאחורי <a href=\"%(link)s\">CloudLinux OS</a>."
 
 #~ msgid ""
 #~ "An open-source RHEL fork built by the team at CloudLinux, inspired by the "
