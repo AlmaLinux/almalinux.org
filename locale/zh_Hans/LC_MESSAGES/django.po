@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-29 21:29+0000\n"
-"PO-Revision-Date: 2021-11-29 10:26+0000\n"
+"PO-Revision-Date: 2021-12-01 15:53+0000\n"
 "Last-Translator: lomom楼猫 <snc@turbohk.cc>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "almalinux/website-backend/zh_Hans/>\n"
@@ -57,7 +57,7 @@ msgstr "缺陷追踪"
 
 #: www/templates/_partial/footer.html:16
 msgid "Repository"
-msgstr "存储库"
+msgstr "软件源"
 
 #: www/templates/_partial/footer.html:17
 msgid "Downloads"
@@ -133,7 +133,7 @@ msgstr "报告错误"
 
 #: www/templates/_partial/navbar.html:67
 msgid "Mailing Lists"
-msgstr ""
+msgstr "邮箱列表"
 
 #: www/templates/_partial/navbar.html:75
 msgid "Shop"
@@ -267,24 +267,23 @@ msgid ""
 "based distributions from 7.x to 8.x. Preserve your applications, your data, "
 "and your sanity. Run the most recent version of the OS and software you need."
 msgstr ""
-"它曾是不可能的---直到现在。轻松地在几个基于RHEL的主要发行版从7.x迁移到8.x。保"
-"护您的应用程序、数据和理智。 运行您需要的最新版本的操作系统和软件。"
+"它曾是不可能的……直到现在。轻松地在几个基于RHEL的主要发行版从7.x迁移到8."
+"x。保留您的应用程序、数据，同时保证系统的正常运作。运行您需要的最新版本的操作系统和软件。"
 
 #: www/templates/elevate/index.html:77
 msgid "Package Evolution Service"
 msgstr "包演化服务"
 
 #: www/templates/elevate/index.html:80
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "The beating heart of ELevate is the <a href=\"%(pes_link)s\">Package "
 "Evolution Service</a> (PES) which allows you to download, customize and even "
 "submit new data sets for packages. Users and maintainers can both utilize "
 "the PES to help make migrations smooth and easy."
 msgstr ""
-"提升的跳动核心是 <a href=\"%(pes_link)s\">包演化服务</a> (PES)，这运行你下"
-"载，自定义，甚至是为包提交新的数据设置。用户和维护者都可以使用PES来帮助和实现"
-"平滑和简易的迁移。"
+"EL易升的核心是<a href=\"%(pes_link)s\""
+">软件包进化服务</a>（PES），它允许你下载、定制甚至提交软件包的新数据集。用户和维护者都可以利用PES来帮助顺利和轻松地进行迁移。"
 
 #: www/templates/elevate/index.html:93
 msgid "Community-wide Project"
@@ -337,7 +336,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:143
 msgid "Is this ready for production?"
-msgstr "这是准备生产了吗？"
+msgstr "这个能够满足生产要求吗？"
 
 #: www/templates/elevate/index.html:148
 msgid ""
@@ -365,10 +364,8 @@ msgstr ""
 "8</li> </ul>"
 
 #: www/templates/elevate/index.html:177
-#, fuzzy
-#| msgid "Will migration be \"in-place?\""
 msgid "Will migration be \"in-place\"?"
-msgstr "迁移将是“到位？”"
+msgstr "迁移是就地迁移吗？"
 
 #: www/templates/elevate/index.html:182
 msgid "Yes. All your data, applications and settings will be kept."
@@ -376,7 +373,7 @@ msgstr "是的。你所有的数据，应用和设置都将会被保留。"
 
 #: www/templates/elevate/index.html:190
 msgid "Is this live or does it require a reboot?"
-msgstr "这是live或者它要求重启吗？"
+msgstr "迁移时需不需要重启？"
 
 #: www/templates/elevate/index.html:195
 msgid "Migrations will require your system to reboot twice."
@@ -410,9 +407,7 @@ msgstr "Red Hat提供了一个非免费授权的数据集。你们使用相同�
 msgid ""
 "No. We respect Red Hat’s work and our initial data set was provided by the "
 "AlmaLinux Foundation and contributions from Oracle."
-msgstr ""
-"不。我们尊重Red Hat的工作，并且我们初始的数据集是来自源于甲骨文的AlmaLinux基"
-"金会和贡献者提供的。"
+msgstr "并没有，我们尊重红帽公司的劳动成果。我们的初始数据集由AlmaLinux基金会提供，其中亦包含甲骨文公司的贡献。"
 
 #: www/templates/elevate/index.html:234
 msgid "What license is your metadata under?"
