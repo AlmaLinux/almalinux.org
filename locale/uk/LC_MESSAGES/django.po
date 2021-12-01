@@ -8,19 +8,19 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-29 21:29+0000\n"
-"PO-Revision-Date: 2021-11-11 19:50+0000\n"
-"Last-Translator: Taras Panchenko <top39@ukr.net>\n"
+"PO-Revision-Date: 2021-12-01 15:53+0000\n"
+"Last-Translator: Tymofii Lytvynenko <till.svit@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
-"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
-"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
-"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
-"X-Generator: Weblate 4.9.1-dev\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 "
+"? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > "
+"14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % "
+"100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"X-Generator: Weblate 4.10-dev\n"
 
 #: commons/templatetags/motd.py:39
 msgid "Read more"
@@ -139,7 +139,7 @@ msgstr "Повідомити про помилки"
 
 #: www/templates/_partial/navbar.html:67
 msgid "Mailing Lists"
-msgstr ""
+msgstr "Списки розсилання"
 
 #: www/templates/_partial/navbar.html:75
 msgid "Shop"
@@ -385,8 +385,6 @@ msgstr ""
 "<li>Rocky Linux 8</li> </ul>"
 
 #: www/templates/elevate/index.html:177
-#, fuzzy
-#| msgid "Will migration be \"in-place?\""
 msgid "Will migration be \"in-place\"?"
 msgstr "Міграція відбувається за сценарієм \"на місці\" (in-place)?"
 
@@ -589,7 +587,7 @@ msgstr ""
 "Назавжди вільний дистрибутив Linux з відкритим вихідним кодом, який належить "
 "і керується спільнотою, зосереджений на довгостроковій стабільності, "
 "забезпечуючи надійну платформу промислового рівня. ОС AlmaLinux є 1:1 "
-"двійково-сумісним із RHEL&reg; та pre-Stream CentOS."
+"двійково-сумісною із RHEL&reg; та pre-Stream CentOS."
 
 #: www/templates/index.html:47
 msgid "Contribute"
