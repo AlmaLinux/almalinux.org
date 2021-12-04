@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-29 21:29+0000\n"
-"PO-Revision-Date: 2021-11-17 14:42+0000\n"
+"PO-Revision-Date: 2021-12-04 14:50+0000\n"
 "Last-Translator: Daimar Stein <570cxat11@relay.firefox.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "almalinux/website-backend/pt_BR/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.9.1-dev\n"
+"X-Generator: Weblate 4.10-dev\n"
 
 #: commons/templatetags/motd.py:39
 msgid "Read more"
@@ -385,8 +385,6 @@ msgstr ""
 "Stream 8</li> <li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
 
 #: www/templates/elevate/index.html:177
-#, fuzzy
-#| msgid "Will migration be \"in-place?\""
 msgid "Will migration be \"in-place\"?"
 msgstr "Ao migrar, tudo estará \"em ordem\"?"
 
