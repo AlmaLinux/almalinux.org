@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-29 21:29+0000\n"
-"PO-Revision-Date: 2021-12-01 15:53+0000\n"
-"Last-Translator: Tymofii Lytvynenko <till.svit@gmail.com>\n"
+"PO-Revision-Date: 2021-12-06 11:50+0000\n"
+"Last-Translator: Taras Panchenko <top39@ukr.net>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/uk/>\n"
 "Language: uk\n"
@@ -59,7 +59,7 @@ msgstr "Вікіпедія"
 
 #: www/templates/_partial/footer.html:15
 msgid "Bugs"
-msgstr "Помилки"
+msgstr "Вади"
 
 #: www/templates/_partial/footer.html:16
 msgid "Repository"
@@ -135,7 +135,7 @@ msgstr "Мігрувати з CentOS 8"
 
 #: www/templates/_partial/navbar.html:52
 msgid "Report Bugs"
-msgstr "Повідомити про помилки"
+msgstr "Повідомити про вади"
 
 #: www/templates/_partial/navbar.html:67
 msgid "Mailing Lists"
@@ -636,7 +636,7 @@ msgstr ""
 
 #: www/templates/index.html:121
 msgid "Engage"
-msgstr "Залучитися"
+msgstr "Долучитися"
 
 #: www/templates/index.html:129
 msgid "Community forums"
@@ -652,7 +652,7 @@ msgstr ""
 
 #: www/templates/index.html:139
 msgid "Discover"
-msgstr "Відкривайте"
+msgstr "Відкрити"
 
 #: www/templates/index.html:153
 msgid "About AlmaLinux OS"
