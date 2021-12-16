@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-29 21:29+0000\n"
+"POT-Creation-Date: 2021-12-16 21:13+0000\n"
 "PO-Revision-Date: 2021-11-04 17:36+0000\n"
 "Last-Translator: G R <gradaellig@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/almalinux/"
@@ -75,43 +75,47 @@ msgstr "Iscrizione"
 msgid "ELevate"
 msgstr "ELevate"
 
-#: www/templates/_partial/footer.html:23
+#: www/templates/_partial/footer.html:20 www/templates/_partial/navbar.html:67
+msgid "Mailing Lists"
+msgstr ""
+
+#: www/templates/_partial/footer.html:24
 msgid "Community"
 msgstr "community"
+
+#: www/templates/_partial/footer.html:26
+msgid "Chat"
+msgstr "Chat"
 
 #: www/templates/_partial/footer.html:27
 msgid "Forums"
 msgstr "Forum"
 
-#: www/templates/_partial/footer.html:28
-msgid "Chat"
-msgstr "Chat"
-
-#: www/templates/_partial/footer.html:33
+#: www/templates/_partial/footer.html:36
 msgid "Legal"
 msgstr "Note Legali"
 
-#: www/templates/_partial/footer.html:35
+#: www/templates/_partial/footer.html:38
 msgid "Legal Notice"
 msgstr "Avviso legale"
 
-#: www/templates/_partial/footer.html:36 www/templates/index.html:347
+#: www/templates/_partial/footer.html:39 www/templates/index.html:347
 msgid "Privacy Policy"
 msgstr "Policy sulla Privacy"
 
-#: www/templates/_partial/footer.html:37
+#: www/templates/_partial/footer.html:40
 msgid "Terms of Service"
 msgstr "Termini e condizioni"
 
-#: www/templates/_partial/footer.html:40
+#: www/templates/_partial/footer.html:43
 msgid "Licensing Policy"
 msgstr "Politica di licenza"
 
-#: www/templates/_partial/footer.html:45
+#: www/templates/_partial/footer.html:48
 msgid "Trademark Usage Policy"
 msgstr "Politica di utilizzo del marchio"
 
-#: www/templates/_partial/footer.html:50
+#: www/templates/_partial/footer.html:53
 msgid "Foundation Bylaws"
 msgstr "Statuto della Fondazione"
 
@@ -134,10 +138,6 @@ msgstr "Trasferisci da CentOS 8"
 #: www/templates/_partial/navbar.html:52
 msgid "Report Bugs"
 msgstr "Segnala dei Bug"
-
-#: www/templates/_partial/navbar.html:67
-msgid "Mailing Lists"
-msgstr ""
 
 #: www/templates/_partial/navbar.html:75
 msgid "Shop"
@@ -663,10 +663,16 @@ msgid "About AlmaLinux OS"
 msgstr "Su AlmaLinuxOS"
 
 #: www/templates/index.html:155
+#, fuzzy
+#| msgid ""
+#| "AlmaLinux OS is an open-source, community-driven Linux operating system "
+#| "that fills the gap left by the discontinuation of the CentOS Linux stable "
+#| "release. AlmaLinux OS is a 1:1 binary compatible fork of RHEL&reg; guided "
+#| "and built by the community."
 msgid ""
 "AlmaLinux OS is an open-source, community-driven Linux operating system that "
 "fills the gap left by the discontinuation of the CentOS Linux stable "
-"release. AlmaLinux OS is a 1:1 binary compatible fork of RHEL&reg; guided "
+"release. AlmaLinux OS is a 1:1 binary compatible clone of RHEL&reg; guided "
 "and built by the community."
 msgstr ""
 "AlmaLinuxOS è una distribuzione di Linux Open Source e sempre gratuita, "
@@ -731,11 +737,16 @@ msgid "Effortless to switch to"
 msgstr "Facile a passare a"
 
 #: www/templates/index.html:235
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "Switching distributions is usually costly and time-consuming, but that’s "
+#| "not the case when switching from CentOS and other RHEL&reg; forks to "
+#| "AlmaLinux OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</"
+#| "a>"
 msgid ""
 "Switching distributions is usually costly and time-consuming, but that’s not "
-"the case when switching from CentOS and other RHEL&reg; forks to AlmaLinux "
-"OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</a>"
+"the case when switching from CentOS and other RHEL&reg; derivatives to "
+"AlmaLinux OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</a>"
 msgstr ""
 "Il passaggio alle distribuzioni di solito è costoso e richiede tempo, ma non "
 "è così quando si passa da CentOS e altri RHEL&reg; fork a AlmaLinuxOS. "

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-29 21:29+0000\n"
+"POT-Creation-Date: 2021-12-16 21:13+0000\n"
 "PO-Revision-Date: 2021-07-29 08:43+0000\n"
 "Last-Translator: gz83 <uioptt24@gmail.com>\n"
 "Language-Team: Latvian <https://hosted.weblate.org/projects/almalinux/"
@@ -71,45 +71,49 @@ msgstr ""
 msgid "ELevate"
 msgstr ""
 
-#: www/templates/_partial/footer.html:23
+#: www/templates/_partial/footer.html:20 www/templates/_partial/navbar.html:67
+msgid "Mailing Lists"
+msgstr ""
+
+#: www/templates/_partial/footer.html:24
 msgid "Community"
 msgstr "Kopiena"
+
+#: www/templates/_partial/footer.html:26
+msgid "Chat"
+msgstr "Čats"
 
 #: www/templates/_partial/footer.html:27
 msgid "Forums"
 msgstr "Forumi"
 
-#: www/templates/_partial/footer.html:28
-msgid "Chat"
-msgstr "Čats"
-
-#: www/templates/_partial/footer.html:33
+#: www/templates/_partial/footer.html:36
 msgid "Legal"
 msgstr "Noteikumi"
 
-#: www/templates/_partial/footer.html:35
+#: www/templates/_partial/footer.html:38
 msgid "Legal Notice"
 msgstr "Juridisks paziņojums"
 
-#: www/templates/_partial/footer.html:36 www/templates/index.html:347
+#: www/templates/_partial/footer.html:39 www/templates/index.html:347
 msgid "Privacy Policy"
 msgstr "Privātuma politika"
 
-#: www/templates/_partial/footer.html:37
+#: www/templates/_partial/footer.html:40
 msgid "Terms of Service"
 msgstr "Lietošanas noteikumi"
 
-#: www/templates/_partial/footer.html:40
+#: www/templates/_partial/footer.html:43
 msgid "Licensing Policy"
 msgstr "Licencēšanas politika"
 
-#: www/templates/_partial/footer.html:45
+#: www/templates/_partial/footer.html:48
 #, fuzzy
 #| msgid " Trademark Usage Policy"
 msgid "Trademark Usage Policy"
 msgstr " Preču zīmju lietošanas politika"
 
-#: www/templates/_partial/footer.html:50
+#: www/templates/_partial/footer.html:53
 msgid "Foundation Bylaws"
 msgstr ""
 
@@ -132,10 +136,6 @@ msgstr "Migrēt no CentOS 8"
 #: www/templates/_partial/navbar.html:52
 msgid "Report Bugs"
 msgstr "Kļūdu paziņojumi"
-
-#: www/templates/_partial/navbar.html:67
-msgid "Mailing Lists"
-msgstr ""
 
 #: www/templates/_partial/navbar.html:75
 msgid "Shop"
@@ -607,10 +607,16 @@ msgid "About AlmaLinux OS"
 msgstr "Par AlmaLinux OS"
 
 #: www/templates/index.html:155
+#, fuzzy
+#| msgid ""
+#| "AlmaLinux OS is an open-source, community-driven Linux operating system "
+#| "that fills the gap left by the discontinuation of the CentOS Linux stable "
+#| "release. AlmaLinux OS is a 1:1 binary compatible fork of RHEL&reg; guided "
+#| "and built by the community."
 msgid ""
 "AlmaLinux OS is an open-source, community-driven Linux operating system that "
 "fills the gap left by the discontinuation of the CentOS Linux stable "
-"release. AlmaLinux OS is a 1:1 binary compatible fork of RHEL&reg; guided "
+"release. AlmaLinux OS is a 1:1 binary compatible clone of RHEL&reg; guided "
 "and built by the community."
 msgstr ""
 "AlmaLinux OS ir atvērtā koda, kopienas virzīta Linux operētājsistēma, "
@@ -675,11 +681,16 @@ msgid "Effortless to switch to"
 msgstr "Vienkāršota migrācija"
 
 #: www/templates/index.html:235
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "Switching distributions is usually costly and time-consuming, but that’s "
+#| "not the case when switching from CentOS and other RHEL&reg; forks to "
+#| "AlmaLinux OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</"
+#| "a>"
 msgid ""
 "Switching distributions is usually costly and time-consuming, but that’s not "
-"the case when switching from CentOS and other RHEL&reg; forks to AlmaLinux "
-"OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</a>"
+"the case when switching from CentOS and other RHEL&reg; derivatives to "
+"AlmaLinux OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</a>"
 msgstr ""
 "Distribūcijas maiņa parasti ir dārga un laikietilpīga, taču ar AlmaLinux OS,"
 "pāreja no CentOS un citām RHEL&reg; bāzētām Linux distribūcijām ir "

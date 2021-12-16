@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-29 21:29+0000\n"
+"POT-Creation-Date: 2021-12-16 21:13+0000\n"
 "PO-Revision-Date: 2021-12-01 22:53+0000\n"
 "Last-Translator: Kyotaro Iijima <kyotaro.eyes@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/almalinux/"
@@ -73,43 +73,47 @@ msgstr "メンバーシップ"
 msgid "ELevate"
 msgstr "ELevate"
 
-#: www/templates/_partial/footer.html:23
+#: www/templates/_partial/footer.html:20 www/templates/_partial/navbar.html:67
+msgid "Mailing Lists"
+msgstr "メーリングリスト"
+
+#: www/templates/_partial/footer.html:24
 msgid "Community"
 msgstr "コミュニティ"
+
+#: www/templates/_partial/footer.html:26
+msgid "Chat"
+msgstr "チャット"
 
 #: www/templates/_partial/footer.html:27
 msgid "Forums"
 msgstr "フォーラム"
 
-#: www/templates/_partial/footer.html:28
-msgid "Chat"
-msgstr "チャット"
-
-#: www/templates/_partial/footer.html:33
+#: www/templates/_partial/footer.html:36
 msgid "Legal"
 msgstr "法的"
 
-#: www/templates/_partial/footer.html:35
+#: www/templates/_partial/footer.html:38
 msgid "Legal Notice"
 msgstr "法的なお知らせ"
 
-#: www/templates/_partial/footer.html:36 www/templates/index.html:347
+#: www/templates/_partial/footer.html:39 www/templates/index.html:347
 msgid "Privacy Policy"
 msgstr "プライバシーポリシー"
 
-#: www/templates/_partial/footer.html:37
+#: www/templates/_partial/footer.html:40
 msgid "Terms of Service"
 msgstr "利用規約"
 
-#: www/templates/_partial/footer.html:40
+#: www/templates/_partial/footer.html:43
 msgid "Licensing Policy"
 msgstr "ライセンス ポリシー"
 
-#: www/templates/_partial/footer.html:45
+#: www/templates/_partial/footer.html:48
 msgid "Trademark Usage Policy"
 msgstr "商標使用ポリシー"
 
-#: www/templates/_partial/footer.html:50
+#: www/templates/_partial/footer.html:53
 msgid "Foundation Bylaws"
 msgstr "財団法人の規約"
 
@@ -132,10 +136,6 @@ msgstr "CentOS 8 から移行する"
 #: www/templates/_partial/navbar.html:52
 msgid "Report Bugs"
 msgstr "バグを報告する"
-
-#: www/templates/_partial/navbar.html:67
-msgid "Mailing Lists"
-msgstr "メーリングリスト"
 
 #: www/templates/_partial/navbar.html:75
 msgid "Shop"
@@ -650,10 +650,16 @@ msgid "About AlmaLinux OS"
 msgstr "AlmaLinux OS について"
 
 #: www/templates/index.html:155
+#, fuzzy
+#| msgid ""
+#| "AlmaLinux OS is an open-source, community-driven Linux operating system "
+#| "that fills the gap left by the discontinuation of the CentOS Linux stable "
+#| "release. AlmaLinux OS is a 1:1 binary compatible fork of RHEL&reg; guided "
+#| "and built by the community."
 msgid ""
 "AlmaLinux OS is an open-source, community-driven Linux operating system that "
 "fills the gap left by the discontinuation of the CentOS Linux stable "
-"release. AlmaLinux OS is a 1:1 binary compatible fork of RHEL&reg; guided "
+"release. AlmaLinux OS is a 1:1 binary compatible clone of RHEL&reg; guided "
 "and built by the community."
 msgstr ""
 "AlmaLinux OS は、CentOS Linux 安定版リリースの廃止によって残された溝を埋める"
@@ -716,11 +722,16 @@ msgid "Effortless to switch to"
 msgstr "切り替えは簡単"
 
 #: www/templates/index.html:235
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "Switching distributions is usually costly and time-consuming, but that’s "
+#| "not the case when switching from CentOS and other RHEL&reg; forks to "
+#| "AlmaLinux OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</"
+#| "a>"
 msgid ""
 "Switching distributions is usually costly and time-consuming, but that’s not "
-"the case when switching from CentOS and other RHEL&reg; forks to AlmaLinux "
-"OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</a>"
+"the case when switching from CentOS and other RHEL&reg; derivatives to "
+"AlmaLinux OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</a>"
 msgstr ""
 "ディストリビューションの切り替えは通常、コストと時間がかかりますが、CentOS や"
 "他の RHEL&reg; のフォークから AlmaLinux OS へ切り替える場合は簡単です。切り替"
