@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 21:13+0000\n"
-"PO-Revision-Date: 2021-12-01 15:53+0000\n"
+"PO-Revision-Date: 2021-12-18 16:53+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.10-dev\n"
+"X-Generator: Weblate 4.10\n"
 
 #: commons/templatetags/motd.py:39
 msgid "Read more"
@@ -653,21 +653,16 @@ msgid "About AlmaLinux OS"
 msgstr "AlmaLinux OS Hakkında"
 
 #: www/templates/index.html:155
-#, fuzzy
-#| msgid ""
-#| "AlmaLinux OS is an open-source, community-driven Linux operating system "
-#| "that fills the gap left by the discontinuation of the CentOS Linux stable "
-#| "release. AlmaLinux OS is a 1:1 binary compatible fork of RHEL&reg; guided "
-#| "and built by the community."
 msgid ""
 "AlmaLinux OS is an open-source, community-driven Linux operating system that "
 "fills the gap left by the discontinuation of the CentOS Linux stable "
 "release. AlmaLinux OS is a 1:1 binary compatible clone of RHEL&reg; guided "
 "and built by the community."
 msgstr ""
-"AlmaLinux OS, CentOS Linux sabit sürümünün sona ermesinden kalan boşluğu "
+"AlmaLinux OS, CentOS Linux kararlı sürümünün sona ermesinden kalan boşluğu "
 "dolduran açık kaynaklı, topluluk odaklı bir Linux işletim sistemidir. "
-"AlmaLinux OS, RHEL&reg; topluluk tarafından yönlendirilir ve inşa edilir."
+"AlmaLinux OS, topluluk tarafından yönlendirilen ve oluşturulan bire bir "
+"uyumlu bir RHEL&reg; klonudur."
 
 #: www/templates/index.html:162
 msgid ""
@@ -724,20 +719,16 @@ msgid "Effortless to switch to"
 msgstr "Geçiş yapmak için zahmetsiz"
 
 #: www/templates/index.html:235
-#, fuzzy, python-format
-#| msgid ""
-#| "Switching distributions is usually costly and time-consuming, but that’s "
-#| "not the case when switching from CentOS and other RHEL&reg; forks to "
-#| "AlmaLinux OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</"
-#| "a>"
+#, python-format
 msgid ""
 "Switching distributions is usually costly and time-consuming, but that’s not "
 "the case when switching from CentOS and other RHEL&reg; derivatives to "
 "AlmaLinux OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</a>"
 msgstr ""
 "Dağıtımları değiştirmek genellikle maliyetli ve zaman alıcıdır, ancak CentOS "
-"ve diğer RHEL&reg; AlmaLinux OS'ye çatallar. Geçiş yapmak kolaydır - <a href="
-"\"%(migrate_link)s\">nasıl yapıldığını okuyun.</a>"
+"ve diğer RHEL&reg; türevlerinden AlmaLinux OS'ye geçerken durum böyle "
+"değildir. Geçiş yapmak kolaydır - <a href=\"%(migrate_link)s\">nasıl "
+"yapıldığını okuyun.</a>"
 
 #: www/templates/index.html:260
 msgid "Commercial Support"
