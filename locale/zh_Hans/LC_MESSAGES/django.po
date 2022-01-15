@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 21:13+0000\n"
-"PO-Revision-Date: 2021-12-01 15:53+0000\n"
-"Last-Translator: lomom楼猫 <snc@turbohk.cc>\n"
+"PO-Revision-Date: 2022-01-15 07:54+0000\n"
+"Last-Translator: gz83 <uioptt24@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "almalinux/website-backend/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.10-dev\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: commons/templatetags/motd.py:39
 msgid "Read more"
@@ -622,21 +622,14 @@ msgid "About AlmaLinux OS"
 msgstr "关于 AlmaLinux OS"
 
 #: www/templates/index.html:155
-#, fuzzy
-#| msgid ""
-#| "AlmaLinux OS is an open-source, community-driven Linux operating system "
-#| "that fills the gap left by the discontinuation of the CentOS Linux stable "
-#| "release. AlmaLinux OS is a 1:1 binary compatible fork of RHEL&reg; guided "
-#| "and built by the community."
 msgid ""
 "AlmaLinux OS is an open-source, community-driven Linux operating system that "
 "fills the gap left by the discontinuation of the CentOS Linux stable "
 "release. AlmaLinux OS is a 1:1 binary compatible clone of RHEL&reg; guided "
 "and built by the community."
 msgstr ""
-"AlmaLinux OS 是一个开源的、社区驱动的 Linux 操作系统，它填补了 CentOS Linux "
-"稳定版本停产留下的空白。 AlmaLinux OS 是 RHEL&reg; 的 1:1 二进制兼容分支。 由"
-"社区引导和建设。"
+"AlmaLinux OS 是一个开源、社区驱动的 Linux 操作系统，它填补了因 CentOS Linux 稳定版本停止而留下的空白。 "
+"AlmaLinux OS 是 RHEL&reg 的 1:1 二进制兼容克隆。 由社区引导和建设。"
 
 #: www/templates/index.html:162
 msgid ""
@@ -690,19 +683,14 @@ msgid "Effortless to switch to"
 msgstr "毫不费力地切换到"
 
 #: www/templates/index.html:235
-#, fuzzy, python-format
-#| msgid ""
-#| "Switching distributions is usually costly and time-consuming, but that’s "
-#| "not the case when switching from CentOS and other RHEL&reg; forks to "
-#| "AlmaLinux OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</"
-#| "a>"
+#, python-format
 msgid ""
 "Switching distributions is usually costly and time-consuming, but that’s not "
 "the case when switching from CentOS and other RHEL&reg; derivatives to "
 "AlmaLinux OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</a>"
 msgstr ""
-"切换发行版通常既昂贵又耗时，但从 CentOS 和其他 RHEL 切换时则并非如此。 分叉"
-"到 AlmaLinux OS。 切换很容易 - <a href=\"%(migrate_link)s\">阅读方法。</a>"
+"切换发行版通常既昂贵又耗时，但从 CentOS 和其他 RHEL&reg; 切换时并非如此。 AlmaLinux 操作系统的衍生产品。 切换很容易 - "
+"<a href=\"%(migrate_link)s\">了解如何。</a>"
 
 #: www/templates/index.html:260
 msgid "Commercial Support"

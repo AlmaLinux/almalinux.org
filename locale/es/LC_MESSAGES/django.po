@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 21:13+0000\n"
-"PO-Revision-Date: 2021-12-29 23:53+0000\n"
-"Last-Translator: Percy de la rosa <perseo1000011@gmail.com>\n"
+"PO-Revision-Date: 2022-01-15 07:54+0000\n"
+"Last-Translator: gz83 <uioptt24@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/es/>\n"
 "Language: es\n"
@@ -310,6 +310,10 @@ msgid ""
 "for the whole ecosystem, not just AlmaLinux. ELevate supports migrating to/"
 "from other distributions and is open for all to contribute to and enhance."
 msgstr ""
+"ELevate se desarrolla de forma independiente a la distribución y se crea "
+"como una herramienta para todo el ecosistema, no solo para AlmaLinux. "
+"ELevate admite la migración hacia/desde otras distribuciones y está abierto "
+"para que todos contribuyan y mejoren."
 
 #: www/templates/elevate/index.html:107
 msgid "FAQ"
@@ -326,6 +330,10 @@ msgid ""
 "Leapp framework with a community created library and service for the "
 "migration metadata set required for it."
 msgstr ""
+"ELevate es un proyecto destinado a brindar la capacidad de migrar entre "
+"versiones principales de distribuciones basadas en RHEL de 7.x a 8.x. "
+"Combina el marco Leapp de Red Hat con una biblioteca y un servicio creados "
+"por la comunidad para el conjunto de metadatos de migración necesarios."
 
 #: www/templates/elevate/index.html:127
 msgid "This looks awesome. How can I contribute?"
@@ -370,12 +378,13 @@ msgid ""
 "following OS: <ul> <li>AlmaLinux OS 8</li> <li>CentOS Stream 8</li> "
 "<li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
 msgstr ""
+"Actualmente, ELevate proporciona datos de Leapp para la migración de CentOS "
+"7 al siguiente sistema operativo: <ul> <li>AlmaLinux OS 8</li> <li>CentOS "
+"Stream 8</li> <li>Oracle Linux 8</li> <li >Rocky Linux 8</li> </ul>"
 
 #: www/templates/elevate/index.html:177
-#, fuzzy
-#| msgid "Will migration be \"in-place?\""
 msgid "Will migration be \"in-place\"?"
-msgstr "¿La migración se efectuará «in situ»?"
+msgstr "¿Será la migración \"en el lugar\"?"
 
 #: www/templates/elevate/index.html:182
 msgid "Yes. All your data, applications and settings will be kept."
@@ -415,12 +424,16 @@ msgid ""
 "Red Hat offers a data set which is non-freely licensed. Are you using this "
 "same data set?"
 msgstr ""
+"Red Hat ofrece un conjunto de datos que no tiene licencia libre. ¿Está "
+"utilizando este mismo conjunto de datos?"
 
 #: www/templates/elevate/index.html:225
 msgid ""
 "No. We respect Red Hat’s work and our initial data set was provided by the "
 "AlmaLinux Foundation and contributions from Oracle."
 msgstr ""
+"No. Respetamos el trabajo de Red Hat y nuestro conjunto de datos inicial fue "
+"proporcionado por la Fundación AlmaLinux y las contribuciones de Oracle."
 
 #: www/templates/elevate/index.html:234
 msgid "What license is your metadata under?"
@@ -432,7 +445,7 @@ msgstr "Hemos publicado los metadatos en virtud de la licencia Apache."
 
 #: www/templates/elevate/index.html:247
 msgid "Why are you supporting migration to other distributions?"
-msgstr ""
+msgstr "¿Por qué están apoyando la migración a otras distribuciones?"
 
 #: www/templates/elevate/index.html:252
 msgid ""
@@ -441,6 +454,10 @@ msgid ""
 "use and contribute to, no matter which distro you prefer. That’s the open "
 "source way."
 msgstr ""
+"El ecosistema CentOS es una comunidad muy grande y diversa. Hemos "
+"desarrollado este proyecto de buena fe con la esperanza de que todos en la "
+"comunidad puedan usarlo y contribuir, sin importar qué distribución "
+"prefieras. Esa es la forma de código abierto."
 
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7
@@ -642,22 +659,16 @@ msgid "About AlmaLinux OS"
 msgstr "Acerca de AlmaLinux OS"
 
 #: www/templates/index.html:155
-#, fuzzy
-#| msgid ""
-#| "AlmaLinux OS is an open-source, community-driven Linux operating system "
-#| "that fills the gap left by the discontinuation of the CentOS Linux stable "
-#| "release. AlmaLinux OS is a 1:1 binary compatible fork of RHEL&reg; guided "
-#| "and built by the community."
 msgid ""
 "AlmaLinux OS is an open-source, community-driven Linux operating system that "
 "fills the gap left by the discontinuation of the CentOS Linux stable "
 "release. AlmaLinux OS is a 1:1 binary compatible clone of RHEL&reg; guided "
 "and built by the community."
 msgstr ""
-"AlmaLinux OS es un sistema operativo Linux dirigido por la comunidad que "
-"llena el vacío dejado por la descontinuación de la publicación estable de "
-"CentOS Linux. AlmaLinux OS es una bifurcación compatible binariamente 1∶1 de "
-"RHEL&reg;, guiada y compilada por la comunidad."
+"AlmaLinux OS es un sistema operativo Linux de código abierto impulsado por "
+"la comunidad que llena el vacío dejado por la interrupción de la versión "
+"estable de CentOS Linux. AlmaLinux OS es un clon compatible binario 1:1 de "
+"RHEL&reg; guiada y construida por la comunidad."
 
 #: www/templates/index.html:162
 msgid ""
