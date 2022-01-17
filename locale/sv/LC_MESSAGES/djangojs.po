@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 21:13+0000\n"
-"PO-Revision-Date: 2021-10-25 19:43+0000\n"
-"Last-Translator: Luna Jernberg <droidbittin@gmail.com>\n"
+"PO-Revision-Date: 2022-01-17 13:54+0000\n"
+"Last-Translator: gz83 <uioptt24@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/almalinux/"
 "website-frontend/sv/>\n"
 "Language: sv\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: frontend/src/common/js/main.js:7
 msgid "Hello World"
@@ -25,16 +25,16 @@ msgstr "Hej världen"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:105
 msgid "is not a finite number"
-msgstr ""
+msgstr "är inte ett ändligt tal"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:172
 #: tmp/node_modules/webidl-conversions/lib/index.js:188
 msgid "is not a finite floating-point value"
-msgstr ""
+msgstr "är inte ett ändligt flyttalsvärde"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:198
 msgid "is outside the range of a single-precision floating-point value"
-msgstr ""
+msgstr "ligger utanför intervallet för ett flyttalsvärde med en precision"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:228
 msgid "is a symbol, which cannot be converted to a string"
@@ -58,4 +58,4 @@ msgstr "är inte en vy på ett ArrayBuffer-objekt"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:322
 msgid "is not an ArrayBuffer object or a view on one"
-msgstr ""
+msgstr "är inte ett ArrayBuffer-objekt eller en vy på ett"
