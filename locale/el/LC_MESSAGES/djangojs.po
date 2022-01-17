@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 21:13+0000\n"
-"PO-Revision-Date: 2021-12-16 23:14+0000\n"
-"Last-Translator: Clud7 <clud7000@gmail.com>\n"
+"PO-Revision-Date: 2022-01-17 13:54+0000\n"
+"Last-Translator: gz83 <uioptt24@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/almalinux/"
 "website-frontend/el/>\n"
 "Language: el\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.10\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: frontend/src/common/js/main.js:7
 msgid "Hello World"
@@ -25,20 +25,20 @@ msgstr "Γειά σας"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:105
 msgid "is not a finite number"
-msgstr ""
+msgstr "δεν είναι πεπερασμένος αριθμός"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:172
 #: tmp/node_modules/webidl-conversions/lib/index.js:188
 msgid "is not a finite floating-point value"
-msgstr ""
+msgstr "δεν είναι μια πεπερασμένη τιμή κινητής υποδιαστολής"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:198
 msgid "is outside the range of a single-precision floating-point value"
-msgstr ""
+msgstr "είναι εκτός του εύρους μιας τιμής κινητής υποδιαστολής απλής ακρίβειας"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:228
 msgid "is a symbol, which cannot be converted to a string"
-msgstr ""
+msgstr "είναι ένα σύμβολο, το οποίο δεν μπορεί να μετατραπεί σε συμβολοσειρά"
 
 #: tmp/node_modules/webidl-conversions/lib/index.js:239
 msgid "is not a valid ByteString"
