@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 21:13+0000\n"
-"PO-Revision-Date: 2021-12-16 23:14+0000\n"
-"Last-Translator: Clud7 <clud7000@gmail.com>\n"
+"PO-Revision-Date: 2022-01-28 17:53+0000\n"
+"Last-Translator: george kitsoukakis <norhorn@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/el/>\n"
 "Language: el\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.10\n"
+"X-Generator: Weblate 4.11-dev\n"
 
 #: commons/templatetags/motd.py:39
 msgid "Read more"
@@ -60,7 +60,7 @@ msgstr "Σφάλματα"
 
 #: www/templates/_partial/footer.html:16
 msgid "Repository"
-msgstr ""
+msgstr "Αποθετήριο"
 
 #: www/templates/_partial/footer.html:17
 msgid "Downloads"
@@ -68,7 +68,7 @@ msgstr "Λήψεις"
 
 #: www/templates/_partial/footer.html:18 www/templates/_partial/navbar.html:57
 msgid "Membership"
-msgstr ""
+msgstr "Μέλη"
 
 #: www/templates/_partial/footer.html:19 www/templates/_partial/navbar.html:62
 msgid "ELevate"
@@ -84,7 +84,7 @@ msgstr "Κοινότητα"
 
 #: www/templates/_partial/footer.html:26
 msgid "Chat"
-msgstr ""
+msgstr "Συνομιλία"
 
 #: www/templates/_partial/footer.html:27
 msgid "Forums"
@@ -124,7 +124,7 @@ msgstr "Λογότυπο AlmaLinux OS"
 
 #: www/templates/_partial/navbar.html:19
 msgid "Toggle navigation"
-msgstr ""
+msgstr "Εναλλαγή πλοήγησης"
 
 #: www/templates/_partial/navbar.html:26
 msgid "Blog"
@@ -198,19 +198,19 @@ msgstr ""
 
 #: www/templates/contribute/index.html:48
 msgid "Development"
-msgstr ""
+msgstr "Ανάπτυξη"
 
 #: www/templates/contribute/index.html:53
 msgid "Infrastructure"
-msgstr ""
+msgstr "Υποδομή"
 
 #: www/templates/contribute/index.html:58
 msgid "Security"
-msgstr ""
+msgstr "Ασφάλεια"
 
 #: www/templates/contribute/index.html:63
 msgid "Documentation"
-msgstr ""
+msgstr "Τεκμηρίωση"
 
 #: www/templates/contribute/index.html:68
 msgid "Marketing"
@@ -246,7 +246,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:37
 msgid "Get Started"
-msgstr ""
+msgstr "Ξεκινήστε"
 
 #: www/templates/elevate/index.html:42
 msgid "Discuss"
