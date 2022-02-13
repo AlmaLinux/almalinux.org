@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 Django = "~=3.2"
 mysqlclient = "~=2.0.3"
-Pillow = "~=8.2.0"
+Pillow = "~=9.0.0"
 python-dotenv = "~=0.17.1"
 PyYAML = "~=5.4.1"
 uWSGI = "~=2.0"
