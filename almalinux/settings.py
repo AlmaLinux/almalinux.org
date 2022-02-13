@@ -157,6 +157,7 @@ LANGUAGES = (
     ('pt', 'Português'),  # Portuguese (PT)
     ('pt-br', 'Português Brasileiro'),  # Portuguese (BR)
     ('ru', 'Русский'),
+    ('sv', 'Svenska'),
     ('tr', 'Türkçe'),
     ('uk', 'Украї́нська'),
     ('zh-hans', 'Chinese (Simplified)'),
