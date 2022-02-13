@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 21:13+0000\n"
-"PO-Revision-Date: 2021-10-22 11:43+0000\n"
-"Last-Translator: Matīss Treinis <matiss@hub256.com>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/almalinux/website-"
-"backend/de/>\n"
+"PO-Revision-Date: 2022-01-17 13:54+0000\n"
+"Last-Translator: gz83 <uioptt24@gmail.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/almalinux/"
+"website-backend/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: commons/templatetags/motd.py:39
 msgid "Read more"
@@ -43,9 +43,7 @@ msgstr "404 Nicht gefunden"
 
 #: www/templates/404.html:16
 msgid "Sorry, but the page you were trying to access could not be found."
-msgstr ""
-"Es tut uns leid, aber die Seite die Du versuchst zu öffnen kann nicht "
-"gefunden werden."
+msgstr "Leider konnte die Seite die Du besuchen möchtest nicht gefunden werden."
 
 #: www/templates/_partial/footer.html:11 www/templates/_partial/navbar.html:41
 msgid "Resources"
@@ -61,7 +59,7 @@ msgstr "Fehler"
 
 #: www/templates/_partial/footer.html:16
 msgid "Repository"
-msgstr "Repository"
+msgstr "Softwarequelle"
 
 #: www/templates/_partial/footer.html:17
 msgid "Downloads"
@@ -77,11 +75,11 @@ msgstr ""
 
 #: www/templates/_partial/footer.html:20 www/templates/_partial/navbar.html:67
 msgid "Mailing Lists"
-msgstr ""
+msgstr "E-Mail Verteiler"
 
 #: www/templates/_partial/footer.html:24
 msgid "Community"
-msgstr "Community"
+msgstr "Gemeinschaft"
 
 #: www/templates/_partial/footer.html:26
 msgid "Chat"
@@ -126,7 +124,7 @@ msgstr "AlmaLinux OS Logo"
 
 #: www/templates/_partial/navbar.html:19
 msgid "Toggle navigation"
-msgstr "Navigation umschalten"
+msgstr "Umschalten der Navigation"
 
 #: www/templates/_partial/navbar.html:26
 msgid "Blog"
@@ -134,7 +132,7 @@ msgstr "Blog"
 
 #: www/templates/_partial/navbar.html:47
 msgid "Migrate from CentOS 8"
-msgstr "Von CentOS 8 migrieren"
+msgstr "Umziehen von CentOS 8"
 
 #: www/templates/_partial/navbar.html:52
 msgid "Report Bugs"
@@ -174,7 +172,7 @@ msgstr "Nächste"
 
 #: www/templates/contribute/index.html:6
 msgid "AlmaLinux OS - Contribute"
-msgstr "AlmaLinux OS - Unterstützen"
+msgstr "Trage etwas zu AlmaLinux OS bei"
 
 #: www/templates/contribute/index.html:7 www/templates/contribute/index.html:22
 msgid "Contribute to AlmaLinux OS development"
@@ -600,22 +598,16 @@ msgid "About AlmaLinux OS"
 msgstr "Über AlmaLinux OS"
 
 #: www/templates/index.html:155
-#, fuzzy
-#| msgid ""
-#| "AlmaLinux OS is an open-source, community-driven Linux operating system "
-#| "that fills the gap left by the discontinuation of the CentOS Linux stable "
-#| "release. AlmaLinux OS is a 1:1 binary compatible fork of RHEL&reg; guided "
-#| "and built by the community."
 msgid ""
 "AlmaLinux OS is an open-source, community-driven Linux operating system that "
 "fills the gap left by the discontinuation of the CentOS Linux stable "
 "release. AlmaLinux OS is a 1:1 binary compatible clone of RHEL&reg; guided "
 "and built by the community."
 msgstr ""
-"AlmaLinux OS ist ein community-basiertes open-source Linux-Betriebssystem, "
-"dass die Lücke füllt, die die Einstellung vom CentOS Linux stable release "
-"hinterlassen hat. AlmaLinux OS ist ein 1:1 binary-kompatibeler Fork von "
-"RHEL, der von der Community gesteuert und gebaut wird."
+"AlmaLinux OS ist ein quelloffenes, von der Community betriebenes Linux-"
+"Betriebssystem, das die Lücke füllt, die durch die Einstellung der stabilen "
+"Version von CentOS Linux entstanden ist. AlmaLinux OS ist ein "
+"binärkompatibler 1:1-Klon von RHEL&reg; geführt und gebaut von der Community."
 
 #: www/templates/index.html:162
 msgid ""
@@ -633,6 +625,8 @@ msgid ""
 "The AlmaLinux OS Foundation is a 501(c)(6) non-profit created for the "
 "benefit of the AlmaLinux OS community."
 msgstr ""
+"Die AlmaLinux OS Foundation ist eine 501(c)(6) non-profit Organisation, die "
+"zum Wohle der AlmaLinux OS Community gegründet wurde."
 
 #: www/templates/index.html:183
 msgid "Backed by"
@@ -734,7 +728,7 @@ msgstr ""
 
 #: www/templates/subscribe_post.html:27
 msgid "Thank you!"
-msgstr ""
+msgstr "Vielen Dank!"
 
 #: www/templates/subscribe_post.html:30
 msgid ""
@@ -743,7 +737,7 @@ msgstr ""
 
 #: www/views.py:54
 msgid "Email address is not valid"
-msgstr ""
+msgstr "E-Mail Adresse nicht gültig"
 
 #: www/views.py:78
 msgid "Failed to subscribe to mailing list, please try again later"
@@ -751,7 +745,7 @@ msgstr ""
 
 #: www/views.py:80
 msgid "You are already subscribed to this mailing list!"
-msgstr ""
+msgstr "Sie haben sich bereits in die Mailingliste eingeschrieben."
 
 #~ msgid ""
 #~ "Founded by the team behind the <a href=\"%(link)s\">CloudLinux OS</a>."

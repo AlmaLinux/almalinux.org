@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 21:13+0000\n"
-"PO-Revision-Date: 2021-12-14 16:52+0000\n"
-"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/almalinux/website-"
-"backend/fr/>\n"
+"PO-Revision-Date: 2022-01-15 07:54+0000\n"
+"Last-Translator: gz83 <uioptt24@gmail.com>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/almalinux/"
+"website-backend/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.10-dev\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: commons/templatetags/motd.py:39
 msgid "Read more"
@@ -347,6 +347,11 @@ msgid ""
 "%(github_link)s</a> and you can add/edit/interact with package metadata at "
 "<a href=\"%(pes_link)s\">%(pes_link)s</a>."
 msgstr ""
+"Rejoignez-nous d'abord sur le canal <a href=\"%(chat_link)s\">#migration</a> "
+"Mattermost. Vous pouvez trouver le code de l'outil ici : <a href=\""
+"%(github_link)s\">%(github_link)s</a> et vous pouvez ajouter/modifier/"
+"interagir avec les métadonnées du package sur <a href=\"%(pes_link)s\""
+">%(pes_link)s</a>."
 
 #: www/templates/elevate/index.html:143
 msgid "Is this ready for production?"
@@ -380,10 +385,8 @@ msgstr ""
 "<li>Oracle Linux 8</li> <li>Rocky Linux 8<li></ul>"
 
 #: www/templates/elevate/index.html:177
-#, fuzzy
-#| msgid "Will migration be \"in-place?\""
 msgid "Will migration be \"in-place\"?"
-msgstr "La migration converse-t-elle toutes les données ?"
+msgstr "La migration sera-t-elle \" sur place \" ?"
 
 #: www/templates/elevate/index.html:182
 msgid "Yes. All your data, applications and settings will be kept."
@@ -507,6 +510,9 @@ msgid ""
 "the Board or by a committee appointed for this purpose, according to the "
 "Bylaws established by the Board."
 msgstr ""
+"Le bien-fondé de chaque candidature sera examiné au cas par cas par le "
+"Conseil ou par un comité nommé à cet effet, selon les règlements établis par "
+"le Conseil."
 
 #: www/templates/foundation/members/index.html:63
 msgid "Join AlmaLinux OS Foundation"
@@ -542,6 +548,9 @@ msgid ""
 "distribution. Only one member application per individual or entity will be "
 "accepted, irrespective of contributed number of mirrors."
 msgstr ""
+"Une personne ou une entité qui fournit au projet un ou plusieurs miroirs "
+"pour la distribution de contenu. Une seule candidature de membre par "
+"personne ou entité sera acceptée, quel que soit le nombre de miroirs fournis."
 
 #: www/templates/foundation/members/index.html:111
 msgid "Sponsor Member"
@@ -551,6 +560,8 @@ msgstr "Membre sponsor"
 msgid ""
 "Entities who wish to contribute funding for the project through sponsorship."
 msgstr ""
+"Les entités qui souhaitent contribuer au financement du projet par le biais "
+"d'un parrainage."
 
 #: www/templates/foundation/members/index.html:131
 msgid "Do you have membership related questions?"
@@ -657,22 +668,16 @@ msgid "About AlmaLinux OS"
 msgstr "À propos d'AlmaLinux OS"
 
 #: www/templates/index.html:155
-#, fuzzy
-#| msgid ""
-#| "AlmaLinux OS is an open-source, community-driven Linux operating system "
-#| "that fills the gap left by the discontinuation of the CentOS Linux stable "
-#| "release. AlmaLinux OS is a 1:1 binary compatible fork of RHEL&reg; guided "
-#| "and built by the community."
 msgid ""
 "AlmaLinux OS is an open-source, community-driven Linux operating system that "
 "fills the gap left by the discontinuation of the CentOS Linux stable "
 "release. AlmaLinux OS is a 1:1 binary compatible clone of RHEL&reg; guided "
 "and built by the community."
 msgstr ""
-"AlmaLinux OS est un système d'exploitation Linux open source, géré par la "
-"communauté, qui comble le vide laissé par l'arrêt de la version stable de "
-"CentOS Linux. AlmaLinux OS est un fork compatible binaire 1:1 de RHEL&reg ; "
-"guidé et développé par la communauté."
+"AlmaLinux OS est un système d'exploitation Linux open source et "
+"communautaire qui comble le vide laissé par l'arrêt de la version stable de "
+"CentOS Linux. AlmaLinux OS est un clone compatible binaire 1:1 de RHEL®. "
+"guidé et construit par la communauté."
 
 #: www/templates/index.html:162
 msgid ""
@@ -732,21 +737,16 @@ msgid "Effortless to switch to"
 msgstr "Passage sans effort"
 
 #: www/templates/index.html:235
-#, fuzzy, python-format
-#| msgid ""
-#| "Switching distributions is usually costly and time-consuming, but that’s "
-#| "not the case when switching from CentOS and other RHEL&reg; forks to "
-#| "AlmaLinux OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</"
-#| "a>"
+#, python-format
 msgid ""
 "Switching distributions is usually costly and time-consuming, but that’s not "
 "the case when switching from CentOS and other RHEL&reg; derivatives to "
 "AlmaLinux OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</a>"
 msgstr ""
 "Changer de distribution est généralement coûteux et prend du temps, mais ce "
-"n'est pas le cas lorsqu'on passe de CentOS et autres RHEL&reg; forks vers "
-"AlmaLinux OS. Le changement est facile - <a href=\"%(migrate_link)s"
-"\">découvrez comment.</a>"
+"n'est pas le cas lors du passage de CentOS et d'autres RHEL®. dérivés vers "
+"le système d'exploitation AlmaLinux. Le changement est facile - <a href=\""
+"%(migrate_link)s\">découvrez comment.</a>"
 
 #: www/templates/index.html:260
 msgid "Commercial Support"

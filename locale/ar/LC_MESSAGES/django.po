@@ -3,29 +3,30 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 21:13+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-01-05 21:52+0000\n"
+"Last-Translator: Bashir Hassan <bshbsh187@gmail.com>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/almalinux/"
+"website-backend/ar/>\n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: commons/templatetags/motd.py:39
 msgid "Read more"
-msgstr ""
+msgstr "اقرأ المزيد"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
-msgstr ""
+msgstr "٤٠٤ الصفحة غير موجودة - نظام الما لينكس"
 
 #: www/templates/404.html:6 www/templates/blog/index.html:10
 #: www/templates/blog/post.html:10 www/templates/index.html:8
@@ -34,90 +35,92 @@ msgid ""
 "An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution."
 msgstr ""
+"مفتوح المصدر ، مملوك ومحكوم من قبل المجتمع ، مجاني للابد وتوزيعة لينكس على "
+"مستوى المؤسسات."
 
 #: www/templates/404.html:13
 msgid "404 Not Found"
-msgstr ""
+msgstr "٤٠٤ غير موجود"
 
 #: www/templates/404.html:16
 msgid "Sorry, but the page you were trying to access could not be found."
-msgstr ""
+msgstr "اسف ، لكن الصفحة التي تريد الوصول اليها غير موجودة."
 
 #: www/templates/_partial/footer.html:11 www/templates/_partial/navbar.html:41
 msgid "Resources"
-msgstr ""
+msgstr "المصادر"
 
 #: www/templates/_partial/footer.html:13 www/templates/_partial/navbar.html:31
 msgid "Wiki"
-msgstr ""
+msgstr "موسوعة"
 
 #: www/templates/_partial/footer.html:15
 msgid "Bugs"
-msgstr ""
+msgstr "اخطاء"
 
 #: www/templates/_partial/footer.html:16
 msgid "Repository"
-msgstr ""
+msgstr "مخزن"
 
 #: www/templates/_partial/footer.html:17
 msgid "Downloads"
-msgstr ""
+msgstr "تحميلات"
 
 #: www/templates/_partial/footer.html:18 www/templates/_partial/navbar.html:57
 msgid "Membership"
-msgstr ""
+msgstr "عضوية"
 
 #: www/templates/_partial/footer.html:19 www/templates/_partial/navbar.html:62
 msgid "ELevate"
-msgstr ""
+msgstr "رفع"
 
 #: www/templates/_partial/footer.html:20 www/templates/_partial/navbar.html:67
 msgid "Mailing Lists"
-msgstr ""
+msgstr "قائمة البريد الالكتروني"
 
 #: www/templates/_partial/footer.html:24
 msgid "Community"
-msgstr ""
+msgstr "المجتمع"
 
 #: www/templates/_partial/footer.html:26
 msgid "Chat"
-msgstr ""
+msgstr "دردشة"
 
 #: www/templates/_partial/footer.html:27
 msgid "Forums"
-msgstr ""
+msgstr "منتديات"
 
 #: www/templates/_partial/footer.html:36
 msgid "Legal"
-msgstr ""
+msgstr "قانوني"
 
 #: www/templates/_partial/footer.html:38
 msgid "Legal Notice"
-msgstr ""
+msgstr "ملاحظة قانونية"
 
 #: www/templates/_partial/footer.html:39 www/templates/index.html:347
 msgid "Privacy Policy"
-msgstr ""
+msgstr "سياسة الخصوصية"
 
 #: www/templates/_partial/footer.html:40
 msgid "Terms of Service"
-msgstr ""
+msgstr "شروط الخدمة"
 
 #: www/templates/_partial/footer.html:43
 msgid "Licensing Policy"
-msgstr ""
+msgstr "سياسة الترخيص"
 
 #: www/templates/_partial/footer.html:48
 msgid "Trademark Usage Policy"
-msgstr ""
+msgstr "سياسة استخدام العلامات التجارية"
 
 #: www/templates/_partial/footer.html:53
 msgid "Foundation Bylaws"
-msgstr ""
+msgstr "لائحة المؤسسة"
 
 #: www/templates/_partial/navbar.html:10
 msgid "AlmaLinux OS logo"
-msgstr ""
+msgstr "شعار نظام الما لينكس"
 
 #: www/templates/_partial/navbar.html:19
 msgid "Toggle navigation"
@@ -125,55 +128,55 @@ msgstr ""
 
 #: www/templates/_partial/navbar.html:26
 msgid "Blog"
-msgstr ""
+msgstr "مدونة"
 
 #: www/templates/_partial/navbar.html:47
 msgid "Migrate from CentOS 8"
-msgstr ""
+msgstr "الانتقال من centOs 8"
 
 #: www/templates/_partial/navbar.html:52
 msgid "Report Bugs"
-msgstr ""
+msgstr "تبليغ عن ثغرة"
 
 #: www/templates/_partial/navbar.html:75
 msgid "Shop"
-msgstr ""
+msgstr "المتجر"
 
 #: www/templates/_partial/navbar.html:83
 msgid "Language"
-msgstr ""
+msgstr "لغة"
 
 #: www/templates/_partial/navbar.html:107
 msgid "Translate"
-msgstr ""
+msgstr "ترجمة"
 
 #: www/templates/_partial/navbar.html:115 www/templates/index.html:52
 msgid "Download"
-msgstr ""
+msgstr "تحميل"
 
 #: www/templates/blog/index.html:8
 msgid "AlmaLinux OS Blog"
-msgstr ""
+msgstr "مدونة نظام الما لينكس"
 
 #: www/templates/blog/index.html:51
 msgid "Continue reading"
-msgstr ""
+msgstr "متابعة القراءة"
 
 #: www/templates/blog/index.html:64 www/templates/blog/index.html:70
 msgid "Previous"
-msgstr ""
+msgstr "السابق"
 
 #: www/templates/blog/index.html:82 www/templates/blog/index.html:88
 msgid "Next"
-msgstr ""
+msgstr "التالي"
 
 #: www/templates/contribute/index.html:6
 msgid "AlmaLinux OS - Contribute"
-msgstr ""
+msgstr "نظام الما لينكس - مساهمة"
 
 #: www/templates/contribute/index.html:7 www/templates/contribute/index.html:22
 msgid "Contribute to AlmaLinux OS development"
-msgstr ""
+msgstr "ساهم في تطوير نظام الما لينكس"
 
 #: www/templates/contribute/index.html:26
 msgid ""
@@ -181,6 +184,9 @@ msgid ""
 "community chat. There are many ways to contribute to AlmaLinux OS - testing, "
 "quality assurance, documentation, and more."
 msgstr ""
+"نظام الما لينكس وتطوير البنية التحتية منظمة بآستخدام الدردشة الخاصة بمجتمعنا "
+". هناك عدة طرق للمساهمة في نظام الما لينكس - تجربة ، ضمان الجودة ، الوثائق ، "
+"والمزيد."
 
 #: www/templates/contribute/index.html:33
 #, python-format
@@ -188,42 +194,44 @@ msgid ""
 "<a href=\"%(intro_link)s\">Introduce yourself</a> or join one of the topical "
 "channels below to find out more!"
 msgstr ""
+"<a href=\"%(intro_link)s\">عرف نفسك</a> او انظم لواحدة من القنوات الموضوعية "
+"التالية لاكتشاف المزيد!"
 
 #: www/templates/contribute/index.html:43
 msgid "General chat"
-msgstr ""
+msgstr "الدردشة العامة"
 
 #: www/templates/contribute/index.html:48
 msgid "Development"
-msgstr ""
+msgstr "التطوير"
 
 #: www/templates/contribute/index.html:53
 msgid "Infrastructure"
-msgstr ""
+msgstr "البنية التحتية"
 
 #: www/templates/contribute/index.html:58
 msgid "Security"
-msgstr ""
+msgstr "الامان"
 
 #: www/templates/contribute/index.html:63
 msgid "Documentation"
-msgstr ""
+msgstr "الوثائق"
 
 #: www/templates/contribute/index.html:68
 msgid "Marketing"
-msgstr ""
+msgstr "التسويق"
 
 #: www/templates/contribute/index.html:73
 msgid "Web presence"
-msgstr ""
+msgstr "حضور الويب"
 
 #: www/templates/contribute/index.html:82
 msgid "Join AlmaLinux OS community chat"
-msgstr ""
+msgstr "انظم الى دردشة نظام الما لينكس العامة"
 
 #: www/templates/elevate/index.html:6
 msgid "AlmaLinux OS - ELevate Your Distribution"
-msgstr ""
+msgstr "نظام الما لينكس - رَقي توزيعتك"
 
 #: www/templates/elevate/index.html:8
 msgid ""
@@ -233,7 +241,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:23
 msgid "ELevate Your Distribution"
-msgstr ""
+msgstr "رَقي توزيعتك"
 
 #: www/templates/elevate/index.html:27
 msgid ""
@@ -243,19 +251,19 @@ msgstr ""
 
 #: www/templates/elevate/index.html:37
 msgid "Get Started"
-msgstr ""
+msgstr "ابدا"
 
 #: www/templates/elevate/index.html:42
 msgid "Discuss"
-msgstr ""
+msgstr "ناقش"
 
 #: www/templates/elevate/index.html:58
 msgid "About"
-msgstr ""
+msgstr "عن"
 
 #: www/templates/elevate/index.html:63
 msgid "Major Version Upgrades"
-msgstr ""
+msgstr "تحديث النسخة الرئيسية"
 
 #: www/templates/elevate/index.html:66
 msgid ""
@@ -266,7 +274,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:77
 msgid "Package Evolution Service"
-msgstr ""
+msgstr "خدمة تطور الحزمة"
 
 #: www/templates/elevate/index.html:80
 #, python-format
@@ -279,7 +287,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:93
 msgid "Community-wide Project"
-msgstr ""
+msgstr "مشروع على مستوى المجتمع"
 
 #: www/templates/elevate/index.html:96
 msgid ""
@@ -290,11 +298,11 @@ msgstr ""
 
 #: www/templates/elevate/index.html:107
 msgid "FAQ"
-msgstr ""
+msgstr "الاسئلة المتكررة"
 
 #: www/templates/elevate/index.html:112
 msgid "What is ELevate?"
-msgstr ""
+msgstr "ما هو الارتقاء؟"
 
 #: www/templates/elevate/index.html:117
 msgid ""
@@ -306,7 +314,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:127
 msgid "This looks awesome. How can I contribute?"
-msgstr ""
+msgstr "يبدو رائعا . كيف يمكنني المساهمة؟"
 
 #: www/templates/elevate/index.html:132
 #, python-format
@@ -319,7 +327,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:143
 msgid "Is this ready for production?"
-msgstr ""
+msgstr "هل هو جاهز لمرحلة الانتاج؟"
 
 #: www/templates/elevate/index.html:148
 msgid ""
@@ -328,10 +336,13 @@ msgid ""
 "surprises, we highly recommend that you test migrations scenarios in a VM or "
 "sandbox before running a migration in production."
 msgstr ""
+"YMMV .كل بيئة مختلفة وفريدة من نوعها بناءً على التطبيقات والتكوينات. نظرًا "
+"لأن هذا لا يزال قيد التطوير ، لتجنب أي مفاجآت ، نوصي بشدة باختبار سيناريوهات "
+"الترحيل في جهاز افتراضي أو وضع الحماية قبل تشغيل الترحيل في الإنتاج."
 
 #: www/templates/elevate/index.html:158
 msgid "What operating systems does ELevate support?"
-msgstr ""
+msgstr "ما هي الانظمة التي تدعم الارتقاء؟"
 
 #: www/templates/elevate/index.html:163
 msgid ""
@@ -342,23 +353,23 @@ msgstr ""
 
 #: www/templates/elevate/index.html:177
 msgid "Will migration be \"in-place\"?"
-msgstr ""
+msgstr "هل سيكون الانتقال \"في مكانها\"؟"
 
 #: www/templates/elevate/index.html:182
 msgid "Yes. All your data, applications and settings will be kept."
-msgstr ""
+msgstr "نعم. سيتم الاحتفاظ بجميع البيانات والتطبيقات والإعدادات الخاصة بك."
 
 #: www/templates/elevate/index.html:190
 msgid "Is this live or does it require a reboot?"
-msgstr ""
+msgstr "هل هذا مباشر أم يتطلب إعادة تشغيل؟"
 
 #: www/templates/elevate/index.html:195
 msgid "Migrations will require your system to reboot twice."
-msgstr ""
+msgstr "سوف تتطلب عمليات الترحيل إعادة تشغيل النظام مرتين."
 
 #: www/templates/elevate/index.html:203
 msgid "What does the Package Evolution Service do?"
-msgstr ""
+msgstr "ماذا تفعل خدمة تطوير الحزمة؟"
 
 #: www/templates/elevate/index.html:208
 msgid ""

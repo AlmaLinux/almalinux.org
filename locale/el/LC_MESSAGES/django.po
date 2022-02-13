@@ -3,28 +3,29 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 21:13+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-01-28 17:53+0000\n"
+"Last-Translator: george kitsoukakis <norhorn@gmail.com>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/almalinux/"
+"website-backend/el/>\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.11-dev\n"
 
 #: commons/templatetags/motd.py:39
 msgid "Read more"
-msgstr ""
+msgstr "Διαβάστε περισσότερα"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
-msgstr ""
+msgstr "404 Δεν Βρέθηκε - AlmaLinux OS"
 
 #: www/templates/404.html:6 www/templates/blog/index.html:10
 #: www/templates/blog/post.html:10 www/templates/index.html:8
@@ -33,38 +34,41 @@ msgid ""
 "An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution."
 msgstr ""
+"Μια Open Source (ανοιχτού κώδικα) και για πάντα δωρεάν εταιρική διανομή "
+"Linux που ανήκει και διοικείται από την κοινότητα."
 
 #: www/templates/404.html:13
 msgid "404 Not Found"
-msgstr ""
+msgstr "404 Δεν Βρέθηκε"
 
 #: www/templates/404.html:16
 msgid "Sorry, but the page you were trying to access could not be found."
 msgstr ""
+"Λυπούμαστε, αλλά η σελίδα στην οποία προσπαθούσατε να προβάλετε δεν βρέθηκε."
 
 #: www/templates/_partial/footer.html:11 www/templates/_partial/navbar.html:41
 msgid "Resources"
-msgstr ""
+msgstr "Πόροι"
 
 #: www/templates/_partial/footer.html:13 www/templates/_partial/navbar.html:31
 msgid "Wiki"
-msgstr ""
+msgstr "Wiki"
 
 #: www/templates/_partial/footer.html:15
 msgid "Bugs"
-msgstr ""
+msgstr "Σφάλματα"
 
 #: www/templates/_partial/footer.html:16
 msgid "Repository"
-msgstr ""
+msgstr "Αποθετήριο"
 
 #: www/templates/_partial/footer.html:17
 msgid "Downloads"
-msgstr ""
+msgstr "Λήψεις"
 
 #: www/templates/_partial/footer.html:18 www/templates/_partial/navbar.html:57
 msgid "Membership"
-msgstr ""
+msgstr "Μέλη"
 
 #: www/templates/_partial/footer.html:19 www/templates/_partial/navbar.html:62
 msgid "ELevate"
@@ -72,107 +76,107 @@ msgstr ""
 
 #: www/templates/_partial/footer.html:20 www/templates/_partial/navbar.html:67
 msgid "Mailing Lists"
-msgstr ""
+msgstr "Λίστες αλληλογραφίας"
 
 #: www/templates/_partial/footer.html:24
 msgid "Community"
-msgstr ""
+msgstr "Κοινότητα"
 
 #: www/templates/_partial/footer.html:26
 msgid "Chat"
-msgstr ""
+msgstr "Συνομιλία"
 
 #: www/templates/_partial/footer.html:27
 msgid "Forums"
-msgstr ""
+msgstr "Φόρουμ"
 
 #: www/templates/_partial/footer.html:36
 msgid "Legal"
-msgstr ""
+msgstr "Νόμιμο"
 
 #: www/templates/_partial/footer.html:38
 msgid "Legal Notice"
-msgstr ""
+msgstr "Νομική ειδοποίηση"
 
 #: www/templates/_partial/footer.html:39 www/templates/index.html:347
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Πολιτική Απορρήτου"
 
 #: www/templates/_partial/footer.html:40
 msgid "Terms of Service"
-msgstr ""
+msgstr "Όροι χρήσης"
 
 #: www/templates/_partial/footer.html:43
 msgid "Licensing Policy"
-msgstr ""
+msgstr "Πολιτική Αδειοδότησης"
 
 #: www/templates/_partial/footer.html:48
 msgid "Trademark Usage Policy"
-msgstr ""
+msgstr "Πολιτική Χρήσης Εμπορικών Σημάτων"
 
 #: www/templates/_partial/footer.html:53
 msgid "Foundation Bylaws"
-msgstr ""
+msgstr "Καταστατικό Ιδρύματος"
 
 #: www/templates/_partial/navbar.html:10
 msgid "AlmaLinux OS logo"
-msgstr ""
+msgstr "Λογότυπο AlmaLinux OS"
 
 #: www/templates/_partial/navbar.html:19
 msgid "Toggle navigation"
-msgstr ""
+msgstr "Εναλλαγή πλοήγησης"
 
 #: www/templates/_partial/navbar.html:26
 msgid "Blog"
-msgstr ""
+msgstr "Ιστολόγιο"
 
 #: www/templates/_partial/navbar.html:47
 msgid "Migrate from CentOS 8"
-msgstr ""
+msgstr "Μετεγκατάσταση από CentOS 8"
 
 #: www/templates/_partial/navbar.html:52
 msgid "Report Bugs"
-msgstr ""
+msgstr "Αναφορά Σφαλμάτων"
 
 #: www/templates/_partial/navbar.html:75
 msgid "Shop"
-msgstr ""
+msgstr "Κατάστημα"
 
 #: www/templates/_partial/navbar.html:83
 msgid "Language"
-msgstr ""
+msgstr "Γλώσσα"
 
 #: www/templates/_partial/navbar.html:107
 msgid "Translate"
-msgstr ""
+msgstr "Μετάφραση"
 
 #: www/templates/_partial/navbar.html:115 www/templates/index.html:52
 msgid "Download"
-msgstr ""
+msgstr "Λήψη"
 
 #: www/templates/blog/index.html:8
 msgid "AlmaLinux OS Blog"
-msgstr ""
+msgstr "Ιστολόγιο AlmaLinux OS"
 
 #: www/templates/blog/index.html:51
 msgid "Continue reading"
-msgstr ""
+msgstr "Συνεχίστε το διάβασμα"
 
 #: www/templates/blog/index.html:64 www/templates/blog/index.html:70
 msgid "Previous"
-msgstr ""
+msgstr "Προηγούμενο"
 
 #: www/templates/blog/index.html:82 www/templates/blog/index.html:88
 msgid "Next"
-msgstr ""
+msgstr "Επόμενο"
 
 #: www/templates/contribute/index.html:6
 msgid "AlmaLinux OS - Contribute"
-msgstr ""
+msgstr "AlmaLinux OS - Συνεισφέρουν"
 
 #: www/templates/contribute/index.html:7 www/templates/contribute/index.html:22
 msgid "Contribute to AlmaLinux OS development"
-msgstr ""
+msgstr "Συνεισφέρετε στην ανάπτυξη του AlmaLinux OS"
 
 #: www/templates/contribute/index.html:26
 msgid ""
@@ -194,19 +198,19 @@ msgstr ""
 
 #: www/templates/contribute/index.html:48
 msgid "Development"
-msgstr ""
+msgstr "Ανάπτυξη"
 
 #: www/templates/contribute/index.html:53
 msgid "Infrastructure"
-msgstr ""
+msgstr "Υποδομή"
 
 #: www/templates/contribute/index.html:58
 msgid "Security"
-msgstr ""
+msgstr "Ασφάλεια"
 
 #: www/templates/contribute/index.html:63
 msgid "Documentation"
-msgstr ""
+msgstr "Τεκμηρίωση"
 
 #: www/templates/contribute/index.html:68
 msgid "Marketing"
@@ -242,7 +246,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:37
 msgid "Get Started"
-msgstr ""
+msgstr "Ξεκινήστε"
 
 #: www/templates/elevate/index.html:42
 msgid "Discuss"

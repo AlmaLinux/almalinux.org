@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 21:13+0000\n"
-"PO-Revision-Date: 2021-10-22 11:43+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"PO-Revision-Date: 2022-01-15 07:54+0000\n"
+"Last-Translator: gz83 <uioptt24@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/es/>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: commons/templatetags/motd.py:39
 msgid "Read more"
@@ -76,7 +76,7 @@ msgstr "ELevate"
 
 #: www/templates/_partial/footer.html:20 www/templates/_partial/navbar.html:67
 msgid "Mailing Lists"
-msgstr ""
+msgstr "Listas de Correo"
 
 #: www/templates/_partial/footer.html:24
 msgid "Community"
@@ -277,6 +277,10 @@ msgid ""
 "based distributions from 7.x to 8.x. Preserve your applications, your data, "
 "and your sanity. Run the most recent version of the OS and software you need."
 msgstr ""
+"No era posible -- hasta ahora. Migra fácilmente entre versiones 7.x a 8.x de "
+"distribuciones basadas en RHEL. Conserva tus aplicaciones, tu información, y "
+"tu salud mental. Corre la versión más reciente del SO y el software que "
+"necesitas."
 
 #: www/templates/elevate/index.html:77
 msgid "Package Evolution Service"
@@ -306,6 +310,10 @@ msgid ""
 "for the whole ecosystem, not just AlmaLinux. ELevate supports migrating to/"
 "from other distributions and is open for all to contribute to and enhance."
 msgstr ""
+"ELevate se desarrolla de forma independiente a la distribución y se crea "
+"como una herramienta para todo el ecosistema, no solo para AlmaLinux. "
+"ELevate admite la migración hacia/desde otras distribuciones y está abierto "
+"para que todos contribuyan y mejoren."
 
 #: www/templates/elevate/index.html:107
 msgid "FAQ"
@@ -322,6 +330,10 @@ msgid ""
 "Leapp framework with a community created library and service for the "
 "migration metadata set required for it."
 msgstr ""
+"ELevate es un proyecto destinado a brindar la capacidad de migrar entre "
+"versiones principales de distribuciones basadas en RHEL de 7.x a 8.x. "
+"Combina el marco Leapp de Red Hat con una biblioteca y un servicio creados "
+"por la comunidad para el conjunto de metadatos de migración necesarios."
 
 #: www/templates/elevate/index.html:127
 msgid "This looks awesome. How can I contribute?"
@@ -335,10 +347,14 @@ msgid ""
 "%(github_link)s</a> and you can add/edit/interact with package metadata at "
 "<a href=\"%(pes_link)s\">%(pes_link)s</a>."
 msgstr ""
+"Primero únetenos en <a href=\"%(chat_link)s\">#migración</a> el canal de "
+"Mattermost. Puedes encontrar el código aquí: <a href=\"%(github_link)s\""
+">%(github_link)s</a> y puedes agregar/editar/interactuar con la metadata en "
+"<a href=\"%(pes_link)s\">%(pes_link)s</a>."
 
 #: www/templates/elevate/index.html:143
 msgid "Is this ready for production?"
-msgstr ""
+msgstr "¿Está esto listo para la producción?"
 
 #: www/templates/elevate/index.html:148
 msgid ""
@@ -347,6 +363,10 @@ msgid ""
 "surprises, we highly recommend that you test migrations scenarios in a VM or "
 "sandbox before running a migration in production."
 msgstr ""
+"YMMV.  Cada ambiente es diferente y único basado en aplicaciones y "
+"configuraciones. Como esto aún se encuentra bajo desarrollo, para evitar "
+"cualquier inconveniente, recomendamos altamente que pruebes los escenarios "
+"de migración en una VM o sandbox antes de intentarlo en producción."
 
 #: www/templates/elevate/index.html:158
 msgid "What operating systems does ELevate support?"
@@ -358,12 +378,13 @@ msgid ""
 "following OS: <ul> <li>AlmaLinux OS 8</li> <li>CentOS Stream 8</li> "
 "<li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
 msgstr ""
+"Actualmente, ELevate proporciona datos de Leapp para la migración de CentOS "
+"7 al siguiente sistema operativo: <ul> <li>AlmaLinux OS 8</li> <li>CentOS "
+"Stream 8</li> <li>Oracle Linux 8</li> <li >Rocky Linux 8</li> </ul>"
 
 #: www/templates/elevate/index.html:177
-#, fuzzy
-#| msgid "Will migration be \"in-place?\""
 msgid "Will migration be \"in-place\"?"
-msgstr "¿La migración se efectuará «in situ»?"
+msgstr "¿Será la migración \"en el lugar\"?"
 
 #: www/templates/elevate/index.html:182
 msgid "Yes. All your data, applications and settings will be kept."
@@ -379,7 +400,7 @@ msgstr "Las migraciones requieren dos reinicios de su sistema."
 
 #: www/templates/elevate/index.html:203
 msgid "What does the Package Evolution Service do?"
-msgstr ""
+msgstr "¿Qué hace el Servicio de Evolución de Paquetes?"
 
 #: www/templates/elevate/index.html:208
 msgid ""
@@ -390,18 +411,29 @@ msgid ""
 "to improve the data by adding new actions or even create a custom dataset "
 "for packages from third-party or private repositories."
 msgstr ""
+"El Servicio de Evolución de Paquetes almacena los metadatos de migración de "
+"los paquetes. Los metadatos responden cómo los paquetes evolucionan entre "
+"principales lanzamientos de distribuciones. SEP soporta muchos tipos de "
+"reglas para paquetes como agregado, removido, renombrado, dividido, unido, "
+"etc. El servicio también permite mejorar los datos agregando nuevas acciones "
+"o incluso creando un dataset personalizado para paquetes de repositorios "
+"privados o de terceros."
 
 #: www/templates/elevate/index.html:220
 msgid ""
 "Red Hat offers a data set which is non-freely licensed. Are you using this "
 "same data set?"
 msgstr ""
+"Red Hat ofrece un conjunto de datos que no tiene licencia libre. ¿Está "
+"utilizando este mismo conjunto de datos?"
 
 #: www/templates/elevate/index.html:225
 msgid ""
 "No. We respect Red Hat’s work and our initial data set was provided by the "
 "AlmaLinux Foundation and contributions from Oracle."
 msgstr ""
+"No. Respetamos el trabajo de Red Hat y nuestro conjunto de datos inicial fue "
+"proporcionado por la Fundación AlmaLinux y las contribuciones de Oracle."
 
 #: www/templates/elevate/index.html:234
 msgid "What license is your metadata under?"
@@ -413,7 +445,7 @@ msgstr "Hemos publicado los metadatos en virtud de la licencia Apache."
 
 #: www/templates/elevate/index.html:247
 msgid "Why are you supporting migration to other distributions?"
-msgstr ""
+msgstr "¿Por qué están apoyando la migración a otras distribuciones?"
 
 #: www/templates/elevate/index.html:252
 msgid ""
@@ -422,6 +454,10 @@ msgid ""
 "use and contribute to, no matter which distro you prefer. That’s the open "
 "source way."
 msgstr ""
+"El ecosistema CentOS es una comunidad muy grande y diversa. Hemos "
+"desarrollado este proyecto de buena fe con la esperanza de que todos en la "
+"comunidad puedan usarlo y contribuir, sin importar qué distribución "
+"prefieras. Esa es la forma de código abierto."
 
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7
@@ -623,22 +659,16 @@ msgid "About AlmaLinux OS"
 msgstr "Acerca de AlmaLinux OS"
 
 #: www/templates/index.html:155
-#, fuzzy
-#| msgid ""
-#| "AlmaLinux OS is an open-source, community-driven Linux operating system "
-#| "that fills the gap left by the discontinuation of the CentOS Linux stable "
-#| "release. AlmaLinux OS is a 1:1 binary compatible fork of RHEL&reg; guided "
-#| "and built by the community."
 msgid ""
 "AlmaLinux OS is an open-source, community-driven Linux operating system that "
 "fills the gap left by the discontinuation of the CentOS Linux stable "
 "release. AlmaLinux OS is a 1:1 binary compatible clone of RHEL&reg; guided "
 "and built by the community."
 msgstr ""
-"AlmaLinux OS es un sistema operativo Linux dirigido por la comunidad que "
-"llena el vacío dejado por la descontinuación de la publicación estable de "
-"CentOS Linux. AlmaLinux OS es una bifurcación compatible binariamente 1∶1 de "
-"RHEL&reg;, guiada y compilada por la comunidad."
+"AlmaLinux OS es un sistema operativo Linux de código abierto impulsado por "
+"la comunidad que llena el vacío dejado por la interrupción de la versión "
+"estable de CentOS Linux. AlmaLinux OS es un clon compatible binario 1:1 de "
+"RHEL&reg; guiada y construida por la comunidad."
 
 #: www/templates/index.html:162
 msgid ""
@@ -699,12 +729,7 @@ msgid "Effortless to switch to"
 msgstr "Cámbiese sin esfuerzo"
 
 #: www/templates/index.html:235
-#, fuzzy, python-format
-#| msgid ""
-#| "Switching distributions is usually costly and time-consuming, but that’s "
-#| "not the case when switching from CentOS and other RHEL&reg; forks to "
-#| "AlmaLinux OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</"
-#| "a>"
+#, python-format
 msgid ""
 "Switching distributions is usually costly and time-consuming, but that’s not "
 "the case when switching from CentOS and other RHEL&reg; derivatives to "
@@ -713,7 +738,7 @@ msgstr ""
 "Normalmente, cambiar de distribución supone asumir costos monetarios y de "
 "tiempo, pero eso no pasa al cambiar de CentOS y otras bifurcaciones de "
 "RHEL&reg; a AlmaLinux OS. Cambiar es fácil: <a href=\"%(migrate_link)s\">lea "
-"cómo</a>."
+"cómo.</a>"
 
 #: www/templates/index.html:260
 msgid "Commercial Support"

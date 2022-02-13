@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 21:13+0000\n"
-"PO-Revision-Date: 2021-12-01 22:53+0000\n"
+"PO-Revision-Date: 2021-12-18 16:53+0000\n"
 "Last-Translator: Kyotaro Iijima <kyotaro.eyes@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.10-dev\n"
+"X-Generator: Weblate 4.10\n"
 
 #: commons/templatetags/motd.py:39
 msgid "Read more"
@@ -650,22 +650,15 @@ msgid "About AlmaLinux OS"
 msgstr "AlmaLinux OS について"
 
 #: www/templates/index.html:155
-#, fuzzy
-#| msgid ""
-#| "AlmaLinux OS is an open-source, community-driven Linux operating system "
-#| "that fills the gap left by the discontinuation of the CentOS Linux stable "
-#| "release. AlmaLinux OS is a 1:1 binary compatible fork of RHEL&reg; guided "
-#| "and built by the community."
 msgid ""
 "AlmaLinux OS is an open-source, community-driven Linux operating system that "
 "fills the gap left by the discontinuation of the CentOS Linux stable "
 "release. AlmaLinux OS is a 1:1 binary compatible clone of RHEL&reg; guided "
 "and built by the community."
 msgstr ""
-"AlmaLinux OS は、CentOS Linux 安定版リリースの廃止によって残された溝を埋める"
-"ための、オープンソースのコミュニティ主導の Linux オペレーティングシステムで"
-"す。 AlmaLinux OS は、RHEL&reg; の 1:1 のバイナリ レベルで完全に互換なフォー"
-"クです。 コミュニティ主導で構築されました。"
+"AlmaLinux OS は、CentOS Linux 安定版リリースの廃止によって残された溝を埋めるための、オープンソースのコミュニティ主導の "
+"Linux オペレーティングシステムです。 AlmaLinux OS は、RHEL&reg; の 1:1 のバイナリ レベルで完全に互換なクローンです。 "
+"コミュニティ主導で構築されました。"
 
 #: www/templates/index.html:162
 msgid ""
@@ -722,20 +715,14 @@ msgid "Effortless to switch to"
 msgstr "切り替えは簡単"
 
 #: www/templates/index.html:235
-#, fuzzy, python-format
-#| msgid ""
-#| "Switching distributions is usually costly and time-consuming, but that’s "
-#| "not the case when switching from CentOS and other RHEL&reg; forks to "
-#| "AlmaLinux OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</"
-#| "a>"
+#, python-format
 msgid ""
 "Switching distributions is usually costly and time-consuming, but that’s not "
 "the case when switching from CentOS and other RHEL&reg; derivatives to "
 "AlmaLinux OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</a>"
 msgstr ""
-"ディストリビューションの切り替えは通常、コストと時間がかかりますが、CentOS や"
-"他の RHEL&reg; のフォークから AlmaLinux OS へ切り替える場合は簡単です。切り替"
-"え方法は <a href=\"%(migrate_link)s\"> をお読みください。</a>"
+"ディストリビューションの切り替えは通常、コストと時間がかかりますが、CentOS や他の RHEL&reg; の派生製品から AlmaLinux OS "
+"へ切り替える場合は簡単です。切り替え方法は <a href=\"%(migrate_link)s\"> をお読みください。</a>"
 
 #: www/templates/index.html:260
 msgid "Commercial Support"
