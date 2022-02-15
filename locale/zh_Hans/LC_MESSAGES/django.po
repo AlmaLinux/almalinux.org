@@ -73,7 +73,7 @@ msgstr "EL易升"
 
 #: www/templates/_partial/footer.html:20 www/templates/_partial/navbar.html:67
 msgid "Mailing Lists"
-msgstr "邮箱列表"
+msgstr "邮件列表"
 
 #: www/templates/_partial/footer.html:24
 msgid "Community"
@@ -664,7 +664,7 @@ msgid ""
 "You can rely on AlmaLinux OS to run any and every critical workloads."
 msgstr ""
 "AlmaLinux OS 是一个企业级服务器操作系统和一个稳定的 Linux 发行版，定期发布，"
-"支持窗口很长。 您可以依靠 AlmaLinux OS 来运行任何关键工作负载。"
+"支持周期很长。 您可以依靠 AlmaLinux OS 来运行任何关键工作负载。"
 
 #: www/templates/index.html:220
 msgid "Fully supported, always free"
