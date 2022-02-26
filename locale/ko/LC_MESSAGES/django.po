@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-13 18:16+0000\n"
-"PO-Revision-Date: 2022-01-15 07:54+0000\n"
-"Last-Translator: gz83 <uioptt24@gmail.com>\n"
-"Language-Team: Korean <https://hosted.weblate.org/projects/almalinux/website-"
-"backend/ko/>\n"
+"PO-Revision-Date: 2022-02-26 10:19+0000\n"
+"Last-Translator: Luatic™ <mint@luatic.co.kr>\n"
+"Language-Team: Korean <https://hosted.weblate.org/projects/almalinux/"
+"website-backend/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.11.1-dev\n"
 
 #: commons/templatetags/motd.py:39
 msgid "Read more"
@@ -67,7 +67,7 @@ msgstr "다운로드"
 
 #: www/templates/_partial/footer.html:18 www/templates/_partial/navbar.html:57
 msgid "Membership"
-msgstr ""
+msgstr "멤버쉽"
 
 #: www/templates/_partial/footer.html:19 www/templates/_partial/navbar.html:62
 msgid "ELevate"
@@ -75,43 +75,43 @@ msgstr ""
 
 #: www/templates/_partial/footer.html:20 www/templates/_partial/navbar.html:67
 msgid "Mailing Lists"
-msgstr ""
+msgstr "메일링 리스트"
 
 #: www/templates/_partial/footer.html:24
 msgid "Community"
-msgstr ""
+msgstr "커뮤니티"
 
 #: www/templates/_partial/footer.html:26
 msgid "Chat"
-msgstr ""
+msgstr "채팅"
 
 #: www/templates/_partial/footer.html:27
 msgid "Forums"
-msgstr ""
+msgstr "포럼"
 
 #: www/templates/_partial/footer.html:36
 msgid "Legal"
-msgstr ""
+msgstr "법률"
 
 #: www/templates/_partial/footer.html:38
 msgid "Legal Notice"
-msgstr ""
+msgstr "법적 고지"
 
 #: www/templates/_partial/footer.html:39 www/templates/index.html:347
 msgid "Privacy Policy"
-msgstr ""
+msgstr "개인 정보 정책"
 
 #: www/templates/_partial/footer.html:40
 msgid "Terms of Service"
-msgstr ""
+msgstr "서비스 약관"
 
 #: www/templates/_partial/footer.html:43
 msgid "Licensing Policy"
-msgstr ""
+msgstr "라이센스 정책"
 
 #: www/templates/_partial/footer.html:48
 msgid "Trademark Usage Policy"
-msgstr ""
+msgstr "상표 사용 정책"
 
 #: www/templates/_partial/footer.html:53
 msgid "Foundation Bylaws"
@@ -119,63 +119,63 @@ msgstr ""
 
 #: www/templates/_partial/navbar.html:10
 msgid "AlmaLinux OS logo"
-msgstr ""
+msgstr "AlmaLinux OS 로고"
 
 #: www/templates/_partial/navbar.html:19
 msgid "Toggle navigation"
-msgstr ""
+msgstr "탐색 전환"
 
 #: www/templates/_partial/navbar.html:26
 msgid "Blog"
-msgstr ""
+msgstr "블로그"
 
 #: www/templates/_partial/navbar.html:47
 msgid "Migrate from CentOS 8"
-msgstr ""
+msgstr "CentOS 8 에서 마이그레이션"
 
 #: www/templates/_partial/navbar.html:52
 msgid "Report Bugs"
-msgstr ""
+msgstr "버그리포트"
 
 #: www/templates/_partial/navbar.html:75
 msgid "Shop"
-msgstr ""
+msgstr "쇼핑"
 
 #: www/templates/_partial/navbar.html:83
 msgid "Language"
-msgstr ""
+msgstr "언어"
 
 #: www/templates/_partial/navbar.html:107
 msgid "Translate"
-msgstr ""
+msgstr "번역"
 
 #: www/templates/_partial/navbar.html:115 www/templates/index.html:52
 msgid "Download"
-msgstr ""
+msgstr "다운로드"
 
 #: www/templates/blog/index.html:8
 msgid "AlmaLinux OS Blog"
-msgstr ""
+msgstr "AlmaLinux OS 블로그"
 
 #: www/templates/blog/index.html:51
 msgid "Continue reading"
-msgstr ""
+msgstr "계속 읽기"
 
 #: www/templates/blog/index.html:64 www/templates/blog/index.html:70
 msgid "Previous"
-msgstr ""
+msgstr "이전"
 
 #: www/templates/blog/index.html:82 www/templates/blog/index.html:88
 msgid "Next"
-msgstr ""
+msgstr "다음"
 
 #: www/templates/contribute/index.html:6
 msgid "AlmaLinux OS - Contribute"
-msgstr ""
+msgstr "AlmaLinux OS - 기여"
 
 #: www/templates/contribute/index.html:7 www/templates/contribute/index.html:22
 msgid "Contribute to AlmaLinux OS development"
-msgstr ""
+msgstr "AlmaLinux OS 개발에 기여"
 
 #: www/templates/contribute/index.html:26
 msgid ""
@@ -183,6 +183,8 @@ msgid ""
 "community chat. There are many ways to contribute to AlmaLinux OS - testing, "
 "quality assurance, documentation, and more."
 msgstr ""
+"AlmaLinux OS 및 인프라 개발은 커뮤니티 채팅을 사용하여 구성됩니다.AlmaLinux "
+"OS에 기여하는 방법에는 여러 가지가 있습니다 - 테스트, 품질 보증, 문서화 등."
 
 #: www/templates/contribute/index.html:33
 #, python-format
@@ -190,14 +192,16 @@ msgid ""
 "<a href=\"%(intro_link)s\">Introduce yourself</a> or join one of the topical "
 "channels below to find out more!"
 msgstr ""
+"<a href=\"%(intro_link)s\">자세한 내용</a>을 알아보려면 자신을 소개하거나 "
+"아래의 주제 채널 중 하나에 참여하십시오!"
 
 #: www/templates/contribute/index.html:43
 msgid "General chat"
-msgstr ""
+msgstr "일반 채팅"
 
 #: www/templates/contribute/index.html:48
 msgid "Development"
-msgstr ""
+msgstr "개발"
 
 #: www/templates/contribute/index.html:53
 msgid "Infrastructure"
@@ -205,15 +209,15 @@ msgstr ""
 
 #: www/templates/contribute/index.html:58
 msgid "Security"
-msgstr ""
+msgstr "보안"
 
 #: www/templates/contribute/index.html:63
 msgid "Documentation"
-msgstr ""
+msgstr "문서"
 
 #: www/templates/contribute/index.html:68
 msgid "Marketing"
-msgstr ""
+msgstr "마케팅"
 
 #: www/templates/contribute/index.html:73
 msgid "Web presence"
@@ -221,7 +225,7 @@ msgstr ""
 
 #: www/templates/contribute/index.html:82
 msgid "Join AlmaLinux OS community chat"
-msgstr ""
+msgstr "AlmaLinux OS 커뮤니티 채팅에 참여하기"
 
 #: www/templates/elevate/index.html:6
 msgid "AlmaLinux OS - ELevate Your Distribution"
@@ -232,6 +236,8 @@ msgid ""
 "ELevate enables migration between major versions of RHEL(r) derivatives. "
 "Easily go from CentOS 7.x to any 8.x of your choice"
 msgstr ""
+"Elevate를 사용하면 주요 버전의 RHEL(r) 파생 상품 간에 마이그레이션할 수 "
+"있습니다. CentOS 7.x에서 원하는 8.x로 쉽게 이동"
 
 #: www/templates/elevate/index.html:23
 msgid "ELevate Your Distribution"
@@ -257,7 +263,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:63
 msgid "Major Version Upgrades"
-msgstr ""
+msgstr "주요 버전 업그레이드"
 
 #: www/templates/elevate/index.html:66
 msgid ""
@@ -265,10 +271,14 @@ msgid ""
 "based distributions from 7.x to 8.x. Preserve your applications, your data, "
 "and your sanity. Run the most recent version of the OS and software you need."
 msgstr ""
+"지금까지는 불가능했습니다 주요 RHEL 기반 배포 버전을 7.x에서 8.x로 쉽게 "
+"마이그레이션합니다. 애플리케이션, 데이터 및 온전한 상태를 유지합니다. 필요한 "
+"OS 및 소프트웨어의 최신 버전을 실행합니다."
 
 #: www/templates/elevate/index.html:77
+#, fuzzy
 msgid "Package Evolution Service"
-msgstr ""
+msgstr "패키지 에볼루션 서비스"
 
 #: www/templates/elevate/index.html:80
 #, python-format
@@ -281,7 +291,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:93
 msgid "Community-wide Project"
-msgstr ""
+msgstr "커뮤니티 전체 프로젝트"
 
 #: www/templates/elevate/index.html:96
 msgid ""
@@ -292,11 +302,12 @@ msgstr ""
 
 #: www/templates/elevate/index.html:107
 msgid "FAQ"
-msgstr ""
+msgstr "자주하는 질문"
 
 #: www/templates/elevate/index.html:112
+#, fuzzy
 msgid "What is ELevate?"
-msgstr ""
+msgstr "ELevate란 무엇입니까?"
 
 #: www/templates/elevate/index.html:117
 msgid ""
@@ -305,10 +316,15 @@ msgid ""
 "Leapp framework with a community created library and service for the "
 "migration metadata set required for it."
 msgstr ""
+"ELevate는 주요 버전의 RHEL 기반 배포판을 7.x에서 8.x로 마이그레이션하는 "
+"기능을 제공하기 위한 프로젝트입니다. Red Hat의 Leapp 프레임워크와 "
+"마이그레이션 메타데이터 세트를 위한 커뮤니티 생성 라이브러리 및 서비스를 "
+"결합합니다."
 
 #: www/templates/elevate/index.html:127
+#, fuzzy
 msgid "This looks awesome. How can I contribute?"
-msgstr ""
+msgstr "이것은 굉장해 보입니다. 어떻게 기여할 수 있습니까?"
 
 #: www/templates/elevate/index.html:132
 #, python-format
@@ -330,17 +346,24 @@ msgid ""
 "surprises, we highly recommend that you test migrations scenarios in a VM or "
 "sandbox before running a migration in production."
 msgstr ""
+"YMMV. 애플리케이션 및 구성에 따라 모든 환경이 다르고 고유합니다. 아직 개발 "
+"중이므로 운영 환경에서 마이그레이션을 실행하기 전에 VM 또는 샌드박스에서 "
+"마이그레이션 시나리오를 테스트하는 것이 좋습니다."
 
 #: www/templates/elevate/index.html:158
 msgid "What operating systems does ELevate support?"
-msgstr ""
+msgstr "ELevate가 지원하는 운영 체제는 무엇입니까?"
 
 #: www/templates/elevate/index.html:163
+#, fuzzy
 msgid ""
 "Currently ELevate provides Leapp data for migration from CentOS 7 to the "
 "following OS: <ul> <li>AlmaLinux OS 8</li> <li>CentOS Stream 8</li> "
 "<li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
 msgstr ""
+"현재 ELevate는 CentOS 7에서 마이그레이션을 위한 Leapp 데이터를 제공합니다. "
+"OS: <ul> <li>AlmaLinux OS 8</li> <li>CentOS Stream 8</li> <li>Oracle Linux "
+"8</li> <li>Rocky Linux 8</li> </ul>"
 
 #: www/templates/elevate/index.html:177
 msgid "Will migration be \"in-place\"?"
@@ -348,7 +371,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:182
 msgid "Yes. All your data, applications and settings will be kept."
-msgstr ""
+msgstr "네. 모든 데이터, 애플리케이션 및 설정이 유지됩니다."
 
 #: www/templates/elevate/index.html:190
 msgid "Is this live or does it require a reboot?"
@@ -356,7 +379,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:195
 msgid "Migrations will require your system to reboot twice."
-msgstr ""
+msgstr "마이그레이션하려면 시스템을 두 번 재부팅해야 합니다."
 
 #: www/templates/elevate/index.html:203
 msgid "What does the Package Evolution Service do?"
@@ -371,6 +394,12 @@ msgid ""
 "to improve the data by adding new actions or even create a custom dataset "
 "for packages from third-party or private repositories."
 msgstr ""
+"Package Evolution Service는 패키지 마이그레이션 메타데이터를 저장합니다. "
+"메타데이터는 주요 배포 릴리스 간에 패키지가 어떻게 발전하는지에 대한 질문에 "
+"답합니다. PES는 패키지에 대해 추가, 제거, 이름 변경, 분할, 병합 등과 같은 "
+"여러 종류의 규칙을 지원합니다. 또한 모든 사용자는 이 서비스를 통해 새로운 "
+"작업을 추가하거나 타사 또는 프라이빗 리포지토리의 패키지에 대한 사용자 지정 "
+"데이터 세트를 생성하여 데이터를 개선할 수 있습니다."
 
 #: www/templates/elevate/index.html:220
 msgid ""
@@ -390,28 +419,34 @@ msgstr ""
 
 #: www/templates/elevate/index.html:239
 msgid "The metadata is provided under an Apache License."
-msgstr ""
+msgstr "메타데이터는 Apache License로 제공됩니다."
 
 #: www/templates/elevate/index.html:247
 msgid "Why are you supporting migration to other distributions?"
-msgstr ""
+msgstr "다른 배포판으로의 마이그레이션을 지원하는 이유는 무엇입니까?"
 
 #: www/templates/elevate/index.html:252
+#, fuzzy
 msgid ""
 "The CentOS ecosystem is a very large and diverse community. We’ve developed "
 "this project in good faith in the hope that everyone in the community can "
 "use and contribute to, no matter which distro you prefer. That’s the open "
 "source way."
 msgstr ""
+"CentOS 생태계는 매우 크고 다양한 커뮤니티입니다. 우리는 당신이 선호하는 "
+"배포에 상관없이 지역 사회의 모든 사람들이 사용하고 기여할 수 있기를 바라며 "
+"이 프로젝트를 성실하게 개발했습니다. 이것이 오픈 소스 방식입니다."
 
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7
+#, fuzzy
 msgid "AlmaLinux OS Foundation - membership"
-msgstr ""
+msgstr "AlmaLinux OS 재단 - 멤버십"
 
 #: www/templates/foundation/members/index.html:21
+#, fuzzy
 msgid "Join the AlmaLinux OS Foundation"
-msgstr ""
+msgstr "AlmaLinux OS 재단에 가입"
 
 #: www/templates/foundation/members/index.html:25
 msgid ""
@@ -420,8 +455,9 @@ msgid ""
 msgstr ""
 
 #: www/templates/foundation/members/index.html:32
+#, fuzzy
 msgid "Apply for membership"
-msgstr ""
+msgstr "멤버십 신청"
 
 #: www/templates/foundation/members/index.html:41
 msgid ""
@@ -635,7 +671,7 @@ msgstr ""
 
 #: www/templates/index.html:281
 msgid "Answers to Key Questions"
-msgstr ""
+msgstr "주요 질문에 대한 답변"
 
 #: www/templates/index.html:315
 msgid "Stay updated!"
@@ -687,7 +723,7 @@ msgstr ""
 
 #: www/templates/subscribe_post.html:22 www/templates/subscribe_post.html:33
 msgid "Return home"
-msgstr ""
+msgstr "홈으로 이동"
 
 #: www/templates/subscribe_post.html:27
 msgid "Thank you!"
@@ -700,12 +736,12 @@ msgstr ""
 
 #: www/views.py:54
 msgid "Email address is not valid"
-msgstr ""
+msgstr "이메일 주소가 올바르지 않습니다"
 
 #: www/views.py:78
 msgid "Failed to subscribe to mailing list, please try again later"
-msgstr ""
+msgstr "메일링 리스트에 구독하지 못했습니다. 나중에 다시 시도하세요"
 
 #: www/views.py:80
 msgid "You are already subscribed to this mailing list!"
-msgstr ""
+msgstr "이미 메일링 리스트에 가입되어 있습니다!"
