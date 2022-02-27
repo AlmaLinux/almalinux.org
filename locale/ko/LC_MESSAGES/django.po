@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-13 18:16+0000\n"
-"PO-Revision-Date: 2022-02-26 10:19+0000\n"
+"PO-Revision-Date: 2022-02-27 08:49+0000\n"
 "Last-Translator: Luatic™ <mint@luatic.co.kr>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/ko/>\n"
@@ -67,11 +67,11 @@ msgstr "다운로드"
 
 #: www/templates/_partial/footer.html:18 www/templates/_partial/navbar.html:57
 msgid "Membership"
-msgstr "멤버쉽"
+msgstr "회원가입"
 
 #: www/templates/_partial/footer.html:19 www/templates/_partial/navbar.html:62
 msgid "ELevate"
-msgstr ""
+msgstr "Elevate"
 
 #: www/templates/_partial/footer.html:20 www/templates/_partial/navbar.html:67
 msgid "Mailing Lists"
@@ -115,7 +115,7 @@ msgstr "상표 사용 정책"
 
 #: www/templates/_partial/footer.html:53
 msgid "Foundation Bylaws"
-msgstr ""
+msgstr "재단 내규"
 
 #: www/templates/_partial/navbar.html:10
 msgid "AlmaLinux OS logo"
@@ -135,7 +135,7 @@ msgstr "CentOS 8 에서 마이그레이션"
 
 #: www/templates/_partial/navbar.html:52
 msgid "Report Bugs"
-msgstr "버그리포트"
+msgstr "오류 보고"
 
 #: www/templates/_partial/navbar.html:75
 msgid "Shop"
@@ -251,15 +251,15 @@ msgstr ""
 
 #: www/templates/elevate/index.html:37
 msgid "Get Started"
-msgstr ""
+msgstr "시작하기"
 
 #: www/templates/elevate/index.html:42
 msgid "Discuss"
-msgstr ""
+msgstr "토론"
 
 #: www/templates/elevate/index.html:58
 msgid "About"
-msgstr ""
+msgstr "소개"
 
 #: www/templates/elevate/index.html:63
 msgid "Major Version Upgrades"
@@ -415,7 +415,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:234
 msgid "What license is your metadata under?"
-msgstr ""
+msgstr "귀하의 메타데이터에는 어떤 라이선스가 적용됩니까?"
 
 #: www/templates/elevate/index.html:239
 msgid "The metadata is provided under an Apache License."
@@ -439,9 +439,8 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7
-#, fuzzy
 msgid "AlmaLinux OS Foundation - membership"
-msgstr "AlmaLinux OS 재단 - 멤버십"
+msgstr "AlmaLinux OS 재단 - 가입"
 
 #: www/templates/foundation/members/index.html:21
 #, fuzzy
@@ -479,11 +478,11 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:63
 msgid "Join AlmaLinux OS Foundation"
-msgstr ""
+msgstr "AlmaLinux OS 재단 가입"
 
 #: www/templates/foundation/members/index.html:69
 msgid "Contributor Member"
-msgstr ""
+msgstr "기여 회원"
 
 #: www/templates/foundation/members/index.html:72
 msgid ""
@@ -496,7 +495,7 @@ msgstr ""
 #: www/templates/foundation/members/index.html:103
 #: www/templates/foundation/members/index.html:121
 msgid "Apply"
-msgstr ""
+msgstr "적용"
 
 #: www/templates/foundation/members/index.html:90
 msgid "Mirror Member"
@@ -520,11 +519,11 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:131
 msgid "Do you have membership related questions?"
-msgstr ""
+msgstr "회원가입 관련 질문이 있으신가요?"
 
 #: www/templates/foundation/members/index.html:132
 msgid "Contact us"
-msgstr ""
+msgstr "연락처"
 
 #: www/templates/foundation/members/index.html:141
 msgid "Board of Directors"
@@ -532,11 +531,11 @@ msgstr ""
 
 #: www/templates/index.html:6
 msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
-msgstr ""
+msgstr "AlmaLinux OS - 영원히 무료인 엔터프라이즈급 운영 체제"
 
 #: www/templates/index.html:34
 msgid "Free Linux OS for the community, by the community"
-msgstr ""
+msgstr "커뮤니티에 의한 커뮤니티를 위한 무료 Linux OS"
 
 #: www/templates/index.html:37
 msgid ""
@@ -545,14 +544,17 @@ msgid ""
 "grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL&reg; and pre-"
 "Stream CentOS."
 msgstr ""
+"오픈 소스, 커뮤니티 소유 및 관리, 영구 무료 엔터프라이즈 Linux 배포판은 "
+"장기적인 안정성에 중점을 두고 강력한 프로덕션 등급 플랫폼을 제공합니다. "
+"AlmaLinux OS는 RHEL® 및 pre-Stream CentOS와 호환되는 1:1 바이너리입니다."
 
 #: www/templates/index.html:47
 msgid "Contribute"
-msgstr ""
+msgstr "기여하기"
 
 #: www/templates/index.html:57
 msgid "Migrate"
-msgstr ""
+msgstr "통합"
 
 #: www/templates/index.html:73
 msgid ""
@@ -562,7 +564,7 @@ msgstr ""
 
 #: www/templates/index.html:81
 msgid "Explore"
-msgstr ""
+msgstr "탐색"
 
 #: www/templates/index.html:93
 msgid ""
@@ -572,11 +574,11 @@ msgstr ""
 
 #: www/templates/index.html:101
 msgid "Join"
-msgstr ""
+msgstr "로그인"
 
 #: www/templates/index.html:110
 msgid "Community chat"
-msgstr ""
+msgstr "커뮤니티 채팅"
 
 #: www/templates/index.html:113
 msgid ""
@@ -590,21 +592,22 @@ msgstr ""
 
 #: www/templates/index.html:129
 msgid "Community forums"
-msgstr ""
+msgstr "커뮤니티 포럼"
 
 #: www/templates/index.html:131
 msgid ""
 "Ask questions, get answers and contribute community support to others in "
 "AlmaLinux OS community and developers alike."
-msgstr ""
+msgstr "AlmaLinux OS 커뮤니티 및 개발자 모두에게 질문하고, 답변을 얻고, 커뮤니티 "
+"지원에 기여하십시오."
 
 #: www/templates/index.html:139
 msgid "Discover"
-msgstr ""
+msgstr "추천"
 
 #: www/templates/index.html:153
 msgid "About AlmaLinux OS"
-msgstr ""
+msgstr "AlmaLinux OS 정보"
 
 #: www/templates/index.html:155
 msgid ""
@@ -620,12 +623,16 @@ msgid ""
 "sponsorship from CloudLinux Inc and support from other sponsors. Ongoing "
 "development efforts are governed by the members of the community."
 msgstr ""
+"독립형 완전 무료 OS인 AlmaLinux OS는 CloudLinux Inc로부터 연간 100만 달러의 "
+"후원을 받고 다른 후원자의 지원을 받습니다. 지속적인 개발 노력은 커뮤니티 "
+"구성원이 관리합니다."
 
 #: www/templates/index.html:169
 msgid ""
 "The AlmaLinux OS Foundation is a 501(c)(6) non-profit created for the "
 "benefit of the AlmaLinux OS community."
-msgstr ""
+msgstr "AlmaLinux OS 재단은 AlmaLinux OS 커뮤니티의 이익을 위해 만들어진 501(c)(6) "
+"비영리 단체입니다."
 
 #: www/templates/index.html:183
 msgid "Backed by"
@@ -641,6 +648,9 @@ msgid ""
 "distribution with regular releases that come with a long support windows. "
 "You can rely on AlmaLinux OS to run any and every critical workloads."
 msgstr ""
+"AlmaLinux OS는 엔터프라이즈급 서버 OS이며 긴 지원 기간과 함께 제공되는 정기 "
+"릴리스가 있는 안정적인 Linux 배포입니다. AlmaLinux OS를 사용하여 모든 중요한 "
+"워크로드를 실행할 수 있습니다."
 
 #: www/templates/index.html:220
 msgid "Fully supported, always free"
@@ -652,6 +662,9 @@ msgid ""
 "with investments and long support commitments to ensure the distribution is "
 "free of limitations, fees and charges."
 msgstr ""
+"AlmaLinux OS 재단 회원, 후원자 및 파트너는 배포에 제한, 수수료 및 요금이 "
+"부과되지 않도록 보장하기 위해 투자와 장기간의 지원 약속을 통해 AlmaLinux "
+"OS를 지원합니다."
 
 #: www/templates/index.html:233
 msgid "Effortless to switch to"
@@ -664,10 +677,13 @@ msgid ""
 "the case when switching from CentOS and other RHEL&reg; derivatives to "
 "AlmaLinux OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</a>"
 msgstr ""
+"배포판을 전환하는 것은 일반적으로 비용과 시간이 많이 소요되지만 CentOS 및 "
+"기타 RHEL® 파생 제품에서 AlmaLinux OS로 전환하는 경우에는 그렇지 않습니다. "
+"전환은 쉽습니다 <a href=\"%(migrate_link)s\">. 방법을 읽으십시오.</a>"
 
 #: www/templates/index.html:260
 msgid "Commercial Support"
-msgstr ""
+msgstr "상업적 지원"
 
 #: www/templates/index.html:281
 msgid "Answers to Key Questions"
@@ -675,21 +691,21 @@ msgstr "주요 질문에 대한 답변"
 
 #: www/templates/index.html:315
 msgid "Stay updated!"
-msgstr ""
+msgstr "최신 정보 유지!"
 
 #: www/templates/index.html:318
 msgid ""
 "Subscribe to our newsletter and never miss out on the latest in AlmaLinux OS "
 "development!"
-msgstr ""
+msgstr "뉴스레터를 구독하고 AlmaLinux OS 개발의 최신 소식을 놓치지 마십시오!"
 
 #: www/templates/index.html:332
 msgid "Your email"
-msgstr ""
+msgstr "당신의 이메일"
 
 #: www/templates/index.html:336
 msgid "Subscribe"
-msgstr ""
+msgstr "구독"
 
 #: www/templates/index.html:343
 msgid ""
@@ -707,19 +723,19 @@ msgstr ""
 
 #: www/templates/showcase/index.html:6
 msgid "AlmaLinux OS feature showcase"
-msgstr ""
+msgstr "AlmaLinux OS 기능 쇼케이스"
 
 #: www/templates/showcase/index.html:7
 msgid "Feature showcase"
-msgstr ""
+msgstr "기능 쇼케이스"
 
 #: www/templates/subscribe_post.html:6
 msgid "Mailing list subscription - AlmaLinux OS"
-msgstr ""
+msgstr "메일링 리스트 구독 - AlmaLinux OS"
 
 #: www/templates/subscribe_post.html:16
 msgid "Something went wrong..."
-msgstr ""
+msgstr "문제가 발생했습니다..."
 
 #: www/templates/subscribe_post.html:22 www/templates/subscribe_post.html:33
 msgid "Return home"
@@ -727,12 +743,12 @@ msgstr "홈으로 이동"
 
 #: www/templates/subscribe_post.html:27
 msgid "Thank you!"
-msgstr ""
+msgstr "감사합니다!"
 
 #: www/templates/subscribe_post.html:30
 msgid ""
 "You have successfully subscribed to AlmaLinux OS announcement mailing list!"
-msgstr ""
+msgstr "AlmaLinux OS 알림 메일링 리스트에 가입했습니다!"
 
 #: www/views.py:54
 msgid "Email address is not valid"
