@@ -8,20 +8,20 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-13 18:16+0000\n"
-"PO-Revision-Date: 2022-01-17 13:54+0000\n"
-"Last-Translator: gz83 <uioptt24@gmail.com>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/almalinux/website-"
-"backend/de/>\n"
+"PO-Revision-Date: 2022-02-27 08:49+0000\n"
+"Last-Translator: Daniel Schemp <dschemp@mailbox.org>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/almalinux/"
+"website-backend/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.11.1-dev\n"
 
 #: commons/templatetags/motd.py:39
 msgid "Read more"
-msgstr ""
+msgstr "Mehr lesen"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
@@ -72,7 +72,7 @@ msgstr "Mitgliedschaft"
 
 #: www/templates/_partial/footer.html:19 www/templates/_partial/navbar.html:62
 msgid "ELevate"
-msgstr ""
+msgstr "ELevate"
 
 #: www/templates/_partial/footer.html:20 www/templates/_partial/navbar.html:67
 msgid "Mailing Lists"
@@ -111,7 +111,6 @@ msgid "Licensing Policy"
 msgstr "Lizenzbestimmungen"
 
 #: www/templates/_partial/footer.html:48
-#, fuzzy
 msgid "Trademark Usage Policy"
 msgstr "Markennutzungsrichtlinie"
 
@@ -273,6 +272,10 @@ msgid ""
 "based distributions from 7.x to 8.x. Preserve your applications, your data, "
 "and your sanity. Run the most recent version of the OS and software you need."
 msgstr ""
+"Bisher war es nicht möglich--bis jetzt. Migriere einfach zwischen Major-"
+"Versionen von RHEL-basierten Distributionen von 7.x auf 8.x. Behalte deine "
+"Anwendungen, deine Daten, und deinen Verstand. Lasse die neuste Version des "
+"Betriebssystems und der Software laufen, so wie du es brauchst."
 
 #: www/templates/elevate/index.html:77
 msgid "Package Evolution Service"
@@ -301,11 +304,11 @@ msgstr ""
 
 #: www/templates/elevate/index.html:107
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: www/templates/elevate/index.html:112
 msgid "What is ELevate?"
-msgstr ""
+msgstr "Was ist ELevate?"
 
 #: www/templates/elevate/index.html:117
 msgid ""
@@ -317,16 +320,20 @@ msgstr ""
 
 #: www/templates/elevate/index.html:127
 msgid "This looks awesome. How can I contribute?"
-msgstr ""
+msgstr "Das sieht cool aus. Wie kann ich dazu beitragen?"
 
 #: www/templates/elevate/index.html:132
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "First join us at <a href=\"%(chat_link)s\">#migration</a> Mattermost "
 "channel. You can find the tool code here: <a href=\"%(github_link)s\">"
 "%(github_link)s</a> and you can add/edit/interact with package metadata at "
 "<a href=\"%(pes_link)s\">%(pes_link)s</a>."
 msgstr ""
+"Tritt zuerst unserem Mattermost-Kanal <a href=\"%(chat_link)s\">#migration</"
+"a> bei. Den Quellcode dazu findest du hier: <a href=\"%(github_link)s\">. "
+"Und du kannst unter <a href=\"%(pes_link)s\"> Paket-Metadaten hinzufügen, "
+"bearbeiten oder mit interagieren."
 
 #: www/templates/elevate/index.html:143
 msgid "Is this ready for production?"
@@ -342,7 +349,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:158
 msgid "What operating systems does ELevate support?"
-msgstr ""
+msgstr "Welche Betriebssysteme unterstützt ELevate?"
 
 #: www/templates/elevate/index.html:163
 msgid ""
@@ -352,12 +359,13 @@ msgid ""
 msgstr ""
 
 #: www/templates/elevate/index.html:177
+#, fuzzy
 msgid "Will migration be \"in-place\"?"
-msgstr ""
+msgstr "Erfolgt die Migration an Ort und Stelle?"
 
 #: www/templates/elevate/index.html:182
 msgid "Yes. All your data, applications and settings will be kept."
-msgstr ""
+msgstr "Ja. Alle deine Daten, Anwendungen und Einstellungen bleiben erhalten."
 
 #: www/templates/elevate/index.html:190
 msgid "Is this live or does it require a reboot?"
@@ -365,7 +373,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:195
 msgid "Migrations will require your system to reboot twice."
-msgstr ""
+msgstr "Migrationen benötigen zwei System-Neustarts."
 
 #: www/templates/elevate/index.html:203
 msgid "What does the Package Evolution Service do?"
@@ -382,36 +390,48 @@ msgid ""
 msgstr ""
 
 #: www/templates/elevate/index.html:220
+#, fuzzy
 msgid ""
 "Red Hat offers a data set which is non-freely licensed. Are you using this "
 "same data set?"
 msgstr ""
+"Red Hat bietet einen unfrei-lizenzierten Datensatz an. Nutzt ihr denselben "
+"Datensatz?"
 
 #: www/templates/elevate/index.html:225
+#, fuzzy
 msgid ""
 "No. We respect Red Hat’s work and our initial data set was provided by the "
 "AlmaLinux Foundation and contributions from Oracle."
 msgstr ""
+"Nein. Wir respektieren Red Hats Arbeit. Unser Datensatz wurde durch die "
+"AlmaLinux Foundation und Beiträge von Oracle bereitgestell.t"
 
 #: www/templates/elevate/index.html:234
 msgid "What license is your metadata under?"
-msgstr ""
+msgstr "Unter welcher Lizenz stehen eure Metadaten?"
 
 #: www/templates/elevate/index.html:239
+#, fuzzy
 msgid "The metadata is provided under an Apache License."
-msgstr ""
+msgstr "Unsere Metadaten stellen wir unter der Apache License bereit."
 
 #: www/templates/elevate/index.html:247
 msgid "Why are you supporting migration to other distributions?"
-msgstr ""
+msgstr "Warum unterstützt ihr die Migration zu anderen Distributionen?"
 
 #: www/templates/elevate/index.html:252
+#, fuzzy
 msgid ""
 "The CentOS ecosystem is a very large and diverse community. We’ve developed "
 "this project in good faith in the hope that everyone in the community can "
 "use and contribute to, no matter which distro you prefer. That’s the open "
 "source way."
 msgstr ""
+"Das CentOS-Ökosystem ist eine riesige und vielfältige Community. Wir haben "
+"dieses Projekt mit gutem Glauben entwickelt und hoffen, dass alle in der "
+"Community nutzen und beitragen können; unabhängig der Distribution, die du "
+"bevorzugst. Das ist der Open Source-Weg."
 
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7
@@ -432,7 +452,7 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:32
 msgid "Apply for membership"
-msgstr ""
+msgstr "Werde Mitglied"
 
 #: www/templates/foundation/members/index.html:41
 msgid ""
@@ -473,7 +493,7 @@ msgstr ""
 #: www/templates/foundation/members/index.html:103
 #: www/templates/foundation/members/index.html:121
 msgid "Apply"
-msgstr ""
+msgstr "Bewerben"
 
 #: www/templates/foundation/members/index.html:90
 msgid "Mirror Member"
@@ -497,7 +517,7 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:131
 msgid "Do you have membership related questions?"
-msgstr ""
+msgstr "Hast du Fragen zur Mitgliedschaft?"
 
 #: www/templates/foundation/members/index.html:132
 msgid "Contact us"
@@ -505,7 +525,7 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:141
 msgid "Board of Directors"
-msgstr ""
+msgstr "Aufsichtsgremium"
 
 #: www/templates/index.html:6
 msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
@@ -669,7 +689,7 @@ msgstr ""
 
 #: www/templates/index.html:260
 msgid "Commercial Support"
-msgstr ""
+msgstr "Kommerzielle Unterstützung"
 
 #: www/templates/index.html:281
 msgid "Answers to Key Questions"
@@ -677,13 +697,15 @@ msgstr ""
 
 #: www/templates/index.html:315
 msgid "Stay updated!"
-msgstr ""
+msgstr "Bleib auf dem Laufenden!"
 
 #: www/templates/index.html:318
 msgid ""
 "Subscribe to our newsletter and never miss out on the latest in AlmaLinux OS "
 "development!"
 msgstr ""
+"Melde dich bei unserem Newsletter an und verpasse nichts mehr zu Entwicklung "
+"von AlmaLinux OS!"
 
 #: www/templates/index.html:332
 msgid "Your email"
@@ -691,7 +713,7 @@ msgstr ""
 
 #: www/templates/index.html:336
 msgid "Subscribe"
-msgstr ""
+msgstr "Abonnieren"
 
 #: www/templates/index.html:343
 msgid ""
@@ -705,7 +727,7 @@ msgstr ""
 
 #: www/templates/page/page.html:31
 msgid "Published"
-msgstr ""
+msgstr "Veröffentlicht"
 
 #: www/templates/showcase/index.html:6
 msgid "AlmaLinux OS feature showcase"
@@ -721,7 +743,7 @@ msgstr ""
 
 #: www/templates/subscribe_post.html:16
 msgid "Something went wrong..."
-msgstr ""
+msgstr "Etwas ist falsch gelaufen..."
 
 #: www/templates/subscribe_post.html:22 www/templates/subscribe_post.html:33
 msgid "Return home"
