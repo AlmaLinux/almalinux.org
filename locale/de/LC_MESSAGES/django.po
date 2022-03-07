@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-13 18:16+0000\n"
-"PO-Revision-Date: 2022-02-27 08:49+0000\n"
+"PO-Revision-Date: 2022-03-07 12:55+0000\n"
 "Last-Translator: Daniel Schemp <dschemp@mailbox.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11.1-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 #: commons/templatetags/motd.py:39
 msgid "Read more"
@@ -252,15 +252,15 @@ msgstr ""
 
 #: www/templates/elevate/index.html:37
 msgid "Get Started"
-msgstr ""
+msgstr "Erste Schritte"
 
 #: www/templates/elevate/index.html:42
 msgid "Discuss"
-msgstr ""
+msgstr "Diskutieren"
 
 #: www/templates/elevate/index.html:58
 msgid "About"
-msgstr ""
+msgstr "Über"
 
 #: www/templates/elevate/index.html:63
 msgid "Major Version Upgrades"
@@ -323,21 +323,22 @@ msgid "This looks awesome. How can I contribute?"
 msgstr "Das sieht cool aus. Wie kann ich dazu beitragen?"
 
 #: www/templates/elevate/index.html:132
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "First join us at <a href=\"%(chat_link)s\">#migration</a> Mattermost "
 "channel. You can find the tool code here: <a href=\"%(github_link)s\">"
 "%(github_link)s</a> and you can add/edit/interact with package metadata at "
 "<a href=\"%(pes_link)s\">%(pes_link)s</a>."
 msgstr ""
-"Tritt zuerst unserem Mattermost-Kanal <a href=\"%(chat_link)s\">#migration</"
-"a> bei. Den Quellcode dazu findest du hier: <a href=\"%(github_link)s\">. "
-"Und du kannst unter <a href=\"%(pes_link)s\"> Paket-Metadaten hinzufügen, "
-"bearbeiten oder mit interagieren."
+"Trete zuerst unserem Mattermost-Kanal <a href=\"%(chat_link)s\">#migration</"
+"a> bei. Den Quellcode dazu findest du hier: <a href=\"%(github_link)s\""
+">%(github_link)s</a>. Und du kannst unter <a href=\"%(pes_link)s\""
+">%(pes_link)s</a> Paket-Metadaten hinzufügen, bearbeiten oder mit "
+"interagieren."
 
 #: www/templates/elevate/index.html:143
 msgid "Is this ready for production?"
-msgstr ""
+msgstr "Ist das bereit für Produktion?"
 
 #: www/templates/elevate/index.html:148
 msgid ""
@@ -369,7 +370,7 @@ msgstr "Ja. Alle deine Daten, Anwendungen und Einstellungen bleiben erhalten."
 
 #: www/templates/elevate/index.html:190
 msgid "Is this live or does it require a reboot?"
-msgstr ""
+msgstr "Ist das live oder ist ein Neustart notwendig?"
 
 #: www/templates/elevate/index.html:195
 msgid "Migrations will require your system to reboot twice."
@@ -377,9 +378,10 @@ msgstr "Migrationen benötigen zwei System-Neustarts."
 
 #: www/templates/elevate/index.html:203
 msgid "What does the Package Evolution Service do?"
-msgstr ""
+msgstr "Was macht der Package Evolution Service?"
 
 #: www/templates/elevate/index.html:208
+#, fuzzy
 msgid ""
 "The Package Evolution Service stores package migration metadata. Metadata "
 "answers questions about how packages evolve between major distribution "
@@ -388,9 +390,16 @@ msgid ""
 "to improve the data by adding new actions or even create a custom dataset "
 "for packages from third-party or private repositories."
 msgstr ""
+"Der Package Evolution Service speichert Metadaten zur Paket-Migration. "
+"Metadaten beantworten die Fragen, wie Pakete sich zwischen Major-"
+"Distributions-Releases entwickelt hat. PES unterstützt verschiedene "
+"Regelsätze für Pakete, wie hinzugefügt, entfernt, umbenannt, geteilt, "
+"zusammengefügt, und so weiter. Dieser Dienst erlaubt ebenfalls jedem den "
+"Datensatz zu verbessern, indem neue Aktionen hinzugefügt oder gar eigene "
+"Datensatze für Pakete von Drittherstellern oder privaten Repositorys "
+"erstellt werden können."
 
 #: www/templates/elevate/index.html:220
-#, fuzzy
 msgid ""
 "Red Hat offers a data set which is non-freely licensed. Are you using this "
 "same data set?"
@@ -399,20 +408,18 @@ msgstr ""
 "Datensatz?"
 
 #: www/templates/elevate/index.html:225
-#, fuzzy
 msgid ""
 "No. We respect Red Hat’s work and our initial data set was provided by the "
 "AlmaLinux Foundation and contributions from Oracle."
 msgstr ""
 "Nein. Wir respektieren Red Hats Arbeit. Unser Datensatz wurde durch die "
-"AlmaLinux Foundation und Beiträge von Oracle bereitgestell.t"
+"AlmaLinux Foundation und Beiträge von Oracle bereitgestellt."
 
 #: www/templates/elevate/index.html:234
 msgid "What license is your metadata under?"
 msgstr "Unter welcher Lizenz stehen eure Metadaten?"
 
 #: www/templates/elevate/index.html:239
-#, fuzzy
 msgid "The metadata is provided under an Apache License."
 msgstr "Unsere Metadaten stellen wir unter der Apache License bereit."
 
@@ -435,9 +442,8 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7
-#, fuzzy
 msgid "AlmaLinux OS Foundation - membership"
-msgstr "AlmaLinux OS - Unterstützen"
+msgstr "AlmaLinux OS Foundation - Mitgliedschaft"
 
 #: www/templates/foundation/members/index.html:21
 #, fuzzy
@@ -449,6 +455,8 @@ msgid ""
 "Be heard! Join the AlmaLinux Foundation as a Member or Sponsor. Own and vote "
 "on shaping the future of AlmaLinux OS!"
 msgstr ""
+"Werde gehört! Tritt der AlmaLinux Foundation als Mitglied oder Sponsor bei "
+"und gestalte mit deinem Stimmrecht die Zukunft von AlmaLinux OS!"
 
 #: www/templates/foundation/members/index.html:32
 msgid "Apply for membership"
@@ -464,6 +472,13 @@ msgid ""
 "sponsors and service providers to the community, as well as official "
 "sponsors for the project."
 msgstr ""
+"Die AlmaLinux Foundation ist die Organisation hinter AlmaLinux OS, der für-"
+"immer-freien Enterprise-Linux-Distribution. Als Mitglied hast du eine Stimme "
+"für die Richtung, in welche sich das Projekt entwickelt, und du kannst in "
+"das Aufsichtsgremium wählen und gewählt werden. Es gibt mehrere Wege, "
+"Mitglied zu werden, unter anderem Beitragende, Mirror-Betreibende und -"
+"Sponsoren und Dienste-Anbietende für die Community, sowie offizielle "
+"Sponsoren für das Projekt."
 
 #: www/templates/foundation/members/index.html:51
 msgid ""
@@ -473,14 +488,13 @@ msgid ""
 msgstr ""
 
 #: www/templates/foundation/members/index.html:63
-#, fuzzy
 msgid "Join AlmaLinux OS Foundation"
-msgstr "AlmaLinux OS-Community-Chat beitreten"
+msgstr "Der AlmaLinux OS Foundation beitreten"
 
 #: www/templates/foundation/members/index.html:69
 #, fuzzy
 msgid "Contributor Member"
-msgstr "Mitmachen"
+msgstr "Beitragendes Mitglied"
 
 #: www/templates/foundation/members/index.html:72
 msgid ""
@@ -508,7 +522,7 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:111
 msgid "Sponsor Member"
-msgstr ""
+msgstr "Sponsoren-Mitglied"
 
 #: www/templates/foundation/members/index.html:113
 msgid ""
@@ -536,7 +550,6 @@ msgid "Free Linux OS for the community, by the community"
 msgstr "Ein freies Linux OS für die Gemeinschaft - von der Gemeinschaft"
 
 #: www/templates/index.html:37
-#, fuzzy
 msgid ""
 "An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution, focused on long-term stability, providing a robust production-"
@@ -546,7 +559,7 @@ msgstr ""
 "Eine von der Gemeinschaft verwaltete, immerfreie Open-Source Linux-"
 "Distribution für Unternehmen, die mit ihrem Fokus auf nachhaltige Stabilität "
 "eine robuste Plattform für die Produktion erschafft. AlmaLinux ist 1:1 "
-"binärkompatibel mit RHEL&reg; und CentOS (prä-Steam)."
+"binärkompatibel mit RHEL&reg; und CentOS (prä-Stream)."
 
 #: www/templates/index.html:47
 msgid "Contribute"
@@ -666,18 +679,22 @@ msgstr ""
 
 #: www/templates/index.html:220
 msgid "Fully supported, always free"
-msgstr ""
+msgstr "Volle Unterstützung, für immer kostenlos"
 
 #: www/templates/index.html:222
+#, fuzzy
 msgid ""
 "AlmaLinux OS Foundation members, sponsors and partners back the AlmaLinux OS "
 "with investments and long support commitments to ensure the distribution is "
 "free of limitations, fees and charges."
 msgstr ""
+"Mitglieder, Sponsoren und Partner der AlmaLinux OS Foundation stützen das "
+"AlmaLinux OS mit Investitionen und lang-anhaltenden Support-Verpflichtungen, "
+"um die Distribution frei von Einschränkungen und Gebühren zu halten."
 
 #: www/templates/index.html:233
 msgid "Effortless to switch to"
-msgstr ""
+msgstr "Müheloser Wechsel"
 
 #: www/templates/index.html:235
 #, python-format
@@ -686,6 +703,10 @@ msgid ""
 "the case when switching from CentOS and other RHEL&reg; derivatives to "
 "AlmaLinux OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</a>"
 msgstr ""
+"Distributionen wechseln ist normalerweise zeit- und kostenintensiv. Das ist "
+"nicht mehr der Fall, wenn du von CentOS oder anderen RHEL-Derivaten zu "
+"AlmaLinux OS wechselst. Wechseln ist einfach - <a href=\"%(migrate_link)s\""
+">lese wie.</a>"
 
 #: www/templates/index.html:260
 msgid "Commercial Support"
@@ -693,7 +714,7 @@ msgstr "Kommerzielle Unterstützung"
 
 #: www/templates/index.html:281
 msgid "Answers to Key Questions"
-msgstr ""
+msgstr "Antworten zu Schlüsselfragen"
 
 #: www/templates/index.html:315
 msgid "Stay updated!"
@@ -709,7 +730,7 @@ msgstr ""
 
 #: www/templates/index.html:332
 msgid "Your email"
-msgstr ""
+msgstr "Deine E-Mail-Adresse"
 
 #: www/templates/index.html:336
 msgid "Subscribe"
@@ -720,10 +741,13 @@ msgid ""
 "By filling this form you agree to be contacted by AlmaLinux OS Foundation "
 "regarding your request. You can unsubscribe at any time."
 msgstr ""
+"Durch das Ausfüllen dieses Formulars stimmst du zu, dass die AlmaLinux OS "
+"Foundation dich bezüglich der Anfrage kontaktieren darf. Du kannst jederzeit "
+"das Angebot abbestellen."
 
 #: www/templates/index.html:358
 msgid "AlmaLinux OS in the Press"
-msgstr ""
+msgstr "AlmaLinux OS in den Nachrichten"
 
 #: www/templates/page/page.html:31
 msgid "Published"
@@ -757,6 +781,7 @@ msgstr "Vielen Dank!"
 msgid ""
 "You have successfully subscribed to AlmaLinux OS announcement mailing list!"
 msgstr ""
+"Du hast erfolgreich die AlmaLinux OS Ankündigungen Mailing-Liste abonniert!"
 
 #: www/views.py:54
 msgid "Email address is not valid"
@@ -764,7 +789,7 @@ msgstr "E-Mail Adresse nicht gültig"
 
 #: www/views.py:78
 msgid "Failed to subscribe to mailing list, please try again later"
-msgstr ""
+msgstr "Fehler beim Abonnieren der Mailing-Liste. Versuche es später nochmal"
 
 #: www/views.py:80
 msgid "You are already subscribed to this mailing list!"
