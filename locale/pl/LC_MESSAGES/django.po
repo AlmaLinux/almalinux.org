@@ -23,7 +23,7 @@ msgstr ""
 
 #: commons/templatetags/motd.py:39
 msgid "Read more"
-msgstr ""
+msgstr "Czytaj więcej"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
@@ -69,7 +69,7 @@ msgstr "Pliki do pobrania"
 
 #: www/templates/_partial/footer.html:18 www/templates/_partial/navbar.html:57
 msgid "Membership"
-msgstr ""
+msgstr "Członkostwo"
 
 #: www/templates/_partial/footer.html:19 www/templates/_partial/navbar.html:62
 msgid "ELevate"
@@ -112,10 +112,8 @@ msgid "Licensing Policy"
 msgstr "Zasady licencjonowania"
 
 #: www/templates/_partial/footer.html:48
-#, fuzzy
-#| msgid " Trademark Usage Policy"
 msgid "Trademark Usage Policy"
-msgstr " Zasady korzystania ze znaków towarowych"
+msgstr "Zasady korzystania ze znaków towarowych"
 
 #: www/templates/_partial/footer.html:53
 msgid "Foundation Bylaws"
@@ -234,7 +232,6 @@ msgstr "Dołącz do czatu społeczności AlmaLinux OS"
 
 #: www/templates/elevate/index.html:6
 #, fuzzy
-#| msgid "AlmaLinux OS - Contribute"
 msgid "AlmaLinux OS - ELevate Your Distribution"
 msgstr "AlmaLinux OS - Wkład"
 
@@ -292,7 +289,6 @@ msgstr ""
 
 #: www/templates/elevate/index.html:93
 #, fuzzy
-#| msgid "Community chat"
 msgid "Community-wide Project"
 msgstr "Czat społeczności"
 
@@ -420,13 +416,11 @@ msgstr ""
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7
 #, fuzzy
-#| msgid "AlmaLinux OS - Contribute"
 msgid "AlmaLinux OS Foundation - membership"
 msgstr "AlmaLinux OS - Wkład"
 
 #: www/templates/foundation/members/index.html:21
 #, fuzzy
-#| msgid "Join AlmaLinux OS community chat"
 msgid "Join the AlmaLinux OS Foundation"
 msgstr "Dołącz do czatu społeczności AlmaLinux OS"
 
@@ -460,13 +454,11 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:63
 #, fuzzy
-#| msgid "Join AlmaLinux OS community chat"
 msgid "Join AlmaLinux OS Foundation"
 msgstr "Dołącz do czatu społeczności AlmaLinux OS"
 
 #: www/templates/foundation/members/index.html:69
 #, fuzzy
-#| msgid "Contribute"
 msgid "Contributor Member"
 msgstr "Weź udział w projekcie"
 
@@ -526,11 +518,6 @@ msgstr ""
 
 #: www/templates/index.html:37
 #, fuzzy
-#| msgid ""
-#| "An Open Source, community-governed and forever-free enterprise Linux "
-#| "distribution, focused on long-term stability, providing a robust "
-#| "production-grade platform. AlmaLinux OS is 1:1 binary compatible with "
-#| "RHEL&reg; and pre-Stream CentOS."
 msgid ""
 "An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution, focused on long-term stability, providing a robust production-"
@@ -613,11 +600,6 @@ msgstr "O AlmaLinux OS"
 
 #: www/templates/index.html:155
 #, fuzzy
-#| msgid ""
-#| "AlmaLinux OS is an open-source, community-driven Linux operating system "
-#| "that fills the gap left by the discontinuation of the CentOS Linux stable "
-#| "release. AlmaLinux OS is a 1:1 binary compatible fork of RHEL&reg; guided "
-#| "and built by the community."
 msgid ""
 "AlmaLinux OS is an open-source, community-driven Linux operating system that "
 "fills the gap left by the discontinuation of the CentOS Linux stable "
@@ -687,11 +669,6 @@ msgstr "Łatwe przełączanie na"
 
 #: www/templates/index.html:235
 #, fuzzy, python-format
-#| msgid ""
-#| "Switching distributions is usually costly and time-consuming, but that’s "
-#| "not the case when switching from CentOS and other RHEL&reg; forks to "
-#| "AlmaLinux OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</"
-#| "a>"
 msgid ""
 "Switching distributions is usually costly and time-consuming, but that’s not "
 "the case when switching from CentOS and other RHEL&reg; derivatives to "
