@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-16 21:25+0000\n"
-"PO-Revision-Date: 2022-01-03 09:53+0000\n"
-"Last-Translator: ssantos <ssantos@web.de>\n"
+"PO-Revision-Date: 2022-03-30 13:06+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/almalinux/"
 "website-backend/pt/>\n"
 "Language: pt\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 #: commons/templatetags/motd.py:39
 msgid "Read more"
@@ -43,7 +43,7 @@ msgstr "404 Não Encontrado"
 
 #: www/templates/404.html:16
 msgid "Sorry, but the page you were trying to access could not be found."
-msgstr "Desculpe, mas a página que estava a tentar aceder não foi encontrada."
+msgstr "Lamentamos, mas a página que estava a tentar aceder não foi encontrada."
 
 #: www/templates/_partial/footer.html:11 www/templates/_partial/navbar.html:41
 msgid "Resources"
@@ -55,7 +55,7 @@ msgstr "Wiki"
 
 #: www/templates/_partial/footer.html:15
 msgid "Bugs"
-msgstr "Bugs"
+msgstr "Problemas (Bugs)"
 
 #: www/templates/_partial/footer.html:16
 msgid "Repository"
@@ -151,11 +151,11 @@ msgstr "Traduzir"
 
 #: www/templates/_partial/navbar.html:115 www/templates/index.html:52
 msgid "Download"
-msgstr "Download"
+msgstr "Transferir"
 
 #: www/templates/blog/index.html:8
 msgid "AlmaLinux OS Blog"
-msgstr "Blog AlmaLinux OS"
+msgstr "Blogue do AlmaLinux OS"
 
 #: www/templates/blog/index.html:51
 msgid "Continue reading"
@@ -185,7 +185,7 @@ msgid ""
 msgstr ""
 "O sistema operacional AlmaLinux e o desenvolvimento de infra-estruturas são "
 "organizados utilizando o nosso chat comunitário. Há muitas formas de "
-"contribuir para o SO AlmaLinux - testes, garantia de qualidade, "
+"contribuir para o AlmaLinux OS - testes, garantia de qualidade, "
 "documentação, e muito mais."
 
 #: www/templates/contribute/index.html:33
@@ -337,7 +337,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:127
 msgid "This looks awesome. How can I contribute?"
-msgstr "Isso parece fantástico! Como posso contribuir?"
+msgstr "Isto parece fantástico. Como é que posso contribuir?"
 
 #: www/templates/elevate/index.html:132
 #, python-format
@@ -388,7 +388,7 @@ msgstr "Ao migrar, tudo estará \"em ordem\"?"
 
 #: www/templates/elevate/index.html:182
 msgid "Yes. All your data, applications and settings will be kept."
-msgstr "Sim. Todos os seus dados, aplicações e configurações serão mantidos."
+msgstr "Sim. Todos os seus dados, aplicações e definições serão mantidos."
 
 #: www/templates/elevate/index.html:190
 msgid "Is this live or does it require a reboot?"
@@ -530,7 +530,7 @@ msgstr ""
 #: www/templates/foundation/members/index.html:103
 #: www/templates/foundation/members/index.html:121
 msgid "Apply"
-msgstr "Solicitar"
+msgstr "Aplicar"
 
 #: www/templates/foundation/members/index.html:90
 msgid "Mirror Member"
