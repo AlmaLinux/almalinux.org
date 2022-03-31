@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-16 21:25+0000\n"
-"PO-Revision-Date: 2022-03-07 12:55+0000\n"
-"Last-Translator: Daniel Schemp <dschemp@mailbox.org>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/almalinux/website-"
-"backend/de/>\n"
+"PO-Revision-Date: 2022-03-31 16:08+0000\n"
+"Last-Translator: Cgrieger <translate@cgrieger.org>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/almalinux/"
+"website-backend/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -140,7 +140,7 @@ msgstr "Fehler melden"
 
 #: www/templates/_partial/navbar.html:75
 msgid "Shop"
-msgstr "Shop"
+msgstr "SHop"
 
 #: www/templates/_partial/navbar.html:83
 msgid "Language"
