@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-16 21:25+0000\n"
-"PO-Revision-Date: 2021-08-25 16:34+0000\n"
-"Last-Translator: A M <augim3@gmail.com>\n"
-"Language-Team: Polish <https://hosted.weblate.org/projects/almalinux/website-"
-"backend/pl/>\n"
+"PO-Revision-Date: 2022-03-18 00:58+0000\n"
+"Last-Translator: Fancy.Dot <pankotel1o1@protonmail.com>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/almalinux/"
+"website-backend/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
 "%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
 "%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
-"X-Generator: Weblate 4.8.1-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 #: commons/templatetags/motd.py:39
 msgid "Read more"
-msgstr ""
+msgstr "Czytaj więcej"
 
 #: www/templates/404.html:4
 msgid "404 Not Found - AlmaLinux OS"
@@ -69,7 +69,7 @@ msgstr "Pliki do pobrania"
 
 #: www/templates/_partial/footer.html:18 www/templates/_partial/navbar.html:57
 msgid "Membership"
-msgstr ""
+msgstr "Członkostwo"
 
 #: www/templates/_partial/footer.html:19 www/templates/_partial/navbar.html:62
 msgid "ELevate"
@@ -112,10 +112,8 @@ msgid "Licensing Policy"
 msgstr "Zasady licencjonowania"
 
 #: www/templates/_partial/footer.html:48
-#, fuzzy
-#| msgid " Trademark Usage Policy"
 msgid "Trademark Usage Policy"
-msgstr " Zasady korzystania ze znaków towarowych"
+msgstr "Zasady korzystania ze znaków towarowych"
 
 #: www/templates/_partial/footer.html:53
 msgid "Foundation Bylaws"
@@ -234,15 +232,17 @@ msgstr "Dołącz do czatu społeczności AlmaLinux OS"
 
 #: www/templates/elevate/index.html:6
 #, fuzzy
-#| msgid "AlmaLinux OS - Contribute"
 msgid "AlmaLinux OS - ELevate Your Distribution"
 msgstr "AlmaLinux OS - Wkład"
 
 #: www/templates/elevate/index.html:8
+#, fuzzy
 msgid ""
 "ELevate enables migration between major versions of RHEL(r) derivatives. "
 "Easily go from CentOS 7.x to any 8.x of your choice"
 msgstr ""
+"ELevate umożliwia migrację pomiędzy głównymi wersjami systemów pochodnych od "
+"RHEL(r). Łatwo przejdź z CentOS 7.x na dowolne 8.x twojego wyboru"
 
 #: www/templates/elevate/index.html:23
 msgid "ELevate Your Distribution"
@@ -256,19 +256,19 @@ msgstr ""
 
 #: www/templates/elevate/index.html:37
 msgid "Get Started"
-msgstr ""
+msgstr "Rozpocznij"
 
 #: www/templates/elevate/index.html:42
 msgid "Discuss"
-msgstr ""
+msgstr "Dyskusje"
 
 #: www/templates/elevate/index.html:58
 msgid "About"
-msgstr ""
+msgstr "O ELevate"
 
 #: www/templates/elevate/index.html:63
 msgid "Major Version Upgrades"
-msgstr ""
+msgstr "Główne Zmiany Wersji"
 
 #: www/templates/elevate/index.html:66
 msgid ""
@@ -276,10 +276,17 @@ msgid ""
 "based distributions from 7.x to 8.x. Preserve your applications, your data, "
 "and your sanity. Run the most recent version of the OS and software you need."
 msgstr ""
+"To nie było możliwe - do teraz. Łatwo migruj pomiędzy głównymi wersjami "
+"dystrybucji bazowanych na RHEL od 7.x do 8.x. Zachowaj swoje aplikacje, dane "
+"i zdrowie psychiczne. Korzystaj z najnowszych wersji systemu i software'u, "
+"który potrzebujesz."
 
 #: www/templates/elevate/index.html:77
+#, fuzzy
 msgid "Package Evolution Service"
 msgstr ""
+"Package Evolution Service\n"
+"(Serwis Rozwoju Paczek)"
 
 #: www/templates/elevate/index.html:80
 #, python-format
@@ -291,10 +298,8 @@ msgid ""
 msgstr ""
 
 #: www/templates/elevate/index.html:93
-#, fuzzy
-#| msgid "Community chat"
 msgid "Community-wide Project"
-msgstr "Czat społeczności"
+msgstr "Projekt Społecznościowy"
 
 #: www/templates/elevate/index.html:96
 msgid ""
@@ -305,11 +310,11 @@ msgstr ""
 
 #: www/templates/elevate/index.html:107
 msgid "FAQ"
-msgstr ""
+msgstr "Często zadawane pytania"
 
 #: www/templates/elevate/index.html:112
 msgid "What is ELevate?"
-msgstr ""
+msgstr "Co to ELevate?"
 
 #: www/templates/elevate/index.html:117
 msgid ""
@@ -321,7 +326,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:127
 msgid "This looks awesome. How can I contribute?"
-msgstr ""
+msgstr "To wygląda niesamowicie. Jak mogę w tym uczestniczyć - pomóc?"
 
 #: www/templates/elevate/index.html:132
 #, python-format
@@ -333,8 +338,9 @@ msgid ""
 msgstr ""
 
 #: www/templates/elevate/index.html:143
+#, fuzzy
 msgid "Is this ready for production?"
-msgstr ""
+msgstr "Czy jest to gotowe do produkcji?"
 
 #: www/templates/elevate/index.html:148
 msgid ""
@@ -346,7 +352,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:158
 msgid "What operating systems does ELevate support?"
-msgstr ""
+msgstr "Jakie systemy operacyjne wspiera ELevate?"
 
 #: www/templates/elevate/index.html:163
 msgid ""
@@ -357,19 +363,19 @@ msgstr ""
 
 #: www/templates/elevate/index.html:177
 msgid "Will migration be \"in-place\"?"
-msgstr ""
+msgstr "Czy migracja będzie \"na miejscu\" (in-place)?"
 
 #: www/templates/elevate/index.html:182
 msgid "Yes. All your data, applications and settings will be kept."
-msgstr ""
+msgstr "Tak. Wszystkie twoje dane, aplikacje i ustawienia zostaną zachowane."
 
 #: www/templates/elevate/index.html:190
 msgid "Is this live or does it require a reboot?"
-msgstr ""
+msgstr "Dzieje się to na żywo czy wymaga ponownego uruchomienia?"
 
 #: www/templates/elevate/index.html:195
 msgid "Migrations will require your system to reboot twice."
-msgstr ""
+msgstr "Migracje będą wymagały podwójnego restartu twojego systemu."
 
 #: www/templates/elevate/index.html:203
 msgid "What does the Package Evolution Service do?"
@@ -420,13 +426,11 @@ msgstr ""
 #: www/templates/foundation/members/index.html:6
 #: www/templates/foundation/members/index.html:7
 #, fuzzy
-#| msgid "AlmaLinux OS - Contribute"
 msgid "AlmaLinux OS Foundation - membership"
 msgstr "AlmaLinux OS - Wkład"
 
 #: www/templates/foundation/members/index.html:21
 #, fuzzy
-#| msgid "Join AlmaLinux OS community chat"
 msgid "Join the AlmaLinux OS Foundation"
 msgstr "Dołącz do czatu społeczności AlmaLinux OS"
 
@@ -460,13 +464,11 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:63
 #, fuzzy
-#| msgid "Join AlmaLinux OS community chat"
 msgid "Join AlmaLinux OS Foundation"
 msgstr "Dołącz do czatu społeczności AlmaLinux OS"
 
 #: www/templates/foundation/members/index.html:69
 #, fuzzy
-#| msgid "Contribute"
 msgid "Contributor Member"
 msgstr "Weź udział w projekcie"
 
@@ -505,15 +507,15 @@ msgstr ""
 
 #: www/templates/foundation/members/index.html:131
 msgid "Do you have membership related questions?"
-msgstr ""
+msgstr "Czy masz pytania związane z członkostwem?"
 
 #: www/templates/foundation/members/index.html:132
 msgid "Contact us"
-msgstr ""
+msgstr "Skontaktuj się z nami"
 
 #: www/templates/foundation/members/index.html:141
 msgid "Board of Directors"
-msgstr ""
+msgstr "Rada Dyrektorów"
 
 #: www/templates/index.html:6
 msgid "AlmaLinux OS - Forever-Free Enterprise-Grade Operating System"
@@ -525,12 +527,6 @@ msgstr ""
 "Wolny system operacyjny Linux tworzony przez społeczność, dla społeczności"
 
 #: www/templates/index.html:37
-#, fuzzy
-#| msgid ""
-#| "An Open Source, community-governed and forever-free enterprise Linux "
-#| "distribution, focused on long-term stability, providing a robust "
-#| "production-grade platform. AlmaLinux OS is 1:1 binary compatible with "
-#| "RHEL&reg; and pre-Stream CentOS."
 msgid ""
 "An Open Source, community owned and governed, forever-free enterprise Linux "
 "distribution, focused on long-term stability, providing a robust production-"
@@ -612,22 +608,16 @@ msgid "About AlmaLinux OS"
 msgstr "O AlmaLinux OS"
 
 #: www/templates/index.html:155
-#, fuzzy
-#| msgid ""
-#| "AlmaLinux OS is an open-source, community-driven Linux operating system "
-#| "that fills the gap left by the discontinuation of the CentOS Linux stable "
-#| "release. AlmaLinux OS is a 1:1 binary compatible fork of RHEL&reg; guided "
-#| "and built by the community."
 msgid ""
 "AlmaLinux OS is an open-source, community-driven Linux operating system that "
 "fills the gap left by the discontinuation of the CentOS Linux stable "
 "release. AlmaLinux OS is a 1:1 binary compatible clone of RHEL&reg; guided "
 "and built by the community."
 msgstr ""
-"AlmaLinux OS to open-source, oparty na społeczności system operacyjny Linux, "
-"który wypełnia lukę pozostawioną przez zaprzestanie stabilnej wersji CentOS "
-"Linux. AlmaLinux OS jest 1:1 kompatybilnym binarnie forkiem RHEL&reg; "
-"prowadzonym i zbudowanym przez społeczność."
+"AlmaLinux OS to projekt open-source, budowany przez społecznośc system "
+"operacyjny Linux, który wypełnia lukę pozostawioną przez dyskontunuację "
+"stabilnej wersji Linuxa CentOS. AlmaLinux OS jest 1:1 kompatybilnym binarnie "
+"forkiem RHEL&reg; prowadzonym i zbudowanym przez społeczność."
 
 #: www/templates/index.html:162
 msgid ""
@@ -686,12 +676,7 @@ msgid "Effortless to switch to"
 msgstr "Łatwe przełączanie na"
 
 #: www/templates/index.html:235
-#, fuzzy, python-format
-#| msgid ""
-#| "Switching distributions is usually costly and time-consuming, but that’s "
-#| "not the case when switching from CentOS and other RHEL&reg; forks to "
-#| "AlmaLinux OS. Switching is easy - <a href=\"%(migrate_link)s\">read how.</"
-#| "a>"
+#, python-format
 msgid ""
 "Switching distributions is usually costly and time-consuming, but that’s not "
 "the case when switching from CentOS and other RHEL&reg; derivatives to "

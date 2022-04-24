@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-16 21:25+0000\n"
-"PO-Revision-Date: 2022-02-27 08:49+0000\n"
-"Last-Translator: Luatic™ <mint@luatic.co.kr>\n"
-"Language-Team: Korean <https://hosted.weblate.org/projects/almalinux/website-"
-"backend/ko/>\n"
+"PO-Revision-Date: 2022-04-13 14:06+0000\n"
+"Last-Translator: NY64 <me@ny64.kr>\n"
+"Language-Team: Korean <https://hosted.weblate.org/projects/almalinux/"
+"website-backend/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.11.1-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 
 #: commons/templatetags/motd.py:39
 msgid "Read more"
@@ -205,7 +205,7 @@ msgstr "개발"
 
 #: www/templates/contribute/index.html:53
 msgid "Infrastructure"
-msgstr ""
+msgstr "하부 구조"
 
 #: www/templates/contribute/index.html:58
 msgid "Security"

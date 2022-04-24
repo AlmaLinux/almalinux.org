@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-16 21:25+0000\n"
-"PO-Revision-Date: 2022-03-07 12:55+0000\n"
+"PO-Revision-Date: 2022-04-09 20:09+0000\n"
 "Last-Translator: Daniel Schemp <dschemp@mailbox.org>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/almalinux/website-"
-"backend/de/>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/almalinux/"
+"website-backend/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -116,7 +116,7 @@ msgstr "Markennutzungsrichtlinie"
 
 #: www/templates/_partial/footer.html:53
 msgid "Foundation Bylaws"
-msgstr ""
+msgstr "Stiftungsgrundordnung"
 
 #: www/templates/_partial/navbar.html:10
 msgid "AlmaLinux OS logo"
@@ -140,7 +140,7 @@ msgstr "Fehler melden"
 
 #: www/templates/_partial/navbar.html:75
 msgid "Shop"
-msgstr "Shop"
+msgstr "SHop"
 
 #: www/templates/_partial/navbar.html:83
 msgid "Language"
@@ -230,15 +230,16 @@ msgid "Join AlmaLinux OS community chat"
 msgstr "AlmaLinux OS-Community-Chat beitreten"
 
 #: www/templates/elevate/index.html:6
-#, fuzzy
 msgid "AlmaLinux OS - ELevate Your Distribution"
-msgstr "AlmaLinux OS - Unterstützen"
+msgstr "AlmaLinux OS - ELevate Your Distribution"
 
 #: www/templates/elevate/index.html:8
 msgid ""
 "ELevate enables migration between major versions of RHEL(r) derivatives. "
 "Easily go from CentOS 7.x to any 8.x of your choice"
 msgstr ""
+"ELevate erlaubt die Migration zwischen Major-Versionen von RHEL(r)-"
+"Derivaten. Wechsle kinderleicht von CentOS 7.x auf jede beliebige 8.x-Version"
 
 #: www/templates/elevate/index.html:23
 msgid "ELevate Your Distribution"
@@ -249,6 +250,8 @@ msgid ""
 "ELevate enables migration between major versions of RHEL&reg; derivatives. "
 "Easily go from CentOS 7.x to any 8.x of your choice"
 msgstr ""
+"ELevate erlaubt die Migration zwischen Major-Versionen von RHEL&reg;-"
+"Derivaten. Wechsle kinderleicht von CentOS 7.x auf jede beliebige 8.x-Version"
 
 #: www/templates/elevate/index.html:37
 msgid "Get Started"
@@ -264,7 +267,7 @@ msgstr "Über"
 
 #: www/templates/elevate/index.html:63
 msgid "Major Version Upgrades"
-msgstr ""
+msgstr "Major-Version Upgrades"
 
 #: www/templates/elevate/index.html:66
 msgid ""
@@ -279,7 +282,7 @@ msgstr ""
 
 #: www/templates/elevate/index.html:77
 msgid "Package Evolution Service"
-msgstr ""
+msgstr "Package Evolution Service"
 
 #: www/templates/elevate/index.html:80
 #, python-format
@@ -289,11 +292,14 @@ msgid ""
 "submit new data sets for packages. Users and maintainers can both utilize "
 "the PES to help make migrations smooth and easy."
 msgstr ""
+"Das Herz von ELevate ist der <a href=\"%(pes_link)s\">Package Evolution "
+"Service</a>(PES), welcher es dir erlaubt neue Datensätze für Packete "
+"herunterzuladen, zu bearbeiten und sogar Neue einzureichen. Sowohl Benutzer "
+"als auch Maintainer können mithilfe von PES Migrationen vereinfachen."
 
 #: www/templates/elevate/index.html:93
-#, fuzzy
 msgid "Community-wide Project"
-msgstr "Gemeinschafts-Chat"
+msgstr "Communityweites Projekt"
 
 #: www/templates/elevate/index.html:96
 msgid ""
@@ -301,6 +307,10 @@ msgid ""
 "for the whole ecosystem, not just AlmaLinux. ELevate supports migrating to/"
 "from other distributions and is open for all to contribute to and enhance."
 msgstr ""
+"ELevate wird distributionsunabhängig entwickelt und ist als Tool für das "
+"komplette Ökosystem, nicht nur AlmaLinux, gedacht. ELevate erlaubt "
+"Migrationen zu/von anderen Distributionen und jedem ist es möglich zum "
+"Projekt beizutragen."
 
 #: www/templates/elevate/index.html:107
 msgid "FAQ"
