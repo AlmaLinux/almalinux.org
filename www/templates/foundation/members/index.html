@@ -51,11 +51,15 @@
                             {% blocktranslate trimmed %}
                             The merit of each application will be reviewed on a case-by-case basis by the Board or by a
                             committee appointed for this purpose, according to the 
-                            <a href="https://almalinux.org/p/foundation-bylaws/" style="text-decoration: none;"><b>Bylaws</b></a> established by the Board.
+                            <a href="https://almalinux.org/p/foundation-bylaws/" id="al-laws-link">
+                                <b>Bylaws</b>
+                            </a> established by the Board.
                             {% endblocktranslate %}
                         </p>
                         <p>
-                            <a href="https://drive.google.com/file/d/1xYkib2FECMoVy5olG9R9audYfGXpOLjf/view?usp=sharing" style="text-decoration: none;"><b>Membership guidelines are available here</b></a>
+                            <a href="https://drive.google.com/file/d/1xYkib2FECMoVy5olG9R9audYfGXpOLjf/view?usp=sharing" id="al-guideline-link">
+                                <b>Membership guidelines are available here</b>
+                            </a>
                         </p>
                     </div>
                 </div>
@@ -66,7 +70,7 @@
         <div class="container al-py-md">
             <h6 class="pt-5 pb-3 mb-3 text-uppercase border-bottom">{% translate 'Join AlmaLinux OS Foundation' %}</h6>
 
-            <div class="row" style="display: none;" id="contributor-info">
+            <div class="row membership-info" id="al-contributor-info">
                 <div class="col">
                     <table class="table table-bordered">
                         <thead>
@@ -98,7 +102,7 @@
                 </div>
             </div>
 
-            <div class="row" style="display: none;" id="mirror-info">
+            <div class="row membership-info" id="al-mirror-info">
                 <div class="col">
                     <table class="table table-bordered">
                         <thead>
@@ -120,7 +124,7 @@
                                 <td>Benefits</td>
                                 <td>
                                     All contributor membership benefits and
-                                    <ul style="list-style-type: '-&ensp;';">
+                                    <ul>
                                         <li>Listing as an official AlmaLinux mirror</li>
                                         <li>Official AlmaLinux mirror logo</li>
                                     </ul>
@@ -131,7 +135,7 @@
                 </div>
             </div>
 
-            <div class="row" style="display: none;" id="sponsor-info">
+            <div class="row membership-info" id="al-sponsor-info">
                 <div class="col">
                     <table class="table table-bordered">
                         <thead>
@@ -152,19 +156,19 @@
                             <tr>
                                 <td>Voting benefits</td>
                                 <td>a potential seat on the board of directors
-                                    <ul style="list-style-type: '-&ensp;&ensp;';">
+                                    <ul>
                                         <li>be able to nominate someone</li>
                                         <li>5 votes for a board seat</li>
                                     </ul>
                                 </td>
                                 <td>a potential seat on the board of directors
-                                    <ul style="list-style-type: '-&ensp;&ensp;';">
+                                    <ul>
                                         <li>be able to nominate someone</li>
                                         <li>15 votes for a board seat</li>
                                     </ul>
                                 </td>
                                 <td>a potential seat on the board of directors
-                                    <ul style="list-style-type: '-&ensp;&ensp;';">
+                                    <ul>
                                         <li>be able to nominate someone</li>
                                         <li>50 votes for a board seat</li>
                                     </ul>
@@ -173,7 +177,7 @@
                             <tr>
                                 <td>Marketing Benefits</td>
                                 <td>
-                                    <ul style="list-style-type: '-&ensp;&ensp;';">
+                                    <ul>
                                         <li>Your company logo on almalinux website (in one section/category of the website only)
                                         </li>
                                         <li>Have your company's events featured on our events.almalinux.org community calendar</li>
@@ -183,7 +187,7 @@
                                     </ul>
                                 </td>
                                 <td>
-                                     <ul style="list-style-type: '-&ensp;&ensp;';">
+                                     <ul>
                                         <li>Priority access to sponsorship at events</li>
                                         <li>Your company logo on AlmaLinux website in up two sections/categories</li>
                                         <li>1 sponsored webinar per year1</li>
@@ -202,7 +206,7 @@
                                 <td>Additional Benefits</td>
                                 <td></td>
                                 <td>
-                                    <ul style="list-style-type: '-&ensp;&ensp;';">
+                                    <ul>
                                         <li>Direct access to AlmaLinux executives and staff to help with consultation, planning, and engagement opportunities, including advance information on upcoming announcements and projects.
                                         </li>
                                     </ul>
@@ -221,7 +225,7 @@
                                     Any contribution of hardware or services based on board approval
                                 </td>
                                 <td>per membership committee confirmation:
-                                    <ul style="list-style-type: '-&ensp;&ensp;';">
+                                    <ul>
                                         <li>One dedicated FTE working on AlmaLinux</li>
                                         or
                                         <li>annual service credits or hardware donation valued at $20,000 or more</li>
@@ -229,7 +233,7 @@
                                 </td>
                                 <td>
                                     per membership committee confirmation:
-                                    <ul style="list-style-type: '-&ensp;&ensp;';">
+                                    <ul>
                                         <li>Three dedicated FTE working on AlmaLinux</li>
                                     </ul>
                                 </td>
@@ -245,7 +249,7 @@
                     <div class="al-foundation-members-apply-content-wrap">
                         <h4 class="fw-bold mb-0 pb-2">
                             {% translate 'Contributor Member' %}
-                            <a onclick="MemberShipInfo(this.id)" class="info" id="contributor">
+                            <a class="member-info" id="contributor">
                                 <i class="bi bi-info-circle-fill"></i>
                             </a>
                         </h4>
@@ -270,7 +274,7 @@
                     <div class="al-foundation-members-apply-content-wrap">
                         <h4 class="fw-bold mb-0 pb-2">
                             {% translate 'Mirror Member' %}
-                            <a onclick="MemberShipInfo(this.id)" class="info" id="mirror">
+                            <a class="member-info" id="mirror">
                                     <i class="bi bi-info-circle-fill"></i>
                             </a>
                         </h4>
@@ -295,7 +299,7 @@
                     <i class="bi bi-building al-member-apply-category-icon"></i>
                     <div class="al-foundation-members-apply-content-wrap">
                         <h4 class="fw-bold mb-0 pb-2">{% translate 'Sponsor Member' %}
-                                <a  id="sponsor" onclick="MemberShipInfo(this.id)" class="info">
+                                <a  id="sponsor" class="member-info">
                                     <i class="bi bi-info-circle-fill"></i>
                                 </a>
                         </h4>

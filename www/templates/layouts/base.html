@@ -35,7 +35,6 @@
     <meta name="theme-color" content="#0f4266">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <style>
         /** Prevent load-blink **/
         body {
@@ -45,22 +44,6 @@
 
         a {
             color: #c4e1ff;
-        }
-        .new-law-btn{
-            font-weight: 500;
-            background: #86da2f;
-            color: #000518;
-            padding:8px;
-            text-decoration:None;
-            border-radius:3px;
-            float:right;
-        }
-        .new-law-btn:hover {
-            color: #000518;
-            background-color: #72bf20;
-        }
-        .info:hover{
-            color: #86da2f;
         }
     </style>
     {% encore_entrypoint_css 'common' %}
@@ -73,48 +56,6 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta property="og:locale" content="{{ CURRENT_LANG }}" />
     {% endblock %}
-
-    <script>
-        function MemberShipInfo(id) {
-            if (id === "contributor"){
-                var cont = document.getElementById("contributor-info");
-                var mirr = document.getElementById("mirror-info");
-                var spons = document.getElementById("sponsor-info");
-                mirr.style.display = "none"
-                spons.style.display = "none"
-                if (cont.style.display === "none") {
-                    $("#contributor-info").slideToggle(600); 
-                } else {
-                    $("#contributor-info").slideToggle(600); 
-                }
-
-            }
-            if (id === "mirror"){
-                var mirr = document.getElementById("mirror-info");
-                var cont = document.getElementById("contributor-info");
-                var spons = document.getElementById("sponsor-info");
-                cont.style.display = "none"
-                spons.style.display = "none"
-                if (mirr.style.display === "none") {
-                    $("#mirror-info").slideToggle(600); 
-                } else {
-                    $("#mirror-info").slideToggle(600); 
-                }
-            }
-            if (id === "sponsor"){
-                var spons = document.getElementById("sponsor-info");
-                var mirr = document.getElementById("mirror-info");
-                var cont = document.getElementById("contributor-info");
-                cont.style.display = "none"
-                mirr.style.display = "none"
-                if (spons.style.display === "none") {
-                    $("#sponsor-info").slideToggle(900); 
-                } else {
-                    $("#sponsor-info").slideToggle(900); 
-                }
-            }
-        }
-    </script>
 
 </head>
 <body>
