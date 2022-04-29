@@ -27,15 +27,24 @@
     min-width: 120px;
   }
 
-  .membership-info{
+  .al-membership-info {
     display: none;
   }
-  .membership-info ul{
-    list-style-type: '-   ';
+
+  #al-mirror-info, #al-sponsor-info {
+    ul {
+        list-style-type: '-   ';
+    }
   }
 
-  #al-laws-link, #al-guideline-link{
-    text-decoration: none;
+  #al-guideline-link, #al-laws-link {
+    a {
+      text-decoration: none;
+
+      &:hover, &:active {
+        text-decoration: underline;
+      }
+    }
   }
 
   .member-info:hover{

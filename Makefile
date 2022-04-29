@@ -1,6 +1,6 @@
 ROOT_DIR		:= $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
-CURRENT_UID 	?= $(shell id -u)
-CURRENT_GID 	?= $(shell id -g)
+CURRENT_UID 	?= 501
+CURRENT_GID 	?= 501
 TARGET_REPO		?= "git@github.com:AlmaLinux/almalinux.org.git"
 TARGET_BRANCH	?= "master"
 

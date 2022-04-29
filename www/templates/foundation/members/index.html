@@ -47,19 +47,22 @@
                             to the community, as well as official sponsors for the project.
                             {% endblocktranslate %}
                         </p>
-                        <p>
-                            {% blocktranslate trimmed %}
+                        <p id="al-laws-link">
+                            {% blocktranslate trimmed with intro_link='https://almalinux.org/p/foundation-bylaws/' %}
                             The merit of each application will be reviewed on a case-by-case basis by the Board or by a
                             committee appointed for this purpose, according to the 
-                            <a href="https://almalinux.org/p/foundation-bylaws/" id="al-laws-link">
+                            <a href="{{ intro_link }}">
                                 <b>Bylaws</b>
                             </a> established by the Board.
                             {% endblocktranslate %}
                         </p>
-                        <p>
-                            <a href="https://drive.google.com/file/d/1xYkib2FECMoVy5olG9R9audYfGXpOLjf/view?usp=sharing" id="al-guideline-link">
-                                <b>Membership guidelines are available here</b>
-                            </a>
+                        <p id="al-guideline-link">
+                            {% blocktranslate trimmed with intro_link='https://drive.google.com/file/d/1xYkib2FECMoVy5olG9R9audYfGXpOLjf/view?usp=sharing' %}
+                                Membership guidelines are
+                                <a href="{{ intro_link }}">
+                                    <b>available here</b>
+                                </a>
+                            {% endblocktranslate %}
                         </p>
                     </div>
                 </div>
@@ -70,171 +73,223 @@
         <div class="container al-py-md">
             <h6 class="pt-5 pb-3 mb-3 text-uppercase border-bottom">{% translate 'Join AlmaLinux OS Foundation' %}</h6>
 
-            <div class="row membership-info" id="al-contributor-info">
+            <div class="al-membership-info" id="al-contributor-info">
                 <div class="col">
                     <table class="table table-bordered">
                         <thead>
                           <tr>
                             <th></th>
-                            <th>Contributor Membership</th>
+                            <th>{% translate 'Contributor Membership' %}</th>
                           </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Qualification</td>
-                                <td>anyone approved as a contributing member by membership committee based on their contribution to AlmaLinux</td>
-                            </tr>
-                            <tr>
-                                <td>Term</td>
-                                <td>re-qualified annually</td>
-                            </tr>
-                            <tr>
-                                <td>Benefits</td>
-                                <td><ul>
-                                        <li>listing on our website in a contributing member list</li>
-                                        <li>contributing member AlmaLinux logo</li>
-                                        <li>1 vote for a board seat</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="row membership-info" id="al-mirror-info">
-                <div class="col">
-                    <table class="table table-bordered">
-                        <thead>
-                          <tr>
-                            <th></th>
-                            <th>Official Mirror Membership</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Qualification</td>
-                                <td>acceptance as AlmaLinux mirror by tech committee</td>
-                            </tr>
-                            <tr>
-                                <td>Term</td>
-                                <td>as long as mirror is operational</td>
-                            </tr>
-                            <tr>
-                                <td>Benefits</td>
+                                <td>{% translate 'Qualification' %}</td>
                                 <td>
-                                    All contributor membership benefits and
-                                    <ul>
-                                        <li>Listing as an official AlmaLinux mirror</li>
-                                        <li>Official AlmaLinux mirror logo</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="row membership-info" id="al-sponsor-info">
-                <div class="col">
-                    <table class="table table-bordered">
-                        <thead>
-                          <tr>
-                            <th></th>
-                            <th>Silver Membership</th>
-                            <th>Gold Membership</th>
-                            <th>Platinum Membership</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td>All of the Silver membership benefits plus…</td>
-                                <td>All of the Gold membership benefits</td>
-                            </tr>
-                            <tr>
-                                <td>Voting benefits</td>
-                                <td>a potential seat on the board of directors
-                                    <ul>
-                                        <li>be able to nominate someone</li>
-                                        <li>5 votes for a board seat</li>
-                                    </ul>
-                                </td>
-                                <td>a potential seat on the board of directors
-                                    <ul>
-                                        <li>be able to nominate someone</li>
-                                        <li>15 votes for a board seat</li>
-                                    </ul>
-                                </td>
-                                <td>a potential seat on the board of directors
-                                    <ul>
-                                        <li>be able to nominate someone</li>
-                                        <li>50 votes for a board seat</li>
-                                    </ul>
+                                    {% blocktranslate trimmed %} 
+                                        anyone approved as a contributing member by membership committee based on their contribution to AlmaLinux
+                                    {% endblocktranslate %}
                                 </td>
                             </tr>
                             <tr>
-                                <td>Marketing Benefits</td>
+                                <td>{% translate 'Term' %}</td>
+                                <td>{% translate 're-qualified annually' %}</td>
+                            </tr>
+                            <tr>
+                                <td>{% translate 'Benefits' %}</td>
                                 <td>
                                     <ul>
-                                        <li>Your company logo on almalinux website (in one section/category of the website only)
+                                        <li>
+                                            {% blocktranslate trimmed %} 
+                                                listing on our website in a contributing member list
+                                            {% endblocktranslate %}
                                         </li>
-                                        <li>Have your company's events featured on our events.almalinux.org community calendar</li>
-                                        <li>Exposure through new Silver member group press releases with social media promotion</li>
-                                        <li>AlmaLinux member logo on your site</li>
-                                        <li>Inclusion in a round-up of new members</li>
+                                        <li>{% translate 'contributing member AlmaLinux logo' %}</li>
+                                        <li>{% translate '1 vote for a board seat' %}</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row al-membership-info" id="al-mirror-info">
+                <div class="col">
+                    <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>{% translate 'Official Mirror Membership' %}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{% translate 'Qualification' %}</td>
+                                <td>
+                                    {% blocktranslate trimmed %}
+                                        acceptance as AlmaLinux mirror by tech committee
+                                    {% endblocktranslate %}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>{% translate 'Term' %}</td>
+                                <td>{% translate 'as long as mirror is operational' %}</td>
+                            </tr>
+                            <tr>
+                                <td>{% translate 'Benefits' %}</td>
+                                <td>
+                                    {% translate 'All contributor membership benefits and' %}
+                                    <ul>
+                                        <li>{% translate 'Listing as an official AlmaLinux mirror' %}</li>
+                                        <li>{% translate 'Official AlmaLinux mirror logo' %}</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row al-membership-info" id="al-sponsor-info">
+                <div class="col">
+                    <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>{% translate 'Silver Membership' %}</th>
+                            <th>{% translate 'Gold Membership' %}</th>
+                            <th>{% translate 'Platinum Membership' %}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>{% translate 'All of the Silver membership benefits plus…' %}</td>
+                                <td>{% translate 'All of the Gold membership benefits' %}</td>
+                            </tr>
+                            <tr>
+                                <td>{% translate 'Voting benefits' %}</td>
+                                <td>{% translate 'a potential seat on the board of directors' %}
+                                    <ul>
+                                        <li>{% translate 'be able to nominate someone' %}</li>
+                                        <li>{% translate '5 votes for a board seat' %}</li>
+                                    </ul>
+                                </td>
+                                <td>{% translate 'a potential seat on the board of directors' %}
+                                    <ul>
+                                        <li>{% translate 'be able to nominate someone' %}</li>
+                                        <li>{% translate '15 votes for a board seat' %}</li>
+                                    </ul>
+                                </td>
+                                <td>{% translate 'a potential seat on the board of directors' %}
+                                    <ul>
+                                        <li>{% translate 'be able to nominate someone' %}' %}</li>
+                                        <li>{% translate '50 votes for a board seat' %}</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>{% translate 'Marketing Benefits' %}</td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            {% blocktranslate trimmed %}
+                                                Your company logo on almalinux website (in one section/category of the website only)
+                                            {% endblocktranslate %}
+                                        </li>
+                                        <li>
+                                            {% blocktranslate trimmed %}
+                                                Have your companys events featured on our events.almalinux.org community calendar
+                                            {% endblocktranslate %}
+                                        </li>
+                                        <li>
+                                            {% blocktranslate trimmed %}
+                                                Exposure through new Silver member group press releases with social media promotion
+                                            {% endblocktranslate %}
+                                        </li>
+                                        <li>{% translate 'AlmaLinux member logo on your site' %}</li>
+                                        <li>{% translate 'Inclusion in a round-up of new members' %}</li>
                                     </ul>
                                 </td>
                                 <td>
                                      <ul>
-                                        <li>Priority access to sponsorship at events</li>
-                                        <li>Your company logo on AlmaLinux website in up two sections/categories</li>
-                                        <li>1 sponsored webinar per year1</li>
-                                        <li>four sponsored blog posts per year1</li>
-                                        <li>AlmaLinux will assist in promoting your social media for Linux related content (e.g. tweets and retweets)</li>
-                                        <li>Membership launch blog announcing your Gold/Platinum membership</li>
+                                        <li>{% translate 'Priority access to sponsorship at events' %}</li>
+                                        <li>
+                                            {% blocktranslate trimmed %}
+                                                Your company logo on AlmaLinux website in up two sections/categories
+                                            {% endblocktranslate %}
+                                        </li>
+                                        <li>{% translate '1 sponsored webinar per year1' %}</li>
+                                        <li>{% translate 'four sponsored blog posts per year1' %}</li>
+                                        <li>
+                                            {% blocktranslate trimmed %}
+                                                AlmaLinux will assist in promoting your social media for Linux related content (e.g. tweets and retweets)
+                                            {% endblocktranslate %}
+                                            </li>
+                                        <li>
+                                            {% blocktranslate trimmed %}
+                                                Membership launch blog announcing your Gold/Platinum membership
+                                            {% endblocktranslate %}
+                                        </li>
                                     </ul>
                                 </td>
                                 <td>
-                                     <li>Your company logo on AlmaLinux website in up three sections/categories</li>
-                                    <li>2 sponsored webinars per year1</li>
-                                    <li>1 sponsored webinar per year1</li>
+                                    <ul>
+                                        <li>
+                                            {% blocktranslate trimmed %}
+                                                Your company logo on AlmaLinux website in up three sections/categories
+                                            {% endblocktranslate %}
+                                        </li>
+                                        <li>{% translate '2 sponsored webinars per year1' %}</li>
+                                        <li>{% translate 'Dedicated press release announcing membership' %}</li>
+                                    </ul>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Additional Benefits</td>
+                                <td>{% translate 'Additional Benefits' %}</td>
                                 <td></td>
                                 <td>
                                     <ul>
-                                        <li>Direct access to AlmaLinux executives and staff to help with consultation, planning, and engagement opportunities, including advance information on upcoming announcements and projects.
+                                        <li>
+                                            {% blocktranslate trimmed %}
+                                                Direct access to AlmaLinux executives and staff to help with consultation, planning, and engagement opportunities, including advance information on upcoming announcements and projects.
+                                            {% endblocktranslate %}
                                         </li>
                                     </ul>
                                 </td>
                                 <td></td>
                             </tr>
                             <tr>
-                                <td>Fees (Annual)</td>
-                                <td>$2,500</td>
-                                <td>$20,000</td>
-                                <td>$100,000</td>
+                                <td>{% translate 'Fees (Annual)' %}</td>
+                                <td>{% translate '$2,500' %}</td>
+                                <td>{% translate '$20,000' %}</td>
+                                <td>{% translate '$100,000' %}</td>
                             </tr>
                             <tr>
-                                <td>Alternative contribution</td>
-                                <td>per membership committee confirmation:
-                                    Any contribution of hardware or services based on board approval
+                                <td>{% translate 'Alternative contribution' %}</td>
+                                <td>
+                                    {% blocktranslate trimmed %}
+                                        per membership committee confirmation:
+                                        Any contribution of hardware or services based on board approval
+                                    {% endblocktranslate %}
                                 </td>
-                                <td>per membership committee confirmation:
+                                <td>{% translate 'per membership committee confirmation:' %}
                                     <ul>
-                                        <li>One dedicated FTE working on AlmaLinux</li>
-                                        or
-                                        <li>annual service credits or hardware donation valued at $20,000 or more</li>
+                                        <li>{% translate 'One dedicated FTE working on AlmaLinux' %}</li>
+                                        {% translate 'or' %}
+                                        <li>
+                                            {% blocktranslate trimmed %}
+                                                annual service credits or hardware donation valued at $20,000 or more
+                                            {% endblocktranslate %}
+                                        </li>
                                     </ul>
                                 </td>
                                 <td>
-                                    per membership committee confirmation:
+                                    {% translate 'per membership committee confirmation:' %}
                                     <ul>
-                                        <li>Three dedicated FTE working on AlmaLinux</li>
+                                        <li>{% translate 'Three dedicated FTE working on AlmaLinux' %}</li>
                                     </ul>
                                 </td>
                             </tr>
