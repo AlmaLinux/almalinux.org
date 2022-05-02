@@ -27,6 +27,31 @@
     min-width: 120px;
   }
 
+  .fw-light {
+    .al-laws-link, .al-guideline-link {
+      text-decoration: none;
+
+      &:hover, &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .al-membership-info {
+    display: none;
+  }
+
+  #al-mirror-info, #al-sponsor-info {
+    ul {
+        list-style-type: '-   ';
+    }
+  }
+
+  .member-info:hover {
+    color: #86da2f;
+  }
+
+
   @include media-breakpoint-up(md) {
     .al-foundation-members-apply-content-wrap {
       display: flex;
