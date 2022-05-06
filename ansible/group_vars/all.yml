@@ -1,7 +1,7 @@
 users:
   - username: matiss
     pubkey: '{{ lookup("file", "../files/ssh/id_rsa.matiss.pub") }}'
-    state: present
+    state: absent
   - username: jack
     pubkey: '{{ lookup("file", "../files/ssh/id_rsa.jack.pub") }}'
     state: present
