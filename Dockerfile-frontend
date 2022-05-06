@@ -2,12 +2,12 @@
 # You should NOT publish this image, it is intended for local use only.
 
 FROM almalinux/almalinux:8
-
 ARG LOCAL_UID
 ARG LOCAL_GID
+ARG LOCAL_USER=web
 
-RUN groupadd -g ${LOCAL_GID} web && \
-    useradd -ms /bin/bash web -g ${LOCAL_GID} -u ${LOCAL_UID}
+RUN groupadd -g $LOCAL_GID -o $LOCAL_USER
+RUN useradd -m -u $LOCAL_UID -g $LOCAL_GID -o -s /bin/bash $LOCAL_USER
 
 RUN dnf -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm && \
     dnf -y install yum-utils && \
