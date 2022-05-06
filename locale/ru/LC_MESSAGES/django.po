@@ -351,11 +351,11 @@ msgstr "Какие операционные системы поддержива�
 msgid ""
 "Currently ELevate provides Leapp data for migration from CentOS 7 to the "
 "following OS: <ul> <li>AlmaLinux OS 8</li> <li>CentOS Stream 8</li> "
-"<li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
+"<li>EuroLinux 8</li> <li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
 msgstr ""
 "В настоящее время ELevate предоставляет данные Leapp для миграции с CentOS 7 "
 "на следующие ОС: <ul> <li>AlmaLinux OS 8</li> <li>CentOS Stream 8</li> "
-"<li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
+"<li>EuroLinux 8</li> <li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
 
 #: www/templates/elevate/index.html:177
 msgid "Will migration be \"in-place\"?"
