@@ -217,3 +217,9 @@ def elevate(request: HttpRequest) -> HttpResponse:
 
 def not_found(request: HttpRequest, exception: Exception) -> HttpResponse:
     return render(request, '404.html', status=404)
+
+
+@require_safe
+@never_cache
+def certified_index(request: HttpRequest) -> HttpResponse:
+    return render(request, 'certified/amd-ryzen-may2022/index.html', {})
