@@ -359,10 +359,10 @@ msgstr "EL易升支持哪些操作系统？"
 msgid ""
 "Currently ELevate provides Leapp data for migration from CentOS 7 to the "
 "following OS: <ul> <li>AlmaLinux OS 8</li> <li>CentOS Stream 8</li> "
-"<li>EuroLinux 8</li> <li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
+"<li>Oracle Linux 8</li> <li>Rocky Linux 8</li> </ul>"
 msgstr ""
 "目前，EL易升提供Leapp数据以从CentOS7迁移到下列操作系统： <ul> <li>AlmaLinux "
-"OS 8</li> <li>CentOS Stream 8</li> <li>EuroLinux 8</li> <li>Oracle Linux 8</li> <li>Rocky Linux "
+"OS 8</li> <li>CentOS Stream 8</li> <li>Oracle Linux 8</li> <li>Rocky Linux "
 "8</li> </ul>"
 
 #: www/templates/elevate/index.html:177
