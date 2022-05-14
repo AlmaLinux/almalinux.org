@@ -1,0 +1,141 @@
+@import "~bootstrap/scss/bootstrap-utilities";
+@import "../../common/scss/variables";
+@import "../../common/scss/functions";
+
+.al-certified-amd-page {
+    width: 100%;
+    margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+
+	.banner {
+	    background-image: url("../../../../static/images/main-image.png");
+	    padding: 200px 0px 300px 0px;
+	    background-size: cover;
+	}
+
+	.banner h1 {
+	    max-width: 600px;
+	    font-weight: 600;
+	    font-size: 40px;
+	}
+
+	.banner p {
+	    font-style: italic;
+	    font-size: 22px;
+	    font-weight: 500;
+	}
+
+	.container {
+		max-width: 1180px;
+		margin: 0 auto;
+	}
+	.content p {
+	    margin: 0 auto;
+	    padding: 60px 0;
+	    max-width: 900px;
+	    text-align: center;
+	}
+	section.content {
+		background-color: #0E3B5C;
+	}
+	.img img {
+	    height: 300px;
+	}
+	.info-flex {
+	    padding: 60px 0px;
+	    display: flex;
+	    align-items: center;
+	    justify-content: space-evenly;
+	}
+	.text>div {
+	    margin-bottom: 30px;
+	    font-size: 16px;
+	    display: flex;
+	    align-items: center;
+	}
+	.info-block-title {
+	    font-size: 25px !important;
+	    font-weight: 500;
+	    margin-bottom: 40px !important;
+	}
+	.info-flex .text img {
+	    height: 25px;
+	    margin-right: 20px;
+	}
+	button.request {
+	    background-color: #0069D9;
+	    border: 0;
+	    padding: 17px 35px;
+	    margin-top: 20px;
+	    cursor: pointer;
+	    font-size: 16px;
+	}
+	.test-cta {
+	    text-align: center;
+	    padding: 60px 0px;
+	}
+	.test-cta button {
+	    background-color: #87D831;
+	    color: #000;
+	    border: 0;
+	    padding: 17px 50px;
+	    margin-top: 20px;
+	    cursor: pointer;
+	    font-size: 16px;
+	}
+	section.test {
+		background-color: #0F4266;
+		padding: 80px 0px;
+	}
+	.test table {
+		width: 100%;
+	    max-width: 800px;
+	    margin: 0 auto;
+	}
+	.test table th {
+	    text-align: left;
+	}
+	.test table th, .test table td {
+	    background-color: #0E3B5C;
+	    padding: 20px 40px;
+	    width: 50%;
+	    font-weight: 500;
+	    text-transform: uppercase;
+	}
+	.test table {
+	    border-spacing: 10px;
+	    margin-bottom: 80px;
+	}
+	p.test-title {
+	    font-size: 20px;
+	    font-weight: 500;
+	    text-transform: uppercase;
+	    padding-top: 40px;
+	}
+	.test img {
+	    max-height: 400px;
+	    margin-top: 40px;
+	}
+	.form {
+	    margin-top: 40px;
+	}
+	.hidden {
+		display: none !important;
+	}
+	.checkmark {
+	    display: inline-block;
+	    transform: rotate(45deg);
+	    height: 25px;
+	    width: 12px;
+	    border-bottom: 6px solid #0069D9;
+	    border-right: 6px solid #0069D9;
+	    position: absolute;
+	    left: 40px;
+	    top: 25px;
+	}
+	td.passed {
+	    padding-left: 80px !important;
+	    position: relative;
+	}
+}

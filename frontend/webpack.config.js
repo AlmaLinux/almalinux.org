@@ -40,6 +40,7 @@ Encore
     .addEntry('page_contribute', __dirname + '/src/modules/page_contribute/main.js')
     .addEntry('page_foundation', __dirname + '/src/modules/page_foundation/main.js')
     .addEntry('page_elevate', __dirname + '/src/modules/page_elevate/main.js')
+    .addEntry('page_certified', __dirname + '/src/modules/page_certified/main.js')
 ;
 
 if (Encore.isDevServer() || Encore.isDev()) {

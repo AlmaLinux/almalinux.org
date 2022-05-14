@@ -3,6 +3,8 @@
 .al-page-page {
     max-width: $al-page-readable-max-width;
     margin: auto;
+    height: 1000px;
+    overflow-y: scroll;
 
    .new-law-btn{
         font-weight: 500;
