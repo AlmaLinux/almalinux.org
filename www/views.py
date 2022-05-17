@@ -161,8 +161,14 @@ def blog_post(request: HttpRequest, slug: str = None) -> HttpResponse:
     if not post:
         raise Http404
 
+    next_post = BlogPost.objects.filter(date__lte=now, published=True, lang=lang_code, id__gt=post.pk).order_by('pk').first()
+
+    previous_post = BlogPost.objects.filter(date__lte=now, published=True, lang=lang_code, id__lt=post.pk).order_by('-pk').first()
+
     return render(request, 'blog/post.html', {
-        'post': post
+        'post': post,
+        'next_post': next_post,
+        'previous_post': previous_post
     })
 
 
