@@ -101,6 +101,32 @@
       }
     }
   }
+
+  .al-blog-pagination{
+    .al-blog-previous-button {
+      background: $al-c-atlantis;
+      color: #222222;
+
+      &:hover {
+        background: darken($al-c-atlantis, 5%);
+      }
+    }
+    .al-blog-next-button {
+      background: $al-c-atlantis;
+      color: #222222;
+      float: right;
+
+      &:hover {
+        background: darken($al-c-atlantis, 5%);
+      }
+    }
+    a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 16px;
+      font-size: 15px;
+    }
+  }
 }
 
 .al-page-blog-index, .al-page-blog-post {

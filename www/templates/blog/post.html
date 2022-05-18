@@ -54,6 +54,19 @@
                     {{ post.content_html|safe }}
                 </div>
             </article>
+            <div class="al-blog-pagination mt-3">
+                {% if previous_post %}
+                    <a href="{% url 'blog_post' previous_post.slug %}" class="al-blog-previous-button">
+                        <span>{% translate '&laquo; Previous' %}</span>
+                    </a>
+                {% endif %}
+
+                {% if next_post %}
+                    <a href="{% url 'blog_post' next_post.slug %}" class="al-blog-next-button">
+                        <span>{% translate 'Next &raquo;' %}</span>
+                    </a>
+                {% endif %}
+            </div>
         </div>
     </section>
 {% endblock %}
