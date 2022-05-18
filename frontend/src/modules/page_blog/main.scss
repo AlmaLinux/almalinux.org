@@ -46,6 +46,26 @@
           }
         }
       }
+
+      .al-article-author{
+        img{
+          width: 40px;
+          height: 40px;
+        }
+        .al-article-author-name{
+          font-style: italic;
+          font-size: 14px;
+          margin: 0px;
+          margin-bottom: 5px;
+          color: #C4E1FF;
+        }
+        .al-article-author-bio{
+          font-style: italic;
+          font-size: 12px;
+          margin: 0px;
+          color: #C4E1FF;
+        }
+      }
     }
   }
 
@@ -100,6 +120,25 @@
         max-width: 100%;
       }
     }
+    .al-page-blog-author{
+        img{
+          width: 40px;
+          height: 40px;
+        }
+        .al-page-blog-author-name{
+          font-style: italic;
+          font-size: 14px;
+          margin: 0px;
+          margin-bottom: 5px;
+          color: #C4E1FF;
+        }
+        .al-page-blog-author-bio{
+          font-style: italic;
+          font-size: 12px;
+          margin: 0px;
+          color: #C4E1FF;
+        }
+      }
   }
 
   .al-blog-pagination{

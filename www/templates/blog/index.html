@@ -27,6 +27,25 @@
                         <a class="al-article-title-link" href="{% url 'blog_post' post.slug %}">
                             <h2>{{ post.title }}</h2>
                         </a>
+                        {% if post.author %}
+                            <div class="al-article-author">
+                                <div class="col d-flex align-items-start mb-3 mt-3">
+                                    {% if post.author.user.profile_pic %}
+                                        <img src="{{post.author.user.profile_pic.url}}" class="rounded-circle">
+                                    {% else %}
+                                        <img src="{% static 'images/profile1.png' %}" class="rounded-circle">
+                                    {% endif %}
+                                    <div class="p-3 pt-0 pb-0 pr-0">
+                                        <h6 class="al-article-author-name">
+                                            {{ post.author.username }}
+                                        </h6>
+                                        <p class="al-article-author-bio">
+                                            - {{ post.author.user.bio }}
+                                        </p>
+                                    </div>
+                                </div> 
+                            </div>
+                        {% endif %}
                         <div class="al-article-date d-flex align-items-center my-3"
                              title="{{ post.date|date }} {{ post.date|time }}"
                              dir="{% text_direction CURRENT_LANG %}">

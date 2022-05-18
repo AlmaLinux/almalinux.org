@@ -24,16 +24,26 @@ class MediaElementAdmin(admin.ModelAdmin):
         return self.request.build_absolute_uri(reverse('media_element', kwargs={'media_id': obj.id}))
 
 
+class BlogPostAdmin(admin.ModelAdmin):
+    model = BlogPost
+
+    def save_model(self, request, obj, form, change):
+        obj.author = request.user
+        print(request.user)
+        super().save_model(request, obj, form, change)
+
+
+admin.site.register(UserProfile)
 admin.site.register(Backer)
 admin.site.register(CommercialSupportVendor)
 admin.site.register(PressArticle)
 admin.site.register(Page)
-admin.site.register(BlogPost)
 admin.site.register(FAQEntry)
 admin.site.register(ShowcaseFeature)
 admin.site.register(GovernanceMember)
 admin.site.register(MediaElement, MediaElementAdmin)
 admin.site.register(MOTD)
+admin.site.register(BlogPost, BlogPostAdmin)
 
 # Admin special URLs (path, template, name, context)
 www_admin_urls: List = [
