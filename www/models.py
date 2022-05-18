@@ -5,6 +5,7 @@ from markdown import markdown
 
 from almalinux.settings import LANGUAGES
 from commons.uploads import segmented_upload_to
+from django.contrib.auth.models import User
 
 
 class Backer(models.Model):
@@ -169,6 +170,15 @@ class Page(models.Model):
 class BlogPost(models.Model):
     id: models.AutoField = models.AutoField(
         primary_key=True
+    )
+
+    author: models.ForeignKey = models.ForeignKey(
+        User,
+        null=True,
+        on_delete=models.SET_NULL,
+        related_name='author',
+        help_text='Leave it blank',
+        blank=True
     )
 
     published: models.BooleanField = models.BooleanField(
@@ -414,3 +424,25 @@ class MOTD(models.Model):
 
     def __str__(self) -> str:
         return self.text
+
+
+class UserProfile(models.Model):
+    id: models.AutoField = models.AutoField(
+        primary_key=True
+    )
+
+    user: models.OneToOneField = models.OneToOneField(
+        User,
+        null=True,
+        on_delete=models.CASCADE,
+        related_name='user'
+    )
+
+    bio: models.TextField = models.TextField(
+        blank=True
+    )
+
+    profile_pic: models.ImageField = models.ImageField(
+        blank=True,
+        upload_to=segmented_upload_to
+    )

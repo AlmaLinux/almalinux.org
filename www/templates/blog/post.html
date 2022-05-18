@@ -36,6 +36,25 @@
         <div class="container py-5">
             <h1 class="al-section-title mb-3">{{ post.title }}</h1>
             <article>
+                {% if post.author %}
+                    <div class="al-page-blog-author">
+                        <div class="col d-flex align-items-start mb-3 mt-3">
+                            {% if post.author.user.profile_pic %}
+                                <img src="{{post.author.user.profile_pic.url}}" class="rounded-circle">
+                            {% else %}
+                                <img src="{% static 'images/profile.png' %}" class="rounded-circle">
+                            {% endif %}
+                            <div class="p-3 pt-0 pb-0 pr-0">
+                                <h6 class="al-page-blog-author-name">
+                                    {{ post.author.username }}
+                                </h6>
+                                <p class="al-page-blog-author-bio">
+                                    - {{ post.author.user.bio }}
+                                </p>
+                            </div>
+                        </div> 
+                    </div>
+                {% endif %}
                 <div class="al-article-date d-flex align-items-center pb-4"
                      title="{{ post.date|date }} {{ post.date|time }}"
                      dir="{% text_direction CURRENT_LANG %}">
