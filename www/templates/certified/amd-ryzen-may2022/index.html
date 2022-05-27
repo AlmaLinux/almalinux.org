@@ -18,7 +18,7 @@
 	<div class="banner">
 		<div class="container">
 			<h1>
-				{% translate 'AMD RyzenTM Processor certified with AlmaLinux OS' %}
+				{% translate 'AMD Ryzen™ Processor certified with AlmaLinux OS' %}
 			</h1>
 			<p>
 				{% translate 'Compatibility you can trust' %}
@@ -29,7 +29,7 @@
 		<div class="container">
 			<p>
 				{% blocktranslate trimmed %}
-                    The conducted tests ensure that AMD Ryzen™ 3000 and 5000 series CPUs and, generally for any servers based on Ryzen, AlmaLinux OS work properly guaranteeing stability, security, and high performance.
+                    The conducted tests ensure that AMD Ryzen™ 3000 and 5000 series CPUs and, generally for any servers based on Ryzen processors, AlmaLinux OS work properly guaranteeing stability, security, and high performance.
                 {% endblocktranslate %}
             </p>
 
@@ -47,7 +47,7 @@
 
 					<div>
 						<b>{% translate 'Certification for:&nbsp;' %}</b>
-						{% translate 'AMD  Ryzen™ 5000' %}
+						{% translate 'AMD Ryzen™ 5000 processor series (or 3000 and 5000 processor series)' %}
 					</div>
 
 					<div>
@@ -87,21 +87,21 @@
 					</div>
 					<div>
 						<img src="{% static 'images/icon-storage.png' %}">
-						<b>
+						<b class="info">
 							{% translate 'Storage:&nbsp;' %}
 						</b>
 						{% translate '2 x 960GB NVMe M.2' %}
 					</div>
 					<div>
 						<img src="{% static 'images/icon-security.png' %}">
-						<b>
+						<b class="info">
 							{% translate 'Security device:&nbsp;' %}
 						</b>
 						{% translate 'TPM2.0' %}
 					</div>
 
 					<button class="request" onclick="document.getElementById('form').classList.toggle('hidden');">
-						{% translate 'Request a system image for test' %}
+						{% translate 'Request a system image for tests' %}
 					</button>
 
 					<div id="form" class="form hidden">
@@ -133,6 +133,10 @@
 				<button onclick="document.getElementById('test').classList.toggle('hidden');">
 					{% translate 'Tests details' %}
 				</button>
+				<a class="mt-5" href="{% static 'certificate/AMD Almalinux hardware certification.pdf' %}" download>
+                    <i class="bi bi-download pe-1 d-xl-inline"></i>
+                    {% translate 'Download Test PDF' %}
+                </a>
 			</div>
 		</div>
 	</section>
