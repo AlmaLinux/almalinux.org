@@ -63,6 +63,9 @@
 	    height: 25px;
 	    margin-right: 20px;
 	}
+	.info-flex .text .info {
+	    padding-left: 7px;
+	}
 	button.request {
 	    background-color: #0069D9;
 	    border: 0;
@@ -75,14 +78,15 @@
 	    text-align: center;
 	    padding: 60px 0px;
 	}
-	.test-cta button {
+	.test-cta button, .test-cta a {
 	    background-color: #87D831;
 	    color: #000;
 	    border: 0;
 	    padding: 17px 50px;
-	    margin-top: 20px;
+	    margin-top: 0;
 	    cursor: pointer;
 	    font-size: 16px;
+	    text-decoration: None;
 	}
 	section.test {
 		background-color: #0F4266;
