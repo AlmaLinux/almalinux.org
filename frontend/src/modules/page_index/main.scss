@@ -180,11 +180,17 @@
       padding-bottom: 80px;
     }
 
+    .al-newsletter-input{
+      background-color: white;
+    }
+
     .al-newsletter-button {
-      background: #0e3b5c;
+      background: #86da2f;
+      color: #000518;
 
       &:hover {
-        background: lighten(#0e3b5c, 5%);
+        color: #000518;
+        background: #79cb24;
       }
     }
   }
@@ -214,7 +220,7 @@
           content: close-quote;
           padding-left: 3px;
         }
-
+ 
         &:before,
         &:after {
           font-family: $al-font-family-accent;

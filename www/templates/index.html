@@ -18,7 +18,7 @@
     <section class="al-page-index">
         <!-- HERO -->
         <div class="container al-py-lg">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-2 py-md-5">
+            <div class="row flex-lg-row-reverse align-items-center py-2 py-md-5">
                 <div class="d-none d-lg-block col-10 col-sm-8 col-lg-6">
                     {# TODO #}
 {#                    <a href="{% url 'showcase_index' %}">#}
@@ -320,7 +320,7 @@
                                 AlmaLinux OS development!
                             {% endblocktranslate %}
                         </h6>
-                        <div class="form-group bg-white border px-2 py-2 mb-2">
+                        <div class="form-group mb-2">
                             <form action="{% url 'subscribe_post' %}" method="post">
                                 {% csrf_token %}
                                 <div class="row">
@@ -328,7 +328,7 @@
                                         <input type="email"
                                                name="email"
                                                required="required"
-                                               class="form-control pl-3 shadow-none border-0"
+                                               class="form-control pl-3 shadow-none al-newsletter-input"
                                                placeholder="{% translate 'Your email' %}"></div>
                                     <div class="col-auto">
                                         <button type="submit" class="btn btn-block al-newsletter-button">

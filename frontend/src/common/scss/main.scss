@@ -33,6 +33,16 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 65vh;
 }
 
+button:active {
+outline: none;
+border: 0px solid transparent;
+}
+
+button:focus, .btn:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 // Main navigation
 .al-primary-navbar {
   background: $al-c-black-pearl;
@@ -162,6 +172,8 @@ a, .btn {
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
   transition-duration: .12s;
 }
+
+
 
 // WYSIWYG
 .al-wysiwyg {

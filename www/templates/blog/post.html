@@ -40,9 +40,9 @@
                     <div class="al-page-blog-author">
                         <div class="col d-flex align-items-start mb-3 mt-3">
                             {% if post.author.user.profile_pic %}
-                                <img src="{{post.author.user.profile_pic.url}}" class="rounded-circle">
+                                <img src="{{post.author.user.profile_pic.url}}" class="rounded-circle" alt="profile">
                             {% else %}
-                                <img src="{% static 'images/profile.png' %}" class="rounded-circle">
+                                <img src="{% static 'images/profile.png' %}" class="rounded-circle" alt="profile">
                             {% endif %}
                             <div class="p-3 pt-0 pb-0 pr-0">
                                 <h6 class="al-page-blog-author-name">
