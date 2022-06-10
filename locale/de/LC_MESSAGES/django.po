@@ -140,7 +140,7 @@ msgstr "Fehler melden"
 
 #: www/templates/_partial/navbar.html:75
 msgid "Shop"
-msgstr "SHop"
+msgstr "Shop"
 
 #: www/templates/_partial/navbar.html:83
 msgid "Language"
