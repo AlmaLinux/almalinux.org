@@ -29,7 +29,7 @@ class BlogPostAdmin(admin.ModelAdmin):
 
     def save_model(self, request, obj, form, change):
         obj.author = request.user
-        print(request.user)
+        # print(request.user)
         super().save_model(request, obj, form, change)
 
 
