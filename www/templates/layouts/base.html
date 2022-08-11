@@ -102,10 +102,45 @@
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
 <script>
-    $(".btn-minimize").click(function(){
-        $(this).toggleClass('btn-plus');
-        $(".sticky-header").slideToggle();
+    $(function () {
+  const arrowUp = $(".fa-plus-circle")
+  const arrowDown = $(".fa-minus-circle")
+
+  arrowUp.css("display", "none");
+  arrowDown.css("display", "inline-block");
+  $(".fa-times-circle").on("click",function(){
+    $(".ad-container").css("display","none");
+
   });
+
+  $(".ad-close").on("click", function () {
+    if ($(".ad-close").hasClass("up")) {
+      $(".ad").animate(
+        {
+          height: "400px"
+        },
+        1000,
+        function () {
+          arrowDown.show();
+          arrowUp.hide();
+          $(".ad-close").removeClass("up").addClass("down");
+        }
+      );
+    } else {
+      $(".ad").animate(
+        {
+          height: "100px"
+        },
+        1000,
+        function () {
+          arrowDown.hide();
+          arrowUp.show();
+          $(".ad-close").removeClass("down").addClass("up");
+        }
+      );
+    }
+  });
+});
 </script>
 
 </body>
