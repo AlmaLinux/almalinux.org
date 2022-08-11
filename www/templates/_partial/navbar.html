@@ -3,8 +3,34 @@
 {% load i18n_utils %}
 {% load motd %}
 {% motd as current_motd %}
+<style>
+    .al-body-container{
+        overflow-y: auto;
+        height: 50vh;
+    }
+</style>
 <nav id="al-primary-navbar"
      class="al-primary-navbar navbar sticky-top navbar-expand-lg navbar-dark flex-column {% if current_motd %}with-motd{% endif %}">
+    <div class="sticky-header" style="position: sticky;top: 0;z-index: 1;">
+        <div class="ad-close down"
+             style="float:right;
+             position:absolute;
+             z-index: 1;
+             right: 20px;
+             top: 19px;
+             color: white;
+             text-align: right;
+             cursor:pointer;
+             font-size: 23px;">
+          <i class="fa fa-plus-circle btn-plus" style="display: none;"></i>
+          <i class="fa fa-minus-circle btn-minimize" style="display: inline-block;"></i>
+          <i class="fa fa-times-circle btn-minimize"></i>
+        </div>
+        <a href="https://wiki.almalinux.org/Election2022.html" target="_blank">
+            <img src="{% static 'images/sticky_header.png' %}" width="100%">
+        </a>
+    </div>
+
     <div class="container">
         <a class="navbar-brand" href="{% url 'index' %}">
             <img src="{% static 'images/logo.svg' %}" alt="{% translate 'AlmaLinux OS logo' %}" width="165.93"
