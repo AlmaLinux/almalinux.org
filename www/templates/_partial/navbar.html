@@ -5,124 +5,122 @@
 {% motd as current_motd %}
 <style>
     .sticky {
-  position:sticky;
-  top:0;
-}
-.ad-container {
-  width: 100%;
-}
-.ad-space {
-  height: 100%;
-  width: 100%;
-}
-.ad {
-  width:100%;
-  height: 400px;
-  background:url("{% static 'images/screen-banner.png'  %}") #0E2236;
-  background-position:top;
-  background-repeat:no-repeat;
-}
-.ad-close {
-  position:absolute;
-  z-index:1;
-  right:10px;
-  top:10px;
-  color: white;
-  text-align: right;
-  cursor: pointer;
-}
-.ad-close i {
-  padding: 10px;
-  display:inline-block;
-  font-size:24px;
-}
-
-@media only screen and (min-width:2560px) {
-  .ad {
+    position:sticky;
+    top:0;
+  }
+  .announcement {
     width:100%;
     height: 400px;
-    background:url("{% static 'images/wide-screen.png' %}");
+    background:url("{% static 'images/screen-banner.png' %}") #0E2236;
     background-position:top;
+    background-repeat:no-repeat;
+    z-index:-1;
+    transition: height ease-in-out 1s;
   }
-}
 
+  @media only screen and (min-width:2560px) {
+    .announcement {
+      width:100%;
+      height: 400px;
+      background:url("{% static 'images/wide-screen.png' %}");
+      background-position:top;
+    }
+  }
+  @media only screen and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-max-device-pixel-ratio: 3) {
+    .announcement {
+      width:100%;
+      height: 395px;
+      background:url("{% static 'images/mobile-x15.webp' %}") #0E2236;
+      background-position:top;
+      background-repeat: no-repeat;
+    }
+    .chk + .chk-label span {
+      display:none;
+    }
+  }
 
-@media only screen and (min-device-width: 375px)
-and (max-device-width: 667px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (-webkit-max-device-pixel-ratio: 3) {
-  .ad {
-    width:100%;
-    height: 750px;
-    background:url("{% static 'images/mobile-x15.webp' %}") #0E2236;
-    background-position:top;
-    background-repeat: no-repeat;
+  @media only screen
+  and (min-device-width:360px)
+  and (max-device-width:412px) {
+    .announcement {
+      width:100%;
+      height: 395px;
+      background:url("{% static 'images/mobile-x15.webp' %}") #0E2236;
+      background-position:top;
+      background-repeat: no-repeat;
+    }
+    .chk + .chk-label span {
+      display:none;
+    }
   }
-  .ad-close i {
-    padding: 10px;
-    display:inline-block;
-    font-size:65px;
-  }
-  .fa-plus-circle, .fa-minus-circle {
-    display:none !important;
-  }
-}
 
-@media only screen
-and (min-device-width:360px)
-and (max-device-width:412px) {
-  .ad {
-    width:100%;
-    height: 750px;
-    background:url("{% static 'images/mobile-x15.webp' %}") #0E2236;
-    background-position:top;
-    background-repeat: no-repeat;
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .announcement {
+      width:100%;
+      height: 395px;
+      background:url("{% static 'images/mobile-x15.webp' %}") #0E2236;
+      background-position:top;
+      background-repeat: no-repeat;
+    }
+    .chk + .chk-label span {
+      display:none;
+    }
   }
-  .ad-close i {
-    padding: 10px;
-    display:inline-block;
-    font-size:65px;
+  .chk {
+      display:none;
   }
-  .fa-plus-circle, .fa-minus-circle {
-    display:none !important;
+  .chk + .chk-label span {
+      width:24px;
+      height:24px;
+      position:absolute;
+      right:50px;
+      top:15px;
+      z-index:1;
+      background:url("https://assets.codepen.io/28496/up-arrow.png") #fff;
+      border-radius:100px;
+      cursor:pointer;
   }
-}
-
-@media only screen
-and (min-device-width: 375px)
-and (max-device-width: 812px)
-and (-webkit-min-device-pixel-ratio: 3) {
-  .ad {
-    width:100%;
-    height: 750px;
-    background:url("{% static 'images/mobile-x15.webp' %}") #0E2236;
-    background-position:top;
-    background-repeat: no-repeat;
+  .chk:checked + .chk-label span {
+      background:url("https://assets.codepen.io/28496/down-arrow.png") #fff;
   }
-  .ad-close i {
-    padding: 10px;
-    display:inline-block;
-    font-size:65px;
+  .chk:checked ~ .sticky-link .announcement {
+    height:100px;
   }
-  .fa-plus-circle, .fa-minus-circle {
-    display:none !important;
+  #chk-close {
+      display:none;
   }
-}
+  #chk-close + .chk-close-label span {
+      width:24px;
+      height:24px;
+      position:absolute;
+      right:15px;
+      top:15px;
+      z-index:1;
+      background:url("https://assets.codepen.io/28496/close-btn.png") #fff;
+      border-radius:100px;
+      cursor:pointer;
+  }
+  #chk-close:checked + .chk-close-label span {
+      background:url("https://assets.codepen.io/28496/close-btn.png") #fff;
+  }
 
 </style>
 <nav id="al-primary-navbar"
      class="al-primary-navbar navbar sticky-top navbar-expand-lg navbar-dark flex-column {% if current_motd %}with-motd{% endif %}">
     <div class="sticky">
-        <div class="ad-container">
-            <div class="ad-close down">
-              <i class="fa fa-plus-circle"></i>
-              <i class="fa fa-minus-circle"></i>
-              <i class="fa fa-times-circle"></i>
-            </div>
-            <a href="https://wiki.almalinux.org/Election2022.html" target="_blank">
-              <div class="ad"></div>
-            </a>
-        </div>
+        <input type="checkbox" id="chk" class="chk" />
+        <label for="chk" class="chk-label"><span></span></label>
+        <input type="checkbox" id="chk-close" class="chk-close" />
+        <label for="chk-close" class="chk-close-label"><span></span></label>
+        <a href="https://wiki.almalinux.org/Election2022.html" class="sticky-link" target="_blank">
+          <div class="announcement"></div>
+        </a>
     </div>
 
     <div class="container">
@@ -213,7 +211,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
                                 <a class="dropdown-item al-language-link {% if language.code == LANGUAGE_CODE %}active{% endif %}"
                                    href="{% current_path_for_language_code language.code %}"
                                    hreflang="{{ language.code }}">
-                                    {{ language.name_local }}
+                                     {{ language.name_local }}
                                 </a>
                             </li>
                         {% endfor %}
