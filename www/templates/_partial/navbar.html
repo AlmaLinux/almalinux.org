@@ -9,9 +9,7 @@
     top:0;
     width: 100%;
   }
-  .navbar{
-      padding-top: 0px !important;
-  }
+
   label {
     display: inline-block;
     position: absolute;
@@ -30,7 +28,7 @@
     z-index:-1;
     transition: height ease-in-out 1s;
   }
-
+  
   @media only screen and (min-width:2560px) {
     .announcement {
       width:100%;
@@ -40,47 +38,46 @@
     }
   }
   @media only screen and (min-device-width: 375px)
-  and (max-device-width: 667px){
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (-webkit-max-device-pixel-ratio: 3) {
     .announcement {
       width:100%;
       height: 395px;
-      background:url("{% static 'images/mobile-x15.webp' %}") #0E2236;
+      background:url("{% static 'images/mobile.png' %}") #0E2236;
       background-position:top;
       background-repeat: no-repeat;
-      background-size: contain;
     }
     .chk + .chk-label span {
       display:none;
     }
   }
-
-  @media only screen
-  and (min-device-width:360px)
+  
+  @media only screen 
+  and (min-device-width:360px) 
   and (max-device-width:412px) {
     .announcement {
       width:100%;
       height: 395px;
-      background:url("{% static 'images/mobile-x15.webp' %}") #0E2236;
+      background:url("{% static 'images/mobile.png' %}") #0E2236;
       background-position:top;
       background-repeat: no-repeat;
-      background-size: contain;
     }
     .chk + .chk-label span {
       display:none;
     }
   }
-
-  @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 812px)
+  
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) {
     .announcement {
       width:100%;
       height: 395px;
-      background:url("{% static 'images/mobile-x15.webp' %}") #0E2236;
+      background:url("{% static 'images/mobile.png' %}") #0E2236;
       background-position:top;
       background-repeat: no-repeat;
-      background-size: contain;
     }
     .chk + .chk-label span {
       display:none;
@@ -96,12 +93,12 @@
       right:50px;
       top:15px;
       z-index:1;
-      background:url("https://assets.codepen.io/28496/up-arrow.png") #fff;
+      background:url("{% static 'images/up-arrow.png' %}") #fff;
       border-radius:100px;
       cursor:pointer;
   }
   .chk:checked + .chk-label span {
-      background:url("https://assets.codepen.io/28496/down-arrow.png") #fff;
+      background:url("{% static 'images/down-arrow.png' %}") #fff;
   }
   .chk:checked ~ .sticky-link .announcement {
     height:100px;
@@ -116,17 +113,17 @@
       right:15px;
       top:15px;
       z-index:1;
-      background:url("https://assets.codepen.io/28496/close-btn.png") #fff;
+      background:url("{% static 'images/close-btn.png' %}") #fff;
       border-radius:100px;
       cursor:pointer;
   }
   #chk-close:checked + .chk-close-label span {
-      background:url("https://assets.codepen.io/28496/close-btn.png") #fff;
+      background:url("{% static 'images/close-btn.png' %}") #fff;
   }
 
 </style>
 <nav id="al-primary-navbar"
-     class="al-primary-navbar navbar sticky-top navbar-expand-lg navbar-dark flex-column {% if current_motd %}with-motd{% endif %}">
+     class="al-primary-navbar navbar py-0 sticky-top navbar-expand-lg navbar-dark flex-column {% if current_motd %}with-motd{% endif %}">
     <div class="sticky">
         <input type="checkbox" id="chk" class="chk" />
         <label for="chk" class="chk-label"><span></span></label>
@@ -137,7 +134,7 @@
         </a>
     </div>
 
-    <div class="container">
+    <div class="container my-3">
         <a class="navbar-brand" href="{% url 'index' %}">
             <img src="{% static 'images/logo.svg' %}" alt="{% translate 'AlmaLinux OS logo' %}" width="165.93"
                  height="32">
