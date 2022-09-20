@@ -3,134 +3,48 @@
 {% load i18n_utils %}
 {% load motd %}
 {% motd as current_motd %}
-<style>
-  .sticky {
-    position:sticky;
-    top:0;
-    width: 100%;
-  }
 
-  label {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .sticky-link{
-      display: block;
-  }
-  .announcement {
-    width:100%;
-    height: 100px;
-    background:url("{% static 'images/screen-banner.png' %}") #0E2236;
-    background-position:top;
-    background-repeat:no-repeat;
-    z-index:-1;
-    transition: height ease-in-out 1s;
-  }
-  
-  @media only screen and (min-width:2560px) {
-    .announcement {
-      width:100%;
-      height: 100px;
-      background:url("{% static 'images/wide-screen.png' %}");
-      background-position:top;
+<style>
+    .sticky {
+        position: sticky;
+        top: 0;
+        width: 100%;
     }
-  }
-  @media only screen and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) 
-  and (-webkit-max-device-pixel-ratio: 3) {
-    .announcement {
-      width:100%;
-      height: 395px;
-      background:url("{% static 'images/mobile.png' %}") #0E2236;
-      background-position:top;
-      background-repeat: no-repeat;
+    .sticky .close {
+        width: 24px;
+        z-index:1;
+        position:absolute;
+        top:15px;
+        right:15px;
+        cursor:pointer;
     }
-    .chk + .chk-label span {
-      display:none;
+    @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3) { 
+        .sticky .close {
+        display:none;
+        }
     }
-  }
-  
-  @media only screen 
-  and (min-device-width:360px) 
-  and (max-device-width:412px) {
-    .announcement {
-      width:100%;
-      height: 395px;
-      background:url("{% static 'images/mobile.png' %}") #0E2236;
-      background-position:top;
-      background-repeat: no-repeat;
+    @media screen and (max-width: 880px)  {
+        .sticky .close {
+        display:none;
+        }
     }
-    .chk + .chk-label span {
-      display:none;
-    }
-  }
-  
-  @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) {
-    .announcement {
-      width:100%;
-      height: 395px;
-      background:url("{% static 'images/mobile.png' %}") #0E2236;
-      background-position:top;
-      background-repeat: no-repeat;
-    }
-    .chk + .chk-label span {
-      display:none;
-    }
-  }
-  .chk {
-      display:none;
-  }
-  .chk + .chk-label span {
-      width:24px;
-      height:24px;
-      position:absolute;
-      right:50px;
-      top:15px;
-      z-index:1;
-      background:url("{% static 'images/down-arrow.png' %}") #fff;
-      border-radius:100px;
-      cursor:pointer;
-  }
-  .chk:checked + .chk-label span {
-      background:url("{% static 'images/up-arrow.png' %}") #fff;
-  }
-  .chk:checked ~ .sticky-link .announcement {
-    height:400px;
-  }
-  #chk-close {
-      display:none;
-  }
-  #chk-close + .chk-close-label span {
-      width:24px;
-      height:24px;
-      position:absolute;
-      right:15px;
-      top:15px;
-      z-index:1;
-      background:url("{% static 'images/close-btn.png' %}") #fff;
-      border-radius:100px;
-      cursor:pointer;
-  }
-  #chk-close:checked + .chk-close-label span {
-      background:url("{% static 'images/close-btn.png' %}") #fff;
-  }
 
 </style>
+
 <nav id="al-primary-navbar"
      class="al-primary-navbar navbar py-0 sticky-top navbar-expand-lg navbar-dark flex-column {% if current_motd %}with-motd{% endif %}">
-    <div class="sticky">
-        <input type="checkbox" id="chk" class="chk" />
-        <label for="chk" class="chk-label"><span></span></label>
-        <input type="checkbox" id="chk-close" class="chk-close" />
-        <label for="chk-close" class="chk-close-label"><span></span></label>
-        <a href="https://wiki.almalinux.org/Election2022.html" class="sticky-link" target="_blank">
-          <div class="announcement"></div>
+    
+     <div class="sticky">
+        <div class="close"><img class="img-fluid" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDE4OS41MjQgMTg5LjUyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+PGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Zz48cGF0aCBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Im0xMjEuNTY0IDY3Ljk1OWMxLjg1MSAxLjg1IDEuODUxIDQuODUgMCA2LjcwMWwtNDYuOTA0IDQ2LjkwNGMtMS44NSAxLjg1MS00Ljg1IDEuODUxLTYuNzAxIDAtMS44NS0xLjg1MS0xLjg1LTQuODUgMC02LjcwMWw0Ni45MDUtNDYuOTA1YzEuODUtMS44NDkgNC44NS0xLjg0OSA2LjcuMDAxeiIgZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iIj48L3BhdGg+PC9nPjxnPjxwYXRoIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0ibTY3Ljk1OSA2Ny45NTljMS44NS0xLjg1IDQuODUtMS44NSA2LjcwMSAwbDQ2LjkwNSA0Ni45MDRjMS44NTEgMS44NTEgMS44NTEgNC44NTEgMCA2LjcwMi0xLjg1MSAxLjg1LTQuODUgMS44NS02LjcwMSAwbC00Ni45MDUtNDYuOTA1Yy0xLjg1LTEuODUtMS44NS00Ljg1IDAtNi43MDF6IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSIiPjwvcGF0aD48L2c+PGc+PHBhdGggY2xpcC1ydWxlPSJldmVub2RkIiBkPSJtOTQuNzYyIDE4MC4wNDhjNDcuMTAyIDAgODUuMjg2LTM4LjE4MyA4NS4yODYtODUuMjg2IDAtNDcuMTAyLTM4LjE4My04NS4yODYtODUuMjg2LTg1LjI4Ni00Ny4xMDIgMC04NS4yODYgMzguMTg0LTg1LjI4NiA4NS4yODZzMzguMTg0IDg1LjI4NiA4NS4yODYgODUuMjg2em0wIDkuNDc2YzUyLjMzNSAwIDk0Ljc2Mi00Mi40MjcgOTQuNzYyLTk0Ljc2MiAwLTUyLjMzNi00Mi40MjctOTQuNzYyLTk0Ljc2Mi05NC43NjItNTIuMzM2IDAtOTQuNzYyIDQyLjQyNi05NC43NjIgOTQuNzYyIDAgNTIuMzM1IDQyLjQyNiA5NC43NjIgOTQuNzYyIDk0Ljc2MnoiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9IiI+PC9wYXRoPjwvZz48L2c+PC9nPjwvc3ZnPg==" />
+        </div>
+        <a href="https://wiki.almalinux.org/Election2022.html" target="_blank">
+            <picture>
+                <source srcset="{% static 'images/widescreen_sticky_banner.jpg' %}" class="img-fluid" media="(min-width: 1930px)" />
+                <img src="{% static 'images/sticky_banner.jpg' %}" class="img-fluid" alt="">
+            </picture>
         </a>
     </div>
 

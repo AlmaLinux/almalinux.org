@@ -97,17 +97,15 @@
         gtag('config', 'G-1C1KF63NYM');
     </script>
 {% endif %}
-<script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
+
 <script>
-    const closeBtn = document.querySelector('.chk-close');
-    const Sticky = document.querySelector('.sticky');
-    closeBtn.addEventListener('click', function () {
-        Sticky.style.display = "none";
-    });
-</script>
+    let sticky = document.querySelector(".sticky");
+    let close = document.querySelector(".close");
+
+    close.addEventListener("click",function(e){
+         sticky.className = "d-none";
+     });
+ </script>
 
 </body>
 </html>
