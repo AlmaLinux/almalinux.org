@@ -5,7 +5,7 @@
 
 {% block title %}{% translate 'AlmaLinux OS - ELevate Your Distribution' %}{% endblock %}
 {% block description %}
-    {% translate 'ELevate enables migration between major versions of RHEL(r) derivatives. Easily go from CentOS 7.x to any 8.x of your choice' %}{% endblock %}
+    {% translate 'ELevate enables migration between major versions of RHEL(r) derivatives. Easily go from Enterprise Linux 7.x to any 8.x of your choice' %}{% endblock %}
 
 {% block head_end %}
     {% encore_entrypoint_css 'page_elevate' %}
@@ -26,7 +26,7 @@
                         <p>
                             {% blocktranslate trimmed %}
                                 ELevate enables migration between major versions of RHEL&reg; derivatives.
-                                Easily go from CentOS 7.x to any 8.x of your choice
+                                Easily go from Enterprise Linux 7.x to any 8.x of your choice
                             {% endblocktranslate %}
                         </p>
                     </div>
@@ -161,7 +161,13 @@
                     </div>
                     <div class="answer">
                         {% blocktranslate trimmed %}
-                            Currently ELevate provides Leapp data for migration from CentOS 7 to the following OS:
+                            Currently ELevate provides Leapp data for migration from the following OS:
+                            <ul>
+                                <li>CentOS 7</li>
+                                <li>EuroLinux 7</li>
+                                <li>Red Hat Enterprise Linux 7</li>
+                            </ul>
+                            to the following OS:
                             <ul>
                                 <li>AlmaLinux OS 8</li>
                                 <li>CentOS Stream 8</li>
@@ -169,6 +175,7 @@
                                 <li>Oracle Linux 8</li>
                                 <li>Rocky Linux 8</li>
                             </ul>
+                        You can automate the process with the <a href="https://github.com/EuroLinux/autoelevate/">AutoELevate project</a>. Additionally, it covers certain edge cases.
                         {% endblocktranslate %}
                     </div>
                 </div>
