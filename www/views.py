@@ -220,6 +220,10 @@ def media_element(_: HttpRequest, media_id: int) -> HttpResponse:
 def elevate(request: HttpRequest) -> HttpResponse:
     return render(request, 'elevate/index.html', {})
 
+@require_safe
+@never_cache
+def sbom(request: HttpRequest) -> HttpResponse:
+    return render(request, 'sbom/index.html', {})
 
 def not_found(request: HttpRequest, exception: Exception) -> HttpResponse:
     return render(request, '404.html', status=404)

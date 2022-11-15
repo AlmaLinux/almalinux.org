@@ -17,6 +17,7 @@ urlpatterns = [
     path('feed/', BlogPostFeed(), name='feed'),
     path('media-link/<int:media_id>', views.media_element, name='media_element'),
     path('elevate', views.elevate, name='elevate'),
+    path('sbom', views.sbom, name='sbom'),
     path('ELevate', RedirectView.as_view(url='elevate'), name='ELevate'),
     path('certified/amd-ryzen-may2022/', views.certified_index, name="certified_index_page")
 ]
