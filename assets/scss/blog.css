@@ -1,0 +1,154 @@
+.al-page-blog-index {
+  margin: auto;
+  max-width: 680px;
+}
+.al-page-blog-index .al-page-blog-posts article a.al-article-title-link {
+  text-decoration: none;
+}
+.al-page-blog-index .al-page-blog-posts article a.al-article-title-link h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.al-page-blog-index .al-page-blog-posts article .al-article-date {
+  color: #efefef;
+  font-size: 0.82rem;
+}
+.al-page-blog-index .al-page-blog-posts article .al-article-date i {
+  font-size: 0.8rem;
+  margin-right: 5px;
+}
+[dir=rtl] .al-page-blog-index .al-page-blog-posts article .al-article-date i {
+  padding-right: 0;
+  padding-left: 6px;
+}
+
+.al-page-blog-index .al-page-blog-posts article .al-article-excerpt {
+  color: #fefefe;
+}
+.al-page-blog-index .al-page-blog-posts article .al-article-actions a.al-article-continue {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #C4E1FF;
+}
+.al-page-blog-index .al-page-blog-posts article .al-article-actions a.al-article-continue i {
+  margin-right: 5px;
+}
+.al-page-blog-index .al-page-blog-posts article .al-article-actions a.al-article-continue:hover {
+  text-decoration: underline;
+}
+.al-page-blog-index .al-page-blog-posts article .al-article-author img {
+  width: 40px;
+  height: 40px;
+}
+.al-page-blog-index .al-page-blog-posts article .al-article-author .al-article-author-name {
+  font-style: italic;
+  font-size: 14px;
+  margin: 0px;
+  margin-bottom: 5px;
+  color: #C4E1FF;
+}
+.al-page-blog-index .al-page-blog-posts article .al-article-author .al-article-author-bio {
+  font-style: italic;
+  font-size: 12px;
+  margin: 0px;
+  color: #C4E1FF;
+}
+.al-page-blog-index .pagination .page-item .page-link {
+  background: #196da9;
+  border: none;
+}
+.al-page-blog-index .pagination .page-item .page-link:hover {
+  color: #efefef;
+}
+.al-page-blog-index .pagination .page-item.active .page-link {
+  background: #1f8ad5;
+}
+.al-page-blog-index .pagination .page-item.disabled .page-link {
+  color: #051723;
+}
+
+.al-page-blog-post .container {
+  padding: 3rem 15px !important;
+}
+.al-page-blog-post .container article .al-article-date {
+  color: #efefef;
+  font-size: 0.82rem;
+}
+.al-page-blog-post .container article .al-article-date i {
+  font-size: 0.8rem;
+}
+[dir=rtl] .al-page-blog-post .container article .al-article-date i {
+  padding-right: 0;
+  padding-left: 6px;
+}
+
+.al-page-blog-post .container article .al-article-content {
+  color: #fefefe;
+}
+.al-page-blog-post .container article .al-article-content img {
+  max-width: 100%;
+}
+.al-page-blog-post .container article .al-page-blog-author img {
+  width: 40px;
+  height: 40px;
+}
+.al-page-blog-post .container article .al-page-blog-author .al-page-blog-author-name {
+  font-style: italic;
+  font-size: 14px;
+  margin: 0px;
+  margin-bottom: 5px;
+  color: #C4E1FF;
+}
+.al-page-blog-post .container article .al-page-blog-author .al-page-blog-author-bio {
+  font-style: italic;
+  font-size: 12px;
+  margin: 0px;
+  color: #C4E1FF;
+}
+.al-page-blog-post .container .al-blog-pagination .al-blog-previous-button {
+  background: #86da2f;
+  color: #222222;
+}
+.al-page-blog-post .container .al-blog-pagination .al-blog-previous-button:hover {
+  background: #79cb24;
+}
+.al-page-blog-post .container .al-blog-pagination .al-blog-next-button {
+  background: #86da2f;
+  color: #222222;
+  float: right;
+}
+.al-page-blog-post .container .al-blog-pagination .al-blog-next-button:hover {
+  background: #79cb24;
+}
+.al-page-blog-post .container .al-blog-pagination a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 16px;
+  font-size: 15px;
+}
+
+.custom-blog-page-section {
+  width: 680px;
+  margin: auto;
+}
+
+.al-page-blog-index .pagination .page-item .page-link {
+  background: #196da9 !important;
+  border: none;
+}
+
+.pagination .page-item .page-link {
+  background: #196da9 !important;
+  padding: 0.375rem 0.75rem !important;
+  color: #c4e1ff;
+  border: none;
+  text-decoration: none;
+}
+
+.pagination .active .page-link {
+  background: #1f8ad5 !important;
+}
+
+.pagination .disabled {
+  color: #000 !important;
+}/*# sourceMappingURL=blog.css.map */

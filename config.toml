@@ -1,0 +1,11 @@
+baseURL = 'https://almalinux.org'
+languageCode = 'en-us'
+title = 'AlmaLinux'
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+paginate= '15'
+
+[taxonomies]
+author= 'authors'
+about-author= 'about-authors'
+image= 'images'

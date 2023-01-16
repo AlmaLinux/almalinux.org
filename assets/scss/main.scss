@@ -1,0 +1,435 @@
+@import "./variables";
+@import "./functions";
+@import "./bootstrap";
+@import "./home";
+@import "./blog";
+@import "./elevate";
+@import "./members";
+@import "./contribute";
+
+
+body, html {
+  line-height: initial;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-shadow: none;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $al-body-background;
+}
+a{
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $al-font-family-accent;
+}
+
+.al-body-container {
+  min-height: 65vh;
+}
+
+button:active {
+outline: none;
+border: 0px solid transparent;
+}
+
+button:focus, .btn:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+.row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.container{
+  padding: 0 ;
+}
+.al-primary-navbar .container {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+.al-index-faq .container {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+.al-index-press .container {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+.elevate-container-wrap{
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+.custom-blog-page-section{
+  width: 680px;
+  margin: auto;
+}
+.al-page-blog-post .container{
+  padding: 3rem 15px !important;
+}
+.fw-bold{
+  font-weight: 700 !important;
+}
+.fw-light{
+  font-weight: 300;
+}
+.fs-6 {
+  font-size: 1rem!important;
+}
+.display-5{
+  font-size: 46px !important;
+  line-height: 47px !important;
+}
+.lead {
+  font-size: 1.25rem !important;
+  font-weight: 400 !important;
+}
+
+// Main navigation
+.al-primary-navbar {
+  background: $al-c-black-pearl;
+  font-family: $al-font-family-accent;
+  font-weight: 500;
+  box-shadow: al-shadow(3, 0.5);
+  .nav-link.al-download-button {
+    font-weight: 500;
+    background: $al-c-atlantis;
+    color: $al-font-color-light !important;
+
+    &:hover {
+      color: $al-font-color-light;
+      background: darken($al-c-atlantis, 5%);
+    }
+  }
+  
+  .nav-link {
+    
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    color: #fff !important;
+    font-size: 15px;
+    transition: .3s ease-in-out;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    :hover{
+      color: #1e87f8 !important;
+    }
+}
+
+  &.with-motd {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+
+  
+  .dropdown-menu-dark {
+    background: $al-c-black-pearl;
+    border: 0;  
+    .dropdown-item{
+      text-decoration: none !important;
+    }
+    .dropdown-item:hover{
+      background-color: #ffffff26 !important;
+    }
+    
+    .dropdown-divider {
+      border-color: $al-c-black-pearl-lighter;
+    
+    }
+  }
+
+
+
+  .al-language-switch {
+    img {
+      height: 24px;
+    }
+  }
+
+  .al-language-link {
+    text-transform: capitalize;
+    color: aliceblue;
+  }
+
+  .al-translate-callout {
+    font-size: 0.92rem;
+
+    a {
+      display: flex;
+      align-items: center;
+      color: #69b1ff;
+
+      i {
+        margin-right: 0.4rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+}
+
+#al-motd {
+  width: 100%;
+  background: darken($al-c-black-pearl, 5%);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 0.8rem;
+
+  & > .container {
+    display: flex;
+
+    & > i {
+      padding-right: 8px;
+    }
+
+    & > .text {
+      display: block;
+      font-weight: 500;
+   
+      a {
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+          color: inherit;
+        }
+      }
+    }
+  }
+}
+
+// Section titles
+section h1.al-section-title {
+  font-size: 2.6rem;
+  font-weight: 300;
+}
+
+// Footer
+.al-primary-footer {
+  background: #0D3654;
+  padding-top: 122px;
+  padding-bottom: 132px;
+}
+
+// Utilities
+.al-py-lg {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.al-py-md {
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
+}
+
+.al-text-shadow-dark {
+  text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+// Smooth out buttons and links
+.btn {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .12s;
+  text-decoration: none !important;
+}
+
+a{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .12s;
+  text-decoration: underline ;
+}
+
+
+
+// WYSIWYG
+.al-wysiwyg {
+  $al-wysiwyg-font-size: $al-font-base-size - 1px;
+  all: revert;
+  font-family: $al-font-family;
+  font-size: $al-wysiwyg-font-size;
+
+  h1, h2, h3, h4, h5, h6 {
+    all: revert;
+    font-family: $al-font-family-accent;
+  }
+
+  ul,
+  ol,
+  ul li,
+  ol li,
+  p,
+  pre,
+  blockquote {
+    all: revert;
+    font-family: $al-font-family;
+    font-size: $al-wysiwyg-font-size;
+  }
+
+  pre, code {
+    font-family: $al-font-family-mono;
+  }
+}
+
+
+
+.al-certified-amd-page .banner {
+  background-image: url(/images/main-image.png);
+  background-size: cover;
+  padding: 180px 0 300px;
+  background-position: 25%;
+}
+.al-certified-amd-page .container {
+  margin: 0 auto;
+  max-width: 1180px;
+}
+.al-certified-amd-page .banner h1 {
+  font-size: 40px;
+  font-weight: 600;
+  max-width: 600px;
+}
+.al-certified-amd-page .banner p {
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 500;
+}
+.al-certified-amd-page section.content {
+  background-color: #0e3b5c;
+}
+.al-certified-amd-page .content p {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 60px 0;
+  text-align: center;
+}
+.al-certified-amd-page .info-flex {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 60px 0;
+}
+.al-certified-amd-page .img img {
+  height: 300px;
+}
+.al-certified-amd-page .text>div {
+  align-items: center;
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.al-certified-amd-page .info-block-title {
+  font-size: 25px!important;
+  font-weight: 500;
+  margin-bottom: 40px!important;
+}
+.al-certified-amd-page .info-flex .text img {
+  height: 25px;
+  margin-right: 20px;
+}
+.al-certified-amd-page .container{
+  padding: 3rem 15px;
+}
+.al-certified-amd-page img{
+  max-width: 100%;
+}
+.al-certified-amd-page button.request {
+  background-color: #0069d9;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 17px 35px;
+}
+.al-certified-amd-page .test-cta {
+  padding: 60px 0;
+  text-align: center;
+}
+.al-certified-amd-page .test-cta a, .al-certified-amd-page .test-cta button {
+  background-color: #87d831;
+  border: 0;
+  color: #000;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 0;
+  padding: 17px 50px;
+  -webkit-text-decoration: None;
+  text-decoration: None;
+}
+
+
+
+
+.al-certified-amd-page .test table {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+}
+.al-certified-amd-page .test table td, .al-certified-amd-page .test table th {
+  background-color: #0e3b5c;
+  font-weight: 500;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  width: 35%;
+}
+.al-certified-amd-page td.passed {
+  padding-left: 80px!important;
+  position: relative;
+}
+.al-certified-amd-page .checkmark {
+  border-bottom: 6px solid #0069d9;
+  border-right: 6px solid #0069d9;
+  display: inline-block;
+  height: 25px;
+  left: 40px;
+  position: absolute;
+  top: 25px;
+  transform: rotate(45deg);
+  width: 12px;
+}
+
+.al-certified-amd-page {
+  color: #fff;
+  font-family: Montserrat,sans-serif;
+  margin: 0;
+  width: 100%;
+}
+.al-certified-amd-page p.test-title {
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 40px;
+  text-transform: uppercase;
+}
+
+.al-certified-amd-page .test img {
+  margin-top: 40px;
+  max-height: 400px;
+}
+.al-certified-amd-page .form {
+  margin-top: 40px;
+}
+.al-page-blog-index{
+  margin: auto;
+  max-width: 680px;
+}
+
+
+@media (min-width:1400px){
+  .container{
+    max-width: 1320px;
+  }
+}

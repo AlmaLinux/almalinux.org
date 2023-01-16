@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+
+
+<div class="al-body-container "  style="max-width:680px; margin: auto;">
+    
+    
+
+    <section class="al-page-page" dir="ltr">
+        <div class="container py-5">
+            <h1 class="al-section-title mb-4">{{ .Title }}</h1>
+            <article>
+                <div class="al-page-content pb-5 al-wysiwyg">
+
+                    {{ .Content }}
+                </div>
+                <div class="al-page-date d-flex align-items-center"
+                     title="Date Published"
+                     dir="ltr">
+                    <i class="bi bi-calendar pe-1"></i>
+                    <span>{{ .PublishDate}}</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+</div>
+
+
+
+
+{{ end }}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+{{- partial "common/head.html" . -}}
+
+
+<body>
+    {{- partial "common/nav.html" . -}}
+
+    {{- block "main" . -}} {{- end -}}
+
+    {{- partial "common/footer.html" . -}}
+    {{- partial "common/scripts.html" . -}}
+    {{- block "scripts" . -}} {{- end -}}
+
+
+</body>
+
+</html>

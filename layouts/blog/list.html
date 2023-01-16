@@ -1,0 +1,137 @@
+{{ define "main" }}
+<div class="al-body-container" >
+
+    <ol class="post-list pl-0">
+        <button class="RSSFeedbtn" onclick="location.href='/feed/'">RSS Feed</button>
+
+
+        <section class="al-page-blog-post custom-blog-page-section" dir="ltr">
+            <div class="container py-5">
+
+            <article>
+                {{ range (.Paginate ( .Pages.ByDate.Reverse )).Pages }}
+
+                <div>
+                <a class="al-article-title-link" href="{{ .Permalink }}" style="text-decoration:none;">
+                    <h3> {{ .Title }} </h3>
+                </a>
+                 </div>
+                    
+                <div class="al-page-blog-author">
+                            
+                    <div class="col d-flex align-items-start mb-3 mt-3 p-0">
+                               
+                                    {{ with .Params.author.image }}
+                                    <img src= "{{ . }}" class="rounded-circle" alt="profile">
+                                    {{ end }}
+                                
+                                    <div class="ml-3">
+                                    <h6 class="al-page-blog-author-name">
+                                        {{ .Params.author.name }}
+
+                                   
+                                   
+                                    </h6>
+                                    <p class="al-page-blog-author-bio">
+                                        {{ .Params.author.bio }}
+                                    </p>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="al-article-date d-flex align-items-center pb-4" title="" dir="ltr">
+                            <i class="bi bi-calendar pe-1"></i>
+                            <span>{{ .Date.Format "Mon Jan 2, 2006" }}</span>
+                        </div>
+    
+                        <div class="al-article-content pb-5 al-wysiwyg">
+    
+                            {{ with .Params.post.image }}
+            <img  src="{{ . }}">
+        {{ end }}
+    
+    
+        <div class="al-article-excerpt my-4">
+            {{ .Params.post.title }}
+        </div>
+        <div class="al-article-actions" dir="ltr">
+            <a href=" {{ .Permalink }} " class="al-article-continue d-flex align-items-center">
+                <i class="bi bi-chevron-double-right pe-1"></i>
+                <span>Continue reading</span>
+            </a>
+        </div>
+   
+           </div>
+                       
+           {{ end }}
+        
+                    </article>
+
+    <nav class="pt-5" >
+
+        
+        <ul class="pagination justify-content-start" >
+            
+            {{ $paginator := .Paginator }}
+               
+      
+                
+                {{ if $paginator.HasPrev}}
+                <li class="page-item ">
+                    <a class="page-link active" href="{{ $paginator.Prev.URL }}" tabindex="-1" aria-disabled="true" style="text-decoration:none;">
+                        Previous
+                    </a>
+            
+                </li>
+                {{ else }}
+                <li class="page-item ">
+                    <a class="page-link disabled"  tabindex="-1" aria-disabled="true" style="text-decoration:none;">
+                        Previous
+                    </a>
+            
+                </li>
+                {{ end }}
+
+                {{ range $paginator.Pagers }}
+
+                <li class="page-item {{ if eq . $paginator }} active{{ end }}">
+                  <a class="page-link " href="{{ .URL }}" class="pagination__link">
+                    {{ .PageNumber }}
+                  </a>
+                </li>
+
+                {{ end }}
+            
+
+
+                {{ if $paginator.HasNext}}
+                <li class="page-item ">
+                    <a class="page-link active" href="{{ $paginator.Next.URL }}" tabindex="-1" aria-disabled="true" style="text-decoration:none;">
+                        Next
+                    </a>
+            
+                </li>
+                {{ else }}
+                <li class="page-item ">
+                    <a class="page-link disabled" tabindex="-1" aria-disabled="true" style="text-decoration:none;">
+                        Next
+                    </a>
+            
+                </li>
+                {{ end }}
+        </ul>
+    
+    </nav>
+                    
+                  
+           </div>
+            </section>
+                
+
+                         </ol>
+
+    
+    
+   
+</div>
+    
+{{ end }}

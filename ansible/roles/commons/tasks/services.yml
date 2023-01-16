@@ -1,8 +1,0 @@
----
-- name: Enable common services
-  service: name='{{item}}' state=started enabled=yes
-  loop:
-    - sshd
-    - auditd
-    - tuned
-  become: yes

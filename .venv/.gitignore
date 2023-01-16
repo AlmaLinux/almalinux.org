@@ -1,3 +1,0 @@
-# Keep .venv around in the project source to avoid pipenv creating new user-local venvs
-*
-!.gitignore

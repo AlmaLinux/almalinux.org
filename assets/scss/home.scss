@@ -1,0 +1,264 @@
+@import "./variables";
+@import "./functions";
+@import "./bootstrap";
+
+
+
+.al-page-index {
+  .al-hero-cta-primary {
+    background: #24c2ff;
+    color: #222222;
+    margin:10px 10px 10px 0;
+
+    &:hover {
+      background: darken(#24c2ff, 5%);
+    }
+  }
+
+  .al-hero-cta-secondary {
+    background: $al-c-atlantis;
+    color: #222222;
+    margin: 10px;
+
+    &:hover {
+      background: darken($al-c-atlantis, 5%);
+    }
+  }
+
+  .al-hero-cta-tertiary {
+    background: $al-c-candlelight;
+    color: #222222;
+    margin: 10px;
+
+    img {
+      display: inline;
+      height: 1em;
+    }
+
+    &:hover {
+      background: darken($al-c-candlelight, 5%);
+    }
+  }
+
+  .al-index-feature-container {
+    background: #0e3b5c;
+
+    .al-index-feature-icon {
+      color: lighten($al-font-color, 10%);
+      font-size: 32px;
+      padding-right: 22px;
+
+      @at-root {
+        [dir=rtl] & {
+          padding-right: 0;
+          padding-left: 22px;
+        }
+      }
+    }
+  }
+
+  .al-index-community-container {
+    background: #0e3b5c;
+
+    .al-index-community-icon {
+      color: $al-font-color;
+      font-size: 32px;
+      padding-right: 22px;
+      flex: 0;
+
+      @at-root {
+        [dir=rtl] & {
+          padding-right: 0;
+          padding-left: 22px;
+        }
+      }
+
+      &.img {
+        height: 32px;
+        box-sizing: border-box;
+      }
+    }
+
+
+    
+    .al-community-cta {
+      min-width: 120px;
+    }
+    .al-index-community-content-wrap {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      p{
+        flex: 1;
+      }
+  }
+
+  }
+
+  .al-index-backed-by {
+    h2.border-bottom {
+      border-bottom-color: lighten($al-body-background, 8%) !important;
+    }
+
+   
+    .al-backed-by-list {
+      justify-content: space-between;
+      padding: 0 !important;
+      
+      a{
+        margin-top: 3rem !important;
+      
+
+      div.col {
+        text-align: center;
+      }
+     
+
+      .al-backer-logo-container {
+        height: 100%;
+        
+      
+      }
+
+      .al-backer-logo {
+        height: 100%;
+        width:120px;
+       
+      }
+    }
+    }
+  }
+
+  .al-index-commercial-support {
+    h2.border-bottom {
+      border-bottom-color: lighten($al-body-background, 8%) !important;
+    }
+
+    
+
+    .al-commercial-supporter-list {
+      justify-content: center;
+
+      div.col {
+        text-align: center;
+      }
+
+      .al-commercial-supporter-logo-container {
+        height: 100%;
+      }
+
+      .al-commercial-supporter-logo {
+        max-width: 120px;
+        width: 100%;
+      }
+    }
+  }
+
+  .al-index-faq {
+    background: #0e3b5c;
+
+    .accordion-button {
+      border: none;
+      box-shadow: none;
+      font-weight: normal;
+      background: #104469;
+      width: 100% !important;
+      text-align: left !important;
+      padding: 20px 10px !important;
+      color: #fefefe!important;
+      font-size: 15px;
+
+      &:active, &.active, &:hover, &:focus {
+        box-shadow: none;
+        outline: none;
+        border: none;
+      }
+
+      &:not(.collapsed) {
+        background: #104469;
+        color: $al-font-color;
+      }
+    }
+
+    .accordion-body {
+      background: #114a73;
+      padding: 15px 10px;
+  margin-top: -8px;
+  color: #fefefe;
+    }
+  }
+
+  .al-index-newsletter {
+
+   a{
+    text-decoration: underline;
+   }
+
+    .al-newsletter-input{
+      background-color: white;
+    }
+
+    .al-newsletter-button {
+      background: #86da2f;
+      color: #000518;
+
+      &:hover {
+        color: #000518;
+        background: #79cb24;
+      }
+    }
+  }
+
+  .al-index-press {
+    background: #0e3b5c;
+
+   
+
+    .al-index-press-item {
+      margin-bottom: 10px;
+
+      blockquote.blockquote {
+        padding-bottom: 7px;
+        font-family: $al-font-family-accent;
+        font-size: 1.4rem;
+
+        &:before {
+          content: open-quote;
+          padding-right: 3px;
+        }
+
+        &:after {
+          content: close-quote;
+          padding-left: 3px;
+        }
+ 
+        &:before,
+        &:after {
+          font-family: $al-font-family-accent;
+          vertical-align: top;
+          display: inline-block;
+          color: #faf5f5;
+          font-weight: bold;
+          font-size: 1rem;
+        }
+      }
+
+      figcaption.blockquote-footer {
+        color: $al-font-color;
+
+        cite {
+          font-style: normal;
+        }
+
+        a {
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+            color: lighten($al-link-color, 10%);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="{{ .Site.BaseURL }}/assets/js/main.js"></script>
+<script>
+
+window.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('contributor').addEventListener('click',function ()
+        {
+            const contrib = document.getElementById('al-contributor-info');
+            const mirr = document.getElementById('al-mirror-info');
+            const spons = document.getElementById('al-sponsor-info');
+            mirr.style.display = 'none';
+            spons.style.display = 'none';
+            if (contrib.style.display === 'none' | contrib.style.display == '') {
+                contrib.style.display = 'block';
+            } else {
+                contrib.style.display = 'none';
+            }
+        }
+    );
+
+    document.getElementById('mirror').addEventListener('click',function ()
+        {
+            const mirr = document.getElementById('al-mirror-info');
+            const contrib = document.getElementById('al-contributor-info');
+            const spons = document.getElementById('al-sponsor-info');
+            contrib.style.display = 'none';
+            spons.style.display = 'none';
+            if (mirr.style.display === 'none'  | mirr.style.display == '') {
+                mirr.style.display = 'block';
+            } else {
+                mirr.style.display = 'none'; 
+            }
+        }
+    );
+
+    document.getElementById('sponsor').addEventListener('click',function ()
+        {
+            const spons = document.getElementById('al-sponsor-info');
+            const mirr = document.getElementById('al-mirror-info');
+            const contrib = document.getElementById('al-contributor-info');
+            contrib.style.display = 'none';
+            mirr.style.display = 'none';
+            if (spons.style.display === 'none' | spons.style.display == '') {
+                spons.style.display = 'block';
+            } else {
+                spons.style.display = 'none';
+            }
+        }
+    );
+});
+
+</script>
+

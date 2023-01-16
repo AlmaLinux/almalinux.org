@@ -1,0 +1,75 @@
+{{ define "main" }}
+<div class="al-body-container" style="max-width:680px; margin: auto;">
+    
+    <section class="al-page-blog-post  " dir="ltr">
+        <div class="container py-5">
+            <h1 class="al-section-title mb-3">{{ .Title}}</h1>
+            <article>
+                
+                    <div class="al-page-blog-author">
+                        <div class="col d-flex align-items-start mb-3 mt-3 p-0">
+                           
+                                {{ with .Params.author.image }}
+                                <img src= "{{ . }}" class="rounded-circle" alt="profile">
+                                {{ end }}
+                            
+                                <div class="ml-3">
+                                <h6 class="al-page-blog-author-name">
+                                    {{ $.Param "author.name" }}
+                                </h6>
+                                <p class="al-page-blog-author-bio">
+                                    {{ $.Param "author.bio" }}
+                                </p>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="al-article-date d-flex align-items-center pb-4" title="" dir="ltr">
+                        <i class="bi bi-calendar pe-1"></i>
+                        <span>{{ .Date.Format "Mon Jan 2, 2006" }}</span>
+                    </div>
+
+                    <div class="al-article-content pb-5 al-wysiwyg">
+
+                        {{ with .Params.post.image }}
+        <img  src="{{ . }}">
+    {{ end }}
+
+                        {{ .Content }}
+
+
+                    </div>
+               
+               
+               
+                </article>
+                <div class="al-blog-pagination mt-3">
+              
+                    
+                    
+                        {{ if .PrevPage }}
+                        <a class="al-blog-previous-button " href="{{ .PrevPage.Permalink }}">
+                            <span>« Previous</span>
+
+                        </a> 
+                        
+                        {{ end }}
+                    
+                
+                    
+                        {{ if .NextPage }}
+                        <a class="al-blog-next-button " href="{{ .NextPage.Permalink }}">                   
+                            <span> Next »</span>
+                        </a>
+                        {{ end }}
+                
+                    
+
+                   
+            </div>
+            </div>
+        </section>
+    </div>
+
+
+
+{{end}}
