@@ -14,6 +14,9 @@ users:
   - username: iseletsk
     pubkey: '{{ lookup("file", "../files/ssh/id_rsa.iseletsk.pub") }}'
     state: present
+  - username: codyr
+    pubkey: '{{ lookup("file", "../files/ssh/id_ed25519.codyr.pub") }}'
+    state: present
 
 deployment_keys:
   - '{{ lookup("file", "../files/ssh/id_rsa.jack.pub") }}'
