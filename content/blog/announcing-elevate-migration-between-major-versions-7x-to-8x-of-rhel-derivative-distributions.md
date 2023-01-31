@@ -13,7 +13,7 @@ post:
 
 Hey, all! We'd like to share a very cool project/initiative that we've been working on with the community.
 
-We are extremely happy to announce our migration project for major version of RHEL-derivative distributions. We like to call it [ELevate](https://almalinux.org/elevate). Get it? EL evate? Yeah, anyway...
+We are extremely happy to announce our migration project for major version of RHEL-derivative distributions. We like to call it [ELevate](/elevate). Get it? EL evate? Yeah, anyway...
 
 Before we get started, let's be smart. We HIGHLY recommend that you follow system administration best practices and make sure you have backups and/or snapshots of your system before you proceed. It is recommended to do a trial run in a sandbox to verify that migration worked as expected before you attempt to migrate any production system.
 
@@ -23,7 +23,7 @@ Let's take a little peak behind the scenes at how all this works. First, We've p
 
 Second, Leapp needs several configuration files, the biggest of them is some metdata called the package evolution data file pes-events.json. This metadata is what describes the steps required for a package to "evolve" from one release to the next. Oracle have been gracious enough to contribute an initial data set which we have built upon and we've also put together the [Package Evolution Service](https://pes.almalinux.org/) to allow the community to contribute and collaborate on additional metadata. This way maintainers and application vendors can contribute metadata to the library and users can customize the metdata set they download.
 
-If you are keen on more details about the migration process and how to contribute, please, visit the [ELevate site](https://almalinux.org/elevate) and the [AlmaLinux Migration wiki page](https://wiki.almalinux.org/sigs/Migration.html).
+If you are keen on more details about the migration process and how to contribute, please, visit the [ELevate site](/elevate) and the [AlmaLinux Migration wiki page](https://wiki.almalinux.org/sigs/Migration.html).
 
 We've taken steps to make sure that this works for the whole communtiy, not just AlmaLinux. These are the migrations that are currently available:
 

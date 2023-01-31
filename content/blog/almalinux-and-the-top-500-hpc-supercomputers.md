@@ -17,7 +17,7 @@ We'd like to give a special thank you to our friends at [MEGWARE](https://www.me
 
 AlmaLinux Installations List in Top500:
 
-- [#184 "Alex"](https://www.top500.org/system/180075/) at Universitaet Erlangen - Regionales Rechenzentrum Erlangen, Germany - AMD EPYC™ 7713 (Milan) with NVIDIA A100 HGX - MEGWARE NF5488A5 - Running AlmaLinux 8.5 - [System's Home Page](https://almalinux.org/blog/almalinux-and-the-top-500-hpc-supercomputers/(https://hpc.fau.de/systems-services/systems-documentation-instructions/clusters/alex-cluster))
+- [#184 "Alex"](https://www.top500.org/system/180075/) at Universitaet Erlangen - Regionales Rechenzentrum Erlangen, Germany - AMD EPYC™ 7713 (Milan) with NVIDIA A100 HGX - MEGWARE NF5488A5 - Running AlmaLinux 8.5 - [System's Home Page](/blog/almalinux-and-the-top-500-hpc-supercomputers/(https://hpc.fau.de/systems-services/systems-documentation-instructions/clusters/alex-cluster))
 
 - [#301 "VSC-5"](https://www.top500.org/system/180056/) at Vienna Scientific Cluster, Austria - AMD EPYC™ 7713 (Milan) - MEGWARE SlideSX®-LC - Running AlmaLinux 8.5 - [System's Home Page](https://vsc.ac.at/home/)
 

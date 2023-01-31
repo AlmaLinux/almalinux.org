@@ -11,7 +11,7 @@ post:
     image: 
 ---
 
-Over a month ago I announced that we would be holding our [first board election](https://almalinux.org/blog/first-almalinux-os-foundation-election/). Our nearly 300 members of the AlmaLinux OS Foundation have spent the last two weeks casting their votes for the new board, and I am very happy to announce the newest board. These seven nominees have been elected by the community to serve a three-year term as the AlmaLinux OS Foundation board members.
+Over a month ago I announced that we would be holding our [first board election](/blog/first-almalinux-os-foundation-election/). Our nearly 300 members of the AlmaLinux OS Foundation have spent the last two weeks casting their votes for the new board, and I am very happy to announce the newest board. These seven nominees have been elected by the community to serve a three-year term as the AlmaLinux OS Foundation board members.
 
 **How the election worked**
 
