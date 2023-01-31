@@ -11,7 +11,7 @@ AlmaLinux OS software in source code and binary code form are publicly available
 
 [The AlmaLinux OS licensing policy](/p/the-almalinux-os-licensing-policy/)
 
-[The AlmaLinux OS trademark usage policy](p/the-almalinux-os-trademark-usage-policy/)
+[The AlmaLinux OS trademark usage policy](/p/the-almalinux-os-trademark-usage-policy/)
 
 [Privacy Policy](/p/privacy-policy/)
 
