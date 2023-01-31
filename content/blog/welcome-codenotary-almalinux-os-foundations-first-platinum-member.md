@@ -1,4 +1,4 @@
----
+/---
 title: "Welcome Codenotary! AlmaLinux OS Foundation's First Platinum Member"
 type: blog
 author: 
@@ -11,7 +11,7 @@ post:
     image: /blog-images/codenotarysponsorship.jpg
 ---
 
-About two months ago we eagerly announced that we were able to then [open memberships for the AlmaLinux OS Foundation](https://almalinux.org/blog/what-almalinux-foundation-membership-means-for-you/). I outlined why I thought it was important that we’d structured the governance of the project this way–in order to give community members true ownership and a direct voice in the direction of AlmaLinux OS. The reception was tremendous and we’ve had hundreds of applicants and we’ve so far approved, I believe over 100 community members and dozens of mirror members. It’s very encouraging and refreshing to see the community rise to the occasion. I salute each and every person who has been active in our wonderful community, has helped to make it such a welcoming, friendly and diverse place and has taken the step to make their voice heard.
+About two months ago we eagerly announced that we were able to then [open memberships for the AlmaLinux OS Foundation](/blog/what-almalinux-foundation-membership-means-for-you/). I outlined why I thought it was important that we’d structured the governance of the project this way–in order to give community members true ownership and a direct voice in the direction of AlmaLinux OS. The reception was tremendous and we’ve had hundreds of applicants and we’ve so far approved, I believe over 100 community members and dozens of mirror members. It’s very encouraging and refreshing to see the community rise to the occasion. I salute each and every person who has been active in our wonderful community, has helped to make it such a welcoming, friendly and diverse place and has taken the step to make their voice heard.
 
 We also have a membership tier for corporations who would like to participate in governance. We know that thousands (and probably tens of thousands) of groups, organizations and companies relied on the old CentOS Linux for a wide array of reasons and we assumed that they would like more direct participation in whatever solution they chose to move forward with. We’ve spoken to several already and you’ll be hearing more about them shortly but today we are here to celebrate [Codenotary](https://codenotary.com/)–our first platinum member!
 

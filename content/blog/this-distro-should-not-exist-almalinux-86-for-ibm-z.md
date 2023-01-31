@@ -17,7 +17,7 @@ In general, we build an AlmaLinux release by consuming upstream sources from the
 
 ## Why We Did it
 
-It's pretty easy to consume upstream and bake a distro and we've gotten pretty good at that, in fact we always were. But, we like to challenge ourselves, so that we can learn and grow while at the same time bringing goodness to the community. This is what motivated us to release projects like [ELevate](https://almalinux.org/elevate) which let you migrate from CentOS 7.x to any 8.x of your choice. So, we thought to ourselves, instead of re-building from upstream, let's try and build a distro that doesn't yet exist!
+It's pretty easy to consume upstream and bake a distro and we've gotten pretty good at that, in fact we always were. But, we like to challenge ourselves, so that we can learn and grow while at the same time bringing goodness to the community. This is what motivated us to release projects like [ELevate](/elevate) which let you migrate from CentOS 7.x to any 8.x of your choice. So, we thought to ourselves, instead of re-building from upstream, let's try and build a distro that doesn't yet exist!
 
 ## How We Did it
 

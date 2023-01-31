@@ -11,7 +11,7 @@ post:
     image: /blog-images/kfcelive.png
 ---
 
-Hey all! Time flies. Just last week we announced AlmaLinux Live Media beta images available in 2 options: [GNOME and GNOME Mini](https://almalinux.org/blog/announcing-almalinux-live-media-beta/).
+Hey all! Time flies. Just last week we announced AlmaLinux Live Media beta images available in 2 options: [GNOME and GNOME Mini](/blog/announcing-almalinux-live-media-beta/).
 
 Since then, community members have requested other desktop environments as well and so we’ve worked hard over the past few days to build [KDE](https://kde.org/) and [XFCE](https://www.xfce.org/) Live Media Images and we are happy to announce those today.
 

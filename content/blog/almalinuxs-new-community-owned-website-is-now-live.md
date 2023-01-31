@@ -28,7 +28,7 @@ From everyone at AlmaLinux, we would like to say a big thank you to everyone who
 
 ## Join the Community!
 
-We are looking to localize the AlmaLinux website into more languages. If you want to contribute please reach out to our [chat on Mattermost](https://almalinux.org/contribute/) and we can walk you through the process.
+We are looking to localize the AlmaLinux website into more languages. If you want to contribute please reach out to our [chat on Mattermost](/contribute/) and we can walk you through the process.
 
 You can also join us on our [AlmaLinux Community Chat](https://chat.almalinux.org/), sponsored by our good friends at Mattermost. Start chatting to get involved in the AlmaLinux project, to ask for help, or just to meet fellow community members. 
 

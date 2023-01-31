@@ -22,9 +22,10 @@ In the meantime, though, for anyone that is joining us from ATO I just want to s
 ## Where are we next?
 
 In case you missed it, we're confirmed to be going to 2 more events this year! Here's a quick list:
-# [SC '22](https://sc22.supercomputing.org/), Dallas, Texas
+### [SC '22](https://sc22.supercomputing.org/), Dallas, Texas
 
-Next week we're joining the fine folks at SuperComputing for a second year in a row! We have seen a huge interest in folks using AlmaLinux for all kinds of interesting things, especially since we announced that you can use [AlmaLinux on Azure HPC](https://almalinux.org/blog/almalinux-for-azure-hpc-now-available/), and are being used by [4 of the top 500 SuperComputers](https://almalinux.org/blog/almalinux-and-the-top-500-hpc-supercomputers/). We also just posted about [how we built for the s390 platform!](https://almalinux.org/blog/how-we-built-almalinux-86-for-s390x/)
-## [OLF](https://olfconference.org/) '22, Columbus, Ohio
+Next week we're joining the fine folks at SuperComputing for a second year in a row! We have seen a huge interest in folks using AlmaLinux for all kinds of interesting things, especially since we announced that you can use [AlmaLinux on Azure HPC](/blog/almalinux-for-azure-hpc-now-available/), and are being used by [4 of the top 500 SuperComputers](/blog/almalinux-and-the-top-500-hpc-supercomputers/). We also just posted about [how we built for the s390 platform!](/blog/how-we-built-almalinux-86-for-s390x/)
+
+### [OLF](https://olfconference.org/) '22, Columbus, Ohio
 
 The Ohio Linux Fest is one of the best linux-centric conferences in the country. We'll be back this year, and we're joining a panel with other distributions to discuss all of the current excitement on Friday. Come say hi!\ If you're in the area, make sure to stop by! If you know of a great event we're missing, [let us know](hello@almalinux.org). And if you're interested in volunteering to help staff a booth, let us know in the #marketing room on chat.almalinux.org. The Marketing SIG is always looking for volunteers!

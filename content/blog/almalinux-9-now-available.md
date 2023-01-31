@@ -50,7 +50,7 @@ We know some of y'all will be pleased to see a couple of new wallpapers availabl
 
 ## Pitch In
 
-AlmaLinux has accomplished so much in the last year and there's still more to do. Join our community. [Become a foundation member](https://almalinux.org/foundation/members/) (totally free) and claim your right to vote. Give us your feedback and be part of the magic.
+AlmaLinux has accomplished so much in the last year and there's still more to do. Join our community. [Become a foundation member](/foundation/members/) (totally free) and claim your right to vote. Give us your feedback and be part of the magic.
 
 Join us in the [AlmaLinux Community Chat](https://chat.almalinux.org/) to get any assistance you need and help others. You can also post a question on our [9.0 Forum](https://almalinux.discourse.group/c/devel/36-category/36), on our AlmaLinux Community on [Reddit](https://reddit.com/r/almalinux) or catch us on [Twitter](https://twitter.com/almalinux).
 

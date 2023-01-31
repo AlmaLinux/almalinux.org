@@ -35,7 +35,7 @@ We would sincerely like to thank AWS for their generous sponsorship of the AlmaL
 
 ## Microsoft Azure
 
-AlmaLinux images are now available on Mircrosoft Azure including a global in-network set of mirrors. You can read the announcement [here](https://almalinux.org/blog/almalinux-now-available-on-microsoft-azure-azure-sponsors-almalinux/) and get more information on the [wiki](https://wiki.almalinux.org/cloud/Azure.html).
+AlmaLinux images are now available on Mircrosoft Azure including a global in-network set of mirrors. You can read the announcement [here](/blog/almalinux-now-available-on-microsoft-azure-azure-sponsors-almalinux/) and get more information on the [wiki](https://wiki.almalinux.org/cloud/Azure.html).
 
 We would sincerely like to thank Microsoft Azure for their generous sponsorship of the AlmaLinux Foundation.
 
