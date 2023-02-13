@@ -11,3 +11,30 @@ taxonomies:
     author: authors
     about-author: about-authors
     image: images
+
+languages:
+    en: {weight: 1}
+    ar: {weight: 2}
+    ca: {weight: 2}
+    cs: {weight: 2}
+    da: {weight: 2}
+    de: {weight: 2}
+    el: {weight: 2}
+    es: {weight: 2}
+    fi: {weight: 2}
+    fr: {weight: 2}
+    he: {weight: 2}
+    it: {weight: 2}
+    ja: {weight: 2}
+    ko: {weight: 2}
+    lt: {weight: 2}
+    lv: {weight: 2}
+    pl: {weight: 2}
+    pt: {weight: 2}
+    pt_BR: {weight: 2}
+    ru: {weight: 2}
+    sk: {weight: 2}
+    sv: {weight: 2}
+    tr: {weight: 2}
+    uk: {weight: 2}
+    zh_Hans: {weight: 2}
