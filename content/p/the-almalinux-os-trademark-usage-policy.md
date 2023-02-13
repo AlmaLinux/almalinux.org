@@ -7,7 +7,7 @@ type: p
 
 This document (the “Guidelines”) contains guidelines for use of the AlmaLinux OS word mark (the “Word Mark”), as well as the AlmaLinux OS logotype, the AlmaLinux OS graphical symbol, and all other AlmaLinux OS logos (the “Logos”) (collectively, the “AlmaLinux OS Marks”).
 
-The "AlmaLinux OS" mark is owned by Linux Foundation and sublicensed to AlmaLinux OS Foundation pursuant to the terms of the Linux Sublicense Agreement available at https://www.linuxfoundation.org/the-linux-mark/sublicense-agreement/.
+The "AlmaLinux OS" mark is owned by Linux Foundation and sublicensed to AlmaLinux OS Foundation pursuant to the terms of the Linux Sublicense Agreement available at https://www.linuxfoundation.org/legal/sublicense-agreement/.
 
 The AlmaLinux OS Marks are trademarks of AlmaLinux OS Foundation. (“AlmaLinux”). Trademarks provide assurance about the quality of the goods or services with which the trademarks are associated. Confusion can arise if the same or similar names are used on identical or similar offerings. AlmaLinux OS Foundation's protection of the AlmaLinux OS Marks thus benefits the AlmaLinux OS Foundation and the AlmaLinux OS community.
 
