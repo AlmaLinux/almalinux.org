@@ -13,13 +13,13 @@ for folder, dirs, files in os.walk(rootdir):
             fullpath = os.path.join(folder, file)
             with open(fullpath, 'r') as f:
                 for line in f:
-                    m = re.match('.*{{\s+?i18n\s+?(?:"|`)(.*)(?:"|`)\s+?}}', line)
+                    m = re.findall('{{\s+?i18n\s+?(?:"|`)(.*?)(?:"|`)\s+?}}', line, re.DOTALL)
                     if m:
-                        string = m.group(1)
-                        if string not in en:
-                            error = True
-                            print(f'TRANSLATION ERROR: {string}')
-                            dict[string] = string
+                        for string in m:
+                            if string not in en:
+                                error = True
+                                print(f'TRANSLATION ERROR: {string}')
+                                dict[string] = string
 
 if error:
     print(json.dumps(dict, indent=3))
