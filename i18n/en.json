@@ -142,5 +142,8 @@
    "You have successfully subscribed to AlmaLinux OS announcement mailing list!": "You have successfully subscribed to AlmaLinux OS announcement mailing list!",
    "Email address is not valid": "Email address is not valid",
    "Failed to subscribe to mailing list, please try again later": "Failed to subscribe to mailing list, please try again later",
-   "You are already subscribed to this mailing list!": "You are already subscribed to this mailing list!"
+   "You are already subscribed to this mailing list!": "You are already subscribed to this mailing list!",
+   "Who is AlmaLinux OS for?": "Who is AlmaLinux OS for?",
+   "Individuals and organizations that require an enterprise-grade, Fedora-like distribution but who do not want to or cannot pay for a RHEL® license. AlmaLinux OS is also a perfect replacement for anyone who currently relies on the CentOS stable release to achieve computing objectives.": "Individuals and organizations that require an enterprise-grade, Fedora-like distribution but who do not want to or cannot pay for a RHEL® license. AlmaLinux OS is also a perfect replacement for anyone who currently relies on the CentOS stable release to achieve computing objectives.",
+   "Why did we call it AlmaLinux OS?": "Why did we call it AlmaLinux OS?"
 }
