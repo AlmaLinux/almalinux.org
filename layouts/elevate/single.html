@@ -9,7 +9,7 @@
                     </h3>
                     <div class="al-subtle-links pb-2">
                         <p>
-                            {{ i18n "ELevate enables migration between major versions of RHEL&reg; derivatives. Easily go from CentOS 7.x to any 8.x of your choice" }}
+                            {{ i18n "ELevate enables migration between major versions of RHEL&reg; derivatives." }} {{ i18n "Easily go from CentOS 7.x to any 8.x of your choice" }}
                         </p>
                     </div>
                     <div>
@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="container pt-2 elevate-container-wrap">
-            <h6 class="pt-5 pb-2 mb-2 text-uppercase border-bottom">About</h6>
+            <h6 class="pt-5 pb-2 mb-2 text-uppercase border-bottom">{{ i18n "About" }}</h6>
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-4 py-2 py-md-3">
                 <div class="col d-flex align-items-stretch pl-0">
                     <div>
@@ -46,9 +46,8 @@
                             {{ i18n "Major Version Upgrades" }}
                         </h4>
                         <p>
-                                It wasn't possible--until now. Easily migrate between major versions of RHEL-based
-                                distributions from 7.x to 8.x. Preserve your applications, your data, and your sanity.
-                                Run the most recent version of the OS and software you need.
+                                {{ i18n "It wasn't possible--until now. Easily migrate between major versions of RHEL-based distributions from 7.x to 8.x. Preserve your applications, your data, and your sanity." }}
+                                {{ i18n "Run the most recent version of the OS and software you need." }}
                             
                         </p>
                     </div>
@@ -56,7 +55,7 @@
                 <div class="col d-flex align-items-stretch  pl-0">
                     <div>
                         <h4 class="fw-bold mb-0 pb-3">
-                            Package Evolution Service
+                            {{ i18n "Package Evolution Service" }}
                         </h4>
                         <p>
                             {{ i18n "The beating heart of ELevate is the" }} <a href="https://pes.almalinux.org">{{ i18n "Package Evolution Service" }}</a>
@@ -83,44 +82,39 @@
                 <!--Item-->
                 <div>
                     <div class="question">
-                            What is ELevate?
+                            {{ i18n "What is ELevate?" }}
                     </div>
                     <div class="answer">
-                            ELevate is a project aimed to provide the ability to migrate between major versions of
-                            RHEL-based distributions from 7.x to 8.x. It combines Red Hat's Leapp framework with a
-                            community created library and service for the migration metadata set required for it.
+                            {{ i18n "ELevate is a project aimed to provide the ability to migrate between major versions of RHEL-based distributions from 7.x to 8.x. It combines Red Hat's Leapp framework with a community created library and service for the migration metadata set required for it." }}
                     </div>
                 </div>
                 <!--Item-->
                 <div>
                     <div class="question">
-                            This looks awesome. How can I contribute?
+                            {{ i18n "This looks awesome. How can I contribute?" }}
                     </div>
                     <div class="answer">
-                            First join us at <a href="https://chat.almalinux.org/almalinux/channels/migration">#migration</a> Mattermost channel. You can find
-                            the tool code here:
-                            <a href="https://github.com/AlmaLinux/leapp-repository/tree/almalinux">https://github.com/AlmaLinux/leapp-repository/tree/almalinux</a> and you can add/edit/interact
-                            with package metadata at <a href="https://pes.almalinux.org">https://pes.almalinux.org</a>.
+                            {{ i18n "First join us at" }} <a href="https://chat.almalinux.org/almalinux/channels/migration">#migration</a> Mattermost {{ i18n "channel." }} {{ i18n "You can find the tool code here:" }}
+                            <a href="https://github.com/AlmaLinux/leapp-repository/tree/almalinux">https://github.com/AlmaLinux/leapp-repository/tree/almalinux</a> {{ i18n "and you can add/edit/interact with package metadata at" }} <a href="https://pes.almalinux.org">https://pes.almalinux.org</a>.
                     </div>
                 </div>
                 <!--Item-->
                 <div>
                     <div class="question">
-                            Is this ready for production?
+                            {{ i18n "Is this ready for production?" }}
                     </div>
                     <div class="answer">
-                            YMMV.  Every environment is different and unique based on applications and configurations.
-                            Since this is still under development, to avoid any surprises, we highly recommend that you
-                            test migrations scenarios in a VM or sandbox before running a migration in production.
+                            YMMV.  {{ i18n "Every environment is different and unique based on applications and configurations." }}
+                            {{ i18n "Since this is still under development, to avoid any surprises, we highly recommend that you test migrations scenarios in a VM or sandbox before running a migration in production." }}
                     </div>
                 </div>
                 <!--Item-->
                 <div>
                     <div class="question">
-                            What operating systems does ELevate support?
+                            {{ i18n "What operating systems does ELevate support?" }}
                     </div>
                     <div class="answer">
-                            Currently ELevate provides Leapp data for migration from CentOS 7 to the following OS:
+                            {{ i18n "Currently ELevate provides Leapp data for migration from CentOS 7 to the following OS:" }}
                             <ul>
                                 <li>AlmaLinux OS 8</li>
                                 <li>CentOS Stream 8</li>
@@ -133,62 +127,59 @@
                 <!--Item-->
                 <div>
                     <div class="question">
-                            Will migration be "in-place"?
+                            {{ i18n `Will migration be "in-place"?` }}
                     </div>
                     <div class="answer">
-                            Yes. All your data, applications and settings will be kept.
+                            {{ i18n "Yes. All your data, applications and settings will be kept." }}
                     </div>
                 </div>
                 <!--Item-->
                 <div>
                     <div class="question">
-                            Is this live or does it require a reboot?
+                            {{ i18n "Is this live or does it require a reboot?" }}
                     </div>
                     <div class="answer">
-                            Migrations will require your system to reboot twice.
+                            {{ i18n "Migrations will require your system to reboot twice." }}
                     </div>
                 </div>
                 <!--Item-->
                 <div>
                     <div class="question">
-                            What does the Package Evolution Service do?
+                            {{ i18n "What does the Package Evolution Service do?" }}
                     </div>
                     <div class="answer">
-                            The Package Evolution Service stores package migration metadata. Metadata answers questions
-                            about how packages evolve between major distribution releases. PES supports several classes
-                            of rules for packages such as added, removed, renamed, split, merged, and so on. The service
-                            also allows everyone to improve the data by adding new actions or even create a custom
-                            dataset for packages from third-party or private repositories.
+                            {{ i18n "The Package Evolution Service stores package migration metadata." }} {{ i18n "Metadata answers questions about how packages evolve between major distribution releases." }}
+                            {{ i18n "PES supports several classes of rules for packages such as added, removed, renamed, split, merged, and so on." }}
+                            {{ i18n "The service also allows everyone to improve the data by adding new actions or even create a custom dataset for packages from third-party or private repositories." }}
                     </div>
                 </div>
                 <!--Item-->
                 <div>
                     <div class="question">
-                            Red Hat offers a data set which is non-freely licensed. Are you using this same data set?
+                            {{ i18n "RedHat offers a data set which is non-freely licensed. Are you using this same data set?" }}
                     </div>
                     <div class="answer">
-                            No. We respect Red Hat’s work and our initial data set was provided by the AlmaLinux
-                            Foundation and contributions from Oracle.
+                            {{ i18n "No. We respect Red Hat’s work and our initial data set was provided by the AlmaLinux Foundation and contributions from Oracle." }}
                     </div>
                 </div>
                 <!--Item-->
                 <div>
                     <div class="question">
-                            What license is your metadata under?
+                            {{ i18n "What license is your metadata under?" }}
                     </div>
                     <div class="answer">
-                            The metadata is provided under an Apache License.
+                            {{ i18n "The metadata is provided under an Apache License." }}
                     </div>
                 </div>
                 <!--Item-->
                 <div>
                     <div class="question">
-                            Why are you supporting migration to other distributions?
+                            {{ i18n "Why are you supporting migration to other distributions?" }}
                     </div>
                     <div class="answer">
-                            The CentOS ecosystem is a very large and diverse community. We’ve developed this project in
-                            good faith in the hope that everyone in the community can use and contribute to, no matter
-                            which distro you prefer. That’s the open source way.
+                            {{ i18n "The CentOS ecosystem is a very large and diverse community." }}
+                            {{ i18n "We've developed this project in good faith in the hope that everyone in the community can use and contribute to, no matter which distro you prefer." }}
+                            {{ i18n "That's the open source way." }}
                     </div>
                 </div>
             </div>
