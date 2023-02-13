@@ -181,5 +181,12 @@
    "RedHat offers a data set which is non-freely licensed. Are you using this same data set?": "RedHat offers a data set which is non-freely licensed. Are you using this same data set?",
    "The CentOS ecosystem is a very large and diverse community.": "The CentOS ecosystem is a very large and diverse community.",
    "We've developed this project in good faith in the hope that everyone in the community can use and contribute to, no matter which distro you prefer.": "We've developed this project in good faith in the hope that everyone in the community can use and contribute to, no matter which distro you prefer.",
-   "That's the open source way.": "That's the open source way."
+   "That's the open source way.": "That's the open source way.",
+   "Switching distributions is usually costly and time-consuming, but that\u2019s not the case when switching from CentOS and other RHEL\u00ae derivatives to AlmaLinux OS.\"}} {{ i18n \"Switching is easy": "Switching distributions is usually costly and time-consuming, but that\u2019s not the case when switching from CentOS and other RHEL\u00ae derivatives to AlmaLinux OS.\"}} {{ i18n \"Switching is easy",
+   "ELevate enables migration between major versions of RHEL&reg; derivatives.": "ELevate enables migration between major versions of RHEL&reg; derivatives.",
+   "The beating heart of ELevate is the": "The beating heart of ELevate is the",
+   "First join us at": "First join us at",
+   "channel.": "channel.",
+   "The Package Evolution Service stores package migration metadata.": "The Package Evolution Service stores package migration metadata.",
+   "Introducing ELevate Project, an open source initiative to assist users perform migrations between different RHEL-derivative based distributions.": "Introducing ELevate Project, an open source initiative to assist users perform migrations between different RHEL-derivative based distributions."
 }
