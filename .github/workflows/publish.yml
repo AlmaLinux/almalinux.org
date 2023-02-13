@@ -17,6 +17,9 @@ jobs:
           hugo-version: 'latest'
           # extended: true
 
+      - name: Generate language files
+        run: python3 setup-pages-for-supported-languages.py
+
       - name: Build
         run: hugo --minify
 
