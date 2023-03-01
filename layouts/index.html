@@ -1,5 +1,55 @@
 
 {{ define "main" }}
+<style>
+@media (max-width: 800px){
+    .display-5 {
+        font-size: calc(1.425rem + 2.1vw) !important;
+        line-height: 1.2;
+    }
+    .row-cols-1 > * {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .d-grid {
+        display: grid !important;
+    }
+    .row-cols-2 > * {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+@media (min-width: 800px) {
+    .display-5 {
+        font-size: 3rem;
+    }
+}
+.lh-1 {
+    line-height: 1 !important;
+}
+.px-4 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
+.al-page-index .al-hero-cta-primary {
+    margin:10px;
+}
+.row > * {
+    margin-top: 20px;
+}
+.al-page-index .al-index-backed-by .al-backed-by-list {
+    justify-content: center;
+}
+@media (min-width: 768px) {
+    .row-cols-md-6 > * {
+        flex: 0 0 auto;
+        width: 16.66667%;
+    }
+}
+.h2, h2 {
+    font-size: calc(1.325rem + .9vw);
+}
+</style>
+
 <div class="al-body-container">
     
     <section class="al-page-index">
@@ -20,15 +70,15 @@
                         {{ i18n "An Open Source, community owned and governed, forever-free enterprise Linux distribution, focused on long-term stability, providing a robust production-grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL® and pre-Stream CentOS." }}
                     </p>
                     <div class="d-grid gap-3 d-md-flex justify-content-md-start pt-3">
-                        <a href="/contribute/" class="btn btn-lg px-xl-4 px-lg-2   me-md-2 al-hero-cta-primary">
+                        <a href="/contribute/" class="btn btn-lg px-4 me-md-2 al-hero-cta-primary">
                             <i class="bi bi-people pe-1"></i>
                             {{ i18n "Contribute" }}
                         </a>
-                        <a href="https://mirrors.almalinux.org/isos.html" class="btn btn-lg px-xl-4 px-lg-2 al-hero-cta-secondary">
+                        <a href="https://mirrors.almalinux.org/isos.html" class="btn btn-lg px-4 al-hero-cta-secondary">
                             <i class="bi bi-download pe-1"></i>
                             {{ i18n "Download" }}
                         </a>
-                        <a href="https://github.com/AlmaLinux/almalinux-deploy" class="btn btn-lg px-xl-4 px-lg-2   al-hero-cta-tertiary">
+                        <a href="https://github.com/AlmaLinux/almalinux-deploy" class="btn btn-lg px-4 al-hero-cta-tertiary">
                             <img src="/images/icon-migrate.svg" alt="Icon" class="pe-1">
                             {{ i18n "Migrate" }}
                         </a>
@@ -132,10 +182,10 @@
                 <h2 class="pb-2 text-center border-bottom">
                     {{ i18n "Backed by" }}
                 </h2>
-                <div class="row col-lg-12 al-backed-by-list ">
+                <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 g-5 al-backed-by-list ">
                     
                         <a href="https://www.cloudlinux.com">
-                            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container ">
+                            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
                                 <img loading="lazy" src="/brands/cloudlinux.svg" alt="CloudLinux" class="al-backer-logo">
                             </div>
                         </a>
@@ -169,8 +219,6 @@
                                 <img loading="lazy" src="/brands//equinix.svg" alt="Equinix" class="al-backer-logo">
                             </div>
                         </a>
-                       </div>
-                        <div class="row col-lg-12 al-backed-by-list">
 
                         <a href="https://cpanel.net">
                             <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
@@ -207,8 +255,6 @@
                                 <img loading="lazy" src="/brands//logo-algolia-nebula-blue-full_a52auc4.svg" alt="Algolia" class="al-backer-logo">
                             </div>
                         </a>
-                        </div>
-                        <div class="row col-lg-12 al-backed-by-list">
 
                         <a href="https://rackspeed.de">
                             <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
@@ -245,35 +291,32 @@
                                 <img loading="lazy" src="/brands//procomputers_logo_white.svg" alt="ProComputers" class="al-backer-logo">
                             </div>
                         </a>
-                        </div>
 
-                        <div class="row col-lg-12 al-backed-by-list justify-content-center">
-
-                        <a style="width: 17%;" href="https://orcharhino.com/en/">
+                        <a  href="https://orcharhino.com/en/">
                             <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
                                 <img loading="lazy" src="/brands/167500144-1f877ea7-9b48-40cc-8363-7f795ce585fe.svg" alt="Orcharhino" class="al-backer-logo">
                             </div>
                         </a>
                     
-                        <a style="width: 17%;" href="https://world4you.com">
+                        <a href="https://world4you.com">
                             <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
                                 <img loading="lazy" src="/brands/w4y_logo_rgb_weiss.svg" alt="World4You" class="al-backer-logo">
                             </div>
                         </a>
                     
-                        <a style="width: 17%;" href="https://www.keepsec.ca/">
+                        <a  href="https://www.keepsec.ca/">
                             <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
                                 <img loading="lazy" src="/brands/keepsec-logo-white.svg" alt="Keepsec Technologies" class="al-backer-logo">
                             </div>
                         </a>
 						
-                        <a style="width: 17%;" href="https://www.hawkhost.com">
+                        <a  href="https://www.hawkhost.com">
                             <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
                                 <img loading="lazy" src="/brands/HH-AllWhiteAlma.svg" alt="HawkHost" class="al-backer-logo">
                             </div>
                         </a>
 						
-                        <a style="width: 17%;" href="https://openlogic.com">
+                        <a  href="https://openlogic.com">
                             <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
                                 <img loading="lazy" src="/brands/logo-openlogic-tagline-white.svg" alt="OpenLogic" class="al-backer-logo">
                             </div>
@@ -310,7 +353,7 @@
                         <div>
                             <h4 class="fw-bold mb-0 pb-2">{{ i18n "Effortless to switch to" }}</h4>
                             <p>
-                                {{ i18n "Switching distributions is usually costly and time-consuming, but that’s not the case when switching from CentOS and other RHEL® derivatives to AlmaLinux OS."}} {{ i18n "Switching is easy" }} - <a href="https://github.com/AlmaLinux/almalinux-deploy">{{ i18n "read how" }}.</a>
+                                Switching distributions is usually costly and time-consuming, but that’s not the case when switching from CentOS and other RHEL® derivatives to AlmaLinux OS. Switching is easy  - <a href="https://github.com/AlmaLinux/almalinux-deploy">{{ i18n "read how" }}</a>.
                             </p>
                         </div>
                     </div>

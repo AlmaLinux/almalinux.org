@@ -1,4 +1,19 @@
 {{ define "main" }}
+<style>
+    @media (max-width: 800px){
+
+        .img-fluid, .img-thumbnail {
+  height: auto;
+  max-width: 100%;
+}
+.custom-blog-page-section {
+  width: 450px;
+  margin: auto;
+}
+
+}
+</style>
+
 <div class="al-body-container" >
 
     <ol class="post-list pl-0">
@@ -8,8 +23,8 @@
         <section class="al-page-blog-post custom-blog-page-section" dir="ltr">
             <div class="container py-5">
 
-            <article>
-                {{ range (.Paginate ( .Pages.ByDate.Reverse )).Pages }}
+                <article class="mb-5" dir="ltr">
+                                    {{ range (.Paginate ( .Pages.ByDate.Reverse )).Pages }}
 
                 <div>
                 <a class="al-article-title-link" href="{{ .Permalink }}" style="text-decoration:none;">
@@ -43,10 +58,9 @@
                             <span>{{ .Date.Format "Mon Jan 2, 2006" }}</span>
                         </div>
     
-                        <div class="al-article-content pb-5 al-wysiwyg">
-    
+                        <div class="al-article-feature mb-4">
                             {{ with .Params.post.image }}
-            <img  src="{{ . }}">
+            <img class="d-block mx-lg-auto img-fluid" src="{{ . }}">
         {{ end }}
     
     
