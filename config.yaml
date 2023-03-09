@@ -12,6 +12,7 @@ taxonomies:
     about-author: about-authors
     image: images
 
+defaultContentLanguage: en
 languages:
     en: {weight: 1, languagename: English}
     ar: {weight: 2, languagename: العربية}
