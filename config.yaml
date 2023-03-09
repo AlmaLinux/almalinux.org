@@ -13,28 +13,28 @@ taxonomies:
     image: images
 
 languages:
-    en: {weight: 1}
-    ar: {weight: 2}
-    ca: {weight: 2}
-    cs: {weight: 2}
-    da: {weight: 2}
-    de: {weight: 2}
-    el: {weight: 2}
-    es: {weight: 2}
-    fi: {weight: 2}
-    fr: {weight: 2}
-    he: {weight: 2}
-    it: {weight: 2}
-    ja: {weight: 2}
-    ko: {weight: 2}
-    lt: {weight: 2}
-    lv: {weight: 2}
-    pl: {weight: 2}
-    pt: {weight: 2}
-    pt_BR: {weight: 2}
-    ru: {weight: 2}
-    sk: {weight: 2}
-    sv: {weight: 2}
-    tr: {weight: 2}
-    uk: {weight: 2}
-    zh_Hans: {weight: 2}
+    en: {weight: 1, languagename: English}
+    ar: {weight: 2, languagename: العربية}
+    ca: {weight: 2, languagename: Català}
+    cs: {weight: 2, languagename: Česky}
+    da: {weight: 2, languagename: Dansk}
+    de: {weight: 2, languagename: Deutsch}
+    el: {weight: 2, languagename: Ελληνικά}
+    es: {weight: 2, languagename: Español}
+    fi: {weight: 2, languagename: Suomi}
+    fr: {weight: 2, languagename: Français}
+    he: {weight: 2, languagename: עברית}
+    it: {weight: 2, languagename: Italiano}
+    ja: {weight: 2, languagename: 日本語}
+    ko: {weight: 2, languagename: 한국어}
+    lt: {weight: 2, languagename: Lietuvių}
+    lv: {weight: 2, languagename: latviešu}
+    pl: {weight: 2, languagename: Polski}
+    pt: {weight: 2, languagename: Português}
+    pt_BR: {weight: 2, languagename: Português Brasileiro}
+    ru: {weight: 2, languagename: Русский}
+    sk: {weight: 2, languagename: Slovensky}
+    sv: {weight: 2, languagename: svenska}
+    tr: {weight: 2, languagename: Türkçe}
+    uk: {weight: 2, languagename: Українська}
+    zh_Hans: {weight: 2, languagename: 简体中文}
