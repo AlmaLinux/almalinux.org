@@ -48,7 +48,7 @@
                     
                         {{ if .PrevPage }}
                         <a class="al-blog-previous-button " href="{{ .PrevPage.Permalink }}">
-                            <span>« Previous</span>
+                            <span>« {{ i18n "Previous" }}</span>
 
                         </a> 
                         
@@ -58,7 +58,7 @@
                     
                         {{ if .NextPage }}
                         <a class="al-blog-next-button " href="{{ .NextPage.Permalink }}">                   
-                            <span> Next »</span>
+                            <span> {{ i18n "Next" }} »</span>
                         </a>
                         {{ end }}
                 
