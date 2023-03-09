@@ -2,49 +2,40 @@
 
 <section class="al-page-blog-post">
     <div class="container py-5">
-        <h1 class="al-section-title mb-3">AlmaLinux Software Bill of Materials (SBOM) Information</h1>
+        <h1 class="al-section-title mb-3">{{ i18n "AlmaLinux Software Bill of Materials (SBOM) Information" }}</h1>
         <article>
     
                
             <div class="al-article-content pb-5 al-wysiwyg">
                 <p>
-                    AlmaLinux provides a Software Bill of Materials (SBOM) for its releases.
+                    {{ i18n "AlmaLinux provides a Software Bill of Materials (SBOM) for its releases." }}
                 </p>
-                <h2>What is an SBOM?</h2>
+                <h2>{{ i18n "What is an SBOM?" }}</h2>
                 <p>
-                    SBOM, which stands for Software Bill of Materials, is something akin to an “ingredient list” for a
-codebase. It helps identify the contents of software, including what open source and third-party
-components are used, licensing information, components&#39; versions and if there are any known
-vulnerabilities in those components.
+                    {{ i18n "SBOM, which stands for Software Bill of Materials, is something akin to an “ingredient list” for a codebase." }}
+                    {{ i18n "It helps identify the contents of software, including what open source and third-party components are used, licensing information, components&#39; versions and if there are any known vulnerabilities in those components." }}
                 </p>
                 <p>
-                    The SBOM is the “ingredient list”, the code are the ingredients, the build system is the “kitchen”
-where those ingredients get built into the final piece of software which you consume.
+                    {{ i18n "The SBOM is the “ingredient list”, the code are the ingredients, the build system is the “kitchen” where those ingredients get built into the final piece of software which you consume." }}
                 </p>
                 <h2>
-                    Why are SBOMs important?
+                    {{ i18n "Why are SBOMs important?" }}
                 </h2>
                 <p>
-                    Open source software is used extensively in applications, but it has led to the discovery of high-
-profile hacks and vulnerabilities. SBOMs are meant to provide the community and users of open
-source with even more transparency, and an efficient way to identify (in the case of a risk)
-individual files, libraries, dependencies, etc. thereby increasing the trust and confidence in the
-use of open source software.
+                    {{ i18n "Open source software is used extensively in applications, but it has led to the discovery of high-profile hacks and vulnerabilities." }}
+                    {{ i18n "SBOMs are meant to provide the community and users of open source with even more transparency, and an efficient way to identify (in the case of a risk) individual files, libraries, dependencies, etc. thereby increasing the trust and confidence in the use of open source software." }}
                 </p>
                 <p>
-                    The Linux Foundation thinks so too…
+                    The Linux Foundation {{ i18n "thinks so too…" }}
                 </p>
                 <p>
-                    The Linux Foundation and open source Security Foundation (OpenSSF) have also produced a
-plan called the <a href="https://openssf.org/oss-security-mobilization-plan/" target="_blank">Source Software Security Mobilization Plan</a> which calls for industry action
-to develop software component frameworks, including SBOMs, to expedite discovery of and
-response to future vulnerabilities like Log4j.
+                    {{ i18n "The Linux Foundation and Open Source Security Foundation (OpenSSF) have also produced a plan called the" }} <a href="https://openssf.org/oss-security-mobilization-plan/" target="_blank">Source Software Security Mobilization Plan</a> {{ i18n "which calls for industry action to develop software component frameworks, including SBOMs, to expedite discovery of and response to future vulnerabilities like Log4j." }}
                 </p>
                 <p>
-                    ...And the president himself
+                    {{ i18n "...And the president himself" }}
                 </p>
                 <p>
-                    An SBOM has been spotlighted as a key part of the solution presented by the president in the <a href="https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/" target="_blank">Executive Order on Improving the Nation’s Cybersecurity.</a>
+                    {{ i18n "An SBOM has been spotlighted as a key part of the solution presented by the president in the" }} <a href="https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/" target="_blank">Executive Order on Improving the Nation’s Cybersecurity.</a>
                 </p>
                 <blockquote>
                     "the term “Software Bill of Materials” or “SBOM” means a formal record containing
@@ -55,30 +46,25 @@ enumerates these components in a product. It is analogous to a list of
 ingredients on food packaging."
                 </blockquote>
                 <h2>
-                    What AlmaLinux Provides
+                    {{ i18n "What AlmaLinux Provides" }}
                 </h2>
                 <p>
-                    <a href="https://build.almalinux.org/" target="_blank">The AlmaLinux Build System</a> has implemented SBOM into the pipeline for the reasons listed above, to enable:
+                    <a href="https://build.almalinux.org/" target="_blank">The AlmaLinux Build System</a> {{ i18n "has implemented SBOM into the pipeline for the reasons listed above, to enable:" }}
                 </p>
                 <ul>
-                    <li>Tracing the whole build process from pulling sources from CentOS git repositories to releasing a verified and signed package in the public repository</li>
-                    <li>Making the build pipeline more secure like ensuring that only trusted sources are used for builds, avoiding attack consequences, etc</li>
-                    <li>Reducing the number of ways of data corruption</li>
+                    <li>{{ i18n "Tracing the whole build process from pulling sources from CentOS git repositories to releasing a verified and signed package in the public repository" }}</li>
+                    <li>{{ i18n "Making the build pipeline more secure like ensuring that only trusted sources are used for builds, avoiding attack consequences, etc" }}</li>
+                    <li>{{ i18n "Reducing the number of ways of data corruption" }}</li>
                 </ul>
-                <h3>How are we doing this?</h3>
-                <p>AlmaLinux is leveraging Codenotary’s open source <a href="https://cas.codenotary.com/" target="_blank"> Community Attestation Service</a> (CAS) to provide administrators with authentication, verification and full SBOM visibility.</p>
+                <h3>{{ i18n "How are we doing this?" }}</h3>
+                <p>{{ i18n "AlmaLinux is leveraging Codenotary’s open source" }} <a href="https://cas.codenotary.com/" target="_blank"> Community Attestation Service</a> (CAS) {{ i18n "to provide administrators with authentication, verification and full SBOM visibility." }}</p>
                 <ul>
-                    <li>CAS stores all signatures inside of <a href="https://immudb.io/" target="_blank">immudb</a>, the standard for open source for
-                        immutable databases, used by some of the world’s leading companies and
-                        governments.</li>
-                    <li>CAS is protected against tampering. All attestation data is integrity-checked and
-                        cryptographically verified by the CAS client. No one can change this data, not
-                        AlmaLinux or anyone else.</li>
-                    <li>CAS is also protected against MITM attacks. The encryption key is client-side
-                        verified and checked before every communication.</li>
+                    <li>{{ i18n "CAS stores all signatures inside of" }} <a href="https://immudb.io/" target="_blank">immudb</a>{{ i18n ", the standard for open source for immutable databases, used by some of the world’s leading companies and governments." }}</li>
+                    <li>{{ i18n "CAS is protected against tampering." }} {{ i18n "All attestation data is integrity-checked and cryptographically verified by the CAS client." }} {{ i18n "No one can change this data, not AlmaLinux or anyone else." }}</li>
+                    <li>{{ i18n "CAS is also protected against MITM attacks." }} {{ i18n "The encryption key is client-side verified and checked before every communication." }}</li>
                 </ul>
-                <h2>Getting Started</h2>
-                <p>For more information, see the Almalinux wiki: <a href="https://github.com/AlmaLinux/build-system/wiki/Codenotary-SBOM-integration">https://github.com/AlmaLinux/build-system/wiki/Codenotary-SBOM-integration</a></p>
+                <h2>{{ i18n "Getting Started" }}</h2>
+                <p>{{ i18n "For more information, see the Almalinux wiki:" }} <a href="https://github.com/AlmaLinux/build-system/wiki/Codenotary-SBOM-integration">https://github.com/AlmaLinux/build-system/wiki/Codenotary-SBOM-integration</a></p>
             </div>
         </article>
         
