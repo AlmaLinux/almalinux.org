@@ -13,7 +13,7 @@ post:
 
 Hey, what are you doing for Memorial Day? Heading out of town? Having a few friends over (that used to be a thing once upon a time)? How about having yourself a good old fashioned installfest? That's right! The AlmaLinux OS Foundation is proud to announce the release of AlmaLinux OS 8.4 Stable. Available now on a mirror near you! Download a fresh copy and then join us to talk about it.
 
-![Tenor](tenor.gif)
+[![Tenor](/images/tenor.gif)]
 
 ## Production Release
 
