@@ -34,6 +34,9 @@ jobs:
       - name: remove git dir
         run: rm -rf .git
 
+      - name: move redirects file into place
+        run: cp _redirects public/
+
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
