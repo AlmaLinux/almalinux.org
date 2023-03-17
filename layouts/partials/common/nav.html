@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="main-navbar">
             <ul class="navbar-nav  mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="/blog/" style="margin-top:5px">
+                    <a class="nav-link" href="{{ "/blog" | absLangURL }}" style="margin-top:5px">
                         {{ i18n "Blog" }}
                     </a>
                 </li>
@@ -50,12 +50,12 @@
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="/members" style="color:aliceblue">
+                            <a class="dropdown-item" href="{{ "/members" | absLangURL }}" style="color:aliceblue">
                                 {{ i18n "Membership" }}
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="/elevate" style="color:aliceblue">
+                            <a class="dropdown-item" href="{{ "/elevate" | absLangURL }}" style="color:aliceblue">
                                 ELevate
                             </a>
                         </li>
