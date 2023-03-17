@@ -41,9 +41,9 @@ In August, we announced that [AlmaLinux was available on Microsoft Azure](/blog/
 
 In October, the board welcomed [benny Vasquez](/blog/hi-im-benny-how-can-i-help/), head of Developer Relations at Chef, as the new Chair, replacing Igor Seletskiy and expanding community control of the AlmaLinux OS Foundation. benny spent much of her early career in Windows desktop support and web hosting but moved to DevOps in recent years. With her wealth of experience, she intends to build diversity by introducing new people into the AlmaLinux community’s core and ensuring AlmaLinux meets the needs of anyone seeking an alternative to CentOS Linux.
 
-Announcing membership options was a historic day for the EL community. As a whole, we were finally able to say, ‘we all own AlmaLinux.’ The distribution is 100% owned and governed by the members of the AlmaLinux OS Foundation through [bylaws](https://wiki.almalinux.org/Transparency.html#we-strive-to-be-transparent) and [memberships](/foundation/members/) for contributors, mirror providers, and sponsors. Individuals and organizations will be eligible to vote for and be voted into the AlmaLinux Foundation’s board of directors and participate in committees and directly steer AlmaLinux OS.
+Announcing membership options was a historic day for the EL community. As a whole, we were finally able to say, ‘we all own AlmaLinux.’ The distribution is 100% owned and governed by the members of the AlmaLinux OS Foundation through [bylaws](https://wiki.almalinux.org/Transparency.html#we-strive-to-be-transparent) and [memberships](/members/) for contributors, mirror providers, and sponsors. Individuals and organizations will be eligible to vote for and be voted into the AlmaLinux Foundation’s board of directors and participate in committees and directly steer AlmaLinux OS.
 
-**We recently passed 140 new members. If you haven’t joined yet (it's 100% free), you can [today](/foundation/members/)!**
+**We recently passed 140 new members. If you haven’t joined yet (it's 100% free), you can [today](/members/)!**
 
 One of the first things benny did as our newly appointed chair was to attend the All Things Open conference. While there, she met many community members and ‘elbow bumped’ interested users while supporting Jack Aboutboul, AlmaLinux’s community manager, as he introduced the [ELevate Project](/elevate).
 
@@ -81,7 +81,7 @@ With much to celebrate and much to be excited about for 2022 and beyond, the fut
 
 **Engage**
 
-If you’re excited about the future of AlmaLinux, you can [apply for free to become a member](/foundation/members/) and for more sponsorship information, email us at [info@almalinux.org](mailto:info@almalinux.org) for a chat.
+If you’re excited about the future of AlmaLinux, you can [apply for free to become a member](/members/) and for more sponsorship information, email us at [info@almalinux.org](mailto:info@almalinux.org) for a chat.
 
 Keep up to date with important information and announcements, [join the AlmaLinux mailing lists](https://lists.almalinux.org/).
 

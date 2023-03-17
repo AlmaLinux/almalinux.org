@@ -11,7 +11,7 @@ post:
     image: 
 ---
 
-Hello Community. Today we announced that [membership in the AlmaLinux Foundation](/foundation/members/) is now open to ***everyone*** (It's 100% Free). First of all, many are probably asking what is this? Second, who cares? I wanted to take a few brief moments to share some insight, some feelings and hopefully explain why this is so important.
+Hello Community. Today we announced that [membership in the AlmaLinux Foundation](/members/) is now open to ***everyone*** (It's 100% Free). First of all, many are probably asking what is this? Second, who cares? I wanted to take a few brief moments to share some insight, some feelings and hopefully explain why this is so important.
 
 When CentOS was initially founded by Lance Davis in 2004 no one really knew how fundamentally important it would grow to become in the Linux ecosystem--as a concept, as a distribution and really as a lynchpin of the modern internet. The concept of a community-driven OS, which drew upon an enterprise grade base made freely and widely available was a real novelty. As far as the technical aspect, the "entOS" part of CentOS, it has been resoundingly successful.
 
