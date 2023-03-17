@@ -1,0 +1,37 @@
+on:
+  push:
+    branches: production
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    name: Publish to Cloudflare Pages
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Check for missing base language strings
+        run: python3 find_missing_i18n_strings.py
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          # extended: true
+
+      - name: Generate language files
+        run: python3 setup-pages-for-supported-languages.py
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: b2eab8b024e2fc0155a48c4fc7115e64
+          projectName: almalinux
+          directory: public

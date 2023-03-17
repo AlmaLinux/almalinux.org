@@ -1,0 +1,189 @@
+.al-page-index .al-hero-cta-primary {
+  background: #24c2ff;
+  color: #222222;
+  margin: 10px 10px 10px 0;
+}
+.al-page-index .al-hero-cta-primary:hover {
+  background: #0bbbff;
+}
+.al-page-index .al-hero-cta-secondary {
+  background: #86da2f;
+  color: #222222;
+  margin: 10px;
+}
+.al-page-index .al-hero-cta-secondary:hover {
+  background: #79cb24;
+}
+.al-page-index .al-hero-cta-tertiary {
+  background: #ffcb12;
+  color: #222222;
+  margin: 10px;
+}
+.al-page-index .al-hero-cta-tertiary img {
+  display: inline;
+  height: 1em;
+}
+.al-page-index .al-hero-cta-tertiary:hover {
+  background: #f8c100;
+}
+.al-page-index .al-index-feature-container {
+  background: #0e3b5c;
+}
+.al-page-index .al-index-feature-container .al-index-feature-icon {
+  color: white;
+  font-size: 32px;
+  padding-right: 22px;
+}
+[dir=rtl] .al-page-index .al-index-feature-container .al-index-feature-icon {
+  padding-right: 0;
+  padding-left: 22px;
+}
+
+.al-page-index .al-index-community-container {
+  background: #0e3b5c;
+}
+.al-page-index .al-index-community-container .al-index-community-icon {
+  color: #fefefe;
+  font-size: 32px;
+  padding-right: 22px;
+  flex: 0;
+}
+[dir=rtl] .al-page-index .al-index-community-container .al-index-community-icon {
+  padding-right: 0;
+  padding-left: 22px;
+}
+
+.al-page-index .al-index-community-container .al-index-community-icon.img {
+  height: 32px;
+  box-sizing: border-box;
+}
+.al-page-index .al-index-community-container .al-community-cta {
+  min-width: 120px;
+}
+.al-page-index .al-index-community-container .al-index-community-content-wrap {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.al-page-index .al-index-community-container .al-index-community-content-wrap p {
+  flex: 1;
+}
+.al-page-index .al-index-backed-by h2.border-bottom {
+  border-bottom-color: #14598a !important;
+}
+.al-page-index .al-index-backed-by .al-backed-by-list {
+  justify-content: space-between;
+  padding: 0 !important;
+}
+.al-page-index .al-index-backed-by .al-backed-by-list a {
+  margin-top: 3rem !important;
+}
+.al-page-index .al-index-backed-by .al-backed-by-list a div.col {
+  text-align: center;
+}
+.al-page-index .al-index-backed-by .al-backed-by-list a .al-backer-logo-container {
+  height: 100%;
+}
+.al-page-index .al-index-backed-by .al-backed-by-list a .al-backer-logo {
+  height: 100%;
+  width: 120px;
+}
+.al-page-index .al-index-commercial-support h2.border-bottom {
+  border-bottom-color: #14598a !important;
+}
+.al-page-index .al-index-commercial-support .al-commercial-supporter-list {
+  justify-content: center;
+}
+.al-page-index .al-index-commercial-support .al-commercial-supporter-list div.col {
+  text-align: center;
+}
+.al-page-index .al-index-commercial-support .al-commercial-supporter-list .al-commercial-supporter-logo-container {
+  height: 100%;
+}
+.al-page-index .al-index-commercial-support .al-commercial-supporter-list .al-commercial-supporter-logo {
+  max-width: 120px;
+  width: 100%;
+}
+.al-page-index .al-index-faq {
+  background: #0e3b5c;
+}
+.al-page-index .al-index-faq .accordion-button {
+  border: none;
+  box-shadow: none;
+  font-weight: normal;
+  background: #104469;
+  width: 100% !important;
+  text-align: left !important;
+  padding: 20px 10px !important;
+  color: #fefefe !important;
+  font-size: 15px;
+}
+.al-page-index .al-index-faq .accordion-button:active, .al-page-index .al-index-faq .accordion-button.active, .al-page-index .al-index-faq .accordion-button:hover, .al-page-index .al-index-faq .accordion-button:focus {
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+.al-page-index .al-index-faq .accordion-button:not(.collapsed) {
+  background: #104469;
+  color: #fefefe;
+}
+.al-page-index .al-index-faq .accordion-body {
+  background: #114a73;
+  padding: 15px 10px;
+  margin-top: -8px;
+  color: #fefefe;
+}
+.al-page-index .al-index-newsletter a {
+  text-decoration: underline;
+}
+.al-page-index .al-index-newsletter .al-newsletter-input {
+  background-color: white;
+}
+.al-page-index .al-index-newsletter .al-newsletter-button {
+  background: #86da2f;
+  color: #000518;
+}
+.al-page-index .al-index-newsletter .al-newsletter-button:hover {
+  color: #000518;
+  background: #79cb24;
+}
+.al-page-index .al-index-press {
+  background: #0e3b5c;
+}
+.al-page-index .al-index-press .al-index-press-item {
+  margin-bottom: 10px;
+}
+.al-page-index .al-index-press .al-index-press-item blockquote.blockquote {
+  padding-bottom: 7px;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen-sans, ubuntu, cantarell, "helvetica neue", "arial", sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+  font-size: 1.4rem;
+}
+.al-page-index .al-index-press .al-index-press-item blockquote.blockquote:before {
+  content: open-quote;
+  padding-right: 3px;
+}
+.al-page-index .al-index-press .al-index-press-item blockquote.blockquote:after {
+  content: close-quote;
+  padding-left: 3px;
+}
+.al-page-index .al-index-press .al-index-press-item blockquote.blockquote:before, .al-page-index .al-index-press .al-index-press-item blockquote.blockquote:after {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen-sans, ubuntu, cantarell, "helvetica neue", "arial", sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+  vertical-align: top;
+  display: inline-block;
+  color: #faf5f5;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.al-page-index .al-index-press .al-index-press-item figcaption.blockquote-footer {
+  color: #fefefe;
+}
+.al-page-index .al-index-press .al-index-press-item figcaption.blockquote-footer cite {
+  font-style: normal;
+}
+.al-page-index .al-index-press .al-index-press-item figcaption.blockquote-footer a {
+  text-decoration: none;
+}
+.al-page-index .al-index-press .al-index-press-item figcaption.blockquote-footer a:hover {
+  text-decoration: underline;
+  color: #f7fbff;
+}/*# sourceMappingURL=home.css.map */

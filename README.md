@@ -4,36 +4,33 @@
 
 This repository contains website source code for https://almalinux.org.
 
-This website is built with Python using Django web framework. It uses MariaDB as database backend,
-Docker and docker-compose for development environment deployment, and Pipenv is used to track project 
-requirements, and manage Python dependencies.
-
-JavaScript and SCSS is used for frontend, and is managed/built using Webpack Encore. See
-[frontend/README](./frontend/README.md) for more details.
+This website is built with the [Hugo](https://gohugo.io/) web framework.
 
 ## For developers
 
 To deploy local development environment, you will need following dependencies installed
 on your development host:
 
-- Docker
-- docker-compose
-- make
+- hugo
 
-Common development commands and automation related commands are listed in Makefile. Execute `make help`
-for a complete list of available commands.
+Executing `hugo server` will deploy a nearly complete, ready to go development environment.
 
-Executing `make dev` will deploy a complete, ready to go development environment.
+Localization will be incomplete unless you first run `find_missing_i18n_strings.py` and
+`setup-pages-for-supported-languages.py`.  Please do **not** commit the files which are output by these scripts.
 
 ### Directories and modules
 
-- `/almalinux/` - Django project root.
-- `/commons/` - A Django app-module with reusable utilities for app support.
-- `/locale/` - Django locale files.
-- `/media/` - Django file uploads.
-- `/static/` - Static files and build output for frontend code.
-- `/www/` - Django app that contains all logic for the website.
-- `/frontend/` - JavaScript and SCSS frontend code.
+- `/layouts/` - Hugo HTML templates
+- `/layouts/partial` - commonly used template such as header and footer
+- `/i18n/` - Localization files and translations
+- `/static/` - static files
+- `/content/` - Markdown content for pages
+- `config.yaml` - Hugo config
+- `find_missing_i18n_strings.py` - find strings used in layouts/templates which do not exist in the base language file
+  `i18n/en.json`
+- `setup-pages-for-supported-languages.py` - create missing markdown pages for languages which do not exist.
+  By default Hugo will return 404 for markdown content without localized pages.  This script copies the English
+  markdown to be served when translated copies are missing.
 
 ### Localization and translation
 

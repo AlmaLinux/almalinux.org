@@ -1,0 +1,68 @@
+@import "./variables";
+@import "./functions";
+@import "./bootstrap";
+
+.al-page-foundation-members-index {
+  .al-members {
+    .table{
+      color: #fefefe !important;
+    }
+    .al-member-item {
+      height: 100%;
+      background: rgb(14, 59, 92);
+    }
+  }
+
+  .al-member-apply-category-icon {
+    color: lighten($al-font-color, 10%);
+    font-size: 32px;
+    padding-right: 22px;
+
+    @at-root {
+      [dir=rtl] & {
+        padding-right: 0;
+        padding-left: 22px;
+      }
+    }
+  }
+
+  .al-member-apply-cta {
+    min-width: 120px;
+  }
+
+  .fw-light {
+    .al-laws-link, .al-guideline-link {
+      text-decoration: none;
+
+      &:hover, &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .al-membership-info {
+    display: none;
+  }
+
+  #al-mirror-info, #al-sponsor-info {
+    ul {
+        list-style-type: '-   ';
+    }
+  }
+
+  .member-info:hover {
+    color: #86da2f;
+  }
+
+
+    .al-foundation-members-apply-content-wrap {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      p {
+        flex: 1;
+      }
+    }
+  }
+

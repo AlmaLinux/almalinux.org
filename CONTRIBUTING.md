@@ -4,7 +4,7 @@ If you are interested in making a contribution there are a few ways you could he
 
 ## Filing issues
 
-You are free to use [GitHub issues](https://github.com/AlmaLinux/almalinux.org/issues) to submit bugs and for 
+You are free to use [GitHub issues](https://github.com/AlmaLinux/almalinux.org/issues) to submit bugs and for
 discussions related to the codebase.
 
 ### Reporting a Bug
@@ -43,7 +43,8 @@ For smaller contributions use this workflow:
 * Fork the project.
 * Create a branch for your feature or bug fix.
 * Add code changes, relevant documentation, etc.
-* Send a pull request.
+* Send a pull request.  All PRs should be made against the `master` branch.  A dev site will be automatically created
+  based on the PR.  Localization will not be fully working as this pipeline does not run the localization scripts.
 
 After one of the contributors has checked and approved the changes, they will be merged into master branch and will be
 included in the next deployment.

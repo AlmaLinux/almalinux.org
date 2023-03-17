@@ -1,0 +1,35 @@
+.al-page-elevate-index .elevate-container-wrap {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+.al-page-elevate-index .al-cta-discuss {
+  background: #2891ff;
+  color: #222;
+}
+.al-page-elevate-index .al-cta-discuss:hover {
+  background: #0f84ff;
+}
+.al-page-elevate-index .al-cta-learn-how {
+  background: #86da2f;
+  color: #222222;
+}
+.al-page-elevate-index .al-cta-learn-how:hover {
+  background: #79cb24;
+}
+.al-page-elevate-index .faq-container {
+  margin-bottom: 120px;
+}
+.al-page-elevate-index .al-faq-slim {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-weight: 300;
+}
+.al-page-elevate-index .al-faq-slim > div {
+  padding-bottom: 26px;
+}
+.al-page-elevate-index .al-faq-slim > div div.question {
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}/*# sourceMappingURL=elevate.css.map */

@@ -1,0 +1,41 @@
+baseURL: https://almalinux.org
+languageCode: en-us
+title: AlmaLinux
+disableKinds:
+    - taxonomy
+    - taxonomyTerm
+
+paginate: 15
+
+taxonomies:
+    author: authors
+    about-author: about-authors
+    image: images
+
+defaultContentLanguage: en
+languages:
+    en: {weight: 1, languagename: English}
+    ar: {weight: 2, languagename: العربية}
+    ca: {weight: 2, languagename: Català}
+    cs: {weight: 2, languagename: Česky}
+    da: {weight: 2, languagename: Dansk}
+    de: {weight: 2, languagename: Deutsch}
+    el: {weight: 2, languagename: Ελληνικά}
+    es: {weight: 2, languagename: Español}
+    fi: {weight: 2, languagename: Suomi}
+    fr: {weight: 2, languagename: Français}
+    he: {weight: 2, languagename: עברית}
+    it: {weight: 2, languagename: Italiano}
+    ja: {weight: 2, languagename: 日本語}
+    ko: {weight: 2, languagename: 한국어}
+    lt: {weight: 2, languagename: Lietuvių}
+    lv: {weight: 2, languagename: latviešu}
+    pl: {weight: 2, languagename: Polski}
+    pt: {weight: 2, languagename: Português}
+    pt_BR: {weight: 2, languagename: Português Brasileiro}
+    ru: {weight: 2, languagename: Русский}
+    sk: {weight: 2, languagename: Slovensky}
+    sv: {weight: 2, languagename: svenska}
+    tr: {weight: 2, languagename: Türkçe}
+    uk: {weight: 2, languagename: Українська}
+    zh_Hans: {weight: 2, languagename: 简体中文}
