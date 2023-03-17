@@ -25,7 +25,7 @@ If you’ve seen any of the numbers that are coming out recently (see [this](htt
 
 AlmaLinux as the replacement for CentOS Linux makes fantastic sense for many enterprise businesses. We take our role as a community-owned, community-driven, and community-built free enterprise operating system in the RHEL ecosystem very seriously. We want to be here to welcome new users to the RHEL community, and to support organizations as they move forward.
 
-We are a community-owned non-profit, and AlmaLinux belongs to its members. In case you missed it, [last week we opened up our membership applications](/blog/what-almalinux-foundation-membership-means-for-you/). As soon as we have enough members to make it meaningful, the Board will initiate our first election. If you have helped AlmaLinux become what it is, I want to encourage you to [submit your application](/foundation/members/)! You deserve to have a voice in the future of AlmaLinux! 
+We are a community-owned non-profit, and AlmaLinux belongs to its members. In case you missed it, [last week we opened up our membership applications](/blog/what-almalinux-foundation-membership-means-for-you/). As soon as we have enough members to make it meaningful, the Board will initiate our first election. If you have helped AlmaLinux become what it is, I want to encourage you to [submit your application](/members/)! You deserve to have a voice in the future of AlmaLinux! 
 
 ## Want to chat?
 
