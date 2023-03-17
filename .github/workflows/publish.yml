@@ -28,6 +28,9 @@ jobs:
       - name: Build
         run: hugo --minify
 
+      # this is needed to trick CF into deploying to production
+      # can probably be removed where there is a solution to
+      # https://github.com/cloudflare/pages-action/issues/63
       - name: remove git dir
         run: rm -rf .git
 
