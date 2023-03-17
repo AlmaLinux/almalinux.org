@@ -32,10 +32,10 @@ languages:
     lv: {weight: 2, languagename: latviešu}
     pl: {weight: 2, languagename: Polski}
     pt: {weight: 2, languagename: Português}
-    pt_BR: {weight: 2, languagename: Português Brasileiro}
+    pt-br: {weight: 2, languagename: Português Brasileiro}
     ru: {weight: 2, languagename: Русский}
     sk: {weight: 2, languagename: Slovensky}
     sv: {weight: 2, languagename: svenska}
     tr: {weight: 2, languagename: Türkçe}
     uk: {weight: 2, languagename: Українська}
-    zh_Hans: {weight: 2, languagename: 简体中文}
+    zh-hans: {weight: 2, languagename: 简体中文}
