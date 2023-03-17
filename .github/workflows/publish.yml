@@ -28,6 +28,9 @@ jobs:
       - name: Build
         run: hugo --minify
 
+      - name: remove git dir
+        run: rm -rf .git
+
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
@@ -35,4 +38,3 @@ jobs:
           accountId: b2eab8b024e2fc0155a48c4fc7115e64
           projectName: almalinux
           directory: public
-          branch: production
