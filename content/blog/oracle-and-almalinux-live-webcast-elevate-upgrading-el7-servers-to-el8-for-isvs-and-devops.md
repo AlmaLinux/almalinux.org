@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "themayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2022-08-01'
 post:
     title: "Join AlmaLinux OS Architect, Andrew Lukoshko, for a chat with Oracle Developers about ELevating your distro, coming up August 4."

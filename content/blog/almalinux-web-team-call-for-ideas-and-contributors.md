@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2022-03-09'
 post:
     title: " We're working on improving our site, wanna help? What do you love? What do you hate?"

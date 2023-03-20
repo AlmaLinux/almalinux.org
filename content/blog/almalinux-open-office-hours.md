@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-07-27'
 post:
     title: "Please join us for Open Office Hours every Monday at 4pm UTC/12pm EDT/9am PDT on The AlmaLinux Community Chat beginning Monday August 2nd, 2021."

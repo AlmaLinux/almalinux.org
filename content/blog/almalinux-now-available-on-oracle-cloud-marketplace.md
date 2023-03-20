@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2022-05-05'
 post:
     title: "AlmaLinux continues its adventure in the clouds with the addition of Oracle Cloud Infrastructure."

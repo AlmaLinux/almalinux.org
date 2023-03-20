@@ -1,10 +1,10 @@
-/---
+---
 title: "Welcome Codenotary! AlmaLinux OS Foundation's First Platinum Member"
 type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-12-09'
 post:
     title: "Moshe Bar's Codenotary joins the AlmaLinux Foundation as a Platinum Member"

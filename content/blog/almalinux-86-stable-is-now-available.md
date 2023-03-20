@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2022-05-12'
 post:
     title: "Well, that was pretty quick. AlmaLinux OS 8.6 Stable is now available for x86_64, aarch64 and ppc64le! Containers and cloud images are coming right up!"

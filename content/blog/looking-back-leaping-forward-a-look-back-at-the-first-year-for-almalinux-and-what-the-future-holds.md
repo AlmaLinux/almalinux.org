@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2022-02-02'
 post:
     title: "Looking Back, Leaping Forward: A look back at the first year for AlmaLinux and what the future holds"

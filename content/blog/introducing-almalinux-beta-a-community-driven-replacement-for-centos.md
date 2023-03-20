@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-02-01'
 post:
     title: "CloudLinux is proud to announce the release of AlmaLinux OS Beta. We’ve collected community feedback and built our new beta release around what you wo..."

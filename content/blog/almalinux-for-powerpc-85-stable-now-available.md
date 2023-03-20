@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2022-02-25'
 post:
     title: "AlmaLinux inches closer to parity with RHEL and CentOS Linux with support for the ppc64le architecture."

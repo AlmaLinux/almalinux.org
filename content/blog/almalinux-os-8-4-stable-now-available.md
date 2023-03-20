@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-05-26'
 post:
     title: "Hey, what are you doing for Memorial Day? Heading out of town? Having a few friends over (that used to be a thing once upon a time)? How about havi..."

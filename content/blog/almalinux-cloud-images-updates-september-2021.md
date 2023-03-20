@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-09-20'
 post:
     title: "Bug fixes, AWS, Azure, aarch64 support, OpenNebula and more!"

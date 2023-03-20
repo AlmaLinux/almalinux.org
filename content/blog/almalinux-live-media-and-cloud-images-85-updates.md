@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2022-02-18'
 post:
     title: "Updated Cloud, Container and Live images. Fresh out the oven."

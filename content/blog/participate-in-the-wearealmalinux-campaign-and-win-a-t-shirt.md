@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-03-12'
 post:
     title: "The stable release of the AlmaLinux OS is just a couple of weeks away. The first stable release is a significant milestone for the Open Source communi..."

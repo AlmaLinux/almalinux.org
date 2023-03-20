@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-03-15'
 post:
     title: "Watch the live stream Recording! To celebrate the launch of the stable release of AlmaLinux OS, we hosted an event showcasing the team, the communit..."

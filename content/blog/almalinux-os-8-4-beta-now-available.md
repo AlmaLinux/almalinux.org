@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-04-30'
 post:
     title: "8.3? Pah! Old news. Say \"Hello\" to the newest distro on the block. AlmaLinux OS 8.4 Beta for all your testing needs. Now with Secure Boot goodness b..."

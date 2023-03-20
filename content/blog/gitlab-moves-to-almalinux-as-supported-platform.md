@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2022-03-30'
 post:
     title: "GitLab chooses AlmaLinux as CentOS 8 replacement to empower millions of developer across the world."

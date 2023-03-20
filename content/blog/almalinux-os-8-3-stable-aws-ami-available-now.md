@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-05-07'
 post:
     title: "Ahhh, another weekend laden with more tasty AlmaLinux goodness. The AlmaLinux OS Foundation is proud to announce the general availability of our 8.3..."

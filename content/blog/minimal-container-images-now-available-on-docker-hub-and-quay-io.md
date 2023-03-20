@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-06-28'
 post:
     title: "We've had a number of requests for minimal container images and we are glad to announce that those are now available on Docker Hub and Quay.io!"

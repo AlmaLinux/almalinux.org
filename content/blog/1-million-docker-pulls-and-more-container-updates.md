@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2022-03-15'
 post:
     title: "A mythical distribution with no upstream equivalent. Why did we do it? Because we can!"

@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "themayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2022-10-25'
 post:
     title: "Hello Community! AlmaLinux OS is excited to present AlmaLinux 8.7 Beta “Stone Smilodon” for x86_64, aarch64, ppc64le and s390x architectures."

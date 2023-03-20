@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-01-20'
 post:
     title: " Throughout the last few weeks, the team at CloudLinux has worked tirelessly to gear our internal infrastructure to meet the needs of launching a free,... "

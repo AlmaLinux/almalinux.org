@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "themayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2022-05-26'
 post:
     title: "Say \"Hello\" to AlmaLinux 9. Peak inside for more information."
