@@ -2,9 +2,9 @@
 title: "Hi, I'm benny. How can I help?"
 type: blog
 author: 
- name: "theMayor"
+ name: "benny Vasquez"
  bio: "-"
- image: /images/profile.png
+ image: /users/benny.jpg
 date: '2021-10-12'
 post:
     title: "benny Vasquez is the new Chair of the Board of Directors for the AlmaLinux OS Foundation."

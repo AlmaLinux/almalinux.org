@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-10-07'
 post:
     title: "New Repo, Kernel 5.10.60, Working Wi-Fi!"

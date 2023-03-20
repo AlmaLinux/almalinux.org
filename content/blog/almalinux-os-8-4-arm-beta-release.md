@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-05-28'
 post:
     title: "AWWWW YEAAAAHHHH!!! We're back at it again! Two releases in a week? \"You must be crazy,\" they said. Yup. We are. Crazy about the community and crazy a..."

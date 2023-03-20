@@ -3,8 +3,8 @@ title: "AlmaLinux 9.1 Beta - Now Available"
 type: blog
 author: 
  name: "themayor"
- bio: " - Chair, Board of Directors @AlmaLinux OS Foundation "
- image: /users/benny.jpeg
+ bio: "-"
+ image: /users/jack.jpg
 date: '2022-11-02'
 post:
     title: " Hello Community! AlmaLinux OS is excited to present AlmaLinux 9.1 Beta “Lime Lynx” for x86_64, aarch64, ppc64le and s390x architectures."

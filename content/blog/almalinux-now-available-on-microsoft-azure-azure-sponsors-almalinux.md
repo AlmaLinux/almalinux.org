@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-08-17'
 post:
     title: "AlmaLinux now available on Microsoft Azure. Azure Sponsors AlmaLinux!"

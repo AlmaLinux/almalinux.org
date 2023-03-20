@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-07-16'
 post:
     title: "AlmaLinux OS Foundation Membership Opens to the Public"

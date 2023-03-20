@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-11-30'
 post:
     title: "AlmaLinux Mailing Lists are now available!"

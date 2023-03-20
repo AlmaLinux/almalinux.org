@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "themayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2022-11-07'
 post:
     title: "A Legendary Release for a Legendary Platform. It was a lot of work, but someone had to do it!"

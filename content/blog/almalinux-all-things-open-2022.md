@@ -2,7 +2,7 @@
 title: "AlmaLinux @ All Things Open 2022"
 type: blog
 author: 
- name: "bvasquez"
+ name: "benny Vasquez"
  bio: "- Chair, Board of Directors @AlmaLinux OS Foundation"
  image: /users/benny.jpeg
 date: '2022-10-31'

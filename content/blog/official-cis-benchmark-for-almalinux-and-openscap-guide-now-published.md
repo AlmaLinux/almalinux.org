@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-11-05'
 post:
     title: "Secure your system via the official CIS Benchmark published for AlmaLinux and learn to use OpenSCAP with our handy OpenSCAP Guide."

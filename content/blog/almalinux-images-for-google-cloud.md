@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-06-04'
 post:
     title: "The AlmaLinux OS Foundation is glad to announce the availability of images for Google Cloud. Instructions on how to install and use the AlmaLinux OS i..."

@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-11-12'
 post:
     title: "The latest version of AlmaLinux OS is Now Available to Download. Read more about the updates and enhancements included in this release."

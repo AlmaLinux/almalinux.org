@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-06-18'
 post:
     title: "Hello Community! Here is a quick update on the various cloud images we have available as it's one of the top things we're asked about. The good news..."

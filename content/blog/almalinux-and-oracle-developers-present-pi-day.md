@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2022-03-04'
 post:
     title: " This 3/14 join us online for a day filled with trivia, demos, labs, tons of giveaways and more. Check out the [Pi Day](https://314piday.com) for the full schedule and to register for your swag pack."

@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-02-02'
 post:
     title: "On Monday, February 1st, AlmaLinux OS went live! Our public Beta version is now available to everyone, and we anticipate your active participation in..."

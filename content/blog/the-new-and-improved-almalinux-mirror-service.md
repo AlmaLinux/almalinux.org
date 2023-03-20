@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-08-04'
 post:
     title: "Announcing our new and improved mirror service—making things faster for you."

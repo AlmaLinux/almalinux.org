@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "themayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2022-07-08'
 post:
     title: "The AlmaLinux Build System is now available. Read more to learn about the current features and roadmap."

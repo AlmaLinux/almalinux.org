@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "themayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2022-07-21'
 post:
     title: "Tenable Providing Nessus Security Checks for AlmaLinux."

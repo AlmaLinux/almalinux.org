@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2022-02-03'
 post:
     title: "Generic Cloud (cloud-init) images are now available for the PPC64LE architecture as part of the ongoing beta."

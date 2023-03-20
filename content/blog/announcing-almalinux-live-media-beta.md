@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-08-05'
 post:
     title: "Live Media for AlmaLinux is now available in several flavors."

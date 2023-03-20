@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-07-30'
 post:
     title: "AlmaLinux hopes to see you at this year's Fedora Flock/Nest"

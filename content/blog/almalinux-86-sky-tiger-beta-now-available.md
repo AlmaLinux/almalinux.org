@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2022-05-06'
 post:
     title: "AlmaLinux 8.6 Beta is now available for x86_64, aarch64 and ppc64le. Test away!"

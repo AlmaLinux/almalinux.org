@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-06-08'
 post:
     title: "Hi all, we’ve developed a new geo-location mirror service which should make things a lot faster, simpler and easier when installing packages, update..."

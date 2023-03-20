@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "themayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2022-11-10' 
 post:
     title: AlmaLinux 8.7 for x86_64, aarch64, ppc64le and s390x is now available! 

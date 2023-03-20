@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-12-14'
 post:
     title: "AlmaLinux Delivers First HPC CentOS Alternative for Microsoft Azure"

@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-02-22'
 post:
     title: "Thanks to the community feedback, we worked on the bugs and fixed most of them. By all accounts, the beta release was pretty stable already, so the Release Candidate was the likely choice (instead of another beta). Thank you to everyone who tested and reported issues at bugs.almalinux.org, or sent suggestions/mirror offers to hello@almalinux.org. Right now we have 24 mirrors, so there should be one close to you, wherever you live."

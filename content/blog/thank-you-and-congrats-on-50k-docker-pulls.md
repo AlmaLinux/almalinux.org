@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-08-13'
 post:
     title: "AlmaLinux Hits 50K Docker Pulls Thanks to Community!"

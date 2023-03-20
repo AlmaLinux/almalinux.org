@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-11-16'
 post:
     title: "AlmaLinux OS 8.5 now available on AWS."

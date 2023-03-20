@@ -1,10 +1,10 @@
-/---
+---
 title: "Membership updates"
 type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-10-18'
 post:
     title: "A quick update on AlmaLinux OS Foundation membership applications"

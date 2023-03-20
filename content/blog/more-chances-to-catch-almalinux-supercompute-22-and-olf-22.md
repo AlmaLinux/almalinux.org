@@ -2,7 +2,7 @@
 title: "More chances to catch AlmaLinux: SuperCompute ‘22, and OLF ‘22"
 type: blog
 author: 
- name: "bvasquez"
+ name: "benny Vasquez"
  bio: " - Chair, Board of Directors @AlmaLinux OS Foundation"
  image: /users/benny.jpeg
 date: '2022-11-08'

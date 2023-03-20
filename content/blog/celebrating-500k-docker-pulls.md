@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2021-12-15'
 post:
     title: "AlmaLinux thanks the community for this marvelous milestone."

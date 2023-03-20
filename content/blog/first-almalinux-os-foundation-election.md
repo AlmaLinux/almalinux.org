@@ -2,7 +2,7 @@
 title: "First AlmaLinux Community Election Coming Soon!"
 type: blog
 author: 
- name: "bvasquez"
+ name: "benny Vasquez"
  bio: "- Chair, Board of Directors @AlmaLinux OS Foundation"
  image: /users/benny.jpeg
 date: '2022-08-09'

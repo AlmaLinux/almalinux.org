@@ -4,7 +4,7 @@ type: blog
 author: 
  name: "theMayor"
  bio: "-"
- image: /images/profile.png
+ image: /users/jack.jpg
 date: '2022-04-19'
 post:
     title: "AlmaLinux 9 Beta is now available for x86_64, aarch64, ppc64le and s390x! Stay tuned for information on test days."
