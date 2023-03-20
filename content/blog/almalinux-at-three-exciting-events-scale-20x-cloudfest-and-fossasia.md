@@ -1,4 +1,4 @@
-/---
+---
 title: "AlmaLinux at three exciting events!"
 type: blog
 author: 
