@@ -20,6 +20,7 @@ Our website is built in Hugo, with some quirks. To add a blog post successfully 
 
 - The top of your file should be the metadata for your post. The meta information should be updated to include your posts information, and the bolded entries are what you will be updating, all others should remain as they are. The content is defined and further explained below.
 
+```
 	---
 	**title: ""**
 	type: blog
@@ -32,6 +33,7 @@ Our website is built in Hugo, with some quirks. To add a blog post successfully 
 		**title: ""**
 		**image: /blog-images/**
 	---
+```
 
 - The title is what you'd like displayed at the top of the post.
 - The date would be the date you want to see the blog post published, but we cannot always guarantee a publishing timeline. 
