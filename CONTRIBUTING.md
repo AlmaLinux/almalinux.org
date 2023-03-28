@@ -6,7 +6,7 @@ If you are interested in making a contribution there are a few ways you could he
 
 We welcome blog posts of almost any kind from our community! We accept content that covers topics that relate to AlmaLinux OS, the AlmaLinux OS Foundation. If you aren't sure if your blog post topic would be a good one, feel free to create an issue on this repo and ask! You can also join our chat and ask in the Marketing room. 
 
-###Process information
+### Process information
 
 - Before you begin writing the blog post, we strongly recommend that you search existing open and closed issues for similar content, to prevent duplication. 
 - We also recommend that you open an issue on the repo to propose your blog post before you begin writing it, to ensure that your blog post would be appropriate for the AlmaLinux blog.
@@ -44,13 +44,12 @@ Our website is built in Hugo, with some quirks. To add a blog post successfully 
 - Before submitting your PR, please test that your content loads correctly by building the site locally with the command `hugo server`
 
 
-###Some notes about content
+### Some notes about content
 
 - define all terms used (especially acronyms) so that all readers may understand your content. 
 - content submitted to the AlmaLinux blog should be unique and not posted elsewhere on the internet.
 - by submitting content to the AlmaLinux website, you are affirming that you are the sole author of all text and images used in the post, and that you own all rights to publish said content.
 - external links are allowed, but links to paywalled websites or obvious use of a blogpost on the AlmaLinux site as an SEO builder for another website is prohibited.
-
 
 ## Filing issues
 
