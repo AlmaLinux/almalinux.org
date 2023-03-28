@@ -18,28 +18,31 @@ Our website is built in Hugo, with some quirks. To add a blog post successfully 
 
 - create a new file in ./content/blog named what you'd like the slug (URL) to be, with a file extension of '.md'. For example, the blog post at almalinux.org/blog/celebrating-500k-docker-pulls is in a file named ./content/blog/celebrating-500k-docker-pulls.md.
 
-- The top of your file should be the metadata for your post. The meta information should be updated to include your posts information, and the bolded entries are what you will be updating, all others should remain as they are. The content is defined and further explained below.
+- The top of your file should be the metadata for your post. The meta information should be updated to include your posts information. The content is defined and further explained below.
 
 ```
 ---
-**title: ""**
+title: ""
 type: blog
 author: 
- **name: ""**
- **bio: "-"**
- **image: /users/**
-**date: ''**
+ name: ""
+ bio: ""
+ image: /users/
+date: ''
 post:
-	**title: ""**
-	**image: /blog-images/**
+	title: ""
+	image: /blog-images/
 ---
 ```
 
-- The title is what you'd like displayed at the top of the post.
-- The date would be the date you want to see the blog post published, but we cannot always guarantee a publishing timeline. 
-- A header image should be included, should not violate any trademarks or copyrights, and should be relevant to blog content. Once created, a PNG version of your Header image should be placed in ./static/blog-images/
-- The name listed should be yours (either legal name or chosen name or moniker) and your bio will be displayed directly under your name, so please keep this to 60 characters or less. 
-- Your profile image should be appropriate for an all-audiences website and added to ./static/users/ in .png format.
+- The **title** is what you'd like displayed at the top of the post.
+- The **type** should always be 'blog'.  
+- The **name** listed should be yours (either legal name or chosen name or moniker) 
+- Your **bio** will be displayed directly under your name, so please keep this to 60 characters or less. 
+- Your author **image** should be appropriate for an all-audiences website and added to ./static/users/ in .png format. The file will serve from /users/, so do not change the beginning of this path. 
+- The **date** is the date you want to see the blog post published, but we cannot always guarantee a publishing timeline. 
+- The post **title** should match the above.
+- A post **image** should be included, and will be displayed both on the almalinux.org/blog/ feed, and as the header image on the full-page blog post. Your image should not violate any trademarks or copyrights, and should be relevant to blog content. Once created, a PNG version of your image should be placed in ./static/blog-images/ The file will serve from /blog-images/, so do not change the beginning of this path. 
 - Below the --- of the metadata block, you should place the content of your blog post. This content should be in markdown format, and any images you want to include in your post can be added 
 - Before submitting your PR, please test that your content loads correctly by building the site locally with the command `hugo server`
 
