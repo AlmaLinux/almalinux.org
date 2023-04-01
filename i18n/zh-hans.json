@@ -61,7 +61,7 @@
     "Community-wide Project": "全社区项目",
     "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux. ELevate supports migrating to/from other distributions and is open for all to contribute to and enhance.": "EL易升是以一种与发行版无关的方式开发的，它是作为整个生态系统的工具而构建的，而不仅仅是 AlmaLinux。 EL易升支持迁移到/出其他发行版，并且对所有人开放以做出贡献和增强。",
     "FAQ": "常问问题",
-    "What is ELevate?": "什么是EL易升？",
+    "What is ELevate?": "什么是ELevate？",
     "ELevate is a project aimed to provide the ability to migrate between major versions of RHEL-based distributions from 7.x to 8.x. It combines Red Hat's Leapp framework with a community created library and service for the migration metadata set required for it.": "EL易升是一个旨在提供在基于RHEL的发行版的主要版本之间从 7.x 迁移到 8.x 的能力的项目。 它将Red Hat的Leapp框架与社区创建的库和服务相结合，用于迁移所需的元数据集。",
     "This looks awesome. How can I contribute?": "这看起来很棒。我怎么才能做贡献？",
     "First join us at <a href=\"%(chat_link)s\">#migration</a> Mattermost channel. You can find the tool code here: <a href=\"%(github_link)s\">%(github_link)s</a> and you can add/edit/interact with package metadata at <a href=\"%(pes_link)s\">%(pes_link)s</a>.": "首先加入我们的 <a href=\"%(chat_link)s\">#migration</a> Mattermost 频道。 您可以在此处找到工具代码：<a href=\"%(github_link)s\">%(github_link)s</a> 并且您可以在<a href=\"%(pes_link)s\">%(pes_link)s</a>添加/编辑/和包的元数据交互。",
@@ -338,5 +338,6 @@
     "Every environment is different and unique based on applications and configurations.": "",
     "Since this is still under development, to avoid any surprises, we highly recommend that you test migrations scenarios in a VM or sandbox before running a migration in production.": "",
     "Currently ELevate provides Leapp data for migration from CentOS 7 to the following OS:": "",
-    "Metadata answers questions about how packages evolve between major distribution releases.": ""
+    "Metadata answers questions about how packages evolve between major distribution releases.": "",
+    "ELevate is a project aimed to provide the ability to migrate between major versions of RHEL-based distributions from 7.x to 8.x and from 8.x to 9.x. It combines Red Hat's Leapp framework with a community created library and service for the migration metadata set required for it.": "ELevate是一个项目，旨在提供基于 RHEL 的发行版从 7.x 到 8.x 以及从 8.x 到 9.x 的主要版本之间的迁移能力。它将 RedHat 的 Leapp 框架与社区创建的迁移元数据集的库和服务相结合。"
 }
