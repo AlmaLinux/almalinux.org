@@ -54,7 +54,7 @@
     "Get Started": "はじめましょう",
     "Discuss": "議論",
     "About": "概要",
-    "Major Version Upgrades": "主要な派生バージョンの更新",
+    "Major Version Upgrades": "メジャーバージョンの更新",
     "It wasn't possible--until now. Easily migrate between major versions of RHEL-based distributions from 7.x to 8.x. Preserve your applications, your data, and your sanity. Run the most recent version of the OS and software you need.": "これは「今までは」できなかったことです。RHEL ベースのディストリビューションの 7.x から 8.x までの主要な派生バージョンの間を簡単に移行できます。必要な OS やソフトウェアの最新バージョンを実行できます。",
     "Package Evolution Service": "パッケージ展開サービス",
     "The beating heart of ELevate is the <a href=\"%(pes_link)s\">Package Evolution Service</a> (PES) which allows you to download, customize and even submit new data sets for packages. Users and maintainers can both utilize the PES to help make migrations smooth and easy.": "ELevate の心臓部は<a href=\"%(pes_link)s\">パッケージ展開サービス</a>（PES）であり、パッケージ用の新しいデータセットをダウンロード、カスタマイズ、さらには提出できます。ユーザーとメンテナンス担当者は、両方とも、移行をスムーズかつ簡単にするために PES を使用できます。",
