@@ -344,5 +344,7 @@
    "The LTP testsuite contains a collection of tools for testing the Linux kernel and related features.": "The LTP testsuite contains a collection of tools for testing the Linux kernel and related features.",
    "The USB test covers USB ports from a basic functionality standpoint, ensuring that all ports can be accessed by the OS.": "The USB test covers USB ports from a basic functionality standpoint, ensuring that all ports can be accessed by the OS.",
    "The PXE test covers the PXE device checks and its ability to boot OS over the network.": "The PXE test covers the PXE device checks and its ability to boot OS over the network.",
-   "tests cover benchmarking of OS features. The result of benchmarking can be found below": "tests cover benchmarking of OS features. The result of benchmarking can be found below"
+   "tests cover benchmarking of OS features. The result of benchmarking can be found below": "tests cover benchmarking of OS features. The result of benchmarking can be found below",
+   "CEO": "CEO",
+   "CTO": "CTO"
 }
