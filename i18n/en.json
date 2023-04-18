@@ -357,5 +357,7 @@
    "fork.": "fork.",
    "What does the Package Evolution Service (PES) do?": "What does the Package Evolution Service (PES) do?",
    "No. We respect Red Hat\u2019s work and our initial data set was provided by the AlmaLinux OS Foundation with contributions from Oracle.": "No. We respect Red Hat\u2019s work and our initial data set was provided by the AlmaLinux OS Foundation with contributions from Oracle.",
-   "Our contributors have been part of the RHEL ecosystem for a very long time, and we recognized that the CentOS ecosystem is a very large and diverse community.": "Our contributors have been part of the RHEL ecosystem for a very long time, and we recognized that the CentOS ecosystem is a very large and diverse community."
+   "Our contributors have been part of the RHEL ecosystem for a very long time, and we recognized that the CentOS ecosystem is a very large and diverse community.": "Our contributors have been part of the RHEL ecosystem for a very long time, and we recognized that the CentOS ecosystem is a very large and diverse community.",
+   "CEO": "CEO",
+   "CTO": "CTO"
 }
