@@ -9,7 +9,7 @@
                     </h3>
                     <div class="al-subtle-links pb-2">
                         <p>
-                            {{ i18n "ELevate enables migration between major versions of RHEL &reg; derivatives." }} {{ i18n "Move from CentOS 7.x to 8.x version of the RHEL derivative of your choice, or upgrade from 8.x to 9.x within the same derivative." }}
+                            {{ i18n "ELevate enables migration between major versions of RHEL® derivatives." }} {{ i18n "Move from CentOS 7.x to 8.x version of the RHEL derivative of your choice, or upgrade from 8.x to 9.x within the same derivative." }}
                         </p>
                     </div>
                     <div>
@@ -69,7 +69,6 @@
                             {{ i18n "Community-wide Project" }}
                         </h4>
                         <p>
-
                             {{ i18n "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux. ELevate supports migrating to/from other distributions and is open for all to contribute to and enhance." }}
                         </p>
                     </div>
@@ -85,7 +84,7 @@
                             {{ i18n "What is ELevate?" }}
                     </div>
                     <div class="answer">
-                            {{ i18n "ELevate is a project aimed to provide the ability to migrate between major versions of RHEL-based distributions from 7.x to 8.x and from 8.x to 9.x. It combines Red Hat's Leapp framework with a community created library and service for the migration metadata set required for it." }}
+                            {{ i18n "ELevate is a project aimed to provide the ability to upgrade between major versions of RHEL-based distributions from 7.x to 8.x and from 8.x to 9.x. It combines Red Hat's Leapp framework with a community-created migration metadata library and service." }}
                     </div>
                 </div>
                 <!--Item-->
@@ -94,8 +93,11 @@
                             {{ i18n "This looks awesome. How can I contribute?" }}
                     </div>
                     <div class="answer">
-                            {{ i18n "First join us at" }} <a href="https://chat.almalinux.org/almalinux/channels/migration">#migration</a> Mattermost {{ i18n "channel." }} {{ i18n "You can find the tool code here:" }}
-                            <a href="https://github.com/AlmaLinux/leapp-repository/tree/almalinux">https://github.com/AlmaLinux/leapp-repository/tree/almalinux</a> {{ i18n "and you can add/edit/interact with package metadata at" }} <a href="https://pes.almalinux.org">https://pes.almalinux.org</a>.
+                            {{ i18n "First join us in the " }}
+							 <a href="https://chat.almalinux.org/almalinux/channels/migration">~migration</a> Mattermost 
+							 {{ i18n "channel." }} {{ i18n "You can find the tool code " }} 
+							 <a href="https://github.com/AlmaLinux/leapp-repository/tree/almalinux">in the AlmaLinux GitHub organization</a> 
+							 {{ i18n "and you can add/edit/interact with package metadata at" }} <a href="https://pes.almalinux.org">https://pes.almalinux.org</a>.
                     </div>
                 </div>
                 <!--Item-->
@@ -104,8 +106,8 @@
                             {{ i18n "Is this ready for production?" }}
                     </div>
                     <div class="answer">
-                            YMMV.  {{ i18n "Every environment is different and unique based on applications and configurations." }}
-                            {{ i18n "Since this is still under development, to avoid any surprises, we highly recommend that you test migrations scenarios in a VM or sandbox before running a migration in production." }}
+                            {{ i18n "ELevate has been used to migrate production environments across industries and across the world, but we still advise caution." }}  {{ i18n "Every environment is different and unique based on applications and configurations." }}
+                            {{ i18n "To avoid any surprises, we highly recommend that you test upgrades scenarios in a virtual machine or sandbox before running a upgrades in production." }}
                     </div>
                 </div>
                 <!--Item-->
@@ -114,11 +116,12 @@
                             {{ i18n "What operating systems does ELevate support?" }}
                     </div>
                     <div class="answer">
-                            {{ i18n "Currently, ELevate project supports the following migration directions:" }} 
+                            {{ i18n "Currently, ELevate project supports the following upgrade and migration directions:" }} 
                             <img src=/images/ELevate.svg class="d-block img-fluid" alt="ELevate scheme CentOS7 -> AlmaLinux, CentOS Stream, EuroLinux, Oracle, Rocky 8 -> AlmaLinux, CentOS Stream, EuroLinux, Rocky 9" width="500" height="200">
-                            {{ i18n "* - migration to CentOS Stream 9 is currently in process and will be available later." }} <br>
+                            {{ i18n "* - migration to CentOS Stream 9 is currently in development and will be available later." }} <br>
                             {{ i18n "** - migration to Oracle Linux 9 is available with the" }}
-                            <a href="https://blogs.oracle.com/linux/post/upgrade-oracle-linux-8-to-oracle-linux-9-using-leapp">Oracle Leapp utility</a> {{ i18n "and will not be supported by ELevate project." }}
+                            <a href="https://blogs.oracle.com/linux/post/upgrade-oracle-linux-8-to-oracle-linux-9-using-leapp">Oracle Leapp utility</a> {{ i18n "and will not be supported by ELevate project." }} <br>
+							{{ i18n "Note: If you use cPanel, we recommend using the" }} <a href="https://cpanel.github.io/elevate/">cPanel ELevate</a> {{ i18n "fork." }}
                     </div>
                 </div>
                 <!--Item-->
@@ -142,21 +145,19 @@
                 <!--Item-->
                 <div>
                     <div class="question">
-                            {{ i18n "What does the Package Evolution Service do?" }}
+                            {{ i18n "What does the Package Evolution Service (PES) do?" }}
                     </div>
                     <div class="answer">
-                            {{ i18n "The Package Evolution Service stores package migration metadata." }} {{ i18n "Metadata answers questions about how packages evolve between major distribution releases." }}
-                            {{ i18n "PES supports several classes of rules for packages such as added, removed, renamed, split, merged, and so on." }}
-                            {{ i18n "The service also allows everyone to improve the data by adding new actions or even create a custom dataset for packages from third-party or private repositories." }}
+                            {{ i18n "The Package Evolution Service stores package migration metadata." }} {{ i18n "Metadata answers questions about how packages evolve between major distribution releases." }} {{ i18n "PES supports several classes of rules for packages such as added, removed, renamed, split, merged, and so on." }} {{ i18n "The service also allows everyone to improve the data by adding new actions or even create a custom dataset for packages from third-party or private repositories." }}
                     </div>
                 </div>
                 <!--Item-->
                 <div>
                     <div class="question">
-                            {{ i18n "RedHat offers a data set which is non-freely licensed. Are you using this same data set?" }}
+                            {{ i18n "Red Hat offers a data set which is non-freely licensed. Are you using this same data set?" }}
                     </div>
                     <div class="answer">
-                            {{ i18n "No. We respect Red Hat’s work and our initial data set was provided by the AlmaLinux Foundation and contributions from Oracle." }}
+                            {{ i18n "No. We respect Red Hat’s work and our initial data set was provided by the AlmaLinux OS Foundation with contributions from Oracle." }}
                     </div>
                 </div>
                 <!--Item-->
@@ -174,9 +175,7 @@
                             {{ i18n "Why are you supporting migration to other distributions?" }}
                     </div>
                     <div class="answer">
-                            {{ i18n "The CentOS ecosystem is a very large and diverse community." }}
-                            {{ i18n "We've developed this project in good faith in the hope that everyone in the community can use and contribute to, no matter which distro you prefer." }}
-                            {{ i18n "That's the open source way." }}
+                            {{ i18n "Our contributors have been part of the RHEL ecosystem for a very long time, and we recognized that the CentOS ecosystem is a very large and diverse community." }} {{ i18n "We've developed this project in good faith in the hope that everyone in the community can use and contribute to, no matter which distro you prefer." }} {{ i18n "That's the open source way." }}
                     </div>
                 </div>
             </div>
