@@ -17,7 +17,7 @@ Hello Community! AlmaLinux OS Foundation is announcing the availability of AlmaL
 * IBM Z (s390x)
 
 Beta ISOs are available at [repo.almalinux.org](https://repo.almalinux.org/almalinux/8.8-beta/isos/). Select a mirror closest to your geographic area listed on the [mirrors.almalinux.org](https://mirrors.almalinux.org) website to download a suitable ISO image more quickly.
-Starting the AlmaLinux 8.8 Beta release, Beta repositories are only available in the [Vault](https://repo.almalinux.org/vault/8.8-beta/) to reduce storage usage on mirrors. 
+Starting with the AlmaLinux 8.8 Beta release, Beta repositories are only available in the [Vault](https://repo.almalinux.org/vault/8.8-beta/) to reduce storage usage on mirrors. 
 
 As usual, a simple reminder, this is a **BETA** release. It should not be used for production installations. The provided upgrade instructions should not be used on production machines unless you don't mind if something breaks. Now if you wanna test this somehow, somewhere to see how things will work in 8.8 stable, you're on the right track.
 
