@@ -44,7 +44,7 @@ post:
 - The **date** is the date you want to see the blog post published, but we cannot always guarantee a publishing timeline. 
 - The post **title** should match the above.
 - A post **image** should be included, and will be displayed both on the almalinux.org/blog/ feed, and as the header image on the full-page blog post. Your image should not violate any trademarks or copyrights, and should be relevant to blog content. Once created, a PNG version of your image should be placed in ./static/blog-images/ The file will serve from /blog-images/, so do not change the beginning of this path. 
-- Below the --- of the metadata block, you should place the content of your blog post. This content should be in markdown format, and any images you want to include in your post can be added 
+- Below the --- of the metadata block, you should place the content of your blog post. This content should be in markdown format, and any images you want to include in your post can be added to ./static/blog-images/ and will serve from /blog-images/.
 - Before submitting your PR, please test that your content loads correctly by building the site locally with the command `hugo server`
 
 
