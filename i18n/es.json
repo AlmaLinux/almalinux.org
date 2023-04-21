@@ -1,6 +1,6 @@
 {
     "Read more": "Conocer más",
-    "404 Not Found - AlmaLinux OS": "404: no encontrado • AlmaLinux OS",
+    "404 Not Found - AlmaLinux OS": "404 No Encontrado - AlmaLinux OS",
     "An Open Source, community owned and governed, forever-free enterprise Linux distribution.": "Una distribución Linux para empresas abierta, comunal y por siempre libre y gratuita.",
     "404 Not Found": "404: no encrontrado",
     "Sorry, but the page you were trying to access could not be found.": "Lo sentimos, pero no se pudo encontrar la página a la que intentaba acceder.",
@@ -159,7 +159,7 @@
     "Subscribe to our Announce mailing list and never miss out on the latest in AlmaLinux OS development!": "",
     "All attestation data is integrity-checked and cryptographically verified by the CAS client.": "",
     "Request a system image for tests": "",
-    "Who is AlmaLinux OS for?": "",
+    "Who is AlmaLinux OS for?": "¿Para quién es el sistema operativo AlmaLinux?",
     "Individuals and organizations that require an enterprise-grade, Fedora-like distribution but who do not want to or cannot pay for a RHEL® license. AlmaLinux OS is also a perfect replacement for anyone who currently relies on the CentOS stable release to achieve computing objectives.": "",
     "Why did we call it AlmaLinux OS?": "",
     "An Open Source, community owned and governed, forever-free enterprise Linux distribution, focused on long-term stability, providing a robust production-grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL® and pre-Stream CentOS.": "",
