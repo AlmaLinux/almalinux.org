@@ -10,7 +10,7 @@ post:
     title: "We're back at it again. AlmaLinux 8.8 Beta is now available for testing!"
     image: /blog-images/8.8betaimage.png
 ---
-Hello Community! AlmaLinux OS Foundation is announcing the availability of AlmaLinux 8.8 Beta "Sapphire Caracal" for all supported architectures:
+Hello Community! The AlmaLinux OS Foundation is announcing the availability of AlmaLinux 8.8 Beta "Sapphire Caracal" for all supported architectures:
 * Intel/AMD (x86_64)
 * ARM64 (aarch64)
 * IBM PowerPC (ppc64le)
