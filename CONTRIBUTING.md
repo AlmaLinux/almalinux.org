@@ -45,9 +45,9 @@ post:
 - The **title** is what you'd like displayed at the top of the post.
 - The **type** should always be 'blog'.  
 - The **name** listed should be yours (either legal name or chosen name or moniker) 
-- Your **bio** will be displayed directly under your name, so please keep this to 60 characters or less. 
+- Your **bio** will be displayed directly under your name, so please keep this to 60 characters or less. If you would like to leave this blank, you may do so. 
 - Your author **image** should be appropriate for an all-audiences website and added to ./static/users/ in .png format. The file will serve from /users/, so do not change the beginning of this path. 
-- The **date** is the date you want to see the blog post published, but we cannot always guarantee a publishing timeline. 
+- The **date** is the date (in YYYY-MM-DD format) you want to see the blog post published, but we cannot always guarantee a publishing timeline. 
 - The post **title** should match the above.
 - A post **image** should be included, and will be displayed both on the almalinux.org/blog/ feed, and as the header image on the full-page blog post. Your image should not violate any trademarks or copyrights, and should be relevant to blog content. Once created, a PNG version of your image should be placed in ./static/blog-images/ The file will serve from /blog-images/, so do not change the beginning of this path. 
 
