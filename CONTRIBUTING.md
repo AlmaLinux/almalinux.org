@@ -15,9 +15,15 @@ We welcome blog posts of almost any kind from our community! We accept content t
 
 #### The content of your .md file
 
-Our website is built in Hugo, with some quirks. To add a blog post successfully to the website, take the following steps:
+Our website is built in Hugo and served using CloudFlare pages, so you may find some quirks. To add a blog post successfully to the website, take the steps below, and reach out in ~marketing on our chat server if you have any problems.
+
+**The blog file**
+
+Blog content is served using the layouts/blog/single.html format. Note: if you would like to suggest changes to this format, they should be submitted in a PR outside the PR of your blog post.
 
 - create a new file in ./content/blog named what you'd like the slug (URL) to be, with a file extension of '.md'. For example, the blog post at almalinux.org/blog/celebrating-500k-docker-pulls is in a file named ./content/blog/celebrating-500k-docker-pulls.md.
+
+**The Meta data**
 
 - The top of your file should be the metadata for your post. The meta information should be updated to include your posts information. The content is defined and further explained below.
 
@@ -44,6 +50,9 @@ post:
 - The **date** is the date you want to see the blog post published, but we cannot always guarantee a publishing timeline. 
 - The post **title** should match the above.
 - A post **image** should be included, and will be displayed both on the almalinux.org/blog/ feed, and as the header image on the full-page blog post. Your image should not violate any trademarks or copyrights, and should be relevant to blog content. Once created, a PNG version of your image should be placed in ./static/blog-images/ The file will serve from /blog-images/, so do not change the beginning of this path. 
+
+**The meat of your post**
+
 - Below the --- of the metadata block, you should place the content of your blog post. This content should be in markdown format, and any images you want to include in your post can be added to ./static/blog-images/ and will serve from /blog-images/.
 - Before submitting your PR, please test that your content loads correctly by building the site locally with the command `hugo server`
 
