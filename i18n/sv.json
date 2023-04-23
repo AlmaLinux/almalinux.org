@@ -363,5 +363,9 @@
     "To avoid any surprises, we highly recommend that you test upgrades scenarios in a virtual machine or sandbox before running a upgrades in production.": "För att undvika några överraskningar rekommenderar vi starkt att du testar uppgraderingsscenarier i en virtuell maskin eller sandlåda innan du kör en uppgradering i produktion.",
     "ELevate is a project aimed to provide the ability to upgrade between major versions of RHEL-based distributions from 7.x to 8.x and from 8.x to 9.x. It combines Red Hat's Leapp framework with a community-created migration metadata library and service.": "ELevate är ett projekt som syftar till att ge möjligheten att uppgradera mellan större versioner av RHEL-baserade distributioner från 7.x till 8.x och från 8.x till 9.x. Det kombinerar Red Hats Leapp-ramverk med ett gemenskapskapat migreringsmetadatabibliotek och en tjänst.",
     "What does the Package Evolution Service (PES) do?": "Vad gör Paket evolutionstjänsten (PES)?",
-    "No. We respect Red Hat’s work and our initial data set was provided by the AlmaLinux OS Foundation with contributions from Oracle.": "Nej. Vi respekterar Red Hats arbete och vår första datamängd tillhandahölls av AlmaLinux OS stiftelsen med bidrag från Oracle."
+    "No. We respect Red Hat’s work and our initial data set was provided by the AlmaLinux OS Foundation with contributions from Oracle.": "Nej. Vi respekterar Red Hats arbete och vår första datamängd tillhandahölls av AlmaLinux OS stiftelsen med bidrag från Oracle.",
+    "ELevate.": "ELevate.",
+    "Switching distributions is usually costly and time-consuming, but that’s not the case when switching from CentOS and other RHEL® derivatives to AlmaLinux OS.": "Att byta distributioner är vanligtvis kostsamt och tidskrävande, men det är inte fallet när du byter från CentOS och andra RHEL®-derivat till Almalinux OS.",
+    "Switching is easy": "Att byta är enkelt",
+    "If you are using CentOS 7 or 8 and need help upgrading and migrating, check out": "Om du använder CentOS 7 eller 8 och behöver hjälp med uppgradering och migrering, kolla in"
 }
