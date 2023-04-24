@@ -335,6 +335,12 @@
   padding: 10px 16px;
   font-size: 15px;
 }
+.al-page-blog-post table, th, td {
+  color: #fefefe !important;
+  border: 1px solid #fefefe;
+  padding: 10px;
+}
+
 
 .custom-blog-page-section{
   width: 680px;
