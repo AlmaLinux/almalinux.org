@@ -74,7 +74,7 @@
                             <i class="bi bi-people pe-1"></i>
                             {{ i18n "Contribute" }}
                         </a>
-                        <a href="https://mirrors.almalinux.org/isos.html" class="btn btn-lg px-4 al-hero-cta-secondary">
+                        <a href="#downloads" class="btn btn-lg px-4 al-hero-cta-secondary">
                             <i class="bi bi-download pe-1"></i>
                             {{ i18n "Download" }}
                         </a>
@@ -170,6 +170,116 @@
                         </p>
                     </div>
                 </div>
+            </div>
+        </div>
+
+ <!-- GET ALMALINUX -->
+         <div id="downloads" class="al-index-community-container">
+            <div class="container al-py-lg">
+                <h2 class="pb-2 text-center border-bottom">{{ i18n "Get AlmaLinux OS" }}</h2>
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-2 py-md-5">
+                    <div class="col d-flex align-items-stretch">
+                        <img loading="lazy" class="al-index-community-icon img" src="/images/iso-icon-F.svg" alt="ISO Image">
+                        <div class="al-index-community-content-wrap">
+                            <h4 class="fw-bold mb-0 pb-2">ISO Images</h4>
+                              <p>
+                                {{ i18n "AlmaLinux supports 4 architectures:" }}
+                                <ul>
+                                <li>x86_64</li>
+                                <li>aarch64</li>
+                                <li>ppc64le</li>
+                                <li>s390x</li>
+                                </ul>
+                                <a href="https://mirrors.almalinux.org/isos.html">{{ i18n "Download ISO from mirrors" }}</a>
+                              </p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-stretch">
+                        <img loading="lazy" class="al-index-community-icon img" src="/images/cloud-icon-F.svg" alt="Cloud Image">
+                        <div class="al-index-community-content-wrap">
+                            <h4 class="fw-bold mb-0 pb-2">Cloud Images</h4>
+                            <p>
+                                {{ i18n "AlmaLinux provides official images for cloud providers:" }} <br><br>
+                                <a href="https://wiki.almalinux.org/cloud/AWS.html">Amazon AWS</a> <br>
+                                <a href="https://wiki.almalinux.org/cloud/Generic-cloud.html">Generic Cloud</a> <br>
+                                <a href="https://wiki.almalinux.org/cloud/Google.html">Google Cloud</a> <br>
+                                <a href="https://wiki.almalinux.org/cloud/Azure.html">Microsoft Azure</a> <br>
+                                <a href="https://wiki.almalinux.org/cloud/OpenNebula.html">OpenNebula</a> <br>
+                                <a href="https://wiki.almalinux.org/cloud/OCI.html">Oracle Cloud Infrastructure</a> <br>                        
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-stretch">
+                         <img loading="lazy" class="al-index-community-icon img" src="/images/container-icon-F.svg" alt="Container Image">
+                        <div class="al-index-community-content-wrap">
+                            <h4 class="fw-bold mb-0 pb-2">Container Images</h4>
+                            <p>
+                                {{ i18n "AlmaLinux provides official OCI, Docker and UBI compatible images." }} <br><br>
+                                <a href="https://hub.docker.com/_/almalinux">{{ i18n "Get Docker Image" }}</a> <br>
+                                <a href="https://quay.io/organization/almalinuxorg">{{ i18n "Get OCI Image from Quay.io" }}</a>
+                            </p>    
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-stretch">
+                        <img loading="lazy" class="al-index-community-icon img" src="/images/live-icon-F.svg" alt="Live Media Image">
+                        <div class="al-index-community-content-wrap">
+                            <h4 class="fw-bold mb-0 pb-2">Live Media</h4>
+                            <p>
+                                {{ i18n "AlmaLinux builds Live Media images for GNOME, GNOME Mini, KDE, XFCE and MATE options." }} <br><br>
+                                <a href="https://wiki.almalinux.org/LiveMedia.html">{{ i18n "Get Live Media Image" }}</a> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-2 py-md-5">
+                    <div class="col d-flex align-items-stretch">
+                        <img loading="lazy" class="al-index-community-icon img" src="/images/vagrant-icon-F1.svg" alt="Vagrant Box Image">
+                        <div class="al-index-community-content-wrap">
+                            <h4 class="fw-bold mb-0 pb-2">Vagrant Boxes</h4>
+                              <p>
+                                {{ i18n "AlmaLinux provides official images for Vagrant:" }}
+                                <ul>
+                                <li>Libvirt</li>
+                                <li>VirtualBox</li>
+                                <li>Hyper-V</li>
+                                <li>VMWare</li>
+                                <li>Parallels</li>
+                                </ul>
+                                <a href="https://app.vagrantup.com/almalinux">{{ i18n "Get AlmaLinux on Vagrant Cloud" }}</a>
+                              </p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-stretch">
+                        <img loading="lazy" class="al-index-community-icon img" src="/images/lxd-lcx-icon-F.svg" alt="LXC/LXD Image">
+                        <div class="al-index-community-content-wrap">
+                            <h4 class="fw-bold mb-0 pb-2">LXC/LXD</h4>
+                            <p>
+                                {{ i18n "AlmaLinux images are available for LXC/LXD." }} <br><br>
+                                <a href="https://images.linuxcontainers.org">{{ i18n "Get LXC/LXD Images" }}</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-stretch">
+                        <img loading="lazy" class="al-index-community-icon img" src="/images/raspberry-pi-icon-F.svg" alt="Raspberry Pi Image">
+                        <div class="al-index-community-content-wrap">
+                            <h4 class="fw-bold mb-0 pb-2">Raspberry Pi</h4>
+                            <p>
+                                {{ i18n "AlmaLinux builds Raspberry Pi images, and also with GNOME desktop environment." }} <br><br>
+                                <a href="https://wiki.almalinux.org/documentation/raspberry-pi.html">{{ i18n "Get Raspberry Pi Image" }}</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-stretch">
+                        <img loading="lazy" class="al-index-community-icon img" src="/images/wsl-icon-F.svg" alt="WSL Image">
+                        <div class="al-index-community-content-wrap">
+                            <h4 class="fw-bold mb-0 pb-2">WSL</h4>
+                            <p>
+                                {{ i18n "Run the AlmaLinux terminal environment on Windows." }} <br><br>
+                                <a href="https://wiki.almalinux.org/documentation/wsl.html">{{ i18n "Get AlmaLinux for WSL" }}</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>    
             </div>
         </div>
 

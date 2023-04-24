@@ -15,6 +15,10 @@
   padding-left: 15px !important;
   padding-right: 15px !important;
 }
+.al-index-community-container .pb-3 {
+padding-left: 15px !important;
+padding-right: 15px !important;
+}
 .al-index-press .container {
   padding-right: 15px !important;
   padding-left: 15px !important;
@@ -95,6 +99,9 @@
 }
 .al-page-index .al-index-community-container .al-community-cta {
   min-width: 120px;
+}
+.al-page-index .al-index-community-container h2.border-bottom {
+border-bottom-color: #14598a !important;
 }
 .al-page-index .al-index-backed-by h2.border-bottom {
   border-bottom-color: #14598a !important;
