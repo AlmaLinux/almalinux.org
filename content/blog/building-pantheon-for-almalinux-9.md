@@ -150,7 +150,7 @@ Of course, I faced a number of issues while building packages with the `mock` to
 | [pantheon-agent-geoclue2](https://git.almalinux.org/rpms/pantheon-agent-geoclue2) | |
 | [pantheon-agent-polkit](https://git.almalinux.org/rpms/pantheon-agent-polkit) | |
 | [pantheon-session-settings](https://git.almalinux.org/rpms/pantheon-session-settings) | |
-| [plank](https://git.almalinux.org/rpms/plank) | plank spec changes:<br> - remove BuildRequires: libbamf3 <br> - add BuildRequires: bamf-devel <br> - add Requires: bamf |
+| [plank](https://git.almalinux.org/rpms/plank) | plank spec changes:{{< linebreak >}} - remove BuildRequires: libbamf3{{< linebreak >}} - add BuildRequires: bamf-devel{{< linebreak >}} - add Requires: bamf |
 | [switchboard](https://git.almalinux.org/rpms/switchboard) | |
 | [switchboard-plug-a11y](https://git.almalinux.org/rpms/switchboard-plug-a11y) | |	
 | [switchboard-plug-about](https://git.almalinux.org/rpms/switchboard-plug-about) | |
