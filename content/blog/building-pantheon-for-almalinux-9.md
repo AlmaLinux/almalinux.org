@@ -5,7 +5,7 @@ author:
  name: "Sofia Boldyreva"
  bio: "Technical Writer for AlmaLinux OS Project"
  image: /users/sofia-boldyreva.png
-date: '2023-04-20'
+date: '2023-04-24'
 post:
     title: "Building Pantheon Desktop Environment"
     image: /blog-images/welcome-to-almalinux-9-pantheon.png
