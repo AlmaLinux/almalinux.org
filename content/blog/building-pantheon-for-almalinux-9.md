@@ -34,7 +34,7 @@ Now, it’s time to delve into the various stages of the development process.
 
 ### Researching the Pantheon Desktop Environment 
 
-I installed the EPEL repo on my Fedora machine, and then installed the Pantheon desktop environment to take a peek at what the packages included. During this phase also I compared a list of [Fedora Pantheon SIG](https://fedoraproject.org/wiki/SIGs/Pantheon) packages that I found on the Internet with what I saw having been installed. 
+I used my Fedora machine and installed the Pantheon desktop environment to take a peek at what the packages included. During this phase also I compared a list of [Fedora Pantheon SIG](https://fedoraproject.org/wiki/SIGs/Pantheon) packages that I found on the Internet with what I saw having been installed. 
 As I used this install as inspiration, I was mostly focused on rebuilding the Fedora 36 packages. 
 
 The next stage was to rebuild those packages for AlmaLinux. 
