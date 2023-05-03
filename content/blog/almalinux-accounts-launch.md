@@ -1,5 +1,5 @@
 ---
-title: "AlmaLinux Accounts"
+title: "Introducing AlmaLinux Accounts"
 type: blog
 author: 
     name: "Jonathan Wright"
@@ -7,9 +7,8 @@ author:
     image: /users/jonathan.jpg
 date: '2023-05-03'
 post:
-    title: "AlmaLinux Accounts"
+    title: "Introducing AlmaLinux Accounts"
 ---
-# Introducting AlmaLinux Accounts
 Over the past few months, our [infrastructure team](https://wiki.almalinux.org/sigs/Infrastructure.html) has been hard at work preparing our single sign-on system that will provide a unified login experience to nearly all AlmaLinux websites and properties.  We are happy to announce the launch of https://accounts.almalinux.org!
 
 [AlmaLinux Accounts](https://accounts.almalinux.org) will give you a single account to use across the array of sites and services offered by AlmaLinux!  In addition it eases the process of onboarding new contributors through centralized groups and permissions.
