@@ -34,13 +34,13 @@ chat.almalinux.org is the single largest standalone user database we have to tra
 
 After you've created your [AlmaLinux Account](https://accounts.almalinux.org), navigate to the `Profile -> Security` section in Mattermost.
 
-![](https://i.imgur.com/yYvDB0F.png)
+![](/blog-images/almalinux-accounts-mattermost-step1.png)
 
 From here click on `Edit` next to `Sign-in Method` and then `Switch to Using AD/LDAP` and you can link your new AlmaLinux account.  *Keep in mind that once you link your account you will always use your AlmaLinux account to sign in to chat.almalinux.org.*
 
-![](https://i.imgur.com/a19Wbon.png)
+![](/blog-images/almalinux-accounts-mattermost-step2.png)
 
-![](https://i.imgur.com/6AUcjFT.png)
+![](/blog-images/almalinux-accounts-mattermost-step3.png)
 
 
 ### bugs.almalinux.org
@@ -59,11 +59,11 @@ lists.almalinux.org has been tied into [AlmaLinux Accounts](https://accounts.alm
 
 Login option for new accounts:
 
-![](https://i.imgur.com/lm6OC6r.png)
+![](/blog-images/almalinux-accounts-lists-step1.png)
 
 Tie your existing account to your AlmaLinux Account at https://lists.almalinux.org/accounts/social/connections/:
 
-![](https://i.imgur.com/w2ODr0r.png)
+![](/blog-images/almalinux-accounts-lists-step2.png)
 
 ### pes.almalinux.org
 The Package Evolution Service (PES) will be updated with OIDC support, and subsequently AlmaLinux Account support soon.
