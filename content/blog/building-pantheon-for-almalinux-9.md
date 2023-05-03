@@ -9,7 +9,8 @@ date: '2023-04-24'
 post:
     title: "Building Pantheon Desktop Environment"
     image: /blog-images/welcome-to-almalinux-9-pantheon.png
-
+images:
+ - /blog-images/welcome-to-almalinux-9-pantheon.png
 ---
 
 # Building Pantheon Desktop Environment 
