@@ -40,3 +40,8 @@ languages:
     tr: {weight: 2, languagename: Türkçe}
     uk: {weight: 2, languagename: Українська}
     zh-hans: {weight: 2, languagename: 简体中文}
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
