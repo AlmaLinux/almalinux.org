@@ -41,6 +41,12 @@ From here click on `Edit` next to `Sign-in Method` and then `Switch to Using AD/
 
 ![Step 3 of converting MatterMost account to use AlmaLinux Accounts](/blog-images/almalinux-accounts-mattermost-step3.png)
 
+![Step 4 of converting MatterMost account to use AlmaLinux Accounts](/blog-images/almalinux-accounts-mattermost-step4.png)
+
+This last step has slightly confusing wording.  It appears as though it is asking for your email password, but it is not.  Do NOT enter your email password.  It in fact wants your current Mattermost password for your *email-based* login.
+
+1. Your current Mattermost account password.
+2. Your [AlmaLinux Account](https://accounts.almalinux.org) username and password.
 
 ### bugs.almalinux.org
 
