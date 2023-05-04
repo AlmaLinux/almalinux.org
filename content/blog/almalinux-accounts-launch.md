@@ -22,7 +22,7 @@ In the spirit of FOSS, it was only natural for us to stick with a free and open-
 We have chosen the following FOSS components to power our SSO:
 
 - [FreeIPA](https://www.freeipa.org) for directory and user management.
-- [Noggin](https://github.com/fedora-infra/noggin), a web front-end for user self-service. We've been doing work in the Fedora project to get noggin and it's dependencies added to EPEL 9. This will benefit anyone looking to deploy noggin on RHEL 9 or RHEL 9 compatible distros. <sup>1</sup>
+- [Noggin](https://github.com/fedora-infra/noggin), a web front-end for user self-service. We've been doing work in the Fedora project to get noggin and its dependencies added to EPEL 9. This will benefit anyone looking to deploy noggin on RHEL 9 or RHEL 9 compatible distros. <sup>1</sup>
 - [Keycloak](https://www.keycloak.org/), an OpenID Connect system to sit between applications and LDAP.  We've started contributing to a playbook mostly maintained by RHEL engineers to help ease the deployment of Keycloak on EL distros. <sup>2</sup>
 
 ## What About My Existing Account(s)?
