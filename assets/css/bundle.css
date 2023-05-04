@@ -302,7 +302,7 @@ border-bottom-color: #14598a !important;
   color: #fefefe;
 }
 .al-page-blog-post article .al-article-content img {
-  max-width: 100%;
+  max-width: 850px;
 }
 .al-page-blog-post article .al-page-blog-author img {
   width: 40px;
