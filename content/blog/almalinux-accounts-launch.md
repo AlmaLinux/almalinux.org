@@ -36,18 +36,21 @@ After you've created your [AlmaLinux Account](https://accounts.almalinux.org), n
 
 ![Step 1 of converting MatterMost account to use AlmaLinux Accounts](/blog-images/almalinux-accounts-mattermost-step1.png)
 
-From here click on `Edit` next to `Sign-in Method` and then `Switch to Using AD/LDAP` and you can link your new AlmaLinux account.  *Keep in mind that once you link your account you will always use your AlmaLinux account to sign in to chat.almalinux.org.*
+From here click on `Edit` next to `Sign-in Method` and then `Switch to Using OpenID SSO` and you can link your new AlmaLinux account.  *Keep in mind that once you link your account you will always use your AlmaLinux account to sign in to chat.almalinux.org.*
 
-![Step 2 of converting MatterMost account to use AlmaLinux Accounts](/blog-images/almalinux-accounts-mattermost-step2.png)
+![Step 2 of associating chat.almalinux.org account with AlmaLinux Accounts](/blog-images/almalinux-accounts-mattermost-step2.png)  
 
-![Step 3 of converting MatterMost account to use AlmaLinux Accounts](/blog-images/almalinux-accounts-mattermost-step3.png)
+On the next screen enter your current chat.almalinux.org (Mattermost) password.
 
-![Step 4 of converting MatterMost account to use AlmaLinux Accounts](/blog-images/almalinux-accounts-mattermost-step4.png)
+![Step 3 of associating chat.almalinux.org account with AlmaLinux Accounts](/blog-images/almalinux-accounts-mattermost-step3.png))  
 
-This last step has slightly confusing wording.  It appears as though it is asking for your email password, but it is not.  Do NOT enter your email password.  It in fact wants your current Mattermost password for your *email-based* login.
+Finally, log in using your AlmaLinux Account details.
 
-1. Your current Mattermost account password.
-2. Your [AlmaLinux Account](https://accounts.almalinux.org) username and password.
+![Step 4 of associating chat.almalinux.org account with AlmaLinux Accounts](/blog-images/almalinux-accounts-mattermost-step4.png)  
+
+From now on when you log in to chat.almalinux.org you will use your AlmaLinux Account via the dedicated login button:
+
+![How to log in to chat.almalinux.org/Mattermost with AlmaLinux Accounts](/blog-images/almalinux-accounts-mattermost-login.png)  
 
 ### bugs.almalinux.org
 
