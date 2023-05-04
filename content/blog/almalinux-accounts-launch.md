@@ -88,6 +88,18 @@ There are various other services used by contributors which are mostly tied into
 **A:** The [Infrastructure Channel on Mattermost](https://chat.almalinux.org/almalinux/channels/infrastructure),
 [IRC](https://web.libera.chat/#almalinux-infrastructure), [mailing list](https://lists.almalinux.org/mailman3/lists/infra.lists.almalinux.org/).
 
+**Q:** Where can I use my [AlmaLinux Account](https://accounts.almalinux.org)?  
+**A:**  
+
+| Service                | AlmaLinux Accounts Supported | Other Authentication Methods |
+|------------------------|------------------------------|------------------------------|
+| build.almalinux.org    | ❌ <sup>3</sup>               | Direct                       |
+| bugs.almalinux.org     | ✅                            | N/A                          |
+| chat.almalinux.org     | ✅                            | N/A <sup>4</sup>             |
+| git.almalinux.org      | ✅                            | N/A                          |
+| lists.almalinux.org    | ✅                            | Direct, GitHub, and more     |
+| pes.almalinux.org      | ❌ <sup>3</sup>               | Direct                       |
+
 ---
 
 <sup>1</sup> *https://bodhi.fedoraproject.org/updates/FEDORA-EPEL-2023-b0e8a9d618*  
@@ -100,3 +112,7 @@ There are various other services used by contributors which are mostly tied into
 *https://bugzilla.redhat.com/show_bug.cgi?id=2174923*
 
 <sup>2</sup> *https://github.com/ansible-middleware/keycloak/pull/73*
+
+<sup>3</sup> *AlmaLinux Account support is actively being worked on*
+
+<sup>4</sup> *chat.almalinux.org accounts created prior to 2023-05-04 will continue to function but new users must use an AlmaLinux Account*
