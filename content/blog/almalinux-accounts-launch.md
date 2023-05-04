@@ -8,6 +8,7 @@ author:
 date: '2023-05-04'
 post:
     title: "Introducing AlmaLinux Accounts"
+    image: /blog-images/almalinux-accounts.png
 ---
 Over the past few months, our [infrastructure team](https://wiki.almalinux.org/sigs/Infrastructure.html) has been hard at work preparing our single sign-on system that will provide a unified login experience to nearly all AlmaLinux websites and properties.  We are happy to announce the launch of https://accounts.almalinux.org!
 
