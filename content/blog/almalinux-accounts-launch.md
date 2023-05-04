@@ -83,6 +83,10 @@ There are various other services used by contributors which are mostly tied into
 **Q:** I configured 2FA/OTP at https://accounts.almalinux.org but *service/site XYZ* does not have a field for my OTP on the login page.  
 **A:** All sites tied to [AlmaLinux Accounts](https://accounts.almalinux.org) support your 2FA/OTP.  Simply add it to the end of your password in the password field when logging in.  For example if your password is `hunter2` and your OTP is `123456` you would enter `hunter2123456` into the password field.
 
+**Q:** Where should I go for help?  
+**A:** The [Infrastructure Channel on Mattermost](https://chat.almalinux.org/almalinux/channels/infrastructure),
+[IRC](https://web.libera.chat/#almalinux-infrastructure), [mailing list](https://lists.almalinux.org/mailman3/lists/infra.lists.almalinux.org/).
+
 ---
 
 <sup>1</sup> *https://bodhi.fedoraproject.org/updates/FEDORA-EPEL-2023-b0e8a9d618*  
