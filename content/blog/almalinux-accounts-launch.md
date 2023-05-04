@@ -5,7 +5,7 @@ author:
     name: "Jonathan Wright"
     bio: "-"
     image: /users/jonathan.jpg
-date: '2023-05-03'
+date: '2023-05-04'
 post:
     title: "Introducing AlmaLinux Accounts"
 ---
