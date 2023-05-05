@@ -153,11 +153,8 @@
   color: #000 !important;
 }
 @media (max-width: 800px){
-  .img-fluid, .img-thumbnail {
-    height: auto;
-    max-width: 100%;
-  }
   .custom-blog-page-section {
     max-width: 100%;
     margin: auto;
-  }/*# sourceMappingURL=blog.css.map */
+  }
+}/*# sourceMappingURL=blog.css.map */
