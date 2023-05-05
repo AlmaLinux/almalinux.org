@@ -356,6 +356,12 @@ border-bottom-color: #14598a !important;
 .al-page-blog-post .container{
   padding: 3rem 15px !important;
 }
+@media (max-width: 800px){
+  .custom-blog-page-section {
+    max-width: 100%;
+    margin: auto;
+  }
+}
 .al-page-elevate-index .al-cta-discuss {
   background: #2891ff;
   color: #222;
