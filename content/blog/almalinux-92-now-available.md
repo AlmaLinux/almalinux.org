@@ -59,7 +59,7 @@ AlmaLinux 9.2 provides enhancements and features to the hybrid cloud’s foundat
 You can read more about this release by checking out the [Release Notes](https://wiki.almalinux.org/release-notes/9.2.html).
 
 ## Join us on Mastodon!
-Have you jumped on Mastodon yet? Follow us! @almalinux@fosstodon.org
+Have you jumped on Mastodon yet? Follow us! [@almalinux@fosstodon.org](https://fosstodon.org/@almalinux)
 
 ## Pitch In
 
