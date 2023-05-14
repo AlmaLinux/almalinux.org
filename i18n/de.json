@@ -50,7 +50,6 @@
     "AlmaLinux OS - ELevate Your Distribution": "AlmaLinux OS - ELevate Your Distribution",
     "ELevate enables migration between major versions of RHEL® derivatives. Easily go from CentOS 7.x to any 8.x of your choice": "ELevate erlaubt die Migration zwischen Major-Versionen von RHEL®-Derivaten. Wechsle kinderleicht von CentOS 7.x auf jede beliebige 8.x-Version",
     "ELevate Your Distribution": "ELevate Your Distribution",
-    "ELevate enables migration between major versions of RHEL® derivatives. Easily go from CentOS 7.x to any 8.x of your choice": "ELevate erlaubt die Migration zwischen Major-Versionen von RHEL®-Derivaten. Wechsle kinderleicht von CentOS 7.x auf jede beliebige 8.x-Version",
     "Get Started": "Erste Schritte",
     "Discuss": "Diskutieren",
     "About": "Über",
@@ -351,5 +350,18 @@
     "** - migration to Oracle Linux 9 is available with the": "** - Migrationen zu Oracle Linux 9 sind mit",
     "and will not be supported by ELevate project.": "möglich und werden nicht von ELevate unterstützt.",
     "ELevate is a project aimed to provide the ability to migrate between major versions of RHEL-based distributions from 7.x to 8.x and from 8.x to 9.x.": "ELevate ist ein Projekt mit dem Ziel, Migrationen zwischen den Hauptversionen 7.x und 8.x sowie 8.x und 9.x von RHEL-basierten Distributionen zu ermöglichen.",
-    "ELevate enables migration between major versions of RHEL &reg; derivatives.": "ELevate ermöglicht Migrationen zwischen Hauptversionen von RHEL&reg;-Ablegern."
+    "ELevate enables migration between major versions of RHEL &reg; derivatives.": "ELevate ermöglicht Migrationen zwischen Hauptversionen von RHEL&reg;-Ablegern.",
+    "AlmaLinux provides official images for cloud providers:": "AlmaLinux stellt offizielle Abbilder für Cloud-Anbieter bereit:",
+    "AlmaLinux provides official images for Vagrant:": "AlmaLinux stellt offizielle Abbilder für Vagrant zur Verfügung:",
+    "AlmaLinux supports 4 architectures:": "AlmaLinux unterstützt 4 Architekturen:",
+    "Switching is easy": "Wechsel ist einfach",
+    "Download ISO from mirrors": "ISO von Spiegelservern herunterladen",
+    "AlmaLinux provides official OCI, Docker and UBI compatible images.": "AlmaLinux stellt offizielle OCI-, Docker- und UBI-kompatible Abbilder zur Verfügung.",
+    "Get Docker Image": "Docker-Abbild erhalten",
+    "Get OCI Image from Quay.io": "OCI-Abbild von Quay.io erhalten",
+    "Get AlmaLinux on Vagrant Cloud": "AlmaLinux in der Vagrant Cloud erhalten",
+    "AlmaLinux images are available for LXC/LXD.": "AlmaLinux-Abbilder sind für LXC/LXD verfügbar.",
+    "Get LXC/LXD Images": "LXC/LXD-Abbilder erhalten",
+    "Run the AlmaLinux terminal environment on Windows.": "Führen Sie die AlmaLinux-Terminalumgebung unter Windows aus.",
+    "Get AlmaLinux for WSL": "AlmaLinux für WSL erhalten"
 }
