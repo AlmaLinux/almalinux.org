@@ -11,7 +11,7 @@ post:
     image: /blog-images/23.04.22.miraclelinux.png
 ---
 
-Earlier today at a [press event in Tokyo, Japan](https://www.businesswire.com/news/home/20230521005022/en/AlmaLinux-OS-Foundation-Welcomes-Cybertrust-Japan-as-a-Platinum-Sponsor), we announced the new west member of the AlmaLinux family: [CyberTrust Japan](https://www.cybertrust.co.jp/pressrelease/2023/0522-almalinux.html), a well known security company, and the powerhouse behind [MIRACLE LINUX](https://www.miraclelinux.com/).
+Earlier today at a [press event in Tokyo, Japan](https://www.businesswire.com/news/home/20230521005022/en/AlmaLinux-OS-Foundation-Welcomes-Cybertrust-Japan-as-a-Platinum-Sponsor), we announced the newest member of the AlmaLinux family: [CyberTrust Japan](https://www.cybertrust.co.jp/pressrelease/2023/0522-almalinux.html), a well known security company, and the powerhouse behind [MIRACLE LINUX](https://www.miraclelinux.com/).
 
 Over the last few months of getting to know the CyberTrust folks, I have been able to glimpse the considerate, thoughtful, and informed way they approach all decisions, and it has made me even more humbled when considering their decision to join forces with the AlmaLinux community. Their team brings an incredible amount of experience in building a stable, secure, and reliable Red Hat clone, as well as a proven track record of listening to their community.
 
