@@ -1,5 +1,5 @@
 ---
-title: "AlmaLinux OS brings openQA to RHEL"
+title: "AlmaLinux OS brings openQA to RHEL ecosystem"
 type: blog
 author: 
  name: "Elkhan Mammadli"
@@ -7,7 +7,7 @@ author:
  image: /users/elkhan.jpg
 date: '2023-06-15'
 post:
-    title: "AlmaLinux OS brings openQA to RHEL"
+    title: "AlmaLinux OS brings openQA to RHEL ecosystem"
     image: /blog-images/openqa.png
 
 ---
