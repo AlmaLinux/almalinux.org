@@ -11,7 +11,7 @@ post:
     image: /blog-images/23.06.22.RHEL.changes.png
 ---
 
-Earlier today RedHat announced another massive shift that impacts all rebuilds and forks of Red Hat Enterprise Linux. Going forward [Red Hat will now only be releasing the source code for RHEL RPMs behind their customer portal](https://www.redhat.com/en/blog/furthering-evolution-centos-stream). Since all RHEL clones rely on the sources being published, this is causing disruption for the entire Red Hat ecosystem, once again.
+Yesterday, RedHat announced another massive shift that impacts all rebuilds and forks of Red Hat Enterprise Linux. Going forward [Red Hat will now only be releasing the source code for RHEL RPMs behind their customer portal](https://www.redhat.com/en/blog/furthering-evolution-centos-stream). Since all RHEL clones rely on the sources being published, this is causing disruption for the entire Red Hat ecosystem, once again.
 
 A quick summary: how we get RPM sources is being forced to change.
 ------------------------------------------------------------------
