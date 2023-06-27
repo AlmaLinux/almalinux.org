@@ -42,9 +42,9 @@ FAQs (because there are already many):
 
 Below are a few questions we've seen already come up multiple times. We'll update this with any additional questions we see as we continue on.
 
-### Does this mean I won't be getting security updates for my AlmaLinux OS Server?
+### Will I still get security updates?
 
-No. In the immediate term, our plan is to pull from CentOS Stream updates and Oracle Linux updates to ensure security patches continue to be released. These updates will be carefully curated to ensure they are 1:1 compatible with RHEL, while not violating Red Hat's licensing, and will be vetted and tested just like all of our other releases.
+Yes. In the immediate term, our plan is to pull from CentOS Stream updates and Oracle Linux updates to ensure security patches continue to be released. These updates will be carefully curated to ensure they are 1:1 compatible with RHEL, while not violating Red Hat's licensing, and will be vetted and tested just like all of our other releases.
 
 ### Who is involved in the conversations about the next steps for AlmaLinux at this time?
 
