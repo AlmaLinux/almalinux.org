@@ -106,8 +106,6 @@ To install it on Almalinux you need to:
   ```
   If the output is `running` configure firewalld.
 
-#### Configuring firewalld using the Warpinator service file
-
 * Download the latest Warpinator service file from the upstream firewalld repository:
   ```
   sudo curl -LO https://raw.githubusercontent.com/firewalld/firewalld/master/config/services/warpinator.xml
@@ -131,17 +129,30 @@ To install it on Almalinux you need to:
   ```
   sudo firewall-cmd --zone=public --list-services
   ```
+* Cleanup: Delete the service file for warpinator:
+  ```
+  rm warpinator.xml
+  ```
 
-#### Configuring firewalld manually 
-* Add ports `42000/tcp`, `42000/udp`, `42001/tcp`, `5353/udp`:
+#### Troubleshooting
+
+Check if these ports are set in Warpinator settings:
+* Incoming port for transfers: 42000
+* Incoming port for registration: 42001
+
+1. If the ports mentioned above are correct but machines still cannot see each other, then try to add 5353/udp port to warpinator: 
   ```
-  sudo firewall-cmd --add-port=5353/udp --add-port=42000/tcp --add-port=42000/udp --add-port=42001/tcp
+  sudo firewall-cmd --add-port=5353/udp
   ```
-* Make the new settings persistent:
+2. If the ports in Warpinator settings differ from those mentioned above, try adding the needed ports manually using CLI instead of configuring firewalld Configuring firewalld with warpinator.xml: 
+  ```
+  sudo firewall-cmd --add-port=port-number/port-type
+  ```
+  Make the new settings persistent:
   ```
   sudo firewall-cmd --runtime-to-permanent
   ```
-* Check the setting to be sure: 
+  Check the setting to be sure: 
   ```
   firewall-cmd --list-all
   ```
@@ -153,7 +164,7 @@ To install it on Almalinux you need to:
   interfaces: enp1s0
   sources: 
   services: cockpit dhcpv6-client ssh
-  ports: 42000/tcp 42000/udp 42001/tcp 5353/udp
+  ports: 5353/udp port-number/port-type
   protocols: 
   forward: no
   masquerade: no
@@ -163,11 +174,11 @@ To install it on Almalinux you need to:
   rich rules: 
 ```
 
+3. For more troubleshooting tricks you might find useful, please, check the original Linux Mint's [Warpinator Repository](https://github.com/linuxmint/warpinator).
+
 ## Using Warpinator App
 
 To use Warpinator to send and receive files, the devices should be in the same network. They'll automatically appear whether they're located in the app's main screen. 
-
-For troubleshooting tricks you might find useful, please, check the original Linux Mint's [Warpinator Repository](https://github.com/linuxmint/warpinator).
 
 For users' safety, it's highly recommended to set a ++Group Code++.
 > The group code is a shared key that allows trusted devices on the local network to see one another in Warpinator. Any devices you wish to connect with must be using the same group code. This code is set to 'Warpinator' by default. 
