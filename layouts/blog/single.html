@@ -31,7 +31,7 @@
                     <div class="al-article-content pb-5 al-wysiwyg">
 
                         {{ with .Params.post.image }}
-        <img src="{{ . }}">
+        <div class="mx-auto" style="max-width: 850px"><img style="max-width: 100%; height: auto;" src="{{ . }}"></div>
     {{ end }}
 
                         {{ .Content }}
