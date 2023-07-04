@@ -26,6 +26,7 @@ languages:
     fi: {weight: 2, languagename: Suomi}
     fr: {weight: 2, languagename: Français}
     he: {weight: 2, languagename: עברית}
+    hu: {weight: 2, languagename: magyar}
     it: {weight: 2, languagename: Italiano}
     ja: {weight: 2, languagename: 日本語}
     ko: {weight: 2, languagename: 한국어}
