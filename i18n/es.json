@@ -332,7 +332,7 @@
     "Currently ELevate provides Leapp data for migration from CentOS 7 to the following OS:": "",
     "PES supports several classes of rules for packages such as added, removed, renamed, split, merged, and so on.": "PES admite varias clases de actuaciones para paquetes, tales como agregar, eliminar, renombrar, dividir, fusionar, etc.",
     "The service also allows everyone to improve the data by adding new actions or even create a custom dataset for packages from third-party or private repositories.": "El servicio también permite a todos mejorar los datos agregando nuevas acciones o incluso crear un conjunto de datos personalizado para paquetes de repositorios privados o de terceros.",
-    "RedHat offers a data set which is non-freely licensed. Are you using this same data set?": "Red Hat ofrece un conjunto de datos con licencia no libre. ¿Está utilizando este mismo conjunto de datos?",
+    "RedHat offers a data set which is non-freely licensed. Are you using this same data set?": "RedHat ofrece un conjunto de datos con licencia no libre. ¿Está utilizando este mismo conjunto de datos?",
     "The CentOS ecosystem is a very large and diverse community.": "El ecosistema de CentOS es una comunidad muy grande y diversa.",
     "We've developed this project in good faith in the hope that everyone in the community can use and contribute to, no matter which distro you prefer.": "Hemos desarrollado este proyecto de buena fe con la esperanza de que todos en la comunidad puedan usarlo y contribuir, sin importar la distribución que prefiera.",
     "That's the open source way.": "Esa es el estilo del código abierto.",
