@@ -13,7 +13,8 @@ post:
 
 -- 
 
-***We've posted an update on June 30, which you can read here: [Our Value is our Values](https://almalinux.org/blog/our-value-is-our-values/)***
+* ***We posted a follow-up post on June 30, which you can read here: [Our Value is our Values](/blog/our-value-is-our-values/)***
+* ***We posted another follow-up update on July 13, which you can read here: [The Future of AlmaLinux is Bright](/blog/future-of-almalinux/)***
 
 --
 

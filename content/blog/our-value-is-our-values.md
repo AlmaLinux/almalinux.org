@@ -11,6 +11,12 @@ post:
     image: /blog-images/23.06.30.values.png
 ---
 
+---
+
+***We posted a follow-up update on July 13, which you can read here: [The Future of AlmaLinux is Bright](/blog/future-of-almalinux/)***
+
+---
+
 As we [discussed last week](https://almalinux.org/blog/impact-of-rhel-changes/), on June 21 Red Hat [announced](https://www.redhat.com/en/blog/furthering-evolution-centos-stream) that RHEL source code will only be available via the Red Hat Customer Portal.
 
 ## What is the status of security updates?
