@@ -384,5 +384,6 @@
     "Get LXC/LXD Images": "Hämta LXC/LXD avbilder",
     "AlmaLinux builds Raspberry Pi images, and also with GNOME desktop environment.": "AlmaLinux bygger Raspberry Pi avbilder, och också även med GNOME skrivbordsmiljö.",
     "Get Raspberry Pi Image": "Hämta Raspberry Pi avbilder",
-    "Get AlmaLinux for WSL": "Hämta AlmaLinux för WSL"
+    "Get AlmaLinux for WSL": "Hämta AlmaLinux för WSL",
+    "Our Value Is Our Values - AlmaLinux OS Foundation's statement regarding Red Hat’s new source code policy.": "Vårt värde är våra värden - AlmaLinux OS stiftelsens uttalande angående Red Hats nya källkodspolicy."
 }

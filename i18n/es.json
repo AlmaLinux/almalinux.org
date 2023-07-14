@@ -387,5 +387,6 @@
     "ELevate has been used to migrate production environments across industries and across the world, but we still advise caution.": "ELevate se ha utilizado para migrar los entornos de producción entre las industrias y en todo el mundo, pero aun así recomendamos precaución.",
     "To avoid any surprises, we highly recommend that you test upgrades scenarios in a virtual machine or sandbox before running a upgrades in production.": "Para evitar sorpresas, te recomendamos encarecidamente que pruebes los escenarios de actualizaciones en una máquina virtual o en un espacio aislado antes de ejecutar una actualización en producción.",
     "Currently, ELevate project supports the following upgrade and migration directions:": "Actualmente, el proyecto ELevate admite las siguientes direcciones de actualización y migración:",
-    "Note: If you use cPanel, we recommend using the": "Nota: si usas cPanel, te recomendamos que uses el"
+    "Note: If you use cPanel, we recommend using the": "Nota: si usas cPanel, te recomendamos que uses el",
+    "Our Value Is Our Values - AlmaLinux OS Foundation's statement regarding Red Hat’s new source code policy.": "Nuestros valores son nuestros valores: la declaración de Alma Linux OS Foundation con respecto a la nueva política de código fuente de Red Hat."
 }
