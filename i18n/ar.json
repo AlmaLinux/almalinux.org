@@ -346,5 +346,14 @@
     "CTO": "الرئيس التنفيذي للتكنولوجيا",
     "CEO": "الرئيس التنفيذي",
     "fork.": "تفرع.",
-    "Currently, ELevate project supports the following migration directions: * - migration to CentOS Stream 9 is currently in process and will be available later. ** - migration to Oracle Linux 9 is available with the <a href=\"https://blogs.oracle.com/linux/post/upgrade-oracle-linux-8-to-oracle-linux-9-using-leapp\">Oracle Leapp utility</a> and will not be supported by ELevate project.": "يدعم مشروع ELevate حاليا هذه الاتجاهات للترحيل: * - الترحيل من CentOS Stream 9 حاليا قيد العمل وسيُتاح لاحقًا. ** - الترحيل من Oracle Linux 9 متاح مع أداة <a href=\"https://blogs.oracle.com/linux/post/upgrade-oracle-linux-8-to-oracle-linux-9-using-leapp\">Oracle Leapp utility</a> ولن يدعمها مشروع ELevate."
+    "Currently, ELevate project supports the following migration directions: * - migration to CentOS Stream 9 is currently in process and will be available later. ** - migration to Oracle Linux 9 is available with the <a href=\"https://blogs.oracle.com/linux/post/upgrade-oracle-linux-8-to-oracle-linux-9-using-leapp\">Oracle Leapp utility</a> and will not be supported by ELevate project.": "يدعم مشروع ELevate حاليا هذه الاتجاهات للترحيل: * - الترحيل من CentOS Stream 9 حاليا قيد العمل وسيُتاح لاحقًا. ** - الترحيل من Oracle Linux 9 متاح مع أداة <a href=\"https://blogs.oracle.com/linux/post/upgrade-oracle-linux-8-to-oracle-linux-9-using-leapp\">Oracle Leapp utility</a> ولن يدعمها مشروع ELevate.",
+    "Get Live Media Image": "احصل على صورة حية",
+    "AlmaLinux builds Live Media images for GNOME, GNOME Mini, KDE, XFCE and MATE options.": "يبني ألما لينكس صورًا حية فيها خيارات لواجهات غنوم، وغنوم الصغرى، وكدي، وXFCE، وMATE.",
+    "Get AlmaLinux OS": "احصل على نظام ألما لينكس",
+    "AlmaLinux supports 4 architectures:": "يدعم ألما لينكس 4 معماريات:",
+    "Download ISO from mirrors": "نزِّل ملف ISO من المرايا",
+    "AlmaLinux provides official images for cloud providers:": "يوفر ألما لينكس صورًا رسمية لمزودي السحابة:",
+    "AlmaLinux provides official OCI, Docker and UBI compatible images.": "يوفِّر ألما لينكس صورًا رسمية متوافقة مع OCI وDocker وUBI.",
+    "Get Docker Image": "احصل على صورة Docker",
+    "Get OCI Image from Quay.io": "احصل على صورة OCI من Quay.io"
 }
