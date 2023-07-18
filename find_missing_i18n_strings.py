@@ -13,6 +13,7 @@ error = False
 missing_keys = {}
 
 rootdir = '.'
+# TODO: Crawl only content/*
 for folder, dirs, files in os.walk(rootdir):
     for file in files:
         if file.endswith('.html'):
@@ -34,10 +35,11 @@ for folder, dirs, files in os.walk(rootdir):
 if error:
     print(json.dumps(missing_keys, indent=3))
     with open('i18n/en.json', 'w') as f:
-        json.dump(en, f, indent=3)  # The indent argument is optional, it just makes the output more readable
+        json.dump(en, f, indent=3)  
     exit(1)
 
 # If there are unused keys, print them
+# TODO: Do something useful?
 if unused_keys:
     print("UNUSED KEYS:")
     for key in unused_keys:
