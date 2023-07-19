@@ -26,7 +26,9 @@ Simply put, openQA is an automated test tool for operating systems. It simplifie
 
 As I have been leading the openQA efforts, I rolled up my sleeves and got to work.
 First and foremost, while openQA worked well with Fedora, it did not yet work with RHEL. So the first order of business was submitting pull requests to make sure that openQA could identify RHEL and any other EL-derivative.
-During our work to implement openQA for AlmaLinux, we implemented virtualization support for s390x architecture in openQA. We also adapted it to work on the RHEL virtualization stack, bringing back KVM support in ppc64le architecture for AlmaLinux 9. KVM support has been removed from RHEL, and as part of our 1:1 RHEL clone promise, KVM support is not part of the “official” AlmaLinux 9 for ppc64le; it has only been implemented for openQA and corresponds with the Kernel and QEMU-KVM packages in the openQA repo.
+During our work to implement openQA for AlmaLinux, we implemented virtualization support for s390x architecture in openQA. We also adapted it to work on the RHEL virtualization stack, bringing back KVM support in ppc64le architecture for AlmaLinux 9. KVM support was removed from RHEL, and as part of our 1:1 RHEL clone promise, KVM support has not been part of the “official” AlmaLinux 9 for ppc64le; it has only been implemented for openQA and corresponds with the Kernel and QEMU-KVM packages in the openQA repo.
+
+With the recent shift in our goals from 1:1 to ABI compatible, adding KVM support to our ppc64le images is something we might consider adding back in, afterall!
 
 Stay tuned for more in-depth insights into the development process and the challenges overcome by the AlmaLinux Team, as I will be sharing them soon.
 
