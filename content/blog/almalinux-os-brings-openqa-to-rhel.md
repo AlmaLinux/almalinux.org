@@ -16,7 +16,7 @@ Hello! I'm [Elkhan Mammadli](https://chat.almalinux.org/almalinux/messages/@lkhn
 
 AlmaLinux OS has come a long way in a very short time. We’ve been fully committed to delivering the best possible experience for the community, no matter where or what you run. A big part of ensuring the quality of our releases is testing; lots and lots of testing. A while ago we went looking for a good testing automation framework to build into our release process.
 
-Thanks to a [fortuitous session at FOSDEM](https://fosdem.org/2023/schedule/event/openqa_for_gnome/), we decided to have implemented the [openQA](https://open.qa/), which is used by a few other distros, including openSUSE, Fedora and Debian. There were a couple of problems before we could get started though. openQA didn’t have support for RHEL or derivatives, didn’t support the RHEL virt stack and it also didn’t have support for s390x–so we added them.
+Thanks to a [fortuitous session at FOSDEM](https://fosdem.org/2023/schedule/event/openqa_for_gnome/), we decided to use [openQA](https://open.qa/), which is used by a few other distros, including openSUSE, Fedora and Debian. There were a couple of problems before we could get started though. openQA didn’t have support for any enterprise linux derivatives, didn’t support the RHEL virt stack, and it also didn’t have support for s390x. So we added them!
 
 ## What is openQA and how does it work?
 
