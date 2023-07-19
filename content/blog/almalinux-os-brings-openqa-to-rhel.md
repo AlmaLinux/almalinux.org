@@ -5,7 +5,7 @@ author:
  name: "Elkhan Mammadli"
  bio: "AlmaLinux OS Cloud and OpenQA engineer"
  image: /users/elkhan.jpg
-date: '2023-06-15'
+date: '2023-06-20'
 post:
     title: "AlmaLinux OS brings openQA to RHEL ecosystem"
     image: /blog-images/openqa.png
