@@ -338,5 +338,6 @@
     "Metadata answers questions about how packages evolve between major distribution releases.": "",
     "PES supports several classes of rules for packages such as added, removed, renamed, split, merged, and so on.": "",
     "The service also allows everyone to improve the data by adding new actions or even create a custom dataset for packages from third-party or private repositories.": "",
-    "RedHat offers a data set which is non-freely licensed. Are you using this same data set?": ""
+    "RedHat offers a data set which is non-freely licensed. Are you using this same data set?": "",
+    "ELevate enables migration between major versions of RHEL(r) derivatives. Move from CentOS 7.x to 8.x version of the RHEL derivative of your choice, or upgrade from 8.x to 9.x within the same derivative.": "ELevate possibilita a migração entre as principais versões derivadas do RHEL(r). Do CentOS 7.x ao 8.x da versão derivada de RHEL da sua escolha, ou atualize do 8.x para o 9.x dentro do mesmo derivado."
 }
