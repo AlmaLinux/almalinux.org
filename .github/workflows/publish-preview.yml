@@ -1,6 +1,6 @@
 on:
-  push:
-    branches: master
+  pull_request:
+    types: [opened, reopened]
 
 jobs:
   publish:
@@ -28,12 +28,6 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      # this is needed to trick CF into deploying to production
-      # can probably be removed where there is a solution to
-      # https://github.com/cloudflare/pages-action/issues/63
-      - name: remove git dir
-        run: rm -rf .git
-
       - name: move redirects file into place
         run: cp _redirects public/
 
@@ -44,4 +38,4 @@ jobs:
           accountId: b2eab8b024e2fc0155a48c4fc7115e64
           #projectName: almalinux
           projectName: almalinux-ci-test
-          directory: public
+          directory:  public
