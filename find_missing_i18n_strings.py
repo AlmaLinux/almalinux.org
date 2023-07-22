@@ -27,7 +27,7 @@ for folder, dirs, files in os.walk(rootdir):
                                 error = True
                                 print(f'TRANSLATION ERROR: {string}')
                                 missing_keys[string] = ''
-                                en[string] = string  # Add the missing key to the dictionary with an empty value
+                                en[string] = string  # Add the missing key to the dictionary
                             elif string in unused_keys:
                                 unused_keys.remove(string)
 
