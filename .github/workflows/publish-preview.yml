@@ -10,7 +10,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       deployments: write
     name: Publish Preview to Cloudflare Pages
     steps:
