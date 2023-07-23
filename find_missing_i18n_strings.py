@@ -3,7 +3,7 @@ import os
 import json
 
 # Open the json file and load its contents into a dictionary
-with open('i18n/en.json', 'r') as f:
+with open('i18n/en.json', 'r', encoding='utf-8') as f:
     en = json.load(f)
 
 # Create a copy of the en dictionary's keys and convert it to a set for better performance
@@ -18,7 +18,7 @@ for folder, dirs, files in os.walk(rootdir):
     for file in files:
         if file.endswith('.html'):
             fullpath = os.path.join(folder, file)
-            with open(fullpath, 'r') as f:
+            with open(fullpath, 'r', encoding='utf-8') as f:
                 for line in f:
                     m = re.findall('{{\s+?i18n\s+?(?:"|`)(.*?)(?:"|`)\s+?}}', line, re.DOTALL)
                     if m:
@@ -42,5 +42,5 @@ if error or unused_keys:
     else:
         print("No unused keys found.")
 
-    with open('i18n/en.json', 'w') as f:
-        json.dump(en, f, indent=3)
+    with open('i18n/en.json', 'w', encoding='utf-8') as f:
+        json.dump(en, f, indent=3, ensure_ascii=False)
