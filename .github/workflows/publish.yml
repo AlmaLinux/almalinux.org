@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
-      contents: read
+      contents: write
       deployments: write
     name: Publish to Cloudflare Pages
     steps:
