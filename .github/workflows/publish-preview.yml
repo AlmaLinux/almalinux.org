@@ -2,6 +2,10 @@ on:
   pull_request_target:
     types: [opened, reopened, synchronize]
 
+permissions:
+  pull-requests: write
+  contents: write
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -29,7 +33,10 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           add-paths: i18n/en.json
-          title: Automagic i18n string fix
+          title: Automagic i18n string updates
+          commit-message: Automagic i18n string updates
+          branch-suffix: short-commit-hash
+          delete-branch: true
 
       - name: Build
         run: hugo --minify
