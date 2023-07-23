@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="main-navbar">
             <ul class="navbar-nav  mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ "/blog" | absLangURL }}" style="margin-top:5px">
+                    <a class="nav-link" href="{{ "/blog" | relLangURL }}" style="margin-top:5px">
                         {{ i18n "Blog" }}
                     </a>
                 </li>
@@ -50,12 +50,12 @@
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="{{ "/members" | absLangURL }}" style="color:aliceblue">
+                            <a class="dropdown-item" href="{{ "/members" | relLangURL }}" style="color:aliceblue">
                                 {{ i18n "Membership" }}
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="{{ "/elevate" | absLangURL }}" style="color:aliceblue">
+                            <a class="dropdown-item" href="{{ "/elevate" | relLangURL }}" style="color:aliceblue">
                                 ELevate
                             </a>
                         </li>
@@ -107,6 +107,6 @@
 <div id="al-motd" dir="ltr" data-nosnippet="" style="display: block; letter-spacing: 0px;">
     <div class="container pl-3">
         <i class="bi bi-info-circle"></i>
-        <div class="text">{{ i18n "The Future of AlmaLinux is Bright - AlmaLinux OS Foundation's renewed commitment to our users." }} <a href="{{ "/blog/future-of-almalinux/" | absLangURL }}">{{ i18n "Read more" }}</a></div>
+        <div class="text">{{ i18n "The Future of AlmaLinux is Bright - AlmaLinux OS Foundation's renewed commitment to our users." }} <a href="{{ "/blog/future-of-almalinux/" | relLangURL }}">{{ i18n "Read more" }}</a></div>
     </div>
 </div>
