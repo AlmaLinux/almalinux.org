@@ -33,7 +33,7 @@ jobs:
           title: Automagic i18n string updates
           commit-message: Automagic i18n string updates
           branch-suffix: short-commit-hash
-          delete-branch: true
+          delete-branch:  true
 
       - name: Build
         run: hugo --minify
