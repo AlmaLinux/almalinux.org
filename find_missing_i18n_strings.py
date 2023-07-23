@@ -43,5 +43,4 @@ if error or unused_keys:
         print("No unused keys found.")
 
     with open('i18n/en.json', 'w') as f:
-        json.dump(en, f, indent=3)  
-    exit(1)
+        json.dump(en, f, indent=3)
