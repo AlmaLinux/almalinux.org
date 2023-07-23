@@ -10,7 +10,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       deployments: write
     name: Publish Preview to Cloudflare Pages
     steps:
@@ -36,7 +36,7 @@ jobs:
           title: Automagic i18n string updates
           commit-message: Automagic i18n string updates
           branch-suffix: short-commit-hash
-          delete-branch: true
+          delete-branch:  true
 
       - name: Build
         run: hugo --minify
