@@ -27,23 +27,21 @@ for folder, dirs, files in os.walk(rootdir):
                                 error = True
                                 print(f'TRANSLATION ERROR: {string}')
                                 missing_keys[string] = ''
-                                en[string] = string  # Add the missing key to the dictionary with an empty value
+                                print(f"Adding '{string}'")
+                                en[string] = string  # Add the missing key to the dictionary
                             elif string in unused_keys:
                                 unused_keys.remove(string)
 
 # If there are missing keys, dump the updated dictionary back into the json file
-if error:
-    print(json.dumps(missing_keys, indent=3))
+if error or unused_keys:
+    # Remove unused keys
+    if unused_keys:
+        for key in unused_keys:
+            print(f"Removing '{key}'")
+            del en[key]
+    else:
+        print("No unused keys found.")
+
     with open('i18n/en.json', 'w') as f:
         json.dump(en, f, indent=3)  
     exit(1)
-
-# If there are unused keys, print them
-# TODO: Do something useful?
-if unused_keys:
-    print("UNUSED KEYS:")
-    for key in unused_keys:
-        print(key)
-else:
-    print("No unused keys found.")
-

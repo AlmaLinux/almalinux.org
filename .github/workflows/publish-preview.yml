@@ -25,6 +25,11 @@ jobs:
       - name: Generate language files
         run: python3 setup-pages-for-supported-languages.py
 
+      - name: Create Pull Request for language changes
+        uses: peter-evans/create-pull-request@v5
+        with:
+          add: i18n/en.json
+
       - name: Build
         run: hugo --minify
 
