@@ -25,10 +25,10 @@ jobs:
       - name: Generate language files
         run: python3 setup-pages-for-supported-languages.py
 
-      - name: Create Pull Request for language changes
+      - name: Create Pull Request for i18n string changes
         uses: peter-evans/create-pull-request@v5
         with:
-          add: i18n/en.json
+          add-paths: i18n/en.json
           title: Automagic i18n string fix
 
       - name: Build
@@ -43,4 +43,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
           projectName: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
-          directory:  public
+          directory: public
