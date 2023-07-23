@@ -2,14 +2,11 @@ on:
   pull_request_target:
     types: [opened, reopened, synchronize]
 
-permissions:
-  pull-requests: write
-  contents: write
-
 jobs:
   publish:
     runs-on: ubuntu-latest
     permissions:
+      pull-requests: write
       contents: write
       deployments: write
     name: Publish Preview to Cloudflare Pages
@@ -36,7 +33,7 @@ jobs:
           title: Automagic i18n string updates
           commit-message: Automagic i18n string updates
           branch-suffix: short-commit-hash
-          delete-branch:  true
+          delete-branch: true
 
       - name: Build
         run: hugo --minify
