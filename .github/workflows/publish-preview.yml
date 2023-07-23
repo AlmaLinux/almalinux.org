@@ -6,8 +6,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     permissions:
-      pull-requests: write
-      contents: write
+      contents: read
       deployments: write
     name: Publish Preview to Cloudflare Pages
     steps:
@@ -25,15 +24,6 @@ jobs:
 
       - name: Generate language files
         run: python3 setup-pages-for-supported-languages.py
-
-      - name: Create Pull Request for i18n string changes
-        uses: peter-evans/create-pull-request@v5
-        with:
-          add-paths: i18n/en.json
-          title: Automagic i18n string updates
-          commit-message: Automagic i18n string updates
-          branch-suffix: short-commit-hash
-          delete-branch:  true
 
       - name: Build
         run: hugo --minify
