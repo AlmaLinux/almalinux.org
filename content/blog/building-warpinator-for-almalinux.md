@@ -12,12 +12,13 @@ post:
 
 ---
 
+
+Hi again! As [I've begun](https://almalinux.org/blog/building-pantheon-for-almalinux-9/) to gain some experience in building rpm packages, I've decided to continue and try to build this useful app for AlmaLinux OS 8 and AlmaLinux OS 9.
+
 ## About 
 [Warpinator](https://github.com/linuxmint/warpinator), a file-sharing tool by Linux Mint, exemplifies their commitment to a seamless user experience. We owe its success to the dedicated [contributors](https://github.com/linuxmint/warpinator/graphs/contributors) - thank you!
 
 Originally designed for Debian-based Linux, Warpinator has grown to serve Windows, Android, iOS, and now RPM-based Linux distros, expanding its capabilities to an increasingly diverse user base.
-
-As [I've begun](https://almalinux.org/blog/building-pantheon-for-almalinux-9/) to gain some experience in building rpm packages, I've decided to continue and try to build this useful app for AlmaLinux OS 8 and AlmaLinux OS 9.
 
 ## Building process 
 
