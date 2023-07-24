@@ -5,7 +5,7 @@ author:
  name: "Sofia Boldyreva"
  bio: "Technical Writer for AlmaLinux OS Project"
  image: /users/sofia-boldyreva.png
-date: '2023-06-23'
+date: '2023-06-27'
 post:
     title: "Building Warpinator for AlmaLinux OS"
     image: /blog-images/warpinator.png
