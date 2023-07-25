@@ -32,36 +32,27 @@ You can see the diff of the changes on [git.almalinux.org](https://git.almalinux
 
 Due to the risks involved in these patches, these packages are not yet in production and need testing! If you are willing to help provide us feedback, and have access to a **bare metal AMD system**, you can manually install them by pulling them from the AlmaLinux Build System.  
 
-**To install the new RPM on AlmaLinux 8:**
+To install the new RPM on AlmaLinux 8: 
 
-{{< highlight bash >}}
-dnf update https://build.almalinux.org/pulp/content/builds/AlmaLinux-8-x86_64-7032-br/Packages/l/linux-firmware-20230404-114.git2e92a49f.el8_8.alma.noarch.rpm
-{{< /highlight >}}
+`dnf update https://build.almalinux.org/pulp/content/builds/AlmaLinux-8-x86_64-7032-br/Packages/l/linux-firmware-20230404-114.git2e92a49f.el8_8.alma.noarch.rpm`
 
-**For AlmaLinux 9:**
+For AlmaLinux 9:
 
-{{< highlight bash >}}
-dnf update https://build.almalinux.org/pulp/content/builds/AlmaLinux-9-x86_64-7033-br/Packages/l/linux-firmware-20230310-134.el9_2.alma.noarch.rpm
-{{< /highlight >}}
+`dnf update https://build.almalinux.org/pulp/content/builds/AlmaLinux-9-x86_64-7033-br/Packages/l/linux-firmware-20230310-134.el9_2.alma.noarch.rpm`
 
-**To check that the installation completed successfully, you can run:**
 
-{{< highlight bash >}}
-rpm -qa linux-firmware
-{{< /highlight >}}
+To check that the installation completed successfully, you can run `rpm -qa linux-firmware`. 
 
 **To update CPU microcode run the following:**
+`echo 1 > /sys/devices/system/cpu/microcode/reload`
 
-{{< highlight bash >}}
-echo 1 > /sys/devices/system/cpu/microcode/reload
-{{< /highlight >}}
+Once you have completed your testing, please help us by letting us know it works for you! Please share the following information (sanitized in whatever way you feel comfortable) in a comment on the issue we’ve opened to track this update on bugs.almalinux.org. We have created one specific to [AlmaLinux 8](https://bugs.almalinux.org/view.php?id=412) and one for [AlmaLinux 9](https://bugs.almalinux.org/view.php?id=413). Please include the output of the two commands from the test server.
 
-Once you have completed your testing, please help us by letting us know it works for you! Please share the following information (sanitized in whatever way you feel comfortable) in a comment on the issue we’ve opened to track this update on bugs.almalinux.org. We have created one specific to [AlmaLinux 8](https://bugs.almalinux.org/view.php?id=412) and one for [AlmaLinux 9](https://bugs.almalinux.org/view.php?id=413). Please include the output of the two commands from the test server and if it worked for you.
+> Did it work for you? Yes or no.
 
-{{< highlight bash >}}
-lscpu
-journalctl -k --grep=microcode
-{{< /highlight >}}
+`lscpu`
+
+`journalctl -k --grep=microcode`
 
 
 ## Why call for testing now?
