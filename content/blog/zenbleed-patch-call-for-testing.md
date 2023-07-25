@@ -43,15 +43,15 @@ For AlmaLinux 9:
 To check that the installation completed successfully, you can run `rpm -qa linux-firmware`. 
 
 **To update CPU microcode run the following:**
-> echo 1 > /sys/devices/system/cpu/microcode/reload
+`echo 1 > /sys/devices/system/cpu/microcode/reload`
 
 Once you have completed your testing, please help us by letting us know it works for you! Please share the following information (sanitized in whatever way you feel comfortable) in a comment on the issue we’ve opened to track this update on bugs.almalinux.org. We have created one specific to [AlmaLinux 8](https://bugs.almalinux.org/view.php?id=412) and one for [AlmaLinux 9](https://bugs.almalinux.org/view.php?id=413). Please include the output of the two commands from the test server.
 
 > Did it work for you? Yes or no.
 
-> lscpu
+`lscpu`
 
-> journalctl -k --grep=microcode
+`journalctl -k --grep=microcode`
 
 
 ## Why call for testing now?
