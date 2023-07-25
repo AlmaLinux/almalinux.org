@@ -33,7 +33,7 @@ Due to the risks involved in these patches, these packages are not yet in produc
 
 To install the new RPM on AlmaLinux 8: 
 
-> dnf update https://build.almalinux.org/pulp/content/builds/AlmaLinux-8-x86_64-7032-br/Packages/l/linux-firmware-20230404-114.git2e92a49f.el8_8.alma.noarch.rpm
+`dnf update https://build.almalinux.org/pulp/content/builds/AlmaLinux-8-x86_64-7032-br/Packages/l/linux-firmware-20230404-114.git2e92a49f.el8_8.alma.noarch.rpm`
 
 For AlmaLinux 9:
 
