@@ -183,6 +183,9 @@
 .al-page-index .al-index-press .al-index-press-item figcaption.blockquote-footer a {
   text-decoration: none;
 }
+.al-commercial-supporter-list:last-child {
+	margin-top: 40px;
+}
 .al-page-index .al-index-press .al-index-press-item figcaption.blockquote-footer a:hover {
   text-decoration: underline;
   color: #f7fbff;
