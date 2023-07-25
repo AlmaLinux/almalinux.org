@@ -37,7 +37,7 @@ To install the new RPM on AlmaLinux 8:
 
 For AlmaLinux 9:
 
-> dnf update https://build.almalinux.org/pulp/content/builds/AlmaLinux-9-x86_64-7033-br/Packages/l/linux-firmware-20230310-134.el9_2.alma.noarch.rpm
+`dnf update https://build.almalinux.org/pulp/content/builds/AlmaLinux-9-x86_64-7033-br/Packages/l/linux-firmware-20230310-134.el9_2.alma.noarch.rpm`
 
 
 To check that the installation completed successfully, you can run `rpm -qa linux-firmware`. 
