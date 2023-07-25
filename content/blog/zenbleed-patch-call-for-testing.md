@@ -32,20 +32,20 @@ You can see the diff of the changes on [git.almalinux.org](https://git.almalinux
 
 Due to the risks involved in these patches, these packages are not yet in production and need testing! If you are willing to help provide us feedback, and have access to a **bare metal AMD system**, you can manually install them by pulling them from the AlmaLinux Build System.  
 
-To install the new RPM on AlmaLinux 8: 
+**To install the new RPM on AlmaLinux 8:**
 
 {{< highlight bash >}}
 dnf update https://build.almalinux.org/pulp/content/builds/AlmaLinux-8-x86_64-7032-br/Packages/l/linux-firmware-20230404-114.git2e92a49f.el8_8.alma.noarch.rpm
 {{< /highlight >}}
 
-For AlmaLinux 9:
+**For AlmaLinux 9:**
 
 {{< highlight bash >}}
 dnf update https://build.almalinux.org/pulp/content/builds/AlmaLinux-9-x86_64-7033-br/Packages/l/linux-firmware-20230310-134.el9_2.alma.noarch.rpm
 {{< /highlight >}}
 
 
-To check that the installation completed successfully, you can run:
+**To check that the installation completed successfully, you can run:**
 
 {{< highlight bash >}}
 rpm -qa linux-firmware
