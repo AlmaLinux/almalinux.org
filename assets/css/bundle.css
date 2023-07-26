@@ -862,6 +862,8 @@ a:hover{
   border-radius: 10px;
   overflow-wrap: anywhere;
 }
-
+a {
+    overflow-wrap: anywhere;
+}
 
 /*# sourceMappingURL=bundle.css.map */
