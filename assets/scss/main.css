@@ -836,4 +836,7 @@ a {
   .container {
     max-width: 1320px;
   }
+a {
+    overflow-wrap: anywhere;
+}
 }/*# sourceMappingURL=main.css.map */
