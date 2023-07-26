@@ -11,7 +11,7 @@ post:
     image: /blog-images/23.07.24.zenbleed.png
 ---
 
-EDIT: July 26: We will be releasing this patch on July 27th at 7am. Read more on the [forums](https://almalinux.discourse.group/t/zenbleed-patch-release-7am-eastern-us-time-7-27-23/2802).
+EDIT: July 26: We will be releasing this patch on July 27th at 7am US Eastern time. Read more on the [forums](https://almalinux.discourse.group/t/zenbleed-patch-release-7am-eastern-us-time-7-27-23/2802).
 
 Edit Jul 25 to add: AMD has put out an [official security bulletin](https://www.amd.com/en/resources/product-security/bulletin/amd-sb-7008.html) that lists all of the impacted hardware and anticipated release dates of patches for older CPUs. 
 
