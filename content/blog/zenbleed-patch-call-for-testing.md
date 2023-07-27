@@ -15,7 +15,7 @@ EDIT, July 27th: as of 12 hours after the release we have still seen no reports 
 
 EDIT, July 26: We will be releasing this patch on July 27th at 7am US Eastern time. Read more on the [forums](https://almalinux.discourse.group/t/zenbleed-patch-release-7am-eastern-us-time-7-27-23/2802).
 
-Edit Jul 25 to add: AMD has put out an [official security bulletin](https://www.amd.com/en/resources/product-security/bulletin/amd-sb-7008.html) that lists all of the impacted hardware and anticipated release dates of patches for older CPUs. 
+Edit, Jul 25: AMD has put out an [official security bulletin](https://www.amd.com/en/resources/product-security/bulletin/amd-sb-7008.html) that lists all of the impacted hardware and anticipated release dates of patches for older CPUs. 
 
 Earlier today our community pointed out a new, trivially exploitable flaw in [AMD systems called Zenbleed](https://lwn.net/Articles/939099/). Due to an accident on the AMD side, the patch was released ahead of responsible disclosure, and unpatched systems are at great risk. We were able to pull in the patch, get through our normal testing, and we are now ready for wider testing for both AlmaLinux 8 and 9.
 
