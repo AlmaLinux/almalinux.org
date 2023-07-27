@@ -12,7 +12,7 @@
                                     {{ range (.Paginate ( .Pages.ByDate.Reverse )).Pages }}
 
                 <div>
-                <a class="al-article-title-link" href="{{ .Permalink }}" style="text-decoration:none;">
+                <a class="al-article-title-link" href="{{ .RelPermalink }}" style="text-decoration:none;">
                     <h3> {{ .Title }} </h3>
                 </a>
                  </div>
@@ -53,7 +53,7 @@
             {{ .Params.post.title }}
         </div>
         <div class="al-article-actions" dir="ltr">
-            <a href=" {{ .Permalink }} " class="al-article-continue d-flex align-items-center">
+            <a href=" {{ .RelPermalink }} " class="al-article-continue d-flex align-items-center">
                 <i class="bi bi-chevron-double-right pe-1"></i>
                 <span>{{ i18n "Continue reading" }}</span>
             </a>
