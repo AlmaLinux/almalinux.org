@@ -158,7 +158,7 @@ Check if these ports are set in Warpinator settings:
   firewall-cmd --list-all
   ```
  The Example output you should see: 
-```
+```bash
  public (active)
   target: default
   icmp-block-inversion: no
