@@ -97,7 +97,7 @@ To install it on Almalinux you need to:
   dnf copr --hub build.almalinux.org enable sboldyreva/warpinator  
   ```
 * Install `warpinator`:
-  ```
+  ```bash
   dnf install warpinator 
   ```
 * Now there are a few more adjustments to firewall settings: 
