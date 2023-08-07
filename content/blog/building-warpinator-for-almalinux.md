@@ -37,7 +37,7 @@ Originally designed for Debian-based Linux, Warpinator has grown to serve Window
 I used the [Building Packages Guide](https://wiki.almalinux.org/documentation/building-packages-guide.html) from AlmaLinux Wiki to build packages. 
 As there isn't any source rpm to unpack and create directory structure using `rpm -i` command, had to create rpmbuild directory to build rpm packages:
 
-```
+```bash
 mkdir -p ~/rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
 ```
 
