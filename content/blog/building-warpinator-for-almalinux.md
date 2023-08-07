@@ -154,7 +154,7 @@ Check if these ports are set in Warpinator settings:
   sudo firewall-cmd --runtime-to-permanent
   ```
   Check the setting to be sure: 
-  ```
+  ```bash
   firewall-cmd --list-all
   ```
  The Example output you should see: 
