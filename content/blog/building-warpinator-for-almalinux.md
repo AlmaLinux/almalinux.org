@@ -46,7 +46,7 @@ Or run the two commands below to create the RPM building environment:
 dnf install rpmdevtools
 ```
 And then
-```
+```bash
 rpmdev-setuptree
 ```
 
