@@ -52,7 +52,7 @@ included in the next deployment.
 
 Please adhere to the styling guidelines listed below when contributing to the codebase.
 
-## Code/Syntax Highlighting
+#### Code/Syntax Highlighting
 
 Code/Syntax highlighting is achieved by the builtin [Hugo syntax highlighting](https://gohugo.io/content-management/syntax-highlighting/) feature, which utilizes [Chroma](https://github.com/alecthomas/chroma).
 
