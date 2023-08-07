@@ -112,7 +112,7 @@ To install it on Almalinux you need to:
   sudo curl -LO https://raw.githubusercontent.com/firewalld/firewalld/master/config/services/warpinator.xml
   ```
 * Add "warpinator" service from the file:
-  ```
+  ```bash
   sudo firewall-cmd --permanent --new-service-from-file=warpinator.xml
   ```
 * Reload the firewalld:
