@@ -123,7 +123,7 @@ To install it on Almalinux you need to:
   sudo firewall-cmd --add-service=warpinator --zone=public
   ```
 * Make current firewall configuration permanent:
-  ```
+  ```bash
   sudo firewall-cmd --runtime-to-permanent
   ```
 * Make sure you can see `warpinator` as a service listed output:
