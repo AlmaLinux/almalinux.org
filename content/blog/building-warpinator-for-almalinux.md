@@ -116,7 +116,7 @@ To install it on Almalinux you need to:
   sudo firewall-cmd --permanent --new-service-from-file=warpinator.xml
   ```
 * Reload the firewalld:
-  ```
+  ```bash
   sudo firewall-cmd --reload
   ```
   ```
