@@ -89,7 +89,7 @@ To install it on Almalinux you need to:
    dnf install dnf-plugins-core
    ```
 * Download the AlmaLinux configuration file in your system:
-   ```
+   ```bash
    curl -o /etc/dnf/plugins/copr.d/almalinux.conf https://raw.githubusercontent.com/AlmaLinux/albs-web-server/master/reference_data/almalinux.conf
   ```
 * Enable the `warpinator` community repo:
