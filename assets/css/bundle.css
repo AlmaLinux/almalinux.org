@@ -663,8 +663,16 @@ a:hover{
   font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen-sans, ubuntu, cantarell, "helvetica neue", "arial", sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
   font-size: 15px;
 }
-.al-wysiwyg pre, .al-wysiwyg code {
-  font-family: "SF Mono", "source code pro", consolas, "courier new", courier, monospace;
+
+pre, code {
+  padding: 2px 4px;
+  font-size: 90%;
+  font-weight: 400;
+  color: #fff;
+  background-color: #1f1f24;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 
 .fw-bold{

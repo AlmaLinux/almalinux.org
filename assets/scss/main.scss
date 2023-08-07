@@ -281,11 +281,16 @@ a{
   }
 
   pre, code {
-    font-family: $al-font-family-mono;
+    padding: 2px 4px;
+    font-size: 90%;
+    font-weight: 400;
+    color: #fff;
+    background-color: #1f1f24;
+    border-radius: 4px;
+    font-family: "Courier New", monospace;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
   }
 }
-
-
 
 .al-certified-amd-page .banner {
   background-image: url(/images/main-image.png);
