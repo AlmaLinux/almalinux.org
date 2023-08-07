@@ -42,7 +42,7 @@ mkdir -p ~/rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
 ```
 
 Or run the two commands below to create the RPM building environment:
-```
+```bash
 dnf install rpmdevtools
 ```
 And then
