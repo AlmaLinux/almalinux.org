@@ -85,7 +85,7 @@ Warpinator packages are available in AlmaLinux's community repository for both A
 To install it on Almalinux you need to:
 * Enable EPEL and PowerTools repositories.
 * Install core dnf plugins that contain COPR plugin:
-   ```
+   ```bash
    dnf install dnf-plugins-core
    ```
 * Download the AlmaLinux configuration file in your system:
