@@ -93,7 +93,7 @@ To install it on Almalinux you need to:
    curl -o /etc/dnf/plugins/copr.d/almalinux.conf https://raw.githubusercontent.com/AlmaLinux/albs-web-server/master/reference_data/almalinux.conf
   ```
 * Enable the `warpinator` community repo:
-  ```
+  ```bash
   dnf copr --hub build.almalinux.org enable sboldyreva/warpinator  
   ```
 * Install `warpinator`:
