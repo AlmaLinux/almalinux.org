@@ -142,7 +142,7 @@ Check if these ports are set in Warpinator settings:
 * Incoming port for registration: 42001
 
 1. If the ports mentioned above are correct but machines still cannot see each other, then try to add 5353/udp port to warpinator: 
-  ```
+  ```bash
   sudo firewall-cmd --add-port=5353/udp
   ```
 2. If the ports in Warpinator settings differ from those mentioned above, try adding the needed ports manually using CLI instead of configuring firewalld Configuring firewalld with warpinator.xml: 
