@@ -131,7 +131,7 @@ To install it on Almalinux you need to:
   sudo firewall-cmd --zone=public --list-services
   ```
 * Cleanup: Delete the service file for warpinator:
-  ```
+  ```bash
   rm warpinator.xml
   ```
 
