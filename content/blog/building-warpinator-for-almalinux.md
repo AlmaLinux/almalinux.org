@@ -102,7 +102,7 @@ To install it on Almalinux you need to:
   ```
 * Now there are a few more adjustments to firewall settings: 
 * Check firewalld is active:
-  ```
+  ```bash
   sudo firewall-cmd --state
   ```
   If the output is `running` configure firewalld.
