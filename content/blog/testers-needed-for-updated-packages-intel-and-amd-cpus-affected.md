@@ -5,7 +5,7 @@ author:
  name: "Andrew Lukoshko"
  bio: "Release Engineering Lead"
  image: /users/alukoshko.jpg
-date: '2023-08-10'
+date: '2023-08-14'
 post:
     title: "Testers needed for security updates: Intel and AMD CPUs affected"
     image: /blog-images/testers-post.png
