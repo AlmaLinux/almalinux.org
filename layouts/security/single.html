@@ -27,16 +27,16 @@
             <section>
               <p>
                  {{ i18n "AlmaLinux OS Foundation provides errata to inform users about available updates, including security issues and bug fixes, and their significance through analysis. Users can easily access this information by accessing our AlmaLinux security advisory portal, known as " }}<a href="https://errata.almalinux.org/" style="color: #f1f8ff;">{{ i18n "AlmaLinux Errata" }}</a>. {{ i18n "More details on Errata and how to use it can be found on the " }}<a href="https://wiki.almalinux.org/documentation/errata.html" style="color: #f1f8ff;">{{ i18n "AlmaLinux Errata Wiki page" }}</a>. <br> {{ i18n "Additionally, AlmaLinux OS is present in the " }}<a href="https://github.com/AlmaLinux/osv-database" style="color: #f1f8ff;">{{ i18n "OSV database" }}</a>.<br><br>
-                {{ i18n "Errata in JSON format for 3rd party software integration:" }}
-                </p>
-                <div class="AL" style="display: flex;">
-                      <div class="itemAl_01" style="width: 300px;">
-                        <b><a href="https://errata.almalinux.org/9/errata.full.json">{{ i18n "errata.full.json for AlmaLinux OS 9" }}</a></b>
-                      </div>
-                      <div class="itemAl_02">
-                        <b><a href="https://errata.almalinux.org/8/errata.full.json">{{ i18n "errata.full.json for AlmaLinux OS 8" }}</a></b>
-                      </div>
-                    </div>               
+                 {{ i18n "Errata in JSON format for 3rd party software integration:" }}
+              </p>
+              <div class="AL" style="display: flex;">
+                <div class="itemAl_01" style="width: 300px;">
+                  <b><a href="https://errata.almalinux.org/9/errata.full.json">{{ i18n "errata.full.json for AlmaLinux OS 9" }}</a></b>
+                </div>
+                <div class="itemAl_02">
+                  <b><a href="https://errata.almalinux.org/8/errata.full.json">{{ i18n "errata.full.json for AlmaLinux OS 8" }}</a></b>
+                </div>
+              </div>               
             </section>
           </div>
         </div>
@@ -45,24 +45,25 @@
           <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
             <section>
               <p>
-                {{ i18n "AlmaLinux OS Foundation signs all of its software packages using a GPG signature key, which is verified by default when installing packages via dnf or graphical update tools. If a package is not signed or has an invalid signature, dnf or graphical update tools will warn the user.s will refuse to install it." }}<br>
+                {{ i18n "AlmaLinux OS Foundation signs all of its software packages using a GPG signature key, which is verified by default when installing packages via dnf or graphical update tools. If a package is not signed or has an invalid signature, dnf or graphical update tools will warn the user and will refuse to install it." }}<br>
                 {{ i18n "It’s recommended to verify the signature of a package before you install it." }}
               </p>
               <div class="AL" style="display: flex; justify-content: space-between;">
-                <div class="itemAl_01" style="width: 588px;">
+                <div class="itemAl_01" style="width: 608px; display: flex; flex-direction: column;">
                   <h3>AlmaLinux OS 9</h3>
-                  <b>rsa4096/D36CB86CB86B3716 (2022-01-18):</b><br>
-                  AlmaLinux OS 9 &lt;packager@almalinux.org&gt; <br>
-                  <b>{{ i18n "Location:" }}</b> /etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux-9<br>
-                  <b>{{ i18n "Download:" }}</b> <a href="https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux-9">AlmaLinux</a><br>
-                  <b>{{ i18n "Download:" }}</b> <a href="https://pgp.mit.edu/pks/lookup?op=index&search=0xD36CB86CB86B3716">pgp.mit.edu</a><br>
+                  <span><b>rsa4096/D36CB86CB86B3716 (2022-01-18):</b></span>
+                  <span>AlmaLinux OS 9 &lt;packager@almalinux.org&gt;</span>
+                  <span><b>{{ i18n "Location:" }}</b> /etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux-9</span>
+                  <span><b>{{ i18n "Download:" }}</b> <a href="https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux-9">AlmaLinux</a></span>
+                  <span><b>{{ i18n "Download:" }}</b> <a href="https://pgp.mit.edu/pks/lookup?op=index&search=0xD36CB86CB86B3716">pgp.mit.edu</a></span>
                   <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
-                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
-                          <div style="display: flex; flex-direction: column;">
-                            
-                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="BF18 AC28 7617 8908 D6E7 1267 D36C B86C B86B 3716" readonly>
-                          </div>
-                        </div>
+                    <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                    <div style="display: flex; flex-direction: column;">
+                      <p style="margin-left: 10px; font-family: monospace; font-size: 14px; color: #fff;">
+                        BF18 AC28 7617 8908 D6E7 1267 D36C B86C B86B 3716
+                      </p>
+                    </div>
+                  </div>
                 </div>
                 <div class="itemAl_02" style="padding-left: 20px; width: 608px; display: flex; flex-direction: column;">
                   <h3>AlmaLinux OS 8</h3>
@@ -74,7 +75,9 @@
                   <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
                     <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
                     <div style="display: flex; flex-direction: column;">    
-                      <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="5E9B 8F56 17B5 066C E920 57C3 488F CF7C 3ABB 34F8" readonly>
+                      <p style="margin-left: 10px; font-family: monospace; font-size: 14px; color: #fff;">
+                        5E9B 8F56 17B5 066C E920 57C3 488F CF7C 3ABB 34F8
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -87,7 +90,9 @@
           <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
             <section>
               <p>
-                {{ i18n "To receive security updates and errata, users can sign up for the " }}<a href="https://lists.almalinux.org/mailman3/lists/" style="color: #f1f8ff;">{{ i18n "AlmaLinux Security Mailing List" }}</a>. {{ i18n "Subscribing to the list will allow users to stay informed and updated on any security fixes as soon as they are available." }}
+                {{ i18n "To receive security updates and errata, users can sign up for the " }}
+                <a href="https://lists.almalinux.org/mailman3/lists/" style="color: #f1f8ff;">{{ i18n "AlmaLinux Security Mailing List" }}</a>.
+                {{ i18n "Subscribing to the list will allow users to stay informed and updated on any security fixes as soon as they are available." }}
               </p>
             </section>
           </div>
@@ -97,19 +102,19 @@
           <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
             <section>
               <p>
-                {{ i18n "The Security Content Automation Protocol (SCAP) automates vulnerability management, measurement, and policy compliance evaluation of systems. AlmaLinux OS offers an OpenSCAP Guide that instructs on how to use the OpenSCAP and SCAP Workbench to audit your AlmaLinux system security compliance." }}<br>
+                {{ i18n "The Security Content Automation Protocol (SCAP) automates vulnerability management, measurement, and policy compliance evaluation of systems. AlmaLinux OS offers an OpenSCAP Guide that instructs on how to use the OpenSCAP and SCAP Workbench to audit your AlmaLinux system security compliance." }}
               </p>
-                <div class="AL" style="display: flex;">
-                      <div class="itemAl_01" style="width: 300px;">
-                        <b><a href="https://wiki.almalinux.org/documentation/openscap-guide-for-9.html">{{ i18n "OpenSCAP Guide for AlmaLinux OS 9" }}</a></b>
-                      </div>
-                      <div class="itemAl_02">
-                        <b><a href="https://wiki.almalinux.org/documentation/openscap-guide.html">{{ i18n "OpenSCAP Guide for AlmaLinux OS 8" }}</a></b>
-                      </div>
-                    </div>     
-                <p>
+              <div class="AL" style="display: flex;">
+                <div class="itemAl_01" style="width: 300px;">
+                  <b><a href="https://wiki.almalinux.org/documentation/openscap-guide-for-9.html">{{ i18n "OpenSCAP Guide for AlmaLinux OS 9" }}</a></b>
+                </div>
+                <div class="itemAl_02">
+                  <b><a href="https://wiki.almalinux.org/documentation/openscap-guide.html">{{ i18n "OpenSCAP Guide for AlmaLinux OS 8" }}</a></b>
+                </div>
+              </div>     
+              <p>
                 {{ i18n "AlmaLinux OS also has the availability of the CIS Benchmark." }}
-                </p>
+              </p>
             </section>
           </div>
         </div>
@@ -120,16 +125,17 @@
               <p>
                 {{ i18n "The Open Vulnerability and Assessment Language (OVAL), offers publicly accessible security information. This includes AlmaLinux OS 8 and 9, which have available public OVAL streams." }}
               </p>
-                <div class="AL" style="display: flex;">
-                      <div class="itemAl_01" style="width: 300px;">
-                        <b><a href="https://security.almalinux.org/oval/org.almalinux.alsa-9.xml.">AlmaLinux OS 9</a></b>
-                      </div>
-                      <div class="itemAl_02">
-                        <b><a href="https://security.almalinux.org/oval/org.almalinux.alsa-8.xml">AlmaLinux OS 8</a></b>
-                      </div>
-                    </div>  
+              <div class="AL" style="display: flex;">
+                <div class="itemAl_01" style="width: 300px;">
+                  <b><a href="https://security.almalinux.org/oval/org.almalinux.alsa-9.xml.">AlmaLinux OS 9</a></b>
+                </div>
+                <div class="itemAl_02">
+                  <b><a href="https://security.almalinux.org/oval/org.almalinux.alsa-8.xml">AlmaLinux OS 8</a></b>
+                </div>
+              </div>  
               <p>
-              {{ i18n "You can find more about OVAL Streams on the " }}<a href="https://wiki.almalinux.org/documentation/oval-streams.html" style="color: #f1f8ff;">{{ i18n "AlmaLinux OVAL Wiki Page" }}</a>.
+                {{ i18n "You can find more about OVAL Streams on the " }}
+                <a href="https://wiki.almalinux.org/documentation/oval-streams.html" style="color: #f1f8ff;">{{ i18n "AlmaLinux OVAL Wiki Page" }}</a>.
               </p>
             </section>
           </div>
@@ -140,8 +146,11 @@
             <section>
               <p>
                 {{ i18n "The Software Bill of Materials (SBOM) provides a comprehensive list of third-party and open-source components in a codebase, including version numbers, licensing information, and potential vulnerabilities." }}
-                {{ i18n "AlmaLinux Build System has implemented SBOM into its pipeline for security purposes, such as tracing the build process, making it more secure, and reducing the risk of data corruption. " }}<a href="/sbom" style="color: #f1f8ff;">{{ i18n "Read more" }}</a> {{ i18n "about SBOM and CAS integration with AlmaLinux." }}<br>
-               {{ i18n "AlmaLinux OS also provides " }}<a href="https://wiki.almalinux.org/documentation/sbom-guide.html" style="color: #f1f8ff;">{{ i18n "AlmaLinux SBOM User Guide" }}</a>
+                {{ i18n "AlmaLinux Build System has implemented SBOM into its pipeline for security purposes, such as tracing the build process, making it more secure, and reducing the risk of data corruption. " }}
+                <a href="/sbom" style="color: #f1f8ff;">{{ i18n "Read more" }}</a> 
+                {{ i18n "about SBOM and CAS integration with AlmaLinux." }}<br>
+                {{ i18n "AlmaLinux OS also provides " }}
+                <a href="https://wiki.almalinux.org/documentation/sbom-guide.html" style="color: #f1f8ff;">{{ i18n "AlmaLinux SBOM User Guide" }}</a>
               </p>
             </section>
           </div>
@@ -150,26 +159,5 @@
     </div>
   </section>
 </div>
-
-<script>
-const btns = document.querySelectorAll('.tab-button');
-btns.forEach(item => item.addEventListener('click', event => {
-  btns.forEach(element => element.classList.remove('active'));
-  item.classList.add('active');
-}));
-
-document.querySelector('[class="tab-button"]').classList.add('active');
-</script>
-<script>
-document.getElementById("btn_copy").onclick = function() {
-  var text = document.getElementById("text_copy")
-
-  text.select();
-
-  document.execCommand("copy");
-
-  alert("Text copied: " + text.value);
-}
-</script>
 
 {{ end }}
