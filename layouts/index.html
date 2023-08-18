@@ -17,6 +17,14 @@
         flex: 0 0 auto;
         width: 50%;
     }
+    .container-security {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column!important;
+    }
+    .container-measure {
+        width: 100%!important;
+    }
 }
 @media (min-width: 800px) {
     .display-5 {
@@ -54,7 +62,8 @@
 
     <section class="al-page-index">
         <!-- HERO -->
-        <div class="container px-0 al-py-lg">
+        <div class="al-index-container" style="background: #0e3b5c!important;">
+          <div class="container px-0 al-py-lg">  
             <div class="row flex-lg-row-reverse align-items-center py-2 py-md-5">
                 <div class="d-none d-lg-block col-10 col-sm-8 col-lg-6">
 
@@ -85,10 +94,11 @@
                     </div>
                 </div>
             </div>
+          </div>
         </div>
 
         <!-- COMMUNITY -->
-        <div class="al-index-community-container">
+        <div class="al-index-community-container" style="background: #0f4266!important">
             <div class="container al-py-md">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-2 py-md-5">
                     <div class="col d-flex align-items-stretch">
@@ -154,7 +164,7 @@
         </div>
 
         <!-- ABOUT SHORT -->
-        <div class="al-index-about">
+        <div class="al-index-about" style="background: #0e3b5c!important;">
             <div class="container al-py-md">
                 <div class="row d-flex align-items-center justify-content-center py-2 py-md-5">
                     <div class="col-12 col-md-12">
@@ -174,7 +184,7 @@
         </div>
 
  <!-- GET ALMALINUX -->
-         <div id="downloads" class="al-index-community-container">
+         <div id="downloads" class="al-index-community-container" style="background: #0f4266!important">
             <div class="container al-py-lg">
                 <h2 class="pb-2 text-center border-bottom">{{ i18n "Get AlmaLinux OS" }}</h2>
                   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-2 py-md-5">
@@ -282,6 +292,51 @@
                 </div>    
             </div>
         </div>
+
+
+        <!-- SECURITY -->
+        <div class="al-index-security-container" style="background: #0e3b5c!important;">
+            <div class="container al-py-lg" style="padding: 48px 15px;">
+                <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Security
+                </h2>
+                <div class="container al-py-md" style="padding: 48px 0 0 0!important;">
+                    
+                    <div class="container-security" style="display: flex; justify-content: space-between;">
+                        <div class="container-measure" style="display: flex; width: 32%;">
+                            <img loading="lazy" class="al-index-community-icon img" src="/images/errata-iconA.svg" style="height: 32px; width: 32px;">
+                            <div class="al-index-community-content-wrap" style="padding-left: 22px">
+                                <h4 class="fw-bold mb-0 pb-2">Errata</h4>
+                                <p>
+                                    {{ i18n "AlmaLinux OS Foundation publishes Errata to help users to determine what updates such as security issues and fixed bugs are available and their importance based on analysis." }}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-measure" style="display: flex; width: 32%;">
+                            <img loading="lazy" class="al-index-community-icon img" src="/images/open_vul_assessment_icon_B.svg" style="height: 32px; width: 32px;">
+                            <div class="al-index-community-content-wrap" style="padding-left: 22px">
+                                <h4 class="fw-bold mb-0 pb-2">OpenSCAP and OVAL</h4>
+                                <p>
+                                    {{ i18n "AlmaLinux OS provides SCAP and SCAP Workbench packages to audit your AlmaLinux system for security compliance alongside OVAL streams." }}"
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-measure" style="display: flex; width: 32%;">
+                            <img loading="lazy" class="al-index-community-icon img" src="/images/sbom_iconF.svg" style="height: 32px; width: 32px;">
+                            <div class="al-index-community-content-wrap" style="padding-left: 22px">
+                                <h4 class="fw-bold mb-0 pb-2">Software Bill of Materials</h4>
+                                <p>
+                                    {{ i18n "AlmaLinux OS has implemented SBOM into AlmaLinux Build System to make the build process more secure and possible to trace." }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                     <br><p>
+                        {{ i18n "AlmaLinux OS provides a set of security features: Errata, GPG keys, Mailing Lists, OpenSCAP, OVAL, SBOM" }}- <a href="/security">{{ i18n "read more" }}</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
 
         <!-- BACKERS -->
 
