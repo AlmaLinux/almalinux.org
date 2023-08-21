@@ -140,7 +140,7 @@ border-bottom-color: #14598a !important;
   max-width: 220px;
   width: 100%;
 }
-.al-commercial-supporter-list:last-child {
+.al-commercial-supporter-list {
 	margin-top: 40px;
 }
 .al-page-index .al-index-faq {
