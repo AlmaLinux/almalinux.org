@@ -7,6 +7,15 @@
 .container{
   padding: 0 ;
 }
+
+.itemAl_01 a {
+  color: #f1f8ff;
+  }
+
+.itemAl_02 a {
+  color: #f1f8ff;
+  }
+
 .al-primary-navbar .container {
   padding-left: 15px !important;
   padding-right: 15px !important;
