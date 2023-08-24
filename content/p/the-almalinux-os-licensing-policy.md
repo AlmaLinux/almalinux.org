@@ -4,6 +4,22 @@ type: p
 ---
 
 
+## AlmaLinux Licensing guidelines
+
+Licensing in open source can be complicated, so we've put together these guidelines to simplify the AlmaLinux approach for our community. The definitions below these guidelines expand on this information but simply stated, this is how we approach licensing:
+
+0. <b>Use existing license -</b> If what we're shipping is based on something else, we use the underlying license that already exists.
+
+1. <b>CC0 for content -</b> CC0 is best for anything that cannot be subject to patents. This includes things like wiki and website content, and also includes SBOMs. Anything patentable should be under a software license with a patent clause, using the guidelines below.
+
+2. <b>GPLv2 for unique OS software -</b> Anything that is unique to AlmaLinux and ships with the OS should be GPLv2 since GPLv2 and GPLv3 cannot be mixed in the same distribution.
+
+3. <b>GPLv3 for unique non-OS software -</b> it's ideal for anything we make that does not have to be shipped with AlmaLinux OS.
+
+4. <b>MIT for unique libraries -</b> any libraries that we're shipping should likely be shipped using an MIT license unless there's a specific reason not to (ie: preventing weaponization by bad actors).
+
+<b>Note:</b> Licensing with an open source license does not relinquish ownership, only a copyright assignment would do that and we do not use copyright assignments. We believe it is healthy for a real community to have distributed copyright ownership, and will not decline code based solely on copyright ownership, as long as it is shared under an open source license.
+
 ## Definitions
 
 A “Contribution” is any contribution to the AlmaLinux OS Foundation but does not include (a) already-existing upstream software or content that merely is packaged, or is intended to be packaged, in AlmaLinux OS, or changes or additions to such already-existing software or content, or (b) material intended to be used for AlmaLinux OS Foundation logos.
@@ -23,8 +39,9 @@ Explicitly Licensed Contributions
 Explicitly Licensed Contributions can be under any of the open source or open content licenses considered acceptable for the Fedora Project.
 AlmaLinux.org Content
 
-As of 2021-05-01, new content published on www.almalinux.org, wiki.almalinux.org and blog.almalinux.org is licensed under the Creative Commons Attribution-ShareAlike 4.0 International Public License (CC BY-SA 4.0), except as otherwise indicated in this document or the content itself. Accordingly, the Default License for Contributions to such content is CC BY-SA 4.0, with attribution solely to the AlmaLinux OS Foundation.
-Licensed Repositories
+As of 2021-05-01, new content published on [www.almalinux.org](https://www.almalinux.org), [wiki.almalinux.org](https://wiki.almalinux.org) and [blog.almalinux.org](https://blog.almalinux.org) is licensed under the Creative Commons Attribution-ShareAlike 4.0 International Public License (CC BY-SA 4.0), except as otherwise indicated in this document or the content itself. Accordingly, the Default License for Contributions to such content is CC BY-SA 4.0, with attribution solely to the AlmaLinux OS Foundation.
+
+### Licensed Repositories
 
 The Default License for Contributions to an AlmaLinux OS repository that contains notice of a license is that same license.
 Code Contributions
@@ -49,13 +66,11 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTIO
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Other Contributions
+### Other Contributions
 
 The Default License for Contributions not otherwise addressed in this policy, including mailing list postings, forum posts, website design elements, and content in issues and comments submitted to the AlmaLinux Bug Tracker, is the CC0 1.0 Universal Public Domain Dedication (CC0).
 AlmaLinux OS Logos
 
-AlmaLinux OS logos are covered by the AlmaLinux Trademark Guidelines and not within the scope of this policy. If you want to contribute to the development of AlmaLinux OS logos, please contact the AlmaLinux OS Foundation Governing Board.
+AlmaLinux OS logos are covered by the AlmaLinux Trademark Guidelines and not within the scope of this policy. If you want to contribute to the development of AlmaLinux OS logos, please contact the AlmaLinux OS Foundation Governing Board. 
 
-Date
-
-2021-05-01
+Last updated: August 23, 2023
