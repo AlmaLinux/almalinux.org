@@ -156,8 +156,7 @@ border-bottom-color: #14598a !important;
   background: #0e3b5c;
 }
 .al-page-index .al-index-faq .accordion-button {
-  border: none;
-  box-shadow: none;
+  border: 1px;
   font-weight: normal;
   background: #104469;
   width: 100% !important;
@@ -165,6 +164,18 @@ border-bottom-color: #14598a !important;
   padding: 20px 10px !important;
   color: #fefefe !important;
   font-size: 15px;
+}
+.al-page-index .al-index-faq .tab-button {
+border: 1px;
+font-weight: normal;
+background: #104469;
+width: 100% !important;
+padding: 20px 10px !important;
+color: #fefefe !important;
+font-size: 18px;
+}
+.items__01 .accordion-body > ul {
+padding: 0px !important;
 }
 .al-page-index .al-index-faq .accordion-button:active, .al-page-index .al-index-faq .accordion-button.active, .al-page-index .al-index-faq .accordion-button:hover, .al-page-index .al-index-faq .accordion-button:focus {
   box-shadow: none;
@@ -510,6 +521,14 @@ button:active {
 button:focus, .btn:focus {
   outline: none !important;
   box-shadow: none !important;
+}
+
+.tab-button.active {
+outline: none !important;
+box-shadow: inset 0 0.1875rem #ff4649 !important;
+}
+.tab-button:focus {
+outline: none !important;
 }
 
 .row {

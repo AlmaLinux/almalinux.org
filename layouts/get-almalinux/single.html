@@ -1,0 +1,1982 @@
+{{ define "main" }}
+<style>
+@media (max-width: 1399px){
+    .items__01 {
+      word-wrap: break-word;
+      display:flex;
+      flex-direction: column;
+    }
+    .itemAl_02 {
+      word-wrap: break-word;
+      display:flex;
+      flex-direction: column;
+      padding-left: 0px!important;
+      margin-right: 0px!important;
+      margin-left: 0px!important;
+    }
+    .AL {
+      word-wrap: break-word;
+      display:flex;
+      flex-direction: column;
+    }
+    .AL > .itemAl_02 {
+      width: 588px!important;
+    }
+    a {
+      margin-right: 0px!important;
+    }
+    .container-AL {
+      word-wrap: break-word;
+      display:flex;
+      flex-direction: column;
+    }
+    .itemAl_03 {
+      padding-left: 0px!important;
+    }
+    .container-ALOS8 {
+      padding-left: 0px!important;
+    }
+    .Link-Downloads-Al {
+      justify-content: space-between;
+      width: 588px;
+    }
+    .tab-button {
+      height: 83.19px;
+    }
+
+    a#ISO_Images {
+      top: 315.32px!important;
+    }
+    a#Cloud_Images {
+      top: 1331.98px!important;
+    }
+    a#Container_Images {
+      top: 3437.15px!important;
+    }
+    a#Live_Media {
+      top: 4663.54px!important;
+    }
+    a#Vagrant_Boxes {
+      top: 4915.93px!important;
+    }
+    a#LXD-LXC {
+      top: 5222.32px!important;
+    }
+    a#WSL {
+      top: 5222.32px!important;
+    }
+    a#ISO_Images-2{
+      top: 315.32px!important;
+    } 
+    a#Cloud_Images-2 {
+      top: 1331.98px!important;
+    }
+    a#Container_Images-2 {
+      top: 2992.81px!important;
+    }
+    a#Raspberry_Pi-2 {
+      top: 4219.02px!important;
+    }
+    a#Vagrant_Boxes-2 {
+      top: 4471.59px!important;
+    }
+    a#LXD-LXC-2 {
+      top: 4723.98px!important;
+    }
+    a#WSL-2 {
+      top: 4723.98px!important;
+    }
+    a#ISO_Images-3 {
+      top: 315.32px!important;
+    }
+    a#Cloud_Images-3 {
+      top: 1331.98px!important;
+    }
+    a#Container_Images-3 {
+      top: 1928.04px!important;
+    }
+    a#ISO_Images-4 {
+      top: 315.32px!important;
+    }
+    a#Cloud_Images-4 {
+      top: 1331.98px!important;
+    }
+    a#Container_Images-4 {
+      top: 1938.04px!important;
+    }
+}
+@media(max-width: 1199px){
+    a#Container_Images {
+      top: 3527.15px!important;
+    }
+    a#Live_Media {
+      top: 4753.54px!important;
+    }
+    a#Vagrant_Boxes {
+      top: 5023.93px!important;
+    }
+    a#LXD-LXC {
+      top: 5330.32px!important;
+    }
+    a#WSL {
+      top: 5330.32px!important;
+    }
+    a#Container_Images-2 {
+      top: 3064.81px!important;
+    }
+    a#Raspberry_Pi-2 {
+      top: 4291.02px!important;
+    }
+    a#Vagrant_Boxes-2 {
+      top: 4561.59px!important;
+    }
+    a#LXD-LXC-2 {
+      top: 4867.98px!important;
+    }
+    a#WSL-2 {
+      top: 4867.98px!important;
+    }
+    a#Container_Images-3 {
+      top: 1946.04px!important;
+    }
+    a#Container_Images-4 {
+      top: 1974.04px!important;
+    }
+}
+
+@media(max-width: 991px){
+    a#ISO_Images {
+      top: 333.32px!important;
+    }
+    a#Cloud_Images {
+      top: 1349.98px!important;
+    }
+    a#Container_Images {
+      top: 3617.15px!important;
+    }
+    a#Live_Media {
+      top: 4861.54px!important;
+    }
+    a#Vagrant_Boxes {
+      top: 5131.93px!important;
+    }
+    a#LXD-LXC {
+      top: 5456.32px!important;
+    }
+    a#WSL {
+      top: 5726.71px!important;
+    }
+    a#ISO_Images-2{
+      top: 333.32px!important;
+    } 
+    a#Cloud_Images-2 {
+      top: 1349.98px!important;
+    }
+    a#Container_Images-2 {
+      top: 3136.81px!important;
+    }
+    a#Raspberry_Pi-2 {
+      top: 4381.02px!important;
+    }
+    a#Vagrant_Boxes-2 {
+      top: 4651.59px!important;
+    }
+    a#LXD-LXC-2 {
+      top: 4975.98px!important;
+    }
+    a#WSL-2 {
+      top: 5246.37px!important;
+    }
+    a#ISO_Images-3 {
+      top: 333.32px!important;
+    }
+    a#Cloud_Images-3 {
+      top: 1349.98px!important;
+    }
+    a#Container_Images-3 {
+      top: 1982.04px!important;
+    }
+    a#ISO_Images-4 {
+      top: 333.32px!important;
+    }
+    a#Cloud_Images-4 {
+      top: 1349.98px!important;
+    }
+    a#Container_Images-4 {
+      top: 2010.04px!important;
+    }
+}
+
+@media (max-width: 767px){
+    .Link-Downloads-Al {
+      width: 461px!important;
+    }
+    .AL > .itemAl_01  {
+      width: 461px!important;
+    }
+    .AL > .itemAl_02 {
+      width: 461px!important;
+    }
+    .put-text_copy {
+      width: 410px!important;
+    }
+    .AL {
+      width: 470px!important;
+    }
+    .container-AlmaLinuxOS9 {
+      width: 479px!important;
+    }
+    .container-AlmaLinuxOS8 {
+      width: 479px!important;
+    }
+    .container-itemAL-02 {
+      padding-left: 5px!important;
+    }
+    .container-itemAL-03 {
+      padding-left: 5px!important;
+    }
+
+    a#ISO_Images {
+      top: 333.32px!important;
+    }
+    a#Cloud_Images {
+      top: 1439.98px!important;
+    }
+    a#Container_Images {
+      top: 3923.15px!important;
+    }
+    a#Live_Media {
+      top: 5167.54px!important;
+    }
+    a#Vagrant_Boxes {
+      top: 5473.93px!important;
+    }
+    a#LXD-LXC {
+      top: 5816.32px!important;
+    }
+    a#WSL {
+      top: 6104.71px!important;
+    }
+    a#ISO_Images-2{
+      top: 333.32px!important;
+    } 
+    a#Cloud_Images-2 {
+      top: 1439.98px!important;
+    }
+    a#Container_Images-2 {
+      top: 3370.81px!important;
+    }
+    a#Raspberry_Pi-2 {
+      top: 4615.02px!important;
+    }
+    a#Vagrant_Boxes-2 {
+      top: 4903.59px!important;
+    }
+    a#LXD-LXC-2 {
+      top: 5173.98px!important;
+    }
+    a#WSL-2 {
+      top: 5444.37px!important;
+    }
+    a#ISO_Images-3 {
+      top: 333.32px!important;
+    }
+    a#Cloud_Images-3 {
+      top: 1439.98px!important;
+    }
+    a#Container_Images-3 {
+      top: 2108.04px!important;
+    }
+    a#ISO_Images-4 {
+      top: 333.32px!important;
+    }
+    a#Cloud_Images-4 {
+      top: 1439.98px!important;
+    }
+    a#Container_Images-4 {
+      top: 2154.04px!important;
+    }
+}
+</style>
+<div class="al-body-container">
+  <section class="al-page-index">
+    <div class="al-index-faq">
+      <div class="container al-py-lg">
+        <h1 class="mb-3">{{ i18n "Get AlmaLinux OS" }}</h1> 
+        <div class="accordion accordion-flush" id="accordionISOs">
+          <div class="accordion-item mb-3" style="display:flex; margin-bottom: 10px!important;">
+              <h2 class="accordion-header" id="flush-heading-1" style="width: 25%; margin: 0;">
+                  <button class="tab-button" type="button" data-toggle="collapse" data-target="#flush-collapse-1" aria-expanded="true" aria-controls="flush-collapse-1" style="background: #114a73;">
+                    <b>Intel/AMD (x86_64)</b>
+                  </button>
+              </h2>
+              <h2 class="accordion-header" id="flush-heading-2" style="width: 25%; margin: 0;">
+                  <button class="tab-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapse-2" aria-expanded="true" aria-controls="flush-collapse-2" style="background: #114a73;">
+                    <b>ARM64 (AArch64)</b>
+                  </button>
+              </h2>
+              <h2 class="accordion-header" id="flush-heading-3" style="width: 25%; margin: 0;">
+                  <button class="tab-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapse-3" aria-expanded="true" aria-controls="flush-collapse-3" style="background: #114a73;">
+                    <b>IBM Z (s390x)</b>
+                  </button>
+              </h2>
+              <h2 class="accordion-header" id="flush-heading-4" style="width: 25%; margin: 0;">
+                  <button class="tab-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapse-4" aria-expanded="true" aria-controls="flush-collapse-4" style="background: #114a73;">
+                    <b>Power LE (ppc64le)</b>
+                  </button>
+              </h2>
+          </div>
+
+          <div id="flush-collapse-1" class="accordion-collapse collapse show" aria-labelledby="flush-heading-1" data-parent="#accordionISOs">
+            <div class="items__01" style="display: flex; flex-direction: column;">
+              <div class="accordion-body" style="margin-top: 0px; padding: 15px 0 0 0;">
+                <div class="container-all-options mb-3" style="display: flex; justify-content: space-between; padding: 0px 20px;">
+                  <a href="#ISO_Images">     
+                    <img loading="lazy" class="al-index-community-icon img" src="/images/iso-icon-F.svg" style="width: 40px; height:40px" alt="ISO Image">
+                  </a>
+                  <a href="#Cloud_Images">
+                    <img loading="lazy" class="al-index-community-icon img" src="/images/cloud-icon-F.svg" style="width: 40px; height:40px" alt="Cloud Image">
+                  </a>
+                  <a href="#Container_Images">
+                    <img loading="lazy" class="al-index-community-icon img" src="/images/container-icon-F.svg" style="width: 40px; height:40px" alt="Container Image">
+                  </a>
+                  <a href="#Live_Media">
+                    <img loading="lazy" class="al-index-community-icon img" src="/images/live-icon-F.svg" style="width: 40px; height:40px" alt="Live Media Image">
+                  </a>
+                  <a href="#Vagrant_Boxes">
+                    <img loading="lazy" class="al-index-community-icon img" src="/images/vagrant-icon-F1.svg" style="width: 40px; height:40px" alt="Vagrant Image">
+                  </a>
+                  <a href="#LXD-LXC">
+                    <img loading="lazy" class="al-index-community-icon img" src="/images/lxd-lcx-icon-F.svg" style="width: 40px; height:40px" alt="LXD-LXC Image">
+                  </a>
+                  <a href="#WSL">
+                    <img loading="lazy" class="al-index-community-icon img" src="/images/wsl-icon-F.svg" style="width: 40px; height:40px" alt="WSL Image">
+                  </a>  
+                </div>
+
+                <div class="container-ISO_Images" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="ISO_Images" style="position: absolute; top: 294px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">ISO Images</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <section>
+                      <p>{{ i18n "Each supported architecture has various installation images available:"}}</p>
+                      <p>
+                        <b>{{ i18n "DVD" }}</b>
+                        - {{ i18n "effortless installation with all packages included, no additional repositories required." }}
+                      </p>
+                      <p>
+                        <b>{{ i18n "Boot" }}</b>
+                        - {{ i18n "a single network installation CD image that downloads packages over the Internet." }}
+                      </p>
+                      <p>
+                        <b>{{ i18n "Minimal" }}</b>
+                        - {{ i18n "a minimal self-containing DVD image that makes possible offline installation." }}
+                      </p>
+                    </section>
+                    <div class="AL" style="display: flex; justify-content: space-between;">
+                      <div class="itemAl_01" style="width: 588px;">
+                        <h3>AlmaLinux OS 9</h3>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/9.2/isos/x86_64/AlmaLinux-9.2-x86_64-dvd.iso">AlmaLinux OS 9.2 DVD ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="00c91b923997c44822595998deb0cebcfaa53e93c2bed8745b04516badff431f" readonly>
+                          </div>
+                        </div>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/9.2/isos/x86_64/AlmaLinux-9.2-x86_64-boot.iso">AlmaLinux OS 9.2 Boot ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="f501de55f92e59a3fcf4ad252fdfc4e02ee2ad013d2e1ec818bb38052bcb3c32" readonly>
+                          </div>
+                        </div>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/9.2/isos/x86_64/AlmaLinux-9.2-x86_64-minimal.iso">AlmaLinux OS 9.2 Minimal ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="51ee8c6dd6b27dcae16d4c11d58815d6cfaf464eb0e7c75e026f8d5cc530b476" readonly>
+                          </div>
+                        </div>
+                        <div class="Link-Downloads-OS9" style="display: flex; justify-content: space-between; margin-top: 20px;">
+                          <b><a href="https://mirrors.almalinux.org/isos/x86_64/9.2.html">{{ i18n "Download ISOs from mirrors" }}</a></b>
+                          <b><a href="https://repo.almalinux.org/almalinux/9.2/isos/x86_64/AlmaLinux-9.2-x86_64.torrent">{{ i18n "Download .torrent file" }}</a></b>
+                          <b><a href="https://repo.almalinux.org/almalinux/9.2/isos/x86_64/CHECKSUM">{{ i18n "Download CHECKSUM" }}</a></b>
+                        </div>
+                      </div>
+                      <div class="itemAl_02" style="padding-left: 20px; width: 608px;">
+                        <h3>AlmaLinux OS 8</h3>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/8.8/isos/x86_64/AlmaLinux-8.8-x86_64-dvd.iso">AlmaLinux OS 8.8 DVD ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="635b30b967b509a32a1a3d81401db9861922acb396d065922b39405a43a04a31" readonly>
+                          </div>
+                        </div>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/8.8/isos/x86_64/AlmaLinux-8.8-x86_64-boot.iso">AlmaLinux OS 8.8 Boot ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="016e59963c2c3bd4c99c18ac957573968e23da51131104568fbf389b11df3e05" readonly>
+                          </div>
+                        </div>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/8.8/isos/x86_64/AlmaLinux-8.8-x86_64-minimal.iso">AlmaLinux OS 8.8 Minimal ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="831a8c9323426b3c73e5a204c9494d90be076f755d6b0fcfb94c165f078aa947" readonly>
+                          </div>
+                        </div>
+                        <div class="Link-Downloads-OS8" style="display: flex; justify-content: space-between; margin-top: 20px;">
+                          <b><a href="https://mirrors.almalinux.org/isos/x86_64/8.8.html">{{ i18n "Download ISOs from mirrors" }}</a></b>
+                          <b><a href="https://repo.almalinux.org/almalinux/8.8/isos/x86_64/AlmaLinux-8.8-x86_64.torrent">{{ i18n "Download .torrent file" }}</a></b>
+                          <b><a href="https://repo.almalinux.org/almalinux/8.8/isos/x86_64/CHECKSUM">{{ i18n "Download CHECKSUM" }}</a></b>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                             
+                <div class="container-Cloud_Images" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="Cloud_Images" style="position: absolute; top: 934.75px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Cloud Images</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <p>{{ i18n "AlmaLinux provides official images for various cloud providers." }}</p>
+                    <h2 style="margin-top: 60px;">Amazon AWS</h2>
+                    <p style="margin-bottom: 0px;">
+                      {{ i18n "AlmaLinux OS offers official Amazon Machine Images via the AWS Marketplace and Community AMIs." }}
+                      {{ i18n "All AlmaLinux OS AMIs are completely free of charge." }}<br>
+                      {{ i18n "More information about AlmaLinux AWS images is available on the" }}
+                      <a href="https://wiki.almalinux.org/cloud/AWS.html">{{ i18n "AlmaLinux AWS Wiki Page" }}</a>.
+                    </p>
+                    <div class="AL" style="display: flex; justify-content: space-between;">
+                      <div class="itemAl_01" style="width: 588px;">
+                        <h4>AWS Marketplace</h4>
+                        <p>
+                          {{ i18n "The AlmaLinux OS Foundation's" }}
+                          <a href="https://aws.amazon.com/marketplace/seller-profile?id=529d1014-352c-4bed-8b63-6120e4bd3342">{{ i18n "official AlmaLinux OS images" }}</a><br>
+                          {{ i18n "are available via the AWS Marketplace at the links provided:" }}
+                        </p>
+                        <div class="Link-Downloads-Al" style="display: flex;">
+                          <div class="itemAl_01" style="width: 200px;">
+                            <b><a href="https://aws.amazon.com/marketplace/pp/prodview-ykmb6re2rcouy">AlmaLinux OS 9.2</a></b>
+                          </div>
+                          <div class="itemAl_02" style="margin-left: 100px;">
+                            <b><a href="https://aws.amazon.com/marketplace/pp/prodview-mku4y3g4sjrye">AlmaLinux OS 8.8</a></b>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="itemAl_02" style="padding-left: 20px; width: 608px;">
+                        <h4>Community AMIs</h4>
+                        <p>
+                          {{ i18n "A complete list of AlmaLinux Community AMIs can be found on the" }}<br>
+                          <a href="https://wiki.almalinux.org/cloud/AWS.html#community-amis">{{ i18n "AlmaLinux AWS Wiki Page" }}</a>{{ i18n " and as a" }} 
+                          <a href="https://wiki.almalinux.org/ci-data/aws_amis.csv">CSV</a> {{ i18n "file." }}
+                        </p>
+                      </div>
+                    </div>
+                    <h2 style="margin-top: 60px;">Generic Cloud</h2>
+                    <p style="margin-bottom: 0px;">
+                      {{ i18n "The AlmaLinux OS Generic Cloud images are available from our" }} <a href="https://mirrors.almalinux.org/">{{ i18n "mirrors" }}</a> {{ i18n "and from the main AlmaLinux OS repositories:" }}
+                    </p>
+                    <div class="AL" style="display: flex; justify-content: space-between;">
+                      <div class="itemAl_01" style="width: 588px; margin-top: 15px;">
+                        <b><a href="https://repo.almalinux.org/almalinux/9/cloud/x86_64/images/AlmaLinux-9-GenericCloud-9.2-20230513.x86_64.qcow2">AlmaLinux OS 9.2</a></b>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="207d885ca8140e3106098e946cfc04088b0e21f50d24815051520d452eae0a50" readonly>
+                          </div>
+                        </div>
+                        <div class="Link-Downloads-Al" style="display: flex; margin-top: 20px;">
+                          <div class="itemAl_01" style="width: 200px;">
+                            <b><a href="https://mirrors.almalinux.org" style="display:inline-block; margin-right:20px;">{{ i18n "Download from mirrors" }}</a></b>
+                          </div>
+                          <div class="itemAl_02" style="margin-left: 100px;">
+                            <b><a href="https://repo.almalinux.org/almalinux/9/cloud/x86_64/images/CHECKSUM" style="display:inline-block; margin-right:20px;">{{ i18n "Download CHECKSUM" }}</a></b>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="itemAl_02" style="padding-left: 20px; width: 608px; margin-top: 15px;">
+                        <b><a href="https://repo.almalinux.org/almalinux/8/cloud/x86_64/images/AlmaLinux-8-GenericCloud-8.8-20230524.x86_64.qcow2">AlmaLinux OS 8.8 BIOS</a></b>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px; margin-bottom: 20px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="c0ad09255d91288dac590d99c95197d83a2846f1bcbec3f4222fb04265a2a4d7" readonly>
+                          </div>
+                        </div>
+                        <b><a href="https://repo.almalinux.org/almalinux/8/cloud/x86_64/images/AlmaLinux-8-GenericCloud-UEFI-8.8-20230524.x86_64.qcow2">AlmaLinux OS 8.8 UEFI</a></b>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="6933e2436b7c6f5324937ea6699f00297b21f8758d1a51cab80fbb8a8926877f" readonly>
+                          </div>
+                        </div>
+                        <div class="Link-Downloads-Al" style="display: flex; margin-top: 20px;">
+                          <div class="itemAl_01" style="width: 200px;">
+                            <b><a href="https://mirrors.almalinux.org" style="display:inline-block; margin-right:20px;">{{ i18n "Download from mirrors" }}</a></b>
+                          </div>
+                          <div class="itemAl_02" style="margin-left: 100px;">
+                            <b><a href="https://repo.almalinux.org/almalinux/8/cloud/x86_64/images/CHECKSUM" style="display:inline-block; margin-right:20px;">{{ i18n "Download CHECKSUM" }}</a></b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      {{ i18n "More information about AlmaLinux Generic Cloud images and verification guidelines are available on the" }} <a href="https://wiki.almalinux.org/cloud/Generic-cloud.html">{{ i18n "AlmaLinux Generic Cloud Wiki Page" }}</a>.<br>
+                      {{ i18n "You can also find the" }} <a href="https://wiki.almalinux.org/cloud/Generic-cloud-on-local.html">{{ i18n "Using Generic Cloud on a local machine or server" }}</a> {{ i18n "guide there." }}
+                    </p>
+                    <h2 style="margin-top: 60px;">Google Cloud</h2>
+                    <p>
+                      {{ i18n "Official AlmaLinux OS Images for Google Cloud are available via the" }} <a href="https://console.cloud.google.com/marketplace/browse?filter=partner:AlmaLinux">{{ i18n "Google Cloud Marketplace" }}</a>.
+                    </p>
+                    <div class="Link-Downloads-Al" style="display: flex;">
+                      <div class="itemAl_01" style="width: 200px;">
+                        <b><a href="https://console.cloud.google.com/marketplace/product/almalinux-cloud/almalinux-9">AlmaLinux OS 9</a></b>
+                      </div>
+                      <div class="itemAl_02" style="margin-left: 100px;">
+                        <b><a href="https://console.cloud.google.com/marketplace/product/almalinux-cloud/almalinux-8">AlmaLinux OS 8</a></b>
+                      </div>
+                    </div>
+                    <p>
+                      {{ i18n "AlmaLinux OS Images are also available via the" }} <code style="color: #fff">gcloud</code>{{ i18n " CLI. More information on the " }}<a href="https://wiki.almalinux.org/cloud/Google.html">{{ i18n "AlmaLinux Google Cloud Wiki Page" }}</a>
+                    </p>
+                    <h2 style="margin-top: 60px;">Microsoft Azure</h2>
+                    <p>
+                      {{ i18n "AlmaLinux offers images for Azure across all Azure regions via the "}}<a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.almalinux">{{ i18n "Azure Marketplace" }}</a>. {{ i18n "Images are deployable via the marketplace, portal and CLI." }}<br>
+                      {{ i18n "More about AlmaLinux OS images for Azure" }} - <a href="https://wiki.almalinux.org/cloud/Azure.html">{{ i18n "AlmaLinux Azure Wiki Page" }}</a>.<br>
+                      {{ i18n "The" }} <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.almalinux">{{ i18n "official AlmaLinux OS 8 image" }}</a> {{ i18n "is available via the Azure Marketplace at the link provided." }}
+                    </p>
+                    <h2 style="margin-top: 60px;">OpenNebula</h2>
+                    <p style="margin-bottom: 0px;">
+                      {{ i18n "The AlmaLinux OS OpenNebula image are available from our "}}<a href="https://mirrors.almalinux.org/">{{ i18n "mirrors" }}</a> {{ i18n "and from the main AlmaLinux OS repositories:" }}
+                    </p>
+                    <div class="AL" style="display: flex; justify-content: space-between;">
+                      <div class="itemAl_01" style="width: 588px; margin-top: 15px;">
+                        <b><a href="https://repo.almalinux.org/almalinux/9/cloud/x86_64/images/AlmaLinux-9-OpenNebula-9.2-20230513.x86_64.qcow2">AlmaLinux OS 9.2</a></b>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="c3d2ea8fbe1e33415897a9b1351c2cdb9eb56778d11f327ed6966622c830ae09" readonly>
+                          </div>
+                        </div>
+                        <div class="Link-Downloads-Al" style="display: flex; margin-top: 20px;">
+                          <div class="itemAl_01" style="width: 200px;">
+                            <b><a href="https://mirrors.almalinux.org">{{ i18n "Download from mirrors" }}</a></b>
+                          </div>
+                          <div class="itemAl_02" style="margin-left: 100px;">
+                            <b><a href="https://repo.almalinux.org/almalinux/9/cloud/x86_64/images/CHECKSUM">{{ i18n "Download CHECKSUM" }}</a></b>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="itemAl_02" style="padding-left: 20px; width: 608px; margin-top: 15px;">
+                        <b><a href="https://repo.almalinux.org/almalinux/8/cloud/x86_64/images/AlmaLinux-8-OpenNebula-8.8-20230524.x86_64.qcow2">AlmaLinux OS 8.8</a></b>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="cff37f240c3d62cf0930e4e1bfbcf7048e80d36e08eafd4ece7a05eb0306c902" readonly>
+                          </div>
+                        </div>
+                        <div class="Link-Downloads-Al" style="display: flex; margin-top: 20px;">
+                          <div class="itemAl_01" style="width: 200px;">
+                            <b><a href="https://mirrors.almalinux.org">{{ i18n "Download from mirrors" }}</a></b>
+                          </div>
+                          <div class="itemAl_02" style="margin-left: 100px;">
+                            <b><a href="https://repo.almalinux.org/almalinux/8/cloud/x86_64/images/CHECKSUM">{{ i18n "Download CHECKSUM" }}</a></b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      {{ i18n "More information about AlmaLinux OpenNebula images and verification guidelines are available on the "}}<a href="https://wiki.almalinux.org/cloud/OpenNebula.html">{{ i18n "AlmaLinux OpenNebula Wiki Page" }}</a>.
+                    </p>
+                    <h2 style="margin-top: 60px;">Oracle Cloud Infrastructure</h2>
+                    <p>
+                      {{ i18n "AlmaLinux offers images for Oracle Cloud Infrastructure across all OCI regions via the " }}<a href="https://cloudmarketplace.oracle.com/marketplace/en_US/homeLinkPage">{{ i18n "Oracle Cloud Marketplace" }}.</a> {{ i18n "Images are deployable for Regular, Shielded and ARM type instances via the Oracle Cloud Marketplace, Partner Image on Oracle Cloud Infrastructure Console and " }}<a href="https://docs.oracle.com/en-us/iaas/Content/API/Concepts/cliconcepts.htm">{{ i18n "OCI CLI" }}</a>.<br>
+                      {{ i18n "The official AlmaLinux OS images are available on "}}<a href="https://cloudmarketplace.oracle.com/marketplace/en_US/partners/125035508">{{ i18n "Oracle Cloud Marketplace" }}</a> {{ i18n "at the links provided:" }}
+                    </p>
+                    <div class="AL" style="display: flex;">
+                      <div class="itemAl_01" style="width: 200px;">
+                        <b><a href="https://cloudmarketplace.oracle.com/marketplace/en_US/listing/127985411/">AlmaLinux OS 9.2</a></b>
+                      </div>
+                      <div class="itemAl_02" style="margin-left: 100px;">
+                        <b><a href="https://cloudmarketplace.oracle.com/marketplace/en_US/listing/125544666/">AlmaLinux OS 8.8</a></b>
+                      </div>
+                    </div>
+                    <p>
+                      {{ i18n "More information about AlmaLinux Oracle Cloud Infrastructure images is available on the " }}<a href="https://wiki.almalinux.org/cloud/OCI.html">{{ i18n "AlmaLinux Oracle Cloud Infrastructure Wiki Page" }}</a>.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="container-Container_Images" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="Container_Images" style="position: absolute; top: 2645.05px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Container Images</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <p>
+                      {{ i18n "AlmaLinux provides official OCI, Docker and four fully compatible alternatives for the Red Hat Universal Base Images (UBI)." }}
+                    </p>
+                    <div class="AL" style="display: flex;">
+                      <div class="itemAl_01" style="width: 200px;">
+                        <b><a href="https://hub.docker.com/_/almalinux">{{ i18n "Get Docker Image" }}</a></b>
+                      </div>
+                      <div class="itemAl_02" style="margin-left: 100px;">
+                        <b><a href="https://quay.io/organization/almalinuxorg">{{ i18n "Get OCI Image from Quay.io" }}</a></b>
+                      </div>
+                    </div>
+                    <h4>{{ i18n "Official Platform Images:" }}</h4>
+                    <div class="AL" style="display: flex; justify-content: space-between; width: 569px;"> 
+                      <div class="itemAl_01" style="display: flex; flex-direction: column;">
+                        <b>{{ i18n "Image" }}</b>
+                        <p>Default (Platform)</p>
+                        <p>Minimal (Platform)</p>
+                      </div>
+                      <div class="itemAl_02" style="padding-left: 20px; display: flex; flex-direction: column;">
+                        <b>{{ i18n "Container tag" }}</b>
+                        <p><code style="color: #fff">almalinux:latest</code></p>
+                        <p><code style="color: #fff">almalinux:minimal</code></p>
+                      </div>
+                        <div class="itemAl_03" style="padding-left: 20px; display: flex; flex-direction: column;">
+                        <b>{{ i18n "Link to the repository" }}</b>
+                        <p><a href="https://hub.docker.com/_/almalinux">hub.docker.com/_/almalinux</a></p>
+                        <p><a href="https://hub.docker.com/_/almalinux">hub.docker.com/_/almalinux</a></p>
+                      </div>
+                    </div>
+                    <h4 style="margin: 0px;">{{ i18n "AlmaLinux OS UBI-alternatives:" }}</h4>
+                    <div class="container-AL" style="display: flex; justify-content: space-between;">
+                      <div class="container-ALOS9">
+                        <h5>AlmaLinux OS 9</h5>
+                        <div class="container-AlmaLinuxOS9" style="display: flex; justify-content: space-between; width: 575px;">
+                          <div class="container-itemAL-01" style="display: flex; flex-direction: column;">
+                            <b>{{ i18n "Image" }}</b>
+                            <div>
+                              <p style="margin-bottom: 33px;">Minimal</p>
+                              <p style="margin-bottom: 33px;">Base</p>
+                              <p style="margin-bottom: 33px;">Init</p>
+                              <p style="margin-bottom: 33px;">Micro</p>
+                            </div>
+                          </div>
+                          <div class="container-itemAL-02" style="display: flex; flex-direction: column; padding-left: 20px;">
+                            <b>{{ i18n "Container tag" }}</b>
+                            <div>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/9-minimal</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/9-base</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/9-init</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/9-micro</code></p>
+                            </div>
+                          </div>
+                          <div class="container-itemAL-03" style="display: flex; flex-direction: column; padding-left: 20px;">
+                            <b>{{ i18n "Link to the repository" }}</b>
+                            <div>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/9-minimal">quay.io/repository/almalinux/9-minimal</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/9-minimal">hub.docker.com/r/almalinux/9-minimal</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/9-base">quay.io/repository/almalinuxorg/9-base</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/9-base">hub.docker.com/r/almalinux/9-base</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/9-init">quay.io/repository/almalinux/9-init</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/9-init">hub.docker.com/r/almalinux/9-init</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/9-micro">quay.io/repository/almalinux/9-micro</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/9-micro">hub.docker.com/r/almalinux/9-micro</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="container-ALOS8" style="padding-left: 20px;">
+                        <h5>AlmaLinux OS 8</h5>
+                        <div class="container-AlmaLinuxOS8" style="display: flex; justify-content: space-between; width: 575px;">
+                          <div class="container-itemAL-01" style="display: flex; flex-direction: column;">
+                            <b>{{ i18n "Image" }}</b>
+                            <div>
+                              <p style="margin-bottom: 33px;">Minimal</p>
+                              <p style="margin-bottom: 33px;">Base</p>
+                              <p style="margin-bottom: 33px;">Init</p>
+                              <p style="margin-bottom: 33px;">Micro</p>
+                            </div>
+                          </div>
+                          <div class="container-itemAL-02" style="display: flex; flex-direction: column; padding-left: 20px;">
+                            <b>{{ i18n "Container tag" }}</b>
+                            <div>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/8-minimal</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/8-base</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/8-init</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/8-micro</code></p>
+                            </div>
+                          </div>
+                          <div class="container-itemAL-03" style="display: flex; flex-direction: column; padding-left: 20px;">
+                            <b>{{ i18n "Link to the repository" }}</b>
+                            <div>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/8-minimal">quay.io/repository/almalinux/8-minimal</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/8-minimal">hub.docker.com/r/almalinux/8-minimal</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/8-base">quay.io/repository/almalinuxorg/8-base</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/8-base">hub.docker.com/r/almalinux/8-base</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/8-init">quay.io/repository/almalinux/8-init</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/8-init">hub.docker.com/r/almalinux/8-init</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/8-micro">quay.io/repository/almalinux/8-micro</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/8-micro">hub.docker.com/r/almalinux/8-micro</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container-Live_Media" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="Live_Media" style="position: absolute; top: 3331.88px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Live Media</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <p>
+                      {{ i18n "AlmaLinux builds Live Media images for GNOME, GNOME Mini, KDE, XFCE and MATE options." }}<br>
+                      {{ i18n "Supported AlmaLinux OS versions:" }}
+                    </p>
+                    <div class="AL" style="display: flex;">
+                      <div class="itemAl_01" style="width: 200px;">
+                        <b><a href="https://repo.almalinux.org/almalinux/9/live/x86_64/">AlmaLinux OS 9</a></b>
+                      </div>
+                      <div class="itemAl_02"  style="margin-left: 100px;">
+                        <b><a href="https://repo.almalinux.org/almalinux/8/live/x86_64/">AlmaLinux OS 8</a></b>
+                      </div>
+                    </div>
+                    <p style="margin-bottom: 0px;">
+                      {{ i18n "The guide on how to use Live Media images can be found on the " }}<a href="https://wiki.almalinux.org/LiveMedia.html">{{ i18n "AlmaLinux Live Media Wiki Page" }}</a>.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="container-Vagrant_Boxes" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="Vagrant_Boxes" style="position: absolute; top: 3566.27px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Vagrant Boxes</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <p>
+                      {{ i18n "AlmaLinux provides official AlmaLinux OS 8 and AlmaLinux OS 9 images for Vagrant:" }}
+                    </p>
+                    <ul>
+                      <li>Libvirt</li>
+                      <li>VirtualBox</li>
+                      <li>Hyper-V</li>
+                      <li>VMWare</li>
+                      <li>Parallels </li>
+                    </ul>
+                    <p style="margin-bottom: 0px;">
+                      {{ i18n "You can get AlmaLinux OS images on Vagrant Cloud at the link provided: " }}<a href="https://app.vagrantup.com/almalinux">app.vagrantup.com/almalinux</a>.
+                    </p>
+                  </div>
+                </div>  
+
+                <div class="container-LXD-LXC" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="LXD-LXC" style="position: absolute; top: 3872.66px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">LXD/LXC</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <p>
+                      {{ i18n "AlmaLinux images are available for LXC/LXD." }}<br>
+                      {{ i18n "Supported AlmaLinux OS versions:" }} 
+                    </p>
+                    <div class="AL" style="display: flex;">
+                      <div class="itemAl_01" style="width: 200px;">
+                        <b><a href="https://images.linuxcontainers.org/images/almalinux/9/amd64/">AlmaLinux OS 9</a></b>
+                      </div>
+                      <div class="itemAl_02" style="margin-left: 100px;">
+                        <b><a href="https://images.linuxcontainers.org/images/almalinux/8/amd64/">AlmaLinux OS 8</a></b>
+                      </div>
+                    </div>
+                    <p style="margin-bottom: 0px;">
+                      {{ i18n "You can get official AlmaLinux OS images at the link provided: " }}<a href="https://images.linuxcontainers.org">images.linuxcontainers.org</a>.
+                    </p>  
+                  </div>
+                </div>
+
+                <div class="container-WSL" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="WSL" style="position: absolute; top: 3872.66px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">WSL</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <p>
+                      {{ i18n "Windows Subsystem for Linux (WSL) is designed as an integration between Windows and Linux. You can run the AlmaLinux terminal environment on a Windows machine." }}<br>
+                      {{ i18n "Supported AlmaLinux OS versions:" }}
+                    </p>
+                    <div class="AL" style="display: flex;">
+                      <div class="itemAl_01" style="width: 200px;">
+                        <b><a href="https://apps.microsoft.com/store/detail/almalinux-9/9P5RWLM70SN9">AlmaLinux OS 9</a></b>
+                      </div>
+                      <div class="itemAl_02" style="margin-left: 100px;">
+                        <b><a href="https://apps.microsoft.com/store/detail/almalinux-8-wsl/9NMD96XJJ19F">AlmaLinux OS 8</a></b>
+                      </div>
+                    </div>
+                    <p style="margin-bottom: 0px;">
+                      {{ i18n "More details and guidance steps can be found on the " }} <a href="https://wiki.almalinux.org/documentation/wsl.html">{{ i18n "AlmaLinux WSL Wiki Page" }}</a>.
+                    </p>  
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+                    
+          <div id="flush-collapse-2" class="accordion-collapse collapse" aria-labelledby="flush-heading-2" data-parent="#accordionISOs">
+            <div class="items__01" style="display: flex; flex-direction: column;">
+              <div class="accordion-body" style="margin-top: 0px; padding: 15px 0 0 0;">
+                <div class="container-all-options mb-3" style="display: flex; justify-content: space-between; padding: 0px 20px;">
+                  <a href="#ISO_Images-2">     
+                    <img loading="lazy" class="al-index-community-icon img" src="/images/iso-icon-F.svg" style="width: 40px; height:40px" alt="ISO Image">
+                  </a>
+                  <a href="#Cloud_Images-2">
+                    <img loading="lazy" class="al-index-community-icon img" src="/images/cloud-icon-F.svg" style="width: 40px; height:40px" alt="Cloud Image">
+                  </a>
+                  <a href="#Container_Images-2">
+                    <img loading="lazy" class="al-index-community-icon img" src="/images/container-icon-F.svg" style="width: 40px; height:40px" alt="Container Image">
+                  </a>
+                  <a href="#Raspberry_Pi-2">
+                    <img loading="lazy" class="al-index-community-icon img" src="/images/raspberry-pi-icon-F.svg" style="width: 40px; height:40px" alt="Raspberry Image">
+                  </a>
+                  <a href="#Vagrant_Boxes-2">
+                    <img loading="lazy" class="al-index-community-icon img" src="/images/vagrant-icon-F1.svg" style="width: 40px; height:40px" alt="Vagrant Image">
+                  </a>
+                  <a href="#LXD-LXC-2">
+                    <img loading="lazy" class="al-index-community-icon img" src="/images/lxd-lcx-icon-F.svg" style="width: 40px; height:40px" alt="LXD-LXC Image">
+                  </a>
+                  <a href="#WSL-2">
+                    <img loading="lazy" class="al-index-community-icon img" src="/images/wsl-icon-F.svg" style="width: 40px; height:40px" alt="WSL Image">
+                  </a>  
+                </div>
+
+                <div class="container-ISO_Images" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="ISO_Images-2" style="position: absolute; top: 294px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">ISO Images</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <section>
+                      <p>{{ i18n "Each supported architecture has various installation images available:"}}</p>
+                      <p>
+                        <b>{{ i18n "DVD" }}</b>
+                        - {{ i18n "effortless installation with all packages included, no additional repositories required." }}
+                      </p>
+                      <p>
+                        <b>{{ i18n "Boot" }}</b>
+                        - {{ i18n "a single network installation CD image that downloads packages over the Internet." }}
+                      </p>
+                      <p>
+                        <b>{{ i18n "Minimal" }}</b>
+                        - {{ i18n "a minimal self-containing DVD image that makes possible offline installation." }}
+                      </p>
+                    </section>
+                    <div class="AL" style="display: flex; justify-content: space-between;">
+                      <div class="itemAl_01" style="width: 588px;">
+                        <h3>AlmaLinux OS 9</h3>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/9.2/isos/aarch64/AlmaLinux-9.2-aarch64-dvd.iso">AlmaLinux OS 9.2 DVD ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="7182429cf270eedd6cdf3119a9487a04ab7a4238b2ca42511903d8e044bdae14" readonly>
+                          </div>
+                        </div>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/9.2/isos/aarch64/AlmaLinux-9.2-aarch64-boot.iso">AlmaLinux OS 9.2 Boot ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="13f579bc653d1d182b36b85e1762e313fc6bb9827428f0d43115e141e3c38833" readonly>
+                          </div>
+                        </div>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/9.2/isos/aarch64/AlmaLinux-9.2-aarch64-minimal.iso">AlmaLinux OS 9.2 Minimal ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="c49ee0729fff735ec39c0bf6400ccd016422ed3d03b35c6f4c89d568058c2f23" readonly>
+                          </div>
+                        </div>
+                        <div class="Link-Downloads-OS9" style="display: flex; justify-content: space-between; margin-top: 20px;">
+                          <b><a href="https://mirrors.almalinux.org/isos/aarch64/9.2.html">{{ i18n "Download ISOs from mirrors" }}</a></b>
+                          <b><a href="https://repo.almalinux.org/almalinux/9.2/isos/aarch64/AlmaLinux-9.2-aarch64.torrent">{{ i18n "Download .torrent file" }}</a></b>
+                          <b><a href="https://repo.almalinux.org/almalinux/9.2/isos/aarch64/CHECKSUM">{{ i18n "Download CHECKSUM" }}</a></b>
+                        </div>
+                      </div>
+                      <div class="itemAl_02" style="padding-left: 20px; width: 608px;">
+                        <h3>AlmaLinux OS 8</h3>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/8.8/isos/aarch64/AlmaLinux-8.8-aarch64-dvd.iso">AlmaLinux OS 8.8 DVD ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="d5bbd4228d3bd431e4c29f6965376078ef0d925a9d1b68a00c085c87cee58ad0" readonly>
+                          </div>
+                        </div>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/8.8/isos/aarch64/AlmaLinux-8.8-aarch64-boot.iso">AlmaLinux OS 8.8 Boot ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="9317cecfd635d322bf1555499ab992217c9e044b8018c3c0c06d2246cc95853c" readonly>
+                          </div>
+                        </div>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/8.8/isos/aarch64/AlmaLinux-8.8-aarch64-minimal.iso">AlmaLinux OS 8.8 Minimal ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="1f1b6110b192469249a2535a51c05bb4f390d61dc3ccbdf3265ded77faf4bacd" readonly>
+                          </div>
+                        </div>
+                        <div class="Link-Downloads-OS8" style="display: flex; justify-content: space-between; margin-top: 20px;">
+                          <b><a href="https://mirrors.almalinux.org/isos/aarch64/8.8.html" style="display:inline-block;">{{ i18n "Download ISOs from mirrors" }}</a></b>
+                          <b><a href="https://repo.almalinux.org/almalinux/8.8/isos/aarch64/AlmaLinux-8.8-aarch64.torrent" style="display:inline-block;">{{ i18n "Download .torrent file" }}</a></b>
+                          <b><a href="https://repo.almalinux.org/almalinux/8.8/isos/aarch64/CHECKSUM" style="display:inline-block;">{{ i18n "Download CHECKSUM" }}</a></b>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  
+                <div class="container-Cloud_Images" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="Cloud_Images-2" style="position: absolute; top: 934.75px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Cloud Images</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <p>{{ i18n "AlmaLinux provides official images for various cloud providers." }}</p>
+                    <h2 style="margin-top: 60px;">Amazon AWS</h2>
+                    <p style="margin-bottom: 0px;">
+                      {{ i18n "AlmaLinux OS offers official Amazon Machine Images via the AWS Marketplace and Community AMIs." }}
+                      {{ i18n "All AlmaLinux OS AMIs are completely free of charge." }}<br>
+                      {{ i18n "More information about AlmaLinux AWS images is available on the" }}
+                      <a href="https://wiki.almalinux.org/cloud/AWS.html">{{ i18n "AlmaLinux AWS Wiki Page" }}</a>.
+                    </p>
+                    <div class="AL" style="display: flex; justify-content: space-between;">
+                      <div class="itemAl_01" style="width: 588px;">
+                        <h4>AWS Marketplace</h4>
+                        <p>
+                          {{ i18n "The AlmaLinux OS Foundation's" }}
+                          <a href="https://aws.amazon.com/marketplace/seller-profile?id=529d1014-352c-4bed-8b63-6120e4bd3342">{{ i18n "official AlmaLinux OS images" }}</a><br>
+                          {{ i18n "are available via the AWS Marketplace at the links provided:" }}
+                        </p>
+                        <div class="Link-Downloads-Al" style="display: flex;">
+                          <div class="itemAl_01" style="width: 200px;">
+                            <b><a href="https://aws.amazon.com/marketplace/pp/prodview-pvttztrj2uzjk">AlmaLinux OS 9.2</a></b>
+                          </div>
+                          <div class="itemAl_02" style="margin-left: 100px;">
+                            <b><a href="https://aws.amazon.com/marketplace/pp/prodview-zgsymdwitnxmm">AlmaLinux OS 8.8</a></b>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="itemAl_02" style="padding-left: 20px; width: 608px;">
+                        <h4>Community AMIs</h4>
+                        <p>
+                          {{ i18n "A complete list of AlmaLinux Community AMIs can be found on the" }}<br>
+                          <a href="https://wiki.almalinux.org/cloud/AWS.html#community-amis">{{ i18n "AlmaLinux AWS Wiki Page" }}</a>{{ i18n " and as a" }} 
+                          <a href="https://wiki.almalinux.org/ci-data/aws_amis.csv">CSV</a> {{ i18n "file." }}
+                        </p>
+                      </div>
+                    </div>
+                    <h2 style="margin-top: 60px;">Generic Cloud</h2>
+                    <p style="margin-bottom: 0px;">
+                      {{ i18n "The AlmaLinux OS Generic Cloud images are available from our" }} <a href="https://mirrors.almalinux.org/">{{ i18n "mirrors" }}</a> {{ i18n "and from the main AlmaLinux OS repositories:" }}
+                    </p>
+                    <div class="AL" style="display: flex; justify-content: space-between;">
+                      <div class="itemAl_01" style="width: 588px; margin-top: 15px;">
+                        <b><a href="https://repo.almalinux.org/almalinux/9/cloud/aarch64/images/AlmaLinux-9-GenericCloud-9.2-20230513.aarch64.qcow2">AlmaLinux OS 9.2</a></b>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="a4cbd35010ae0ce7437b2855e5f6f6f03124784ca2aaa5c111563f64e03301e4" readonly>
+                          </div>
+                        </div>
+                        <div class="Link-Downloads-Al" style="display: flex; margin-top: 20px;">
+                          <div class="itemAl_01" style="width: 200px;">
+                            <b><a href="https://mirrors.almalinux.org" style="display:inline-block; margin-right:20px;">{{ i18n "Download from mirrors" }}</a></b>
+                          </div>
+                          <div class="itemAl_02" style="margin-left: 100px;">
+                            <b><a href="https://repo.almalinux.org/almalinux/9/cloud/aarch64/images/CHECKSUM" style="display:inline-block; margin-right:20px;">{{ i18n "Download CHECKSUM" }}</a></b>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="itemAl_02" style="padding-left: 20px; width: 608px; margin-top: 15px;">
+                        <b><a href="https://repo.almalinux.org/almalinux/8/cloud/aarch64/images/AlmaLinux-8-GenericCloud-8.8-20230524.aarch64.qcow2">AlmaLinux OS 8.7</a></b>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="ea6058be50597b7a54904a47c0b4a83eb4bff040301376ac828a6ac0932399a0" readonly>
+                          </div>
+                        </div>
+                        <div class="Link-Downloads-Al" style="display: flex; margin-top: 20px;">
+                          <div class="itemAl_01" style="width: 200px;">
+                            <b><a href="https://mirrors.almalinux.org" style="display:inline-block; margin-right:20px;">{{ i18n "Download from mirrors" }}</a></b>
+                          </div>
+                          <div class="itemAl_02" style="margin-left: 100px;">
+                            <b><a href="https://repo.almalinux.org/almalinux/8/cloud/aarch64/images/CHECKSUM" style="display:inline-block; margin-right:20px;">{{ i18n "Download CHECKSUM" }}</a></b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      {{ i18n "More information about AlmaLinux Generic Cloud images and verification guidelines are available on the" }} <a href="https://wiki.almalinux.org/cloud/Generic-cloud.html">{{ i18n "AlmaLinux Generic Cloud Wiki Page" }}</a>.<br>
+                      {{ i18n "You can also find the" }} <a href="https://wiki.almalinux.org/cloud/Generic-cloud-on-local.html">{{ i18n "Using Generic Cloud on a local machine or server" }}</a> {{ i18n "guide there." }}
+                    </p>
+                    <h2 style="margin-top: 60px;">OpenNebula</h2>
+                    <p style="margin-bottom: 0px;">
+                      {{ i18n "The AlmaLinux OS OpenNebula image are available from our " }}<a href="https://mirrors.almalinux.org/">{{ i18n "mirrors" }}</a> {{ i18n "and from the main AlmaLinux OS repositories:" }}
+                    </p>
+                    <div class="AL" style="display: flex; justify-content: space-between;">
+                      <div class="itemAl_01" style="width: 588px; margin-top: 15px;">
+                        <b><a href="https://repo.almalinux.org/almalinux/9/cloud/aarch64/images/AlmaLinux-9-OpenNebula-9.2-20230513.aarch64.qcow2">AlmaLinux OS 9.2</a></b>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="5b399efe5352b521242ede61f992ed030496b5ceefd069976c1e3bead69e9c19" readonly>
+                          </div>
+                        </div>
+                        <div class="Link-Downloads-Al" style="display: flex; margin-top: 20px;">
+                          <div class="itemAl_01" style="width: 200px;">
+                            <b><a href="https://mirrors.almalinux.org">{{ i18n "Download from mirrors" }}</a></b>
+                          </div>
+                          <div class="itemAl_02" style="margin-left: 100px;">
+                            <b><a href="https://repo.almalinux.org/almalinux/9/cloud/aarch64/images/CHECKSUM">{{ i18n "Download CHECKSUM" }}</a></b>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="itemAl_02" style="padding-left: 20px; width: 608px; margin-top: 15px;">
+                        <b><a href="https://repo.almalinux.org/almalinux/8/cloud/aarch64/images/AlmaLinux-8-OpenNebula-8.8-20230524.aarch64.qcow2">AlmaLinux OS 8.8</a></b>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="bb2e5253833de22a405f08992ab23ffbaa9cc27a5d731d60767831c21a89aac" readonly>
+                          </div>
+                        </div>
+                        <div class="Link-Downloads-Al" style="display: flex; margin-top: 20px;">
+                          <div class="itemAl_01" style="width: 200px;">
+                            <b><a href="https://mirrors.almalinux.org">{{ i18n "Download from mirrors" }}</a></b>
+                          </div>
+                          <div class="itemAl_02" style="margin-left: 100px;">
+                            <b><a href="https://repo.almalinux.org/almalinux/8/cloud/aarch64/images/CHECKSUM">{{ i18n "Download CHECKSUM" }}</a></b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      {{ i18n "More information about AlmaLinux OpenNebula images and verification guidelines are available on the " }}<a href="https://wiki.almalinux.org/cloud/OpenNebula.html">{{ i18n "AlmaLinux OpenNebula Wiki Page" }}</a>.
+                    </p>
+                    <h2 style="margin-top: 60px;">Oracle Cloud Infrastructure</h2>
+                    <p>
+                      {{ i18n "AlmaLinux offers images for Oracle Cloud Infrastructure across all OCI regions via the " }}<a href="https://cloudmarketplace.oracle.com/marketplace/en_US/homeLinkPage">{{ i18n "Oracle Cloud Marketplace" }}.</a> {{ i18n "Images are deployable for Regular, Shielded and ARM type instances via the Oracle Cloud Marketplace, Partner Image on Oracle Cloud Infrastructure Console and " }}<a href="https://docs.oracle.com/en-us/iaas/Content/API/Concepts/cliconcepts.htm">{{ i18n "OCI CLI" }}</a>.<br>
+                      {{ i18n "The official AlmaLinux OS images are available on " }}<a href="https://cloudmarketplace.oracle.com/marketplace/en_US/partners/125035508">{{ i18n "Oracle Cloud Marketplace" }}</a> {{ i18n "at the links provided:" }}
+                    </p>
+                    <div class="AL" style="display: flex;">
+                      <div class="itemAl_01" style="width: 200px;">
+                        <b><a href="https://cloudmarketplace.oracle.com/marketplace/en_US/listing/127985893">AlmaLinux OS 9.2</a></b>
+                      </div>
+                      <div class="itemAl_02" style="margin-left: 100px;">
+                        <b><a href="https://cloudmarketplace.oracle.com/marketplace/en_US/listing/125567282">AlmaLinux OS 8.8</a></b>
+                      </div>
+                    </div>
+                    <p>
+                      {{ i18n "More information about AlmaLinux Oracle Cloud Infrastructure images is available on the " }}<a href="https://wiki.almalinux.org/cloud/OCI.html">{{ i18n "AlmaLinux Oracle Cloud Infrastructure Wiki Page" }}</a>.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="container-Container_Images" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="Container_Images-2" style="position: absolute; top: 2200.07px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Container Images</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <p>
+                      {{ i18n "AlmaLinux provides official OCI, Docker and four fully compatible alternatives for the Red Hat Universal Base Images (UBI)." }}
+                    </p>
+                    <div class="AL" style="display: flex;">
+                      <div class="itemAl_01" style="width: 200px;">
+                        <b><a href="https://hub.docker.com/_/almalinux">{{ i18n "Get Docker Image" }}</a></b>
+                      </div>
+                      <div class="itemAl_02" style="margin-left: 100px;">
+                        <b><a href="https://quay.io/organization/almalinuxorg">{{ i18n "Get OCI Image from Quay.io" }}</a></b>
+                      </div>
+                    </div>
+                    <h4>{{ i18n "Official Platform Images:" }}</h4>
+                    <div class="AL" style="display: flex; justify-content: space-between; width: 569px;"> 
+                      <div class="itemAl_01" style="display: flex; flex-direction: column;">
+                        <b>{{ i18n "Image" }}</b>
+                        <p>Default (Platform)</p>
+                        <p>Minimal (Platform)</p>
+                      </div>
+                      <div class="itemAl_02" style="padding-left: 20px; display: flex; flex-direction: column;">
+                        <b>{{ i18n "Container tag" }}</b>
+                        <p><code style="color: #fff">almalinux:latest</code></p>
+                        <p><code style="color: #fff">almalinux:minimal</code></p>
+                      </div>
+                        <div class="itemAl_03" style="padding-left: 20px; display: flex; flex-direction: column;">
+                        <b>{{ i18n "Link to the repository" }}</b>
+                        <p><a href="https://hub.docker.com/_/almalinux">hub.docker.com/_/almalinux</a></p>
+                        <p><a href="https://hub.docker.com/_/almalinux">hub.docker.com/_/almalinux</a></p>
+                      </div>
+                    </div>
+                    <h4 style="margin: 0px;">{{ i18n "AlmaLinux OS UBI-alternatives:" }}</h4>
+                    <div class="container-AL" style="display: flex; justify-content: space-between;">
+                      <div class="container-ALOS9">
+                        <h5>AlmaLinux OS 9</h5>
+                        <div class="container-AlmaLinuxOS9" style="display: flex; justify-content: space-between; width: 575px;">
+                          <div class="container-itemAL-01" style="display: flex; flex-direction: column;">
+                            <b>Image</b>
+                            <div>
+                              <p style="margin-bottom: 33px;">Minimal</p>
+                              <p style="margin-bottom: 33px;">Base</p>
+                              <p style="margin-bottom: 33px;">Init</p>
+                              <p style="margin-bottom: 33px;">Micro</p>
+                            </div>
+                          </div>
+                          <div class="container-itemAL-02" style="display: flex; flex-direction: column; padding-left: 20px;">
+                            <b>{{ i18n "Container tag" }}</b>
+                            <div>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/9-minimal</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/9-base</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/9-init</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/9-micro</code></p>
+                            </div>
+                          </div>
+                          <div class="container-itemAL-03" style="display: flex; flex-direction: column; padding-left: 20px;">
+                            <b>{{ i18n "Link to the repository" }}</b>
+                            <div>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/9-minimal">quay.io/repository/almalinux/9-minimal</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/9-minimal">hub.docker.com/r/almalinux/9-minimal</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/9-base">quay.io/repository/almalinuxorg/9-base</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/9-base">hub.docker.com/r/almalinux/9-base</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/9-init">quay.io/repository/almalinux/9-init</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/9-init">hub.docker.com/r/almalinux/9-init</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/9-micro">quay.io/repository/almalinux/9-micro</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/9-micro">hub.docker.com/r/almalinux/9-micro</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="container-ALOS8" style="padding-left: 20px;">
+                        <h5>AlmaLinux OS 8</h5>
+                        <div class="container-AlmaLinuxOS8" style="display: flex; justify-content: space-between; width: 575px;">
+                          <div class="container-itemAL-01" style="display: flex; flex-direction: column;">
+                            <b>{{ i18n "Image" }}</b>
+                            <div>
+                              <p style="margin-bottom: 33px;">Minimal</p>
+                              <p style="margin-bottom: 33px;">Base</p>
+                              <p style="margin-bottom: 33px;">Init</p>
+                              <p style="margin-bottom: 33px;">Micro</p>
+                            </div>
+                          </div>
+                          <div class="container-itemAL-02" style="display: flex; flex-direction: column; padding-left: 20px;">
+                            <b>{{ i18n "Container tag" }}</b>
+                            <div>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/8-minimal</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/8-base</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/8-init</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/8-micro</code></p>
+                            </div>
+                          </div>
+                          <div class="container-itemAL-03" style="display: flex; flex-direction: column; padding-left: 20px;">
+                            <b>{{ i18n "Link to the repository" }}</b>
+                            <div>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/8-minimal">quay.io/repository/almalinux/8-minimal</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/8-minimal">hub.docker.com/r/almalinux/8-minimal</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/8-base">quay.io/repository/almalinuxorg/8-base</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/8-base">hub.docker.com/r/almalinux/8-base</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/8-init">quay.io/repository/almalinux/8-init</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/8-init">hub.docker.com/r/almalinux/8-init</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/8-micro">quay.io/repository/almalinux/8-micro</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/8-micro">hub.docker.com/r/almalinux/8-micro</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container-Raspberry_Pi" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="Raspberry_Pi-2" style="position: absolute; top: 2887.53px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Raspberry Pi</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <p>
+                      {{ i18n "AlmaLinux builds standard Raspberry Pi images and images with GNOME desktop environment." }}<br>
+                      {{ i18n "Supported AlmaLinux OS versions:" }}
+                    </p>
+                    <div class="AL" style="display: flex;">
+                      <div class="itemAl_01" style="width: 200px;">
+                        <b><a href="https://repo.almalinux.org/rpi/9/images/">AlmaLinux OS 9</a></b>
+                      </div>
+                      <div class="itemAl_02"  style="margin-left: 100px;">
+                        <b><a href="https://repo.almalinux.org/rpi/images/">AlmaLinux OS 8</a></b>
+                      </div>
+                    </div>
+                    <p style="margin-bottom: 0px;">
+                      {{ i18n "More details can be found on the" }} 
+                      <a href="https://wiki.almalinux.org/documentation/raspberry-pi.html"> {{ i18n "AlmaLinux Raspberry Pi Wiki Page" }}</a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="container-Vagrant_Boxes" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="Vagrant_Boxes-2" style="position: absolute; top: 3121.92px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Vagrant Boxes</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <p>
+                      {{ i18n "AlmaLinux provides official AlmaLinux OS 9 images for Vagrant:" }}
+                    </p>
+                    <ul>
+                      <li>VMWare</li>
+                      <li>Parallels </li>
+                    </ul>
+                    <p style="margin-bottom: 0px;">
+                      {{ i18n "You can get AlmaLinux OS images on Vagrant Cloud at the link provided: " }}<a href="https://app.vagrantup.com/almalinux">app.vagrantup.com/almalinux</a>.
+                    </p>
+                  </div>
+                </div>  
+
+                <div class="container-LXD-LXC" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="LXD-LXC-2" style="position: absolute; top: 3446.41px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">LXD/LXC</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <p>
+                      {{ i18n "AlmaLinux images are available for LXC/LXD." }}<br>
+                      {{ i18n "Supported AlmaLinux OS versions:" }}
+                    </p>
+                    <div class="AL" style="display: flex;">
+                      <div class="itemAl_01" style="width: 200px;">
+                        <b><a href="https://images.linuxcontainers.org/images/almalinux/9/arm64/">AlmaLinux OS 9</a></b>
+                      </div>
+                      <div class="itemAl_02" style="margin-left: 100px;">
+                        <b><a href="https://images.linuxcontainers.org/images/almalinux/8/arm64/">AlmaLinux OS 8</a></b>
+                      </div>
+                    </div>
+                    <p style="margin-bottom: 0px;">
+                      {{ i18n "You can get official AlmaLinux OS images at the link provided: " }}<a href="https://images.linuxcontainers.org">images.linuxcontainers.org</a>.
+                    </p>  
+                  </div>
+                </div>
+
+                <div class="container-WSL" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="WSL-2" style="position: absolute; top: 3446.41px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">WSL</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <p>
+                      {{ i18n "Windows Subsystem for Linux (WSL) is designed as an integration between Windows and Linux. You can run the AlmaLinux terminal environment on a Windows machine." }}<br>
+                      {{ i18n "Supported AlmaLinux OS versions:" }}
+                    </p>
+                    <div class="AL" style="display: flex;">
+                      <div class="itemAl_01" style="width: 200px;">
+                        <b><a href="https://apps.microsoft.com/store/detail/almalinux-9/9P5RWLM70SN9">AlmaLinux OS 9</a></b>
+                      </div>
+                      <div class="itemAl_02" style="margin-left: 100px;">
+                        <b><a href="https://apps.microsoft.com/store/detail/almalinux-8-wsl/9NMD96XJJ19F">AlmaLinux OS 8</a></b>
+                      </div>
+                    </div>
+                    <p style="margin-bottom: 0px;">
+                      {{ i18n "More details and guidance steps can be found on the " }}<a href="https://wiki.almalinux.org/documentation/wsl.html">{{ i18n "AlmaLinux WSL Wiki Page" }}</a>.
+                    </p>  
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+                    
+          <div id="flush-collapse-3" class="accordion-collapse collapse" aria-labelledby="flush-heading-3" data-parent="#accordionISOs">
+            <div class="items__01" style="display: flex; flex-direction: column;">
+              <div class="accordion-body" style="margin-top: 0px; padding: 15px 0 0 0;">
+                <div class="container-all-options mb-3" style="display: flex; justify-content: space-between; padding: 0px 20px;">
+                  <a href="#ISO_Images-3">     
+                    <img loading="lazy" class="al-index-community-icon img" src="/images/iso-icon-F.svg" style="width: 40px; height:40px" alt="ISO Image">
+                  </a>
+                  <a href="#Cloud_Images-3">
+                    <img loading="lazy" class="al-index-community-icon img" src="/images/cloud-icon-F.svg" style="width: 40px; height:40px" alt="Cloud Image">
+                  </a>
+                  <a href="#Container_Images-3">
+                    <img loading="lazy" class="al-index-community-icon img" src="/images/container-icon-F.svg" style="width: 40px; height:40px" alt="Container Image">
+                  </a>
+                </div>
+
+                <div class="container-ISO_Images" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="ISO_Images-3" style="position: absolute; top: 294px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">ISO Images</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <section>
+                      <p>{{ i18n "Each supported architecture has various installation images available:"}}</p>
+                      <p>
+                        <b>{{ i18n "DVD" }}</b>
+                        - {{ i18n "effortless installation with all packages included, no additional repositories required." }}
+                      </p>
+                      <p>
+                        <b>{{ i18n "Boot" }}</b>
+                        - {{ i18n "a single network installation CD image that downloads packages over the Internet." }}
+                      </p>
+                      <p>
+                        <b>{{ i18n "Minimal" }}</b>
+                        - {{ i18n "a minimal self-containing DVD image that makes possible offline installation." }}
+                      </p>
+                    </section>
+                    <div class="AL" style="display: flex; justify-content: space-between;">
+                      <div class="itemAl_01" style="width: 588px;">
+                        <h3>AlmaLinux OS 9</h3>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/9.2/isos/s390x/AlmaLinux-9.2-s390x-dvd.iso">AlmaLinux OS 9.2 DVD ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="8fdc2b47cf54144070292969fc91110cbaea66b5577b60c409353951c7d76b86" readonly>
+                          </div>
+                        </div>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/9.2/isos/s390x/AlmaLinux-9.2-s390x-boot.iso">AlmaLinux OS 9.2 Boot ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="e6ef265052f6ae00006711bdabff13da603a2c137cca1d0d69d3fc3bd040748d" readonly>
+                          </div>
+                        </div>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/9.2/isos/s390x/AlmaLinux-9.2-s390x-minimal.iso">AlmaLinux OS 9.2 Minimal ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="217f14e710c114e6095a0effbc1eaf6127b264fe8c67d35d3d5a7d8cbcba92c1" readonly>
+                          </div>
+                        </div>
+                        <div class="Link-Downloads-OS9" style="display: flex; justify-content: space-between; margin-top: 20px;">
+                          <b><a href="https://mirrors.almalinux.org/isos/s390x/9.2.html">{{ i18n "Download ISOs from mirrors" }}</a></b>
+                          <b><a href="https://repo.almalinux.org/almalinux/9.2/isos/s390x/AlmaLinux-9.2-s390x.torrent">{{ i18n "Download .torrent file" }}</a></b>
+                          <b><a href="https://repo.almalinux.org/almalinux/9.2/isos/s390x/CHECKSUM">{{ i18n "Download CHECKSUM" }}</a></b>
+                        </div>
+                      </div>
+                      <div class="itemAl_02" style="padding-left: 20px; width: 608px;">
+                        <h3>AlmaLinux OS 8</h3>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/8.8/isos/s390x/AlmaLinux-8.8-s390x-dvd.iso">AlmaLinux OS 8.8 DVD ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="f2aca72aacd020539df67e15bafbef5e441e50daf139979335bd0a7377dc9a46" readonly>
+                          </div>
+                        </div>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/8.8/isos/s390x/AlmaLinux-8.8-s390x-boot.iso">AlmaLinux OS 8.8 Boot ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="9afaae97625758ec592331f5dcc6793d193660d4127aaa1cf5ec5370fd51441f" readonly>
+                          </div>
+                        </div>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/8.8/isos/s390x/AlmaLinux-8.8-s390x-minimal.iso">AlmaLinux OS 8.8 Minimal ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="630efe24e4b31121960e57e569df72d58c762df47022c01afaaa8bf2e96defa1" readonly>
+                          </div>
+                        </div>
+                        <div class="Link-Downloads-OS8" style="display: flex; justify-content: space-between; margin-top: 20px;">
+                          <b><a href="https://mirrors.almalinux.org/isos/s390x/8.8.html" style="display:inline-block;">{{ i18n "Download ISOs from mirrors" }}</a></b>
+                          <b><a href="https://repo.almalinux.org/almalinux/8.8/isos/s390x/AlmaLinux-8.8-s390x.torrent" style="display:inline-block;">{{ i18n "Download .torrent file" }}</a></b>
+                          <b><a href="https://repo.almalinux.org/almalinux/8.8/isos/s390x/CHECKSUM" style="display:inline-block;">{{ i18n "Download CHECKSUM" }}</a></b>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  
+                <div class="container-Cloud_Images" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="Cloud_Images-3" style="position: absolute; top: 934.75px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Cloud Images</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <p>{{ i18n "AlmaLinux provides official images for various cloud providers." }}</p>
+                    <h2 style="margin-top: 60px;">Generic Cloud</h2>
+                    <p style="margin-bottom: 0px;">
+                      {{ i18n "The AlmaLinux OS Generic Cloud images are available from our" }} <a href="https://mirrors.almalinux.org/">{{ i18n "mirrors" }}</a> {{ i18n "and from the main AlmaLinux OS repositories:" }}
+                    </p>
+                    <div class="AL" style="display: flex; justify-content: space-between;">
+                      <div class="itemAl_01" style="width: 588px; margin-top: 15px;">
+                        <b><a href="https://repo.almalinux.org/almalinux/9/cloud/s390x/images/AlmaLinux-9-GenericCloud-9.2.20230513.s390x.qcow2">AlmaLinux OS 9.2</a></b>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="2901a610ae9edceaac84f0a1a8d9c7c4d1ca04f1394988a371c9419bc5030863" readonly>
+                          </div>
+                        </div>
+                        <div class="Link-Downloads-Al" style="display: flex; margin-top: 20px;">
+                          <div class="itemAl_01" style="width: 200px;">
+                            <b><a href="https://mirrors.almalinux.org" style="display:inline-block; margin-right:20px;">{{ i18n "Download from mirrors" }}</a></b>
+                          </div>
+                          <div class="itemAl_02" style="margin-left: 100px;">
+                            <b><a href="https://repo.almalinux.org/almalinux/9/cloud/s390x/images/CHECKSUM" style="display:inline-block; margin-right:20px;">{{ i18n "Download CHECKSUM" }}</a></b>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="itemAl_02" style="padding-left: 20px; width: 608px; margin-top: 15px;">
+                        <b><a href="https://repo.almalinux.org/almalinux/8/cloud/s390x/images/AlmaLinux-8-GenericCloud-8.8-20230524.s390x.qcow2">AlmaLinux OS 8.8</a></b>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="3948298446d4abfc55d2cab84b91422cbb04e61fb8979a656c0b13d134fe0793" readonly>
+                          </div>
+                        </div>
+                        <div class="Link-Downloads-Al" style="display: flex; margin-top: 20px;">
+                          <div class="itemAl_01" style="width: 200px;">
+                            <b><a href="https://mirrors.almalinux.org" style="display:inline-block; margin-right:20px;">{{ i18n "Download from mirrors" }}</a></b>
+                          </div>
+                          <div class="itemAl_02" style="margin-left: 100px;">
+                            <b><a href="https://repo.almalinux.org/almalinux/8/cloud/s390x/images/CHECKSUM" style="display:inline-block; margin-right:20px;">{{ i18n "Download CHECKSUM" }}</a></b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p style="margin-bottom: 0px; margin-top: 15px;">
+                      {{ i18n "More information about AlmaLinux Generic Cloud images and verification guidelines are available on the" }} <a href="https://wiki.almalinux.org/cloud/Generic-cloud.html">{{ i18n "AlmaLinux Generic Cloud Wiki Page" }}</a>.<br>
+                      {{ i18n "You can also find the" }} <a href="https://wiki.almalinux.org/cloud/Generic-cloud-on-local.html">{{ i18n "Using Generic Cloud on a local machine or server" }}</a> {{ i18n "guide there." }}
+                    </p>
+                  </div>
+                </div>
+                    
+                <div class="container-Container_Images" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="Container_Images-3" style="position: absolute; top: 1404.81px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Container Images</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <p>
+                      {{ i18n "AlmaLinux provides official OCI, Docker and four fully compatible alternatives for the Red Hat Universal Base Images (UBI)." }}
+                    </p>
+                    <div class="AL" style="display: flex;">
+                      <div class="itemAl_01" style="width: 200px;">
+                        <b><a href="https://hub.docker.com/_/almalinux">{{ i18n "Get Docker Image" }}</a></b>
+                      </div>
+                      <div class="itemAl_02" style="margin-left: 100px;">
+                        <b><a href="https://quay.io/organization/almalinuxorg">{{ i18n "Get OCI Image from Quay.io" }}</a></b>
+                      </div>
+                    </div>
+                    <h4>{{ i18n "Official Platform Images:" }}</h4>
+                    <div class="AL" style="display: flex; justify-content: space-between; width: 569px;"> 
+                      <div class="itemAl_01" style="display: flex; flex-direction: column;">
+                        <b>{{ i18n "Image" }}</b>
+                        <p>Default (Platform)</p>
+                        <p>Minimal (Platform)</p>
+                      </div>
+                      <div class="itemAl_02" style="padding-left: 20px; display: flex; flex-direction: column;">
+                        <b>{{ i18n "Container tag" }}</b>
+                        <p><code style="color: #fff">almalinux:latest</code></p>
+                        <p><code style="color: #fff">almalinux:minimal</code></p>
+                      </div>
+                        <div class="itemAl_03" style="padding-left: 20px; display: flex; flex-direction: column;">
+                        <b>{{ i18n "Link to the repository" }}</b>
+                        <p><a href="https://hub.docker.com/_/almalinux">hub.docker.com/_/almalinux</a></p>
+                        <p><a href="https://hub.docker.com/_/almalinux">hub.docker.com/_/almalinux</a></p>
+                      </div>
+                    </div>
+                    <h4 style="margin: 0px;">{{ i18n "AlmaLinux OS UBI-alternatives:" }}</h4>
+                    <div class="container-AL" style="display: flex; justify-content: space-between;">
+                      <div class="container-ALOS9">
+                        <h5>AlmaLinux OS 9</h5>
+                        <div class="container-AlmaLinuxOS9" style="display: flex; justify-content: space-between; width: 575px;">
+                          <div class="container-itemAL-01" style="display: flex; flex-direction: column;">
+                            <b>{{ i18n "Image" }}</b>
+                            <div>
+                              <p style="margin-bottom: 33px;">Minimal</p>
+                              <p style="margin-bottom: 33px;">Base</p>
+                              <p style="margin-bottom: 33px;">Init</p>
+                              <p style="margin-bottom: 33px;">Micro</p>
+                            </div>
+                          </div>
+                          <div class="container-itemAL-02" style="display: flex; flex-direction: column; padding-left: 20px;">
+                            <b>{{ i18n "Container tag" }}</b>
+                            <div>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/9-minimal</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/9-base</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/9-init</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/9-micro</code></p>
+                            </div>
+                          </div>
+                          <div class="container-itemAL-03" style="display: flex; flex-direction: column; padding-left: 20px;">
+                            <b>{{ i18n "Link to the repository" }}</b>
+                            <div>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/9-minimal">quay.io/repository/almalinux/9-minimal</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/9-minimal">hub.docker.com/r/almalinux/9-minimal</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/9-base">quay.io/repository/almalinuxorg/9-base</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/9-base">hub.docker.com/r/almalinux/9-base</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/9-init">quay.io/repository/almalinux/9-init</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/9-init">hub.docker.com/r/almalinux/9-init</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/9-micro">quay.io/repository/almalinux/9-micro</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/9-micro">hub.docker.com/r/almalinux/9-micro</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="container-ALOS8" style="padding-left: 20px;">
+                        <h5>AlmaLinux OS 8</h5>
+                        <div class="container-AlmaLinuxOS8" style="display: flex; justify-content: space-between; width: 575px;">
+                          <div class="container-itemAL-01" style="display: flex; flex-direction: column;">
+                            <b>{{ i18n "Image" }}</b>
+                            <div>
+                              <p style="margin-bottom: 33px;">Minimal</p>
+                              <p style="margin-bottom: 33px;">Base</p>
+                              <p style="margin-bottom: 33px;">Init</p>
+                              <p style="margin-bottom: 33px;">Micro</p>
+                            </div>
+                          </div>
+                          <div class="container-itemAL-02" style="display: flex; flex-direction: column; padding-left: 20px;">
+                            <b>{{ i18n "Container tag" }}</b>
+                            <div>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/8-minimal</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/8-base</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/8-init</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/8-micro</code></p>
+                            </div>
+                          </div>
+                          <div class="container-itemAL-03" style="display: flex; flex-direction: column; padding-left: 20px;">
+                            <b>{{ i18n "Link to the repository" }}</b>
+                            <div>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/8-minimal">quay.io/repository/almalinux/8-minimal</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/8-minimal">hub.docker.com/r/almalinux/8-minimal</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/8-base">quay.io/repository/almalinuxorg/8-base</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/8-base">hub.docker.com/r/almalinux/8-base</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/8-init">quay.io/repository/almalinux/8-init</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/8-init">hub.docker.com/r/almalinux/8-init</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/8-micro">quay.io/repository/almalinux/8-micro</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/8-micro">hub.docker.com/r/almalinux/8-micro</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div> 
+            </div>
+          </div>
+
+          <div id="flush-collapse-4" class="accordion-collapse collapse" aria-labelledby="flush-heading-4" data-parent="#accordionISOs">
+            <div class="items__01" style="display: flex; flex-direction: column;">
+              <div class="accordion-body" style="margin-top: 0px; padding: 15px 0 0 0;">
+                <div class="container-all-options mb-3" style="display: flex; justify-content: space-between; padding: 0px 40px;">
+                  <a href="#ISO_Images-4">     
+                    <img loading="lazy" class="al-index-community-icon img" src="/images/iso-icon-F.svg" style="width: 40px; height:40px" alt="ISO Image">
+                  </a>
+                  <a href="#Cloud_Images-4">
+                    <img loading="lazy" class="al-index-community-icon img" src="/images/cloud-icon-F.svg" style="width: 40px; height:40px" alt="Cloud Image">
+                  </a>
+                  <a href="#Container_Images-4">
+                    <img loading="lazy" class="al-index-community-icon img" src="/images/container-icon-F.svg" style="width: 40px; height:40px" alt="Container Image">
+                  </a>  
+                </div>
+
+                <div class="container-ISO_Images" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="ISO_Images-4" style="position: absolute; top: 294px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">ISO Images</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <section>
+                      <p>{{ i18n "Each supported architecture has various installation images available:"}}</p>
+                      <p>
+                        <b>{{ i18n "DVD" }}</b>
+                        - {{ i18n "effortless installation with all packages included, no additional repositories required." }}
+                      </p>
+                      <p>
+                        <b>{{ i18n "Boot" }}</b>
+                        - {{ i18n "a single network installation CD image that downloads packages over the Internet." }}
+                      </p>
+                      <p>
+                        <b>{{ i18n "Minimal" }}</b>
+                        - {{ i18n "a minimal self-containing DVD image that makes possible offline installation." }}
+                      </p>
+                    </section>
+                    <div class="AL" style="display: flex; justify-content: space-between;">
+                      <div class="itemAl_01" style="width: 588px;">
+                        <h3>AlmaLinux OS 9</h3>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/9.2/isos/ppc64le/AlmaLinux-9.2-ppc64le-dvd.iso">AlmaLinux OS 9.2 DVD ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="7f00c4333503072788afd5b288672a86ffd40b41c430f603aaca20d5da3befe0" readonly>
+                          </div>
+                        </div>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/9.2/isos/ppc64le/AlmaLinux-9.2-ppc64le-boot.iso">AlmaLinux OS 9.2 Boot ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="5d8e15371a5ad3e7fd9af3cd11d2925570df458e5aa62992f11a204c8dcaa953" readonly>
+                          </div>
+                        </div>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/9.2/isos/ppc64le/AlmaLinux-9.2-ppc64le-minimal.iso">AlmaLinux OS 9.2 Minimal ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="404319abcf0e66491266e6f7ed03d4a9f2b5edfacbc9d221e6440245c5f8d8fc" readonly>
+                          </div>
+                        </div>
+                        <div class="Link-Downloads-OS9" style="display: flex; justify-content: space-between; margin-top: 20px;">
+                          <b><a href="https://mirrors.almalinux.org/isos/ppc64le/9.2.html">{{ i18n "Download ISOs from mirrors" }}</a></b>
+                          <b><a href="https://repo.almalinux.org/almalinux/9.2/isos/ppc64le/AlmaLinux-9.2-ppc64le.torrent">{{ i18n "Download .torrent file" }}</a></b>
+                          <b><a href="https://repo.almalinux.org/almalinux/9.2/isos/ppc64le/CHECKSUM">{{ i18n "Download CHECKSUM" }}</a></b>
+                        </div>
+                      </div>
+                      <div class="itemAl_02" style="padding-left: 20px; width: 608px;">
+                        <h3>AlmaLinux OS 8</h3>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/8.8/isos/ppc64le/AlmaLinux-8.8-ppc64le-dvd.iso">AlmaLinux OS 8.8 DVD ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="525908220c01fb15ff0e6bf93e1e6a8f1bde96011a6f2e0e3d037ef72506bdcf" readonly>
+                          </div>
+                        </div>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/8.8/isos/ppc64le/AlmaLinux-8.8-ppc64le-boot.iso">AlmaLinux OS 8.8 Boot ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="7a845f9fe98768f9270ea14277d711b73cfd09fefcf6ef9d42664d821db09be6" readonly>
+                          </div>
+                        </div>
+                        <h4 style="margin-bottom: 0px;"><a href="https://repo.almalinux.org/almalinux/8.8/isos/ppc64le/AlmaLinux-8.8-ppc64le-minimal.iso">AlmaLinux OS 8.8 Minimal ISO</a></h4>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="ab24048fa38132c9fac3387faf2c540a5bdc060f083799be55c3669b5aecd6d4" readonly>
+                          </div>
+                        </div>
+                        <div class="Link-Downloads-OS8" style="display: flex; justify-content: space-between; margin-top: 20px;">
+                          <b><a href="https://mirrors.almalinux.org/isos/ppc64le/8.8.html" style="display:inline-block;">{{ i18n "Download ISOs from mirrors" }}</a></b>
+                          <b><a href="https://repo.almalinux.org/almalinux/8.8/isos/ppc64le/AlmaLinux-8.8-ppc64le.torrent" style="display:inline-block;">{{ i18n "Download .torrent file" }}</a></b>
+                          <b><a href="https://repo.almalinux.org/almalinux/8.8/isos/ppc64le/CHECKSUM" style="display:inline-block;">{{ i18n "Download CHECKSUM" }}</a></b>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  
+                <div class="container-Cloud_Images" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="Cloud_Images-4" style="position: absolute; top: 934.75px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Cloud Images</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <p>{{ i18n "AlmaLinux provides official images for various cloud providers." }}</p>
+                    <h2 style="margin-top: 60px;">Generic Cloud</h2>
+                    <p style="margin-bottom: 0px;">
+                      {{ i18n "The AlmaLinux OS Generic Cloud images are available from our" }} <a href="https://mirrors.almalinux.org/">{{ i18n "mirrors" }}</a> {{ i18n "and from the main AlmaLinux OS repositories:" }}
+                    </p>
+                    <div class="AL" style="display: flex; justify-content: space-between;">
+                      <div class="itemAl_01" style="width: 588px; margin-top: 15px;">
+                        <b><a href="https://repo.almalinux.org/almalinux/9/cloud/ppc64le/images/AlmaLinux-9-GenericCloud-9.2-20230513.ppc64le.qcow2">AlmaLinux OS 9.2</a></b>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="eb1a234053bd3979733e01db52536859ee72e7ed3d74b4cf506a8924d5e0b439" readonly>
+                          </div>
+                        </div>
+                        <div class="Link-Downloads-Al" style="display: flex; margin-top: 20px;">
+                          <div class="itemAl_01" style="width: 200px;">
+                            <b><a href="https://mirrors.almalinux.org" style="display:inline-block; margin-right:20px;">{{ i18n "Download from mirrors" }}</a></b>
+                          </div>
+                          <div class="itemAl_02" style="margin-left: 100px;">
+                            <b><a href="https://repo.almalinux.org/almalinux/9/cloud/ppc64le/images/CHECKSUM" style="display:inline-block; margin-right:20px;">{{ i18n "Download CHECKSUM" }}</a></b>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="itemAl_02" style="padding-left: 20px; width: 608px; margin-top: 15px;">
+                        <b><a href="https://repo.almalinux.org/almalinux/8/cloud/ppc64le/images/AlmaLinux-8-GenericCloud-8.8-20230524.ppc64le.qcow2">AlmaLinux OS 8.8</a></b>
+                        <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                          <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                          <div style="display: flex; flex-direction: column;">
+                            <div class="Sha_button" style="display: flex; justify-content: space-between;">
+                              <p style="margin-left: 10px; font-family: monospace; font-size: 14px; margin-bottom: 0; margin-top: 0;">SHA-256:</p>
+                            </div>
+                            <input class="put-text_copy" id="text_copy" style="margin-left: 10px; font-family: monospace; font-size: 14px; width: 539px; padding: 0; background: none; border: none; color: #fff; outline: none;" type="text" value="acb8fc07c951d34b9fb2ffe3ac5f27b869d1852cd130bb02c79fcb530956cff8" readonly>
+                          </div>
+                        </div>
+                        <div class="Link-Downloads-Al" style="display: flex; margin-top: 20px;">
+                          <div class="itemAl_01" style="width: 200px;">
+                            <b><a href="https://mirrors.almalinux.org" style="display:inline-block; margin-right:20px;">{{ i18n "Download from mirrors" }}</a></b>
+                          </div>
+                          <div class="itemAl_02" style="margin-left: 100px;">
+                            <b><a href="https://repo.almalinux.org/almalinux/8/cloud/ppc64le/images/CHECKSUM" style="display:inline-block; margin-right:20px;">{{ i18n "Download CHECKSUM" }}</a></b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      {{ i18n "More information about AlmaLinux Generic Cloud images and verification guidelines are available on the" }} <a href="https://wiki.almalinux.org/cloud/Generic-cloud.html">{{ i18n "AlmaLinux Generic Cloud Wiki Page" }}</a>.<br>
+                      {{ i18n "You can also find the" }} <a href="https://wiki.almalinux.org/cloud/Generic-cloud-on-local.html">{{ i18n "Using Generic Cloud on a local machine or server" }}</a> {{ i18n "guide there." }}
+                    </p>
+                  </div>
+                </div>
+
+                <div class="container-Container_Images" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="Container_Images-4" style="position: absolute; top: 1419.81px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Container Images</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <p>
+                      {{ i18n "AlmaLinux provides official OCI, Docker and four fully compatible alternatives for the Red Hat Universal Base Images (UBI)." }}
+                    </p>
+                    <div class="AL" style="display: flex;">
+                      <div class="itemAl_01" style="width: 200px;">
+                        <b><a href="https://hub.docker.com/_/almalinux">{{ i18n "Get Docker Image" }}</a></b>
+                      </div>
+                      <div class="itemAl_02" style="margin-left: 100px;">
+                        <b><a href="https://quay.io/organization/almalinuxorg">{{ i18n "Get OCI Image from Quay.io" }}</a></b>
+                      </div>
+                    </div>
+                    <h4>{{ i18n "Official Platform Images:" }}</h4>
+                    <div class="AL" style="display: flex; justify-content: space-between; width: 569px;"> 
+                      <div class="itemAl_01" style="display: flex; flex-direction: column;">
+                        <b>{{ i18n "Image" }}</b>
+                        <p>Default (Platform)</p>
+                        <p>Minimal (Platform)</p>
+                      </div>
+                      <div class="itemAl_02" style="padding-left: 20px; display: flex; flex-direction: column;">
+                        <b>{{ i18n "Container tag" }}</b>
+                        <p><code style="color: #fff">almalinux:latest</code></p>
+                        <p><code style="color: #fff">almalinux:minimal</code></p>
+                      </div>
+                        <div class="itemAl_03" style="padding-left: 20px; display: flex; flex-direction: column;">
+                        <b>{{ i18n "Link to the repository" }}</b>
+                        <p><a href="https://hub.docker.com/_/almalinux">hub.docker.com/_/almalinux</a></p>
+                        <p><a href="https://hub.docker.com/_/almalinux">hub.docker.com/_/almalinux</a></p>
+                      </div>
+                    </div>
+                    <h4 style="margin: 0px;">{{ i18n "AlmaLinux OS UBI-alternatives:" }}</h4>
+                    <div class="container-AL" style="display: flex; justify-content: space-between;">
+                      <div class="container-ALOS9">
+                        <h5>AlmaLinux OS 9</h5>
+                        <div class="container-AlmaLinuxOS9" style="display: flex; justify-content: space-between; width: 575px;">
+                          <div class="container-itemAL-01" style="display: flex; flex-direction: column;">
+                            <b>{{ i18n "Image" }}</b>
+                            <div>
+                              <p style="margin-bottom: 33px;">Minimal</p>
+                              <p style="margin-bottom: 33px;">Base</p>
+                              <p style="margin-bottom: 33px;">Init</p>
+                              <p style="margin-bottom: 33px;">Micro</p>
+                            </div>
+                          </div>
+                          <div class="container-itemAL-02" style="display: flex; flex-direction: column; padding-left: 20px;">
+                            <b>{{ i18n "Container tag" }}</b>
+                            <div>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/9-minimal</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/9-base</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/9-init</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/9-micro</code></p>
+                            </div>
+                          </div>
+                          <div class="container-itemAL-03" style="display: flex; flex-direction: column; padding-left: 20px;">
+                            <b>{{ i18n "Link to the repository" }}</b>
+                            <div>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/9-minimal">quay.io/repository/almalinux/9-minimal</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/9-minimal">hub.docker.com/r/almalinux/9-minimal</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/9-base">quay.io/repository/almalinuxorg/9-base</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/9-base">hub.docker.com/r/almalinux/9-base</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/9-init">quay.io/repository/almalinux/9-init</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/9-init">hub.docker.com/r/almalinux/9-init</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/9-micro">quay.io/repository/almalinux/9-micro</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/9-micro">hub.docker.com/r/almalinux/9-micro</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="container-ALOS8" style="padding-left: 20px;">
+                        <h5>AlmaLinux OS 8</h5>
+                        <div class="container-AlmaLinuxOS8" style="display: flex; justify-content: space-between; width: 575px;">
+                          <div class="container-itemAL-01" style="display: flex; flex-direction: column;">
+                            <b>{{ i18n "Image" }}</b>
+                            <div>
+                              <p style="margin-bottom: 33px;">Minimal</p>
+                              <p style="margin-bottom: 33px;">Base</p>
+                              <p style="margin-bottom: 33px;">Init</p>
+                              <p style="margin-bottom: 33px;">Micro</p>
+                            </div>
+                          </div>
+                          <div class="container-itemAL-02" style="display: flex; flex-direction: column; padding-left: 20px;">
+                            <b>{{ i18n "Container tag" }}</b>
+                            <div>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/8-minimal</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/8-base</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/8-init</code></p>
+                              <p style="margin-bottom: 32px;"><code style="color: #fff">almalinux/8-micro</code></p>
+                            </div>
+                          </div>
+                          <div class="container-itemAL-03" style="display: flex; flex-direction: column; padding-left: 20px;">
+                            <b>{{ i18n "Link to the repository" }}</b>
+                            <div>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/8-minimal">quay.io/repository/almalinux/8-minimal</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/8-minimal">hub.docker.com/r/almalinux/8-minimal</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/8-base">quay.io/repository/almalinuxorg/8-base</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/8-base">hub.docker.com/r/almalinux/8-base</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/8-init">quay.io/repository/almalinux/8-init</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/8-init">hub.docker.com/r/almalinux/8-init</a>
+                              </p>
+                              <p>
+                                <a href="https://quay.io/repository/almalinuxorg/8-micro">quay.io/repository/almalinux/8-micro</a><br>
+                                <a href="https://hub.docker.com/r/almalinux/8-micro">hub.docker.com/r/almalinux/8-micro</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<script>
+const btns = document.querySelectorAll('.tab-button');
+btns.forEach(item => item.addEventListener('click', event => {
+  btns.forEach(element => element.classList.remove('active'));
+  item.classList.add('active');
+}));
+
+document.querySelector('[class="tab-button"]').classList.add('active');
+</script>
+
+{{ end }}
