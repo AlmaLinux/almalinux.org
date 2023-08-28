@@ -8,7 +8,7 @@ We welcome blog posts of almost any kind from our community! We accept content t
 
 ### Process
 
-- Before you begin writing the blog post, we strongly recommend that you search existing open and closed issues for similar content, to prevent duplication. 
+- Before you begin writing the blog post, we strongly recommend that you search existing open and closed issues [and existing blog posts](https://github.com/AlmaLinux/almalinux.org/tree/master/content/blog) for similar content, to prevent duplication. 
 - We also recommend that you open an issue on the repo to propose your blog post before you begin writing it, to ensure that your blog post would be appropriate for the AlmaLinux blog.
 - Please fork the [almalinux.org](https://github.com/AlmaLinux/almalinux.org) repo and submit a pull request with your blog post addition from there. 
 - Once you submit your pull request, tag @bennyvasquez for a review. 
@@ -132,4 +132,3 @@ Before any changes can be merged:
 
 - All minor or cosmetic changes (typos, minor styling, etc) can be approved and merged by any contributor with master merge rights
 - All non-cosmetic changes to the website requires the approval of the Marketing lead
-- All major changes that are not purely technical, and fundamental changes in technology requires the approval of the AlmaLinux OS Community Manager.
