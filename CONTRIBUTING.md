@@ -86,8 +86,8 @@ A good bug report should be as detailed as possible, so that others won't have t
 - Request a feature in [GitHub issues](https://github.com/AlmaLinux/almalinux.org/issues)
 
 ## Contributing code
-
-If you plan to propose code changes, a corresponding issue must be created. If you are not contributing code to fix an existing issue, you should first create an [issue](https://github.com/AlmaLinux/almalinux.org/issues) with a brief proposal in order to discuss it with the project contributors first.
+If you plan to propose code changes it is required you create
+an [issue](https://github.com/AlmaLinux/almalinux.org/issues) with a brief proposal and discuss it with us first.
 
 This is necessary to avoid more than one contributor working on the same feature/change and to avoid someone from spending time on feature/change that would not be merged for any reason.
 
@@ -101,6 +101,30 @@ For smaller contributions use this workflow:
 * Send a pull request.  All PRs should be made against the `master` branch.  A dev site will be automatically created based on the PR.  Localization will not be fully working as this pipeline does not run the localization scripts.
 
 After one of the contributors has checked and approved the changes, they will be merged into master branch and will be included in the next deployment.
+
+### Styling Guide
+
+Please adhere to the styling guidelines listed below when contributing to the codebase.
+
+#### Code/Syntax Highlighting
+
+Code/Syntax highlighting is achieved by the builtin [Hugo syntax highlighting](https://gohugo.io/content-management/syntax-highlighting/) feature, which utilizes [Chroma](https://github.com/alecthomas/chroma).
+
+While Hugo supports two syntaxes, we use traditional code fencing for code samples:
+
+````plaintext
+```go
+package main
+
+import "fmt"
+
+func main () {
+    fmt.Println("AlmaLinux is neat-o!")
+}
+```
+````
+
+Supported highlighting languages can be found [here](https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages).
 
 ## Approval of changes
 

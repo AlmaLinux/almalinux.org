@@ -314,7 +314,6 @@
 }
 
 .custom-blog-page-section {
-  width: 680px;
   margin: auto;
 }
 
@@ -495,7 +494,6 @@ button:focus, .btn:focus {
 }
 
 .custom-blog-page-section {
-  width: 680px;
   margin: auto;
 }
 
@@ -838,4 +836,7 @@ a {
   .container {
     max-width: 1320px;
   }
+a {
+    overflow-wrap: anywhere;
+}
 }/*# sourceMappingURL=main.css.map */

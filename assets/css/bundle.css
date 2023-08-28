@@ -7,6 +7,15 @@
 .container{
   padding: 0 ;
 }
+
+.itemAl_01 a {
+  color: #f1f8ff;
+  }
+
+.itemAl_02 a {
+  color: #f1f8ff;
+  }
+
 .al-primary-navbar .container {
   padding-left: 15px !important;
   padding-right: 15px !important;
@@ -14,6 +23,10 @@
 .al-index-faq .container {
   padding-left: 15px !important;
   padding-right: 15px !important;
+}
+.al-index-community-container .pb-3 {
+padding-left: 15px !important;
+padding-right: 15px !important;
 }
 .al-index-press .container {
   padding-right: 15px !important;
@@ -96,6 +109,9 @@
 .al-page-index .al-index-community-container .al-community-cta {
   min-width: 120px;
 }
+.al-page-index .al-index-community-container h2.border-bottom {
+border-bottom-color: #14598a !important;
+}
 .al-page-index .al-index-backed-by h2.border-bottom {
   border-bottom-color: #14598a !important;
 }
@@ -117,7 +133,7 @@
   width: 120px;
   /* padding: 10px; */
 }
-.al-page-index .al-index-commercial-support h2.border-bottom {
+.al-page-index .al-index-commercial-support p.border-bottom {
   border-bottom-color: #14598a !important;
 }
 .al-page-index .al-index-commercial-support .al-commercial-supporter-list {
@@ -130,8 +146,11 @@
   height: 100%;
 }
 .al-page-index .al-index-commercial-support .al-commercial-supporter-list .al-commercial-supporter-logo {
-  max-width: 220px;
-  width: 100%;
+  width: 300px;
+  max-width: 100%;
+}
+.al-commercial-supporter-list {
+	margin-top: 40px;
 }
 .al-page-index .al-index-faq {
   background: #0e3b5c;
@@ -335,13 +354,24 @@
   padding: 10px 16px;
   font-size: 15px;
 }
+.al-page-blog-post table, th, td {
+  color: #fefefe !important;
+  border: 1px solid #fefefe;
+  padding: 10px;
+}
+
 
 .custom-blog-page-section{
-  width: 680px;
   margin: auto;
 }
 .al-page-blog-post .container{
   padding: 3rem 15px !important;
+}
+@media (max-width: 800px){
+  .custom-blog-page-section {
+    max-width: 100%;
+    margin: auto;
+  }
 }
 .al-page-elevate-index .al-cta-discuss {
   background: #2891ff;
@@ -834,5 +864,18 @@ a:hover{
   
 }
 
+.highlight > pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+a {
+    overflow-wrap: anywhere;
+}
 
 /*# sourceMappingURL=bundle.css.map */

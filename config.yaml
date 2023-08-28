@@ -22,9 +22,11 @@ languages:
     de: {weight: 2, languagename: Deutsch}
     el: {weight: 2, languagename: Ελληνικά}
     es: {weight: 2, languagename: Español}
+    fa: {weight: 2, languagename: فارسى}
     fi: {weight: 2, languagename: Suomi}
     fr: {weight: 2, languagename: Français}
     he: {weight: 2, languagename: עברית}
+    hu: {weight: 2, languagename: magyar}
     it: {weight: 2, languagename: Italiano}
     ja: {weight: 2, languagename: 日本語}
     ko: {weight: 2, languagename: 한국어}
@@ -39,3 +41,12 @@ languages:
     tr: {weight: 2, languagename: Türkçe}
     uk: {weight: 2, languagename: Українська}
     zh-hans: {weight: 2, languagename: 简体中文}
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+
+    highlight:
+      noClasses: true
+      style: xcode-dark

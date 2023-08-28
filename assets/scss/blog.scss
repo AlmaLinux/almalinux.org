@@ -183,7 +183,6 @@
 }
 }
 .custom-blog-page-section{
-  width: 680px;
   margin: auto;
 }
 .al-page-blog-index .pagination .page-item .page-link {
@@ -206,4 +205,19 @@
   color: #000 !important;
   
 }
-
+@media (max-width: 800px){
+  .custom-blog-page-section {
+    max-width: 100%;
+    margin: auto;
+  }
+.highlight > pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+}

@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="al-body-container" style="max-width:680px; margin: auto;">
+<div class="al-body-container" style="margin: auto;">
     
     <section class="al-page-blog-post  " dir="ltr">
         <div class="container py-5">
@@ -31,7 +31,7 @@
                     <div class="al-article-content pb-5 al-wysiwyg">
 
                         {{ with .Params.post.image }}
-        <img  src="{{ . }}">
+        <div class="mx-auto" style="max-width: 850px"><img style="max-width: 100%; height: auto;" src="{{ . }}"></div>
     {{ end }}
 
                         {{ .Content }}
@@ -47,7 +47,7 @@
                     
                     
                         {{ if .PrevPage }}
-                        <a class="al-blog-previous-button " href="{{ .PrevPage.Permalink }}">
+                        <a class="al-blog-previous-button " href="{{ .PrevPage.RelPermalink }}">
                             <span>« {{ i18n "Previous" }}</span>
 
                         </a> 
@@ -57,7 +57,7 @@
                 
                     
                         {{ if .NextPage }}
-                        <a class="al-blog-next-button " href="{{ .NextPage.Permalink }}">                   
+                        <a class="al-blog-next-button " href="{{ .NextPage.RelPermalink }}">
                             <span> {{ i18n "Next" }} »</span>
                         </a>
                         {{ end }}
