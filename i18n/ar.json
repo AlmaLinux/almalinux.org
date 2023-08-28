@@ -145,7 +145,7 @@
     "You are already subscribed to this mailing list!": "أنت مشترك بالفعل في هذه القائمة البريدية!",
     "Individuals and organizations that require an enterprise-grade, Fedora-like distribution but who do not want to or cannot pay for a RHEL® license. AlmaLinux OS is also a perfect replacement for anyone who currently relies on the CentOS stable release to achieve computing objectives.": "",
     "AlmaLinux OS is an open-source, community-driven Linux operating system that fills the gap left by the discontinuation of the CentOS Linux stable release. AlmaLinux OS is a 1:1 binary compatible clone of RHEL® guided and built by the community.": "AlmaLinux OS هو نظام تشغيل Linux مفتوح المصدر يحركه المجتمع يملأ الفجوة التي خلفها إيقاف إصدار CentOS Linux المستقر. AlmaLinux OS هو استنساخ متوافق مع 1: 1 ثنائي من RHEL® بتوجيه وبناء من قبل المجتمع.",
-    "Alma means soul in Spanish and other Latin languages. Looking back, it is easy to see that Linux is as popular and pervasive as it is thanks to the efforts of a passionate, diverse developer community. This community is the soul of Linux, and everyone that relies on a Linux distribution is indebted to the efforts of the Linux community. That is why we called our new distribution AlmaLinux OS.": "",
+    "Alma means soul in Spanish and other Latin languages. Looking back, it is easy to see that Linux is as popular and pervasive as it is thanks to the efforts of a passionate, diverse developer community. This community is the soul of Linux, and everyone that relies on a Linux distribution is indebted to the efforts of the Linux community. That is why we called our new distribution AlmaLinux OS.": "ألما تعني الروح في اللغة الأسبانية ولغات لاتينية أخرى. إذا رأينا وجدنا أن نظام لينكس مشهور ومنتشر بسبب جهود مجمتع المطورين المتحمس والمتنوع، وهذا المجتمع هو روح لينكس، فكل أحد معتمد على توزيعة لينكس فهو بالضرورة مدين بالفضل لجهود مجتمع لينكس. لهذا سمينا توزيعتنا نظام ألمالينكس.",
     "Why should I rely on CloudLinux for a CentOS alternative?": "",
     "available here": "",
     "The encryption key is client-side verified and checked before every communication.": "",
@@ -237,7 +237,7 @@
     "CAS stores all signatures inside of": "",
     "If you are using CentOS 7 or 8 and need help upgrading and migrating, check out [ELevate](https://almalinux.org/elevate).": "",
     "Switching distributions is usually costly and time-consuming, but that’s not the case when switching from CentOS and other RHEL® derivatives to AlmaLinux OS.\"}} {{ i18n \"Switching is easy": "",
-    "Why did we call it AlmaLinux OS?": "",
+    "Why did we call it AlmaLinux OS?": "لم نسميها ألمالينكس؟",
     "As a member, you will have a voice in the direction of the project, and can vote for and be voted into the Board of Directors by other members.": "",
     "What is an SBOM?": "",
     "Will migration be \\\"in-place\\\"?": "",
@@ -308,7 +308,7 @@
     "or": "",
     "contributing member AlmaLinux logo": "",
     "What AlmaLinux Provides": "",
-    "Who is AlmaLinux OS for?": "",
+    "Who is AlmaLinux OS for?": "لمن ألمالينكس؟",
     "Be heard!": "",
     "Voting benefits": "",
     "The Package Evolution Service stores package migration metadata.": "",
@@ -355,5 +355,7 @@
     "AlmaLinux provides official images for cloud providers:": "يوفر ألما لينكس صورًا رسمية لمزودي السحابة:",
     "AlmaLinux provides official OCI, Docker and UBI compatible images.": "يوفِّر ألما لينكس صورًا رسمية متوافقة مع OCI وDocker وUBI.",
     "Get Docker Image": "احصل على صورة Docker",
-    "Get OCI Image from Quay.io": "احصل على صورة OCI من Quay.io"
+    "Get OCI Image from Quay.io": "احصل على صورة OCI من Quay.io",
+    "Get AlmaLinux for WSL": "احصل على ألمالينكس لـ WSL",
+    "Run the AlmaLinux terminal environment on Windows.": "شغل طرفية ألمالينكس في ويندوز."
 }

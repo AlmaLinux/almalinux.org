@@ -7,9 +7,15 @@
 .container{
   padding: 0 ;
 }
-.items__01 a {
-color: #f1f8ff;
-}
+
+.itemAl_01 a {
+  color: #f1f8ff;
+  }
+
+.itemAl_02 a {
+  color: #f1f8ff;
+  }
+
 .al-primary-navbar .container {
   padding-left: 15px !important;
   padding-right: 15px !important;
@@ -127,7 +133,7 @@ border-bottom-color: #14598a !important;
   width: 120px;
   /* padding: 10px; */
 }
-.al-page-index .al-index-commercial-support h2.border-bottom {
+.al-page-index .al-index-commercial-support p.border-bottom {
   border-bottom-color: #14598a !important;
 }
 .al-page-index .al-index-commercial-support .al-commercial-supporter-list {
@@ -140,8 +146,11 @@ border-bottom-color: #14598a !important;
   height: 100%;
 }
 .al-page-index .al-index-commercial-support .al-commercial-supporter-list .al-commercial-supporter-logo {
-  max-width: 220px;
-  width: 100%;
+  width: 300px;
+  max-width: 100%;
+}
+.al-commercial-supporter-list {
+	margin-top: 40px;
 }
 .al-page-index .al-index-faq {
   background: #0e3b5c;
@@ -316,7 +325,7 @@ padding: 0px !important;
   color: #fefefe;
 }
 .al-page-blog-post article .al-article-content img {
-  max-width: 850px;
+  max-width: 100%;
 }
 .al-page-blog-post article .al-page-blog-author img {
   width: 40px;
@@ -874,5 +883,18 @@ a:hover{
   
 }
 
+.highlight > pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+a {
+    overflow-wrap: anywhere;
+}
 
 /*# sourceMappingURL=bundle.css.map */

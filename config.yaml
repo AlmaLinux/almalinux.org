@@ -46,3 +46,7 @@ markup:
     goldmark:
         renderer:
             unsafe: true
+
+    highlight:
+      noClasses: true
+      style: xcode-dark
