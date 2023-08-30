@@ -3,12 +3,15 @@
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
-
 .container{
   padding: 0 ;
 }
 
 .itemAl_01 a {
+  color: #f1f8ff;
+  }
+
+.items__01 a {
   color: #f1f8ff;
   }
 
@@ -191,6 +194,14 @@ padding: 0px !important;
   padding: 15px 10px;
   margin-top: -8px;
   color: #fefefe;
+}
+.itemsOff {
+  height: 36px; 
+  margin: 15px 0 15px 0;
+}
+.itemsTr {
+  height: 36px; 
+  margin: 15px 0 15px 0;
 }
 .al-page-index .al-index-newsletter a {
  text-decoration: underline !important;
