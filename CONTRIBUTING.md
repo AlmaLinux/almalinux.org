@@ -21,7 +21,7 @@ Our website is built in Hugo and served using CloudFlare pages, so you may find 
 
 Blog content is served using the `layouts/blog/single.html` format. Note: if you would like to suggest changes to this format, they should be submitted in a PR outside the PR of your blog post.
 
-- create a new file in ./content/blog named what you'd like the slug (URL) to be, with a file extension of '.md'. For example, the blog post at [almalinux.org/blog/celebrating-500k-docker-pulls](almalinux.org/blog/celebrating-500k-docker-pulls) is in a file named ``./content/blog/celebrating-500k-docker-pulls.md``.
+- create a new file in `./content/blog` named what you'd like the slug (URL) to be, with a file extension of '.md'. For example, the blog post at [almalinux.org/blog/celebrating-500k-docker-pulls](almalinux.org/blog/celebrating-500k-docker-pulls) is in a file named ``./content/blog/celebrating-500k-docker-pulls.md``.
 
 **The Meta data**
 
@@ -46,7 +46,7 @@ post:
 - The **type** should always be blog.  
 - The **name** listed should be yours (either legal name or chosen name or moniker) 
 - Your **bio** will be displayed directly under your name, so please keep this to 60 characters or less. If you would like to leave this blank, you may do so. 
-- Your author **image** should be appropriate for an all-audiences website and added to `./static/users/` in .png format. The file will serve from /users/, so do not change the beginning of this path. 
+- Your author **image** should be appropriate for an all-audiences website and added to `./static/users/` in .png format. The file will serve from `/users/`, so do not change the beginning of this path. 
 - The **date** is the date (in YYYY-MM-DD format) you want to see the blog post published, but we cannot always guarantee a publishing timeline. 
 - The post **title** should match the above.
 - A post **image** should be included, and will be displayed both on the [almalinux.org/blog/](almalinux.org/blog/) feed, and as the header image on the full-page blog post. Your image should not violate any trademarks or copyrights, and should be relevant to blog content. Once created, a PNG version of your image should be placed in `./static/blog-images/` The file will serve from `/blog-images/`, so do not change the beginning of this path. 
@@ -54,14 +54,14 @@ post:
 **The meat of your post**
 
 - Below the --- of the metadata block, you should place the content of your blog post. This content should be in markdown format, and any images you want to include in your post can be added to `./static/blog-images/` and will serve from `/blog-images/`.
-- Before submitting your PR, please test that your content loads correctly by building the site locally with the command `hugo server`
+- Before submitting your PR, please test that your content loads correctly by building the site locally with the command `hugo serve`
 
 
 ### Some notes about content
 
 - define all terms used (especially acronyms) so that all readers may understand your content. 
 - content submitted to the AlmaLinux blog should be unique and not posted elsewhere on the internet.
-- by submitting content to the AlmaLinux website, you acknowledge that you are aware of our [https://almalinux.org/p/the-almalinux-os-licensing-policy/license](license policy), are affirming that you own all rights to publish said content.
+- by submitting content to the AlmaLinux website, you acknowledge that you are aware of our [https://almalinux.org/p/the-almalinux-os-licensing-policy/](license policy), are affirming that you own all rights to publish said content.
 - external links are allowed, but links to paywalled websites or obvious use of a blog post on the AlmaLinux site as an SEO builder for another website is prohibited. By default, external links should include a '[nofollow](https://en.wikipedia.org/wiki/Nofollow)' value. Exceptions can be requested in your pull request.
 
 ## Filing issues
