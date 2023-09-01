@@ -61,7 +61,7 @@ post:
 
 - define all terms used (especially acronyms) so that all readers may understand your content. 
 - content submitted to the AlmaLinux blog should be unique and not posted elsewhere on the internet.
-- by submitting content to the AlmaLinux website, you acknowledge that you are aware of our [https://almalinux.org/p/the-almalinux-os-licensing-policy/](license policy), are affirming that you own all rights to publish said content.
+- by submitting content to the AlmaLinux website, you acknowledge that you are aware of our [license policy](https://almalinux.org/p/the-almalinux-os-licensing-policy/), are affirming that you own all rights to publish said content.
 - external links are allowed, but links to paywalled websites or obvious use of a blog post on the AlmaLinux site as an SEO builder for another website is prohibited. By default, external links should include a '[nofollow](https://en.wikipedia.org/wiki/Nofollow)' value. Exceptions can be requested in your pull request.
 
 ## Filing issues
