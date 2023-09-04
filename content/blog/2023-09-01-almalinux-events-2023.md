@@ -11,7 +11,7 @@ post:
     image: /blog-images/2022_ATO_Astro_1200x628.jpg
 ---
 
-Want to learn more about the AlmaLinux OS and AlmaLinux OS Foundation? Good news! We're going to be attending a number of events through the remainder of 2023, and we might just be in your backyard. 
+Do you want to learn more about the AlmaLinux OS and AlmaLinux OS Foundation? Good news! We're going to be attending a number of events through the remainder of 2023, and we might just be in your backyard. 
 
 AlmaLinux will have a presence at a number of popular events coming up soon, including:
 
