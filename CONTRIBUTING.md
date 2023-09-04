@@ -49,7 +49,8 @@ post:
 - Your author **image** should be appropriate for an all-audiences website and added to `./static/users/` in .png format. The file will serve from `/users/`, so do not change the beginning of this path. 
 - The **date** is the date (in YYYY-MM-DD format) you want to see the blog post published, but we cannot always guarantee a publishing timeline. 
 - The post **title** should match the above.
-- A post **image** should be included, and will be displayed both on the [almalinux.org/blog/](almalinux.org/blog/) feed, and as the header image on the full-page blog post. Your image should not violate any trademarks or copyrights, and should be relevant to blog content. Once created, a PNG version of your image should be placed in `./static/blog-images/` The file will serve from `/blog-images/`, so do not change the beginning of this path. 
+- A post **image** should be included, and will be displayed both on the [almalinux.org/blog/](almalinux.org/blog/) feed, and as the header image on the full-page blog post. Use this tempalte to get started: `./static/blog-images/blog_images_template.svg`
+  - Your image should not violate any trademarks or copyrights, and should be relevant to blog content. Once created, a PNG version of your image should be placed in `./static/blog-images/` The file will serve from `/blog-images/`, so do not change the beginning of this path. 
 
 **The meat of your post**
 
