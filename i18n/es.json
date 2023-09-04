@@ -430,5 +430,6 @@
     "AlmaLinux OVAL Wiki Page": "Wiki de AlmaLinux OVAL",
     "AlmaLinux SBOM User Guide": "Guía del usuario para AlmaLinux SBOM",
     "AlmaLinux Errata": "Errata para AlmaLinux",
-    "AlmaLinux Build System has implemented SBOM into its pipeline for security purposes, such as tracing the build process, making it more secure, and reducing the risk of data corruption. ": "AlmaLinux Build System ha implementado SBOM en su canal con fines de seguridad, tales como el rastrearel proceso de compilación, poara hacerlo más seguro, y reducir el riesgo de la corrupción de los datos. "
+    "AlmaLinux Build System has implemented SBOM into its pipeline for security purposes, such as tracing the build process, making it more secure, and reducing the risk of data corruption. ": "AlmaLinux Build System ha implementado SBOM en su canal con fines de seguridad, tales como el rastrearel proceso de compilación, poara hacerlo más seguro, y reducir el riesgo de la corrupción de los datos. ",
+    "Switching distributions is usually costly and time-consuming, but that's not the case when switching from CentOS and other RHEL® derivatives to AlmaLinux OS.": "El cambio de distribuciones suele ser costoso y requiere mucho tiempo, pero ese no es el caso cuando se cambia de CentOS y otros derivados de RHEL® a AlmaLinux OS."
 }
