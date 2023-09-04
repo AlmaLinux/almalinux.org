@@ -23,7 +23,12 @@ AlmaLinux will have a presence at a number of popular events coming up soon, inc
 
 ## Talks at OLF and ATO
 
-You'll also be able to catch talks by AlmaLinux OS Foundation Chair benny Vasquez at OLF and All Things Open. At OLF benny will be speaking on Saturday, September 9th at 10:00 a.m. on "The Future of AlmaLinux: Building without Following." 
+You'll also be able to catch talks by AlmaLinux OS Foundation Chair benny Vasquez at OLF and All Things Open. 
+
+At OLF benny will be speaking on Saturday, September 9th at 10:00 a.m. on "The Future of AlmaLinux: Building without Following." 
+> Since our inception, AlmaLinux OS has been an exact duplicate of Red Hat Enterprise Linux. With RedHat's shift away from sharing the full building blocks on [git.centos.org](http://git.centos.org/), the AlmaLinux team has been hard at work to define a new, reliable path forward. Come hear about what we've been doing since June, and what we're planning for the future.
+
+
 
 At All Things Open, benny will present "Building AlmaLinux OS without RHEL sources code." In this talk, benny will talk about the plans to plot a path forward for AlmaLinux OS after Red Hat has moved away from hosting RHEL source code on git.centos.org. You'll learn what the project has been doing since June and what AlmaLinux is planning for the future. 
 
