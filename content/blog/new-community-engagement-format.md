@@ -1,5 +1,5 @@
 
-#### Title: Introducing a New Community Engagement Format for AlmaLinux: Let Your Voice Be Heard!
+# Introducing a New Community Engagement Format for AlmaLinux: Let Your Voice Be Heard!
 
 Hello AlmaLinux Community,
 
