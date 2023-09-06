@@ -337,7 +337,7 @@
     "The CentOS ecosystem is a very large and diverse community.": "",
     "First join us at": "",
     "Introducing ELevate Project, an open source initiative to assist users perform migrations between different RHEL-derivative based distributions.": "",
-    "Status Page": "",
+    "Status Page": "صفحة الحالة",
     "AlmaLinux Software Bill of Materials (SBOM) Information": "",
     "It wasn't possible--until now. Move from CentOS 7.x to 8.x version of the RHEL derivative of your choice, or upgrade from 8.x to 9.x within the same derivative. Preserve your applications, your data, and your sanity. Run the most recent version of the OS and software you need.": "لم يكن ذلك ممكنا إلا الآن. انتقل من إصدار CentOS 7.x إلى 8.x من مشتق RHEL الذي تختاره، أو قم بالترقية من 8.x إلى 9.x ضمن نفس المشتق، وحافظ على تطبيقاتك وبياناتك وعقلك. شغِّل أحدث إصدار من نظام التشغيل والبرامج التي تحتاجها.",
     "ELevate is a project aimed to provide the ability to migrate between major versions of RHEL-based distributions from 7.x to 8.x and from 8.x to 9.x. It combines Red Hat's Leapp framework with a community created library and service for the migration metadata set required for it.": "ELevate هو مشروع يهدف إلى توفير القدرة على الترحيل بين الإصدارات الرئيسية من التوزيعات المستندة إلى RHEL من 7.x إلى 8.x ومن 8.x إلى 9.x. فهو يجمع بين إطار عمل Leapp الخاص بـ Red Hat وبين مكتبة وخدمة أنشأها المجتمع لمجموعة مطلوبة من البيانات الفوقية للترحيل.",
@@ -357,5 +357,8 @@
     "Get Docker Image": "احصل على صورة Docker",
     "Get OCI Image from Quay.io": "احصل على صورة OCI من Quay.io",
     "Get AlmaLinux for WSL": "احصل على ألمالينكس لـ WSL",
-    "Run the AlmaLinux terminal environment on Windows.": "شغل طرفية ألمالينكس في ويندوز."
+    "Run the AlmaLinux terminal environment on Windows.": "شغل طرفية ألمالينكس في ويندوز.",
+    "AlmaLinux builds Raspberry Pi images, and also with GNOME desktop environment.": "يبني ألمالينكس صور Raspberry Pi فيها بيئة سطح مكتب غنوم.",
+    "Get Raspberry Pi Image": "احصل على صورة Raspberry Pi",
+    "Get LXC/LXD Images": "احصل على صور LXC/LXD"
 }
