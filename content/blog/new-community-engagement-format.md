@@ -33,3 +33,20 @@ We're eagerly awaiting your participation in this exciting new chapter of commun
 
 Best regards,
 The AlmaLinux Team
+
+
+p.s. Example of the post for IPFS written using format presented above, below.
+
+
+🚀 Are you interested in [IPFS (InterPlanetary File System)](https://ipfs.tech) for AlmaLinux's Synergy Repo?
+
+### Questions for the Community
+
+1. **Are you familiar with IPFS?**
+2. **If you've used IPFS, could you share your experiences and use-cases?**
+3. **Would you find it beneficial to include IPFS in the Synergy Repo?**
+
+🗳️ **[Take Poll 1 Here](#link) | [Take Poll 2 Here](#link)**
+
+Join the discussion and share your experience in this thread to help shape AlmaLinux's future!
+
