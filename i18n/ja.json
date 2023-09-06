@@ -359,7 +359,7 @@
     "First join us in the ": "まずは、このチャンネルに参加してください。 ",
     "You can find the tool code ": "ツールのコードはこちらです。 ",
     "ELevate has been used to migrate production environments across industries and across the world, but we still advise caution.": "ELevateは、世界中のさまざまな業界で本番環境の移行に使用されてきた実績がありますが、それでも注意が必要です。",
-    "Get Docker Image": "Docker イメージの取得",
+    "Get Docker Image": "Dockerイメージを入手",
     "Get OCI Image from Quay.io": "Quay.io から OCI イメージの取得",
     "AlmaLinux builds Live Media images for GNOME, GNOME Mini, KDE, XFCE and MATE options.": "AlmaLinux は、GNOME、GNOME Mini、KDE、XFCE、および MATE オプション用の Live Media イメージを生成します。",
     "Get Live Media Image": "ライブメディア イメージの取得",
