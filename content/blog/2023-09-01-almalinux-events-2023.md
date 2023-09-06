@@ -5,7 +5,7 @@ author:
  name: "AlmaLinux Project"
  bio: "-"
  image: /users/AlmaLinux.png
-date: 2023-09-02
+date: 2023-09-07
 post: 
     title: "AlmaLinux Live: Coming to a city near you"
     image: /blog-images/2022_ATO_Astro_1200x628.jpg
