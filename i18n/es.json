@@ -448,5 +448,19 @@
     "a single network installation CD image that downloads packages over the Internet.": "Una única imagen para un CD de instalación en red que descarga los paquetes a través de Internet.",
     "are available via the AWS Marketplace at the links provided:": "están disponibles a través de AWS Marketplace en los enlaces siguientes:",
     "AlmaLinux AWS Wiki Page": "Página de la Wiki de AlmaLinux AWS",
-    "DVD": "DVD"
+    "DVD": "DVD",
+    "guide there.": "guía allí.",
+    "AlmaLinux Generic Cloud Wiki Page": "Página Wiki de AlmaLinux Generic Cloud",
+    "Official AlmaLinux OS Images for Google Cloud are available via the": "Imagenes Oficiales de AlmaLinux OS para Google Cloud están disponibles a través de la",
+    "Google Cloud Marketplace": "Google Cloud Marketplace",
+    "The AlmaLinux OS Generic Cloud images are available from our": "Las imágenes de AlmaLinux OS Generic Cloud están disponibles en nuestro",
+    "A complete list of AlmaLinux Community AMIs can be found on the": "Puedes encontrar una lista completa de las AMI comunitarias de AlmaLinux en la página",
+    "file.": "archivo.",
+    "AlmaLinux OS offers official Amazon Machine Images via the AWS Marketplace and Community AMIs.": "AlmaLinux OS ofrece imágenes de máquina oficiales de Amazon a través de AWS Marketplace y Community AMIs.",
+    "Download from mirrors": "Descargar desde los espejos",
+    "Using Generic Cloud on a local machine or server": "Usa Generic Cloud en un equipo o un servidor local",
+    "You can also find the": "También se puede encontrar el",
+    "mirrors": "espejos",
+    "More information about AlmaLinux Generic Cloud images and verification guidelines are available on the": "Encontrarás más información sobre las imágenes de AlmaLinux Generic Cloud y las directrices de verificación en la página web",
+    " and as a": " y como"
 }
