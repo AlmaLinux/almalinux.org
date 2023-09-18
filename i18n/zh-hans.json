@@ -360,5 +360,6 @@
     "Get AlmaLinux for WSL": "获取适用于 WSL 的 AlmaLinux",
     "Switching is easy": "一键切换",
     "ELevate.": "ELevate.",
-    "* - migration to CentOS Stream 9 is currently in process and will be available later.": "* - 迁移到 CentOS Stream 9 目前正在进行中，稍后将提供。"
+    "* - migration to CentOS Stream 9 is currently in process and will be available later.": "* - 迁移到 CentOS Stream 9 目前正在进行中，稍后将提供。",
+    "AlmaLinux supports 4 architectures:": "AlmaLinux 支持4种架构："
 }
