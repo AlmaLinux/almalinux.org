@@ -5,12 +5,13 @@ author:
  name: "Scott A. Williams - AKA vwbusguy"
  bio: "MA, Senior Linux DevOps Engineer, University of California, Santa Barbara"
  image: /users/vwbusguy.jpg
-date: '2023-08-25'
+date: '2023-09-18'
 post:
   title: "Learn about how UCSB uses Almalinux in day-to-day operations."
-  image: /blog-images/23.08.28.ucsb_blog.png
+  image: /blog-images/23.09.26.ucsb_blog.svg
 ---
 
+*Note: This post is a bit of a departure from what you normally see on the AlmaLinux blog, but we would love to share more stories like this! If you would like to write a post about how AlmaLinux helps you in your daily life, reach out to <a href="mailto:benny@almalinux.org">benny</a>.*
 
 The [College of Letters and Science at the University of California, Santa Barbara](https://lsit.ucsb.edu/) (UCSB) uses AlmaLinux, among other Linux distributions, in regular day-to-day operations. One such use case for AlmaLinux is the build infrastructure behind data science environments that serve hundreds to thousands of students per term.
 
