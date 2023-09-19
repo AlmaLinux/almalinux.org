@@ -40,8 +40,9 @@ The compilation license does not supersede the licenses of code and content cont
 
 ## Explicitly Licensed Contributions
 
-Explicitly Licensed Contributions can be under any of the open source or open content licenses considered acceptable for the Fedora Project.
-AlmaLinux.org Content
+Explicitly Licensed Contributions can be under any of the open source or open content licenses considered acceptable for the [Fedora Project](https://docs.fedoraproject.org/en-US/legal/license-approval/).
+
+## AlmaLinux.org Content
 
 As of 2021-05-01, new content published on [www.almalinux.org](https://www.almalinux.org), [wiki.almalinux.org](https://wiki.almalinux.org) and [blog.almalinux.org](https://blog.almalinux.org) is licensed under the Creative Commons Attribution-ShareAlike 4.0 International Public License (CC BY-SA 4.0), except as otherwise indicated in this document or the content itself. Accordingly, the Default License for Contributions to such content is CC BY-SA 4.0, with attribution solely to the AlmaLinux OS Foundation.
 
