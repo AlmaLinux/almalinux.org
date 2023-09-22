@@ -908,4 +908,82 @@ a {
     overflow-wrap: anywhere;
 }
 
+/* this adds individual list images to the social links on the ATO-23 landing page, but can also be used elsewhere. */
+
+.sociallist a {
+	color: #0D3654;
+}
+
+.social-item-one {
+	list-style: none; /* Remove default list bullet */
+	padding-left: 24px; /* Add padding for the image */
+	background-repeat: no-repeat;
+	background-size: 16px 16px; /* Adjust the size as needed */
+	background-position: 0 50%; /* Center the image vertically */
+    background-image: url('/landingpages/ato-2023/social/mattermost.png');
+}
+
+.social-item-two {
+	list-style: none; /* Remove default list bullet */
+	padding-left: 24px; /* Add padding for the image */
+	background-repeat: no-repeat;
+	background-size: 16px 16px; /* Adjust the size as needed */
+	background-position: 0 50%; /* Center the image vertically */
+	background-image: url('/landingpages/ato-2023/social/twitter.png');
+}
+
+.social-item-three {
+	list-style: none; /* Remove default list bullet */
+	padding-left: 24px; /* Add padding for the image */
+	background-repeat: no-repeat;
+	background-size: 16px 16px; /* Adjust the size as needed */
+	background-position: 0 50%; /* Center the image vertically */
+	background-image: url('/landingpages/ato-2023/social/reddit.png');
+}
+
+.social-item-four {
+	list-style: none; /* Remove default list bullet */
+	padding-left: 24px; /* Add padding for the image */
+	background-repeat: no-repeat;
+	background-size: 16px 16px; /* Adjust the size as needed */
+	background-position: 0 50%; /* Center the image vertically */
+	background-image: url('/landingpages/ato-2023/social/lists.png');
+}
+
+.social-item-five {
+	list-style: none; /* Remove default list bullet */
+	padding-left: 24px; /* Add padding for the image */
+	background-repeat: no-repeat;
+	background-size: 16px 16px; /* Adjust the size as needed */
+	background-position: 0 50%; /* Center the image vertically */
+	background-image: url('/landingpages/ato-2023/social/discourse.png');
+}
+
+.social-item-six {
+    list-style: none; /* Remove default list bullet */
+    padding-left: 24px; /* Add padding for the image */
+    background-repeat: no-repeat;
+    background-size: 16px 16px; /* Adjust the size as needed */
+    background-position: 0 50%; /* Center the image vertically */
+	background-image: url('/landingpages/ato-2023/social/github.png');
+}
+
+.social-item-seven {
+    list-style: none; /* Remove default list bullet */
+    padding-left: 24px; /* Add padding for the image */
+    background-repeat: no-repeat;
+    background-size: 16px 16px; /* Adjust the size as needed */
+    background-position: 0 50%; /* Center the image vertically */
+	background-image: url('/landingpages/ato-2023/social/docker.png');
+}
+
+.social-item-eight {
+    list-style: none; /* Remove default list bullet */
+    padding-left: 24px; /* Add padding for the image */
+    background-repeat: no-repeat;
+    background-size: 16px 16px; /* Adjust the size as needed */
+    background-position: 0 50%; /* Center the image vertically */
+	background-image: url('/landingpages/ato-2023/social/wiki.png');
+}
+
 /*# sourceMappingURL=bundle.css.map */
