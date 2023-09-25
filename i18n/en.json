@@ -427,5 +427,6 @@
    "The official AlmaLinux OS images are available on \"}}<a href=\"https://cloudmarketplace.oracle.com/marketplace/en_US/partners/125035508\">{{ i18n \"Oracle Cloud Marketplace": "The official AlmaLinux OS images are available on \"}}<a href=\"https://cloudmarketplace.oracle.com/marketplace/en_US/partners/125035508\">{{ i18n \"Oracle Cloud Marketplace",
    "Supported AlmaLinux OS versions:": "Supported AlmaLinux OS versions:",
    "and from the main AlmaLinux OS repositories:": "and from the main AlmaLinux OS repositories:",
-   "Board Operations and Code of Ethics": "Board Operations and Code of Ethics"
+   "Board Operations and Code of Ethics": "Board Operations and Code of Ethics",
+   "Note: If you use CloudLinux, we recommend using the": "Note: If you use CloudLinux, we recommend using the"
 }
