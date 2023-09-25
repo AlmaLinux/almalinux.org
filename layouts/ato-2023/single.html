@@ -1,5 +1,23 @@
 {{ define "main" }}
 <style>
+  @media (max-width: 1399px){
+    .al-index-toppictures > .container {
+      height: 641px!important;
+    }
+    .box-topimage {
+      padding-left: 18px!important;
+      padding-bottom: 285px!important;
+    }
+  }
+  @media (max-width: 1199px){
+    .al-index-toppictures > .container {
+      height: 541px!important;
+    }
+    .box-topimage {
+      padding-left: 8px!important;
+      padding-bottom: 216px!important;
+    }
+  }
   @media (max-width: 991px){
     .container-distro {
       flex-direction: column;
@@ -54,14 +72,11 @@
 <div class="al-body-container">
   <section class="al-page-index">
     <div class="al-index-toppictures" style="background: #0e3b5c;">
-      <div class="container al-py-lg" style="background-image: url(/landingpages/ato-2023/ato_header.jpeg); background-repeat: no-repeat;
-    background-position: center top;
-    background-attachment: fixed;
-	background-size:cover;">
-        <div style="width: 40%; text-align: left;">
-			<h1>Hello ATO ’23!</h1>
-			<p>We are so grateful to the All Things Open <br> community for welcoming us back again.</p>
-		</div>
+      <div class="container al-py-lg" style="padding: 0 40px 0 40px; background-image: url(/landingpages/ato-2023/ato_header.jpeg); background-repeat: no-repeat; background-position: center top; background-size: contain; height: 742px; display: flex; flex-direction: column; justify-content: flex-end;">
+        <div class="box-topimage" style="padding-left: 28px; text-align: left; padding-bottom: 350px;">
+          <h1 style="font-weight: 800;">Hello ATO ’23!</h1>
+          <p>We are so grateful to the All Things Open <br> community for welcoming us back again.</p>
+		    </div>
       </div>
     </div>
     <div class="al-index-description">
