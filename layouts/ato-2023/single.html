@@ -1,0 +1,423 @@
+{{ define "main" }}
+<style>
+  @media (max-width: 1399px){
+    .al-index-toppictures > .container {
+      height: 641px!important;
+    }
+    .box-topimage {
+      padding-left: 18px!important;
+      padding-bottom: 285px!important;
+    }
+  }
+  @media (max-width: 1199px){
+    .al-index-toppictures > .container {
+      height: 541px!important;
+    }
+    .box-topimage {
+      padding-left: 8px!important;
+      padding-bottom: 216px!important;
+    }
+  }
+  @media (max-width: 991px){
+    .container-distro {
+      flex-direction: column;
+      align-items: center;
+    }
+    .distro-item-1 {
+      width: 100%!important;
+    }
+    .distro-item-2 {
+      width: 100%!important;
+      padding-left: 0!important;
+    }
+    .row > a{
+      width: 25%!important;
+    }
+    .container-lern {
+      flex-direction: column;
+    }
+    .lern-item-1 {
+      width: 100%!important;
+    }
+    .lern-item-2 {
+      width: 100%!important;
+      padding-left: 0!important;
+    }
+    .container-stop {
+      flex-direction: column;
+      align-items: center!important;
+    }
+    .stop-item-1 {
+      width: 100%!important;
+    }
+    .stop-item-2 {
+      padding-left: 0!important;
+    }
+  }
+  @media (max-width: 767px){
+    .row > a{
+      width: 50%!important;
+    }
+    .container-security {
+      flex-direction: column!important;
+    }
+    .container-measure {
+      width: 100%!important;
+    }
+  }
+</style>
+
+
+<section>
+<div class="al-body-container">
+  <section class="al-page-index">
+    <div class="al-index-toppictures" style="background: #0e3b5c;">
+      <div class="container al-py-lg" style="padding: 0 40px 0 40px; background-image: url(/landingpages/ato-2023/ato_header.jpeg); background-repeat: no-repeat; background-position: center top; background-size: contain; height: 742px; display: flex; flex-direction: column; justify-content: flex-end;">
+        <div class="box-topimage" style="padding-left: 28px; text-align: left; padding-bottom: 350px;">
+          <h1 style="font-weight: 800;">{{ i18n "Hello ATO ’23!" }}</h1>
+          <p>{{ i18n "We are so grateful to the All Things Open" }} <br> {{ i18n "community for welcoming us back again." }}</p>
+		    </div>
+      </div>
+    </div>
+    <div class="al-index-description">
+      <div class="container al-py-md" style="padding: 0 40px 0 40px;">
+        <h3>
+          {{ i18n "Enterprise Linux, Free Forever, Community-Owned and RHEL" }} <span style="font-size: 10px;">®</span> {{ i18n "compatible." }}
+        </h3>
+        <div>
+          <p>
+            {{ i18n "AlmaLinux OS is an enterprise Linux operating system that is used across the globe for enterprise and hobbyist needs alike." }} 
+            {{ i18n "When we got our start we were a downstream rebuild of Red Hat Enterprise Linux, but earlier this year we shifted to" }}
+            <a href="https://almalinux.org/blog/future-of-almalinux/" style="color: white;">{{ i18n "maintaining compatibility with RHEL" }}</a> {{ i18n "for our community. With over 500,000 servers calling out to one of our 300+" }}
+            <a href="https://mirrors.almalinux.org/" style="color: white;">{{ i18n "geo-located mirrors" }}</a> {{ i18n "every night, the adoption of AlmaLinux since our inception just over 2.5 years ago has both humbled and ignited us." }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="al-index-servers" style="background: #0e3b5c;">
+      <div class="container al-py-md" style="padding: 0 40px 0 40px;">
+        <h1 style="font-size: 80px;text-align: center;">
+          {{ i18n "500,000+ Servers" }}
+        </h1>
+        <div style="text-align: center;">
+          <p>
+            {{ i18n "Every night 500,000+ servers are calling home to our geo-located mirror system, and that number doesn’t account for systems using their own mirrors or sharing an IP address." }}
+          </p>
+        </div>
+        <div class="containet-stats-box" style="display: flex; text-align: center;">
+          <div class="box-item-1" style="width: 33%; border-top: 2px solid; border-bottom: 2px solid;  border-right: solid 2px #fefefe; border-image: linear-gradient(to right, #0e3b5c, #fff) 1;">
+            <p style="margin-top: 16px;">
+              {{ i18n "Mirrors" }}
+            </p>
+            <p style="font-size: 25px; line-height: 40px; letter-spacing: 0.25px;">
+              300+
+            </p>
+          </div>
+          <div class="box-item-2" style="width: 33%; border-top: solid 2px #fefefe; border-bottom: solid 2px #fefefe; border-right: solid 2px #fefefe;">
+            <p style="margin-top: 16px;">
+              {{ i18n "DockerHub Pulls" }}
+            </p>
+            <p style="font-size: 25px; line-height: 40px; letter-spacing: 0.25px;">
+              {{ i18n "1 Million+" }}
+            </p>
+          </div>
+          <div class="box-item-3" style="width: 33%; border-top: solid 2px #fefefe; border-bottom: solid 2px #fefefe; border-image: linear-gradient(to right, #fff, #0e3b5c) 1;">
+            <p style="margin-top: 16px;">
+              {{ i18n "Contributors" }}
+            </p>
+            <p style="font-size: 25px; line-height: 40px; letter-spacing: 0.25px;">
+              500+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="al-index-suppurt">
+      <div class="container al-py-md" style="padding: 0 40px 0 40px;">
+        <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">{{ i18n "Expanded Platform Support" }}</h2>
+        <div class="container-support-proc" style="display: flex; text-align: center; padding: 48px 0 0 0!important;">
+          <img src="/landingpages/ato-2023/Platforms.svg" style="object-fit: contain; width: 100%; height: 100%;">
+        </div>
+      </div>
+    </div>
+    <div class="al-index-distro" style="background: #0e3b5c;">
+      <div class="container al-py-md" style="padding: 0 40px 0 40px;">
+        <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">{{ i18n "ELevate your distro" }}</h2>
+        <div class="container-distro" style="display: flex; text-align: left; padding: 48px 0 0 0!important">
+          <div class="distro-item-1" style="width: 50%;">
+            <img src="/images/ELevate.svg" style="object-fit: contain; width: 100%; height: 100%;">
+          </div>
+          <div class="distro-item-2" style="width: 50%; padding-left: 40px; display: flex; flex-direction: column; justify-content: space-between;">
+            <p style="line-height: 28px; letter-spacing: 0.25px;">
+              {{ i18n "As users of the historic CentOS, we have been working diligently to solve the problems and pain points that we all experienced, and one way we’ve done that is with" }} <a href="https://almalinux.org/elevate/" style="color: white;">{{ i18n "Project ELevate" }}</a>. {{ i18n "ELevate allows you to upgrade your enterprise linux operating system between major versions in place. No more having to migrate all of your data, instead ELevate your distribution!" }}
+            </p>
+            <p style="font-size: 13px; line-height: 28px; letter-spacing: 0.25px;">
+              {{ i18n "* - migration to CentOS Stream 9 is currently in development and will be available later." }} <br>
+              {{ i18n "** - migration to Oracle Linux 9 is available with the" }}
+              <a href="https://blogs.oracle.com/linux/post/upgrade-oracle-linux-8-to-oracle-linux-9-using-leapp" style="color: white;">Oracle Leapp utility</a> {{ i18n "and will not be supported by ELevate project." }}<br>
+			        {{ i18n "Note: If you use cPanel, we recommend using the" }} <a href="https://cpanel.github.io/elevate/" style="color: white;">cPanel ELevate</a> {{ i18n "fork." }}<br>
+			        {{ i18n "Note: If you use CloudLinux, we recommend using the" }} <a href="https://www.cloudlinux.com/elevate/" style="color: white;">CloudLinux ELevate</a> {{ i18n "fork." }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- SECURITY -->
+        <div class="al-index-security-container">
+            <div class="container al-py-lg" style="padding: 40px 40px!important;">
+                <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">{{ i18n "Security" }}</h2>
+                <div class="container al-py-md" style="padding: 48px 0 0 0!important;">
+                    <div class="container-security" style="display: flex; justify-content: space-between;">
+                        <div class="container-measure" style="display: flex; width: 32%;">
+                            <img loading="lazy" class="al-index-community-icon img" src="/images/errata-iconA.svg" style="height: 32px; width: 32px;">
+                            <div class="al-index-community-content-wrap" style="padding-left: 22px">
+                                <h4 class="fw-bold mb-0 pb-2">Errata</h4>
+                                <p>
+                                    {{ i18n "AlmaLinux OS Foundation publishes Errata to help users to determine what updates such as security issues and fixed bugs are available and their importance based on analysis." }}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-measure" style="display: flex; width: 32%;">
+                            <img loading="lazy" class="al-index-community-icon img" src="/images/open_vul_assessment_icon_B.svg" style="height: 32px; width: 32px;">
+                            <div class="al-index-community-content-wrap" style="padding-left: 22px">
+                                <h4 class="fw-bold mb-0 pb-2">OpenSCAP and OVAL</h4>
+                                <p>
+                                    {{ i18n "AlmaLinux OS provides SCAP and SCAP Workbench packages to audit your AlmaLinux system for security compliance alongside OVAL streams." }}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container-measure" style="display: flex; width: 32%;">
+                            <img loading="lazy" class="al-index-community-icon img" src="/images/sbom_iconF.svg" style="height: 32px; width: 32px;">
+                            <div class="al-index-community-content-wrap" style="padding-left: 22px">
+                                <h4 class="fw-bold mb-0 pb-2">Software Bill of Materials</h4>
+                                <p>
+                                    {{ i18n "AlmaLinux OS has implemented SBOM into AlmaLinux Build System to make the build process more secure and possible to trace." }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                     <br><p>
+                        {{ i18n "AlmaLinux OS provides a set of security features: Errata, GPG keys, Mailing Lists, OpenSCAP, OVAL, SBOM" }}- <a href="/security" style="color: white;">{{ i18n "read more" }}</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    <div class="al-index-sponsors" style="background: #0e3b5c;">
+      <div class="container al-py-md" style="padding: 0 40px 0 40px;">
+        <h1 style="font-size: 80px; text-align: center; letter-spacing: 0.80px; font-weight: 700;">
+          {{ i18n "20+ Sponsors" }}
+        </h1>
+        <div style="text-align: center; line-height: 28px; word-wrap: break-word;">
+          <p>
+            {{ i18n "Whether it's with financial support, hosting a mirror, an s390x server, an ARM server, bandwidth, or just employing folks who get to work on our project as part of their job, our sponsors keep the lights on and keep us moving forward. The sponsors below have joined us as a Platinum, Gold, or Silver sponsor, and are listed below. We also have over 130" }} <a href="https://mirrors.almalinux.org/" style="color: white;">{{ i18n "mirror sponsors" }}</a>.
+          </p>
+        </div>
+        <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 g-5 al-backed-by-list" style="justify-content: center;">
+
+          <a href="https://www.cloudlinux.com" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/cloudlinux.svg" alt="CloudLinux" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://www.cybertrust.co.jp/" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/cybertrust-japan.svg" alt="Cybertrust Japan" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://tuxcare.com/" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/TuxCare_Horizontal_Logo_NoTagLine_White.svg" alt="TuxCare" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://codenotary.com" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/light.svg" alt="Codenotary" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://aws.amazon.com" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/aws.svg" alt="Amazon AWS" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://azure.microsoft.com" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/azurelarge1.svg" alt="Microsoft Azure" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://www.arm.com" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/arm.svg" alt="ARM" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://www.sinenomine.net/offerings/linux/almalinux" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/sine_nomine_logo_grayscale.svg" alt="Sine Nomine" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://www.equinix.com" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/equinix.svg" alt="Equinix" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://cpanel.net" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/cpanel.svg" alt="CPanel" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://www.hivelocity.net" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/hivelocity.svg" alt="Hivelocity" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://osuosl.org" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/osuosl.svg" alt="OSU Open Source Lab" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://www.plesk.com" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/plesk.svg" alt="Plesk" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://mattermost.com" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/mattermost.svg" alt="Mattermost" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://www.algolia.com" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/logo-algolia-nebula-blue-full_a52auc4.svg" alt="Algolia" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://rackspeed.de" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/rackspeed-logo-reverse.svg" alt="RackSpeed" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://www.knownhost.com/" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/KnownHostLogoFLATWHITE.svg" alt="KnownHost" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://www.amd.com/" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/AMD_Logo.svg" alt="AMD" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://black.host/" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/blackhost_logo.svg" alt="BlackHOST" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://www.cloudfest.com/" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/Cloudfest_logo_2022_white_1.svg" alt="CloudFest" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="http://procomputers.com/" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/procomputers_logo_white.svg" alt="ProComputers" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://orcharhino.com/en/" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/167500144-1f877ea7-9b48-40cc-8363-7f795ce585fe.svg" alt="Orcharhino"
+                class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://world4you.com" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/w4y_logo_rgb_weiss.svg" alt="World4You" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://www.hawkhost.com" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/HH-AllWhiteAlma.svg" alt="HawkHost" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        
+          <a href="https://openlogic.com" style="flex: none; width: 16.66667%;">
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+              <img loading="lazy" src="/brands/logo-openlogic-tagline-white.svg" alt="OpenLogic" class="al-backer-logo" style="width: 120px;">
+            </div>
+          </a>
+        </div>   
+      </div>
+    </div>
+    <div class="al-index-lern">
+      <div class="container al-py-md" style="padding: 0 40px 0 40px;">
+        <div class="container-lern" style="display: flex;">
+          <div class="lern-item-1" style="display: flex; flex-direction: column; width: 50%;">
+            <h1 style="font-size: 80px; text-align: center; letter-spacing: 0.80px; font-weight: 700;">
+              {{ i18n "Learn more live!" }}
+            </h1>
+            <p style="font-weight: 700; line-height: 28px; text-align: center;">
+              {{ i18n "Catch benny at 3:45 eastern time (7:45 pm UTC) on Monday Oct 16th in Case Study / Demo 1; Room 306A." }}
+            </p>
+            <p style="font-weight: 400; line-height: 28px;">
+              <span style="font-weight: 700;">{{ i18n "Building AlmaLinux OS without RHEL sources code" }}</span>
+			  <p style="line-height: 110%;">{{ i18n "Abstract: AlmaLinux OS has historically been built to be an exact copy of RHEL, using RHEL's provided resources. With RedHat's shift away from sharing the full building blocks on git.centos.org, the AlmaLinux team has been hard at work to find a new, reliable path forward. Come hear about what we've been doing since June, and what we're planning for the future." }}</p>
+            </p>
+          </div>
+          <div class="lern-item-2" style="width: 50%; padding-left: 40px;">
+            <img src="/landingpages/ato-2023/bennysocialcard.jpeg" style="object-fit: contain; width: 100%; height: 100%;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="al-index-stop" style="background: #22C2FF;">
+      <div class="container al-py-md" style="padding: 0 40px 0 40px;">
+        <div class="container-stop" style="display: flex;">
+          <div class="stop-item-1" style="width: 60%; text-align: center;">
+            <h1 style="font-size: 60px; font-weight: 700; line-height: 80px;">
+              {{ i18n "Stop by Booth #81" }}
+            </h1>
+            <p style="font-weight: 400; line-height: 26px;">
+              {{ i18n "Find us right outside Ballroom B, and while you’re there grab some stickers and swag, and sign up for your free t-shirt for AlmaLinux merch at " }}<a href="https://shop.almalinux.org/" style="color: white;">shop.almalinux.org</a>. {{ i18n "If you can't swing by the booth, find us online!" }} 
+            </p>
+          </div>
+          <div class="stop-item-2" style="padding-left: 50px;">
+			  <h4 class="fw-bold mb-0 pb-2">{{ i18n "Come hang out with us!" }}</h4>
+				<ul>
+				  <li class="social-item-one sociallist"><a href="http://chat.almalinux.org">chat.almalinux.org</a></li>
+				  <li class="social-item-two sociallist"><a href="http://twitter.com/almalinux">twitter.com/almalinux</a></li>
+				  <li class="social-item-three sociallist"><a href="http://reddit.com/r/almalinux">reddit.com/r/almalinux</a></li>
+				  <li class="social-item-four sociallist"><a href="http://lists.almalinux.org">lists.almalinux.org</a></li>
+				  <li class="social-item-five sociallist"><a href="http://almalinux.discourse.group">almalinux.discourse.group</a></li>
+				  <li class="social-item-six sociallist"><a href="http://github.com/AlmaLinux">github.com/AlmaLinux</a></li>
+				  <li class="social-item-seven sociallist"><a href="http://hub.docker.com/_/almalinux">hub.docker.com/_/almalinux</a></li>
+				  <li class="social-item-eight sociallist"><a href="http://wiki.almalinux.org/">wiki.almalinux.org</a></li>
+				</ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</div>
+</section>
+{{end}}
