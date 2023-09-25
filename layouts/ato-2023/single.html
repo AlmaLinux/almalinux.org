@@ -1,4 +1,54 @@
 {{ define "main" }}
+<style>
+  @media (max-width: 991px){
+    .container-distro {
+      flex-direction: column;
+      align-items: center;
+    }
+    .distro-item-1 {
+      width: 100%!important;
+    }
+    .distro-item-2 {
+      width: 100%!important;
+      padding-left: 0!important;
+    }
+    .row > a{
+      width: 25%!important;
+    }
+    .container-lern {
+      flex-direction: column;
+    }
+    .lern-item-1 {
+      width: 100%!important;
+    }
+    .lern-item-2 {
+      width: 100%!important;
+      padding-left: 0!important;
+    }
+    .container-stop {
+      flex-direction: column;
+      align-items: center!important;
+    }
+    .stop-item-1 {
+      width: 100%!important;
+    }
+    .stop-item-2 {
+      padding-left: 0!important;
+    }
+  }
+  @media (max-width: 767px){
+    .row > a{
+      width: 50%!important;
+    }
+    .container-security {
+      flex-direction: column!important;
+    }
+    .container-measure {
+      width: 100%!important;
+    }
+  }
+</style>
+
 
 <section>
 <div class="al-body-container">
@@ -16,18 +66,16 @@
     </div>
     <div class="al-index-description">
       <div class="container al-py-md" style="padding: 0 40px 0 40px;">
-        <div class="Text">
-          <h3>
-            Enterprise Linux, Free Forever, Community-Owned and RHEL <span style="font-size: 10px;">®</span> compatible.
-          </h3>
-          <div>
-            <p>
-              AlmaLinux OS is an enterprise Linux operating system that is used across the globe for enterprise and hobbyist needs alike. 
-              When we got our start we were a downstream rebuild of Red Hat Enterprise Linux, but earlier this year we shifted to
-              <a href="https://almalinux.org/blog/future-of-almalinux/" style="color: white;">maintaining compatibility with RHEL</a> for our community. With over 500,000 servers calling out to one of our 300+
-              <a href="https://mirrors.almalinux.org/" style="color: white;">geo-located mirrors</a> every night, the adoption of AlmaLinux since our inception just over 2.5 years ago has both humbled and ignited us.
-            </p>
-          </div>
+        <h3>
+          Enterprise Linux, Free Forever, Community-Owned and RHEL <span style="font-size: 10px;">®</span> compatible.
+        </h3>
+        <div>
+          <p>
+            AlmaLinux OS is an enterprise Linux operating system that is used across the globe for enterprise and hobbyist needs alike. 
+            When we got our start we were a downstream rebuild of Red Hat Enterprise Linux, but earlier this year we shifted to
+            <a href="https://almalinux.org/blog/future-of-almalinux/" style="color: white;">maintaining compatibility with RHEL</a> for our community. With over 500,000 servers calling out to one of our 300+
+            <a href="https://mirrors.almalinux.org/" style="color: white;">geo-located mirrors</a> every night, the adoption of AlmaLinux since our inception just over 2.5 years ago has both humbled and ignited us.
+          </p>
         </div>
       </div>
     </div>
@@ -101,7 +149,7 @@
     </div>
         <!-- SECURITY -->
         <div class="al-index-security-container">
-            <div class="container al-py-lg" style="padding: 48px 15px;">
+            <div class="container al-py-lg" style="padding: 40px 40px!important;">
                 <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Security</h2>
                 <div class="container al-py-md" style="padding: 48px 0 0 0!important;">
                     <div class="container-security" style="display: flex; justify-content: space-between;">
@@ -337,7 +385,7 @@
               Find us right outside Ballroom B, and while you’re there grab some stickers and swag, and sign up for your free t-shirt for AlmaLinux merch at <a href="https://shop.almalinux.org/" style="color: white;">shop.almalinux.org</a>. If you can't swing by the booth, find us online! 
             </p>
           </div>
-          <div class="stop-item-2" style="width: 40%;">
+          <div class="stop-item-2" style="padding-left: 50px;">
 			  <h4 class="fw-bold mb-0 pb-2">Come hang out with us!</h4>
 				<ul>
 				  <li class="social-item-one sociallist"><a href="http://chat.almalinux.org">chat.almalinux.org</a></li>
@@ -355,5 +403,6 @@
     </div>
 
   </section>
+</div>
 </section>
 {{end}}
