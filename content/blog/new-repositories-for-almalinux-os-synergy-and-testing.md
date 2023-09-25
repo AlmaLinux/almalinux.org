@@ -11,7 +11,7 @@ post:
     image: /blog-images/new-repos-announcement.png
 ---
 
-Hello, Community! Since [AlmaLinux OS has shifted its direction to ABI compatibility](https://almalinux.org/blog/future-of-almalinux/), we can now provide additional content for our community. For that reason, two additional repositories have been added - **Testing** and **Synergy**. Today, we are announcing that both repositories are available for AlmaLinux OS 8 and AlmaLinux OS 9. 
+Hello, Community! Since [AlmaLinux OS has shifted its direction to RHEL compatibility](https://almalinux.org/blog/future-of-almalinux/), we can now provide additional content for our community. For that reason, two additional repositories have been added - **Testing** and **Synergy**. Today, we are announcing that both repositories are available for AlmaLinux OS 8 and AlmaLinux OS 9. 
 
 ## Testing Repository
 

@@ -15,7 +15,7 @@ Earlier this week a few vulnerabilities were reported to affect Intel and AMD CP
 
 ### How do I install updated  packages?
 
- As we recently changed the build process for AlmaLinux OS, and are now aiming to be [ABI compatible](https://almalinux.org/blog/future-of-almalinux/) with Red Hat Enterprise Linux, we are now able to release updates without waiting for the patches to be released upstream. To help accommodate that, a **Testing** repo has been created for packages that differ from RHEL and require additional testing by our users. 
+ As we recently changed the build process for AlmaLinux OS, and are now aiming to be [RHEL compatible](https://almalinux.org/blog/future-of-almalinux/) with Red Hat Enterprise Linux, we are now able to release updates without waiting for the patches to be released upstream. To help accommodate that, a **Testing** repo has been created for packages that differ from RHEL and require additional testing by our users. 
 To be able to help with testing, the **Testing** repo should be enabled on the AlmaLinux machine:
 
 ```bash
