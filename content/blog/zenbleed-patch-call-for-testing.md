@@ -73,7 +73,7 @@ journalctl -k --grep=microcode
 
 ## Why call for testing now?
 
-The depth of this exploit is motivation for moving fast, in our opinion. Our users are looking for a patch to come quickly, and this is one more opportunity that we have as a result of our decision to aim for [ABI compatibility](https://almalinux.org/blog/future-of-almalinux/). We will be looking for more opportunities for testing and early/beta adopters as we expand. In fact, we have a kernel update in testing right now, that was shared in [chat.almalinux.org](https://chat.almalinux.org/almalinux/pl/5o5ffzjc53djtrifnuqdeb1ser) earlier today. If you have interest in helping us with testing, please do join us there!
+The depth of this exploit is motivation for moving fast, in our opinion. Our users are looking for a patch to come quickly, and this is one more opportunity that we have as a result of our decision to aim for [binary compatibility](https://almalinux.org/blog/future-of-almalinux/). We will be looking for more opportunities for testing and early/beta adopters as we expand. In fact, we have a kernel update in testing right now, that was shared in [chat.almalinux.org](https://chat.almalinux.org/almalinux/pl/5o5ffzjc53djtrifnuqdeb1ser) earlier today. If you have interest in helping us with testing, please do join us there!
 
 
 ## Come help!

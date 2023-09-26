@@ -16,10 +16,10 @@ It’s been a whirlwind few weeks here at AlmaLinux, and I’m elated to be able
 
 ## The future of AlmaLinux OS
 
-In case you missed it, [Red Hat announced](https://www.redhat.com/en/blog/furthering-evolution-centos-stream) they will no longer be providing the means for downstream clones to continue to be 1:1 binary copies of Red Hat Enterprise Linux (RHEL). Very quickly, both [Jack](https://almalinux.org/blog/our-value-is-our-values/) and [I shared](https://almalinux.org/blog/impact-of-rhel-changes/) some initial thoughts, but we intentionally took our time deciding the next right step for AlmaLinux OS. After much discussion, the AlmaLinux OS Foundation board today has decided to drop the aim to be 1:1 with RHEL. AlmaLinux OS will instead aim to be Application Binary Interface (ABI) compatible*. 
+In case you missed it, [Red Hat announced](https://www.redhat.com/en/blog/furthering-evolution-centos-stream) they will no longer be providing the means for downstream clones to continue to be 1:1 binary copies of Red Hat Enterprise Linux (RHEL). Very quickly, both [Jack](https://almalinux.org/blog/our-value-is-our-values/) and [I shared](https://almalinux.org/blog/impact-of-rhel-changes/) some initial thoughts, but we intentionally took our time deciding the next right step for AlmaLinux OS. After much discussion, the AlmaLinux OS Foundation board today has decided to drop the aim to be 1:1 with RHEL. AlmaLinux OS will instead aim to be binary compatible with RHEL*. 
 
 
-_We will continue to aim to produce an enterprise-grade, long-term distribution of Linux that is aligned and ABI compatible with RHEL in response to our community’s needs, to the extent it is possible to do, and such that software that runs on RHEL will run the same on AlmaLinux._
+_We will continue to aim to produce an enterprise-grade, long-term distribution of Linux that is aligned and binary compatible with RHEL in response to our community’s needs, to the extent it is possible to do, and such that software that runs on RHEL will run the same on AlmaLinux._
  -- From yesterday's meeting notes: [Minutes - Board Meeting #23 July, 2023](https://drive.google.com/file/d/13q6udmzAEqHIoPf2cQJ-QJrYosaFWd_m/view)
 
 
@@ -61,4 +61,4 @@ There’s a lot of work to be done, and we are very excited to welcome you.
 
 –-
 
-\* [ABI compatibility](https://en.wikipedia.org/wiki/Application_binary_interface) in our case means working to ensure that applications built to run on RHEL (or RHEL clones) can run without issue on AlmaLinux. Adjusting to this expectation removes our need to ensure that everything we release is an exact copy of the source code that you would get with RHEL.
+\* [Binary/ABI compatibility](https://en.wikipedia.org/wiki/Application_binary_interface) in our case means working to ensure that applications built to run on RHEL (or RHEL clones) can run without issue on AlmaLinux. Adjusting to this expectation removes our need to ensure that everything we release is an exact copy of the source code that you would get with RHEL. This includes kernel compatibility and application compatibility. 
