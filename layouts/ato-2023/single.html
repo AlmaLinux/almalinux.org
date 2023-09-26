@@ -1,24 +1,22 @@
 {{ define "main" }}
 <style>
   @media (max-width: 1399px){
-    .al-index-toppictures > .container {
-      height: 641px!important;
-    }
     .box-topimage {
-      padding-left: 18px!important;
-      padding-bottom: 285px!important;
+      padding-left: 50px!important;
+      top: 337px!important;
     }
   }
   @media (max-width: 1199px){
-    .al-index-toppictures > .container {
-      height: 541px!important;
-    }
     .box-topimage {
-      padding-left: 8px!important;
-      padding-bottom: 216px!important;
+      padding-left: 43px!important;
+      top: 312px!important;
     }
   }
   @media (max-width: 991px){
+    .box-topimage {
+      padding-left: 32px!important;
+      top: 274px!important;
+    }
     .container-distro {
       flex-direction: column;
       align-items: center;
@@ -55,6 +53,16 @@
     }
   }
   @media (max-width: 767px){
+    .box-topimage {
+      padding-left: 22px!important;
+      top: 257px!important;
+    }
+    .box-topimage > h1 {
+      font-size: 2rem;
+    }
+    .box-topimage > p {
+      font-size: 13px;
+    }
     .row > a{
       width: 50%!important;
     }
@@ -65,6 +73,49 @@
       width: 100%!important;
     }
   }
+  @media (max-width: 575px){ 
+    .text-topimage {
+      font-size: 1.5rem!important;
+    }
+    .box-topimage > p {
+      font-size: 10px!important;
+    }
+  }
+  @media (max-width: 474px){
+    .al-index-servers h1 {
+      font-size: 60px!important;
+    }
+    .al-index-sponsors h1 {
+      font-size: 60px!important;
+    }
+    .container-lern h1 {
+      font-size: 60px!important;
+    }
+    .box-topimage {
+      padding-left: 17px!important;
+      top: 222px!important;
+    }
+  }
+  @media (max-width: 375px){
+    .text-topimage {
+      font-size: 1rem!important;
+    }
+    .box-topimage > p {
+      font-size: 7px!important;
+    }
+    .al-index-servers h1 {
+      font-size: 50px!important;
+    }
+    .al-index-sponsors h1 {
+      font-size: 50px!important;
+    }
+    .container-lern h1 {
+      font-size: 50px!important;
+    }
+    .container-stop h1 {
+      font-size: 50px!important;
+    }
+  }
 </style>
 
 
@@ -72,11 +123,19 @@
 <div class="al-body-container">
   <section class="al-page-index">
     <div class="al-index-toppictures" style="background: #0e3b5c;">
-      <div class="container al-py-lg" style="padding: 0 40px 0 40px; background-image: url(/landingpages/ato-2023/ato_header.jpeg); background-repeat: no-repeat; background-position: center top; background-size: contain; height: 742px; display: flex; flex-direction: column; justify-content: flex-end;">
+      <!-- <div class="container al-py-lg" style="padding: 0 40px 0 40px; background-image: url(/landingpages/ato-2023/ato_header.jpeg); background-repeat: no-repeat; background-position: center top; background-size: contain; height: 742px; display: flex; flex-direction: column; justify-content: flex-end;">
         <div class="box-topimage" style="padding-left: 28px; text-align: left; padding-bottom: 350px;">
           <h1 style="font-weight: 800;">{{ i18n "Hello ATO ’23!" }}</h1>
           <p>{{ i18n "We are so grateful to the All Things Open" }} <br> {{ i18n "community for welcoming us back again." }}</p>
 		    </div>
+      </div> -->
+      <div class="container al-py-lg" style="padding: 0 40px 0 40px;">
+        <img style="width: 100%; height: 100%;" src="/landingpages/ato-2023/ato_header.jpeg">
+        <div class="box-topimage" style="position: absolute; top: 387px; padding-left: 60px;">
+          <h1 class="text-topimage" style="font-weight: 800;">{{ i18n "Hello ATO ’23!" }}</h1>
+          <p>{{ i18n "We are so grateful to the All Things Open" }} <br> {{ i18n "community for welcoming us back again." }}</p>
+		    </div>
+        <!-- <h1 style="position: absolute; top: 25%;">{{ i18n "Hello ATO ’23!" }}</h1> -->
       </div>
     </div>
     <div class="al-index-description">
@@ -169,7 +228,7 @@
                 <div class="container al-py-md" style="padding: 48px 0 0 0!important;">
                     <div class="container-security" style="display: flex; justify-content: space-between;">
                         <div class="container-measure" style="display: flex; width: 32%;">
-                            <img loading="lazy" class="al-index-community-icon img" src="/images/errata-iconA.svg" style="height: 32px; width: 32px;">
+                            <img loading="lazy" class="al-index-community-icon img" src="/images/errata-iconA.svg">
                             <div class="al-index-community-content-wrap" style="padding-left: 22px">
                                 <h4 class="fw-bold mb-0 pb-2">Errata</h4>
                                 <p>
@@ -178,7 +237,7 @@
                             </div>
                         </div>
                         <div class="container-measure" style="display: flex; width: 32%;">
-                            <img loading="lazy" class="al-index-community-icon img" src="/images/open_vul_assessment_icon_B.svg" style="height: 32px; width: 32px;">
+                            <img loading="lazy" class="al-index-community-icon img" src="/images/open_vul_assessment_icon_B.svg">
                             <div class="al-index-community-content-wrap" style="padding-left: 22px">
                                 <h4 class="fw-bold mb-0 pb-2">OpenSCAP and OVAL</h4>
                                 <p>
@@ -187,7 +246,7 @@
                             </div>
                         </div>
                         <div class="container-measure" style="display: flex; width: 32%;">
-                            <img loading="lazy" class="al-index-community-icon img" src="/images/sbom_iconF.svg" style="height: 32px; width: 32px;">
+                            <img loading="lazy" class="al-index-community-icon img" src="/images/sbom_iconF.svg">
                             <div class="al-index-community-content-wrap" style="padding-left: 22px">
                                 <h4 class="fw-bold mb-0 pb-2">Software Bill of Materials</h4>
                                 <p>
@@ -213,156 +272,156 @@
             {{ i18n "Whether it's with financial support, hosting a mirror, an s390x server, an ARM server, bandwidth, or just employing folks who get to work on our project as part of their job, our sponsors keep the lights on and keep us moving forward. The sponsors below have joined us as a Platinum, Gold, or Silver sponsor, and are listed below. We also have over 130" }} <a href="https://mirrors.almalinux.org/" style="color: white;">{{ i18n "mirror sponsors" }}</a>.
           </p>
         </div>
-        <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 g-5 al-backed-by-list" style="justify-content: center;">
+        <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 g-5 al-backed-by-list">
 
-          <a href="https://www.cloudlinux.com" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/cloudlinux.svg" alt="CloudLinux" class="al-backer-logo" style="width: 120px;">
+          <a href="https://www.cloudlinux.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+              <img loading="lazy" src="/brands/cloudlinux.svg" alt="CloudLinux" class="al-backer-logo">
             </div>
           </a>
         
-          <a href="https://www.cybertrust.co.jp/" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/cybertrust-japan.svg" alt="Cybertrust Japan" class="al-backer-logo" style="width: 120px;">
+          <a href="https://www.cybertrust.co.jp/" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+              <img loading="lazy" src="/brands/cybertrust-japan.svg" alt="Cybertrust Japan" class="al-backer-logo">
             </div>
           </a>
         
-          <a href="https://tuxcare.com/" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/TuxCare_Horizontal_Logo_NoTagLine_White.svg" alt="TuxCare" class="al-backer-logo" style="width: 120px;">
+          <a href="https://tuxcare.com/" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+              <img loading="lazy" src="/brands/TuxCare_Horizontal_Logo_NoTagLine_White.svg" alt="TuxCare" class="al-backer-logo">
             </div>
           </a>
         
-          <a href="https://codenotary.com" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/light.svg" alt="Codenotary" class="al-backer-logo" style="width: 120px;">
+          <a href="https://codenotary.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+              <img loading="lazy" src="/brands/light.svg" alt="Codenotary" class="al-backer-logo">
             </div>
           </a>
         
-          <a href="https://aws.amazon.com" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/aws.svg" alt="Amazon AWS" class="al-backer-logo" style="width: 120px;">
+          <a href="https://aws.amazon.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+              <img loading="lazy" src="/brands/aws.svg" alt="Amazon AWS" class="al-backer-logo">
             </div>
           </a>
         
-          <a href="https://azure.microsoft.com" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/azurelarge1.svg" alt="Microsoft Azure" class="al-backer-logo" style="width: 120px;">
+          <a href="https://azure.microsoft.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+              <img loading="lazy" src="/brands/azurelarge1.svg" alt="Microsoft Azure" class="al-backer-logo">
             </div>
           </a>
         
-          <a href="https://www.arm.com" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/arm.svg" alt="ARM" class="al-backer-logo" style="width: 120px;">
+          <a href="https://www.arm.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img loading="lazy" src="/brands/arm.svg" alt="ARM" class="al-backer-logo" >
             </div>
           </a>
         
-          <a href="https://www.sinenomine.net/offerings/linux/almalinux" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/sine_nomine_logo_grayscale.svg" alt="Sine Nomine" class="al-backer-logo" style="width: 120px;">
+          <a href="https://www.sinenomine.net/offerings/linux/almalinux" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img loading="lazy" src="/brands/sine_nomine_logo_grayscale.svg" alt="Sine Nomine" class="al-backer-logo" >
             </div>
           </a>
         
-          <a href="https://www.equinix.com" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/equinix.svg" alt="Equinix" class="al-backer-logo" style="width: 120px;">
+          <a href="https://www.equinix.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img loading="lazy" src="/brands/equinix.svg" alt="Equinix" class="al-backer-logo" >
             </div>
           </a>
         
-          <a href="https://cpanel.net" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/cpanel.svg" alt="CPanel" class="al-backer-logo" style="width: 120px;">
+          <a href="https://cpanel.net" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img loading="lazy" src="/brands/cpanel.svg" alt="CPanel" class="al-backer-logo" >
             </div>
           </a>
         
-          <a href="https://www.hivelocity.net" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/hivelocity.svg" alt="Hivelocity" class="al-backer-logo" style="width: 120px;">
+          <a href="https://www.hivelocity.net" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img loading="lazy" src="/brands/hivelocity.svg" alt="Hivelocity" class="al-backer-logo" >
             </div>
           </a>
         
-          <a href="https://osuosl.org" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/osuosl.svg" alt="OSU Open Source Lab" class="al-backer-logo" style="width: 120px;">
+          <a href="https://osuosl.org" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img loading="lazy" src="/brands/osuosl.svg" alt="OSU Open Source Lab" class="al-backer-logo" >
             </div>
           </a>
         
-          <a href="https://www.plesk.com" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/plesk.svg" alt="Plesk" class="al-backer-logo" style="width: 120px;">
+          <a href="https://www.plesk.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img loading="lazy" src="/brands/plesk.svg" alt="Plesk" class="al-backer-logo" >
             </div>
           </a>
         
-          <a href="https://mattermost.com" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/mattermost.svg" alt="Mattermost" class="al-backer-logo" style="width: 120px;">
+          <a href="https://mattermost.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img loading="lazy" src="/brands/mattermost.svg" alt="Mattermost" class="al-backer-logo" >
             </div>
           </a>
         
-          <a href="https://www.algolia.com" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/logo-algolia-nebula-blue-full_a52auc4.svg" alt="Algolia" class="al-backer-logo" style="width: 120px;">
+          <a href="https://www.algolia.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img loading="lazy" src="/brands/logo-algolia-nebula-blue-full_a52auc4.svg" alt="Algolia" class="al-backer-logo" >
             </div>
           </a>
         
-          <a href="https://rackspeed.de" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/rackspeed-logo-reverse.svg" alt="RackSpeed" class="al-backer-logo" style="width: 120px;">
+          <a href="https://rackspeed.de" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img loading="lazy" src="/brands/rackspeed-logo-reverse.svg" alt="RackSpeed" class="al-backer-logo" >
             </div>
           </a>
         
-          <a href="https://www.knownhost.com/" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/KnownHostLogoFLATWHITE.svg" alt="KnownHost" class="al-backer-logo" style="width: 120px;">
+          <a href="https://www.knownhost.com/" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img loading="lazy" src="/brands/KnownHostLogoFLATWHITE.svg" alt="KnownHost" class="al-backer-logo" >
             </div>
           </a>
         
-          <a href="https://www.amd.com/" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/AMD_Logo.svg" alt="AMD" class="al-backer-logo" style="width: 120px;">
+          <a href="https://www.amd.com/" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img loading="lazy" src="/brands/AMD_Logo.svg" alt="AMD" class="al-backer-logo" >
             </div>
           </a>
         
-          <a href="https://black.host/" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/blackhost_logo.svg" alt="BlackHOST" class="al-backer-logo" style="width: 120px;">
+          <a href="https://black.host/" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img loading="lazy" src="/brands/blackhost_logo.svg" alt="BlackHOST" class="al-backer-logo" >
             </div>
           </a>
         
-          <a href="https://www.cloudfest.com/" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/Cloudfest_logo_2022_white_1.svg" alt="CloudFest" class="al-backer-logo" style="width: 120px;">
+          <a href="https://www.cloudfest.com/" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img loading="lazy" src="/brands/Cloudfest_logo_2022_white_1.svg" alt="CloudFest" class="al-backer-logo" >
             </div>
           </a>
         
-          <a href="http://procomputers.com/" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/procomputers_logo_white.svg" alt="ProComputers" class="al-backer-logo" style="width: 120px;">
+          <a href="http://procomputers.com/" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img loading="lazy" src="/brands/procomputers_logo_white.svg" alt="ProComputers" class="al-backer-logo" >
             </div>
           </a>
         
-          <a href="https://orcharhino.com/en/" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
+          <a href="https://orcharhino.com/en/" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
               <img loading="lazy" src="/brands/167500144-1f877ea7-9b48-40cc-8363-7f795ce585fe.svg" alt="Orcharhino"
-                class="al-backer-logo" style="width: 120px;">
+                class="al-backer-logo" >
             </div>
           </a>
         
-          <a href="https://world4you.com" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/w4y_logo_rgb_weiss.svg" alt="World4You" class="al-backer-logo" style="width: 120px;">
+          <a href="https://world4you.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img loading="lazy" src="/brands/w4y_logo_rgb_weiss.svg" alt="World4You" class="al-backer-logo" >
             </div>
           </a>
         
-          <a href="https://www.hawkhost.com" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/HH-AllWhiteAlma.svg" alt="HawkHost" class="al-backer-logo" style="width: 120px;">
+          <a href="https://www.hawkhost.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img loading="lazy" src="/brands/HH-AllWhiteAlma.svg" alt="HawkHost" class="al-backer-logo" >
             </div>
           </a>
         
-          <a href="https://openlogic.com" style="flex: none; width: 16.66667%;">
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" style="height: 25%;">
-              <img loading="lazy" src="/brands/logo-openlogic-tagline-white.svg" alt="OpenLogic" class="al-backer-logo" style="width: 120px;">
+          <a href="https://openlogic.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img loading="lazy" src="/brands/logo-openlogic-tagline-white.svg" alt="OpenLogic" class="al-backer-logo" >
             </div>
           </a>
         </div>   
