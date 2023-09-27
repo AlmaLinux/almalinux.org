@@ -460,5 +460,12 @@
    "ELevate": "ELevate",
    "Since AlmaLinux is binary compatible with RHEL®, your applications and services should be completely interoperable. You can rapidly migrate any number of servers using the [migration tool](https://github.com/AlmaLinux/almalinux-deploy).": "Since AlmaLinux is binary compatible with RHEL®, your applications and services should be completely interoperable. You can rapidly migrate any number of servers using the [migration tool](https://github.com/AlmaLinux/almalinux-deploy).",
    "When will support AlmaLinux OS 8 reach end of life?": "When will support AlmaLinux OS 8 reach end of life?",
-   "AlmaLinux OS has committed to supporting AlmaLinux OS 8 until 2029, including stable and thoroughly tested updates and security patches.": "AlmaLinux OS has committed to supporting AlmaLinux OS 8 until 2029, including stable and thoroughly tested updates and security patches."
+   "AlmaLinux OS has committed to supporting AlmaLinux OS 8 until 2029, including stable and thoroughly tested updates and security patches.": "AlmaLinux OS has committed to supporting AlmaLinux OS 8 until 2029, including stable and thoroughly tested updates and security patches.",
+   "What does ABI/binary compatible with RHEL mean?": "What does ABI/binary compatible with RHEL mean?",
+   "In July of 2023, ": "In July of 2023, ",
+   "AlmaLinux announced": "AlmaLinux announced",
+   " that they were shifting their goal from being a downstream rebuild of RHEL to maintaining ABI compatibility with RHEL. For the AlmaLinux team that means that everything from software applications to kernel modules that work on RHEL will work on AlmaLinux, and if they don't we would consider that a bug.": " that they were shifting their goal from being a downstream rebuild of RHEL to maintaining ABI compatibility with RHEL. For the AlmaLinux team that means that everything from software applications to kernel modules that work on RHEL will work on AlmaLinux, and if they don't we would consider that a bug.",
+   "Is AlmaLinux OS FIPS-140 compliant??": "Is AlmaLinux OS FIPS-140 compliant??",
+   "AlmaLinux OS 9.2 is FIPS-140 compliant. Read more in this blog post: ": "AlmaLinux OS 9.2 is FIPS-140 compliant. Read more in this blog post: ",
+   "FIPS Validation for AlmaLinux OS": "FIPS Validation for AlmaLinux OS"
 }
