@@ -1,22 +1,6 @@
 {{ define "main" }}
 <style>
-  @media (max-width: 1399px){
-    .box-topimage {
-      padding-left: 50px!important;
-      top: 337px!important;
-    }
-  }
-  @media (max-width: 1199px){
-    .box-topimage {
-      padding-left: 43px!important;
-      top: 312px!important;
-    }
-  }
   @media (max-width: 991px){
-    .box-topimage {
-      padding-left: 32px!important;
-      top: 274px!important;
-    }
     .container-distro {
       flex-direction: column;
       align-items: center;
@@ -53,10 +37,6 @@
     }
   }
   @media (max-width: 767px){
-    .box-topimage {
-      padding-left: 22px!important;
-      top: 257px!important;
-    }
     .box-topimage > h1 {
       font-size: 2rem;
     }
@@ -91,10 +71,6 @@
     .container-lern h1 {
       font-size: 60px!important;
     }
-    .box-topimage {
-      padding-left: 17px!important;
-      top: 222px!important;
-    }
   }
   @media (max-width: 375px){
     .text-topimage {
@@ -123,19 +99,12 @@
 <div class="al-body-container">
   <section class="al-page-index">
     <div class="al-index-toppictures" style="background: #0e3b5c;">
-      <!-- <div class="container al-py-lg" style="padding: 0 40px 0 40px; background-image: url(/landingpages/ato-2023/ato_header.jpeg); background-repeat: no-repeat; background-position: center top; background-size: contain; height: 742px; display: flex; flex-direction: column; justify-content: flex-end;">
-        <div class="box-topimage" style="padding-left: 28px; text-align: left; padding-bottom: 350px;">
-          <h1 style="font-weight: 800;">{{ i18n "Hello ATO ’23!" }}</h1>
-          <p>{{ i18n "We are so grateful to the All Things Open" }} <br> {{ i18n "community for welcoming us back again." }}</p>
-		    </div>
-      </div> -->
-      <div class="container al-py-lg" style="padding: 0 40px 0 40px;">
+      <div class="container al-py-lg" style="padding: 0 40px 0 40px; position: relative">
         <img style="width: 100%; height: 100%;" src="/landingpages/ato-2023/ato_header.jpeg">
-        <div class="box-topimage" style="position: absolute; top: 387px; padding-left: 60px;">
+        <div class="box-topimage" style="position: absolute; margin: 0; top: 46%; padding-left: 5%; transform: translate(0, -50%);">
           <h1 class="text-topimage" style="font-weight: 800;">{{ i18n "Hello ATO ’23!" }}</h1>
           <p>{{ i18n "We are so grateful to the All Things Open" }} <br> {{ i18n "community for welcoming us back again." }}</p>
 		    </div>
-        <!-- <h1 style="position: absolute; top: 25%;">{{ i18n "Hello ATO ’23!" }}</h1> -->
       </div>
     </div>
     <div class="al-index-description">
@@ -203,8 +172,8 @@
       <div class="container al-py-md" style="padding: 0 40px 0 40px;">
         <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">{{ i18n "ELevate your distro" }}</h2>
         <div class="container-distro" style="display: flex; text-align: left; padding: 48px 0 0 0!important">
-          <div class="distro-item-1" style="width: 50%;">
-            <img src="/images/ELevate.svg" style="object-fit: contain; width: 100%; height: 100%;">
+          <div class="distro-item-1" style="width: 50%; display: flex;">
+            <img src="/images/ELevate.svg" style="object-fit: contain; width: 100%; align-items: center;">
           </div>
           <div class="distro-item-2" style="width: 50%; padding-left: 40px; display: flex; flex-direction: column; justify-content: space-between;">
             <p style="line-height: 28px; letter-spacing: 0.25px;">
