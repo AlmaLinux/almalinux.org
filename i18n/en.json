@@ -457,8 +457,6 @@
    "ELevate": "ELevate",
    "What does ABI/binary compatible with RHEL mean?": "What does ABI/binary compatible with RHEL mean?",
    "In July of 2023, ": "In July of 2023, ",
-   "AlmaLinux announced": "AlmaLinux announced",
-   " that they were shifting their goal from being a downstream rebuild of RHEL to maintaining ABI compatibility with RHEL. For the AlmaLinux team that means that everything from software applications to kernel modules that work on RHEL will work on AlmaLinux, and if they don't we would consider that a bug.": " that they were shifting their goal from being a downstream rebuild of RHEL to maintaining ABI compatibility with RHEL. For the AlmaLinux team that means that everything from software applications to kernel modules that work on RHEL will work on AlmaLinux, and if they don't we would consider that a bug.",
    "Is AlmaLinux OS FIPS-140 compliant??": "Is AlmaLinux OS FIPS-140 compliant??",
    "AlmaLinux OS 9.2 is FIPS-140 compliant. Read more in this blog post: ": "AlmaLinux OS 9.2 is FIPS-140 compliant. Read more in this blog post: ",
    "FIPS Validation for AlmaLinux OS": "FIPS Validation for AlmaLinux OS",
@@ -470,5 +468,7 @@
    "When will support AlmaLinux OS 8 and 9 reach end of life?": "When will support AlmaLinux OS 8 and 9 reach end of life?",
    "The AlmaLinux OS Foundation has committed to supporting AlmaLinux OS 8.x until 2029, and AlmaLinux 9.x until 2032. This includes stable and thoroughly tested updates and security patches.": "The AlmaLinux OS Foundation has committed to supporting AlmaLinux OS 8.x until 2029, and AlmaLinux 9.x until 2032. This includes stable and thoroughly tested updates and security patches.",
    "Subscribe to our mailing lists and never miss out on the latest in AlmaLinux OS development!": "Subscribe to our mailing lists and never miss out on the latest in AlmaLinux OS development!",
-   " (developed and maintained by the AlmaLinux Community) allows you to migrate to, and upgrade AlmaLinux in-place.": " (developed and maintained by the AlmaLinux Community) allows you to migrate to, and upgrade AlmaLinux in-place."
+   " (developed and maintained by the AlmaLinux Community) allows you to migrate to, and upgrade AlmaLinux in-place.": " (developed and maintained by the AlmaLinux Community) allows you to migrate to, and upgrade AlmaLinux in-place.",
+   "we announced": "we announced",
+   " that we were shifting our goal from being a downstream rebuild of RHEL to maintaining ABI compatibility with RHEL. For the AlmaLinux team that means that everything from software applications to kernel modules that work on RHEL will work on AlmaLinux, and if they don't we would consider that a bug.": " that we were shifting our goal from being a downstream rebuild of RHEL to maintaining ABI compatibility with RHEL. For the AlmaLinux team that means that everything from software applications to kernel modules that work on RHEL will work on AlmaLinux, and if they don't we would consider that a bug."
 }
