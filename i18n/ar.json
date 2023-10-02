@@ -362,5 +362,7 @@
     "Get Raspberry Pi Image": "احصل على صورة Raspberry Pi",
     "Get LXC/LXD Images": "احصل على صور LXC/LXD",
     "AlmaLinux OS provides a set of security features: Errata, GPG keys, Mailing Lists, OpenSCAP, OVAL, SBOM": "يوفر ألما لينكس مجموعة من ميزات الحماية: Errata، مفاتيح GPG، القوائم البريدية، OpenSCAP، OVAL، SBOM",
-    "Azure Marketplace": "متجر Azure"
+    "Azure Marketplace": "متجر Azure",
+    "More details and guidance steps can be found on the ": "خطوات الإرشاد ومزيد تفصيل يمكن أن تجده على ",
+    "Windows Subsystem for Linux (WSL) is designed as an integration between Windows and Linux. You can run the AlmaLinux terminal environment on a Windows machine.": "صمم نظام وندوز الفرعي للينكس (WSL) على أنه تكامل بين Windows ولينكس. يمكنك تشغيل بيئة طرفية ألما لينكس على جهاز Windows."
 }

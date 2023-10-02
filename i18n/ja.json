@@ -74,7 +74,7 @@
     "Migrations will require your system to reboot twice.": "移行には 2 回の再起動が必要です。",
     "What does the Package Evolution Service do?": "パッケージ展開サービスは何をするのでしょうか？",
     "The Package Evolution Service stores package migration metadata. Metadata answers questions about how packages evolve between major distribution releases. PES supports several classes of rules for packages such as added, removed, renamed, split, merged, and so on. The service also allows everyone to improve the data by adding new actions or even create a custom dataset for packages from third-party or private repositories.": "パッケージ展開サービス（PES）は、パッケージ移行のメタデータを保存します。メタデータは、主要なディストリビューションのリリース間でパッケージがどのように進化するかについての質問に答えるものです。PES は、追加、削除、名前の変更、分割、マージなど、パッケージに関するいくつかのクラスの規則をサポートしています。また、このサービスでは、新しいアクションを追加してデータを改善したり、サードパーティやプライベート リポジトリのパッケージ用にカスタム データセットの作成もできます。",
-    "Red Hat offers a data set which is non-freely licensed. Are you using this same data set?": "Red Had は、自由ではないライセンスのデータセットを提供しています。同じデータセットを使用していますか？",
+    "Red Hat offers a data set which is non-freely licensed. Are you using this same data set?": "Red Hat は、自由ではないライセンスのデータセットを提供しています。同じデータセットを使用していますか？",
     "No. We respect Red Hat’s work and our initial data set was provided by the AlmaLinux Foundation and contributions from Oracle.": "いいえ。私たちは Red Hat の取り組みを尊重しており、最初のデータセットは AlmaLinux 財団から提供されたものであり、Oracle の貢献によるものです。",
     "What license is your metadata under?": "メタデータはどのようなライセンスに基づいているのですか？",
     "The metadata is provided under an Apache License.": "メタデータは Apache ライセンスで提供されます。",
