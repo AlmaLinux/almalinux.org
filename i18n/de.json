@@ -388,5 +388,19 @@
     "AlmaLinux builds Live Media images for GNOME, GNOME Mini, KDE, XFCE and MATE options.": "AlmaLinux erstellt Live Media-Images für die Optionen GNOME, GNOME Mini, KDE, XFCE und MATE.",
     "Get Live Media Image": "Holen Sie sich ein Live-Medienbild",
     "Get Raspberry Pi Image": "Holen Sie sich das Raspberry Pi-Image",
-    "If you are using CentOS 7 or 8 and need help upgrading and migrating, check out": "Wenn Sie CentOS 7 oder 8 verwenden und Hilfe beim Upgrade und der Migration benötigen, schauen Sie sich das an"
+    "If you are using CentOS 7 or 8 and need help upgrading and migrating, check out": "Wenn Sie CentOS 7 oder 8 verwenden und Hilfe beim Upgrade und der Migration benötigen, schauen Sie sich das an",
+    "Boot": "Boot",
+    "Switching distributions is usually costly and time-consuming, but that's not the case when switching from CentOS and other RHEL® derivatives to AlmaLinux OS.": "Wechseln zwischen Distributionen ist in der Regel kostspielig und zeitaufwändig, aber das ist beim Wechsel von CentOS und anderen RHEL®-Derivaten auf AlmaLinux OS nicht der Fall.",
+    "a minimal self-containing DVD image that makes possible offline installation.": "ein minimales, vollständiges DVD-Image, das eine Offline-Installation ermöglicht.",
+    "Download .torrent file": "Download .torrent Datei",
+    "All AlmaLinux OS AMIs are completely free of charge.": "Alle AlmaLinux OS AMIs sind völlig kostenlos.",
+    "Download ISOs from mirrors": "Download ISOs von Mirrors",
+    "effortless installation with all packages included, no additional repositories required.": "mühelose Installation mit allen enthaltenen Paketen, keine zusätzlichen Repositorys erforderlich.",
+    "AlmaLinux provides official images for various cloud providers.": "AlmaLinux stellt offizielle Images für verschiedene Cloud-Anbieter bereit.",
+    "Download CHECKSUM": "Download CHECKSUM",
+    "As a standalone, completely free OS, AlmaLinux OS enjoys $1M in annual sponsorship from CloudLinux Inc. and support from more than 25 other sponsors. Ongoing development efforts are governed by the members of the community.": "Als eigenständiges, völlig freies Betriebssystem genießt AlmaLinux OS ein jährliches Sponsoring von 1 Million US-Dollar von CloudLinux Inc. und Unterstützung von mehr als 25 anderen Sponsoren. Die laufenden Entwicklungsbemühungen werden von den Mitgliedern der Community gesteuert.",
+    "Minimal": "Minimal",
+    "a single network installation CD image that downloads packages over the Internet.": "ein einzelnes Netzwerkinstallations-CD-Image, das Pakete über das Internet herunterlädt.",
+    "AlmaLinux OS offers official Amazon Machine Images via the AWS Marketplace and Community AMIs.": "AlmaLinux OS bietet offizielle Amazon Machine Images über den AWS Marketplace und Community AMIs.",
+    "DVD": "DVD"
 }
