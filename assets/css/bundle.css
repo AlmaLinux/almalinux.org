@@ -665,13 +665,14 @@ a:hover{
 }
 
 pre, code {
-  padding: 2px 4px;
-  font-size: 90%;
-  font-weight: 400;
+  font-size: 15px;
   color: #fff;
   background-color: #1f1f24;
   border-radius: 4px;
-  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  padding: 0 3px 0 3px;
+}
+pre > code {
+	padding: 0;
 }
 
 .fw-bold{
