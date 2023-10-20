@@ -321,7 +321,7 @@
     "AlmaLinux provides a Software Bill of Materials (SBOM) for its releases.": "",
     "has implemented SBOM into the pipeline for the reasons listed above, to enable:": "",
     "CloudLinux's core product, the CloudLinux OS, is a RHEL® fork that has been in place for over ten years. More than 4,000 companies including Dell, Liquid Web, and 1&1 rely on the CloudLinux OS across more than 200,000 product installations. CloudLinux has proven experience in creating and maintaining a RHEL fork and have done so starting with RHEL release 5, right through to release 8. AlmaLinux OS is an opportunity for us to channel our expertise in RHEL into a Linux distribution that serves the broader community. Furthermore, we are including the Linux community right from the inception of AlmaLinux OS. Moving forward, community members will be on the governing board for the AlmaLinux OS project and involved in key decisions too. Finally, AlmaLinux OS will always be free and open source. The community can pick up and continue to develop AlmaLinux OS at any time.": "",
-    "I want to convert from CentOS to AlmaLinux OS. How do I do it?": "",
+    "I want to convert from CentOS to AlmaLinux OS. How do I do it?": "Я хочу перейти с CentOS на AlmaLinux OS. Как мне это сделать?",
     "Switching Linux distros can be a headache, but that is not the case when switching from CentOS to AlmaLinux OS. Just like CentOS, AlmaLinux OS is a 1:1 binary compatible fork of RHEL®, so switching is simple.": "",
     "Can I really port an entire fleet of servers from CentOS to AlmaLinux OS with a single command?": "",
     "Yes, AlmaLinux OS is a 1:1 binary compatible fork of RHEL®, which means that your applications and services will remain compatible. For that reason, you can rapidly migrate any number of servers with just one command.": "",
@@ -354,5 +354,7 @@
     "To receive security updates and errata, users can sign up for the ": "Чтобы получать обновления безопасности и сведения об ошибках, пользователи могут подписаться на ",
     "Get AlmaLinux OS": "Получить ОС AlmaLinux",
     "Get Docker Image": "Получить Docker-образ",
-    "AlmaLinux provides official images for cloud providers:": "AlmaLinux предоставляет официальные образы для облачных провайдеров:"
+    "AlmaLinux provides official images for cloud providers:": "AlmaLinux предоставляет официальные образы для облачных провайдеров:",
+    "AlmaLinux provides official images for Vagrant:": "AlmaLinux предоставляет официальные изображения для Vagrant:",
+    "we announced": "мы объявили"
 }
