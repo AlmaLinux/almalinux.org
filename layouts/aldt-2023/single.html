@@ -1,0 +1,490 @@
+{{ define "main" }}
+<style>
+  @media (max-width: 1199px){
+    h1 {
+      font-size: 60px!important;
+    }
+    .toppic_item_1 {
+      padding-top: 18%!important;
+    }
+  }
+  @media (max-width: 991px){
+    h1 {
+      font-size: 50px!important;
+    }
+    h2 {
+      font-size: 40px!important;
+    }
+    h3 {
+      font-size: 20px!important;
+    }
+    .container-event {
+      max-height: none!important;
+      flex-direction: column!important;
+      align-items: center;
+    }
+    .item-event-1 {
+      width: 50%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .item-event-2 {
+      padding-left: 0!important;
+    }
+    .item-headportret {
+      width: 50%!important;
+    }
+  }
+  @media (max-width: 767px){
+    h1 {
+      font-size: 30px!important;
+      line-height: normal!important;
+    }
+    h2 {
+      font-size: 25px!important;
+    }
+    .toppic_item_1 {
+      padding-top: 44%!important;
+    }
+  }
+  @media (max-width: 474px){
+    .item-headportret {
+      width: 80%!important;
+    }
+    table {
+      font-size: 8px!important;
+    }
+  }
+</style>
+
+
+<section>
+<div class="al-body-container">
+  <section class="al-page-index">
+    <div class="al-index-toppicTokyo" style="background: url('/landingpages/aldt-2023/tokyo_skyline.jpg') 50%/cover no-repeat;">
+      <div class="container al-py-lg" style="padding: 0 40px 0 40px; height: 900px; display: flex; flex-direction: column;">
+        <div class="toppic_item_1" style="padding-top: 11%;">
+          <h1 style="font-size: 80px; letter-spacing: 0.80px; font-weight: 700;">{{ i18n "AlmaLinux Day: Tokyo" }}</h1>
+          <h3>
+            {{ i18n "The world's first live event focused entirely on AlmaLinux OS" }}<br>
+            {{ i18n "December 9th, 2023" }}
+          </h3>
+          <p>
+            {{ i18n "Internet Initiative Co., Ltd. Seminar Room" }}<br>
+            {{ i18n "13th floor, lidabashi Grand Bloom, 2-10-2 Fujimi, Chiyoda-ku, Tokyo" }}
+          </p>
+        </div>
+        <div class="toppic_item_2" style="padding-top: 30px;">
+          <a href="https://connpass.com/login/?next=https%3A//connpass.com/event/298459/join/" class="btn btn-lg px-4 me-md-2 al-hero-cta-primary">{{ i18n "Register now!" }}</a>
+        </div>
+      </div>
+    </div>
+    <div class="al-index-peopleinfo">
+      <div class="container al-py-md" style="padding: 0 40px 0 40px;">
+        <h1 style="font-size: 80px; letter-spacing: 0.80px; font-weight: 700; margin-bottom: 20px;">{{ i18n "150 guests, 5 speakers," }}</h1>
+        <h3>{{ i18n "Come together to discuss AlmaLinux and the future of enterprise Linux" }}</h3>
+      </div>
+    </div>
+    <div class="al-index-program" style="background: #0e3b5c;">
+      <div class="container al-py-md" style="padding: 0 40px 0 40px;">
+        <h1 style="font-size: 80px; text-align: center; letter-spacing: 0.80px; font-weight: 700; margin-bottom: 20px;">{{ i18n "Program" }}</h1>
+        <table style="margin: auto;">
+          <tbody>
+            <tr style="background-color: #0f4266;">
+              <th></th>
+              <th>{{ i18n "whole" }}</th>
+              <th>{{ i18n "Main venue" }}</th>
+              <th>{{ i18n "Sub venue" }}</th>
+            </tr>
+            <tr>
+              <td>12:00～13:00</td>
+              <td>{{ i18n "reception" }}</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>13:00～13:40</td>
+              <td>-</td>
+              <td>{{ i18n "Keynote speech" }} (AlmaLinux OS Foundation Chair - benny Vasquez)</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>13:50～14:30</td>
+              <td>-</td>
+              <td>{{ i18n "Sponsored Session" }} ① (CloudLinux Inc. CEO - Igor Seletskiy)	</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>14:40～15:20</td>
+              <td>-</td>
+              <td>{{ i18n "Sponsored session ② (currently being arranged)" }}</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>15:30～16:10</td>
+              <td>-</td>
+              <td>{{ i18n "Technical Session" }} ① (AlmaLinux OS Architect - Andrew Lukoshko)</td>
+              <td>{{ i18n "User session ① (under adjustment)" }}</td>
+            </tr>
+            <tr>
+              <td>16:20～17:00</td>
+              <td>-</td>
+              <td>{{ i18n "Technical Session" }} ② (AlmaLinux Developer - Matthias Kruk)</td>
+              <td>{{ i18n "User session ② (under adjustment)" }}</td>
+            </tr>
+            <tr>
+              <td>17:00～17:30</td>
+              <td>{{ i18n "break" }}</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>17:30～19:30</td>
+              <td>{{ i18n "Social gathering" }}</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="al-index-register">
+      <div class="container al-py-md" style="padding: 0 40px 0 40px;">
+        <h2 style="font-size: 50px; letter-spacing: 0.80px; font-weight: 600; margin-bottom: 20px;">{{ i18n "If you come to one event this year, this is the one for you." }}</h2>
+        <p style="margin-bottom: 20px; line-height: 28px; letter-spacing: 0.25px;">
+          {{ i18n "Never has the been a better gathering of AlmaLinux experts. Hear all of the latest about the project, hear from industry experts about the current frends in the enterprise Linux ecosystem, and make connections with the people who can help solve every technology problem you're facing." }}
+        </p>
+        <div style="text-align: center">
+          <a href="https://connpass.com/login/?next=https%3A//connpass.com/event/298459/join/" class="btn btn-lg px-4 me-md-2 al-hero-cta-primary">{{ i18n "Register now!" }}</a>
+        </div>
+      </div>
+    </div>
+    <div class="al-index-event" style="background: #0e3b5c;">
+      <div class="container al-py-md" style="padding: 0 40px 0 40px;">
+        <h2 style="font-size: 50px; letter-spacing: 0.80px; font-weight: 600; margin-bottom: 20px;">{{ i18n "An event like no other" }}</h2>
+        <div class="container-event" style="display: flex; max-height: 400px;">
+          <div class="item-event-1">
+            <img src="/landingpages/aldt-2023/image_of_people.png" style="object-fit: cover; width: 100%; height: 100%;">
+          </div>
+          <div class="item-event-2" style="display: flex; flex-direction: column; justify-content: space-between; padding-left: 40px;">
+            <span style="line-height: 28px; letter-spacing: 0.25px; padding-bottom: 20px;">
+              {{ i18n "\"AlmaLinux Day Tokyo 2023\" is the world's first official AlmaLinux OS Foundation event. This event will be a gathering of some of the most engaged people in the AlmaLinux community, as well as technology partners from all over the world. This is the best place to engage and meet all of the people" }}
+            </span>
+            <span style="line-height: 28px; letter-spacing: 0.25px; padding-bottom: 20px;">
+              {{ i18n "As CentOS Linux enters its final 6 months support, AlmaLinux OS is attracting" }}
+              {{ i18n "the most attention as a RHEL-compatible Linux." }}
+            </span>
+            <span style="line-height: 28px; letter-spacing: 0.25px;">
+              {{ i18n "At this event, speakers from the AlmaLinux OS Foundation will come to Japan to introduce" }}
+              {{ i18n "everyone who touches Linux, from trends in the Linux industry to technical information" }}
+              {{ i18n "needed when choosing the next Linux to use." }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="al-index-register-2">
+      <div class="container al-py-md" style="padding: 0 40px 0 40px;">
+        <h2 style="font-size: 50px; letter-spacing: 0.80px; font-weight: 600; margin-bottom: 20px;">{{ i18n "Register now to save your spot!" }}</h2>
+        <p style="margin-bottom: 20px;">
+          {{ i18n "While the event is free, registration is required for attendance and space is limited!" }}
+        </p>
+        <div style="text-align: center">
+          <a href="https://connpass.com/login/?next=https%3A//connpass.com/event/298459/join/" class="btn btn-lg px-4 me-md-2 al-hero-cta-primary">{{ i18n "Register now!" }}</a>
+        </div>
+      </div>
+    </div>
+    <div class="al-index-meet" style="background: #0e3b5c;">
+      <div class="container al-py-md" style="padding: 0 40px 0 40px;">
+        <h1 style="font-size: 80px; text-align: center; letter-spacing: 0.80px; font-weight: 700;">
+          {{ i18n "Meet the Experts" }}
+        </h1>
+        <div style="text-align: center; line-height: 28px; word-wrap: break-word;">
+          <h3 style="margin-bottom: 20px;">
+             {{ i18n "Speakers from across industries" }}
+          </h3>
+        </div>
+        <div class="container-speakers" style="display: flex; justify-content: center; flex-wrap: wrap;">
+          <div class="item-headportret" style="width: 25%; align-items: center; padding: 20px 20px;">
+            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 40px 0;">
+              <span style="display: inline-block; border-radius: 50%; width: 90px; height: 90px; background-color: #ffffff; margin-bottom: 20px; display: flex; justify-content: center; align-items: center">
+                <img src="/landingpages/aldt-2023/image_of_people.png" style="height: 80px; border-radius: 50%;">
+              </span>
+              <div style="display: flex; flex-direction: column; text-align: center;">
+                <span>Name Name</span>
+                <span>Title</span>
+                <span>Company</span>
+              </div>
+            </div>
+          </div>
+          <div class="item-headportret" style="width: 25%; align-items: center; padding: 20px 20px;">
+            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 40px 0;">
+              <span style="display: inline-block; border-radius: 50%; width: 90px; height: 90px; background-color: #ffffff; margin-bottom: 20px; display: flex; justify-content: center; align-items: center">
+                <img src="/landingpages/aldt-2023/image_of_people.png" style="height: 80px; border-radius: 50%;">
+              </span>
+              <div style="display: flex; flex-direction: column; text-align: center;">
+                <span>Name Name</span>
+                <span>Title</span>
+                <span>Company</span>
+              </div>
+            </div>
+          </div>
+          <div class="item-headportret" style="width: 25%; align-items: center; padding: 20px 20px;">
+            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 40px 0;">
+              <span style="display: inline-block; border-radius: 50%; width: 90px; height: 90px; background-color: #ffffff; margin-bottom: 20px; display: flex; justify-content: center; align-items: center">
+                <img src="/landingpages/aldt-2023/image_of_people.png" style="height: 80px; border-radius: 50%;">
+              </span>
+              <div style="display: flex; flex-direction: column; text-align: center;">
+                <span>Name Name</span>
+                <span>Title</span>
+                <span>Company</span>
+              </div>
+            </div>
+          </div>
+          <div class="item-headportret" style="width: 25%; align-items: center; padding: 20px 20px;">
+            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 40px 0;">
+              <span style="display: inline-block; border-radius: 50%; width: 90px; height: 90px; background-color: #ffffff; margin-bottom: 20px; display: flex; justify-content: center; align-items: center">
+                <img src="/landingpages/aldt-2023/image_of_people.png" style="height: 80px; border-radius: 50%;">
+              </span>
+              <div style="display: flex; flex-direction: column; text-align: center;">
+                <span>Name Name</span>
+                <span>Title</span>
+                <span>Company</span>
+              </div>
+            </div>
+          </div>
+          <div class="item-headportret" style="width: 25%; align-items: center; padding: 20px 20px;">
+            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 40px 0;">
+              <span style="display: inline-block; border-radius: 50%; width: 90px; height: 90px; background-color: #ffffff; margin-bottom: 20px; display: flex; justify-content: center; align-items: center">
+                <img src="/landingpages/aldt-2023/image_of_people.png" style="height: 80px; border-radius: 50%;">
+              </span>
+              <div style="display: flex; flex-direction: column; text-align: center;">
+                <span>Name Name</span>
+                <span>Title</span>
+                <span>Company</span>
+              </div>
+            </div>
+          </div>
+          <div class="item-headportret" style="width: 25%; align-items: center; padding: 20px 20px;">
+            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 40px 0;">
+              <span style="display: inline-block; border-radius: 50%; width: 90px; height: 90px; background-color: #ffffff; margin-bottom: 20px; display: flex; justify-content: center; align-items: center">
+                <img src="/landingpages/aldt-2023/image_of_people.png" style="height: 80px; border-radius: 50%;">
+              </span>
+              <div style="display: flex; flex-direction: column; text-align: center;">
+                <span>Name Name</span>
+                <span>Title</span>
+                <span>Company</span>
+              </div>
+            </div>
+          </div>
+          <div class="item-headportret" style="width: 25%; align-items: center; padding: 20px 20px;">
+            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 40px 0;">
+              <span style="display: inline-block; border-radius: 50%; width: 90px; height: 90px; background-color: #ffffff; margin-bottom: 20px; display: flex; justify-content: center; align-items: center">
+                <img src="/landingpages/aldt-2023/image_of_people.png" style="height: 80px; border-radius: 50%;">
+              </span>
+              <div style="display: flex; flex-direction: column; text-align: center;">
+                <span>Name Name</span>
+                <span>Title</span>
+                <span>Company</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="al-index-sponsors">
+      <div class="container al-py-md" style="padding: 0 40px 0 40px;">
+        <h1 style="font-size: 60px; font-weight: 700; line-height: 80px; text-align: center;">{{ i18n "Thank you to our event sponsors!" }}</h1>
+        <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 g-5 al-backed-by-list">
+
+          <a href="https://www.cloudlinux.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+              <img style="object-fit: contain;" loading="lazy" src="/brands/cloudlinux.svg" alt="CloudLinux" class="al-backer-logo">
+            </div>
+          </a>
+
+          <a href="https://www.cybertrust.co.jp/" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+              <img style="object-fit: contain;" loading="lazy" src="/brands/cybertrust-japan.svg" alt="Cybertrust Japan" class="al-backer-logo">
+            </div>
+          </a>
+
+          <a href="https://tuxcare.com/" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+              <img style="object-fit: contain;" loading="lazy" src="/brands/TuxCare_Horizontal_Logo_NoTagLine_White.svg" alt="TuxCare" class="al-backer-logo">
+            </div>
+          </a>
+
+          <a href="https://codenotary.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+              <img style="object-fit: contain;" loading="lazy" src="/brands/light.svg" alt="Codenotary" class="al-backer-logo">
+            </div>
+          </a>
+
+          <a href="https://aws.amazon.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+              <img style="object-fit: contain;" loading="lazy" src="/brands/aws.svg" alt="Amazon AWS" class="al-backer-logo">
+            </div>
+          </a>
+
+          <a href="https://azure.microsoft.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+              <img style="object-fit: contain;" loading="lazy" src="/brands/azurelarge1.svg" alt="Microsoft Azure" class="al-backer-logo">
+            </div>
+          </a>
+
+          <a href="https://www.arm.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img style="object-fit: contain;" loading="lazy" src="/brands/arm.svg" alt="ARM" class="al-backer-logo" >
+            </div>
+          </a>
+
+          <a href="https://www.sinenomine.net/offerings/linux/almalinux" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img style="object-fit: contain;" loading="lazy" src="/brands/sine_nomine_logo_grayscale.svg" alt="Sine Nomine" class="al-backer-logo" >
+            </div>
+          </a>
+
+          <a href="https://www.equinix.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img style="object-fit: contain;" loading="lazy" src="/brands/equinix.svg" alt="Equinix" class="al-backer-logo" >
+            </div>
+          </a>
+
+          <a href="https://cpanel.net" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img style="object-fit: contain;" loading="lazy" src="/brands/cpanel.svg" alt="CPanel" class="al-backer-logo" >
+            </div>
+          </a>
+
+          <a href="https://www.hivelocity.net" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img style="object-fit: contain;" loading="lazy" src="/brands/hivelocity.svg" alt="Hivelocity" class="al-backer-logo" >
+            </div>
+          </a>
+
+          <a href="https://osuosl.org" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img style="object-fit: contain;" loading="lazy" src="/brands/osuosl.svg" alt="OSU Open Source Lab" class="al-backer-logo" >
+            </div>
+          </a>
+
+          <a href="https://www.plesk.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img style="object-fit: contain;" loading="lazy" src="/brands/plesk.svg" alt="Plesk" class="al-backer-logo" >
+            </div>
+          </a>
+
+          <a href="https://mattermost.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img style="object-fit: contain;" loading="lazy" src="/brands/mattermost.svg" alt="Mattermost" class="al-backer-logo" >
+            </div>
+          </a>
+
+          <a href="https://www.algolia.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img style="object-fit: contain;" loading="lazy" src="/brands/logo-algolia-nebula-blue-full_a52auc4.svg" alt="Algolia" class="al-backer-logo" >
+            </div>
+          </a>
+
+          <a href="https://rackspeed.de" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img style="object-fit: contain;" loading="lazy" src="/brands/rackspeed-logo-reverse.svg" alt="RackSpeed" class="al-backer-logo" >
+            </div>
+          </a>
+
+          <a href="https://www.knownhost.com/" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img style="object-fit: contain;" loading="lazy" src="/brands/KnownHostLogoFLATWHITE.svg" alt="KnownHost" class="al-backer-logo" >
+            </div>
+          </a>
+
+          <a href="https://www.amd.com/" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img style="object-fit: contain;" loading="lazy" src="/brands/AMD_Logo.svg" alt="AMD" class="al-backer-logo" >
+            </div>
+          </a>
+
+          <a href="https://black.host/" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img style="object-fit: contain;" loading="lazy" src="/brands/blackhost_logo.svg" alt="BlackHOST" class="al-backer-logo" >
+            </div>
+          </a>
+
+          <a href="https://www.cloudfest.com/" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img style="object-fit: contain;" loading="lazy" src="/brands/Cloudfest_logo_2022_white_1.svg" alt="CloudFest" class="al-backer-logo" >
+            </div>
+          </a>
+
+          <a href="http://procomputers.com/" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img style="object-fit: contain;" loading="lazy" src="/brands/procomputers_logo_white.svg" alt="ProComputers" class="al-backer-logo" >
+            </div>
+          </a>
+
+          <a href="https://orcharhino.com/en/" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img style="object-fit: contain;" loading="lazy" src="/brands/167500144-1f877ea7-9b48-40cc-8363-7f795ce585fe.svg" alt="Orcharhino"
+                class="al-backer-logo" >
+            </div>
+          </a>
+
+          <a href="https://world4you.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img style="object-fit: contain;" loading="lazy" src="/brands/w4y_logo_4C_white.svg" alt="World4You" class="al-backer-logo" >
+            </div>
+          </a>
+
+          <a href="https://www.hawkhost.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img style="object-fit: contain;" loading="lazy" src="/brands/HH-AllWhiteAlma.svg" alt="HawkHost" class="al-backer-logo" >
+            </div>
+          </a>
+
+          <a href="https://openlogic.com" >
+            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
+              <img style="object-fit: contain;" loading="lazy" src="/brands/logo-openlogic-tagline-white.svg" alt="OpenLogic" class="al-backer-logo" >
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="al-index-stop" style="background: #22C2FF;">
+      <div class="container al-py-md" style="padding: 0 40px 0 40px;">
+        <div class="container-stop" style="display: flex;">
+          <div class="stop-item-1" style="width: 60%; text-align: center;">
+            <h1 style="font-size: 60px; font-weight: 700; line-height: 80px;">
+              {{ i18n "Can't make it?" }}
+            </h1>
+            <p style="font-weight: 400; line-height: 26px;">
+              {{ i18n "We'll miss you, but if you can't make it to AlmaLinux Day Tokyo, you can join us online! We'll be posting the videos from the talks at the event to share with everyone." }}
+            </p>
+          </div>
+          <div class="stop-item-2" style="padding-left: 50px;">
+			  <h4 class="fw-bold mb-0 pb-2">{{ i18n "Come hang out with us!" }}</h4>
+				<ul>
+				  <li class="social-item-one sociallist"><a href="http://chat.almalinux.org">chat.almalinux.org</a></li>
+				  <li class="social-item-two sociallist"><a href="http://twitter.com/almalinux">twitter.com/almalinux</a></li>
+				  <li class="social-item-three sociallist"><a href="http://reddit.com/r/almalinux">reddit.com/r/almalinux</a></li>
+				  <li class="social-item-four sociallist"><a href="http://lists.almalinux.org">lists.almalinux.org</a></li>
+				  <li class="social-item-five sociallist"><a href="http://almalinux.discourse.group">almalinux.discourse.group</a></li>
+				  <li class="social-item-six sociallist"><a href="http://github.com/AlmaLinux">github.com/AlmaLinux</a></li>
+				  <li class="social-item-seven sociallist"><a href="http://hub.docker.com/_/almalinux">hub.docker.com/_/almalinux</a></li>
+				  <li class="social-item-eight sociallist"><a href="http://wiki.almalinux.org/">wiki.almalinux.org</a></li>
+				</ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="al-index-image-by" style="background: #0e3b5c;">
+      <div class="container al-py-md" style="padding: 0 40px 0 40px;">
+        <h3>{{ i18n "Header image by Trevor Dobson" }}</h3>
+         <a style="color: #fff;" href="https://www.flickr.com/photos/trevor_dobson_inefekt69/18007385589"><img src="/landingpages/aldt-2023/flickr.svg" style="height: 15px;">trevor_dobson</a>
+      </div>
+    </div>
+
+  </section>
+</div>
+</section>
+{{end}}
