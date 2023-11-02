@@ -20,12 +20,11 @@ Hello Community! The AlmaLinux OS Foundation is announcing the availability of A
 * IBM PowerPC (ppc64le)
 * IBM Z (s390x)
 
-Beta ISOs are available at [repo.almalinux.org](https://repo.almalinux.org/almalinux/8.9-beta/isos/). Select the mirror closest to your geographic area listed on the [mirrors.almalinux.org](https://mirrors.almalinux.org) website to download a suitable ISO image more quickly.
+Beta ISOs are available at [repo.almalinux.org](https://repo.almalinux.org/almalinux/8.9-beta/isos/).
 
 As usual, a simple reminder, this is a **BETA** release. It should not be used for production installations. The provided upgrade instructions should not be used on production machines unless you don't mind if something breaks. Now if you wanna test this somehow, somewhere to see how things will work in 8.9 stable, you're on the right track.
 
 
-![](https://hackmd.io/_uploads/rkGBZ9MWT.jpg)
 
 ## Release Notes and More Information
 
