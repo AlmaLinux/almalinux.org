@@ -352,7 +352,7 @@
     "Get AlmaLinux OS": "AlmaLinux OS の取得",
     "AlmaLinux supports 4 architectures:": "AlmaLinux が対応している 4 つのアーキテクチャ:",
     "AlmaLinux provides official OCI, Docker and UBI compatible images.": "AlmaLinux は、公式の OCI、Docker、UBI 互換イメージを提供しています。",
-    "Run the AlmaLinux terminal environment on Windows.": "AlmaLinux ターミナル環境を Windows で実行します。",
+    "Run the AlmaLinux terminal environment on Windows.": "Windows上でAlmaLinuxのターミナル環境を実行します。",
     "AlmaLinux images are available for LXC/LXD.": "AlmaLinux のイメージは、LXC/LXD で使用できます。",
     "No. We respect Red Hat’s work and our initial data set was provided by the AlmaLinux OS Foundation with contributions from Oracle.": "いいえ。私たちは Red Hat の取り組みを尊重し、初期のデータセットは AlmaLinux OS Foundation から提供され、Oracle からの貢献もありました。",
     "ELevate enables migration between major versions of RHEL ® derivatives.": "ELevate は、RHEL® 派生版のメジャー バージョン間の移行を可能にします。",
@@ -362,10 +362,10 @@
     "Get Docker Image": "Dockerイメージを入手",
     "Get OCI Image from Quay.io": "Quay.io から OCI イメージの取得",
     "AlmaLinux builds Live Media images for GNOME, GNOME Mini, KDE, XFCE and MATE options.": "AlmaLinux は、GNOME、GNOME Mini、KDE、XFCE、および MATE オプション用の Live Media イメージを生成します。",
-    "Get Live Media Image": "ライブメディア イメージの取得",
-    "Get AlmaLinux for WSL": "WSL 用 AlmaLinux の取得",
-    "Get Raspberry Pi Image": "Raspberry Pi 用イメージの取得",
-    "Get LXC/LXD Images": "LXC/LXD イメージの取得",
+    "Get Live Media Image": "ライブメディアイメージを入手",
+    "Get AlmaLinux for WSL": "WSL用のAlmaLinuxを入手",
+    "Get Raspberry Pi Image": "Raspberry Pi向けのイメージを入手",
+    "Get LXC/LXD Images": "LXC/LXDイメージを入手",
     "AlmaLinux provides official images for Vagrant:": "AlmaLinux が提供している Vagrant の公式イメージ：",
     "Get AlmaLinux on Vagrant Cloud": "Vagrant Cloud から AlmaLinux を取得",
     "AlmaLinux builds Raspberry Pi images, and also with GNOME desktop environment.": "AlmaLinux は Raspberry Pi 用のイメージや、GNOME デスクトップ環境も提供しています。",
@@ -389,5 +389,6 @@
     "Switching Linux distros can be a headache, but that is not the case when switching from CentOS to AlmaLinux OS. Using ELevate (developed and maintained by the AlmaLinux Community), you can migrate to AlmaLinux in place.": "Linux ディストリビューションの移行は頭痛の種でした。しかし、CentOS から AlmaLinux OS への移行は簡単です。AlmaLinux コミュニティにより開発およびメンテナンスされている ELevate を使用することで、現在の環境の状態で AlmaLinux に移行できます。",
     "Since AlmaLinux is ABI compatible with RHEL®, your applications and services should be completely interoperable. You can rapidly migrate any number of servers using the [migration tool](https://github.com/AlmaLinux/almalinux-deploy).": "AlmaLinux は RHEL® と ABI 互換性があるため、アプリケーションやサービスは完全に相互運用可能です。[移行ツール]（https://github.com/AlmaLinux/almalinux-deploy）を使用することで、任意の数のサーバーを迅速に移行できます。",
     "As a standalone, completely free OS, AlmaLinux OS enjoys $1M in annual sponsorship from CloudLinux Inc. and support from more than 25 other sponsors. Ongoing development efforts are governed by the members of the community.": "スタンドアロンで完全に無料な OS として、AlmaLinux OS は CloudLinux Inc. から年間 100 万ドルの活動資金を得ています。他の 25 以上のスポンサーからの援助も受けています。継続的な開発作業は、コミュニティのメンバーにより管理されています。",
-    "The Future of AlmaLinux is Bright - AlmaLinux OS Foundation's renewed commitment to our users.": "AlmaLinux の未来は明るい — AlmaLinux OS Foundation のユーザーへの新たなコミットメント。"
+    "The Future of AlmaLinux is Bright - AlmaLinux OS Foundation's renewed commitment to our users.": "AlmaLinux の未来は明るい — AlmaLinux OS Foundation のユーザーへの新たなコミットメント。",
+    "Switching distributions is usually costly and time-consuming, but that's not the case when switching from CentOS and other RHEL® derivatives to AlmaLinux OS.": "ディストリビューションを移行するには通常お金も時間もかかります。しかし、CentOSやRHEL®あるいはその派生ディストリビューションからAlmaLinux OSに移行する場合はそうではありません。"
 }
