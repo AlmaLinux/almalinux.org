@@ -339,5 +339,6 @@
     "Metadata answers questions about how packages evolve between major distribution releases.": "",
     "The service also allows everyone to improve the data by adding new actions or even create a custom dataset for packages from third-party or private repositories.": "",
     "RedHat offers a data set which is non-freely licensed. Are you using this same data set?": "",
-    "AlmaLinux supports 4 architectures:": "AlmaLinux wspiera 4 architektury:"
+    "AlmaLinux supports 4 architectures:": "AlmaLinux wspiera 4 architektury:",
+    "Get AlmaLinux OS": "Pobrać AlmaLinux OS"
 }
