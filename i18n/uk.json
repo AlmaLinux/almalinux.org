@@ -156,7 +156,7 @@
     "Why did we call it AlmaLinux OS?": "Чому ми назвали то AlmaLinux OS?",
     "An Open Source, community owned and governed, forever-free enterprise Linux distribution, focused on long-term stability, providing a robust production-grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL® and pre-Stream CentOS.": "",
     "AlmaLinux OS is an open-source, community-driven Linux operating system that fills the gap left by the discontinuation of the CentOS Linux stable release. AlmaLinux OS is a 1:1 binary compatible clone of RHEL® guided and built by the community.": "",
-    "read how": "Прочитай як",
+    "read how": "Прочитайте як",
     "Alma means soul in Spanish and other Latin languages. Looking back, it is easy to see that Linux is as popular and pervasive as it is thanks to the efforts of a passionate, diverse developer community. This community is the soul of Linux, and everyone that relies on a Linux distribution is indebted to the efforts of the Linux community. That is why we called our new distribution AlmaLinux OS.": "",
     "What motivated us?": "Що нас мотивувало?",
     "We’re already doing it – experience with RHEL forks towards CloudLinux. We have the staff, the capabilities, the resources. Frankly: we want to put ourselves on the map re CloudLinux and KernelCare. It is worth the effort.": "",
@@ -178,7 +178,7 @@
     "Run the most recent version of the OS and software you need.": "Користуйтесь найновішою версією ОС та програмного забезпечення, що потрібне вам.",
     "You can find the tool code here:": "",
     "Every environment is different and unique based on applications and configurations.": "Кожне середовище відрізняється і є унікальним залежно від застосунків і конфігурацій.",
-    "Since this is still under development, to avoid any surprises, we highly recommend that you test migrations scenarios in a VM or sandbox before running a migration in production.": "Оскільки це все ще розробляється, щоб уникнути будь-яких сюрпризів, ми настійно рекомендуємо вам перевірити сценарії міграції у віртуальній машині або пісочниці перед запуском міграції у робочому стані.",
+    "Since this is still under development, to avoid any surprises, we highly recommend that you test migrations scenarios in a VM or sandbox before running a migration in production.": "Оскільки це все ще розробляється, щоб уникнути будь-яких сюрпризів, ми настійно рекомендуємо вам перевірити сценарії міграції на віртуальній машині або пісочниці перед запуском міграції по-справжньому.",
     "Currently ELevate provides Leapp data for migration from CentOS 7 to the following OS:": "",
     "Metadata answers questions about how packages evolve between major distribution releases.": "Метадані відповідають на питання про те, як пакунки розвиваються між основними випусками дистрибутива.",
     "PES supports several classes of rules for packages such as added, removed, renamed, split, merged, and so on.": "",
@@ -347,6 +347,12 @@
     "and will not be supported by ELevate project.": "І це не будет підтримано проектом Elevate.",
     "we announced": "ми оголосили",
     "Move from CentOS 7.x to 8.x version of the RHEL derivative of your choice, or upgrade from 8.x to 9.x within the same derivative.": "Перейдіть із версії CentOS 7.x на 8.x RHEL-похідної за вашим вибором або оновіть її з 8.x до 9.x у тій же похідній версії.",
-    "If you are using CentOS 7 or 8 and need help upgrading and migrating, check out": "Якщо ви користуєтесь Cent OS 7/8 та потребуєте допомоги в переносі, перевірте",
-    "ELevate.": ""
+    "If you are using CentOS 7 or 8 and need help upgrading and migrating, check out": "Якщо ви користуєтесь Cent OS 7/8 та потребуєте допомоги в переносі, звіртеся",
+    "ELevate.": "ELevate.",
+    "AlmaLinux provides official OCI, Docker and UBI compatible images.": "AlmaLinux надає офіційні сумісні зображення OCI, Docker та UBI.",
+    "AlmaLinux supports 4 architectures:": "AlmaLinux підтримує 4 архітектури:",
+    "Download ISO from mirrors": "Завантажити ISO з дзеркал",
+    "Get AlmaLinux OS": "Завантажити ОС AlmaLinux",
+    "Get Docker Image": "Отримати Docker Відео",
+    "AlmaLinux provides official images for cloud providers:": "AlmaLinux надає офіційні зображення для хмарних провайдерів:"
 }
