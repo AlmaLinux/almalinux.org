@@ -479,11 +479,6 @@
    "Sub venue": "Sub venue",
    "If you come to one event this year, this is the one for you.": "If you come to one event this year, this is the one for you.",
    "An event like no other": "An event like no other",
-   "As CentOS Linux enters its final 6 months support, AlmaLinux OS is attracting": "As CentOS Linux enters its final 6 months support, AlmaLinux OS is attracting",
-   "the most attention as a RHEL-compatible Linux.": "the most attention as a RHEL-compatible Linux.",
-   "At this event, speakers from the AlmaLinux OS Foundation will come to Japan to introduce": "At this event, speakers from the AlmaLinux OS Foundation will come to Japan to introduce",
-   "everyone who touches Linux, from trends in the Linux industry to technical information": "everyone who touches Linux, from trends in the Linux industry to technical information",
-   "needed when choosing the next Linux to use.": "needed when choosing the next Linux to use.",
    "Register now to save your spot!": "Register now to save your spot!",
    "While the event is free, registration is required for attendance and space is limited!": "While the event is free, registration is required for attendance and space is limited!",
    "Meet the Experts": "Meet the Experts",
@@ -492,8 +487,6 @@
    "Can't make it?": "Can't make it?",
    "We'll miss you, but if you can't make it to AlmaLinux Day Tokyo, you can join us online! We'll be posting the videos from the talks at the event to share with everyone.": "We'll miss you, but if you can't make it to AlmaLinux Day Tokyo, you can join us online! We'll be posting the videos from the talks at the event to share with everyone.",
    "Header image by Trevor Dobson": "Header image by Trevor Dobson",
-   "150 guests, 5 speakers, 1 amazing day": "150 guests, 5 speakers, 1 amazing day",
-   "AlmaLinux Day Tokyo 2023 is the world's first official AlmaLinux OS Foundation event. This event will be a gathering of some of the most engaged people in the AlmaLinux community, as well as technology partners from all over the world. This is the best place to engage and meet all of the people": "AlmaLinux Day Tokyo 2023 is the world's first official AlmaLinux OS Foundation event. This event will be a gathering of some of the most engaged people in the AlmaLinux community, as well as technology partners from all over the world. This is the best place to engage and meet all of the people",
    "Registration": "Registration",
    "Keynote": "Keynote",
    "The Real Backstory of the Enterprise Linux Community": "The Real Backstory of the Enterprise Linux Community",
@@ -510,5 +503,9 @@
    "Bylaws": "Bylaws",
    " established by the Board.": " established by the Board.",
    "Industry session - Yohei Suzuki, Cybertrust Japan": "Industry session - Yohei Suzuki, Cybertrust Japan",
-   "Technical session (DesigNET)": "Technical session (DesigNET)"
+   "Technical session (DesigNET)": "Technical session (DesigNET)",
+   "AlmaLinux Day Tokyo 2023 is the world's first official AlmaLinux OS Foundation event. This event will be a gathering of some of the most engaged people in the AlmaLinux community, as well as technology partners from all over the world. This is the best place to engage and meet some of the people who care most about the success of AlmaLinux.": "AlmaLinux Day Tokyo 2023 is the world's first official AlmaLinux OS Foundation event. This event will be a gathering of some of the most engaged people in the AlmaLinux community, as well as technology partners from all over the world. This is the best place to engage and meet some of the people who care most about the success of AlmaLinux.",
+   "As CentOS Linux enters its final 6 months support, AlmaLinux OS is attracting the most attention as a RHEL-compatible Linux.": "As CentOS Linux enters its final 6 months support, AlmaLinux OS is attracting the most attention as a RHEL-compatible Linux.",
+   "At this event, speakers from the AlmaLinux OS Foundation will come to Japan to introduce everyone who touches Linux, from trends in the Linux industry to technical information needed when choosing the next Linux to use.": "At this event, speakers from the AlmaLinux OS Foundation will come to Japan to introduce everyone who touches Linux, from trends in the Linux industry to technical information needed when choosing the next Linux to use.",
+   "150 guests, 7 speakers, 1 amazing day": "150 guests, 7 speakers, 1 amazing day"
 }
