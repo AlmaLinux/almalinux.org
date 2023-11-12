@@ -468,15 +468,12 @@
    "we announced": "we announced",
    " that we were shifting our goal from being a downstream rebuild of RHEL to maintaining ABI compatibility with RHEL. For the AlmaLinux team that means that everything from software applications to kernel modules that work on RHEL will work on AlmaLinux, and if they don't we would consider that a bug.": " that we were shifting our goal from being a downstream rebuild of RHEL to maintaining ABI compatibility with RHEL. For the AlmaLinux team that means that everything from software applications to kernel modules that work on RHEL will work on AlmaLinux, and if they don't we would consider that a bug.",
    "AlmaLinux Day: Tokyo": "AlmaLinux Day: Tokyo",
-   "The world's first live event focused entirely on AlmaLinux OS": "The world's first live event focused entirely on AlmaLinux OS",
    "December 9th, 2023": "December 9th, 2023",
    "Internet Initiative Co., Ltd. Seminar Room": "Internet Initiative Co., Ltd. Seminar Room",
    "13th floor, lidabashi Grand Bloom, 2-10-2 Fujimi, Chiyoda-ku, Tokyo": "13th floor, lidabashi Grand Bloom, 2-10-2 Fujimi, Chiyoda-ku, Tokyo",
    "Register now!": "Register now!",
    "Come together to discuss AlmaLinux and the future of enterprise Linux": "Come together to discuss AlmaLinux and the future of enterprise Linux",
    "Program": "Program",
-   "Main venue": "Main venue",
-   "Sub venue": "Sub venue",
    "If you come to one event this year, this is the one for you.": "If you come to one event this year, this is the one for you.",
    "An event like no other": "An event like no other",
    "Register now to save your spot!": "Register now to save your spot!",
@@ -497,7 +494,6 @@
    "Never has the been a better gathering of AlmaLinux experts. Hear all of the latest about the project, hear from industry experts about the current trends in the enterprise Linux ecosystem, and make connections with the people who can help solve every technology problem you're facing.": "Never has the been a better gathering of AlmaLinux experts. Hear all of the latest about the project, hear from industry experts about the current trends in the enterprise Linux ecosystem, and make connections with the people who can help solve every technology problem you're facing.",
    "and to the rest of our project backers!": "and to the rest of our project backers!",
    "Global head of Customer Experience": "Global head of Customer Experience",
-   "Entire Event": "Entire Event",
    "The acceptance of each application will be reviewed on a case-by-case basis by the ": "The acceptance of each application will be reviewed on a case-by-case basis by the ",
    ", in accordance with the ": ", in accordance with the ",
    "Bylaws": "Bylaws",
@@ -507,5 +503,8 @@
    "AlmaLinux Day Tokyo 2023 is the world's first official AlmaLinux OS Foundation event. This event will be a gathering of some of the most engaged people in the AlmaLinux community, as well as technology partners from all over the world. This is the best place to engage and meet some of the people who care most about the success of AlmaLinux.": "AlmaLinux Day Tokyo 2023 is the world's first official AlmaLinux OS Foundation event. This event will be a gathering of some of the most engaged people in the AlmaLinux community, as well as technology partners from all over the world. This is the best place to engage and meet some of the people who care most about the success of AlmaLinux.",
    "As CentOS Linux enters its final 6 months support, AlmaLinux OS is attracting the most attention as a RHEL-compatible Linux.": "As CentOS Linux enters its final 6 months support, AlmaLinux OS is attracting the most attention as a RHEL-compatible Linux.",
    "At this event, speakers from the AlmaLinux OS Foundation will come to Japan to introduce everyone who touches Linux, from trends in the Linux industry to technical information needed when choosing the next Linux to use.": "At this event, speakers from the AlmaLinux OS Foundation will come to Japan to introduce everyone who touches Linux, from trends in the Linux industry to technical information needed when choosing the next Linux to use.",
-   "150 guests, 7 speakers, 1 amazing day": "150 guests, 7 speakers, 1 amazing day"
+   "150 guests, 7 speakers, 1 amazing day": "150 guests, 7 speakers, 1 amazing day",
+   "Main Track": "Main Track",
+   "Breakout Track": "Breakout Track",
+   "The world's first event focused entirely on AlmaLinux": "The world's first event focused entirely on AlmaLinux"
 }
