@@ -6,6 +6,8 @@ author:
  bio: "Security Standards Architect"
  image: /users/sjohn.png
 date: '2023-09-19'
+images:
+  - /blog-images/fips140.png
 post:
     title: "FIPS Validation for AlmaLinux OS"
     image: /blog-images/fips140.png

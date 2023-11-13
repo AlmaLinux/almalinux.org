@@ -6,6 +6,8 @@ author:
  bio: "Release Engineering Lead"
  image: /users/alukoshko.jpg
 date: '2023-08-14'
+images:
+  - /blog-images/testers-post.png
 post:
     title: "Testers needed for security updates: Intel and AMD CPUs affected"
     image: /blog-images/testers-post.png

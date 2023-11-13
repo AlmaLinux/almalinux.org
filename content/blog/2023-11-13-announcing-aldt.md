@@ -6,6 +6,8 @@ author:
  bio: "Chair, AlmaLinux OS Foundation"
  image: /users/benny.jpeg
 date: 2023-11-13
+images:
+  - /blog-images/2023-11-13-announcing-aldt-2023.png
 post: 
     title: "Announcing AlmaLinux Day Tokyo"
     image: /blog-images/2023-11-13-announcing-aldt-2023.png

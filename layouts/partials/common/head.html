@@ -4,6 +4,10 @@
     <!-- This website is Open Source!                     -->
     <!-- Visit https://github.com/AlmaLinux/almalinux.org -->
 
+    <!-- OpenGraph -->
+    <!-- We don't use the internal template because we modify the logic -->
+    {{ partial "common/opengraph.html" . }}
+
     <meta charset="UTF-8">
     <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
@@ -60,13 +64,4 @@
 
     {{$bundleCSS := resources.Get  "css/bundle.css" | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $bundleCSS.RelPermalink }}" integrity="{{ $bundleCSS.Data.Integrity }}"/>
-
-  
-        
-        <meta property="og:image" content="/images/hero.png">
-        <meta property="og:url" content="https://almalinux.org/">
-        <meta property="og:type" content="website">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta property="og:locale" content="en">
-    
 </head>
