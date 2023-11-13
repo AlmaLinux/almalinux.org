@@ -58,7 +58,7 @@ We will post a separate "Images Update" announcement soon, to keep the community
 
 ## Release Notes and More Information
 
-AlmaLinux 9.3 aims to improve flexibility and reliability, as well as to enhance security across hybrid environments. This release continues simplifying automation and system management. Web console enhancements simplify management tasks. Additionally, users can configure health check actions for Podman containers and vsock devices in virtual machines. Application Streams updates provide developers with flexibility and customization options without affecting the platform's stability. The 9.3 Beta offers enhanced security and compliance. Additionally, it provides enhanced flexibility, stability, and reliability needed to support hybrid cloud innovation. 
+AlmaLinux 9.3 aims to improve flexibility and reliability, as well as to enhance security across hybrid environments. This release continues simplifying automation and system management. Web console enhancements simplify management tasks. Additionally, users can configure health check actions for Podman containers and vsock devices in virtual machines. Application Streams updates provide developers with flexibility and customization options without affecting the platform's stability. The 9.3 offers enhanced security and compliance. Additionally, it provides enhanced flexibility, stability, and reliability needed to support hybrid cloud innovation. 
 
 You can read more about this release by checking out the [Release Notes](https://wiki.almalinux.org/release-notes/9.3.html).
 
