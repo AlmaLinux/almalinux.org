@@ -6,6 +6,8 @@ author:
  bio: "Longtime open source user, advocate, and contributor"
  image: /users/JoeBrockmeier.jpg
 date: 2023-09-07
+images:
+  - /blog-images/23.09.07.fallevents.svg
 post: 
     title: "AlmaLinux Live: Coming to a city near you"
     image: /blog-images/23.09.07.fallevents.svg

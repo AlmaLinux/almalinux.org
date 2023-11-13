@@ -6,6 +6,8 @@ author:
  bio: "AlmaLinux Community Manager"
  image: /users/jack.jpg
 date: '2023-11-13'
+images:
+  - /blog-images/23.11.13.93stable.jpg
 post:
     title: "Announcing AlmaLinux 9.3 Stable!"
     image: /blog-images/23.11.13.93stable.jpg
