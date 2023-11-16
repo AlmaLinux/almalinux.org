@@ -202,7 +202,7 @@
     "Easily migrate between major versions of RHEL-based distributions from 7.x to 8.x.": "",
     "(PES) which allows you to download, customize and even submit new data sets for packages.": "(PES) который даёт вам скачивать, настраивать и даже подтверждать новые комплекты данных для пакетов.",
     "Users and maintainers can both utilize the PES to help make migrations smooth and easy.": "Пользователи и мейнтейнеры могут вдвоём использовать PES чтобы сделать миграции плавными и лёгкими.",
-    "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux.": "",
+    "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux.": "ELevate разработан независимо от дистрибутива и создан как инструмент для всей экосистемы, а не только для AlmaLinux.",
     "ELevate supports migrating to/from other distributions and is open for all to contribute to and enhance.": "",
     "ELevate is a project aimed to provide the ability to migrate between major versions of RHEL-based distributions from 7.x to 8.x.": "",
     "It combines Red Hat's Leapp framework with a community created library and service for the migration metadata set required for it.": "",
