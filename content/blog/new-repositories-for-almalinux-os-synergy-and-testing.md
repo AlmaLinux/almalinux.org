@@ -6,6 +6,8 @@ author:
  bio: "Release Engineering Lead"
  image: /users/alukoshko.jpg
 date: '2023-08-24'
+images:
+  - /blog-images/new-repos-announcement.png
 post:
     title: "Welcome new repositories for AlmaLinux OS: Testing and Synergy"
     image: /blog-images/new-repos-announcement.png

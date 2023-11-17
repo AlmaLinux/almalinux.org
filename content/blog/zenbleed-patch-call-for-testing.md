@@ -6,6 +6,8 @@ author:
  bio: "Release Engineering Lead"
  image: /users/alukoshko.jpg
 date: '2023-07-24'
+images:
+  - /blog-images/23.07.24.zenbleed.png
 post:
     title: "Testers needed: Zenbleed patch for AlmaLinux 8 and 9"
     image: /blog-images/23.07.24.zenbleed.png

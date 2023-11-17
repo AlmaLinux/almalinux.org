@@ -6,6 +6,8 @@ author:
  bio: "AlmaLinux Community Manager"
  image: /users/jack.jpg
 date: '2023-10-26'
+images:
+  - /blog-images/23.10.26.93beta.jpg
 post:
     title: "Announcing AlmaLinux 9.3 Beta!"
     image: /blog-images/23.10.26.93beta.jpg

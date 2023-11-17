@@ -127,7 +127,8 @@ border-bottom-color: #14598a !important;
 .al-backed-by-list a{
   margin-top: 3rem !important;
 }
-.al-page-index .al-index-backed-by .al-backed-by-list {
+/* formatting the sponsor logos on the home page. */ 
+ .al-page-index .al-index-backed-by .al-backed-by-list {
   justify-content: space-between;
   padding: 0;
 }
@@ -140,9 +141,9 @@ border-bottom-color: #14598a !important;
 .al-page-index .al-index-backed-by .al-backed-by-list .al-backer-logo {
   height: 100%;
   width: 120px;
-  /* padding: 10px; */
 }
 
+/* formatting the sponsors on the event pages. */ 
 .al-page-index .al-index-sponsors .al-backed-by-list {
   justify-content: center;
   padding: 0;
@@ -155,9 +156,15 @@ border-bottom-color: #14598a !important;
 }
 .al-page-index .al-index-sponsors .al-backed-by-list .al-backer-logo {
   height: 100%;
-  width: 120px;
+  width: 160px;
 }
 
+.al-page-index .al-index-sponsors .al-backed-by-list .al-backer-logo-small {
+  height: 100%;
+  width: 70px;
+}
+
+/* formatting the commercial support vendors on the index page. */ 
 .al-page-index .al-index-commercial-support p.border-bottom {
   border-bottom-color: #14598a !important;
 }
@@ -180,6 +187,7 @@ border-bottom-color: #14598a !important;
 .al-page-index .al-index-faq {
   background: #0e3b5c;
 }
+
 .al-page-index .al-index-faq .accordion-button {
   border: 1px;
   font-weight: normal;
@@ -938,82 +946,98 @@ a {
     overflow-wrap: anywhere;
 }
 
-/* this adds individual list images to the social links on the ATO-23 landing page, but can also be used elsewhere. */
+/* this adds individual list images to the social links we've historcially used on event pages. */
 
 .sociallist a {
 	color: #0D3654;
 }
 
-.social-item-one {
+.social-item-mattermost {
 	list-style: none; /* Remove default list bullet */
 	padding-left: 24px; /* Add padding for the image */
 	background-repeat: no-repeat;
 	background-size: 16px 16px; /* Adjust the size as needed */
 	background-position: 0 50%; /* Center the image vertically */
-    background-image: url('/landingpages/ato-2023/social/mattermost.png');
+    background-image: url('/socialicons/mattermost.png');
 }
 
-.social-item-two {
+.social-item-twitter {
 	list-style: none; /* Remove default list bullet */
 	padding-left: 24px; /* Add padding for the image */
 	background-repeat: no-repeat;
 	background-size: 16px 16px; /* Adjust the size as needed */
 	background-position: 0 50%; /* Center the image vertically */
-	background-image: url('/landingpages/ato-2023/social/twitter.png');
+	background-image: url('/socialicons/twitter.png');
 }
 
-.social-item-three {
+.social-item-reddit {
 	list-style: none; /* Remove default list bullet */
 	padding-left: 24px; /* Add padding for the image */
 	background-repeat: no-repeat;
 	background-size: 16px 16px; /* Adjust the size as needed */
 	background-position: 0 50%; /* Center the image vertically */
-	background-image: url('/landingpages/ato-2023/social/reddit.png');
+	background-image: url('/socialicons/reddit.png');
 }
 
-.social-item-four {
+.social-item-lists {
 	list-style: none; /* Remove default list bullet */
 	padding-left: 24px; /* Add padding for the image */
 	background-repeat: no-repeat;
 	background-size: 16px 16px; /* Adjust the size as needed */
 	background-position: 0 50%; /* Center the image vertically */
-	background-image: url('/landingpages/ato-2023/social/lists.png');
+	background-image: url('/socialicons/lists.png');
 }
 
-.social-item-five {
+.social-item-discourse {
 	list-style: none; /* Remove default list bullet */
 	padding-left: 24px; /* Add padding for the image */
 	background-repeat: no-repeat;
 	background-size: 16px 16px; /* Adjust the size as needed */
 	background-position: 0 50%; /* Center the image vertically */
-	background-image: url('/landingpages/ato-2023/social/discourse.png');
+	background-image: url('/socialicons/discourse.png');
 }
 
-.social-item-six {
+.social-item-github {
     list-style: none; /* Remove default list bullet */
     padding-left: 24px; /* Add padding for the image */
     background-repeat: no-repeat;
     background-size: 16px 16px; /* Adjust the size as needed */
     background-position: 0 50%; /* Center the image vertically */
-	background-image: url('/landingpages/ato-2023/social/github.png');
+	background-image: url('/socialicons/github.png');
 }
 
-.social-item-seven {
+.social-item-docker {
     list-style: none; /* Remove default list bullet */
     padding-left: 24px; /* Add padding for the image */
     background-repeat: no-repeat;
     background-size: 16px 16px; /* Adjust the size as needed */
     background-position: 0 50%; /* Center the image vertically */
-	background-image: url('/landingpages/ato-2023/social/docker.png');
+	background-image: url('/socialicons/docker.png');
 }
 
-.social-item-eight {
+.social-item-wiki {
     list-style: none; /* Remove default list bullet */
     padding-left: 24px; /* Add padding for the image */
     background-repeat: no-repeat;
     background-size: 16px 16px; /* Adjust the size as needed */
     background-position: 0 50%; /* Center the image vertically */
-	background-image: url('/landingpages/ato-2023/social/wiki.png');
+	background-image: url('/socialicons/wiki.png');
+}
+
+.social-item-fosstadon {
+    list-style: none; /* Remove default list bullet */
+    padding-left: 24px; /* Add padding for the image */
+    background-repeat: no-repeat;
+    background-size: 16px 16px; /* Adjust the size as needed */
+    background-position: 0 50%; /* Center the image vertically */
+	background-image: url('/socialicons/mastodon.svg');
+}
+
+
+/* adding for sponsor logos on the ALDT page */
+
+.additional_sponsors {
+
 }
 
 /*# sourceMappingURL=bundle.css.map */

@@ -6,6 +6,8 @@ author:
  bio: "-"
  image: /users/benny.jpeg
 date: '2023-03-20'
+images:
+  - /blog-images/23.03.20.png
 post:
     title: "OpenLogic and Hawk Host join the AlmaLinux OS Foundation"
     image: /blog-images/23.03.20.png

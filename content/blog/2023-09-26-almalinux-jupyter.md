@@ -6,6 +6,8 @@ author:
  bio: "MA, Senior Linux DevOps Engineer, University of California, Santa Barbara"
  image: /users/vwbusguy.jpg
 date: '2023-09-26'
+images:
+  - /blog-images/23.09.26.ucsb_blog.svg
 post:
   title: "Learn about how UCSB uses Almalinux in day-to-day operations."
   image: /blog-images/23.09.26.ucsb_blog.svg
