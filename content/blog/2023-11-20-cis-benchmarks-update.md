@@ -5,7 +5,7 @@ author:
  name: "Simon John"
  bio: "Security Standards Architect"
  image: /users/sjohn.png
-date: '2023-10-20'
+date: '2023-11-20'
 post:
     title: "CIS Benchmarks Update"
     image: /blog-images/cis_update.svg
