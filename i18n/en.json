@@ -336,9 +336,6 @@
    "Images are deployable via the marketplace, portal and CLI.": "Images are deployable via the marketplace, portal and CLI.",
    "More about AlmaLinux OS images for Azure": "More about AlmaLinux OS images for Azure",
    "AlmaLinux Azure Wiki Page": "AlmaLinux Azure Wiki Page",
-   "The": "The",
-   "official AlmaLinux OS 8 image": "official AlmaLinux OS 8 image",
-   "is available via the Azure Marketplace at the link provided.": "is available via the Azure Marketplace at the link provided.",
    "The AlmaLinux OS OpenNebula image are available from our ": "The AlmaLinux OS OpenNebula image are available from our ",
    "More information about AlmaLinux OpenNebula images and verification guidelines are available on the ": "More information about AlmaLinux OpenNebula images and verification guidelines are available on the ",
    "AlmaLinux OpenNebula Wiki Page": "AlmaLinux OpenNebula Wiki Page",
@@ -514,6 +511,5 @@
    "Technical session": "Technical session",
    "Masazumi Koga OpenSource/Linux Technology Evangelist, Hewlett Packard Japan, G.K.": "Masazumi Koga OpenSource/Linux Technology Evangelist, Hewlett Packard Japan, G.K.",
    "(Matthias Kruk, AlmaLinux and MiracleLinux Developer)": "(Matthias Kruk, AlmaLinux and MiracleLinux Developer)",
-   "Tomoyuki Kamo, (DesigNET)": "Tomoyuki Kamo, (DesigNET)",
-   "AlmaLinux offers AlmaLinux OS 8 and AlmaLinux OS 9 images for Azure across all Azure regions via the ": "AlmaLinux offers AlmaLinux OS 8 and AlmaLinux OS 9 images for Azure across all Azure regions via the "
+   "Tomoyuki Kamo, (DesigNET)": "Tomoyuki Kamo, (DesigNET)"
 }
