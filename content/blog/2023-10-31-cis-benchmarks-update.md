@@ -5,7 +5,7 @@ author:
  name: "Simon John"
  bio: "Security Standards Architect"
  image: /users/sjohn.png
-date: '2023-10-31'
+date: '2023-10-20'
 post:
     title: "CIS Benchmarks Update"
     image: /blog-images/cis_update.svg
@@ -22,7 +22,7 @@ Many organisations use the CIS benchmarks as their baseline for security hardeni
 
 The benchmarks cover topics like which SSH ciphers to use, AAA best practices like password complexity and filesystem permissions, how to best configure a host-based firewall (like firewalld/iptables) and how to setup auditd and rsyslog to ensure that you're logging enough information and have an audit trail in case of a security incident, and how to stop disabling SELinux! The DISA [STIGs](https://public.cyber.mil/stigs/) are very similar, but with some specific additions for national security and a different delivery method.
 
-The benchmarks are just documents, you can read them as PDF's, no special software to install. Or you can browse them on the website. They're available to all for free with no paywall.
+The benchmarks are just documents - you can read them as PDF's - no special software to install. You can find them on the [website](https://www.cisecurity.org/benchmark/almalinuxos_linux). They're available to all for free with no paywall.
 
 CIS controls *map* to various security frameworks, so you can show an auditor how you're compliant to ISO 27002 by applying CIS controls in the  benchmarks, for example:
 
@@ -45,11 +45,11 @@ CIS have their own [CIS-CAT Pro](https://www.cisecurity.org/cybersecurity-tools/
 
 ## How can I security harden my servers?
 
-On my [github](https://github.com/sej7278/virt-installs) I have a few scripts for hardening various distro's including AlmaLinux, to CIS benchmarks, using some of my favourite technologies - Kickstart and libvirt, but also Ansible, cloud-init and Preseed.
+On my [GitHub](https://github.com/sej7278/virt-installs) I have a few scripts for hardening various distro's including AlmaLinux, to CIS benchmarks, using some of my favourite technologies - Kickstart and libvirt, but also Ansible, cloud-init and Preseed.
 
 With CIS [SecureSuite](https://www.cisecurity.org/cis-hardened-images) membership you can get access to pre-hardended virtual machine images for most cloud providers, build-kits for hardening existing infrastructure and the CIS-CAT Pro tool for testing.
 
-Unlike some security frameworks which can be quite woolly and high-level, the CIS benchmarks are distribution-specific and very descriptive - they tell you exactly which commands to type or what to put in a config file to remediate non-compliances and how to retest. This is what most companies I've worked with find attractive - a sysadmin can do the hardening and a SOC analyst can measure compliance without hiring a consultancy to tell you what is meant by phrases like *"use sufficient cryptographic controls for the classification of data at rest and in transit"*.
+Unlike some security frameworks which can be quite vague and high-level, the CIS benchmarks are distribution-specific and very descriptive - they tell you exactly which commands to type or what to put in a config file to remediate non-compliances and how to retest. This is what most companies I've worked with find attractive - a sysadmin can do the hardening and a SOC analyst can measure compliance without hiring a consultancy to tell you what is meant by phrases like *"use sufficient cryptographic controls for the classification of data at rest and in transit"*.
 
 Using an example from the table above, 1.2.2 tests if `gpgcheck=1` is set globally to ensure signatures on RPM's from YUM repositories are checked - so that you can be sure they came from a trusted source:
 
@@ -74,3 +74,5 @@ The AlmaLinux OS 9 v1.0.0 benchmark was published in December 2022, which was ac
 It's truly a collaborative community effort, with representatives from various distro's as well as end-users and security professionals from all over the world, regularly attending the [Weekly Webex](https://workbench.cisecurity.org/communities/1) with the folks at CIS. I attend the distribution-independent Linux calls, where we also work on Debian, Ubuntu and even recently Amazon Linux. It can be a great learning experience too.
 
 You can also help by reviewing [vNext drafts](https://workbench.cisecurity.org/benchmarks/10093) and adding a comment/ticket or even starting a discussion - maybe you don't agree with a policy or could improve upon it or have even just found a typo. It's not all Linux, there's plenty of other [communities](https://workbench.cisecurity.org/communities/public) you may be interested in too, including IoT, Apache, macOS, Cisco....
+
+If you just want to come chat about all things AlmaLinux (and a surprising number of pet-related conversations), join us at [chat.almalinux.org](https://chat.almalinux.org)
