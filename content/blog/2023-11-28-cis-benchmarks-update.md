@@ -6,6 +6,8 @@ author:
  bio: "Security Standards Architect"
  image: /users/sjohn.png
 date: '2023-11-28'
+images:
+  - /blog-images/cis_update.svg
 post:
     title: "CIS Benchmarks Update"
     image: /blog-images/cis_update.svg
