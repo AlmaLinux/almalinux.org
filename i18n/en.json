@@ -509,11 +509,13 @@
    "(AlmaLinux OS Foundation Chair - benny Vasquez)": "(AlmaLinux OS Foundation Chair - benny Vasquez)",
    "(Tuxcare Inc. CEO - Igor Seletskiy)": "(Tuxcare Inc. CEO - Igor Seletskiy)",
    "Industry session": "Industry session",
-   "Yohei Suzuki, Cybertrust Japan": "Yohei Suzuki, Cybertrust Japan",
-   "(Andrew Lukoshko, AlmaLinux OS Architect)": "(Andrew Lukoshko, AlmaLinux OS Architect)",
+   "(Cybertrust Japan - Yohei Suzuki)": "(Cybertrust Japan - Yohei Suzuki)",
+   "(AlmaLinux OS Architect - Andrew Lukoshko)": "(AlmaLinux OS Architect - Andrew Lukoshko)",
    "Technical session": "Technical session",
-   "Masazumi Koga OpenSource/Linux Technology Evangelist, Hewlett Packard Japan, G.K.": "Masazumi Koga OpenSource/Linux Technology Evangelist, Hewlett Packard Japan, G.K.",
-   "(Matthias Kruk, AlmaLinux and MiracleLinux Developer)": "(Matthias Kruk, AlmaLinux and MiracleLinux Developer)",
-   "Tomoyuki Kamo, (DesigNET)": "Tomoyuki Kamo, (DesigNET)",
+   "Must-See! 'Practical Guide Series' Author Presentation! The Forefront of AlmaLinux on ARM Server Infrastructure": "Must-See! 'Practical Guide Series' Author Presentation! The Forefront of AlmaLinux on ARM Server Infrastructure",
+   "(Hewlett Packard Japan, G.K. OpenSource/Linux Technology Evangelist - Masazumi Koga)": "(Hewlett Packard Japan, G.K. OpenSource/Linux Technology Evangelist - Masazumi Koga)",
+   "(AlmaLinux and MiracleLinux Developer - Matthias Kruk)": "(AlmaLinux and MiracleLinux Developer - Matthias Kruk)",
+   "Seamless Migration: Transitioning from CentOS 7 to AlmaLinux with Optimal Solutions": "Seamless Migration: Transitioning from CentOS 7 to AlmaLinux with Optimal Solutions",
+   "(DesigNET Inc. - Tomoyuki Kamo)": "(DesigNET Inc. - Tomoyuki Kamo)",
    "AlmaLinux offers AlmaLinux OS 8 and AlmaLinux OS 9 images for Azure across all Azure regions via the ": "AlmaLinux offers AlmaLinux OS 8 and AlmaLinux OS 9 images for Azure across all Azure regions via the "
 }
