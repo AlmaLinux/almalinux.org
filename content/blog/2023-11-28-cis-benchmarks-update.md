@@ -7,10 +7,10 @@ author:
  image: /users/sjohn.png
 date: '2023-11-28'
 images:
-  - /blog-images/cis_update.svg
+  - /blog-images/cis_update.png
 post:
     title: "CIS Benchmarks Update"
-    image: /blog-images/cis_update.svg
+    image: /blog-images/cis_update.png
 
 ---
 
