@@ -7,10 +7,10 @@ author:
  image: /users/benny.jpeg
 date: '2023-11-29'
 images:
-  - /blog-images/23.11.29.distros.dev.room.svg
+  - /blog-images/23.11.29.distros.dev.room.png
 post:
     title: "Join us in the Distributions Dev Room for FOSDEM 2024!"
-    image: /blog-images/23.11.29.distros.dev.room.svg
+    image: /blog-images/23.11.29.distros.dev.room.png
 ---
 
 In just over two months we'll be returning to FOSDEM [again with a stand](https://fosstodon.org/@almalinux/109806681564344149), a [bunch of friends](https://social.linux.pizza/@benny/111468054707170805), and this time we get to help host the Distros Dev Room! 
