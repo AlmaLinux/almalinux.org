@@ -402,5 +402,9 @@
     "Minimal": "Minimal",
     "a single network installation CD image that downloads packages over the Internet.": "ein einzelnes Netzwerkinstallations-CD-Image, das Pakete über das Internet herunterlädt.",
     "AlmaLinux OS offers official Amazon Machine Images via the AWS Marketplace and Community AMIs.": "AlmaLinux OS bietet offizielle Amazon Machine Images über den AWS Marketplace und Community AMIs.",
-    "DVD": "DVD"
+    "DVD": "DVD",
+    "official AlmaLinux OS images": "offizielle AlmaLinux OS Images",
+    "More information about AlmaLinux AWS images is available on the": "Mehr Informationen über das AlmaLinux AWS Image sind verfügbar unter",
+    "AlmaLinux AWS Wiki Page": "AlmaLinux AWS Wiki Seite",
+    "mirrors": "Spiegel"
 }
