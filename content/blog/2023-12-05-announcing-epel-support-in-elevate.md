@@ -15,7 +15,11 @@ post:
 
 Hello, Community! Today, AlmaLinux OS Foundation is eager to share some big news concerning  our [ELevate project](https://almalinux.org/elevate/), an initiative to support migrations between major versions of RHEL-derivatives. 
 
-Previously, the project only provided support for official operating systems repositories, excluding external repositories. However, the AlmaLinux Team made significant improvements. We are thrilled to announce that EPEL support is now included in the ELevate project, enabling smooth migrations between CentOS7 and EL8 derivatives. Please be aware that at present, there is no EPEL support available for migrating between EL8 and EL9 derivatives.
+Previously, the project only provided support for official operating systems repositories, excluding external repositories. However, the AlmaLinux Team made significant improvements. 
+
+We are thrilled to announce that the first step in EPEL support is now included in the ELevate project, enabling smooth migrations between CentOS7 and AlmaLinux 8. 
+
+Please be aware that at present, the EPEL support does not include migrating to non-AlmaLinux OSes, or between EL8 and EL9 derivatives, but those are planned for the future!
 
 ## Testing
 As of now, this enhancement is in testing and we'd like to invite our Community to help us test it. 
