@@ -354,5 +354,7 @@
     "Download ISO from mirrors": "Завантажити ISO з дзеркал",
     "Get AlmaLinux OS": "Завантажити ОС AlmaLinux",
     "Get Docker Image": "Отримати Docker Відео",
-    "AlmaLinux provides official images for cloud providers:": "AlmaLinux надає офіційні зображення для хмарних провайдерів:"
+    "AlmaLinux provides official images for cloud providers:": "AlmaLinux надає офіційні зображення для хмарних провайдерів:",
+    "AlmaLinux images are available for LXC/LXD.": "Образи AlmaLinux доступні для LXC/LXD.",
+    "Get LXC/LXD Images": "Отримати LXC/LXD образи"
 }
