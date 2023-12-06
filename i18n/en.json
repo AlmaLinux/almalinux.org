@@ -481,10 +481,8 @@
    "We'll miss you, but if you can't make it to AlmaLinux Day Tokyo, you can join us online! We'll be posting the videos from the talks at the event to share with everyone.": "We'll miss you, but if you can't make it to AlmaLinux Day Tokyo, you can join us online! We'll be posting the videos from the talks at the event to share with everyone.",
    "Header image by Trevor Dobson": "Header image by Trevor Dobson",
    "Registration": "Registration",
-   "Keynote": "Keynote",
    "The Real Backstory of the Enterprise Linux Community": "The Real Backstory of the Enterprise Linux Community",
    "DeepDive Session": "DeepDive Session",
-   "Break and discussion": "Break and discussion",
    "Reception with light food and beverages": "Reception with light food and beverages",
    "Never has the been a better gathering of AlmaLinux experts. Hear all of the latest about the project, hear from industry experts about the current trends in the enterprise Linux ecosystem, and make connections with the people who can help solve every technology problem you're facing.": "Never has the been a better gathering of AlmaLinux experts. Hear all of the latest about the project, hear from industry experts about the current trends in the enterprise Linux ecosystem, and make connections with the people who can help solve every technology problem you're facing.",
    "and to the rest of our project backers!": "and to the rest of our project backers!",
@@ -497,8 +495,6 @@
    "As CentOS Linux enters its final 6 months support, AlmaLinux OS is attracting the most attention as a RHEL-compatible Linux.": "As CentOS Linux enters its final 6 months support, AlmaLinux OS is attracting the most attention as a RHEL-compatible Linux.",
    "At this event, speakers from the AlmaLinux OS Foundation will come to Japan to introduce everyone who touches Linux, from trends in the Linux industry to technical information needed when choosing the next Linux to use.": "At this event, speakers from the AlmaLinux OS Foundation will come to Japan to introduce everyone who touches Linux, from trends in the Linux industry to technical information needed when choosing the next Linux to use.",
    "150 guests, 7 speakers, 1 amazing day": "150 guests, 7 speakers, 1 amazing day",
-   "Main Track": "Main Track",
-   "Breakout Track": "Breakout Track",
    "The world's first event focused entirely on AlmaLinux": "The world's first event focused entirely on AlmaLinux",
    "Time": "Time",
    "Join us for the very first AlmaLinux Day! December 9th in Tokyo, Japan.": "Join us for the very first AlmaLinux Day! December 9th in Tokyo, Japan.",
@@ -521,5 +517,9 @@
    "Matthias Kruk": "Matthias Kruk",
    "Masazumi Koga": "Masazumi Koga",
    "Kimiyoshi Ohno": "Kimiyoshi Ohno",
-   "AlmaLinux offers AlmaLinux OS 8 and AlmaLinux OS 9 images for Azure across all Azure regions via the ": "AlmaLinux offers AlmaLinux OS 8 and AlmaLinux OS 9 images for Azure across all Azure regions via the "
+   "AlmaLinux offers AlmaLinux OS 8 and AlmaLinux OS 9 images for Azure across all Azure regions via the ": "AlmaLinux offers AlmaLinux OS 8 and AlmaLinux OS 9 images for Azure across all Azure regions via the ",
+   "Keynotes": "Keynotes",
+   "Track 1": "Track 1",
+   "Track 2": "Track 2",
+   "AlmaLinux: Built to Last": "AlmaLinux: Built to Last"
 }
