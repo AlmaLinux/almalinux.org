@@ -7,7 +7,7 @@ author:
  image: /users/alukoshko.jpg
 date: '2023-12-05'
 images:
-  - /blog-images/new-repos-announcement.png
+  - /blog-images/2023-11-30-epel-elevate.jpg
 post:
     title: "Bringing EPEL support to the ELevate project"
     image: /blog-images/2023-11-30-epel-elevate.jpg
