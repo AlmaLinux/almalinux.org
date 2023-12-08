@@ -662,5 +662,8 @@
     "General Counsel": "Consejo General",
     "Track 1": "Pista 1",
     "AlmaLinux: Built to Last": "AlmaLinux: Construido para durar",
-    "Keynotes": "Apertura"
+    "Keynotes": "Apertura",
+    "The Forefront of AlmaLinux on ARM Server Infrastructure": "La vanguardia de AlmaLinux en la infraestructura de servidores ARM",
+    "The Evolution of SBOMs in AlmaLinux": "Evolución de los SBOM en AlmaLinux",
+    "Building AlmaLinux OS": "Creación del SO AlmaLinux"
 }
