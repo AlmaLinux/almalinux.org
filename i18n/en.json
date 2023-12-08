@@ -482,7 +482,6 @@
    "Header image by Trevor Dobson": "Header image by Trevor Dobson",
    "Registration": "Registration",
    "The Real Backstory of the Enterprise Linux Community": "The Real Backstory of the Enterprise Linux Community",
-   "DeepDive Session": "DeepDive Session",
    "Reception with light food and beverages": "Reception with light food and beverages",
    "Never has the been a better gathering of AlmaLinux experts. Hear all of the latest about the project, hear from industry experts about the current trends in the enterprise Linux ecosystem, and make connections with the people who can help solve every technology problem you're facing.": "Never has the been a better gathering of AlmaLinux experts. Hear all of the latest about the project, hear from industry experts about the current trends in the enterprise Linux ecosystem, and make connections with the people who can help solve every technology problem you're facing.",
    "and to the rest of our project backers!": "and to the rest of our project backers!",
@@ -505,7 +504,6 @@
    "(Cybertrust Japan - Yohei Suzuki)": "(Cybertrust Japan - Yohei Suzuki)",
    "(AlmaLinux OS Architect - Andrew Lukoshko)": "(AlmaLinux OS Architect - Andrew Lukoshko)",
    "Technical session": "Technical session",
-   "Must-See! 'Practical Guide Series' Author Presentation! The Forefront of AlmaLinux on ARM Server Infrastructure": "Must-See! 'Practical Guide Series' Author Presentation! The Forefront of AlmaLinux on ARM Server Infrastructure",
    "(Hewlett Packard Japan, G.K. OpenSource/Linux Technology Evangelist - Masazumi Koga)": "(Hewlett Packard Japan, G.K. OpenSource/Linux Technology Evangelist - Masazumi Koga)",
    "(AlmaLinux and MiracleLinux Developer - Matthias Kruk)": "(AlmaLinux and MiracleLinux Developer - Matthias Kruk)",
    "Seamless Migration: Transitioning from CentOS 7 to AlmaLinux with Optimal Solutions": "Seamless Migration: Transitioning from CentOS 7 to AlmaLinux with Optimal Solutions",
@@ -522,5 +520,9 @@
    "Track 1": "Track 1",
    "Track 2": "Track 2",
    "AlmaLinux: Built to Last": "AlmaLinux: Built to Last",
-   "General Counsel": "General Counsel"
+   "General Counsel": "General Counsel",
+   "Building AlmaLinux OS": "Building AlmaLinux OS",
+   "The Forefront of AlmaLinux on ARM Server Infrastructure": "The Forefront of AlmaLinux on ARM Server Infrastructure",
+   "DeepDive Session": "DeepDive Session",
+   "The Evolution of SBOMs in AlmaLinux": "The Evolution of SBOMs in AlmaLinux"
 }
