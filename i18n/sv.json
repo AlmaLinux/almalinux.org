@@ -654,5 +654,8 @@
     "General Counsel": "Generaljurist",
     "Track 1": "Spår 1",
     "AlmaLinux: Built to Last": "AlmaLinux: Byggt för att hålla",
-    "Keynotes": "Inledningsanförande"
+    "Keynotes": "Inledningsanförande",
+    "The Forefront of AlmaLinux on ARM Server Infrastructure": "Framsidan av AlmaLinux på ARM-serverinfrastruktur",
+    "The Evolution of SBOMs in AlmaLinux": "Evolutionen av SBOM i AlmaLinux",
+    "Building AlmaLinux OS": "Bygga AlmaLinux OS"
 }
