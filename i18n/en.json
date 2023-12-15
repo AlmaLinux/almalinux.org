@@ -505,7 +505,6 @@
    "(AlmaLinux OS Architect - Andrew Lukoshko)": "(AlmaLinux OS Architect - Andrew Lukoshko)",
    "Technical session": "Technical session",
    "(Hewlett Packard Japan, G.K. OpenSource/Linux Technology Evangelist - Masazumi Koga)": "(Hewlett Packard Japan, G.K. OpenSource/Linux Technology Evangelist - Masazumi Koga)",
-   "(AlmaLinux and MiracleLinux Developer - Matthias Kruk)": "(AlmaLinux and MiracleLinux Developer - Matthias Kruk)",
    "Seamless Migration: Transitioning from CentOS 7 to AlmaLinux with Optimal Solutions": "Seamless Migration: Transitioning from CentOS 7 to AlmaLinux with Optimal Solutions",
    "(DesigNET Inc. OSS Laboratory general manager - Kimiyoshi Ohno)": "(DesigNET Inc. OSS Laboratory general manager - Kimiyoshi Ohno)",
    "benny Vasquez": "benny Vasquez",
@@ -524,5 +523,6 @@
    "Building AlmaLinux OS": "Building AlmaLinux OS",
    "The Forefront of AlmaLinux on ARM Server Infrastructure": "The Forefront of AlmaLinux on ARM Server Infrastructure",
    "DeepDive Session": "DeepDive Session",
-   "The Evolution of SBOMs in AlmaLinux": "The Evolution of SBOMs in AlmaLinux"
+   "The Evolution of SBOMs in AlmaLinux": "The Evolution of SBOMs in AlmaLinux",
+   "(AlmaLinux and MIRACLE LINUX Developer - Matthias Kruk)": "(AlmaLinux and MIRACLE LINUX Developer - Matthias Kruk)"
 }
