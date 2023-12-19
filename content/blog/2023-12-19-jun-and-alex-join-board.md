@@ -5,7 +5,7 @@ author:
  name: "benny Vasquez"
  bio: "Chair, AlmaLinux OS Foundation"
  image: /users/benny.jpeg
-date: 2023-12-18
+date: 2023-12-19
 images:
   - /blog-images/2023-12-19-new-board.png
 post: 
