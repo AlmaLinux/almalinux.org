@@ -422,5 +422,15 @@
     "are available via the AWS Marketplace at the links provided:": "sind über den AWS Marktplatz unter den angegebenen Links verfügbar:",
     "Download from mirrors": "Von Spiegelserver herunterladen",
     "More information about AlmaLinux Generic Cloud images and verification guidelines are available on the": "Weitere Informationen zu AlmaLinux Generic Cloud-Images und Verifizierungsrichtlinien sind verfügbar unter",
-    " and as a": " und als ein"
+    " and as a": " und als ein",
+    "The official AlmaLinux OS images are available on ": "Die offiziellen AlmaLinux OS Abbilder sind verfügbar auf ",
+    "AlmaLinux OS Images are also available via the": "AlmaLinux OS Abbilder sind auch hier erhältlich:",
+    "More information about AlmaLinux OpenNebula images and verification guidelines are available on the ": "Weitere Informationen zu AlmaLinux OpenNebula Abbildern und Verifikationsrichtlinien finden Sie auf der ",
+    "More about AlmaLinux OS images for Azure": "Mehr über AlmaLinux OS Abbilder für Azure",
+    "AlmaLinux Azure Wiki Page": "AlmaLinux Azure Wiki Artikel",
+    "Images are deployable via the marketplace, portal and CLI.": "Abbilder sind über den Marktplatz, das Portal und die Kommandozeile verfügbar.",
+    "Oracle Cloud Marketplace": "Oracle Cloud Marktplatz",
+    "The AlmaLinux OS OpenNebula image are available from our ": "Das AlmaLinux OS OpenNebula Abbild ist über diese Quelle(n) erreichbar: ",
+    "AlmaLinux OpenNebula Wiki Page": "AlmaLinux OpenNebula Wiki Artikel",
+    "OCI CLI": "OCI Kommandozeile"
 }
