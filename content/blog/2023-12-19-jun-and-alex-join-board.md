@@ -22,7 +22,7 @@ As [you'll recall](https://almalinux.org/blog/2023-09-14-election-2023/), we are
 <section>
 	<div class="py-5 px-4 text-center al-member-item">
 		<div>
-			<img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/JunYoshida-small.jpg" alt="Jun Yoshida" style="max-width: 138px;">
+			<img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/JunYoshida.jpg" alt="Jun Yoshida" style="max-width: 138px;">
 		</div>
 		<h5 class="mb-1">Jun Yoshida</h5>
 	</div>
