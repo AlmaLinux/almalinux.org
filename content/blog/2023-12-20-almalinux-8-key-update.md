@@ -13,7 +13,7 @@ post:
     image: /blog-images/2023-12-almalinux8keychange.png
 ---
 
-Earlier this year we realized that the GPG key we use to sign packages for AlmaLinux 8 is set to expire in January of 2024. If you keep your system up to date, you don't need to take any further action.
+Late last year we experienced a system failure that resulted in the loss of the master key that would allow us to extend the life of the GPG key that we use to sign packages for AlmaLinux 8, and it is set to expire in January of 2024. While we have ensured that this won't happen again, some users will need to take specific steps to import the new GPG key. 
 
 If your device is running a little behind in updates for AlmaLinux 8, please read more below to identify the actions you need to take.
 
