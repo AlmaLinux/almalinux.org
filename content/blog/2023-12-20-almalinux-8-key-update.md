@@ -25,7 +25,7 @@ On January 12, 2024 we will start signing RPM packages and repodata for AlmaLinu
 ### Fast track
 If you want to make sure your system already includes and trusts new AlmaLinux 8 GPG key you can just import it:
 
-```
+```bash
 rpm --import https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux
 ```
 
@@ -33,23 +33,23 @@ This command imports new AlmaLinux 8 GPG key to rpm database if it's not there y
 
 ### How to check your system and import new key
 The new GPG key is included in the `almalinux-release` package version `8.8-3.el8` (released Oct 16, 2023) or higher. To see if your system already trusts the new AlmaLinux 8 GPG key you can run the following:
-```
+```bash
 rpm -q gpg-pubkey-ced7258b-6525146f
 ```
 If the new GPG key is already trusted, you will see the following message, and no further action is necessary:
-```
+```bash
 gpg-pubkey-ced7258b-6525146f
 ```
 If the GPG key is not trusted, you will see the following error:
-```
+```bash
 package gpg-pubkey-ced7258b-6525146f is not installed
 ```
 In this case we recommended that you import the new AlmaLinux 8 GPG key to the rpm database:
-```
+```bash
 rpm --import https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux
 ```
 If your device is running in an airgapped environment, or does not have an external network connection, as long as the `almalinux-release` package version `8.8-3.el8` or higher is installed you can also import key directly from the file:
-```
+```bash
 rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
 ```
 ### What will happen if none of the above is done?
