@@ -22,9 +22,10 @@ AlmaLinux OS provides a variety of cloud images, so we've been updating them to 
 * [Amazon AWS](https://wiki.almalinux.org/cloud/AWS.html)
     * Starting AlmaLinux OS versions 8.9 and 9.3 Amazon Machine images have UEFI boot support. Thus boot mode was changed to the `uefi-preferred` meaning that UEFI will be chosen on the supported instance types. We are planning to publish separate AMIs with enabled Secure Boot and NitroTPM(vTPM) support.
 * [Generic Cloud](https://wiki.almalinux.org/cloud/Generic-cloud.html)
+    * Starting AlmaLinux OS 8.9 Generic Cloud images have hybrid - BIOS and UEFI - boot support. The download URLs of the UEFI images are symlinked to the current image for compatibility.
 * [OpenNebula](https://wiki.almalinux.org/cloud/OpenNebula.html)
-    * Starting AlmaLinux OS 8.9 Generic Cloud and OpenNebula images have hybrid - BIOS and UEFI - boot support. The download URLs of the UEFI images are symlinked to the current image for compatibility.
-* [Microsoft Azure](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.almalinux-x86_64)
+    * Starting AlmaLinux OS 8.9 Generic Cloud images have hybrid - BIOS and UEFI - boot support.
+* Microsoft Azure images for [x86_64](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.almalinux-x86_64) and [AArch64](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.almalinux-arm) architectures
 * [Oracle Cloud Infrastructure](https://wiki.almalinux.org/cloud/OCI.html)
 
 Container images have been updated as well. You can get official [Docker](https://hub.docker.com/_/almalinux) images and [OCI Images from Quay.io](https://quay.io/organization/almalinuxorg).
