@@ -430,5 +430,8 @@
     "mirrors": "espelhos",
     " CLI. More information on the ": " CLI. Mais informações no ",
     "More information about AlmaLinux Generic Cloud images and verification guidelines are available on the": "Mais informações sobre as imagens genéricas do AlmaLinux para a nuvem e diretrizes de verificação estão disponíveis em",
-    " and as a": " e como um"
+    " and as a": " e como um",
+    "AlmaLinux offers images for Oracle Cloud Infrastructure across all OCI regions via the ": "AlmaLinux oferece imagens para infraestrutura do Oracle Cloud em todas as regiões OCI através da plataforma ",
+    "More information about AlmaLinux OpenNebula images and verification guidelines are available on the ": "Pode encontrar mais informações sobre as imagens do AlmaLinux OpenNebula e as guias de verificação na página web ",
+    "The AlmaLinux OS OpenNebula image are available from our ": "A imagem do SO (sistema operacional) AlmaLinux está disponível em nossa "
 }
