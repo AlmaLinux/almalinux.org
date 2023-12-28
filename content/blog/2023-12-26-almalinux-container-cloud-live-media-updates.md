@@ -44,8 +44,8 @@ All Live Media images were also updated to versions [AlmaLinux 9.3](https://repo
 ## More options 
 
 The following options have also been updated
-* LXD/LXC to [AlmaLinux 9.3](https://images.linuxcontainers.org/images/almalinux/9/amd64/) to AlmaLinux [AlmaLinux 8.9](https://images.linuxcontainers.org/images/almalinux/8/amd64/)
-* [Vagrant Box](https://app.vagrantup.com/almalinux) images to AlmaLinux 8.9 and 9.3
+* LXD/LXC to [AlmaLinux 9.3](https://images.linuxcontainers.org/images/almalinux/9/amd64/) and [AlmaLinux 8.9](https://images.linuxcontainers.org/images/almalinux/8/amd64/)
+* [Vagrant Box](https://app.vagrantup.com/almalinux) images to AlmaLinux 9.3 and 8.9
 * Raspberry Pi images to [AlmaLinux 9.3](https://repo.almalinux.org/almalinux/9.3/raspberrypi/images/) and [AlmaLinux 8.9](https://repo.almalinux.org/almalinux/8.9/raspberrypi/images/)
 
 You can check the [AlmaLinux website](https://almalinux.org/get-almalinux/) for a full list of images AlmaLinux provides.
