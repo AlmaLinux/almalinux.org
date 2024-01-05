@@ -206,7 +206,7 @@
     "ELevate supports migrating to/from other distributions and is open for all to contribute to and enhance.": "ELevate поддерживает миграцию на/из других дистрибутивов и открыт для всех желающих.",
     "ELevate is a project aimed to provide the ability to migrate between major versions of RHEL-based distributions from 7.x to 8.x.": "",
     "It combines Red Hat's Leapp framework with a community created library and service for the migration metadata set required for it.": "Он объединяет фреймворк Leapp компании Red Hat с созданной сообществом библиотекой и сервисом для набора необходимых для миграции метаданных.",
-    "This looks awesome.": "",
+    "This looks awesome.": "Это выглядит потрясающе.",
     "How can I contribute?": "Как я могу помочь?",
     "channel": "канал",
     "You can find the tool code here": "Код инструмента можно найти здесь",
