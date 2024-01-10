@@ -57,11 +57,11 @@ ingredients on food packaging."
                     <li>{{ i18n "Reducing the number of ways of data corruption" }}</li>
                 </ul>
                 <h3>{{ i18n "How are we doing this?" }}</h3>
-                <p>{{ i18n "AlmaLinux is leveraging Codenotary’s open source" }} <a href="https://cas.codenotary.com/" target="_blank"> Community Attestation Service</a> (CAS) {{ i18n "to provide administrators with authentication, verification and full SBOM visibility." }}</p>
+                <p>{{ i18n "AlmaLinux is leveraging Codenotary’s open source" }} <a href="https://immudb.io/" target="_blank">immudb</a> {{ i18n "to provide administrators with authentication, verification and full SBOM visibility." }}</p>
                 <ul>
-                    <li>{{ i18n "CAS stores all signatures inside of" }} <a href="https://immudb.io/" target="_blank">immudb</a>{{ i18n ", the standard for open source for immutable databases, used by some of the world’s leading companies and governments." }}</li>
-                    <li>{{ i18n "CAS is protected against tampering." }} {{ i18n "All attestation data is integrity-checked and cryptographically verified by the CAS client." }} {{ i18n "No one can change this data, not AlmaLinux or anyone else." }}</li>
-                    <li>{{ i18n "CAS is also protected against MITM attacks." }} {{ i18n "The encryption key is client-side verified and checked before every communication." }}</li>
+                    <li>{{ i18n "The AlmaLinux Build System stores SBOM data inside of immudb" }}{{ i18n ", the standard for open source for immutable databases, used by some of the world’s leading companies and governments." }}</li>
+                    <li>{{ i18n "immudb is protected against tampering." }} {{ i18n "All attestation data is integrity-checked and cryptographically verified by clients." }} {{ i18n "No one can change this data, not AlmaLinux or anyone else." }}</li>
+                    <li>{{ i18n "immudb is also protected against MITM attacks." }} {{ i18n "The encryption key is client-side verified and checked before every communication." }}</li>
                 </ul>
                 <h2>{{ i18n "Getting Started" }}</h2>
                 <p>{{ i18n "For more information, see the Almalinux wiki:" }} <a href="https://github.com/AlmaLinux/build-system/wiki/Codenotary-SBOM-integration">https://github.com/AlmaLinux/build-system/wiki/Codenotary-SBOM-integration</a></p>
