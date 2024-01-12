@@ -230,15 +230,15 @@
     "Benefits": "Преимущества",
     "listing on our website in a contributing member list": "",
     "contributing member AlmaLinux logo": "",
-    "1 vote for a board seat": "",
+    "1 vote for a board seat": "1 голос за место в совете директоров",
     "Official Mirror Membership": "Официальное зеркальное членство",
     "acceptance as AlmaLinux mirror by tech committee": "принятие техническим комитетом в качестве зеркала AlmaLinux",
     "as long as mirror is operational": "пока зеркало находится в рабочем состоянии",
     "All contributor membership benefits and": "Все преимущества членства в программе и",
     "Listing as an official AlmaLinux mirror": "Внесение в список официальных зеркал AlmaLinux",
     "Official AlmaLinux mirror logo": "Официальный логотип зеркала AlmaLinux",
-    "All of the": "",
-    "benefits, plus...": "",
+    "All of the": "Все",
+    "benefits, plus...": "преимущества, а также...",
     "Voting benefits": "",
     "Opportunity  to nominate someone for election to the board of directors": "",
     "Opportunity to nominate someone for election to the board of directors": "",
@@ -388,5 +388,8 @@
     "ELevate is a project aimed to provide the ability to upgrade between major versions of RHEL-based distributions from 7.x to 8.x and from 8.x to 9.x. It combines Red Hat's Leapp framework with a community-created migration metadata library and service.": "ELevate — это проект, цель которого предоставить возможность обновления основных версий дистрибутивов на основе RHEL с 7.x до 8.x и с 8.x до 9.x. Он сочетает в себе фреймворк Leapp от Red Hat с библиотекой и сервисом метаданных миграции, созданными сообществом.",
     "As a standalone, completely free OS, AlmaLinux OS enjoys $1M in annual sponsorship from CloudLinux Inc. and support from more than 25 other sponsors. Ongoing development efforts are governed by the members of the community.": "Будучи автономной, полностью бесплатной ОС, система AlmaLinux получает ежегодную спонсорскую поддержку в размере 1 миллиона долларов США от CloudLinux Inc. и поддержку более чем 25 других спонсоров. Текущими усилиями по развитию управляют члены сообщества.",
     "A complete list of AlmaLinux Community AMIs can be found on the": "Полный список AMI сообщества AlmaLinux можно найти на странице",
-    "How is the community protected from future course changes for AlmaLinux OS?": "Как сообщество защищено от будущих изменений курса ОС AlmaLinux?"
+    "How is the community protected from future course changes for AlmaLinux OS?": "Как сообщество защищено от будущих изменений курса ОС AlmaLinux?",
+    "Download .torrent file": "Скачать .torrent-файл",
+    "Download from mirrors": "Скачать с зеркал",
+    "Download CHECKSUM": "Скачать CHECKSUM"
 }
