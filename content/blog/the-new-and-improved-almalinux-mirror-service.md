@@ -2,7 +2,7 @@
 title: "The New and Improved AlmaLinux Mirror Service"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2021-08-04'

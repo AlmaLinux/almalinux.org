@@ -2,7 +2,7 @@
 title: "GitLab Moves to AlmaLinux as Supported Platform"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2022-03-30'

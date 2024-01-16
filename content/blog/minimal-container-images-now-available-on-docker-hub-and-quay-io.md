@@ -2,7 +2,7 @@
 title: "Minimal Container Images now Available on Docker Hub and Quay.io"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2021-06-28'

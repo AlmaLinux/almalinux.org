@@ -2,7 +2,7 @@
 title: "Introducing AlmaLinux Beta: A Community-Driven Replacement for CentOS"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2021-02-01'

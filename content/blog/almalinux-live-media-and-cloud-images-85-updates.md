@@ -2,7 +2,7 @@
 title: "AlmaLinux Live Media and Cloud Images 8.5 Updates"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2022-02-18'

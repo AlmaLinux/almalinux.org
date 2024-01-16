@@ -2,7 +2,7 @@
 title: "Oracle and AlmaLinux Live Webcast – ELevate: Upgrading EL7 servers to EL8 for ISVs and DevOps"
 type: blog
 author: 
- name: "themayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2022-08-01'

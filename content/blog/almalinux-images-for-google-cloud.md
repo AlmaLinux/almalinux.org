@@ -2,7 +2,7 @@
 title: "AlmaLinux Images for Google Cloud"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2021-06-04'

@@ -2,7 +2,7 @@
 title: "Join us at Fedora Flock/Nest Aug 5th-7th!"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2021-07-30'

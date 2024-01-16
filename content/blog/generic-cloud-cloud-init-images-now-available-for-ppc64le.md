@@ -2,7 +2,7 @@
 title: "Generic Cloud (cloud-init) Images Now Available for PPC64LE"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2022-02-03'

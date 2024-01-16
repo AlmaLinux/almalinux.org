@@ -2,7 +2,7 @@
 title: "AlmaLinux 9 Now Available!"
 type: blog
 author: 
- name: "themayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2022-05-26'

@@ -2,7 +2,7 @@
 title: "AlmaLinux OS 8.4 ARM Beta Release"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2021-05-28'

@@ -2,7 +2,7 @@
 title: "Tenable Providing Nessus Security Checks for AlmaLinux"
 type: blog
 author: 
- name: "themayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2022-07-21'

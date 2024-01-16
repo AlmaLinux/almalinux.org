@@ -2,7 +2,7 @@
 title: "Introducing ALBS: The AlmaLinux Build System"
 type: blog
 author: 
- name: "themayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2022-07-08'

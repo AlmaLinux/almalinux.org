@@ -2,7 +2,7 @@
 title: "AlmaLinux OS 8.5 Stable Now Available"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2021-11-12'

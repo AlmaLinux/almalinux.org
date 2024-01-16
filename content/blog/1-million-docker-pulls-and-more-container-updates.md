@@ -2,7 +2,7 @@
 title: "1 Million Docker pulls and more container updates"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2022-03-15'

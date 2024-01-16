@@ -2,7 +2,7 @@
 title: "AlmaLinux Beta Release Update"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2021-01-20'

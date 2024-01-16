@@ -2,7 +2,7 @@
 title: "Announcing ELevate -- Migration between Major Versions (7.x to 8x) of RHEL Derivative Distributions"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2021-10-19'

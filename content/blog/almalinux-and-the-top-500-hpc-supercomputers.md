@@ -2,7 +2,7 @@
 title: "AlmaLinux and the Top 500 HPC Supercomputers"
 type: blog
 author: 
- name: "themayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2022-07-21'

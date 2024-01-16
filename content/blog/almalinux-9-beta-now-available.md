@@ -2,7 +2,7 @@
 title: "AlmaLinux 9 Beta--Now Available"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2022-04-19'

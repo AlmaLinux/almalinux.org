@@ -2,7 +2,7 @@
 title: "AlmaLinux Web Team Call for Ideas and Contributors"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2022-03-09'
