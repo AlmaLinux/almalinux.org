@@ -2,7 +2,7 @@
 title: "AlmaLinux for Azure HPC -- Now Available!"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2021-12-14'

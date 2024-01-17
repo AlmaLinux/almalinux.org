@@ -2,7 +2,7 @@
 title: "AlmaLinux 8.5 Beta for PowerPC Now Available"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2021-12-30'

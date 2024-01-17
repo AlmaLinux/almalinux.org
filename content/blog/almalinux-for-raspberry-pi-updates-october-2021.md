@@ -2,7 +2,7 @@
 title: "AlmaLinux For Raspberry Pi Updates - October 2021"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2021-10-07'

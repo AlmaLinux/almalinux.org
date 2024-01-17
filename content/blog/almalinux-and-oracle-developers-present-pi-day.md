@@ -2,7 +2,7 @@
 title: "AlmaLinux and Oracle Developers Present Pi Day!"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2022-03-04'

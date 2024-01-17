@@ -2,7 +2,7 @@
 title: "This Distro Should Not Exist - AlmaLinux 8.6 for IBM Z"
 type: blog
 author: 
- name: "themayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2022-10-07'

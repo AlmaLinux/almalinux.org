@@ -2,7 +2,7 @@
 title: "Announcing AlmaLinux Live Media Beta"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2021-08-05'

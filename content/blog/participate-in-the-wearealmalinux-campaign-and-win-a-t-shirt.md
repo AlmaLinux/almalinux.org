@@ -2,7 +2,7 @@
 title: "Participate In The #wearealmalinux Campaign And Win a T-shirt"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2021-03-12'

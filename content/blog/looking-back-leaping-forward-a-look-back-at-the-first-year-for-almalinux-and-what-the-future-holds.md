@@ -2,7 +2,7 @@
 title: "Looking Back, Leaping Forward: A look back at the first year for AlmaLinux and what the future holds"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2022-02-02'

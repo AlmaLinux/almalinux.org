@@ -2,7 +2,7 @@
 title: "Almalinux 9.1 Now Available"
 type: blog
 author: 
- name: "themayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2022-11-16'

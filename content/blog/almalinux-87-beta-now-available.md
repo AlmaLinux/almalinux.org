@@ -2,7 +2,7 @@
 title: "AlmaLinux 8.7 Beta - Now Available"
 type: blog
 author: 
- name: "themayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2022-10-25'

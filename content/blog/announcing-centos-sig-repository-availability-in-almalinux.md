@@ -2,7 +2,7 @@
 title: "Announcing CentOS SIG Repository Availability in AlmaLinux"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2021-09-01'

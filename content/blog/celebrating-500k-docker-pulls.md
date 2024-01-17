@@ -2,7 +2,7 @@
 title: "Celebrating 500K Docker Pulls!"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2021-12-15'

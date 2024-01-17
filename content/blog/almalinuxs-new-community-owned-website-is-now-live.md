@@ -2,7 +2,7 @@
 title: "AlmaLinux's new community-owned website is now live!"
 type: blog
 author: 
- name: "theMayor"
+ name: "Jack Aboutboul"
  bio: "-"
  image: /users/jack.jpg
 date: '2021-07-16'
