@@ -355,6 +355,6 @@
     "Get AlmaLinux OS": "Завантажити ОС AlmaLinux",
     "Get Docker Image": "Отримати Docker Відео",
     "AlmaLinux provides official images for cloud providers:": "AlmaLinux надає офіційні зображення для хмарних провайдерів:",
-    "AlmaLinux images are available for LXC/LXD.": "Образи AlmaLinux доступні для LXC/LXD.",
-    "Get LXC/LXD Images": "Отримати LXC/LXD образи"
+    "AlmaLinux images are available for LXC/Incus.": "Образи AlmaLinux доступні для LXC/Incus.",
+    "Get LXC/Incus Images": "Отримати LXC/Incus образи"
 }

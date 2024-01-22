@@ -354,7 +354,7 @@
     "Get OCI Image from Quay.io": "从 Quay.io 获取 OCI 镜像",
     "Get Live Media Image": "获取 LiveCD",
     "AlmaLinux provides official images for Vagrant:": "AlmaLinux 为 Vagrant 提供的官方镜像：",
-    "Get LXC/LXD Images": "获取LXC/LXD镜像",
+    "Get LXC/Incus Images": "获取LXC/Incus镜像",
     "AlmaLinux builds Raspberry Pi images, and also with GNOME desktop environment.": "AlmaLinux 构建了 Raspberry Pi 镜像，并使用 GNOME 桌面环境。",
     "Get Raspberry Pi Image": "获取 Raspberry Pi 镜像",
     "Get AlmaLinux for WSL": "获取适用于 WSL 的 AlmaLinux",
