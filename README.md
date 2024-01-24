@@ -41,5 +41,3 @@ To contribute translations see [AlmaLinux OS](https://hosted.weblate.org/project
 You can request new languages to be added by creating a ticket in [GitHub issues](https://github.com/AlmaLinux/almalinux.org/issues).
 
 [![Translation status](https://hosted.weblate.org/widgets/almalinux/-/287x66-white.png)](https://hosted.weblate.org/engage/almalinux/)
-
-Copyright (c) 2023 AlmaLinux OS Foundation
