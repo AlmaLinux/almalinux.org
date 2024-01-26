@@ -75,7 +75,6 @@ You can request new languages to be added by creating a ticket in [GitHub issues
 
 [![Translation status](https://hosted.weblate.org/widget/almalinux/website-backend/multi-auto.svg)](https://hosted.weblate.org/engage/almalinux/)
 
-
 ## Approval of changes
 
 Before any changes can be merged:
@@ -83,4 +82,3 @@ Before any changes can be merged:
 - All minor or cosmetic changes (typos, minor styling, etc) can be reviewed and approved by any contributor with merge rights
 - All non-cosmetic changes to the website requires the approval of the Marketing lead
 - Weblate automatically creates pull requests with new translated strings. Those pull requests are then reviewed by a member of the marketing SIG or another team lead, and merged as appropriate.
-
