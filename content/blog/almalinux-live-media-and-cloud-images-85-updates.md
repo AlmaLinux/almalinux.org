@@ -31,7 +31,8 @@ This also kind of happened under the radar already but we figured we should shar
 
 - [AWS AMIs](https://wiki.almalinux.org/cloud/AWS.html)
 - [Docker](https://hub.docker.com/_/almalinux)
-- [Azure](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.almalinux)
+- [Azure x86_64](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.almalinux-x86_64?tab=Overview)
+- [Azure ARM](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.almalinux-arm?tab=Overview)
 - [Azure HPC](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.almalinux-hpc?tab=Overview)
 - [Vagrant Boxes](https://app.vagrantup.com/almalinux/boxes/8)
 - [Generic Cloud](https://wiki.almalinux.org/cloud/Generic-cloud.html)
