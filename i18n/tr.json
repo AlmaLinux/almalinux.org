@@ -302,12 +302,12 @@
     "Tracing the whole build process from pulling sources from CentOS git repositories to releasing a verified and signed package in the public repository": "CentOS git depolarından kaynak çekmekten, doğrulanmış ve imzalanmış bir paketi genel depoda yayınlamaya kadar tüm oluşturma sürecini izleme",
     "Reducing the number of ways of data corruption": "Veri bozulma yollarının sayısını azaltmak",
     "How are we doing this?": "Bunu nasıl yapıyoruz?",
-    "The AlmaLinux Build System stores SBOM data inside of immudb": "",
+    "The AlmaLinux Build System stores SBOM data inside of immudb": "AlmaLinux Derleme Sistemi, SBOM verilerini immudb içinde saklar",
     ", the standard for open source for immutable databases, used by some of the world’s leading companies and governments.": ", dünyanın önde gelen bazı şirketleri ve hükümetleri tarafından kullanılan değişmez veritabanları için açık kaynak standardı.",
-    "immudb is protected against tampering.": "",
-    "All attestation data is integrity-checked and cryptographically verified by clients.": "",
+    "immudb is protected against tampering.": "immudb kurcalanmaya karşı dayanıklıdır.",
+    "All attestation data is integrity-checked and cryptographically verified by clients.": "Tüm tasdik verileri bütünlük kontrollüdür ve istemciler tarafından kriptografik olarak onaylanır.",
     "No one can change this data, not AlmaLinux or anyone else.": "Bu verileri AlmaLinux veya başka biri değiştiremez.",
-    "immudb is also protected against MITM attacks.": "",
+    "immudb is also protected against MITM attacks.": "immudb, MITM saldırılarına karşı da dayanıklıdır.",
     "Getting Started": "Başlarken",
     "For more information, see the Almalinux wiki:": "Daha fazla bilgi için Almalinux wiki'sine bakın:",
     "It wasn't possible--until now.": "Şimdiye kadar mümkün değildi.",
@@ -387,5 +387,6 @@
     "and will not be supported by ELevate project.": "ve ELevate projesi tarafından desteklenmeyecektir.",
     "ELevate enables migration between major versions of RHEL ® derivatives.": "ELevate, RHEL ® türevlerinin ana sürümleri arasında geçişi sağlar.",
     "First join us in the ": "İlk önce bize katılın ",
-    "You can find the tool code ": "Alet kodunu bulabilirsiniz "
+    "You can find the tool code ": "Alet kodunu bulabilirsiniz ",
+    "Switching distributions is usually costly and time-consuming, but that's not the case when switching from CentOS and other RHEL® derivatives to AlmaLinux OS.": "Dağıtım değiştirmek normalde masraflı ve zaman alıcıdır, fakat CentOS veya diğer RHEL® dağıtımlarından AlmaLinux'e geçiyorsanız değildir."
 }
