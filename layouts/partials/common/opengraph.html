@@ -15,7 +15,7 @@
         {{- with $.Site.Params.images }}<meta property="og:image" content="{{ index . 0 | absURL }}"/>{{ end -}}
         {{- if not $.Site.Params.images -}}
             <!-- Default image if no other image is found -->
-            <meta property="og:image" content="{{ "images/hero.png" | absURL }}"/>
+            <meta property="og:image" content="{{ "images/newhero.png" | absURL }}"/>
         {{- end -}}
     {{- end -}}
 {{- end -}}
