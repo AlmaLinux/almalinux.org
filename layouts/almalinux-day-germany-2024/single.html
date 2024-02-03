@@ -7,6 +7,9 @@
     .toppic_item_1 {
       padding-top: 18%!important;
     }
+    .item-headshot {
+      width: 33%!important;
+    }
   }
   @media (max-width: 991px){
     h1 {
@@ -23,13 +26,15 @@
       flex-direction: column!important;
       align-items: center;
     }
-    .item-event-1 {
-      width: 50%;
-      text-align: center;
-      margin-bottom: 20px;
+    .event-svag{
+      flex-direction: column;
+      align-items: center;
     }
-    .item-event-2 {
-      padding-left: 0!important;
+    .item-event-1{
+      padding-bottom: 10px;
+    }
+    .item-event-2{
+      padding-left: 0px!important;
     }
     .item-headshot {
       width: 50%!important;
@@ -46,13 +51,22 @@
     .toppic_item_1 {
       padding-top: 44%!important;
     }
+    .img-event-svag{
+      width: 100%!important;
+    }
+    .item-headshot {
+      width: 322px!important;
+    }
   }
   @media (max-width: 474px){
-    .item-headshot {
-      width: 80%!important;
-    }
     table {
       font-size: 8px!important;
+    }
+    .container-stop{
+      flex-direction: column;
+    }
+    .stop-item-2{
+      padding-left: 0px!important;
     }
   }
 </style>
@@ -101,7 +115,7 @@
         <div class="container-speakers" style="display: flex; justify-content: center; flex-wrap: wrap;">
 <!-- speaker one -->
           <div class="item-headshot" style="width: 25%; align-items: center; padding: 20px 20px;">
-            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 20px 0;">
+            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 20px 0; height: 320px;">
                 <img class="img-fluid mb-3 img-thumbnail" src="/board/benny.jpg" alt="benny Vasquez" style="max-width: 180px;">
               </span>
               <div style="display: flex; flex-direction: column; text-align: center;">
@@ -113,7 +127,7 @@
           </div>
 <!-- speaker two -->
           <div class="item-headshot" style="width: 25%; align-items: center; padding: 20px 20px;">
-            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 20px 0;">
+            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 20px 0; height: 320px;">
                 <img class="img-fluid mb-3 img-thumbnail" src="/users/igor.jpeg" alt="Igor Seletskiy" style="max-width: 180px;">
               </span>
               <div style="display: flex; flex-direction: column; text-align: center;">
@@ -125,7 +139,7 @@
           </div>
 <!-- speaker three -->
           <div class="item-headshot" style="width: 25%; align-items: center; padding: 20px 20px;">
-            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 20px 0;">
+            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 20px 0; height: 320px;">
                 <img class="img-fluid mb-3 img-thumbnail" src="/users/kenneth.tan.jpg" alt="Kenneth Tan, PhD" style="max-width: 180px;">
               </span>
               <div style="display: flex; flex-direction: column; text-align: center;">
@@ -137,7 +151,7 @@
           </div>
 <!-- speaker four -->
           <div class="item-headshot" style="width: 25%; align-items: center; padding: 20px 20px;">
-            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 20px 0;">
+            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 20px 0; height: 320px;">
                 <img class="img-fluid mb-3 img-thumbnail" src="/users/simon.jpg" alt="Simon Phipps" style="max-width: 180px;">
               </span>
               <div style="display: flex; flex-direction: column; text-align: center;">
@@ -149,7 +163,7 @@
           </div>
 <!-- speaker five -->
           <div class="item-headshot" style="width: 25%; align-items: center; padding: 20px 20px;">
-            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 20px 0;">
+            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 20px 0; height: 320px;">
                 <img class="img-fluid mb-3 img-thumbnail" src="/users/jesse.jpg" alt="Jesse Asklund" style="max-width: 180px;">
               </span>
               <div style="display: flex; flex-direction: column; text-align: center;">
@@ -161,7 +175,7 @@
           </div>
 <!-- speaker six -->
           <div class="item-headshot" style="width: 25%; align-items: center; padding: 20px 20px;">
-            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 20px 0;">
+            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 20px 0; height: 320px;">
                 <img class="img-fluid mb-3 img-thumbnail" src="/board/alexiribarren.jpg" alt="Alex Iribarren" style="max-width: 180px;">
               </span>
               <div style="display: flex; flex-direction: column; text-align: center;">
@@ -173,7 +187,7 @@
           </div>
 <!-- speaker seven -->
           <div class="item-headshot" style="width: 25%; align-items: center; padding: 20px 20px;">
-            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 20px 0;">
+            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 20px 0; height: 320px;">
                 <img class="img-fluid mb-3 img-thumbnail" src="/users/ishikawa.jpeg" alt="Hidenori Ishikawa" style="max-width: 180px;">
               </span>
               <div style="display: flex; flex-direction: column; text-align: center;">
@@ -185,7 +199,7 @@
           </div>
 <!-- speaker eight -->
           <div class="item-headshot" style="width: 25%; align-items: center; padding: 20px 20px;">
-            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 20px 0;">
+            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 20px 0; height: 320px;">
                 <img class="img-fluid mb-3 img-thumbnail" src="/users/alukoshko.jpg" alt="Andrew Lukoshko" style="max-width: 180px;">
               </span>
               <div style="display: flex; flex-direction: column; text-align: center;">
@@ -204,12 +218,13 @@
 <!-- / al-index-meet (speaker container)-->
 <!-- registration call out -->
     <div class="al-index-register-2">
-      <div class="container al-py-md" style="display: flex;padding: 0 40px 0 40px;">
+      <div class="container al-py-md" style="padding: 0 40px 0 40px;">
+        <div class="event-svag" style="display: flex;">
         <div class="item-event-1">
-          <img class="img-thumbnail" src="/landingpages/aldg-2024/swag.jpg" style="object-fit: cover; max-width:280px; height: 100%;">
+          <img class="img-event-svag" src="/landingpages/aldg-2024/swag.jpg" style="object-fit: cover; width:280px; height: 100%;">
         </div>
         <div class="item-event-2" style="display: flex; flex-direction: column; justify-content: space-between; padding-left: 40px;">
-        <span style="font-size: 50px; letter-spacing: 0.80px; font-weight: 600; margin-bottom: 20px;">{{ i18n "Save your spot and get your swag!" }}</span>
+        <h2 style="font-size: 50px; letter-spacing: 0.80px; font-weight: 600; margin-bottom: 20px;">{{ i18n "Save your spot and get your swag!" }}</h2>
 
 <span> {{ i18n "While the event is free, registration is required for attendance. Register before March 1st to reserve your AlmaLinux Day: Germany swag bag." }}</span>
 
@@ -217,6 +232,7 @@
           <a href="https://eventyay.com/e/c9789850" class="btn btn-lg px-4 me-md-2 al-hero-cta-primary">{{ i18n "Register now!" }}</a>
         </div>
 	  </div>
+  </div>
       </div>
     </div>
 <!-- end registration call out -->
