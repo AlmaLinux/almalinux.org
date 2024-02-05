@@ -4,6 +4,18 @@
     h1 {
       font-size: 60px!important;
     }
+    h2 {
+      font-size: 50px!important;
+    }
+    h3 {
+      font-size: 30px!important;
+    }
+    h4 {
+      font-size: 20px!important;
+    }
+    .schedule-line {
+      margin-top: 60px!important;
+    }
     .toppic_item_1 {
       padding-top: 18%!important;
     }
@@ -19,7 +31,13 @@
       font-size: 40px!important;
     }
     h3 {
+      font-size: 30px!important;
+    }
+    h4 {
       font-size: 20px!important;
+    }
+    .schedule-line {
+      margin-top: 50px!important;
     }
     .container-event {
       max-height: none!important;
@@ -39,6 +57,24 @@
     .item-headshot {
       width: 50%!important;
     }
+    .schedule-day {
+      flex-direction: column;
+    }
+    .schedule-item1 {
+      padding-left: 20px;
+    }
+    .schedule-line {
+      border-right: none!important;
+      border-top: 2px solid #ffffff;
+      height: 0px!important;
+      margin: 20px 0px!important;
+    }
+    .img-event-svag{
+      width: 100%!important;
+    }
+    .stop-item-2 h4{
+      font-size: 18px!important;
+    }
   }
   @media (max-width: 767px){
     h1 {
@@ -46,27 +82,45 @@
       line-height: normal!important;
     }
     h2 {
-      font-size: 25px!important;
+      font-size: 30px!important;
+      line-height: normal!important;
+    }
+    h3 {
+      font-size: 20px!important;
+    }
+    h4 {
+      font-size: 15px!important;
     }
     .toppic_item_1 {
       padding-top: 44%!important;
     }
-    .img-event-svag{
-      width: 100%!important;
-    }
     .item-headshot {
       width: 322px!important;
     }
-  }
-  @media (max-width: 474px){
-    table {
-      font-size: 8px!important;
-    }
-    .container-stop{
+    .container-stop {
       flex-direction: column;
+      align-items: flex-start;
     }
-    .stop-item-2{
+    .stop-item-1 {
+      width: 100%!important;
+    }
+    .schedule-item2 hr {
+      width: 90%!important;
+    }
+    .stop-item-2 {
       padding-left: 0px!important;
+    }
+  }
+  @media (max-width: 575px){
+    .schedule-photo{
+      flex-wrap: wrap;
+      width: 180px;
+    }
+    .img-schedule {
+      width: 50%;
+    }
+    .schedule-item2 hr {
+      width: 198px!important;
     }
   }
 </style>
@@ -97,16 +151,16 @@
 <!-- pull them in -->
     <div class="al-index-peopleinfo">
       <div class="container al-py-md" style="padding: 0 40px 0 40px;">
-        <h1 style="font-size: 80px;">{{ i18n "No drama, just linux." }}</h1>
+        <h2 style="font-size: 80px;">{{ i18n "No drama, just linux." }}</h2>
         <p>{{ i18n "As CentOS Linux enters its final 6 months of support, the whole world is looking at where they go next. The AlmaLinux community benefits from the stability and intentionality that we take to building a stable, free operating system. Come hear all about what we do and how we're supporting our community at AlmaLinux Day: Germany" }}</p>
       </div>
     </div>
 <!-- / pull them in -->
 <!-- speakers container -->    <div class="al-index-meet" style="background: #0e3b5c;">
       <div class="container al-py-md" style="padding: 0 40px 0 40px;">
-        <h1 style="font-size: 60px; text-align: center; letter-spacing: 0.80px; font-weight: 700;">
+        <h2 style="font-size: 60px; text-align: center; letter-spacing: 0.80px; font-weight: 700;">
           {{ i18n "On stage at AlmaLinux Day" }}
-        </h1>
+        </h2>
         <div style="text-align: center; line-height: 28px; word-wrap: break-word;">
           <h3 style="margin-bottom: 20px;">
              {{ i18n "Hear from the experts" }}
@@ -239,9 +293,76 @@
 <!-- schedule -->	
     <div class="al-index-program" style="background: #113147;">
       <div id="schedule" class="container al-py-md" style="padding: 0 40px 0 40px;">
-        <h1 style="font-size: 60px; letter-spacing: 0.80px; font-weight: 700; margin-bottom: 20px;">{{ i18n "Hackathon and AlmaLinux Day!" }}</h1>
+        <h2 style="font-size: 60px; letter-spacing: 0.80px; font-weight: 700; margin-bottom: 20px;">{{ i18n "Hackathon and AlmaLinux Day!" }}</h2>
 		<!-- I made this on canva https://www.canva.com/design/DAF6ROw5OhA/c2yHJNXHcbWymRHvatVB_w/, but don't have the html knowledge to make it into code soooooo here is our temporary solution -->
-            <img src="/landingpages/aldg-2024/aldg-2024-schedule.png" style="object-fit: cover; max-width: 100%; height: 100%;">
+        <div class="schedule-day" style="display: flex; justify-content: center;">
+          <div class="schedule-item1" style="display: flex; flex-direction: column;">
+            <h3 style="font-size: 40px; letter-spacing: 0.80px; font-weight: 500; margin-bottom: 20px;">{{ i18n "March 16-17" }}</h3>
+            <h4 style="font-size: 23px; letter-spacing: 0.80px; font-weight: 500; margin-bottom: 20px;">{{ i18n "CloudFest Hackathon" }}</h4>
+            <span style="letter-spacing: 0.80px;">
+              {{ i18n "9:00 am" }}<br>
+              <b>{{ i18n "Securing more infrastructure by" }}<br>
+              {{ i18n "easing OS upgrades" }}</b>
+            </span>
+            <hr size=3px width=165px align="left" color="white" style="margin-top: 5px; margin-bottom: 5px;">
+            <span style="letter-spacing: 0.80px;">
+              {{ i18n "Join us as we work to improve the" }}<br>
+              {{ i18n "security of infrastructure globally" }}
+            </span>
+          </div>
+          <div class="schedule-line" style="height: 220px; border-right: 2px solid #ffffff; padding-left:50px; margin-top: 70px;"></div>
+          <div class="schedule-item2" style="display: flex; flex-direction: column; padding-left: 20px;">
+            <h3 style="font-size: 40px; letter-spacing: 0.80px; font-weight: 500; margin-bottom: 20px;">{{ i18n "March 18th" }}</h3>
+            <h4 style="font-size: 23px; letter-spacing: 0.80px; font-weight: 500; margin-bottom: 20px;">{{ i18n "AlmaLinux Day: Germany" }}</h4>
+            <span style="letter-spacing: 0.80px;">
+              {{ i18n "9:00 am" }}<br>
+              <b>{{ i18n "Stability, security, and the strength of the AlmaLinux Community" }}</b>
+            </span>
+            <div class="schedule-photo" style="display: flex;">
+              <div class="img-schedule" style="padding: 10px;">
+                <img src="/users/benny.jpeg" alt="Benny Vasquez" style="max-width:70px;">
+              </div>
+              <div class="img-schedule" style="padding: 10px;">
+                <img src="/users/igor.jpeg" alt="Igor Seletskiy" style="max-width:70px;">
+              </div>
+              <div class="img-schedule" style="padding: 10px;">
+                <img src="/users/kenneth.tan.jpg" alt="Kenneth Tan, PhD" style="max-width:70px;">
+              </div>
+              <div class="img-schedule" style="padding: 10px;">
+                <img src="/users/HidenoriIshikawa.jpeg" alt="HidenoriIshikawa" style="max-width:70px;">
+              </div>
+            </div>
+            <hr size=3px width=75% align="left" color="white" style="margin-top: 5px; margin-bottom: 5px;">
+            <span style="letter-spacing: 0.80px;">
+              {{ i18n "10:30 am" }}<br>
+              <b>{{ i18n "Building without following: RHEL compatibility for AlmaLinux's Community" }}</b>
+            </span>
+            <div class="img-schedule" style="padding: 10px;">
+              <img src="/users/alukoshko.jpg" alt="Andrew Lukoshko" style="max-width:70px;">
+            </div>
+            <hr size=3px width=75% align="left" color="white" style="margin-top: 5px; margin-bottom: 5px;">
+            <span style="letter-spacing: 0.80px;">
+              {{ i18n "11:15 am" }}<br>
+              <b>{{ i18n "Meet the Board: AlmaLinux OS Foundation Board" }}</b>
+            </span>
+            <div class="schedule-photo" style="display: flex;">
+              <div class="img-schedule" style="padding: 10px;">
+                <img src="/users/benny.jpeg" alt="Benny Vasquez" style="max-width:70px;">
+              </div>
+              <div class="img-schedule" style="padding: 10px;">
+                <img src="/board/alexiribarren.jpg" alt="Alex Iribarren" style="max-width:70px;">
+              </div>
+              <div class="img-schedule" style="padding: 10px;">
+                <img src="/users/simon.jpg" alt="Simon Phipps" style="max-width:70px;">
+              </div>
+              <div class="img-schedule" style="padding: 10px;">
+                <img src="/users/jesse.jpg" alt="Jesse Asklund" style="max-width:70px;">
+              </div>
+            </div>
+            <hr size=3px width=75% align="left" color="white" style="margin-top: 5px; margin-bottom: 5px;">
+          </div>
+        </div>
+
 <!--        <p style="margin-bottom: 20px;">
           {{ i18n "Check back soon for the schedule!" }}
         </p>
@@ -317,7 +438,7 @@
 <!-- sponsors -->
     <div class="al-index-sponsors">
       <div class="container al-py-md" style="padding: 0 40px 0 40px;">
-        <h1 style="font-size: 60px; font-weight: 700; line-height: 80px;">{{ i18n "Thank you to our sponsors!" }}</h1>
+        <h2 style="font-size: 60px; font-weight: 700; line-height: 80px;">{{ i18n "Thank you to our sponsors!" }}</h2>
 		<!--begin small logos -->
         <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 g-5 al-backed-by-list">
           <a href="https://www.cloudlinux.com" >
@@ -477,9 +598,9 @@
       <div class="container al-py-md" style="padding: 0 40px 0 40px;">
         <div class="container-stop" style="display: flex;">
           <div class="stop-item-1" style="width: 60%;">
-            <h1 style="font-size: 60px; font-weight: 700; line-height: 80px;">
+            <h2 style="font-size: 60px; font-weight: 700; line-height: 80px;">
               {{ i18n "Can't make it?" }}
-            </h1>
+            </h2>
             <p style="font-weight: 400; line-height: 26px;">
               {{ i18n "We'll miss you, but if you can't make it to AlmaLinux Day: Germany, you can join us online! We'll be posting the videos from the talks at the event to share with everyone." }}
             </p>
