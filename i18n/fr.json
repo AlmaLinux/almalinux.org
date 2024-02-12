@@ -338,5 +338,7 @@
     "Currently ELevate provides Leapp data for migration from CentOS 7 to the following OS:": "",
     "The service also allows everyone to improve the data by adding new actions or even create a custom dataset for packages from third-party or private repositories.": "",
     "RedHat offers a data set which is non-freely licensed. Are you using this same data set?": "",
-    "The CentOS ecosystem is a very large and diverse community.": ""
+    "The CentOS ecosystem is a very large and diverse community.": "",
+    "Get AlmaLinux OS": "Obtenir le système d'exploitation AlmaLinux",
+    "AlmaLinux supports 4 architectures:": "AlmaLinux supporte 4 architectures:"
 }
