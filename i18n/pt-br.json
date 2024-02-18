@@ -150,9 +150,9 @@
     "or": "ou",
     "Have your company's events featured on our events.almalinux.org community calendar": "Destaque os eventos de sua empresa no calendário de eventos da nossa comunidade events.almalinux.org",
     "four sponsored blog posts per year": "quatro blog posts patrocinados por ano",
-    "Making the build pipeline more secure like ensuring that only trusted sources are used for builds, avoiding attack consequences, etc": "Tornar o pipeline de build mais seguro assegurando que somente fontes confiáveis sejam usadas nos builds, evitando consequências de ataques, etc.",
+    "Making the build pipeline more secure like ensuring that only trusted sources are used for builds, avoiding attack consequences, etc": "Tornando a build da pipeline mais segura garantindo que somente fontes confiáveis serão usados, evitando consequências de um ataque, etc",
     "For more information, see the Almalinux wiki:": "Para mais informação, veja a wiki AlmaLinux:",
-    "immudb is also protected against MITM attacks.": "",
+    "immudb is also protected against MITM attacks.": "Immudb também é protegido contra ataques MITM.",
     "and you can add/edit/interact with package metadata at": "e você pode adicionar/editar/interagir com os metadados do pacote no",
     "Priority access to sponsorship at any AlmaLinux organized events": "Acesso prioritário a patrocínio em qualquer evento organizado AlmaLinux",
     "Who is AlmaLinux OS for?": "Para quem é o AlmaLinux OS?",
@@ -311,9 +311,9 @@
     "How are we doing this?": "Como nós fazemos isso?",
     "AlmaLinux is leveraging Codenotary’s open source": "O AlmaLinux está impulsionando o open source do Codenotary",
     "to provide administrators with authentication, verification and full SBOM visibility.": "para fornecer administradores com autenticação, verificação e visibilidade total SBOM.",
-    "The AlmaLinux Build System stores SBOM data inside of immudb": "",
+    "The AlmaLinux Build System stores SBOM data inside of immudb": "AlmaLinux Build System armazena os dados SBOM dentro de immudb",
     ", the standard for open source for immutable databases, used by some of the world’s leading companies and governments.": ", o padrão open source para banco de dados imutáveis, usados por algumas da empresas e governos no mundo.",
-    "All attestation data is integrity-checked and cryptographically verified by clients.": "",
+    "All attestation data is integrity-checked and cryptographically verified by clients.": "Todos os dados do atestado são verificados quanto à integridade e criptograficamente pelos clientes.",
     "No one can change this data, not AlmaLinux or anyone else.": "Ninguém consegue alterar estes dados, nem mesmo o AlmaLinux ou qualquer pessoa.",
     "Getting Started": "Começando",
     "Preserve your applications, your data, and your sanity.": "",
@@ -491,5 +491,6 @@
     "Enterprise Linux, Free Forever, Community-Owned and RHEL": "Linux Empresarial, Gratuito para Sempre, de propriedade da Comunidade, e RHEL",
     "read more": "Saiba mais",
     "Since AlmaLinux is binary compatible with RHEL®, your applications and services should be completely interoperable. You can rapidly migrate any number of servers using ": "Como o AlmaLinux é compatível binariamente com o RHEL®, suas aplicações e serviços devem ser totalmente interoperáveis. Você pode migrar rapidamente qualquer número de servidores usando ",
-    "AlmaLinux Day: Tokyo": "AlmaLinux Day: Tóquio"
+    "AlmaLinux Day: Tokyo": "AlmaLinux Day: Tóquio",
+    "You can get AlmaLinux OS images on Vagrant Cloud at the link provided: ": "Você pode obter as imagens do AlmaLinux OS na Vagrant Cloud através do link fornecido: "
 }
