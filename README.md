@@ -11,7 +11,7 @@ This website is built with the [Hugo](https://gohugo.io/) web framework.
 We welcome contributions to the website in the form of website updates and design improvements, as well as translations. We've provided specific instructions on how to contribute for each part of the website. 
 
 - Blog content, please see [Contributing - Blog Posts](https://github.com/AlmaLinux/almalinux.org/blob/master/contributing-blog-posts.md)
-- Help with our hugo implementation or design improvements, please see [Contributing - Code and Design](#contributing-code-and-design)
+- Help with our Hugo implementation or design improvements, please see [Contributing - Code and Design](#contributing-code-and-design)
 - To help with translations, please see [Contributing - Translations](#localization-and-translation)
 
 ## Contributing - Code and Design
