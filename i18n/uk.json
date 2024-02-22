@@ -105,7 +105,7 @@
     "Migrate": "Мігрувати",
     "Our GitHub organization contains source code and tools used to build AlmaLinux OS and related infrastructure.": "Наша організація на GitHub містить вихідний код та інструменти, що використовуються для побудови ОС AlmaLinux та супутньої інфраструктури.",
     "Explore": "Дослідити",
-    "Join our vibrant Reddit community, interact with other AlmaLinux OS users, receive updates, find and provide help.": "Приєднуйтесь до нашого жвавої спільноти Reddit, взаємодійте з іншими користувачами ОС AlmaLinux, отримуйте оновлення, знаходьте та надавайте допомогу.",
+    "Join our vibrant Reddit community, interact with other AlmaLinux OS users, receive updates, find and provide help.": "Приєднуйтесь до нашої активної спільноти на Reddit, спілкуйтеся з іншими користувачами AlmaLinux OS, отримуйте оновлення, знаходьте та надавайте допомогу.",
     "Join": "Приєднатись",
     "Community chat": "Чат спільноти",
     "Join a real time discussion with other AlmaLinux OS community members, governance team and AlmaLinux OS developers.": "Приєднуйтесь до обговорення в режимі реального часу з іншими членами спільноти ОС AlmaLinux, командою керування та розробниками ОС AlmaLinux.",
@@ -157,7 +157,7 @@
     "An Open Source, community owned and governed, forever-free enterprise Linux distribution, focused on long-term stability, providing a robust production-grade platform. AlmaLinux OS is 1:1 binary compatible with RHEL® and pre-Stream CentOS.": "",
     "AlmaLinux OS is an open-source, community-driven Linux operating system that fills the gap left by the discontinuation of the CentOS Linux stable release. AlmaLinux OS is a 1:1 binary compatible clone of RHEL® guided and built by the community.": "",
     "read how": "Прочитайте як",
-    "Alma means soul in Spanish and other Latin languages. Looking back, it is easy to see that Linux is as popular and pervasive as it is thanks to the efforts of a passionate, diverse developer community. This community is the soul of Linux, and everyone that relies on a Linux distribution is indebted to the efforts of the Linux community. That is why we called our new distribution AlmaLinux OS.": "",
+    "Alma means soul in Spanish and other Latin languages. Looking back, it is easy to see that Linux is as popular and pervasive as it is thanks to the efforts of a passionate, diverse developer community. This community is the soul of Linux, and everyone that relies on a Linux distribution is indebted to the efforts of the Linux community. That is why we called our new distribution AlmaLinux OS.": "\"Alma\" перекладається як \"душа\" з іспанської та деяких інших латинських мов. Популярність та поширення Linux є наслідком довгих років праці його пристрасної та різноманітної спільноти. Спільнота Linux - це його душа, і всі, хто користується Linux, повинні цінувати внесок її учасників. Саме тому ми назвали наш дистрибутив AlmaLinux OS.",
     "What motivated us?": "Що нас мотивувало?",
     "We’re already doing it – experience with RHEL forks towards CloudLinux. We have the staff, the capabilities, the resources. Frankly: we want to put ourselves on the map re CloudLinux and KernelCare. It is worth the effort.": "",
     "How is the community protected from future course changes?": "",
@@ -356,5 +356,8 @@
     "Get Docker Image": "Отримати Docker Відео",
     "AlmaLinux provides official images for cloud providers:": "AlmaLinux надає офіційні зображення для хмарних провайдерів:",
     "AlmaLinux images are available for LXC/LXD.": "Образи AlmaLinux доступні для LXC/LXD.",
-    "Get LXC/LXD Images": "Отримати LXC/LXD образи"
+    "Get LXC/LXD Images": "Отримати LXC/LXD образи",
+    "AlmaLinux builds Live Media images for GNOME, GNOME Mini, KDE, XFCE and MATE options.": "AlmaLinux збирає Live Media образи з середовищами робочого столу GNOME, GNOME Mini, KDE, XFCE та MATE.",
+    "Get Live Media Image": "Завантажити Live Media образ",
+    "AlmaLinux provides official images for Vagrant:": "AlmaLinux має офіційні образи для Vagrant для таких платформ:"
 }

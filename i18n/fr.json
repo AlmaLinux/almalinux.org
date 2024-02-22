@@ -340,5 +340,11 @@
     "RedHat offers a data set which is non-freely licensed. Are you using this same data set?": "",
     "The CentOS ecosystem is a very large and diverse community.": "",
     "Get AlmaLinux OS": "Obtenir le système d'exploitation AlmaLinux",
-    "AlmaLinux supports 4 architectures:": "AlmaLinux supporte 4 architectures:"
+    "AlmaLinux supports 4 architectures:": "AlmaLinux supporte 4 architectures:",
+    "Download ISO from mirrors": "Télécharger les ISO à partir de liens miroirs",
+    "AlmaLinux provides official images for cloud providers:": "AlmaLinux fournit des images officielles pour les fournisseurs de cloud:",
+    "AlmaLinux provides official OCI, Docker and UBI compatible images.": "AlmaLinux fournit des images compatibles OCI, Docker et UBI.",
+    "Get Docker Image": "Obtenir une image de Docker",
+    "Get OCI Image from Quay.io": "Obtenir une image OCI depuis Quay.io",
+    "AlmaLinux builds Live Media images for GNOME, GNOME Mini, KDE, XFCE and MATE options.": "AlmaLinux construit des images «live» pour les options GNOME, GNOME Mini, KDE, XFCE et MATE."
 }
