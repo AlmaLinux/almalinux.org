@@ -19,7 +19,7 @@ jobs:
       deployments: write
     name: Publish Preview to Cloudflare Pages
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha || github.ref }}
 

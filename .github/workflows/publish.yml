@@ -13,7 +13,7 @@ jobs:
     name: Publish to Cloudflare Pages
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Check for missing base language strings
         run: python3 find_missing_i18n_strings.py
