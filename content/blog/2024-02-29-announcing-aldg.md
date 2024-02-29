@@ -15,7 +15,7 @@ post:
 
 In December, we hosted the first [AlmaLinux Day in Tokyo](/aldt-2023/). As a user-focused event that brought together our community from all over Japan, this wildly successful event focused on the needs and desires of the open source community in Japan. We had nearly 100 attendees and 7 speakers from different industries!
 
-We're excited to build on that momentum with AlmaLinux Day: Germany, coming to Europa Park Rust on March 18th. 
+We're excited to build on that momentum with [AlmaLinux Day: Germany](/almalinux-day-germany-2024/), coming to Europa Park Rust on March 18th. 
 
 # AlmaLinux Day: Germany 
 
