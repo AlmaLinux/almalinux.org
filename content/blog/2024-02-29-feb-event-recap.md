@@ -21,8 +21,7 @@ CentOS Connect is always a great place for us to connect with the folks most inv
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HgZKLs5ItH4?si=cvzYgbjZurFP0EIR" title="Elkhan Mammadli: AlmaLinux: How we automated testing without inventing the wheel and instead improving it" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="max-width: 100%;"></iframe>
 
-You can watch the rest of the amazing sessions on the CentOS Youtube channel.  [here's the link to the full playlist](https://www.youtube.com/watch?v=vwA4mULGiF8&list=PLuRtbOXpVDjA30Q8EQzJBjfl0gCFo8vpK)!
-
+You can watch the rest of the amazing sessions on the CentOS Youtube channel. [Here's the link to the full playlist](https://www.youtube.com/watch?v=vwA4mULGiF8&list=PLuRtbOXpVDjA30Q8EQzJBjfl0gCFo8vpK)!
 
 ## FOSDEM
 
