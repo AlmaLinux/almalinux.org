@@ -48,7 +48,7 @@ Notwithstanding anything to the contrary provided in these Guidelines, the follo
 You may use the AlmaLinux OS Marks on your website to show your support for the AlmaLinux OS Foundation, so long as:
 
 1. Your own branding or naming is more prominent than the AlmaLinux OS Marks;
-2. All Logos hyperlink to http://www.AlmaLinux.org/;
+2. All Logos hyperlink to https://www.AlmaLinux.org/;
 3. The site is not likely to cause users to believe that your website, service, or product is a website, service, or product of the AlmaLinux OS Foundation; and
 4. The site clearly states that it is not endorsed by the AlmaLinux OS Foundation.
 
