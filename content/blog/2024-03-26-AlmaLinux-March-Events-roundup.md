@@ -70,6 +70,8 @@ The rest of the year is packed with all kinds of ways to connect with other Alma
 -   October 27-29 - [All things open](http://allthingsopen.org/) | Raleigh, NC, USA
 -   November 17--22 - [SC (formerly Supercompute)](https://sc24.supercomputing.org/) | Atlanta, GA, USA
 
+If you can dedicate at least 1/2 of the event to staffing a booth at any of the events below, fill out this [Google form](https://docs.google.com/forms/d/1cQ0YQiAcRZXPnDqiHak-AXmsjEBz-IQE8s8jbPLykds/edit)! We’ll cover your travel and hotel, and you’ll get a per-diem to help offset your food and assorted travel-related costs.
+
 ## Keep in Touch!
 
 If you want to stay up-to-date, stay tuned on [our forum](https://almalinux.discourse.group/), [Reddit](https://www.reddit.com/r/AlmaLinux/), [X](https://twitter.com/AlmaLinux), [Mastodon](https://fosstodon.org/@almalinux/), [LinkedIn](https://www.linkedin.com/company/80320905/), [Facebook](https://www.facebook.com/AlmaLinux), and [YouTube](https://www.youtube.com/channel/UCt9lpkqUPp1FUEi9uqVlPQA). We also launched a newsletter this year, which [you can subscribe to on LinkedIn](https://www.linkedin.com/newsletters/almalinux-news-7123058222835376128/) or via email on [our mailing list](https://lists.almalinux.org/postorius/lists/newsletters.lists.almalinux.org/).
