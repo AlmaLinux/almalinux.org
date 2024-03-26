@@ -17,8 +17,8 @@ Do you want to learn more about the AlmaLinux OS and AlmaLinux OS Foundation? Go
 
 AlmaLinux will have a presence at a number of popular events coming up soon, including:
 
- * [Ohio LinuxFest (OLF)](http://olfconference.org/) in Columbus Ohio: September 8th and 9th.
- * [All Things Open](http://allthingsopen.org/) in Raleigh, North Carolina: October 15th through October 18th.
+ * [Ohio LinuxFest (OLF)](https://olfconference.org/) in Columbus Ohio: September 8th and 9th.
+ * [All Things Open](https://allthingsopen.org/) in Raleigh, North Carolina: October 15th through October 18th.
  * [LinuxFest Northwest](https://linuxfestnorthwest.org/) in Bellingham, Washington: October 20th through October 22nd. 
  * [SeaGL](https://seagl.org/) in Seattle, Washington: November 3rd and November 4th.
  * [SC (formerly SuperComputing)](https://supercomputing.org/) in Denver, Colorado: November 12th through November 17th. 
@@ -27,7 +27,7 @@ AlmaLinux will have a presence at a number of popular events coming up soon, inc
 
 You'll also be able to catch talks from benny Vasquez, AlmaLinux OS Foundation Chair, at OLF and All Things Open. 
 
-At OLF benny will be speaking on **Saturday, September 9th at 10:00 a.m. US Eastern Time** on "The Future of AlmaLinux: Building without Following." Since our inception, AlmaLinux OS has been an exact duplicate of Red Hat Enterprise Linux. With Red Hat's shift away from sharing the full building blocks on [git.centos.org](http://git.centos.org/), we have been hard at work to define a new, reliable path forward.
+At OLF benny will be speaking on **Saturday, September 9th at 10:00 a.m. US Eastern Time** on "The Future of AlmaLinux: Building without Following." Since our inception, AlmaLinux OS has been an exact duplicate of Red Hat Enterprise Linux. With Red Hat's shift away from sharing the full building blocks on [git.centos.org](https://git.centos.org/), we have been hard at work to define a new, reliable path forward.
 
 At All Things Open, benny will present "Building AlmaLinux OS without RHEL sources code." In this talk, benny will talk about the plans to plot a path forward for AlmaLinux OS after Red Hat has moved away from hosting RHEL source code on git.centos.org. You'll learn what the project has been doing since June and what AlmaLinux is planning for the future. 
 

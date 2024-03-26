@@ -69,7 +69,7 @@ If you missed us at these February events, do not fear! We will have booths at a
 
 -   April 8 - 10 - [FOSS asia](https://fossasia.org/) |
 
--   April 12-13 - [TexasLinux Fest](http://texaslinuxfest.org/) |
+-   April 12-13 - [TexasLinux Fest](https://texaslinuxfest.org/) |
 
 -   April 16 - 18 - [Open Source Summit NA](https://events.linuxfoundation.org/open-source-summit-north-america/) |
 

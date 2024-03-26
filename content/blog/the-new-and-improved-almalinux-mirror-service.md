@@ -13,7 +13,7 @@ post:
 
 Great news about our mirror service! Our mirror service is what powers distribution of ISOs, packages and updates across the world. A while ago we developed and started testing a new geolocation-based mirror service which helps you get software faster and easier based on where in the world you are and what the closest source is. Thanks to all those who were involved in testing--It’s now official: our new mirror service is coming online on August 4th at 7.00 UTC.
 
-A full list of AlmaLinux mirrors can be found at it’s usual location: https://mirrors.almalinux.org. Once released, the mirror service sources and configuration can be found in GitHub repo: http://github.com/AlmaLinux/mirrors/tree/mirrors_service .
+A full list of AlmaLinux mirrors can be found at it’s usual location: https://mirrors.almalinux.org. Once released, the mirror service sources and configuration can be found in GitHub repo: https://github.com/AlmaLinux/mirrors/tree/mirrors_service .
 
 We are extremely grateful for the community’s efforts to help make AlmaLinux better and the participation on the [AlmaLinux Community Chat](https://chat.almalinux.org/) and the [AlmaLinux Forums](https://forums.almalinux.org/). This would not be possible without you, your contributions and feedback. 
 
