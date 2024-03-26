@@ -14,7 +14,7 @@ post:
 ---
 
 
-March has been a whirlwind and in the last two weeks our event teams visited two sides of the world! In March we saw both Pasedena, California and Rust, Germany! Let's talk about what we loved about each event. 
+March has been a whirlwind, and in the last two weeks, our event teams visited two sides of the world! In March, we saw both Pasadena, California, and Rust, Germany! Let’s talk about what we loved about each event.
 
 ## SCaLE 21x
 
@@ -37,7 +37,7 @@ We chose three primary goals for the Hackathon. Below I've included a bit more a
 -   Expand ELevate Support: Extend the capabilities for in-place upgrades across enterprise Linux distributions, including critical updates from CentOS 6 to 7.
    -   We completed enough research to determine that it's possible and look forward to trying to implement the research over the coming months.
 
-Here are the slides from our [project reporting in PDF format](https://www.dropbox.com/scl/fi/qkokxhum5xsy2pade8qb5/EasingOSUpgrades-cfhack-2024.pdf?rlkey=lb7otq7euorbyj8s2ozo5czo3&dl=0), in case folks would like to look at the details related to our work.
+Here are the slides from our [project reporting in PDF format](/files/2024/EasingOSUpgrades-cfhack-2024.pdf), in case folks would like to look at the details related to our work.
 
 ## AlmaLinux Day: Germany
 
@@ -45,7 +45,7 @@ Here are the slides from our [project reporting in PDF format](https://www.dropb
 
 On Monday, March 18th, nearly 300 people joined us at Hotel Colleseo at Europa Park or [AlmaLinux Day: Germany](https://almalinux.org/almalinux-day-germany-2024/)! This event was the second such event, following AlmaLinux Day: Tokyo last December. I was so excited to highlight some really cool projects and companies using AlmaLinux, shine a light on the ways that we are serving our community and answer our number one question: How do you build AlmaLinux? Some members of the board even had a bit of a Q&A, answering some great questions from an extremely welcoming audience.
 
-You can find the [keynote slides available for download here](https://www.dropbox.com/scl/fi/691usrkqhwnhveovu5kp7/aldg_2024_keynote.pdf?rlkey=fuui5n80uvjutyusd2n8xansn&dl=0)!
+You can find the [keynote slides available for download here](/files/2024/aldg_2024_keynote.pdf)!
 
 We also recorded these sessions and will be able to share the videos as soon as they're processed.
 
