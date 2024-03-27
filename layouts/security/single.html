@@ -167,7 +167,41 @@
               </p>
             </section>
           </div>
-        </div>       
+        </div>  
+        <div class="SecureBoot-container" style="display: flex; flex-direction: column; padding: 40px 20px;">
+          <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Secure Boot</h2>
+          <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+            <section>
+              <p>
+                {{ i18n "Secure Boot is a security feature that ensures a system boots only with trusted software, preventing the loading of unauthorized operating systems or software that could potentially compromise the system's integrity." }} 
+                <br>{{ i18n "AlmaLinux provides Secure Boot support starting the AlmaLinux 8.4 release." }} 
+                <br>{{ i18n "AlmaLinux shim passes the " }}<a href="https://github.com/AlmaLinux/shim-review" style="color: #f1f8ff;">{{ i18n "official review" }}</a> {{ i18n "and is signed by Microsoft." }} <br>
+                <br>{{ i18n "AlmaLinux shim trusts 3 certificates:" }}
+              </p>
+              <div class="AL" style="display: flex; justify-content: space-between;">
+                <div class="itemAl_01" style="display: flex; flex-direction: column;">
+                  <h3><a href="https://git.almalinux.org/rpms/shim-unsigned-x64/raw/branch/a8/SOURCES/almalinux-sb-cert-1.der" style="color: #f1f8ff;">almalinux-sb-cert-1.der</a></h3>
+                  <span><b>{{ i18n "Signed for:" }}</b> AlmaLinux OS Foundation</span>
+                  <span><b>{{ i18n "Verified by:" }}</b> Sectigo Public Code Signing CA EV R36</span>
+                  <span><b>{{ i18n "Expires:" }}</b> 30.01.2025</span>
+                </div>
+                <div class="itemAl_02" style="display: flex; flex-direction: column;">
+                  <h3><a href="https://git.almalinux.org/rpms/shim-unsigned-x64/raw/branch/a8/SOURCES/almalinux-sb-cert-2.der" style="color: #f1f8ff;">almalinux-sb-cert-2.der</a></h3>
+                  <span><b>{{ i18n "Signed for:" }}</b> AlmaLinux OS Foundation</span>
+                  <span><b>{{ i18n "Verified by:" }}</b> SSL.com EV Code Signing Intermediate CA RSA</span>
+                  <span><b>{{ i18n "Expires:" }}</b> 19.01.2025</span>
+                </div>
+                <div class="itemAl_02" style="display: flex; flex-direction: column;">
+                  <h3><a href="https://git.almalinux.org/rpms/shim-unsigned-x64/raw/branch/a8/SOURCES/almalinux-sb-cert-3.der" style="color: #f1f8ff;">almalinux-sb-cert-3.der</a></h3>
+                  <span><b>{{ i18n "Signed for:" }}</b> AlmaLinux OS Foundation</span>
+                  <span><b>{{ i18n "Verified by:" }}</b> AlmaLinux Secure Boot CA</span>
+                  <span><b>{{ i18n "Expires:" }}</b> 14.03.2034</span>
+                </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>      
       </div>
     </div>
   </section>
