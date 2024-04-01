@@ -184,6 +184,27 @@ border-bottom-color: #14598a !important;
 .al-commercial-supporter-list {
 	margin-top: 40px;
 }
+
+
+
+/* formatting the used by logos on the home page. */ 
+ .al-page-index .al-index-used-by .al-used-by-list {
+  justify-content: space-between;
+  padding: 0;
+}
+.al-page-index .al-index-used-by .al-used-by-list div.col {
+  text-align: center;
+}
+.al-page-index .al-index-used-by .al-used-by-list .al-user-logo-container {
+  height: 100%;
+}
+.al-page-index .al-index-used-by .al-used-by-list .al-user-logo {
+  height: 100%;
+  width: 120px;
+}
+/* end formatting the used by logos on the home page. */ 
+
+
 .al-page-index .al-index-faq {
   background: #0e3b5c;
 }
