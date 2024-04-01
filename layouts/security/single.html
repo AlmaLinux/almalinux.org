@@ -14,11 +14,14 @@
       display:flex;
       flex-direction: column;
     }
+    .itemAl_01 {
+      width: auto!important;
+    }
 }
 </style>
 <div class="al-body-container">
   <section class="al-page-index">
-    <div id="downloads" class="al-index-community-container">
+    <div class="al-index-security-measures-container">
       <div class="container al-py-lg">
         <h1 class="pb-2 text-center">{{ i18n "Security Measures" }}</h1>
         <div class="Errata-container" style="display: flex; flex-direction: column; padding: 40px 20px;">
@@ -26,7 +29,7 @@
           <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
             <section>
               <p>
-                 {{ i18n "AlmaLinux OS Foundation provides errata to inform users about available updates, including security issues and bug fixes, and their significance through analysis. Users can easily access this information by accessing our AlmaLinux security advisory portal, known as " }}<a href="https://errata.almalinux.org/" style="color: #f1f8ff;">{{ i18n "AlmaLinux Errata" }}</a>. {{ i18n "More details on Errata and how to use it can be found on the " }}<a href="https://wiki.almalinux.org/documentation/errata.html" style="color: #f1f8ff;">{{ i18n "AlmaLinux Errata Wiki page" }}</a>. <br> {{ i18n "Additionally, AlmaLinux OS is present in the " }}<a href="https://github.com/AlmaLinux/osv-database" style="color: #f1f8ff;">{{ i18n "OSV database" }}</a>.<br><br>
+                 {{ i18n "AlmaLinux OS Foundation provides errata to inform users about available updates, including security issues and bug fixes, and their significance through analysis. Users can easily access this information by accessing our AlmaLinux security advisory portal, known as " }}<a href="https://errata.almalinux.org/">{{ i18n "AlmaLinux Errata" }}</a>. {{ i18n "More details on Errata and how to use it can be found on the " }}<a href="https://wiki.almalinux.org/documentation/errata.html">{{ i18n "AlmaLinux Errata Wiki page" }}</a>. <br> {{ i18n "Additionally, AlmaLinux OS is present in the " }}<a href="https://github.com/AlmaLinux/osv-database">{{ i18n "OSV database" }}</a>.<br><br>
                  {{ i18n "Errata in JSON format for 3rd party software integration:" }}
               </p>
               <div class="AL" style="display: flex;">
@@ -104,7 +107,7 @@
             <section>
               <p>
                 {{ i18n "To receive security updates and errata, users can sign up for the " }}
-                <a href="https://lists.almalinux.org/mailman3/lists/security.lists.almalinux.org/" style="color: #f1f8ff;">{{ i18n "AlmaLinux Security Mailing List" }}</a>.
+                <a href="https://lists.almalinux.org/mailman3/lists/security.lists.almalinux.org/">{{ i18n "AlmaLinux Security Mailing List" }}</a>.
                 {{ i18n "Subscribing to the list will allow users to stay informed and updated on any security fixes as soon as they are available." }}
               </p>
             </section>
@@ -148,7 +151,7 @@
               </div>  
               <p>
                 {{ i18n "You can find more about OVAL Streams on the " }}
-                <a href="https://wiki.almalinux.org/documentation/oval-streams.html" style="color: #f1f8ff;">{{ i18n "AlmaLinux OVAL Wiki Page" }}</a>.
+                <a href="https://wiki.almalinux.org/documentation/oval-streams.html">{{ i18n "AlmaLinux OVAL Wiki Page" }}</a>.
               </p>
             </section>
           </div>
@@ -160,14 +163,41 @@
               <p>
                 {{ i18n "The Software Bill of Materials (SBOM) provides a comprehensive list of third-party and open-source components in a codebase, including version numbers, licensing information, and potential vulnerabilities." }}
                 {{ i18n "AlmaLinux Build System has implemented SBOM into its pipeline for security purposes, such as tracing the build process, making it more secure, and reducing the risk of data corruption. " }}
-                <a href="/sbom" style="color: #f1f8ff;">{{ i18n "Read more" }}</a> 
+                <a href="/sbom">{{ i18n "Read more" }}</a> 
                 {{ i18n "about SBOM integration in AlmaLinux." }}<br>
                 {{ i18n "AlmaLinux OS also provides " }}
-                <a href="https://wiki.almalinux.org/documentation/sbom-guide.html" style="color: #f1f8ff;">{{ i18n "AlmaLinux SBOM User Guide" }}</a>
+                <a href="https://wiki.almalinux.org/documentation/sbom-guide.html">{{ i18n "AlmaLinux SBOM User Guide" }}</a>
               </p>
             </section>
           </div>
-        </div>       
+        </div>  
+        <div class="SecureBoot-container" style="display: flex; flex-direction: column; padding: 40px 20px;">
+          <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Secure Boot</h2>
+          <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+            <section>
+              <p>
+                {{ i18n "Secure Boot is a security feature that ensures a system boots only with trusted software, preventing the loading of unauthorized operating systems or software that could potentially compromise the system's integrity." }} 
+                <br>{{ i18n "AlmaLinux provides Secure Boot support starting with the AlmaLinux 8.4 release." }} 
+                <br>{{ i18n "AlmaLinux shim passes the " }}<a href="https://github.com/AlmaLinux/shim-review">{{ i18n "official review" }}</a> {{ i18n "and is signed by Microsoft." }} <br>
+                <br>{{ i18n "AlmaLinux shim trusts 2 certificates:" }}
+              </p>
+              <div class="AL" style="display: flex; justify-content: flex-start;">
+                <div class="itemAl_01" style="width: 461px; display: flex; flex-direction: column;">
+                  <h3><a href="https://git.almalinux.org/rpms/shim-unsigned-x64/raw/branch/a8/SOURCES/almalinux-sb-cert-1.der">almalinux-sb-cert-1.der</a></h3>
+                  <span><b>{{ i18n "Signed for:" }}</b> AlmaLinux OS Foundation</span>
+                  <span><b>{{ i18n "Verified by:" }}</b> Sectigo Public Code Signing CA EV R36</span>
+                  <span><b>{{ i18n "Expires:" }}</b> 30.01.2025</span>
+                </div>
+                <div class="itemAl_02" style="padding-left: 230px; display: flex; flex-direction: column;">
+                  <h3><a href="https://git.almalinux.org/rpms/shim-unsigned-x64/raw/branch/a8/SOURCES/almalinux-sb-cert-2.der">almalinux-sb-cert-2.der</a></h3>
+                  <span><b>{{ i18n "Signed for:" }}</b> AlmaLinux OS Foundation</span>
+                  <span><b>{{ i18n "Verified by:" }}</b> SSL.com EV Code Signing Intermediate CA RSA</span>
+                  <span><b>{{ i18n "Expires:" }}</b> 19.01.2025</span>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>      
       </div>
     </div>
   </section>
