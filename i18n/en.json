@@ -588,7 +588,7 @@
    "AlmaLinux shim passes the ": "AlmaLinux shim passes the ",
    "official review": "official review",
    "and is signed by Microsoft.": "and is signed by Microsoft.", 
-   "AlmaLinux shim trusts 3 certificates:": "AlmaLinux shim trusts 3 certificates:", 
+   "AlmaLinux shim trusts 2 certificates:": "AlmaLinux shim trusts 2 certificates:", 
    "Signed for:": "Signed for:",
    "Verified by:": "Verified by:",
    "Expires:": "Expires:"
