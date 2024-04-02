@@ -587,9 +587,10 @@
    "AlmaLinux provides Secure Boot support starting with the AlmaLinux 8.4 release.": "AlmaLinux provides Secure Boot support starting with the AlmaLinux 8.4 release.",
    "AlmaLinux shim passes the ": "AlmaLinux shim passes the ",
    "official review": "official review",
-   "and is signed by Microsoft.": "and is signed by Microsoft.", 
-   "AlmaLinux shim trusts 2 certificates:": "AlmaLinux shim trusts 2 certificates:", 
+   "and is signed by Microsoft.": "and is signed by Microsoft.",
+   "AlmaLinux shim trusts 2 certificates:": "AlmaLinux shim trusts 2 certificates:",
    "Signed for:": "Signed for:",
    "Verified by:": "Verified by:",
-   "Expires:": "Expires:"
+   "Expires:": "Expires:",
+   "AlmaLinux OS provides a set of security features: Errata, GPG keys, Mailing Lists, OpenSCAP, OVAL, SBOM": "AlmaLinux OS provides a set of security features: Errata, GPG keys, Mailing Lists, OpenSCAP, OVAL, SBOM"
 }
