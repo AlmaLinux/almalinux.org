@@ -103,19 +103,19 @@ This week we'll be at both [CentOS Connect](https://connect.centos.org/) and [FO
 * March 18th - AlmaLinux Day Germany |
 * March 19-22 - [CloudFest](https://www.cloudfest.com/) |
 * April 8 - 10 - [FOSS asia](https://fossasia.org/) |
-* April 12-13 - [TexasLinux Fest](http://texaslinuxfest.org/) |
+* April 12-13 - [TexasLinux Fest](https://texaslinuxfest.org/) |
 * April 16 - 18 - [Open Source Summit NA](https://events.linuxfoundation.org/open-source-summit-north-america/) |
 * April 26 - 28 - [PenguiCon](https://2024.penguicon.org/) |
 * April 26 - 28 - [Linuxfest NW](https://linuxfestnorthwest.org/) |
-* June - [Southeast Linux Fest](http://southeastlinuxfest.org/) |
+* June - [Southeast Linux Fest](https://southeastlinuxfest.org/) |
 * July - [FOSSY](https://fossy.us/) |
 * July 30 - 1st - [SIGGRAPH](https://s2024.siggraph.org/exhibit-at-siggraph/) |
 * Probably August - [Flock to Fedora](https://flocktofedora.org/) |
 * Sept 3-4 - [OpenInfra Summit](https://openinfra.dev/blog/openinfra-events-2024) |
-* Probably September - [Ohio Linux Fest (OLF)](http://olfconference.org/) |
-* Oct 27-29 - [All things open](http://allthingsopen.org/) |
+* Probably September - [Ohio Linux Fest (OLF)](https://olfconference.org/) |
+* Oct 27-29 - [All things open](https://allthingsopen.org/) |
 * Probably November - [Seagl](https://seagl.org/) |
-* November 17--22 - [SC (formerly Supercompute)](http://supercomputing.org/) |
+* November 17--22 - [SC (formerly Supercompute)](https://supercomputing.org/) |
 
 If you can dedicate at least 1/2 of the event to staffing a booth at any of the events below, fill out this [Google form](https://docs.google.com/forms/d/1cQ0YQiAcRZXPnDqiHak-AXmsjEBz-IQE8s8jbPLykds/edit)! We'll cover your travel and hotel, and you'll get a per-diem to help offset your food and assorted travel-related costs. 
 

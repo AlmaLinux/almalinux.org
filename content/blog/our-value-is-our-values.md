@@ -21,7 +21,7 @@ As we [discussed last week](https://almalinux.org/blog/impact-of-rhel-changes/),
 
 ## What is the status of security updates?
 
-Prior to Red Hat's policy change, when RHEL published a package update of any sort (security or bugfix), they published the corresponding source code into a [repository](http://git.centos.org). Then AlmaLinux integrated the update into our own build and test system, produced a new RPM, and published it to our repositories.
+Prior to Red Hat's policy change, when RHEL published a package update of any sort (security or bugfix), they published the corresponding source code into a [repository](https://git.centos.org). Then AlmaLinux integrated the update into our own build and test system, produced a new RPM, and published it to our repositories.
 
 The first part of that chain is now broken. Only Red Hat customer accounts can access Red Hat Software, and it is a violation of the Red Hat Subscription Agreement to re-distribute Red Hat Software, which includes using it in a downstream rebuild.
 
