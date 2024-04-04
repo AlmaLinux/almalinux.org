@@ -723,5 +723,17 @@
     "Senior orcharhino Architect": "Senior orcharhino arkitekt",
     "10:00 am: Hackathon kicks off!": "10:00: Hackathon drar igång!",
     "Learn more about the project": "Lär dig mer om projektet",
-    "See the full Hackathon agenda": "Se hela Hackathon agendan"
+    "See the full Hackathon agenda": "Se hela Hackathon agendan",
+    "AlmaLinux OS provides a set of security features: Errata, GPG keys, Mailing Lists, OpenSCAP, OVAL, SBOM, and Secure Boot": "AlmaLinux OS tillhandahåller en uppsättning säkerhetsfunktioner: Errata, GPG-nycklar, e-postlistor, OpenSCAP, OVAL, SBOM och Säker uppstart",
+    "AlmaLinux provides Secure Boot support starting with the AlmaLinux 8.4 release.": "AlmaLinux ger stöd för säker uppstart från och med AlmaLinux 8.4-versionen.",
+    "AlmaLinux shim passes the ": "AlmaLinux shim passerar ",
+    "official review": "officiell granskning",
+    "Signed for:": "Signerad för:",
+    "Thanks for coming to ": "Tack för att du kom till ",
+    "11:00 am": "11:00",
+    "Secure Boot is a security feature that ensures a system boots only with trusted software, preventing the loading of unauthorized operating systems or software that could potentially compromise the system's integrity.": "Säker uppstart är en säkerhetsfunktion som säkerställer att ett system endast startar med pålitlig programvara, vilket förhindrar laddning av obehöriga operativsystem eller programvara som potentiellt kan äventyra systemets integritet.",
+    "and is signed by Microsoft.": "och är signerad av Microsoft.",
+    "AlmaLinux shim trusts 2 certificates:": "AlmaLinux shim litar på 2 certifikat:",
+    "Verified by:": "Verifierad av:",
+    "Expires:": "Upphör att gälla:"
 }
