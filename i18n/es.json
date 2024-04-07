@@ -731,5 +731,17 @@
     "Senior orcharhino Architect": "Arquitecto sénior de orcharhino",
     "10:00 am: Hackathon kicks off!": "10:00 h: ¡comienza el hackathon!",
     "Learn more about the project": "Más información sobre el proyecto",
-    "See the full Hackathon agenda": "Consulte el programa completo del Hackathon"
+    "See the full Hackathon agenda": "Consulte el programa completo del Hackathon",
+    "AlmaLinux provides Secure Boot support starting with the AlmaLinux 8.4 release.": "AlmaLinux proporciona soporte Secure Boot a partir de la versión AlmaLinux 8.4.",
+    "AlmaLinux OS provides a set of security features: Errata, GPG keys, Mailing Lists, OpenSCAP, OVAL, SBOM, and Secure Boot": "AlmaLinux OS proporciona un conjunto de características de seguridad: Erratas, claves GPG, Listas de Correo, OpenSCAP, OVAL, SBOM, y Secure Boot",
+    "and is signed by Microsoft.": "y está firmado por Microsoft.",
+    "AlmaLinux shim trusts 2 certificates:": "AlmaLinux shim confía en 2 certificados:",
+    "Verified by:": "Comprobado por:",
+    "Thanks for coming to ": "Gracias por acudir a ",
+    "11:00 am": "11:00 am",
+    "official review": "revisión oficial",
+    "AlmaLinux shim passes the ": "El shim AlmaLinux pasa la ",
+    "Signed for:": "Firmado por:",
+    "Expires:": "Vence:",
+    "Secure Boot is a security feature that ensures a system boots only with trusted software, preventing the loading of unauthorized operating systems or software that could potentially compromise the system's integrity.": "El Secure Boot es una función de seguridad que garantiza que un sistema se inicie sólo con software de confianza, evitando la carga de sistemas operativos o software no autorizados que podrían comprometer la integridad del sistema."
 }
