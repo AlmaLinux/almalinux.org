@@ -592,5 +592,6 @@
    "Verified by:": "Verified by:",
    "Expires:": "Expires:",
    "AlmaLinux OS provides a set of security features: Errata, GPG keys, Mailing Lists, OpenSCAP, OVAL, SBOM": "AlmaLinux OS provides a set of security features: Errata, GPG keys, Mailing Lists, OpenSCAP, OVAL, SBOM",
-   "Thanks for coming to ": "Thanks for coming to "
+   "Thanks for coming to ": "Thanks for coming to ",
+   "Get OCI Image from GitHub": "Get OCI Image from GitHub"
 }
