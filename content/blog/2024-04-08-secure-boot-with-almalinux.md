@@ -15,7 +15,7 @@ post:
 
 As the new AlmaLinux releases are coming shortly, we'd like to talk about one of the vital components of each system - its security. It's important to keep your system secure and one of the easiest ways that is rarely talked about is by enabling Secure Boot.
 
-AlmaLinux OS has provided Secure Boot since its 8.4 release.
+AlmaLinux OS has provided Secure Boot since its [8.4 release](https://wiki.almalinux.org/release-notes/8.4.html).
 
 ### About Secure Boot 
 
