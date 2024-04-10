@@ -592,5 +592,8 @@
    "Verified by:": "Verified by:",
    "Expires:": "Expires:",
    "AlmaLinux OS provides a set of security features: Errata, GPG keys, Mailing Lists, OpenSCAP, OVAL, SBOM": "AlmaLinux OS provides a set of security features: Errata, GPG keys, Mailing Lists, OpenSCAP, OVAL, SBOM",
-   "Thanks for coming to ": "Thanks for coming to "
+   "Thanks for coming to ": "Thanks for coming to ",
+   "(Tax ID 86-2791864)": "(Tax ID 86-2791864)",
+   "The AlmaLinux OS Foundation is a registered 501(c)(6) organization under US law": "The AlmaLinux OS Foundation is a registered 501(c)(6) organization under US law",
+   "Contributions to the foundation are typically not considered charitable contributions, and would not be tax deductible as such. Please contact your financial or tax advisor for specific guidance.": "Contributions to the foundation are typically not considered charitable contributions, and would not be tax deductible as such. Please contact your financial or tax advisor for specific guidance."
 }
