@@ -19,7 +19,7 @@ AlmaLinux OS has provided Secure Boot since its 8.4 release.
 
 ### About Secure Boot 
 
-In case you are not yet familiar, Secure Boot is a security feature built to ensure that only trusted software can run during the boot process. This feature helps prevent malicious software or unauthorized code from being loaded at boot time. Secure Boot verifies the signature of the operating system during boot-up, providing additional protection against malware and unauthorized access.
+In case you are not yet familiar, [Secure Boot](https://en.wikipedia.org/wiki/UEFI#Secure_Boot) is a security feature built to ensure that only trusted software can run during the boot process. This feature helps prevent malicious software or unauthorized code from being loaded at boot time. Secure Boot verifies the signature of the operating system during boot-up, providing additional protection against malware and unauthorized access.
 
 AlmaLinux uses the shim bootloader to support Secure Boot - an open-source bootloader that creates trust between the UEFI firmware and the operating system during the boot process. Shim ensures that the boot process remains secure by verifying the signature of the boot loader before loading the operating system. 
 
