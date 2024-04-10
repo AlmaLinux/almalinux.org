@@ -1038,10 +1038,11 @@ a {
 }
 
 
-/* adding for sponsor logos on the ALDT page */
+/* formatting for the disclaimer text in the footer */
 
-.additional_sponsors {
-
+.footer_tax_note {
+	font-size:.7rem;
+	padding-top:.5rem;
 }
 
 /*# sourceMappingURL=bundle.css.map */
