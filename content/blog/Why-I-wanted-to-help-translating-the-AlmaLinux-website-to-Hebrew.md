@@ -28,3 +28,5 @@ Translating the website was very straight forward, after creating an account in 
 I encourage anyone to start and contribute to the AlmaLinux Foundation in any way they can, especially with translating the website to make it more versatile with little to no knowledge needed to do it.
 
 [Click here to go to Weblate](https://hosted.weblate.org/projects/almalinux/)
+
+Benny asked me to write a [documentation on how to help translating the site](https://wiki.almalinux.org/Help-translating-site.html), I was very comfurted by the fact she asked ME out of everyone else to do so!, naturally I agreed to do so, I hope this helps!
