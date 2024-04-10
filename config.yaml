@@ -15,7 +15,7 @@ taxonomies:
 defaultContentLanguage: en
 languages:
     en: {weight: 1, languagename: English}
-    ar: {weight: 2, languagename: العربية}
+    ar: {weight: 2, languagename: العربية, languageDirection: rtl}
     ca: {weight: 2, languagename: Català}
     cs: {weight: 2, languagename: Česky}
     da: {weight: 2, languagename: Dansk}
@@ -25,7 +25,7 @@ languages:
     fa: {weight: 2, languagename: فارسى}
     fi: {weight: 2, languagename: Suomi}
     fr: {weight: 2, languagename: Français}
-    he: {weight: 2, languagename: עברית}
+    he: {weight: 2, languagename: עברית, languageDirection: rtl}
     hu: {weight: 2, languagename: magyar}
     it: {weight: 2, languagename: Italiano}
     ja: {weight: 2, languagename: 日本語}
