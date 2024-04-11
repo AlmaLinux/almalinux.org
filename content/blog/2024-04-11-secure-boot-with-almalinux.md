@@ -5,7 +5,7 @@ author:
  name: "Sofia Boldyreva"
  bio: "Technical Writer for AlmaLinux OS Project"
  image: /users/sofia-boldyreva.png
-date: 2024-04-08
+date: 2024-04-11
 images:
   - /blog-images/2024-04-08-secure-boot.png
 post: 
