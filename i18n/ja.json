@@ -151,7 +151,7 @@
     "Why are SBOMs important?": "なぜ SBOM が重要なのですか？",
     "Open source software is used extensively in applications, but it has led to the discovery of high-profile hacks and vulnerabilities.": "オープンソース ソフトウェアはアプリケーションで広く使用されていますが、その分、有名なハッキングや脆弱性の発見につながっています。",
     "SBOMs are meant to provide the community and users of open source with even more transparency, and an efficient way to identify (in the case of a risk) individual files, libraries, dependencies, etc. thereby increasing the trust and confidence in the use of open source software.": "SBOM は、オープンソースのコミュニティとユーザーに、より一層の透明性を提供し、個々のファイル、ライブラリ、依存関係などを（リスクが発生した場合）特定する効率的な方法を提供することで、オープンソース ソフトウェアの使用に対する信頼と信用を高めることを目的としています。",
-    "thinks so too…": "私もそう思います…",
+    "thinks so too…": "もそう思っています…",
     "The Linux Foundation and Open Source Security Foundation (OpenSSF) have also produced a plan called the": "また、Linux Foundation と Open Source Security Foundation (OpenSSF) は、",
     "which calls for industry action to develop software component frameworks, including SBOMs, to expedite discovery of and response to future vulnerabilities like Log4j.": "これは、Log4j のような将来の脆弱性の発見と対応を促進するために、SBOM を含むソフトウェア コンポーネント フレームワークを開発するための業界の行動を求めています。",
     "...And the president himself": "...そして大統領自身",
@@ -694,5 +694,11 @@
     "The event for you.": "",
     "AlmaLinux: Built to Last": "",
     "Yohei Suzuki": "",
-    "Stability, security, and the strength of the AlmaLinux Community": ""
+    "Stability, security, and the strength of the AlmaLinux Community": "",
+    "AlmaLinux provides Secure Boot support starting with the AlmaLinux 8.4 release.": "AlmaLinux は AlmaLinux 8.4 リリースからセキュアブートをサポートしています。",
+    "AlmaLinux shim passes the ": "AlmaLinux の shim は ",
+    "official review": "公式レビュー",
+    "and is signed by Microsoft.": "を通過し、Microsoft によって署名されています。",
+    "AlmaLinux shim trusts 2 certificates:": "AlmaLinux の shim は 2 つの証明書を信頼しています:",
+    "Secure Boot is a security feature that ensures a system boots only with trusted software, preventing the loading of unauthorized operating systems or software that could potentially compromise the system's integrity.": "セキュアブートは信頼されたソフトウェアのみでシステムが起動することを保証するセキュリティ機能で、システムの整合性を損なう可能性のある不正なオペレーティングシステムやソフトウェアの読み込みを防ぎます。"
 }
