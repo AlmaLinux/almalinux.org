@@ -3,7 +3,7 @@ title: "Announcing AlmaLinux 9.4 Beta!"
 type: blog
 author:
  name: "Eduard Abdullin"
- bio: "The RPM Packager and Automation Engineer."
+ bio: "The Release and Automation Engineer."
  image: /users/eduard-abdullin.jpg
 date: '2024-04-15'
 images:
