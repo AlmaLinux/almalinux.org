@@ -1,5 +1,5 @@
 ---
-title: "Why I wanted to help translating the AlmaLinux website to Hebrew?"
+title: "Why I wanted to help translate the AlmaLinux website to Hebrew?"
 type: blog
 author: 
  name: "Noam Alum"
