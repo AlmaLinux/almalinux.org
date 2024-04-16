@@ -29,4 +29,6 @@ I encourage anyone to start and contribute to the AlmaLinux Foundation in any wa
 
 [Click here to go to Weblate](https://hosted.weblate.org/projects/almalinux/)
 
-Benny asked me to write a [documentation on how to help translating the site](https://wiki.almalinux.org/Help-translating-site.html), I was very comfurted by the fact she asked ME out of everyone else to do so!, naturally I agreed to do so, I hope this helps!
+benny asked me to write a [documentation on how to help translate the website](https://wiki.almalinux.org/Help-translating-site.html), I was very comforted by the fact she asked ME out of everyone else to do so! Naturally, I agreed to do so, and I hope this helps!
+
+If you have any questions about translations, [come ask them in the ~www room](https://chat.almalinux.org/almalinux/channels/www) on the AlmaLinux Mattermost chat!
