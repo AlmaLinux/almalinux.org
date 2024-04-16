@@ -3,7 +3,7 @@ title: "Why I wanted to help translate the AlmaLinux website to Hebrew?"
 type: blog
 author: 
  name: "Noam Alum"
- bio: "-"
+ bio: "System Administrator at JetServer Hosting"
  image: /users/noam.jpeg
 date: '2024-04-10'
 post:
