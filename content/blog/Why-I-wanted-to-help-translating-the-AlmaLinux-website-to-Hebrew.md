@@ -21,7 +21,7 @@ While translating the website to Hebrew was not on the top of my list it certain
 Most of our servers are using AlmaLinux OS and I can recall that a lot web-hosting companies in Israel are using it as well, this made me feel compelled to translate the website to Hebrew and make it more appealing for Hebrew-speaking users.
 
 ## My experience
-First of all I want to thank Cody Robertson for helping with adding RTL support to the website when it lacked it :), the experience I've had while talking to other fellow contributors was nothing but amazing, with fast response and care taken for you I was astonished how can a foundation run so smoothly and reliably.
+First of all I want to thank Cody Robertson for helping with [adding RTL support](https://github.com/AlmaLinux/almalinux.org/issues/498) to the website when it lacked it! The experience I've had while talking to fellow contributors was nothing but amazing, with fast response and care taken for you I was astonished how can a foundation run so smoothly and reliably.
 
 Translating the website was very straight forward, after creating an account in Weblate and heading to the [AlmaLinux Foundation project](https://hosted.weblate.org/projects/almalinux/) I just needed to translate random sentences or words from English to Hebrew and all the hard work is done by Weblate and the industrious members of the marketing SIG or another team leads.
 
