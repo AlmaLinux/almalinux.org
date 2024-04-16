@@ -14,7 +14,7 @@ post:
 ## Preamble
 I remember back in March when I went to [CloudFest](https://almalinux.org/blog/2024-03-26-almalinux-march-events-roundup/) I was so excited to meet benny Vasquez, the chair of AlmaLinux OS Foundation, and when I got the chance to speak to her she gave me a lot of inspiration to contribute to AlmaLinux in any way I can.
 
-First thing I did when I got back home was opening and account in the [AlmaLinux chat](https://chat.almalinux.org/almalinux/channels/town-square) and the [AlmaLinux Forums](https://almalinux.discourse.group/) to start engaging with the community.
+First thing I did when I got back home was open an account in the [AlmaLinux chat](https://chat.almalinux.org/almalinux/channels/town-square) and the [AlmaLinux Forums](https://almalinux.discourse.group/) to start engaging with the community.
 
 While translating the website to Hebrew was not on the top of my list it certainly was in mind, as a system administrator in a web-hosting company I can appreciate a good distribution when I see one, and so far I've been loving AlmaLinux OS!
 
