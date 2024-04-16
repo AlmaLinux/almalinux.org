@@ -25,7 +25,7 @@ First of all I want to thank Cody Robertson for helping with [adding RTL support
 
 Translating the website was very straightforward. After creating an account in Weblate and heading to the [AlmaLinux Foundation project](https://hosted.weblate.org/projects/almalinux/) I just needed to translate random sentences or words from English to Hebrew and all the hard work is done by Weblate and the industrious approvers.
 
-I encourage anyone to start and contribute to the AlmaLinux Foundation in any way they can, especially with translating the website to make it more versatile with little to no knowledge needed to do it.
+I encourage anyone to start and contribute to the AlmaLinux Foundation in any way they can, especially with translating the website to make it more accessible. It takes little-to-no linux knowledge to contribute in that way.
 
 [Click here to go to Weblate](https://hosted.weblate.org/projects/almalinux/)
 
