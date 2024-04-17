@@ -48,7 +48,7 @@ With AlmaLinux 8.10 we have also differentiated ourselves in another way. Our co
     * **qla2xxx** - QLogic Fibre Channel HBA 
     * **qla4xxx** - QLogic iSCSI HBA 
 
-For a complete list of hardware support for which was added in this release, see the  [Extended hardware support - fix for WIKI link](https://wiki.almalinux.org/release-notes/8.10-beta.html#extended-hardware-support) section.
+For a complete list of hardware support for which was added in this release, see the  [Extended hardware support](https://wiki.almalinux.org/release-notes/8.10-beta.html#extended-hardware-support) section.
   
 While this list is quite comprehensive, we also want to hear more from a wider base of users! If you use older hardware, does this list cover everything you need it to? If not, please share more here on the AlmaLinux Forums: [Re-adding support for older hardware](https://almalinux.discourse.group/t/re-adding-support-for-older-hardware/3851).
 
