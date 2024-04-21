@@ -52,7 +52,7 @@ To deploy local development environment, you will to run the installation script
 
 ##### Windows:
 ```ps1
-install-hugo.bat
+.\install-hugo.bat
 ```
 
 ##### Linux:
