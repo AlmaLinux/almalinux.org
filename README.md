@@ -48,9 +48,17 @@ After one of the contributors has checked and approved the changes, they will be
 
 #### For developers
 
-To deploy local development environment, you will need following dependencies installed on your development host:
+To deploy local development environment, you will to run the installation script:
 
-- hugo
+##### Windows:
+```ps1
+install-hugo.bat
+```
+
+##### Linux:
+```sh
+./install-hugo.sh
+```
 
 Executing `hugo server` will deploy a nearly complete, ready to go local development environment.
 
