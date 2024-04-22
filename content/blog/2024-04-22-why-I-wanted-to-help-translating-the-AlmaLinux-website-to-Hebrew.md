@@ -5,10 +5,10 @@ author:
  name: "Noam Alum"
  bio: "System Administrator at JetServer Hosting"
  image: /users/noam.jpeg
-date: '2024-04-10'
+date: '2024-04-22'
 post:
     title: "My recent contribution towards AlmaLinux foundation."
-    image: /blog-images/2024/weblate-translate-website-to-hebrew.jpg
+    image: /blog-images/2024/04-22-weblate-translate-website-to-hebrew.jpg
 ---
 
 ## Preamble
