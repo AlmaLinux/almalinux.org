@@ -598,5 +598,6 @@
    "The next AlmaLinux betas are ready for testing! Checkout ": "The next AlmaLinux betas are ready for testing! Checkout ",
    "AlmaLinux OS 9.4 beta": "AlmaLinux OS 9.4 beta",
    " and ": " and ",
-   "AlmaLinux OS 8.10 beta": "AlmaLinux OS 8.10 beta"
+   "AlmaLinux OS 8.10 beta": "AlmaLinux OS 8.10 beta",
+   "Move from CentOS 7.x to 8.x version of the RHEL derivative of your choice, or upgrade from 8.x to 9.x within the same derivative.": "Move from CentOS 7.x to 8.x version of the RHEL derivative of your choice, or upgrade from 8.x to 9.x within the same derivative."
 }
