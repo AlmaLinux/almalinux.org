@@ -9,7 +9,7 @@
                     </h3>
                     <div class="al-subtle-links pb-2">
                         <p>
-                            {{ i18n "ELevate enables migration between major versions of RHEL® derivatives." }} {{ i18n "Move from CentOS 7.x to 8.x version of the RHEL derivative of your choice, or upgrade from 8.x to 9.x within the same derivative." }}
+                            {{ i18n "ELevate enables migration between major versions of RHEL® derivatives." }} {{ i18n "Move between major versions of RHEL-derivatives: from CentOS 6.x to CentOS 7.x, from CentOS 7.x to 8.x version of the RHEL derivative of your choice, or upgrade from 8.x to 9.x within the same derivative." }}
                         </p>
                     </div>
                     <div>
@@ -40,19 +40,19 @@
         <div class="container pt-2 elevate-container-wrap">
             <h6 class="pt-5 pb-2 mb-2 text-uppercase border-bottom">{{ i18n "About" }}</h6>
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-4 py-2 py-md-3">
-                <div class="col d-flex align-items-stretch pl-0">
+                <div class="col d-flex align-items-stretch pl-0" style="padding-right: 15px; text-align: justify;">
                     <div>
                         <h4 class="fw-bold mb-0 pb-3">
                             {{ i18n "Major Version Upgrades" }}
                         </h4>
                         <p>
-                                {{ i18n "It wasn't possible--until now. Move from CentOS 7.x to 8.x version of the RHEL derivative of your choice, or upgrade from 8.x to 9.x within the same derivative. Preserve your applications, your data, and your sanity." }}
+                                {{ i18n "It wasn't possible--until now. Move between major versions of RHEL-derivatives: from CentOS 6.x to CentOS 7.x, from CentOS 7.x to 8.x version of the RHEL derivative of your choice, or upgrade from 8.x to 9.x within the same derivative. Preserve your applications, your data, and your sanity." }}
                                 {{ i18n "Run the most recent version of the OS and software you need." }}
                             
                         </p>
                     </div>
                 </div>
-                <div class="col d-flex align-items-stretch  pl-0">
+                <div class="col d-flex align-items-stretch  pl-0" style="padding-right: 15px; text-align: justify;">
                     <div>
                         <h4 class="fw-bold mb-0 pb-3">
                             {{ i18n "Package Evolution Service" }}
@@ -63,7 +63,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col d-flex align-items-stretch pl-0">
+                <div class="col d-flex align-items-stretch pl-0" style="padding-right: 0px; text-align: justify;">
                     <div>
                         <h4 class="fw-bold mb-0 pb-3">
                             {{ i18n "Community-wide Project" }}
@@ -84,7 +84,7 @@
                             {{ i18n "What is ELevate?" }}
                     </div>
                     <div class="answer">
-                            {{ i18n "ELevate is a project aimed to provide the ability to upgrade between major versions of RHEL-based distributions from 7.x to 8.x and from 8.x to 9.x. It combines Red Hat's Leapp framework with a community-created migration metadata library and service." }}
+                            {{ i18n "ELevate is a project aimed to provide the ability to upgrade between major versions of RHEL-based distribution. It combines Red Hat's Leapp framework with a community-created migration metadata library and service." }}
                     </div>
                 </div>
                 <!--Item-->
@@ -117,7 +117,7 @@
                     </div>
                     <div class="answer">
                             {{ i18n "Currently, ELevate project supports the following upgrade and migration directions:" }} 
-                            <img src=/images/ELevate.svg class="d-block img-fluid" alt="ELevate scheme CentOS7 -> AlmaLinux, CentOS Stream, EuroLinux, Oracle, Rocky 8 -> AlmaLinux, CentOS Stream, EuroLinux, Rocky 9" width="500" height="200">
+                            <img src=/images/ELevate.svg class="d-block img-fluid" alt="ELevate scheme CentOS 6 -> CentOS 7, CentOS7 -> AlmaLinux, CentOS Stream, EuroLinux, Oracle, Rocky 8 -> AlmaLinux, CentOS Stream, EuroLinux, Rocky 9" style="padding: 20px 0;">
                             {{ i18n "* - migration to CentOS Stream 9 is currently in development and will be available later." }} <br>
                             {{ i18n "** - migration to Oracle Linux 9 is available with the" }}
                             <a href="https://blogs.oracle.com/linux/post/upgrade-oracle-linux-8-to-oracle-linux-9-using-leapp">Oracle Leapp utility</a> {{ i18n "and will not be supported by ELevate project." }} <br>
