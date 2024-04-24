@@ -5,7 +5,7 @@ author:
  name: "Yuriy Kohut"
  bio: "ELevate Project Engineer @ CloudLinux"
  image: /users/yuriy-kohut.jpg
-date: '2024-04-23'
+date: '2024-04-25'
 images:
   - /blog-images/2024/2024-04-23-centos6-to-centos7.png
 post:
