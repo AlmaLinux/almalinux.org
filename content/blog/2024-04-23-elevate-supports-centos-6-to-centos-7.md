@@ -3,7 +3,7 @@ title: "Expanding ELevate support: CentOS 6 to CentOS 7 migrations"
 type: blog
 author:
  name: "Yuriy Kohut"
- bio: "The ELevate Project Engineer"
+ bio: "ELevate Project Engineer @ CloudLinux"
  image: /users/yuriy-kohut.jpg
 date: '2024-04-23'
 images:
