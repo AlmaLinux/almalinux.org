@@ -751,5 +751,8 @@
     "AlmaLinux OS 9.4 beta": "AlmaLinux OS 9.4 beta",
     " and ": " y ",
     "AlmaLinux OS 8.10 beta": "AlmaLinux OS 8.10 beta",
-    "The next AlmaLinux betas are ready for testing! Checkout ": "¡Las próximas betas de AlmaLinux están listas para ser probadas! Visite "
+    "The next AlmaLinux betas are ready for testing! Checkout ": "¡Las próximas betas de AlmaLinux están listas para ser probadas! Visite ",
+    "Move between major versions of RHEL-derivatives: from CentOS 6.x to CentOS 7.x, from CentOS 7.x to 8.x version of the RHEL derivative of your choice, or upgrade from 8.x to 9.x within the same derivative.": "Muévase entre las principales versiones de los derivados de RHEL: de CentOS 6.x a CentOS 7.x, de CentOS 7.x a la versión 8.x de la derivada de RHEL que elija, o actualice de 8.x a 9.x dentro de la misma derivada.",
+    "It wasn't possible--until now. Move between major versions of RHEL-derivatives: from CentOS 6.x to CentOS 7.x, from CentOS 7.x to 8.x version of the RHEL derivative of your choice, or upgrade from 8.x to 9.x within the same derivative. Preserve your applications, your data, and your sanity.": "No era posible... hasta ahora. Muévase entre las versiones principales de los derivados de RHEL: de CentOS 6.x a CentOS 7.x, de CentOS 7.x a la versión 8.x del derivado de RHEL de su elección, o actualice de 8.x a 9.x dentro del misma derivada. Preserve sus aplicaciones, sus datos y su cordura.",
+    "ELevate is a project aimed to provide the ability to upgrade between major versions of RHEL-based distributions. It combines Red Hat's Leapp framework with a community-created migration metadata library and service.": "ELevate es un proyecto destinado a brindar la capacidad de actualizar entre versiones principales de distribuciones basadas en RHEL. Combina el marco Leapp de Red Hat con una biblioteca y un servicio de metadatos de migración creados por la comunidad."
 }
