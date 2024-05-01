@@ -403,7 +403,6 @@
    "AlmaLinux OS provides a set of security features: Errata, GPG keys, Mailing Lists, OpenSCAP, OVAL, SBOM, and Secure Boot": "AlmaLinux OS provides a set of security features: Errata, GPG keys, Mailing Lists, OpenSCAP, OVAL, SBOM, and Secure Boot",
    "Azure Marketplace": "Azure Marketplace",
    "More information about AlmaLinux OpenNebula images and verification guidelines are available on the \"}}<a href=\"https://wiki.almalinux.org/cloud/OpenNebula.html\">{{ i18n \"AlmaLinux OpenNebula Wiki Page": "More information about AlmaLinux OpenNebula images and verification guidelines are available on the \"}}<a href=\"https://wiki.almalinux.org/cloud/OpenNebula.html\">{{ i18n \"AlmaLinux OpenNebula Wiki Page",
-   "The official AlmaLinux OS images are available on \"}}<a href=\"https://cloudmarketplace.oracle.com/marketplace/en_US/partners/125035508\">{{ i18n \"Oracle Cloud Marketplace": "The official AlmaLinux OS images are available on \"}}<a href=\"https://cloudmarketplace.oracle.com/marketplace/en_US/partners/125035508\">{{ i18n \"Oracle Cloud Marketplace",
    "Supported AlmaLinux OS versions:": "Supported AlmaLinux OS versions:",
    "and from the main AlmaLinux OS repositories:": "and from the main AlmaLinux OS repositories:",
    "Board Operations and Code of Ethics": "Board Operations and Code of Ethics",
