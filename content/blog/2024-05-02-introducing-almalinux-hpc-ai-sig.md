@@ -5,7 +5,7 @@ author:
  name: "Hayden Barnes"
  bio: "Open Source Community Manager, HPE AI Software Solutions"
  image: /users/haydenbarnes.jpg
-date: '2024-01-31'
+date: '2024-05-02'
 post:
     title: "Introducing the AlmaLinux HPC and AI SIG"
     image: /blog-images/2024/introducing-almalinux-hpc-ai-sig.png
