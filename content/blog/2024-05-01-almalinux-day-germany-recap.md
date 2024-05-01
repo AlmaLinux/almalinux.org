@@ -50,7 +50,7 @@ Chapters:
 
 ### <u>Building without following: RHEL compatibility for AlmaLinux's Community</u>
 
-Finding our footing without using Red Hat Enterprise Linux has been an exciting venture, but our number 1 question is still "How do you build AlmaLinux?" In this presentation Andrew Lukoshko takes you through where AlmaLinux gets its code, how we confirm compatibility, and how we build.
+Finding our footing without using Red Hat Enterprise Linux has been an exciting venture, but the number one question we get is still "How do you build AlmaLinux?" In this presentation Andrew Lukoshko takes you through where AlmaLinux gets its code, how we confirm compatibility, and how we build.
 
 #### Speaker: Andrew Lukoshko - Release Engineering Lead, AlmaLinux
 
