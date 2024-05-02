@@ -6,6 +6,8 @@ author:
  bio: "Open Source Community Manager, HPE AI Software Solutions"
  image: /users/haydenbarnes.jpg
 date: '2024-05-02'
+images:
+  - /blog-images/2024/introducing-almalinux-hpc-ai-sig.png
 post:
     title: "Introducing the AlmaLinux HPC and AI SIG"
     image: /blog-images/2024/introducing-almalinux-hpc-ai-sig.png
