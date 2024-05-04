@@ -3,17 +3,21 @@ title: "How ELevate supports business needs"
 type: blog
 author: 
  name: "David der Nederlanden"
- bio: "Linux Cloud Architect at Bizway"
+ bio: "Linux Cloud Architect @ Bizway"
  image: /users/ddernederlanden.jpg
 date: '2024-05-02'
 images:
-  - /blog-images/
+  - /blog-images/2024/2024-04-23-centos6-to-centos7.png
 post:
-	title: "How ELevate supports business needs"
-	image: /blog-images/
+    title: "How ELevate supports business needs"
+    image: /blog-images/2024/2024-04-23-centos6-to-centos7.png
 ---
 
+# How Elevate supports business needs
+While we've been busy upgrading all our CentOS 7 servers to AlmaLinux 8 and higher, the ELevate Project now has the abillity to upgrade CentOS 6 servers too!
+
 ## whoami and a bit about our systems
+
 I'm David from the Netherlands and I try to spread the feeling I experience myself while working within the hosting industry whenever I can, it really is something magical!
 My employer Bizway, a Dutch Managed Service Provider (MSP from now on) gives me the chance to explore all the different aspects that are on the table when providing services to customers.
 
@@ -49,12 +53,12 @@ So when CloudFest and AlmaLinux day came around great things happened at the hac
 Once benny posted that ELevate was available for CentOS 6 I really was excited to try it on one of our servers, so after a bit of cloning and snapshotting off we went!
 
 ## Practical tips from a real life ELevate user
-While after all the process itself is quite painless, it can be quite hard to get there.
+While after all the ELevate process itself is quite painless, it can be quite hard to get there.
 I really recommend following/reading the detailed [wiki](https://wiki.almalinux.org/elevate) for the different available migrations.
 
-ELevate is really good at identifying (potential) issues which you must resolve beforehand.
+ELevate is really good at identifying (potential) issues which you must resolve beforehand, below you can read some of those.
 
-#/boot
+### /boot
 One that bothered us the most was that the /boot partition is almost always in need of more space,
 while in more recent installations it was a matter of cleaning up old kernels, in our CentOS 6 servers that really wasn't happening.
 
@@ -63,12 +67,12 @@ while it is a great tool to help deprecating those last CentOS 6 servers, it sti
 
 While moving the partition is quite an easy way, it can be quite dirty if you put it directly behind your data partition, you might want to consider moving that further back and just expanding the current /boot partition itself.
 
-#grub to grub2!
+### grub to grub2!
 When upgrading to CentOS 7 my test server switches from grub to grub2, when I wanted to try ELevating it to AlmaLinux 8 it complained about some grub issues,
 I had to create a /boot/grub2/grub.cfg file and create /etc/default/grub.
 
 For /etc/default/grub I created it by using the booted system and put the following there:
-```
+```bash
 GRUB_TIMEOUT=5
 GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
 GRUB_DEFAULT=saved
@@ -80,14 +84,14 @@ GRUB_THEME="/boot/grub2/themes/system/theme.txt"
 ```
 
 And generate /boot/grub2/grub.cfg with:
-```
+```bash
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
 
-#DirectAdmin specific tips
+### DirectAdmin specific tips
 After every leapp upgrade we rebuild all packages DirectAdmin brings, sometimes this can go wrong with some older local libraries, the following commands might help you out sometime.
-```
+```bash
 # remove and list old local items
 da build list_removals
 da build remove_items
@@ -105,11 +109,12 @@ da build doMigrateToSystemCurl
 Also something to keep in mind, in general on CentOS 6 you're running older software versions, as you might for example update MySQL too from 5.6 to 5.7 in the process, you will run into changed or removed configuration parameters,
 change or comment as needed in /etc/my.cnf to get you running again.
 
-#Test, test and... test.
+### Test, test and... test.
 Something easily forgotten to be really honest, we've all done it at one point or another "easy, I've done that so many times, no way it goes wrong!",
 just take from me to always define some testing points and write down / share the results before and after the change, in this case upgrading,
 it also gives a really good starting point when cleaning up older packages afterwards, sometimes the server has lived quite long and not everything is still needed,
 when you know what to expect from the services your customer provides on their server you can actually clean up packages and test afterwards if all customer critical services are still working.
+
 
 ## AlmaLinux and ELevate helps us sleep at night
 Overall AlmaLinux offers us a really stable platform which is exactly what we want and need,
