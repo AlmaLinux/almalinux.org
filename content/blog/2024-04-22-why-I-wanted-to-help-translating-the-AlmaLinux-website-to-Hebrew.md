@@ -6,6 +6,8 @@ author:
  bio: "System Administrator at JetServer Hosting"
  image: /users/noam.jpeg
 date: '2024-04-22'
+images:
+    - /blog-images/2024/2024-04-22-weblate-translate-website-to-hebrew.png
 post:
     title: "My recent contribution towards AlmaLinux foundation."
     image: /blog-images/2024/2024-04-22-weblate-translate-website-to-hebrew.png
