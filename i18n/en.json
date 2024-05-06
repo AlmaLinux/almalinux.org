@@ -600,5 +600,7 @@
    "Move from CentOS 7.x to 8.x version of the RHEL derivative of your choice, or upgrade from 8.x to 9.x within the same derivative.": "Move from CentOS 7.x to 8.x version of the RHEL derivative of your choice, or upgrade from 8.x to 9.x within the same derivative.",
    "Thank you, CloudFest!": "Thank you, CloudFest!",
    "AlmaLinux Day: Germany was one of the best events I've ever had. With nearly 300 attendees adjacent to one of my favorite annual events, we got to connect with people all week who were excited about AlmaLinux. I can't wait to do this again!": "AlmaLinux Day: Germany was one of the best events I've ever had. With nearly 300 attendees adjacent to one of my favorite annual events, we got to connect with people all week who were excited about AlmaLinux. I can't wait to do this again!",
-   "Each supported architecture has various installation images available:": "Each supported architecture has various installation images available:"
+   "Each supported architecture has various installation images available:": "Each supported architecture has various installation images available:",
+   "General Availability of AlmaLinux 9.4 Stable! Checkout ": "General Availability of AlmaLinux 9.4 Stable! Checkout ",
+   "AlmaLinux OS 9.4 Stable": "AlmaLinux OS 9.4 Stable"
 }
