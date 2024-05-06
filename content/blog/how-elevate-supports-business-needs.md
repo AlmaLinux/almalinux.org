@@ -43,14 +43,14 @@ in which as a MSP you can only do so much for your customer,
 if in the end they use an application for their business that for some reason only runs on CentOS 6,
 or their developer left a long time ago, well, good luck with replacing that server...
 
-It gives however a great reason to have some fun with the new release of [ELevate](https://almalinux.org/blog/2024-04-25-elevate-supports-centos-6-to-centos-7/)
+It gives however a great reason to have some fun with the new release of [ELevate](https://almalinux.org/blog/2024-04-25-elevate-supports-centos-6-to-centos-7/), as it now supports ELevating CentOS 6 too!
 
 Nowadays there are less and less excuses to make, as [DirectAdmin](https://www.directadmin.com) for example made it even possible to run php 5.6 code on AlmaLinux 8,
 which is a great way of offering your customer a up-to-date operating system if they're really dependent on php 5.6, which gives us one less thing to worry about.
 
 So when CloudFest and AlmaLinux day came around great things happened at the hackathon and the idea for ELevating CentOS 6 servers to CentOS 7 was born, which is really exciting news.
 
-Once benny posted that ELevate was available for CentOS 6 I really was excited to try it on one of our servers, so after a bit of cloning and snapshotting off we went!
+Once benny posted that ELevate was available for CentOS 6 I was really excited to try it on one of our servers, so after a bit of cloning and snapshotting off we went!
 
 ## Practical tips from a real life ELevate user
 While after all the ELevate process itself is quite painless, it can be quite hard to get there.
@@ -87,7 +87,6 @@ And generate /boot/grub2/grub.cfg with:
 ```bash
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
-
 
 ### DirectAdmin specific tips
 After every leapp upgrade we rebuild all packages DirectAdmin brings, sometimes this can go wrong with some older local libraries, the following commands might help you out sometime.
