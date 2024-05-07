@@ -5,7 +5,7 @@ author:
  name: "David der Nederlanden"
  bio: "Linux Cloud Architect @ Bizway"
  image: /users/ddernederlanden.jpg
-date: '2024-05-02'
+date: '2024-05-22'
 images:
   - /blog-images/2024/2024-04-23-centos6-to-centos7.png
 post:
