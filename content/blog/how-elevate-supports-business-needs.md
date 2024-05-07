@@ -45,7 +45,7 @@ or their developer left a long time ago, well, good luck with replacing that ser
 
 It gives however a great reason to have some fun with the new release of [ELevate](https://almalinux.org/blog/2024-04-25-elevate-supports-centos-6-to-centos-7/), as it now supports ELevating CentOS 6 too!
 
-Nowadays there are less and less excuses to make, as [DirectAdmin](https://www.directadmin.com) for example made it even possible to run php 5.6 code on AlmaLinux 8,
+Nowadays there are less and less excuses to make, as [DirectAdmin](https://www.directadmin.com) for example made it even possible to run php 5.6 code on AlmaLinux 9,
 which is a great way of offering your customer a up-to-date operating system if they're really dependent on php 5.6, which gives us one less thing to worry about.
 
 So when CloudFest and AlmaLinux day came around great things happened at the hackathon and the idea for ELevating CentOS 6 servers to CentOS 7 was born, which is really exciting news.
