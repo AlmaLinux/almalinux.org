@@ -743,5 +743,11 @@
     "AlmaLinux OS 8.10 beta": "AlmaLinux OS 8.10 beta",
     "Get OCI Image from GitHub": "Hämta OCI avbild från Github",
     "AlmaLinux OS 9.4 beta": "AlmaLinux OS 9.4 beta",
-    " and ": " och "
+    " and ": " och ",
+    "It wasn't possible--until now. Move between major versions of RHEL-derivatives: from CentOS 6.x to CentOS 7.x, from CentOS 7.x to 8.x version of the RHEL derivative of your choice, or upgrade from 8.x to 9.x within the same derivative. Preserve your applications, your data, and your sanity.": "Det var inte möjligt - förrän nu. Flytta mellan huvudversioner av RHEL-derivat: från CentOS 6.x till CentOS 7.x, från CentOS 7.x till 8.x-versionen av den RHEL-derivat du väljer, eller uppgradera från 8.x till 9.x inom samma derivat. Bevara dina program, din data och ditt förstånd.",
+    "Move between major versions of RHEL-derivatives: from CentOS 6.x to CentOS 7.x, from CentOS 7.x to 8.x version of the RHEL derivative of your choice, or upgrade from 8.x to 9.x within the same derivative.": "Flytta mellan huvudversioner av RHEL-derivat: från CentOS 6.x till CentOS 7.x, från CentOS 7.x till 8.x-versionen av det RHEL-derivat du väljer, eller uppgradera från 8.x till 9.x inom samma derivat.",
+    "ELevate is a project aimed to provide the ability to upgrade between major versions of RHEL-based distributions. It combines Red Hat's Leapp framework with a community-created migration metadata library and service.": "ELevate är ett projekt som syftar till att ge möjligheten att uppgradera mellan större versioner av RHEL-baserade distributioner. Det kombinerar Red Hats Leapp-ramverk med ett gemenskapsskapat migreringsmetadatabibliotek och tjänst.",
+    "Thank you, CloudFest!": "Tack, CloudFest!",
+    "AlmaLinux Day: Germany was one of the best events I've ever had. With nearly 300 attendees adjacent to one of my favorite annual events, we got to connect with people all week who were excited about AlmaLinux. I can't wait to do this again!": "AlmaLinux-dagen: Tyskland var ett av de bästa evenemangen vi någonsin har haft. Med nästan 300 deltagare i anslutning till ett av vårat årliga favoritevenemang, fick vi kontakt med människor under hela veckan som var entusiastiska över AlmaLinux. Vi kan inte vänta med att göra det här igen!",
+    "Each supported architecture has various installation images available:": "Varje arkitektur som stöds har olika installationsavbilder tillgängliga:"
 }
