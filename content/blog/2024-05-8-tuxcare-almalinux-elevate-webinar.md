@@ -23,6 +23,6 @@ I'm excited to be joining an upcoming webinar with one of our sponsors: [Tuxcare
 
 ## Webinar Summary
 
-With the end of life (EOL) of CentOS 7 just a couple of months away, many organizations are turning to the AlmaLinux OS Project's ELevate tool to enable a smooth transition to other RHEL-based distributions.
+With the end of life (EOL) of CentOS 7 less than two months away, many organizations are turning to the AlmaLinux OS Project's ELevate tool to enable a smooth transition to other RHEL-based distributions.
 
 Join us on May 15th to see everything that this migration and upgrade tool has to offer. You'll also learn how to secure long-term, affordable commercial support for your enterprise Linux deployments after your ELevate-assisted transition is complete. [Register here!](https://tuxcare.com/webinars/elevate-upgrading-in-place-for-rhel-based-distros-has-finally-arrived/)
