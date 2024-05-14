@@ -3,7 +3,7 @@ title: "How ELevate supports business needs"
 type: blog
 author: 
  name: "David der Nederlanden"
- bio: "Linux Cloud Architect @ Bizway"
+ bio: "Linux Cloud Architect at Bizway"
  image: /users/ddernederlanden.jpg
 date: '2024-05-22'
 images:
@@ -65,7 +65,46 @@ while in more recent installations it was a matter of cleaning up old kernels, i
 I had to move the /boot partition to a new partition which was bigger, which again, is something to keep in mind,
 while it is a great tool to help deprecating those last CentOS 6 servers, it still might be cleaner to do it from scratch some day.
 
-While moving the partition is quite an easy way, it can be quite dirty if you put it directly behind your data partition, you might want to consider moving that further back and just expanding the current /boot partition itself.
+While moving the partition is quite an easy way, it can be quite dirty if you put it directly behind your data partition, you might want to consider moving that further back and just expanding the current /boot partition itself,
+or even simpler, move it to a seperate disk, for which the steps are:
+
+```bash
+# add a new disk of 1Gb to your VM
+# add it to the boot order in your hypervisor of choice
+
+# create a new partition on the new disk with fdisk /dev/sdb as primary and type Linux.
+
+# reload the partitions and create a ext4 filesystem on the new partition
+partx -v -a /dev/sdb
+mkfs.ext4 /dev/sdb1
+
+# copy your original /boot partition to the new partition with dd
+dd if=/dev/sda1 of=/dev/sdb1 bs=1M
+
+# extend the new partition as the old size is inherited while using dd
+e2fsck -fy /dev/sdb1
+resize2fs /dev/sdb1
+e2fsck -fy /dev/sdb1
+
+# unmount the old boot partition and mount the new one
+umount /dev/sda1
+mount /dev/sdb1 /boot
+
+# install grub on the new disk and scramble uuid of original /boot so it doesn't get mounted accidentally
+grub-install --recheck /dev/sdb
+tune2fs /dev/sda1 -U random
+
+# check the UUID's and grub
+blkid
+cat /etc/fstab
+cat /boot/grub/grub.conf
+
+# delete old partition so it can't be used again accidentally
+fdisk /dev/sda
+
+# reboot the machine to actually boot from the new /boot partition
+reboot now
+```
 
 ### grub to grub2!
 When upgrading to CentOS 7 my test server switches from grub to grub2, when I wanted to try ELevating it to AlmaLinux 8 it complained about some grub issues,
@@ -105,8 +144,19 @@ da build all
 da build doMigrateToSystemCurl
 ```
 
-Also something to keep in mind, in general on CentOS 6 you're running older software versions, as you might for example update MySQL too from 5.6 to 5.7 in the process, you will run into changed or removed configuration parameters,
+Something to keep in mind is in general on CentOS 6 you're running older software versions, as you must for example update MySQL too from 5.6 to 5.7 in the process, you will run into changed or removed configuration parameters,
 change or comment as needed in /etc/my.cnf to get you running again.
+
+In short you want to check at least the following parameters before building all packages.
+```bash
+For /usr/local/directadmin/custombuild/options.conf:
+set mod_ruid to no as it isn't available anymore.
+set mysql to 5.7 or higher as lower isn't available anymore.
+set the php_mode to php-fpm as mod_php is deprecated and can't be installed anymore.
+
+Within /etc/my.cnf disable parameters like:
+thread_concurrency=8
+```
 
 ### Test, test and... test.
 Something easily forgotten to be really honest, we've all done it at one point or another "easy, I've done that so many times, no way it goes wrong!",
