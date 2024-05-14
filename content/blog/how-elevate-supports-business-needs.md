@@ -5,7 +5,7 @@ author:
  name: "David der Nederlanden"
  bio: "Linux Cloud Architect at Bizway"
  image: /users/ddernederlanden.jpg
-date: '2024-05-22'
+date: '2024-05-13'
 images:
   - /blog-images/2024/2024-04-23-centos6-to-centos7.png
 post:
@@ -149,12 +149,12 @@ change or comment as needed in /etc/my.cnf to get you running again.
 
 In short you want to check at least the following parameters before building all packages.
 ```bash
-For /usr/local/directadmin/custombuild/options.conf:
-set mod_ruid to no as it isn't available anymore.
-set mysql to 5.7 or higher as lower isn't available anymore.
-set the php_mode to php-fpm as mod_php is deprecated and can't be installed anymore.
+# For /usr/local/directadmin/custombuild/options.conf:
+mod_ruid2=no # as mod_ruid2 isn't supported anymore
+mysql=5.7 # or higher if your application supports it
+phpX_mode=php-fpm # as mod_php is deprecated
 
-Within /etc/my.cnf disable parameters like:
+# Within /etc/my.cnf disable parameters like:
 thread_concurrency=8
 ```
 
