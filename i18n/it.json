@@ -673,5 +673,7 @@
     "IT Infrastructure & Security Director": "",
     "As CentOS Linux enters its final 6 months of support, the whole world is looking at where they go next. The AlmaLinux community benefits from the stability and intentionality that we take to building a stable, free operating system. Come hear all about what we do and how we're supporting our community at AlmaLinux Day: Germany": "",
     "11:15 am": "",
-    "Chair, Board of Directors": ""
+    "Chair, Board of Directors": "",
+    "Move between major versions of RHEL-derivatives: from CentOS 6.x to CentOS 7.x, from CentOS 7.x to 8.x version of the RHEL derivative of your choice, or upgrade from 8.x to 9.x within the same derivative.": "Migra da qualsiasi derivata di RHEL: da CentOS 6.x a CentOS 7.x, da CentOS 7.x alla 8.x della derivata a tua scelta, oppure aggiorna dalla 8.x alla 9.x della stessa derivata.",
+    "It wasn't possible--until now. Move between major versions of RHEL-derivatives: from CentOS 6.x to CentOS 7.x, from CentOS 7.x to 8.x version of the RHEL derivative of your choice, or upgrade from 8.x to 9.x within the same derivative. Preserve your applications, your data, and your sanity.": "Non era possibile... fino ad ora. Migra dalle principali derivata di RHEL, da CentOS 6.x a CentOS 7.x alla versione 8.x della derivata a tua scelta, oppure aggiorna dalla 8.x alla 9.x della stessa derivata. Mantieni le tue applicazioni, i tuoi dati e la tua salute mentale."
 }
