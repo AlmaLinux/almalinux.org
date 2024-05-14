@@ -5,7 +5,7 @@ author:
  name: "David der Nederlanden"
  bio: "Linux Cloud Architect at Bizway"
  image: /users/ddernederlanden.jpg
-date: '2024-05-13'
+date: '2024-05-22'
 images:
   - /blog-images/2024/2024-04-23-centos6-to-centos7.png
 post:
@@ -35,10 +35,10 @@ We always used CentOS as our main operating system for our webhosting platforms,
 since ELevate came around we started upgrading our whole fleet to AlmaLinux 8 as we started using that for our new deployments too, we're almost done doing so.
 
 Upgrading is most of the time the less painfull way to get your customer to use a new OS,
-as in migrations to a new server there's always something that takes some debugging while with in-place upgrades it mostly stays intact,
+as with migrating to a new server there's always something that takes some debugging where in-place upgrades keep it mostly intact,
 which is important, because as a techie we tend to forget that customers mostly want the servers to just work to support their business needs.
 
-That still doesn't make up for the CentOS 6 servers still around, which in all honesty should've been gone a long time ago already,
+That still doesn't make up for the CentOS 6 servers currently around, which in all honesty should've been gone a long time ago already,
 in which as a MSP you can only do so much for your customer,
 if in the end they use an application for their business that for some reason only runs on CentOS 6,
 or their developer left a long time ago, well, good luck with replacing that server...
@@ -60,13 +60,14 @@ ELevate is really good at identifying (potential) issues which you must resolve 
 
 ### /boot
 One that bothered us the most was that the /boot partition is almost always in need of more space,
-while in more recent installations it was a matter of cleaning up old kernels, in our CentOS 6 servers that really wasn't happening.
+while in more recent installations it was a matter of cleaning up old kernels, in our CentOS 6 servers that really wasn't happening as most servers had a 128Mb /boot partition.
 
-I had to move the /boot partition to a new partition which was bigger, which again, is something to keep in mind,
-while it is a great tool to help deprecating those last CentOS 6 servers, it still might be cleaner to do it from scratch some day.
+So I had to move the /boot partition to a new partition which was bigger, again, something to keep in mind,
+while ELevate is a great tool to help deprecating those last CentOS 6 servers, it still might be cleaner to do it from scratch some day.
 
-While moving the partition is quite an easy way, it can be quite dirty if you put it directly behind your data partition, you might want to consider moving that further back and just expanding the current /boot partition itself,
-or even simpler, move it to a seperate disk, for which the steps are:
+While moving the partition is quite an easy way, it can be quite dirty if you put it directly behind your data partition,
+you might want to consider moving that further back and just expanding the current /boot partition itself,
+or even simpler, move it to a seperate disk, for which the steps are as follows:
 
 ```bash
 # add a new disk of 1Gb to your VM
@@ -128,7 +129,7 @@ grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
 ### DirectAdmin specific tips
-After every leapp upgrade we rebuild all packages DirectAdmin brings, sometimes this can go wrong with some older local libraries, the following commands might help you out sometime.
+After every leapp upgrade we rebuild all packages that DirectAdmin brings, sometimes this can go wrong with for example some older local libraries, the following commands might help you out sometime.
 ```bash
 # remove and list old local items
 da build list_removals
@@ -154,14 +155,15 @@ mod_ruid2=no # as mod_ruid2 isn't supported anymore
 mysql=5.7 # or higher if your application supports it
 phpX_mode=php-fpm # as mod_php is deprecated
 
-# Within /etc/my.cnf disable parameters like:
+# Within /etc/my.cnf disable deprecated parameters like:
 thread_concurrency=8
 ```
 
 ### Test, test and... test.
-Something easily forgotten to be really honest, we've all done it at one point or another "easy, I've done that so many times, no way it goes wrong!",
-just take from me to always define some testing points and write down / share the results before and after the change, in this case upgrading,
-it also gives a really good starting point when cleaning up older packages afterwards, sometimes the server has lived quite long and not everything is still needed,
+Something easily forgotten, and to be really honest, we've all done it at one point or another by thinking: "easy, I've done that so many times, no way it goes wrong!",
+is to always define some testing points and write down / share the results before and after the change, in this case upgrading.
+
+It also gives a really good starting point when cleaning up older packages afterwards, sometimes the server has lived quite long and not every package installed is still needed,
 when you know what to expect from the services your customer provides on their server you can actually clean up packages and test afterwards if all customer critical services are still working.
 
 
