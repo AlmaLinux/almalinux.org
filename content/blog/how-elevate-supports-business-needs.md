@@ -73,7 +73,7 @@ or even simpler, move it to a seperate disk, for which the steps are as follows:
 # add a new disk of 1Gb to your VM
 # add it to the boot order in your hypervisor of choice
 
-# create a new partition on the new disk with fdisk /dev/sdb as primary and type Linux.
+# create a new partition on the new disk with fdisk /dev/sdb as primary and type Linux
 
 # reload the partitions and create a ext4 filesystem on the new partition
 partx -v -a /dev/sdb
@@ -141,7 +141,7 @@ da build restore_old_local libnghttp2
 # build everything (keep resolving upcoming issues untill this runs succesfully)
 da build all
 
-# this one specifically helped me after the CentOS 6 upgrade as DirectAdmin kept complaining about local libraries.
+# this one specifically helped me after the CentOS 6 upgrade as DirectAdmin kept complaining about local libraries
 da build doMigrateToSystemCurl
 ```
 
