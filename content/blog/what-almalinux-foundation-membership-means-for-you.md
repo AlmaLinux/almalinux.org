@@ -29,4 +29,4 @@ Who cares? You should. Anyone and everyone who is a member of the open source co
 
 You're now free.
 
-We realize you may have questions. We welcome all questions and can be reached via the [AlmaLinux Community Chat](https://chat.almalinux.org/) and our [Forums](https://almalinux.discourse.group/c/almalinux-foundation/membership/28) or on [Reddit](https://reddit.com/r/almalinux)
+We realize you may have questions. We welcome all questions and can be reached via the [AlmaLinux Community Chat](https://chat.almalinux.org/) and our [Forums](https://forums.almalinux.org/c/almalinux-foundation/membership/28) or on [Reddit](https://reddit.com/r/almalinux)

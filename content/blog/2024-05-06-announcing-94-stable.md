@@ -85,11 +85,11 @@ The following device drivers were modified to re-add PCI IDs for hardware disabl
 
 For a complete list of hardware support for which was added in this release, see the  [Extended hardware support](https://wiki.almalinux.org/release-notes/9.4.html#extended-hardware-support) section in the 9.4 release notes.
   
-While this list is quite comprehensive, we also welcome feedback from all of our users! If you use older hardware, does this list cover everything you need it to? If not, please share more here on the AlmaLinux Forums: [Re-adding support for older hardware](https://almalinux.discourse.group/t/re-adding-support-for-older-hardware/3851).
+While this list is quite comprehensive, we also welcome feedback from all of our users! If you use older hardware, does this list cover everything you need it to? If not, please share more here on the AlmaLinux Forums: [Re-adding support for older hardware](https://forums.almalinux.org/t/re-adding-support-for-older-hardware/3851).
 
 ## Pitch In
 
-Join us in the [AlmaLinux Community Chat](https://chat.almalinux.org) to get any assistance you need and help others. You can also post a question on our [9.4 Forum](https://almalinux.discourse.group/c/devel/9-stable/36), on our AlmaLinux Community on [Reddit](https://reddit.com/r/almalinux), catch us on [Twitter/X](https://twitter.com/almalinux) and follow us on Mastodon [@almalinux@fosstodon.org](https://fosstodon.org/@almalinux)
+Join us in the [AlmaLinux Community Chat](https://chat.almalinux.org) to get any assistance you need and help others. You can also post a question on our [9.4 Forum](https://forums.almalinux.org/c/devel/9-stable/36), on our AlmaLinux Community on [Reddit](https://reddit.com/r/almalinux), catch us on [Twitter/X](https://twitter.com/almalinux) and follow us on Mastodon [@almalinux@fosstodon.org](https://fosstodon.org/@almalinux)
 
 Please report any bugs you may see on the [Bug Tracker](https://bugs.almalinux.org/). 
 

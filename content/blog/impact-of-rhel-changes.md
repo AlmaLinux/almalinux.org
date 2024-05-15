@@ -38,7 +38,7 @@ In the short term, we will be working with other members of the RHEL ecosystem t
 
 In the long-term, we'll be working with those same partners and with our community to identify the best path forward for AlmaLinux as part of the enterprise linux ecosystem.
 
-If you have any questions, you know how to find us (in [chat](https://chat.almalinux.org) or on [discourse](https://almalinux.discourse.group/)). Please also know that this is a rapidly developing situation, and that we will be adjusting and updating as quickly as we can. If you would like to have your voice considered as part of the conversation as we go forward, please [join the ongoing discussion on discourse](https://almalinux.discourse.group/t/how-is-rh-new-move-affecting-the-el-family/) or reach out to me directly.
+If you have any questions, you know how to find us (in [chat](https://chat.almalinux.org) or on [discourse](https://forums.almalinux.org/)). Please also know that this is a rapidly developing situation, and that we will be adjusting and updating as quickly as we can. If you would like to have your voice considered as part of the conversation as we go forward, please [join the ongoing discussion on discourse](https://forums.almalinux.org/t/how-is-rh-new-move-affecting-the-el-family/) or reach out to me directly.
 
 If you have any needs that aren't being met or answered below, please don't hesitate to reach out: <benny@almalinux.org>
 
@@ -55,7 +55,7 @@ Yes. In the immediate term, our plan is to pull from CentOS Stream updates and O
 
 ### Who is involved in the conversations about the next steps for AlmaLinux at this time?
 
-To date our board, our president, and all of our SIG leaders have been involved in the conversations, as well as many other members of the community. If you would like to be involved in the conversations, please [join the ongoing discussion on discourse](https://almalinux.discourse.group/t/how-is-rh-new-move-affecting-the-el-family/) or reach out to me directly.
+To date our board, our president, and all of our SIG leaders have been involved in the conversations, as well as many other members of the community. If you would like to be involved in the conversations, please [join the ongoing discussion on discourse](https://forums.almalinux.org/t/how-is-rh-new-move-affecting-the-el-family/) or reach out to me directly.
 
 ### Can you just use CentOS Stream sources?
 

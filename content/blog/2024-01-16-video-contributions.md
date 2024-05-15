@@ -20,7 +20,7 @@ To address some of the common community questions that we are getting, we are ex
 
 ## Want to get involved?
 
-If you have any burning questions about AlmaLinux, let us know [on the forums](https://almalinux.discourse.group/t/faq-q-a-video-questions/3445)! And if you are interested in sharing your AlmaLinux knowledge and want to flex your public speaking chops, we're looking for community members to feature in the Q&A videos. You can drop a message in the [~marketing](https://chat.almalinux.org/almalinux/channels/marketing) channel letting us know you're interested.
+If you have any burning questions about AlmaLinux, let us know [on the forums](https://forums.almalinux.org/t/faq-q-a-video-questions/3445)! And if you are interested in sharing your AlmaLinux knowledge and want to flex your public speaking chops, we're looking for community members to feature in the Q&A videos. You can drop a message in the [~marketing](https://chat.almalinux.org/almalinux/channels/marketing) channel letting us know you're interested.
 
 If you would like to be more active in the AlmaLinux community but this isn't the right fit, there are lots of other ways to get involved too!
 
