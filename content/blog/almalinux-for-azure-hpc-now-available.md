@@ -19,6 +19,6 @@ You can now take advantage of Azure's leading edge H-series CPU and N-series GPU
 
 The image includes a suite of the most popular HPC tools and libraries pre-installed including the NVIDIA/Mellanox OFED drivers, InfiniBand-based MPI Libraries such as HPC-X and OpenMPI, Communication runtimes Libfabric and OpenUCX, AMD BLIS, FFTW and FLAME libraries, Intel oneAPI Math Kernel Library, and a host of other domain-specific libraries and utilities.
 
-[Join us](https://chat.almalinux.org/). Our team is always on the lookout for more contributors. Report any bugs you may see on the [Bug Tracker](https://bugs.almalinux.org/). Join the [AlmaLinux Community Chat](https://chat.almalinux.org/) or our [HPC Forum](https://almalinux.discourse.group/c/sigs/hpc/31) if you need any help, post a question, or even if you just want to hang out. Reach us on [Reddit](https://reddit.com/r/almalinux) and on [Twitter](https://twitter.com/almalinux).
+[Join us](https://chat.almalinux.org/). Our team is always on the lookout for more contributors. Report any bugs you may see on the [Bug Tracker](https://bugs.almalinux.org/). Join the [AlmaLinux Community Chat](https://chat.almalinux.org/) or our [HPC Forum](https://forums.almalinux.org/c/sigs/hpc/31) if you need any help, post a question, or even if you just want to hang out. Reach us on [Reddit](https://reddit.com/r/almalinux) and on [Twitter](https://twitter.com/almalinux).
 
 --Happy Hacking

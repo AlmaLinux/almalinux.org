@@ -35,4 +35,4 @@ Come say hi, take a look at the latest from AlmaLinux, and learn how you can get
 
 ## AlmaLinux Online
 
-Can't make it to one of these events (or just don't want to wait)? Come hang out in the [Chat](https://chat.almalinux.org), [AlmaLinux Forums](https://almalinux.discourse.group/), [Mailing Lists](https://lists.almalinux.org/mailman3/lists/), or chat with us in realtime. (Need an account? [Learn more about AlmaLinux accounts and Single Sign-On (SSO)](https://almalinux.org/blog/almalinux-accounts-launch/).)
+Can't make it to one of these events (or just don't want to wait)? Come hang out in the [Chat](https://chat.almalinux.org), [AlmaLinux Forums](https://forums.almalinux.org/), [Mailing Lists](https://lists.almalinux.org/mailman3/lists/), or chat with us in realtime. (Need an account? [Learn more about AlmaLinux accounts and Single Sign-On (SSO)](https://almalinux.org/blog/almalinux-accounts-launch/).)

@@ -33,7 +33,7 @@ You can read more about this release by checking out the [Release Notes](https:/
 
 Test, test, test. Your feedback is what helps make great production releases.
 
-Please report any bugs you may see on the [Bug Tracker](https://bugs.almalinux.org/). Also, pop into the [AlmaLinux Community Chat](https://chat.almalinux.org/) and join our Testing Channel, post a question on our [8.7 Beta Forum](https://almalinux.discourse.group/c/devel/8-7-beta/29), on our AlmaLinux Community on [Reddit](https://reddit.com/r/almalinux) or catch us on [Twitter](https://twitter.com/almalinux).
+Please report any bugs you may see on the [Bug Tracker](https://bugs.almalinux.org/). Also, pop into the [AlmaLinux Community Chat](https://chat.almalinux.org/) and join our Testing Channel, post a question on our [8.7 Beta Forum](https://forums.almalinux.org/c/devel/8-7-beta/29), on our AlmaLinux Community on [Reddit](https://reddit.com/r/almalinux) or catch us on [Twitter](https://twitter.com/almalinux).
 
 Please enjoy this Beta release, let us know what you think and stay tuned for more updates and announcements coming soon.
 

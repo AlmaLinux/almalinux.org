@@ -49,12 +49,12 @@ With AlmaLinux 9.4 we have also differentiated ourselves in another way. Our com
 
 For a complete list of hardware support for which was added in this release, see the  [Extended hardware support](https://wiki.almalinux.org/release-notes/9.4-beta.html#extended-hardware-support) section.
   
-While this list is quite comprehensive, we also want to hear more from a wider base of users! If you use older hardware, does this list cover everything you need it to? If not, please share more here on the AlmaLinux Forums: [Re-adding support for older hardware](https://almalinux.discourse.group/t/re-adding-support-for-older-hardware/3851)
+While this list is quite comprehensive, we also want to hear more from a wider base of users! If you use older hardware, does this list cover everything you need it to? If not, please share more here on the AlmaLinux Forums: [Re-adding support for older hardware](https://forums.almalinux.org/t/re-adding-support-for-older-hardware/3851)
 
 ## What you can do to help?
 
 Your input into testing and feedback is crucial and essential for successful production releases. 
-Please, report any bugs you may see on the [Bug Tracker](https://bugs.almalinux.org/). Also, pop into the [AlmaLinux Community Chat](https://chat.almalinux.org) and join our Testing Channel, post a question on our [9.4 Beta Forum](https://almalinux.discourse.group/c/devel/9-4-beta/29), on our AlmaLinux Community on [Reddit](https://reddit.com/r/almalinux) or catch us on [Twitter](https://twitter.com/almalinux). 
+Please, report any bugs you may see on the [Bug Tracker](https://bugs.almalinux.org/). Also, pop into the [AlmaLinux Community Chat](https://chat.almalinux.org) and join our Testing Channel, post a question on our [9.4 Beta Forum](https://forums.almalinux.org/c/devel/9-4-beta/29), on our AlmaLinux Community on [Reddit](https://reddit.com/r/almalinux) or catch us on [Twitter](https://twitter.com/almalinux). 
 
 Enjoy this Beta release, let us know what you think and stay tuned. We expect the production release of AlmaLinux OS 9.4 to follow the production release of RHEL 9.4 by about a week, and RHEL 9.4 is currently anticipated sometime in mid-May.
 

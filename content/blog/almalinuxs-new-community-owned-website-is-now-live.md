@@ -32,6 +32,6 @@ We are looking to localize the AlmaLinux website into more languages. If you wan
 
 You can also join us on our [AlmaLinux Community Chat](https://chat.almalinux.org/), sponsored by our good friends at Mattermost. Start chatting to get involved in the AlmaLinux project, to ask for help, or just to meet fellow community members. 
 
-Also feel free to send us your Pull Requests on [GitHub](https://github.com/almalinux), and to report any bugs that you might stumble upon on the [Bug Tracker](https://bugs.almalinux.org/). You can also ask a question on our [8.4 Arm Forum](https://almalinux.discourse.group/c/devel/8-4-arm/24) or post something on our AlmaLinux Community on [Reddit](https://reddit.com/r/almalinux).
+Also feel free to send us your Pull Requests on [GitHub](https://github.com/almalinux), and to report any bugs that you might stumble upon on the [Bug Tracker](https://bugs.almalinux.org/). You can also ask a question on our [8.4 Arm Forum](https://forums.almalinux.org/c/devel/8-4-arm/24) or post something on our AlmaLinux Community on [Reddit](https://reddit.com/r/almalinux).
 
 We look forward to seeing you there!

@@ -23,7 +23,7 @@ You can read more about it by checking out the [Release Notes](https://wiki.alma
 
 ## Wanna help? Join the Community!
 
-AlmaLinux is more than just software, there's a whole community of dedicated people making the magic happen. You can help. We want your feedback. Join us on our [AlmaLinux Community Chat](https://chat.almalinux.org/), sponsored by our good friends at Mattermost, to get involved, ask for help or just meet fellow community members. Send us your Pull Requests on [GitHub](https://github.com/almalinux). Report any bugs that you might stumble upon on the Bug Tracker. You can also ask a question on our [8.4 Arm Beta Forum](https://almalinux.discourse.group/c/devel/8-4-arm-beta/22) or post something on our [AlmaLinux Community on Reddit](https://reddit.com/r/almalinux).
+AlmaLinux is more than just software, there's a whole community of dedicated people making the magic happen. You can help. We want your feedback. Join us on our [AlmaLinux Community Chat](https://chat.almalinux.org/), sponsored by our good friends at Mattermost, to get involved, ask for help or just meet fellow community members. Send us your Pull Requests on [GitHub](https://github.com/almalinux). Report any bugs that you might stumble upon on the Bug Tracker. You can also ask a question on our [8.4 Arm Beta Forum](https://forums.almalinux.org/c/devel/8-4-arm-beta/22) or post something on our [AlmaLinux Community on Reddit](https://reddit.com/r/almalinux).
 
 ## A Very Special Thank You to Our Sponsors and Supporters.
 

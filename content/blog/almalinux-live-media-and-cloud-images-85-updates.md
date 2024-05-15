@@ -44,4 +44,4 @@ Cheers to everyone! 9 is right around the corner...
 
 ## How to help and contribute
 
-All your contributions, feedback and bug reports help us improve AlmaLinux. Please join us on the [AlmaLinux Community Chat](https://chat.almalinux.org/) and [SIG/LiveMedia](https://chat.almalinux.org/almalinux/channels/siglivemedia) channel for any help, assistance, or discuss anything. Reach out to us on [Twitter](https://twitter.com/almalinux), [Reddit](https://reddit.com/r/almalinux) and The [AlmaLinux Live Media Forum](https://almalinux.discourse.group/c/sigs/live-media/26).
+All your contributions, feedback and bug reports help us improve AlmaLinux. Please join us on the [AlmaLinux Community Chat](https://chat.almalinux.org/) and [SIG/LiveMedia](https://chat.almalinux.org/almalinux/channels/siglivemedia) channel for any help, assistance, or discuss anything. Reach out to us on [Twitter](https://twitter.com/almalinux), [Reddit](https://reddit.com/r/almalinux) and The [AlmaLinux Live Media Forum](https://forums.almalinux.org/c/sigs/live-media/26).
