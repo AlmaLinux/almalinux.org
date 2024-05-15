@@ -69,7 +69,7 @@ Have you jumped on Mastodon yet? Follow us! [@almalinux@fosstodon.org](https://f
 
 ## Pitch In
 
-Join us in the [AlmaLinux Community Chat](https://chat.almalinux.org) to get any assistance you need and help others. You can also post a question on our [9.3 Forum](https://almalinux.discourse.group/c/devel/36-category/36), on our AlmaLinux Community on [Reddit](https://reddit.com/r/almalinux) or catch us on [Twitter](https://twitter.com/almalinux).
+Join us in the [AlmaLinux Community Chat](https://chat.almalinux.org) to get any assistance you need and help others. You can also post a question on our [9.3 Forum](https://forums.almalinux.org/c/devel/36-category/36), on our AlmaLinux Community on [Reddit](https://reddit.com/r/almalinux) or catch us on [Twitter](https://twitter.com/almalinux).
 
 Please report any bugs you may see on the [Bug Tracker](https://bugs.almalinux.org/). 
 

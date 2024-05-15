@@ -29,7 +29,7 @@ AlmaLinux Day: Germany will kick off with a keynote where we will talk about the
 
 Next, the AlmaLinux OS Architect and Release Engineering Lead, Andrew Lukoshko, will present a session focusing on how we make the most stable, secure, and predictable RHEL-compatible Linux distribution around.
 
-It's also been a few years [since our last board AMA](https://www.youtube.com/watch?v=xS54wRKoUQk), so we thought we'd include one at ALDG. Some of the AlmaLinux board members will discuss a bit about their ideas for the future of AlmaLinux and about why they are involved, but I'd love to also be able to include questions from our community! If you have a question [add it to this thread on the forums](https://almalinux.discourse.group/t/almalinux-day-germany-board-panel-questions/3658), and I'll try to include as many as I can!
+It's also been a few years [since our last board AMA](https://www.youtube.com/watch?v=xS54wRKoUQk), so we thought we'd include one at ALDG. Some of the AlmaLinux board members will discuss a bit about their ideas for the future of AlmaLinux and about why they are involved, but I'd love to also be able to include questions from our community! If you have a question [add it to this thread on the forums](https://forums.almalinux.org/t/almalinux-day-germany-board-panel-questions/3658), and I'll try to include as many as I can!
 
 ## Get some swag
 
@@ -41,7 +41,7 @@ Attendees who [register by March 1st](https://eventyay.com/e/c9789850) will get 
 
 If you can't make it to ALDG, don't worry! The sessions will be recorded and will be posted to our Youtube channel as soon as we can get the video edited and published. If you want to be the first to know when they're live, or just stay up to date on all of our other news,pick your favorite place to follow us:
 
-* [forum](https://almalinux.discourse.group/)
+* [forum](https://forums.almalinux.org/)
 * [r/AlmaLinux](https://www.reddit.com/r/AlmaLinux/)
 * [X(Twitter)](https://twitter.com/AlmaLinux)
 * [Mastodon](https://fosstodon.org/@almalinux/)
