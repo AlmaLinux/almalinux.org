@@ -5,7 +5,7 @@ author:
  name: "Cody Robertson"
  bio: "CTO, HawkHost"
  image: /users/cody.jpeg
-date: '2024-05-20'
+date: '2024-05-21'
 images:
   - /blog-images/2024/alesco.png
 post:
@@ -13,15 +13,11 @@ post:
     image: /blog-images/2024/alesco.png
 ---
 
-Introducing ALESCo: The AlmaLinux Engineering Steering Committee
-================================================================
-
 It's hard to believe that the first AlmaLinux stable release was over three years ago, but what a ride it's been! In those three years, we've grown from a small group of interested hobbyists and professionals to a fully formed organization, 501(c)(6) registered, with contributors of all types from every stretch of the globe. To say we're proud of the progress we've seen and how the Linux community has adopted us would be an understatement, and with that support comes a responsibility to ensure AlmaLinux is as technically proficient and responsible as it is valuable to the Linux community.
 
 To that end, we're happy to announce the AlmaLinux Engineering Steering Committee, or ALESCo. 
 
-Defining ALESCo
----------------
+## Defining ALESCo
 
 The ALESCo mission statement does a very good job of defining its goals:
 
@@ -29,8 +25,7 @@ The AlmaLinux Engineering Steering Committee (ALESCo) is dedicated to guiding th
 
 In short, ALESCo is a group of engineers heavily involved in using and developing AlmaLinux, formed into a committee that will generally guide the technical progression and growth of AlmaLinux as an operating system. 
 
-Why should you care?
---------------------
+## Why should you care?
 
 When we were surprised by Red Hat's change last year, we were given a new freedom that we have been very happy to take advantage of. Due to the sudden nature of that change, though, the discussions around where to deviate from RHEL and what changes we might want to make have been had in a relatively closed way. ALESCo allows us to correct that. 
 
@@ -38,8 +33,7 @@ ALESCo is responsible for reviewing suggestions from the community, inviting fee
 
 For example, after receiving feedback from our community and sponsors and discussing the technical merits, we recently released AlmaLinux 9.4 with [extended hardware support](https://wiki.almalinux.org/release-notes/9.4.html#extended-hardware-support). In the future, a decision like this will be proposed, discussed, and voted on publicly to determine if it would benefit AlmaLinux OS and its users while ensuring the community has a way to be part of the process along the way.
 
-The Committee
--------------
+## The Committee
 
 The AlmaLinux OS Foundation board appointed the initial committee members, but the rest of the management of the members will be done by the committee itself.  If you've been active in the AlmaLinux community, you've likely seen these names around already:
 
@@ -52,8 +46,7 @@ The AlmaLinux OS Foundation board appointed the initial committee members, but t
 
 Keep your eyes out for our announcements around how we will manage membership in the future, if you want to get involved!
 
-Can I help?
------------
+## Can I help?
 
 As will always be the case with AlmaLinux, if you want to help, we're happy to have you! ALESCo is new, and anything new will have room for improvement. The immediate way to help us is by making sure you provide feedback on all of the things we're discussing (enable notifications on the repo, join the chat channel, etc). If you want to be more involved, or want some more information about what this is all about, please reach out to us.
 
@@ -61,8 +54,7 @@ Over the coming months we'll also be working to expand the number of people on A
 
 For now, the best way to get involved is to [join the mattermost channel](https://chat.almalinux.org/almalinux/channels/alesco). 
 
-Acknowledgments <3 
--------------------
+## Acknowledgments <3
 
 A big thanks to everyone who helped, but especially Jonathan, benny, Brian, Simon, Daniel, Andrew, and Alex for their help throughout this process. We've leaned on them heavily for their experience and knowledge in helping us get ALESCo off the ground and a contributing party to the AlmaLinux foundation.
 
