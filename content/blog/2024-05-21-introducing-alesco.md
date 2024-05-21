@@ -3,7 +3,7 @@ title: "Introducing ALESCo: The AlmaLinux Engineering Steering Committee"
 type: blog
 author: 
  name: "Cody Robertson"
- bio: "CTO, HawkHost"
+ bio: "CTO, Hawk Host"
  image: /users/cody.jpeg
 date: '2024-05-21'
 images:
