@@ -37,7 +37,7 @@ For example, after receiving feedback from our community and sponsors and discus
 
 The AlmaLinux OS Foundation board appointed the initial committee members, but the rest of the management of the members will be done by the committee itself.  If you've been active in the AlmaLinux community, you've likely seen these names around already:
 
-* Andrew Lukoshko - AlmaLinux Architect, CloudLinux
+* Andrew Lukoshko - AlmaLinux Lead Architect, CloudLinux
 * Ben Thomas - Principal Research Infrastructure Developer, University College London
 * Cody Robertson - CTO, Hawk Host
 * Elkhan Mammadli - Cloud Engineer, CloudLinux
