@@ -604,7 +604,6 @@
    "The AlmaLinux Engineering Steering Committee": "The AlmaLinux Engineering Steering Committee",
    "Join the conversation": "Join the conversation",
    "Members of ALESCo": "Members of ALESCo",
-   "AlmaLinux Engineer": "AlmaLinux Engineer",
    "Principal Research Infrastructure Developer": "Principal Research Infrastructure Developer",
    "CTO": "CTO",
    "Cloud Engineer": "Cloud Engineer",
@@ -619,5 +618,6 @@
    "Release Management": "Release Management",
    "SIG support": "SIG support",
    "Follow us, join us, or find more information at the links below": "Follow us, join us, or find more information at the links below",
-   "ALESCo": "ALESCo"
+   "ALESCo": "ALESCo",
+   "AlmaLinux Lead Architect": "AlmaLinux Lead Architect"
 }
