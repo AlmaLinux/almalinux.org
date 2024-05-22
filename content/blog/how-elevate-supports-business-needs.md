@@ -119,7 +119,7 @@ GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
 GRUB_DEFAULT=saved
 GRUB_DISABLE_SUBMENU=true
 #GRUB_TERMINAL_OUTPUT="console"
-GRUB_CMDLINE_LINUX=< put the output of cat /proc/cmdline here! >
+GRUB_CMDLINE_LINUX="< put the output of cat /proc/cmdline here! >"
 GRUB_DISABLE_RECOVERY="true"
 GRUB_THEME="/boot/grub2/themes/system/theme.txt"
 ```
@@ -146,7 +146,7 @@ da build all
 da build doMigrateToSystemCurl
 ```
 
-Something to keep in mind is in general on CentOS 6 you're running older software versions, as you must for example update MySQL too from 5.6 to 5.7 in the process, you will run into changed or removed configuration parameters,
+Something to keep in mind is in general on CentOS 6 you're running older software versions, as you must for example update MySQL too from 5.6 to 8.0 in the process, you will run into changed or removed configuration parameters,
 change or comment as needed in /etc/my.cnf to get you running again.
 
 In short you want to check at least the following parameters before building all packages.
@@ -158,6 +158,7 @@ phpX_mode=php-fpm # as mod_php is deprecated
 
 # Within /etc/my.cnf disable deprecated parameters like:
 thread_concurrency=8
+query_cache_size=32M
 ```
 
 ### Test, test and... test.
