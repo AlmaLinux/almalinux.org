@@ -74,6 +74,7 @@ or even simpler, move it to a seperate disk, for which the steps are as follows:
 # add it to the boot order in your hypervisor of choice
 
 # create a new partition on the new disk with fdisk /dev/sdb as primary and type Linux
+# be sure to use a starting point for the partition a bit away from the first sector, otherwise there is not enough space left for grub2 once you get to AlmaLinux 8, for example cylinder 64 or sector 2049
 
 # reload the partitions and create a ext4 filesystem on the new partition
 partx -v -a /dev/sdb
