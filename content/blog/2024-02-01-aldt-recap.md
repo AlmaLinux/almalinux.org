@@ -25,7 +25,7 @@ language: english with translations to Japanese
 
 We kicked off the day with me presenting a bit about how AlmaLinux got started and what we’ve been up to since then, to make sure that everyone attending had the same base understanding to start with. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Hxwhw6Q6ITc?si=0DhpLH-gcq6gH88h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="max-width: 100%;"></iframe>
+{{< youtube id="Hxwhw6Q6ITc" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="YouTube video player" >}}
 
 ### The Real Backstory of the Enterprise Linux Community 
 <em>Igor Seletskiy - CEO @ Tuxcare Inc.</em><br />
@@ -33,7 +33,7 @@ language: english with translations to Japanese
 
 Igor Seletskiy followed me and took us through the history of enterprise linux starting all the way back in 1993, and discussed the love that he has for the enterprise linux ecosystem.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hii46o6Vnw0?si=UxoZzme5kXJrOkDB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="max-width: 100%"></iframe>
+{{< youtube id="hii46o6Vnw0" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="YouTube video player" >}}
 
 ### AlmaLinux Community Activities in Japan 
 <em>Yohei Suzuki - Cybertrust Japan</em><br />
@@ -41,7 +41,7 @@ language: Japanese
 
 Yohei Suzuki wrapped up our keynotes by sharing the efforts that he and our partners at Cybertrust have been helping us with in Japan.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/W7wfkk4rGMw?si=raMNLPHRG_pyi1oy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="max-width: 100%"></iframe>
+{{< youtube id="W7wfkk4rGMw" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="YouTube video player" >}}
 
 ### Building AlmaLinux OS 
 <em>Andrew Lukoshko - AlmaLinux OS Architect @ CloudLinux</em><br />
@@ -49,7 +49,7 @@ language: english with translations to Japanese
 
 Andrew Lukushko kicked off one of our technical tracks discussing how we go about building AlmaLinux OS in detail. He covered everything from how we decide where to get our code, to how we build our images.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GVIt_7kpUiw?si=e00R2z_ZFG-U3se3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="max-width: 100%"></iframe>
+{{< youtube id="GVIt_7kpUiw" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="YouTube video player" >}}
 
 ### The Evolution of SBOMs in AlmaLinux 
 <em>Matthias Kruk - AlmaLinux and MIRACLE LINUX Developer @ Cybertrust Japan</em><br />
@@ -57,23 +57,22 @@ language: Japanese
 
 Matthias Kruk has been working on our SBOM support for quite a while, and he covered a lot of the history and where the community might take the implementation next.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RJRKqY64xCo?si=-rSSgAXyYsxyzZrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="max-width: 100%"></iframe>
-
+{{< youtube id="RJRKqY64xCo" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="YouTube video player" >}}
 
 ### The Forefront of AlmaLinux on ARM: AlmaLinux 9 on the HPE ProLiant RL300 Gen11 Server
 <em>Masazumi Koga - OpenSource/Linux Technology Evangelist @ Hewlett Packard Japan, G.K.</em><br />
 
 Masazumi Koga presents for us the use of AlmaLinux on an HPE server, and showcases the ease with which he is able to install and configure AlmaLinux for the use case. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AcOl-AdyRoM?si=AkbrArvH8pJ5IP0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="max-width: 100%"></iframe>
+{{< youtube id="AcOl-AdyRoM" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="YouTube video player" >}}
 
 ### Seamless Migration: Transitioning from CentOS 7 to AlmaLinux
 <em>Kimiyoshi Ohno - OSS Laboratory general manager @ DesigNET Inc.</em><br />
 language: Japanese
 
-Kimiyoshi Ohno's presentation takes us through the entire process of moving to AlmaLinux, including a discussion of why you should choose AlmaLinux and case studies of the transition. 
+Kimiyoshi Ohno's presentation takes us through the entire process of moving to AlmaLinux, including a discussion of why you should choose AlmaLinux and case studies of the transition.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AEA8losuKsA?si=RVl7s3uwZaY-HlZH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="max-width: 100%"></iframe>
+{{< youtube id="AEA8losuKsA" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="YouTube video player" >}}
 
 ## Up Next: AlmaLinux Day: Germany
 
@@ -92,7 +91,7 @@ In case you aren't already familiar with CloudFest, this is their description:
 
 > The world’s largest cloud industry event is ready to once again take over a spectacular European amusement park to facilitate new partnerships, deep knowledge sharing, and the best parties the industry has ever seen. We do this because we love technology, we love people, and we’re excited for the possibilities that emerge when brilliant human beings connect.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8D04ftA6o0U?si=DCw1zFkqxsnNOksh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="max-width: 100%"></iframe>
+{{< youtube id="8D04ftA6o0U" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="YouTube video player" >}}
 
 ## Even more events this year!
 
