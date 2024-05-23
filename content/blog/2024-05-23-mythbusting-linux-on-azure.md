@@ -1,5 +1,5 @@
 ---
-title: "Sponsor meetup: Mythbusting Linux and Migrating CentOS 7 on Microsoft Azure"
+title: "Sponsor meetup: Migrating from CentOS 7 and Mythbusting Linux on Microsoft Azure"
 type: blog
 author: 
  name: "benny Vasquez"
@@ -9,7 +9,7 @@ date: '2024-05-23'
 images:
   - /blog-images/2024/azurewebinar.png
 post:
-    title: "Sponsor meetup: Mythbusting Linux and Migrating CentOS 7 on Microsoft Azure"
+    title: "Sponsor meetup: Migrating from CentOS 7 and Mythbusting Linux on Microsoft Azure"
     image: /blog-images/2024/azurewebinar.png
 ---
 
