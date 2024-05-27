@@ -77,10 +77,11 @@ The following device drivers were modified to re-add PCI IDs for hardware disabl
 * The following device drivers were modified to re-add PCI IDs for hardware disabled in upstream:
     * **aacraid** -  Dell PERC2, 2/Si, 3/Si, 3/Di, Adaptec Advanced Raid Products, HP NetRAID-4M, IBM ServeRAID & ICP SCSI 
     * **be2iscsi** - Emulex OneConnect Open-iSCSI for BladeEngine 2 and 3 adapters 
+    * **be2net** - Emulex BladeEngine 2 and 3 adapters
     * **hpsa** - HP Smart Array Controller 
     * **lpfc** - Emulex LightPulse Fibre Channel SCSI 
     * **megaraid_sas** - Broadcom MegaRAID SAS 
-    * **mlx4_core** - Mellanox Gen2 and ConnectX-2 adapters 
+    * **mlx4_core** - Mellanox Gen2 and ConnectX-2 adapters
     * **mpt3sas** - LSI MPT Fusion SAS 3.0 
     * **mptsas** - Fusion MPT SAS Host 
     * **qla2xxx** - QLogic Fibre Channel HBA 
