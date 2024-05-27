@@ -3,7 +3,7 @@ title: "General Availability of AlmaLinux 8.10 Stable!"
 type: blog
 author:
  name: "Eduard Abdullin"
- bio: "The Release and Automation Engineer."
+ bio: "Release and Automation Engineer."
  image: /users/eduard-abdullin.jpg
 date: '2024-05-28'
 images:
