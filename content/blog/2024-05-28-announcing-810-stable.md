@@ -18,8 +18,6 @@ post:
 
 Hello Community! The AlmaLinux OS Foundation is announcing the general availability of [AlmaLinux OS 8.10](https://mirrors.almalinux.org/isos.html) codenamed "Cerulean Leopard"!
 
-![14](https://hackmd.io/_uploads/B1ZxT6NXR.png)
-
 Installation ISOs are available on the mirrors now for all 4 architectures:
 * [Intel/AMD (x86_64)](https://mirrors.almalinux.org/isos/x86_64/8.10.html)
 * [ARM64 (aarch64)](https://mirrors.almalinux.org/isos/aarch64/8.10.html)
