@@ -16,7 +16,7 @@ post:
 
 To address some of the common community questions that we are getting, we are excited to share that we will be creating short Q&A videos that will be shared on some of our most common outreach platforms. You may have seen the first of these videos shared on our channels in November, which was a short conversation between Andrew and I.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DNMnajmyLaA?si=8zE5H90evplzV8-t" title="AlmaLinux Binary Compatibility Q & A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{{< youtube id="DNMnajmyLaA" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="YouTube video player" >}}
 
 ## Want to get involved?
 

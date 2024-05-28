@@ -34,7 +34,7 @@ The opening keynote for AlmaLinux Day: Germany shows us where AlmaLinux came fro
 * Jonas Trüstedt - Senior Orcharhino Architect, ATIX AG
 * Tristan Theroux - IT Infrastructure & Security Director, SHED
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/P9pO0fPGVeo?si=P1rxAe4LWHywXQq2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{< youtube id="P9pO0fPGVeo" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="YouTube video player" >}}
 
 language: English
 
@@ -54,7 +54,7 @@ Finding our footing without using Red Hat Enterprise Linux has been an exciting 
 
 #### Speaker: Andrew Lukoshko - Release Engineering Lead, AlmaLinux
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aMvI5E9-LYI?si=O0bGPgYavKHagx1b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{< youtube id="aMvI5E9-LYI" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="YouTube video player" >}}
 
 language: English
 
@@ -82,7 +82,7 @@ In this panel, we get to hear from some of the board members about things that t
 * Jesse Asklund - Chief Experience Officer, WebPros
 * Alex Iribarren - Leader Of Cloud IAAS And Linux Platform Engineering Teams, CERN
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PP3OPvmUwTs?si=47Kuq4JxpfzlXkSC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{< youtube id="PP3OPvmUwTs" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="YouTube video player" >}}
 
 language: English
 
