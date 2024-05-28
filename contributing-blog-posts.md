@@ -54,7 +54,28 @@ post:
 **The meat of your post**
 
 - Below the --- of the metadata block, you should place the content of your blog post. This content should be in markdown format, and any images you want to include in your post can be added to `./static/blog-images/` and will serve from `/blog-images/`.
-- Before submitting your PR, please test that your content loads correctly by building the site locally with the command `hugo serve`
+- Before submitting your PR, please test that your content loads correctly by building the site locally with the command `hugo server`
+- Adding YouTube embeds:\
+  To emebed YouTube videos we suggest you use the [YouTube shortcode](https://gohugo.io/content-management/shortcodes/#youtube) supplied by Hugo and modified by our contributors to include height and width customization with better mobile support, here is an overview of how to use it:
+  - **YouTube ID** - The youtube ID can be allocated from the video link, for example in this video `https://www.youtube.com/watch?v=dQw4w9WgXcQ`, the ID is `dQw4w9WgXcQ`. (the value of "v" is the video ID)
+  - `allowFullScreen=true` - Whether the video can activate full screen mode.
+  - `autoplay=false` - Whether to automatically play the video. Forces mute to be true.
+  - `class` - The class attribute of the wrapping div element. Specifying removes style attributes from the iframe and its wrapping div.
+  - `controls=true` - Whether to display the video controls.
+  - `end` - The time, in seconds from the video start, when the player should stop playing.
+  - `id` - The video id. Optional if provided as the first positional argument.
+  - `loading=eager` - The loading attribute of the iframe.
+  - `loop=false` - Whether to indefinitely repeat the video. Ignores start and end after the first play.
+  - `mute=false` - Whether to mute the video. Always true when autoplay is true.
+  - `start` - The time, in seconds from the video start, when the player should start playing.
+  - `title` - The title attribute of the iframe element. Defaults to "YouTube video".
+  - `width` - The width of the video, specified in px, %, vw, em, rem, cm, in, mm, pt, or pc.
+  - `height` - The height of the video, specified in px, %, vh, em, rem, cm, in, mm, pt, or pc.
+
+  For example:
+  ```html
+  {{< youtube id="Video ID" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="I love AlmaLinux" >}}
+  ```
 
 
 ### Some notes about content
