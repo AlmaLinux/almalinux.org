@@ -52,7 +52,7 @@ ELevate is really good at identifying (potential) issues which you must resolve 
 One that bothered us the most was that the /boot partition is almost always in need of more space,
 while in more recent installations it was a matter of cleaning up old kernels, in our CentOS 6 servers that really wasn't happening as most servers had a 128Mb /boot partition.
 
-So I had to move the /boot partition to a new partition which was bigger. While ELevate is a great tool to help deprecate those last CentOS 6 servers, it still might be cleaner to do it from scratch someday.
+So I had to move the /boot partition to a new partition which was bigger, because resizing the root partition to make space for the previous partition requires downtime. While ELevate is a great tool to help deprecate those last CentOS 6 servers, it still might be cleaner to do it from scratch someday.
 
 While moving the partition is quite an easy way, it can be quite dirty if you put it directly behind your data partition. You might want to consider just expanding the current /boot partition itself, or even simpler, move it to a seperate disk, for which the steps are as follows:
 
