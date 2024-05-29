@@ -7,10 +7,10 @@ author:
  image: /users/ddernederlanden.jpg
 date: '2024-05-22'
 images:
-  - /blog-images/2024/2024-04-23-centos6-to-centos7.png
+  - /blog-images/2024/how-elevate-supports-business-needs.png
 post:
     title: "How ELevate supports business needs"
-    image: /blog-images/2024/2024-04-23-centos6-to-centos7.png
+    image: /blog-images/2024/how-elevate-supports-business-needs.png
 ---
 
 # How Elevate supports business needs
@@ -157,6 +157,6 @@ Overall, AlmaLinux offers us a stable platform, which is exactly what we want an
 
 The fact that they are able to patch CVE's themselves now as they see fit and even share their own [Errata](https://errata.almalinux.org/) is awesome!
 
-ELevate helps us keep servers up-to-date and secure for another decade, while providing the least impact for our customers. In the end is what counts and makes us and our customers really happy.
+ELevate helps us keep servers up-to-date and secure for another decade, while providing the least impact for our customers, in the end this is what counts and makes us and our customers really happy.
 
 If you have any questions after reading the above story feel free to contact me. The easiest way is via [AlmaLinux Chat](https://chat.almalinux.org). Thanks for reading!
