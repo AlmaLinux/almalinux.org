@@ -18,7 +18,7 @@ post:
 
 --
 
-Hi, my name is Simon, you may have seen me around the [forum](https://almalinux.discourse.group/u/sej7278/), generally giving advice about kickstart (one of my favourite technologies). I also help write the [CIS benchmarks](https://www.cisecurity.org/benchmark/almalinuxos_linux) for AlmaLinux. In this post I'm going to talk about my day job at CloudLinux, which for the last nine months or so has focused on getting AlmaLinux OS 9 FIPS 140-3 validated.
+Hi, my name is Simon, you may have seen me around the [forum](https://forums.almalinux.org/u/sej7278/), generally giving advice about kickstart (one of my favourite technologies). I also help write the [CIS benchmarks](https://www.cisecurity.org/benchmark/almalinuxos_linux) for AlmaLinux. In this post I'm going to talk about my day job at CloudLinux, which for the last nine months or so has focused on getting AlmaLinux OS 9 FIPS 140-3 validated.
 
 ## So what is FIPS?
 

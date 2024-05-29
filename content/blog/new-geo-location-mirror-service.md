@@ -25,4 +25,4 @@ You can help test it out. Add the following record in /etc/hosts on your server:
 
 Now `dnf` will get the ten nearest mirrors from https://mirrors.almalinux.org/mirrorlist/8/
 
-Please discuss any feedback on the [AlmaLinux Community Chat](https://chat.almalinux.org/), the [AlmaLinux Forums](https://almalinux.discourse.group/t/new-geo-location-mirror-service/279) or on [Reddit](https://www.reddit.com/r/AlmaLinux/comments/nvhk2e/new_geolocation_mirror_service/).
+Please discuss any feedback on the [AlmaLinux Community Chat](https://chat.almalinux.org/), the [AlmaLinux Forums](https://forums.almalinux.org/t/new-geo-location-mirror-service/279) or on [Reddit](https://www.reddit.com/r/AlmaLinux/comments/nvhk2e/new_geolocation_mirror_service/).

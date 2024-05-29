@@ -16,11 +16,11 @@ post:
 
 To address some of the common community questions that we are getting, we are excited to share that we will be creating short Q&A videos that will be shared on some of our most common outreach platforms. You may have seen the first of these videos shared on our channels in November, which was a short conversation between Andrew and I.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DNMnajmyLaA?si=8zE5H90evplzV8-t" title="AlmaLinux Binary Compatibility Q & A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{{< youtube id="DNMnajmyLaA" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="YouTube video player" >}}
 
 ## Want to get involved?
 
-If you have any burning questions about AlmaLinux, let us know [on the forums](https://almalinux.discourse.group/t/faq-q-a-video-questions/3445)! And if you are interested in sharing your AlmaLinux knowledge and want to flex your public speaking chops, we're looking for community members to feature in the Q&A videos. You can drop a message in the [~marketing](https://chat.almalinux.org/almalinux/channels/marketing) channel letting us know you're interested.
+If you have any burning questions about AlmaLinux, let us know [on the forums](https://forums.almalinux.org/t/faq-q-a-video-questions/3445)! And if you are interested in sharing your AlmaLinux knowledge and want to flex your public speaking chops, we're looking for community members to feature in the Q&A videos. You can drop a message in the [~marketing](https://chat.almalinux.org/almalinux/channels/marketing) channel letting us know you're interested.
 
 If you would like to be more active in the AlmaLinux community but this isn't the right fit, there are lots of other ways to get involved too!
 

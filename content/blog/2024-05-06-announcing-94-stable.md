@@ -34,7 +34,7 @@ Torrents are available as well at:
 
 Matching release and software versions with Red Hat Enterprise Linux(RHEL), AlmaLinux builds from the same sources as RHEL, promises complete compatibility with RHEL, and does so from freely available open source code. This makes it the only choice for anyone looking for a truly open source Enterprise Linux. If you are looking for a deeper undertanding of how AlmaLinux is built, watch this 23 minute video of our Lead Architect explaining in detail at [AlmaLinux Day: Germany](https://almalinux.org/almalinux-day-germany-2024/), earlier this year.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aMvI5E9-LYI?si=8x_HvLo-aSIo5zpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{< youtube id="aMvI5E9-LYI" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="YouTube video player" >}}
 
 ## ISOs, Live Images, Cloud and Containers
 
@@ -85,11 +85,11 @@ The following device drivers were modified to re-add PCI IDs for hardware disabl
 
 For a complete list of hardware support for which was added in this release, see the  [Extended hardware support](https://wiki.almalinux.org/release-notes/9.4.html#extended-hardware-support) section in the 9.4 release notes.
   
-While this list is quite comprehensive, we also welcome feedback from all of our users! If you use older hardware, does this list cover everything you need it to? If not, please share more here on the AlmaLinux Forums: [Re-adding support for older hardware](https://almalinux.discourse.group/t/re-adding-support-for-older-hardware/3851).
+While this list is quite comprehensive, we also welcome feedback from all of our users! If you use older hardware, does this list cover everything you need it to? If not, please share more here on the AlmaLinux Forums: [Re-adding support for older hardware](https://forums.almalinux.org/t/re-adding-support-for-older-hardware/3851).
 
 ## Pitch In
 
-Join us in the [AlmaLinux Community Chat](https://chat.almalinux.org) to get any assistance you need and help others. You can also post a question on our [9.4 Forum](https://almalinux.discourse.group/c/devel/9-stable/36), on our AlmaLinux Community on [Reddit](https://reddit.com/r/almalinux), catch us on [Twitter/X](https://twitter.com/almalinux) and follow us on Mastodon [@almalinux@fosstodon.org](https://fosstodon.org/@almalinux)
+Join us in the [AlmaLinux Community Chat](https://chat.almalinux.org) to get any assistance you need and help others. You can also post a question on our [9.4 Forum](https://forums.almalinux.org/c/devel/9-stable/36), on our AlmaLinux Community on [Reddit](https://reddit.com/r/almalinux), catch us on [Twitter/X](https://twitter.com/almalinux) and follow us on Mastodon [@almalinux@fosstodon.org](https://fosstodon.org/@almalinux)
 
 Please report any bugs you may see on the [Bug Tracker](https://bugs.almalinux.org/). 
 
