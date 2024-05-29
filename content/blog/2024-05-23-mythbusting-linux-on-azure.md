@@ -13,6 +13,11 @@ post:
     image: /blog-images/2024/azurewebinar.png
 ---
 
+Update to add: If you missed this chat, you can watch the recording on our [YouTube channel](https://www.youtube.com/watch?v=3LsPn7xOn34), and see the full deck used: [Migrating from CentOS 7 and Mythbusting Linux on Microsoft Azure](/files/2024/azure_meetup_deck.pdf)
+
+{{< youtube id="3LsPn7xOn34" width="55%" height="35%" autoplay="false" controls="true" mute="false" title="Migrating from CentOS 7 and Mythbusting Linux on Microsoft Azure" >}}
+
+-----
 I'm excited to be hosting a meetup (co-hosted with Microsoft Azure) alongside Claus Wieser from the Azure Linux team at Microsoft! 
 
 Date/Time: Tuesday 28 May 2024, 11:00 → 11:40 America/New_York
