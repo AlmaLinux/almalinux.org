@@ -34,7 +34,7 @@ The opening keynote for AlmaLinux Day: Germany shows us where AlmaLinux came fro
 * Jonas Trüstedt - Senior Orcharhino Architect, ATIX AG
 * Tristan Theroux - IT Infrastructure & Security Director, SHED
 
-{{< youtube id="P9pO0fPGVeo" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="YouTube video player" >}}
+{{< youtube id="P9pO0fPGVeo" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="AlmaLinux Day Germany 2024 Keynote: The strength of the AlmaLinux Community" >}}
 
 language: English
 
@@ -54,7 +54,7 @@ Finding our footing without using Red Hat Enterprise Linux has been an exciting 
 
 #### Speaker: Andrew Lukoshko - Release Engineering Lead, AlmaLinux
 
-{{< youtube id="aMvI5E9-LYI" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="YouTube video player" >}}
+{{< youtube id="aMvI5E9-LYI" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="AlmaLinux Day Germany 2024: Building without following" >}}
 
 language: English
 
@@ -82,7 +82,7 @@ In this panel, we get to hear from some of the board members about things that t
 * Jesse Asklund - Chief Experience Officer, WebPros
 * Alex Iribarren - Leader Of Cloud IAAS And Linux Platform Engineering Teams, CERN
 
-{{< youtube id="PP3OPvmUwTs" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="YouTube video player" >}}
+{{< youtube id="PP3OPvmUwTs" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="AlmaLinux Day Germany 2024: Meet the board" >}}
 
 language: English
 

@@ -16,7 +16,7 @@ post:
 
 To address some of the common community questions that we are getting, we are excited to share that we will be creating short Q&A videos that will be shared on some of our most common outreach platforms. You may have seen the first of these videos shared on our channels in November, which was a short conversation between Andrew and I.
 
-{{< youtube id="DNMnajmyLaA" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="YouTube video player" >}}
+{{< youtube id="DNMnajmyLaA" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="AlmaLinux OS Binary/ABI Compatibility with RHEL - Q&A with Andrew Lukoshko, Release Engineering Lead" >}}
 
 ## Want to get involved?
 
