@@ -34,7 +34,7 @@ Torrents are available as well at:
 
 AlmaLinux matches release and software versions with Red Hat Enterprise Linux (RHEL) and builds from the same sources as RHEL, ensuring complete compatibility with RHEL, and does so from freely available open source code. If you are looking for a deeper understanding of how AlmaLinux is built, watch this 23-minute video of our Lead Architect explaining in detail at [AlmaLinux Day: Germany](https://almalinux.org/almalinux-day-germany-2024/), earlier this year:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aMvI5E9-LYI?si=8x_HvLo-aSIo5zpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{< youtube id="aMvI5E9-LYI" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="AlmaLinux Day Germany 2024: Building without following" >}}
 
 ## ISOs, Live Images, Cloud and Containers
 

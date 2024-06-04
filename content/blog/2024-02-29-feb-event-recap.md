@@ -19,7 +19,7 @@ Earlier this month, we had three back-to-back events: CentOS Connect, FOSDEM, an
 
 CentOS Connect is always a great place for us to connect with the folks most invested in one of our favorite upstream projects. We met tons of people and learned a ton! At this year's event our Cloud and Virt Team Lead Elkhan Mammadli was able to share a talk about how we automated testing here at AlmaLinux with openQA and Testinfra. The talk was recorded, so you can watch it yourself!
 
-{{< youtube id="HgZKLs5ItH4" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="YouTube video player" >}}
+{{< youtube id="HgZKLs5ItH4" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="AlmaLinux: How we automated testing without invention the wheel and instead improving it" >}}
 
 You can watch the rest of the amazing sessions on the CentOS Youtube channel. [Here's the link to the full playlist](https://www.youtube.com/watch?v=vwA4mULGiF8&list=PLuRtbOXpVDjA30Q8EQzJBjfl0gCFo8vpK)!
 
