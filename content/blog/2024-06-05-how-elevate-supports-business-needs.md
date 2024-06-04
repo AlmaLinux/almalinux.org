@@ -5,7 +5,7 @@ author:
  name: "David der Nederlanden"
  bio: "Linux Cloud Architect at Bizway"
  image: /users/ddernederlanden.jpg
-date: '2024-05-22'
+date: '2024-06-05'
 images:
   - /blog-images/2024/how-elevate-supports-business-needs.png
 post:
