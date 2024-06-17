@@ -16,7 +16,7 @@ Hello All,
 We've had a number of requests for minimal container images and we are glad to announce that those are now available on:
 
 - Docker Hub: https://hub.docker.com/_/almalinux
-- Quay.io: https://quay.io/repository/almalinux/almalinux
+- Quay.io: https://quay.io/repository/almalinuxorg/almalinux
 
 **Minimal Image**
 

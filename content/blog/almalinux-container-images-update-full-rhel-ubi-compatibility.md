@@ -55,7 +55,7 @@ Container image tag for Minimal (Platform): `almalinux:minimal`
 
 Container image tag for Minimal (UBI alternative): `almalinux/8-minimal`
 
-All images are available at AlmaLinux's [Docker Hub](https://hub.docker.com/_/almalinux) and [quay.io](https://quay.io/repository/almalinux/almalinux).
+All images are available at AlmaLinux's [Docker Hub](https://hub.docker.com/_/almalinux) and [quay.io](https://quay.io/repository/almalinuxorg/almalinux).
 
 We'd also like to welcome AWS' [ECR Container Registry](https://gallery.ecr.aws/?searchTerm=almalinux) Service. All AlmaLinux images will be published there as well in the future. If you're running container-based workloads on [AWS](https://aws.amazon.com/) on either ECS, EKS or anywhere else really, AlmaLinux containers are now available to you locally on AWS.
 
