@@ -579,6 +579,7 @@
    "Learn more about the project": "Learn more about the project",
    "See the full Hackathon agenda": "See the full Hackathon agenda",
    "11:00 am": "11:00 am",
+   "Trusted by": "Trusted by",
    "Secure Boot is a security feature that ensures a system boots only with trusted software, preventing the loading of unauthorized operating systems or software that could potentially compromise the system's integrity.": "Secure Boot is a security feature that ensures a system boots only with trusted software, preventing the loading of unauthorized operating systems or software that could potentially compromise the system's integrity.",
    "AlmaLinux provides Secure Boot support starting with the AlmaLinux 8.4 release.": "AlmaLinux provides Secure Boot support starting with the AlmaLinux 8.4 release.",
    "AlmaLinux shim passes the ": "AlmaLinux shim passes the ",

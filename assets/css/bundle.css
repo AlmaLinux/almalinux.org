@@ -125,6 +125,7 @@ border-bottom-color: #14598a !important;
   font-size: 32px;
 }
 
+/* formatting the underline at the top of the backed by list' */
 .al-page-index .al-index-backed-by h2.border-bottom {
   border-bottom-color: #14598a !important;
 }
@@ -146,7 +147,9 @@ border-bottom-color: #14598a !important;
   height: 100%;
   width: 120px;
 }
-
+.al-page-index .al-index-backed-by .al-backed-by-list {
+    justify-content: center;
+}
 /* formatting the sponsors on the event pages. */ 
 .al-page-index .al-index-sponsors .al-backed-by-list {
   justify-content: center;
@@ -188,6 +191,34 @@ border-bottom-color: #14598a !important;
 .al-commercial-supporter-list {
 	margin-top: 40px;
 }
+
+/* formatting the used by logos on the home page. */ 
+ .al-page-index .al-index-used-by .al-used-by-list {
+  justify-content: space-between;
+  padding: 0;
+}
+.al-page-index .al-index-used-by .al-used-by-list div.col {
+  text-align: center;
+}
+.al-page-index .al-index-used-by .al-used-by-list .al-user-logo-container {
+  height: 100%;
+}
+.al-page-index .al-index-used-by .al-used-by-list .al-user-logo {
+  height: 100%;
+  width: 120px;
+}
+.al-page-index .al-index-used-by h4.border-bottom {
+  border-bottom-color: #14598a !important;
+}
+.al-used-by-list a{
+  margin-top: 3rem !important;
+}
+.al-page-index .al-index-used-by .al-used-by-list {
+    justify-content: center;
+}
+/* end formatting the used by logos on the home page. */ 
+
+
 .al-page-index .al-index-faq {
   background: #0e3b5c;
 }
