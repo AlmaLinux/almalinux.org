@@ -29,6 +29,6 @@ Cybertrust Japan's support is a clear catalyst for this, and we're so grateful!
 
 ## What's Next?
 
-We plan to participate in the Open Source Summit in October, expand meetup group and user group participation, and participate in more open source conferences in Japan, as well as setting up another AlmaLinux Day: Tokyo this year!
+We plan to participate in the [Open Source Summit](https://events.linuxfoundation.org/open-source-summit-japan/) in October, expand meetup group and user group participation, and participate in more open source conferences in Japan, as well as setting up another AlmaLinux Day: Tokyo this year!
 
 We'll also have more sponsorship announcements coming throughout the year with both new and returning sponsors. Those sponsorships will help us continue to meet the goals and needs of our community, and expand the number of ways and places we get to meet our users. If you've been on the fence about joining us as a sponsor, feel free to [reach out to me](mailto:benny@almalinux.org)! I'd love to help you decide if sponsorship is the right move.
