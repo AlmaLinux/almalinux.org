@@ -9,6 +9,9 @@
     .itemAl_02 {
       padding-left: 0px!important;
     }
+    .itemAl_04 {
+    padding-left: 0px!important;
+    }
     .AL {
       word-wrap: break-word;
       display:flex;
@@ -48,15 +51,18 @@
                 {{ i18n "AlmaLinux OS Foundation signs all of its software packages using a GPG signature key, which is verified by default when installing packages via dnf or graphical update tools. If a package is not signed or has an invalid signature, dnf or graphical update tools will warn the user and will refuse to install it." }}<br>
                 {{ i18n "It’s recommended to verify the signature of a package before you install it." }}
               </p>
-              <div class="AL" style="display: flex; justify-content: flex-start;">
+              <div class="AL" style="display: flex; justify-content: space-between;">
                 <div class="itemAl_01" style="display: flex; flex-direction: column;">
                   <h3>AlmaLinux OS 9</h3>
                   <span><b>rsa4096/D36CB86CB86B3716 (2022-01-18):</b></span>
                   <span>AlmaLinux OS 9 &lt;packager@almalinux.org&gt;</span>
                   <span><b>{{ i18n "Location:" }}</b> /etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux-9</span>
-                  <span><b>{{ i18n "Download:" }}</b> <a href="https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux-9">AlmaLinux</a></span>
-                  <span><b>{{ i18n "Download:" }}</b> <a href="https://pgp.mit.edu/pks/lookup?op=index&search=0xD36CB86CB86B3716">pgp.mit.edu</a></span>
-                  <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                  <span><b>{{ i18n "Download:" }}</b> <a
+                      href="https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux-9">AlmaLinux</a></span>
+                  <span><b>{{ i18n "Download:" }}</b> <a
+                      href="https://pgp.mit.edu/pks/lookup?op=index&search=0xD36CB86CB86B3716">pgp.mit.edu</a></span>
+                  <div class="container-locks"
+                    style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
                     <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
                     <div style="display: flex; flex-direction: column;">
                       <p style="margin-left: 10px; font-family: monospace; font-size: 14px; color: #fff;">
@@ -66,36 +72,64 @@
                   </div>
                 </div>
                 <div class="itemAl_02" style="padding-left: 230px; display: flex; flex-direction: column;">
-                  <h3>AlmaLinux OS 8</h3>
+                  <h3>AlmaLinux OS 8 #1</h3>
                   <span><b>rsa4096/488FCF7C3ABB34F8 (2021-01-12):</b></span>
-                  <span>AlmaLinux  &lt;packager@almalinux.org&gt;</span>
+                  <span>AlmaLinux &lt;packager@almalinux.org&gt;</span>
                   <span><b>{{ i18n "Location:" }}</b> /etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux</span>
-                  <span><b>{{ i18n "Download:" }}</b> <a href="https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux">AlmaLinux</a></span>
-                  <span><b>{{ i18n "Download:" }}</b> <a href="https://pgp.mit.edu/pks/lookup?op=index&search=0x488FCF7C3ABB34F8">pgp.mit.edu</a></span>
-                  <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                  <span><b>{{ i18n "Download:" }}</b> <a
+                      href="https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux">AlmaLinux</a></span>
+                  <span><b>{{ i18n "Download:" }}</b> <a
+                      href="https://pgp.mit.edu/pks/lookup?op=index&search=0x488FCF7C3ABB34F8">pgp.mit.edu</a></span>
+                  <div class="container-locks"
+                    style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
                     <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
-                    <div style="display: flex; flex-direction: column;">    
-                      <p style="margin-left: 10px; font-family: monospace; font-size: 14px; color: #fff;">
-                        5E9B 8F56 17B5 066C E920 57C3 488F CF7C 3ABB 34F8
-                      </p>
-                    </div>
+                    <p style="margin-left: 10px; font-family: monospace; font-size: 14px; color: #fff;">
+                      5E9B 8F56 17B5 066C E920 57C3 488F CF7C 3ABB 34F8
+                    </p>
                   </div>
-<br><span><b>rsa4096/2AE81E8ACED7258B (2023-10-10):</b></span>
-                  <span>AlmaLinux OS 8  &lt;packager@almalinux.org&gt;</span>
-                  <span><b>{{ i18n "Location:" }}</b> /etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux</span>
-                  <span><b>{{ i18n "Download:" }}</b> <a href="https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux">AlmaLinux</a></span>
-                  <span><b>{{ i18n "Download:" }}</b> <a href="https://pgp.mit.edu/pks/lookup?op=index&search=0x2AE81E8ACED7258B">pgp.mit.edu</a></span>
-                  <div class="container-locks" style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                </div>
+              </div>
+              <div class="AL" style="display: flex; justify-content: space-between;">
+                 <div class="itemAl_03" style="display: flex; flex-direction: column;">
+                  <h3>ELevate</h3>
+                  <span><b>rsa4096/429785E181B961A5 (2021-08-20):</b></span>
+                  <span>ELevate &lt;packager@almalinux.org&gt;</span>
+                  <span><b>{{ i18n "Location:" }}</b> /etc/pki/rpm-gpg/RPM-GPG-KEY-ELevate</span>
+                  <span><b>{{ i18n "Download:" }}</b> <a
+                    href="https://repo.almalinux.org/elevate/RPM-GPG-KEY-ELevate">AlmaLinux</a></span>
+                  <span><b>{{ i18n "Download:" }}</b> <a
+                    href="https://pgp.mit.edu/pks/lookup?op=index&search=0x429785E181B961A5">pgp.mit.edu</a></span>
+                  <div class="container-locks"
+                    style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
                     <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
-                    <div style="display: flex; flex-direction: column;">    
+                    <div style="display: flex; flex-direction: column;">
                       <p style="margin-left: 10px; font-family: monospace; font-size: 14px; color: #fff;">
-                        BC5E DDCA DF50 2C07 7F15 8288 2AE8 1E8A CED7 258B
+                        74E7 F249 EE69 8A4D ACFB 48C8 4297 85E1 81B9 61A5
                       </p>
                     </div>
                   </div>
                 </div>
+              <div class="itemAl_04" style="padding-left: 20px; display: flex; flex-direction: column;">
+                <h3>AlmaLinux OS 8 #2</h3>
+                <span><b>rsa4096/2AE81E8ACED7258B (2023-10-10):</b></span>
+                <span>AlmaLinux OS 8 &lt;packager@almalinux.org&gt;</span>
+                <span><b>{{ i18n "Location:" }}</b> /etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux</span>
+                <span><b>{{ i18n "Download:" }}</b> <a
+                  href="https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux">AlmaLinux</a></span>
+                <span><b>{{ i18n "Download:" }}</b> <a
+                  href="https://pgp.mit.edu/pks/lookup?op=index&search=0x2AE81E8ACED7258B">pgp.mit.edu</a></span>
+                <div class="container-locks"
+                  style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
+                  <img class="Photo__Lock" style="width: 40px; height: 40px;" src="/images/alma-fingerprint-A.svg" />
+                  <div style="display: flex; flex-direction: column;">
+                    <p style="margin-left: 10px; font-family: monospace; font-size: 14px; color: #fff;">
+                      BC5E DDCA DF50 2C07 7F15 8288 2AE8 1E8A CED7 258B
+                    </p>
+                  </div>
+                </div>
               </div>
-            </section>
+            </div>
+          </section>
           </div>
         </div>
         <div class="SecurityMailingList-container" style="display: flex; flex-direction: column; padding: 40px 20px;">
