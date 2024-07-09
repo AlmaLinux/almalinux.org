@@ -47,8 +47,8 @@ Here are the key steps you need to follow to upgrade your CentOS 7 system to Alm
 * To get started on the upgrade process, an updated system is required to get the latest updates. Don't forget to reboot the system after updating it. 
     **NOTE:** Since the CentOS 7 repositories are now offline you will need to swap to the CentOS vault, or you can use our CentOS 7 mirror that we've setup for use with ELevate:
   ```bash
-  curl -o /etc/yum.repos.d/CentOS-Base.repo https://el7.repo.almalinux.org/centos/CentOS-Base.repo
-  yum upgrade -y
+  sudo curl -o /etc/yum.repos.d/CentOS-Base.repo https://el7.repo.almalinux.org/centos/CentOS-Base.repo
+  sudo yum upgrade -y
   ```
   **Don't forget to reboot!**
 * Next you need to install the *elevate-release* package with the project repo and GPG key:
