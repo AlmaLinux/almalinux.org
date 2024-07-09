@@ -1,0 +1,187 @@
+{{ define "main" }}
+<style>
+  img {
+    max-width: 100%;
+  }
+  #hc-hero {
+    background: #0e3b5c;
+  }
+  #hc-hero .preheading {
+    margin:0;
+  }
+  #hc-hero h1 {
+    font-weight: 800;
+    font-size: 2.3rem;
+  }
+  #hc-hero h2 {
+    text-align: right;
+    font-size: 1.7rem;
+
+  }
+  #hc-hero img {
+    border-radius: 1rem;
+  }
+  #hc-hero .row {
+    align-items: center;
+  }
+  .description {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+
+  }
+  .btn-row {
+    text-align: center;
+  }
+  .btn-row div {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+  .btn-box {
+    width: 100%;
+    background: white;
+    display: block;
+    padding: 0.5rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  .btn-box:hover {
+    text-decoration: none;
+    color: black;
+  }
+  .btn-box i {
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+  .blue {
+    background: #24c2ff;
+  }
+  .green {
+    background: #86da2f;
+  }
+  .yellow {
+    background: #ffcb12;
+  }
+  .red {
+    background: #ff4649;
+  }
+
+  #hc-get {
+
+    margin-bottom: 2rem;
+  }
+#hc-get h2 {
+  text-align: center;
+  border-bottom: 2px solid #13517e;
+  padding-bottom: 0.5rem;
+}
+#hc-get h3 {
+  margin: 0;
+}
+#al-motd {
+  display: none !important;
+}
+.top-header-container {
+  background: #051520;
+}
+.top-header {
+  
+  margin:0 auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: left;
+
+}
+.top-header a {
+  color: #a2bdd7;
+  text-decoration: none;
+}
+/*RESPONSIVE QUERIES */
+  @media(max-width: 991px){
+    #hc-hero h2 {
+      text-align: left;
+    }
+    .m-hide {
+      display: none;
+    }
+  }
+/*END RESPONSIVE QUERIES */
+</style>
+<div class="top-header-container">
+  <div class="top-header container">
+    <i class="bi bi-info-circle-fill"></i> Create an AlmaLinux account and join the HW Certification SIG to review the program. <a href="#">Read More</a>
+  </div>
+</div>
+<section id="hc-hero">
+  <div class="container px-0 al-py-lg">  
+    <div class="row">
+      <div class="col-lg-6">
+        <p class="preheading">AlmaLinux OS Foundation's</p>
+        <h1>Hardware Certification</h1>
+        <h2>— Compatibility you can trust.</h2></h2->
+        <p class="description">The AlmaLinux Hardware Certification Program ensures hardware compatibility and promotes OS adoption through community-led, flexible pathways.  Designed for long-term reliability and performance.</p>
+        <div class="row btn-row">
+          <div class="col-lg-3 col-6">
+            <a class="btn-box blue" href="#"><i class="bi bi-journal-check"></i>Certified</a>
+          </div>
+          <div class="col-lg-3 col-6">
+            <a class="btn-box green" href="#"><i class="bi bi-journal-medical"></i>Certify</a>
+          </div>
+          <div class="col-lg-3 col-6">
+            <a class="btn-box yellow" href="#"><i class="bi bi-headset"></i>Contact</a>
+          </div>
+          <div class="col-lg-3 col-6">
+            <a class="btn-box red" href="#"><i class="bi bi-box-arrow-in-right"></i>Login</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 imgswitch">
+        <img src="https://matt8.com/u/files/2.png">
+        <img src="https://matt8.com/u/files/1.png">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="hc-get">
+  <div class="container px-4 al-py-lg">  
+    <h2> Get AlmaLinux OS HW Certification Suite</h2>
+
+    <div class="row">
+      <div class="lg-4">
+        <i class="bi bi-github h1"></i>
+      </div>
+      <div class="lg-8 ml-3">
+        <h3>GitHub Repository</h3>
+        <a href="https://github.com/AlmaLinux/Hardware-Certification-Suite">https://github.com/AlmaLinux/Hardware-Certification-Suite</a>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  const imgswitchDiv = document.querySelector('.imgswitch'); // Get the div
+const images = imgswitchDiv.querySelectorAll('img'); // Get all images inside the div
+
+let currentImageIndex = 0; 
+
+function switchImage() {
+  images[currentImageIndex].style.display = 'none'; // Hide current image
+  currentImageIndex = (currentImageIndex + 1) % images.length; // Move to the next image (or wrap to 0)
+  images[currentImageIndex].style.display = 'block'; // Show the next image
+}
+
+// Initial setup: Hide all images except the first one
+for (let i = 1; i < images.length; i++) {
+  images[i].style.display = 'none';
+}
+
+// Start the image switching interval
+setInterval(switchImage, 3000); 
+</script>
+{{ end }}
