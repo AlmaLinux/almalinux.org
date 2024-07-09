@@ -781,5 +781,9 @@
     "AlmaLinux Evangelist": "Evangelista de AlmaLinux",
     "AlmaLinux 9.4 and AlmaLinux 8.10 are both stable! Checkout ": "¡AlmaLinux 9.4 y AlmaLinux 8.10 son estables! Verificar ",
     " for more information!": " ¡para más información!",
-    "AlmaLinux OS 8.10 Stable": "AlmaLinux SO 8.10 Estable"
+    "AlmaLinux OS 8.10 Stable": "AlmaLinux SO 8.10 Estable",
+    "processor series": "serie de procesadores",
+    "Motherboard": "Placa base",
+    "tests cover benchmarking of OS features. The result of benchmarking can be found in the PDF linked above.": "cubren la evaluación comparativa de las características del sistema operativo. El resultado de la evaluación comparativa puede consultarse en el PDF enlazado más arriba.",
+    "The conducted tests ensure that AMD EPYC™ 4004 series CPUs and, generally for any servers based on EPYC processors, AlmaLinux OS works properly guaranteeing stability, security, and high performance.": "Las pruebas realizadas aseguran que las CPUs AMD EPYC™ serie 4004 y, en general para cualquier servidor basado en procesadores EPYC, AlmaLinux OS funciona correctamente garantizando estabilidad, seguridad y alto rendimiento."
 }
