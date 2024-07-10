@@ -5,15 +5,15 @@ author:
  name: "Andrew Lukoshko"
  bio: "Release Engineering Lead"
  image: /users/alukoshko.jpg
-date: 2024-07-05
+date: 2024-07-10
 images:
   - /blog-images/2024/2024-07-05-images-updates.png
 post: 
-    title: "Delivering news on both AlmaLinux 9.4 and 8.10 images updates."
+    title: "Delivering news on AlmaLinux 9.4 and 8.10 image updates."
     image: /blog-images/2024/2024-07-05-images-updates.png
 ---
 
-Hey Community! We have been doing a ton of work to automate our image creation, so we don't need to announce our image updates anymore; They come out so close to when we release the new versions that a separate announcement isn't necessary. However, we have heard from some of you that you have come to rely on this announcement, so here it is for AlmaLinux 9.4 and 8.10.
+Hey Community! We have been doing a ton of work to automate our image creation, and have been making some important changes for AlmaLinux 9.4 and 8.10 images. While the image updates come out quickly after version releases now, we still wanted to highlight some improvements and changes we've made. We have also heard from some of you that you have come to rely on this announcement, so here it is for AlmaLinux 9.4 and 8.10.
 
 ## Cloud and Container Images Updates and Changes
 
