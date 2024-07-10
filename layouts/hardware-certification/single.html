@@ -16,7 +16,6 @@
     font-size: 2.3rem;
   }
   #hc-hero h2 {
-    text-align: center;
     font-size: 1.7rem;
 
   }
@@ -76,80 +75,55 @@
   }
 
   #hc-get {
-
     margin-bottom: 2rem;
+    text-align: center;
   }
 #hc-get h2 {
   text-align: center;
   border-bottom: 2px solid #13517e;
   padding-bottom: 0.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 #hc-get h3 {
   margin: 0;
 }
-#al-motd {
-  display: none !important;
+.mixed-text  {
+  line-height:48px;
+  font-size:32px;
 }
-.top-header-container {
-  background: #051520;
+.mixed-text img {
+  display: inline;
 }
-.top-header {
-  
-  margin:0 auto;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  text-align: left;
 
-}
-.top-header a {
-  color: #a2bdd7;
-  text-decoration: none;
-}
-.top-header i {
-  margin-right: 0.4rem;
-}
 /*RESPONSIVE QUERIES */
   @media(max-width: 991px){
-    #hc-hero h2 {
-      text-align: left;
-    }
     .m-hide {
       display: none;
     }
   }
 /*END RESPONSIVE QUERIES */
 </style>
-<div class="top-header-container">
-  <div class="top-header container">
-    <i class="bi bi-info-circle-fill"></i> Create an AlmaLinux account and join the HW Certification SIG to review the program. <a href="#">Read More</a>
-  </div>
-</div>
 <section id="hc-hero">
   <div class="container px-0 al-py-lg">  
     <div class="row">
       <div class="col-lg-6">
         <p class="preheading">AlmaLinux OS Foundation's</p>
         <h1>Hardware Certification</h1>
-        <h2>— Compatibility you can trust.</h2></h2->
+        <h2>Compatibility you can trust.</h2></h2->
         <p class="description">The AlmaLinux Hardware Certification Program ensures hardware compatibility and promotes OS adoption through community-led, flexible pathways.  Designed for long-term reliability and performance.</p>
         <div class="row btn-row">
-          <div class="col-lg-3 col-6">
+          <div class="col-4">
             <a class="btn-box blue" href="#"><i class="bi bi-journal-check"></i>Certified</a>
           </div>
-          <div class="col-lg-3 col-6">
+          <div class="col-4">
             <a class="btn-box green" href="#"><i class="bi bi-journal-medical"></i>Certify</a>
           </div>
-          <div class="col-lg-3 col-6">
+          <div class="col-4">
             <a class="btn-box yellow" href="#"><i class="bi bi-headset"></i>Contact</a>
-          </div>
-          <div class="col-lg-3 col-6">
-            <a class="btn-box red" href="#"><i class="bi bi-box-arrow-in-right"></i>Login</a>
           </div>
         </div>
       </div>
       <div class="col-lg-6 imgswitch">
-        <img src="https://matt8.com/u/files/2.png">
         <img src="https://matt8.com/u/files/1.png">
       </div>
     </div>
@@ -157,9 +131,32 @@
 </section>
 <section id="hc-get">
   <div class="container px-4 al-py-lg">  
-    <h2> Get AlmaLinux OS HW Certification Suite</h2>
+    <h2>Get AlmaLinux OS HW Certification Suite</h2>
 
     <div class="row">
+      <div class="col-lg-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+      <div class="col-lg-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+
+      <div class="col-12 mt-4 mb-4">
+        <h3>This full width div is full width!</h3>
+      </div>
+
+      <div class="col-lg-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+      <div class="col-lg-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+
+      <div class="col-12 mt-4 mb-4 mixed-text">
+        <p>This full width div contains some images <img src="https://placehold.co/32x32"> I'm not sure whether we would be dealing with larger images but if we are we would need to take a different approach. In a case like that we would likely either add bootstrap columns or make it to where the images are floats.  Either way it does have some neat images <img src="https://placehold.co/32x32/orange/green"> so it is a start.  For this example I've set the text size to match the image size and given the paragraph a line-height of TEXT-SIZE = (TEXT-SIZE + TEXT-SIZE*.5)</p>
+      </div>
+    </div>
+    <!--<div class="row">
       <div class="lg-4">
         <i class="bi bi-github h1"></i>
       </div>
@@ -169,25 +166,6 @@
       </div>
     </div>
   </div>
+-->
 </section>
-<script>
-  const imgswitchDiv = document.querySelector('.imgswitch'); // Get the div
-const images = imgswitchDiv.querySelectorAll('img'); // Get all images inside the div
-
-let currentImageIndex = 0; 
-
-function switchImage() {
-  images[currentImageIndex].style.display = 'none'; // Hide current image
-  currentImageIndex = (currentImageIndex + 1) % images.length; // Move to the next image (or wrap to 0)
-  images[currentImageIndex].style.display = 'block'; // Show the next image
-}
-
-// Initial setup: Hide all images except the first one
-for (let i = 1; i < images.length; i++) {
-  images[i].style.display = 'none';
-}
-
-// Start the image switching interval
-setInterval(switchImage, 3000); 
-</script>
 {{ end }}
