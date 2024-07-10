@@ -103,6 +103,11 @@
 .al-page-index .al-index-commercial-support .al-commercial-supporter-list .al-commercial-supporter-logo {
   max-width: 120px;
   width: 100%;
+
+}
+
+.al-commercial-supporter-logo {
+  max-height: 100px !important;
 }
 .al-page-index .al-index-faq {
   background: #0e3b5c;
