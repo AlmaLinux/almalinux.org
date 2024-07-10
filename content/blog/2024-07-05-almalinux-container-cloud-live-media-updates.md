@@ -9,15 +9,15 @@ date: 2024-07-05
 images:
   - /blog-images/2024/2024-07-05-images-updates.png
 post: 
-    title: "AlmaLinux Cloud, Container and Live Media Images Updates"
+    title: "Delivering news on both AlmaLinux 9.4 and 8.10 images updates."
     image: /blog-images/2024/2024-07-05-images-updates.png
 ---
 
-Hey Community! Delivering news on both AlmaLinux 9.4 and 8.10 images updates. 
+Hey Community! We have been doing a ton of work to automate our image creation, so we don't need to announce our image updates anymore; They come out so close to when we release the new versions that a separate announcement isn't necessary. However, we have heard from some of you that you have come to rely on this announcement, so here it is for AlmaLinux 9.4 and 8.10.
 
 ## Cloud and Container Images Updates and Changes
 
-AlmaLinux OS provides a variety of cloud images that are updated to 9.4 and 8.10 versions including: 
+AlmaLinux OS provides a variety of cloud images that have been updated to 9.4 and 8.10 including: 
 * [Amazon AWS](https://wiki.almalinux.org/cloud/AWS.html) 
 * [Generic Cloud](https://wiki.almalinux.org/cloud/Generic-cloud.html)
     * Impacted architectures: **x86_64, AArch64, ppc64le, s390x**. The size of the boot partition (`/boot`) increased from `512 MiB` to `1024 MiB / 1GiB`. This means that three and more kernels can be installed and enables larger initramfs (initial ram file system) and kernel related development.
@@ -31,18 +31,18 @@ Container images have been updated as well.
 * You can get official [Docker](https://hub.docker.com/_/almalinux) images and [OCI Images from Quay.io](https://quay.io/organization/almalinuxorg), and starting with AlmaLinux versions 9.4 and 8.10 you can also get the container images from [GitHub packages](https://github.com/orgs/AlmaLinux/packages).
 * We've updated scripts and workflows to build AlmaLinux container images. They are now based on [GitHub Actions](https://github.com/AlmaLinux/container-images/actions). We welcome contributors and interested ones to the new GitHub repo - [container-images](https://github.com/AlmaLinux/container-images).
 
-If you want to contribute to Cloud or Container images or have any questions, please check with the [Cloud SIG](https://wiki.almalinux.org/sigs/Cloud.html).
+If you want to contribute to Cloud or Container images or have any questions, please join the [Cloud SIG](https://wiki.almalinux.org/sigs/Cloud.html).
 
 ## Live Media Images 
 
 All Live Media images were also updated to versions [AlmaLinux 9.4](https://repo.almalinux.org/almalinux/9/live/x86_64/) and [AlmaLinux 8.10](https://repo.almalinux.org/almalinux/8/live/x86_64) which includes the following variants:
 * GNOME
 * GNOME-Mini
-* KDE - `kdepim-addons` package for additional plugins for KDE PIM applications is added back.
+* KDE - `kdepim-addons` package for additional plugins for KDE PIM applications has been added back.
 * MATE
 * XFCE 
 
-OpenVPN tools for integrating VPN into NetworkManager including desktop specific packages are now pre-installed in all Live Media images. 
+OpenVPN tools for integrating VPN into NetworkManager including desktop-specific packages are now pre-installed in all Live Media images. 
 
 ## More Options 
 
@@ -55,6 +55,6 @@ You can check the [AlmaLinux website](https://almalinux.org/get-almalinux/) for 
 
 ## How to Help and Contribute 
 
-All your contributions, feedback and bug reports help us improve AlmaLinux.
+All your contributions, feedback, and bug reports help us improve AlmaLinux.
 
-Please, check the [Help and Support](https://wiki.almalinux.org/Help-and-Support.html) wiki page, and join us on the [AlmaLinux Community Chat](https://chat.almalinux.org) for any help, assistance, or to discuss anything. Reach out to us on [Reddit](https://reddit.com/r/almalinux), Mastodon at [@almalinux@fosstodon.org](https://fosstodon.org/@almalinux), and follow us on [X (formerly known as twitter)](https://twitter.com/almalinux).
+Please, check the [Help and Support](https://wiki.almalinux.org/Help-and-Support.html) wiki page, and join us on the [AlmaLinux Community Chat](https://chat.almalinux.org) for any help, assistance, or to discuss anything. Reach out to us on [Reddit](https://reddit.com/r/almalinux), Mastodon at [@almalinux@fosstodon.org](https://fosstodon.org/@almalinux), and follow us on [X (formerly known as Twitter)](https://twitter.com/almalinux).
