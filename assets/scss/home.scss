@@ -80,7 +80,7 @@
     }
 
 
-    
+
     .al-community-cta {
       min-width: 120px;
     }
@@ -100,30 +100,30 @@
       border-bottom-color: lighten($al-body-background, 8%) !important;
     }
 
-   
+
     .al-backed-by-list {
       justify-content: space-between;
       padding: 0 !important;
-      
+
       a{
         margin-top: 3rem !important;
-      
+
 
       div.col {
         text-align: center;
       }
-     
+
 
       .al-backer-logo-container {
         height: 100%;
-        
-      
+
+
       }
 
       .al-backer-logo {
         height: 100%;
         width:120px;
-       
+
       }
     }
     }
@@ -134,17 +134,13 @@
       border-bottom-color: lighten($al-body-background, 8%) !important;
     }
 
-    
+
 
     .al-commercial-supporter-list {
       justify-content: center;
 
       div.col {
         text-align: center;
-      }
-
-      .al-commercial-supporter-logo-container {
-        height: 100%;
       }
 
       .al-commercial-supporter-logo {
@@ -215,7 +211,7 @@
   .al-index-press {
     background: #0e3b5c;
 
-   
+
 
     .al-index-press-item {
       margin-bottom: 10px;
@@ -234,7 +230,7 @@
           content: close-quote;
           padding-left: 3px;
         }
- 
+
         &:before,
         &:after {
           font-family: $al-font-family-accent;
