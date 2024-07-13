@@ -186,11 +186,13 @@ border-bottom-color: #14598a !important;
   max-width: 100%;
 }
 .al-commercial-supporter-list {
-	margin-top: 40px;
+  text-align: center;
+  background: #0e3b5c;
 }
 
 .al-commercial-supporter-logo-container {
   background: #082336;
+  text-align: center;
 }
 
 .al-page-index .al-index-faq {
