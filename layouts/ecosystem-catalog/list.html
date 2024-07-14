@@ -120,7 +120,7 @@ function createFilterElements(filters, containerId) {
       filterElement.classList.add('filter');
 
       const filterLabel = document.createElement('summary');
-      filterLabel.textContent = filterName;
+      filterLabel.textContent = filterName.replace(/-/g, ' ');
       filterElement.appendChild(filterLabel);
 
       for (const filterValue in filterValues) {
