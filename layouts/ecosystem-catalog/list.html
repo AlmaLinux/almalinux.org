@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section id="ecosystem-catalog">
+<section id="ecosystem-catalog-listing">
     <div class="row">
         <div class="col-md-3">
             <div id="filter-container"></div>
@@ -11,7 +11,7 @@
 </section>
 
 <style>
-#ecosystem-catalog {
+#ecosystem-catalog-listing {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     background: white;
@@ -72,26 +72,6 @@
 
 </style>
 <script>
-// This function returns a string suitable for being used as an HTML id
-function sanitizeForId(...parts) {
-    const sanitizedParts = parts.map((part) => {
-        if (typeof part === "string") {
-            return part.replace(/[^a-zA-Z0-9-_]/g, "").toLowerCase(); //Sanitize string and lowercase them
-        } else if (typeof part === "number") {
-            return part.toString(); // Convert numbers to strings
-        } else {
-            return ""; // Ignore other types I guess?
-        }
-    });
-
-    const joined = sanitizedParts.join("-"); // Join with hyphens
-
-    // Ensure the ID starts with a letter (important for CSS selectors)
-    if (!/^[a-zA-Z]/.test(joined)) {
-        return "id-" + joined;
-    }
-    return joined;
-}
 
 document.addEventListener("DOMContentLoaded", async function () {
     const pagefind = await import("/pagefind/pagefind.js");
@@ -99,6 +79,29 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     const filters = await pagefind.filters();
 
+
+
+    // This function returns a string suitable for being used as an HTML id
+    function sanitizeForId(...parts) {
+        const sanitizedParts = parts.map((part) => {
+            if (typeof part === "string") {
+                return part.replace(/[^a-zA-Z0-9-_]/g, "").toLowerCase(); //Sanitize string and lowercase them
+            } else if (typeof part === "number") {
+                return part.toString(); // Convert numbers to strings
+            } else {
+                return ""; // Ignore other types I guess?
+            }
+        });
+
+        const joined = sanitizedParts.join("-"); // Join with hyphens
+
+        // Ensure the ID starts with a letter (important for CSS selectors)
+        if (!/^[a-zA-Z]/.test(joined)) {
+            return "id-" + joined;
+        }
+        return joined;
+    }
+    
     // Handles and displays filters
     function createFilterElements(filters, containerId) {
         const filterContainer = document.getElementById(containerId);
@@ -118,6 +121,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         //Blank out the filters
         filterContainer.innerHTML = "";
 
+        //Rebuild the filters
         for (const filterName in filters) {
             const filterValues = filters[filterName];
 
@@ -131,9 +135,11 @@ document.addEventListener("DOMContentLoaded", async function () {
             filterElement.appendChild(filterLabel);
 
             for (const filterValue in filterValues) {
+                //Axe the empty filters
                 if (`${filterValues[filterValue]}` < 1) {
                     continue;
-                } //Axe the empty filters
+                }
+
                 const checkbox = document.createElement("input");
                 checkbox.type = "checkbox";
                 checkbox.id = sanitizeForId(filterName, filterValue);
