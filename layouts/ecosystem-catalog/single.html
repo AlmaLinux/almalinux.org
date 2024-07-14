@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div data-pagefind-body>
+    <span data-pagefind-meta="title">{{ .Params.searchTitle }}</span>
+    <span data-pagefind-meta="excerpt">{{ .Params.searchDesc }}</span>
+    <span data-pagefind-meta="test">test</span>
+    {{ with .Params.es_collection }}
+        {{ range $key, $value := . }}
+            {{ if reflect.IsSlice $value }} {{/* Check if the value is an array */}}
+                {{ range $nestedValue := $value }}
+                    <span data-pagefind-filter="{{ $key }}">{{ $nestedValue }}</span><br>
+                {{ end }}
+            {{ else }} {{/* Otherwise, simple key-value pair */}}
+                <span data-pagefind-filter="{{ $key }}">{{ $value }}</span><br>
+            {{ end }}
+        {{ end }}
+    {{ else }}
+    <p>This item didn't have anything for some reason REMOVE IN PRODUCTION</p>
+    {{ end }}
+    testing
+</div>
+{{end}}
