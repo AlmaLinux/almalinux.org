@@ -29,6 +29,7 @@
         font-size: 1.5rem;
         line-height: 1.5rem;
         font-weight: bold;
+        text-transform: capitalize;
     }
 
     label {
@@ -71,6 +72,7 @@
 }
 
 </style>
+
 <script>
 
 document.addEventListener("DOMContentLoaded", async function () {
@@ -101,7 +103,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
         return joined;
     }
-    
+
     // Handles and displays filters
     function createFilterElements(filters, containerId) {
         const filterContainer = document.getElementById(containerId);
