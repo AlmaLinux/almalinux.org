@@ -1,7 +1,7 @@
 {{ define "main" }}
 <style>
 #ec-hero {
-    margin: 2rem 1rem 2rem 1rem;
+    margin-bottom: 1rem;
     h1 {
         font-size:2rem;
     }
@@ -51,6 +51,10 @@
     p {
         margin: 0;
     }
+}
+
+#ec-overview a{
+    color: #003eaa;
 }
 
 #ec-certification {
@@ -103,6 +107,10 @@
 
     table.certs-table tr:hover td {
         background-color: #f5f5f5; 
+    }
+
+    .certs-table th:nth-child(2) {
+        width:200px;
     }
 
     table.certs-table tr:nth-child(even) td {
@@ -159,7 +167,7 @@
   font-weight: bold;
   flex-wrap: nowrap;
   overflow-x: auto;
-
+  margin-top: 5px;
 }
 
 .breadcrumb-item {
@@ -243,6 +251,15 @@
                     <p class="short-title">{{ . }}</p> 
                 {{ end }}
 
+                {{ with .Params.key_applications }}
+                    <h3>Key Applications</h3>
+                    <ul>
+                        {{ range . }}
+                        <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                {{ end }}
+
                 <div class="collateral">
                     {{ with .Params.system }}
                         <div class="collateral-item">
@@ -286,8 +303,14 @@
             <div class="row">
                 <div class="col-12">
                     <h2>Overview</h2>
-                    {{ range . }} 
+                    {{ range . }}
+                        {{ if eq .key "Certification Inherited From"}}
+                        <p><strong>{{ .key }}: </strong><a href="/ecosystem-catalog/{{ .link }}" alt="">{{ .value }}</a></p>
+                        {{ else if eq .key "Test Logs"}}
+                        <p><strong>{{ .key }}: </strong><a href="https://github.com/AlmaLinux/certification-test-results/tree/master/{{ .link }}/" alt="">{{ .value }}</a></p>
+                        {{ else }}
                         <p><strong>{{ .key }}: </strong>{{ .value }}</p>
+                        {{ end }}
                     {{ end }}
                 </div>
             </div>
@@ -303,7 +326,7 @@
             <h2>Certifications</h2>
             {{ range . }}
                 <details>
-                <summary><h3>{{ .name }}</h3> {{ with .certified }}{{ if . }}<span class="badge">CERTIFIED</span>{{ end }}{{ end }}<span class="architecture">Architecture: {{ .architecture }}</span></summary>
+                <summary><h3>{{ .name }}</h3> {{ with .certified }}{{ if . }}<span class="badge">{{ end }}{{ if eq . "official" }}CERTIFIED{{ else if eq . "community" }}COMMUNITY VALIDATED{{ end }}{{ if . }}</span>{{ end }}{{ end }}<span class="architecture">Architecture: {{ .architecture }}</span></summary>
 
                 {{ range $categoryKey, $categoryData := . }}
                     {{ if (reflect.IsMap $categoryData) }}  
