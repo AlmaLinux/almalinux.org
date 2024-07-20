@@ -5,8 +5,21 @@
             <div class="col-12">
                 <div class="loading"><img src="/images/icon.svg" alt="AlmaLinux OS icon" height="64">LOADING</div>
             </div>
+            <div class="col-12">
+                <a href="#!" class="filter-btn" id="filter-link">
+                    <i class="bi bi-filter-circle"></i>FILTER RESULTS
+                </a>
+            </div>
             <div class="col-md-3">
-                <div id="filter-container"></div>
+                <div id="filter-container">
+                    <div id="filter-header">
+                        FILTER RESULTS
+                        <div class="filter-close">
+                            <a id="filter-close-btn" href="#"><i class="bi bi-x-circle-fill"></i></a>
+                        </div>
+                    </div>
+                    <div id="filter-results"></div>
+                </div>
             </div>
             <div class="col-md-9">
                 <div id="search-container">
@@ -24,6 +37,28 @@
 </section>
 
 <style>
+.filter-btn {
+    border: 1px solid #24c2ff;
+    display: none;
+    text-align:center;
+    padding:0.75rem;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #24c2ff;
+    font-size: 1.2rem;
+}
+.filter-header {
+    display: none;
+}
+.filter-btn i {
+    margin-right: 0.25rem;
+    font-size: 1.2rem;
+}
+.filter-btn:hover, .filter-btn:visited, .filter-btn:active {
+    text-decoration: none;
+    color: #24c2ff;
+}
 #search-box {
     width: 100%;
     border: none;
@@ -157,6 +192,63 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+#filter-container {
+    display: block;
+}
+#filter-header {
+    display: none;
+}
+@media (max-width: 991px) {
+    .filter summary h2 {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 767px) {
+    #filter-container {
+        display: none;
+        position: fixed;
+        overflow-y: auto; /* Enable vertical scrolling for content that overflows */
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white; /* Optional: Set a background color */
+        z-index: 1020;
+
+        border: 2px solid black;
+    }
+    #filter-results {
+        padding-top: 3.2rem;
+        position: fixed;
+        overflow-y: auto;
+        height: calc(100% - 3.2rem);
+        overflow-y: auto;
+        width: 100%;
+    }
+    #filter-header {
+        position: fixed;
+        top:0;
+        left:0;
+        height:3.2rem;
+        width:100%;
+        z-index:1021;
+        display: block;
+        background:black;
+        color: white;
+        line-height: 3.2rem;
+        padding: 0 1rem 0 1rem;
+        font-weight: 1000;
+    }
+    .filter-btn {
+        display: block;
+    }
+    .filter-close {
+        font-size:2rem;
+        display: inline-block;
+        float: right;
+        line-height:2.7rem;
+    }
+}
 </style>
 
 <script>
@@ -278,7 +370,6 @@ document.addEventListener("DOMContentLoaded", async function () {
             query = null;
         }
 
-        console.log(query);
         // Get active filters from the checkboxes
         const activeFilters = {};
         const checkboxes = document.querySelectorAll(
@@ -315,7 +406,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             // Only Update the filters based on the new search if
             // there are results
             const newFilters = await results.filters;
-            createFilterElements(newFilters, "filter-container");
+            createFilterElements(newFilters, "filter-results");
 
             pages.forEach((result) => {
                 const resultElement = document.createElement("a");
@@ -331,33 +422,62 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     }
 
+
+
+
+
+
+
+    function initializeSearch() {
+        const searchBox = document.getElementById("search-box");
+        const searchButton = document.getElementById("search-button");
+
+        // Event Listener for Enter key press
+        searchBox.addEventListener("keyup", function(event) {
+            if (event.key === "Enter") {
+                searchWithFilters(null, searchBox.value.trim()); // Trim to remove extra spaces
+            }
+        });
+
+        // Event Listener for button click
+        searchButton.addEventListener("click", function() {
+            searchWithFilters(null, searchBox.value.trim());
+        });
+    }
+
+
+
+
+    // Get references to the link and the filter container
+
+
+
+
     //Do a search as soon as the page loads
     searchWithFilters();
+    initializeSearch();
 
+    //filter results link on mobile
+    const filterLink = document.getElementById("filter-link");
+    const filterContainer = document.getElementById("filter-container");
 
-
-
-
-
-function initializeSearch() {
-    const searchBox = document.getElementById("search-box");
-    const searchButton = document.getElementById("search-button");
-
-    // Event Listener for Enter key press
-    searchBox.addEventListener("keyup", function(event) {
-        if (event.key === "Enter") {
-            searchWithFilters(null, searchBox.value.trim()); // Trim to remove extra spaces
+    filterLink.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default link behavior (page jump)
+        // Toggle the display of the filter container
+        if (filterContainer.style.display != "block") {
+            filterContainer.style.display = "block";
+        } else {
+            filterContainer.style.display = "none";
         }
     });
 
-    // Event Listener for button click
-    searchButton.addEventListener("click", function() {
-        searchWithFilters(null, searchBox.value.trim());
+
+    // Filter results close button on mobile
+    const closeFilterButton = document.getElementById("filter-close-btn");
+
+    closeFilterButton.addEventListener("click", function() {
+        filterContainer.style.display = "none"; // Hide the filter container
     });
-}
-initializeSearch();
-
-
 
 });
 
