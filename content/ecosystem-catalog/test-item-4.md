@@ -6,18 +6,18 @@ type: ecosystem-catalog
 date: 2024-07-19T14:56:00-04:00
 
 #Required
-title: "HP Zbook Mobile Workstation HP ZBook Studio 16 inch G11 Mobile Workstation PC"
+title: "HP Zbook Mobile Workstation HP ZBook Studio 23 Work PC"
 
 #Required
 image: "/images/ec/hp-logo.png"
 
 #Required
-shortTitle: "ZBook Studio 16 G11"
+shortTitle: "ZBook Studio 12"
 
 #Required
 provider: "HP Inc."
 
-#Required
+#Optional
 system: "Laptop"
 
 #Optional
@@ -120,8 +120,8 @@ certification_collection:
 
 
 #Begin Search metadata
-searchTitle: "ZBook Studio 16 G11"
-searchDesc: "The innovative ZBook, dual-socket cloud scale server designed to deploy high-performance computing for optimal power efficiency."
+searchTitle: "ZBook Studio 24"
+searchDesc: "The innovative ZBook, is innovative!"
 es_collection: 
   type: ["CPU Collection", "Component"]
   provider: "HP Inc."

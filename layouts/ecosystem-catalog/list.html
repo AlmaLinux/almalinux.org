@@ -1,16 +1,67 @@
 {{ define "main" }}
 <section id="ecosystem-catalog-listing">
-    <div class="row">
-        <div class="col-md-3">
-            <div id="filter-container"></div>
-        </div>
-        <div class="col-md-9">
-            <div id="search-results"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="loading"><img src="/images/icon.svg" alt="AlmaLinux OS icon" height="64">LOADING</div>
+            </div>
+            <div class="col-md-3">
+                <div id="filter-container"></div>
+            </div>
+            <div class="col-md-9">
+                <div id="search-container">
+                    <div class="row">
+                        <div class="col-12 pr">
+                            <input type="text" id="search-box" placeholder="THIS IS A TEST FEATURE" />
+                            <button id="search-button">SEARCH</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="search-results"></div>
+            </div>
         </div>
     </div>
 </section>
 
 <style>
+#search-box {
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+    height: 3rem;
+    margin-bottom:1.5rem;
+    border: 2px solid gray;
+    padding-left: 1rem;
+}
+#search-button {
+    width:25%;
+    height: 3rem;
+    border: 2px solid gray;
+    border-radius: 1rem;
+    position:absolute;
+    right:0;
+    background: #86da2f;
+    color: #222;
+    font-weight: bold;
+}
+
+.pr {
+    margin:0 !important;
+    padding:0 !important;
+}
+#search-container {
+    display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg); 
+    }
+}
+
 #ecosystem-catalog-listing {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -25,11 +76,14 @@
     border-top: 1px solid lightgray;
     padding-top: 0.2rem;
     padding-bottom: 0.4rem;
-    summary {
+    summary, summary h2 {
         font-size: 1.5rem;
         line-height: 1.5rem;
         font-weight: bold;
         text-transform: capitalize;
+    }
+    summary h2 {
+        display: inline-block;
     }
 
     label {
@@ -47,7 +101,19 @@
     }
 
 }
+.loading {
+    margin: 0 auto;
+    font-size: 5rem;
+    color: black;
+    text-align: center;
 
+    img {
+        text-align: center;
+        display: block;
+        margin: 3rem auto 0 auto;
+        animation: spin 2s linear infinite;
+    }
+}
 .search-result, .search-result:hover, .search-result:visited {
     text-decoration: none;
     color: black;
@@ -61,6 +127,7 @@
     border: 1px solid lightgray;
     padding: 1rem;
     margin-top: 0.5rem;
+    border-radius: 1rem;
 }
 
 .search-result:first-of-type {
@@ -70,7 +137,26 @@
 .search-result:hover {
     background: lightgray;
 }
-
+.result-img {
+    max-height: 75px;
+    max-width: 100%;
+    margin:0 auto;
+}
+.img-con {
+    display: flex;
+    align-items: center; 
+}
+.es-details span {
+    font-size: smaller;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.es-details {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 </style>
 
 <script>
@@ -133,7 +219,9 @@ document.addEventListener("DOMContentLoaded", async function () {
             filterElement.classList.add("filter");
 
             const filterLabel = document.createElement("summary");
-            filterLabel.textContent = filterName.replace(/-/g, " ");
+            const filterHeading = document.createElement("h2");
+            filterHeading.textContent = filterName.replace(/-/g, " ");
+            filterLabel.appendChild(filterHeading);
             filterElement.appendChild(filterLabel);
 
             for (const filterValue in filterValues) {
@@ -185,7 +273,12 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
 
     // Search and Display Results Function
-    async function searchWithFilters() {
+    async function searchWithFilters(e = null, query = null) {
+        if (query === '' || typeof query === "undefined" || !query) {
+            query = null;
+        }
+
+        console.log(query);
         // Get active filters from the checkboxes
         const activeFilters = {};
         const checkboxes = document.querySelectorAll(
@@ -199,35 +292,73 @@ document.addEventListener("DOMContentLoaded", async function () {
             }
         });
 
-        const results = await pagefind.search(null, { filters: activeFilters });
+        const results = await pagefind.search(query, { filters: activeFilters });
 
         //Map the search results to make them easier to work with
         const pages = await Promise.all(results.results.map((r) => r.data()));
+        
+        // Axe the loading div if it exists
+        const loadingDiv = document.querySelector('.loading');
+        if (loadingDiv) {
+            loadingDiv.remove();
+        }
+
+        //Show the search box
+        document.getElementById("search-container").style.display = "block";
 
         // Display Search Results in a Div
         const resultsContainer = document.getElementById("search-results"); // Get your results container
+
         resultsContainer.innerHTML = ""; // Clear previous results
         if (pages.length > 0) {
+
+            // Only Update the filters based on the new search if
+            // there are results
+            const newFilters = await results.filters;
+            createFilterElements(newFilters, "filter-container");
+
             pages.forEach((result) => {
-                title = result["meta"].title;
-                image = result["meta"].image;
                 const resultElement = document.createElement("a");
                 resultElement.classList.add("search-result"); // Add a class for styling
                 resultElement.href = result.url;
-                resultElement.innerHTML = `<h3>${result.meta.title}</h3><p>${result.meta.excerpt}</p>`;
+                resultElement.innerHTML = `<div class="row"><div class="col-md-2 col-12 img-con"><img class="result-img" src="${result.meta.image}"></div><div class="col-md-7 col-12"><h3>${result.meta.title}</h3><p>${result.meta.excerpt}</p></div><div class="col-md-3 col-12 es-details"><i class="bi bi-building"></i><span>&nbsp;${result.meta.provider}</span><br><i class="bi bi-hdd-stack"></i><span>&nbsp;${result.meta.system}</span><br><i class="bi bi-calendar"></i><span>&nbsp; ${result.meta.published}</span></div></div>`;
                 resultsContainer.appendChild(resultElement);
             });
         } else {
             resultsContainer.innerHTML = "<p>No results found.</p>";
         }
 
-        // Update the filters based on the new search
-        const newFilters = await results.filters;
-        createFilterElements(newFilters, "filter-container");
+
     }
 
     //Do a search as soon as the page loads
     searchWithFilters();
+
+
+
+
+
+
+function initializeSearch() {
+    const searchBox = document.getElementById("search-box");
+    const searchButton = document.getElementById("search-button");
+
+    // Event Listener for Enter key press
+    searchBox.addEventListener("keyup", function(event) {
+        if (event.key === "Enter") {
+            searchWithFilters(null, searchBox.value.trim()); // Trim to remove extra spaces
+        }
+    });
+
+    // Event Listener for button click
+    searchButton.addEventListener("click", function() {
+        searchWithFilters(null, searchBox.value.trim());
+    });
+}
+initializeSearch();
+
+
+
 });
 
 </script>

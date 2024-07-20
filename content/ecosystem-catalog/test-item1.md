@@ -6,19 +6,19 @@ type: ecosystem-catalog
 date: 2024-07-19T14:56:00-04:00
 
 #Required
-title: "HP Zbook Mobile Workstation HP ZBook Studio 16 inch G11 Mobile Workstation PC"
+title: "Dell Poweredge 8427 82922 8GB Cloud"
 
 #Required
-image: "/images/ec/hp-logo.png"
+image: "/images/ec/dell-logo.png"
 
 #Required
-shortTitle: "ZBook Studio 16 G11"
+shortTitle: "Dell Poweredge 8427"
 
 #Required
-provider: "HP Inc."
+provider: "Dell Inc."
 
-#Required
-system: "Laptop"
+#Optional
+system: "Server"
 
 #Optional
 specsLink: "https://www.google.com"
@@ -121,12 +121,12 @@ certification_collection:
 
 #Begin Search metadata
 searchTitle: "ZBook Studio 16 G11"
-searchDesc: "The innovative ZBook, dual-socket cloud scale server designed to deploy high-performance computing for optimal power efficiency."
+searchDesc: "The innovative Poweredge, is fast.  Real fast.  Safe too, never hurt a fly."
 es_collection: 
   type: ["CPU Collection", "Component"]
-  provider: "HP Inc."
+  provider: "Dell Inc."
   platform: "AlmaLinux"
-  certified-for: "AlmaLinux 9"
+  certified-for: ["AlmaLinux 9", "AlmaLinux 8"]
   architecture: "x64"
   network: "2 Gigabit Ethernet"
   management: "Accelerated GPU Graphics"
