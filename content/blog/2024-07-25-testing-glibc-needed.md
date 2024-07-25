@@ -1,5 +1,5 @@
 ---
-title: "Testers needed: glibc regression in 9.4"
+title: "Testers needed: glibc regression in enterprise Linux 9.4"
 type: blog
 author: 
  name: "Andrew Lukoshko"
