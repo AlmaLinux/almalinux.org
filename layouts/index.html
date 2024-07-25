@@ -44,9 +44,6 @@
 .row > * {
     margin-top: 20px;
 }
-.al-page-index .al-index-backed-by .al-backed-by-list {
-    justify-content: center;
-}
 @media (min-width: 768px) {
     .row-cols-md-6 > * {
         flex: 0 0 auto;
@@ -96,7 +93,34 @@
             </div>
           </div>
         </div>
-
+        <!-- USED BY -->
+		<div class="al-index-used-by al-py-lg" >
+            <div class="container">
+                <h4 class="pb-2 border-bottom">
+                    {{ i18n "Trusted by" }}
+                </h4>
+                <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 g-5 al-used-by-list">
+                            <div class="col d-flex flex-fill align-items-center justify-content-center al-user-logo-container">
+                                <img loading="lazy" src="/usedby/phoronix.svg" alt="Phoronix" class="al-user-logo">
+                            </div>	
+                            <div class="col d-flex flex-fill align-items-center justify-content-center al-user-logo-container">
+                                <img loading="lazy" src="/usedby/akamai.svg" alt="Akamai" class="al-user-logo">
+                            </div>	
+                            <div class="col d-flex flex-fill align-items-center justify-content-center al-user-logo-container">
+                                <img loading="lazy" src="/usedby/arista.svg" alt="Arista" class="al-user-logo">
+                            </div>	
+                            <div class="col d-flex flex-fill align-items-center justify-content-center al-user-logo-container">
+                                <img loading="lazy" src="/usedby/colorodostateuniveristy.svg" alt="Colorado State University" class="al-user-logo">
+                            </div>	
+                            <div class="col d-flex flex-fill align-items-center justify-content-center al-user-logo-container">
+                                <img loading="lazy" src="/usedby/hetzner.png" alt="Hetzner" class="al-user-logo">
+                            </div>	
+                            <div class="col d-flex flex-fill align-items-center justify-content-center al-user-logo-container">
+                                <img loading="lazy" src="/usedby/lacework.svg" alt="Lacework" class="al-user-logo">
+                            </div>	
+				</div><!-- end logo list entry -->
+			</div>
+		</div><!-- end USED BY -->
         <!-- COMMUNITY -->
         <div class="al-index-community-container" style="background: #0f4266!important">
             <div class="container al-py-md">
@@ -335,12 +359,7 @@
                 </div>
             </div>
         </div>
-
-
         <!-- BACKERS -->
-
-
-
         <div class="al-index-backed-by al-py-lg" >
             <div class="container">
                 <h2 class="pb-2 text-center border-bottom">
@@ -569,6 +588,7 @@
                 </h2>
 				<p class="text-center pb-2 mb-5 border-bottom">Minimize your risk while getting the most out of your AlmaLinux systems</p>
 				<!-- to add a row, copy everything from 'start' to 'end' in one of the other rows, and update all of the information appropriately. order-md-last in the class of the image div will display the image right-justified instead of left. -->
+				
 				 <!-- start CyberTrust row -->
                  <div class="row al-commercial-supporter-list">
                      <div class="col-12 col-md-4 al-commercial-supporter-logo-container d-flex flex-fill justify-content-center">
