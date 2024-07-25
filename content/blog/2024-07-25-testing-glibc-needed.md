@@ -9,7 +9,7 @@ date: 2024-07-25
 images:
   - /blog-images/2024/2024-07.glibcblog.png
 post: 
-    title: "Testers needed: glibc regression in AlmaLinux 9.4"
+    title: "Testers needed: glibc regression in enterprise Linux 9.4"
     image: /blog-images/2024/2024-07.glibcblog.png
 ---
 
