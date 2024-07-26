@@ -21,7 +21,7 @@ Recently, the VFX community was faced with a regression in [glibc](https://en.wi
 
 In May, VFX users in the AlmaLinux community were attempting to upgrade their devices to AlmaLinux 9.4 and found that, after the upgrade, SideFX's Houdini software was crashing when performing random operations. It was confirmed that this was true upstream, and was therefore reported correctly there (more details: https://issues.redhat.com/browse/RHEL-39415).
 
-The fix has been available since the end of June, is already in glibc upstream, and has been merged and released (as of today) into CentOS Stream 9, but has not yet been released in RHEL 9.4. This m the VFX community, leaving them (and anyone else using this software and an Enterprise Linux distribution based on RHEL 9) stuck on version 9.3 and not getting security updates. 
+The fix has been available since the end of June, is already in glibc upstream, and has been merged and released (as of today) into CentOS Stream 9, but has not yet been released in RHEL 9.4. This blocks the VFX community, leaving them (and anyone else using this software and an Enterprise Linux distribution based on RHEL 9) stuck on version 9.3 and not getting security updates. 
 
 While this is not a bug we would normally fix before it is merged into RHEL, we see the needs of our community and are strongly considering it. These users remain unpatched for all security and bug updates that are already a part of 9.4, including the recently patched [regreSSHion](https://almalinux.org/blog/2024-07-01-almalinux-9-cve-2024-6387/) bug.
 
