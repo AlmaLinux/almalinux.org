@@ -624,5 +624,7 @@
    "processor series": "processor series",
    "Motherboard": "Motherboard",
    "tests cover benchmarking of OS features. The result of benchmarking can be found in the PDF linked above.": "tests cover benchmarking of OS features. The result of benchmarking can be found in the PDF linked above.",
-   "The conducted tests ensure that AMD EPYC™ 4004 series CPUs and, generally for any servers based on EPYC processors, AlmaLinux OS works properly guaranteeing stability, security, and high performance.": "The conducted tests ensure that AMD EPYC™ 4004 series CPUs and, generally for any servers based on EPYC processors, AlmaLinux OS works properly guaranteeing stability, security, and high performance."
+   "The conducted tests ensure that AMD EPYC™ 4004 series CPUs and, generally for any servers based on EPYC processors, AlmaLinux OS works properly guaranteeing stability, security, and high performance.": "The conducted tests ensure that AMD EPYC™ 4004 series CPUs and, generally for any servers based on EPYC processors, AlmaLinux OS works properly guaranteeing stability, security, and high performance.",
+   "Create an AlmaLinux account and join the HW Certification SIG to review the program.": "Create an AlmaLinux account and join the HW Certification SIG to review the program.",
+   "Read More": "Read More"
 }
