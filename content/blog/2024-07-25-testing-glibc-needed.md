@@ -13,6 +13,19 @@ post:
     image: /blog-images/2024/2024-07.glibcblog.png
 ---
 
+Note: this package moved to stable on August 8th, 2024
+
+If you installed this package for testing, you can revert to the stable version with these steps:
+
+```bash
+dnf remove almalinux-release-testing 
+dnf update 
+```
+
+#############
+<br /><small>original below</small><br />
+#############
+
 # Testers needed: glibc regression in 9.4
 
 Recently, the VFX community was faced with a regression in [glibc](https://en.wikipedia.org/wiki/Glibc) causing instability for very commonly used software in RHEL 9.4 and distributions based on it. The fix has been available upstream but was only released today to CentOS Stream 9. We need your help testing the fix before we consider releasing it ourselves.
@@ -32,7 +45,7 @@ This is a constant source of confusion for people who aren't familiar with the d
 
 ## How do I install the updated packages?
 We encourage users both in the VFX community and in other places to participate in testing the fix by doing the following:
-```
+```bash
 dnf install almalinux-release-testing --refresh
 dnf update glibc*
 ```
