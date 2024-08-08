@@ -64,16 +64,13 @@
 
 <div class="al-body-container">
 
-    <section class="al-page-index">
-        <!-- HERO -->
+<section class="al-page-index">
+<!-- HERO -->
         <div class="al-index-container" style="background: #0e3b5c!important;">
           <div class="container px-0 al-py-lg">
             <div class="row flex-lg-row-reverse align-items-center py-2 py-md-5">
                 <div class="d-none d-lg-block col-10 col-sm-8 col-lg-6">
-
-
-                        <img src="/images/hero.png" class="d-block mx-lg-auto img-fluid" alt="Hero image" width="624" height="430">
-
+					<img src="/images/hero.png" class="d-block mx-lg-auto img-fluid" alt="Hero image" width="624" height="430">
                 </div>
                 <div class="col-lg-6">
                     <h1 class="display-5 fw-bold lh-1 mb-5 mb-md-3">
@@ -101,7 +98,7 @@
           </div>
         </div>
 
-        <!-- COMMUNITY -->
+<!-- COMMUNITY -->
         <div class="al-index-community-container" style="background: #0f4266!important">
             <div class="container al-py-md">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 row-cols-lg-4 g-4 py-2 py-md-5">
@@ -167,7 +164,7 @@
             </div>
         </div>
 
-        <!-- ABOUT SHORT -->
+<!-- ABOUT SHORT -->
         <div class="al-index-about" style="background: #0e3b5c!important;">
             <div class="container al-py-md">
                 <div class="row d-flex align-items-center justify-content-center py-2 py-md-5">
@@ -187,7 +184,7 @@
             </div>
         </div>
 
- <!-- GET ALMALINUX -->
+<!-- GET ALMALINUX -->
          <div id="downloads" class="al-index-community-container" style="background: #0f4266!important">
             <div class="container al-py-lg">
                 <h2 class="pb-2 text-center border-bottom">{{ i18n "Get AlmaLinux OS" }}</h2>
@@ -298,8 +295,7 @@
             </div>
         </div>
 
-
-        <!-- SECURITY -->
+<!-- SECURITY -->
         <div class="al-index-security-container" style="background: #0e3b5c!important;">
             <div class="container al-py-lg" style="padding: 48px 15px;">
                 <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Security</h2>
@@ -340,10 +336,7 @@
             </div>
         </div>
 
-
-        <!-- BACKERS -->
-
-
+<!-- BACKERS -->
 
         <div class="al-index-backed-by al-py-lg" >
             <div class="container">
@@ -529,7 +522,7 @@
             </div>
         </div>
 
-        <!-- FEATURES -->
+<!-- FEATURES -->
         <div class="al-index-feature-container">
             <div class="container al-py-md">
                 <div class="row row-cols-1 row-cols-md-3 pt-2 pt-md-5">
@@ -565,7 +558,7 @@
             </div>
         </div>
 
-        <!-- COMMERCIAL SUPPORT -->
+<!-- COMMERCIAL SUPPORT -->
         <div class="al-index-commercial-support al-py-lg">
             <div class="container">
                 <h2 class="text-center">
@@ -635,8 +628,8 @@
                 </div>
             </div>
         </div>
+<!-- FAQ -->
 
-        <!-- FAQ -->
         <div class="al-index-faq">
             <div class="container al-py-lg">
                 <h2 class="mb-5">
@@ -645,15 +638,11 @@
                 <div class="accordion accordion-flush" id="accordionFAQ">
                     <div class="accordion-item mb-3" >
                        <h2 class="accordion-header" id="flush-heading-1">
-                            <button
-                            class="accordion-button"
-                            type="button"
-
-                            data-toggle="collapse" data-target="#flush-collapse-1" aria-expanded="true" aria-controls="flush-collapse-1">
+                            <button class="accordion-button" type="button" data-toggle="collapse" data-target="#flush-collapse-1" aria-expanded="true" aria-controls="flush-collapse-1">
                                 {{ i18n "Who is AlmaLinux OS for?" }}
                             </button>
                         </h2>
-                        <div id="flush-collapse-1" class="accordion-collapse collapse show" aria-labelledby="flush-heading-1" data-parent="#accordionFAQ" >
+                        <div id="flush-collapse-1" class="accordion-collapse collapse show" aria-labelledby="flush-heading-1" data-parent="#accordionFAQ">
                          <div class="accordion-body">
                              {{ i18n "Individuals and organizations that require an enterprise-grade linux distribution, without the need for a commercial license agreement. AlmaLinux OS is also a perfect replacement for anyone who has historically relied on the CentOS Linux releases to achieve computing objectives, and for whom CentOS Stream is not the right solution." }}
                           </div>
@@ -666,9 +655,9 @@
                                 {{ i18n "What does ABI/binary compatible with RHEL mean?" }}
                             </button>
                         </h2>
-                        <div id="flush-collapse-2" class="accordion-collapse collapse" aria-labelledby="flush-heading-2" data-parent="#accordionFAQ" >
+                        <div id="flush-collapse-2" class="accordion-collapse collapse" aria-labelledby="flush-heading-2" data-parent="#accordionFAQ">
                             <div class="accordion-body">
-                                {{ i18n "In July of 2023, " }} <a href="{{ "blog/future-of-almalinux/" | relLangURL }}">{{ i18n "we announced" }}</a> {{ i18n " that we were shifting our goal from being a downstream rebuild of RHEL to maintaining ABI compatibility with RHEL. For the AlmaLinux team that means that everything from software applications to kernel modules that work on RHEL will work on AlmaLinux, and if they don't we would consider that a bug." }}
+                                {{ i18n "In July of 2023, " }} <a href="{{ "/blog/future-of-almalinux/" | relLangURL }}">{{ i18n "we announced" }}</a> {{ i18n " that we were shifting our goal from being a downstream rebuild of RHEL to maintaining ABI compatibility with RHEL. For the AlmaLinux team that means that everything from software applications to kernel modules that work on RHEL will work on AlmaLinux, and if they don't we would consider that a bug." }}
                             </div>
                         </div>
                     </div>
@@ -681,7 +670,7 @@
                         </h2>
                         <div id="flush-collapse-3" class="accordion-collapse collapse" aria-labelledby="flush-heading-3" data-parent="#accordionFAQ" >
                             <div class="accordion-body">
-                                {{ i18n "AlmaLinux OS 9.2 is FIPS-140 compliant. Read more in this blog post: " }} <a href="{{ "blog/2023-09-19-fips-validation-for-almalinux/" | relLangURL }}">{{ i18n "FIPS Validation for AlmaLinux OS" }}</a>
+                                {{ i18n "AlmaLinux OS 9.2 is FIPS-140 compliant. Read more in this blog post: " }} <a href="{{ "/blog/2023-09-19-fips-validation-for-almalinux/" | relLangURL }}">{{ i18n "FIPS Validation for AlmaLinux OS" }}</a>
                             </div>
                         </div>
                     </div>
@@ -769,26 +758,10 @@
                 </div>
             </div>
         </div>
+		
 
-        <div class="al-index-newsletter">
-            <div class="container al-py-lg">
-                <div class="row">
-                    <div class="col-12 col-md-6 mx-auto">
-                        <h2 class="mb-2">
-                            {{ i18n "Stay updated!" }}
-                        </h2>
-                        <h6 class="mb-4">
-                            {{ i18n "Subscribe to our mailing lists and never miss out on the latest in AlmaLinux OS development!" }}
-                        </h6>
-						<div class="row">
-							<a href="https://lists.almalinux.org/mailman3/lists/?all-lists">{{ i18n "AlmaLinux Mailing lists" }}</a>
-						</div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- PRESS -->
+<!-- PRESS -->
         <div class="al-index-press al-py-lg">
             <div class="container">
                 <h2 class="pb-2 mb-3">
@@ -864,7 +837,8 @@
 
                 </div>
             </div>
-    </div></section>
+		</div>
+</section>
 
 </div>
 
