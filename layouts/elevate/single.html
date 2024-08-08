@@ -1,21 +1,7 @@
 {{ define "main" }}
 <!-- 
-TODO:
-		
-<insert section for this:>
-        {{ i18n "What operating systems does ELevate support?" }}
-                            {{ i18n "Currently, ELevate project supports the following upgrade and migration directions:" }} 
-                            <img src=/images/ELevate.svg class="d-block img-fluid" alt="ELevate scheme CentOS 6 -> CentOS 7, CentOS7 -> AlmaLinux, CentOS Stream, EuroLinux, Oracle, Rocky 8 -> AlmaLinux, CentOS Stream, EuroLinux, Rocky 9" style="padding: 20px 0;">
-                            {{ i18n "* - migration to CentOS Stream 9 is currently in development and will be available later." }} <br>
-                            {{ i18n "** - migration to Oracle Linux 9 is available with the" }}
-                            <a href="https://blogs.oracle.com/linux/post/upgrade-oracle-linux-8-to-oracle-linux-9-using-leapp">Oracle Leapp utility</a> {{ i18n "and will not be supported by ELevate project." }} <br>
-							{{ i18n "Note: If you use cPanel, we recommend using the" }} <a href="https://cpanel.github.io/elevate/">cPanel ELevate</a> {{ i18n "fork." }}
-							
-							
-Insert "where you can see other people talking about ELevate"
-
-
-Add back in the video that Sonia did
+TODO:							
+add new preview image for link previews
 -->   
 <style>
 @media (max-width: 800px){
@@ -109,6 +95,7 @@ Add back in the video that Sonia did
             </div> <!-- end row -->
         </div> <!-- end container -->
 <!-- about -->
+        <div class="al-index-about" style="background: #0e3b5c!important; padding-top: 30px;">
         <div class="container pt-2 elevate-container-wrap">
             <h2>{{ i18n "About" }}</h2>
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-4 py-2 py-md-3">
@@ -146,6 +133,7 @@ Add back in the video that Sonia did
                 </div>
             </div>
         </div>
+	</div>
 <!-- learn more -->
         <div class="container pt-2 elevate-container-wrap al-py-lg">
             <h2>{{ i18n "Learn more" }}</h2>
@@ -169,7 +157,6 @@ Add back in the video that Sonia did
 						<li><a href="https://wiki.almalinux.org/elevate/ELevating-CentOS7-to-AlmaLinux-9.html">{{ i18n "ELevating CentOS 7 to AlmaLinux 9" }}</a></li>
 						<li><a href="https://wiki.almalinux.org/elevate/ELevating-CentOS6-to-CentOS7.html">{{ i18n "ELevating CentOS 6 to CentOS 7" }}</a></li>
 						<li><a href="https://wiki.almalinux.org/elevate/ELevate-offline-guide.html">{{ i18n "ELevating in an Airgapped or Offline environment" }}</a></li>
-						
 					</ul>
 		      </div>
 			</div>
@@ -180,6 +167,28 @@ Add back in the video that Sonia did
 
 				</div>
 		</div>
+<!-- supported OSes -->
+        <div class="container pt-2 elevate-container-wrap al-py-lg">
+            <h2>{{ i18n "Supported Operating Systems" }}</h2>
+ 		   	<div class="row">
+		      <div class="col-lg-6">
+				  <img loading="lazy" class="d-block mx-lg-auto img-fluid" width="624" height="430" src="/images/elevate-white-letters-no-background.png" alt="The migration paths when using ELevate">
+			  </div>
+		      <div class="col-lg-6">
+                            {{ i18n "ELevate supports the following upgrade and migration paths:" }} 
+							<ul>
+								<li>{{ i18n "Upgrade from CentOS 6 to CentOS 7" }}</li>
+								<li>{{ i18n "Upgrade from CentOS 7 to AlmaLinux 8, CentOS Stream 8, Euro Linux 8, Oracle Linux 8, or Rocky Linux 8" }}</li>
+								<li>{{ i18n "Upgrade from Scientific Linux 7 to AlmaLinux 8" }}</li>
+								<li>{{ i18n "Upgrade from 8.x to 9.x within the same distribution" }}</li>
+							</ul>
+                            * {{ i18n "Migration to Oracle Linux 9 is available with the" }}
+                            <a href="https://blogs.oracle.com/linux/post/upgrade-oracle-linux-8-to-oracle-linux-9-using-leapp">Oracle Leapp utility</a> {{ i18n "and will not be supported by ELevate project." }} 
+							<br />
+							* {{ i18n "Note: If you use cPanel, we recommend using the" }} <a href="https://cpanel.github.io/elevate/">cPanel ELevate</a> {{ i18n "fork." }}
+			  </div>
+		  </div>
+  		</div>
 <!-- FAQ -->
         <div class="al-index-faq">
             <div class="container al-py-lg">

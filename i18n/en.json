@@ -280,7 +280,6 @@
    "First join us in the ": "First join us in the ",
    "ELevate has been used to migrate production environments across industries and across the world, but we still advise caution.": "ELevate has been used to migrate production environments across industries and across the world, but we still advise caution.",
    "To avoid any surprises, we highly recommend that you test upgrades scenarios in a virtual machine or sandbox before running a upgrades in production.": "To avoid any surprises, we highly recommend that you test upgrades scenarios in a virtual machine or sandbox before running a upgrades in production.",
-   "Currently, ELevate project supports the following upgrade and migration directions:": "Currently, ELevate project supports the following upgrade and migration directions:",
    "* - migration to CentOS Stream 9 is currently in development and will be available later.": "* - migration to CentOS Stream 9 is currently in development and will be available later.",
    "Note: If you use cPanel, we recommend using the": "Note: If you use cPanel, we recommend using the",
    "fork.": "fork.",
@@ -632,7 +631,6 @@
    "Is ELevate ready for production?": "Is ELevate ready for production?",
    "Will the upgrade be \"in-place\"? Will it require downtime?": "Will the upgrade be \"in-place\"? Will it require downtime?",
    "Yes, and yes! All your data, applications and settings will be kept. Migrations will require your system to reboot twice.": "Yes, and yes! All your data, applications and settings will be kept. Migrations will require your system to reboot twice.",
-   "Subscribe to our newsletter mailing lists and never miss out on the latest in AlmaLinux OS news, and sign up for anything else that meets your interests!": "Subscribe to our newsletter mailing lists and never miss out on the latest in AlmaLinux OS news, and sign up for anything else that meets your interests!",
    "This demo takes you through upgrading in place from CentOS 7 to AlmaLinux 8": "This demo takes you through upgrading in place from CentOS 7 to AlmaLinux 8",
    "Lots of people have shared their experiences and guides for using ELevate to upgrade in place. Take a look at what others think of it!": "Lots of people have shared their experiences and guides for using ELevate to upgrade in place. Take a look at what others think of it!",
    "Upgrade CentOS 7 to AlmaLinux 8 While Keeping SingularityCE Updated ": "Upgrade CentOS 7 to AlmaLinux 8 While Keeping SingularityCE Updated ",
@@ -642,5 +640,13 @@
    "ELevate Quickstart Guide": "ELevate Quickstart Guide",
    "ELevating CentOS 7 to AlmaLinux 9": "ELevating CentOS 7 to AlmaLinux 9",
    "ELevating CentOS 6 to CentOS 7": "ELevating CentOS 6 to CentOS 7",
-   "ELevating in an Airgapped or Offline environment": "ELevating in an Airgapped or Offline environment"
+   "ELevating in an Airgapped or Offline environment": "ELevating in an Airgapped or Offline environment",
+   "Supported Operating Systems": "Supported Operating Systems",
+   "ELevate supports the following upgrade and migration paths:": "ELevate supports the following upgrade and migration paths:",
+   "Upgrade from CentOS 6 to CentOS 7": "Upgrade from CentOS 6 to CentOS 7",
+   "Upgrade from CentOS 7 to AlmaLinux 8, CentOS Stream 8, Euro Linux 8, Oracle Linux 8, or Rocky Linux 8": "Upgrade from CentOS 7 to AlmaLinux 8, CentOS Stream 8, Euro Linux 8, Oracle Linux 8, or Rocky Linux 8",
+   "Upgrade from Scientific Linux 7 to AlmaLinux 8": "Upgrade from Scientific Linux 7 to AlmaLinux 8",
+   "Upgrade from 8.x to 9.x within the same distribution": "Upgrade from 8.x to 9.x within the same distribution",
+   "Migration to Oracle Linux 9 is available with the": "Migration to Oracle Linux 9 is available with the",
+   "Subscribe to our newsletter mailing list and never miss out on the latest in AlmaLinux OS news, and sign up for any other updates on lists.almalinux.org!": "Subscribe to our newsletter mailing list and never miss out on the latest in AlmaLinux OS news, and sign up for any other updates on lists.almalinux.org!"
 }
