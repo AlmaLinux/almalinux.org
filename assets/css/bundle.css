@@ -71,7 +71,7 @@ padding-right: 15px !important;
 .al-page-index .al-hero-cta-tertiary:hover {
   background: #f8c100;
 }
-.al-page-index .al-index-feature-container {
+.al-page-index .al-index-feature-container, .al-commercial-supporter-list {
   background: #0e3b5c;
 }
 .al-page-index .al-index-feature-container .al-index-feature-icon {
@@ -108,9 +108,9 @@ padding-right: 15px !important;
 }
 
 .al-index-community-content-wrap p{
- 
+
   flex: 1;
- 
+
 }
 .al-page-index .al-index-community-container .al-community-cta {
   min-width: 120px;
@@ -131,7 +131,7 @@ border-bottom-color: #14598a !important;
 .al-backed-by-list a{
   margin-top: 3rem !important;
 }
-/* formatting the sponsor logos on the home page. */ 
+/* formatting the sponsor logos on the home page. */
  .al-page-index .al-index-backed-by .al-backed-by-list {
   justify-content: space-between;
   padding: 0;
@@ -147,7 +147,7 @@ border-bottom-color: #14598a !important;
   width: 120px;
 }
 
-/* formatting the sponsors on the event pages. */ 
+/* formatting the sponsors on the event pages. */
 .al-page-index .al-index-sponsors .al-backed-by-list {
   justify-content: center;
   padding: 0;
@@ -168,7 +168,7 @@ border-bottom-color: #14598a !important;
   width: 70px;
 }
 
-/* formatting the commercial support vendors on the index page. */ 
+/* formatting the commercial support vendors on the index page. */
 .al-page-index .al-index-commercial-support p.border-bottom {
   border-bottom-color: #14598a !important;
 }
@@ -178,7 +178,7 @@ border-bottom-color: #14598a !important;
 .al-page-index .al-index-commercial-support .al-commercial-supporter-list div.col {
   text-align: center;
 }
-.al-page-index .al-index-commercial-support .al-commercial-supporter-list .al-commercial-supporter-logo-container {
+.al-page-index .al-index-commercial-support .al-commercial-supporter-list {
   height: 100%;
 }
 .al-page-index .al-index-commercial-support .al-commercial-supporter-list .al-commercial-supporter-logo {
@@ -186,8 +186,15 @@ border-bottom-color: #14598a !important;
   max-width: 100%;
 }
 .al-commercial-supporter-list {
-	margin-top: 40px;
+  text-align: center;
+  background: #0e3b5c;
 }
+
+.al-commercial-supporter-logo-container {
+  background: #082336;
+  text-align: center;
+}
+
 .al-page-index .al-index-faq {
   background: #0e3b5c;
 }
@@ -230,11 +237,11 @@ padding: 0px !important;
   color: #fefefe;
 }
 .itemsOff {
-  height: 36px; 
+  height: 36px;
   margin: 15px 0 15px 0;
 }
 .itemsTr {
-  height: 72px; 
+  height: 72px;
   margin: 15px 0 15px 0;
 }
 .al-page-index .al-index-newsletter a {
@@ -595,7 +602,7 @@ outline: none !important;
 .al-primary-navbar .nav-link.al-download-button:hover {
   color: black !important;
   background: #79cb24;
- 
+
 }
 .al-primary-navbar .nav-link {
   padding-left: 1rem !important;
@@ -932,7 +939,7 @@ pre > code {
 .pagination .disabled {
 
   color: #000 !important;
-  
+
 }
 
 .highlight > pre {
