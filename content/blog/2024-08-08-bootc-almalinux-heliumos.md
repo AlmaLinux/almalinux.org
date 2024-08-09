@@ -79,6 +79,6 @@ With [Anaconda](https://developers.redhat.com/learning/learn:rhel:rhel-image-mod
 
 ## What's next?
 
-HeliumOS development continues, from Nvidia driver support in HeliumOS, to distribution-agnostic tools such as [bootc-gtk](https://codeberg.org/HeliumOS/bootc-gtk). We're hoping for a stable release based on AlmaLinux 10 in 2025. If you have any questions or would like to contact me for other reasons, you can find me in the HeliumOS [Matrix Space](https://matrix.to/#/#heliumos:matrix.org), AlmaLinux [Mattermost Server](https://chat.almalinux.org), or Fedora bootc [Matrix Room](https://matrix.to/#/#bootc:fedoraproject.org).
+Development continues, from Nvidia driver support in HeliumOS, to distribution-agnostic tools such as [bootc-gtk](https://codeberg.org/HeliumOS/bootc-gtk). As a downstream project, HeliumOS is looking forward to a collaborative relationship with AlmaLinux. A stable release of HeliumOS based on AlmaLinux 10 is planned for 2025. If you have any questions or would like to contact me for other reasons, you can find me in the HeliumOS [Matrix Space](https://matrix.to/#/#heliumos:matrix.org), AlmaLinux [Mattermost Server](https://chat.almalinux.org), or Fedora bootc [Matrix Room](https://matrix.to/#/#bootc:fedoraproject.org).
 
 Although only available for Intel/AMD(x86_64) right now, we expect ARM64(AArch4) AlmaLinux bootc images later in 2024.
