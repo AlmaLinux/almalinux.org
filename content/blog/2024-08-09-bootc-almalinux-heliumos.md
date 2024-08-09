@@ -13,7 +13,7 @@ post:
     image: /blog-images/2024/2024-08-09-bootc-almalinux.png
 ---
 
-bootc is a new deployment method that powers [Image mode for RHEL](https://www.redhat.com/en/about/press-releases/red-hat-reimagines-enterprise-linux-ai-future-image-mode-red-hat-enterprise-linux) and [HeliumOS](https://www.heliumos.org/), a new Linux distribution. We are excited to announce that AlmaLinux now offers [bootc images for Intel/AMD(x86_64)](https://quay.io/repository/almalinuxorg/almalinux-bootc?tab=tags).
+bootc is a new deployment method that powers [Image mode for RHEL](https://www.redhat.com/en/about/press-releases/red-hat-reimagines-enterprise-linux-ai-future-image-mode-red-hat-enterprise-linux) and [HeliumOS](https://www.heliumos.org/), a new Linux distribution. We are excited to announce that AlmaLinux now offers [bootc images](https://quay.io/repository/almalinuxorg/almalinux-bootc?tab=tags) for Intel/AMD(x86_64) and ARM64(AArch4).
 
 ## How did this start?
 My goal as developer of HeliumOS is to produce a Linux-based desktop operating system that is user-friendly, stable, and reliable. The first foray towards this goal used a Debian base, however this had some issues:
@@ -80,5 +80,3 @@ With [Anaconda](https://developers.redhat.com/learning/learn:rhel:rhel-image-mod
 ## What's next?
 
 Development continues, from Nvidia driver support in HeliumOS, to distribution-agnostic tools such as [bootc-gtk](https://codeberg.org/HeliumOS/bootc-gtk). As a downstream project, HeliumOS is looking forward to a collaborative relationship with AlmaLinux. A stable release of HeliumOS based on AlmaLinux 10 is planned for 2025. If you have any questions or would like to contact me for other reasons, you can find me in the HeliumOS [Matrix Space](https://matrix.to/#/#heliumos:matrix.org), AlmaLinux [Mattermost Server](https://chat.almalinux.org), or Fedora bootc [Matrix Room](https://matrix.to/#/#bootc:fedoraproject.org).
-
-Although only available for Intel/AMD(x86_64) right now, we expect ARM64(AArch4) AlmaLinux bootc images later in 2024.
