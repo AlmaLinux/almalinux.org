@@ -46,6 +46,39 @@ Atomic operations execute as a single unit. When applied to Linux distributions,
 
 [bootc](https://containers.github.io/bootc/) is a tool that uses bootc-compatible OCI images and OSTree to deploy updates to a Linux system in an atomic fashion. By bundling the Linux kernel and other essential components within an OCI image with the proper SELinux configuration, the image's root file system becomes more suitable for booting. On the deployment system, bootc maps the OCI image to a format compatible with OSTree. OSTree then treats the image as any other OSTree commit. After a reboot, the system automatically reboots into the new update. The bootloader also offers an option to rollback to a previous image. Distributions can use bootc to provide atomic updates with the convenience of existing OCI infrastructure and tooling.
 
+## Using AlmaLinux bootc images
+
+Building a bootc image is very similar to building a typical OCI image. As an example, let's create a bootc image derived from AlmaLinux 9.4 that serves static content using Apache httpd.
+
+```Containerfile
+FROM quay.io/almalinuxorg/almalinux-bootc:9.4
+
+# Install the RPM package and enable the systemd service for httpd:
+RUN dnf install -y httpd
+RUN systemctl enable httpd
+
+# Configure httpd to serve content from the image:
+RUN mv /var/www /usr/share/www
+RUN sed -ie 's,/var/www,/usr/share/www,' /etc/httpd/conf/httpd.conf
+RUN rm -rdf /usr/share/httpd/noindex
+
+# Add "hello world" page to image:
+RUN echo "<h1>Hello world!</h1>" > /usr/share/www/html/index.html
+```
+
+Build the image and push it to the OCI registry of your choice:
+
+```shell
+podman build -t almalinux-httpd .
+
+podman push almalinux-httpd <YOUR REGISTRY HERE>
+```
+
+With [Anaconda](https://developers.redhat.com/learning/learn:rhel:rhel-image-mode-kickstart/resource/resources:prerequisites-and-step-step-process-2), `bootc install to-existing-root`, or
+[bootc-image-builder](https://github.com/osbuild/bootc-image-builder), you can deploy the image to a bare-metal system or virtual machine. The deployed system will automatically check the OCI registry for updates to the image and reboot if needed. This image can also be run as a container using `podman run -p 8000:80 localhost/almalinux-httpd`.
+
 ## What's next?
 
-HeliumOS development continues, from Nvidia Driver support in HeliumOS, to distribution-agnostic tools such as [bootc-gtk](https://codeberg.org/HeliumOS/bootc-gtk). We're hoping for a stable release based on AlmaLinux 10 in 2025. If you have any questions or would like to contact me for other reasons, you can find me in the HeliumOS [Matrix Space](https://matrix.to/#/#heliumos:matrix.org), AlmaLinux [Mattermost Server](https://chat.almalinux.org), or Fedora bootc [Matrix Room](https://matrix.to/#/#bootc:fedoraproject.org).
+HeliumOS development continues, from Nvidia driver support in HeliumOS, to distribution-agnostic tools such as [bootc-gtk](https://codeberg.org/HeliumOS/bootc-gtk). We're hoping for a stable release based on AlmaLinux 10 in 2025. If you have any questions or would like to contact me for other reasons, you can find me in the HeliumOS [Matrix Space](https://matrix.to/#/#heliumos:matrix.org), AlmaLinux [Mattermost Server](https://chat.almalinux.org), or Fedora bootc [Matrix Room](https://matrix.to/#/#bootc:fedoraproject.org).
+
+Although only available for Intel/AMD(x86_64) right now, we expect ARM64(AArch4) AlmaLinux bootc images later in 2024.
