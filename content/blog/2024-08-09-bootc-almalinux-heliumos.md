@@ -50,7 +50,7 @@ Atomic operations execute as a single unit. When applied to Linux distributions,
 
 Building a bootc image is very similar to building a typical OCI image. As an example, let's create a bootc image derived from AlmaLinux 9.4 that serves static content using Apache httpd.
 
-```Containerfile
+```Dockerfile
 FROM quay.io/almalinuxorg/almalinux-bootc:9.4
 
 # Install the RPM package and enable the systemd service for httpd:
