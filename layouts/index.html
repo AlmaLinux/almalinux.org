@@ -1,6 +1,27 @@
 
 {{ define "main" }}
 <style>
+@media (max-width: 1199px){
+    .col-text {
+        height: 45%!important;
+        width: 100%!important;
+    }
+    .col-button {
+        height: 30%!important;
+        width: 100%!important;
+    }
+}    
+@media(max-width: 991px){
+    .container_support {
+        flex-direction: column!important;
+        align-items: center;
+        width: 100%!important;
+    }
+    .row_support {
+        width: 100%!important;
+        padding-bottom: 20px!important;
+    }
+}
 @media (max-width: 800px){
     .display-5 {
         font-size: calc(1.425rem + 2.1vw) !important;
@@ -26,9 +47,6 @@
         width: 100%!important;
     }
 
-    .al-commercial-supporter-list {
-        width: 33% !important;
-    }
 }
 @media (min-width: 800px) {
     .display-5 {
@@ -101,7 +119,7 @@
 <!-- COMMUNITY -->
         <div class="al-index-community-container" style="background: #0f4266!important">
             <div class="container al-py-md">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 row-cols-lg-4 g-4 py-2 py-md-5">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 g-4 py-2 py-md-5">
                     <div class="col d-flex align-items-stretch">
                         <i class="bi bi-github al-index-community-icon"></i>
                         <div class="al-index-community-content-wrap">
@@ -565,64 +583,65 @@
                     {{ i18n "Commercial Support" }}
                 </h2>
 				<p class="text-center pb-2 mb-5">Minimize your risk while getting the most out of your AlmaLinux systems</p>
+                <div class="container_support" style="display: flex;">
+                    <div class="row_support" style="width: 33%; padding: 0 15px">
+                        <div class="col-image my-0" style="height: 25%; padding: 0; background: #082336;">
+                            <div class="p-3 al-commercial-supporter-logo-container rounded-top">
+                                <a href="https://www.cybertrust.co.jp/almalinux/">
+                                    <img loading="lazy" src="/brands/cybertrust-japan.svg" alt="CyberTrust Japan" style="max-height: 70px !important;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-text my-0" style="height: 40%; padding: 0;">
+                            <div class="p-3 al-commercial-supporter-list">
+                                <p>Cybertrust Japan is a provider of a comprehensive security certification services to various public and private entities globally, and offers comprehensive support for AlmaLinux users. Have also produced MIRACLE LINUX for nearly 20 years.</p>
+                            </div>
+                        </div>
+                        <div class="col-button my-0" style="height: 35%; padding: 0;">
+                            <div class="p-3 al-commercial-supporter-list rounded-bottom">
+                                <a class="btn btn-primary btn-block p-2 rounded text-decoration-none" href="https://www.cybertrust.co.jp/almalinux/">Get support</a>
+                            </div>
+                        </div>                
+                    </div>
 
-                <div class="row">
-                    <div class="col my-0">
-                        <div class="p-3 al-commercial-supporter-logo-container rounded-top">
-                            <a href="https://www.cybertrust.co.jp/almalinux/">
-                                <img loading="lazy" src="/brands/cybertrust-japan.svg" alt="CyberTrust Japan" style="max-height: 70px !important;">
-                            </a>
+                    <div class="row_support" style="width: 33%; padding: 0 15px">
+                        <div class="col-image my-0" style="height: 25%; padding: 0; background: #082336;">
+                            <div class="p-3 al-commercial-supporter-logo-container rounded-top">
+                                <a href="https://tuxcare.com/almalinux-enterprise-support/">
+                                    <img loading="lazy" src="/brands/tuxcare_withtagline.svg" alt="Tuxcare" class="al-commercial-supporter-logo"  style="max-height: 70px !important;">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col my-0">
-                        <div class="p-3 al-commercial-supporter-logo-container rounded-top">
-                            <a href="https://tuxcare.com/almalinux-enterprise-support/">
-                                <img loading="lazy" src="/brands/tuxcare_withtagline.svg" alt="Tuxcare" class="al-commercial-supporter-logo"  style="max-height: 70px !important;">
-                            </a>
+                        <div class="col-text my-0" style="height: 40%; padding: 0;">
+                            <div class="p-3 al-commercial-supporter-list">
+                                <p>TuxCare, a division of CloudLinux Inc., the founding sponsor of the AlmaLinux OS Project, provides tailored support for projects of any complexity. Enhance the performance, security, and reliability of your workloads with extended updates, seamless FIPS compliance, and flexible pay-as-you-go technical support bundles.</p>
+                            </div>
                         </div>
+                        <div class="col-button my-0" style="height: 35%; padding: 0;">
+                            <div class="p-3 al-commercial-supporter-list rounded-bottom">
+                                <p><a class="btn btn-primary btn-block p-2 rounded text-decoration-none" href="https://tuxcare.com/almalinux-enterprise-support/">Get support</a></p>
+                                <p><a class="btn btn-primary btn-block p-2 rounded text-decoration-none" href="https://tuxcare.com/fips-for-almalinux/">Get FIPS</a></p>
+                            </div>
+                        </div>                   
                     </div>
-                    <div class="col my-0">
-                        <div class="p-3 al-commercial-supporter-logo-container rounded-top">
-                            <a href="https://www.openlogic.com/solutions/enterprise-linux-support/almalinux">
-                                <img loading="lazy" src="/brands/logo-openlogic-tagline-white.svg" alt="OpenLogic" class="al-commercial-supporter-logo" style="max-height: 70px !important;">
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="row">
-                    <div class="col my-0">
-                        <div class="p-3 al-commercial-supporter-list">
-                            <p>Cybertrust Japan is a provider of a comprehensive security certification services to various public and private entities globally, and offers comprehensive support for AlmaLinux users. Have also produced MIRACLE LINUX for nearly 20 years.</p>
+                    <div class="row_support" style="width: 33%; padding: 0 15px">
+                        <div class="col-image my-0" style="height: 25%; padding: 0; background: #082336;">
+                            <div class="p-3 al-commercial-supporter-logo-container rounded-top">
+                                <a href="https://www.openlogic.com/solutions/enterprise-linux-support/almalinux">
+                                    <img loading="lazy" src="/brands/logo-openlogic-tagline-white.svg" alt="OpenLogic" class="al-commercial-supporter-logo" style="max-height: 70px !important;">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col my-0">
-                        <div class="p-3 al-commercial-supporter-list">
-                            <p>TuxCare, a division of CloudLinux Inc., the founding sponsor of the AlmaLinux OS Project, provides tailored support for projects of any complexity. Enhance the performance, security, and reliability of your workloads with extended updates, seamless FIPS compliance, and flexible pay-as-you-go technical support bundles.</p>
+                        <div class="col-text my-0" style="height: 40%; padding: 0;">
+                            <div class="p-3 al-commercial-supporter-list">
+                                <p>Confidently deploy AlmaLinux and all your open source packages with enterprise-grade, 24/7/365 support backed by guaranteed SLAs. Keep your mission-critical apps running smoothly with unlimited tickets and direct access to experienced enterprise architects who put your business first.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col my-0">
-                        <div class="p-3 al-commercial-supporter-list">
-                            <p>Confidently deploy AlmaLinux and all your open source packages with enterprise-grade, 24/7/365 support backed by guaranteed SLAs. Keep your mission-critical apps running smoothly with unlimited tickets and direct access to experienced enterprise architects who put your business first.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col my-0">
-                        <div class="p-3 al-commercial-supporter-list rounded-bottom">
-                            <a class="btn btn-primary btn-block p-2 rounded text-decoration-none" href="https://www.cybertrust.co.jp/almalinux/">Get support</a>
-                        </div>
-                    </div>
-                    <div class="col my-0">
-                        <div class="p-3 al-commercial-supporter-list rounded-bottom">
-                            <p><a class="btn btn-primary btn-block p-2 rounded text-decoration-none" href="https://tuxcare.com/almalinux-enterprise-support/">Get support</a></p>
-                            <p><a class="btn btn-primary btn-block p-2 rounded text-decoration-none" href="https://tuxcare.com/fips-for-almalinux/">Get FIPS</a></p>
-                        </div>
-                    </div>
-                    <div class="col my-0">
-                        <div class="p-3 al-commercial-supporter-list rounded-bottom">
-                            <a class="btn btn-primary btn-block p-2 rounded text-decoration-none" href="https://www.openlogic.com/solutions/enterprise-linux-support/almalinux">Get support</a>
+                        <div class="col-button my-0" style="height: 35%; padding: 0;">
+                            <div class="p-3 al-commercial-supporter-list rounded-bottom">
+                                <a class="btn btn-primary btn-block p-2 rounded text-decoration-none" href="https://www.openlogic.com/solutions/enterprise-linux-support/almalinux">Get support</a>
+                            </div>
                         </div>
                     </div>
                 </div>
