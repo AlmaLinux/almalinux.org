@@ -1052,3 +1052,9 @@ a {
 }
 
 /*# sourceMappingURL=bundle.css.map */
+
+.newsletter-img {
+	max-height:300px;
+	max-width: 100%;
+	height: auto;
+}
