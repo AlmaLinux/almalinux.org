@@ -26,7 +26,7 @@
 .al-page-index .al-hero-cta-tertiary:hover {
   background: #f8c100;
 }
-.al-page-index .al-index-feature-container {
+.al-page-index .al-index-feature-container, .al-commercial-supporter-list {
   background: #0e3b5c;
 }
 .al-page-index .al-index-feature-container .al-index-feature-icon {
@@ -97,10 +97,10 @@
 .al-page-index .al-index-commercial-support .al-commercial-supporter-list div.col {
   text-align: center;
 }
-.al-page-index .al-index-commercial-support .al-commercial-supporter-list .al-commercial-supporter-logo-container {
+.al-page-index .al-index-commercial-support .al-commercial-supporter-list {
   height: 100%;
 }
-.al-page-index .al-index-commercial-support .al-commercial-supporter-list .al-commercial-supporter-logo {
+.al-page-index .al-index-commercial-support .al-commercial-supporter-list  {
   max-width: 120px;
   width: 100%;
 }
@@ -585,6 +585,10 @@ button:focus, .btn:focus {
 .al-primary-navbar .al-translate-callout a i {
   margin-right: 0.4rem;
   font-size: 0.8rem;
+}
+
+.al-commercial-supporter-logo-container {
+  background: #082336;
 }
 
 #al-motd {
