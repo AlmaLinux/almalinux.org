@@ -30,7 +30,7 @@ Despite solving several issues, rebasing on CentOS Stream introduced new problem
 
 A small hop to a minor-stable Enterprise Linux distribution such as AlmaLinux would resolve both issues.
 
-Through collaboration with the AlmaLinux [Virt and Container SIG](https://chat.almalinux.org/almalinux/channels/sigvirtcontainer), and with help from the [Fedora bootc chat](https://matrix.to/#/#bootc:fedoraproject.org), we have setup workflows to produce AlmaLinux bootc images. Updates and new releases to HeliumOS going forward will be delivered through bootc images derived from AlmaLinux.
+Through collaboration with the AlmaLinux [Virt and Container SIG](https://chat.almalinux.org/almalinux/channels/sigcloud), and with help from the [Fedora bootc chat](https://matrix.to/#/#bootc:fedoraproject.org), we have setup workflows to produce AlmaLinux bootc images. Updates and new releases to HeliumOS going forward will be delivered through bootc images derived from AlmaLinux.
 
 ## What are OCI containers and images?
 
