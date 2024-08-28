@@ -5,7 +5,7 @@ author:
  name: "Isaac Beverly"
  bio: "Developer, HeliumOS"
  image: /users/imbev.jpg
-date: 2024-08-09
+date: 2024-09-02
 images:
   - /blog-images/2024/2024-08-09-bootc-almalinux.png
 post: 
