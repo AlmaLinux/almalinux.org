@@ -25,16 +25,6 @@
   #hc-hero .row {
     align-items: center;
   }
-  .description {
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    padding-top:1rem;
-    padding-bottom: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-weight: 500;
-
-  }
   .btn-row {
     text-align: center;
   }
@@ -76,7 +66,7 @@
 
   #hc-get {
     margin-bottom: 2rem;
-    text-align: center;
+    text-align: left;
   }
 #hc-get h2 {
   text-align: center;
@@ -103,69 +93,64 @@
   }
 /*END RESPONSIVE QUERIES */
 </style>
+<!-- HERO -->
 <section id="hc-hero">
   <div class="container px-0 al-py-lg">  
     <div class="row">
       <div class="col-lg-6">
         <p class="preheading">AlmaLinux OS Foundation's</p>
-        <h1>Hardware Certification</h1>
-        <h2>Compatibility you can trust.</h2></h2->
-        <p class="description">The AlmaLinux Hardware Certification Program ensures hardware compatibility and promotes OS adoption through community-led, flexible pathways.  Designed for long-term reliability and performance.</p>
+        <h1 class="display-5 fw-bold">Hardware Certification</h1>
+        <p class="lead mb-5 mb-md-3">The AlmaLinux Hardware Certification Program ensures hardware compatibility and promotes OS adoption through community-led, flexible pathways. The process is built just like AlmaLinux: with focus on long-term reliability and performance.</p>
         <div class="row btn-row">
           <div class="col-4">
-            <a class="btn-box blue" href="#"><i class="bi bi-journal-check"></i>Certified</a>
+            <a class="btn-box blue" href="/hardware-certification/ecosystem-catalog/"><i class="bi bi-journal-check"></i>Certified</a>
           </div>
           <div class="col-4">
-            <a class="btn-box green" href="#"><i class="bi bi-journal-medical"></i>Certify</a>
+            <a class="btn-box green" href="https://docs.google.com/forms/d/e/1FAIpQLSc8fzqoR32JZA4XfghMsrxeye9qz51iWMJxLZj-icBDJmmuYQ/viewform"><i class="bi bi-journal-medical"></i>Get started</a>
           </div>
           <div class="col-4">
-            <a class="btn-box yellow" href="#"><i class="bi bi-headset"></i>Contact</a>
+            <a class="btn-box yellow" href="https://wiki.almalinux.org/sigs/Certification.html"><i class="bi bi-headset"></i>Get involved</a>
           </div>
         </div>
       </div>
       <div class="col-lg-6 imgswitch">
-        <img src="https://matt8.com/u/files/1.png">
+        <img src="/certificate/certificationpagehero.png">
       </div>
     </div>
   </div>
 </section>
+<!-- start page content -->
 <section id="hc-get">
   <div class="container px-4 al-py-lg">  
-    <h2>Get AlmaLinux OS HW Certification Suite</h2>
-
-    <div class="row">
+    <h2>Compatibility you can trust for performance, reliability, and stability</h2>
+    <div class="row px-4 pb-4">
       <div class="col-lg-6">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+		<h3 class="pb-3">For consumers</h3>
+        <p>Ensuring that hardware is fully compatible with chosen operating systems is critical for all users. Whether running a home server, a desktop, or an HPC cluster, compatibility issues can lead to system instability or performance degradation. The AlmaLinux certification program ensures you know what hardware you can rely on for your AlmaLinux environment.</p>
+		<h4 class="pb-3">Confirm Compatibility</h4>
+		 <p>The full list of certified hardware is available for you to see in the <a href="/hardware-certification/ecosystem-catalog/">Ecosystem Catalog</a>. If your hardware isn't listed yet, join the Certification SIG chat room to ask about it, or submit a request! You can also find our entire our open source certification suite <i class="bi bi-github p"></i><a href="https://github.com/AlmaLinux/Hardware-Certification-Suite">on GitHub</a></p>
+        <div class="btn-row col-6 pt-3">
+          <a class="btn-box green" href="https://docs.google.com/forms/d/e/1FAIpQLSc8fzqoR32JZA4XfghMsrxeye9qz51iWMJxLZj-icBDJmmuYQ/viewform"><i class="bi bi-journal-medical"></i>Request Certification</a>
+      	</div>
+	  </div> <!-- end column 1 -->
+      <div class="col-lg-6">
+         <img src="/certificate/certification_consumers.png">
+      </div>
+	</div><!-- end consumer row -->
+    <div class="row px-4">
+      <div class="col-lg-6">
+         <img src="/certificate/certification_providers.png">
       </div>
       <div class="col-lg-6">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+		<h3 class="pb-3">For hardware providers</h3>
+        <p>Proving hardware reliability is incredibly important for producers of some of the most powerful hardware in the world. The AlmaLinux certification SIG has partnered with some of the biggest hardware providers in the world for the painless process of getting certified.</p>
+		<h4 class="pb-3">Test your hardware</h4>
+		 <p>Start the processes to get hardware certified by clicking below, or take a look at our open source certification suite <i class="bi bi-github p"></i> <a href="https://github.com/AlmaLinux/Hardware-Certification-Suite">on GitHub</a></p>
+        <div class="btn-row col-5 pt-3">
+          <a class="btn-box green" href="https://docs.google.com/forms/d/e/1FAIpQLSc8fzqoR32JZA4XfghMsrxeye9qz51iWMJxLZj-icBDJmmuYQ/viewform"><i class="bi bi-journal-medical"></i>Get Certified</a>
+	  	</div>
       </div>
-
-      <div class="col-12 mt-4 mb-4">
-        <h3>This full width div is full width!</h3>
-      </div>
-
-      <div class="col-lg-6">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      </div>
-      <div class="col-lg-6">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      </div>
-
-      <div class="col-12 mt-4 mb-4 mixed-text">
-        <p>This full width div contains some images <img src="https://placehold.co/32x32"> I'm not sure whether we would be dealing with larger images but if we are we would need to take a different approach. In a case like that we would likely either add bootstrap columns or make it to where the images are floats.  Either way it does have some neat images <img src="https://placehold.co/32x32/orange/green"> so it is a start.  For this example I've set the text size to match the image size and given the paragraph a line-height of TEXT-SIZE = (TEXT-SIZE + TEXT-SIZE*.5)</p>
-      </div>
-    </div>
-    <!--<div class="row">
-      <div class="lg-4">
-        <i class="bi bi-github h1"></i>
-      </div>
-      <div class="lg-8 ml-3">
-        <h3>GitHub Repository</h3>
-        <a href="https://github.com/AlmaLinux/Hardware-Certification-Suite">https://github.com/AlmaLinux/Hardware-Certification-Suite</a>
-      </div>
-    </div>
-  </div>
--->
+      </div><!-- end provider row -->
+	</div>
 </section>
 {{ end }}

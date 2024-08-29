@@ -583,8 +583,6 @@
    "Thank you, CloudFest!": "Thank you, CloudFest!",
    "AlmaLinux Day: Germany was one of the best events I've ever had. With nearly 300 attendees adjacent to one of my favorite annual events, we got to connect with people all week who were excited about AlmaLinux. I can't wait to do this again!": "AlmaLinux Day: Germany was one of the best events I've ever had. With nearly 300 attendees adjacent to one of my favorite annual events, we got to connect with people all week who were excited about AlmaLinux. I can't wait to do this again!",
    "Each supported architecture has various installation images available:": "Each supported architecture has various installation images available:",
-   "AlmaLinux OS 9.4 Stable": "AlmaLinux OS 9.4 Stable",
-   " and ": " and ",
    "The AlmaLinux Engineering Steering Committee": "The AlmaLinux Engineering Steering Committee",
    "Join the conversation": "Join the conversation",
    "Members of ALESCo": "Members of ALESCo",
@@ -604,9 +602,6 @@
    "Follow us, join us, or find more information at the links below": "Follow us, join us, or find more information at the links below",
    "ALESCo": "ALESCo",
    "AlmaLinux Lead Architect": "AlmaLinux Lead Architect",
-   "AlmaLinux 9.4 and AlmaLinux 8.10 are both stable! Checkout ": "AlmaLinux 9.4 and AlmaLinux 8.10 are both stable! Checkout ",
-   "AlmaLinux OS 8.10 Stable": "AlmaLinux OS 8.10 Stable",
-   " for more information!": " for more information!",
    "processor series": "processor series",
    "Motherboard": "Motherboard",
    "tests cover benchmarking of OS features. The result of benchmarking can be found in the PDF linked above.": "tests cover benchmarking of OS features. The result of benchmarking can be found in the PDF linked above.",
@@ -649,5 +644,7 @@
    "Upgrade from Scientific Linux 7 to AlmaLinux 8": "Upgrade from Scientific Linux 7 to AlmaLinux 8",
    "Upgrade from 8.x to 9.x within the same distribution": "Upgrade from 8.x to 9.x within the same distribution",
    "Migration to Oracle Linux 9 is available with the": "Migration to Oracle Linux 9 is available with the",
-   "Subscribe to our newsletter mailing list and never miss out on the latest in AlmaLinux OS news, and sign up for any other updates on lists.almalinux.org!": "Subscribe to our newsletter mailing list and never miss out on the latest in AlmaLinux OS news, and sign up for any other updates on lists.almalinux.org!"
+   "Subscribe to our newsletter mailing list and never miss out on the latest in AlmaLinux OS news, and sign up for any other updates on lists.almalinux.org!": "Subscribe to our newsletter mailing list and never miss out on the latest in AlmaLinux OS news, and sign up for any other updates on lists.almalinux.org!",
+   "Certification": "Certification",
+   "Read More": "Read More"
 }
