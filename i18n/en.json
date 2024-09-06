@@ -606,7 +606,6 @@
    "Motherboard": "Motherboard",
    "tests cover benchmarking of OS features. The result of benchmarking can be found in the PDF linked above.": "tests cover benchmarking of OS features. The result of benchmarking can be found in the PDF linked above.",
    "The conducted tests ensure that AMD EPYC™ 4004 series CPUs and, generally for any servers based on EPYC processors, AlmaLinux OS works properly guaranteeing stability, security, and high performance.": "The conducted tests ensure that AMD EPYC™ 4004 series CPUs and, generally for any servers based on EPYC processors, AlmaLinux OS works properly guaranteeing stability, security, and high performance.",
-   "Create an AlmaLinux account and join the HW Certification SIG to review the program.": "Create an AlmaLinux account and join the HW Certification SIG to review the program.",
    "ELevate enables upgrades between major versions of RHEL® derivatives. Upgrade in-place from CentOS 6.x through to 8.x version of the RHEL derivative of your choice, and then upgrade from 8.x to 9.x within the same derivative.": "ELevate enables upgrades between major versions of RHEL® derivatives. Upgrade in-place from CentOS 6.x through to 8.x version of the RHEL derivative of your choice, and then upgrade from 8.x to 9.x within the same derivative.",
    "Discuss and contribute": "Discuss and contribute",
    "Fixing Major Version Upgrades": "Fixing Major Version Upgrades",
@@ -646,5 +645,6 @@
    "Migration to Oracle Linux 9 is available with the": "Migration to Oracle Linux 9 is available with the",
    "Subscribe to our newsletter mailing list and never miss out on the latest in AlmaLinux OS news, and sign up for any other updates on lists.almalinux.org!": "Subscribe to our newsletter mailing list and never miss out on the latest in AlmaLinux OS news, and sign up for any other updates on lists.almalinux.org!",
    "Certification": "Certification",
-   "Read More": "Read More"
+   "Read More": "Read More",
+   "Announcing the new Certification Program, run by the Certification SIG.": "Announcing the new Certification Program, run by the Certification SIG."
 }
