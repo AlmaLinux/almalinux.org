@@ -1,4 +1,4 @@
 ---
 title: "Hardware Certification"
-type: hardware-certification
+type: "hardware-certification"
 ---
