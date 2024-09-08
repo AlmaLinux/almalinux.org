@@ -1,5 +1,6 @@
 ---
 title: "Ecosystem Catalog"
-type: ecosystem-catalog
-
+type: "certification/ecosystem-catalog"
+images:
+  - /images/og/ecosystemcatalog.png
 ---

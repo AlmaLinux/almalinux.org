@@ -774,6 +774,10 @@ pre > code {
   font-size: 46px !important;
   line-height: 47px
 }
+.display-4{
+  font-size: 1rem !important;
+  line-height: 1rem;
+}
 .lead {
   font-size: 1.25rem !important;
   font-weight: 400 !important;

@@ -1,4 +1,6 @@
 ---
 title: "Hardware Certification"
-type: "hardware-certification"
+type: "certification/hardware-certification"
+images:
+  - /images/og/hardwarecertification.png
 ---
