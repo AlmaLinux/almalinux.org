@@ -11,7 +11,7 @@ The AlmaLinux OS Foundation (ALOSF) Hardware Certification Program, managed by t
 The SIG invites experts, IHVs, and community members to participate in shaping the certification standards and procedures. Interested parties can join by participating in a meeting, or joining the SIG's chat room. Details for both can be found in the [wiki](https://wiki.almalinux.org/sigs/Certification.html).
 
 <div class="d-grid d-md-flex justify-content-md-start">
-   <a class="btn al-cta-blue" href="/hardware-certification/ecosystem-catalog/"><i class="bi bi-check-all"> </i>See Currently Certified Hardware</a>  <a class="btn al-cta-green" href="https://forms.gle/wuCSDisQwR5nFz3d8"><i class="bi bi-people-fill"></i> Get Certified</a>
+   <a class="btn al-cta-blue" href="/certification/ecosystem-catalog/"><i class="bi bi-check-all"> </i>See Currently Certified Hardware</a>  <a class="btn al-cta-green" href="https://forms.gle/wuCSDisQwR5nFz3d8"><i class="bi bi-people-fill"></i> Get Certified</a>
 </div>
 <div>
 	<p>Once you review the below, if you have feedback or ideas to improve the AlmaLinux Certification Program, we'd love to hear from you!</p>
