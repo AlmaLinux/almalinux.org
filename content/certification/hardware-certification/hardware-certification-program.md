@@ -2,6 +2,7 @@
 title: "AlmaLinux Certification SIG's Hardware Certification Program"
 type: p
 ---
+###### last updated - Sept 8th, 2024 
 
 ### Abstract
 
@@ -9,24 +10,32 @@ The AlmaLinux OS Foundation (ALOSF) Hardware Certification Program, managed by t
 
 The SIG invites experts, IHVs, and community members to participate in shaping the certification standards and procedures. Interested parties can join by participating in a meeting, or joining the SIG's chat room. Details for both can be found in the [wiki](https://wiki.almalinux.org/sigs/Certification.html).
 
+<div class="d-grid d-md-flex justify-content-md-start">
+   <a class="btn al-cta-blue" href="/hardware-certification/ecosystem-catalog/"><i class="bi bi-check-all"> </i>See Currently Certified Hardware</a>  <a class="btn al-cta-green" href="https://forms.gle/wuCSDisQwR5nFz3d8"><i class="bi bi-people-fill"></i> Get Certified</a>
+</div>
+<div>
+	<p>Once you review the below, if you have feedback or ideas to improve the AlmaLinux Certification Program, we'd love to hear from you!</p>
+<a class="btn al-cta-yellow" href="https://wiki.almalinux.org/sigs/Certification.html"><i class="bi bi-people-fill"></i> Get involved</a>
+</div>
+
 ## Table of Contents
 
-* Introduction
-  * Background
-  * Scope
-* Objectives and benefits
-* Certification types
-* Collaboration Spaces and Tools
-* Certification Process
-  * Initiating the process
-  * Pre-certification
-  * Certification Testing
-  * Post-Certification
-  * Certification Locations
-* Certification Testing Areas
-* Certification Lifecycle
-* Contribute to testing: “Community Validated”
-* Appendix: Glossary of terms
+* [Introduction](#uintroductionu)
+  * [Background](#background)
+  * [Scope](#scope)
+* [Objectives and benefits](#uobjectives-and-benefitsu)
+* [Certification types](#ucertification-typesu)
+* [Collaboration Spaces and Tools](#ucollaboration-spaces-and-toolsu)
+* [Certification Process](#ucertification-processu)
+  * [Initiating the process](#initiating-the-process)
+  * [Pre-certification](#pre-certification)
+  * [Certification Testing](#certification-testing)
+  * [Post-Certification](#post-certification)
+  * [Certification Locations](#certification-locations)
+* [Certification Testing Areas](#ucertification-testing-areasu)
+* [Certification Lifecycle](#ucertification-lifecycleu)
+* [Contribute to testing: “Community Validated”](#ucontribute-to-testing-community-validatedu)
+* [Appendix: Glossary of terms](#uappendix-glossary-of-termsu)
 
 ## <u>Introduction</u>
 
@@ -92,7 +101,7 @@ The certification process is intentionally simple.
 
 ### Initiating the process
 
-For IHVs, initiating the process is as simple as filling out this [google form](https://forms.gle/Pv6pXcUDKaq2pKr77). If you have questions that you would like answered ahead of time, reaching out via one of the methods detailed in the Collaboration Tools section is best.
+For IHVs, initiating the process is as simple as filling out this [google form](https://forms.gle/wuCSDisQwR5nFz3d8). If you have questions that you would like answered ahead of time, reaching out via one of the methods detailed in the [Collaboration Tools](#ucollaboration-spaces-and-toolsu) section is best.
 
 We strongly recommend you join the [Mattermost chat - SIGs/Certifcation](https://chat.almalinux.org/almalinux/channels/sigcertification), if you have not already done so, after submitting your form to help facilitate collaboration throughout the process and engagement with the community.
 
