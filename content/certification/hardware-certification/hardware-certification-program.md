@@ -88,7 +88,7 @@ GitHub Board & Repositories, and other: 
 -   [Mattermost chat - SIGs/Certifcation](https://chat.almalinux.org/almalinux/channels/sigcertification)
     -   This acts as the primary way for the community to engage with each other (including the SIG members) for work on certifications or the certification suite. The most collaborative place for the SIG is this chat room. This room is also bridged to matrix on [#sig-certification:almalinux.im](https://app.almalinux.im/#/room/#sig-certification:almalinux.im)
 -   Private certification mailing list
-    -   The ([certification-sig\@lists.almalinux.org](mailto:certification-sig@lists.almalinux.org?subject=updateme)) mailing list acts as a private place for the Certification SIG to communicate, in the rare case that it is necessary. If you require your interaction with the SIG to be private (for example, if you are working with the SIG under NDA), you may reach out here.
+    -   The ([certification-sig\@lists.almalinux.org](mailto:certification-sig@lists.almalinux.org?subject=updateme)) mailing list acts as a private place for the Certification SIG to communicate with IHVs and ISVs. If you require your interaction with the SIG to be private (for example, if you are working with the SIG under NDA), you may reach out here.
 
 ## <u>Certification Process</u>
 
