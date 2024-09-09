@@ -228,8 +228,8 @@
         <div class="col-12">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ "/" | relLangURL }}">Home</a></li>
-                    <li class="breadcrumb-item"><a href="{{ "/certification/ecosystem-catalog" | relLangURL }}">Ecosystem Catalog</a></li>
+                    <li class="breadcrumb-item"><a href="{{ "/" | relLangURL }}">{{ i18n "Home" }}</a></li>
+                    <li class="breadcrumb-item"><a href="{{ "/certification/ecosystem-catalog" | relLangURL }}">{{ i18n "Ecosystem Catalog" }}</a></li>
                     <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
                 </ol>
             </nav>
@@ -270,21 +270,21 @@
 
                     {{ with .Params.specsLink }}
                         <div class="collateral-item">
-                            <a class="clean-link" href="{{ . }}" rel="nofollow"><i class="bi bi-box-arrow-up-right"></i>&nbsp;&nbsp;Proudct specs</a>
+                            <a class="clean-link" href="{{ . }}" rel="nofollow"><i class="bi bi-box-arrow-up-right"></i>&nbsp;&nbsp;{{ i18n "Product specs" }}</a>
                             <div class ="separator m-hide">|</div>
                         </div>
                     {{ end }}
 
                     {{ with .Params.supportLink }}
                         <div class="collateral-item">
-                            <a class="clean-link" href="{{ . }}" rel="nofollow"><i class="bi bi-chat"></i>&nbsp;&nbsp;Product Support</a>
+                            <a class="clean-link" href="{{ . }}" rel="nofollow"><i class="bi bi-chat"></i>&nbsp;&nbsp;{{ i18n "Product Support" }}</a>
                         </div>
                     {{ end }}
 
                 </div>
 
                 {{ with .Params.buttonLink }}
-                    <a class="btn btn-primary" href="{{ . }}" rel="nofollow">Learn More</a>
+                    <a class="btn btn-primary" href="{{ . }}" rel="nofollow">{{ i18n "Learn More" }}</a>
                 {{ end }}
 
             </div>
@@ -302,7 +302,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>Overview</h2>
+                    <h2>{{ i18n "Overview" }}</h2>
                     {{ range . }}
                         {{ if eq .key "Certification Inherited From"}}
                         <p><strong>{{ .key }}: </strong><a href="/certification/ecosystem-catalog/{{ .link }}" alt="">{{ .value }}</a></p>
@@ -323,7 +323,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-            <h2>Certifications</h2>
+            <h2>{{ i18n "Certifications" }}</h2>
             {{ range . }}
                 <details>
                 <summary><h3>{{ .name }}</h3> {{ with .certified }}{{ if . }}<span class="badge">{{ end }}{{ if eq . "official" }}CERTIFIED{{ else if eq . "community" }}COMMUNITY VALIDATED{{ end }}{{ if . }}</span>{{ end }}{{ end }}<span class="architecture">Architecture: {{ .architecture }}</span></summary>
@@ -334,8 +334,8 @@
                     <table class="certs-table">
                         <thead>
                         <tr>
-                            <th>Feature</th>
-                            <th>Level</th>
+                            <th>{{ i18n "Feature" }}</th>
+                            <th>{{ i18n "Level" }}</th>
                         </tr>
                         </thead>
                         <tbody>
