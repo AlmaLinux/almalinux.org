@@ -45,7 +45,7 @@ The AlmaLinux OS Foundation (ALOSF) is committed to delivering an open source, c
 
 ### Scope
 
-This document outlines the certification process, objectives, testing areas, and collaboration mechanisms. It aims to serve as a comprehensive guide for Independent Hardware Vendors (IHVs) and other stakeholders interested in hardware certification for AlmaLinux OS. If there are any questions about this process or document, the best place to ask is in the [~SIG/Certification](https://chat.almalinux.org/almalinux/channels/sigcertification) room on [chat.almalinux.org](http://chat.almalinux.org), or on the public Certification mailing list. 
+This document outlines the certification process, objectives, testing areas, and collaboration mechanisms. It aims to serve as a comprehensive guide for Independent Hardware Vendors (IHVs) and other stakeholders interested in hardware certification for AlmaLinux OS. If there are any questions about this process or document, the best place to ask is in the [~SIG/Certification](https://chat.almalinux.org/almalinux/channels/sigcertification) room on [chat.almalinux.org](http://chat.almalinux.org).
 
 ## <u>Objectives and benefits</u>
 
@@ -86,9 +86,7 @@ GitHub Board & Repositories, and other: 
 -   [Certification SIG Board](https://github.com/orgs/AlmaLinux/projects/6)
     -   This board provides an asynchronous method of communication, allowing for more flexible timelines, especially for international participants. Additionally, the GitHub platform serves as a mechanism for organizations to collaborate with the SIG on making certification requests from Independent Software Vendors (ISVs) and Independent Hardware Vendors (IHVs).
 -   [Mattermost chat - SIGs/Certifcation](https://chat.almalinux.org/almalinux/channels/sigcertification)
-    -   This acts as the primary way for the community to engage with each other (including the SIG members) for work on certifications or the certification suite. The most collaborative place for the SIG is this chat room. This room is also bridged to matrix on <insert matrix server>
--   Public Certification SIG Mailing list
-    -   This mailing list acts as an alternate way for the community to engage with each other, and with SIG members, for work on certifications or the certification suites.
+    -   This acts as the primary way for the community to engage with each other (including the SIG members) for work on certifications or the certification suite. The most collaborative place for the SIG is this chat room. This room is also bridged to matrix on [#sig-certification:almalinux.im](https://app.almalinux.im/#/room/#sig-certification:almalinux.im)
 -   Private certification mailing list
     -   The ([certification-sig\@lists.almalinux.org](mailto:certification-sig@lists.almalinux.org?subject=updateme)) mailing list acts as a private place for the Certification SIG to communicate, in the rare case that it is necessary. If you require your interaction with the SIG to be private (for example, if you are working with the SIG under NDA), you may reach out here.
 
