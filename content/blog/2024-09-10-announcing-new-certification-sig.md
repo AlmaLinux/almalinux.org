@@ -9,7 +9,7 @@ date: '2024-09-09'
 images:
   - /blog-images/2024/2024.09.certification.sig.png
 post:
-    title: ""
+    title: "Announcing the AlmaLinux Certification SIG"
     image: /blog-images/2024/2024.09.certification.sig.png
 ---
 
