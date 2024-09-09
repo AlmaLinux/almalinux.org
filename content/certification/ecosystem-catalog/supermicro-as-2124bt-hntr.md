@@ -1,6 +1,6 @@
 ---
 #Required - don't alter
-type: ecosystem-catalog
+type: "certification/ecosystem-catalog"
 
 #Required
 date: 2024-07-31
