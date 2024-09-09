@@ -229,7 +229,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="{{ "/" | relLangURL }}">Home</a></li>
-                    <li class="breadcrumb-item"><a href="{{ "/ecosystem-catalog" | relLangURL }}">Ecosystem Catalog</a></li>
+                    <li class="breadcrumb-item"><a href="{{ "/certification/ecosystem-catalog" | relLangURL }}">Ecosystem Catalog</a></li>
                     <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
                 </ol>
             </nav>
@@ -305,9 +305,9 @@
                     <h2>Overview</h2>
                     {{ range . }}
                         {{ if eq .key "Certification Inherited From"}}
-                        <p><strong>{{ .key }}: </strong><a href="/ecosystem-catalog/{{ .link }}" alt="">{{ .value }}</a></p>
+                        <p><strong>{{ .key }}: </strong><a href="/certification/ecosystem-catalog/{{ .link }}" alt="">{{ .value }}</a></p>
                         {{ else if eq .key "Test Logs"}}
-                        <p><strong>{{ .key }}: </strong><a href="https://github.com/AlmaLinux/certification-test-results/tree/master/{{ .link }}/" alt="">{{ .value }}</a></p>
+                        <p><strong>{{ .key }}: </strong><a href="https://github.com/AlmaLinux/certification/tree/master/{{ .link }}/" alt="">{{ .value }}</a></p>
                         {{ else }}
                         <p><strong>{{ .key }}: </strong>{{ .value }}</p>
                         {{ end }}
