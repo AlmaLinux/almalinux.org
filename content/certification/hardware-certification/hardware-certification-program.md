@@ -98,10 +98,13 @@ The certification process is intentionally simple.
 
 {{< figure src="/images/certificationimages/certificationprocess.svg" link="/images/certificationimages/certificationprocess.svg" caption="The Hardware Certification Process" width="100%">}}
 
-
 ### Initiating the process
 
 For IHVs, initiating the process is as simple as filling out this [google form](https://forms.gle/wuCSDisQwR5nFz3d8). If you have questions that you would like answered ahead of time, reaching out via one of the methods detailed in the [Collaboration Tools](#ucollaboration-spaces-and-toolsu) section is best.
+
+<div class="d-grid d-md-flex justify-content-md-start">
+<a class="btn al-cta-green" href="https://forms.gle/wuCSDisQwR5nFz3d8"><i class="bi bi-people-fill"></i> Get Certified</a>
+</div>
 
 We strongly recommend you join the [Mattermost chat - SIGs/Certifcation](https://chat.almalinux.org/almalinux/channels/sigcertification), if you have not already done so, after submitting your form to help facilitate collaboration throughout the process and engagement with the community.
 
@@ -178,6 +181,12 @@ Once the certification suite has been run, results should be shared through a pu
 -   Increased Coverage: With community support, we can vastly increase the range of hardware tested, providing more options for end-users.
 -   Quick Feedback: Engaged community members running these tests can provide rapid feedback on compatibility, aiding in engagement with IHVs for the SIG.
 -   Community Trust: Hardware that is "Community Certified" has been vetted by the very users who rely on it, creating a sense of trust and reliability.
+
+If you have a specific certification request, or have hardware in reserve, take a look at the Community Requested Certifications list. We'd love to have you! 
+
+<div class="btn-row">
+<a class="btn btn-primary btn-block p-2" href="https://github.com/AlmaLinux/certifications"><i class="bi bi-people-fill"></i> Request Certification</a>
+</div>
 
 ## <u>Appendix: Glossary of terms</u>
 
