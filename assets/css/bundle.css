@@ -90,6 +90,9 @@ padding-right: 15px !important;
   padding-left: 22px;
 }
 
+.al-dark-background {
+background: #0e3b5c!important;
+}
 .al-page-index .al-index-community-container {
   background: #0e3b5c;
 }
