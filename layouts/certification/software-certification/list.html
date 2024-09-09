@@ -1,0 +1,125 @@
+{{ define "main" }}
+<style>
+  img {
+    max-width: 100%;
+  }
+  #hc-hero {
+    background: #0e3b5c;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  #hc-hero h1 {
+    font-weight: 800;
+    font-size: 2.3rem;
+  }
+  #hc-hero h2 {
+    font-size: 1.7rem;
+
+  }
+  #hc-hero img {
+    border-radius: 1rem;
+  }
+  #hc-hero .row {
+    align-items: center;
+  }
+  .btn-row {
+    text-align: center;
+  }
+  .btn-row div {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+  .btn-box {
+    width: 100%;
+    background: white;
+    display: block;
+    padding: 0.5rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  .btn-box:hover {
+    text-decoration: none;
+    color: black;
+  }
+  .btn-box i {
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+  #hc-get {
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+#hc-get h2 {
+  text-align: center;
+  border-bottom: 2px solid #13517e;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+#hc-get h3 {
+  margin: 0;
+}
+.mixed-text  {
+  line-height:48px;
+  font-size:32px;
+}
+.mixed-text img {
+  display: inline;
+}
+
+/*RESPONSIVE QUERIES */
+  @media(max-width: 991px){
+    .m-hide {
+      display: none;
+    }
+  }
+/*END RESPONSIVE QUERIES */
+</style>
+<!-- HERO -->
+<section id="hc-hero">
+  <div class="container px-0 al-py-lg">  
+    <div class="row">
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold">Software Certification</h1>
+		<p class="display-4"><i class="bi bi-building-fill-check"></i> Part of the AlmaLinux Certification Program</p>
+        <p class="lead mb-5 mb-md-3">The AlmaLinux Certification Program provides certification at no-cost, to support users in every industry. Stable, secure, and trusted performance starts here for users of AlmaLinux.</p>
+		<p class="lead mb-5 mb-md-3">The AlmaLinux Certificated Software list, managed by the AlmaLinux Certification SIG, encourages the global adoption of the AlmaLinux by ensuring third-party software critical to our community has been certified to run on AlmaLinux. </p>
+        <div class="row btn-row">
+          <div class="d-grid d-md-flex justify-content-md-start">
+            <a class="btn al-cta-blue" href="/certification/"><i class="bi bi-server"></i> Certification Program</a>
+          </div>
+          <div class="d-grid d-md-flex justify-content-md-start">
+            <a class="btn al-cta-green" href="/certification/hardware-certification/"><i class="bi bi-people-fill"></i> Hardware Certification</a>
+          </div>
+          <div class="d-grid d-md-flex justify-content-md-start">
+            <a class="btn al-cta-yellow" href="https://wiki.almalinux.org/sigs/Certification.html"><i class="bi bi-people-fill"></i> Get involved</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 imgswitch">
+        <img src="/images/certificationimages/software_certification_hero.png">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- start page content -->
+<section id="hc-get">
+  <div class="container px-4 al-py-lg">  
+    <h2>Compatibility you can trust for performance, reliability, and stability</h2>
+    <div class="row px-4 pb-4">
+      <div class="col-lg-6">
+		<h3 class="pb-3">Test your software - coming soon!</h3>
+		<p>The AlmaLinux Certification SIG has launched with hardware certification, and plan to start implementing software certification. If you want to hear when this happens, sign up for the AlmaLinux Announce mailing list, or <a href="https://wiki.almalinux.org/sigs/Certification.html">join the Certification SIG</a> to help make it happen! </p>
+        <div class="btn-row">
+          <a class="btn btn-primary btn-block p-2" href="#">Request Certification</a>
+      	</div>
+	  </div> <!-- end column 1 -->
+      <div class="col-lg-6">
+         <img src="/images/certificationimages/certification_consumers.png">
+      </div>
+	</div><!-- end consumer row -->
+	</div>
+</section>
+{{ end }}
