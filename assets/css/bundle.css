@@ -1074,3 +1074,8 @@ a {
 	max-width: 100%;
 	height: auto;
 }
+.navbar-nav .dropdown-menu ul {
+	padding:0;
+	margin:0 0 0 1rem;
+	list-style-type: none;
+}
