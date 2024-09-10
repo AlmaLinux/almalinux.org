@@ -46,6 +46,23 @@
                             <a class="dropdown-item" href="{{ "/certification" | relLangURL }}" style="color:aliceblue">
                                 {{ i18n "Certification" }}
                             </a>
+							<ul>
+		                        <li>
+		                            <a class="dropdown-nested dropdown-item" href="{{ "/certification/hardware-certification" | relLangURL }}" style="color:aliceblue">
+		                                {{ i18n "Hardware" }}
+		                            </a>
+		                        </li>
+		                        <li>
+		                            <a class="dropdown-item dropdown-nested" href="{{ "/certification/hardware-certification-program" | relLangURL }}" style="color:aliceblue">
+		                                {{ i18n "Certification Program" }}
+		                            </a>
+		                        </li>
+		                        <li>
+		                            <a class="dropdown-item dropdown-nested" href="{{ "/certification/software-certification" | relLangURL }}" style="color:aliceblue">
+		                                {{ i18n "Software" }}
+		                            </a>
+		                        </li>
+							</ul>
                         </li>
                         <li>
                             <a class="dropdown-item" href="{{ "/alesco" | relLangURL }}" style="color:aliceblue">
@@ -90,7 +107,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://shop.almalinux.org/?utm_source=almalinuxorg&amp;utm_medium=web&amp;utm_campaign=almalinuxorg_navbar" style="margin-top:5px">
+                    <a class="nav-link" href="https://shop.almalinux.org/" style="margin-top:5px">
                         {{ i18n "Shop" }}
                     </a>
                 </li>
@@ -122,14 +139,11 @@
             </ul>
         </div>
     </div>
-
-
-
 </nav>
 
 <div id="al-motd" dir="ltr" data-nosnippet="" style="display: block; letter-spacing: 0px;">
     <div class="container pl-3">
         <i class="bi bi-card-checklist"></i>
-        <div class="text">{{ i18n "Announcing the new Certification Program, run by the Certification SIG." }} <a href="{{ "#" | relLangURL }}">{{ i18n "Read More" }}</a></div>
+        <div class="text">{{ i18n "Announcing the new Certification Program, run by the Certification SIG." }} <a href="{{ "/certification" | relLangURL }}">{{ i18n "Read More" }}</a></div>
     </div>
 </div>
