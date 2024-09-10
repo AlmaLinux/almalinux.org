@@ -132,8 +132,6 @@ button:focus, .btn:focus{
     padding-bottom: 0;
     border-bottom: 0;
   }
-
-
   
   .dropdown-menu-dark {
     background: $al-c-black-pearl;
@@ -144,10 +142,11 @@ button:focus, .btn:focus{
     .dropdown-item:hover{
       background-color: #ffffff26 !important;
     }
-    
+	.dropdown-nested {
+		padding: .25rem -1.5rem !important;
+	}   
     .dropdown-divider {
       border-color: $al-c-black-pearl-lighter;
-    
     }
   }
 
