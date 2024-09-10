@@ -43,32 +43,38 @@ padding-right: 15px !important;
   padding-right: 15px !important;
   padding-left: 15px !important;
 }
-.al-page-index .al-hero-cta-primary {
+
+.al-cta-blue {
   background: #24c2ff;
   color: #222222;
   margin:10px 10px 10px 0;
 }
-.al-page-index .al-hero-cta-primary:hover {
+
+.al-cta-blue:hover {
   background: #0bbbff;
 }
-.al-page-index .al-hero-cta-secondary {
+
+.al-cta-green {
   background: #86da2f;
   color: #222222;
   margin: 10px;
 }
-.al-page-index .al-hero-cta-secondary:hover {
+
+.al-cta-green:hover {
   background: #79cb24;
 }
-.al-page-index .al-hero-cta-tertiary {
+
+.al-cta-yellow {
   background: #ffcb12;
   color: #222222;
   margin: 10px;
 }
-.al-page-index .al-hero-cta-tertiary img {
+
+.al-cta-yellow img {
   display: inline;
   height: 1em;
 }
-.al-page-index .al-hero-cta-tertiary:hover {
+.al-cta-yellow:hover {
   background: #f8c100;
 }
 .al-page-index .al-index-feature-container, .al-commercial-supporter-list {
@@ -84,6 +90,9 @@ padding-right: 15px !important;
   padding-left: 22px;
 }
 
+.al-dark-background {
+background: #0e3b5c!important;
+}
 .al-page-index .al-index-community-container {
   background: #0e3b5c;
 }
@@ -633,9 +642,12 @@ outline: none !important;
 .al-primary-navbar .dropdown-menu-dark .dropdown-divider {
   border-color: #264154;
 }
-
 .al-primary-navbar .al-language-switch img {
   height: 24px;
+}
+/* this counters the default padding in menu items */
+.dropdown-nested {
+	padding: .25rem -1.5rem !important;
 }
 .al-primary-navbar .al-language-link {
   text-transform: capitalize;
@@ -767,6 +779,10 @@ pre > code {
 .display-5{
   font-size: 46px !important;
   line-height: 47px
+}
+.display-4{
+  font-size: 1rem !important;
+  line-height: 1rem;
 }
 .lead {
   font-size: 1.25rem !important;
@@ -1057,4 +1073,9 @@ a {
 	max-height:300px;
 	max-width: 100%;
 	height: auto;
+}
+.navbar-nav .dropdown-menu ul {
+	padding:0;
+	margin:0 0 0 1rem;
+	list-style-type: none;
 }
