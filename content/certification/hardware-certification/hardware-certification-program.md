@@ -94,7 +94,7 @@ GitHub Board & Repositories, and other: 
 
 The certification process is intentionally simple.
 
-{{< figure src="/images/certificationimages/certificationprocess.svg" link="/images/certificationimages/certificationprocess.svg" caption="The Hardware Certification Process" width="100%">}}
+{{< figure src="/images/certificationimages/certificationprocess.svg" link="/images/certificationimages/certificationprocess.svg" caption="The Hardware Certification Process" width="40%">}}
 
 ### Initiating the process
 
@@ -128,7 +128,7 @@ The SIG will provide ad-hoc support for IHV-facilitated certification testing in
 
 Note: ALOSF Platinum Sponsor Member, Tuxcare, has offered 2 years of free technical support for IHVs who certify at least 2 pieces of hardware. If the IHV also joins the foundation as a sponsor member, Tuxcare will extend that support window to 5 years.
 
-{{< figure src="/images/certificationimages/certificationtestingprocess.svg" link="/images/certificationimages/certificationtestingprocess.svg" caption="Hardware Certification Testing Process" width="60%">}}
+{{< figure src="/images/certificationimages/certificationtestingprocess.svg" link="/images/certificationimages/certificationtestingprocess.svg" caption="Hardware Certification Testing Process" width="30%">}}
 
 ### Post Certification
 
