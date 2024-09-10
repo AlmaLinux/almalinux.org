@@ -110,7 +110,6 @@
    "Can I really port an entire fleet of servers from CentOS to AlmaLinux OS with a single command?": "Can I really port an entire fleet of servers from CentOS to AlmaLinux OS with a single command?",
    "If you are using CentOS 7 or 8 and need help upgrading and migrating, check out": "If you are using CentOS 7 or 8 and need help upgrading and migrating, check out",
    "ELevate.": "ELevate.",
-   "AlmaLinux Mailing lists": "AlmaLinux Mailing lists",
    "Membership Committee": "Membership Committee",
    "Run the most recent version of the OS and software you need.": "Run the most recent version of the OS and software you need.",
    "and you can add/edit/interact with package metadata at": "and you can add/edit/interact with package metadata at",
@@ -648,5 +647,6 @@
    "Upgrade from Scientific Linux 7 to AlmaLinux 8": "Upgrade from Scientific Linux 7 to AlmaLinux 8",
    "Upgrade from 8.x to 9.x within the same distribution": "Upgrade from 8.x to 9.x within the same distribution",
    "Migration to Oracle Linux 9 is available with the": "Migration to Oracle Linux 9 is available with the",
-   "Subscribe to our newsletter mailing list and never miss out on the latest in AlmaLinux OS news, and sign up for any other updates on lists.almalinux.org!": "Subscribe to our newsletter mailing list and never miss out on the latest in AlmaLinux OS news, and sign up for any other updates on lists.almalinux.org!"
+   "Subscribe to our newsletter mailing list and never miss out on the latest in AlmaLinux OS news, and sign up for any other updates on lists.almalinux.org!": "Subscribe to our newsletter mailing list and never miss out on the latest in AlmaLinux OS news, and sign up for any other updates on lists.almalinux.org!",
+   "AlmaLinux Newsletter Signup": "AlmaLinux Newsletter Signup"
 }
