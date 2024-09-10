@@ -1057,4 +1057,10 @@ a {
 	max-height:300px;
 	max-width: 100%;
 	height: auto;
+	float:right;
+}
+@media (max-width: 1000px){
+  .newsletter-img {
+  	float:left;
+  }
 }
