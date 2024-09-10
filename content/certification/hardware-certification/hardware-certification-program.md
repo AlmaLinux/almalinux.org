@@ -94,7 +94,7 @@ GitHub Board & Repositories, and other: 
 
 The certification process is intentionally simple.
 
-{{< figure src="/images/certificationimages/certificationprocess.svg" link="/images/certificationimages/certificationprocess.svg" caption="The Hardware Certification Process" width="100%">}}
+{{< figure src="/images/certificationimages/certificationprocess.svg" link="/images/certificationimages/certificationprocess.svg" caption="The Hardware Certification Process" width="40%">}}
 
 ### Initiating the process
 
