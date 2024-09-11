@@ -32,6 +32,8 @@ reboot
 
 This allows people with less knowledge about cryptography to configure a strong baseline for implementing secure systems.
 
+_Note: AlmaLinux is no longer supported by the Foundation, and has been out of support since AlmaLinux 9.3 was released in [November of 2023](https://wiki.almalinux.org/release-notes/). Backporting security fixes to older versions it out of scope for the foundation, but [Tuxcare](https://tuxcare.com/) does provide that service to their customers. Since FIPS is primarily required by institutions that like support contracts, we strongly recommend anyone who's looking for it, talk to them._
+
 ### Testing
 
 To test this, we can setup an HTTP server, for example [Apache](https://httpd.apache.org) - if you're interested, we have a comprehensive guide on [setting up a LAMP server](https://wiki.almalinux.org/series/LAMP-server.html) on AlmaLinux, but for now we can just run:
