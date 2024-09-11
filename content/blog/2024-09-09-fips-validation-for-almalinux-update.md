@@ -15,6 +15,8 @@ post:
 
 After a long wait ([view the previous blog post](https://almalinux.org/blog/2023-09-19-fips-validation-for-almalinux/)), the AlmaLinux 9.2 kernel received FIPS validation making, it the first software implementation to receive a FIPS 140-3 ESV certificate using SHA3-256 as a conditioner. It's actually the first EL9 distribution to receive a FIPS 140-3 certificate for the kernel. View the certificate [here](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4750).
 
+## What is FIPx?
+
 When it comes to securing sensitive data, cryptographic standards play a crucial role. One of the most influential standards in this realm is **FIPS**, or **F**ederal **I**nformation **P**rocessing **S**tandards.
 
 FIPS 140-3 is not just a Federal benchmark, it's recognized and respected worldwide, for instance, the European Union's [NIS 2 Directive](https://eur-lex.europa.eu/eli/dir/2022/2555) which focuses on network and information security mandates the use of *up-to-date encryption and cryptography leveraging established standards.* FIPS standards undergo extensive evaluations to ensure that cryptographic algorithms and implementations meet the highest security requirements, making it the gold standard for secure cryptographic practices across the globe.
