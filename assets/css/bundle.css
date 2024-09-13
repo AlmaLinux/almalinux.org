@@ -253,20 +253,6 @@ padding: 0px !important;
   height: 72px;
   margin: 15px 0 15px 0;
 }
-.al-page-index .al-index-newsletter a {
- text-decoration: underline !important;
-}
-.al-page-index .al-index-newsletter .al-newsletter-input {
-  background-color: white;
-}
-.al-page-index .al-index-newsletter .al-newsletter-button {
-  background: #86da2f;
-  color: #000518;
-}
-.al-page-index .al-index-newsletter .al-newsletter-button:hover {
-  color: #000518;
-  background: #79cb24;
-}
 .al-page-index .al-index-press {
   background: #0e3b5c;
 }
@@ -1073,6 +1059,15 @@ a {
 	max-height:300px;
 	max-width: 100%;
 	height: auto;
+	float:right;
+}
+@media (max-width: 1000px){
+  .newsletter-img {
+  	float:left;
+  }
+}
+.newsletter-div {
+	max-width: 650px;
 }
 .navbar-nav .dropdown-menu ul {
 	padding:0;
