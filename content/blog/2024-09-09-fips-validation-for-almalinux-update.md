@@ -15,7 +15,7 @@ post:
 
 After a long wait ([view the previous blog post](https://almalinux.org/blog/2023-09-19-fips-validation-for-almalinux/)), the AlmaLinux 9.2 kernel received FIPS validation making, it the first software implementation to receive a FIPS 140-3 ESV certificate using SHA3-256 as a conditioner. It's actually the first EL9 distribution to receive a FIPS 140-3 certificate for the kernel. View the certificate [here](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4750).
 
-## What is FIPx?
+## What is FIPS?
 
 When it comes to securing sensitive data, cryptographic standards play a crucial role. One of the most influential standards in this realm is **FIPS**, or **F**ederal **I**nformation **P**rocessing **S**tandards.
 
@@ -32,7 +32,7 @@ reboot
 
 This allows people with less knowledge about cryptography to configure a strong baseline for implementing secure systems.
 
-_Note: AlmaLinux is no longer supported by the Foundation, and has been out of support since AlmaLinux 9.3 was released in [November of 2023](https://wiki.almalinux.org/release-notes/). Backporting security fixes to older versions it out of scope for the foundation, but [Tuxcare](https://tuxcare.com/) does provide that service to their customers. Since FIPS is primarily required by institutions that like support contracts, we strongly recommend anyone who's looking for it, talk to them._
+_Note: AlmaLinux is no longer supported by the Foundation, and has been out of support since AlmaLinux 9.3 was released in [November of 2023](https://wiki.almalinux.org/release-notes/). Backporting security fixes to older versions is out of scope for the foundation, but [Tuxcare](https://tuxcare.com/) does provide that service to their customers. Since FIPS is primarily required by institutions that like support contracts, we strongly recommend anyone who's looking for it, talk to them._
 
 ### Testing
 
@@ -56,3 +56,7 @@ Another way to check your ciphers strength is to look them up on the [Ciphersuit
 ### Whats next?
 
 Simon John, the Security Certification Manager at [CloudLinux](https://cloudlinux.com/) has let me know that after AlmaLinux 9.5 gets released he is going to start working on the 9.6 validation, which hopefully will materialize faster than 9.2 due to improvements in the CMVP process aimed at reducing the backlog.
+
+---
+
+> If you’re passionate about exploring new knowledge or sharing what you know, come join us in the [AlmaLinux Security Chat](https://chat.almalinux.org/almalinux/channels/security), It’s a great place to ask questions, exchange information, or just have a security-related chat. 😊
