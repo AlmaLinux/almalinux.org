@@ -9,7 +9,7 @@ date: '2024-09-23'
 images:
   - /blog-images/2024/jun_qanda.png
 post:
-    title: ""
+    title: "Meet the board - Jun Yoshida"
     image: /blog-images/2024/jun_qanda.png
 ---
 
