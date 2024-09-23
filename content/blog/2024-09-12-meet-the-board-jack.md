@@ -9,7 +9,7 @@ date: '2024-09-12'
 images:
   - /blog-images/2024/jack_qanda.png
 post:
-    title: ""
+    title: "Meet the board - Jack Aboutboul"
     image: /blog-images/2024/jack_qanda.png
 ---
 
