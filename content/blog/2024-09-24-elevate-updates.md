@@ -5,7 +5,7 @@ author:
  name: "Yuriy Kohut"
  bio: "ELevate Project Engineer @ CloudLinux"
  image: /users/yuriy-kohut.jpg
-date: 2024-09-19
+date: 2024-09-24
 images:
   - /blog-images/2024/2024-09-19-elevate-updates.png
 post: 
