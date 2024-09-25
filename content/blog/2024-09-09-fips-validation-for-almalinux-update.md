@@ -59,4 +59,4 @@ Simon John, the Security Certification Manager at [CloudLinux](https://cloudlinu
 
 ---
 
-> If you’re passionate about exploring new knowledge or sharing what you know, come join us in the [AlmaLinux Security Chat](https://chat.almalinux.org/almalinux/channels/security), It’s a great place to ask questions, exchange information, or just have a security-related chat. 😊
+If you’re passionate about exploring new knowledge or sharing what you know, come join us in the [AlmaLinux Security Chat](https://chat.almalinux.org/almalinux/channels/security). It’s a great place to ask questions, exchange information, or just have a security-related chat. 😊 
