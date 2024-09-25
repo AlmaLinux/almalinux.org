@@ -10,7 +10,7 @@ images:
   - /blog-images/2024/benny-we-need-an-image.png
 post:
     title: "FIPS Validation for AlmaLinux OS - update"
-    image: /blog-images/2024/benny-we-need-an-image.png
+    image: /blog-images/2024/fipsupdate.png
 ---
 
 After a long wait ([view the previous blog post](https://almalinux.org/blog/2023-09-19-fips-validation-for-almalinux/)), the AlmaLinux 9.2 kernel received FIPS validation making it the first software implementation to receive a FIPS 140-3 ESV certificate using SHA3-256 as a conditioner. It's also the first EL9 distribution to get a FIPS 140-3 certificate for the kernel. View the certificate [here](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4750).
