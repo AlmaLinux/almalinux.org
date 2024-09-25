@@ -1,5 +1,5 @@
 ---
-title: "FIPS Validation for AlmaLinux OS - update"
+title: "AlmaLinux 9.2 FIPS Validation Update"
 type: blog
 author:
  name: "Noam Alum"
