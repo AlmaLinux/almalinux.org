@@ -5,7 +5,7 @@ author:
  name: "Noam Alum"
  bio: "Automation Specialist at JetBackup"
  image: /users/noam.jpeg
-date: 2024-09-09
+date: 2024-09-25
 images:
   - /blog-images/2024/benny-we-need-an-image.png
 post:
