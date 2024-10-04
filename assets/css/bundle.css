@@ -168,6 +168,15 @@ border-bottom-color: #14598a !important;
   width: 70px;
 }
 
+/* formatting the display for the commercial support section */
+.al-commercial-supporter-list .platinum_sponsor {
+	padding:.5rem;
+	font-size:1rem;
+    background-color: #fff;
+	color: #0e3b5c;
+    border-radius: 25px;
+}
+
 /* formatting the commercial support vendors on the index page. */
 .al-page-index .al-index-commercial-support p.border-bottom {
   border-bottom-color: #14598a !important;
@@ -1051,6 +1060,8 @@ a {
 	padding-top:.5rem;
 }
 
+
+
 /*# sourceMappingURL=bundle.css.map */
 
 .newsletter-img {
@@ -1058,3 +1069,4 @@ a {
 	max-width: 100%;
 	height: auto;
 }
+
