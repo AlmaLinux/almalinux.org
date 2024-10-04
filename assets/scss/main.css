@@ -567,6 +567,10 @@ button:focus, .btn:focus {
 .al-primary-navbar .dropdown-menu-dark .dropdown-divider {
   border-color: #264154;
 }
+/* this counters the default padding in menu items */
+.dropdown-nested {
+	padding: .25rem -1.5rem !important;
+}
 .al-primary-navbar .al-language-switch img {
   height: 24px;
 }
