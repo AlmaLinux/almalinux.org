@@ -46,8 +46,8 @@
               
                     
                     
-                        {{ if .PrevPage }}
-                        <a class="al-blog-previous-button " href="{{ .PrevPage.RelPermalink }}">
+                        {{ if .Prev }}
+                        <a class="al-blog-previous-button " href="{{ .Prev.RelPermalink }}">
                             <span>« {{ i18n "Previous" }}</span>
 
                         </a> 
@@ -56,8 +56,8 @@
                     
                 
                     
-                        {{ if .NextPage }}
-                        <a class="al-blog-next-button " href="{{ .NextPage.RelPermalink }}">
+                        {{ if .Next }}
+                        <a class="al-blog-next-button " href="{{ .Next.RelPermalink }}">
                             <span> {{ i18n "Next" }} »</span>
                         </a>
                         {{ end }}
