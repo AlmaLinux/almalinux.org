@@ -16,7 +16,7 @@ post:
 
 Hi community! As you may be aware, last year, [we launched a video series](https://almalinux.org/blog/2024-01-16-video-contributions/) in which we have community members answer common questions we're seeing from the community. This year, we also launched another Q&A video series, this time with the AlmaLinux OS Foundation board members. Our goal with this new board member Q&A series is to better introduce our board to the broader community.
 
-For our latest board member Q&A video, we interviewed [Jun Yoshida](https://www.linkedin.com/in/jun-yoshida-6b4b5a16/?originalSubdomain=jp). Jun talks about how he got his start with IT (despite a university major that may surprise you), his history with Unix/Linux, and his hopes for AlmaLinux. Learn a bit more about Jun by watching the video, or check out the transcript below!
+For our latest board member Q&A video, we interviewed [Jun Yoshida](https://www.linkedin.com/in/jun-yoshida-6b4b5a16/). Jun talks about how he got his start with IT (despite a university major that may surprise you), his history with Unix/Linux, and his hopes for AlmaLinux. Learn a bit more about Jun by watching the video, or check out the transcript below!
 
 {{< youtube id="nr8_mIXWsf0" width="65%" height="36%" autoplay="false" controls="true" mute="false" title="Meet the board: Jun Yoshida" >}}
 
