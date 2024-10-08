@@ -57,6 +57,10 @@ Another way to check your ciphers strength is to look them up on the [Ciphersuit
 
 Simon John, the Security Certification Manager at [CloudLinux](https://cloudlinux.com/) has let me know that after AlmaLinux 9.5 gets released he is going to start working on the 9.6 validation, which hopefully will materialize faster than 9.2 due to improvements in the CMVP process aimed at reducing the backlog.
 
+### Stop the presses!
+
+After publication of this blog post, we received news that the OpenSSL validation has also been added to the Active list with certificate number [#4823](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4823).
+
 ---
 
-If you’re passionate about exploring new knowledge or sharing what you know, come join us in the [AlmaLinux Security Chat](https://chat.almalinux.org/almalinux/channels/security). It’s a great place to ask questions, exchange information, or just have a security-related chat. 😊 
+If you’re passionate about exploring new knowledge or sharing what you know, come join us in the [AlmaLinux Security Chat](https://chat.almalinux.org/almalinux/channels/security). It’s a great place to ask questions, exchange information, or just have a security-related chat. 😊
