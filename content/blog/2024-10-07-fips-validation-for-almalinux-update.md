@@ -7,7 +7,7 @@ author:
  image: /users/noam.jpeg
 date: '2024-10-07'
 images:
-  - /blog-images/2024/benny-we-need-an-image.png
+  - /blog-images/2024/fipsupdate.png
 post:
     title: "FIPS Validation for AlmaLinux OS - update"
     image: /blog-images/2024/fipsupdate.png
