@@ -25,7 +25,9 @@ If you've been using the original AlmaLinux Azure image for **x86_64** architect
 > Impact
 > 
 > • Following the scheduled deprecation date, you won't be able to deploy any additional virtual machine (VM) or virtual machine scale set (VMSS) instances using any images within these offers.
+>
 > • Your active VM instances won't be affected following the deprecation date.
+>
 > • Your existing VMSS deployments will continue to be operational but can't be scaled out following deprecation.
 
 That notice is being sent because we have set that image to be **deprecated and removed from the Azure Marketplace on 30 Dec 2024**. It is important to note, however:
