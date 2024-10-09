@@ -6,10 +6,11 @@ author:
  bio: "AlmaLinux OS Cloud engineer"
  image: /users/elkhan.jpg
 date: '2024-10-09'
+images:
+  - /blog-images/2024/azure-marketplace-updates.png
 post:
     title: "Azure Marketplace Updates"
     image: /blog-images/2024/azure-marketplace-updates.png
-
 ---
 
 Hello Community! We'd like to share a quick update for our AlmaLinux Azure users. 
