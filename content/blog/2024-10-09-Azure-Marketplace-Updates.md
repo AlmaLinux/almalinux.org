@@ -16,19 +16,19 @@ Hello Community! We'd like to share a quick update for our AlmaLinux Azure users
 
 If you've been using the original AlmaLinux Azure image for **x86_64** architecture (VM Image URN: `almalinux:almalinux:*`), you may have gotten an email like this:
 
-> Your Workloads are running on images that will be deprecated soon
+> _Your Workloads are running on images that will be deprecated soon_
 > 
-> You're receiving this email because you have virtual machine and/or virtual machine scale set deployments that are running on images scheduled for deprecation.
+> _You're receiving this email because you have virtual machine and/or virtual machine scale set deployments that are running on images scheduled for deprecation._
 > 
-> One or more offers from the publisher, almalinux, have been scheduled for deprecation. You currently have workloads that are running on images within these offers.
+> _One or more offers from the publisher, almalinux, have been scheduled for deprecation. You currently have workloads that are running on images within these offers._
 > 
-> Impact
+> **_Impact_**
 > 
-> • Following the scheduled deprecation date, you won't be able to deploy any additional virtual machine (VM) or virtual machine scale set (VMSS) instances using any images within these offers.
+> • _Following the scheduled deprecation date, you won't be able to deploy any additional virtual machine (VM) or virtual machine scale set (VMSS) instances using any images within these offers._
 >
-> • Your active VM instances won't be affected following the deprecation date.
+> • _Your active VM instances won't be affected following the deprecation date._
 >
-> • Your existing VMSS deployments will continue to be operational but can't be scaled out following deprecation.
+> • _Your existing VMSS deployments will continue to be operational but can't be scaled out following deprecation._
 
 That notice is being sent because we have set that image to be **deprecated and removed from the Azure Marketplace on 30 Dec 2024**. It is important to note, however:
 
