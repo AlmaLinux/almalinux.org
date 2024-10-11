@@ -15,7 +15,7 @@
         {{- with $.Site.Params.images }}<meta property="og:image" content="{{ index . 0 | absURL }}"/>{{ end -}}
         {{- if not $.Site.Params.images -}}
             <!-- Default image if no other image is found -->
-            <meta property="og:image" content="{{ "images/newhero.png" | absURL }}"/>
+            <meta property="og:image" content="{{ "images/og/newhero.png" | absURL }}"/>
         {{- end -}}
     {{- end -}}
 {{- end -}}
@@ -47,14 +47,13 @@
 {{ end }}{{ end }}
 {{- end }}
 
-{{- /* Deprecate site.Social.facebook_admin in favor of site.Params.social.facebook_admin */}}
 {{- $facebookAdmin := "" }}
 {{- with site.Params.social }}
   {{- if reflect.IsMap . }}
     {{- $facebookAdmin = .facebook_admin }}
   {{- end }}
 {{- else }}
-  {{- with site.Social.facebook_admin }}
+  {{- with site.Params.social.facebook_admin  }}
     {{- $facebookAdmin = . }}
     {{- warnf "The social key in site configuration is deprecated. Use params.social.facebook_admin instead." }}
   {{- end }}
