@@ -80,6 +80,23 @@ padding-right: 15px !important;
 .al-page-index .al-index-feature-container, .al-commercial-supporter-list {
   background: #0e3b5c;
 }
+
+.al-commercial-supporter-list .platinum_sponsor {
+	padding:.5rem;
+	font-size:1rem;
+    background-color: #e5e4e2;
+	color: #0e3b5c;
+    border-radius: 25px;
+}
+
+.al-commercial-supporter-list .silver_sponsor {
+	padding:.5rem;
+	font-size:1rem;
+    background-color: #c0c0c0;
+	color: #0e3b5c;
+    border-radius: 25px;
+}
+
 .al-page-index .al-index-feature-container .al-index-feature-icon {
   color: white;
   font-size: 32px;
