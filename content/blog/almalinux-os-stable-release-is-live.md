@@ -17,7 +17,7 @@ We are very happy to announce that today we are releasing the first AlmaLinux OS
 
 ## AlmaLinux OS, the forever-free open source enterprise-grade Linux is ready. 
 
-If you've been following us on [Reddit](https://www.reddit.com/r/AlmaLinux/) or on our other social media outlets, you also know we had a live launch party just now. We talked to some of our community, industry partners and team members. You can find the recorded version (shortly here)[https://www.youtube.com/watch?v=AmjQInMOQbM&ab_channel=AlmaLinux]. 
+If you've been following us on [Reddit](https://www.reddit.com/r/AlmaLinux/) or on our other social media outlets, you also know we had a live launch party just now. We talked to some of our community, industry partners and team members. You can find the recorded version [shortly here](https://www.youtube.com/watch?v=AmjQInMOQbM). 
 
 We are also announcing the formation of a non-profit organization that will take over responsibility for managing the AlmaLinux OS project going forward, and some of the board members that will steer that effort. You'll have more details about it in an upcoming post, but you can check the recording of the presentation event where we talk to some of them and get their view for the future of the project and where they see AlmaLinux OS going forward. 
 
