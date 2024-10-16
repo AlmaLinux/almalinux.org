@@ -1,5 +1,5 @@
 ---
-title: "Welcoming CloudLinux and Turxcare - Platinum Sponsor Members"
+title: "Welcoming CloudLinux and Tuxcare - Platinum Sponsor Members"
 type: blog
 author: 
  name: "benny Vasquez"
@@ -9,7 +9,7 @@ date: '2024-10-16'
 images:
   - /blog-images/2024/2024_10_cloudlinux_tuxcare_renewal.png
 post: 
-    title: "Welcoming CloudLinux and Turxcare - Platinum Sponsor Members"
+    title: "Welcoming CloudLinux and Tuxcare - Platinum Sponsor Members"
     image: /blog-images/2024/2024_10_cloudlinux_tuxcare_renewal.png
 ---
 
