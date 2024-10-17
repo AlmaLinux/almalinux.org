@@ -717,5 +717,18 @@
     "Is AlmaLinux OS FIPS-140 compliant?": "AlmaLinux OS は FIPS-140 に準拠していますか？",
     "we shifted": "私たちは",
     "What does binary compatible with RHEL mean?": "RHEL とバイナリ互換性があるとはどういう意味ですか？",
-    " our goal from being a downstream rebuild of RHEL to maintaining compatibility with RHEL. That means everything from software applications to kernel modules that work on RHEL will work on AlmaLinux. If not, we consider that a bug.": " RHEL のダウンストリームリビルドになることではなく、RHEL との互換性を維持することに目標を変更しました。これはソフトウェア・アプリケーションからカーネルモジュールに至るまで、RHEL で動作するものは全て AlmaLinux でも動作することを意味します。そうでない場合、私たちはそれをバグと見なします。"
+    " our goal from being a downstream rebuild of RHEL to maintaining compatibility with RHEL. That means everything from software applications to kernel modules that work on RHEL will work on AlmaLinux. If not, we consider that a bug.": " RHEL のダウンストリームリビルドになることではなく、RHEL との互換性を維持することに目標を変更しました。これはソフトウェア・アプリケーションからカーネルモジュールに至るまで、RHEL で動作するものは全て AlmaLinux でも動作することを意味します。そうでない場合、私たちはそれをバグと見なします。",
+    "Ecosystem Catalog": "エコシステムカタログ",
+    "Level": "レベル",
+    "Feature": "機能",
+    "Certifications": "認定",
+    "Overview": "概要",
+    "SEARCH": "検索",
+    "FILTER RESULTS": "結果を絞り込む",
+    "LOADING": "読み込み中",
+    "Learn More": "詳細はこちら",
+    "Product Support": "製品サポート",
+    "Product specs": "製品仕様",
+    "Home": "ホーム",
+    "Software certification is still in the works. Want to help out? Join the Certification SIG!": "ソフトウェア認定は現在計画中です。協力してくれますか？Certification SIG に参加してください！"
 }
