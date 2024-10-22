@@ -36,7 +36,7 @@ Releasing this version of AlmaLinux allows anyone who is building from or extend
 
 First, this is not "AlmaLinux Stream." CentOS Stream is a product of the CentOS community--it's the ultimate destination of the CentOS community's work. AlmaLinux OS Kitten is not a product at all, it is meant as a vehicle along the journey of development of the next version of AlmaLinux.
 
-We are using our freedom here to do a bunch of work in preparation for AlmaLinux OS 10. On our wiki, you will find a list of differences below, and read the full [AlmaLinux OS Kitten 10 release notes](https://wiki.almalinux.org/release-notes/kitten-10).
+We are using our freedom here to do a bunch of work in preparation for AlmaLinux OS 10. Below you will find a list of the big differences, and on our wiki you can find the full [AlmaLinux OS Kitten 10 release notes](https://wiki.almalinux.org/release-notes/kitten-10).
 
 ### Re-enabling Frame Pointers
 
