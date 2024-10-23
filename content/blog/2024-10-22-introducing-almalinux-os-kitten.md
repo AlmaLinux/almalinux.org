@@ -70,6 +70,11 @@ Starting with AlmaLinux 8.10 and 9.4 we re-enabled support for more than 150 dev
 
 Our upstream decided to remove packaged versions of Firefox and Thunderbird RPM packages from CentOS Stream 10 and RHEL10 in favor of using Flatpak versions of them. To support our community of desktop users, we decided to continue shipping them in AlmaLinux OS Kitten 10 as regular RPM packages.
 
+## <u>Where to get AlmaLinux OS Kitten 10</u>
+You can get AlmaLinux OS Kitten 10 ISOs for all supported architectures from its own primary mirror: [kitten.repo.almalinux.org](https://kitten.repo.almalinux.org/10-kitten/isos/). You can also find more information and installation instructions on the AlmaLinux OS Kitten 10 [wiki page](https://wiki.almalinux.org/development/almalinux-os-kitten-10.html) and [release notes](https://wiki.almalinux.org/release-notes/kitten-10.html#installation-instructions).
+
+*In case you are wondering, Cloud and Container options will be added there shortly!*
+
 ## <u>Where to give feedback about these changes</u>
 
 Current and future AlmaLinux contributors can engage with us on [our developer mailing list](https://lists.almalinux.org/mailman3/lists/devel.lists.almalinux.org/). Interested users can share feedback on [our user community list](https://lists.almalinux.org/mailman3/lists/users.lists.almalinux.org/) or [our forums](https://forums.almalinux.org/).
