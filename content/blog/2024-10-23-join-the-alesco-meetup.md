@@ -1,5 +1,5 @@
 ---
-title: "Nov 14th - ALESCo meetup!"
+title: "Nov 12th - ALESCo meetup!"
 type: blog
 author: 
  name: "Cody Robertson"
@@ -9,13 +9,13 @@ date: 2024-10-23
 images:
   - /blog-images/2024/alescomeetup.png
 post: 
-    title: "Nov 14th - ALESCo meetup!"
+    title: "Nov 12th - ALESCo meetup!"
     image: /blog-images/2024/alescomeetup.png
 ---
 
 Since our inception just a few months ago, there has been a lot of exciting news coming out of ALESCo. Whether you've been following along [via the minutes](https://wiki.almalinux.org/alesco.html), or attending the meetings yourself, or engaging in our chat, we are so humbled by the excitement around what we're doing.
 
-~Tomorrow, Oct 24th at 10am eastern US time~ <small>(Rescheduled)</small> November 14th at [12pm Eastern US time](https://www.worldtimebuddy.com/?qm=1&lid=4998830,2643743,8,1850147&h=2643743&date=2024-11-12&sln=17-18&hf=1), we're hosting a digital meetup. We'll be hanging out, ready to answer questions or just talk shop. Not all of our members will be able to make it, but we'll have a good cross-section of the SIGs present, as well as our board chair. 
+~Tomorrow, Oct 24th at 10am eastern US time~ <small>(Rescheduled)</small> November 12th at [12pm Eastern US time](https://www.worldtimebuddy.com/?qm=1&lid=4998830,2643743,8,1850147&h=2643743&date=2024-11-12&sln=17-18&hf=1), we're hosting a digital meetup. We'll be hanging out, ready to answer questions or just talk shop. Not all of our members will be able to make it, but we'll have a good cross-section of the SIGs present, as well as our board chair. 
 
 ## Details
 
