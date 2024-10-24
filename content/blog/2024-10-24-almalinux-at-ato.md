@@ -15,9 +15,17 @@ post:
 
 We are returning to ATO, one of our favorite events, next week! And on day 2 if you wear an AlmaLinux shirt, hoodie, or hat then you are eligible to win a prize (details below)!
 
-# We love ATO
+# We love ATO!
 
 All Things Open is one of our favorite events, and always feels like home for us. It was the first event we attended after getting our feet under us in 2021, and the community continues to welcome us every year.
+
+I'll be giving a talk and participating in a panel, and I'd love to see you at either or both! 
+
+* 11:30 a.m. to 12:15 p.m. on Monday, October 28, 
+	* The State of AlmaLinux: <https://2024.allthingsopen.org/sessions/the-state-of-almalinux>
+
+* 2:45 to 3:30 p.m. on Monday, October 28, Freedom vs Sustainable: A Candid Necessary Debate: <https://2024.allthingsopen.org/sessions/freedom-vs-sustainable-a-candid-necessary-debate>
+
 
 ## T-shirt giveaway (and a raffle!)
 
