@@ -23,6 +23,11 @@
   color: #f1f8ff;
   }
 
+.Photo__Lock, .al-index-dowload-icon{
+  width: 40px;
+  height: 40px;
+}
+
 .al-primary-navbar .container {
   padding-left: 15px !important;
   padding-right: 15px !important;
