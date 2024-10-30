@@ -15,7 +15,7 @@ post:
 
 Earlier today we announced that AlmaLinux has been selected to join the [Endorsed Distributions list on Microsoft Azure](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/endorsed-distros), a unique distinction with only 6 other distributions. The press release is included below with all of the details. 
 
-We are so grateful to the incredible Azure team for this, and are so excited to see our community supported in this way. 
+We are so grateful to the incredible Azure team for this, and are so excited to see our community supported in this way. Visit the Microsoft Linux and Open Source Blog - [Announcing availability of AlmaLinux as an endorsed Linux distribution in Azure](https://techcommunity.microsoft.com/t5/linux-and-open-source-blog/announcing-availability-of-almalinux-as-an-endorsed-linux/ba-p/4282201) - to see their announcement, 
 
 ==========
 
