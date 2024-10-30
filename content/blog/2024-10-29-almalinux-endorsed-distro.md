@@ -2,10 +2,10 @@
 title: "AlmaLinux Named an Endorsed Distro in Microsoft Azure"
 type: blog
 author: 
- name: "benny Vasquez"
- bio: "Chair, board of directors"
- image: /users/benny.jpeg
-date: '2024-10-29'
+ name: "Elkhan Mammadli"
+ bio: "AlmaLinux OS Cloud engineer"
+ image: /users/elkhan.jpg
+date: '2024-10-30'
 images:
   - /blog-images/2024/endorseddistro.png
 post:
@@ -27,7 +27,7 @@ Starting today, AlmaLinux images featured on Azure will be considered an endorse
 
 "We are pleased to add AlmaLinux as an endorsed, CentOS-compatible Linux distribution in Azure, backed up by a close engineering and support relationship between our respective teams," said Microsoft Azure platform Chief Product Officer and Corporate Vice President of Azure Cloud Native Jeremy Winter. "This Azure-AlmaLinux collaboration underscores our ongoing efforts to deepen cooperation with key players in the open-source community to address Azure customers' desire for stable, well-supported solutions."
 
-AlmaLinux is available via Azure Marketplace for the [x64](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.almalinux-x86_64?tab=Overview), [Arm64](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.almalinux-arm) architectures, including Microsoft's latest Cobalt 100-based virtual machines, as well as a customized image for [HPC workloads](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.almalinux-hpc). Images are also available via Community Gallery and [Windows Subsystem for Linux (WSL)](https://wiki.almalinux.org/documentation/wsl).
+AlmaLinux is available via Azure Marketplace for the [x64](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.almalinux-x86_64), [Arm64](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.almalinux-arm) architectures, including Microsoft's latest Cobalt 100-based virtual machines, as well as a customized image for [HPC workloads](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.almalinux-hpc). Images are also available via Community Gallery and [Windows Subsystem for Linux (WSL)](https://wiki.almalinux.org/documentation/wsl).
 
 A complete list of endorsed Linux distributions on Azure is available at: <https://learn.microsoft.com/en-us/azure/virtual-machines/linux/endorsed-distros>
 
