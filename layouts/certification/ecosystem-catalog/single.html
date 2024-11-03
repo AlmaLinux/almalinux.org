@@ -305,7 +305,7 @@
                     <h2>{{ i18n "Overview" }}</h2>
                     {{ range . }}
                         {{ if eq .key "Certification Inherited From"}}
-                        <p><strong>{{ .key }}: </strong><a href="/certification/ecosystem-catalog/{{ .link }}" alt="">{{ .value }}</a></p>
+                        <p><strong>{{ .key }}: </strong><a href="{{ "/certification/ecosystem-catalog/{{ .link }}" | relLangURL }}" alt="">{{ .value }}</a></p>
                         {{ else if eq .key "Test Logs"}}
                         <p><strong>{{ .key }}: </strong><a href="https://github.com/AlmaLinux/certification/tree/master/{{ .link }}/" alt="">{{ .value }}</a></p>
                         {{ else }}
