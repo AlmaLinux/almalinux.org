@@ -304,7 +304,7 @@
     "which calls for industry action to develop software component frameworks, including SBOMs, to expedite discovery of and response to future vulnerabilities like Log4j.": "qui appelle l'industrie à développer des cadres de composants logiciels, y compris les SBOM, pour accélérer la découverte et la réponse aux vulnérabilités futures comme Log4j.",
     "For more information, see the Almalinux wiki:": "Pour plus d'informations, consultez le wiki Almalinux :",
     "The Package Evolution Service stores package migration metadata.": "Le Service d'évolution des paquets stocke les métadonnées de migration des paquets.",
-    "No.": "",
+    "No.": "Non.",
     "PES supports several classes of rules for packages such as added, removed, renamed, split, merged, and so on.": "PES prend en charge plusieurs classes de règles pour les paquets, telles que ajouté, supprimé, renommé, fractionné, fusionné, etc.",
     "Your company logo on AlmaLinux website in up two sections/categories": "Le logo de votre entreprise sur le site web d'AlmaLinux dans deux sections/catégories maximum",
     "acceptance as AlmaLinux mirror by tech committee": "acceptation en tant que miroir AlmaLinux par le comité technique",
@@ -354,7 +354,7 @@
     "Learn more about the project": "",
     "We'll miss you, but if you can't make it to AlmaLinux Day Tokyo, you can join us online! We'll be posting the videos from the talks at the event to share with everyone.": "",
     "AlmaLinux OS UBI-alternatives:": "",
-    "AlmaLinux AWS Wiki Page": "",
+    "AlmaLinux AWS Wiki Page": "Page Wiki AlmaLinux AWS",
     "Currently, ELevate project supports the following upgrade and migration directions:": "Actuellement, le projet ELevate prend en charge les directions de mise à niveau et de migration suivantes :",
     "AlmaLinux provides official OCI, Docker and four fully compatible alternatives for the Red Hat Universal Base Images (UBI).": "",
     "a single network installation CD image that downloads packages over the Internet.": "une image de CD d'installation réseau unique qui télécharge les paquets via Internet.",
@@ -385,7 +385,7 @@
     "AlmaLinux Raspberry Pi Wiki Page": "",
     "Images are deployable for Regular, Shielded and ARM type instances via the Oracle Cloud Marketplace, Partner Image on Oracle Cloud Infrastructure Console and ": "",
     "Thank you to our sponsors!": "",
-    "Images are deployable via the marketplace, portal and CLI.": "",
+    "Images are deployable via the marketplace, portal and CLI.": "Les images sont déployables depuis la marketplace, le portail et la CLI.",
     "Keynotes": "",
     "Boot": "Démarrage",
     "AlmaLinux Community Activities in Japan": "",
@@ -450,7 +450,7 @@
     "You can find more about OVAL Streams on the ": "",
     "What does ABI/binary compatible with RHEL mean?": "",
     "It wasn't possible--until now. Move from CentOS 7.x to 8.x version of the RHEL derivative of your choice, or upgrade from 8.x to 9.x within the same derivative. Preserve your applications, your data, and your sanity.": "Ce n'était pas possible - jusqu'à présent. Passez de la version CentOS 7.x à 8.x du dérivé RHEL de votre choix, ou effectuez une mise à niveau de 8.x à 9.x au sein du même dérivé. Préservez vos applications, vos données et votre tranquillité d'esprit.",
-    " and from the main AlmaLinux OS repositories:": "",
+    " and from the main AlmaLinux OS repositories:": " et depuis les dépôts principaux d'AlmaLinux OS:",
     "Switching distributions is usually costly and time-consuming, but that's not the case when switching from CentOS and other RHEL® derivatives to AlmaLinux OS.": "Changer de distribution est généralement coûteux et prend du temps, mais ce n'est pas le cas lors du passage de CentOS et autres dérivés de RHEL® à AlmaLinux OS.",
     "security of infrastructure globally": "",
     "AlmaLinux Day Tokyo 2023 is the world's first official AlmaLinux OS Foundation event. This event will be a gathering of some of the most engaged people in the AlmaLinux community, as well as technology partners from all over the world. This is the best place to engage and meet some of the people who care most about the success of AlmaLinux.": "",
@@ -664,5 +664,6 @@
     "OpenSCAP Guide for AlmaLinux OS 9": "",
     "Track 2": "",
     "AlmaLinux OS Images are also available via the": "",
-    "You can get official AlmaLinux OS images at the link provided: ": ""
+    "You can get official AlmaLinux OS images at the link provided: ": "",
+    "What is AlmaLinux OS Kitten?": "Qu'est-ce qu'AlmaLinux OS Kitten ?"
 }
