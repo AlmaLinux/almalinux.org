@@ -1,5 +1,5 @@
 ---
-title: "Announcing Silver Sponsor Members - Fastly, Fsas Technologies, AMD, world4you"
+title: "Announcing Silver Sponsor Members - Fastly, AMD, world4you"
 type: blog
 author: 
  name: "benny Vasquez"
@@ -9,7 +9,7 @@ date: '2024-11-11'
 images:
   - /blog-images/2024/oct_sponsors.png
 post:
-    title: "Announcing Silver Sponsor Members - Fastly, Fsas Technologies, AMD, world4you"
+    title: "Announcing Silver Sponsor Members - Fastly, AMD, world4you"
     image: /blog-images/2024/oct_sponsors.png
 ---
 
