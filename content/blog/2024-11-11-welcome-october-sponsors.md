@@ -18,19 +18,19 @@ A couple of weeks ago we issued a press release announcing three more new and re
 
 ## AMD
 
-For more than 50 years [AMD](http://www.amd.com/) has driven innovation in high-performance computing, graphics, and visualization technologies - and they have been sponsor members at AlmaLinux since the beginning. They provide support for us in a few different ways, both with hardware and by providing introductions to other vendors that we need to engage with.
+For more than 50 years [AMD](https://www.amd.com/) has driven innovation in high-performance computing, graphics, and visualization technologies - and they have been sponsor members at AlmaLinux since the beginning. They provide support for us in a few different ways, both with hardware and by providing introductions to other vendors that we need to engage with.
 
 "AMD has a long-standing commitment to delivering open, standards-based enterprise technologies that solve our customers' biggest challenges. We are proud to contribute to community-driven open-source projects, like AlmaLinux, that foster an accessible and successful Linux ecosystem. We are pleased to continue our support of the AlmaLinux OS Foundation," said Raghu Nambiar, corporate vice president, Data Center Ecosystems and Solutions, AMD.
 
 ## world4you
 
-[world4you](http://www.world4you.com/) serves as one of Austria's leading hosting providers, providing its customers' data a secure home on the internet. They provide AlmaLinux as an option to their customers and have been a sponsor member since 2021.
+[world4you](https://www.world4you.com/) serves as one of Austria's leading hosting providers, providing its customers' data a secure home on the internet. They provide AlmaLinux as an option to their customers and have been a sponsor member since 2021.
 
 Sandra Trummer-Gabler, General Manager at world4you, is convinced of the collaboration: "We are proud to be sponsor members of AlmaLinux again this year. Strong partnerships are crucial for us to provide the service our customers deserve. Together, we are setting benchmarks and maintaining the standards that are essential for reliable services and a successful future."
 
 ## Fastly
 
-[Fastly's](http://www.fastly.com) powerful, programmable edge cloud platform helps the world's top brands deliver fast, safe, and engaging online experiences. We recently partnered with Fastly to add the speed boost to our mirror system (you can read more about our mirror system in [Jonathan's blog post](https://almalinux.org/blog/2024-08-07-mirrors-1-to-400/)), ensuring even faster responses for users of our mirror system.
+[Fastly's](https://www.fastly.com) powerful, programmable edge cloud platform helps the world's top brands deliver fast, safe, and engaging online experiences. We recently partnered with Fastly to add the speed boost to [repo.almalinux.org](http://repo.almalinux.org) (from which our community downloads ISO's and other things).
 
 "Fastly is a proud supporter of the AlmaLinux OS Foundation," said Fastly Co-Founder and Chief Technology Officer Artur Bergman. "Open source and open standards are critical not only to Fastly, but also to the future of the internet and all digital technologies. We remain steadfast in our support for the open internet, and we are committed to helping the open source community and technologies thrive."
 
