@@ -616,7 +616,7 @@
     "effortless installation with all packages included, no additional repositories required.": "tüm paketleri içeren çaba gerektirmeyen kurulum, ek depolar gerekmez.",
     "DVD": "DVD",
     "a single network installation CD image that downloads packages over the Internet.": "İnternet üzerinden paketleri indiren, tek, ağ kurulumu CD kalıbı.",
-    "a minimal self-containing DVD image that makes possible offline installation.": "",
+    "a minimal self-containing DVD image that makes possible offline installation.": "çevrimdışı kurulumu mümkün kılan kendi içinde minimal bir DVD imajı.",
     "Download .torrent file": ".torrent dosyası indir",
     "Download ISOs from mirrors": "Yansılardan ISO'ları indir",
     "AlmaLinux provides official images for various cloud providers.": "AlmaLinux bulut sağlayıcıları için resmi kalıplar sağlar.",
