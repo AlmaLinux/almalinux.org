@@ -13,7 +13,7 @@ post:
     image: /blog-images/2024/2025distrosroom.png
 ---
 
-It's almost time for the Linux Distributions DevRoom at FOSDEM again! Let's dive into what we'd like to see and how you can get involved! 
+It's almost time for the Linux Distributions DevRoom at FOSDEM again, but the Call for Participation is OPEN NOW! Let's dive into what we'd like to see and how you can get involved! 
 
 Submit your talk [to FOSDEM](https://fosdem.org/submit) in the Distributions track, when you're ready! 
 
@@ -37,6 +37,7 @@ We are looking for your most incredible talk for the Distributions DevRoom! Whet
 
 ### Important Dates
 
+* 30 October - Call for Participation (CFP) opens
 * 1 December - Call for Participation (CFP) closes
 * 1 - 5 December - Submissions reviewed
 * 6 December - Speakers notified
