@@ -634,7 +634,6 @@
    "AlmaLinux Newsletter Signup": "AlmaLinux Newsletter Signup",
    "Certification": "Certification",
    "Read More": "Read More",
-   "Announcing the new Certification Program, run by the Certification SIG.": "Announcing the new Certification Program, run by the Certification SIG.",
    "Hardware Certification": "Hardware Certification",
    "Part of the AlmaLinux Certification Program": "Part of the AlmaLinux Certification Program",
    "The AlmaLinux Hardware Certification Program ensures hardware compatibility and promotes OS adoption through community-first, flexible certification types. The process is built just like AlmaLinux: with focus on long-term reliability and performance.": "The AlmaLinux Hardware Certification Program ensures hardware compatibility and promotes OS adoption through community-first, flexible certification types. The process is built just like AlmaLinux: with focus on long-term reliability and performance.",
@@ -703,5 +702,6 @@
    " you can migrate to AlmaLinux in-place. If you are coming from CentOS 7, or need to upgrade between major versions, ": " you can migrate to AlmaLinux in-place. If you are coming from CentOS 7, or need to upgrade between major versions, ",
    "What is AlmaLinux OS Kitten?": "What is AlmaLinux OS Kitten?",
    "It is the direct upstream for AlmaLinux OS 10 and is the primary point for the AlmaLinux community to engage and influence the future of AlmaLinux OS. Fixes and features land here first and trickle down into AlmaLinux OS as appropriate. It is the integration and collaboration point for AlmaLinux to its upstreams as well, such as CentOS Stream and Fedora. You can read more about it:  ": "It is the direct upstream for AlmaLinux OS 10 and is the primary point for the AlmaLinux community to engage and influence the future of AlmaLinux OS. Fixes and features land here first and trickle down into AlmaLinux OS as appropriate. It is the integration and collaboration point for AlmaLinux to its upstreams as well, such as CentOS Stream and Fedora. You can read more about it:  ",
-   "AlmaLinux Kitten OS": "AlmaLinux Kitten OS"
+   "AlmaLinux Kitten OS": "AlmaLinux Kitten OS",
+   "AlmaLinux 9.5 is live! Find the details and more here:": "AlmaLinux 9.5 is live! Find the details and more here:"
 }
