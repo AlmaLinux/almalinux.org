@@ -61,7 +61,7 @@ AlmaLinux 9.5 aims to improve performance, development tooling, and security. Up
 
 You can read the full release notes for this version on the wiki: [AlmaLinux OS 9.5 Release Notes](https://wiki.almalinux.org/release-notes/9.5.html).
 
-## What you can do to help?
+## What can you do to help?
 
 Your input into testing and feedback is crucial and essential for successful production releases. 
 Please, report any bugs you may see on the [Bug Tracker](https://bugs.almalinux.org/). Also, pop into the [AlmaLinux Community Chat](https://chat.almalinux.org) and join our Testing Channel, post a question on our [9.5 Forum](https://forums.almalinux.org/c/devel/9/36), on our AlmaLinux Community on [Reddit](https://reddit.com/r/almalinux) or catch us on [X](https://twitter.com/almalinux). 
