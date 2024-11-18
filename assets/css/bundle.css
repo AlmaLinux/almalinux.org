@@ -174,7 +174,7 @@ border-bottom-color: #14598a !important;
   height: 100%;
 }
 .al-page-index .al-index-backed-by .al-backed-by-list .al-backer-logo {
-  height: 100%;
+  max-height: 100%;
   width: 120px;
 }
 
