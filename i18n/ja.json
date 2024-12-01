@@ -456,7 +456,7 @@
     "Is AlmaLinux OS FIPS-140 compliant??": "AlmaLinux OSはFIPS-140に準拠していますか？？",
     "AlmaLinux OS 9.2 is FIPS-140 compliant. Read more in this blog post: ": "AlmaLinux OS 9.2はFIPS-140に準拠しています。詳しくはこのブログ記事をご覧ください： ",
     "FIPS Validation for AlmaLinux OS": "FIPS Validation for AlmaLinux OS",
-    "Individuals and organizations that require an enterprise-grade linux distribution, without the need for a commercial license agreement. AlmaLinux OS is also a perfect replacement for anyone who has historically relied on the CentOS Linux releases to achieve computing objectives, and for whom CentOS Stream is not the right solution.": "Individuals and organizations that require an enterprise-grade linux distribution, without the need for a commercial license agreement. AlmaLinux OS is also a perfect replacement for anyone who has historically relied on the CentOS Linux releases to achieve computing objectives, and for whom CentOS Stream is not the right solution.",
+    "Individuals and organizations that require an enterprise-grade linux distribution, without the need for a commercial license agreement. AlmaLinux OS is also a perfect replacement for anyone who has historically relied on the CentOS Linux releases to achieve computing objectives, and for whom CentOS Stream is not the right solution.": "エンタープライズグレードの Linux ディストリビューションを必要とするが、商用ライセンス契約は必要でない個人や組織向けです。AlmaLinux OS は従来 CentOS Linux に依存してコンピューティング課題を解決してきた人や、CentOS Stream が適していない人にとっても最適な代替手段です。",
     "The AlmaLinux OS Foundation is a 501(c)(6) that was founded in March of 2021 to own and manage the AlmaLinux OS project. We have been involving the community since the beginning, and the governing board is chosen by members of the foundation. At all times, AlmaLinux OS will be free and open.": "AlmaLinux OS財団はAlmaLinux OSプロジェクトを所有し管理するために2021年3月に設立された米国歳入法501(c)(6)に基づく非営利団体です。設立当初からコミュニティを巻き込んでおり、運営委員会は財団のメンバーによって選ばれています。常にAlmaLinux OSはフリーでオープンです。",
     "AlmaLinux-deploy": "AlmaLinux-deploy",
     "Since AlmaLinux is binary compatible with RHEL®, your applications and services should be completely interoperable. You can rapidly migrate any number of servers using ": "AlmaLinux は RHEL® とバイナリ互換性があるため、アプリケーションやサービスは相互運用可能です。次のツールを使用すればいくつものサーバーを迅速に移行することが可能です ",
@@ -767,5 +767,11 @@
     "Members of ALESCo": "ALESCo会員",
     "Cloud Engineer": "クラウドエンジニア",
     "Learn more": "さらに詳しく",
-    "ALESCo": "ALESCo"
+    "ALESCo": "ALESCo",
+    "in the AlmaLinux GitHub organization.": "AlmaLinux GitHub organization。",
+    "You can find the LEAPP code ": "LEAPP のコードはこちらで確認できます ",
+    "Will the upgrade be \"in-place\"? Will it require downtime?": "アップグレードは「インプレース」で行われますか？ダウンタイムは必要ですか？",
+    "Is ELevate ready for production?": "ELevate は本番環境で使用できますか？",
+    "Yes, and yes! All your data, applications and settings will be kept. Migrations will require your system to reboot twice.": "はい、どちらもその通りです！全てのデータ、アプリケーション、設定は保持されます。移行にはシステムを 2 回再起動する必要があります。",
+    "Who is ELevate for?": "ELevate は誰のためのものですか？"
 }
