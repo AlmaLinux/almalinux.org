@@ -1,0 +1,20 @@
+# This file provides security vulnerability reporting information for the AlmaLinux OS project.
+# Please follow the criteria below to ensure your report reaches the correct team.
+Preferred-Languages: en
+
+# Use this contact if the issue is directly related to the AlmaLinux operating system itself.
+Contact: https://bugs.almalinux.org
+
+# Use this contact for vulnerabilities that are associated with the AlmaLinux project or its infrastructure.
+Contact: mailto:security@almalinux.org
+
+# Before submitting a report, please read our vulnerability disclosure policy.
+# This will help you understand the process and ensure your report is handled appropriately.
+Policy: https://almalinux.org/p/vulnerability-disclosure-policy/
+
+
+Encryption: https://almalinux.org/files/security-pgp-key.txt
+Expires: 2025-05-03T12:00:00.000Z
+
+
+# Important: Do not send sensitive data or vulnerability reports publicly.
