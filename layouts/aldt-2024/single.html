@@ -76,34 +76,40 @@
       </div>
     </div>	  
 end thank you block-->
-    <div class="al-index-toppicTokyo" style="background: url('/landingpages/aldt-2024/aldt_2024_header.jpg') 50%/cover no-repeat;">
-      <div class="container al-py-lg" style="padding: 0 40px 0 40px; height: 900px; display: flex; flex-direction: column;">
-        <div class="toppic_item_1" style="padding-top: 11%;">
-          <h1 style="font-size: 80px; letter-spacing: 0.80px; font-weight: 700;">{{ i18n "AlmaLinux Day: Tokyo" }}</h1>
+    <div class="al-index-topic-ALD" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/landingpages/aldt-2024/aldt_2024_header.jpg');">
+      <div class="container al-py-lg">
+        <div class="topic_item_1" style="padding-top: 15%;">
+          <h1>{{ i18n "AlmaLinux Day: Tokyo" }}</h1>
           <h3>
-            {{ i18n "Returning to Tokyo for a second year: an entire event focused on AlmaLinux for the Japanese community." }}<br>
+            {{ i18n "AlmaLinux for Enterprise!" }}<br />
             {{ i18n "December 14th, 2024" }}
           </h3>
           <p>
-            {{ i18n "Cafe Shiba - WORLD SPACE" }}<br>
-            {{ i18n "1-7-1 Kaigan, Minato-ku, Tokyo" }}
+            {{ i18n "Cafe Shiba - WORLD SPACE" }}<br />
+            {{ i18n "1-7-1 Kaigan, Minato-ku, Tokyo" }}<br />
 			{{ i18n "Tokyo Port City Takeshiba Office Tower 30F" }}
           </p>
         </div>
-        <div class="toppic_item_2" style="padding-top: 30px;">
+        <div class="topic_item_2" style="padding-top: 30px;">
           <a href="https://almalinux.connpass.com/event/330357/" class="btn btn-lg px-4 me-md-2 al-cta-blue">{{ i18n "Register now!" }}</a>
         </div>
       </div>
     </div>
-    <div class="al-index-peopleinfo">
+    <div>
+    <div class="al-index-register">
       <div class="container al-py-md" style="padding: 0 40px 0 40px;">
-        <h1 style="font-size: 80px;text-align: center;">{{ i18n "headline here" }}</h1>
-        <h3 style="text-align: center;">{{ i18n "Tagline for the event" }}</h3>
+        <h2 style="font-size: 50px; letter-spacing: 0.80px; font-weight: 600; margin-bottom: 20px;">{{ i18n "Join us to learn from each other in an amazing city." }}</h2>
+        <p style="margin-bottom: 20px; line-height: 28px; letter-spacing: 0.25px;">
+          {{ i18n "Linux and open source experts will gather for a day of learning and sharing our experiences using AlmaLinux in enterprise environments, and then make connections with the people who can help solve every technology problem you're facing." }}
+        </p>
+        <div style="text-align: center">
+          <a href="https://almalinux.connpass.com/event/330357//" class="btn btn-lg px-4 me-md-2 al-cta-blue">{{ i18n "Register now!" }}</a>
+        </div>
       </div>
-    </div>
+    </div> 
     <div class="al-index-program" style="background: #0e3b5c;">
       <div class="container al-py-md" style="padding: 0 40px 0 40px;">
-        <h1 style="font-size: 80px; text-align: center; letter-spacing: 0.80px; font-weight: 700; margin-bottom: 20px;">{{ i18n "Program" }}</h1>
+        <h1 style="font-size: 80px; text-align: center; letter-spacing: 0.80px; font-weight: 700; margin-bottom: 20px;">{{ i18n "Schedule of lectures" }}</h1>
         <table style="margin: auto;">
           <tbody>
             <tr style="background-color: #0f4266;">
@@ -111,59 +117,74 @@ end thank you block-->
               <th colspan="3" style="width:90%; text-align:center;"></th>
             </tr>
             <tr>
-              <td nowrap class="aldt_time">12:00 - 13:00</td>
+              <td nowrap class="aldt_time">12:30 - 13:00</td>
               <td colspan="3">{{ i18n "Registration and checkin opens" }}</td>
             </tr>
             <tr>
-              <td nowrap class="aldt_time">13:00 - 13:20</td>
-              <td colspan="3" style="width:100%;">{{ i18n "AlmaLinux and Compatibility with RHEL" }} {{ i18n "benny Vasquez - AlmaLinux OS Foundation Chair" }}</td>
+              <td nowrap class="aldt_time">13:10 - 14:10</td>
+              <td colspan="3" style="width:100%;">
+				 <img class="img-fluid rounded-circle mb-3" src="/board/benny.jpg" alt="benny Vasquez" style="max-width: 40px;"> <img class="img-fluid rounded-circle mb-3" src="/users/alukoshko.jpg" alt="Andrew Lukoshko" style="max-width: 40px;"> <img class="img-fluid rounded-circle mb-3" src="/users/jonathan.jpg" alt="Jonathan Wright" style="max-width: 40px;"> <br />
+				 {{ i18n "AlmaLinux and Compatibility with RHEL" }} ({{ i18n "benny Vasquez" }} - {{ i18n "AlmaLinux OS Foundation Chair" }}) <br />
+			 	 {{ i18n "The AlmaLinux Build Pipeline" }} ({{ i18n "Andrew Lukoshko" }} - {{ i18n "AlmaLinux OS Architect" }}) <br />
+				 {{ i18n "Introducing the AlmaLinux Certification SIG" }} ({{ i18n "Jonathan Wright" }} - {{ i18n "AlmaLinux Infrastructure Team Lead" }})
+			  </td>
             </tr>
             <tr>
-              <td nowrap class="aldt_time">13:20 - 13:40</td>
-              <td colspan="3" style="width:100%;"><img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/users/alukoshko.jpg" alt="Andrew Lukoshko" style="max-width: 40px;"> {{ i18n "The AlmaLinux Build Pipeline" }} - {{ i18n "Andrew Lukoshko - AlmaLinux OS Architect" }}</td>
+              <td nowrap class="aldt_time">14:25 - 15:05</td>
+              <td colspan="3" style="width:100%;">
+					 <img class="img-fluid rounded-circle mb-3" src="/users/AlmaLinux.png" alt="Daiki Orihara" style="max-width: 40px;"> <br />
+				{{ i18n "Next-generation digital social infrastructure and generative AI" }} ({{ i18n "Daiki Orihara" }} - {{ i18n "SB Intuitions Corp., SoftBank Corp." }})
+			  </td>
             </tr>
             <tr>
-              <td nowrap class="aldt_time">13:40 - 14:00</td>
-              <td colspan="3" style="width:90%">{{ i18n "Introducing the AlmaLinux Certification SIG" }} - {{ i18n "Jonathan Wright - AlmaLinux OS Infrastructure Team Lead" }}</td>
-            </tr>
-            <tr style="background-color: #0f4266;">
-              <th class="aldt_time">{{ i18n "Time" }}</th>
-              <th style="width:40%; text-align:center;">{{ i18n "Track 1" }}</th>
-              <th class="aldt_time">{{ i18n "Time" }}</th>
-              <th style="width:40%; text-align:center;">{{ i18n "Track 2" }}</th>
-            </tr>
-            <tr>
-              <td nowrap class="aldt_time">14:00 - 19:00 </td>
-              <td>{{ i18n "More programming to be announced soon!" }}</td>
-              <td nowrap class="aldt_time">14:00 - 19:00 </td>
-			  <td>{{ i18n "More programming to be announced soon!" }}</td>
-		    </tr>
-<!--               <td nowrap class="aldt_time">15:40 - 16:20</td>
-			  <td>{{ i18n "Technical session" }} - {{ i18n "The Forefront of AlmaLinux on ARM Server Infrastructure" }} {{ i18n "(Hewlett Packard Japan, G.K. OpenSource/Linux Technology Evangelist - Masazumi Koga)" }} <a href="https://youtu.be/AcOl-AdyRoM">{{ i18n "View on YouTube" }}</a></td>
+              <td nowrap class="aldt_time">15:10 - 16:10</td>
+              <td colspan="3" style="width:100%;">
+					 <img class="img-fluid rounded-circle mb-3" src="/users/AlmaLinux.png" alt="Ryota Imamura" style="max-width: 40px;"> <img class="img-fluid rounded-circle mb-3" src="/users/AlmaLinux.png" alt="Naoki Watanabe" style="max-width: 40px;"> <img class="img-fluid rounded-circle mb-3" src="/users/AlmaLinux.png" alt="Masazumi Koga" style="max-width: 40px;"> <img class="img-fluid rounded-circle mb-3" src="/users/AlmaLinux.png" alt="Yuichi Aoyama" style="max-width: 40px;"><br />
+				{{ i18n "Successful Cases and Know-How of Utilizing Open Source Software with AlmaLinux" }} ({{ i18n "Ryota Imamura" }} - {{ i18n "DesigNET" }})  <br />
+				{{ i18n "Challenges to automatic OS and middleware updates for safer and more flexible operations with AlmaLinux" }} ({{ i18n "Naoki Watanabe" }} - {{ i18n "Prime Strategy Co., Ltd." }}) <br />
+				{{ i18n "The overwhelming proof of the benefits of ARM, including for AI." }} ({{ i18n "Masazumi Koga" }} - {{ i18n "Hewlett Packard Japan, G.K." }}) <br />
+				{{ i18n "Cybertrust's AlmaLinux efforts and contributions - from last year's AlmaLinux Day Tokyo to now" }} ({{ i18n "Yuichi Aoyama" }} - {{ i18n "Cybertrust Japan Co., Ltd." }})
+			  </td>
             </tr>
             <tr>
-              <td nowrap class="aldt_time">16:45 - 17:25</td>
-              <td>{{ i18n "DeepDive Session" }} - {{ i18n "The Evolution of SBOMs in AlmaLinux" }} - {{ i18n "(AlmaLinux and MIRACLE LINUX Developer - Matthias Kruk)" }} <a href="https://youtu.be/RJRKqY64xCo">{{ i18n "View on YouTube" }}</a></td>
-              <td nowrap class="aldt_time">16:25 - 17:05</td>
-              <td>{{ i18n "Technical session" }} - {{ i18n "Seamless Migration: Transitioning from CentOS 7 to AlmaLinux with Optimal Solutions" }} - {{ i18n "(DesigNET Inc. OSS Laboratory general manager - Kimiyoshi Ohno)" }} <a href="https://youtu.be/AEA8losuKsA">{{ i18n "View on YouTube" }}</a></td>
+              <td nowrap class="aldt_time">16:30</td>
+              <td colspan="3" style="width:100%;">
+				{{ i18n "Closing" }} 
+			  </td>
             </tr>
             <tr>
-              <td nowrap class="aldt_time">17:30 - 19:30</td>
-              <td colspan="3" style="width:90%; text-align:center;">{{ i18n "Reception with light food and beverages" }}</td>
-            </tr> -->
+              <td nowrap class="aldt_time">17:00</td>
+              <td colspan="3" style="width:100%;">
+				{{ i18n "Social Gathering" }} 
+			  </td>
+            </tr>
           </tbody>
         </table>
       </div>
     </div>
-    <div class="al-index-register">
-      <div class="container al-py-md" style="padding: 0 40px 0 40px;">
-        <h2 style="font-size: 50px; letter-spacing: 0.80px; font-weight: 600; margin-bottom: 20px;">{{ i18n "If you come to one event this year, this is the one for you." }}</h2>
-        <p style="margin-bottom: 20px; line-height: 28px; letter-spacing: 0.25px;">
-          {{ i18n "Never has there been a better gathering of AlmaLinux experts. Hear all of the latest about the project, hear from industry experts about the current trends in the enterprise Linux ecosystem, and make connections with the people who can help solve every technology problem you're facing." }}
-        </p>
-        <div style="text-align: center">
-          <a href="https://almalinux.connpass.com/event/330357//" class="btn btn-lg px-4 me-md-2 al-cta-blue">{{ i18n "Register now!" }}</a>
-        </div>
+      <div class="container al-py-lg">
+		<div class="row px-4 pb-4">
+			<div class="col-lg-6">
+				<h3 class="pb-3">{{ i18n "AlmaLinux for Enterprise!" }}</h3>
+					<p>{{ i18n "From hyperscale and supercomputers to single board computers, from desktop to cloud - AlmaLinux is a great choice wherever you need it!" }}</p>
+					<p>{{ i18n "Navigating the open source world can be harrowing for businesses, but AlmaLinux is ready to solve your operating system needs!" }}</p>
+			</div>
+			<div class="col-lg-6">
+				<h3 class="pb-3">{{ i18n "Event Details" }}</h3>
+					<p>{{ i18n "Date and time: Saturday, December 14, 2024, 13:00-20:00 (doors open at 12:30)" }}<br />
+					{{ i18n "Venue: Cafe Shiba 'WORLD SPACE'" }}<br />
+					{{ i18n "1-7-1 Kaigan, Minato-ku, Tokyo" }}<br />
+					{{ i18n "Tokyo Port City Takeshiba Office Tower 30F" }}<br />
+					{{ i18n "Host: Japan AlmaLinux Users Group" }}<br />
+					{{ i18n "Co-host: AlmaLinux OS Foundation" }}<br />
+					{{ i18n "Sponsors: Open Source People Network https://ospn.jp/, and more below." }}<br />
+					{{ i18n "Participation fee: Free" }}<br />
+					{{ i18n "Social gathering participation fee: 2000 yen" }}<br /> 
+					{{ i18n "Social gathering is free for students! (Please bring your student ID)" }}
+					</p>
+			</div>
+		</div>
+        
       </div>
     </div>
     <div class="al-index-event" style="background: #0e3b5c;">
@@ -222,18 +243,7 @@ end thank you block-->
             </div>
           </div>
 <!-- speaker two -->
-          <div class="item-headshot" style="width: 25%; align-items: center; padding: 20px 20px;">
-            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 40px 0;">
-                <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/users/suzukisan.jpg" alt="Yohei Suzuki" style="max-width: 80px;">
-              </span>
-              <div style="display: flex; flex-direction: column; text-align: center;">
-                <p>{{ i18n "Yohei Suzuki" }}</p>
-                <span class="small text-uppercase mb-1">{{ i18n "Corporate Officer, General Manager of OSS Business Promotion Unit" }}</span>
-                <span class="small fw-light">{{ i18n "Cybertrust Japan Co., Ltd." }}</span>
-              </div>
-            </div>
-          </div>
-<!-- speaker three -->
+
           <div class="item-headshot" style="width: 25%; align-items: center; padding: 20px 20px;">
             <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 40px 0;">
                 <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/users/alukoshko.jpg" alt="Andrew Lukoshko" style="max-width: 80px;">
@@ -245,7 +255,7 @@ end thank you block-->
               </div>
             </div>
           </div>
-<!-- speaker four -->
+<!-- speaker three -->
           <div class="item-headshot" style="width: 25%; align-items: center; padding: 20px 20px;">
             <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 40px 0;">
                 <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/users/jonathan.jpg" alt="Andrew Lukoshko" style="max-width: 80px;">
@@ -257,13 +267,67 @@ end thank you block-->
               </div>
             </div>
           </div>
+<!-- speaker four -->
+          <div class="item-headshot" style="width: 25%; align-items: center; padding: 20px 20px;">
+            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 40px 0;">
+                <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/users/AlmaLinux.png" alt="Speaker to be defined" style="max-width: 80px;">
+              </span>
+              <div style="display: flex; flex-direction: column; text-align: center;">
+                <p>{{ i18n "Daiki Orihara" }}</p>
+                <span class="small text-uppercase mb-1">{{ i18n "Leading title" }}</span>
+                <span class="small fw-light">{{ i18n "SB Intuitions Corp., SoftBank Corp." }}</span>
+              </div>
+            </div>
+          </div>
 <!-- speaker five -->
-
+          <div class="item-headshot" style="width: 25%; align-items: center; padding: 20px 20px;">
+            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 40px 0;">
+                <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/users/AlmaLinux.png" alt="Speaker to be defined" style="max-width: 80px;">
+              </span>
+              <div style="display: flex; flex-direction: column; text-align: center;">
+                <p>{{ i18n "Ryota Imamura" }}</p>
+                <span class="small text-uppercase mb-1">{{ i18n "Position title" }}</span>
+                <span class="small fw-light">{{ i18n "DesigNET" }}</span>
+              </div>
+            </div>
+          </div>
 <!-- speaker six -->
-
+          <div class="item-headshot" style="width: 25%; align-items: center; padding: 20px 20px;">
+            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 40px 0;">
+                <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/users/AlmaLinux.png" alt="Speaker to be defined" style="max-width: 80px;">
+              </span>
+              <div style="display: flex; flex-direction: column; text-align: center;">
+                <p>{{ i18n "Naoki Watanabe" }}</p>
+                <span class="small text-uppercase mb-1">{{ i18n "Position title" }}</span>
+                <span class="small fw-light">{{ i18n "Prime Strategy Co., Ltd." }}</span>
+              </div>
+            </div>
+          </div>
 <!-- speaker seven -->
-
-<!-- /speaker seven -->
+          <div class="item-headshot" style="width: 25%; align-items: center; padding: 20px 20px;">
+            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 40px 0;">
+                <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/2024speakers/MasazumiKoga_HPE_no_bg.png" alt="Speaker to be defined" style="max-width: 80px;">
+              </span>
+              <div style="display: flex; flex-direction: column; text-align: center;">
+                <p>{{ i18n "Masazumi Koga" }}</p>
+                <span class="small text-uppercase mb-1">{{ i18n "Position title" }}</span>
+                <span class="small fw-light">{{ i18n "Hewlett Packard Japan, G.K." }}</span>
+              </div>
+            </div>
+          </div>
+<!-- speaker eight -->
+          <div class="item-headshot" style="width: 25%; align-items: center; padding: 20px 20px;">
+            <div class="item-speakers" style="display: flex; flex-direction: column; align-items: center; background: #0f4266; padding: 40px 0;">
+                <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/users/AlmaLinux.png" alt="Speaker to be defined" style="max-width: 80px;">
+              </span>
+              <div style="display: flex; flex-direction: column; text-align: center;">
+                <p>{{ i18n "Yuichi Aoyama" }}</p>
+                <span class="small text-uppercase mb-1">{{ i18n "Position title" }}</span>
+                <span class="small fw-light">{{ i18n "Cybertrust Japan Co., Ltd." }}</span>
+              </div>
+            </div>
+          </div>
+<!-- /speaker eight -->
         </div>
 		<!-- /speaker container -->
       </div>
@@ -373,12 +437,6 @@ end thank you block-->
             </div>
           </a>
 
-          <a href="https://rackspeed.de" >
-            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
-              <img style="object-fit: contain;" loading="lazy" src="/brands/retired/rackspeed-logo-reverse.svg" alt="RackSpeed" class="al-backer-logo-small">
-            </div>
-          </a>
-
           <a href="https://www.knownhost.com/" >
             <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container" >
               <img style="object-fit: contain;" loading="lazy" src="/brands/KnownHostLogoFLATWHITE.svg" alt="KnownHost" class="al-backer-logo-small">
@@ -432,6 +490,41 @@ end thank you block-->
               <img style="object-fit: contain;" loading="lazy" src="/brands/logo-openlogic-tagline-white.svg" alt="OpenLogic" class="al-backer-logo-small">
             </div>
           </a>
+                        <a  href="https://www.megware.com/">
+                            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                                <img style="object-fit: contain;" loading="lazy" src="/brands/MEGWARE.svg" alt="MEGWARE" class="al-backer-logo-small">
+                            </div>
+                        </a>
+
+                        <a  href="https://www.virtuozzo.com/">
+                            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                                <img style="object-fit: contain;" loading="lazy" src="/brands/virtuozzo.svg" alt="Virtuozzo" class="al-backer-logo-small">
+                            </div>
+                        </a>
+
+                        <a  href="https://home.cern/">
+                            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                                <img style="object-fit: contain;" loading="lazy" src="/brands/cern.svg" alt="CERN" class="al-backer-logo-small">
+                            </div>
+                        </a>
+
+                        <a  href="https://storpool.com/">
+                            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                                <img style="object-fit: contain;" loading="lazy" src="/brands/StorPool.svg" alt="StorPool Storage AD" class="al-backer-logo-small">
+                            </div>
+                        </a>
+
+                        <a  href="https://fastly.com/">
+                            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                                <img style="object-fit: contain;" loading="lazy" src="/brands/fastly.svg" alt="Fastly" class="al-backer-logo-small">
+                            </div>
+                        </a>
+
+                        <a  href="https://www.fsastech.com/">
+                            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                                <img style="object-fit: contain;" loading="lazy" src="/brands/fti_brand.svg" alt="Fsas Technologies Inc." class="al-backer-logo-small">
+                            </div>
+                        </a>
 	    </div>
 		<!--end small logos -->
       </div>
@@ -439,12 +532,12 @@ end thank you block-->
     <div class="al-index-stop" style="background: #22C2FF;">
       <div class="container al-py-md" style="padding: 0 40px 0 40px;">
         <div class="container-stop" style="display: flex;">
-          <div class="stop-item-1" style="width: 60%; text-align: center;">
+          <div class="stop-item-1" style="width: 60%;">
             <h1 style="font-size: 60px; font-weight: 700; line-height: 80px;">
               {{ i18n "Can't make it?" }}
             </h1>
             <p style="font-weight: 400; line-height: 26px;">
-              {{ i18n "We'll miss you, but if you can't make it to AlmaLinux Day Tokyo, you can join us online! We'll be posting the videos from the talks at the event to share with everyone. Sign up for the AlmaLinux Newsletter below, to make sure you don't miss the announcement!" }}
+              {{ i18n "We'll miss you, but if you can't make it to AlmaLinux Day Tokyo, you can still enjoy the day! Just like last year, we'll be posting the videos from the talks at the event to share with everyone. Sign up for the AlmaLinux Newsletter below, so you don't miss the announcement!" }}
             </p>
           </div>
           <div class="stop-item-2" style="padding-left: 50px;">

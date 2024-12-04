@@ -975,7 +975,32 @@ a {
     overflow-wrap: anywhere;
 }
 
+/* -------------------- */
+/* -------------------- */
+/* Event page stuff, mostly */
+/* -------------------- */
+/* -------------------- */
 /* this adds individual list images to the social links we've historcially used on event pages. */
+
+/* ALD(AlmaLinux Day)-specific styling */
+.al-body-container .al-index-topic-ALD {
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.al-body-container .al-index-topic-ALD .container {
+	padding: 0 40px 0 40px; 
+	max-height: 900px; 
+	display: flex; 
+	flex-direction: column;
+}
+
+.al-body-container .al-index-topic-ALD .container h1 {
+font-size: 75px; 
+font-weight: 700;
+}
+
+/* -------------------- */
 
 .sociallist a {
 	color: #0D3654;
