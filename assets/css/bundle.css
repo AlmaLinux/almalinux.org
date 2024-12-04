@@ -23,6 +23,11 @@
   color: #f1f8ff;
   }
 
+.Photo__Lock, .al-index-dowload-icon{
+  width: 40px;
+  height: 40px;
+}
+
 .al-primary-navbar .container {
   padding-left: 15px !important;
   padding-right: 15px !important;
@@ -169,7 +174,7 @@ border-bottom-color: #14598a !important;
   height: 100%;
 }
 .al-page-index .al-index-backed-by .al-backed-by-list .al-backer-logo {
-  height: 100%;
+  max-height: 100%;
   width: 120px;
 }
 

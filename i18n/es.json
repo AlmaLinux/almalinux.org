@@ -896,5 +896,6 @@
     " you can migrate to AlmaLinux in-place. If you are coming from CentOS 7, or need to upgrade between major versions, ": " puede migrar a AlmaLinux en su lugar. Si vienes de CentOS 7, o necesitas actualizar entre versiones principales, ",
     "It is the direct upstream for AlmaLinux OS 10 and is the primary point for the AlmaLinux community to engage and influence the future of AlmaLinux OS. Fixes and features land here first and trickle down into AlmaLinux OS as appropriate. It is the integration and collaboration point for AlmaLinux to its upstreams as well, such as CentOS Stream and Fedora. You can read more about it:  ": "Es el upstream directo para AlmaLinux OS 10 y es el punto principal para la comunidad AlmaLinux para participar e influir en el futuro de AlmaLinux OS. Correcciones y características aterrizan aquí primero y se filtran en AlmaLinux OS según corresponda. Es el punto de integración y colaboración para AlmaLinux a sus corrientes ascendentes, así, como CentOS Stream y Fedora. Puede leer más sobre él:  ",
     "AlmaLinux Kitten OS": "AlmaLinux Kitten OS",
-    "What is AlmaLinux OS Kitten?": "¿Qué es AlmaLinux OS Kitten?"
+    "What is AlmaLinux OS Kitten?": "¿Qué es AlmaLinux OS Kitten?",
+    "AlmaLinux 9.5 is live! Find the details and more here:": "¡AlmaLinux 9.5 ya está disponible! Encuentra los detalles y más información aquí:"
 }
