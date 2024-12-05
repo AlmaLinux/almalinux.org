@@ -4,7 +4,7 @@
 <meta property="og:url" content="{{ .Permalink }}" />
 
 {{- with $.Params.images -}}
-    {{- range first 6 . }}<meta property="og:image" content="{{ . | absURL }}" />{{ end -}}
+    {{- range first 6 . }}<meta property="og:image" content="{{ . | relURL }}" />{{ end -}}
 {{- else -}}
     {{- $images := $.Resources.ByType "image" -}}
     {{- $featured := $images.GetMatch "*feature*" -}}
