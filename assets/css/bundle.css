@@ -197,6 +197,11 @@ border-bottom-color: #14598a !important;
 .al-page-index .al-index-sponsors .al-backed-by-list .al-backer-logo-small {
   height: 100%;
   width: 70px;
+  object-fit: contain;
+}
+
+.al-page-index .al-index-sponsors .al-backed-by-list .al-backer-logo-small img {
+  object-fit: contain;
 }
 
 /* formatting the commercial support vendors on the index page. */
