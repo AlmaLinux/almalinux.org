@@ -720,7 +720,6 @@
    "Header image by ": "Header image by ",
    "Cafe Shiba - WORLD SPACE": "Cafe Shiba - WORLD SPACE",
    "AlmaLinux OS Foundation Chair": "AlmaLinux OS Foundation Chair",
-   "AlmaLinux OS Architect": "AlmaLinux OS Architect",
    "AlmaLinux Infrastructure Team Lead": "AlmaLinux Infrastructure Team Lead",
    "From hyperscale and supercomputers to single board computers, from desktop to cloud - AlmaLinux is a great choice wherever you need it!": "From hyperscale and supercomputers to single board computers, from desktop to cloud - AlmaLinux is a great choice wherever you need it!",
    "Schedule of lectures": "Schedule of lectures",
@@ -737,11 +736,8 @@
    "Hewlett Packard Japan, G.K.": "Hewlett Packard Japan, G.K.",
    "Yuichi Aoyama": "Yuichi Aoyama",
    "Challenges to automatic OS and middleware updates for safer and more flexible operations with AlmaLinux": "Challenges to automatic OS and middleware updates for safer and more flexible operations with AlmaLinux",
-   "The overwhelming proof of the benefits of ARM, including for AI.": "The overwhelming proof of the benefits of ARM, including for AI.",
    "Cybertrust's AlmaLinux efforts and contributions - from last year's AlmaLinux Day Tokyo to now": "Cybertrust's AlmaLinux efforts and contributions - from last year's AlmaLinux Day Tokyo to now",
    "AlmaLinux for Enterprise!": "AlmaLinux for Enterprise!",
-   "Closing": "Closing",
-   "Social Gathering": "Social Gathering",
    "Navigating the open source world can be harrowing for businesses, but AlmaLinux is ready to solve your operating system needs!": "Navigating the open source world can be harrowing for businesses, but AlmaLinux is ready to solve your operating system needs!",
    "Event Details": "Event Details",
    "Date and time: Saturday, December 14, 2024, 13:00-20:00 (doors open at 12:30)": "Date and time: Saturday, December 14, 2024, 13:00-20:00 (doors open at 12:30)",
@@ -763,5 +759,9 @@
    "ALD Tokyo 2024": "ALD Tokyo 2024",
    "ALD Germany 2024": "ALD Germany 2024",
    "ALD Tokyo 2023": "ALD Tokyo 2023",
-   "SIG and ALESCo meetings": "SIG and ALESCo meetings"
+   "SIG and ALESCo meetings": "SIG and ALESCo meetings",
+   "Lead AlmaLinux OS Architect": "Lead AlmaLinux OS Architect",
+   "The author of 'AlmaLinux 9 Practical Guide' talks about the front line of Arm servers.": "The author of 'AlmaLinux 9 Practical Guide' talks about the front line of Arm servers.",
+   "Closing Remarks": "Closing Remarks",
+   "Social Gathering and Lightning talks!": "Social Gathering and Lightning talks!"
 }
