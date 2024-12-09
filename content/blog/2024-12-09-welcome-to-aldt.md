@@ -13,7 +13,7 @@ post:
     image: /blog-images/2024/aldt-2024.png
 ---
 
-We are so happy to share that the Japanse AlmaLinux Users Group is hosting the second [AlmaLinux Day: Tokyo](https://almalinux.org/aldt-2024/) this Saturday! Registration is free for attendance, and you can join the closing social event for a small fee.
+We are so happy to share that the Japanese AlmaLinux Users Group is hosting the second [AlmaLinux Day: Tokyo](https://almalinux.org/aldt-2024/) this Saturday! Registration is free for attendance, and you can join the closing social event for a small fee.
 
 ## Announcing AlmaLinux Day: Tokyo 2024
 
