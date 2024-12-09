@@ -522,9 +522,6 @@ padding: 0px !important;
 .al-page-foundation-members-index #al-mirror-info ul, .al-page-foundation-members-index #al-sponsor-info ul {
   list-style-type: "-   ";
 }
-.al-page-foundation-members-index .member-info:hover {
-  color: #86da2f;
-}
 .al-page-foundation-members-index .al-foundation-members-apply-content-wrap {
   display: flex;
   flex-direction: column;
