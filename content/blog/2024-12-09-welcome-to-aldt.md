@@ -7,7 +7,7 @@ author:
  image: /users/benny.jpeg
 date: '2024-12-09'
 images:
-  - /blog-images/2024
+  - /blog-images/2024/aldt-2024.png
 post:
     title: "Announcing AlmaLinux Day: Tokyo 2024"
     image: /blog-images/2024/aldt-2024.png
