@@ -1,0 +1,25 @@
+{
+  "name": "AlmaLinux_WWW_Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "hugo",
+      "VERSION": "latest"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "budparr.language-hugo-vscode",
+        "ms-python.python",
+        "esbenp.prettier-vscode",
+        "yzhang.markdown-all-in-one",
+        "tamasfe.even-better-toml"
+      ]
+    },
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "forwardPorts": [1313],
+  "remoteUser": "vscode"
+}
