@@ -35,6 +35,10 @@ Opening talks begin at 1:00pm local time, with some awesome content in store fro
       <td colspan="3">Registration and checkin opens</td>
     </tr>
     <tr>
+      <td nowrap class="aldt_time">13:00</td>
+      <td colspan="3">AlmaLinux Day Welcome and Introduction</td>
+    </tr>
+    <tr>
       <td nowrap class="aldt_time">13:10 - 14:10</td>
       <td colspan="3" style="width:100%;">
 		 <img class="img-fluid rounded-circle mb-3" src="/board/benny.jpg" alt="benny Vasquez" style="max-width: 40px;"> <img class="img-fluid rounded-circle mb-3" src="/users/alukoshko.jpg" alt="Andrew Lukoshko" style="max-width: 40px;"> <img class="img-fluid rounded-circle mb-3" src="/users/jonathan.jpg" alt="Jonathan Wright" style="max-width: 40px;"> <br />
