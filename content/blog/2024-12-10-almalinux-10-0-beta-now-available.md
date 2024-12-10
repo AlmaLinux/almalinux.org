@@ -48,7 +48,7 @@ You can read the full release notes for this version on the wiki: [AlmaLinux OS 
 ## What can you do to help?
 
 Your input into testing and feedback is crucial and essential for successful production releases. 
-Please, report any bugs you may see on the [Bug Tracker](https://bugs.almalinux.org/). Also, pop into the [AlmaLinux Community Chat](https://chat.almalinux.org) and join our Testing Channel, post a question on our [10.0 Beta Forum](https://forums.almalinux.org/), on our AlmaLinux Community on [Reddit](https://reddit.com/r/almalinux) or catch us on [X](https://twitter.com/almalinux). 
+Please, report any bugs you may see on the [Bug Tracker](https://bugs.almalinux.org/). Also, pop into the [AlmaLinux Community Chat](https://chat.almalinux.org) and join our Testing Channel, post a question on our [10.0 Beta Forum](https://forums.almalinux.org/c/devel/10-beta/42), on our AlmaLinux Community on [Reddit](https://reddit.com/r/almalinux) or catch us on [X](https://twitter.com/almalinux). 
 
 Enjoy this Beta release, let us know what you think and stay tuned.
 
