@@ -53,7 +53,6 @@
    "An individual application for anyone who uses AlmaLinux OS, contributes to AlmaLinux OS, provides services to the AlmaLinux OS community or otherwise supports the AlmaLinux OS.": "An individual application for anyone who uses AlmaLinux OS, contributes to AlmaLinux OS, provides services to the AlmaLinux OS community or otherwise supports the AlmaLinux OS.",
    "Apply": "Apply",
    "Sponsor Member": "Sponsor Member",
-   "Entities who wish to contribute funding for the project through sponsorship.": "Entities who wish to contribute funding for the project through sponsorship.",
    "Do you have membership related questions?": "Do you have membership related questions?",
    "Contact us": "Contact us",
    "Board of Directors": "Board of Directors",
@@ -756,5 +755,6 @@
    "as an individual member or Sponsor member, and own a vote in shaping the future of AlmaLinux OS!": "as an individual member or Sponsor member, and own a vote in shaping the future of AlmaLinux OS!",
    "Membership levels and benefits are": "Membership levels and benefits are",
    "described below.": "described below.",
-   "Mirror Sponsor Member": "Mirror Sponsor Member"
+   "Mirror Sponsor Member": "Mirror Sponsor Member",
+   "Ideal for companies or organizations who want to contribute funding or resources to the project, and receive benefits from the foundation for that support.": "Ideal for companies or organizations who want to contribute funding or resources to the project, and receive benefits from the foundation for that support."
 }
