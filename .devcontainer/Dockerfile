@@ -6,6 +6,7 @@ RUN dnf update -y && \
     dnf install -y \
     git \
     python3 \
+    python3-pyyaml \
     wget \
     tar \
     shadow-utils \
