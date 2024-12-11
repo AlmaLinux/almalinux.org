@@ -626,7 +626,7 @@
    "Supported Operating Systems": "Supported Operating Systems",
    "ELevate supports the following upgrade and migration paths:": "ELevate supports the following upgrade and migration paths:",
    "Upgrade from CentOS 6 to CentOS 7": "Upgrade from CentOS 6 to CentOS 7",
-   "Upgrade from CentOS 7 to AlmaLinux 8, CentOS Stream 8, Euro Linux 8, Oracle Linux 8, or Rocky Linux 8": "Upgrade from CentOS 7 to AlmaLinux 8, CentOS Stream 8, Euro Linux 8, Oracle Linux 8, or Rocky Linux 8",
+   "Upgrade from CentOS 7 to AlmaLinux 8, CentOS Stream 8, Oracle Linux 8, or Rocky Linux 8": "Upgrade from CentOS 7 to AlmaLinux 8, CentOS Stream 8, Oracle Linux 8, or Rocky Linux 8",
    "Upgrade from Scientific Linux 7 to AlmaLinux 8": "Upgrade from Scientific Linux 7 to AlmaLinux 8",
    "Upgrade from 8.x to 9.x within the same distribution": "Upgrade from 8.x to 9.x within the same distribution",
    "Migration to Oracle Linux 9 is available with the": "Migration to Oracle Linux 9 is available with the",
