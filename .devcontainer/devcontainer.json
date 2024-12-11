@@ -17,7 +17,8 @@
         "ms-python.python",
         "esbenp.prettier-vscode",
         "yzhang.markdown-all-in-one",
-        "tamasfe.even-better-toml"
+        "tamasfe.even-better-toml",
+        "ms-azuretools.vscode-docker"
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "bash",
