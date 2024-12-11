@@ -1,6 +1,7 @@
 {
   "name": "AlmaLinux_WWW_Container",
-  "overrideCommand": true,
+  "overrideCommand": false,
+  //"image": "ghcr.io/codyro/almalinuxorg-devcontainer:latest",
   "build": {
     "dockerfile": "Dockerfile",
     "args": {
@@ -33,6 +34,5 @@
   },
   "forwardPorts": [1313],
   "remoteUser": "vscode",
-  "postCreateCommand": "echo 'function git_branch() { local branch; branch=\"$(git symbolic-ref --short HEAD 2> /dev/null)\"; if [[ -n \"$branch\" ]]; then echo -n \"$branch\"; return 0; fi; return 1; } && function git_has_changes() { git diff --quiet HEAD 2> /dev/null || echo -n \"✗\"; } && export WHITE=\"\\[\\033[1;37m\\]\" && export GREEN=\"\\[\\033[0;32m\\]\" && export BLUE=\"\\[\\033[0;94m\\]\" && export RED=\"\\[\\033[1;31m\\]\" && export YELLOW=\"\\[\\033[1;33m\\]\" && export RESET=\"\\[\\033[0m\\]\" && function prompt_command() { PS1=\"${GREEN}\\u${WHITE} ➜ ${BLUE}\\w ${BLUE}(${RED}\\$(git_branch)${YELLOW}\\$(git_has_changes)${BLUE})${RESET}$ \"; } && export PROMPT_COMMAND=\"prompt_command\"' >> ~/.bashrc",
-  "postStartCommand": "hugo server --bind=0.0.0.0" // Ensure hugo runs after workspace is mounted
+  "postCreateCommand": "echo 'function git_branch() { local branch; branch=\"$(git symbolic-ref --short HEAD 2> /dev/null)\"; if [[ -n \"$branch\" ]]; then echo -n \"$branch\"; return 0; fi; return 1; } && function git_has_changes() { git diff --quiet HEAD 2> /dev/null || echo -n \"✗\"; } && export WHITE=\"\\[\\033[1;37m\\]\" && export GREEN=\"\\[\\033[0;32m\\]\" && export BLUE=\"\\[\\033[0;94m\\]\" && export RED=\"\\[\\033[1;31m\\]\" && export YELLOW=\"\\[\\033[1;33m\\]\" && export RESET=\"\\[\\033[0m\\]\" && function prompt_command() { PS1=\"${GREEN}\\u${WHITE} ➜ ${BLUE}\\w ${BLUE}(${RED}\\$(git_branch)${YELLOW}\\$(git_has_changes)${BLUE})${RESET}$ \"; } && export PROMPT_COMMAND=\"prompt_command\"' >> ~/.bashrc"
 }
