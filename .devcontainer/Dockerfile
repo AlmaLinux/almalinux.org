@@ -52,3 +52,6 @@ EXPOSE 1313
 
 # Set the working directory to the container workspace directory
 WORKDIR ${WORKSPACE_DIR}
+
+# Make the container stay up
+CMD ["sleep", "infinity"]
