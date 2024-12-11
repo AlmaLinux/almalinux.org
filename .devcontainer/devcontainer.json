@@ -1,6 +1,6 @@
 {
   "name": "AlmaLinux_WWW_Container",
-  "overrideCommand": true,
+  "overrideCommand": false,
   "build": {
     "dockerfile": "Dockerfile",
     "args": {
