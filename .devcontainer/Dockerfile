@@ -16,20 +16,13 @@ RUN dnf update -y && \
 # Set up arguments for Hugo installation
 ARG HUGO_VERSION=latest
 ARG HUGO_VARIANT=hugo_extended
-ARG WORKSPACE_DIR
 
 # Download and install Hugo
 RUN if [ "$HUGO_VERSION" = "latest" ]; then \
     HUGO_VERSION=$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep "tag_name" | awk '{print substr($2, 3, length($2)-4)}'); \
     fi && \
-    ARCH=$(uname -m) && \
-    case "$ARCH" in \
-      "x86_64") HUGO_ARCH="64bit";; \
-      "arm64"|"aarch64") HUGO_ARCH="arm64";; \
-      *) echo "Unsupported architecture: $ARCH" && exit 1;; \
-    esac && \
     echo "Installing Hugo version: ${HUGO_VERSION}" && \
-    wget -O hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_VARIANT}_${HUGO_VERSION}_Linux-${HUGO_ARCH}.tar.gz && \
+    wget -O hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_VARIANT}_${HUGO_VERSION}_Linux-64bit.tar.gz && \
     tar -xzf hugo.tar.gz && \
     mv hugo /usr/local/bin/hugo && \
     chmod +x /usr/local/bin/hugo && \
@@ -50,8 +43,8 @@ USER vscode
 # Expose port for Hugo server
 EXPOSE 1313
 
-# Set the working directory to the container workspace directory
-WORKDIR ${WORKSPACE_DIR}
+# Set the working directory
+WORKDIR /workspace
 
 # Set the default command to run Hugo server
 CMD ["hugo", "server", "--bind=0.0.0.0"]
