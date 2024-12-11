@@ -52,4 +52,3 @@ EXPOSE 1313
 
 # Set the working directory to the container workspace directory
 WORKDIR ${WORKSPACE_DIR}
-CMD ["hugo", "server", "--bind=0.0.0.0"]
