@@ -1,7 +1,6 @@
 {
   "name": "AlmaLinux_WWW_Container",
   "overrideCommand": false,
-  //"image": "ghcr.io/codyro/almalinuxorg-devcontainer:latest",
   "build": {
     "dockerfile": "Dockerfile",
     "args": {
