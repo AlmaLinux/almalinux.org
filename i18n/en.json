@@ -626,7 +626,7 @@
    "Supported Operating Systems": "Supported Operating Systems",
    "ELevate supports the following upgrade and migration paths:": "ELevate supports the following upgrade and migration paths:",
    "Upgrade from CentOS 6 to CentOS 7": "Upgrade from CentOS 6 to CentOS 7",
-   "Upgrade from CentOS 7 to AlmaLinux 8, CentOS Stream 8, Euro Linux 8, Oracle Linux 8, or Rocky Linux 8": "Upgrade from CentOS 7 to AlmaLinux 8, CentOS Stream 8, Euro Linux 8, Oracle Linux 8, or Rocky Linux 8",
+   "Upgrade from CentOS 7 to AlmaLinux 8, CentOS Stream 8, Oracle Linux 8, or Rocky Linux 8": "Upgrade from CentOS 7 to AlmaLinux 8, CentOS Stream 8, Oracle Linux 8, or Rocky Linux 8",
    "Upgrade from Scientific Linux 7 to AlmaLinux 8": "Upgrade from Scientific Linux 7 to AlmaLinux 8",
    "Upgrade from 8.x to 9.x within the same distribution": "Upgrade from 8.x to 9.x within the same distribution",
    "Migration to Oracle Linux 9 is available with the": "Migration to Oracle Linux 9 is available with the",
@@ -731,7 +731,6 @@
    "Hewlett Packard Japan, G.K.": "Hewlett Packard Japan, G.K.",
    "Yuichi Aoyama": "Yuichi Aoyama",
    "Challenges to automatic OS and middleware updates for safer and more flexible operations with AlmaLinux": "Challenges to automatic OS and middleware updates for safer and more flexible operations with AlmaLinux",
-   "Cybertrust's AlmaLinux efforts and contributions - from last year's AlmaLinux Day Tokyo to now": "Cybertrust's AlmaLinux efforts and contributions - from last year's AlmaLinux Day Tokyo to now",
    "AlmaLinux for Enterprise!": "AlmaLinux for Enterprise!",
    "Navigating the open source world can be harrowing for businesses, but AlmaLinux is ready to solve your operating system needs!": "Navigating the open source world can be harrowing for businesses, but AlmaLinux is ready to solve your operating system needs!",
    "Event Details": "Event Details",
@@ -766,5 +765,7 @@
    "Lead Architect & ALESCo Member": "Lead Architect & ALESCo Member",
    "Infra, Certification SIG Lead, & ALESCo Member": "Infra, Certification SIG Lead, & ALESCo Member",
    "Date and time:": "Date and time:",
-   "Saturday, December 14, 2024, 13:00-20:00 (doors open at 12:30)": "Saturday, December 14, 2024, 13:00-20:00 (doors open at 12:30)"
+   "Saturday, December 14, 2024, 13:00-20:00 (doors open at 12:30)": "Saturday, December 14, 2024, 13:00-20:00 (doors open at 12:30)",
+   "AlmaLinux Day Welcome and Introduction": "AlmaLinux Day Welcome and Introduction",
+   "Cybertrust's AlmaLinux efforts and contributions - from last year's AlmaLinux Day: Tokyo to now": "Cybertrust's AlmaLinux efforts and contributions - from last year's AlmaLinux Day: Tokyo to now"
 }
