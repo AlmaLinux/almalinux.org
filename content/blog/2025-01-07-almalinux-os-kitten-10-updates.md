@@ -18,7 +18,7 @@ Back in October 2024 AlmaLinux OS Foundation officially [introduced](https://alm
 
 ## Updated packages and ISOs 
 
-Recently, the CentOS Stream 10 undertook a significant mass package rebuild to update the cryptographic keys used for PowerPC (ppc64le) compilation. We have also rebuilt all packages to align with these critical changes. 
+Recently, the CentOS Stream 10 undertook a significant mass package rebuild to update the compiler keys used for PowerPC (ppc64le) compilation. We have also rebuilt all packages to align with these critical changes. 
 
 As promised, we have also released our quarterly ISO rebuilds! They are [available](https://kitten.repo.almalinux.org/10-kitten/isos/) for download today, and bring updates including Linux kernel 6.12 and updates to Qt packages, which make AlmaLinux OS Kitten 10 version compatible with the KDE desktop environment from the EPEL repo. 
 
