@@ -29,43 +29,71 @@ It was especially exciting for me to see us reach our quorum easily within the f
 
 The board has a lot of familiar faces, and a few new ones to meet! This team brings together highly motivated and engaged experts from across industries. This is the group of humans that will help AlmaLinux OS reach its full potential over the next three years.
 
-{{< figure src="/blog-images/benny-vasquez-board.jpg" width="25%" title="benny Vasquez" >}}
+<section>
+	<div class="py-5 px-4 al-member-item">
+        <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/benny.jpg" alt="benny Vasquez" style="max-width: 180px;">
+    </div>
+</section>
 
 [benny Vasquez](https://www.linkedin.com/in/bennyvasquez/)
 
 benny is the current Chair of the board of AlmaLinux OS Foundation.
 
-{{< figure src="/blog-images/jack-aboutboul-board.jpg" width="25%" title="Jack Aboutboul" >}}
+<section>
+	<div class="py-5 px-4 al-member-item">
+        <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/jack.jpg" alt="Jack Aboutboul" style="max-width: 180px;">
+    </div>
+</section>
 
 [Jack Aboutboul](https://www.linkedin.com/in/jackaboutboul/)
 
 Jack is a current Director and Community Leader at AlmaLinux.
 
-{{< figure src="/blog-images/simon-phipps-board.jpg" width="25%" title="Simon Phipps" >}}
+<section>
+	<div class="py-5 px-4 al-member-item">
+            <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/simon.jpg" alt="Simon Phipps" style="max-width: 180px;">
+	</div>
+</section>
 
 [Simon Phipps](https://en.wikipedia.org/wiki/Simon_Phipps_(programmer))
 
 Simon is a current Director at AlmaLinux, former president of the Open Source Initiative.
 
-{{< figure src="/blog-images/jesse-asklund-board.jpg" width="25%" title="Jesse Asklund" >}}
+<section>
+	<div class="py-5 px-4 al-member-item">
+        <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/jesse.jpg" alt="Jesse Asklund" style="max-width: 180px;">
+	</div>
+</section>
 
 [Jesse Asklund](https://www.linkedin.com/in/jessejester/)
 
 Jesse is a current Director at AlmaLinux and the CXO at WebPros.
 
-{{< figure src="/blog-images/daniel-pearson-board.jpg" width="25%" title="Daniel Pearson" >}}
-
+<section>
+	<div class="py-5 px-4 al-member-item">
+	        <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/daniel.jpeg" alt="Daniel Pearson" style="max-width: 180px;">
+	</div>
+</section>
+	
 [Daniel Pearson](https://www.linkedin.com/in/daniel-pearson-b2559b60/)
 
 Daniel is the CEO of KnownHost, LLC (promoted from COO during the election window), a current AlmaLinux Gold Sponsor, serves on the AlmaLinux OS Foundation membership committee, and is new to the AlmaLinux OS Foundation board.
 
-{{< figure src="/blog-images/moshe-bar-board.jpg" width="25%" title="Moshe Bar" >}}
+<section>
+	<div class="py-5 px-4 al-member-item">
+	        <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/moshe-bar-board.jpg" alt="Moshe Bar" style="max-width: 180px;">
+	</div>
+</section>
 
 [Moshe Bar](https://en.wikipedia.org/wiki/Moshe_Bar_(investor))
 
 Moshe is the CEO of CodeNotary, Inc., an AlmaLinux Gold Sponsor, and is new to the AlmaLinux OS Foundation board.
 
-{{< figure src="/blog-images/cody-robertson-board.jpg" width="25%" title="Cody Robertson" >}}
+<section>
+	<div class="py-5 px-4 al-member-item">
+	        <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/blog-images/cody-robertson-board.jpg" alt="Cody Robertson" style="max-width: 180px;">
+	</div>
+</section>
 
 [Cody Robertson](https://www.linkedin.com/in/cody-robertson-3b334575/)
 
