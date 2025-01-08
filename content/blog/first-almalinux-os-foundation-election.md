@@ -3,11 +3,11 @@ title: "First AlmaLinux Community Election Coming Soon!"
 type: blog
 author: 
  name: "benny Vasquez"
- bio: "- Chair, Board of Directors @AlmaLinux OS Foundation"
+ bio: "Chair, Board of Directors @AlmaLinux OS Foundation"
  image: /users/benny.jpeg
 date: '2022-08-09'
 post:
-    title: "After a year and a half, the time has finally come! The first election for the AlmaLinux OS Foundation board of directors is set for September 4th - 19th, 2022. This is a big moment for us and for the community at large, so come see all the details!"
+    title: "After a year and a half, the time has finally come for the first AlmaLinux OS Foundation Election!"
     image: 
 ---
 
