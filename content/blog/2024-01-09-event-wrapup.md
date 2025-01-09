@@ -20,7 +20,7 @@ The last quarter (plus the end of September) of 2024 was packed with big events 
 
 [NERDEARLA](https://nerdear.la/en/) is an event by nerds, for nerds. We attended our first NERDEARLA in Buenos Aires in September last year, and we loved it! [Pavel shared his experience](https://almalinux.org/blog/2024-12-18-volunteering-at-nerdearla/) of staffing the booth for AlmaLinux, and he and I got to get to know our new friend Luis.
 
-{{< figure src="/blog-images/2025/nerdearla1.JPG" width="45%" title="the NERDEARLA crew and friends" >}}
+{{< figure src="/blog-images/2025/nerdearla.jpg" width="45%" title="the NERDEARLA crew and friends" >}}
 
  I also gave a talk at this event! You can watch it below, if you'd like.
 
@@ -34,7 +34,7 @@ While I was there, I spoke in [a panel session](https://2024.allthingsopen.org/s
 
 We also had a lot of fun at our booth! Thank you to everyone who came by to see us. In case you missed it, we gave away a bunch of t-shirts and gave away some really cool prizes to people who showed up to our booth in their AlmaLinux swag.
 
-{{< figure src="/blog-images/2025/ato_2024.png" width="45%" title="Some AlmaLinux fans" >}}
+{{< figure src="/blog-images/2025/ato_2024.jpg" width="45%" title="Some AlmaLinux fans" >}}
 {{< figure src="/blog-images/2025/ato_2024_winners.jpg" width="45%" title="Raffle winners!" >}}
 
 ### openSUSE.Asia and OSS Summit Japan
