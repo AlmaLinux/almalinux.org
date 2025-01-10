@@ -20,11 +20,11 @@ The last quarter (plus the end of September) of 2024 was packed with big events 
 
 [NERDEARLA](https://nerdear.la/en/) is an event by nerds, for nerds. We attended our first NERDEARLA in Buenos Aires in September last year, and we loved it! [Pavel shared his experience](https://almalinux.org/blog/2024-12-18-volunteering-at-nerdearla/) of staffing the booth for AlmaLinux, and he and I got to get to know our new friend Luis.
 
-{{< figure src="/blog-images/2025/nerdearla.jpg" width="45%" title="the NERDEARLA crew and friends" >}}
+{{< figure src="/blog-images/2025/nerdearla.jpg" width="45%" alt="the NERDEARLA crew and friends" >}}
 
  I also gave a talk at this event! You can watch it below, if you'd like.
 
-{{< youtube id="BnahLVOhkzw" width="65%" height="36%" autoplay="false" controls="true" mute="false" title="Choosing your open Source: Common Good or Corporate Good - benny Vasquez" >}}
+{{< youtube id="BnahLVOhkzw" width="65%" height="36%" autoplay="false" controls="true" mute="false" alt="Choosing your open Source: Common Good or Corporate Good - benny Vasquez" >}}
 
 ### All Things Open
 
@@ -34,44 +34,44 @@ While I was there, I spoke in [a panel session](https://2024.allthingsopen.org/s
 
 We also had a lot of fun at our booth! Thank you to everyone who came by to see us. In case you missed it, we gave away a bunch of t-shirts and gave away some really cool prizes to people who showed up to our booth in their AlmaLinux swag.
 
-{{< figure src="/blog-images/2025/ato_2024.jpg" width="45%" title="Some AlmaLinux fans" >}}
-{{< figure src="/blog-images/2025/ato_2024_winners.jpg" width="45%" title="Raffle winners!" >}}
+{{< figure src="/blog-images/2025/ato_2024.jpg" width="45%" alt="Some AlmaLinux fans" >}}
+{{< figure src="/blog-images/2025/ato_2024_winners.jpg" width="45%" alt="Raffle winners!" >}}
 
 ### openSUSE.Asia and Open Source Summit Japan
 
 The AlmaLinux user group in Japan has been busy this year as well, attending all kinds of events and even organizing AlmaLinux Day, Tokyo. They represented AlmaLinux at both openSUSE.Asia and Open Source Summit Japan. You can see the talk from some of the members (who also work for one of our platinum sponsors: Cybertrust Japan) on the Linux Foundation youtube channel.
 
-{{< figure src="/blog-images/2025/opensuseasia.jpeg" width="45%" title="AlmaLinux at openSUSE.Asia" >}}
+{{< figure src="/blog-images/2025/opensuseasia.jpeg" width="45%" alt="AlmaLinux at openSUSE.Asia" >}}
 
-{{< youtube id="5AZ1CcrlT1E" width="65%" height="36%" autoplay="false" controls="true" mute="false" title="AlmaLinux in Japan: Progress and Achievements Over the Past Year - Yohei Suzuki & Takanori Suzuki" >}}
+{{< youtube id="5AZ1CcrlT1E" width="65%" height="36%" autoplay="false" controls="true" mute="false" alt="AlmaLinux in Japan: Progress and Achievements Over the Past Year - Yohei Suzuki & Takanori Suzuki" >}}
 
 ### SeaGL
 
 [SeaGL](https://seagl.org/) is a grassroots technical summit dedicated to spreading awareness and knowledge about FOSS, hardware, and culture. Jonathan, our Infrastructure Lead, had great time meeting up with folks at our booth!
 
-{{< figure src="/blog-images/2025/olf_2024.jpg" width="45%" title="AlmaLinux at SeaGL" >}}
+{{< figure src="/blog-images/2025/seagl_2024.jpg" width="45%" alt="AlmaLinux at SeaGL" >}}
 
 ### SFSCON
 
 The South Tyrol Free Software Conference, [SFSCON](https://www.sfscon.it/), is one of Europe's most established annual conferences on Free Software. We had a great time meeting up with everyone who joined us there in Italy. I also participated in not 1, not 2, but 3 talks/workshops! One was [all about AlmaLinux](https://www.sfscon.it/talks/almalinux-in-brief/), the second was about [how to build a drama-free community](https://www.sfscon.it/talks/building-a-no-drama-community/), and the last was a [BOF workshop](https://www.sfscon.it/workshops/almalinux-bof/). We also got to enjoy some AlmaLinux cupcakes from Kiki Bakery Lab. Thank you to everyone who attended my sessions and came to say hi!
 
-{{< figure src="/blog-images/2025/sfs_con_cupcakes.jpg" width="45%" title="AlmaLinux cupcakes at SFSCon" >}}
+{{< figure src="/blog-images/2025/sfs_con_cupcakes.jpg" width="45%" alt="AlmaLinux cupcakes at SFSCon" >}}
 
 ### Ohio LinuxFest (OLF)
 
 [OLF](https://olfconference.org/about/) is a smaller grassroots conference for the GNU/Linux/Open Source Software/Free Software community. Jonathan Wright, our Infrastructure Lead, had a great time meeting up with everyone who showed up to this event in Ohio!
 
-{{< figure src="/blog-images/2025/olf_2024_booth.jpg" width="45%" title="AlmaLinux at OLF" >}}
+{{< figure src="/blog-images/2025/olf_2024_booth.jpg" width="45%" alt="AlmaLinux at OLF" >}}
 
 Jonathan gave a talk in which he discussed the evolution of Enterprise Linux in the last decade, the life of AlmaLinux in its first 3 years, and why we think freedom drives innovation.
 
-{{< figure src="/blog-images/2025/olf_2024.jpg" width="45%" title="Jonathan at OLF" >}}
+{{< figure src="/blog-images/2025/olf_2024.jpg" width="45%" alt="Jonathan at OLF" >}}
 
 ### SC '24
 
 [SC](https://sc24.supercomputing.org/) is an international conference for HPC, networking, storage, and analysis. We decided it was another great opportunity to spread the love with AlmaLinux swag, and some prizes! We gave away more than 800 t-shirts, and gave away more awesome prizes to folks who showed up to the booth in their swag.
 
-{{< figure src="/blog-images/2025/sc_2024.jpg" width="45%" title="AlmaLinux at SC '24" >}}
+{{< figure src="/blog-images/2025/sc_2024.jpg" width="45%" alt="AlmaLinux at SC '24" >}}
 
 While we were there, I also gave [a talk about welcoming diversity and disagreement in your open source project](https://sc24.conference-program.com/presentation/?id=exforum103&sess=sess696). Thank you to everyone who showed up to my session and to the booth!
 
