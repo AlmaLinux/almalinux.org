@@ -955,5 +955,12 @@
     "The author of 'AlmaLinux 9 Practical Guide' talks about the front line of Arm servers.": "Författaren till \"AlmaLinux 9 Practical Guide\" pratar om frontlinjen för Arm-servrar.",
     "Lead Architect & ALESCo Member": "Huvudarkitekt & ALESCo-medlem",
     "AlmaLinux Day Welcome and Introduction": "AlmaLinux dag Välkommen och introduktion",
-    "Cybertrust's AlmaLinux efforts and contributions - from last year's AlmaLinux Day: Tokyo to now": "Cybertrusts AlmaLinux insatser och bidrag - från förra årets AlmaLinux-dag: Tokyo till nu"
+    "Cybertrust's AlmaLinux efforts and contributions - from last year's AlmaLinux Day: Tokyo to now": "Cybertrusts AlmaLinux insatser och bidrag - från förra årets AlmaLinux-dag: Tokyo till nu",
+    "Upgrade from CentOS 7 to AlmaLinux 8, CentOS Stream 8, Oracle Linux 8, or Rocky Linux 8": "Uppgradera från CentOS 7 till AlmaLinux 8, CentOS Stream 8, Oracle Linux 8 eller Rocky Linux 8",
+    "AlmaLinux images are available for Incus and LXC.": "AlmaLinux avbilder finns tillgängliga för Incus och LXC.",
+    "Get Incus and LXC Images": "Skaffa Incus och LXC avbilder",
+    "AlmaLinux provides official AlmaLinux OS 9.5 images for Vagrant:": "AlmaLinux tillhandahåller officiella AlmaLinux OS 9.5 avbilder för Vagrant:",
+    "AlmaLinux offers AlmaLinux OS 8.10 and AlmaLinux OS 9.5 images for Azure across all Azure regions via the ": "AlmaLinux erbjuder AlmaLinux OS 8.10 och AlmaLinux OS 9.5 avbilder för Azure i alla Azure-regioner via ",
+    "Get AlmaLinux on HCP Vagrant Registry": "Skaffa AlmaLinux på HCP Vagrant register",
+    "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: ": "Du kan hämta AlmaLinux OS-bilder på HCP Vagrant register på länken som tillhandahålls här: "
 }
