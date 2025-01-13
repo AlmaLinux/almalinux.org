@@ -962,5 +962,6 @@
     "AlmaLinux provides official AlmaLinux OS 9.5 images for Vagrant:": "AlmaLinux tillhandahåller officiella AlmaLinux OS 9.5 avbilder för Vagrant:",
     "AlmaLinux offers AlmaLinux OS 8.10 and AlmaLinux OS 9.5 images for Azure across all Azure regions via the ": "AlmaLinux erbjuder AlmaLinux OS 8.10 och AlmaLinux OS 9.5 avbilder för Azure i alla Azure-regioner via ",
     "Get AlmaLinux on HCP Vagrant Registry": "Skaffa AlmaLinux på HCP Vagrant register",
-    "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: ": "Du kan hämta AlmaLinux OS-bilder på HCP Vagrant register på länken som tillhandahålls här: "
+    "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: ": "Du kan hämta AlmaLinux OS-bilder på HCP Vagrant register på länken som tillhandahålls här: ",
+    "AlmaLinux provides official AlmaLinux OS 8.10 and AlmaLinux OS 9.5 images for Vagrant:": "AlmaLinux tillhandahåller officiella AlmaLinux OS 8.10 och AlmaLinux OS 9.5 avbilder för Vagrant:"
 }
