@@ -43,7 +43,7 @@ benny Vasquez: I'm good. Thanks, Noam. I am very excited to be here.
 
 Noam Alum: Great. Let's jump right into it. What got you into open source in general and Linux specifically?
 
-benny Vasquez: So my first Linux distribution was CentOS. I guess technically, it was Ubuntu when I checked my email and my boyfriend's computer once. But when I got into web hosting, the primary OS that we used was CentOS, so that was my first. And it has had a very special place in my heart ever since then. Later on, when I started to learn about open source, I loved the community nature of open source in general, I loved the idea that just a bunch of people that care about something could work together on it and, like, allow your passion to drive something cool. And eventually that led me to AlmaLinux. 
+benny Vasquez: So my first Linux distribution was CentOS. I guess technically, it was Ubuntu when I checked my email on my boyfriend's computer once. But when I got into web hosting, the primary OS that we used was CentOS, so that was my first. And it has had a very special place in my heart ever since then. Later on, when I started to learn about open source, I loved the community nature of open source in general, I loved the idea that just a bunch of people that care about something could work together on it and, like, allow your passion to drive something cool. And eventually that led me to AlmaLinux. 
 
 Noam Alum: And that's why I'm talking to you today.
 
