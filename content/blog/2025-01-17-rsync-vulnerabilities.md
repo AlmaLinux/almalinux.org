@@ -70,7 +70,7 @@ On January 14, 2025 we released an updated package for AlmaLinux OS Kitten 10 ad
 
 ## AlmaLinx rsync Backport Package
 
-AlmaLinux maintains an optional Rsync package that is primarily used by AlmaLinux Mirror maintainers to allow for additional functionality [needed by our mirrors](https://lists.almalinux.org/hyperkitty/list/mirror-announce@lists.almalinux.org/thread/6QKFWQZV2XHDIZ4O4DUOHFFEWLJP47V3/). 
+AlmaLinux maintains an optional Rsync package that is primarily used by AlmaLinux Mirror maintainers to allow for additional functionality and performance enhancements and is [suggested for our mirrors](https://lists.almalinux.org/hyperkitty/list/mirror-announce@lists.almalinux.org/thread/6QKFWQZV2XHDIZ4O4DUOHFFEWLJP47V3/). 
 
 On January 14  we released updates for these backported rsync RPMs. rsync from this backport repo was at version 3.3.0, and we updated the repo to 3.4.0 and subsequently 3.4.1, as the updates were released upstream. 
 
