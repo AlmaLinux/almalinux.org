@@ -9,7 +9,6 @@
       "WORKSPACE_DIR": "${containerWorkspaceFolder}"
     }
   },
-
   "customizations": {
     "vscode": {
       "extensions": [
