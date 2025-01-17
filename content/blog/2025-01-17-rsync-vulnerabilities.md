@@ -1,3 +1,15 @@
+---
+title: "Multiple rsync Vulnerabilities Discovered - Mitigation Status"
+type: blog
+author: 
+    name: "Jonathan Wright"
+    bio: "-"
+    image: /users/jonathan.jpg
+date: '2025-01-17'
+post:
+    title: "Multiple rsync Vulnerabilities Discovered - Mitigation Status"
+    image: 
+---
 Security researchers at Google, namely Pedro Gallegos, Simon Scannell, and Jasiel Spelman, identified vulnerabilities in both the rsync server and client. The server vulnerabilities ([CVE-2024-12084](https://access.redhat.com/security/cve/CVE-2024-12084) and [CVE-2024-12085](https://access.redhat.com/security/cve/CVE-2024-12085)) can lead to remote code execution (RCE). On the client side, vulnerabilities allow a malicious server to read arbitrary files ([CVE-2024-12086](https://access.redhat.com/security/cve/CVE-2024-12086)), create unsafe symlinks ([CVE-2024-12087](https://access.redhat.com/security/cve/CVE-2024-12087)), and, under certain conditions, overwrite arbitrary files ([CVE-2024-12088](https://access.redhat.com/security/cve/CVE-2024-12088)). Additionally, during the coordinated response to these issues, Aleksei Gorban reported a sixth vulnerability ([CVE-2024-12747](https://access.redhat.com/security/cve/CVE-2024-12747)) related to how the rsync server manages symlinks.
 
 These vulnerabilities were responsibly disclosed to us through the CERT/CC Vulnerability Notes Database, ahead of the [public disclosure](https://www.kb.cert.org/vuls/id/952657) on January 14, 2025.
