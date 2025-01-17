@@ -1,5 +1,5 @@
 ---
-title: "Multiple rsync Vulnerabilities Discovered - Mitigation Status"
+title: "Rsync Vulnerabilities - Patching Status"
 type: blog
 author: 
     name: "Jonathan Wright"
