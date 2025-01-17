@@ -3,7 +3,7 @@ title: "Multiple rsync Vulnerabilities Discovered - Mitigation Status"
 type: blog
 author: 
     name: "Jonathan Wright"
-    bio: "-"
+    bio: "Infra SIG team lead & ALESCo member"
     image: /users/jonathan.jpg
 date: '2025-01-17'
 post:
