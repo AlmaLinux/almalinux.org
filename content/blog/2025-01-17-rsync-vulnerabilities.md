@@ -92,6 +92,10 @@ On January 14  we released updates for these backported rsync RPMs. rsync from t
 * rsync-3.4.0-1.el9.x86_64.rpm (regressions fixed in rsync-3.4.1-1.el9.x86_64.rpm)
 * rsync-3.4.0-1.el8.aarch64.rpm (regressions fixed in rsync-3.4.1-1.el8.aarch64.rpm)
 * rsync-3.4.0-1.el9.aarch64.rpm (regressions fixed in rsync-3.4.1-1.el9.aarch64.rpm)
+* rsync-daemon-3.4.0-1.el8.x86_64.rpm (regressions fixed in rsync-daemon-3.4.1-1.el8.x86_64.rpm)
+* rsync-daemon-3.4.0-1.el9.x86_64.rpm (regressions fixed in rsync-daemon-3.4.1-1.el9.x86_64.rpm)
+* rsync-daemon-3.4.0-1.el8.aarch64.rpm (regressions fixed in rsync-daemon-3.4.1-1.el8.aarch64.rpm)
+* rsync-daemon-3.4.0-1.el9.aarch64.rpm (regressions fixed in rsync-daemon-3.4.1-1.el9.aarch64.rpm)
 
 ## Further updates
 
