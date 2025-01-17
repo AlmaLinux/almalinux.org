@@ -3,7 +3,7 @@ title: "Rsync Vulnerabilities - Patching Status"
 type: blog
 author: 
     name: "Jonathan Wright"
-    bio: "Infra SIG team lead & ALESCo member"
+    bio: "Infrastructure SIG lead & ALESCo member"
     image: /users/jonathan.jpg
 date: '2025-01-17'
 post:
