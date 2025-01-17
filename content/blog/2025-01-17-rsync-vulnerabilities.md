@@ -95,5 +95,5 @@ On January 14  we released updates for these backported rsync RPMs. rsync from t
 
 ## Further updates
 
-We will update this blog post as future updates are available. Please also sign up for the AlmaLinux Announce mailing list to make sure you don't miss any updates. If you have any questions or concerns, feel free to reach out in our [community chat](https://chat.almalinux.org)! 
+We will update this blog post as future updates are available. Please also sign up for the [AlmaLinux Announce mailing list](https://lists.almalinux.org/mailman3/lists/announce.lists.almalinux.org/) to make sure you don't miss any updates. If you have any questions or concerns, feel free to reach out in our [community chat](https://chat.almalinux.org)! 
 
