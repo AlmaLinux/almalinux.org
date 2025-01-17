@@ -7,7 +7,7 @@ author:
     image: /users/jonathan.jpg
 date: '2025-01-17'
 post:
-    title: "Multiple rsync Vulnerabilities Discovered - Mitigation Status"
+    title: "Rsync Vulnerabilities - Patching Status"
     image: /blog-images/2025/2025-01-17-rsync-vulnerabilities.png
 ---
 Security researchers at Google, namely Pedro Gallegos, Simon Scannell, and Jasiel Spelman, identified vulnerabilities in both the rsync server and client. These vulnerabilities range from extremely concerning to just annoying, and are at different stages of being patched. This blog post will be updated as patches are released by us.
