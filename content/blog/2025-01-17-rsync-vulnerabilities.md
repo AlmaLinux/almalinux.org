@@ -67,6 +67,11 @@ On January 14, 2025 we released an updated package for AlmaLinux OS Kitten 10 ad
 * rsync-3.3.0-6.el10.alma.1.aarch64.rpm
 * rsync-3.3.0-6.el10.alma.1.ppc64le.rpm
 * rsync-3.3.0-6.el10.alma.1.s390x.rpm
+* rsync-daemon-3.3.0-6.el10.alma.1.x86_64.rpm
+* rsync-daemon-3.3.0-6.el10.alma.1.x86_64_v2.rpm
+* rsync-daemon-3.3.0-6.el10.alma.1.aarch64.rpm
+* rsync-daemon-3.3.0-6.el10.alma.1.ppc64le.rpm
+* rsync-daemon-3.3.0-6.el10.alma.1.s390x.rpm
 
 ## AlmaLinx rsync Backport Package
 
