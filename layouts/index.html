@@ -272,17 +272,17 @@
                                 <li>VMWare</li>
                                 <li>Parallels</li>
                                 </ul>
-                                <a href="https://app.vagrantup.com/almalinux">{{ i18n "Get AlmaLinux on Vagrant Cloud" }}</a>
+                                <a href="https://portal.cloud.hashicorp.com/vagrant/discover/almalinux">{{ i18n "Get AlmaLinux on HCP Vagrant Registry" }}</a>
                               </p>
                         </div>
                     </div>
                     <div class="col d-flex align-items-stretch">
-                        <img loading="lazy" class="al-index-community-icon img" src="/images/lxd-lcx-icon-F.svg" alt="LXC/LXD Image">
+                        <img loading="lazy" class="al-index-community-icon img" src="/images/Incus-and-LXC-icon-F.svg" alt="Incus and LXC Image">
                         <div class="al-index-community-content-wrap">
-                            <h4 class="fw-bold mb-0 pb-2">LXC/LXD</h4>
+                            <h4 class="fw-bold mb-0 pb-2">Incus and LXC</h4>
                             <p>
-                                {{ i18n "AlmaLinux images are available for LXC/LXD." }} <br><br>
-                                <a href="https://images.linuxcontainers.org">{{ i18n "Get LXC/LXD Images" }}</a>
+                                {{ i18n "AlmaLinux images are available for Incus and LXC." }} <br><br>
+                                <a href="https://images.linuxcontainers.org">{{ i18n "Get Incus and LXC Images" }}</a>
                             </p>
                         </div>
                     </div>
@@ -509,12 +509,6 @@
                             </div>
                         </a>
 
-                        <a  href="https://openlogic.com">
-                            <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
-                                <img loading="lazy" src="/brands/logo-openlogic-tagline-white.svg" alt="OpenLogic" class="al-backer-logo">
-                            </div>
-                        </a>
-
                         <a  href="https://www.megware.com/">
                             <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
                                 <img loading="lazy" src="/brands/MEGWARE.svg" alt="MEGWARE" class="al-backer-logo">
@@ -563,7 +557,7 @@
 <!-- FEATURES -->
         <div class="al-index-feature-container">
             <div class="container al-py-md">
-                <div class="row row-cols-1 row-cols-md-3 pt-2 pt-md-5">
+                <div class="row row-cols-1 row-cols-md-3">
                     <div class="col d-flex align-items-start">
                         <i class="bi bi-battery-charging al-index-feature-icon"></i>
                         <div>
@@ -603,8 +597,9 @@
                     {{ i18n "Commercial Support" }}
                 </h2>
 				<p class="text-center pb-2 mb-5">Minimize your risk while getting the most out of your AlmaLinux systems</p>
-                <div class="container_support" style="display: flex;">
-                    <div class="row_support" style="width: 33%; padding: 0 15px">
+                <div class="container_support row">
+<!-- Start Cybertrust -->
+                    <div class="row_support col-lg-6 pl-1">
                         <div class="col-image my-0" style="height: 25%; padding: 0; background: #082336;">
                             <div class="p-3 al-commercial-supporter-logo-container rounded-top">
                                 <a href="https://www.cybertrust.co.jp/almalinux/">
@@ -612,7 +607,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-text my-0" style="height: 40%; padding: 0;">
+                        <div class="col-text my-0 " style="height: 40%; padding: 0;">
                             <div class="p-3 al-commercial-supporter-list">
                                 <p class="platinum_sponsor">Platinum Sponsor</p>
                                 <p>Cybertrust Japan is a provider of a comprehensive security certification services to various public and private entities globally, and offers comprehensive support for AlmaLinux users. Have also produced MIRACLE LINUX for nearly 20 years.</p>
@@ -624,8 +619,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="row_support" style="width: 33%; padding: 0 15px">
+<!-- start CloudLinux -->
+                    <div class="row_support col-lg-6 pl-1">
                         <div class="col-image my-0" style="height: 25%; padding: 0; background: #082336;">
                             <div class="p-3 al-commercial-supporter-logo-container rounded-top">
                                 <a href="https://tuxcare.com/almalinux-enterprise-support/">
@@ -643,27 +638,6 @@
                             <div class="p-3 al-commercial-supporter-list rounded-bottom">
                                 <p><br /><a class="btn btn-primary btn-block p-2 rounded text-decoration-none" href="https://tuxcare.com/almalinux-enterprise-support/">Get support</a></p>
                                 <p><a class="btn btn-primary btn-block p-2 rounded text-decoration-none" href="https://tuxcare.com/fips-for-almalinux/">Get FIPS</a></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row_support" style="width: 33%; padding: 0 15px">
-                        <div class="col-image my-0" style="height: 25%; padding: 0; background: #082336;">
-                            <div class="p-3 al-commercial-supporter-logo-container rounded-top">
-                                <a href="https://www.openlogic.com/solutions/enterprise-linux-support/almalinux">
-                                    <img loading="lazy" src="/brands/logo-openlogic-tagline-white.svg" alt="OpenLogic" class="al-commercial-supporter-logo" style="max-height: 70px !important;">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-text my-0" style="height: 40%; padding: 0;">
-                            <div class="p-3 al-commercial-supporter-list">
-                                <p class="silver_sponsor">Silver Sponsor</p>
-                                <p>Confidently deploy AlmaLinux and all your open source packages with enterprise-grade, 24/7/365 support backed by guaranteed SLAs. Keep your mission-critical apps running smoothly with unlimited tickets and direct access to experienced enterprise architects who put your business first.</p>
-                            </div>
-                        </div>
-                        <div class="col-button my-0" style="height: 35%; padding: 0;">
-                            <div class="p-3 al-commercial-supporter-list rounded-bottom">
-                                <p><br /><a class="btn btn-primary btn-block p-2 rounded text-decoration-none" href="https://www.openlogic.com/solutions/enterprise-linux-support/almalinux">Get support</a></p>
                             </div>
                         </div>
                     </div>

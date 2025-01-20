@@ -3,17 +3,19 @@ title: "First AlmaLinux Board Election Announces 7 New Seats"
 type: blog
 author: 
  name: "benny Vasquez"
- bio: "- Chair, Board of Directors @AlmaLinux OS Foundation"
+ bio: "Chair, Board of Directors @AlmaLinux OS Foundation"
  image: /users/benny.jpeg
 date: '2022-09-20'
+images:
+  - /blog-images/2022-board-election-results.png
 post:
     title: "The AlmaLinux OS Foundation has completed its first election! See the results, and what's coming next."
-    image: 
+    image: /blog-images/2022-board-election-results.png
 ---
 
 Over a month ago I announced that we would be holding our [first board election](/blog/first-almalinux-os-foundation-election/). Our nearly 300 members of the AlmaLinux OS Foundation have spent the last two weeks casting their votes for the new board, and I am very happy to announce the newest board. These seven nominees have been elected by the community to serve a three-year term as the AlmaLinux OS Foundation board members.
 
-**How the election worked**
+## How the election worked
 
 The AlmaLinux bylaws were set up to include regular elections, to ensure AlmaLinux could achieve the goal of all foundation members having a voice.
 
@@ -23,47 +25,75 @@ The AlmaLinux bylaws were set up to include regular elections, to ensure AlmaLin
 
 It was especially exciting for me to see us reach our quorum easily within the first week of the election. Our engaged community is one of the things that proves the worth of AlmaLinux to the world.
 
-**Meet the Board**
+## Meet the Board
 
 The board has a lot of familiar faces, and a few new ones to meet! This team brings together highly motivated and engaged experts from across industries. This is the group of humans that will help AlmaLinux OS reach its full potential over the next three years.
 
-![benny Vasquez](/blog-images/benny-vasquez-board.jpg)
+<section>
+	<div class="py-5 px-4 al-member-item">
+        <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/benny.jpg" alt="benny Vasquez" style="max-width: 180px;">
+    </div>
+</section>
 
 [benny Vasquez](https://www.linkedin.com/in/bennyvasquez/)
 
 benny is the current Chair of the board of AlmaLinux OS Foundation.
 
-![Jack Aboutbould](/blog-images/jack-aboutboul-board.jpg)
+<section>
+	<div class="py-5 px-4 al-member-item">
+        <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/jack.jpg" alt="Jack Aboutboul" style="max-width: 180px;">
+    </div>
+</section>
 
 [Jack Aboutboul](https://www.linkedin.com/in/jackaboutboul/)
 
 Jack is a current Director and Community Leader at AlmaLinux.
 
-![Simon Phipps](/blog-images/simon-phipps-board.jpg)
+<section>
+	<div class="py-5 px-4 al-member-item">
+            <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/simon.jpg" alt="Simon Phipps" style="max-width: 180px;">
+	</div>
+</section>
 
 [Simon Phipps](https://en.wikipedia.org/wiki/Simon_Phipps_(programmer))
 
 Simon is a current Director at AlmaLinux, former president of the Open Source Initiative.
 
-![Jesse Asklund](/blog-images/jesse-asklund-board.jpg)
+<section>
+	<div class="py-5 px-4 al-member-item">
+        <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/jesse.jpg" alt="Jesse Asklund" style="max-width: 180px;">
+	</div>
+</section>
 
 [Jesse Asklund](https://www.linkedin.com/in/jessejester/)
 
 Jesse is a current Director at AlmaLinux and the CXO at WebPros.
 
-![Daniel Pearson](/blog-images/daniel-pearson-board.jpg)
-
+<section>
+	<div class="py-5 px-4 al-member-item">
+	        <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/daniel.jpeg" alt="Daniel Pearson" style="max-width: 180px;">
+	</div>
+</section>
+	
 [Daniel Pearson](https://www.linkedin.com/in/daniel-pearson-b2559b60/)
 
 Daniel is the CEO of KnownHost, LLC (promoted from COO during the election window), a current AlmaLinux Gold Sponsor, serves on the AlmaLinux OS Foundation membership committee, and is new to the AlmaLinux OS Foundation board.
 
-![Moshe Bar](/blog-images/moshe-bar-board.jpg)
+<section>
+	<div class="py-5 px-4 al-member-item">
+	        <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/moshe-bar-board.jpg" alt="Moshe Bar" style="max-width: 180px;">
+	</div>
+</section>
 
 [Moshe Bar](https://en.wikipedia.org/wiki/Moshe_Bar_(investor))
 
 Moshe is the CEO of CodeNotary, Inc., an AlmaLinux Gold Sponsor, and is new to the AlmaLinux OS Foundation board.
 
-![Cody Robertson](/blog-images/cody-robertson-board.jpg)
+<section>
+	<div class="py-5 px-4 al-member-item">
+	        <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/blog-images/cody-robertson-board.jpg" alt="Cody Robertson" style="max-width: 180px;">
+	</div>
+</section>
 
 [Cody Robertson](https://www.linkedin.com/in/cody-robertson-3b334575/)
 
