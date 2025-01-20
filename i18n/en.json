@@ -725,12 +725,10 @@
    "The AlmaLinux OS Foundation's membership structure is intentionally permissive, because it is important for us that anyone who has a stake in the future of AlmaLinux is allowed to have a voice in the future of AlmaLinux. Whether you join as a sponsor member or an individual contributor or a mirror host, your support of AlmaLinux and your opinion deserves to be heard.": "The AlmaLinux OS Foundation's membership structure is intentionally permissive, because it is important for us that anyone who has a stake in the future of AlmaLinux is allowed to have a voice in the future of AlmaLinux. Whether you join as a sponsor member or an individual contributor or a mirror host, your support of AlmaLinux and your opinion deserves to be heard.",
    "Membership of the foundation is determined and managed by the Membership Committee. The membership committee meets regularly to review applications and welcome new members to the foundation. The qualifications for each type of membership are below. If you have any intersest in joining the membership committee, reach out to the committee directly via email": "Membership of the foundation is determined and managed by the Membership Committee. The membership committee meets regularly to review applications and welcome new members to the foundation. The qualifications for each type of membership are below. If you have any intersest in joining the membership committee, reach out to the committee directly via email",
    "anyone approved as a contributing member by membership committee based on their contribution to the AlmaLinux project": "anyone approved as a contributing member by membership committee based on their contribution to the AlmaLinux project",
-   "Member qualifications and benefits": "Member qualifications and benefits",
    "acceptance as AlmaLinux mirror by the infrastructure SIG, and approval by the membership committee": "acceptance as AlmaLinux mirror by the infrastructure SIG, and approval by the membership committee",
    "as long as the mirror is operational, reviewed annually": "as long as the mirror is operational, reviewed annually",
    "Contributor (individual) Member": "Contributor (individual) Member",
    "Mirror Member": "Mirror Member",
-   "Sponsor Members": "Sponsor Members",
    "For an independent open source project, maintaining funding through a variety of sponsor members is key to our ability to remain impartial, and is key to our long-term goal of achieving 501(c)(3) status. We remain grateful to our entire community for their support, and are especially grateful for the sponsor members who support the project with funds or resources that are critical to helping us keep up with our explosive growth.": "For an independent open source project, maintaining funding through a variety of sponsor members is key to our ability to remain impartial, and is key to our long-term goal of achieving 501(c)(3) status. We remain grateful to our entire community for their support, and are especially grateful for the sponsor members who support the project with funds or resources that are critical to helping us keep up with our explosive growth.",
    "Silver Sponsor Member": "Silver Sponsor Member",
    "AlmaLinux OS Foundation ByLaws": "AlmaLinux OS Foundation ByLaws",
@@ -765,7 +763,6 @@
    "One dedicated full-time employee working on AlmaLinux OR": "One dedicated full-time employee working on AlmaLinux OR",
    "annual service credits or hardware donations valued at $20,000 or more": "annual service credits or hardware donations valued at $20,000 or more",
    "Ideal for companies or organizations who want to support the AlmaLinux project. These non-profit organizations and companies contribute funding or resources to the project, and receive benefits from the foundation for that support.": "Ideal for companies or organizations who want to support the AlmaLinux project. These non-profit organizations and companies contribute funding or resources to the project, and receive benefits from the foundation for that support.",
-   "Sponsor Member Benefits": "Sponsor Member Benefits",
    "dedicated press release and blog post with social media promotion": "dedicated press release and blog post with social media promotion",
    "priority access to sponsor any AlmaLinux-organized events": "priority access to sponsor any AlmaLinux-organized events",
    "company logo on AlmaLinux.org in up-to three sections/categories": "company logo on AlmaLinux.org in up-to three sections/categories",
@@ -777,5 +774,11 @@
    "inclusion in a silver member group press releases with social media promotion": "inclusion in a silver member group press releases with social media promotion",
    "AlmaLinux member logo for your site": "AlmaLinux member logo for your site",
    "company logo on AlmaLinux website in two sections/categories": "company logo on AlmaLinux website in two sections/categories",
-   "1 sponsor webinar per year": "1 sponsor webinar per year"
+   "1 sponsor webinar per year": "1 sponsor webinar per year",
+   "Free member qualifications and benefits": "Free member qualifications and benefits",
+   "Sponsor member qualifications and benefits": "Sponsor member qualifications and benefits",
+   "election candidates and processes": "election candidates and processes",
+   "The board, once elected, chooses its offices, including the chair of the board. Elections are held as regularly as needed to fill vacancies. The wiki also houses historical details about the": "The board, once elected, chooses its offices, including the chair of the board. Elections are held as regularly as needed to fill vacancies. The wiki also houses historical details about the",
+   "The AlmaLinux OS Foundation is lead by a community elected board of directors who hold regular meetings. Agendas and minutes for those meetings are shared with the public on": "The AlmaLinux OS Foundation is lead by a community elected board of directors who hold regular meetings. Agendas and minutes for those meetings are shared with the public on",
+   "the AlmaLinux Wiki": "the AlmaLinux Wiki"
 }
