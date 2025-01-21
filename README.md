@@ -60,7 +60,7 @@ Localization is important to us, and including localization formatting in your P
 
 ##### Container Development
 
-To deploy a container based development environment you will need docker installed and an editor that supports the devcontainer standard. Further details on the container setup can be found in the [README](https://github.com/almalinux.org/.devcontainer/README.md).
+To deploy a container based development environment you will need docker installed and an editor that supports the devcontainer standard. Further details on the container setup can be found in the [README](.devcontainer/README.md).
 
 #### Directories and modules
 
