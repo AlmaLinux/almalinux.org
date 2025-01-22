@@ -298,7 +298,7 @@
     "anyone approved as a contributing member by membership committee based on their contribution to AlmaLinux": "",
     "Containers": "",
     "which calls for industry action to develop software component frameworks, including SBOMs, to expedite discovery of and response to future vulnerabilities like Log4j.": "其中呼吁业界采取行动，开发包括 SBOM 在内的软件组件框架，以加快发现和应对未来的 Log4j 等漏洞。",
-    "...And the president himself": "",
+    "...And the president himself": "……还有总统本人",
     "per membership committee confirmation: Any contribution of hardware or services based on board approval": "",
     "Become a Member": "",
     "AlmaLinux is leveraging Codenotary’s open source": "AlmaLinux 正在利用 Codenotary 的开放源代码",
@@ -677,5 +677,8 @@
     "SIG support": "SIG 支持",
     "Follow us, join us, or find more information at the links below": "关注我们、加入我们，或通过以下链接查找更多信息",
     "Software certification is still in the works. Want to help out? Join the Certification SIG!": "软件认证仍在进行中。想帮忙吗？加入认证SIG！",
-    "Home": "主页"
+    "Home": "主页",
+    "AlmaLinux images are available for Incus and LXC.": "AlmaLinux 镜像可用于 Incus 和 LXC。",
+    "Get Incus and LXC Images": "获得 incus 和 LXC 的镜像",
+    "Get AlmaLinux on HCP Vagrant Registry": "从 HCP Vagrant 注册中心获取 AlmaLinux"
 }
