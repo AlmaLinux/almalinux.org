@@ -14,7 +14,7 @@ post:
 ---
 
 
-In just one week we'll be kicking off our time in Brussels as we join both [CentOS Connect](https://connect.centos.org/) and FOSDEM for this year's events, and we are so excited. It always feels special for us this year, because this is the time of year that we celebrate the 4-year anniversary of our very first beta version release. 
+In just one week we'll be kicking off our time in Brussels as we join both [CentOS Connect](https://connect.centos.org/) and [FOSDEM](https://fosdem.org/) for this year's events, and we are so excited. It always feels special for us this year, because this is the time of year that we celebrate the 4-year anniversary of our very first beta version release. 
 
 If you are in the area already or were already planning to be at FOSDEM, we'd love to say hi!
 
