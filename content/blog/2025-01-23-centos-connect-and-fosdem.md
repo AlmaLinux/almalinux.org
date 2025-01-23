@@ -16,11 +16,11 @@ post:
 
 In just one week we'll be kicking off our time in Brussels as we join both [CentOS Connect](https://connect.centos.org/) and FOSDEM for this year's events, and we are so excited. It always feels special for us this year, because this is the time of year that we celebrate the 4-year anniversary of our very first beta version release. 
 
-If you are in the area already, or were already planning to be at FOSDEM, we'd love to say hi!
+If you are in the area already or were already planning to be at FOSDEM, we'd love to say hi!
 
 ## At CentOS Connect - Meetup and a talk!
 
-At connect, other than enjoying connecting with other parts of our fellow CentOS Stream community, we're also contributing to the content twice:
+At Connect, other than enjoying connecting with other parts of our fellow CentOS Stream community, we're also contributing to the content twice:
 
 ### ELevate meetup
 
@@ -51,11 +51,11 @@ Sunday, we'll be helping out in the [Distributions Dev Room](https://fosdem.org/
 
 Andrew is again scheduled to give an AlmaLinux talk (from 12-12:30 p.m. local time): [“From Manul to Kitten: 4 years of AlmaLinux Development Evolution.”](https://fosdem.org/2025/schedule/track/distributions/) 
 
-In his presentation, Lukoshoko is set to share the AlmaLinux OS Foundation’s experience in developing their distribution and the related services, while also outlining how AlmaLinux made certain decisions depending on emerging needs and external factors in order to continue to deliver and improve a high-quality distribution.
+In this one Andrew will share our experience in developing their distribution and the related services, while also outlining how we made certain decisions depending on emerging needs and external factors in order to continue to deliver and improve a high-quality distribution.
 
 ## Other 2025 Events
 
-If you wont' be at either of these, that's okay! We're already planning a huge event schedule this year. If you want to help us staff these events or have any others that you think we should cover, reach out to the [Marketing SIG](https://wiki.almalinux.org/sigs/Marketing.html), or fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeGkzJxrYX3PKWh9szmT0deV2ScumGpEOmmiAeevStYFpYkYw/viewform?usp=sf_link).
+If you won't be at either of these, that's okay! We're already planning a huge event schedule this year. If you want to help us staff these events or have any others that you think we should cover, reach out to the [Marketing SIG](https://wiki.almalinux.org/sigs/Marketing.html), or fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeGkzJxrYX3PKWh9szmT0deV2ScumGpEOmmiAeevStYFpYkYw/viewform?usp=sf_link).
 
 -   [SCaLE](https://www.socallinuxexpo.org) - March 6-9
 -   [FOSSAsia Summit](https://summit.fossasia.org/) - March 13-15
