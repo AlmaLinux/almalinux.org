@@ -51,7 +51,7 @@ Sunday, we'll be helping out in the [Distributions Dev Room](https://fosdem.org/
 
 Andrew is again scheduled to give an AlmaLinux talk (from 12-12:30 p.m. local time): [“From Manul to Kitten: 4 years of AlmaLinux Development Evolution.”](https://fosdem.org/2025/schedule/track/distributions/) 
 
-In this one Andrew will share our experience in developing their distribution and the related services, while also outlining how we made certain decisions depending on emerging needs and external factors in order to continue to deliver and improve a high-quality distribution.
+In this one Andrew will share our experience in developing AlmaLinux and the related services, while also outlining how we made certain decisions depending on emerging needs and external factors in order to continue to deliver and improve a high-quality distribution.
 
 ## Other 2025 Events
 
