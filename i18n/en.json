@@ -770,7 +770,6 @@
    "AlmaLinux provides official AlmaLinux OS 8.10 and AlmaLinux OS 9.5 images for Vagrant:": "AlmaLinux provides official AlmaLinux OS 8.10 and AlmaLinux OS 9.5 images for Vagrant:",
    "Get Support": "Get Support",
    "AlmaLinux is a community-driven, open-source operating system built to provide a reliable and stable platform for enterprises and developers alike. Whether you’re running mission-critical applications or experimenting with development environments, having access to quality support is crucial for success.": "AlmaLinux is a community-driven, open-source operating system built to provide a reliable and stable platform for enterprises and developers alike. Whether you’re running mission-critical applications or experimenting with development environments, having access to quality support is crucial for success.",
-   "Fortunately, all AlmaLinux users have access to a wealth of options when it comes to community-powered support resources as well as third-party commercial support:": "Fortunately, all AlmaLinux users have access to a wealth of options when it comes to community-powered support resources as well as third-party commercial support:",
    "Community Support": "Community Support",
    "Community Chat": "Community Chat",
    "Community Forums": "Community Forums",
@@ -802,5 +801,6 @@
    "If your company would like to be added to this list, reach out to the Membership Committee about joining the Foundation as a sponsor": "If your company would like to be added to this list, reach out to the Membership Committee about joining the Foundation as a sponsor",
    "Migration, Applications, and General support": "Migration, Applications, and General support",
    "FedRAMP, ISO-27001, SOC2, NIS 2, CC, software, hardware": "FedRAMP, ISO-27001, SOC2, NIS 2, CC, software, hardware",
-   "CIS, STIG, and more": "CIS, STIG, and more"
+   "CIS, STIG, and more": "CIS, STIG, and more",
+   "Fortunately, all AlmaLinux users have access to a wealth of options when it comes to community-powered support resources, and have options for incredible third-party commercial support.": "Fortunately, all AlmaLinux users have access to a wealth of options when it comes to community-powered support resources, and have options for incredible third-party commercial support."
 }
