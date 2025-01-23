@@ -9,7 +9,7 @@ date: '2025-01-13'
 images:
   - /blog-images/2025/bennyqa.png
 post:
-    title: "bennyqa.png"
+    title: "Meet the board - benny Vasquez"
     image: /blog-images/2025/bennyqa.png
 ---
 

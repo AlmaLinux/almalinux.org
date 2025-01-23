@@ -6,6 +6,8 @@ author:
     bio: "Infrastructure SIG lead & ALESCo member"
     image: /users/jonathan.jpg
 date: '2025-01-17'
+images:
+  - /blog-images/2025/2025-01-17-rsync-vulnerabilities.png
 post:
     title: "Rsync Vulnerabilities - Patching Status"
     image: /blog-images/2025/2025-01-17-rsync-vulnerabilities.png
