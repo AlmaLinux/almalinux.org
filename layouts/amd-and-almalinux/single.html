@@ -1,0 +1,71 @@
+{{ define "main" }}
+<style>
+  img {
+    max-width: 100%;
+  }
+  #hc-hero {
+    background: #0e3b5c;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  #hc-hero img {
+    border-radius: 1rem;
+  }
+  #hc-hero .row {
+    align-items: center;
+  }
+  .btn-row {
+    text-align: center;
+  }
+  .btn-row div {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+  .btn-box {
+    width: 100%;
+    background: white;
+    display: block;
+    padding: 0.5rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  .btn-box:hover {
+    text-decoration: none;
+    color: black;
+  }
+  .btn-box i {
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+</style>
+<!-- HERO -->
+<section id="hc-hero">
+  <div class="container px-0 al-py-lg">  
+    <div class="row">
+      <div class="col-lg">
+        <h1>AMD Processors {{ i18n "certified with AlmaLinux OS" }}</h1>
+        <p class="lead mb-5 mb-md-3">{{ i18n "The" }} AlmaLinux OS Foundation {{ i18n "is a US-based non-profit that stewards the AlmaLinux project and allows anyone to join!" }} {{ i18n "Join the" }} AlmaLinux OS Foundation {{ i18n "as an individual member or Sponsor member, and own a vote in shaping the future of AlmaLinux OS!" }}</p>
+        <p>
+            {{ i18n "Membership levels and benefits are" }} <a href="#apply"> <b>{{ i18n "described below." }}</b> </a>
+        </p>
+      </div>
+      <div class="col-lg imgswitch">
+        <img src="/membership-images/foundation.png">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- start page content -->
+
+<div class="container"><!-- holds all of the content for the page -->
+
+
+
+content
+
+</div><!-- holds all of the content for the page -->
+
+{{end}}
