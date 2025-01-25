@@ -545,7 +545,6 @@
    "This looks awesome! How do I get involved?": "This looks awesome! How do I get involved?",
    "You can find the LEAPP code ": "You can find the LEAPP code ",
    "in the AlmaLinux GitHub organization.": "in the AlmaLinux GitHub organization.",
-   "The enterprise linux ecosystem is a very large and diverse community, and we have developed this project in good faith as members of what ecosystem.": "The enterprise linux ecosystem is a very large and diverse community, and we have developed this project in good faith as members of what ecosystem.",
    "We hope that everyone in the community can use and contribute to ELevate, no matter which distro you prefer. That is the open source way.": "We hope that everyone in the community can use and contribute to ELevate, no matter which distro you prefer. That is the open source way.",
    "Answers to Frequent Questions": "Answers to Frequent Questions",
    "ELevate is a project aimed to provide the ability to upgrade between major versions of RHEL-based distributions. First announced by AlmaLinux in 2021, ELevate combines two key components: updates to ": "ELevate is a project aimed to provide the ability to upgrade between major versions of RHEL-based distributions. First announced by AlmaLinux in 2021, ELevate combines two key components: updates to ",
@@ -821,5 +820,6 @@
    "Company logo on AlmaLinux website in one section/category": "Company logo on AlmaLinux website in one section/category",
    "Inclusion in a silver member group press releases with social media promotion": "Inclusion in a silver member group press releases with social media promotion",
    "Company logo on AlmaLinux website in two sections/categories": "Company logo on AlmaLinux website in two sections/categories",
-   "Annual service credits or hardware donations valued at $20,000 or more": "Annual service credits or hardware donations valued at $20,000 or more"
+   "Annual service credits or hardware donations valued at $20,000 or more": "Annual service credits or hardware donations valued at $20,000 or more",
+   "The enterprise linux ecosystem is a very large and diverse community, and we have developed this project in good faith as members of that ecosystem.": "The enterprise linux ecosystem is a very large and diverse community, and we have developed this project in good faith as members of that ecosystem."
 }
