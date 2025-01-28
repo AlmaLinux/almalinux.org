@@ -41,13 +41,16 @@
     margin-bottom: 0.2rem;
   }
 </style>
+<!-- To do: add better header image, replace incorrect epyc logo with Ryzen logo, add image further down the page,  -->
 <!-- HERO -->
 <section id="hc-hero">
   <div class="container px-0 al-py-lg">  
     <div class="row">
       <div class="col-lg">
-        <h1>AMD Processors {{ i18n "certified with AlmaLinux OS" }}</h1>
-        <p class="lead mb-5 mb-md-3">AlmaLinux and AMD are certified to work flawlessly together - giving you peace of mind that only comes with using the best. </p>
+        <h1>
+			{{ i18n "AMD CPUs + AlmaLinux OS = Compatibility you can trust" }}
+		</h1>
+        <p class="lead mb-5 mb-md-3">{{ i18n "AlmaLinux and AMD are certified to work flawlessly together - giving you peace of mind that only comes with using the best. AMD has been behind AlmaLinux since our inception, and the stability that you find with on with AlmaLinux and AMD is stability that you can count on." }}</p>
         <p>
             {{ i18n "Read all about our partnership and history below." }}
         </p>
@@ -61,11 +64,68 @@
 <!-- start page content -->
 
 <div class="container"><!-- holds all of the content for the page -->
+<!-- start three-div-wide-banner -->
+    <div class="row g-4 py-2 py-md-5">
+      <div class="col-lg-6">
+            <h4 class="fw-bold mb-0 pb-2">
+                AMD EPYC™ 4004 Processors {{ i18n "certified with AlmaLinux OS" }}
+            </h4>
+				<div class="row pb-2 align-items-center justify-content-center">
+		            <div class="col-sm m-1" style="max-width: 180px;">
+						<a href="https://www.amd.com"><img src="/images/1730404-C_AMD_EPYC_Lockup_RGB_Wht.svg" alt="AMD EPYC Wordmark"></a>
+					</div>
+		            <div class="col-sm m-1" style="max-width: 180px;">
+						<a href="https://www.asrockrack.com/"><img src="/images/ASRock Rack_logo-01_white.png" alt="ASRock Logo"></a>
+					</div>
+				</div>
+            <p>
+				{{ i18n "In 2024, AMD again reached out to certify their new AMD EPYC™ series CPUs with AlmaLinux OS - guaranteeing stability, security, and high performance even on their newest hardware. This ASRock Rock system passed with flying colors." }}
+            </p>
+	        <div class="pt-1">
+	            <a href="/amd-epyc-june2024/" class="btn btn-primary al-member-apply-cta" target="_blank">
+					<i class="bi bi-people-fill"></i> 
+	                {{ i18n "Read the full report" }}
+	            </a>
+	        </div>
+      </div>
+      <div class="col-lg-6">
+	        <h4 class="fw-bold mb-0 pb-2">
+				AMD Ryzen™ Processor {{ i18n "certified with AlmaLinux OS" }}
+	        </h4>
+				<div class="row pb-2 align-items-center justify-content-center">
+		            <div class="col-sm m-1" style="max-width: 180px;">
+						<a href="https://www.amd.com"><img src="/images/1730404-C_AMD_EPYC_Lockup_RGB_Wht.svg" alt="AMD EPYC Wordmark"></a>
+					</div>
+				</div>
+	        <p>
+				{{ i18n "In 2022 we worked with AMD to certify the AMD Ryzen™ CPUs processor series with AlmaLinux OS - guaranteeing stability, security, and high performance." }}
+	        </p>
+	        <div class="pt-1">
+            	<a href="/amd-ryzen-may2022/" class="btn btn-primary al-member-apply-cta" target="_blank">
+					<i class="bi bi-people-fill"></i> 
+	                {{ i18n "Read the full report" }}
+	            </a>
+	        </div>
+      </div>
+    </div>
+<!-- end three-div-wide-banner -->
+<!-- Start full-width section -->
+	<div class="row">
+      <div class="col-lg-6">
+	    <h3 class="fw-bold mb-0 pb-2">
+	        AMD + AlmaLinux = <i class="bi bi-people-fill"></i>
+	    </h3>
+		<p>{{ i18n "As a Silver Sponsor Member of the" }} AlmaLinux OS Foundation {{ i18n "since our founding in 2021, AMD has proven themselves to be deeply attuned to what their users need. By joining the foundation in addition to certifying some of their most competitive hardware, AMD is also proving themselves a leader in the Linux world, and a friend to the Linux user." }}</a></p>
+	 </div>
+     <div class="col-lg-6">
+	 [ insert picture of something here - maybe a server picture from AMD? ]
+	 </div>
+	</div>
+<!-- end full-width section -->
+    <div class="m-4 al-py-md" style="padding: 0 40px 0 40px;">
+		<h4>[insert some kind of CTA here that sends folks to the AMD website]</h4>
+	</div>
 
-
-
-content
-
-</div><!-- holds all of the content for the page -->
+</div><!-- end container - holds all of the content for the page -->
 
 {{end}}
