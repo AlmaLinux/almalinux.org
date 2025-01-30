@@ -856,5 +856,13 @@
     "AlmaLinux Day Welcome and Introduction": "開会",
     "Open Source People Network https://ospn.jp/, and more below.": "Open Source People Network https://ospn.jp/、その他ページ下部参照。",
     "AlmaLinux images are available for Incus and LXC.": "AlmaLinuxのイメージは、IncusおよびLXCで利用可能です。",
-    "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: ": "以下リンクのHCP Vagrant RegistryからAlmaLinux OSイメージを入手できます： "
+    "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: ": "以下リンクのHCP Vagrant RegistryからAlmaLinux OSイメージを入手できます： ",
+    "Community Chat": "コミュニティチャット",
+    "Get Support": "サポートを受ける",
+    "GitHub": "GitHub",
+    "Community Support": "コミュニティサポート",
+    "Community Forums": "コミュニティフォーラム",
+    "Reddit": "Reddit",
+    "AlmaLinux Wiki": "AlmaLinux Wiki",
+    "Join Mailing Lists": "メーリングリストに参加する"
 }
