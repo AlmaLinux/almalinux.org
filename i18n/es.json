@@ -474,7 +474,7 @@
     "Board Operations and Code of Ethics": "Funcionamiento del Consejo y Código Ético",
     "is available via the Azure Marketplace at the link provided.": "está disponible a través de Azure Marketplace en el siguiente enlace.",
     "AlmaLinux provides official AlmaLinux OS 8 and AlmaLinux OS 9 images for Vagrant:": "AlmaLinux proporciona imágenes oficiales de AlmaLinux OS 8 y AlmaLinux OS 9 para Vagrant:",
-    "AlmaLinux OS Images are also available via the": "Las imágenes del sistema operativo AlmaLinux también están disponibles a través de la página",
+    "AlmaLinux OS Images are also available via the": "Las imágenes del sistema operativo AlmaLinux también están disponibles a través de",
     "The": "La",
     "AlmaLinux Raspberry Pi Wiki Page": "wiki de AlmaLinux Raspberry Pi",
     "AlmaLinux offers images for Oracle Cloud Infrastructure across all OCI regions via the ": "AlmaLinux ofrece imágenes para la infraestructura de Oracle Cloud en todas las regiones OCI a través de la plataforma ",
@@ -967,5 +967,7 @@
     "AlmaLinux Day Welcome and Introduction": "Bienvenida y presentación del día de AlmaLinux",
     "AlmaLinux images are available for Incus and LXC.": "Las imágenes de Alma Linux están disponibles para Incus y LXC.",
     "Get Incus and LXC Images": "Obtener imágenes Incus y LXC",
-    "Get AlmaLinux on HCP Vagrant Registry": "Obtenga Alma Linux en Vagrant Registry de HCP"
+    "Get AlmaLinux on HCP Vagrant Registry": "Obtenga Alma Linux en Vagrant Registry de HCP",
+    "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: ": "Puede obtener imágenes del SO Alma Linux en Vagrant Registry HCP en el enlace siguiente: ",
+    "AlmaLinux provides official AlmaLinux OS 9.5 images for Vagrant:": "Alma Linux proporciona imágenes oficiales de AlmaLinux OS 9.5 para Vagrant:"
 }
