@@ -48,7 +48,7 @@ Within the [x86-64](https://en.wikipedia.org/wiki/X86-64) architecture, there ar
 
 Both in AlmaLinux Kitten 10, and when we release AlmaLinux OS 10, we will follow Red Hat's decision to ship x86-64-v3 optimized binaries by default, but we will also provide additional x86-64-v2 architecture ONLY for older hardware that doesn't support modern CPU feature sets.
 
-Please note: all 3rd party packages for RHEL10 will be built for x86-64-v3, so AlmaLinux OS Kitten 10 built for x86-64-v2 will only be appropriate in workloads where the default OS package set is enough, or where users will be able to rebuild any additional packages they require for x86-64-v2 architecture themselves. ALESCo is currently weighing the option of [rebuilding EPEL](https://docs.fedoraproject.org/en-US/epel/) for x86-64-v2 users. If you use this version, please [let us know](https://github.com/almalinux/alesco) by commenting on the RFC, so we can make informed decisions about this version in the future.
+Please note: all 3rd party packages for RHEL10 will be built for x86-64-v3, so AlmaLinux OS Kitten 10 built for x86-64-v2 will only be appropriate in workloads where the default OS package set is enough, or where users will be able to rebuild any additional packages they require for x86-64-v2 architecture themselves. ALESCo is currently weighing the option of [rebuilding EPEL](https://docs.fedoraproject.org/en-US/epel/) for x86-64-v2 users. If you use this version, please let us know by [commenting on the RFC](https://github.com/AlmaLinux/ALESCo/pull/2), so we can make informed decisions about this version in the future.
 
 ### Secure Boot
 
