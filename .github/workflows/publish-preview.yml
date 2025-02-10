@@ -41,6 +41,9 @@ jobs:
       - name: move redirects file into place
         run: cp _redirects public/
 
+      - name: move headers file into place
+        run: cp _headers public/
+
       - name: build search index
         run: npx pagefind --site "public"
 
