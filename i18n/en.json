@@ -821,5 +821,7 @@
    "Annual service credits or hardware donations valued at $20,000 or more": "Annual service credits or hardware donations valued at $20,000 or more",
    "The enterprise linux ecosystem is a very large and diverse community, and we have developed this project in good faith as members of that ecosystem.": "The enterprise linux ecosystem is a very large and diverse community, and we have developed this project in good faith as members of that ecosystem.",
    "AlmaLinux OS 9.2 is FIPS 140-3 validated and on the NIST Active list. Read more in this blog post: ": "AlmaLinux OS 9.2 is FIPS 140-3 validated and on the NIST Active list. Read more in this blog post: ",
-   "AlmaLinux 9.2 FIPS Validation Update": "AlmaLinux 9.2 FIPS Validation Update"
+   "AlmaLinux 9.2 FIPS Validation Update": "AlmaLinux 9.2 FIPS Validation Update",
+   "Expired but remains a trusted key.": "Expired but remains a trusted key.",
+   "Expired:": "Expired:"
 }
