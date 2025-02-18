@@ -1011,5 +1011,7 @@
     "For organizations that require dedicated, enterprise-grade assistance, we recommend choosing one of the options for paid AlmaLinux support. These providers ensure you always have fast support tailored for your environment and business needs.": "Організаціям, яким потрібна допомога корпоративного рівня, ми рекомендуємо вибрати один із варіантів платної підтримки AlmaLinux. Ці постачальники гарантують, що ви завжди матимете швидку підтримку, адаптовану до вашого середовища та бізнес-потреб.",
     "The enterprise linux ecosystem is a very large and diverse community, and we have developed this project in good faith as members of that ecosystem.": "Корпоративна екосистема Linux — це дуже велика та різноманітна спільнота, і ми добросовісно розробили цей проект як члени цієї екосистеми.",
     "AlmaLinux OS 9.2 is FIPS 140-3 validated and on the NIST Active list. Read more in this blog post: ": "AlmaLinux OS 9.2 сертифіковано за стандартом FIPS 140-3 і внесено до списку NIST Active. Дізнайтеся більше у цій статті в блозі: ",
-    "AlmaLinux 9.2 FIPS Validation Update": "AlmaLinux 9.2 Оновлення перевірки FIPS"
+    "AlmaLinux 9.2 FIPS Validation Update": "AlmaLinux 9.2 Оновлення перевірки FIPS",
+    "Expired but remains a trusted key.": "Термін дії минув, але залишається надійним ключем.",
+    "Expired:": "Термін дії минув:"
 }
