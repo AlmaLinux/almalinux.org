@@ -1079,3 +1079,95 @@ a {
 	margin:0 0 0 1rem;
 	list-style-type: none;
 }
+
+.al-body-container {
+    padding: 40px 20px;
+}
+
+.branding {
+    padding: 40px 20px;
+}
+
+.al-index-backed-by {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pb-2 {
+    padding-bottom: 2rem;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #14598a !important;
+}
+
+.al-article-content {
+    padding: 0 !important;
+}
+
+.group-logo {
+    display: flex;
+    margin-top: 20px;
+}
+
+.branding-logo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.almalinux-logo {
+    width: 45%;
+    height: 100%;
+}
+
+.group-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.branding-icon {
+    display: flex;
+    flex-direction: column;
+}
+
+.color-palette-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.color-palette-column {
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+    margin-right: 20px;
+}
+
+.color-palette-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+.font-branding {
+    display: flex;
+    justify-content: center;
+}
+
+.font-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.font-line {
+    height: 80px;
+    border-right: 2px solid #ffffff;
+    padding-left: 15px;
+}
