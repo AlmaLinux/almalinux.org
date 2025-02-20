@@ -662,7 +662,7 @@
     "General Counsel": "Consejo General",
     "Track 1": "Pista 1",
     "AlmaLinux: Built to Last": "AlmaLinux: Construido para durar",
-    "Keynotes": "Apertura",
+    "Keynotes": "Notas",
     "The Forefront of AlmaLinux on ARM Server Infrastructure": "La vanguardia de AlmaLinux en la infraestructura de servidores ARM",
     "The Evolution of SBOMs in AlmaLinux": "Evolución de los SBOM en AlmaLinux",
     "Building AlmaLinux OS": "Creación del SO AlmaLinux",
@@ -969,5 +969,6 @@
     "Get Incus and LXC Images": "Obtener imágenes Incus y LXC",
     "Get AlmaLinux on HCP Vagrant Registry": "Obtenga Alma Linux en Vagrant Registry de HCP",
     "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: ": "Puede obtener imágenes del SO Alma Linux en Vagrant Registry HCP en el enlace siguiente: ",
-    "AlmaLinux provides official AlmaLinux OS 9.5 images for Vagrant:": "Alma Linux proporciona imágenes oficiales de AlmaLinux OS 9.5 para Vagrant:"
+    "AlmaLinux provides official AlmaLinux OS 9.5 images for Vagrant:": "Alma Linux proporciona imágenes oficiales de AlmaLinux OS 9.5 para Vagrant:",
+    "AlmaLinux offers AlmaLinux OS 8.10 and AlmaLinux OS 9.5 images for Azure across all Azure regions via the ": "AlmaLinux ofrece imágenes de Alma Linux OS 8.10 y AlmaLinux OS 9.5 para Azure en todas las regiones de Azure a través de "
 }
