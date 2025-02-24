@@ -923,5 +923,7 @@
     "Buy Support Online Now": "Купить онлайн-поддержку",
     "For Japan-based AlmaLinux users:": "Для японских пользователей AlmaLinux:",
     "Join the conversation! Real time discussion with other AlmaLinux community members, the governance team, and AlmaLinux OS developers.": "Присоединяйтесь к обсуждению! Обсуждение в реальном времени с другими членами сообщества AlmaLinux, командой управления и разработчиками ОС AlmaLinux.",
-    "Subscribe to a variety of specific mailing lists including Announcements (for OS and project updates), SIG-specific mailing lists, Mirror-hosts, security discussions, and our monthly newsletter.": "Подпишитесь на различные специальные списки рассылки, включая объявления (об обновлениях ОС и проектов), списки рассылки SIG, зеркальные хосты, обсуждения по вопросам безопасности и нашу ежемесячную рассылку."
+    "Subscribe to a variety of specific mailing lists including Announcements (for OS and project updates), SIG-specific mailing lists, Mirror-hosts, security discussions, and our monthly newsletter.": "Подпишитесь на различные специальные списки рассылки, включая объявления (об обновлениях ОС и проектов), списки рассылки SIG, зеркальные хосты, обсуждения по вопросам безопасности и нашу ежемесячную рассылку.",
+    "Expired but remains a trusted key.": "Истек, но остается доверенным ключем.",
+    "Expired:": "Истек:"
 }
