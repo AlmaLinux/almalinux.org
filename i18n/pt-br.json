@@ -878,7 +878,7 @@
     "Request Certification": "Solicitar Certificação",
     "Test your hardware": "Teste seu hardware",
     "Product Support": "Suporte ao produto",
-    "Learn More": "Saber mais",
+    "Learn More": "Saber Mais",
     "LOADING": "CARREGANDO",
     "Overview": "Visão geral",
     "SEARCH": "PESQUISA",
@@ -1005,5 +1005,7 @@
     "Your company's events featured on our": "Os eventos da sua empresa apresentados em nosso",
     "Ideal for companies or organizations who want to support the AlmaLinux project. These non-profit organizations and companies contribute funding or resources to the project, and receive benefits from the foundation for that support.": "Ideal para empresas ou organizações que desejam apoiar o projeto AlmaLinux. Estas organizações e empresas sem fins lucrativos contribuem com financiamento ou recursos para o projeto e recebem benefícios da fundação por esse apoio.",
     "The AlmaLinux OS Foundation is lead by a community elected board of directors who hold regular meetings. Agendas and minutes for those meetings are shared with the public on": "A AlmaLinux OS Foundation é liderada por um conselho de administração eleito pela comunidade que realiza reuniões regulares. As agendas e atas dessas reuniões são compartilhadas com o público em",
-    "Have up to 3 kernel modules signed by AlmaLinux, allowing your application to work with secure boot on AlmaLinux servers.": "Tenha até 3 módulos de kernel assinados pela AlmaLinux, permitindo que sua aplicação funcione com inicialização segura nos servidores AlmaLinux."
+    "Have up to 3 kernel modules signed by AlmaLinux, allowing your application to work with secure boot on AlmaLinux servers.": "Tenha até 3 módulos de kernel assinados pela AlmaLinux, permitindo que sua aplicação funcione com inicialização segura nos servidores AlmaLinux.",
+    "Expired but remains a trusted key.": "Expirada, mas continua sendo uma chave confiável.",
+    "Expired:": "Expirada:"
 }
