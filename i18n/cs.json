@@ -683,5 +683,7 @@
     "Get OCI Image from GitHub": "Získejte OCI Image z GitHubu",
     "The AlmaLinux OS Foundation is a registered 501(c)(6) organization under US law": "Nadace AlmaLinux OS je registrovaná organizace 501(c)(6) podle amerického práva",
     "11:00 am": "11:00",
-    "The next AlmaLinux betas are ready for testing! Checkout ": "Další betaverze AlmaLinuxu jsou připraveny k testování! Podívejte se na "
+    "The next AlmaLinux betas are ready for testing! Checkout ": "Další betaverze AlmaLinuxu jsou připraveny k testování! Podívejte se na ",
+    "AlmaLinux images are available for Incus and LXC.": "AlmaLinux nabízí obrazy pro Incus a LXC.",
+    "Get Incus and LXC Images": "Získejte obrazy pro Incus a LXC"
 }
