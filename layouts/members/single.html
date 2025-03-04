@@ -1,435 +1,515 @@
 {{ define "main" }}
+<style>
+  img {
+    max-width: 100%;
+  }
+  #hc-hero {
+    background: #0e3b5c;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  #hc-hero h1 {
+    font-weight: 800;
+    font-size: 2.3rem;
+  }
+  #hc-hero h2 {
+    font-size: 1.7rem;
 
-<div class="al-body-container">
-    
-    <section class="al-page-foundation-members-index">
-        <div class="px-3 py-5 mt-5 text-center">
-            <div class="row">
-                <h1 class="col-lg-12 fw-bold display-5 mb-4">
-                    {{ i18n "Join the" }} AlmaLinux OS Foundation
-                </h1>
-                <div class="col-lg-5 mx-auto">
-                    <p class="lead mb-4 pb-2 fs-5">
-                        {{ i18n "Be heard!" }} {{ i18n "Join the" }} AlmaLinux Foundation {{ i18n "as a Member or Sponsor." }} {{ i18n "Own and vote on shaping the future of AlmaLinux OS!" }}
-                    </p>
-                    <div class="d-flex justify-content-center mb-4 pb-4">
-                        <a href="#apply" class="btn btn-primary btn-lg">
-                            {{ i18n "Apply for membership" }}
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-7 mx-auto">
-                    <div class="fw-light fs-6">
-                        <p>
-                            {{ i18n "The AlmaLinux Foundation is the entity behind AlmaLinux OS, the forever-free Enterprise-grade Linux distribution." }} {{ i18n "As a member, you will have a voice in the direction of the project, and can vote for and be voted into the Board of Directors by other members." }} {{ i18n "There are several pathways available for becoming a member, including project contributors, mirror maintainers/sponsors and service providers to the community, as well as official sponsors for the project." }}
-                        </p>
-                        <p>
-                            {{ i18n "The acceptance of each application will be reviewed on a case-by-case basis by the " }} <a href="{{ "p/membership-committee/" | relLangURL }}" class="al-laws-link"> <b>{{ i18n "Membership Committee" }}</b> </a> {{ i18n ", in accordance with the " }} <a href="{{ "p/foundation-bylaws/" | relLangURL }}" class="al-laws-link"> <b>{{ i18n "Bylaws" }}</b> </a> {{ i18n " established by the Board." }}                        </p>
-                        <p>
-                            {{ i18n "Membership guidelines are" }} <a href="https://lnx.rocks/sponsormembers" class="al-guideline-link" target="_blank"> <b>{{ i18n "available here" }}</b> </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div id="apply"></div>
-        </div>
+  }
+  #hc-hero img {
+    border-radius: 1rem;
+  }
+  #hc-hero .row {
+    align-items: center;
+  }
+  .btn-row {
+    text-align: center;
+  }
+  .btn-row div {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+  .btn-box {
+    width: 100%;
+    background: white;
+    display: block;
+    padding: 0.5rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  .btn-box:hover {
+    text-decoration: none;
+    color: black;
+  }
+  .btn-box i {
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+  #hc-get {
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+#hc-get h2 {
+  text-align: center;
+  border-bottom: 2px solid #13517e;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+#hc-get h3 {
+  margin: 0;
+}
+.mixed-text  {
+  line-height:48px;
+  font-size:32px;
+}
+.mixed-text img {
+  display: inline;
+}
 
-       <div class="container al-py-md">
-            <h6 class="pt-5 pb-3 mb-3 text-uppercase border-bottom">{{ i18n "Join" }} AlmaLinux OS Foundation</h6>
+/*RESPONSIVE QUERIES */
+  @media(max-width: 991px){
+    .m-hide {
+      display: none;
+    }
+  }
+/*END RESPONSIVE QUERIES */
+</style>
+<!-- HERO -->
+<section id="hc-hero">
+  <div class="container px-0 al-py-lg">  
+    <div class="row">
+      <div class="col-lg">
+        <h1 class="display-5 fw-bold">AlmaLinux OS Foundation {{ i18n "Membership" }}</h1>
+        <p class="lead mb-5 mb-md-3">{{ i18n "The" }} AlmaLinux OS Foundation {{ i18n "is a US-based non-profit that stewards the AlmaLinux project and allows anyone to join!" }} {{ i18n "Join the" }} AlmaLinux OS Foundation {{ i18n "as an individual member or Sponsor member, and own a vote in shaping the future of AlmaLinux OS!" }}</p>
+        <p>
+            {{ i18n "Membership levels and benefits are" }} <a href="#apply"> <b>{{ i18n "described below." }}</b> </a>
+        </p>
+      </div>
+      <div class="col-lg imgswitch">
+        <img src="/membership-images/foundation.png">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- start page content -->
+<!-- start member levels -->
+<div class="container"><!-- holds all of the content for the page -->
+    <div class="row g-4 py-2 py-md-5">
+      <div class="col-sm">
+            <h4 class="fw-bold mb-0 pb-2">
+                {{ i18n "Contributor Member" }}
+            </h4>
+            <p>
+                {{ i18n "An individual application for anyone who uses AlmaLinux OS, contributes to AlmaLinux OS, provides services to the AlmaLinux OS community, or otherwise supports the AlmaLinux Project." }}
+            </p>
+	        <div class="pt-1">
+	            <a href="https://docs.google.com/forms/d/e/1FAIpQLScJx_mgkkWgBLr-jF1X6VBizXxQxboy1l5jVS-5eP6d2n5ThA/viewform" class="btn btn-primary al-member-apply-cta" target="_blank">
+					<i class="bi bi-people-fill"></i> 
+	                {{ i18n "Apply" }}
+	            </a>
+	        </div>
+      </div>
+      <div class="col-sm">
+            <h4 class="fw-bold mb-0 pb-2">
+                {{ i18n "Mirror Sponsor Member" }}
+            </h4>
+            <p>
+                {{ i18n "An individual or entity that provides the project with mirror(s) for content distribution." }} {{ i18n "Only one member application per individual or entity will be accepted, irrespective of contributed number of mirrors." }}
+            </p>
+	        <div class="pt-1">
+	            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdulxH8cv5fzqkIyLanxzvxoBTnrz8Y0JPbseXjzPXRsPT_kQ/viewform" class="btn btn-primary al-member-apply-cta" target="_blank">
+					<i class="bi bi-people-fill"></i> 
+	                {{ i18n "Apply" }}
+	            </a>
+	        </div>
+      </div>
+      <div class="col-sm">
+	        <h4 class="fw-bold mb-0 pb-2">{{ i18n "Sponsor Member" }}
+	        </h4>
+	        <p>
+	            {{ i18n "Ideal for companies or organizations who want to support the AlmaLinux project. These non-profit organizations and companies contribute funding or resources to the project, and receive benefits from the foundation for that support." }}
+	        </p>
+	        <div class="pt-1">
+            	<a href="https://docs.google.com/forms/d/e/1FAIpQLSddSD32Feb2KUvPTktZNpY_LInyDBRpXxt6XEIjiYIHmP3t7Q/viewform" class="btn btn-primary al-member-apply-cta" target="_blank">
+					<i class="bi bi-people-fill"></i> 
+	                {{ i18n "Apply" }}
+	            </a>
+	        </div>
+      </div>
+    </div>
+<!-- end member levels -->
 
-            <div class="al-membership-info" id="al-contributor-info">
-                <div class="col p-0 ">
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>{{ i18n "Contributor Membership" }}</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>{{ i18n "Qualification" }}</td>
-                                <td>
-                                    {{ i18n "anyone approved as a contributing member by membership committee based on their contribution to AlmaLinux" }}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>{{ i18n "Term" }}</td>
-                                <td>{{ i18n "re-qualified annually" }}</td>
-                            </tr>
-                            <tr>
-                                <td>{{ i18n "Benefits" }}</td>
-                                <td>
-                                    <ul>
-                                        <li>
-                                            {{ i18n "listing on our website in a contributing member list" }}
-                                        </li>
-                                        <li>{{ i18n "contributing member AlmaLinux logo" }}</li>
-                                        <li>{{ i18n "1 vote for a board seat" }}</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+	<div class="container pb-5 mb-5">
+	    <div class=" text-center fs-6">
+	        {{ i18n "Do you have membership related questions?" }}
+	        <a href="mailto:membership@almalinux.org">{{ i18n "Email the membership committee" }}</a>.
+	    </div>
+	</div>   
+<!-- Acts as an anchor for links -->
+	<div id="apply"></div>
 
-            <div class="row al-membership-info" id="al-mirror-info">
-                <div class="col p-0">
-                    <table class="table table-bordered">
-                        <thead>
-                          <tr>
-                            <th></th>
-                            <th>{{ i18n "Official Mirror Membership" }}</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>{{ i18n "Qualification" }}</td>
-                                <td>
-                                    {{ i18n "acceptance as AlmaLinux mirror by tech committee" }}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>{{ i18n "Term" }}</td>
-                                <td>{{ i18n "as long as mirror is operational" }}</td>
-                            </tr>
-                            <tr>
-                                <td>{{ i18n "Benefits" }}</td>
-                                <td>
-                                    {{ i18n "All contributor membership benefits and" }}
-                                    <ul>
-                                        <li>{{ i18n "Listing as an official AlmaLinux mirror" }}</li>
-                                        <li>{{ i18n "Official AlmaLinux mirror logo" }}</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+<!-- start member descriptions -->
+	<h3>{{ i18n "Join the" }} AlmaLinux OS Foundation</h6>
+		<p>{{ i18n "The AlmaLinux OS Foundation's membership structure is intentionally permissive, because it is important for us that anyone who has a stake in the future of AlmaLinux is allowed to have a voice in the future of AlmaLinux. Whether you join as a sponsor member or an individual contributor or a mirror host, your support of AlmaLinux and your opinion deserves to be heard." }}</p>
+		<p>{{ i18n "Membership of the foundation is determined and managed by the Membership Committee. The membership committee meets regularly to review applications and welcome new members to the foundation. The qualifications for each type of membership are below. If you have any intersest in joining the membership committee, reach out to the committee directly via email" }}! <a href="mailto:membership@almalinux.org">{{ i18n "Email the membership committee" }}</a></p>
+  
+	<h2>{{ i18n "Free member qualifications and benefits" }}</h2>
+		<p>{{ i18n "All of the information below is pulled directly from where it was defined in the" }} <a href="https://almalinux.org/p/foundation-bylaws/">{{ i18n "AlmaLinux OS Foundation ByLaws" }}</a>, {{ i18n "and the expanded membership document adopted by the board of directors in" }} <a href="https://docs.google.com/document/d/1TGYu9Ga8oqIN16RxUQzqbFJZTImy5EQDO1tOhq4ymGw/edit?tab=t.0#heading=h.wpc7akebv4b">{{ i18n "April of 2024" }}</a>.</p>
+	<div class="row pb-2">
+		<div class="col-lg"><!-- start contributor column -->
+			<h3 class="pb-3">{{ i18n "Contributor (individual) Member" }}</h3>
+	  		<img class="pb-1" src="/membership-images/IMG_0911.png">
+			<p>Contributor membership is perfect for any individual contributor to the AlmaLinux project or user of AlmaLinux who wishes to support the AlmaLinux OS Foundation by joining. </p>
 
-            <div class="row al-membership-info" id="al-sponsor-info">
-                <div class="col p-0">
-                    <table class="table table-bordered">
-                        <thead>
-                          <tr>
-                            <th></th>
-                            <th>Silver Membership</th>
-                            <th>Gold Membership</th>
-                            <th>Platinum Membership</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td>{{ i18n "All of the" }} Silver membership {{ i18n "benefits, plus..." }}</td>
-                                <td>{{ i18n "All of the" }} Gold membership {{ i18n "benefits, plus..." }}</td>
-                            </tr>
-                            <tr>
-                                <td>{{ i18n "Voting benefits" }}</td>
-                                <td>{{ i18n "a potential seat on the board of directors" }}
-                                    <ul>
-                                        <li>{{ i18n "Opportunity  to nominate someone for election to the board of directors" }}</li>
-                                        <li>5 {{ i18n "votes for each open board seat" }}</li>
-                                    </ul>
-                                </td>
-                                <td>{{ i18n "a potential seat on the board of directors" }}
-                                    <ul>
-                                        <li>{{ i18n "Opportunity to nominate someone for election to the board of directors" }}</li>
-                                        <li>15 {{ i18n "votes for each open board seat" }}</li>
-                                    </ul>
-                                </td>
-                                <td>{{ i18n "a potential seat on the board of directors" }}
-                                    <ul>
-                                        <li>{{ i18n "Opportunity to nominate someone for election to the board of directors" }}</li>
-                                        <li>50 {{ i18n "votes for each open board seat" }}</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>{{ i18n "Marketing Benefits" }}</td>
-                                <td>
-                                    <ul>
-                                        <li>
-                                            {{ i18n "Your company logo on AlmaLinux website (in one section/category of the website only)" }}
-                                        </li>
-                                        <li>
-                                            {{ i18n "Have your company's events featured on our events.almalinux.org community calendar" }}
-                                        </li>
-                                        <li>
-                                            {{ i18n "Exposure through new Silver member group press releases with social media promotion" }}
-                                        </li>
-                                        <li>{{ i18n "AlmaLinux member logo on your site" }}</li>
-                                        <li>{{ i18n "Inclusion in a round-up of new members" }}</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul>
-                                        <li>{{ i18n "Priority access to sponsorship at any AlmaLinux organized events" }}
-                                        </li>
-                                        <li>
-                                            {{ i18n "Your company logo on AlmaLinux website in up two sections/categories" }}
-                                        </li>
-                                        <li>1 {{ i18n "sponsored webinar per year" }}<sup>1</sup></li>
-                                        <li>{{ i18n "four sponsored blog posts per year" }}<sup>1</sup></li>
-                                        <li>
-                                            {{ i18n "AlmaLinux will assist in promoting your appropriate social media for Linux-related content (e.g. tweets and retweets)" }}<sup>1</sup>
-                                        </li>
-                                        <li>
-                                            {{ i18n "Membership launch blog announcing your Gold/Platinum membership" }}
-                                        </li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul>
-                                        <li>
-                                            {{ i18n "Your company logo on AlmaLinux website in up three sections/categories" }}
-                                        </li>
-                                        <li>2 {{ i18n "sponsored webinars per year" }}<sup>1</sup></li>
-                                        <li>{{ i18n "Dedicated press release announcing membership" }}</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>{{ i18n "Additional Benefits" }}</td>
-                                <td></td>
-                                <td>
-                                    <ul>
-                                        <li>
-                                            {{ i18n "Direct access to AlmaLinux executives and staff to help with consultation, planning, and engagement opportunities, including advance information on upcoming announcements and projects" }}
-                                        </li>
-                                    </ul>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>{{ i18n "Fees (Annual)" }}</td>
-                                <td>$2,500</td>
-                                <td>$20,000</td>
-                                <td>$100,000</td>
-                            </tr>
-                            <tr>
-                                <td>{{ i18n "Alternative contribution" }}</td>
-                                <td>
-                                    {{ i18n "per membership committee confirmation: Any contribution of hardware or services based on board approval" }}
-                                </td>
-                                <td>{{ i18n "per board of directors confirmation:" }}
-                                    <ul>
-                                        <li>{{ i18n "One dedicated FTE working on AlmaLinux" }}</li>
-                                        {{ i18n "or" }}
-                                        <li>
-                                            {{ i18n "annual service credits or hardware donation valued at $20,000 or more" }}
-                                        </li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    {{ i18n "per board of directors confirmation:" }}
-                                    <ul>
-                                        <li>{{ i18n "Three dedicated FTE working on AlmaLinux" }}</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+			<h4>Qualifications</h4>
+			   <p> {{ i18n "anyone approved as a contributing member by membership committee based on their contribution to the AlmaLinux project" }}</p>
+			<h5>{{ i18n "Term" }}</h5>
+			   <p>{{ i18n "re-qualified annually" }}</p>
+			<h5>{{ i18n "Benefits" }}</h5>
+	        <ul>
+	            <li>{{ i18n "Opportunity to nominate someone for election to the board of directors" }}</li>
+	            <li>{{ i18n "1 vote for a board seat" }}</li>
+	            <li>{{ i18n "Be listed on our website in a contributing member list" }}</li>
+	            <li>{{ i18n "Contributing member AlmaLinux logo" }}</li>
+	        </ul>
+		  <div class="pt-1">
+		        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJx_mgkkWgBLr-jF1X6VBizXxQxboy1l5jVS-5eP6d2n5ThA/viewform" class="btn btn-primary al-member-apply-cta" target="_blank">
+					<i class="bi bi-people-fill"></i> 
+		            {{ i18n "Apply" }}
+		        </a>
+		  </div>
+		</div><!-- end contributor column -->
+		<div class="col-lg"><!-- start mirror column -->
+		<h3 class="pb-3">{{ i18n "Mirror Member" }}</h3>
+	    <img class="pb-1" src="/membership-images/mirrorheatmap.2024.08.png">
+		<p>{{ i18n "Mirror membership is specifically for those who support AlmaLinux by hosting any one of the devices in our our 400+ mirror network." }}</p>
 
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-4 py-2 py-md-5">
-                <div class="col d-flex align-items-stretch pl-0">
-                    <i class="bi bi-suit-heart-fill al-member-apply-category-icon"></i>
-                    <div class="al-foundation-members-apply-content-wrap">
-                        <h4 class="fw-bold mb-0 pb-2">
-                            {{ i18n "Contributor Member" }}
-                            <a class="member-info" id="contributor">
-                                <i class="bi bi-info-circle-fill"></i>
-                            </a>
-                        </h4>
-                        <p>
-                            {{ i18n "An individual application for anyone who uses AlmaLinux OS, contributes to AlmaLinux OS, provides services to the AlmaLinux OS community or otherwise supports the AlmaLinux OS." }}
-                        </p>
-                        <div class="pt-1">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScJx_mgkkWgBLr-jF1X6VBizXxQxboy1l5jVS-5eP6d2n5ThA/viewform?usp=sf_link" class="btn btn-primary al-member-apply-cta" target="_blank">
-                                {{ i18n "Apply" }}
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-stretch pl-0">
-                    <i class="bi  bi-cloud-arrow-down-fill al-member-apply-category-icon"></i>
-                    <div class="al-foundation-members-apply-content-wrap">
-                        <h4 class="fw-bold mb-0 pb-2">
-                            {{ i18n "Mirror Member" }}
-                            <a class="member-info" id="mirror">
-                                <i class="bi bi-info-circle-fill"></i>
-                            </a>
-                        </h4>
-                        <p>
-                            {{ i18n "An individual or entity that provides the project with mirror(s) for content distribution." }} {{ i18n "Only one member application per individual or entity will be accepted, irrespective of contributed number of mirrors." }}
-                        </p>
-                        <div class="pt-1">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdulxH8cv5fzqkIyLanxzvxoBTnrz8Y0JPbseXjzPXRsPT_kQ/viewform?usp=sf_link" class="btn btn-primary al-member-apply-cta" target="_blank">
-                                {{ i18n "Apply" }}
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-stretch pl-0">
-                    <i class="bi bi-building al-member-apply-category-icon"></i>
-                    <div class="al-foundation-members-apply-content-wrap">
-                        <h4 class="fw-bold mb-0 pb-2">{{ i18n "Sponsor Member" }}
-                            <a class="member-info" id="sponsor">
-                                <i class="bi bi-info-circle-fill"></i>
-                            </a>
-                        </h4>
+		<h4>{{ i18n "Qualifications" }}</h4>
+		   <p> {{ i18n "acceptance as AlmaLinux mirror by the infrastructure SIG, and approval by the membership committee" }}</p>
+		<h5>{{ i18n "Term" }}</h5>
+		   <p>{{ i18n "as long as the mirror is operational, reviewed annually" }}</p>
+	 	<h5>{{ i18n "Benefits" }}</h5>
+	        <ul>
+	            <li>{{ i18n "Opportunity to nominate someone for election to the board of directors" }}</li>
+	            <li>{{ i18n "1 vote for a board seat" }}</li>
+	            <li>{{ i18n "Be listed as an official AlmaLinux mirror" }}</li>
+	            <li>{{ i18n "Official AlmaLinux mirror logo" }}</li>
+	        </ul>
+	    <div class="pt-1">
+	        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdulxH8cv5fzqkIyLanxzvxoBTnrz8Y0JPbseXjzPXRsPT_kQ/viewform" class="btn btn-primary al-member-apply-cta" target="_blank">
+				<i class="bi bi-people-fill"></i> 
+	            {{ i18n "Apply" }}
+	        </a>
+	    </div>
+	  </div> <!-- end mirror column-->
+	<!-- end contributor/mirror row --></div>	
+  
+	<!-- start sponsor member content -->
+	<div>
+		<h2 class="pb-3"><u>{{ i18n "Sponsor member qualifications and benefits" }}</u></h2>
+			<p>{{ i18n "For an independent open source project, maintaining funding through a variety of sponsor members is key to our ability to remain impartial, and is key to our long-term goal of achieving 501(c)(3) status. We remain grateful to our entire community for their support, and are especially grateful for the sponsor members who support the project with funds or resources that are critical to helping us keep up with our explosive growth." }}</p>
+			<h4>{{ i18n "Qualifications and Term" }}</h4>
+			<p>{{ i18n "Each of the sponsor memberships are renewed annually, and require the approval of the membership committee." }}</p>
+			<p><em><small>{{ i18n "Membership fees are charged annually on the date of your membership acceptance. All in-kind sponsorships require approval of the board of directors in addition to the membership committee." }}</small></em></p>
+	</div>
+	<div class="row"><!-- first of Platinum rows -->
+	    <div class="col-lg">
+		  <h3>{{ i18n "Platinum Sponsor Member" }}</h3>
+		</div>
+	    <div class="col-lg">
+			<img loading="lazy" src="/membership-images/platinum_sponsor_member.png" alt="Platinum Sponsor Member" class="rounded align-items-center py-2" style="width:25%;"> <!-- membership image created in Canva - ask marketing SIG for more information -->
+		</div>
+	</div>
+	<div class="row"><!-- second of Platinum rows -->
+		<div class="col-lg">
+			<p>{{ i18n "Platinum membership is a our highest tier and is tailor-made for companies who understand the importance of heavily sponsoring open source projects that the world relies on, and who want to ensure that the AlmaLinux project is able to continue to deliver on its promise of long-term stability." }}</p>
+			<h4 class="pb-1">{{ i18n "Current platinum sponsor members" }}</h4>	
+				<div class="row align-items-center justify-content-center">
+		            <div class="col-sm" style="max-width: 180px;">
+						<a href="https://www.cloudlinux.com">
+		                <img loading="lazy" src="/brands/cloudlinux.svg" alt="CloudLinux" class="al-backer-logo">
+						</a>
+		            </div>
 
-                        <p>
-                            {{ i18n "Entities who wish to contribute funding for the project through sponsorship." }}
-                        </p>
-                        <div class="pt-1">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSddSD32Feb2KUvPTktZNpY_LInyDBRpXxt6XEIjiYIHmP3t7Q/viewform?usp=sf_link" class="btn btn-primary al-member-apply-cta" target="_blank">
-                                {{ i18n "Apply" }}
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
+		            <div class="col-sm" style="max-width: 180px;">
+						<a href="https://www.cybertrust.co.jp/almalinux/">
+		                <img loading="lazy" src="/brands/cybertrust-japan.svg" alt="Cybertrust Japan" class="al-backer-logo">
+						</a>
+		            </div>
 
+		            <div class="col-sm" style="max-width: 180px;">
+						<a  href="https://tuxcare.com/">
+		                <img loading="lazy" src="/brands/TuxCare_Horizontal_Logo_NoTagLine_White.svg" alt="TuxCare" class="al-backer-logo">
+						</a>
+		            </div>
+				</div>
+			<h4>{{ i18n "Benefits" }}</h4>
+				<p>{{ i18n "Benefits for this level of membership are broken into three groups" }}</p>
+	        <h5>{{ i18n "Marketing Benefits" }}</h5>
+	            <ul>
+	                <li>{{ i18n "Dedicated press release and blog post with social media promotion" }}</li>
+	                <li>{{ i18n "Priority access to sponsor any AlmaLinux-organized events" }}</li>
+	                <li>{{ i18n "Company logo on AlmaLinux.org in up-to three sections/categories" }}</li>
+	                <li>{{ i18n "Up to 2 sponsor webinars per year" }}</li>
+	                <li>{{ i18n "Up to 4 sponsor blog posts per year" }}</li>
+	                <li>{{ i18n "Your company's events featured on our" }} <a href="https://events.almalinux.org">{{ i18n "community events calendar" }}</a></li>
+	                <li>{{ i18n "AlmaLinux will assist in promoting your appropriate social media for Linux-related content (e.g. tweets and retweets)" }}</li>
+	            </ul>
+		</div>
+	    <div class="col-lg">
+			<h5>{{ i18n "Voting benefits" }}</h5>
+	            <ul>
+	                <li>{{ i18n "Opportunity to nominate someone for election to the board of directors" }}</li>
+	                <li>50 {{ i18n "votes for each open board seat" }}</li>
+	            </ul>
+			<h5>{{ i18n "Additional benefits" }}</h5>
+			<ul>
+				<li>{{ i18n "Have up to 3 kernel modules signed by AlmaLinux, allowing your application to work with secure boot on AlmaLinux servers." }}</li>
+				<li>{{ i18n "Be listed on a “signed kernel modules” documentation page." }}</li>
+				<li>{{ i18n "Direct access to AlmaLinux executives and experts to help with consultation, planning, and engagement opportunities, including advance information on upcoming announcements and projects." }}</li>
+			</ul>
+			<h4>{{ i18n "Membership Fee" }}</h4>
+				<ul>
+					<li>$100,000 OR</li>
+					<li>{{ i18n "Three dedicated full-time employees working on AlmaLinux" }}</li>
+				</ul>
+	        <div class="pt-1">
+	            <a href="https://docs.google.com/forms/d/e/1FAIpQLSddSD32Feb2KUvPTktZNpY_LInyDBRpXxt6XEIjiYIHmP3t7Q/viewform" class="btn btn-primary al-member-apply-cta" target="_blank">
+					<i class="bi bi-people-fill"></i> 
+	                {{ i18n "Apply" }}
+	            </a>
+	        </div>
+	    </div> 
+	</div><!-- end Platinum rows -->
+		
+	<div class="row"><!-- Start other paid Sponsor Memberships -->
+		<div class="col-sm"><!-- start silver column -->
+			<h3 class="pb-3">{{ i18n "Silver Sponsor Member" }}
+			
+				<img loading="lazy" src="/membership-images/silver_sponsor_member.png" alt="Silver Sponsor Member" class="rounded align-items-center py-2" style="width:35%;"></h3> <!-- membership image created in Canva - ask marketing SIG for more information -->
+				<p>Silver Sponsor Members tend to be startups or companies who are compelled to show their support for AlmaLinux, but don't find that a larger investment meets their needs.</p>
+			<h4>{{ i18n "Benefits" }}</h4>
+				<p>{{ i18n "Benefits for this level of membership are broken into two groups" }}</p>
+			<h5>{{ i18n "Voting benefits" }}</h5>
+	            <ul>
+	                <li>{{ i18n "Opportunity to nominate someone for election to the board of directors" }}</li>
+	                <li>5 {{ i18n "votes for each open board seat" }}</li>
+	            </ul>
+			
+	        <h5>{{ i18n "Marketing Benefits" }}</h5>
+	            <ul>
+	                <li>{{ i18n "Company logo on AlmaLinux website in one section/category" }}</li>
+	                <li>{{ i18n "Inclusion in a silver member group press releases with social media promotion" }}</li>
+	                <li>{{ i18n "Your company's events featured on our" }} <a href="https://events.almalinux.org">{{ i18n "community events calendar" }}</a></li>
+	                <li>{{ i18n "Inclusion in a round-up blog post of new members" }}</li>
+	            </ul>
+			<h4>{{ i18n "Membership Fee" }}</h4>
+				<ul>
+					<li>$2,500 OR</li>
+					<li>{{ i18n "Three dedicated full-time employees working on AlmaLinux" }}</li>
+				</ul>
+	        <div class="pt-1">
+	            <a href="https://docs.google.com/forms/d/e/1FAIpQLSddSD32Feb2KUvPTktZNpY_LInyDBRpXxt6XEIjiYIHmP3t7Q/viewform" class="btn btn-primary al-member-apply-cta" target="_blank">
+					<i class="bi bi-people-fill"></i> 
+	                {{ i18n "Apply" }}
+	            </a>
+	        </div>
+		</div> <!-- end silver column -->
+		<div class="col-sm"><!-- start Ruby column -->
+			<h3 class="pb-3">{{ i18n "Ruby Sponsor Member" }}
+			
+				<img loading="lazy" src="/membership-images/ruby_sponsor_member.png" alt="Silver Sponsor Member" class="rounded align-items-center py-2" style="width:35%;"></h3> <!-- membership image created in Canva - ask marketing SIG for more information -->
+				<p>{{ i18n "Ruby Sponsor Members are primarily companies that want to be able to" }} <a href="https://almalinux.org/blog/2024-04-11-secure-boot-with-almalinux/">{{ i18n "support AlmaLinux users' use of secure boot" }}</a>.</p>
+			<h4>{{ i18n "Benefits" }}</h4>
+				<p>{{ i18n "Benefits for this level of membership are broken into three groups" }}</p>
+			<h5>{{ i18n "Voting benefits" }}</h5>
+	            <ul>
+	                <li>{{ i18n "Opportunity to nominate someone for election to the board of directors" }}</li>
+	                <li>5 {{ i18n "votes for each open board seat" }}</li>
+	            </ul>
+	        <h5>{{ i18n "Marketing Benefits" }}</h5>
+	            <ul>
+	                <li>{{ i18n "Company logo on AlmaLinux website in one section/category" }}</li>
+	                <li>{{ i18n "Your company's events featured on our" }} <a href="https://events.almalinux.org">{{ i18n "community events calendar" }}</a></li>
+	                <li>{{ i18n "Exposure through new ruby member a group press release with social media promotion" }}</li>
+	                <li>{{ i18n "Inclusion in a round-up blog post of new members" }}</li>
+	                <li>{{ i18n "AlmaLinux member logo for your site" }}</li>
+	            </ul>
+			<h5>{{ i18n "Additional benefits" }}</h5>
+			    <p>{{ i18n "The opportunity to have up to 3 kernel modules signed by AlmaLinux, allowing your application to work with secure boot on AlmaLinux servers. Listing on a 'signed kernel modules' documentation page." }}</p>
+			<h4>{{ i18n "Membership Fee" }}</h4>
+				<ul>
+					<li>$5,000 OR</li>
+					<li>{{ i18n "An equivalent contribution of hardware or services" }}</li>
+				</ul>
+	        <div class="pt-1">
+	            <a href="https://docs.google.com/forms/d/e/1FAIpQLSddSD32Feb2KUvPTktZNpY_LInyDBRpXxt6XEIjiYIHmP3t7Q/viewform" class="btn btn-primary al-member-apply-cta" target="_blank">
+					<i class="bi bi-people-fill"></i> 
+	                {{ i18n "Apply" }}
+	            </a>
+	        </div>
+		</div> <!-- end Ruby column -->
+		<div class="col-sm"> <!-- start gold column -->
+			<h3 class="pb-3">{{ i18n "Gold Sponsor Member" }}
+			
+				<img loading="lazy" src="/membership-images/gold_sponsor_member.png" alt="Gold Sponsor Member" class="rounded align-items-center py-2" style="width:35%;"></h3> <!-- membership image created in Canva - ask marketing SIG for more information -->
+				<p>{{ i18n "Gold Sponsor Members are established companies who believe in the importance of open source and free operating systems, and see the value in AlmaLinux continuing to serve its users." }}</p>
+			<h4>{{ i18n "Benefits" }}</h4>
+				<p>{{ i18n "Benefits for this level of membership are broken into three groups" }}</p>
+			<h5>{{ i18n "Voting benefits" }}</h5>
+	            <ul>
+	                <li>{{ i18n "Opportunity to nominate someone for election to the board of directors" }}</li>
+	                <li>15 {{ i18n "votes for each open board seat" }}</li>
+	            </ul>
+	        <h5>{{ i18n "Marketing Benefits" }}</h5>
+	            <ul>
+	                <li>{{ i18n "Company logo on AlmaLinux website in two sections/categories" }}</li>
+	                <li>{{ i18n "Exposure through new gold member group press releases with social media promotion" }}</li>
+	                <li>{{ i18n "Priority access to sponsor any AlmaLinux-organized events" }}</li>
+	                <li> {{ i18n "1 sponsor webinar per year" }}</li>
+	                <li> {{ i18n "Up to four sponsored blog posts per year to be posted on the AlmaLinux blog" }}</li>
+	                <li> {{ i18n "AlmaLinux will assist in promoting your appropriate social media for Linux-related content (e.g. tweets and retweets)" }}</li>
+	                <li>{{ i18n "Inclusion in a round-up blog post of new Gold members" }}</li>				
+	                <li>{{ i18n "Your company's events featured on our" }} <a href="https://events.almalinux.org">{{ i18n "community events calendar" }}</a></li>
+	                <li>{{ i18n "AlmaLinux member logo for your site" }}</li>
+	            </ul>
+			<h5>{{ i18n "Additional benefits" }}</h5>
+			    <p>{{ i18n "The opportunity to have up to 3 kernel modules signed by AlmaLinux, allowing your application to work with secure boot on AlmaLinux servers. Listing on a “signed kernel modules” documentation page." }}</p>
+			<h4>{{ i18n "Membership Fee" }}</h4>
+				<ul>
+					<li>$20,000 OR</li>
+					<li>{{ i18n "One dedicated full-time employee working on AlmaLinux OR" }}</li>
+					<li>{{ i18n "Annual service credits or hardware donations valued at $20,000 or more" }}</li>
+				</ul>
+	        <div class="pt-1">
+	            <a href="https://docs.google.com/forms/d/e/1FAIpQLSddSD32Feb2KUvPTktZNpY_LInyDBRpXxt6XEIjiYIHmP3t7Q" class="btn btn-primary al-member-apply-cta" target="_blank">
+					<i class="bi bi-people-fill"></i> 
+	                {{ i18n "Apply" }}
+	            </a>
+	        </div>
+		</div><!-- end gold column -->
+	</div><!-- end other paid Sponsor Memberships -->
 
-
-        <div class="container pb-5 mb-5">
-            <div class=" text-center fs-6">
-                {{ i18n "Do you have membership related questions?" }}
-                <a href="mailto:membership@almalinux.org">{{ i18n "Contact us" }}</a>.
-            </div>
-        </div>
-
+<!-- end sponsor member descriptions -->
         
-            <div class="container al-members">
-                <div class="row">
-                    <div class="col-12">
-                        <h6 class="pb-2 mb-5 border-bottom text-uppercase">
-                            {{ i18n "Board of Directors" }}
-                        </h6>
-                    </div>
+    <div class="al-members">
+	    <h2 class="mb-5"> {{ i18n "Board of Directors" }} </h2>
+		<p> {{ i18n "The AlmaLinux OS Foundation is lead by a community elected board of directors who hold regular meetings. Agendas and minutes for those meetings are shared with the public on" }} <a href="https://wiki.almalinux.org/Transparency.html#minutes-of-almalinux-os-foundation-board-meetings">{{ i18n "the AlmaLinux Wiki" }}</a>. {{ i18n "The board, once elected, chooses its offices, including the chair of the board. Elections are held as regularly as needed to fill vacancies. The wiki also houses historical details about the" }} <a href="https://wiki.almalinux.org/Transparency.html#first-board-elections">{{ i18n "election candidates and processes" }}</a>.
+		</p>
+        <div class="row">
 <!-- benny -->						
-                        <div class="col-xl-3 col-sm-6 mb-5">
-                            <div class="py-5 px-4 text-center al-member-item">
-                                <div>
-                                    <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/benny.jpg" alt="benny Vasquez" style="max-width: 180px;">
-                                </div>
-                                <h5 class="mb-1">benny Vasquez</h5>
-                                <div class="small mb-1">Chair, Board of Directors</div>
-                                <div class="small fw-light">AlmaLinux OS Foundation</div>
-                            </div>
+                <div class="col-xl-3 col-sm-6 mb-5">
+                    <div class="py-5 px-4 text-center al-member-item">
+                        <div>
+                            <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/benny.jpg" alt="benny Vasquez" style="max-width: 180px;">
                         </div>
+                        <h5 class="mb-1">benny Vasquez</h5>
+                        <div class="small mb-1">Chair, Board of Directors</div>
+                        <div class="small fw-light">AlmaLinux OS Foundation</div>
+                    </div>
+                </div>
 <!-- end benny -->						
 <!-- Jack -->						
-                        <div class="col-xl-3 col-sm-6 mb-5">
-                            <div class="py-5 px-4 text-center al-member-item">
-                                <div>
-                                    <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/jack.jpg" alt="Jack Aboutboul" style="max-width: 180px;">
-                                </div>
-                                <h5 class="mb-1">Jack Aboutboul</h5>
-                                <div class="small mb-1">AlmaLinux OS Community Manager</div>
-                                <div class="small fw-light">Microsoft, Inc</div>
-                            </div>
+                <div class="col-xl-3 col-sm-6 mb-5">
+                    <div class="py-5 px-4 text-center al-member-item">
+                        <div>
+                            <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/jack.jpg" alt="Jack Aboutboul" style="max-width: 180px;">
                         </div>
+                        <h5 class="mb-1">Jack Aboutboul</h5>
+                        <div class="small mb-1">AlmaLinux OS Community Manager</div>
+                        <div class="small fw-light">Microsoft, Inc</div>
+                    </div>
+                </div>
 <!-- end Jack -->						
 <!-- Jesse -->						
-                        <div class="col-xl-3 col-sm-6 mb-5">
-                            <div class="py-5 px-4 text-center al-member-item">
-                                <div>
-                                    <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/jesse.jpg" alt="Jesse Asklund" style="max-width: 180px;">
-                                </div>
-                                <h5 class="mb-1">Jesse Asklund</h5>
-                                <div class="small mb-1">{{ i18n "Global head of Customer Experience" }}</div>
-                                <div class="small fw-light">WebPros</div>
-                            </div>
+                <div class="col-xl-3 col-sm-6 mb-5">
+                    <div class="py-5 px-4 text-center al-member-item">
+                        <div>
+                            <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/jesse.jpg" alt="Jesse Asklund" style="max-width: 180px;">
                         </div>
+                        <h5 class="mb-1">Jesse Asklund</h5>
+                        <div class="small mb-1">{{ i18n "Global head of Customer Experience" }}</div>
+                        <div class="small fw-light">WebPros</div>
+                    </div>
+                </div>
 <!-- end Jesse -->						
 <!-- Simon -->						
-                        <div class="col-xl-3 col-sm-6 mb-5">
-                            <div class="py-5 px-4 text-center al-member-item">
-                                <div>
-                                    <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/simon.jpg" alt="Simon Phipps" style="max-width: 180px;">
-                                </div>
-                                <h5 class="mb-1">Simon Phipps</h5>
-                                <div class="small mb-1">{{ i18n "open source advocate and a former president of the" }} Open Source Initiative</div>
-                                <div class="small fw-light"></div>
-                            </div>
+                <div class="col-xl-3 col-sm-6 mb-5">
+                    <div class="py-5 px-4 text-center al-member-item">
+                        <div>
+                            <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/simon.jpg" alt="Simon Phipps" style="max-width: 180px;">
                         </div>
+                        <h5 class="mb-1">Simon Phipps</h5>
+                        <div class="small mb-1">{{ i18n "open source advocate and a former president of the" }} Open Source Initiative</div>
+                        <div class="small fw-light"></div>
+                    </div>
+                </div>
 <!-- end Simon -->						
 <!-- Moshe -->						
-     				 <div class="col-xl-3 col-sm-6 mb-5">
-                        <div class="py-5 px-4 text-center al-member-item">
-                            <div>
-                                <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/default.png" alt="AlmaLinux OS Logo" style="max-width: 180px;">
-                            </div>
-                            	<h5 class="mb-1">Moshe Bar</h5>
-                                <div class="small mb-1">{{ i18n "CEO" }} </div>
-                                <div class="small fw-light">Codenotary Inc.</div>
-                        </div>
-                     </div>
+             <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="py-5 px-4 text-center al-member-item">
+                    <div>
+                        <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/moshe-bar-board.jpg" alt="Moshe Bar" style="max-width: 180px;">
+                    </div>
+                    	<h5 class="mb-1">Moshe Bar</h5>
+                        <div class="small mb-1">{{ i18n "CEO" }} </div>
+                        <div class="small fw-light">Codenotary Inc.</div>
+                </div>
+             </div>
 <!-- end Moshe -->						
 <!-- Daniel -->						
-                     <div class="col-xl-3 col-sm-6 mb-5">
-                        <div class="py-5 px-4 text-center al-member-item">
-                            <div>
-                                <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/daniel.jpeg" alt="Daniel Pearson" style="max-width: 180px;">
-                            </div>
-                           		<h5 class="mb-1">Daniel Pearson</h5>
-                                <div class="small mb-1">{{ i18n "CEO" }}</div>
-                                <div class="small fw-light">KnownHost</div>
-                        </div>
-                     </div>
+             <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="py-5 px-4 text-center al-member-item">
+                    <div>
+                        <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/daniel.jpeg" alt="Daniel Pearson" style="max-width: 180px;">
+                    </div>
+                   		<h5 class="mb-1">Daniel Pearson</h5>
+                        <div class="small mb-1">{{ i18n "CEO" }}</div>
+                        <div class="small fw-light">KnownHost</div>
+                </div>
+             </div>
 <!-- end Daniel -->		
 <!-- Jun -->						
-                     <div class="col-xl-3 col-sm-6 mb-5">
-                        <div class="py-5 px-4 text-center al-member-item">
-                            <div>
-                                <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/JunYoshida.jpg" alt="Jun Yoshida" style="max-width: 180px;">
-                            </div>
-                           		<h5 class="mb-1">Jun Yoshida</h5>
-                                <div class="small mb-1">{{ i18n "Corporate Officer" }}</div>
-                                <div class="small fw-light">Cybertrust Japan</div>
-                        </div>
-                     </div>
+             <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="py-5 px-4 text-center al-member-item">
+                    <div>
+                        <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/JunYoshida.jpg" alt="Jun Yoshida" style="max-width: 180px;">
+                    </div>
+                   		<h5 class="mb-1">Jun Yoshida</h5>
+                        <div class="small mb-1">{{ i18n "Corporate Officer" }}</div>
+                        <div class="small fw-light">Cybertrust Japan</div>
+                </div>
+             </div>
 <!-- end Jun -->		
 <!-- Alex -->						
-                     <div class="col-xl-3 col-sm-6 mb-5">
-                        <div class="py-5 px-4 text-center al-member-item">
-                            <div>
-                                <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/alexiribarren.jpg" alt="Alex Iribarren" style="max-width: 180px;">
-                            </div>
-                           		<h5 class="mb-1">Alex Iribarren</h5>
-                                <div class="small mb-1">{{ i18n "Penguin Wrangler and Cloud Watcher" }}</div>
-                                <div class="small fw-light">CERN</div>
-                        </div>
-                     </div>
+             <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="py-5 px-4 text-center al-member-item">
+                    <div>
+                        <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/alexiribarren.jpg" alt="Alex Iribarren" style="max-width: 180px;">
+                    </div>
+                   		<h5 class="mb-1">Alex Iribarren</h5>
+                        <div class="small mb-1">{{ i18n "Penguin Wrangler and Cloud Watcher" }}</div>
+                        <div class="small fw-light">CERN</div>
+                </div>
+             </div>
 <!-- end Alex -->		
 <!-- David -->						
-                     <div class="col-xl-3 col-sm-6 mb-5">
-                        <div class="py-5 px-4 text-center al-member-item">
-                            <div>
-                                <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/davidsnead.jpg" alt="David Snead" style="max-width: 180px;">
-                            </div>
-                           		<h5 class="mb-1">David Snead</h5>
-                                <div class="small mb-1">{{ i18n "General Counsel" }}</div>
-                                <div class="small fw-light">Webpros</div>
-                                <div class="small fw-light">Non-voting Invited Expert</div>
-                        </div>
-                     </div>
-<!-- end David -->	                    
+             <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="py-5 px-4 text-center al-member-item">
+                    <div>
+                        <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/davidsnead.jpg" alt="David Snead" style="max-width: 180px;">
+                    </div>
+                   		<h5 class="mb-1">David Snead</h5>
+                        <div class="small mb-1">{{ i18n "General Counsel" }}</div>
+                        <div class="small fw-light">Webpros</div>
+                        <div class="small fw-light">Non-voting Invited Expert</div>
                 </div>
-            </div>
-        
-    </section>
-
-</div>
-
+             </div>
+<!-- end David -->	                    
+        </div>
+    </div>
+</div><!-- end container div -->
 {{ end }}

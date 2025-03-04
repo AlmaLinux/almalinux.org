@@ -75,7 +75,7 @@ To deploy a container based development environment you will need docker install
 
 ### Localization and translation
 
-almaLinux.org localization and translation is managed using [Weblate](https://hosted.weblate.org/engage/almalinux/). To contribute translations join the [AlmaLinux](https://hosted.weblate.org/projects/almalinux/) localization project in Weblate. Translations submitted through Weblate are automatically submitted to this repo as a pull request. Those pull requests are then reviewed by a member of the marketing SIG or another team lead, and merged as appropriate.
+AlmaLinux.org localization and translation is managed using [Weblate](https://hosted.weblate.org/engage/almalinux/). To contribute translations join the [AlmaLinux](https://hosted.weblate.org/projects/almalinux/) localization project in Weblate. Translations submitted through Weblate are automatically submitted to this repo as a pull request. Those pull requests are then reviewed by a member of the marketing SIG or another team lead, and merged as appropriate. To help with translations, please see [this guide on our Wiki](https://wiki.almalinux.org/Help-translating-site.html).
 
 You can request new languages to be added by creating a ticket in [GitHub issues](https://github.com/AlmaLinux/almalinux.org/issues).
 

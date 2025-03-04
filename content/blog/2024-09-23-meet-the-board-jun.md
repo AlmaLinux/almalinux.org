@@ -14,7 +14,7 @@ post:
 ---
 
 
-Hi community! As you may be aware, last year, [we launched a video series](https://almalinux.org/blog/2024-01-16-video-contributions/) in which we have community members answer common questions we're seeing from the community. This year, we also launched another Q&A video series, this time with the AlmaLinux OS Foundation board members. Our goal with this new board member Q&A series is to better introduce our board to the broader community.
+As you may be aware, last year, [we launched a video series](https://almalinux.org/blog/2024-01-16-video-contributions/) in which we have community members answer common questions we're seeing from the community. This year, we also launched another Q&A video series, this time with the AlmaLinux OS Foundation board members. Our goal with this new board member Q&A series is to better introduce our board to the broader community.
 
 For our latest board member Q&A video, we interviewed [Jun Yoshida](https://www.linkedin.com/in/jun-yoshida-6b4b5a16/). Jun talks about how he got his start with IT (despite a university major that may surprise you), his history with Unix/Linux, and his hopes for AlmaLinux. Learn a bit more about Jun by watching the video, or check out the transcript below!
 
@@ -25,6 +25,12 @@ For our latest board member Q&A video, we interviewed [Jun Yoshida](https://www.
 The AlmaLinux OS Foundation's board is community elected, by members of the AlmaLinux OS Foundation. If you use AlmaLinux, contribute to AlmaLinux, or support AlmaLinux in some way, we encourage you to [join the foundation](/members/). Individual membership is free, because you shouldn't have to pay to have a voice in the future of something you care about. 
 
 If you'd like to learn more about our board and elections, you can check out [our Wiki](https://wiki.almalinux.org/election2023.html)! You can also watch the other videos in this series in [this YouTube playlist](https://www.youtube.com/playlist?list=PLqKzWfm6zyluP2R_6MTPvYJt20bwitQZJ) (we'll be adding more soon!).
+
+See the other interviews here:
+
+* In September, we interviewed [Jack Aboutboul](https://www.linkedin.com/in/jackaboutboul/): [Meet the board - Jack Aboutboul](/blog/2024-09-12-meet-the-board-jack/)
+ 
+We also had a panel of board members at AlmaLinux Day: Germany in 2024 where board members talked about everything from how they got involved in AlmaLinux to their feelings about the future of open source, which you can watch on YouTube [Meet the board!](https://www.youtube.com/watch?v=PP3OPvmUwTs)
 
 ## <u>Transcript</u>
 

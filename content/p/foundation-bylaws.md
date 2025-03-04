@@ -2,6 +2,9 @@
 title: "AlmaLinux Foundation Bylaws"
 type: p
 ---
+
+These were adopted in August 2021 by email, and confirmed in the September 2021 meeting of the [Board of Directors](https://wiki.almalinux.org/Transparency.html#minutes-of-almalinux-os-foundation-board-meetings). 
+
 ## AMENDED AND RESTATED BY-LAWS OF
 ## ALMALINUX OS FOUNDATION, INC.
 _____________________________________________________________________________

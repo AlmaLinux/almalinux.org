@@ -21,7 +21,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.141.0'
           # extended: true
 
       - name: Generate language files
@@ -53,6 +53,9 @@ jobs:
 
       - name: move redirects file into place
         run: cp _redirects public/
+
+      - name: move headers file into place
+        run: cp _headers public/
 
       - name: build search index
         run: npx pagefind --site "public"
