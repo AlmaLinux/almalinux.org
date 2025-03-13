@@ -26,7 +26,7 @@ AlmaLinux 8 and AlmaLinux 9 are vulnerable only to 5 of the 6 CVEs (CVE-2024-120
 
 We have also prepared packages with patches for the remaining vulnerabilities from upstream Rsync, but ALESCo is still discussing releasing those patches if Red Hat does not patch them. If these patches are important to you and your rsync use-cases please [let ALESCo know in the ALESCo room on the AlmaLinux community chat](https://chat.almalinux.org/almalinux/channels/alesco)!
 
-#### Vulnerabilitiy Status
+#### Vulnerability Status
 * CVE-2024-12084 - Not Affected on AlmaLinux 8 or 9
 * CVE-2024-12085 - Patched on AlmaLinux 8 and 9
 * CVE-2024-12086 - Vulnerable on AlmaLinux 8 and 9
@@ -55,7 +55,7 @@ We have also prepared packages with patches for the remaining vulnerabilities fr
 ## AlmaLinux OS Kitten 10
 On January 14, 2025 we released an updated package for AlmaLinux OS Kitten 10 addressing all six vulnerabilities without waiting for patches to be included in CentOS Stream 10. If Red Hat chooses to only patch some of the vulnerabilities we will carry patches for all of the vulnerabilities within AlmaLinux Kitten 10 (which would be a deviation from Red Hat).
 
-#### Vulnerabilitiy Status
+#### Vulnerability Status
 * CVE-2024-12084 - Patched on AlmaLinux OS Kitten 10
 * CVE-2024-12085 - Patched on AlmaLinux OS Kitten 10
 * CVE-2024-12086 - Patched on AlmaLinux OS Kitten 10
@@ -81,7 +81,7 @@ AlmaLinux maintains an optional Rsync package that is primarily used by AlmaLinu
 
 On January 14  we released updates for these backported rsync RPMs. rsync from this backport repo was at version 3.3.0, and we updated the repo to 3.4.0 and subsequently 3.4.1, as the updates were released upstream. 
 
-#### Vulnerabilitiy Status
+#### Vulnerability Status
 * CVE-2024-12084 - Patched in rsync Backport Package
 * CVE-2024-12085 - Patched in rsync Backport Package
 * CVE-2024-12086 - Patched in rsync Backport Package
