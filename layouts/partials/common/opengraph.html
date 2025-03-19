@@ -54,7 +54,7 @@
     {{- $facebookAdmin = .facebook_admin }}
   {{- end }}
 {{- else }}
-  {{- with site.Social.facebook_admin }}
+  {{- with site.Params.Social.facebook_admin }}
     {{- $facebookAdmin = . }}
     {{- warnf "The social key in site configuration is deprecated. Use params.social.facebook_admin instead." }}
   {{- end }}

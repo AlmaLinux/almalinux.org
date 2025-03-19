@@ -1,18 +1,18 @@
 {{ define "main" }}
 <div class="al-body-container" style="margin: auto;">
-    
+
     <section class="al-page-blog-post  " dir="ltr">
         <div class="container py-5">
             <h1 class="al-section-title mb-3">{{ .Title}}</h1>
             <article>
-                
+
                     <div class="al-page-blog-author">
                         <div class="col d-flex align-items-start mb-3 mt-3 p-0">
-                           
+
                                 {{ with .Params.author.image }}
                                 <img src= "{{ . }}" class="rounded-circle" alt="profile">
                                 {{ end }}
-                            
+
                                 <div class="ml-3">
                                 <h6 class="al-page-blog-author-name">
                                     {{ $.Param "author.name" }}
@@ -21,7 +21,7 @@
                                     {{ $.Param "author.bio" }}
                                 </p>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                     <div class="al-article-date d-flex align-items-center pb-4" title="" dir="ltr">
                         <i class="bi bi-calendar pe-1"></i>
@@ -38,33 +38,33 @@
 
 
                     </div>
-               
-               
-               
+
+
+
                 </article>
                 <div class="al-blog-pagination mt-3">
-              
-                    
-                    
-                        {{ if .PrevPage }}
-                        <a class="al-blog-previous-button " href="{{ .PrevPage.RelPermalink }}">
+
+
+
+                        {{ if .Prev }}
+                        <a class="al-blog-previous-button " href="{{ .Prev.RelPermalink }}">
                             <span>« {{ i18n "Previous" }}</span>
 
-                        </a> 
-                        
+                        </a>
+
                         {{ end }}
-                    
-                
-                    
-                        {{ if .NextPage }}
-                        <a class="al-blog-next-button " href="{{ .NextPage.RelPermalink }}">
+
+
+
+                        {{ if .Next }}
+                        <a class="al-blog-next-button " href="{{ .Next.RelPermalink }}">
                             <span> {{ i18n "Next" }} »</span>
                         </a>
                         {{ end }}
-                
-                    
 
-                   
+
+
+
             </div>
             </div>
         </section>

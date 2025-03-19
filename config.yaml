@@ -3,9 +3,9 @@ languageCode: en-us
 title: AlmaLinux
 disableKinds:
     - taxonomy
-    - taxonomyTerm
 
-paginate: 15
+pagination:
+    pagerSize: 15
 
 taxonomies:
     author: authors
