@@ -1,5 +1,5 @@
 ---
-title: "ELevate Project Updates"
+title: "ELevate testing now ready for AlmaLinux 10!"
 type: blog
 author: 
  name: "Yuriy Kohut"
