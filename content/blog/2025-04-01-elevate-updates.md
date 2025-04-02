@@ -1,16 +1,16 @@
 ---
-title: "ELevate testing now ready for AlmaLinux 10!"
+title: "ELevate Testing now ready for AlmaLinux 10!"
 type: blog
 author: 
  name: "Yuriy Kohut"
  bio: "ELevate Project Engineer @ CloudLinux"
  image: /users/yuriy-kohut.jpg
-date: 2025-04-01
+date: 2025-04-03
 images:
-  - /blog-images/2025/2025-04-01-elevate-updates.png
+  - /blog-images/2025/2025-04-03-elevate-updates.png
 post: 
     title: "ELevate Project Updates"
-    image: /blog-images/2025/2025-04-01-elevate-updates.png
+    image: /blog-images/2025/2025-04-03-elevate-updates.png
 ---
 
 Hello everyone! We’ve got ELevate Project updates to share.
