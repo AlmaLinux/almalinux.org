@@ -51,7 +51,9 @@ Please, report any bugs you may see to the [ELevate leapp repository](https://gi
 
 ### Will I be able to use ELevate to upgrade from 10 beta to 10 stable when it's released?
 
-When 10 stable is released, ELevate will support upgrades from version 9 to 10 stable. However, ELevate will not support upgrades from 10 beta to 10 stable. You can update systems running 10 beta using the regular update process with detailed instructions that will be provided in the release notes. 
+No, because you can update systems running 10 beta using the regular update process with detailed instructions that will be provided in the release notes. 
+
+When 10 stable is released, ELevate will support upgrades from version 9 to 10 stable. However, ELevate will not support upgrades from 10 beta to 10 stable. 
 
 ### Contribute and Get Help
 
