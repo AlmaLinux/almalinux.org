@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
 # This file provides security vulnerability reporting information for the AlmaLinux OS project.
 # Please follow the criteria below to ensure your report reaches the correct team.
 Preferred-Languages: en
@@ -20,3 +23,20 @@ Expires: 2025-05-03T12:00:00.000Z
 
 
 # Important: Do not send sensitive data or vulnerability reports publicly.
+-----BEGIN PGP SIGNATURE-----
+
+iQJLBAEBCAA1FiEEMzeTSBdPlE436uygEatxH6m0ZhIFAmfwMj4XHHNlY3VyaXR5
+QGFsbWFsaW51eC5vcmcACgkQEatxH6m0ZhKNDxAAstW6XoEvPofASy9vcTOrYBFZ
+wfUub/TbA7afR5IPJOeFvcNHDOs2EFyfYCE3wzWHqqMViwwZiUABi9/tGFD4z44g
+4R0caaByk244scc0NWhzhyF+6rjkrpm9BTBBbawWtOWfU0PfkPMdKZ2pAJrx8Jnw
+vcHjE9wzAhU3t/dWfWGTZXY3fDWQr5LTpLhB4XRaZY7Qbzv1yG8oFuz/akaxgGm4
+CptG9boEj59b0kSvJzzEEgAeooq/zW/Q8TLVs6GF1eEerZ4aNPtaOvkkEGvmWnpy
+5v/cNM+oB7wz8UlwAeTo5gDHCjHsWR//7N1eCWush7gYwPBd524dxltyx3L6oMju
+A2mO6aJUn2GZCbv0SvJnJhgYHhv6YafLmk1ueqcW0aMPGFGryGH1wfgCdehBbcqJ
+I9RJWCyY93lXD/jEmm7sONcyJSEYAMpGlCrzWZRlZtQSj8sEKNx8zi2Lvs8ZlvMp
+wHk1jGe0sxKjS8uv10MFdwp/Mpa5eWU51XXSnw2VybTQKG2p2h6Fsr15G/AQcRF0
+W+Siz+uPeCxcjWV+pg3L618ysj8p+ElCVeecBZFzqykdZHc8x1ve7CucPAy8yivI
+krM0Hqi6xqkDMiTjPb6FaKyyrcU7MFyVjgVdlTlSa46CpVpmuc4i1S+MUEVd6CD+
+ak8KOT+Du/MTlhr4NQE=
+=zzbj
+-----END PGP SIGNATURE-----
