@@ -331,7 +331,7 @@
     "Every environment is different and unique based on applications and configurations.": "Jede Umgebung ist einzigartig, mit unterschiedlichen Anwendungen und Konfigurationen.",
     "Since this is still under development, to avoid any surprises, we highly recommend that you test migrations scenarios in a VM or sandbox before running a migration in production.": "Da es noch in der Entwicklungsphase ist, empfehlen wir, dass Sie Migrationen in einer VM oder einer Sandbox testen, um Überraschungen in Produktionsumgebungen zu vermeiden.",
     "Currently ELevate provides Leapp data for migration from CentOS 7 to the following OS:": "",
-    "PES supports several classes of rules for packages such as added, removed, renamed, split, merged, and so on.": "PES unterstützt verschiedene Klassen von Regeln für Pakete, wie etwa für hinzugefügte, entfernte, aufgeteilte und zusammengeführte Pakete.",
+    "PES supports several classes of rules for packages such as added, removed, renamed, split, merged, and so on.": "PES unterstützt verschiedene Regelklassen für Pakete, wie etwa hinzugefügte, entfernte, aufgeteilte und zusammengeführte Pakete.",
     "The service also allows everyone to improve the data by adding new actions or even create a custom dataset for packages from third-party or private repositories.": "Der Dienst erlaubt jedem, die Daten durch Hinzufügen von neuen Aktionen oder durch Erstellen von Regeln für Pakete von Dritt-Repositorys zu verbessern.",
     "RedHat offers a data set which is non-freely licensed. Are you using this same data set?": "RedHat bietet einen Datensatz unter einer unfreien Lizenz an. Benutzt ihr diesen Datensatz?",
     "We've developed this project in good faith in the hope that everyone in the community can use and contribute to, no matter which distro you prefer.": "Wir entwickeln dieses Projekt in der Hoffnung, dass es jeder in der Community benutzen und zu seiner Verbesserung beitragen kann, egal welche Distribution er einsetzt.",
@@ -612,7 +612,7 @@
     "View on YouTube": "Auf YouTube ansehen",
     "AlmaLinux Community Activities in Japan": "AlmaLinux-Community-Aktivitäten in Japan",
     "More information about AlmaLinux Oracle Cloud Infrastructure images is available on the ": "Mehr Informationen über AlmaLinux Oracle Cloud Infrastructure Images findet man auf der ",
-    "Download:": "Deutsch",
+    "Download:": "Herunterladen:",
     "Reception with light food and beverages": "Empfang mit leichten Speisen und Getränken",
     "(Tuxcare Inc. CEO - Igor Seletskiy)": "(Geschäftsführer von Tuxcare Inc. - Igor Seletskiy)",
     "Yohei Suzuki": "Yohei Suzuki",
@@ -622,7 +622,7 @@
     "AlmaLinux OS is an enterprise Linux operating system that is used across the globe for enterprise and hobbyist needs alike.": "AlmaLinux OS ist ein Linux-Betriebssystem für Unternehmen, das weltweit für Unternehmens- und Hobbyanwender gleichermaßen eingesetzt wird.",
     "for our community. With over 500,000 servers calling out to one of our 300+": "für unsere Gemeinschaft. Mit über 500.000 Servern, die einen unserer 300+ anrufen",
     "every night, the adoption of AlmaLinux since our inception just over 2.5 years ago has both humbled and ignited us.": "Jeden Abend hat uns die Einführung von AlmaLinux seit unserer Gründung vor etwas mehr als 2,5 Jahren sowohl demütig als auch entflammt.",
-    "maintaining compatibility with RHEL": "maintaining compatibility with RHEL",
+    "maintaining compatibility with RHEL": "Beibehaltung der Kompatibilität mit RHEL",
     "Every night 500,000+ servers are calling home to our geo-located mirror system, and that number doesn’t account for systems using their own mirrors or sharing an IP address.": "Jede Nacht rufen 500.000+ Server zu unserem geolokalisierten Spiegelsystem an, und diese Zahl berücksichtigt nicht die Systeme, die ihre eigenen Spiegel verwenden oder eine IP-Adresse teilen.",
     "Mirrors": "Spiegel",
     "Contributors": "Anleger",
@@ -829,5 +829,9 @@
     "AlmaLinux Newsletter Signup": "AlmaLinux Newsletter Anmeldung",
     "The AlmaLinux OS Foundation is a 501(c)(6) that was founded in March of 2021 to own and manage the AlmaLinux OS project. We have been involving the community since the beginning, and the governing board is chosen by members of the foundation. For as long as our community needs a free operating system in the RHEL ecosystem, AlmaLinux OS will be free and open.": "Die AlmaLinux OS Foundation ist eine 501(c)(6), die im März 2021 gegründet wurde, um das AlmaLinux OS-Projekt zu besitzen und zu verwalten. Wir haben die Gemeinschaft von Anfang an einbezogen, und der Vorstand wird von den Mitgliedern der Stiftung gewählt. Solange unsere Community ein freies Betriebssystem im RHEL-Ökosystem benötigt, wird AlmaLinux OS kostenlos und offen sein.",
     "Each minor version of AlmaLinux reaches end of life when the following minor version is released, but stable and thoroughly tested updates and security patches will be shipped for AlmaLinux OS 8.x until 2029, and AlmaLinux 9.x until 2032.": "Jede Nebenversion von AlmaLinux erreicht das Ende ihrer Lebensdauer, wenn die folgende Nebenversion veröffentlicht wird, aber stabile und gründlich getestete Updates und Sicherheitspatches werden für AlmaLinux OS 8.x bis 2029 und AlmaLinux 9.x bis 2032 ausgeliefert.",
-    " you can migrate to AlmaLinux in-place. If you are coming from CentOS 7, or need to upgrade between major versions, ": " Sie können zu AlmaLinux in-place migrieren. Wenn Sie von CentOS 7 kommen, oder Sie müssen unter den wichtigsten Versionen aktualisieren, "
+    " you can migrate to AlmaLinux in-place. If you are coming from CentOS 7, or need to upgrade between major versions, ": " Sie können zu AlmaLinux in-place migrieren. Wenn Sie von CentOS 7 kommen, oder Sie müssen unter den wichtigsten Versionen aktualisieren, ",
+    "Get AlmaLinux on HCP Vagrant Registry": "Holen Sie sich AlmaLinux auf HCP Vagrant Registry",
+    "AlmaLinux images are available for Incus and LXC.": "AlmaLinux-Images sind für Incus und LXC verfügbar.",
+    "Get Incus and LXC Images": "Holen Sie sich Incus und LXC Images",
+    "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: ": "Sie können AlmaLinux OS-Images auf HCP Vagrant Registry unter dem angegebenen Link erhalten: "
 }
