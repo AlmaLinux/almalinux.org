@@ -5,7 +5,7 @@ author:
   name: "Koichiro Iwao"
   bio: "Engineer at Cybertrust Japan"
   image: /users/koichiroiwao.jpg
-date: '2025-04-01'
+date: '2025-04-07'
 #images:
 post:
   title: "Spring 2025 Raspberry Pi Updates"
