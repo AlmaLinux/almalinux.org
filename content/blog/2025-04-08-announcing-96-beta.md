@@ -28,7 +28,7 @@ A usual reminder: this is a **BETA** release. It should not be used for producti
 
 ## Release Notes and More Information
 
-AlmaLinux 9.6 Beta continues to enhance performance, development tools, and security. Updated module streams improve support for web applications, while new compiler versions bring optimizations for better performance. The release also delivers updates to elfutils, Valgrind, SystemTap, and PCP improving system debugging and performance monitoring. Networking improvements come with new versions of NetworkManager and iproute. Security updates include new SELinux-policy and SSSD versions. Containerization and virtualization are improved with updated podman, buildah, libvirt, and QEMU-KVM. Additionally, the new snpguest and snphost packages enhance virtualization capabilities
+AlmaLinux 9.6 Beta continues to enhance performance, development tools, and security. Updated module streams improve support for web applications, while new compiler versions bring optimizations for better performance. The release also delivers updates to elfutils, Valgrind, SystemTap, and PCP improving system debugging and performance monitoring. Networking improvements come with new versions of NetworkManager and iproute. Security updates include new SELinux-policy and SSSD versions. Containerization and virtualization are improved with updated podman, buildah, libvirt, and QEMU-KVM. Additionally, the new snpguest and snphost packages enhance virtualization capabilities.
 
 You can read the full release notes for this version on the wiki: [AlmaLinux OS 9.6 Beta Release Notes](https://wiki.almalinux.org/release-notes/9.6-beta.html).
 
