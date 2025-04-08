@@ -5,10 +5,12 @@ author:
   name: "Koichiro Iwao"
   bio: "Engineer at Cybertrust Japan"
   image: /users/koichiroiwao.jpg
-date: '2025-04-07'
-#images:
+date: '2025-04-08'
+images:
+  - /blog-images/2025/2025-04-08-raspberry-pi-updates.png
 post:
   title: "Spring 2025 Raspberry Pi Updates"
+  image: /blog-images/2025/2025-04-08-raspberry-pi-updates.png
 ---
 
 Hello, Community! I'm pleased to share the latest updates on Raspberry Pi with you. Have fun on the Pi!
@@ -17,9 +19,9 @@ Hello, Community! I'm pleased to share the latest updates on Raspberry Pi with y
 
 As you might have already noticed, AlmaLinux OS Kitten 10 is now available for Raspberry Pi! Visit [AlmaLinux OS Kitten 10 page](https://wiki.almalinux.org/development/almalinux-os-kitten-10.html#raspberry-pi) for details.
 
-Both the console image and the GNOME image are available, along with previous versions; however, the MBR version has been omitted to reduce development effort. Therefore, only images with a GUID partition table are available in AlmaLinux OS Kitten 10, which means that the Raspberry Pi 3+ is no longer supported.
+Both the console image and the GNOME image are available, as with previous versions; however, the MBR version has been omitted to reduce development effort. Therefore, only images with a GUID partition table are available in AlmaLinux OS Kitten 10. That means that the Raspberry Pi 3+ will not be supported for AlmaLinux OS 10 or AlmaLinux OS Kitten 10.
 
-If you have feedback, join AlmaLinux Community Chat in the [SIG/AltArch](https://chat.almalinux.org/almalinux/channels/sigaltarch) channel or file an issue at AlmaLinux Raspberry Pi [repository](https://github.com/AlmaLinux/raspberry-pi).
+If you would like to say hi, ask questions, or make contributions, please join us in the [SIG/AltArch](https://chat.almalinux.org/almalinux/channels/sigaltarch) channel on [chat.almalinux.org](https://chat.almalinux.org) or file an issue at AlmaLinux Raspberry Pi [repository](https://github.com/AlmaLinux/raspberry-pi).
 
 ## Updated Raspberry Pi images
 
