@@ -5,14 +5,14 @@ author:
  name: "Elkhan Mammadli"
  bio: "Cloud SIG lead & ALESCo member"
  image: /users/elkhan.jpg
-date: '2025-04-15'
+date: '2025-04-17'
 post:
     title: "AlmaLinux OS Now Available via WSL CLI"
     image: /blog-images/2025/2025-04-almalinux-wsl-cli.png
 
 ---
 
-Hello, Community! I’m excited to share some great news for users running AlmaLinux OS on Windows Subsystem for Linux (WSL).
+I’m excited to share some great news for users running AlmaLinux OS on Windows Subsystem for Linux (WSL).
 
 You can now install AlmaLinux OS images directly via the **WSL CLI tool** - no extra configuration and no Microsoft Store is required. This change also makes it possible to install AlmaLinux on Windows Server, where the Store isn't available.
 
