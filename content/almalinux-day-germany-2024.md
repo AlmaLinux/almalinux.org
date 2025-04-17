@@ -1,5 +1,5 @@
 ---
-title: "AlmaLinux Day: Germany!"
+title: "AlmaLinux Day: Germany 2024"
 type: almalinux-day-germany-2024
 images:
   - /landingpages/aldg-2024/ALDGhero.png
