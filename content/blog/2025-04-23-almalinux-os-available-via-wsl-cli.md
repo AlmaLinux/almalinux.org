@@ -5,7 +5,7 @@ author:
  name: "Elkhan Mammadli"
  bio: "Cloud SIG lead & ALESCo member"
  image: /users/elkhan.jpg
-date: '2025-04-17'
+date: '2025-04-23'
 post:
     title: "AlmaLinux OS Now Available via WSL CLI"
     image: /blog-images/2025/2025-04-almalinux-wsl-cli.png
