@@ -1,0 +1,18 @@
+{{- with .Get "url" }}
+  {{- $u := urls.Parse . }}
+  {{- $qs := collections.Querify (dict "url" $u.String) }}
+  {{- $api := printf "https://%s/api/oembed?%s" $u.Host $qs }}
+  {{- with try (resources.GetRemote $api) }}
+    {{- with .Err }}
+      {{- errorf "%s" . }}
+    {{- else with .Value }}
+      {{- with . | transform.Unmarshal }}
+        {{- .html | safeHTML }}
+      {{- end }}
+    {{- else }}
+      {{- warnidf "shortcode-mastodon" "The %q shortcode was unable to retrieve the remote data. See %s" $.Name $.Position }}
+    {{- end }}
+  {{- end }}
+{{- else }}
+  {{- errorf "The %q shortcode requires a positional parameter: the url of the post. See %s" .Name .Position }}
+{{- end }}
