@@ -22,10 +22,10 @@ For those who are not aware, AlmaLinux OS is a community-owned operating system.
 Today, the foundation has 8 board members:
 
 -   [benny Vasquez ](https://www.linkedin.com/in/bennyvasquez/)- me, the current Chair of the board of AlmaLinux OS Foundation
--   [Jack Aboutboul ](https://www.linkedin.com/in/jackaboutboul/)- Jack is a current Director and Community Leader at AlmaLinux
+-   [Jack Aboutboul ](https://www.linkedin.com/in/jackaboutboul/)- Jack is a current Director at AlmaLinux, and Program Manager, Microsoft Azure AOSI
 -   [Simon Phipps ](https://en.wikipedia.org/wiki/Simon_Phipps_(programmer))- Simon is a current Director at AlmaLinux and former president of the Open Source Initiative
 -   [Jesse Asklund ](https://www.linkedin.com/in/jessejester/)- Jesse is a current Director at AlmaLinux and the CXO at WebPros
--   [Daniel Pearson ](https://www.linkedin.com/in/daniel-pearson-b2559b60/)- Daniel is a current Director at AlmaLinux and is the CEO of KnownHost, LLC (promoted from COO during the election window), a current AlmaLinux Gold Sponsor, serves on the AlmaLinux OS Foundation membership committee.
+-   [Daniel Pearson ](https://www.linkedin.com/in/daniel-pearson-b2559b60/)- Daniel is a current Director at AlmaLinux and is the CEO of KnownHost, LLC
 -   [Moshe Bar ](https://en.wikipedia.org/wiki/Moshe_Bar_(investor))- Moshe is a current Director at AlmaLinux and is the CEO of CodeNotary, Inc., an AlmaLinux Gold Sponsor
 -   [Alex Iribarren ](https://www.linkedin.com/in/iribarren/)- Alex is a current Director at AlmaLinux, and a penguin herder at CERN
 -   [Jun Yoshida ](https://www.linkedin.com/in/jun-yoshida-6b4b5a16/)- Jun is a current Director at AlmaLinux, and is the driving force behind MIRACLE LINUX
