@@ -67,7 +67,7 @@ There are many reasons that people want to join the AlmaLinux board, but the mos
 
 There are a couple of things we anticipate will be at play during the upcoming board member term. Our goals include further future-proofing the structure of the organization, expanding sponsor members to ensure long-term neutrality, and increasing the reach of AlmaLinux by improving our marketing.
 
-More information about our board, the previous elections, and our monthly meeting minutes is available [here on our Wiki](https://almalinux.org/blog/2024-01-16-video-contributions/).
+More information about our board, the previous elections, and our monthly meeting minutes is available [here on our Wiki](https://wiki.almalinux.org/Transparency.html#minutes-of-almalinux-os-foundation-board-meetings).
 
 ## Not sure if it's for you? Come find out!
 
