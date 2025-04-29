@@ -11,7 +11,6 @@ images:
 post:
     title: "AlmaLinux OS Now Available via WSL CLI"
     image: /blog-images/2025/2025-04-almalinux-wsl-cli.png
-
 ---
 
 I’m excited to share some great news for users running AlmaLinux OS on Windows Subsystem for Linux (WSL).
