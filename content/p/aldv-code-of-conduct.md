@@ -1,4 +1,11 @@
-# AlmaLinux Day: Vancouver --- Code of Conduct
+---
+title: "AlmaLinux Day: Vancouver Code of Conduct"
+type: p
+images:
+  - /images/og/aldv-2025.png
+---
+
+[{{< figure src="/images/og/aldv-2025.png" alt="Welcome to AlmaLinux Day: Vancouver" >}}](/almalinux-day-vancouver-2025/)
 
 The AlmaLinux community values openness, respect, and inclusivity. We are committed to providing a harassment-free experience for everyone.
 
