@@ -7,7 +7,7 @@ author:
  image: /users/tristan.jpeg
 date: '2025-05-19'
 images:
-  - /blog-images/2025/01-events.png
+  - /blog-images/2025/aldv_blog_header.png
 post:
     title: "AlmaLinux Day: Vancouver Set for August 9, 2025 --- Call for Speakers Now Open"
     image: /blog-images/2025/aldv_blog_header.png
