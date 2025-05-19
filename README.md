@@ -2,89 +2,90 @@
 
 [![almalinux.org](./screenshot.png)](https://almalinux.org)
 
-This repository contains website source code for https://almalinux.org.
+This repository contains the source code for the AlmaLinux website at [https://almalinux.org](https://almalinux.org).
 
-This website is built with the [Hugo](https://gohugo.io/) web framework.
+The site is built using the [Hugo](https://gohugo.io/) static site generator.
 
 ## Contributing
 
-We welcome contributions to the website in the form of website updates and design improvements, as well as translations. We've provided specific instructions on how to contribute for each part of the website.
+We welcome contributions for website updates, design improvements, and translations. Please follow the specific instructions provided for each contribution type:
 
-- Blog content, please see [Contributing - Blog Posts](https://github.com/AlmaLinux/almalinux.org/blob/master/contributing-blog-posts.md)
-- Help with our Hugo implementation or design improvements, please see [Contributing - Code and Design](#contributing-code-and-design)
-- To help with translations, please see [Contributing - Translations](#localization-and-translation)
+- For blog content, see [Contributing - Blog Posts](https://github.com/AlmaLinux/almalinux.org/blob/main/contributing-blog-posts.md)
+- For code or design improvements, see [Contributing - Code and Design](#contributing-code-and-design)
+- For translations, see [Contributing - Translations](#localization-and-translation)
 
 ## Contributing - Code and Design
 
-All of the development of the AlmaLinux website is done through this repo on GitHub.
+All development for the AlmaLinux website happens through this repository on GitHub.
 
 ### Reporting a Bug
 
-Good bug reports can be very helpful. A bug is a demonstrable problem with the code or functionality.
+Clear and detailed bug reports are incredibly valuable. A bug is a reproducible problem affecting the code or site functionality.
 
-Please use the [GitHub issues](https://github.com/AlmaLinux/almalinux.org/issues) and check if the issue has already been reported. A good bug report should be as detailed as possible, so that others won't have to follow up for the essential details.
+Please check the [GitHub issues](https://github.com/AlmaLinux/almalinux.org/issues) to see if your issue has already been reported. A good bug report should include as many details as possible to avoid unnecessary follow-ups.
 
 ### Requesting a Feature
 
-1. [Search the issues](https://github.com/AlmaLinux/almalinux.org/issues) for any open requests for the same feature, and give a thumbs up or +1 on existing requests.
-1. If no previous requests exist, create a new issue. Please be as clear as possible about why the feature is needed and the intended use case.
+1. [Search existing issues](https://github.com/AlmaLinux/almalinux.org/issues) to see if the feature has already been requested. If so, give it a thumbs up or +1.
+2. If no similar request exists, open a new issue. Please clearly explain why the feature is needed and provide a detailed use case.
 
-### Contributing code or design edits
+### Contributing Code or Design Changes
 
-If you plan to propose code changes, please first confirm that there are no open issues or pull requests that match your proposal, and then open an [issue](https://github.com/AlmaLinux/almalinux.org/issues) with a brief proposal and discuss it with the Marketing SIG first.
+Before submitting code changes, please check if there are any open issues or pull requests that cover your proposal. If not, open an [issue](https://github.com/AlmaLinux/almalinux.org/issues) with a brief description and discuss it with the Marketing SIG first.
 
-This is necessary to avoid more than one contributor working on the same feature/change and to avoid someone from spending time on feature/change that would not be merged for any reason.
+This helps avoid duplicated work and ensures proposed changes align with project goals.
 
-For smaller contributions use this workflow:
+For smaller contributions, follow this workflow:
 
-- Create an [issue](https://github.com/AlmaLinux/almalinux.org/issues) describing the changes.
+- Create an [issue](https://github.com/AlmaLinux/almalinux.org/issues) describing your changes.
 - Await confirmation from contributors.
 - Fork the project.
-- Create a branch for your feature or bug fix.
-- Add code changes, relevant documentation, etc.
-- Send a pull request. All PRs should be made against the `master` branch. Once your pull PR is approved, a dev site will be automatically created based on the PR.
+- Create a new branch for your feature or bug fix.
+- Add your code, documentation, etc.
+- Submit a pull request (PR). All PRs should target the `main` branch. Once approved, a development site will automatically generate based on the PR.
 
-After one of the contributors has checked and approved the changes, they will be merged into master branch and will be automatically deployed to the live site.
+After review and approval, the changes will be merged into the `main` branch and deployed to the live site.
 
-#### For developers
+#### For Developers
 
 ##### Local Development
 
-To deploy local development environment, you will need following dependencies installed on your development host:
+To set up a local development environment, you need the following installed:
 
-- hugo
+- Hugo
 
-Executing `hugo server` will deploy a nearly complete, ready to go local development environment.
+Run `hugo server` to start a near-production local development instance.
 
-Localization is important to us, and including localization formatting in your PR will be required. After you have formatted your text correctly, please run `find_missing_i18n_strings.py` and `setup-pages-for-supported-languages.py`, and then commit the changes to your branch. If you notice any issues with this script, please create an [issue](https://github.com/AlmaLinux/almalinux.org/issues) with details about the problem.
+Localization is important! Please include proper localization formatting in your PR. After formatting, run `find_missing_i18n_strings.py` and `setup-pages-for-supported-languages.py`, then commit the changes. If you encounter issues with these scripts, please open an [issue](https://github.com/AlmaLinux/almalinux.org/issues) with details.
 
 ##### Container Development
 
-To deploy a container based development environment you will need docker installed and an editor that supports the devcontainer standard. Further details on the container setup can be found in the [README](.devcontainer/README.md).
+To use a container-based development environment, install Docker and use an editor supporting the devcontainer standard. Details can be found in the [README](.devcontainer/README.md).
 
-#### Directories and modules
+#### Project Structure
 
-- `/layouts/` - Hugo HTML templates
-- `/layouts/partial` - commonly used template such as header and footer
-- `/i18n/` - Localization files and translations
-- `/static/` - static files
-- `/content/` - Markdown content for pages
-- `config.yaml` - Hugo config
-- `find_missing_i18n_strings.py` - find strings used in layouts/templates which do not exist in the base language file `i18n/en.json`
-- `setup-pages-for-supported-languages.py` - create missing markdown pages for languages which do not exist. By default Hugo will return 404 for markdown content without localized pages. This script copies the English markdown to be served when translated copies are missing.
+- `/layouts/` — Hugo HTML templates
+- `/layouts/partial` — Shared templates (header, footer, etc.)
+- `/i18n/` — Localization and translation files
+- `/static/` — Static files
+- `/content/` — Markdown content for site pages
+- `config.yaml` — Hugo configuration
+- `find_missing_i18n_strings.py` — Detects untranslated strings in `i18n/en.json`
+- `setup-pages-for-supported-languages.py` — Creates placeholder markdown pages for missing languages
 
-### Localization and translation
+### Localization and Translation
 
-AlmaLinux.org localization and translation is managed using [Weblate](https://hosted.weblate.org/engage/almalinux/). To contribute translations join the [AlmaLinux](https://hosted.weblate.org/projects/almalinux/) localization project in Weblate. Translations submitted through Weblate are automatically submitted to this repo as a pull request. Those pull requests are then reviewed by a member of the marketing SIG or another team lead, and merged as appropriate. To help with translations, please see [this guide on our Wiki](https://wiki.almalinux.org/Help-translating-site.html).
+AlmaLinux.org translations are managed on [Weblate](https://hosted.weblate.org/engage/almalinux/). To contribute, join the [AlmaLinux project](https://hosted.weblate.org/projects/almalinux/) on Weblate. Submissions through Weblate generate automated PRs to this repo, which are reviewed and merged by the Marketing SIG or another team lead.
 
-You can request new languages to be added by creating a ticket in [GitHub issues](https://github.com/AlmaLinux/almalinux.org/issues).
+For translation guidelines, see [our Wiki](https://wiki.almalinux.org/Help-translating-site.html).
+
+To request a new language, open an issue in [GitHub issues](https://github.com/AlmaLinux/almalinux.org/issues).
 
 [![Translation status](https://hosted.weblate.org/widget/almalinux/website-backend/multi-auto.svg)](https://hosted.weblate.org/engage/almalinux/)
 
-## Approval of changes
+## Change Approval Process
 
-Before any changes can be merged:
+- Minor or cosmetic changes (typos, small style tweaks) can be reviewed and approved by any contributor with merge rights.
+- Non-cosmetic changes require approval from the Marketing Lead.
+- Weblate automatically submits PRs for translated strings; these are reviewed and merged by the Marketing SIG or team leads.
 
-- All minor or cosmetic changes (typos, minor styling, etc) can be reviewed and approved by any contributor with merge rights
-- All non-cosmetic changes to the website requires the approval of the Marketing lead
-- Weblate automatically creates pull requests with new translated strings. Those pull requests are then reviewed by a member of the marketing SIG or another team lead, and merged as appropriate.
