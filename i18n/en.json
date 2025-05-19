@@ -562,7 +562,6 @@
    "Subscribe to our newsletter mailing list and never miss out on the latest in AlmaLinux OS news, and sign up for any other updates on lists.almalinux.org!": "Subscribe to our newsletter mailing list and never miss out on the latest in AlmaLinux OS news, and sign up for any other updates on lists.almalinux.org!",
    "AlmaLinux Newsletter Signup": "AlmaLinux Newsletter Signup",
    "Certification": "Certification",
-   "Read More": "Read More",
    "Hardware Certification": "Hardware Certification",
    "Part of the AlmaLinux Certification Program": "Part of the AlmaLinux Certification Program",
    "The AlmaLinux Hardware Certification Program ensures hardware compatibility and promotes OS adoption through community-first, flexible certification types. The process is built just like AlmaLinux: with focus on long-term reliability and performance.": "The AlmaLinux Hardware Certification Program ensures hardware compatibility and promotes OS adoption through community-first, flexible certification types. The process is built just like AlmaLinux: with focus on long-term reliability and performance.",
@@ -809,7 +808,6 @@
    "AlmaLinux 9.2 FIPS Validation Update": "AlmaLinux 9.2 FIPS Validation Update",
    "Expired but remains a trusted key.": "Expired but remains a trusted key.",
    "Expired:": "Expired:",
-   "AlmaLinux 9.6 Beta Now Available - ": "AlmaLinux 9.6 Beta Now Available - ",
    "Thank you, Vancouver!!": "Thank you, Vancouver!!",
    "<insert note from benny and/or tristan>": "<insert note from benny and/or tristan>",
    "<names of whoever writes it>": "<names of whoever writes it>",
@@ -853,5 +851,6 @@
    "11:59pm Pacific Daylight Time on June 22nd!": "11:59pm Pacific Daylight Time on June 22nd!",
    "If all goes according to plan, confirmations will be sent on June 23rd, and the schedule announced on June 30th!": "If all goes according to plan, confirmations will be sent on June 23rd, and the schedule announced on June 30th!",
    "ALD Vancouver 2025": "ALD Vancouver 2025",
-   "This event is governed by a Code of Conduct": "This event is governed by a Code of Conduct"
+   "This event is governed by a Code of Conduct": "This event is governed by a Code of Conduct",
+   "Join us August 9th for ": "Join us August 9th for "
 }
