@@ -1,6 +1,6 @@
 ---
 title: "AlmaLinux Day: Vancouver"
-type: aldv-2025
+type: almalinux-day-vancouver-2025
 images:
   - /images/og/aldv-2025.png
 ---
