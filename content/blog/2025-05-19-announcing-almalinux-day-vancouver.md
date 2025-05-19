@@ -15,10 +15,6 @@ post:
 
 We are excited to share that AlmaLinux Day: Vancouver will take place Saturday, August 9, 2025, at the Emily Carr University of Art + Design.
 
-<div class="text-center">
-	<a href="/almalinux-day-vancouver-2025/"><img src="/images/og/aldv-2025.png" class="img-fluid" width="55%" alt="Welcome to AlmaLinux Day: Vancouver"></a>
-</div>
-
 Like its predecessors, this community-powered, full-day event will bring together sysadmins, developers, DevOps engineers, IT leaders, and open-source enthusiasts for a packed day of technical talks, real-world case studies, and collaborative networking. With its proximity to SIGGRAPH, the event will place a special spotlight on how AlmaLinux is used in the VFX and post-production industries.
 
 ## Join us as a presenter!
@@ -34,3 +30,8 @@ Our sponsorship packages range in price from $100 to $7500, but we'll tailor a p
 Volunteers are needed both ahead of time and during the actual event! We're looking for folks to help with everything from design work (we need stickers and other fun stuff!) to staffing the check-in table, from setup and tear down to acting as code of conduct report reviewers.
 
 If you're itching to get involved, email us at <aldv@almalinux.org> and we'll get you lined up!
+
+<div class="text-center">
+	<a href="/almalinux-day-vancouver-2025/"><img src="/images/og/aldv-2025.png" class="img-fluid" width="55%" alt="Welcome to AlmaLinux Day: Vancouver"></a>
+	<figcaption class="figure-caption">Get a complete look at <a href="/almalinux-day-vancouver-2025/">AlmaLinux Day:Vancouver!</a>.</figcaption>
+</div>
