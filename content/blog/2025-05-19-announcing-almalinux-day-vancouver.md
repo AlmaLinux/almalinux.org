@@ -19,7 +19,7 @@ Like its predecessors, this community-powered, full-day event will bring togethe
 
 ## Join us as a presenter!
 
-For the first time, we are accepting submitted talks for this event! The call for speakers is now open, with proposals due by June 22, 2025. We are inviting submissions from anyone using AlmaLinux in production, contributing upstream, or exploring innovative ways to harness enterprise Linux in open-source environments. As benny Vasquez, chair of the AlmaLinux OS Foundation, puts it, the event aims to "build, learn, and grow the future of open-source infrastructure in the VFX industry." Submit your session ideas now at[  sessionize.com/almalinux-day-vancouver](http://sessionize.com/almalinux-day-vancouver).
+For the first time, we are accepting submitted talks for this event! The call for speakers is now open, with proposals due by June 22, 2025. We are inviting submissions from anyone using AlmaLinux in production, contributing upstream, or exploring innovative ways to harness enterprise Linux in open-source environments. As benny Vasquez, chair of the AlmaLinux OS Foundation, puts it, the event aims to "build, learn, and grow the future of open-source infrastructure in the VFX industry." Submit your session ideas now at [sessionize.com/almalinux-day-vancouver](https://sessionize.com/almalinux-day-vancouver).
 
 ## Sponsor or Volunteer at AlmaLinux Day: Vancouver!
 
