@@ -20,22 +20,22 @@ The AlmaLinux OS Foundation is proud to announce the general availability of [Al
 
 # AlmaLinux OS Improvements - usability without compromising compatibility
 
-The goal of AlmaLinux OS is to support our community, and AlmaLinux OS 10 is the best example of that yet. With an unwavering eye on maintaining compatibility with Red Hat Enterprise Linux (RHEL), we have made small improvements to AlmaLinux OS 10 that target specific sections of our userbase. They are for users who require them and know how to use them. Anyone using AlmaLinux OS and anticipating RHEL compatibility is in safe hands, and won't 
+The goal of AlmaLinux OS is to support our community, and AlmaLinux OS 10 is the best example of that yet. With an unwavering eye on maintaining compatibility with Red Hat Enterprise Linux (RHEL), we have made small improvements to AlmaLinux OS 10 that target specific sections of our userbase. They are for users who require them and know how to use them. Anyone using AlmaLinux OS and anticipating RHEL compatibility is in safe hands and won't be disappointed. 
 
 Like we discussed before, AlmaLinux OS 10.0 has been built from our brand new upstream, AlmaLinux OS Kitten. If you have been watching the discussions that ALESCo has been having, you'll know that Kitten brought with it a ton of new things that our community needs. 
 
 ## Supporting developers by enabling frame pointers
-For software developers, frame pointers are critical to diagnosing and optimizing their applications. For those developers that use AlmaLinux as their base, enabling frame points is a pain point - one that we are happy to help ease. 
+For software developers, frame pointers are critical to diagnosing and optimizing their applications. For those developers that use AlmaLinux as their base, the lack of frame pointers by default is a pain point - one that we are happy to help ease. 
 
 With AlmaLinux OS 10 we are enabling frame pointers by default. This allows system-wide real-time tracing and profiling for optimizing the performance of any workload running on AlmaLinux. 
 
 ## Extended x86-64-v2 life
-Within the [x86-64](https://en.wikipedia.org/wiki/X86-64) architecture, there are versions that represent specific CPU feature sets. With RHEL 10, Red Hat will only support x86-64-v3 and higher, which leaves numerous completely functional CPUs without support in the enterprise Linux Ecosystem. 
+Within the [x86-64](https://en.wikipedia.org/wiki/X86-64) architecture, there are versions that represent specific CPU feature sets. With RHEL 10, Red Hat will only support x86-64-v3 and higher, which leaves numerous completely functional CPUs without support in the Enterprise Linux ecosystem. 
 
 AlmaLinux OS 10 has followed Red Hat’s decision to ship x86-64-v3 optimized binaries by default, but we will also provide additional x86-64-v2 architecture, allowing users on that older hardware to continue to receive security updates for another 10 years.
 
 ### Extending the life of EPEL for x86-64-v2
-By default, EPEL follows RedHat's builds, which means that all 3rd party packages for RHEL10 will be built for x86-64-v3. [As we announced last week](https://almalinux.org/blog/2025-05-13-epel-10-kitten-v2/) on our blog, we are happy to share that we are building EPEL packages to support users in their adoption of our x86-64-v2 release of AlmaLinux OS 10.  
+By default, EPEL follows Red Hat's builds, which means that all 3rd party packages for RHEL10 will be built for x86-64-v3. [As we announced last week](https://almalinux.org/blog/2025-05-13-epel-10-kitten-v2/) on our blog, we are happy to share that we are building EPEL packages to support users in their adoption of our x86-64-v2 release of AlmaLinux OS 10.  
 
 ## Secure Boot
 Trusted boot has long been required for bare metal devices, and is also becoming more and more popular in virtualized environments. AlmaLinux OS Kitten 10 supports Secure Boot for Intel/AMD and ARM platforms.
@@ -44,18 +44,10 @@ Trusted boot has long been required for bare metal devices, and is also becoming
 Simple Protocol for Independent Computing Environments (SPICE) has been unsupported since RHEL 9.0. AlmaLinux users requested we add support back in, so SPICE support is fully re-enabled in AlmaLinux OS 10, for both server and client applications.
 
 ## Tech Preview of KVM for IBM POWER
-AlmaLinux OS 9.6 also includes a tech-preview of KVM virtualization support for the IBM Power architecture. It has been unavailable upstream since version 9.0, but is fundamental for a number of AlmaLinux users. That list includes the [Oregon State University Open Source Lab](https://osuosl.org/), who submitted the [RFC to the AlmaLinux Engineering Steering Committee](https://github.com/AlmaLinux/ALESCo/blob/master/rfcs/0002-enable-kvm-on-almaLinux-9-on-ppc64le.md) for consideration in February.
+AlmaLinux OS 10.0 also includes a tech-preview of KVM virtualization support for the IBM Power architecture. It has been unavailable upstream since version 9.0, but is fundamental for a number of AlmaLinux users. That list includes the [Oregon State University Open Source Lab](https://osuosl.org/), who submitted the [RFC to the AlmaLinux Engineering Steering Committee](https://github.com/AlmaLinux/ALESCo/blob/master/rfcs/0002-enable-kvm-on-almaLinux-9-on-ppc64le.md) for consideration in February.
 
 ### Continuing our expanded hardware support
 Starting with AlmaLinux 8.10 and 9.4 we re-enabled support for more than 150 devices that were removed upstream. Those additions continue in AlmaLinux OS 10.0. You can see the full list of devices in the [AlmaLinux OS 10.0 release notes](https://wiki.almalinux.org/release-notes/).
-
-### Native NVIDIA support - including CUDA and secure boot
-
-While it has been improving, graphics drivers have long been a pain point for Linux users. Thanks to ALESCo, NVIDIA, [and this approved RFC](https://github.com/AlmaLinux/ALESCo/blob/master/rfcs/0004-build-and-ship-nvidia-drivers.md), with AlmaLinux 10 we are solving that for NVIDIA users by shipping NVIDIA's open source graphics driver as a kernel module, along with a repository config for many of the common userspace and CUDA components.
-
-With AlmaLinux 10 and our new NVIDIA packages, a few `dnf` commands are all that stand between you and fully-integrated support - including secure boot.
-
-*The NVIDIA open kernel modules can be used on any Turing or later GPU.  For full compatibility details see [this page](https://github.com/NVIDIA/open-gpu-kernel-modules?tab=readme-ov-file#compatible-gpus)*
 
 ## ISOs, Live Images, Cloud and Containers
 
@@ -98,7 +90,7 @@ Torrents are available as well at:
 # ELevate Project and Migration Tool
 
 Support for AlmaLinux OS 10.0 Stable in the ELevate Project and Migration Tool is actively in development and will be available soon.
-In the meantime, you can help us test ELevate upgrades to AlmaLinux OS 10.0 Beta and AlmaLinux OS 10 Kitten to ensure a smoother, well-tested processes. Please, refer to the [ELevate Testing Guide](https://wiki.almalinux.org/elevate/ELevate-NG-testing-guide.html#upgrade-centos-7-to-almalinux-8) and join the ~migration channel on the [AlmaLinux Community Chat](https://chat.almalinux.org/almalinux/channels/migration) to stay updated.
+In the meantime, you can help us test ELevate upgrades to AlmaLinux OS 10.0 Beta and AlmaLinux OS 10 Kitten to ensure a smoother, well-tested process. Please, refer to the [ELevate Testing Guide](https://wiki.almalinux.org/elevate/ELevate-NG-testing-guide.html#upgrade-centos-7-to-almalinux-8) and join the [~migration channel on the AlmaLinux Community Chat](https://chat.almalinux.org/almalinux/channels/migration) to stay updated.
 
 ## Release Notes and More Information
 
