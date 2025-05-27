@@ -5,7 +5,7 @@ author:
  name: "Eduard Abdullin"
  bio: "Release and Automation Engineer"
  image: /users/eduard-abdullin.jpg
-date: '2025-05-22'
+date: '2025-05-27'
 images:
   - /blog-images/2025/almalinux10.png
 post:
