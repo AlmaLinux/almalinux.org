@@ -32,7 +32,7 @@ With AlmaLinux OS 10 we are enabling frame pointers by default. This allows syst
 ## Extended x86-64-v2 life
 Within the [x86-64](https://en.wikipedia.org/wiki/X86-64) architecture, there are versions that represent specific CPU feature sets. With RHEL 10, Red Hat will only support x86-64-v3 and higher, which leaves numerous completely functional CPUs without support in the Enterprise Linux ecosystem. 
 
-AlmaLinux OS 10 has followed Red Hat’s decision to ship x86-64-v3 optimized binaries by default, but we will also provide additional x86-64-v2 architecture, allowing users on that older hardware to continue to receive security updates for another 10 years.
+AlmaLinux OS 10 has followed Red Hat’s decision to ship x86-64-v3 optimized binaries by default, but we will also provide an additional x86-64-v2 architecture, allowing users on that older hardware to continue to receive security updates for another 10 years.
 
 ### Extending the life of EPEL for x86-64-v2
 By default, EPEL follows Red Hat's builds, which means that all 3rd party packages for RHEL10 will be built for x86-64-v3. [As we announced last week](https://almalinux.org/blog/2025-05-13-epel-10-kitten-v2/) on our blog, we are happy to share that we are building EPEL packages to support users in their adoption of our x86-64-v2 release of AlmaLinux OS 10.  
