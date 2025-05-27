@@ -20,7 +20,7 @@ The AlmaLinux OS Foundation is proud to announce the general availability of [Al
 
 # AlmaLinux OS Improvements - usability without compromising compatibility
 
-The goal of AlmaLinux OS is to support our community, and AlmaLinux OS 10 is the best example of that yet. With an unwavering eye on maintaining compatibility with Red Hat Enterprise Linux (RHEL), we have made small improvements to AlmaLinux OS 10 that target specific sections of our userbase. They are for users who require them and know how to use them. Anyone using AlmaLinux OS and anticipating RHEL compatibility is in safe hands and won't be disappointed. 
+The goal of AlmaLinux OS is to support our community, and AlmaLinux OS 10 is the best example of that yet. With an unwavering eye on maintaining compatibility with Red Hat Enterprise Linux (RHEL), we have made small improvements to AlmaLinux OS 10 that target specific sections of our userbase. They are for users who require them and know how to use them. Anyone using AlmaLinux OS and anticipating RHEL compatibility will be happy to know that AlmaLinux 10, just as its predecessors, is fully compatible with RHEL 10.
 
 Like we discussed before, AlmaLinux OS 10.0 has been built from our brand new upstream, AlmaLinux OS Kitten. If you have been watching the discussions that ALESCo has been having, you'll know that Kitten brought with it a ton of new things that our community needs. 
 
