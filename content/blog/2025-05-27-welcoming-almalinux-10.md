@@ -71,7 +71,7 @@ Torrents are available as well at:
 
 * [Container](https://wiki.almalinux.org/containers/) images including Platform and UBIs alternatives. We provide a wide variety of containers for your use. 
 * [LXC/LXD](https://images.linuxcontainers.org/images/almalinux/) 
-* [Live Media](https://wiki.almalinux.org/LiveMedia.html) for GNOME, GNOME-mini, KDE, XFCE, MATE.
+* [Live Media](https://wiki.almalinux.org/LiveMedia.html) for GNOME, GNOME-mini, KDE.
 * Cloud Images 
     * [AWS](https://wiki.almalinux.org/cloud/AWS.html) for x86_64 and AArch64 EC2 Instances
     * [Azure](https://wiki.almalinux.org/cloud/Azure.html) for x86_64 and AArch64 VMs
