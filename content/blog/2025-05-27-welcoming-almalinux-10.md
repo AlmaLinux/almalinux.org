@@ -47,7 +47,7 @@ Simple Protocol for Independent Computing Environments (SPICE) has been unsuppor
 AlmaLinux OS 10.0 also includes a tech-preview of KVM virtualization support for the IBM Power architecture. It has been unavailable upstream since version 9.0, but is fundamental for a number of AlmaLinux users. That list includes the [Oregon State University Open Source Lab](https://osuosl.org/), who submitted the [RFC to the AlmaLinux Engineering Steering Committee](https://github.com/AlmaLinux/ALESCo/blob/master/rfcs/0002-enable-kvm-on-almaLinux-9-on-ppc64le.md) for consideration in February.
 
 ### Continuing our expanded hardware support
-Starting with AlmaLinux 8.10 and 9.4 we re-enabled support for more than 150 devices that were removed upstream. Those additions continue in AlmaLinux OS 10.0. You can see the full list of devices in the [AlmaLinux OS 10.0 release notes](https://wiki.almalinux.org/release-notes/).
+Starting with AlmaLinux 8.10 and 9.4 we re-enabled support for more than 150 devices that were removed upstream. Those additions continue in AlmaLinux OS 10.0. You can see the full list of devices in the [AlmaLinux OS 10.0 release notes](https://wiki.almalinux.org/release-notes/10.0.html).
 
 ## ISOs, Live Images, Cloud and Containers
 
