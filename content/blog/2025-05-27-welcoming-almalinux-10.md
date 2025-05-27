@@ -76,6 +76,7 @@ Torrents are available as well at:
     * [AWS](https://wiki.almalinux.org/cloud/AWS.html) for x86_64 and AArch64 EC2 Instances
     * [Azure](https://wiki.almalinux.org/cloud/Azure.html) for x86_64 and AArch64 VMs
     * [Google Cloud](https://wiki.almalinux.org/cloud/Google.html)
+    * [Oracle Cloud](https://wiki.almalinux.org/cloud/OCI.html) for x86_64 and AArch64 VMs
     * [Generic Cloud/Cloud-init](https://wiki.almalinux.org/cloud/Generic-cloud-on-local.html) for all supported architectures including x86-64-v2
     * [OpenNebula](https://wiki.almalinux.org/cloud/OpenNebula.html) for x86_64, x86-64-v2 and AArch64 architectures
     * [Oracle Cloud Infrastructure](https://wiki.almalinux.org/cloud/OCI.html) for x86_64 and AArch64 Instances
