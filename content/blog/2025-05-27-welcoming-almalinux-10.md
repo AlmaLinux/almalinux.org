@@ -37,7 +37,7 @@ AlmaLinux OS 10 has followed Red Hat’s decision to ship x86-64-v3 optimized bi
 ### Extending the life of EPEL for x86-64-v2
 By default, EPEL follows Red Hat's builds, which means that all 3rd party packages for RHEL10 will be built for x86-64-v3. [As we announced last week](https://almalinux.org/blog/2025-05-13-epel-10-kitten-v2/) on our blog, we are happy to share that we are building EPEL packages to support users in their adoption of our x86-64-v2 release of AlmaLinux OS 10.  
 
-## Secure Boot
+## Secure Boot for ARM platforms
 Trusted boot has long been required for bare metal devices, and is also becoming more and more popular in virtualized environments. AlmaLinux OS Kitten 10 supports Secure Boot for Intel/AMD and ARM platforms.
 
 ## Adding SPICE
