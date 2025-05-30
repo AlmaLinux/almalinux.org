@@ -1,6 +1,8 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
 
+Hash: SHA256
+
 # This file provides security vulnerability reporting information for the AlmaLinux OS project.
 # Please follow the criteria below to ensure your report reaches the correct team.
 Preferred-Languages: en
@@ -19,24 +21,24 @@ Policy: https://almalinux.org/p/vulnerability-disclosure-policy/
 
 
 Encryption: https://almalinux.org/files/security-pgp-key.txt
-Expires: 2025-05-03T12:00:00.000Z
+Expires: 2030-03-21T15:42:25.000Z
 
 
 # Important: Do not send sensitive data or vulnerability reports publicly.
 -----BEGIN PGP SIGNATURE-----
 
-iQJLBAEBCAA1FiEEMzeTSBdPlE436uygEatxH6m0ZhIFAmfwMj4XHHNlY3VyaXR5
-QGFsbWFsaW51eC5vcmcACgkQEatxH6m0ZhKNDxAAstW6XoEvPofASy9vcTOrYBFZ
-wfUub/TbA7afR5IPJOeFvcNHDOs2EFyfYCE3wzWHqqMViwwZiUABi9/tGFD4z44g
-4R0caaByk244scc0NWhzhyF+6rjkrpm9BTBBbawWtOWfU0PfkPMdKZ2pAJrx8Jnw
-vcHjE9wzAhU3t/dWfWGTZXY3fDWQr5LTpLhB4XRaZY7Qbzv1yG8oFuz/akaxgGm4
-CptG9boEj59b0kSvJzzEEgAeooq/zW/Q8TLVs6GF1eEerZ4aNPtaOvkkEGvmWnpy
-5v/cNM+oB7wz8UlwAeTo5gDHCjHsWR//7N1eCWush7gYwPBd524dxltyx3L6oMju
-A2mO6aJUn2GZCbv0SvJnJhgYHhv6YafLmk1ueqcW0aMPGFGryGH1wfgCdehBbcqJ
-I9RJWCyY93lXD/jEmm7sONcyJSEYAMpGlCrzWZRlZtQSj8sEKNx8zi2Lvs8ZlvMp
-wHk1jGe0sxKjS8uv10MFdwp/Mpa5eWU51XXSnw2VybTQKG2p2h6Fsr15G/AQcRF0
-W+Siz+uPeCxcjWV+pg3L618ysj8p+ElCVeecBZFzqykdZHc8x1ve7CucPAy8yivI
-krM0Hqi6xqkDMiTjPb6FaKyyrcU7MFyVjgVdlTlSa46CpVpmuc4i1S+MUEVd6CD+
-ak8KOT+Du/MTlhr4NQE=
-=zzbj
+iQJLBAEBCAA1FiEEMzeTSBdPlE436uygEatxH6m0ZhIFAmg5/8wXHHNlY3VyaXR5
+QGFsbWFsaW51eC5vcmcACgkQEatxH6m0ZhIG7hAAr3JUitjQQT2l4OvdX/aMzLv+
+kOhzgUp0ezn1rty93YhrEFIIlQ3kGKToH+0mxDA+tkrhdviDuD35HJFqqf3us+HB
+PdwS0HCSa6CsDmcT1Tg7gVDQZnTRY0KqbV3iM5GcqgDBtNPSO4d7EAb4RRWiHAd+
+nj+ZYj1CEe1kcWsVIr9vF1B6xYTthW72ZKEJ6s3+k90QZGF14s4lBMLhYkcq5guW
+uZSz8HxbryqAHij89FhPmS2G03EHbe3VXK+OZn7g7yKormyRYliblU7rK1zNEUdT
+YtSd5v8IHB+CeLt7A0fjCS1FKYGsYkxxYMnErUuYmFq9w5RGp8anDsjV9UJPIOaA
+pnRKUTdNB0kE0JV5CElWf21TSJ5ezO8wL1q5vgO9nSSZMgBeGhzDYa5rIbE+3ozw
+yF5EiRv6ckz4YgGnaVUlqUc/abJRVzDxgYAAmx+ZaPO3Orm3cQhefQl5pWig1+qP
+vpOjt+66GQFR8HiV4DOxv1uhBTLtKN1oCaxxodqe1TKuwAtqWkliiq7iBAW+c8E/
+MgUW8g/nObhxyQwl5oF2vPW4miqh6eOvZcO2kWzGoi3o13X37bNkJ2TQ5GPOSsC3
+kAFqjeYsHsGFdfVEa44dAwd8qJ93Fdosc8W2G36AO47bhWO1AEdz5/2qlurlVYHR
+wRtI4DNjffL+zAvOsCY=
+=R6Q5
 -----END PGP SIGNATURE-----
