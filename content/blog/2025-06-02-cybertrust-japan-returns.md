@@ -14,7 +14,7 @@ post:
 ---
 
 
-On the heels of one of our biggest releases ever, yesterday we announced that our friends at [Cybertrust Japan Co., Ltd](https://www.cybertrust.co.jp/english/) (a subsidiary of SB Technology Corp) have renewed their platinum sponsor membership for a third year.
+On the heels of one of our biggest releases ever, last week we announced that our friends at [Cybertrust Japan Co., Ltd](https://www.cybertrust.co.jp/english/) (a subsidiary of SB Technology Corp) have renewed their platinum sponsor membership for a third year.
 
 Anticipating using AlmaLinux as the base for [MIRACLE LINUX](https://www.miraclelinux.com/), Cybertrust Japan approached us two years ago looking for a partner. They recognized the value that AlmaLinux provided to businesses, especially in Japan. They know firsthand the benefits that adopting open source software has for enterprise businesses, no matter the industry.
 
