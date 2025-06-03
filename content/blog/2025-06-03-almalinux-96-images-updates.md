@@ -46,7 +46,7 @@ The following options have also been updated to the latest versions:
 
 You can check the [AlmaLinux website](https://almalinux.org/get-almalinux/) for a full list of images AlmaLinux provides.
 
-## How to Рelp and Сontribute 
+## How to Help and Сontribute 
 
 All your contributions, feedback and bug reports are greatly appreciated and help us improve AlmaLinux for everyone! 
 
