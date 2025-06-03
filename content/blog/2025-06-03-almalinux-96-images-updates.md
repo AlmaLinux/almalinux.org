@@ -2,9 +2,9 @@
 title: "AlmaLinux Cloud, Container and Live Media Images Updates"
 type: blog
 author: 
- name: "Andrew Lukoshko"
- bio: "Release Engineering Lead"
- image: /users/alukoshko.jpg
+ name: "Yuriy Kohut"
+ bio: "Release Automation Engineer"
+ image: /users/yuriy-kohut.jpg
 date: 2025-06-03
 images:
   - /blog-images/2025/2025-06-03-96-images-updates.png
