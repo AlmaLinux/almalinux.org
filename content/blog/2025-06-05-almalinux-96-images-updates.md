@@ -5,7 +5,7 @@ author:
  name: "Yuriy Kohut"
  bio: "Release Automation Engineer"
  image: /users/yuriy-kohut.jpg
-date: 2025-06-03
+date: 2025-06-05
 images:
   - /blog-images/2025/2025-06-03-96-images-updates.png
 post: 
