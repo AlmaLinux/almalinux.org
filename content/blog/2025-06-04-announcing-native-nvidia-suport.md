@@ -7,10 +7,10 @@ author:
  image: /users/nealandJonathan.png
 date: '2025-06-02'
 images:
-  - /blog-images/2025/blogheadertemplate.png
+  - /blog-images/2025/nvidia_support_announcement.png
 post:
     title: "Native NVIDIA support for AlmaLinux OS 9 and 10"
-    image: /blog-images/2025/blogheadertemplate.png
+    image: /blog-images/2025/nvidia_support_announcement.png
 
 ---
 
