@@ -444,7 +444,7 @@
     "Corporate Officer": "Directeur d'entreprise",
     "The AlmaLinux OS OpenNebula image are available from our ": "Les images AlmaLinux OS OpenNebula sont disponibles sur notre ",
     "AlmaLinux OS Foundation provides errata to inform users about available updates, including security issues and bug fixes, and their significance through analysis. Users can easily access this information by accessing our AlmaLinux security advisory portal, known as ": "La Fondation AlmaLinux OS fournit des errata pour informer les utilisateurs des mises à jour disponibles, y compris les problèmes de sécurité et les correctifs de bogues, ainsi que leur importance grâce à une analyse approfondie. Les utilisateurs peuvent facilement accéder à ces informations via notre portail de conseils de sécurité AlmaLinux, connu sous le nom de ",
-    "As CentOS Linux enters its final 6 months of support, the whole world is looking at where they go next. The AlmaLinux community benefits from the stability and intentionality that we take to building a stable, free operating system. Come hear all about what we do and how we're supporting our community at AlmaLinux Day: Germany": "Alors que CentOS Linux entre dans ses 6 derniers mois de support, le monde entier s'interroge sur la prochaine étape. La communauté AlmaLinux bénéficie de la stabilité et de l'intentionnalité que nous mettons à construire un système d'exploitation stable et gratuit. Venez découvrir ce que nous faisons et comment nous soutenons notre communauté lors de l'AlmaLinux Day : Allemagne.",
+    "As CentOS Linux enters its final 6 months of support, the whole world is looking at where they go next. The AlmaLinux community benefits from the stability and intentionality that we take to building a stable, free operating system. Come hear all about what we do and how we're supporting our community at AlmaLinux Day: Germany": "Alors que CentOS Linux entre dans ses 6 derniers mois de support, le monde entier s'interroge sur la prochaine étape. La communauté AlmaLinux bénéficie de la stabilité et de l'intentionnalité que nous mettons à construire un système d'exploitation stable et gratuit. Venez découvrir ce que nous faisons et comment nous soutenons notre communauté lors de l'AlmaLinux Day : Allemagne",
     "View on YouTube": "Voir sur YouTube",
     "Location:": "Emplacement :",
     "You can find more about OVAL Streams on the ": "Vous trouverez plus d'informations sur les chaînes OVAL sur la ",
@@ -719,5 +719,9 @@
     "Dubbed “air traffic control” for all engineering matters, ALESCo will ensure AlmaLinux’s robustness, reliability, and sustainability while working collaboratively with and overseeing technical decisions in relevant Special Interest Groups (SIGs). The committee will hold five key responsibilities:": "Surnommé « contrôle aérien » pour toutes les questions d'ingénierie, ALESCo garantira la robustesse, la fiabilité et la pérennité d'AlmaLinux tout en collaborant avec les groupes d'intérêt spéciaux (SIG) concernés et en supervisant les décisions techniques au sein de ces groupes. Le comité assumera cinq responsabilités clés :",
     "Product specs": "Spécifications du produit",
     "LOADING": "CHARGEMENT",
-    "Event Details": "Détail de l'évenement"
+    "Event Details": "Détail de l'évenement",
+    "AlmaLinux provides official AlmaLinux OS 9.6 images for Vagrant:": "AlmaLinux fournit des images officielles du système d'exploitation AlmaLinux 9.6 pour Vagrant :",
+    "AlmaLinux offers AlmaLinux OS 8.10 and AlmaLinux OS 9.6 images for Azure across all Azure regions via the ": "AlmaLinux propose des images AlmaLinux OS 8.10 et AlmaLinux OS 9.6 pour Azure dans toutes les régions Azure via le ",
+    "to AlmaLinux 9.6": "à AlmaLinux 9.6",
+    "to AlmaLinux 10.0!": "à AlmaLinux 10.0 !"
 }
