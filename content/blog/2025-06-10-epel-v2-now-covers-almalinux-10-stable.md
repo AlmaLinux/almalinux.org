@@ -14,13 +14,13 @@ post:
 
 ---
 
-In March, [ALESCo approved a proposal](https://github.com/AlmaLinux/ALESCo/blob/master/rfcs/0001-build-fedora-epel-for-almalinux-and-almalinux-kitten-x86_64_v2.md) to build EPEL packages from Fedora’s source RPMs (SRPMs) to maintain long-term feature parity for our x86_64_v2 support initiative. [Last month these packages became available for AlmaLinux Kitten 10](https://almalinux.org/blog/2025-05-13-epel-10-kitten-v2/), and today we are happy to announce that **x86_64_v2 EPEL support is now available for AlmaLinux 10 Stable** as well.
+In March, [ALESCo approved a proposal](https://github.com/AlmaLinux/ALESCo/blob/master/rfcs/0001-build-fedora-epel-for-almalinux-and-almalinux-kitten-x86_64_v2.md) to build EPEL packages from Fedora’s source RPMs (SRPMs) to maintain long-term feature parity for our x86_64_v2 support initiative. Last month, these packages became [available for AlmaLinux Kitten 10](https://almalinux.org/blog/2025-05-13-epel-10-kitten-v2/), and today we are happy to announce that **x86_64_v2 EPEL support is now available for AlmaLinux 10 Stable** as well.
 
 The EPEL package builds for AlmaLinux OS 10 stable are now complete and ready for use!
 
 ## How It Works
 
-We monitor the [EPEL repository](https://dl.fedoraproject.org/pub/epel/10/Everything/source/tree/) for the latest stable packages, grab their SRPMs, and rebuild them using the [AlmaLinux Build System](https://build.almalinux.org/). These rebuilt packages are signed with a dedicated GPG key and then released to a [dedicated repository](https://epel.repo.almalinux.org). 
+We monitor the [EPEL repository](https://dl.fedoraproject.org/pub/epel/10z/Everything/source/tree/) for the latest stable packages, grab their SRPMs, and rebuild them using the [AlmaLinux Build System](https://build.almalinux.org/). These rebuilt packages are signed with a dedicated GPG key and then released to a [dedicated repository](https://epel.repo.almalinux.org). 
 
 We also ensured that our EPEL packages have the `.alma_altarch` suffix for easy identification. 
 
