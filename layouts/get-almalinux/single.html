@@ -1641,6 +1641,7 @@
               </div>
 
               <div class="tab-pane fade" id="x86_64-9" role="tabpanel" aria-labelledby="x86_64-9-tab">
+                <div class="icons" style="margin-top: 20px; padding: 15px 0 0 0;">
                   <div class="container-all-options mb-3" style="display: flex; justify-content: space-between; padding: 0px 20px;">
                     <a href="#ISO_Images6">     
                       <img loading="lazy" class="al-index-download-icon img" src="/images/iso-icon-F.svg" alt="ISO Image">
@@ -1664,9 +1665,10 @@
                       <img loading="lazy" class="al-index-download-icon img" src="/images/wsl-icon-F.svg" alt="WSL Image">
                     </a>  
                   </div>
+                </div>
 
                   <div class="container-ISO_Images" style="padding: 40px 20px; background: #0e3b5c; color: #fff;">
-                    <a class="anchor" id="ISO_Images" style="position: relative; top: -116px;"></a>
+                    <a class="anchor" id="ISO_Images6" style="position: relative; top: -116px;"></a>
                     <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">ISO Images</h2>
                     <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0!important;">
                       <div style="margin-top: 30px;">
@@ -1724,21 +1726,15 @@
                         </div>
                       </div>
                       <div style="margin-top: 40px; display: flex; gap: 30px; justify-content: left; flex-wrap: wrap;">
-                        <a href="https://mirrors.almalinux.org/isos/x86_64/10.0.html" style="color: #aaddff; font-weight: bold;">
-                          {{ i18n "Download ISOs from mirrors" }}
-                        </a>
-                        <a href="https://repo.almalinux.org/almalinux/10/isos/x86_64/AlmaLinux-10.0-x86_64.torrent">
-                          {{ i18n "Download .torrent file" }}
-                        </a>
-                        <a href="https://repo.almalinux.org/almalinux/10.0/isos/x86_64/CHECKSUM" style="color: #f1f8ff; font-weight: bold;">
-                          {{ i18n "Download CHECKSUM" }}
-                        </a>
+                        <b><a href="https://mirrors.almalinux.org/isos/x86_64/9.6.html">{{ i18n "Download ISOs from mirrors" }}</a></b>
+                        <b><a href="https://repo.almalinux.org/almalinux/9.6/isos/x86_64/AlmaLinux-9.6-x86_64.torrent">{{ i18n "Download .torrent file" }}</a></b>
+                        <b><a href="https://repo.almalinux.org/almalinux/9.6/isos/x86_64/CHECKSUM">{{ i18n "Download CHECKSUM" }}</a></b>
                       </div>
                     </div>
                   </div>
 
                   <div class="container-Cloud_Images" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
-                    <a class="anchor" id="Cloud_Images" style="position: relative; top: -116px;"></a>
+                    <a class="anchor" id="Cloud_Images6" style="position: relative; top: -116px;"></a>
                     <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Cloud Images</h2>
                     <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
                       <h2>Amazon AWS</h2>
@@ -1757,7 +1753,7 @@
                             {{ i18n "are available via the AWS Marketplace at the links provided:" }}
                           </p>
                           <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
-                            <a href="https://aws.amazon.com/marketplace/pp/prodview-tommf6drdxv4w"
+                            <a href="https://aws.amazon.com/marketplace/pp/prodview-ykmb6re2rcou"
                               style="background-color: #f1f8ff; color: #051520; padding: 10px 20px; border-radius: 25px; font-weight: bold; text-decoration: none; display: inline-block; white-space: nowrap;"
                               onmouseover="this.style.backgroundColor='#9db4cc'"
                               onmouseout="this.style.backgroundColor='#f1f8ff'">
@@ -1774,12 +1770,13 @@
                           </p>
                         </div>
                       </div>
+
                       <h2 style="margin-top: 60px;">Generic Cloud</h2>
                       <p style="margin-bottom: 0px;">
                         {{ i18n "The AlmaLinux OS Generic Cloud images are available from our" }} <a href="https://mirrors.almalinux.org/">{{ i18n "mirrors" }}</a> {{ i18n "and from the main AlmaLinux OS repositories:" }}<br>
                       </p>
                       <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
-                        <a href="https://repo.almalinux.org/almalinux/10/cloud/x86_64/images/AlmaLinux-10-GenericCloud-latest.x86_64.qcow2"
+                        <a href="https://repo.almalinux.org/almalinux/9/cloud/x86_64/images/AlmaLinux-9-GenericCloud-latest.x86_64.qcow2"
                           style="background-color: #f1f8ff; color: #051520; padding: 10px 20px; border-radius: 25px; font-weight: bold; text-decoration: none; display: inline-block; white-space: nowrap;"
                           onmouseover="this.style.backgroundColor='#9db4cc'"
                           onmouseout="this.style.backgroundColor='#f1f8ff'">
@@ -1789,40 +1786,73 @@
                           <img src="/images/alma-fingerprint-A.svg" alt="Fingerprint" style="width: 40px; height: 40px; flex-shrink: 0;" />
                           <div style="display: flex; flex-direction: column; font-family: monospace; font-size: 14px; user-select: text; line-height: 1.2;">
                             <span style="font-weight: bold;">SHA-256:</span>
-                            <span>9c528c5895c7fb5fc906add749d48057dbba4a4258a708c224aa3ef60fda14bd</span>
+                            <span>b08cd5db79bf32860412f5837e8c7b8df9447e032376e3c622840b31aaf26bc6</span>
                           </div>
                         </div>
                       </div>
                       <div style="margin-top: 40px; display: flex; gap: 30px; justify-content: left; flex-wrap: wrap;">
-                        <a href="https://mirrors.almalinux.org" style="color: #aaddff; font-weight: bold;">
-                          {{ i18n "Download ISOs from mirrors" }}
-                        </a>
-                        <a href="https://repo.almalinux.org/almalinux/10/cloud/x86_64/images/CHECKSUM" style="color: #aaddff; font-weight: bold;">
-                          {{ i18n "Download CHECKSUM" }}
-                        </a>
+                        <a href="https://mirrors.almalinux.org">{{ i18n "Download ISOs from mirrors" }}</a>
+                        <a href="https://repo.almalinux.org/almalinux/9/cloud/x86_64/images/CHECKSUM">{{ i18n "Download CHECKSUM" }}</a>
                       </div>                    
                       <p>
                         {{ i18n "More information about AlmaLinux Generic Cloud images and verification guidelines are available on the" }} <a href="https://wiki.almalinux.org/cloud/Generic-cloud.html">{{ i18n "AlmaLinux Generic Cloud Wiki Page" }}</a>.<br>
                         {{ i18n "You can also find the" }} <a href="https://wiki.almalinux.org/cloud/Generic-cloud-on-local.html">{{ i18n "Using Generic Cloud on a local machine or server" }}</a> {{ i18n "guide there." }}
                       </p>
               
+                      <h2 style="margin-top: 60px;">Google Cloud</h2>
+                      <p>
+                        {{ i18n "Official AlmaLinux OS Images for Google Cloud are available via the" }} <a href="https://console.cloud.google.com/marketplace/browse?filter=partner:AlmaLinux">{{ i18n "Google Cloud Marketplace" }}</a>.
+                      </p>
+                      <div class="Link-Downloads-Al" style="display: flex;">
+                        <b><a href="https://console.cloud.google.com/marketplace/product/almalinux-cloud/almalinux-9">AlmaLinux OS 9</a></b>
+                      </div>
+                      <p>
+                        {{ i18n "AlmaLinux OS Images are also available via the" }} <code style="color: #fff">gcloud</code>{{ i18n " CLI. More information on the " }}<a href="https://wiki.almalinux.org/cloud/Google.html">{{ i18n "AlmaLinux Google Cloud Wiki Page" }}</a>.
+                      </p>
+
                       <h2 style="margin-top: 60px;">Microsoft Azure</h2>
                       <p>
-                        {{ i18n "AlmaLinux offers AlmaLinux OS 10 images for Azure across all Azure regions via the " }}<a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.almalinux-x86_64">{{ i18n "Azure Marketplace" }}</a>. {{ i18n "Images are deployable via the marketplace, portal and CLI." }}<br>
+                        {{ i18n "AlmaLinux offers AlmaLinux OS 9.6 images for Azure across all Azure regions via the " }}<a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.almalinux-x86_64">{{ i18n "Azure Marketplace" }}</a>. {{ i18n "Images are deployable via the marketplace, portal and CLI." }}<br>
                         {{ i18n "More about AlmaLinux OS images for Azure" }} - <a href="https://wiki.almalinux.org/cloud/Azure.html">{{ i18n "AlmaLinux Azure Wiki Page" }}</a>.
                       </p>
 
+                      <h2 style="margin-top: 60px;">OpenNebula</h2>
+                      <p style="margin-bottom: 0px;">
+                        {{ i18n "The AlmaLinux OS OpenNebula image are available from our " }} <a href="https://mirrors.almalinux.org/">{{ i18n "mirrors" }}</a> {{ i18n "and from the main AlmaLinux OS repositories:" }}<br>
+                      </p>
+                      <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+                        <a href="https://repo.almalinux.org/almalinux/9/cloud/x86_64/images/AlmaLinux-9-OpenNebula-latest.x86_64.qcow2"
+                          style="background-color: #f1f8ff; color: #051520; padding: 10px 20px; border-radius: 25px; font-weight: bold; text-decoration: none; display: inline-block; white-space: nowrap;"
+                          onmouseover="this.style.backgroundColor='#9db4cc'"
+                          onmouseout="this.style.backgroundColor='#f1f8ff'">
+                          Get Image
+                        </a>
+                        <div style="display: flex; align-items: center; gap: 12px; color: #fff;">
+                          <img src="/images/alma-fingerprint-A.svg" alt="Fingerprint" style="width: 40px; height: 40px; flex-shrink: 0;" />
+                          <div style="display: flex; flex-direction: column; font-family: monospace; font-size: 14px; user-select: text; line-height: 1.2;">
+                            <span style="font-weight: bold;">SHA-256:</span>
+                            <span>47f64d3de1fbf5d004c2640bfcd08b56e3d2eff31c7b8903daaf8830b6004293</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="margin-top: 40px; display: flex; gap: 30px; justify-content: left; flex-wrap: wrap;">
+                        <a href="https://mirrors.almalinux.org">{{ i18n "Download ISOs from mirrors" }}</a>
+                        <a href="https://repo.almalinux.org/almalinux/9/cloud/x86_64/images/CHECKSUM">{{ i18n "Download CHECKSUM" }}</a>
+                      </div>                    
+                      <p>
+                        {{ i18n "More information about AlmaLinux OpenNebula images and verification guidelines are available on the " }}<a href="https://wiki.almalinux.org/cloud/OpenNebula.html">{{ i18n "AlmaLinux OpenNebula Wiki Page" }}</a>.
+                      </p>
 
                       <h2 style="margin-top: 60px;">Oracle Cloud Infrastructure</h2>
                       <p>{{ i18n "AlmaLinux offers images for Oracle Cloud Infrastructure across all OCI regions via the " }}<a href="https://cloudmarketplace.oracle.com/marketplace/en_US/homeLinkPage">{{ i18n "Oracle Cloud Marketplace" }}</a>. {{ i18n "Images are deployable for Regular, Shielded and ARM type instances via the Oracle Cloud Marketplace, Partner Image on Oracle Cloud Infrastructure Console and " }}<a href="https://docs.oracle.com/en-us/iaas/Content/API/Concepts/cliconcepts.htm">{{ i18n "OCI CLI" }}</a>.<br>
                         {{ i18n "The official AlmaLinux OS images are available on " }}<a href="https://cloudmarketplace.oracle.com/marketplace/en_US/partners/125035508">{{ i18n "Oracle Cloud Marketplace" }}</a> {{ i18n "at the links provided:" }}
                       </p>
                       <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
-                        <a href="https://cloudmarketplace.oracle.com/marketplace/en_US/listing/189119150"
+                        <a href="https://cloudmarketplace.oracle.com/marketplace/en_US/listing/127985411"
                           style="background-color: #f1f8ff; color: #051520; padding: 10px 20px; border-radius: 25px; font-weight: bold; text-decoration: none; display: inline-block; white-space: nowrap;"
                           onmouseover="this.style.backgroundColor='#9db4cc'"
                           onmouseout="this.style.backgroundColor='#f1f8ff'">
-                          Get Image
+                          Get AlmaLinux 9.6 Image
                         </a>
                       </div>
                       <p>
@@ -1832,7 +1862,7 @@
                   </div>
 
                   <div class="container-Container_Images" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
-                    <a class="anchor" id="Container_Images" style="position: relative; top: -116px;"></a>
+                    <a class="anchor" id="Container_Images6" style="position: relative; top: -116px;"></a>
                     <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Container Images</h2>
                     <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
                       <p>
@@ -1885,9 +1915,9 @@
                           </div>
                         </div>
                       </div>
-                      <h4 style="margin-bottom: 0px;">{{ i18n "AlmaLinux OS 10.0 UBI-alternatives:" }}</h4>
+                      <h4 style="margin-bottom: 0px;">{{ i18n "AlmaLinux OS 9.6 UBI-alternatives:" }}</h4>
                       <div class="container-AL" style="display: flex;">
-                          <div class="container-AlmaLinuxOS10" style="display: flex;">
+                          <div class="container-AlmaLinuxOS9" style="display: flex;">
                             <div class="container-itemsAL">
                               <div class="main-itemsTr">
                                 <b>{{ i18n "Image" }}</b>
@@ -1913,16 +1943,16 @@
                               </div>
                               <div class="tag-items">
                                 <div class="itemsTr">
-                                  <p><code style="color: #fff">almalinux/10-minimal</code></p>
+                                  <p><code style="color: #fff">almalinux/9-minimal</code></p>
                                 </div>
                                 <div class="itemsTr">
-                                  <p><code style="color: #fff">almalinux/10-base</code></p>
+                                  <p><code style="color: #fff">almalinux/9-base</code></p>
                                 </div>
                                 <div class="itemsTr">
-                                  <p><code style="color: #fff">almalinux/10-init</code></p>
+                                  <p><code style="color: #fff">almalinux/9-init</code></p>
                                 </div>
                                 <div class="itemsTr">
-                                  <p><code style="color: #fff">almalinux/10-micro</code></p>
+                                  <p><code style="color: #fff">almalinux/9-micro</code></p>
                                 </div>
                               </div>
                             </div>
@@ -1933,30 +1963,30 @@
                               <div class="link-items">
                                 <div class="itemsTr">
                                   <p>
-                                    <a href="https://quay.io/repository/almalinuxorg/10-minimal">quay.io/repository/almalinuxorg/10-minimal</a><br>
-                                    <a href="https://hub.docker.com/r/almalinux/10-minimal">hub.docker.com/r/almalinux/10-minimal</a><br>
-                                    <a href="https://github.com/orgs/AlmaLinux/packages/container/package/10-minimal">github.com/orgs/AlmaLinux/packages/container/package/10-minimal</a>
+                                    <a href="https://quay.io/repository/almalinuxorg/9-minimal">quay.io/repository/almalinuxorg/9-minimal</a><br>
+                                    <a href="https://hub.docker.com/r/almalinux/9-minimal">hub.docker.com/r/almalinux/9-minimal</a><br>
+                                    <a href="https://github.com/orgs/AlmaLinux/packages/container/package/9-minimal">github.com/orgs/AlmaLinux/packages/container/package/9-minimal</a>
                                   </p>
                                 </div>
                                 <div class="itemsTr">
                                   <p>
-                                    <a href="https://quay.io/repository/almalinuxorg/10-base">quay.io/repository/almalinuxorg/10-base</a><br>
-                                    <a href="https://hub.docker.com/r/almalinux/10-base">hub.docker.com/r/almalinux/10-base</a><br>
-                                    <a href="https://github.com/orgs/AlmaLinux/packages/container/package/10-base">github.com/orgs/AlmaLinux/packages/container/package/10-base</a>
+                                    <a href="https://quay.io/repository/almalinuxorg/9-base">quay.io/repository/almalinuxorg/9-base</a><br>
+                                    <a href="https://hub.docker.com/r/almalinux/9-base">hub.docker.com/r/almalinux/9-base</a><br>
+                                    <a href="https://github.com/orgs/AlmaLinux/packages/container/package/9-base">github.com/orgs/AlmaLinux/packages/container/package/9-base</a>
                                   </p>
                                 </div>
                                 <div class="itemsTr">
                                   <p>
-                                    <a href="https://quay.io/repository/almalinuxorg/10-init">quay.io/repository/almalinuxorg/10-init</a><br>
-                                    <a href="https://hub.docker.com/r/almalinux/10-init">hub.docker.com/r/almalinux/10-init</a><br>
-                                    <a href="https://github.com/orgs/AlmaLinux/packages/container/package/10-init">github.com/orgs/AlmaLinux/packages/container/package/10-init</a>
+                                    <a href="https://quay.io/repository/almalinuxorg/9-init">quay.io/repository/almalinuxorg/9-init</a><br>
+                                    <a href="https://hub.docker.com/r/almalinux/9-init">hub.docker.com/r/almalinux/9-init</a><br>
+                                    <a href="https://github.com/orgs/AlmaLinux/packages/container/package/9-init">github.com/orgs/AlmaLinux/packages/container/package/9-init</a>
                                   </p>
                                 </div>
                                 <div class="itemsTr">
                                   <p>
-                                    <a href="https://quay.io/repository/almalinuxorg/10-micro">quay.io/repository/almalinuxorg/10-micro</a><br>
-                                    <a href="https://hub.docker.com/r/almalinux/10-micro">hub.docker.com/r/almalinux/10-micro</a><br>
-                                    <a href="https://github.com/orgs/AlmaLinux/packages/container/package/10-micro">github.com/orgs/AlmaLinux/packages/container/package/10-micro</a>
+                                    <a href="https://quay.io/repository/almalinuxorg/9-micro">quay.io/repository/almalinuxorg/9-micro</a><br>
+                                    <a href="https://hub.docker.com/r/almalinux/9-micro">hub.docker.com/r/almalinux/9-micro</a><br>
+                                    <a href="https://github.com/orgs/AlmaLinux/packages/container/package/9-micro">github.com/orgs/AlmaLinux/packages/container/package/9-micro</a>
                                   </p>
                                 </div>
                               </div>
@@ -1966,12 +1996,60 @@
                     </div>
                   </div>
 
+                  <div class="container-Live_Media" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                    <a class="anchor" id="Live_Media6" style="position: relative; top: -116px;"></a>
+                    <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Live Media</h2>
+                    <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                      <p>
+                        {{ i18n "AlmaLinux builds Live Media images for GNOME, GNOME Mini, KDE, XFCE and MATE options." }}<br>
+                        {{ i18n "Supported AlmaLinux OS versions:" }}
+                      </p>
+                      <div class="AL" style="display: flex;">
+                        <div class="itemAl_01" style="width: 200px;">
+                          <a href="https://repo.almalinux.org/almalinux/9/live/x86_64/AlmaLinux-9.6-x86_64-Live-GNOME.iso"
+                            style="background-color: #f1f8ff; color: #051520; padding: 10px 20px; border-radius: 25px; font-weight: bold; text-decoration: none; display: inline-block; white-space: nowrap;"
+                            onmouseover="this.style.backgroundColor='#9db4cc'"
+                            onmouseout="this.style.backgroundColor='#f1f8ff'">
+                            GNOME
+                          </a>
+                          <a href="https://repo.almalinux.org/almalinux/9/live/x86_64/AlmaLinux-9.6-x86_64-Live-GNOME-Mini.iso"
+                            style="background-color: #f1f8ff; color: #051520; padding: 10px 20px; border-radius: 25px; font-weight: bold; text-decoration: none; display: inline-block; white-space: nowrap;"
+                            onmouseover="this.style.backgroundColor='#9db4cc'"
+                            onmouseout="this.style.backgroundColor='#f1f8ff'">
+                            GNOME Mini
+                          </a>
+                          <a href="https://repo.almalinux.org/almalinux/9/live/x86_64/AlmaLinux-9.6-x86_64-Live-KDE.iso"
+                            style="background-color: #f1f8ff; color: #051520; padding: 10px 20px; border-radius: 25px; font-weight: bold; text-decoration: none; display: inline-block; white-space: nowrap;"
+                            onmouseover="this.style.backgroundColor='#9db4cc'"
+                            onmouseout="this.style.backgroundColor='#f1f8ff'">
+                            KDE
+                          </a>
+                          <a href="https://repo.almalinux.org/almalinux/9/live/x86_64/AlmaLinux-9.6-x86_64-Live-XFCE.iso"
+                            style="background-color: #f1f8ff; color: #051520; padding: 10px 20px; border-radius: 25px; font-weight: bold; text-decoration: none; display: inline-block; white-space: nowrap;"
+                            onmouseover="this.style.backgroundColor='#9db4cc'"
+                            onmouseout="this.style.backgroundColor='#f1f8ff'">
+                            XFCE
+                          </a>
+                          <a href="https://repo.almalinux.org/almalinux/9/live/x86_64/AlmaLinux-9.6-x86_64-Live-MATE.iso"
+                            style="background-color: #f1f8ff; color: #051520; padding: 10px 20px; border-radius: 25px; font-weight: bold; text-decoration: none; display: inline-block; white-space: nowrap;"
+                            onmouseover="this.style.backgroundColor='#9db4cc'"
+                            onmouseout="this.style.backgroundColor='#f1f8ff'">
+                            MATE
+                          </a>
+                        </div>
+                      </div>
+                      <p style="margin-bottom: 0px;">
+                        {{ i18n "The guide on how to use Live Media images can be found on the " }}<a href="https://wiki.almalinux.org/LiveMedia.html">{{ i18n "AlmaLinux Live Media Wiki Page" }}</a>.
+                      </p>
+                    </div>
+                  </div>
+
                   <div class="container-Vagrant_Boxes" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
                     <a class="anchor" id="Vagrant_Boxes" style="position: relative; top: -116px;"></a>
                     <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Vagrant Boxes</h2>
                     <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
                       <p>
-                        {{ i18n "AlmaLinux provides official AlmaLinux OS 10.0 images for Vagrant:" }}
+                        {{ i18n "AlmaLinux provides official AlmaLinux OS 9.6 images for Vagrant:" }}
                       </p>
                       <ul>
                         <li>Libvirt</li>
@@ -1980,44 +2058,82 @@
                         <li>VMWare</li>
                       </ul>
                       <p style="margin-bottom: 0px;">
-                        {{ i18n "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: " }}<a href="https://portal.cloud.hashicorp.com/vagrant/discover/almalinux/10">portal.cloud.hashicorp.com/vagrant/discover/almalinux</a>.
+                        {{ i18n "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: " }}<a href="https://portal.cloud.hashicorp.com/vagrant/discover/almalinux/9">portal.cloud.hashicorp.com/vagrant/discover/almalinux</a>.
                       </p>
                     </div>
                   </div>
+
+                  <div class="container-Incus-LXC" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="Incus-LXC6" style="position: relative; top: -116px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">Incus and LXC</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <p>
+                      {{ i18n "AlmaLinux images are available for Incus and LXC." }}<br>
+                      {{ i18n "Supported AlmaLinux OS versions:" }} 
+                    </p>
+                    <div class="AL" style="display: flex;">
+                      <div class="itemAl_01" style="width: 200px;">
+                        <b><a href="https://images.linuxcontainers.org/images/almalinux/9/amd64/">AlmaLinux OS 9.6</a></b>
+                      </div>
+                    </div>
+                    <p style="margin-bottom: 0px;">
+                      {{ i18n "You can get official AlmaLinux OS images at the link provided: " }}<a href="https://images.linuxcontainers.org">images.linuxcontainers.org</a>.
+                    </p>  
+                  </div>
+                </div>
+
+                <div class="container-WSL" style="display: flex; flex-direction: column; padding: 40px 20px; background: #0e3b5c;">
+                  <a class="anchor" id="WSL6" style="position: relative; top: -116px;"></a>
+                  <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">WSL</h2>
+                  <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0px!important;">
+                    <p>
+                      {{ i18n "Windows Subsystem for Linux (WSL) is designed as an integration between Windows and Linux. You can run the AlmaLinux terminal environment on a Windows machine." }}<br>
+                      {{ i18n "Supported AlmaLinux OS versions:" }}
+                    </p>
+                    <div class="AL" style="display: flex;">
+                      <div class="itemAl_01" style="width: 200px;">
+                        <b><a href="https://apps.microsoft.com/store/detail/almalinux-9/9P5RWLM70SN9">AlmaLinux OS 9.5</a></b>
+                      </div>
+                    </div>
+                    <p style="margin-bottom: 0px;">
+                      {{ i18n "More details and guidance steps can be found on the " }} <a href="https://wiki.almalinux.org/documentation/wsl.html">{{ i18n "AlmaLinux WSL Wiki Page" }}</a>.
+                    </p>  
+                  </div>
+                </div>
               </div>
               <div class="tab-pane fade" id="aarch64-9" role="tabpanel" aria-labelledby="aarch64-9-tab">
                   <div class="container-all-options mb-3" style="display: flex; justify-content: space-between; padding: 0px 20px;">
-                    <a href="#ISO_Images">     
+                    <a href="#ISO_Images7">     
                       <img loading="lazy" class="al-index-download-icon img" src="/images/iso-icon-F.svg" alt="ISO Image">
                     </a>
-                    <a href="#Cloud_Images">
+                    <a href="#Cloud_Images7">
                       <img loading="lazy" class="al-index-download-icon img" src="/images/cloud-icon-F.svg" alt="Cloud Image">
                     </a>
-                    <a href="#Container_Images">
+                    <a href="#Container_Images7">
                       <img loading="lazy" class="al-index-download-icon img" src="/images/container-icon-F.svg" alt="Container Image">
                     </a>
-                    <a href="#Live_Media">
+                    <a href="#Live_Media7">
                       <img loading="lazy" class="al-index-download-icon img" src="/images/live-icon-F.svg" alt="Live Media Image">
                     </a>
-                    <a href="#Vagrant_Boxes">
+                    <a href="#Vagrant_Boxes7">
                       <img loading="lazy" class="al-index-download-icon img" src="/images/vagrant-icon-F1.svg" alt="Vagrant Image">
                     </a>
-                    <a href="#Incus-LXC">
+                    <a href="#Incus-LXC7">
                       <img loading="lazy" class="al-index-download-icon img" src="/images/Incus-and-LXC-icon-F.svg" alt="Incus and LXC Image">
                     </a>
-                    <a href="#WSL">
+                    <a href="#WSL7">
                       <img loading="lazy" class="al-index-download-icon img" src="/images/wsl-icon-F.svg" alt="WSL Image">
                     </a>  
                   </div>
 
                   <div class="container-ISO_Images" style="padding: 40px 20px; background: #0e3b5c; color: #fff;">
-                    <a class="anchor" id="ISO_Images" style="position: relative; top: -116px;"></a>
+                    <a class="anchor" id="ISO_Images7" style="position: relative; top: -116px;"></a>
                     <h2 class="pb-2 text-center border-bottom" style="border-bottom-color: #14598a!important;">ISO Images</h2>
                     <div class="al-article-content pb-3 al-wysiwyg" style="padding: 0!important;">
                       <div style="margin-top: 30px;">
                         <p><b>DVD</b> - {{ i18n "effortless installation with all packages included, no additional repositories required." }}</p>
                         <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
-                          <a href="https://repo.almalinux.org/almalinux/10/isos/x86_64/AlmaLinux-10.0-x86_64-dvd.iso"
+                          <a href="https://repo.almalinux.org/almalinux/9.6/isos/x86_64/AlmaLinux-9.6-x86_64-dvd.iso"
                             style="background-color: #f1f8ff; color: #051520; padding: 10px 20px; border-radius: 25px; font-weight: bold; text-decoration: none; display: inline-block; white-space: nowrap;"
                             onmouseover="this.style.backgroundColor='#9db4cc'"
                             onmouseout="this.style.backgroundColor='#f1f8ff'">
@@ -2027,7 +2143,7 @@
                             <img src="/images/alma-fingerprint-A.svg" alt="Fingerprint" style="width: 40px; height: 40px; flex-shrink: 0;" />
                             <div style="display: flex; flex-direction: column; font-family: monospace; font-size: 14px; user-select: text; line-height: 1.2;">
                               <span style="font-weight: bold;">SHA-256:</span>
-                              <span>6c443f462b3993d15192a7c43ba8dfa3f232514db47d38796dab007a7455ae1a</span>
+                              <span>db7b45e071b6319d43781eb8d9bec9b8d6b0ac41ad5e49db7fe113c76f0d2ca2</span>
                             </div>
                           </div>
                         </div>
@@ -2035,7 +2151,7 @@
                       <div style="margin-top: 30px;">
                         <p><b>Boot</b> - {{ i18n "a single network installation CD image that downloads packages over the Internet." }}</p>
                         <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
-                          <a href="https://repo.almalinux.org/almalinux/10/isos/x86_64/AlmaLinux-10.0-x86_64-boot.iso"
+                          <a href="https://repo.almalinux.org/almalinux/9.6/isos/x86_64/AlmaLinux-9.6-x86_64-boot.iso"
                             style="background-color: #f1f8ff; color: #051520; padding: 10px 20px; border-radius: 25px; font-weight: bold; text-decoration: none; display: inline-block; white-space: nowrap;"
                             onmouseover="this.style.backgroundColor='#9db4cc'"
                             onmouseout="this.style.backgroundColor='#f1f8ff'">
@@ -2045,7 +2161,7 @@
                             <img src="/images/alma-fingerprint-A.svg" alt="Fingerprint" style="width: 40px; height: 40px; flex-shrink: 0;" />
                             <div style="display: flex; flex-direction: column; font-family: monospace; font-size: 14px; user-select: text; line-height: 1.2;">
                               <span style="font-weight: bold;">SHA-256:</span>
-                              <span>a1549729bfb66a28e3546c953033c9928eae7280917bb1c490983dba3bb9941c</span>
+                              <span>113521ec7f28aa4ab71ba4e5896719da69a0cc46cf341c4ebbd215877214f661</span>
                             </div>
                           </div>
                         </div>
@@ -2053,7 +2169,7 @@
                       <div style="margin-top: 30px;">
                         <p><b>Minimal</b> - {{ i18n "a minimal self-containing DVD image that makes possible offline installation." }}</p>
                         <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
-                          <a href="https://repo.almalinux.org/almalinux/10/isos/x86_64/AlmaLinux-10.0-x86_64-minimal.iso"
+                          <a href="https://repo.almalinux.org/almalinux/9.6/isos/x86_64/AlmaLinux-9.6-x86_64-minimal.iso"
                             style="background-color: #f1f8ff; color: #051520; padding: 10px 20px; border-radius: 25px; font-weight: bold; text-decoration: none; display: inline-block; white-space: nowrap;"
                             onmouseover="this.style.backgroundColor='#9db4cc'"
                             onmouseout="this.style.backgroundColor='#f1f8ff'">
@@ -2063,21 +2179,15 @@
                             <img src="/images/alma-fingerprint-A.svg" alt="Fingerprint" style="width: 40px; height: 40px; flex-shrink: 0;" />
                             <div style="display: flex; flex-direction: column; font-family: monospace; font-size: 14px; user-select: text; line-height: 1.2;">
                               <span style="font-weight: bold;">SHA-256:</span>
-                              <span>e73ccc95ff21a43ab23eebe227257fa34df091570b2bcf8a23f918bf9b662fc3</span>
+                              <span>27a346c74d8755516a4ad2057ea29c2450454f1a928628734f26e12b0b8120d7</span>
                             </div>
                           </div>
                         </div>
                       </div>
                       <div style="margin-top: 40px; display: flex; gap: 30px; justify-content: left; flex-wrap: wrap;">
-                        <a href="https://mirrors.almalinux.org/isos/x86_64/10.0.html" style="color: #aaddff; font-weight: bold;">
-                          {{ i18n "Download ISOs from mirrors" }}
-                        </a>
-                        <a href="https://repo.almalinux.org/almalinux/10/isos/x86_64/AlmaLinux-10.0-x86_64.torrent">
-                          {{ i18n "Download .torrent file" }}
-                        </a>
-                        <a href="https://repo.almalinux.org/almalinux/10.0/isos/x86_64/CHECKSUM" style="color: #f1f8ff; font-weight: bold;">
-                          {{ i18n "Download CHECKSUM" }}
-                        </a>
+                        <b><a href="https://mirrors.almalinux.org/isos/x86_64/9.6.html">{{ i18n "Download ISOs from mirrors" }}</a></b>
+                        <b><a href="https://repo.almalinux.org/almalinux/9.6/isos/x86_64/AlmaLinux-9.6-x86_64.torrent">{{ i18n "Download .torrent file" }}</a></b>
+                        <b><a href="https://repo.almalinux.org/almalinux/9.6/isos/x86_64/CHECKSUM">{{ i18n "Download CHECKSUM" }}</a></b>
                       </div>
                     </div>
                   </div>
