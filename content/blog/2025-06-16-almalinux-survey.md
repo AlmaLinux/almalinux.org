@@ -5,7 +5,7 @@ author:
  name: "benny Vasquez"
  bio: "Chair, board of directors"
  image: /users/benny.jpeg
-date: '2025-06-13'
+date: '2025-06-16'
 images:
   - /blog-images/2025/almalinux_survey.png
 post:
