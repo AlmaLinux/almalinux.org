@@ -5,7 +5,7 @@ author:
  name: "Yuriy Kohut"
  bio: "ELevate Project Engineer"
  image: /users/yuriy-kohut.jpg
-date: 2025-06-16
+date: '2025-06-16'
 images:
   - /blog-images/2025/2025-06-16-elevate-to-el-10.png
 post: 
