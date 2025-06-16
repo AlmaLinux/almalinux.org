@@ -15,9 +15,9 @@ post:
 
 Open Source is incredible and powerful - anyone can just download your project and use it anywhere for any reason - without having to set up a business relationship with you!
 
-But that also means that anyone can use your project anywhere, for any reason, and you won't know anything about it until they find you at a conference to tell you about it, or send you an email...
+But, without telemetry, that also means that anyone can use your project anywhere, for any reason, and you won't know anything about it until they send you an email, or find you at a conference to tell you about it...
 
-To help with that, we're asking our users to fill out this survey. It shouldn't take anyone more than 5 minutes, and will help drive the AlmaLinux project for a long time. 
+To help AlmaLinux be able to make some data-based decisions without implementing telemetry, we're asking our users to [fill out this survey](https://survey.survicate.com/aa905da173921b82/?p=anonymous). It shouldn't take anyone more than 5 minutes, and will help drive the AlmaLinux project for a long time. 
 
 ## 5 minutes to help AlmaLinux
 
@@ -25,7 +25,7 @@ Help us understand how you use AlmaLinux and what support you need. Completing t
 
 -   Learn how AlmaLinux is being used right now
 -   Focus on what our users need
--   Improve docs & support
+-   Improve documentation & support
 
 Your feedback shapes the future: <https://survey.survicate.com/aa905da173921b82/?p=anonymous>
 
