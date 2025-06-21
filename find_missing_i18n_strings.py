@@ -20,7 +20,7 @@ for folder, dirs, files in os.walk(rootdir):
             fullpath = os.path.join(folder, file)
             with open(fullpath, 'r', encoding='utf-8') as f:
                 for line in f:
-                    m = re.findall('{{\s+?i18n\s+?(?:"|`)(.*?)(?:"|`)\s+?}}', line, re.DOTALL)
+                    m = re.findall(r'{{\s+?i18n\s+?(?:"|`)(.*?)(?:"|`)\s+?}}', line, re.DOTALL)
                     if m:
                         for string in m:
                             if string not in en:
