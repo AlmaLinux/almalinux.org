@@ -523,10 +523,10 @@
    "Motherboard": "Motherboard",
    "tests cover benchmarking of OS features. The result of benchmarking can be found in the PDF linked above.": "tests cover benchmarking of OS features. The result of benchmarking can be found in the PDF linked above.",
    "The conducted tests ensure that AMD EPYC™ 4004 series CPUs and, generally for any servers based on EPYC processors, AlmaLinux OS works properly guaranteeing stability, security, and high performance.": "The conducted tests ensure that AMD EPYC™ 4004 series CPUs and, generally for any servers based on EPYC processors, AlmaLinux OS works properly guaranteeing stability, security, and high performance.",
-   "ELevate enables upgrades between major versions of RHEL® derivatives. Upgrade in-place from CentOS 6.x through to 8.x version of the RHEL derivative of your choice, and then upgrade from 8.x to 9.x within the same derivative.": "ELevate enables upgrades between major versions of RHEL® derivatives. Upgrade in-place from CentOS 6.x through to 8.x version of the RHEL derivative of your choice, and then upgrade from 8.x to 9.x within the same derivative.",
+   "ELevate enables upgrades between major versions of RHEL® derivatives. Upgrade in-place from CentOS 6.x through to 8.x version of the RHEL derivative of your choice, and then upgrade from 8.x to 9.x and from 9.x to 10.x within the same derivative.": "ELevate enables upgrades between major versions of RHEL® derivatives. Upgrade in-place from CentOS 6.x through to 8.x version of the RHEL derivative of your choice, and then upgrade from 8.x to 9.x and from 9.x to 10.x within the same derivative.",
    "Discuss and contribute": "Discuss and contribute",
    "Fixing Major Version Upgrades": "Fixing Major Version Upgrades",
-   "With ELevate you can easily upgrade in-place from CentOS 6.x or 7.x to 8.x of the Enterprise Linux of your choice, or upgrade from 8.x to 9.x within the same OS. Used all over the world to upgrade more than 500,00 devices, ELevate is your answer to the headache of upgrading your operating system in the Enterprise Linux ecosystem. ": "With ELevate you can easily upgrade in-place from CentOS 6.x or 7.x to 8.x of the Enterprise Linux of your choice, or upgrade from 8.x to 9.x within the same OS. Used all over the world to upgrade more than 500,00 devices, ELevate is your answer to the headache of upgrading your operating system in the Enterprise Linux ecosystem. ",
+   "With ELevate you can easily upgrade in-place from CentOS 6.x or 7.x to 8.x of the Enterprise Linux of your choice, or upgrade from 8.x to 9.x and from 9.x to 10.x within the same OS. Used all over the world to upgrade more than 500,00 devices, ELevate is your answer to the headache of upgrading your operating system in the Enterprise Linux ecosystem. ": "With ELevate you can easily upgrade in-place from CentOS 6.x or 7.x to 8.x of the Enterprise Linux of your choice, or upgrade from 8.x to 9.x and from 9.x to 10.x within the same OS. Used all over the world to upgrade more than 500,00 devices, ELevate is your answer to the headache of upgrading your operating system in the Enterprise Linux ecosystem. ",
    "Preserve your applications, your data, and your sanity. Run the most recent version of the OS you and software you need. Run a modern and secure operating system, without having to reconfigure or rebuild the software you need.": "Preserve your applications, your data, and your sanity. Run the most recent version of the OS you and software you need. Run a modern and secure operating system, without having to reconfigure or rebuild the software you need.",
    "This looks awesome! How do I get involved?": "This looks awesome! How do I get involved?",
    "You can find the LEAPP code ": "You can find the LEAPP code ",
@@ -537,7 +537,7 @@
    "the open source LEAPP project": "the open source LEAPP project",
    "and a data library called ": "and a data library called ",
    "leapp-data": "leapp-data",
-   "These together allow users to upgrade in-place from an unsupported operating system to a modern operating system, and then from 8 to 9 of that operating system.": "These together allow users to upgrade in-place from an unsupported operating system to a modern operating system, and then from 8 to 9 of that operating system.",
+   "These together allow users to upgrade in-place from an unsupported operating system to a modern operating system, and then from 8 to 9 and 9 to 10 of that operating system.": "These together allow users to upgrade in-place from an unsupported operating system to a modern operating system, and then from 8 to 9 and 9 to 10 of that operating system.",
    "Who is ELevate for?": "Who is ELevate for?",
    "Is ELevate ready for production?": "Is ELevate ready for production?",
    "Will the upgrade be \"in-place\"? Will it require downtime?": "Will the upgrade be \"in-place\"? Will it require downtime?",
@@ -855,5 +855,6 @@
    "Join us August 9th for ": "Join us August 9th for ",
    "to AlmaLinux 9.6": "to AlmaLinux 9.6",
    "Say Hello": "Say Hello",
-   "to AlmaLinux 10.0!": "to AlmaLinux 10.0!"
+   "to AlmaLinux 10.0!": "to AlmaLinux 10.0!",
+   "Upgrade from 9.x to 10.x within the same distribution": "Upgrade from 9.x to 10.x within the same distribution"
 }
