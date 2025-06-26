@@ -38,8 +38,12 @@ Run the command in the terminal and you are good to go!
 
 If the RPM you're using has the `.alma_altarch` suffix and you face a bug, please, report it on the [AlmaLinux Bug Tracker](https://bugs.almalinux.org/). However, if the bug is reproducible on a non-_v2 system, using upstream EPEL, then the bug can be [reported to the EPEL packager](https://fedoraproject.org/wiki/EPEL/FAQ#Where_can_I_find_help_or_report_issues?) like normal. 
 
+## ELevate support 
+
+Supporting version upgrades via ELevate for this path is quite complex and requires a lot of extra work. If you have any interst in seeing this feature and contributing to its support, please join us in ~migration on the [AlmaLinux Community Chat](https://chat.almalinux.org)!
+
 ## Contribute and Get Help
 
 Let us know how EPEL support for x86_64_v2 works for you! Join us on the [AlmaLinux Community Chat](https://chat.almalinux.org), [Reddit](https://reddit.com/r/almalinux), in the [Fediverse](https://fosstodon.org/@almalinux), or on [X](https://x.com/almalinux).
 
-If you'd like to contribute to AlmaLinux and packaging, or have a question to discuss, check the [Core SIG](https://wiki.almalinux.org/sigs/Core.html).
+If you'd like to contribute to the AlmaLinux project around packaging, or have a question to discuss, check the [Core SIG](https://wiki.almalinux.org/sigs/Core.html).
