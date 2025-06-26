@@ -5,7 +5,7 @@ author:
  name: "Eduard Abdullin"
  bio: "The Release and Automation Engineer."
  image: /users/eduard-abdullin.jpg
-date: '2025-06-10'
+date: '2025-06-26'
 images:
   - /blog-images/2025/2025-06-10-epel-v2-for-almalinux-10-available.png
 post:
