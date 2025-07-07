@@ -1,0 +1,45 @@
+---
+title: "ELevate to EL 10!"
+type: blog
+author: 
+ name: "Yuriy Kohut"
+ bio: "ELevate Project Engineer"
+ image: /users/yuriy-kohut.jpg
+date: '2025-07-07'
+images:
+  - /blog-images/2025/2025-06-16-elevate-to-el-10.png
+post: 
+    title: "ELevate to AlmaLinux OS 10, AlmaLinux OS Kitten 10, and CentOS Stream 10!"
+    image: /blog-images/2025/2025-06-16-elevate-to-el-10.png
+---
+
+Hello everyone! We are excited to announce the availability of new ELevate paths:
+* AlmaLinux OS 9 to AlmaLinux OS 10.0.
+* AlmaLinux OS 9 to AlmaLinux OS Kitten 10.
+* CentOS Stream 9 to CentOS Stream 10.
+
+### 3rd Party Repositories Support 
+
+The new upgrade paths include the following 3rd-party repository support: 
+* EPEL - available for upgrades to AlmaLinux OS only. Note, that the support works only for those packages from EL 9 that are currently available for EL 10. Unavailable packages from EL 9 will remain on the system after the upgrade.
+* Docker CE
+* PostgreSQL
+
+If there are additional 3rd-party repositories you’d like to see supported, it is easy for you to help us! Take a look at the [ELevate Contribute Guide](https://wiki.almalinux.org/elevate/Contribution-guide.html).
+
+### Get Started
+
+The updated instructions can be found in the wiki:
+
+* [ELevate Quickstart Guide](https://wiki.almalinux.org/elevate/ELevate-quickstart-guide.html)
+* [ELevate from CentOS 7 to AlmaLinux 10](https://wiki.almalinux.org/elevate/ELevating-CentOS7-to-AlmaLinux-10.html)
+
+### Contribute and Get Help
+
+We thank you for your continued support and contributions to the ELevate Project and AlmaLinux OS. 
+
+Please, report any bugs you may see to the [ELevate leapp repository](https://github.com/AlmaLinux/leapp-repository).
+
+Do you have any feedback, questions, or do you want to join the discussion? Join us in the ~migration channel on the [AlmaLinux Community Chat](https://chat.almalinux.org/almalinux/channels/migration).
+
+**Happy ELevating!**
