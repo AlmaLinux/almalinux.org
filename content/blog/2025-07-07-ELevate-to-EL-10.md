@@ -5,11 +5,11 @@ author:
  name: "Yuriy Kohut"
  bio: "ELevate Project Engineer"
  image: /users/yuriy-kohut.jpg
-date: '2025-06-16'
+date: '2025-07-07'
 images:
   - /blog-images/2025/2025-06-16-elevate-to-el-10.png
 post: 
-    title: "ELevate to AlmaLinux 10, AlmaLinux Kitten 10, and CentOS Stream 10!"
+    title: "ELevate to AlmaLinux OS 10, AlmaLinux OS Kitten 10, and CentOS Stream 10!"
     image: /blog-images/2025/2025-06-16-elevate-to-el-10.png
 ---
 
@@ -20,12 +20,12 @@ Hello everyone! We are excited to announce the availability of new ELevate paths
 
 ### 3rd Party Repositories Support 
 
-The new upgrades include the following 3rd parties repositories support: 
+The new upgrade paths include the following 3rd-party repository support: 
 * EPEL - available for upgrades to AlmaLinux OS only. Note, that the support works only for those packages from EL 9 that are currently available for EL 10. Unavailable packages from EL 9 will remain on the system after the upgrade.
 * Docker CE
 * PostgreSQL
 
-If there are additional third-party repositories you’d like to see supported, we welcome community contributions - [ELevate Contribute Guide](https://wiki.almalinux.org/elevate/Contribution-guide.html).
+If there are additional 3rd-party repositories you’d like to see supported, it is easy for you to help us! Take a look at the [ELevate Contribute Guide](https://wiki.almalinux.org/elevate/Contribution-guide.html).
 
 ### Get Started
 
@@ -40,6 +40,6 @@ We thank you for your continued support and contributions to the ELevate Project
 
 Please, report any bugs you may see to the [ELevate leapp repository](https://github.com/AlmaLinux/leapp-repository).
 
-Have feedback, questions, or just want to join the discussion? Join us in the ~migration channel on the [AlmaLinux Community Chat](https://chat.almalinux.org/almalinux/channels/migration).
+Do you have any feedback, questions, or do you want to join the discussion? Join us in the ~migration channel on the [AlmaLinux Community Chat](https://chat.almalinux.org/almalinux/channels/migration).
 
 **Happy ELevating!**
