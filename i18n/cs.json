@@ -369,7 +369,7 @@
     "ELevate.": "ELevate.",
     "20+ Sponsors": "20+ Sponzorů",
     "AlmaLinux OS Foundation signs all of its software packages using a GPG signature key, which is verified by default when installing packages via dnf or graphical update tools. If a package is not signed or has an invalid signature, dnf or graphical update tools will warn the user and will refuse to install it.": "Almalinux OS Foundation podepisuje všechny své softwarové balíčky pomocí podpisového klíče GPG, který je ve výchozím nastavení ověřen při instalaci balíčků pomocí dnf nebo grafických aktualizačních nástrojů. Pokud balíček není podepsán nebo má neplatný podpis, dnf nebo grafické aktualizační nástroje upozorní uživatele a odmítnou jej nainstalovat.",
-    "More details can be found on the": "Další podrobnosti naleznete na",
+    "More details such as default login can be found on the": "Další podrobnosti, jako je výchozí přihlášení, naleznete na stránce",
     "To avoid any surprises, we highly recommend that you test upgrades scenarios in a virtual machine or sandbox before running a upgrades in production.": "Abyste se vyhnuli jakýmkoli překvapením, důrazně doporučujeme před spuštěním upgradů ve výrobě testovat scénáře upgradů ve virtuálním počítači nebo sandboxu.",
     "AlmaLinux provides official OCI, Docker and four fully compatible alternatives for the Red Hat Universal Base Images (UBI).": "AlmaLinux poskytuje oficiální OCI, Docker a čtyři plně kompatibilní alternativy pro Red Hat Universal Base Images (UBI).",
     "AlmaLinux OS also has the availability of the CIS Benchmark.": "AlmaLinux OS má také k dispozici CIS Benchmark.",

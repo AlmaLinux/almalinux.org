@@ -588,7 +588,7 @@
     "Image": "Image",
     "Windows Subsystem for Linux (WSL) is designed as an integration between Windows and Linux. You can run the AlmaLinux terminal environment on a Windows machine.": "Le Sous-système Windows pour Linux (WSL) est conçu pour offrir une intégration entre Windows et Linux. Vous pouvez exécuter l'environnement terminalsur une machine Windows.",
     "More details and guidance steps can be found on the ": "Plus de détails et d'étapes guidées peuvent être trouvées sur la ",
-    "More details can be found on the": "Plus de détails disponibles sur la",
+    "More details such as default login can be found on the": "Plus de détails tels que la connexion par défaut peuvent être trouvés sur le",
     "AlmaLinux provides official AlmaLinux OS 9 images for Vagrant:": "AlmaLinux fournit des images officielles AlmaLinux OS 9 pour Vagrant :",
     "AlmaLinux OS has implemented SBOM into AlmaLinux Build System to make the build process more secure and possible to trace.": "AlmaLinux OS a intégré la SBOM (Software Bill of Materials) dans son système de compilation afin de rendre le processus de construction plus sécurisé et traçable.",
     "AlmaLinux OS Foundation publishes Errata to help users to determine what updates such as security issues and fixed bugs are available and their importance based on analysis.": "La Fondation AlmaLinux OS publie des errata pour aider les utilisateurs à identifier les mises à jour disponibles, telles que les correctifs de sécurité et les bogues résolus, et à évaluer leur importance sur la base d'analyses approfondies.",

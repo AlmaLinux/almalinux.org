@@ -446,7 +446,7 @@
     "Windows Subsystem for Linux (WSL) is designed as an integration between Windows and Linux. You can run the AlmaLinux terminal environment on a Windows machine.": "Windows Subsystem para Linux (WSL) é projetado como uma integração entre Windows e Linux. Você pode executar o ambiente do terminal AlmaLinux em um sistema Windows.",
     "More details and guidance steps can be found on the ": "Mais detalhes e guias podem ser encontrados no ",
     "You can get official AlmaLinux OS images at the link provided: ": "Você pode obter as imagens oficiais AlmaLinux OS no link fornecido: ",
-    "More details can be found on the": "Mais detalhes podem ser encontrados no",
+    "More details such as default login can be found on the": "Mais detalhes, como o login padrão, podem ser encontrados no",
     "AlmaLinux WSL Wiki Page": "Página Wiki AlmaLinux WSL",
     "AlmaLinux builds standard Raspberry Pi images and images with GNOME desktop environment.": "O AlmaLinux cria imagens padrão do Raspberry Pi e imagens com o ambiente de desktop GNOME.",
     "AlmaLinux Raspberry Pi Wiki Page": "Página Wiki AlmaLinux Raspberry Pi",
