@@ -11,22 +11,6 @@
   color: #f1f8ff;
   }
 
-.tab-content a {
-  color: #f1f8ff;
-  } 
-
-.itemAl_01 a {
-  color: #f1f8ff;
-  }
-
-.items__01 a {
-  color: #f1f8ff;
-  }
-
-.itemAl_02 a {
-  color: #f1f8ff;
-  }
-
 .Photo__Lock, .al-index-download-icon{
   width: 40px;
   height: 40px;
@@ -1208,4 +1192,10 @@ font-weight: 700;
 	padding:0;
 	margin:0 0 0 1rem;
 	list-style-type: none;
+}
+
+/* Download page */
+
+.gap-30 {
+  gap: 30px;
 }
