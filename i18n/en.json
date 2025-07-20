@@ -866,5 +866,10 @@
    "AlmaLinux offers AlmaLinux OS 8.10 images for Azure across all Azure regions via the ": "AlmaLinux offers AlmaLinux OS 8.10 images for Azure across all Azure regions via the ",
    "AlmaLinux OS 8.10 UBI-alternatives:": "AlmaLinux OS 8.10 UBI-alternatives:",
    "Download ISO": "Download ISO",
-   "Get AlmaLinux": "Get AlmaLinux"
+   "Download 10.0 ISO": "Download 10.0 ISO",
+   "Download 9.6 ISO": "Download 9.6 ISO",
+   "Download 8.10 ISO": "Download 8.10 ISO",
+   "Get AlmaLinux 10.0": "Get AlmaLinux 10.0",
+   "Get AlmaLinux 9.6": "Get AlmaLinux 9.6",
+   "Get AlmaLinux 8.10": "Get AlmaLinux 8.10"
 }
