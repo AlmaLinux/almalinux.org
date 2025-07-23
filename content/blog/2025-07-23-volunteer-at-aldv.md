@@ -5,7 +5,7 @@ author:
  name: "Tristan Théroux"
  bio: "IT Infrastructure & Security Director at SHED, and AlmaLinux Volunteer"
  image: /users/tristan.jpeg
-date: '2025-07-22'
+date: '2025-07-23'
 images:
  - /blog-images/2025/aldv_volunteers.png
 post:
