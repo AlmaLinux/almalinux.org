@@ -28,6 +28,8 @@ When AlmaLinux started just 5 years ago, this wouldn't have been possible. With 
 
 Getting started is easy! You just install the release package and then the modules and you're all set.
 
+_Full documentation is available at https://wiki.almalinux.org/documentation/nvidia.html with a quick getting started excerpt below._
+
 ### Installing NVIDIA Drivers for AlmaLinux OS 9, 10, and Kitten 10
 
 First, install the package holding the NVIDIA driver and repository configurations:
