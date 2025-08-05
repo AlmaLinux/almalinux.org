@@ -5,7 +5,7 @@ author:
  name: "Neal Gompa and Jonathan Wright"
  bio: ""
  image: /users/nealandJonathan.png
-date: '2025-08-06'
+date: '2025-08-05'
 images:
   - /blog-images/2025/nvidia_support_announcement.png
 post:
