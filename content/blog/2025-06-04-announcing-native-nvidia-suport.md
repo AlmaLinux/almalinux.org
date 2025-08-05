@@ -22,7 +22,7 @@ AlmaLinux OS 9 and 10 now ship with packages enabling native NVIDIA driver suppo
 
 ## NVIDIA's shift to open source 
 
-When AlmaLinux started just 5 years ago, this wouldn't have been possible. With NVIDIA's increasingly collaborative approach to Linux adoption and open source in general, $time NVIDIA released an open source version of their graphics drivers.  This open source version is slowly becoming the flagship driver, with new products being added exclusively to it. With the help of some incredible people at NVIDIA and the AlmaLinux community, we were able to do something that has yet to be done in the EL ecosystem - ship secure-boot signed, open source, NVIDIA kernel modules.
+When AlmaLinux started just 5 years ago, this wouldn't have been possible. With NVIDIA's open source version of their graphics drivers things have changed.  This open source version is slowly becoming the flagship driver, with new products being added exclusively to it. With the help of some incredible people in the open source ecosystem and the AlmaLinux community, we were able to do something that has yet to be done in the EL ecosystem - ship secure-boot signed, open source, NVIDIA kernel modules.
 
 ## How to take advantage of this update
 
