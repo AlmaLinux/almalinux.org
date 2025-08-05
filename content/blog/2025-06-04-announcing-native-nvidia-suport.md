@@ -38,7 +38,7 @@ dnf install almalinux-release-nvidia-driver -y
 
 Next, install the driver package:
 ```bash
-dnf install nvidia-open-kmod`
+dnf install nvidia-open-kmod nvidia-driver
 ```
 
 It’s recommended to reboot your system now, which will load the driver automatically on the next boot.  Alternatively, if you’re booted into the latest kernel, you can load the kernel module with the `modprobe` utility
