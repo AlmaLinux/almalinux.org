@@ -81,4 +81,4 @@ Tue May 27 21:33:53 2025
 ```
 
 If you also want the CUDA stack you can get that as follows:
-< details on various cuda packages and what they do >
+`dnf install cuda`
