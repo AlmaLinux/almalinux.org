@@ -35,7 +35,7 @@ _Full documentation is available at https://wiki.almalinux.org/documentation/nvi
 First, install the package holding the NVIDIA driver and repository configurations:
 
 ```bash
-dnf install almalinux-release-nvidia-driver -y
+dnf install almalinux-release-nvidia-driver
 ```
 
 Next, install the driver package:
@@ -52,7 +52,7 @@ modprobe nvidia_drm
 The easiest way to confirm functionality is with the `nvidia-smi` utility.  This is provided by the `nvidia-cuda-driver` package.
 
 ```bash
-dnf install nvidia-cuda-driver -y
+dnf install nvidia-cuda-driver
 nvidia-smi
 ```
 
