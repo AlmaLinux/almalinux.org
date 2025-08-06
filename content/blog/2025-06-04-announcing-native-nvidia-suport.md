@@ -18,7 +18,7 @@ At long last, users of NVIDIA graphics cards can enjoy a drastically improved us
 
 ## AlmaLinux's native NVIDIA support
 
-AlmaLinux OS 9 and 10 now ship with packages enabling native NVIDIA driver support, including CUDA and secure boot. Thanks to ALESCo, NVIDIA, and this approved [RFC](https://github.com/AlmaLinux/ALESCo/blob/master/rfcs/0004-build-and-ship-nvidia-drivers.md), AlmaLinux 9 and 10 solves that for NVIDIA users by shipping NVIDIA's open source graphics driver as a kernel module, along with a repository config for many of the common userspace and CUDA components. With AlmaLinux 9 and 10 and the new NVIDIA packages, a few `dnf` commands are all that stand between users and a fully-integrated NVIDIA experience.
+AlmaLinux OS 9 and 10 now ship with packages enabling native NVIDIA driver support, including CUDA and Secure Boot. Thanks to ALESCo, NVIDIA, and this approved [RFC](https://github.com/AlmaLinux/ALESCo/blob/master/rfcs/0004-build-and-ship-nvidia-drivers.md), AlmaLinux 9 and 10 solves that for NVIDIA users by shipping NVIDIA's open source graphics driver as a kernel module, along with a repository config for many of the common userspace and CUDA components. With AlmaLinux 9 and 10 and the new NVIDIA packages, a few `dnf` commands are all that stand between users and a fully-integrated NVIDIA experience.
 
 ## NVIDIA's shift to open source 
 
