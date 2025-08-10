@@ -47,10 +47,10 @@ It’s recommended to reboot your system now, which will load the driver automat
 modprobe nvidia_drm
 ```
 
-The easiest way to confirm functionality is with the `nvidia-smi` utility.  This is provided by the `nvidia-cuda-driver` package.
+The easiest way to confirm functionality is with the `nvidia-smi` utility.  This is provided by the `nvidia-driver-cuda` package.
 
 ```bash
-dnf install nvidia-cuda-driver
+dnf install nvidia-driver-cuda
 nvidia-smi
 ```
 
