@@ -47,7 +47,7 @@ Board members can anticipate between 2 and 10 hours of time commitment every mon
 
 The foundation board is responsible for the financial stability of the project, and its overall governance. We do not make the technical decisions (that's left to [ALESCo](https://almalinux.org/alesco/) and the [SIG](https://wiki.almalinux.org/sigs/)s), but we often provide our input into them. We get monthly updates from the SIGs about activity, and talk to ALESCo whenever we need to. 
 
-## Nominations are open until August 30th!
+## Nominations are open until August 30th! Join 
 
 This is the last week to get nominated to the board. While we have a number of people nominated, we still want to see you! In order to be nominated, you must:
 
@@ -55,5 +55,9 @@ This is the last week to get nominated to the board. While we have a number of p
 -   Be nominated by an AlmaLinux OS Foundation member in good standing
 
 To be nominated, you just need a current member of the foundation to send an email to the election committee nominating you! You can find the details all laid out on the wiki: [Election 2025](https://wiki.almalinux.org/Election2025.html)
+
+## Last chance to have a voice in this year's election
+
+Elections will be held from August 31, 2025 through September 14, 2025. Foundation members will be sent the directions to vote directly. If you want to be able to vote, this is your last week to join as well! The membership committee will meet this Friday - so apply to join by August 28th! https://almalinux.org/members/
 
 If this isn't the right way for you to give back right now, I sincerely hope you will still join us at [chat.almalinux.org](http://chat.almalinux.org) and get involved by answering questions or helping out in one of the SIGs. There's a lot going on, and we can't wait to see you!
