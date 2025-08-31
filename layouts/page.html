@@ -1,17 +1,18 @@
-{{ define "main"}}
-<section class="al-page-page" dir="">
+{{ define "main" }}
+  <section class="al-page-page" dir="">
     <div class="container py-5">
-        <h1 class="al-section-title mb-4"></h1>
-        <article>
-            <div class="al-page-content pb-5 al-wysiwyg">
-            </div>
-            <div class="al-page-date d-flex align-items-center"
-                 title=""
-                 dir="{% text_direction CURRENT_LANG %}">
-                <i class="bi bi-calendar pe-1"></i>
-                <span></span>
-            </div>
-        </article>
+      <h1 class="al-section-title mb-4"></h1>
+      <article>
+        <div class="al-page-content pb-5 al-wysiwyg"></div>
+        <div
+          class="al-page-date d-flex align-items-center"
+          title=""
+          dir="{% text_direction CURRENT_LANG %}"
+        >
+          <i class="bi bi-calendar pe-1"></i>
+          <span></span>
+        </div>
+      </article>
     </div>
-</section>
+  </section>
 {{ end }}

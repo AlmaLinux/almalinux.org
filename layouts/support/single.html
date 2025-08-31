@@ -1,185 +1,259 @@
 {{ define "main" }}
-<style>
-  img {
-    max-width: 100%;
-  }
-  #hc-hero {
-    background: #0e3b5c;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-  #hc-hero img {
-    border-radius: 1rem;
-  }
-  .al-get-sup-d-item p {
-    line-height: 24px;
-  }
-  .al-get-sup-d-item.head {
-    background: #0a304b;
-  }
-  .bg-grey {
-    background: #f0efee !important;
-  }
-  .bg-dark-grey {
-    background: #e5e4e2 !important;
-  }
-  .al-get-sup-d-item.no-padding ul {
-    grid-template-columns: repeat(2, 1fr);
-    display: grid;
-  }
-  .bg-light-green {
-    background: #dfffe8 !important;
-  }
-  .al-page-index.al-get-sup-wrap {
-    padding-top: 20px;
-    padding-bottom: 50px;
-  }
-</style>
-<!-- HERO -->
-<section id="hc-hero">
-  <div class="container px-0 al-py-lg">  
-    <div class="row">
-      <div class="col-lg">
-        <h1 class="display-5 fw-bold">{{ i18n "Get Support" }}</h1>
-        <p>{{ i18n "AlmaLinux is a community-driven, open-source operating system built to provide a reliable and stable platform for enterprises and developers alike. Whether you’re running mission-critical applications or experimenting with development environments, having access to quality support is crucial for success." }}</p>
-        <p>{{ i18n "Fortunately, all AlmaLinux users have access to a wealth of options when it comes to community-powered support resources, and have options for incredible third-party commercial support." }}</p>
-      </div>
-      <div class="col-lg">
-        <img src="/support_page/support_page_header.png">
-      </div>
-    </div>
-  </div>
-</section>
-<!-- start page content -->
-<div class="container">
-  <section class="al-page-index al-get-sup-wrap">
-    <div class="al-index-security-measures-container">
-      <div class="container al-py-lg">
-        <!-- Get support page inner start-->
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="al-get-sup-detail border border-white left">
-              <div class="al-get-sup-d-item p-4 border-bottom border-white head">
-				<h4 class="fw-bold mb-3"><i class="bi bi-people-fill al-index-community-icon"></i> {{ i18n "Community Support" }}</h4>
-                <p class="mb-0">
-                  {{ i18n "The AlmaLinux community is vibrant, highly active, large, and deeply committed to supporting each other at every level of expertise. We serve each other like an online village of knowledge-sharing and collaboration, providing an invaluable network for troubleshooting, exchanging advice, and discussing best practices." }}
-                </p>
-              </div>
-
-              <div class="al-get-sup-d-item p-4 border-bottom border-white">
-                <h5 class="fw-bold mb-3">{{ i18n "Community Chat" }}</h5>
-                <p>
-                  {{ i18n "Join the conversation! Real time discussion with other AlmaLinux community members, the governance team, and AlmaLinux OS developers." }}
-                </p>
-                <a href="https://chat.almalinux.org/" class="btn btn-primary" target="_blank">
-					<i class="bi bi-people-fill"></i> {{ i18n "Chat" }}</a>
-              </div>
-
-              <div class="al-get-sup-d-item p-4 border-bottom border-white">
-                <h5 class="fw-bold mb-3">{{ i18n "Community Forums" }}</h5>
-                <p>
-                  {{ i18n "Ask questions, get answers, and help us support others in the AlmaLinux OS community." }}
-                </p>
-                <a href="https://forums.almalinux.org/" class="btn btn-primary" target="_blank">
-					<i class="bi bi-people-fill"></i> {{ i18n "Sign up" }}</a>
-              </div>
-
-              <div class="al-get-sup-d-item p-4 border-bottom border-white">
-                <h5 class="fw-bold mb-3">{{ i18n "GitHub" }}</h5>
-                <p>
-                  {{ i18n "Our GitHub organization contains the source code and tools used to build AlmaLinux OS and all related infrastructure." }}
-                </p>
-                <a href="https://github.com/AlmaLinux/" class="btn btn-primary" target="_blank">
-					<i class="bi bi-people-fill"></i> {{ i18n "Explore" }}</a>
-              </div>
-
-              <div class="al-get-sup-d-item p-4 border-bottom border-white">
-                <h5 class="fw-bold mb-3">{{ i18n "Reddit" }}</h5>
-                <p>
-                  {{ i18n "Join our vibrant Reddit subreddit to interact with current and potential AlmaLinux users." }}
-                </p>
-                <a href="https://www.reddit.com/r/AlmaLinux/"  class="btn btn-primary" target="_blank">
-					<i class="bi bi-people-fill"></i> {{ i18n "Join" }}</a>
-              </div>
-
-              <div class="al-get-sup-d-item p-4 border-bottom border-white">
-                <h5 class="fw-bold mb-3">{{ i18n "AlmaLinux Wiki" }}</h5>
-                <p>
-                  {{ i18n "The AlmaLinux Wiki is a comprehensive resource hub with detailed information on the project’s history, development, installation, migration, the Foundation, and houses all of the OS and ELevate release notes. We also invite community contributions to continually expand its wealth of knowledge!" }}
-                </p>
-                <a href="https://wiki.almalinux.org/" class="btn btn-primary" target="_blank">
-					<i class="bi bi-people-fill"></i> {{ i18n "Read more" }}</a>
-              </div>
-
-              <div class="al-get-sup-d-item p-4">
-                <h5 class="fw-bold mb-3">{{ i18n "Join Mailing Lists" }}</h5>
-                <p>
-                  {{ i18n "Subscribe to a variety of specific mailing lists including Announcements (for OS and project updates), SIG-specific mailing lists, Mirror-hosts, security discussions, and our monthly newsletter." }}
-                </p>
-                <a href="https://lists.almalinux.org/mailman3/lists/"  class="btn btn-primary" target="_blank">
-					<i class="bi bi-people-fill"></i> {{ i18n "Sign up" }}</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="al-get-sup-detail border border-white right">
-              <div class="al-get-sup-d-item p-4 head">
-                <h4 class="fw-bold mb-3"><i class="bi bi-buildings-fill community-icon"></i> {{ i18n "Commercial Support" }}</h4>
-                <p>
-                  {{ i18n "For organizations that require dedicated, enterprise-grade assistance, we recommend choosing one of the options for paid AlmaLinux support. These providers ensure you always have fast support tailored for your environment and business needs." }} 
-                </p>
-				<p class="mb-0 pt-2">
-				  <small>** {{ i18n "If your company would like to be added to this list, reach out to the Membership Committee about joining the Foundation as a sponsor" }}!</small>
-				</p>
-              </div>
-
-              <div class="al-get-sup-d-item p-4 bg-grey text-black">
-                <div class="thumb mb-3">
-                  <img src="/images/logo-txc.svg" alt="TuxCare" />
-                </div>
-                <h5 class="fw-bold text-dark mb-3">{{ i18n "Platinum Sponsor + Founder" }}</h5>
-                <p class="mb-0 text-dark">
-                  {{ i18n "TuxCare, a division of CloudLinux Inc., the founding sponsor of the AlmaLinux OS Project, provides tailored support to enhance the performance, security, and reliability of your AlmaLinux workloads." }}
-                </p>
-	              <div class="al-get-sup-d-item no-padding bg-grey text-center">
-	                <h5 class="fw-bold text-dark p-4 mb-0">{{ i18n "TuxCare’s Enterprise Support for AlmaLinux" }}</h5>
-	                <ul class="p-0 m-0 text-left">
-	                  <li class="p-4 d-block text-dark">
-	                    <strong class="d-block mb-1">{{ i18n "Get Technical Support" }}</strong> {{ i18n "Migration, Applications, and General support" }}
-	                  </li>
-	                  <li class="p-4 d-block text-dark">
-	                    <strong class="d-block mb-1 ">{{ i18n "Get Help with Certification" }}</strong> {{ i18n "FedRAMP, ISO-27001, SOC2, NIS 2, CC, software, hardware" }}
-	                  </li>
-	                  <li class="p-4 d-block text-dark">
-						  <strong class="d-block mb-1 ">{{ i18n "Get FIPS 140-3 Compliance" }}</strong>
-					  </li>
-	                  <li class="p-4 d-block text-dark">
-	                    <strong class="d-block mb-1 ">{{ i18n "Get Security Hardening" }}</strong> {{ i18n "CIS, STIG, and more" }}
-	                  </li>
-	                </ul>
-	                <a href="https://tuxcare.com/buy/almalinux/" class="btn btn-primary" target="_blank">
-					<i class="bi bi-people-fill"></i> {{ i18n "Buy Support Online Now" }}</a>
-	              </div>
-              </div>
-              <div class="al-get-sup-d-item p-4 bg-light-green text-black">
-                <div class="thumb mb-3">
-                  <img src="/images/logo-cybertrust.png" alt="Cybertrust" />
-                </div>
-                <h5 class="fw-bold text-dark mb-3">{{ i18n "Platinum Sponsor" }}</h5>
-                <p class="text-dark">{{ i18n "For Japan-based AlmaLinux users:" }} {{ i18n "Cybertrust Japan is a provider of comprehensive security certification services to various public and private entities globally, and offers comprehensive support for AlmaLinux users – having also produced MIRACLE LINUX for nearly 20 years." }}
-                </p>
-                <a href="https://www.cybertrust.co.jp/almalinux/"class="btn btn-primary" target="_blank">
-					<i class="bi bi-people-fill"></i> {{ i18n "Get Support" }}</a>
-              </div>
-
-            </div>
-          </div>
+  <style>
+    img {
+      max-width: 100%;
+    }
+    #hc-hero {
+      background: #0e3b5c;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    #hc-hero img {
+      border-radius: 1rem;
+    }
+    .al-get-sup-d-item p {
+      line-height: 24px;
+    }
+    .al-get-sup-d-item.head {
+      background: #0a304b;
+    }
+    .bg-grey {
+      background: #f0efee !important;
+    }
+    .bg-dark-grey {
+      background: #e5e4e2 !important;
+    }
+    .al-get-sup-d-item.no-padding ul {
+      grid-template-columns: repeat(2, 1fr);
+      display: grid;
+    }
+    .bg-light-green {
+      background: #dfffe8 !important;
+    }
+    .al-page-index.al-get-sup-wrap {
+      padding-top: 20px;
+      padding-bottom: 50px;
+    }
+  </style>
+  <!-- HERO -->
+  <section id="hc-hero">
+    <div class="container px-0 al-py-lg">
+      <div class="row">
+        <div class="col-lg">
+          <h1 class="display-5 fw-bold">{{ i18n "Get Support" }}</h1>
+          <p>
+            {{ i18n "AlmaLinux is a community-driven, open-source operating system built to provide a reliable and stable platform for enterprises and developers alike. Whether you’re running mission-critical applications or experimenting with development environments, having access to quality support is crucial for success." }}
+          </p>
+          <p>
+            {{ i18n "Fortunately, all AlmaLinux users have access to a wealth of options when it comes to community-powered support resources, and have options for incredible third-party commercial support." }}
+          </p>
         </div>
-        <!-- Get support page inner end-->
+        <div class="col-lg">
+          <img src="/support_page/support_page_header.png" />
+        </div>
       </div>
     </div>
   </section>
-</div>
+  <!-- start page content -->
+  <div class="container">
+    <section class="al-page-index al-get-sup-wrap">
+      <div class="al-index-security-measures-container">
+        <div class="container al-py-lg">
+          <!-- Get support page inner start-->
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="al-get-sup-detail border border-white left">
+                <div
+                  class="al-get-sup-d-item p-4 border-bottom border-white head"
+                >
+                  <h4 class="fw-bold mb-3">
+                    <i class="bi bi-people-fill al-index-community-icon"></i>
+                    {{ i18n "Community Support" }}
+                  </h4>
+                  <p class="mb-0">
+                    {{ i18n "The AlmaLinux community is vibrant, highly active, large, and deeply committed to supporting each other at every level of expertise. We serve each other like an online village of knowledge-sharing and collaboration, providing an invaluable network for troubleshooting, exchanging advice, and discussing best practices." }}
+                  </p>
+                </div>
 
+                <div class="al-get-sup-d-item p-4 border-bottom border-white">
+                  <h5 class="fw-bold mb-3">{{ i18n "Community Chat" }}</h5>
+                  <p>
+                    {{ i18n "Join the conversation! Real time discussion with other AlmaLinux community members, the governance team, and AlmaLinux OS developers." }}
+                  </p>
+                  <a
+                    href="https://chat.almalinux.org/"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    <i class="bi bi-people-fill"></i> {{ i18n "Chat" }}</a
+                  >
+                </div>
+
+                <div class="al-get-sup-d-item p-4 border-bottom border-white">
+                  <h5 class="fw-bold mb-3">{{ i18n "Community Forums" }}</h5>
+                  <p>
+                    {{ i18n "Ask questions, get answers, and help us support others in the AlmaLinux OS community." }}
+                  </p>
+                  <a
+                    href="https://forums.almalinux.org/"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    <i class="bi bi-people-fill"></i> {{ i18n "Sign up" }}</a
+                  >
+                </div>
+
+                <div class="al-get-sup-d-item p-4 border-bottom border-white">
+                  <h5 class="fw-bold mb-3">{{ i18n "GitHub" }}</h5>
+                  <p>
+                    {{ i18n "Our GitHub organization contains the source code and tools used to build AlmaLinux OS and all related infrastructure." }}
+                  </p>
+                  <a
+                    href="https://github.com/AlmaLinux/"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    <i class="bi bi-people-fill"></i> {{ i18n "Explore" }}</a
+                  >
+                </div>
+
+                <div class="al-get-sup-d-item p-4 border-bottom border-white">
+                  <h5 class="fw-bold mb-3">{{ i18n "Reddit" }}</h5>
+                  <p>
+                    {{ i18n "Join our vibrant Reddit subreddit to interact with current and potential AlmaLinux users." }}
+                  </p>
+                  <a
+                    href="https://www.reddit.com/r/AlmaLinux/"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    <i class="bi bi-people-fill"></i> {{ i18n "Join" }}</a
+                  >
+                </div>
+
+                <div class="al-get-sup-d-item p-4 border-bottom border-white">
+                  <h5 class="fw-bold mb-3">{{ i18n "AlmaLinux Wiki" }}</h5>
+                  <p>
+                    {{ i18n "The AlmaLinux Wiki is a comprehensive resource hub with detailed information on the project’s history, development, installation, migration, the Foundation, and houses all of the OS and ELevate release notes. We also invite community contributions to continually expand its wealth of knowledge!" }}
+                  </p>
+                  <a
+                    href="https://wiki.almalinux.org/"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    <i class="bi bi-people-fill"></i> {{ i18n "Read more" }}</a
+                  >
+                </div>
+
+                <div class="al-get-sup-d-item p-4">
+                  <h5 class="fw-bold mb-3">{{ i18n "Join Mailing Lists" }}</h5>
+                  <p>
+                    {{ i18n "Subscribe to a variety of specific mailing lists including Announcements (for OS and project updates), SIG-specific mailing lists, Mirror-hosts, security discussions, and our monthly newsletter." }}
+                  </p>
+                  <a
+                    href="https://lists.almalinux.org/mailman3/lists/"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    <i class="bi bi-people-fill"></i> {{ i18n "Sign up" }}</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="al-get-sup-detail border border-white right">
+                <div class="al-get-sup-d-item p-4 head">
+                  <h4 class="fw-bold mb-3">
+                    <i class="bi bi-buildings-fill community-icon"></i>
+                    {{ i18n "Commercial Support" }}
+                  </h4>
+                  <p>
+                    {{ i18n "For organizations that require dedicated, enterprise-grade assistance, we recommend choosing one of the options for paid AlmaLinux support. These providers ensure you always have fast support tailored for your environment and business needs." }}
+                  </p>
+                  <p class="mb-0 pt-2">
+                    <small
+                      >**
+                      {{ i18n "If your company would like to be added to this list, reach out to the Membership Committee about joining the Foundation as a sponsor" }}!</small
+                    >
+                  </p>
+                </div>
+
+                <div class="al-get-sup-d-item p-4 bg-grey text-black">
+                  <div class="thumb mb-3">
+                    <img src="/images/logo-txc.svg" alt="TuxCare" />
+                  </div>
+                  <h5 class="fw-bold text-dark mb-3">
+                    {{ i18n "Platinum Sponsor + Founder" }}
+                  </h5>
+                  <p class="mb-0 text-dark">
+                    {{ i18n "TuxCare, a division of CloudLinux Inc., the founding sponsor of the AlmaLinux OS Project, provides tailored support to enhance the performance, security, and reliability of your AlmaLinux workloads." }}
+                  </p>
+                  <div class="al-get-sup-d-item no-padding bg-grey text-center">
+                    <h5 class="fw-bold text-dark p-4 mb-0">
+                      {{ i18n "TuxCare’s Enterprise Support for AlmaLinux" }}
+                    </h5>
+                    <ul class="p-0 m-0 text-left">
+                      <li class="p-4 d-block text-dark">
+                        <strong class="d-block mb-1"
+                          >{{ i18n "Get Technical Support" }}</strong
+                        >
+                        {{ i18n "Migration, Applications, and General support" }}
+                      </li>
+                      <li class="p-4 d-block text-dark">
+                        <strong class="d-block mb-1 "
+                          >{{ i18n "Get Help with Certification" }}</strong
+                        >
+                        {{ i18n "FedRAMP, ISO-27001, SOC2, NIS 2, CC, software, hardware" }}
+                      </li>
+                      <li class="p-4 d-block text-dark">
+                        <strong class="d-block mb-1 "
+                          >{{ i18n "Get FIPS 140-3 Compliance" }}</strong
+                        >
+                      </li>
+                      <li class="p-4 d-block text-dark">
+                        <strong class="d-block mb-1 "
+                          >{{ i18n "Get Security Hardening" }}</strong
+                        >
+                        {{ i18n "CIS, STIG, and more" }}
+                      </li>
+                    </ul>
+                    <a
+                      href="https://tuxcare.com/buy/almalinux/"
+                      class="btn btn-primary"
+                      target="_blank"
+                    >
+                      <i class="bi bi-people-fill"></i>
+                      {{ i18n "Buy Support Online Now" }}</a
+                    >
+                  </div>
+                </div>
+                <div class="al-get-sup-d-item p-4 bg-light-green text-black">
+                  <div class="thumb mb-3">
+                    <img src="/images/logo-cybertrust.png" alt="Cybertrust" />
+                  </div>
+                  <h5 class="fw-bold text-dark mb-3">
+                    {{ i18n "Platinum Sponsor" }}
+                  </h5>
+                  <p class="text-dark">
+                    {{ i18n "For Japan-based AlmaLinux users:" }}
+                    {{ i18n "Cybertrust Japan is a provider of comprehensive security certification services to various public and private entities globally, and offers comprehensive support for AlmaLinux users – having also produced MIRACLE LINUX for nearly 20 years." }}
+                  </p>
+                  <a
+                    href="https://www.cybertrust.co.jp/almalinux/"
+                    class="btn btn-primary"
+                    target="_blank"
+                  >
+                    <i class="bi bi-people-fill"></i>
+                    {{ i18n "Get Support" }}</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Get support page inner end-->
+        </div>
+      </div>
+    </section>
+  </div>
 {{ end }}

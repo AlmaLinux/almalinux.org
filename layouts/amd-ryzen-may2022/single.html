@@ -1,334 +1,308 @@
-{{define "main"}}
-<section class="al-certified-amd-page">
-	<div class="banner">
-		<div class="container">
-			<h1>
-				AMD Ryzen™ Processor {{ i18n "certified with AlmaLinux OS" }}
-			</h1>
-			<p>
-				{{ i18n "Compatibility you can trust" }}
-			</p>
-		</div>
-	</div>
-	<section class="content">
-		<div class="container">
-			<p>
-				{{ i18n "The conducted tests ensure that AMD Ryzen™ 3000 and 5000 series CPUs and, generally for any servers based on Ryzen processors, AlmaLinux OS work properly guaranteeing stability, security, and high performance." }}
-            </p>
+{{ define "main" }}
+  <section class="al-certified-amd-page">
+    <div class="banner">
+      <div class="container">
+        <h1>
+          AMD Ryzen™ Processor
+          {{ i18n "certified with AlmaLinux OS" }}
+        </h1>
+        <p>
+          {{ i18n "Compatibility you can trust" }}
+        </p>
+      </div>
+    </div>
+    <section class="content">
+      <div class="container">
+        <p>
+          {{ i18n "The conducted tests ensure that AMD Ryzen™ 3000 and 5000 series CPUs and, generally for any servers based on Ryzen processors, AlmaLinux OS work properly guaranteeing stability, security, and high performance." }}
+        </p>
 
-			<div class="info-flex">
-				<div class="img">
-					<img src="/images/chip.png">
-				</div>
-				<div class="text">
-					<div>
-						<b>
-							{{ i18n "Vendor" }}:&nbsp;
-						</b>
-						AMD
-					</div>
+        <div class="info-flex">
+          <div class="img">
+            <img src="/images/chip.png" />
+          </div>
+          <div class="text">
+            <div>
+              <b> {{ i18n "Vendor" }}:&nbsp; </b>
+              AMD
+            </div>
 
-					<div>
-						<b>{{ i18n "Certification for" }}:&nbsp;</b>
-						AMD Ryzen™ 5000 {{ i18n "processor series (or 3000 and 5000 processor series)" }}
-					</div>
+            <div>
+              <b>{{ i18n "Certification for" }}:&nbsp;</b>
+              AMD Ryzen™ 5000
+              {{ i18n "processor series (or 3000 and 5000 processor series)" }}
+            </div>
 
-					<div>
-						<b>
-							{{ i18n "Operating system" }}:&nbsp;
-						</b>
-						AlmaLinux OS
-					</div>
-				</div>
-			</div>
-			<div class="info-flex">
-				<div class="text">
-					<div class="info-block-title">
-						{{ i18n "Server specification" }}
-					</div>
+            <div>
+              <b> {{ i18n "Operating system" }}:&nbsp; </b>
+              AlmaLinux OS
+            </div>
+          </div>
+        </div>
+        <div class="info-flex">
+          <div class="text">
+            <div class="info-block-title">
+              {{ i18n "Server specification" }}
+            </div>
 
-					<div>
-						<img src="/images/icon-system.png">
-						<b>
-							{{ i18n "System" }}:&nbsp;
-						</b> 
-						ASRock® Rack 1U4LW-X570/2L2T
-					</div>
-					<div>
-						<img src="/images/icon-CPU.png">
-						<b>
-							CPU:&nbsp;
-						</b> 
-						AMD Ryzen™ 9 5950X 16-core {{ i18n "processor" }}
-					</div>
-					<div>
-						<img src="/images/icon-memory.png">
-						<b>
-							{{ i18n "Memory" }}:&nbsp;
-						</b>
-						4 x 32GB DDR4 ECC UDIMM
-					</div>
-					<div>
-						<img src="/images/icon-storage.png">
-						<b class="info">
-							{{ i18n "Storage" }}:&nbsp;
-						</b>
-						2 x 960GB NVMe M.2
-					</div>
-					<div>
-						<img src="/images/icon-security.png">
-						<b class="info">
-							{{ i18n "Security device" }}:&nbsp;
-						</b>
-						TPM2.0
-					</div>
+            <div>
+              <img src="/images/icon-system.png" />
+              <b> {{ i18n "System" }}:&nbsp; </b>
+              ASRock® Rack 1U4LW-X570/2L2T
+            </div>
+            <div>
+              <img src="/images/icon-CPU.png" />
+              <b> CPU:&nbsp; </b>
+              AMD Ryzen™ 9 5950X 16-core
+              {{ i18n "processor" }}
+            </div>
+            <div>
+              <img src="/images/icon-memory.png" />
+              <b> {{ i18n "Memory" }}:&nbsp; </b>
+              4 x 32GB DDR4 ECC UDIMM
+            </div>
+            <div>
+              <img src="/images/icon-storage.png" />
+              <b class="info"> {{ i18n "Storage" }}:&nbsp; </b>
+              2 x 960GB NVMe M.2
+            </div>
+            <div>
+              <img src="/images/icon-security.png" />
+              <b class="info"> {{ i18n "Security device" }}:&nbsp; </b>
+              TPM2.0
+            </div>
 
-					<button id="click-btn" class="request" >
-						{{ i18n "Request a system image for tests" }}
-					</button>
+            <button id="click-btn" class="request">
+              {{ i18n "Request a system image for tests" }}
+            </button>
 
-					<div id="form" class="form " style="display: none; width: 300px;">
-						<!--[if lte IE 8]>
-						<script charset="utf-8" type="text/javascript" src="/js.hsforms.net/forms/v2-legacy.js"></script>
-						<![endif]-->
+            <div id="form" class="form " style="display: none; width: 300px;">
+              <!--[if lte IE 8]>
+                <script
+                  charset="utf-8"
+                  type="text/javascript"
+                  src="/js.hsforms.net/forms/v2-legacy.js"
+                ></script>
+              <![endif]-->
 
-						<script charset="utf-8" type="text/javascript" src="https:/js.hsforms.net/forms/v2.js"></script>
-						<script>
-							(function() {
-							   // your page initialization code here
-							   // the DOM will be available here
-								hbspt.forms.create({
-									region: "na1",
-									portalId: "5408110",
-									formId: "3c7dc95f-b8b6-4f3e-bf21-ebbc1e571995"
-								});
-							})();
-						  
-						</script>
-					</div>
-				</div>
-				<div class="img">
-					<img src="/images/server-image.png">
-				</div>
-			</div>
+              <script
+                charset="utf-8"
+                type="text/javascript"
+                src="https:/js.hsforms.net/forms/v2.js"
+              ></script>
+              <script>
+                (function () {
+                  // your page initialization code here
+                  // the DOM will be available here
+                  hbspt.forms.create({
+                    region: "na1",
+                    portalId: "5408110",
+                    formId: "3c7dc95f-b8b6-4f3e-bf21-ebbc1e571995",
+                  });
+                })();
+              </script>
+            </div>
+          </div>
+          <div class="img">
+            <img src="/images/server-image.png" />
+          </div>
+        </div>
 
-			<div class="test-cta">
-				<button id="test-click">
-					{{ i18n "Tests details" }}
-				</button>
-				<a class="mt-5" href="/certificate/AMD Almalinux hardware certification.pdf" download>
-                    <i class="bi bi-download pe-1 d-xl-inline"></i>
-					{{ i18n "Download Test PDF" }}
-                </a>
-			</div>
-		</div>
-	</section>
+        <div class="test-cta">
+          <button id="test-click">
+            {{ i18n "Tests details" }}
+          </button>
+          <a
+            class="mt-5"
+            href="/certificate/AMD Almalinux hardware certification.pdf"
+            download
+          >
+            <i class="bi bi-download pe-1 d-xl-inline"></i>
+            {{ i18n "Download Test PDF" }}
+          </a>
+        </div>
+      </div>
+    </section>
 
-	<section id="test-details" class="test " style="display: none;">
-		<div class="container">
-			<table>
-				<tbody>
-					<tr>
-						<th>
-							{{ i18n "Test" }}
-						</th>
-						<th>
-							CloudLinux
-						</th>
-					</tr>
-				</tbody>
-				<tbody>
-					<tr>
-						<td>
-							{{ i18n "Hardware detection" }}
-						</td>
-						<td class="passed">
-							<div class="checkmark"></div>
-							<p>
-								{{ i18n "Passed" }}
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							{{ i18n "CPU stress" }}
-						</td>
-						<td class="passed">
-							<div class="checkmark"></div>
-							<p>
-								{{ i18n "Passed" }}
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							{{ i18n "Containers" }}
-						</td>
-						<td class="passed">
-							<div class="checkmark"></div>
-							<p>
-								{{ i18n "Passed" }}
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							KVM
-						</td>
-						<td class="passed">
-							<div class="checkmark"></div>
-							<p>
-								{{ i18n "Passed" }}
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							{{ i18n "Network" }}
-						</td>
-						<td class="passed">
-							<div class="checkmark"></div>
-							<p>
-								{{ i18n "Passed" }}
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							LTP
-						</td>
-						<td class="passed">
-							<div class="checkmark"></div>
-							<p>
-								{{ i18n "Passed" }}
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							USB
-						</td>
-						<td class="passed">
-							<div class="checkmark"></div>
-							<p>
-								{{ i18n "Passed" }}
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							PXE
-						</td>
-						<td class="passed">
-							<div class="checkmark"></div>
-							<p>
-								{{ i18n "Passed" }}
-							</p>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+    <section id="test-details" class="test " style="display: none;">
+      <div class="container">
+        <table>
+          <tbody>
+            <tr>
+              <th>
+                {{ i18n "Test" }}
+              </th>
+              <th>CloudLinux</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>
+                {{ i18n "Hardware detection" }}
+              </td>
+              <td class="passed">
+                <div class="checkmark"></div>
+                <p>
+                  {{ i18n "Passed" }}
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {{ i18n "CPU stress" }}
+              </td>
+              <td class="passed">
+                <div class="checkmark"></div>
+                <p>
+                  {{ i18n "Passed" }}
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {{ i18n "Containers" }}
+              </td>
+              <td class="passed">
+                <div class="checkmark"></div>
+                <p>
+                  {{ i18n "Passed" }}
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>KVM</td>
+              <td class="passed">
+                <div class="checkmark"></div>
+                <p>
+                  {{ i18n "Passed" }}
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {{ i18n "Network" }}
+              </td>
+              <td class="passed">
+                <div class="checkmark"></div>
+                <p>
+                  {{ i18n "Passed" }}
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>LTP</td>
+              <td class="passed">
+                <div class="checkmark"></div>
+                <p>
+                  {{ i18n "Passed" }}
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>USB</td>
+              <td class="passed">
+                <div class="checkmark"></div>
+                <p>
+                  {{ i18n "Passed" }}
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>PXE</td>
+              <td class="passed">
+                <div class="checkmark"></div>
+                <p>
+                  {{ i18n "Passed" }}
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-			<p class="test-title">
-				{{ i18n "Hardware detection" }}
-			</p>
-			<p class="test-text">
-				{{ i18n "The main objective of the hardware detection test is to ensure the target hardware is properly detected by" }} AlmaLinux OS.
-			</p>
+        <p class="test-title">
+          {{ i18n "Hardware detection" }}
+        </p>
+        <p class="test-text">
+          {{ i18n "The main objective of the hardware detection test is to ensure the target hardware is properly detected by" }}
+          AlmaLinux OS.
+        </p>
 
-			<p class="test-title">
-				{{ i18n "CPU stress" }}
-			</p>
-			<p class="test-text">
-				{{ i18n "The test is performed to verify that the CPU can handle a sustained high load for a period of time." }}
-			</p>
+        <p class="test-title">
+          {{ i18n "CPU stress" }}
+        </p>
+        <p class="test-text">
+          {{ i18n "The test is performed to verify that the CPU can handle a sustained high load for a period of time." }}
+        </p>
 
-			<p class="test-title">
-				{{ i18n "Containers" }}
-			</p>
-			<p class="test-text">
-				{{ i18n "The containerization test verifies the ability of the system to run processes with isolation inside containers like Docker, Podman, etc." }}
-			</p>
+        <p class="test-title">
+          {{ i18n "Containers" }}
+        </p>
+        <p class="test-text">
+          {{ i18n "The containerization test verifies the ability of the system to run processes with isolation inside containers like Docker, Podman, etc." }}
+        </p>
 
-			<p class="test-title">
-				KVM
-			</p>
-			<p class="test-text">
-				{{ i18n "The test is designed to check the possibility of running virtual machines with help of the KVM on the server." }}
-			</p>
+        <p class="test-title">KVM</p>
+        <p class="test-text">
+          {{ i18n "The test is designed to check the possibility of running virtual machines with help of the KVM on the server." }}
+        </p>
 
-			<p class="test-title">
-				{{ i18n "Network" }}
-			</p>
-			<p class="test-text">
-				{{ i18n "The test verifies that the network adapter is working smoothly at the advertised speed load for a period of time." }}
-			</p>
+        <p class="test-title">
+          {{ i18n "Network" }}
+        </p>
+        <p class="test-text">
+          {{ i18n "The test verifies that the network adapter is working smoothly at the advertised speed load for a period of time." }}
+        </p>
 
-			<p class="test-title">
-				LTP
-			</p>
-			<p class="test-text">
-				{{ i18n "The LTP testsuite contains a collection of tools for testing the Linux kernel and related features." }}
-			</p>
+        <p class="test-title">LTP</p>
+        <p class="test-text">
+          {{ i18n "The LTP testsuite contains a collection of tools for testing the Linux kernel and related features." }}
+        </p>
 
-			<p class="test-title">
-				USB
-			</p>
-			<p class="test-text">
-				{{ i18n "The USB test covers USB ports from a basic functionality standpoint, ensuring that all ports can be accessed by the OS." }}
-			</p>
+        <p class="test-title">USB</p>
+        <p class="test-text">
+          {{ i18n "The USB test covers USB ports from a basic functionality standpoint, ensuring that all ports can be accessed by the OS." }}
+        </p>
 
-			<p class="test-title">
-				PXE
-			</p>
-			<p class="test-text">
-				{{ i18n "The PXE test covers the PXE device checks and its ability to boot OS over the network." }}
-			</p>
+        <p class="test-title">PXE</p>
+        <p class="test-text">
+          {{ i18n "The PXE test covers the PXE device checks and its ability to boot OS over the network." }}
+        </p>
 
-			<p class="test-title">
-				Phoronix
-			</p>
-			<p class="test-text">
-                    Phoronix {{ i18n "tests cover benchmarking of OS features. The result of benchmarking can be found below" }}
-			</p>
+        <p class="test-title">Phoronix</p>
+        <p class="test-text">
+          Phoronix
+          {{ i18n "tests cover benchmarking of OS features. The result of benchmarking can be found below" }}
+        </p>
 
-			<p><img src="/images/image-1.png"></p>
-		</div>
-	</section>
-</section>
+        <p><img src="/images/image-1.png" /></p>
+      </div>
+    </section>
+  </section>
 
-<script>
- 
- 
-    var reqClick = document.getElementById('click-btn');
- 
-reqClick.onclick = function() {
-    var reqForm = document.getElementById('form');
-   
-    if (reqForm.style.display !== 'none') {
-        reqForm.style.display = 'none';
-    }
-    else {
-        reqForm.style.display = 'block';
-    }
-};  
-</script>
-<script>
- 
- 
-    var testClick = document.getElementById('test-click');
- 
-testClick.onclick = function() {
-    var testDetails = document.getElementById('test-details');
-   
-    if (testDetails.style.display !== 'none') {
-        testDetails.style.display = 'none';
-    }
-    else {
-        testDetails.style.display = 'block';
-    }
-};  
-</script>
+  <script>
+    var reqClick = document.getElementById("click-btn");
 
-{{end}}
+    reqClick.onclick = function () {
+      var reqForm = document.getElementById("form");
 
+      if (reqForm.style.display !== "none") {
+        reqForm.style.display = "none";
+      } else {
+        reqForm.style.display = "block";
+      }
+    };
+  </script>
+  <script>
+    var testClick = document.getElementById("test-click");
+
+    testClick.onclick = function () {
+      var testDetails = document.getElementById("test-details");
+
+      if (testDetails.style.display !== "none") {
+        testDetails.style.display = "none";
+      } else {
+        testDetails.style.display = "block";
+      }
+    };
+  </script>
+{{ end }}
