@@ -1,15 +1,14 @@
 ---
 title: "More chances to catch AlmaLinux: SuperCompute ‘22, and OLF ‘22"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: " - Chair, Board of Directors @AlmaLinux OS Foundation"
- image: /users/benny.jpeg
-date: '2022-11-08'
+author:
+  name: "benny Vasquez"
+  bio: " - Chair, Board of Directors @AlmaLinux OS Foundation"
+  image: /users/benny.jpeg
+date: "2022-11-08"
 post:
-    title: "You've got two more chances to meet us in person this year: SC '22 and OLF '22."
-    image: ""
-
+  title: "You've got two more chances to meet us in person this year: SC '22 and OLF '22."
+  image: ""
 ---
 
 ## All Things Open '22 was AMAZING
@@ -19,9 +18,11 @@ We had a chance to attend All Things Open last week, and it was an absolute blas
 One of the best conversations I got to have was a group of folks from a university who are using AlmaLinux in a INCREDIBLE experiment that will absolutely drive future waves of innovation around how we interact with the universe. They said they were going to share details about it soon, and I can't wait to share those with all of you, as well.
 
 In the meantime, though, for anyone that is joining us from ATO I just want to say: welcome. We're glad you're here, glad you're part of our community, and can't wait to see what you come up with! 
+
 ## Where are we next?
 
 In case you missed it, we're confirmed to be going to 2 more events this year! Here's a quick list:
+
 ### [SC '22](https://sc22.supercomputing.org/), Dallas, Texas
 
 Next week we're joining the fine folks at SuperComputing for a second year in a row! We have seen a huge interest in folks using AlmaLinux for all kinds of interesting things, especially since we announced that you can use [AlmaLinux on Azure HPC](/blog/almalinux-for-azure-hpc-now-available/), and are being used by [4 of the top 500 SuperComputers](/blog/almalinux-and-the-top-500-hpc-supercomputers/). We also just posted about [how we built for the s390 platform!](/blog/how-we-built-almalinux-86-for-s390x/)

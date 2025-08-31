@@ -1,16 +1,16 @@
 ---
 title: "First AlmaLinux Board Election Announces 7 New Seats"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, Board of Directors @AlmaLinux OS Foundation"
- image: /users/benny.jpeg
-date: '2022-09-20'
+author:
+  name: "benny Vasquez"
+  bio: "Chair, Board of Directors @AlmaLinux OS Foundation"
+  image: /users/benny.jpeg
+date: "2022-09-20"
 images:
   - /blog-images/2022-board-election-results.png
 post:
-    title: "The AlmaLinux OS Foundation has completed its first election! See the results, and what's coming next."
-    image: /blog-images/2022-board-election-results.png
+  title: "The AlmaLinux OS Foundation has completed its first election! See the results, and what's coming next."
+  image: /blog-images/2022-board-election-results.png
 ---
 
 Over a month ago I announced that we would be holding our [first board election](/blog/first-almalinux-os-foundation-election/). Our nearly 300 members of the AlmaLinux OS Foundation have spent the last two weeks casting their votes for the new board, and I am very happy to announce the newest board. These seven nominees have been elected by the community to serve a three-year term as the AlmaLinux OS Foundation board members.
@@ -55,7 +55,7 @@ Jack is a current Director and Community Leader at AlmaLinux.
 	</div>
 </section>
 
-[Simon Phipps](https://en.wikipedia.org/wiki/Simon_Phipps_(programmer))
+[Simon Phipps](<https://en.wikipedia.org/wiki/Simon_Phipps_(programmer)>)
 
 Simon is a current Director at AlmaLinux, former president of the Open Source Initiative.
 
@@ -85,7 +85,7 @@ Daniel is the CEO of KnownHost, LLC (promoted from COO during the election windo
 	</div>
 </section>
 
-[Moshe Bar](https://en.wikipedia.org/wiki/Moshe_Bar_(investor))
+[Moshe Bar](<https://en.wikipedia.org/wiki/Moshe_Bar_(investor)>)
 
 Moshe is the CEO of CodeNotary, Inc., an AlmaLinux Gold Sponsor, and is new to the AlmaLinux OS Foundation board.
 

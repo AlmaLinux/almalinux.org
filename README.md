@@ -88,4 +88,3 @@ To request a new language, open an issue in [GitHub issues](https://github.com/A
 - Minor or cosmetic changes (typos, small style tweaks) can be reviewed and approved by any contributor with merge rights.
 - Non-cosmetic changes require approval from the Marketing Lead.
 - Weblate automatically submits PRs for translated strings; these are reviewed and merged by the Marketing SIG or team leads.
-

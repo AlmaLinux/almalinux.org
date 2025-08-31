@@ -1,14 +1,14 @@
 ---
 title: "New Geo-Location Mirror Service"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-06-08'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-06-08"
 post:
-    title: "Hi all, we’ve developed a new geo-location mirror service which should make things a lot faster, simpler and easier when installing packages, update..."
-    image: 
+  title: "Hi all, we’ve developed a new geo-location mirror service which should make things a lot faster, simpler and easier when installing packages, update..."
+  image:
 ---
 
 Hi all, we’ve developed a new geo-location mirror service which should make things a lot faster, simpler and easier when installing packages, updates and downloading ISOs.

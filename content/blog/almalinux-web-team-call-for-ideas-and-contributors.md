@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux Web Team Call for Ideas and Contributors"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2022-03-09'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2022-03-09"
 post:
-    title: " We're working on improving our site, wanna help? What do you love? What do you hate?"
-    image: 
+  title: " We're working on improving our site, wanna help? What do you love? What do you hate?"
+  image:
 ---
 
 Hello Community! We're currently in the midst of rethinking our web presence and associated entities. Our site is our face to the world and is the primary source of information and resources for tens of thousands of visitors each month. As we continue to grow we want to make sure the site gets even better and more useful, informative, localized and accessible.

@@ -1,14 +1,14 @@
 ---
 title: "Minimal Container Images now Available on Docker Hub and Quay.io"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-06-28'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-06-28"
 post:
-    title: "We've had a number of requests for minimal container images and we are glad to announce that those are now available on Docker Hub and Quay.io!"
-    image: 
+  title: "We've had a number of requests for minimal container images and we are glad to announce that those are now available on Docker Hub and Quay.io!"
+  image:
 ---
 
 Hello All,

@@ -1,16 +1,16 @@
 ---
 title: "Introducing the AlmaLinux HPC and AI SIG"
 type: blog
-author: 
- name: "Hayden Barnes"
- bio: "Open Source Community Manager, HPE AI Software Solutions"
- image: /users/haydenbarnes.jpg
-date: '2024-05-02'
+author:
+  name: "Hayden Barnes"
+  bio: "Open Source Community Manager, HPE AI Software Solutions"
+  image: /users/haydenbarnes.jpg
+date: "2024-05-02"
 images:
   - /blog-images/2024/introducing-almalinux-hpc-ai-sig.png
 post:
-    title: "Introducing the AlmaLinux HPC and AI SIG"
-    image: /blog-images/2024/introducing-almalinux-hpc-ai-sig.png
+  title: "Introducing the AlmaLinux HPC and AI SIG"
+  image: /blog-images/2024/introducing-almalinux-hpc-ai-sig.png
 ---
 
 I am proud to announce the formation of the AlmaLinux community’s newest Special Interest Group, the High Performance Computing and Artificial Intelligence SIG.

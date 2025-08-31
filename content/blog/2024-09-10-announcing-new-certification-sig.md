@@ -1,16 +1,16 @@
 ---
 title: "Announcing the AlmaLinux Certification SIG"
 type: blog
-author: 
- name: "Jonathan Wright"
- bio: "Infra & Certification SIG Leaders"
- image: /users/jonathan.jpg
-date: '2024-09-09'
+author:
+  name: "Jonathan Wright"
+  bio: "Infra & Certification SIG Leaders"
+  image: /users/jonathan.jpg
+date: "2024-09-09"
 images:
   - /blog-images/2024/2024.09.certification.sig.png
 post:
-    title: "Announcing the AlmaLinux Certification SIG"
-    image: /blog-images/2024/2024.09.certification.sig.png
+  title: "Announcing the AlmaLinux Certification SIG"
+  image: /blog-images/2024/2024.09.certification.sig.png
 ---
 
 After months of work, we are happy to announce the [AlmaLinux Certification Special Interest Group](https://wiki.almalinux.org/sigs/Certification.html) (SIG), along with our [Hardware Certification Program](http://almalinux.org/certification/hardware-certification/hardware-certification-program/)! This SIG has tangible goals and immediate benefits for all users of AlmaLinux, and tons of ways to get involved.

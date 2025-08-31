@@ -1,19 +1,20 @@
 ---
 title: "How ELevate supports business needs"
 type: blog
-author: 
- name: "David der Nederlanden"
- bio: "Linux Cloud Architect at Bizway"
- image: /users/ddernederlanden.jpg
-date: '2024-06-05'
+author:
+  name: "David der Nederlanden"
+  bio: "Linux Cloud Architect at Bizway"
+  image: /users/ddernederlanden.jpg
+date: "2024-06-05"
 images:
   - /blog-images/2024/how-elevate-supports-business-needs.png
 post:
-    title: "How ELevate supports business needs"
-    image: /blog-images/2024/how-elevate-supports-business-needs.png
+  title: "How ELevate supports business needs"
+  image: /blog-images/2024/how-elevate-supports-business-needs.png
 ---
 
 # How Elevate supports business needs
+
 As long-time users of AlmaLinux, we were already familiar with Project ELevate for upgrading CentOS 7, but just a few weeks ago we got some exciting news. While we've been busy upgrading all our CentOS 7 servers to AlmaLinux 8 and higher, the ELevate Project now has the ability to upgrade CentOS 6 servers too!
 
 ## whoami and a bit about our systems
@@ -30,6 +31,7 @@ Even though servers can - and maybe even should - be configured in a state that 
 So, when AlmaLinux came around and further down the road introduced ELevate, offering enterprise linux in-place upgrades from CentOS 7 systems to (for example) AlmaLinux 8 and higher, it also entered that special place!
 
 ## Why there can be (and are!) still CentOS 6 servers alive and kicking
+
 We always used CentOS as our main operating system for our webhosting platforms, while we were eventually forced to look elsewhere, we still had a lot of CentOS 7 and a couple of CentOS 6 systems around. Since ELevate came out, we started upgrading our whole fleet to AlmaLinux 8 (as we are using that for our new deployments too). We're almost done doing so.
 
 Upgrading is the less painful way to get your customer to use a new OS, most of the time, as migrating to a new server always comes with some debugging. In-place upgrades keep it mostly intact, which is important to customers. As techs, we can sometimes forget that customers mostly want the servers to just work, and to support their business needs.
@@ -43,12 +45,14 @@ Nowadays there are fewer and fewer excuses to prevent upgrades, as [DirectAdmin]
 So when CloudFest and [AlmaLinux Day](https://almalinux.org/blog/2024-05-01-almalinux-day-germany-recap/) came around, great things happened at the hackathon and the idea for ELevating CentOS 6 servers to CentOS 7 was born. Once benny posted that ELevate was available for CentOS 6 I was excited to try it on one of our servers, so after a bit of cloning and snapshotting off we went!
 
 ## Practical tips from a real life ELevate user
+
 While after all the ELevate process itself is quite painless, it can be quite hard to get there.
 I really recommend following/reading the detailed [wiki](https://wiki.almalinux.org/elevate) for the different available migrations.
 
 ELevate is really good at identifying (potential) issues which you must resolve beforehand, below you can read some of those.
 
 ### /boot
+
 One that bothered us the most was that the /boot partition is almost always in need of more space,
 while in more recent installations it was a matter of cleaning up old kernels, in our CentOS 6 servers that really wasn't happening as most servers had a 128Mb /boot partition.
 
@@ -96,9 +100,11 @@ reboot now
 ```
 
 ### grub to grub2!
+
 After upgrading to CentOS 7, my test server switched from grub to grub2. When I wanted to ELevate it to AlmaLinux 8 it complained about some grub issues. I had to create a /boot/grub2/grub.cfg file and create /etc/default/grub.
 
 For /etc/default/grub I created it by using the booted system and put the following in the file:
+
 ```bash
 GRUB_TIMEOUT=5
 GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
@@ -111,12 +117,15 @@ GRUB_THEME="/boot/grub2/themes/system/theme.txt"
 ```
 
 Then, I generated /boot/grub2/grub.cfg with:
+
 ```bash
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
 ### DirectAdmin specific tips
+
 After every `leapp upgrade,` we rebuild all packages that DirectAdmin includes. Sometimes this can go wrong, for example with some older local libraries. The following commands might help you out, too.
+
 ```bash
 # remove and list old local items
 da build list_removals
@@ -135,6 +144,7 @@ da build doMigrateToSystemCurl
 Something to keep in mind is in general - on CentOS 6 you're running older software versions. That means, you must, for example, update MySQL too from 5.6 to 8.0 in the process of upgrading the server, and you will run into changed or removed configuration parameters. You can change or comment as needed in /etc/my.cnf to get MySQL running again.
 
 In short you want to check at least the following parameters before building all packages.
+
 ```bash
 # For /usr/local/directadmin/custombuild/options.conf:
 mod_ruid2=no # as mod_ruid2 isn't supported anymore
@@ -147,12 +157,13 @@ query_cache_size=32M
 ```
 
 ### Test, test and... test.
+
 Something easily forgotten is to define some testing points, and write down and share the results before and after the upgrade. To be honest, we've all done it at one point or another by thinking: "easy, I've done that so many times, no way it goes wrong!".
 
 ELevate also gives a good starting point when cleaning up older packages afterward. Sometimes the server has lived quite long and not every package installed is still needed. When you know what to expect from the services your customer provides on their server, you can clean up packages and test afterward to ensure all customer critical services are still working.
 
-
 ## AlmaLinux and ELevate helps us sleep at night
+
 Overall, AlmaLinux offers us a stable platform, which is exactly what we want and need. One of their slogans is "No drama, just Linux", which is true if you follow the different developments in Linux Land. The way they adapted to the several changes Red Hat brought us was very comforting, and I think a great way forward.
 
 The fact that they are able to patch CVE's themselves now as they see fit and even share their own [Errata](https://errata.almalinux.org/) is awesome!

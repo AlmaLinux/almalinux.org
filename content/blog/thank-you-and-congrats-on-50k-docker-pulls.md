@@ -1,17 +1,15 @@
 ---
 title: "Thank you and Congrats on 50K+ Docker Pulls!"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-08-13'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-08-13"
 post:
-    title: "AlmaLinux Hits 50K Docker Pulls Thanks to Community!"
-    image: /blog-images/50kdocker.gif
+  title: "AlmaLinux Hits 50K Docker Pulls Thanks to Community!"
+  image: /blog-images/50kdocker.gif
 ---
-
-
 
 We'd like to thank all of our community members for helping us reach a monumental milestone--50K+ pulls of our [Docker Library Official Image](https://hub.docker.com/_/almalinux). Including our old (non-official library) image we now have over 70K pulls!
 

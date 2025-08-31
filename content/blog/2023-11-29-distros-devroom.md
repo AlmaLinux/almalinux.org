@@ -1,16 +1,16 @@
 ---
 title: "Join us in the Distributions Dev Room for FOSDEM 2024!"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, AlmaLinux OS Foundation"
- image: /users/benny.jpeg
-date: '2023-11-29'
+author:
+  name: "benny Vasquez"
+  bio: "Chair, AlmaLinux OS Foundation"
+  image: /users/benny.jpeg
+date: "2023-11-29"
 images:
   - /blog-images/23.11.29.distros.dev.room.png
 post:
-    title: "Join us in the Distributions Dev Room for FOSDEM 2024!"
-    image: /blog-images/23.11.29.distros.dev.room.png
+  title: "Join us in the Distributions Dev Room for FOSDEM 2024!"
+  image: /blog-images/23.11.29.distros.dev.room.png
 ---
 
 In just over two months we'll be returning to FOSDEM [again with a stand](https://fosstodon.org/@almalinux/109806681564344149), a [bunch of friends](https://social.linux.pizza/@benny/111468054707170805), and this time we get to help host the Distros Dev Room! 
@@ -19,7 +19,7 @@ In just over two months we'll be returning to FOSDEM [again with a stand](https:
 
 From the [FOSDEM website](https://fosdem.org/2024/news/2023-11-08-devrooms-announced):
 
-> *Developer rooms are assigned to self-organising groups to work together on open source projects, to discuss topics relevant to a broader subset of the community, etc.*
+> _Developer rooms are assigned to self-organising groups to work together on open source projects, to discuss topics relevant to a broader subset of the community, etc._
 
 The general idea is that a group of people get together to organize a mini-event inside the FOSDEM umbrella. The groups of folks submit a proposal to the FOSDEM organizers, and then recruit content and build a schedule for the room. Everyone involved is likely to be a volunteer, but the content is always extremely beneficial, and presented by leaders and experts on their topics.
 
@@ -29,9 +29,9 @@ The distros dev room opened its CFP a couple of weeks ago, and we have been seei
 
 ### Important Dates
 
-* CFP closes: Tuesday, 5 December 2023
-* Deadline for accepted speakers to confirm: Tuesday, 12 December 2023
-* Final schedule announcement: Friday, 15 December 2023
+- CFP closes: Tuesday, 5 December 2023
+- Deadline for accepted speakers to confirm: Tuesday, 12 December 2023
+- Final schedule announcement: Friday, 15 December 2023
 
 ## How to attend
 

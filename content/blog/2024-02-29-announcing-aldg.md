@@ -1,16 +1,16 @@
 ---
 title: "What to expect at AlmaLinux Day: Germany"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, AlmaLinux OS Foundation"
- image: /users/benny.jpeg
+author:
+  name: "benny Vasquez"
+  bio: "Chair, AlmaLinux OS Foundation"
+  image: /users/benny.jpeg
 date: 2024-02-29
 images:
   - /blog-images/2024/aldg.png
-post: 
-    title: "What to expect at AlmaLinux Day: Germany"
-    image: /blog-images/2024/aldg.png
+post:
+  title: "What to expect at AlmaLinux Day: Germany"
+  image: /blog-images/2024/aldg.png
 ---
 
 In December, we hosted the first [AlmaLinux Day in Tokyo](/aldt-2023/). As a user-focused event that brought together our community from all over Japan, this wildly successful event focused on the needs and desires of the open source community in Japan. We had nearly 100 attendees and 7 speakers from different industries!
@@ -41,11 +41,11 @@ Attendees who [register by March 1st](https://eventyay.com/e/c9789850) will get 
 
 If you can't make it to ALDG, don't worry! The sessions will be recorded and will be posted to our Youtube channel as soon as we can get the video edited and published. If you want to be the first to know when they're live, or just stay up to date on all of our other news,pick your favorite place to follow us:
 
-* [forum](https://forums.almalinux.org/)
-* [r/AlmaLinux](https://www.reddit.com/r/AlmaLinux/)
-* [X(Twitter)](https://twitter.com/AlmaLinux)
-* [Mastodon](https://fosstodon.org/@almalinux/)
-* [LinkedIn](https://www.linkedin.com/company/80320905/)
-* [YouTube](https://www.youtube.com/channel/UCt9lpkqUPp1FUEi9uqVlPQA)
+- [forum](https://forums.almalinux.org/)
+- [r/AlmaLinux](https://www.reddit.com/r/AlmaLinux/)
+- [X(Twitter)](https://twitter.com/AlmaLinux)
+- [Mastodon](https://fosstodon.org/@almalinux/)
+- [LinkedIn](https://www.linkedin.com/company/80320905/)
+- [YouTube](https://www.youtube.com/channel/UCt9lpkqUPp1FUEi9uqVlPQA)
 
 We also launched a newsletter this year, which you can [subscribe to on LinkedIn](https://www.linkedin.com/newsletters/almalinux-news-7123058222835376128/) or via email on [our mailing list](https://lists.almalinux.org/postorius/lists/newsletters.lists.almalinux.org/).

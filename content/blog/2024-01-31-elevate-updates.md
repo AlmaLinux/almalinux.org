@@ -1,16 +1,16 @@
 ---
 title: "ELevate Project Updates"
 type: blog
-author: 
- name: "Andrew Lukoshko"
- bio: "Release Engineering Lead"
- image: /users/alukoshko.jpg
+author:
+  name: "Andrew Lukoshko"
+  bio: "Release Engineering Lead"
+  image: /users/alukoshko.jpg
 date: 2024-01-31
 images:
   - /blog-images/2024-01-30-elevate-updates.png
-post: 
-    title: "ELevate Project Updates"
-    image: /blog-images/2024-01-30-elevate-updates.png
+post:
+  title: "ELevate Project Updates"
+  image: /blog-images/2024-01-30-elevate-updates.png
 ---
 
 Hello, Community! We are excited to share that we are about to release a great deal of updates for the [ELevate Project](https://almalinux.org/elevate/).
@@ -25,7 +25,7 @@ In addition, we have expanded beyond just EPEL support. Migration with additiona
 
 ## The next evolution of ELevate
 
-Today we are also announcing the new version of ELevate -  ELevate Next Generation (NG). 
+Today we are also announcing the new version of ELevate - ELevate Next Generation (NG).
 
 The new version of ELevate comes with some big changes that allow us to follow upstream closely, maintain the project with just a minimal subset of patches, and deliver updates and new features faster to supported operating systems.
 
@@ -33,9 +33,9 @@ These updates include the latest version of the leapp-repository [0.19.0](https:
 
 CloudLinux OS and control panel support were removed in ELevate NG and are now only available in [CloudLinux's own ELevate fork](https://github.com/cloudlinux/leapp-repository).
 
-## Contribute to the project 
+## Contribute to the project
 
-In order to ensure ELevate NG's smooth functioning and top-notch user experience, we are seeking your help and support to join us in the testing phase. **Please, do not use it on production machines.** 
+In order to ensure ELevate NG's smooth functioning and top-notch user experience, we are seeking your help and support to join us in the testing phase. **Please, do not use it on production machines.**
 
 We appreciate any feedback and insights as they help us to improve the project's performance. For guidance during testing, please refer to the [Migrate with ELevate NG Guide](https://wiki.almalinux.org/elevate/ELevate-NG-testing-guide.html) available in the Wiki.
 

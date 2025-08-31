@@ -1,14 +1,14 @@
 ---
 title: "Join us at Fedora Flock/Nest Aug 5th-7th!"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-07-30'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-07-30"
 post:
-    title: "AlmaLinux hopes to see you at this year's Fedora Flock/Nest"
-    image: /blog-images/nestlogo_hopin_test.png
+  title: "AlmaLinux hopes to see you at this year's Fedora Flock/Nest"
+  image: /blog-images/nestlogo_hopin_test.png
 ---
 
 Do you plan to #NestwithFedora? We do too!

@@ -1,14 +1,14 @@
 ---
 title: "Celebrating 500K Docker Pulls!"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-12-15'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-12-15"
 post:
-    title: "AlmaLinux thanks the community for this marvelous milestone."
-    image: /blog-images/docker500k.png
+  title: "AlmaLinux thanks the community for this marvelous milestone."
+  image: /blog-images/docker500k.png
 ---
 
 Thank you to our amazing community and congratulations on [500K+ Docker Pulls](https://hub.docker.com/_/almalinux)! What a marvelous milestone!

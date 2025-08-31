@@ -1,16 +1,16 @@
 ---
 title: "Introducing AlmaLinux OS Kitten"
 type: blog
-author: 
- name: "benny Vasquez & Neal Gompa"
- bio: "Chair of the Board, and ALESCo member"
- image: /users/bennyandneal.png
-date: '2024-10-22'
+author:
+  name: "benny Vasquez & Neal Gompa"
+  bio: "Chair of the Board, and ALESCo member"
+  image: /users/bennyandneal.png
+date: "2024-10-22"
 images:
   - /blog-images/2024/introducingkitten.png
 post:
-    title: "Introducing AlmaLinux OS Kitten"
-    image: /blog-images/2024/introducingkitten.png
+  title: "Introducing AlmaLinux OS Kitten"
+  image: /blog-images/2024/introducingkitten.png
 ---
 
 Since the beginning of the AlmaLinux project, we have constantly been thinking about what comes next. Preparation has always been a cornerstone of AlmaLinux's release agility and speed has been our hallmark. Today, we're sharing another peak behind the curtain and showing off another cool thing we're doing to prepare for the next step.
@@ -19,12 +19,11 @@ Since the beginning of the AlmaLinux project, we have constantly been thinking a
 
 Since we started building AlmaLinux directly from the sources that Red Hat uses for Red Hat Enterprise Linux (RHEL), we have been able to deliver bug fixes and security patches faster than ever before for our community. We still keep our promise of compatibility with RHEL, and every deviation from RHEL is [recorded in our release notes](https://wiki.almalinux.org/development/Modified-packages.html), but our build and infrastructure teams have been embracing that freedom even more.
 
-CentOS Stream 10, which will eventually be the source for RHEL10, has already started being built and is available for use today. Because we anticipated many changes in 10, we wanted to get a head start on building AlmaLinux OS 10. Earlier this year we started setting up infrastructure and the build pipeline for AlmaLinux OS 10, and started testing using CentOS Stream 10's code. Based on this preparation work, we are excited to share that we have successfully built a preview of AlmaLinux OS 10 that we are calling AlmaLinux OS Kitten 10. 
+CentOS Stream 10, which will eventually be the source for RHEL10, has already started being built and is available for use today. Because we anticipated many changes in 10, we wanted to get a head start on building AlmaLinux OS 10. Earlier this year we started setting up infrastructure and the build pipeline for AlmaLinux OS 10, and started testing using CentOS Stream 10's code. Based on this preparation work, we are excited to share that we have successfully built a preview of AlmaLinux OS 10 that we are calling AlmaLinux OS Kitten 10.
 
 <small>Note: Our kitten is not related to [this one](https://www.sandia.gov/ccr/software/kitten-lightweight-kernel/) :D</small>
 
 {{< figure src="/blog-images/2024/kitten10-screenshot.png" link="/blog-images/2024/kitten10-screenshot.png" caption="A screenshot of AlmaLinux OS Kitten 10" width="60%">}}
-
 
 ## <u>Why share this version of AlmaLinux with the world?</u>
 
@@ -71,9 +70,10 @@ Starting with AlmaLinux 8.10 and 9.4 we re-enabled support for more than 150 dev
 Our upstream decided to remove packaged versions of Firefox and Thunderbird RPM packages from CentOS Stream 10 and RHEL10 in favor of using Flatpak versions of them. To support our community of desktop users, we decided to continue shipping them in AlmaLinux OS Kitten 10 as regular RPM packages.
 
 ## <u>Where to get AlmaLinux OS Kitten 10</u>
+
 You can get AlmaLinux OS Kitten 10 ISOs for all supported architectures from its own primary mirror: [kitten.repo.almalinux.org](https://kitten.repo.almalinux.org/10-kitten/isos/). You can also find more information and installation instructions on the AlmaLinux OS Kitten 10 [wiki page](https://wiki.almalinux.org/development/almalinux-os-kitten-10.html) and [release notes](https://wiki.almalinux.org/release-notes/kitten-10.html#installation-instructions).
 
-*In case you are wondering, Cloud and Container options will be added there shortly!*
+_In case you are wondering, Cloud and Container options will be added there shortly!_
 
 ## <u>Where to give feedback about these changes</u>
 

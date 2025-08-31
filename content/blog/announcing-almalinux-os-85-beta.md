@@ -1,14 +1,14 @@
 ---
 title: "Announcing AlmaLinux OS 8.5 Beta"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-10-13'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-10-13"
 post:
-    title: "AlmaLinux OS 8.5 Beta for the x86_64 and Arm architectures is now ready for testing."
-    image: 
+  title: "AlmaLinux OS 8.5 Beta for the x86_64 and Arm architectures is now ready for testing."
+  image:
 ---
 
 Presenting the [AlmaLinux OS 8.5 Beta](https://mirrors.almalinux.org/isos.html), codenamed Arctic Sphynx, for the x86_64 and Arm architectures, now ready for testing!

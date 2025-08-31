@@ -2,19 +2,18 @@
 title: "FIPS Validation for AlmaLinux OS"
 type: blog
 author:
- name: "Simon John"
- bio: "Security Standards Architect"
- image: /users/sjohn.png
-date: '2023-09-19'
+  name: "Simon John"
+  bio: "Security Standards Architect"
+  image: /users/sjohn.png
+date: "2023-09-19"
 images:
   - /blog-images/fips140.png
 post:
-    title: "FIPS Validation for AlmaLinux OS"
-    image: /blog-images/fips140.png
-
+  title: "FIPS Validation for AlmaLinux OS"
+  image: /blog-images/fips140.png
 ---
 
-*Note: We want to thank the folks at CloudLinux (one of our Platinum sponsors) for covering the nearly $400,000 in fees and costs (not to mention the time and effort that Simon put in) that it took for AlmaLinux 9.2 to achieve FIPS compliance. FIPS 140-3 will be valid for anyone using AlmaLinux OS 9.2, as long as it is supported. Once 9.3 is released, only TuxCare customers will be able to continue to receive updates for AlmaLinux 9.2 and the FIPS modules. Find more information about that at the end of the article below! -- benny.*
+_Note: We want to thank the folks at CloudLinux (one of our Platinum sponsors) for covering the nearly $400,000 in fees and costs (not to mention the time and effort that Simon put in) that it took for AlmaLinux 9.2 to achieve FIPS compliance. FIPS 140-3 will be valid for anyone using AlmaLinux OS 9.2, as long as it is supported. Once 9.3 is released, only TuxCare customers will be able to continue to receive updates for AlmaLinux 9.2 and the FIPS modules. Find more information about that at the end of the article below! -- benny._
 
 --
 
@@ -38,7 +37,7 @@ Once you've picked an accredited CST lab ([atsec](https://www.atsec.com/services
 
 Next the labs perform a code review and gap analysis to find any non-compliances. This is the painful part! You basically get a list of ways that AlmaLinux in FIPS mode doesn't meet the standards and have to go and fix them. We spent the next few months developing patches and passing them back to the labs to test. Since this is a long process, we also had to adjust to meet the updates that were released in the related standards (FIPS 186-5 got released, some DRBG caveats expired and the RNG implementation mandated the use of SHA3) and in the AlmaLinux packages - in fact we started on 9.1, so the patches were re-written and re-tested **a lot!**
 
-Once you and the lab believe the software is ready and compliant, *functional* testing is performed by the lab, and if you pass that, you progress to **milestone 2** - the [Cryptographic Algorithm Validation Program](https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program), which validates that you have *implemented the cryptography correctly*. We received our CAVP [certificates](https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation-search?searchMode=implementation&vendor=cloudlinux&productType=-1&ipp=100) in June 2023.
+Once you and the lab believe the software is ready and compliant, _functional_ testing is performed by the lab, and if you pass that, you progress to **milestone 2** - the [Cryptographic Algorithm Validation Program](https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program), which validates that you have _implemented the cryptography correctly_. We received our CAVP [certificates](https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation-search?searchMode=implementation&vendor=cloudlinux&productType=-1&ipp=100) in June 2023.
 
 **Milestone 3** is [Entropy Source Validation](https://csrc.nist.gov/Projects/cryptographic-module-validation-program/entropy-validations/esv), which involves sending a bunch of data to an automated server run by NIST that in basic terms tests that your random number generator is random enough - something very important in the world of cryptography. We received our ESV [certificates](https://csrc.nist.gov/projects/cryptographic-module-validation-program/entropy-validations/search?Vendor=cloudlinux&ipp=25) in September 2023 and were actually the first software implementation to receive a FIPS 140-3 ESV certificate using SHA3-256 as a conditioner (256-bits of entropy as opposed to the previous 64-bit LFSR implementation).
 

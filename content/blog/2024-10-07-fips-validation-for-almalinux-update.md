@@ -2,15 +2,15 @@
 title: "AlmaLinux 9.2 FIPS Validation Update"
 type: blog
 author:
- name: "Noam Alum"
- bio: "Automation Specialist at JetBackup"
- image: /users/noam.jpeg
-date: '2024-10-07'
+  name: "Noam Alum"
+  bio: "Automation Specialist at JetBackup"
+  image: /users/noam.jpeg
+date: "2024-10-07"
 images:
   - /blog-images/2024/fipsupdate.png
 post:
-    title: "FIPS Validation for AlmaLinux OS - update"
-    image: /blog-images/2024/fipsupdate.png
+  title: "FIPS Validation for AlmaLinux OS - update"
+  image: /blog-images/2024/fipsupdate.png
 ---
 
 After a long wait ([view the previous blog post](https://almalinux.org/blog/2023-09-19-fips-validation-for-almalinux/)), the AlmaLinux 9.2 kernel received FIPS validation making it the first software implementation to receive a FIPS 140-3 ESV certificate using SHA3-256 as a conditioner. It's also the first EL9 distribution to get a FIPS 140-3 certificate for the kernel. View the certificate [here](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4750).
@@ -19,7 +19,7 @@ After a long wait ([view the previous blog post](https://almalinux.org/blog/2023
 
 When it comes to securing sensitive data, cryptographic standards play a crucial role. One of the most influential standards in this realm is **FIPS**, or **F**ederal **I**nformation **P**rocessing **S**tandards.
 
-FIPS 140-3 is not just a Federal benchmark, it's recognized and respected worldwide, for instance, the European Union's [NIS 2 Directive](https://eur-lex.europa.eu/eli/dir/2022/2555) which focuses on network and information security mandates the use of *up-to-date encryption and cryptography leveraging established standards.* FIPS standards undergo extensive evaluations to ensure that cryptographic algorithms and implementations meet the highest security requirements, making it the gold standard for secure cryptographic practices across the globe.
+FIPS 140-3 is not just a Federal benchmark, it's recognized and respected worldwide, for instance, the European Union's [NIS 2 Directive](https://eur-lex.europa.eu/eli/dir/2022/2555) which focuses on network and information security mandates the use of _up-to-date encryption and cryptography leveraging established standards._ FIPS standards undergo extensive evaluations to ensure that cryptographic algorithms and implementations meet the highest security requirements, making it the gold standard for secure cryptographic practices across the globe.
 
 Anyone who uses [AlmaLinux 9.2](/blog/almalinux-92-now-available/) can achieve FIPS compliance for FREE, the only thing you need to do is download the packages from the TuxCare repo [(docs)](https://docs.tuxcare.com/enterprise-support-for-almalinux/fips) and enable FIPS mode:
 
