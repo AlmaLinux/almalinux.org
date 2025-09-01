@@ -95,11 +95,11 @@
                         {{ i18n "An Open Source, community owned and governed, forever-free enterprise Linux distribution, focused on long-term stability, providing a robust production-grade platform. AlmaLinux OS is binary compatible with RHEL®." }}
                     </p>
                     <div class="d-grid gap-3 d-md-flex justify-content-md-start pt-3">
-                        <a href="{{ "/contribute" | relLangURL }}" class="btn btn-lg px-4 me-md-2 al-cta-blue">
+                        <a href='{{ "/contribute" | relLangURL }}' class="btn btn-lg px-4 me-md-2 al-cta-blue">
                             <i class="bi bi-people pe-1"></i>
                             {{ i18n "Contribute" }}
                         </a>
-                        <a href="{{ "/get-almalinux" | relLangURL }}" class="btn btn-lg px-4 al-cta-green">
+                        <a href='{{ "/get-almalinux" | relLangURL }}' class="btn btn-lg px-4 al-cta-green">
                             <i class="bi bi-download pe-1"></i>
                             {{ i18n "Download" }}
                         </a>
@@ -208,7 +208,6 @@
                         <img loading="lazy" class="al-index-community-icon img" src="/images/iso-icon-F.svg" alt="ISO Image">
                         <div class="al-index-community-content-wrap">
                             <h4 class="fw-bold mb-0 pb-2">ISO Images</h4>
-                              <p>
                                 {{ i18n "AlmaLinux supports 4 architectures:" }}
                                 <ul>
                                 <li>x86_64</li>
@@ -217,7 +216,6 @@
                                 <li>s390x</li>
                                 </ul>
                                 <a href="https://mirrors.almalinux.org/isos.html">{{ i18n "Download ISO from mirrors" }}</a>
-                              </p>
                         </div>
                     </div>
                     <div class="col d-flex align-items-stretch">
@@ -263,7 +261,6 @@
                         <img loading="lazy" class="al-index-community-icon img" src="/images/vagrant-icon-F1.svg" alt="Vagrant Box Image">
                         <div class="al-index-community-content-wrap">
                             <h4 class="fw-bold mb-0 pb-2">Vagrant Boxes</h4>
-                              <p>
                                 {{ i18n "AlmaLinux provides official images for Vagrant:" }}
                                 <ul>
                                 <li>Libvirt</li>
@@ -273,7 +270,6 @@
                                 <li>Parallels</li>
                                 </ul>
                                 <a href="https://portal.cloud.hashicorp.com/vagrant/discover/almalinux">{{ i18n "Get AlmaLinux on HCP Vagrant Registry" }}</a>
-                              </p>
                         </div>
                     </div>
                     <div class="col d-flex align-items-stretch">
@@ -345,7 +341,7 @@
                         </div>
                     </div>
                      <br><p>
-                        {{ i18n "AlmaLinux OS provides a set of security features: Errata, GPG keys, Mailing Lists, OpenSCAP, OVAL, SBOM, and Secure Boot" }}- <a href="{{ "security" | relLangURL }}">{{ i18n "read more" }}</a>.
+                        {{ i18n "AlmaLinux OS provides a set of security features: Errata, GPG keys, Mailing Lists, OpenSCAP, OVAL, SBOM, and Secure Boot" }}- <a href='{{ "/security" | relLangURL }}'>{{ i18n "read more" }}</a>.
                     </p>
                 </div>
             </div>
@@ -383,7 +379,7 @@
                                 <img loading="lazy" src="/brands/KnownHostLogoFLATWHITE.svg" alt="KnownHost" class="al-backer-logo">
                             </div>
                         </a>
-						
+
                         <a href="https://www.equinix.com">
                             <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
                                 <img loading="lazy" src="/brands/equinix.svg" alt="Equinix" class="al-backer-logo">
@@ -395,7 +391,7 @@
                                 <img loading="lazy" src="/brands/ipinfo.svg" alt="IPInfo" class="al-backer-logo">
                             </div>
                         </a>
-						
+
                         <a href="https://codenotary.com">
                             <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
                                 <img loading="lazy" src="/brands/codenotary.svg" alt="Codenotary" class="al-backer-logo">
@@ -413,7 +409,7 @@
                                 <img loading="lazy" src="/brands/plesk.svg" alt="Plesk" class="al-backer-logo">
                             </div>
                         </a>
-						
+
                         <a href="https://cpanel.net">
                             <div class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
                                 <img loading="lazy" src="/brands/cpanel.svg" alt="cPanel" class="al-backer-logo">
@@ -691,7 +687,7 @@
                         </h2>
                         <div id="flush-collapse-2" class="accordion-collapse collapse" aria-labelledby="flush-heading-2" data-parent="#accordionFAQ">
                             <div class="accordion-body">
-                                {{ i18n "In July of 2023, " }} <a href="{{ "/blog/future-of-almalinux/" | relLangURL }}">{{ i18n "we shifted" }}</a> {{ i18n " our goal from being a downstream rebuild of RHEL to maintaining compatibility with RHEL. That means everything from software applications to kernel modules that work on RHEL will work on AlmaLinux. If not, we consider that a bug." }}
+                                {{ i18n "In July of 2023, " }} <a href='{{ "/blog/future-of-almalinux/" | relLangURL }}'>{{ i18n "we shifted" }}</a> {{ i18n " our goal from being a downstream rebuild of RHEL to maintaining compatibility with RHEL. That means everything from software applications to kernel modules that work on RHEL will work on AlmaLinux. If not, we consider that a bug." }}
                             </div>
                         </div>
                     </div>
@@ -704,7 +700,7 @@
                         </h2>
                         <div id="flush-collapse-3" class="accordion-collapse collapse" aria-labelledby="flush-heading-3" data-parent="#accordionFAQ" >
                             <div class="accordion-body">
-                                {{ i18n "AlmaLinux OS 9.2 is FIPS 140-3 validated and on the NIST Active list. Read more in this blog post: " }} <a href="{{ "/blog/2024-10-07-fips-validation-for-almalinux-update/" | relLangURL }}">{{ i18n "AlmaLinux 9.2 FIPS Validation Update" }}</a>
+                                {{ i18n "AlmaLinux OS 9.2 is FIPS 140-3 validated and on the NIST Active list. Read more in this blog post: " }} <a href='{{ "/blog/2024-10-07-fips-validation-for-almalinux-update/" | relLangURL }}'>{{ i18n "AlmaLinux 9.2 FIPS Validation Update" }}</a>
                             </div>
                         </div>
                     </div>
@@ -756,7 +752,7 @@
                         </h2>
                         <div id="flush-collapse-7" class="accordion-collapse collapse " aria-labelledby="flush-heading-7" data-parent="#accordionFAQ">
                             <div class="accordion-body">
-                                {{ i18n "Switching Linux distros can be a headache, but that is not the case when switching from CentOS 8 to AlmaLinux OS. Using " }} <a href="https://github.com/AlmaLinux/almalinux-deploy">{{ i18n "AlmaLinux-deploy" }}<a> {{ i18n " you can migrate to AlmaLinux in-place. If you are coming from CentOS 7, or need to upgrade between major versions, " }} <a href="{{ "elevate" | relLangURL }}">{{ i18n "ELevate" }}</a> {{ i18n " (developed and maintained by the AlmaLinux Community) allows you to migrate to, and upgrade AlmaLinux in-place." }}
+                                {{ i18n "Switching Linux distros can be a headache, but that is not the case when switching from CentOS 8 to AlmaLinux OS. Using " }} <a href="https://github.com/AlmaLinux/almalinux-deploy">{{ i18n "AlmaLinux-deploy" }}</a> {{ i18n " you can migrate to AlmaLinux in-place. If you are coming from CentOS 7, or need to upgrade between major versions, " }} <a href='{{ "/elevate" | relLangURL }}'>{{ i18n "ELevate" }}</a> {{ i18n " (developed and maintained by the AlmaLinux Community) allows you to migrate to, and upgrade AlmaLinux in-place." }}
                             </div>
                         </div>
                     </div>
@@ -769,9 +765,9 @@
                         </h2>
                         <div id="flush-collapse-8" class="accordion-collapse collapse " aria-labelledby="flush-heading-8" data-parent="#accordionFAQ">
                             <div class="accordion-body">
-                                {{ i18n "Since AlmaLinux is binary compatible with RHEL®, your applications and services should be completely interoperable. You can rapidly migrate any number of servers using " }}<a href="https://github.com/AlmaLinux/almalinux-deploy">{{ i18n "AlmaLinux-deploy." }}<a>
+                                {{ i18n "Since AlmaLinux is binary compatible with RHEL®, your applications and services should be completely interoperable. You can rapidly migrate any number of servers using " }}<a href="https://github.com/AlmaLinux/almalinux-deploy">{{ i18n "AlmaLinux-deploy." }}</a>
 
-                                {{ i18n "If you are using CentOS 7 or 8 and need help upgrading and migrating, check out" }} <a href="{{ "elevate" | relLangURL }}">{{ i18n "ELevate." }}</a>
+                                {{ i18n "If you are using CentOS 7 or 8 and need help upgrading and migrating, check out" }} <a href='{{ "/elevate" | relLangURL }}'>{{ i18n "ELevate." }}</a>
                             </div>
                         </div>
                     </div>
@@ -788,7 +784,7 @@
                             </div>
                         </div>
                     </div>
-					
+
                      <div class="accordion-item mb-3" >
                         <h2 class="accordion-header" id="flush-heading-10">
                              <button class="accordion-button" type="button" data-toggle="collapse" data-target="#flush-collapse-10" aria-expanded="true" aria-controls="flush-collapse-10">

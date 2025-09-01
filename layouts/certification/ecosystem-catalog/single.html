@@ -62,7 +62,7 @@
     summary {
         font-size: 2rem;
         user-select: none;
-    }  
+    }
     details {
         border: 1px solid white;
         padding: 1rem;
@@ -85,9 +85,9 @@
         font-weight: bold;
     }
     table.certs-table {
-        width: 90%; 
+        width: 90%;
         margin:0 auto;
-        border-collapse: collapse; 
+        border-collapse: collapse;
         border: none;
     }
 
@@ -106,7 +106,7 @@
     }
 
     table.certs-table tr:hover td {
-        background-color: #f5f5f5; 
+        background-color: #f5f5f5;
     }
 
     .certs-table th:nth-child(2) {
@@ -119,7 +119,7 @@
         font-size:1.2rem;
     }
     table.certs-table tr:nth-child(odd) td {
-        background-color: #f2f2f2; 
+        background-color: #f2f2f2;
         color: black !important;
         font-size:1.2rem;
     }
@@ -130,7 +130,7 @@
 
 /*RESPONSIVE QUERIES */
 @media(max-width: 767px){
-    
+
     .m-hide {
       display: none !important;
     }
@@ -153,7 +153,7 @@
         }
     }
     table.certs-table {
-        overflow-x: auto; 
+        overflow-x: auto;
     }
 }
 
@@ -161,7 +161,7 @@
 
 .breadcrumb {
   display: flex;
-  list-style: none; 
+  list-style: none;
   padding: 0;
   background: none;
   font-weight: bold;
@@ -172,11 +172,11 @@
 
 .breadcrumb-item {
   white-space: nowrap;
-  
+
 }
 
 .breadcrumb-item a {
-  color: white; 
+  color: white;
   text-decoration: none;
 }
 
@@ -228,8 +228,8 @@
         <div class="col-12">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ "/" | relLangURL }}">{{ i18n "Home" }}</a></li>
-                    <li class="breadcrumb-item"><a href="{{ "/certification/ecosystem-catalog" | relLangURL }}">{{ i18n "Ecosystem Catalog" }}</a></li>
+                    <li class="breadcrumb-item"><a href='{{ "/" | relLangURL }}'>{{ i18n "Home" }}</a></li>
+                    <li class="breadcrumb-item"><a href='{{ "/certification/ecosystem-catalog" | relLangURL }}'>{{ i18n "Ecosystem Catalog" }}</a></li>
                     <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
                 </ol>
             </nav>
@@ -244,11 +244,11 @@
                 <h1>{{ .Title }}</h1>
 
                 {{ with .Params.provider }}
-                    <p class="provider">Provided by {{ . }}</p> 
+                    <p class="provider">Provided by {{ . }}</p>
                 {{ end }}
 
                 {{ with .Params.shortTitle }}
-                    <p class="short-title">{{ . }}</p> 
+                    <p class="short-title">{{ . }}</p>
                 {{ end }}
 
                 {{ with .Params.key_applications }}
@@ -305,7 +305,7 @@
                     <h2>{{ i18n "Overview" }}</h2>
                     {{ range . }}
                         {{ if eq .key "Certification Inherited From"}}
-                        <p><strong>{{ .key }}: </strong><a href="{{ "/certification/ecosystem-catalog/{{ .link }}" | relLangURL }}" alt="">{{ .value }}</a></p>
+                        <p><strong>{{ .key }}: </strong><a href='{{ "/certification/ecosystem-catalog/{{ .link }}" | relLangURL }}' alt="">{{ .value }}</a></p>
                         {{ else if eq .key "Test Logs"}}
                         <p><strong>{{ .key }}: </strong><a href="https://github.com/AlmaLinux/certification/tree/master/{{ .link }}/" alt="">{{ .value }}</a></p>
                         {{ else }}
@@ -326,10 +326,10 @@
             <h2>{{ i18n "Certifications" }}</h2>
             {{ range . }}
                 <details>
-                <summary><h3>{{ .name }}</h3> {{ with .certified }}{{ if . }}<span class="badge">{{ end }}{{ if eq . "official" }}CERTIFIED{{ else if eq . "community" }}COMMUNITY VALIDATED{{ end }}{{ if . }}</span>{{ end }}{{ end }}<span class="architecture">Architecture: {{ .architecture }}</span></summary>
+                <summary><h3>{{ .name }}</h3> {{ with .certified }}{{ if . }}<span class="badge">{{ if eq . "official" }}CERTIFIED{{ else if eq . "community" }}COMMUNITY VALIDATED{{ end }}</span>{{ end }}{{ end }}<span class="architecture">Architecture: {{ .architecture }}</span></summary>
 
                 {{ range $categoryKey, $categoryData := . }}
-                    {{ if (reflect.IsMap $categoryData) }}  
+                    {{ if (reflect.IsMap $categoryData) }}
                     <h4>{{ index $categoryData "name" }}: {{ index $categoryData "level" }}</h4>
                     <table class="certs-table">
                         <thead>
@@ -358,4 +358,5 @@
     </div>
   </section>
 {{ end }}
+
 {{end}}

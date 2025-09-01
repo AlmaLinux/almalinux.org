@@ -1,8 +1,8 @@
 {{ define "main" }}
-<!-- 
-TODO:							
+<!--
+TODO:
 add new preview image for link previews
--->   
+-->
 <style>
 @media (max-width: 800px){
     .display-5 {
@@ -76,7 +76,7 @@ add new preview image for link previews
                            class="btn al-cta-learn-how btn-md px-4 me-2">
                             <i class="bi bi-arrow-up-right-square pe-1"></i>
                             {{ i18n "Get Started" }}
-                        </a>  
+                        </a>
                         <a href="https://chat.almalinux.org/almalinux/channels/migration"
                            class="btn al-cta-discuss btn-md px-4">
                             <i class="bi bi-chat-left-dots pe-1"></i>
@@ -121,7 +121,7 @@ add new preview image for link previews
                 <div class="col d-flex align-items-stretch  pl-0" style="padding-right: 15px;">
                     <div>
                         <h4 class="fw-bold mb-0 pb-3">
-                            {{ i18n "Community-wide Project" }} 
+                            {{ i18n "Community-wide Project" }}
                         </h4>
                         <p>
                             {{ i18n "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux." }} {{ i18n "The enterprise linux ecosystem is a very large and diverse community, and we have developed this project in good faith as members of that ecosystem." }} {{ i18n "We hope that everyone in the community can use and contribute to ELevate, no matter which distro you prefer. That is the open source way." }}
@@ -137,7 +137,7 @@ add new preview image for link previews
  		   	<div class="row">
 		      <div class="col-lg-6">
 					<p>{{ i18n "This demo takes you through upgrading in place from CentOS 7 to AlmaLinux 8" }}</p>
-					<iframe src=https://www.youtube-nocookie.com/embed/WJpa1E6jnok title="AlmaLinux OS ELevate" frameborder=0 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="min-height:400px; min-width:100%;">
+					<iframe src="https://www.youtube-nocookie.com/embed/WJpa1E6jnok" title="AlmaLinux OS ELevate" frameborder=0 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="min-height:400px; min-width:100%;">
 					</iframe>
 		      </div>
 		      <div class="col-lg-6">
@@ -157,12 +157,6 @@ add new preview image for link previews
 					</ul>
 		      </div>
 			</div>
-				<div>
-
-				</div>
-				<div>
-
-				</div>
 		</div>
 <!-- supported OSes -->
         <div class="container pt-2 elevate-container-wrap al-py-lg">
@@ -172,7 +166,7 @@ add new preview image for link previews
 				  <img loading="lazy" class="d-block mx-lg-auto img-fluid" width="624" height="430" src="/images/ELevate.svg" alt="The migration paths when using ELevate">
 			  </div>
 		      <div class="col-lg-6">
-                            {{ i18n "ELevate supports the following upgrade and migration paths:" }} 
+                            {{ i18n "ELevate supports the following upgrade and migration paths:" }}
 							<ul>
 								<li>{{ i18n "Upgrade from CentOS 6 to CentOS 7" }}</li>
 								<li>{{ i18n "Upgrade from CentOS 7 to AlmaLinux 8, CentOS Stream 8, Oracle Linux 8, or Rocky Linux 8" }}</li>
@@ -181,7 +175,7 @@ add new preview image for link previews
                                 <li>{{ i18n "Upgrade from 9.x to 10.x within the same distribution" }}</li>
 							</ul>
                             * {{ i18n "Migration to Oracle Linux 9 is available with the" }}
-                            <a href="https://blogs.oracle.com/linux/post/upgrade-oracle-linux-8-to-oracle-linux-9-using-leapp">Oracle Leapp utility</a> {{ i18n "and will not be supported by ELevate project." }} 
+                            <a href="https://blogs.oracle.com/linux/post/upgrade-oracle-linux-8-to-oracle-linux-9-using-leapp">Oracle Leapp utility</a> {{ i18n "and will not be supported by ELevate project." }}
 							<br />
 							* {{ i18n "Note: If you use cPanel, we recommend using the" }} <a href="https://cpanel.github.io/elevate/">cPanel ELevate</a> {{ i18n "fork." }}
 			  </div>
@@ -260,6 +254,7 @@ add new preview image for link previews
                    </div>
 			   </div>
 		</div>
+        </div>
 </section>
 </div>
 {{ end }}
