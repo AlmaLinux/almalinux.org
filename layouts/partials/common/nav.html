@@ -16,7 +16,7 @@
   class="al-primary-navbar navbar p-0 sticky-top navbar-expand-lg navbar-dark flex-column with-motd"
 >
   <div class="container  my-3">
-    <a class="navbar-brand" href='{{ "" | relLangURL }}'>
+    <a class="navbar-brand" href="{{ "" | relLangURL }}">
       <img
         src="/images/logo.svg"
         alt="AlmaLinux OS logo"
@@ -40,7 +40,7 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            href='{{ "/blog" | relLangURL }}'
+            href="{{ "/blog" | relLangURL }}"
             style="margin-top:5px"
           >
             {{ i18n "Blog" }}
@@ -81,7 +81,7 @@
             <li>
               <a
                 class="dropdown-item"
-                href='{{ "/certification" | relLangURL }}'
+                href="{{ "/certification" | relLangURL }}"
                 style="color:aliceblue"
               >
                 {{ i18n "Certification" }}
@@ -90,7 +90,7 @@
                 <li>
                   <a
                     class="dropdown-nested dropdown-item"
-                    href='{{ "/certification/hardware-certification" | relLangURL }}'
+                    href="{{ "/certification/hardware-certification" | relLangURL }}"
                     style="color:aliceblue"
                   >
                     {{ i18n "Hardware" }}
@@ -99,7 +99,7 @@
                 <li>
                   <a
                     class="dropdown-item dropdown-nested"
-                    href='{{ "/certification/hardware-certification/hardware-certification-program" | relLangURL }}'
+                    href="{{ "/certification/hardware-certification/hardware-certification-program" | relLangURL }}"
                     style="color:aliceblue"
                   >
                     {{ i18n "Certification Program" }}
@@ -108,7 +108,7 @@
                 <li>
                   <a
                     class="dropdown-item dropdown-nested"
-                    href='{{ "/certification/software-certification" | relLangURL }}'
+                    href="{{ "/certification/software-certification" | relLangURL }}"
                     style="color:aliceblue"
                   >
                     {{ i18n "Software" }}
@@ -119,7 +119,7 @@
             <li>
               <a
                 class="dropdown-item"
-                href='{{ "/alesco" | relLangURL }}'
+                href="{{ "/alesco" | relLangURL }}"
                 style="color:aliceblue"
               >
                 {{ i18n "ALESCo" }}
@@ -137,7 +137,7 @@
             <li>
               <a
                 class="dropdown-item"
-                href='{{ "/members" | relLangURL }}'
+                href="{{ "/members" | relLangURL }}"
                 style="color:aliceblue"
               >
                 {{ i18n "Membership" }}
@@ -146,7 +146,7 @@
             <li>
               <a
                 class="dropdown-item"
-                href='{{ "/elevate" | relLangURL }}'
+                href="{{ "/elevate" | relLangURL }}"
                 style="color:aliceblue"
               >
                 ELevate
@@ -182,7 +182,7 @@
             <li>
               <a
                 class="dropdown-item"
-                href='{{ "/security" | relLangURL }}'
+                href="{{ "/security" | relLangURL }}"
                 style="color:aliceblue"
               >
                 {{ i18n "Security" }}
@@ -200,7 +200,7 @@
                 <li>
                   <a
                     class="dropdown-nested dropdown-item"
-                    href='{{ "/almalinux-day-vancouver-2025/" | relLangURL }}'
+                    href="{{ "/almalinux-day-vancouver-2025/" | relLangURL }}"
                     style="color:aliceblue"
                   >
                     {{ i18n "ALD Vancouver 2025" }}
@@ -209,7 +209,7 @@
                 <li>
                   <a
                     class="dropdown-nested dropdown-item"
-                    href='{{ "/aldt-2024" | relLangURL }}'
+                    href="{{ "/aldt-2024" | relLangURL }}"
                     style="color:aliceblue"
                   >
                     {{ i18n "ALD Tokyo 2024" }}
@@ -218,7 +218,7 @@
                 <li>
                   <a
                     class="dropdown-item dropdown-nested"
-                    href='{{ "/almalinux-day-germany-2024/" | relLangURL }}'
+                    href="{{ "/almalinux-day-germany-2024/" | relLangURL }}"
                     style="color:aliceblue"
                   >
                     {{ i18n "ALD Germany 2024" }}
@@ -227,7 +227,7 @@
                 <li>
                   <a
                     class="dropdown-item dropdown-nested"
-                    href='{{ "/aldt-2023" | relLangURL }}'
+                    href="{{ "/aldt-2023" | relLangURL }}"
                     style="color:aliceblue"
                   >
                     {{ i18n "ALD Tokyo 2023" }}
@@ -249,7 +249,7 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            href='{{ "/support" | relLangURL }}'
+            href="{{ "/support" | relLangURL }}"
             style="margin-top:5px"
           >
             {{ i18n "Get Support" }}
@@ -299,7 +299,7 @@
         <li class="nav-item ps-md-2">
           <a
             class="nav-link btn btn al-download-button"
-            href='{{ "/get-almalinux" | relLangURL }}'
+            href="{{ "/get-almalinux" | relLangURL }}"
           >
             <i class="bi bi-download pe-1 d-none d-xl-inline"></i>
             {{ i18n "Download" }}
@@ -321,17 +321,17 @@
       <i class="bi bi-stars"></i
       >{{ i18n "AlmaLinux Elections start Aug 31st -" }}
       <a
-        href='{{ "/blog/2025-08-25-3-reasons-to-join-the-almalinux-board/" | relLangURL }}'
+        href="{{ "/blog/2025-08-25-3-reasons-to-join-the-almalinux-board/" | relLangURL }}"
       >
         {{ i18n "More information" }}</a
       >
       <i class="bi bi-stars"></i>, and
       <i class="bi bi-rocket"></i> {{ i18n "Say Hello" }}
-      <a href='{{ "/blog/2025-05-20-almalinux_96_release/" | relLangURL }}'
+      <a href="{{ "/blog/2025-05-20-almalinux_96_release/" | relLangURL }}"
         >{{ i18n "to AlmaLinux 9.6" }}</a
       >
       and <i class="bi bi-rocket"></i>
-      <a href='{{ "/blog/2025-05-27-welcoming-almalinux-10/" | relLangURL }}'
+      <a href="{{ "/blog/2025-05-27-welcoming-almalinux-10/" | relLangURL }}"
         >{{ i18n "to AlmaLinux 10.0!" }}</a
       >
     </div>
