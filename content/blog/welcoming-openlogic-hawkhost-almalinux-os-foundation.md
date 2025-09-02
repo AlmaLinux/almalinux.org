@@ -1,20 +1,19 @@
 ---
 title: "Welcoming OpenLogic and Hawk Host"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "-"
- image: /users/benny.jpeg
-date: '2023-03-20'
+author:
+  name: "benny Vasquez"
+  bio: "-"
+  image: /users/benny.jpeg
+date: "2023-03-20"
 images:
   - /blog-images/23.03.20.png
 post:
-    title: "OpenLogic and Hawk Host join the AlmaLinux OS Foundation"
-    image: /blog-images/23.03.20.png
+  title: "OpenLogic and Hawk Host join the AlmaLinux OS Foundation"
+  image: /blog-images/23.03.20.png
 ---
 
-
-[Earlier today](https://www.businesswire.com/news/home/20230320005256/en/AlmaLinux-OS-Foundation-Welcomes-OpenLogic-and-Hawk-Host-as-Newest-Sponsors) the AlmaLinux OS Foundation announced our two newest sponsors, [OpenLogic by Perforce](https://www.openlogic.com/) and [Hawk Host, Inc](https://www.hawkhost.com/).[  ](https://www.openlogic.com/)We are extremely excited to have them both join the foundation, but the most exciting thing is how this reflects on the strength of the AlmaLinux mission.
+[Earlier today](https://www.businesswire.com/news/home/20230320005256/en/AlmaLinux-OS-Foundation-Welcomes-OpenLogic-and-Hawk-Host-as-Newest-Sponsors) the AlmaLinux OS Foundation announced our two newest sponsors, [OpenLogic by Perforce](https://www.openlogic.com/) and [Hawk Host, Inc](https://www.hawkhost.com/).[ ](https://www.openlogic.com/)We are extremely excited to have them both join the foundation, but the most exciting thing is how this reflects on the strength of the AlmaLinux mission.
 
 One of the things I specifically pointed out in the announcement is the support that OpenLogic provides users of AlmaLinux OS. The team they have built provides incredible end-to-end support for a plethora of open source packages, and having them present as a sponsor of the AlmaLinux OS Foundation proves that their enterprise customers see AlmaLinux as the stable RHEL clone that we know it to be.
 

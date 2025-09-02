@@ -1,18 +1,17 @@
 ---
 title: "Ending 2024 with 9 events in 4 months"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, AlmaLinux OS Foundation"
- image: /users/benny.jpeg
-date: '2025-01-10'
+author:
+  name: "benny Vasquez"
+  bio: "Chair, AlmaLinux OS Foundation"
+  image: /users/benny.jpeg
+date: "2025-01-10"
 images:
   - /blog-images/2025/01-events.png
 post:
-    title: "Ending 2024 with 9 events in 4 months"
-    image: /blog-images/2025/01-events.png
+  title: "Ending 2024 with 9 events in 4 months"
+  image: /blog-images/2025/01-events.png
 ---
-
 
 The last quarter (plus the end of September) of 2024 was packed with big events for AlmaLinux, and we were so excited to join them all! Learn a bit more about each of them below, and then find out how YOU can help staff AlmaLinux booths for events just like these in 2025!
 
@@ -83,12 +82,12 @@ This year's AlmaLinux Day: Tokyo was entirely arranged by the [Japanese AlmaLinu
 
 That's a wrap on events for us for this year, but don't worry! We've got some big plans for 2025. Here's a sneak peek. If you want to help us staff these events or have any others that you think we should cover, reach out to the [Marketing SIG](https://wiki.almalinux.org/sigs/Marketing.html), or sign up on [this form](https://docs.google.com/forms/d/e/1FAIpQLSeGkzJxrYX3PKWh9szmT0deV2ScumGpEOmmiAeevStYFpYkYw/viewform?usp=sf_link).
 
--   [CentOS Connect](https://connect.centos.org/) - Jan 30-31
--   [FOSDEM](https://fosdem.org/2025/) - Feb 1-2
--   [SCaLE](https://www.socallinuxexpo.org) - March 6-9
--   [FOSSAsia Summit](https://summit.fossasia.org/) - March 13-15
--   [CloudFest](https://www.cloudfest.com/) - March 17-20
--   [Linuxfest NW](https://linuxfestnorthwest.org/) - Apr 25 - 27
+- [CentOS Connect](https://connect.centos.org/) - Jan 30-31
+- [FOSDEM](https://fosdem.org/2025/) - Feb 1-2
+- [SCaLE](https://www.socallinuxexpo.org) - March 6-9
+- [FOSSAsia Summit](https://summit.fossasia.org/) - March 13-15
+- [CloudFest](https://www.cloudfest.com/) - March 17-20
+- [Linuxfest NW](https://linuxfestnorthwest.org/) - Apr 25 - 27
 
 ## Keep in touch, and get involved!
 

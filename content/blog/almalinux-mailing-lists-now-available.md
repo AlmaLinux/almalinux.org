@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux Mailing Lists Now Available!"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-11-30'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-11-30"
 post:
-    title: "AlmaLinux Mailing Lists are now available!"
-    image: /blog-images/mailmanlogo.jpg
+  title: "AlmaLinux Mailing Lists are now available!"
+  image: /blog-images/mailmanlogo.jpg
 ---
 
 Howdy folks!

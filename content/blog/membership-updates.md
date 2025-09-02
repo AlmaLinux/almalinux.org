@@ -1,14 +1,14 @@
 ---
 title: "Membership updates"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-10-18'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-10-18"
 post:
-    title: "A quick update on AlmaLinux OS Foundation membership applications"
-    image: 
+  title: "A quick update on AlmaLinux OS Foundation membership applications"
+  image:
 ---
 
 Hello to all of you amazing folks invested in the success of AlmaLinux!

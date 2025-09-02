@@ -1,14 +1,14 @@
 ---
 title: "Welcome Codenotary! AlmaLinux OS Foundation's First Platinum Member"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-12-09'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-12-09"
 post:
-    title: "Moshe Bar's Codenotary joins the AlmaLinux Foundation as a Platinum Member"
-    image: /blog-images/codenotarysponsorship.jpg
+  title: "Moshe Bar's Codenotary joins the AlmaLinux Foundation as a Platinum Member"
+  image: /blog-images/codenotarysponsorship.jpg
 ---
 
 About two months ago we eagerly announced that we were able to then [open memberships for the AlmaLinux OS Foundation](/blog/what-almalinux-foundation-membership-means-for-you/). I outlined why I thought it was important that we’d structured the governance of the project this way–in order to give community members true ownership and a direct voice in the direction of AlmaLinux OS. The reception was tremendous and we’ve had hundreds of applicants and we’ve so far approved, I believe over 100 community members and dozens of mirror members. It’s very encouraging and refreshing to see the community rise to the occasion. I salute each and every person who has been active in our wonderful community, has helped to make it such a welcoming, friendly and diverse place and has taken the step to make their voice heard.

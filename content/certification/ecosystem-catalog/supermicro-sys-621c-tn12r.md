@@ -41,7 +41,7 @@ key_applications:
 # under overview.  If it is removed no overview section will display
 overview_collection:
   - key: Tests Run By
-  # valid values are "AlmaLinux OS Foundation", "<Vendor Name>", or "Community"
+    # valid values are "AlmaLinux OS Foundation", "<Vendor Name>", or "Community"
     value: AlmaLinux OS Foundation
   # optional
   # - key: "Certification Inherited From"
@@ -99,7 +99,6 @@ certification_collection:
         - "4th Generation Intel® Xeon® Scalable Processors": "9.0+"
         - "5th Generation Intel® Xeon® Scalable Processors": "9.2+"
 
-
   - name: "AlmaLinux 8"
     # valid values are "official", or "community"
     certified: official
@@ -136,7 +135,6 @@ certification_collection:
         - "4th Generation Intel® Xeon® Scalable Processors": "8.0+"
         - "5th Generation Intel® Xeon® Scalable Processors": "8.8+"
 
-
 #Begin Search metadata
 searchTitle: "Supermicro CloudDC SuperServer SYS-621C-TN12R"
 searchDesc: "Key Applications
@@ -155,7 +153,7 @@ searchDesc: "Key Applications
   1200W redundant Titanium level 100-240Vac and 200-240 Vdc power
   supplies;
   1 VGA, 1 COM, 2 USB 3.0 (rear);"
-es_collection: 
+es_collection:
   # valid values Server, Component, Component Collection
   type: ["Server"]
   provider: "Super Micro Computer, Inc."
@@ -164,7 +162,7 @@ es_collection:
   architecture: "x86_64"
   network: Configurable (AIOM)
   pcie-version: "5.0"
-  processor-line : "4th/5th Generation Intel® Xeon® Scalable Processors"
+  processor-line: "4th/5th Generation Intel® Xeon® Scalable Processors"
   processor-brand: "Intel"
   storage: ["NVMe", "SATA", "SAS"]
 ---

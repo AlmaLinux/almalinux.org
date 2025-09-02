@@ -1,27 +1,26 @@
 ---
 title: "Impact of RHEL changes to AlmaLinux"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, AlmaLinux OS Foundation Board of Directors"
- image: /users/benny.jpeg
-date: '2023-06-22'
+author:
+  name: "benny Vasquez"
+  bio: "Chair, AlmaLinux OS Foundation Board of Directors"
+  image: /users/benny.jpeg
+date: "2023-06-22"
 post:
-    title: "Impact of RHEL changes to AlmaLinux"
-    image: /blog-images/23.06.22.RHEL.changes.png
+  title: "Impact of RHEL changes to AlmaLinux"
+  image: /blog-images/23.06.22.RHEL.changes.png
 ---
 
--- 
+--
 
-* ***We posted a follow-up post on June 30, which you can read here: [Our Value is our Values](/blog/our-value-is-our-values/)***
-* ***We posted another follow-up update on July 13, which you can read here: [The Future of AlmaLinux is Bright](/blog/future-of-almalinux/)***
+- **_We posted a follow-up post on June 30, which you can read here: [Our Value is our Values](/blog/our-value-is-our-values/)_**
+- **_We posted another follow-up update on July 13, which you can read here: [The Future of AlmaLinux is Bright](/blog/future-of-almalinux/)_**
 
 --
 
 Yesterday, RedHat announced another massive shift that impacts all rebuilds and forks of Red Hat Enterprise Linux. Going forward [Red Hat will now only be releasing the source code for RHEL RPMs behind their customer portal](https://www.redhat.com/en/blog/furthering-evolution-centos-stream). Since all RHEL clones rely on the sources being published, this is causing disruption for the entire Red Hat ecosystem, once again.
 
-A quick summary: how we get RPM sources is being forced to change.
-------------------------------------------------------------------
+## A quick summary: how we get RPM sources is being forced to change.
 
 Late last week one of our build SIG members noticed that some updates for Red Hat 8 hadn't been published on [git.centos.org](https://git.centos.org/) like they were supposed to be. They assumed it was a bug and [opened a report appropriately](https://bugzilla.redhat.com/show_bug.cgi?id=2215299), but as the days went on with no resolution, we knew something was up. This morning we got our answer:
 
@@ -29,8 +28,7 @@ Late last week one of our build SIG members noticed that some updates for Red Ha
 
 This change means that we, as builders of a RHEL clone, will now be responsible for following the licensing and agreements that are in place around Red Hat's interfaces, in addition to following the licenses included in the software sources. Unfortunately the way we understand it today, Red Hat's user interface agreements indicate that re-publishing sources acquired through the customer portal would be a violation of those agreements.
 
-That means we need a new solution.
-----------------------------------
+## That means we need a new solution.
 
 The short- and long-term solutions to this change are something we will be discussing over the coming weeks. We spent much of our time today diving deep to ensure we understood the depth of the problem, and discussing our potential options.
 
@@ -42,10 +40,9 @@ If you have any questions, you know how to find us (in [chat](https://chat.almal
 
 If you have any needs that aren't being met or answered below, please don't hesitate to reach out: <benny@almalinux.org>
 
-***
+---
 
-FAQs (because there are already many):
---------------------------------------
+## FAQs (because there are already many):
 
 Below are a few questions we've seen already come up multiple times. We'll update this with any additional questions we see as we continue on.
 

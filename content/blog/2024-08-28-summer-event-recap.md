@@ -1,16 +1,16 @@
 ---
 title: "Southeast LinuxFest, Academy Open Source Days, SIGGRAPH, Flock to Fedora"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, board of directors"
- image: /users/benny.jpeg
+author:
+  name: "benny Vasquez"
+  bio: "Chair, board of directors"
+  image: /users/benny.jpeg
 date: 2024-08-28
 images:
   - /blog-images/2024/2024.08.28.event.roundup.png
-post: 
-    title: "Southeast LinuxFest, Academy Open Source Days, SIGGRAPH, Flock to Fedora"
-    image: /blog-images/2024/2024.08.28.event.roundup.png
+post:
+  title: "Southeast LinuxFest, Academy Open Source Days, SIGGRAPH, Flock to Fedora"
+  image: /blog-images/2024/2024.08.28.event.roundup.png
 ---
 
 We've attended quite a few events in the US this summer! In June, we attended [Southeast LinuxFest](https://southeastlinuxfest.org/) in Charlotte, North Carolina. In July, we traveled to Denver, Colorado for [Academy Open Source Days](https://events.linuxfoundation.org/open-source-days/) and [SIGGRAPH](https://s2024.siggraph.org/) 2024\. This month, we went to Rochester, New York for [Flock to Fedora](https://fedoraproject.org/flock/2024/). Let's talk about what we loved about each of them. 
@@ -39,7 +39,6 @@ The television and movie industries have embraced AlmaLinux as a solution to the
 {{< figure width="45%" src="/blog-images/2024/08_events_roundup/siggraph1.jpeg" title="benny and Tristan at SIGGRAPH" >}}
 {{< figure width="45%" src="/blog-images/2024/08_events_roundup/siggraph2.jpeg" width="45%" title="AlmaLinux Booth at SIGGRAPH" >}}
 
-
 ## Flock to Fedora
 
 Flock to Fedora is an annual conference for contributors to the Fedora Project, and as an upstream operating system for AlmaLinux and a place where much of the AlmaLinux community is active, we knew we had to support the event!
@@ -50,15 +49,14 @@ Our Infra team lead even gave his first live talk ever, covering the history of 
 {{< figure width="45%" src="/blog-images/2024/08_events_roundup/flock_gathering_2.jpg" title="Friends during FLOCK" >}}
 {{< figure width="45%" src="/blog-images/2024/08_events_roundup/flock_gathering.jpg" title="Friends at the after event" >}}
 
-
 ## More Events this year!
 
 We're still adding a few events this year, but these are the ones we'll be at for sure. Make sure to say hi to us!
 
--   [NERDEARLA](https://nerdear.la/en/), September 24-28, 2024 in Buenos Aires, Argentina
--   [All things open](http://allthingsopen.org/), October 27-29 in Raleigh, North Carolina, US
--   [Seagl](https://seagl.org/), November 8-9 in Seattle, Washington, US
--   [SC (formerly Supercompute)](http://supercomputing.org/), November 17-22 in Atlanta, Georgia, US
+- [NERDEARLA](https://nerdear.la/en/), September 24-28, 2024 in Buenos Aires, Argentina
+- [All things open](http://allthingsopen.org/), October 27-29 in Raleigh, North Carolina, US
+- [Seagl](https://seagl.org/), November 8-9 in Seattle, Washington, US
+- [SC (formerly Supercompute)](http://supercomputing.org/), November 17-22 in Atlanta, Georgia, US
 
 ## Keep in touch, and get involved!
 

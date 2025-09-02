@@ -1,14 +1,14 @@
 ---
 title: "GitLab Moves to AlmaLinux as Supported Platform"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2022-03-30'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2022-03-30"
 post:
-    title: "GitLab chooses AlmaLinux as CentOS 8 replacement to empower millions of developer across the world."
-    image: /blog-images/gitlab-logo-gray-stacked-rgb.png
+  title: "GitLab chooses AlmaLinux as CentOS 8 replacement to empower millions of developer across the world."
+  image: /blog-images/gitlab-logo-gray-stacked-rgb.png
 ---
 
 [GitLab](https://about.gitlab.com/) has switched from CentOS 8 to AlmaLinux as a supported platform. CentOS itself reached end of life (EOL) on December 31, 2021, and enterprise users in multiple industries are looking at alternatives.

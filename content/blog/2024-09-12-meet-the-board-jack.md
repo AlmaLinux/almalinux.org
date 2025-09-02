@@ -1,16 +1,16 @@
 ---
 title: "Meet the board - Jack Aboutboul"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, board of directors"
- image: /users/benny.jpeg
-date: '2024-09-12'
+author:
+  name: "benny Vasquez"
+  bio: "Chair, board of directors"
+  image: /users/benny.jpeg
+date: "2024-09-12"
 images:
   - /blog-images/2024/jack_qanda.png
 post:
-    title: "Meet the board - Jack Aboutboul"
-    image: /blog-images/2024/jack_qanda.png
+  title: "Meet the board - Jack Aboutboul"
+  image: /blog-images/2024/jack_qanda.png
 ---
 
 As you may be aware, last year, [we launched a video series](/blog/2024-01-16-video-contributions/) in which we have community members answer common questions we're seeing from the community. This year, we're starting another video series, this time with the AlmaLinux OS Foundation board members. Our goal with this new series is to better introduce our board to the AlmaLinux community.
@@ -21,7 +21,7 @@ The first of these board member Q&A videos features [Jack Aboutboul](https://www
 
 ## Learn more
 
-The AlmaLinux OS Foundation's board is community elected, by members of the AlmaLinux OS Foundation. If you use AlmaLinux, contribute to AlmaLinux, or support AlmaLinux in some way, we encourage you to [join the foundation](/members/). Individual membership is free, because you shouldn't have to pay to have a voice in the future of something you care about. 
+The AlmaLinux OS Foundation's board is community elected, by members of the AlmaLinux OS Foundation. If you use AlmaLinux, contribute to AlmaLinux, or support AlmaLinux in some way, we encourage you to [join the foundation](/members/). Individual membership is free, because you shouldn't have to pay to have a voice in the future of something you care about.
 
 If you'd like to learn more about our board and elections, you can check out [our Wiki](https://wiki.almalinux.org/election2023.html)! You can also watch the other videos in this series in [this YouTube playlist](https://www.youtube.com/playlist?list=PLqKzWfm6zyluP2R_6MTPvYJt20bwitQZJ) (we'll be adding more soon!).
 

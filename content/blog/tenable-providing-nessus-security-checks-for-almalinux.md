@@ -1,14 +1,14 @@
 ---
 title: "Tenable Providing Nessus Security Checks for AlmaLinux"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2022-07-21'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2022-07-21"
 post:
-    title: "Tenable Providing Nessus Security Checks for AlmaLinux."
-    image: /blog-images/Nessus.png
+  title: "Tenable Providing Nessus Security Checks for AlmaLinux."
+  image: /blog-images/Nessus.png
 ---
 
 [Tenable provides coverage of AlmaLinux](https://www.tenable.com/plugins/nessus/families/Alma%20Linux%20Local%20Security%20Checks) with the addition of a new Nessus plugin family. The plugin has been released to cover all existing advisories for AlmaLinux.

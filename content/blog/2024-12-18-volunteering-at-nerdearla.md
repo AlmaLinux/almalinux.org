@@ -1,16 +1,16 @@
 ---
 title: "A Personal Journey: Volunteering at Nerdearla, Buenos Aires with AlmaLinux"
 type: blog
-author: 
- name: "Pavel Razumov"
- bio: "Technical Team Lead of Cloudlinux Unified Support Team, Almalinux volunteer"
- image: /users/pavel.razumov.jpg
-date: '2024-12-18'
+author:
+  name: "Pavel Razumov"
+  bio: "Technical Team Lead of Cloudlinux Unified Support Team, Almalinux volunteer"
+  image: /users/pavel.razumov.jpg
+date: "2024-12-18"
 images:
   - /blog-images/2024/nerdearla.png
 post:
-    title: "A Personal Journey: Volunteering at Nerdearla, Buenos Aires with AlmaLinux"
-    image: /blog-images/2024/nerdearla.png
+  title: "A Personal Journey: Volunteering at Nerdearla, Buenos Aires with AlmaLinux"
+  image: /blog-images/2024/nerdearla.png
 ---
 
 This year Buenos Aires became a center of the IT technical community in Latin America with an event which became a beacon for technical enthusiasts, entrepreneurs, students and professionals - [Nerdearla](https://nerdear.la/en/), and I was honored to volunteer in this event - presenting AlmaLinux to a crowd that turned out to be massive, diverse, and passionate about open-source technology.

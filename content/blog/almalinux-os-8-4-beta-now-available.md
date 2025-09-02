@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux OS 8.4 Beta Now Available!"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-04-30'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-04-30"
 post:
-    title: "8.3? Pah! Old news. Say \"Hello\" to the newest distro on the block. AlmaLinux OS 8.4 Beta for all your testing needs. Now with Secure Boot goodness b..."
-    image: 
+  title: '8.3? Pah! Old news. Say "Hello" to the newest distro on the block. AlmaLinux OS 8.4 Beta for all your testing needs. Now with Secure Boot goodness b...'
+  image:
 ---
 
 ## 8.3? Pah! Old news. Say "Hello" to the newest distro on the block. AlmaLinux OS 8.4 Beta for all your testing needs. Now with Secure Boot goodness baked right in. This Is The Future The Future Is Here GIF - ThisIsTheFuture TheFutureIsHere YouAreLookingAtTheFuture GIFsBeta Release

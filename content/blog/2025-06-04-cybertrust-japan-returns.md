@@ -1,18 +1,17 @@
 ---
 title: "Cybertrust Japan renews as a Platinum Sponsor Member"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, board of directors"
- image: /users/benny.jpeg
-date: '2025-06-04'
+author:
+  name: "benny Vasquez"
+  bio: "Chair, board of directors"
+  image: /users/benny.jpeg
+date: "2025-06-04"
 images:
   - /blog-images/2025/cybertrustrenewal.png
 post:
-    title: "Cybertrust Japan renews as a Platinum Sponsor Member"
-    image: /blog-images/2025/cybertrustrenewal.png
+  title: "Cybertrust Japan renews as a Platinum Sponsor Member"
+  image: /blog-images/2025/cybertrustrenewal.png
 ---
-
 
 On the heels of one of our biggest releases ever, last week we announced that our friends at [Cybertrust Japan Co., Ltd](https://www.cybertrust.co.jp/english/) (a subsidiary of SB Technology Corp) have renewed their platinum sponsor membership for a third year.
 

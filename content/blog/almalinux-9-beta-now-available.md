@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux 9 Beta--Now Available"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2022-04-19'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2022-04-19"
 post:
-    title: "AlmaLinux 9 Beta is now available for x86_64, aarch64, ppc64le and s390x! Stay tuned for information on test days."
-    image: /blog-images/Alma9beta.png
+  title: "AlmaLinux 9 Beta is now available for x86_64, aarch64, ppc64le and s390x! Stay tuned for information on test days."
+  image: /blog-images/Alma9beta.png
 ---
 
 Hello, Community! AlmaLinux OS is proud to announce [AlmaLinux OS 9.0 Beta](https://mirrors.almalinux.org/isos.html) for all 4 architectures: [x86_64](https://mirrors.almalinux.org/isos/x86_64/9.0-beta.html), [aarch64](https://mirrors.almalinux.org/isos/aarch64/9.0-beta.html), [ppc64le](https://mirrors.almalinux.org/isos/ppc64le/9.0-beta.html) and [s390x](https://mirrors.almalinux.org/isos/s390x/9.0-beta.html), achieving architecture parity with upstream.

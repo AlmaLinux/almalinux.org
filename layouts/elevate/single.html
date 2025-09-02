@@ -1,265 +1,448 @@
 {{ define "main" }}
-<!-- 
-TODO:							
+  <!--
+TODO:
 add new preview image for link previews
--->   
-<style>
-@media (max-width: 800px){
-    .display-5 {
+-->
+  <style>
+    @media (max-width: 800px) {
+      .display-5 {
         font-size: calc(1.425rem + 2.1vw) !important;
         line-height: 1.2;
-    }
-    .row-cols-1 > * {
+      }
+      .row-cols-1 > * {
         flex: 0 0 auto;
         width: 100%;
-    }
-    .d-grid {
+      }
+      .d-grid {
         display: grid !important;
-    }
-    .row-cols-2 > * {
+      }
+      .row-cols-2 > * {
         flex: 0 0 auto;
         width: 50%;
-    }
-    .container-security {
+      }
+      .container-security {
         flex: 0 0 auto;
         display: flex;
-        flex-direction: column!important;
+        flex-direction: column !important;
+      }
+      .container-measure {
+        width: 100% !important;
+      }
     }
-    .container-measure {
-        width: 100%!important;
-    }
-}
-@media (min-width: 800px) {
-    .display-5 {
+    @media (min-width: 800px) {
+      .display-5 {
         font-size: 3rem;
+      }
     }
-}
-.lh-1 {
-    line-height: 1 !important;
-}
-.px-4 {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
-}
-.row > * {
-    margin-top: 20px;
-}
-.al-page-index .al-index-backed-by .al-backed-by-list {
-    justify-content: center;
-}
-@media (min-width: 768px) {
-    .row-cols-md-6 > * {
+    .lh-1 {
+      line-height: 1 !important;
+    }
+    .px-4 {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+    .row > * {
+      margin-top: 20px;
+    }
+    .al-page-index .al-index-backed-by .al-backed-by-list {
+      justify-content: center;
+    }
+    @media (min-width: 768px) {
+      .row-cols-md-6 > * {
         flex: 0 0 auto;
         width: 16.66667%;
+      }
     }
-}
-.h2, h2 {
-    font-size: calc(1.325rem + .9vw);
-}
-</style>
-<div class="al-body-container al-page-index">
-<section class="al-page-elevate-index">
-<!-- hero -->
-        <div class="container">
-            <div class="row al-py-lg align-items-center">
-                <div class="col-12 col-lg-4 al-py-lg pe-md-3">
-                    <h3 class="fw-bold pb-3">
-                        {{ i18n "ELevate Your Distribution" }}
-                    </h3>
-                    <div class="al-subtle-links pb-2">
-                        <p>
-                            {{ i18n "ELevate enables upgrades between major versions of RHEL® derivatives. Upgrade in-place from CentOS 6.x through to 8.x version of the RHEL derivative of your choice, and then upgrade from 8.x to 9.x and from 9.x to 10.x within the same derivative." }}
-                        </p>
-                    </div>
-                    <div>
-                        <a href="https://wiki.almalinux.org/elevate"
-                           class="btn al-cta-learn-how btn-md px-4 me-2">
-                            <i class="bi bi-arrow-up-right-square pe-1"></i>
-                            {{ i18n "Get Started" }}
-                        </a>  
-                        <a href="https://chat.almalinux.org/almalinux/channels/migration"
-                           class="btn al-cta-discuss btn-md px-4">
-                            <i class="bi bi-chat-left-dots pe-1"></i>
-                            {{ i18n "Discuss and contribute" }}
-                        </a>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-8">
-                    <div class="ratio ratio-16x9">
-						<img loading="lazy" class="d-block mx-lg-auto img-fluid" width="624" height="430" src="/images/ELevate.svg" alt="The migration paths when using ELevate">
-                    </div>
-                </div>
-            </div> <!-- end row -->
-        </div> <!-- end container -->
-<!-- about -->
-        <div class="al-index-about" style="background: #0e3b5c!important; padding-top: 30px;">
-        <div class="container pt-2 elevate-container-wrap">
-            <h2>{{ i18n "About" }}</h2>
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-4 py-2 py-md-3">
-                <div class="col d-flex align-items-stretch  pl-0" style="padding-right: 15px;">
-                    <div>
-                        <h4 class="fw-bold mb-0 pb-3">
-                            {{ i18n "Fixing Major Version Upgrades" }}
-                        </h4>
-                        <p>
-                                {{ i18n "With ELevate you can easily upgrade in-place from CentOS 6.x or 7.x to 8.x of the Enterprise Linux of your choice, or upgrade from 8.x to 9.x and from 9.x to 10.x within the same OS. Used all over the world to upgrade more than 500,00 devices, ELevate is your answer to the headache of upgrading your operating system in the Enterprise Linux ecosystem. " }}
-								 {{ i18n "Preserve your applications, your data, and your sanity. Run the most recent version of the OS you and software you need. Run a modern and secure operating system, without having to reconfigure or rebuild the software you need." }}
-                        </p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-stretch  pl-0" style="padding-right: 15px;">
-                    <div>
-                        <h4 class="fw-bold mb-0 pb-3">
-                            {{ i18n "This looks awesome! How do I get involved?" }}
-                        </h4>
-                        <p>
-                            {{ i18n "First join us in the " }}
-							 <a href="https://chat.almalinux.org/almalinux/channels/migration">~migration</a> Mattermost  {{ i18n "channel." }} {{ i18n "You can find the LEAPP code " }} <a href="https://github.com/AlmaLinux/leapp-repository/tree/almalinux">{{ i18n "in the AlmaLinux GitHub organization." }}</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-stretch  pl-0" style="padding-right: 15px;">
-                    <div>
-                        <h4 class="fw-bold mb-0 pb-3">
-                            {{ i18n "Community-wide Project" }} 
-                        </h4>
-                        <p>
-                            {{ i18n "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux." }} {{ i18n "The enterprise linux ecosystem is a very large and diverse community, and we have developed this project in good faith as members of that ecosystem." }} {{ i18n "We hope that everyone in the community can use and contribute to ELevate, no matter which distro you prefer. That is the open source way." }}
-                        </p>
-                    </div>
-                </div>
+    .h2,
+    h2 {
+      font-size: calc(1.325rem + 0.9vw);
+    }
+  </style>
+  <div class="al-body-container al-page-index">
+    <section class="al-page-elevate-index">
+      <!-- hero -->
+      <div class="container">
+        <div class="row al-py-lg align-items-center">
+          <div class="col-12 col-lg-4 al-py-lg pe-md-3">
+            <h3 class="fw-bold pb-3">
+              {{ i18n "ELevate Your Distribution" }}
+            </h3>
+            <div class="al-subtle-links pb-2">
+              <p>
+                {{ i18n "ELevate enables upgrades between major versions of RHEL® derivatives. Upgrade in-place from CentOS 6.x through to 8.x version of the RHEL derivative of your choice, and then upgrade from 8.x to 9.x and from 9.x to 10.x within the same derivative." }}
+              </p>
             </div>
+            <div>
+              <a
+                href="https://wiki.almalinux.org/elevate"
+                class="btn al-cta-learn-how btn-md px-4 me-2"
+              >
+                <i class="bi bi-arrow-up-right-square pe-1"></i>
+                {{ i18n "Get Started" }}
+              </a>
+              <a
+                href="https://chat.almalinux.org/almalinux/channels/migration"
+                class="btn al-cta-discuss btn-md px-4"
+              >
+                <i class="bi bi-chat-left-dots pe-1"></i>
+                {{ i18n "Discuss and contribute" }}
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="ratio ratio-16x9">
+              <img
+                loading="lazy"
+                class="d-block mx-lg-auto img-fluid"
+                width="624"
+                height="430"
+                src="/images/ELevate.svg"
+                alt="The migration paths when using ELevate"
+              />
+            </div>
+          </div>
         </div>
-	</div>
-<!-- learn more -->
-        <div class="container pt-2 elevate-container-wrap al-py-lg">
-            <h2>{{ i18n "Learn more" }}</h2>
- 		   	<div class="row">
-		      <div class="col-lg-6">
-					<p>{{ i18n "This demo takes you through upgrading in place from CentOS 7 to AlmaLinux 8" }}</p>
-					<iframe src=https://www.youtube-nocookie.com/embed/WJpa1E6jnok title="AlmaLinux OS ELevate" frameborder=0 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="min-height:400px; min-width:100%;">
-					</iframe>
-		      </div>
-		      <div class="col-lg-6">
-					<p>{{ i18n "Lots of people have shared their experiences and guides for using ELevate to upgrade in place. Take a look at what others think of it!" }}</p>
-					<ul>
-						<li><a href="https://thenewstack.io/how-to-migrate-centos-7-to-almalinux/">{{ i18n "How to migrate CentOS to AlmaLinux and avoid downtime in your data center" }}</a> <br /><small>The New Stack</small></li>
-						<li><a href="https://almalinux.org/blog/2024-06-05-how-elevate-supports-business-needs/">{{ i18n "How ELevate supports business needs" }}</a> <br /><small>Guest blog post from Bizway</small></li>
-						<li><a href="https://sylabs.io/2023/11/upgrade-centos7-to-alma8/">{{ i18n "Upgrade CentOS 7 to AlmaLinux 8 While Keeping SingularityCE Updated " }}</a><br /><small>Sylabs</small></li>
-						<li><a href="https://www.youtube.com/watch?v=4B4eXhaskZ4">{{ i18n "ELevate your distro to 8.x with Jay from Learn Linux TV" }}</a><br /><small>LearnLinux.TV</small></li>
-					</ul>
-					<p>We also offer a number of guides to take you through the process of getting updated, from different perspectives.</p>
-					<ul>
-						<li><a href="https://wiki.almalinux.org/elevate/ELevate-quickstart-guide.html">{{ i18n "ELevate Quickstart Guide" }}</a></li>
-						<li><a href="https://wiki.almalinux.org/elevate/ELevating-CentOS7-to-AlmaLinux-9.html">{{ i18n "ELevating CentOS 7 to AlmaLinux 9" }}</a></li>
-						<li><a href="https://wiki.almalinux.org/elevate/ELevating-CentOS6-to-CentOS7.html">{{ i18n "ELevating CentOS 6 to CentOS 7" }}</a></li>
-						<li><a href="https://wiki.almalinux.org/elevate/ELevate-offline-guide.html">{{ i18n "ELevating in an Airgapped or Offline environment" }}</a></li>
-					</ul>
-		      </div>
-			</div>
-				<div>
-
-				</div>
-				<div>
-
-				</div>
-		</div>
-<!-- supported OSes -->
-        <div class="container pt-2 elevate-container-wrap al-py-lg">
-            <h2>{{ i18n "Supported Operating Systems" }}</h2>
- 		   	<div class="row">
-		      <div class="col-lg-6">
-				  <img loading="lazy" class="d-block mx-lg-auto img-fluid" width="624" height="430" src="/images/ELevate.svg" alt="The migration paths when using ELevate">
-			  </div>
-		      <div class="col-lg-6">
-                            {{ i18n "ELevate supports the following upgrade and migration paths:" }} 
-							<ul>
-								<li>{{ i18n "Upgrade from CentOS 6 to CentOS 7" }}</li>
-								<li>{{ i18n "Upgrade from CentOS 7 to AlmaLinux 8, CentOS Stream 8, Oracle Linux 8, or Rocky Linux 8" }}</li>
-								<li>{{ i18n "Upgrade from Scientific Linux 7 to AlmaLinux 8" }}</li>
-								<li>{{ i18n "Upgrade from 8.x to 9.x within the same distribution" }}</li>
-                                <li>{{ i18n "Upgrade from 9.x to 10.x within the same distribution" }}</li>
-							</ul>
-                            * {{ i18n "Migration to Oracle Linux 9 is available with the" }}
-                            <a href="https://blogs.oracle.com/linux/post/upgrade-oracle-linux-8-to-oracle-linux-9-using-leapp">Oracle Leapp utility</a> {{ i18n "and will not be supported by ELevate project." }} 
-							<br />
-							* {{ i18n "Note: If you use cPanel, we recommend using the" }} <a href="https://cpanel.github.io/elevate/">cPanel ELevate</a> {{ i18n "fork." }}
-			  </div>
-		  </div>
-  		</div>
-<!-- FAQ -->
-        <div class="al-index-faq">
-            <div class="container al-py-lg">
-            <h2>{{ i18n "Answers to Frequent Questions" }}</h2>
-                <div class="accordion accordion-flush" id="accordionFAQ">
-<!-- question start -->
-                    <div class="accordion-item mb-3">
-                       <h2 class="accordion-header" id="flush-heading-1">
-                            <button class="accordion-button"type="button" data-toggle="collapse" data-target="#flush-collapse-1" aria-expanded="true" aria-controls="flush-collapse-1">
-                                {{ i18n "What is ELevate?" }}
-                            </button>
-                        </h2>
-                      <div id="flush-collapse-1" class="accordion-collapse collapse show" aria-labelledby="flush-heading-1" data-parent="#accordionFAQ">
-                         <div class="accordion-body">
-                             {{ i18n "ELevate is a project aimed to provide the ability to upgrade between major versions of RHEL-based distributions. First announced by AlmaLinux in 2021, ELevate combines two key components: updates to " }}<a href="https://github.com/AlmaLinux/leapp-repository/tree/almalinux">{{ i18n "the open source LEAPP project" }}</a> {{ i18n "and a data library called " }} <a href="https://github.com/AlmaLinux/leapp-data">{{ i18n "leapp-data" }}</a>. {{ i18n "These together allow users to upgrade in-place from an unsupported operating system to a modern operating system, and then from 8 to 9 and 9 to 10 of that operating system." }}
-                          </div>
-                      </div>
-                   </div>
-<!-- question start -->
-                    <div class="accordion-item mb-3">
-                       <h2 class="accordion-header" id="flush-heading-2">
-                            <button class="accordion-button" type="button" data-toggle="collapse" data-target="#flush-collapse-2" aria-expanded="true" aria-controls="flush-collapse-2">
-                                {{ i18n "Who is ELevate for?" }}
-                            </button>
-                        </h2>
-                        <div id="flush-collapse-2" class="accordion-collapse collapse show" aria-labelledby="flush-heading-2" data-parent="#accordionFAQ" >
-                         <div class="accordion-body">
-                             {{ i18n "Individuals and organizations that require an enterprise-grade linux distribution, without the need for a commercial license agreement. AlmaLinux OS is also a perfect replacement for anyone who has historically relied on the CentOS Linux releases to achieve computing objectives, and for whom CentOS Stream is not the right solution." }}
-                          </div>
-                        </div>
-                   </div>
-<!-- question start -->
-                    <div class="accordion-item mb-3" >
-                       <h2 class="accordion-header" id="flush-heading-3">
-                            <button class="accordion-button" type="button" data-toggle="collapse" data-target="#flush-collapse-3" aria-expanded="true" aria-controls="flush-collapse-3">
-                          	  {{ i18n "Is ELevate ready for production?" }}
-                            </button>
-                        </h2>
-                        <div id="flush-collapse-3" class="accordion-collapse collapse show" aria-labelledby="flush-heading-3" data-parent="#accordionFAQ" >
-                         <div class="accordion-body">
-                            {{ i18n "ELevate has been used to migrate production environments across industries and across the world, but we still advise caution." }}  {{ i18n "Every environment is different and unique based on applications and configurations." }}
-                            {{ i18n "To avoid any surprises, we highly recommend that you test upgrades scenarios in a virtual machine or sandbox before running a upgrades in production." }}
-                          </div>
-                        </div>
-                   </div>
-<!-- question start -->
-                    <div class="accordion-item mb-3" >
-                       <h2 class="accordion-header" id="flush-heading-1">
-                            <button class="accordion-button" type="button" data-toggle="collapse" data-target="#flush-collapse-4" aria-expanded="true" aria-controls="flush-collapse-4">
-                          	  	{{ i18n `Will the upgrade be "in-place"? Will it require downtime?` }}
-                            </button>
-                        </h2>
-                        <div id="flush-collapse-4" class="accordion-collapse collapse show" aria-labelledby="flush-heading-4" data-parent="#accordionFAQ" >
-                         <div class="accordion-body">
-                         	   {{ i18n "Yes, and yes! All your data, applications and settings will be kept. Migrations will require your system to reboot twice." }}
-                          </div>
-                        </div>
-                   </div>
-<!-- question start -->
-                    <div class="accordion-item mb-3" >
-                       <h2 class="accordion-header" id="flush-heading-1">
-                            <button class="accordion-button" type="button" data-toggle="collapse" data-target="#flush-collapse-5" aria-expanded="true" aria-controls="flush-collapse-5">
-                            {{ i18n "Why are you supporting migration to other distributions?" }}
-                            </button>
-                        </h2>
-                        <div id="flush-collapse-5" class="accordion-collapse collapse show" aria-labelledby="flush-heading-5" data-parent="#accordionFAQ" >
-                         <div class="accordion-body">
-                            {{ i18n "Our contributors have been part of the RHEL ecosystem for a very long time, and we recognized that the CentOS ecosystem is a very large and diverse community." }} {{ i18n "We've developed this project in good faith in the hope that everyone in the community can use and contribute to, no matter which distro you prefer." }} {{ i18n "That's the open source way." }}
-                         </div>
-                      </div>
-                   </div>
-			   </div>
-		</div>
-</section>
-</div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+      <!-- about -->
+      <div
+        class="al-index-about"
+        style="background: #0e3b5c!important; padding-top: 30px;"
+      >
+        <div class="container pt-2 elevate-container-wrap">
+          <h2>{{ i18n "About" }}</h2>
+          <div
+            class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-4 py-2 py-md-3"
+          >
+            <div
+              class="col d-flex align-items-stretch  pl-0"
+              style="padding-right: 15px;"
+            >
+              <div>
+                <h4 class="fw-bold mb-0 pb-3">
+                  {{ i18n "Fixing Major Version Upgrades" }}
+                </h4>
+                <p>
+                  {{ i18n "With ELevate you can easily upgrade in-place from CentOS 6.x or 7.x to 8.x of the Enterprise Linux of your choice, or upgrade from 8.x to 9.x and from 9.x to 10.x within the same OS. Used all over the world to upgrade more than 500,00 devices, ELevate is your answer to the headache of upgrading your operating system in the Enterprise Linux ecosystem. " }}
+                  {{ i18n "Preserve your applications, your data, and your sanity. Run the most recent version of the OS you and software you need. Run a modern and secure operating system, without having to reconfigure or rebuild the software you need." }}
+                </p>
+              </div>
+            </div>
+            <div
+              class="col d-flex align-items-stretch  pl-0"
+              style="padding-right: 15px;"
+            >
+              <div>
+                <h4 class="fw-bold mb-0 pb-3">
+                  {{ i18n "This looks awesome! How do I get involved?" }}
+                </h4>
+                <p>
+                  {{ i18n "First join us in the " }}
+                  <a
+                    href="https://chat.almalinux.org/almalinux/channels/migration"
+                    >~migration</a
+                  >
+                  Mattermost
+                  {{ i18n "channel." }}
+                  {{ i18n "You can find the LEAPP code " }}
+                  <a
+                    href="https://github.com/AlmaLinux/leapp-repository/tree/almalinux"
+                    >{{ i18n "in the AlmaLinux GitHub organization." }}</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div
+              class="col d-flex align-items-stretch  pl-0"
+              style="padding-right: 15px;"
+            >
+              <div>
+                <h4 class="fw-bold mb-0 pb-3">
+                  {{ i18n "Community-wide Project" }}
+                </h4>
+                <p>
+                  {{ i18n "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux." }}
+                  {{ i18n "The enterprise linux ecosystem is a very large and diverse community, and we have developed this project in good faith as members of that ecosystem." }}
+                  {{ i18n "We hope that everyone in the community can use and contribute to ELevate, no matter which distro you prefer. That is the open source way." }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- learn more -->
+      <div class="container pt-2 elevate-container-wrap al-py-lg">
+        <h2>{{ i18n "Learn more" }}</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <p>
+              {{ i18n "This demo takes you through upgrading in place from CentOS 7 to AlmaLinux 8" }}
+            </p>
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/WJpa1E6jnok"
+              title="AlmaLinux OS ELevate"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              style="min-height:400px; min-width:100%;"
+            >
+            </iframe>
+          </div>
+          <div class="col-lg-6">
+            <p>
+              {{ i18n "Lots of people have shared their experiences and guides for using ELevate to upgrade in place. Take a look at what others think of it!" }}
+            </p>
+            <ul>
+              <li>
+                <a
+                  href="https://thenewstack.io/how-to-migrate-centos-7-to-almalinux/"
+                  >{{ i18n "How to migrate CentOS to AlmaLinux and avoid downtime in your data center" }}</a
+                >
+                <br /><small>The New Stack</small>
+              </li>
+              <li>
+                <a
+                  href="https://almalinux.org/blog/2024-06-05-how-elevate-supports-business-needs/"
+                  >{{ i18n "How ELevate supports business needs" }}</a
+                >
+                <br /><small>Guest blog post from Bizway</small>
+              </li>
+              <li>
+                <a href="https://sylabs.io/2023/11/upgrade-centos7-to-alma8/"
+                  >{{ i18n "Upgrade CentOS 7 to AlmaLinux 8 While Keeping SingularityCE Updated " }}</a
+                ><br /><small>Sylabs</small>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=4B4eXhaskZ4"
+                  >{{ i18n "ELevate your distro to 8.x with Jay from Learn Linux TV" }}</a
+                ><br /><small>LearnLinux.TV</small>
+              </li>
+            </ul>
+            <p>
+              We also offer a number of guides to take you through the process
+              of getting updated, from different perspectives.
+            </p>
+            <ul>
+              <li>
+                <a
+                  href="https://wiki.almalinux.org/elevate/ELevate-quickstart-guide.html"
+                  >{{ i18n "ELevate Quickstart Guide" }}</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://wiki.almalinux.org/elevate/ELevating-CentOS7-to-AlmaLinux-9.html"
+                  >{{ i18n "ELevating CentOS 7 to AlmaLinux 9" }}</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://wiki.almalinux.org/elevate/ELevating-CentOS6-to-CentOS7.html"
+                  >{{ i18n "ELevating CentOS 6 to CentOS 7" }}</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://wiki.almalinux.org/elevate/ELevate-offline-guide.html"
+                  >{{ i18n "ELevating in an Airgapped or Offline environment" }}</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- supported OSes -->
+      <div class="container pt-2 elevate-container-wrap al-py-lg">
+        <h2>{{ i18n "Supported Operating Systems" }}</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <img
+              loading="lazy"
+              class="d-block mx-lg-auto img-fluid"
+              width="624"
+              height="430"
+              src="/images/ELevate.svg"
+              alt="The migration paths when using ELevate"
+            />
+          </div>
+          <div class="col-lg-6">
+            {{ i18n "ELevate supports the following upgrade and migration paths:" }}
+            <ul>
+              <li>{{ i18n "Upgrade from CentOS 6 to CentOS 7" }}</li>
+              <li>
+                {{ i18n "Upgrade from CentOS 7 to AlmaLinux 8, CentOS Stream 8, Oracle Linux 8, or Rocky Linux 8" }}
+              </li>
+              <li>
+                {{ i18n "Upgrade from Scientific Linux 7 to AlmaLinux 8" }}
+              </li>
+              <li>
+                {{ i18n "Upgrade from 8.x to 9.x within the same distribution" }}
+              </li>
+              <li>
+                {{ i18n "Upgrade from 9.x to 10.x within the same distribution" }}
+              </li>
+            </ul>
+            *
+            {{ i18n "Migration to Oracle Linux 9 is available with the" }}
+            <a
+              href="https://blogs.oracle.com/linux/post/upgrade-oracle-linux-8-to-oracle-linux-9-using-leapp"
+              >Oracle Leapp utility</a
+            >
+            {{ i18n "and will not be supported by ELevate project." }}
+            <br />
+            *
+            {{ i18n "Note: If you use cPanel, we recommend using the" }}
+            <a href="https://cpanel.github.io/elevate/">cPanel ELevate</a>
+            {{ i18n "fork." }}
+          </div>
+        </div>
+      </div>
+      <!-- FAQ -->
+      <div class="al-index-faq">
+        <div class="container al-py-lg">
+          <h2>{{ i18n "Answers to Frequent Questions" }}</h2>
+          <div class="accordion accordion-flush" id="accordionFAQ">
+            <!-- question start -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="flush-heading-1">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#flush-collapse-1"
+                  aria-expanded="true"
+                  aria-controls="flush-collapse-1"
+                >
+                  {{ i18n "What is ELevate?" }}
+                </button>
+              </h2>
+              <div
+                id="flush-collapse-1"
+                class="accordion-collapse collapse show"
+                aria-labelledby="flush-heading-1"
+                data-parent="#accordionFAQ"
+              >
+                <div class="accordion-body">
+                  {{ i18n "ELevate is a project aimed to provide the ability to upgrade between major versions of RHEL-based distributions. First announced by AlmaLinux in 2021, ELevate combines two key components: updates to " }}<a
+                    href="https://github.com/AlmaLinux/leapp-repository/tree/almalinux"
+                    >{{ i18n "the open source LEAPP project" }}</a
+                  >
+                  {{ i18n "and a data library called " }}
+                  <a href="https://github.com/AlmaLinux/leapp-data"
+                    >{{ i18n "leapp-data" }}</a
+                  >.
+                  {{ i18n "These together allow users to upgrade in-place from an unsupported operating system to a modern operating system, and then from 8 to 9 and 9 to 10 of that operating system." }}
+                </div>
+              </div>
+            </div>
+            <!-- question start -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="flush-heading-2">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#flush-collapse-2"
+                  aria-expanded="true"
+                  aria-controls="flush-collapse-2"
+                >
+                  {{ i18n "Who is ELevate for?" }}
+                </button>
+              </h2>
+              <div
+                id="flush-collapse-2"
+                class="accordion-collapse collapse show"
+                aria-labelledby="flush-heading-2"
+                data-parent="#accordionFAQ"
+              >
+                <div class="accordion-body">
+                  {{ i18n "Individuals and organizations that require an enterprise-grade linux distribution, without the need for a commercial license agreement. AlmaLinux OS is also a perfect replacement for anyone who has historically relied on the CentOS Linux releases to achieve computing objectives, and for whom CentOS Stream is not the right solution." }}
+                </div>
+              </div>
+            </div>
+            <!-- question start -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="flush-heading-3">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#flush-collapse-3"
+                  aria-expanded="true"
+                  aria-controls="flush-collapse-3"
+                >
+                  {{ i18n "Is ELevate ready for production?" }}
+                </button>
+              </h2>
+              <div
+                id="flush-collapse-3"
+                class="accordion-collapse collapse show"
+                aria-labelledby="flush-heading-3"
+                data-parent="#accordionFAQ"
+              >
+                <div class="accordion-body">
+                  {{ i18n "ELevate has been used to migrate production environments across industries and across the world, but we still advise caution." }}
+                  {{ i18n "Every environment is different and unique based on applications and configurations." }}
+                  {{ i18n "To avoid any surprises, we highly recommend that you test upgrades scenarios in a virtual machine or sandbox before running a upgrades in production." }}
+                </div>
+              </div>
+            </div>
+            <!-- question start -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="flush-heading-1">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#flush-collapse-4"
+                  aria-expanded="true"
+                  aria-controls="flush-collapse-4"
+                >
+                  {{ i18n `Will the upgrade be "in-place"? Will it require downtime?` }}
+                </button>
+              </h2>
+              <div
+                id="flush-collapse-4"
+                class="accordion-collapse collapse show"
+                aria-labelledby="flush-heading-4"
+                data-parent="#accordionFAQ"
+              >
+                <div class="accordion-body">
+                  {{ i18n "Yes, and yes! All your data, applications and settings will be kept. Migrations will require your system to reboot twice." }}
+                </div>
+              </div>
+            </div>
+            <!-- question start -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="flush-heading-1">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#flush-collapse-5"
+                  aria-expanded="true"
+                  aria-controls="flush-collapse-5"
+                >
+                  {{ i18n "Why are you supporting migration to other distributions?" }}
+                </button>
+              </h2>
+              <div
+                id="flush-collapse-5"
+                class="accordion-collapse collapse show"
+                aria-labelledby="flush-heading-5"
+                data-parent="#accordionFAQ"
+              >
+                <div class="accordion-body">
+                  {{ i18n "Our contributors have been part of the RHEL ecosystem for a very long time, and we recognized that the CentOS ecosystem is a very large and diverse community." }}
+                  {{ i18n "We've developed this project in good faith in the hope that everyone in the community can use and contribute to, no matter which distro you prefer." }}
+                  {{ i18n "That's the open source way." }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 {{ end }}

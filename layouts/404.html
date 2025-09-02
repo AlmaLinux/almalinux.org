@@ -1,16 +1,14 @@
-{{define "main"}}
-
-<div class="container">
+{{ define "main" }}
+  <div class="container">
     <div class="py-5">
-        <section class="d-flex flex-column flex-fill align-items-center justify-content-center py-3">
-            <h1 class="al-section-title">
-                404 Not Found
-            </h1>
-            <div>
-                {{ i18n "Sorry, but the page you were trying to access could not be found." }}
-            </div>
-        </section>
+      <section
+        class="d-flex flex-column flex-fill align-items-center justify-content-center py-3"
+      >
+        <h1 class="al-section-title">404 Not Found</h1>
+        <div>
+          {{ i18n "Sorry, but the page you were trying to access could not be found." }}
+        </div>
+      </section>
     </div>
-</div>
-
-{{end}}
+  </div>
+{{ end }}

@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux OS 8.4 for Arm/AArch64 Now Available!"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-06-30'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-06-30"
 post:
-    title: "The AlmaLinux OS Foundation is proud to announce the release of the only 100% community owned and governed CentOS alternative, AlmaLinux OS 8.4 Stable for the Arm/AArch64 architecture. Available now on a mirror near you! Download a fresh copy and then join us to talk about it. Container images are also available on Docker Hub and Quay.io."
-    image: 
+  title: "The AlmaLinux OS Foundation is proud to announce the release of the only 100% community owned and governed CentOS alternative, AlmaLinux OS 8.4 Stable for the Arm/AArch64 architecture. Available now on a mirror near you! Download a fresh copy and then join us to talk about it. Container images are also available on Docker Hub and Quay.io."
+  image:
 ---
 
 The AlmaLinux OS Foundation is proud to announce the release of the only 100% community owned and governed CentOS alternative, AlmaLinux OS 8.4 Stable for the Arm/AArch64 architecture. Available now on a [mirror](https://mirrors.almalinux.org/isos/aarch64/8.4.html) near you! Download a fresh copy and then [join us](https://chat.almalinux.org/) to talk about it. Container images are also available on [Docker Hub](https://hub.docker.com/_/almalinux) and Quay.io.

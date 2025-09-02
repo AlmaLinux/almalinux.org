@@ -3,11 +3,13 @@ title: "AlmaLinux Foundation Bylaws"
 type: p
 ---
 
-These were adopted in August 2021 by email, and confirmed in the September 2021 meeting of the [Board of Directors](https://wiki.almalinux.org/Transparency.html#minutes-of-almalinux-os-foundation-board-meetings). 
+These were adopted in August 2021 by email, and confirmed in the September 2021 meeting of the [Board of Directors](https://wiki.almalinux.org/Transparency.html#minutes-of-almalinux-os-foundation-board-meetings).
 
 ## AMENDED AND RESTATED BY-LAWS OF
+
 ## ALMALINUX OS FOUNDATION, INC.
-_____________________________________________________________________________
+
+---
 
 ## ARTICLE I
 
@@ -31,9 +33,9 @@ The nature of the business or purposes to be conducted or promoted by the Founda
 
 ## Section 1.5 (Nonprofit Status)
 
-* The Foundation is organized and shall be operated as a non-stock membership corporation operating not for profit under the General Corporation Law of the State of Delaware.
+- The Foundation is organized and shall be operated as a non-stock membership corporation operating not for profit under the General Corporation Law of the State of Delaware.
 
-* The Board of Directors may, in its sole discretion, elect to seek exemption from Federal taxation for the Foundation pursuant to Section 501(a) of the Internal Revenue Code of1986, as amended (hereinafter, the “Code”). In the event that such exemption is sought and until such time, if ever, as such exemption is denied or lost, the Foundation shall not knowingly engage directly or indirectly in any activity that it believes would be likely to invalidate its status as an organization exempt from federal income taxation under Section 501(a) of the Code as an organization described in Section 501(c)(6) of the Code. All references to the Code contained herein are deemed to include corresponding provisions of any future United States Internal Revenue Law.
+- The Board of Directors may, in its sole discretion, elect to seek exemption from Federal taxation for the Foundation pursuant to Section 501(a) of the Internal Revenue Code of1986, as amended (hereinafter, the “Code”). In the event that such exemption is sought and until such time, if ever, as such exemption is denied or lost, the Foundation shall not knowingly engage directly or indirectly in any activity that it believes would be likely to invalidate its status as an organization exempt from federal income taxation under Section 501(a) of the Code as an organization described in Section 501(c)(6) of the Code. All references to the Code contained herein are deemed to include corresponding provisions of any future United States Internal Revenue Law.
 
 ## ARTICLE II
 
@@ -45,75 +47,75 @@ The Foundation shall initially have six classes of membership: Platinum, Gold, S
 
 ### Section 2.2 (General Conditions of Membership)
 
-* Any association, partnership, organization, governmental agency, company, corporation, academic entity or non-profit entity shall be admitted to Membership as a Platinum, Gold or Silver Member upon: (i) acceptance of its written application on such form as may be from time to time required by the Foundation (which acceptance shall be administered in a non- discriminatory fashion) and (ii) unless otherwise provided by the Board of Directors, (x) payment of such application fees, assessments, initiation fees (if any), annual dues or other fees for such class of Membership as may from time to time be established by the Board of Directors and/or commitment to in-kind contributions as referred to in the following sentence (collectively, “Fees”). Subject to such conditions as the Board of Directors or any committee authorized by the Board of Directors for such purpose, a Member may satisfy its obligations to pay Fees, in whole or in part, by making in-kind contributions of equipment, services or other value.
+- Any association, partnership, organization, governmental agency, company, corporation, academic entity or non-profit entity shall be admitted to Membership as a Platinum, Gold or Silver Member upon: (i) acceptance of its written application on such form as may be from time to time required by the Foundation (which acceptance shall be administered in a non- discriminatory fashion) and (ii) unless otherwise provided by the Board of Directors, (x) payment of such application fees, assessments, initiation fees (if any), annual dues or other fees for such class of Membership as may from time to time be established by the Board of Directors and/or commitment to in-kind contributions as referred to in the following sentence (collectively, “Fees”). Subject to such conditions as the Board of Directors or any committee authorized by the Board of Directors for such purpose, a Member may satisfy its obligations to pay Fees, in whole or in part, by making in-kind contributions of equipment, services or other value.
 
-* Subject to such further eligibility criteria as the Board of Directors shall from time to time approve, any individual may be admitted as a Contributor or Alumnus Member, and any individual or entity may be admitted as a Mirror Member, upon: (i) acceptance of its application by the Membership Committee, in the case of Contributor and Alumnus Member applicants, and by the Technical Committee, in the case of Mirror Member applicants.
+- Subject to such further eligibility criteria as the Board of Directors shall from time to time approve, any individual may be admitted as a Contributor or Alumnus Member, and any individual or entity may be admitted as a Mirror Member, upon: (i) acceptance of its application by the Membership Committee, in the case of Contributor and Alumnus Member applicants, and by the Technical Committee, in the case of Mirror Member applicants.
 
-* Notwithstanding the foregoing, the Foundation (i) shall have no obligation to accept, nor shall it have any liability for refusing to accept, any application for Membership, and (ii) shall have the right to restrict the ability of any Member to exercise any or all rights of Membership; in each case to the extent that it reasonably believes on advice of legal counsel that it might violate any federal, state or foreign law or regulation applicable to it by acting otherwise.
+- Notwithstanding the foregoing, the Foundation (i) shall have no obligation to accept, nor shall it have any liability for refusing to accept, any application for Membership, and (ii) shall have the right to restrict the ability of any Member to exercise any or all rights of Membership; in each case to the extent that it reasonably believes on advice of legal counsel that it might violate any federal, state or foreign law or regulation applicable to it by acting otherwise.
 
-* Platinum, Gold and Silver Memberships in good standing shall extend until the end of the then current Foundation Membership year and shall renew for additional one year periods unless the Member gives notice of non-renewal prior to the end of the Membership year. Contributor and Alumnus Memberships in good standing shall extend until the end of the current Foundation Membership year, and the end of the next Foundation Membership Year, respectively, provided that in each case such renewal shall be approved by the Membership Committee. Mirror Membership shall be ongoing for so long as the Member desires to be a Member and the Technical Committee confirms the eligibility of its AlmaLinux mirror site.
+- Platinum, Gold and Silver Memberships in good standing shall extend until the end of the then current Foundation Membership year and shall renew for additional one year periods unless the Member gives notice of non-renewal prior to the end of the Membership year. Contributor and Alumnus Memberships in good standing shall extend until the end of the current Foundation Membership year, and the end of the next Foundation Membership Year, respectively, provided that in each case such renewal shall be approved by the Membership Committee. Mirror Membership shall be ongoing for so long as the Member desires to be a Member and the Technical Committee confirms the eligibility of its AlmaLinux mirror site.
 
-* A Member shall remain in good standing as a Member provided such Member is in compliance with the terms and conditions of the Foundation’s Certificate of Incorporation (“Certificate of Incorporation”), By-laws, Membership Application and such rules and policies as the Board of Directors and/or any committees thereof (each a “Board Committee”) may from time to time adopt, including without limitation, timely payment of all Fees and penalties for late payment as may be determined by the Board of Directors (such Fees and penalties are collectively referred to in the By-laws as “Financial Obligations”, and all of the foregoing good standing requirements are collectively referred to in the By-laws as “Membership Obligations”).
+- A Member shall remain in good standing as a Member provided such Member is in compliance with the terms and conditions of the Foundation’s Certificate of Incorporation (“Certificate of Incorporation”), By-laws, Membership Application and such rules and policies as the Board of Directors and/or any committees thereof (each a “Board Committee”) may from time to time adopt, including without limitation, timely payment of all Fees and penalties for late payment as may be determined by the Board of Directors (such Fees and penalties are collectively referred to in the By-laws as “Financial Obligations”, and all of the foregoing good standing requirements are collectively referred to in the By-laws as “Membership Obligations”).
 
 ### Section 2.3 (Privileges of Platinum Membership)
 
 Each Platinum Member, while in good standing, shall be entitled to:
 
-* nominate a representative to run for election as a member of the Board of Directors (a “Director”);
+- nominate a representative to run for election as a member of the Board of Directors (a “Director”);
 
-* cast fifty votes for each candidate for election as a Director other than the Community Director, and with respect to every other matter upon which Members are eligible to vote;
+- cast fifty votes for each candidate for election as a Director other than the Community Director, and with respect to every other matter upon which Members are eligible to vote;
 
-* such additional rights as the Board of Directors may from time to time approve; and
+- such additional rights as the Board of Directors may from time to time approve; and
 
-* the Additional Rights described in Section 2.7 below.
+- the Additional Rights described in Section 2.7 below.
 
 Section 2.4 (Privileges of Gold Membership)
 
 Each Gold Member, while in good standing, shall be entitled to:
 
-* nominate a representative to run for election as a member of the Board of Directors;
+- nominate a representative to run for election as a member of the Board of Directors;
 
-* cast fifteen votes for each candidate for election as a Director other than the Community Director, and with respect to every other matter upon which Members are eligible to vote;
+- cast fifteen votes for each candidate for election as a Director other than the Community Director, and with respect to every other matter upon which Members are eligible to vote;
 
-* such additional rights as the Board of Directors may from time to time approve; and
+- such additional rights as the Board of Directors may from time to time approve; and
 
-* the Additional Rights described in Section 2.7 below.
+- the Additional Rights described in Section 2.7 below.
 
 ### Section 2.5 (Privileges of Silver Membership)
 
 Each Silver Member, while in good standing, shall be entitled to:
 
-* nominate a representative to run for election as a member of the Board of Directors;
+- nominate a representative to run for election as a member of the Board of Directors;
 
-* cast five votes for each candidate for election as a Director other than the Community Director, and with respect to every other matter upon which Members are eligible to vote;
+- cast five votes for each candidate for election as a Director other than the Community Director, and with respect to every other matter upon which Members are eligible to vote;
 
-* such additional rights as the Board of Directors may from time to time approve; and
+- such additional rights as the Board of Directors may from time to time approve; and
 
-* the Additional Rights described in Section 2.7 below.
+- the Additional Rights described in Section 2.7 below.
 
 ### Section 2.6 (Privileges of Contributor, Alumnus and Mirror Membership)
 
 Each Contributor, Alumnus and Mirror Member, while in good standing, shall be entitled to:
 
-* nominate a candidate to run for election as the Community Director;
+- nominate a candidate to run for election as the Community Director;
 
-* cast one vote for each candidate for election as a Director, including the Community Director, and with respect to every other matter upon which Members are eligible to vote;
+- cast one vote for each candidate for election as a Director, including the Community Director, and with respect to every other matter upon which Members are eligible to vote;
 
-* participate in, and vote at, each meeting of the Members;
+- participate in, and vote at, each meeting of the Members;
 
-* such additional rights as the Board of Directors may from time to time approve for its class of Membership; and
+- such additional rights as the Board of Directors may from time to time approve for its class of Membership; and
 
-* the Additional Rights described in Section 2.7 below.
+- the Additional Rights described in Section 2.7 below.
 
 ### Section 2.7 (Additional Rights)
 
 Each Member, while in good standing, shall be entitled to:
 
-* attend and vote at all general and special meetings of the Membership provided for in Article III of these By-laws;
+- attend and vote at all general and special meetings of the Membership provided for in Article III of these By-laws;
 
-* if so provided in these Bylaws or by a vote of the Board of Directors establishing a Committee or subcommittee, appoint one voting representative, on a one vote per Member basis, to such Member Committee and subcommittee thereof, and appoint such additional, non-voting participants as the Chair shall by rule establish; and
+- if so provided in these Bylaws or by a vote of the Board of Directors establishing a Committee or subcommittee, appoint one voting representative, on a one vote per Member basis, to such Member Committee and subcommittee thereof, and appoint such additional, non-voting participants as the Chair shall by rule establish; and
 
-* such additional rights as the Board of Directors may from time to time approve for all classes of Membership.
+- such additional rights as the Board of Directors may from time to time approve for all classes of Membership.
 
 ### Section 2.8 (Rights in Intellectual Property)
 
@@ -121,13 +123,13 @@ All intellectual property submitted to or owned, adopted or created by the Found
 
 ### Section 2.9 (Subsidiaries, Etc)
 
-* Only the legal entity which has been accepted as a Member of the Foundation, and not any parent, subsidiary or affiliate of such entity, shall be entitled to enjoy the rights and privileges of such Membership.
+- Only the legal entity which has been accepted as a Member of the Foundation, and not any parent, subsidiary or affiliate of such entity, shall be entitled to enjoy the rights and privileges of such Membership.
 
-* Only one Member which is part of a group of Related Companies shall be entitled to have a representative on the Board of Directors at one time. For purposes of these By-laws, the term “Related Company” shall mean any entity which controls or is controlled by a Member or which, together with a Member, is under the common control of a third party, in each case where such control results from ownership, either directly or indirectly, of more than fifty percent of the voting securities or membership interests of the entity in question. “Related Companies” are entities that are each a Related Company of a Member.
+- Only one Member which is part of a group of Related Companies shall be entitled to have a representative on the Board of Directors at one time. For purposes of these By-laws, the term “Related Company” shall mean any entity which controls or is controlled by a Member or which, together with a Member, is under the common control of a third party, in each case where such control results from ownership, either directly or indirectly, of more than fifty percent of the voting securities or membership interests of the entity in question. “Related Companies” are entities that are each a Related Company of a Member.
 
-* If a Member is itself a consortium, membership organization, user group or other entity that has members or sponsors, then the rights and privileges granted to such Member shall extend only to the paid representatives (employees and individuals serving on a contractor basis) of such Member, and not to its members or sponsors, unless otherwise approved by the Board of Directors in a specific case from time to time.
+- If a Member is itself a consortium, membership organization, user group or other entity that has members or sponsors, then the rights and privileges granted to such Member shall extend only to the paid representatives (employees and individuals serving on a contractor basis) of such Member, and not to its members or sponsors, unless otherwise approved by the Board of Directors in a specific case from time to time.
 
-* Memberships shall be non-transferable, non-salable and non-assignable, except that any Member may transfer its Membership for the then current year to a successor to substantially all of its business and/or assets, whether by merger, sale or otherwise; provided that the transferee agrees to be bound by these By-laws, the Certificate of Incorporation and such policies and procedures as the Board of Directors may from time to time adopt.
+- Memberships shall be non-transferable, non-salable and non-assignable, except that any Member may transfer its Membership for the then current year to a successor to substantially all of its business and/or assets, whether by merger, sale or otherwise; provided that the transferee agrees to be bound by these By-laws, the Certificate of Incorporation and such policies and procedures as the Board of Directors may from time to time adopt.
 
 ### Section 2.10 (Additional Classes of Members)
 
@@ -137,13 +139,13 @@ The conditions, privileges, powers, and voting rights (if any) of any class of M
 
 Any Member may be suspended from Membership or have its Membership terminated by the Board of Directors for failure to satisfy its Membership Obligations or for engaging in any conduct, either within or without the Foundation, that is contrary to the interests of the Foundation or to the advancement of the Foundation’s business or industry goals (in either case, other than conduct or actions taken in good faith reliance on Section 13 of these By-laws). Financial Obligations already paid shall not be refundable upon any such termination or suspension, and all Financial Obligations of such Member which may be accrued and unpaid as of the date of such termination shall remain due and payable. Except as provided in the last paragraph of this Section 2.11, no termination or suspension of Membership for any other purpose shall be effective unless:
 
-* The Member is given notice of the proposed termination or suspension of Membership and of the reasons therefor;
+- The Member is given notice of the proposed termination or suspension of Membership and of the reasons therefor;
 
-* Such notice is delivered personally or by certified mail, return receipt requested, or by a national or international overnight courier service, sent to the last address of the Member shown on the Foundation’s records;
+- Such notice is delivered personally or by certified mail, return receipt requested, or by a national or international overnight courier service, sent to the last address of the Member shown on the Foundation’s records;
 
-* Such notice is given at least thirty days prior to the effective date of the proposed termination or suspension of Membership; and
+- Such notice is given at least thirty days prior to the effective date of the proposed termination or suspension of Membership; and
 
-* Except in the case of a termination or suspension of Membership for failure to satisfy a Financial Obligation, such notice sets forth a procedure determined by the Board of Directors (or other body authorized by the Board of Directors) to decide whether or not the proposed termination or suspension shall take place, whereby the Member is given the opportunity to be heard by such body, either orally (and represented by counsel if the Member so desires, at its sole cost and expense) or in writing, not less than five days before the effective date of theproposed termination or suspension. Notwithstanding the foregoing, in the event that the Board of Directors believes in good faith that a Member is engaging in willful misconduct to the material detriment of the best interests of the Foundation and its Members, the Board of Directors may suspend such Member’s Membership immediately, provided that such Member is otherwise afforded the protections provided for in subsections (a), (b) and (d) of this Section 2.11.
+- Except in the case of a termination or suspension of Membership for failure to satisfy a Financial Obligation, such notice sets forth a procedure determined by the Board of Directors (or other body authorized by the Board of Directors) to decide whether or not the proposed termination or suspension shall take place, whereby the Member is given the opportunity to be heard by such body, either orally (and represented by counsel if the Member so desires, at its sole cost and expense) or in writing, not less than five days before the effective date of theproposed termination or suspension. Notwithstanding the foregoing, in the event that the Board of Directors believes in good faith that a Member is engaging in willful misconduct to the material detriment of the best interests of the Foundation and its Members, the Board of Directors may suspend such Member’s Membership immediately, provided that such Member is otherwise afforded the protections provided for in subsections (a), (b) and (d) of this Section 2.11.
 
 ### Section 2.12 (Resignation by Member)
 
@@ -160,6 +162,7 @@ The Foundation may levy dues, assessments or fees upon its Members in such amoun
 ### Section 2.15 (Use of Names)
 
 Neither the Foundation nor any Member shall use the name of the other in any form of publicity without the written permission of the other, provided that the Foundation and any Member may each disclose and publicize such Member’s Membership in the Foundation.Notwithstanding the foregoing, if the Foundation has not made a filing under the National Cooperative Research and Production Act of 1993, as amended, a Member may request that its Membership not be disclosed if it makes a written request to such effect at the time of application to the Foundation for Membership.
+
 ## ARTICLE III
 
 ### MEETINGS OF MEMBERS
@@ -186,9 +189,9 @@ Except as otherwise provided by law or these By-laws, notice of each meeting of 
 
 The officer who has charge of the Membership Book of the Foundation shall prepare at least ten days before every meeting of Members, a complete list of the Members entitled to vote at the meeting, arranged in alphabetical order, and showing the address of each such Member. Nothing contained in this Section shall require the Foundation to include electronic mail addresses or other electronic contact information on such list. Such list shall be open to the examination of any Member, for any purpose germane to the meeting, for a period of at least 10 days prior to the meeting:
 
-* on a reasonably accessible electronic network, provided that the information required to gain access to such list is provided with the notice of the meeting, or
+- on a reasonably accessible electronic network, provided that the information required to gain access to such list is provided with the notice of the meeting, or
 
-* during ordinary business hours, at the principal place of business of the Foundation. In the event that the Foundation determines to make the list available on an electronic network, the Foundation may take reasonable steps to ensure that such information is available only to Members of the Foundation. If the meeting is to be held at a place, then the list shall be produced and kept at the time and place of the meeting during the whole time thereof, and may be inspected by any Member who is present. If the meeting is to be held solely by means of remote communication, then the list shall also be open to the examination of any Member during the whole time of the meeting on a reasonably accessible electronic network, and the information required to access such list shall be provided with the notice of the meeting.
+- during ordinary business hours, at the principal place of business of the Foundation. In the event that the Foundation determines to make the list available on an electronic network, the Foundation may take reasonable steps to ensure that such information is available only to Members of the Foundation. If the meeting is to be held at a place, then the list shall be produced and kept at the time and place of the meeting during the whole time thereof, and may be inspected by any Member who is present. If the meeting is to be held solely by means of remote communication, then the list shall also be open to the examination of any Member during the whole time of the meeting on a reasonably accessible electronic network, and the information required to access such list shall be provided with the notice of the meeting.
 
 ### Section 3.6 (Quorum)
 
@@ -200,17 +203,17 @@ Any meeting of Members may be adjourned from time to time without notice to any 
 
 ### Section 3.8 (Action at Meetings)
 
-* When a quorum is present at any meeting of Members, the vote of more than fifty percent of the aggregate votes of all Voting Members, present in person or represented by proxy and entitled to vote on the question shall decide any question brought before such meeting, unless the question is one upon which, by express provision of law, the Certificate of Incorporation or these By-laws, a different vote is required, in which case such express provision shall govern and control the decision of such question;
+- When a quorum is present at any meeting of Members, the vote of more than fifty percent of the aggregate votes of all Voting Members, present in person or represented by proxy and entitled to vote on the question shall decide any question brought before such meeting, unless the question is one upon which, by express provision of law, the Certificate of Incorporation or these By-laws, a different vote is required, in which case such express provision shall govern and control the decision of such question;
 
-* Notwithstanding Section 3.8(a), in the event that any vote is to be taken of a single class of Voting Members, then a quorum for such vote shall be not less than fifty percent of the Voting Members of that class, and when such quorum is present, the vote of more than fifty percent of the aggregate votes of the Voting Members of that class present in person or represented by proxy and entitled to vote on the question, shall decide such question.
+- Notwithstanding Section 3.8(a), in the event that any vote is to be taken of a single class of Voting Members, then a quorum for such vote shall be not less than fifty percent of the Voting Members of that class, and when such quorum is present, the vote of more than fifty percent of the aggregate votes of the Voting Members of that class present in person or represented by proxy and entitled to vote on the question, shall decide such question.
 
 ### Section 3.9 (Proxies)
 
 Each Member entitled to vote at a meeting of Members, or to express consent or dissent to corporate action in writing without a meeting, may authorize another person or persons to act for the Member by proxy, but no such proxy shall be voted or acted upon after three years from its date, unless the proxy provides for a longer period. Without limiting the manner in which a Member may authorize another person or persons to act for such Member as proxy pursuant to this Section, the following shall constitute valid means by which a Member may grant such authority:
 
-* A Member may execute a writing authorizing another person or persons to act for such Member as proxy. Execution may be accomplished by the Member or such Member’s authorized officer, director, employee or agent signing such writing or causing such person's signature to be affixed to such writing by any reasonable means including, but not limited to, by facsimile signature.
+- A Member may execute a writing authorizing another person or persons to act for such Member as proxy. Execution may be accomplished by the Member or such Member’s authorized officer, director, employee or agent signing such writing or causing such person's signature to be affixed to such writing by any reasonable means including, but not limited to, by facsimile signature.
 
-* A Member may authorize another person or persons to act for such Member as proxy by transmitting or authorizing an electronic transmission to the person who will be the holder of the proxy or to a proxy solicitation firm, proxy support service organization or like agent duly authorized by the person who will be the holder of the proxy to receive such transmission, provided that any such electronic transmission must either set forth or be submitted with information from which it can be determined that the electronic transmission was authorized by the Member. If it is determined that such electronic transmissions are valid, the inspectors or, if there are no inspectors, such other persons making that determination shall specify the information upon which they relied.
+- A Member may authorize another person or persons to act for such Member as proxy by transmitting or authorizing an electronic transmission to the person who will be the holder of the proxy or to a proxy solicitation firm, proxy support service organization or like agent duly authorized by the person who will be the holder of the proxy to receive such transmission, provided that any such electronic transmission must either set forth or be submitted with information from which it can be determined that the electronic transmission was authorized by the Member. If it is determined that such electronic transmissions are valid, the inspectors or, if there are no inspectors, such other persons making that determination shall specify the information upon which they relied.
 
 ### Section 3.10 (Action Without Meeting)
 
@@ -226,11 +229,11 @@ Any copy, facsimile or other reliable reproduction of a document (including any 
 
 If authorized by the Board of Directors in its sole discretion, and subject to such guidelines and procedures as the Board of Directors may adopt, Members and proxyholders not physically present at a meeting of Members may, by means of remote communication: (A) participate in a meeting of Members; and (B) be deemed present in person and vote at a meeting of Members whether such meeting is to be held at a designated place or solely by means of remote communication, provided that
 
-* the Foundation shall implement reasonable measures to verify that each person deemed present and permitted to vote at the meeting by means of remote communication is a Member or proxyholder,
+- the Foundation shall implement reasonable measures to verify that each person deemed present and permitted to vote at the meeting by means of remote communication is a Member or proxyholder,
 
-* the Foundation shall implement reasonable measures to provide such Members and proxyholders a reasonable opportunity to participate in the meeting and to vote on matters submitted to the Members, including an opportunity to read or hear the proceedings of the meeting substantially concurrently with such proceedings, and
+- the Foundation shall implement reasonable measures to provide such Members and proxyholders a reasonable opportunity to participate in the meeting and to vote on matters submitted to the Members, including an opportunity to read or hear the proceedings of the meeting substantially concurrently with such proceedings, and
 
-* if any Member or proxyholder votes or takes other action at the meeting by means of remote communication, a record of such vote or other action shall be maintained by the Foundation.
+- if any Member or proxyholder votes or takes other action at the meeting by means of remote communication, a record of such vote or other action shall be maintained by the Foundation.
 
 ### Section 3.12 (Nomination and Election Procedures)
 
@@ -239,6 +242,7 @@ Subject to the provisions of Section 4.3, the Board of Directors shall establish
 ### Section 3.13 (Order of Business)
 
 The order of business at all meetings of Members shall be as determined by the presiding Officer, but the order of business to be followed at any meeting at which a quorum is present may be changed by a vote of the Voting Members.
+
 ## ARTICLE IV
 
 ### DIRECTORS
@@ -253,13 +257,13 @@ Subject to Section 4.4, the total number of Directors shall be at least one and 
 
 ### Section 4.3 (Nomination, Election and Term of Office of Directors)
 
-* All classes of Members, voting together as a single group, shall vote for the election of all Directors other than the Community Director, with each Member entitled to cast that number of votes per Director as is set forth in Article II. One Director shall be nominated and elected solely by the Contributor, Alumnus and Mirror Members (the “Community Director”), with each such Member casting one vote. Election shall be by ranked choice voting or such other preference-based system permitted by applicable Delaware law as the Board of Directors may from time to time designate.
+- All classes of Members, voting together as a single group, shall vote for the election of all Directors other than the Community Director, with each Member entitled to cast that number of votes per Director as is set forth in Article II. One Director shall be nominated and elected solely by the Contributor, Alumnus and Mirror Members (the “Community Director”), with each such Member casting one vote. Election shall be by ranked choice voting or such other preference-based system permitted by applicable Delaware law as the Board of Directors may from time to time designate.
 
-* Each Director shall hold office for three years and until his or her successor is elected and qualified, or until the earliest to occur of (i) the expiration or termination of Membership of the Member that nominated such Director, (ii) the death, resignation or removal of such Director, (iii) the combination, by merger, acquisition or otherwise, of two Members that each have representatives on the Board of Directors, upon which event one of the two representatives, as designated by the surviving Member, shall be deemed to have resigned, or (iv) upon the termination of the employment of such Director by the Member represented by such Director. In addition, during such times as the Membership of any Member that has a representative serving as a Director is suspended pursuant to Section 2.11 above, the attendance and voting rights of such Director representative shall also be suspended until such time, if ever, as such suspension is lifted.
+- Each Director shall hold office for three years and until his or her successor is elected and qualified, or until the earliest to occur of (i) the expiration or termination of Membership of the Member that nominated such Director, (ii) the death, resignation or removal of such Director, (iii) the combination, by merger, acquisition or otherwise, of two Members that each have representatives on the Board of Directors, upon which event one of the two representatives, as designated by the surviving Member, shall be deemed to have resigned, or (iv) upon the termination of the employment of such Director by the Member represented by such Director. In addition, during such times as the Membership of any Member that has a representative serving as a Director is suspended pursuant to Section 2.11 above, the attendance and voting rights of such Director representative shall also be suspended until such time, if ever, as such suspension is lifted.
 
-* Each Director may, but shall not automatically, be nominated and elected for a second three year term. An individual shall be once again eligible for nomination and election one year after ceasing to be a member of the Board of Directors.
+- Each Director may, but shall not automatically, be nominated and elected for a second three year term. An individual shall be once again eligible for nomination and election one year after ceasing to be a member of the Board of Directors.
 
-* The Board of Directors may approve from time to time such reasonable attendance and other requirements as it shall deem to be advisable to ensure that seats on the Board of Directors are held by active, contributing individuals, but no such rule may be imposed retroactively.
+- The Board of Directors may approve from time to time such reasonable attendance and other requirements as it shall deem to be advisable to ensure that seats on the Board of Directors are held by active, contributing individuals, but no such rule may be imposed retroactively.
 
 ### Section 4.4 (Enlargement or Reduction)
 
@@ -271,9 +275,9 @@ Any Director may resign at any time upon notice to the Foundation in writing or 
 
 ### Section 4.6 (Vacancies)
 
-* All vacancies on the Board of Directors arising as a result of a failure of a Director tocomplete a term shall be filled by a vote of the Members, provided that if such a vacancy shall occur less than three months before the next regular election of Directors, the Board of Directors may fill the vacancy by a majority vote of Directors then in office, or leave such vacancy open until the next regular election. The term of a Director elected to fill a vacancy shall be the unexpired portion of the term of the Director being replaced.
+- All vacancies on the Board of Directors arising as a result of a failure of a Director tocomplete a term shall be filled by a vote of the Members, provided that if such a vacancy shall occur less than three months before the next regular election of Directors, the Board of Directors may fill the vacancy by a majority vote of Directors then in office, or leave such vacancy open until the next regular election. The term of a Director elected to fill a vacancy shall be the unexpired portion of the term of the Director being replaced.
 
-* In the event and during the continuance of a vacancy in the Board of Directors, the remaining Directors, except as otherwise provided by law or these By-laws, may exercise the powers of the full Board of Directors until the vacancy is filled.
+- In the event and during the continuance of a vacancy in the Board of Directors, the remaining Directors, except as otherwise provided by law or these By-laws, may exercise the powers of the full Board of Directors until the vacancy is filled.
 
 ### Section 4.7 (Place of Meetings)
 
@@ -289,45 +293,43 @@ Special meetings of the Board of Directors may be called by the Chair, Secretary
 
 ### Section 4.10 (Quorum, Action at Meeting, Adjournments)
 
-* Except where a Super Majority Vote is required under these By-laws, at all meetings of the Board of Directors a majority of Directors then in office, shall constitute a quorum for the transaction of business and the act of a majority of such Directors present at any meeting at which there is a quorum shall be the act of the Board of Directors, except as may be otherwise specifically provided by law, the Certificate of Incorporation or these By-laws.
+- Except where a Super Majority Vote is required under these By-laws, at all meetings of the Board of Directors a majority of Directors then in office, shall constitute a quorum for the transaction of business and the act of a majority of such Directors present at any meeting at which there is a quorum shall be the act of the Board of Directors, except as may be otherwise specifically provided by law, the Certificate of Incorporation or these By-laws.
 
-* In order to pass a “Super Majority Vote”, a resolution must be taken at a meeting ofthe Board of Directors at which at least two-thirds of the Directors then in office are present and participating, and in support of which at least two-thirds of the Directors then in office have voted affirmatively, or by an equivalent number of Directors acting by written consent in the manner described in Section 4.11 below. A Super Majority Vote of the Board of Directors shall be required with respect to the following matters:
+- In order to pass a “Super Majority Vote”, a resolution must be taken at a meeting ofthe Board of Directors at which at least two-thirds of the Directors then in office are present and participating, and in support of which at least two-thirds of the Directors then in office have voted affirmatively, or by an equivalent number of Directors acting by written consent in the manner described in Section 4.11 below. A Super Majority Vote of the Board of Directors shall be required with respect to the following matters:
+  - Amending or repealing any provision of these By-laws;
 
-    * Amending or repealing any provision of these By-laws;
+  - Amending the Certificate of Incorporation;
 
-    * Amending the Certificate of Incorporation;
+  - Adopting or recommending to the Voting Members an agreement of merger or consolidation;
 
-    * Adopting or recommending to the Voting Members an agreement of merger or consolidation;
+  - Approving or recommending to the Members the sale, lease or exchange of all or substantially all of the Foundation’s property and assets;
 
-    * Approving or recommending to the Members the sale, lease or exchange of all or substantially all of the Foundation’s property and assets;
+  - Approving or recommending to the Members the dissolution, liquidation or winding up of the Foundation or a revocation of any such dissolution, liquidation or winding up;
 
-    * Approving or recommending to the Members the dissolution, liquidation or winding up of the Foundation or a revocation of any such dissolution, liquidation or winding up;
+  - Enlarging or reducing the size of the Board of Directors;
 
-    * Enlarging or reducing the size of the Board of Directors;
+  - Amending or modifying the eligibility requirements for membership on the Board of Directors or the classes of Members eligible to appoint or nominate and elect Directors;
 
-    * Amending or modifying the eligibility requirements for membership on the Board of Directors or the classes of Members eligible to appoint or nominate and elect Directors;
+  - Adopting, amending or repealing any IPR Policy;
 
-    * Adopting, amending or repealing any IPR Policy;
+  - Removing a Director; and
 
-    * Removing a Director; and
+  - Any other matter specifically requiring a Super Majority Vote of the Board of Directors pursuant to these By-laws.
 
-    * Any other matter specifically requiring a Super Majority Vote of the Board of Directors pursuant to these By-laws.
-
-* No Director whose attendance and voting rights have been suspended shall be counted for purposes of determining quorum, the number of Directors then in office or the number of Directors required for voting purposes, unless otherwise required by law, these By-laws or the Certificate of Incorporation. If a quorum shall not be present at any meeting of the Board of Directors, a majority of the Directors present thereat may adjourn the meeting from time to time, without notice other than announcement at the meeting, until a quorum shall be present. In the event that one or more of the Directors shall be disqualified from voting at any meeting upon any matter, then the required quorum as it relates to the consideration of such matter shall be reduced by one for each such Director so disqualified.
+- No Director whose attendance and voting rights have been suspended shall be counted for purposes of determining quorum, the number of Directors then in office or the number of Directors required for voting purposes, unless otherwise required by law, these By-laws or the Certificate of Incorporation. If a quorum shall not be present at any meeting of the Board of Directors, a majority of the Directors present thereat may adjourn the meeting from time to time, without notice other than announcement at the meeting, until a quorum shall be present. In the event that one or more of the Directors shall be disqualified from voting at any meeting upon any matter, then the required quorum as it relates to the consideration of such matter shall be reduced by one for each such Director so disqualified.
 
 ### Section 4.11 (Action by Consent)
 
-* Unless otherwise restricted by the Certificate of Incorporation or these By-laws, any action required or permitted to be taken by the Board of Directors may be taken without a meeting and without prior notice if a majority of Directors then in office (or such greater number of Directors as may be required by law or the By-laws of the Foundation for the taking of any such action at a meeting) consent thereto in writing or by electronic transmission, so long as:
+- Unless otherwise restricted by the Certificate of Incorporation or these By-laws, any action required or permitted to be taken by the Board of Directors may be taken without a meeting and without prior notice if a majority of Directors then in office (or such greater number of Directors as may be required by law or the By-laws of the Foundation for the taking of any such action at a meeting) consent thereto in writing or by electronic transmission, so long as:
+  - such written consent shall have been sent simultaneously to all Directors then in office for their consideration;
 
-    * such written consent shall have been sent simultaneously to all Directors then in office for their consideration;
+  - prompt written notice of any action so taken is given to those Directors who have not consented in writing or by electronic transmission; and
 
-    * prompt written notice of any action so taken is given to those Directors who have not consented in writing or by electronic transmission; and
+  - two or more such Directors have not objected to the taking of any such action by written notice delivered to the Foundation within ten business days following the date that written notice of the Directors action is mailed or otherwise delivered to such Directors. After an action is taken, the consent or consents relating thereto shall be filed with the minutes of the proceedings of the Board of Directors, in the same paper or electronic form as the minutes are maintained.
 
-    * two or more such Directors have not objected to the taking of any such action by written notice delivered to the Foundation within ten business days following the date that written notice of the Directors action is mailed or otherwise delivered to such Directors. After an action is taken, the consent or consents relating thereto shall be filed with the minutes of the proceedings of the Board of Directors, in the same paper or electronic form as the minutes are maintained.
+- Notwithstanding the foregoing, the ability of two or more non-consenting Directors to prevent the taking of an action by written consent under clause 4.11(a)(iii) above shall not prevent any such action from being taken at a later date at an actual meeting of the Board of Directors.
 
-* Notwithstanding the foregoing, the ability of two or more non-consenting Directors to prevent the taking of an action by written consent under clause 4.11(a)(iii) above shall not prevent any such action from being taken at a later date at an actual meeting of the Board of Directors.
-
-* Unless otherwise restricted by the Certificate of Incorporation or these By-laws, any action required or permitted to be taken at any meeting of any Board Committee may be taken in the manner set forth in the preceding clauses 4.11(a) and (b).
+- Unless otherwise restricted by the Certificate of Incorporation or these By-laws, any action required or permitted to be taken at any meeting of any Board Committee may be taken in the manner set forth in the preceding clauses 4.11(a) and (b).
 
 ### Section 4.12 (Telephonic Meetings)
 
@@ -340,23 +342,24 @@ Every Director shall have the absolute right at any time to inspect, copy and ma
 ### Section 4.14 (Fees and Compensation)
 
 Directors shall not receive any stated salary or reimbursements for their services as Directors; provided that, by resolution of a majority of the Board of Directors, the Foundation may reimburse Directors for expenses incurred while acting on behalf of the Foundation and/or expenses incurred in attending meetings of the Board of Directors, in such amounts as the Board of Directors may determine to be appropriate. Nothing herein contained shall be construed to preclude any Director from serving the Foundation in any other capacity as an Officer, agent, employee or otherwise, and receiving compensation therefor. The Board of Directors may also approve reimbursement of expenses for members of Board Committees in connection with their service on such Board Committees.
+
 ## ARTICLE V
 
 ### EXECUTIVE COMMITTEE AND OTHER COMMITTEES
 
 ### Section 5.1 (Executive Committee)
- 
+
 The Board of Directors may (but shall not be required), by resolution adopted by a majority of the Directors then in office (provided a quorum is present), create an Executive Committee, consisting of one or more Directors. The Board of Directors may designate one or more Directors as alternate members of such Executive Committee, who may replace any absent member at any meeting of such Executive Committee. The Executive Committee, subject to any limitations imposed by the Certificate of Incorporation, these By-laws, statute and/or resolution adopted by the Board of Directors, shall have and may exercise all of the powers of the Board of Directors which are delegated to the Executive Committee from time to time by the Board of Directors; provided, however, that the Executive Committee shall have no authority with respect to: - Approving any action which requires approval of the Voting Members;
 
-* Filling vacancies on the Board of Directors;
+- Filling vacancies on the Board of Directors;
 
-* Fixing compensation of the Directors for serving on the Board of Directors or on any Board Committee;
+- Fixing compensation of the Directors for serving on the Board of Directors or on any Board Committee;
 
-* Amending or repealing any resolution of the Board of Directors which by its express terms is not so amendable or repealable;
+- Amending or repealing any resolution of the Board of Directors which by its express terms is not so amendable or repealable;
 
-* Taking any other action at any time reserved solely to the full Board of Directors under the Delaware General Corporation Law; and
+- Taking any other action at any time reserved solely to the full Board of Directors under the Delaware General Corporation Law; and
 
-* Adopting any resolution or approving any action that requires a Super Majority Vote under these By-Laws.
+- Adopting any resolution or approving any action that requires a Super Majority Vote under these By-Laws.
 
 ### Section 5.2 (Other Committees of the Board of Directors)
 
@@ -372,13 +375,13 @@ Each member of a Board Committee shall serve for such term as shall be establish
 
 ### Section 5.5 (Committees of the Members)
 
-* A Technical Steering Committee (“TSC”) of the Foundation shall be established, with membership in the TSC consisting of those individuals meritocratically selected by the community of AlmaLinux open source software developers. The operation of the TSC shall be governed by the rules of process of such Committee as from time to time approved by the Board. The TSC Chair shall be elected annually by a majority vote of the Technical Steering Committee members. The TSC Chair may be re-elected for additional terms without limit.
+- A Technical Steering Committee (“TSC”) of the Foundation shall be established, with membership in the TSC consisting of those individuals meritocratically selected by the community of AlmaLinux open source software developers. The operation of the TSC shall be governed by the rules of process of such Committee as from time to time approved by the Board. The TSC Chair shall be elected annually by a majority vote of the Technical Steering Committee members. The TSC Chair may be re-elected for additional terms without limit.
 
-* A Vendor Selection Committee (“VSC”) of the Foundation shall be established, with membership in the VSC consisting of those individuals representative of the AlmaLinux OS ecosystem appointed by the Board of Directors. The operation of the VSC shall be governed by such rules of process of such Committee as may from time to time be approved by the Board of Directors. The VSC will develop criteria for acceptance as an AlmaLinux OS Partner and Vendor for consideration and approval by the Board of Directors. Upon approval by the Board of Directors, any individual developer or entity shall be entitled to seek recognition as a Partner or Vendor, as appropriate, and shall be considered for such status on a non-discriminatory basis. The VSC Chair shall be elected annually by a majority vote of the VSC members. The VSC Chair may be re-elected for additional terms without limit. The Vendor Selection Committee shall be under the leadership of the VSC Chair.
+- A Vendor Selection Committee (“VSC”) of the Foundation shall be established, with membership in the VSC consisting of those individuals representative of the AlmaLinux OS ecosystem appointed by the Board of Directors. The operation of the VSC shall be governed by such rules of process of such Committee as may from time to time be approved by the Board of Directors. The VSC will develop criteria for acceptance as an AlmaLinux OS Partner and Vendor for consideration and approval by the Board of Directors. Upon approval by the Board of Directors, any individual developer or entity shall be entitled to seek recognition as a Partner or Vendor, as appropriate, and shall be considered for such status on a non-discriminatory basis. The VSC Chair shall be elected annually by a majority vote of the VSC members. The VSC Chair may be re-elected for additional terms without limit. The Vendor Selection Committee shall be under the leadership of the VSC Chair.
 
-* A Marketing Committee of the Foundation may be established at such time as deemed advisable by the Board of Directors. Such Member Committee may have such subcommittees as from time to time may be approved by the Marketing Committee. The Marketing Committee and its subcommittees shall be the principal Member-level forum for the discussion of activities intended to promote the mission of the Foundation generally in the industry, subject to the review, and within the strategic direction established by, the Board of Directors, and shall otherwise have such rights and privileges, and shall have such number of voting members, as shall from time to time be established by the Board of Directors.
+- A Marketing Committee of the Foundation may be established at such time as deemed advisable by the Board of Directors. Such Member Committee may have such subcommittees as from time to time may be approved by the Marketing Committee. The Marketing Committee and its subcommittees shall be the principal Member-level forum for the discussion of activities intended to promote the mission of the Foundation generally in the industry, subject to the review, and within the strategic direction established by, the Board of Directors, and shall otherwise have such rights and privileges, and shall have such number of voting members, as shall from time to time be established by the Board of Directors.
 
-* From time to time, the Board of Directors may establish additional Member Committees with such rights of participation as shall be established by the Board of Directors.
+- From time to time, the Board of Directors may establish additional Member Committees with such rights of participation as shall be established by the Board of Directors.
 
 ## ARTICLE VI
 
@@ -404,11 +407,11 @@ Each officer of the Foundation shall hold office until his or her successor is c
 
 The Chair shall have all of the powers normally associated with the role of chief executive officer and shall preside at all meetings of the Board of Directors. The Chair shall oversee the management of the business of the Foundation and see that all orders and resolutions of the Board of Directors are carried into effect. Without limiting the foregoing, the Chair shall:
 
-* Execute bonds, mortgages, and other contracts requiring a seal, under the seal of the Foundation, except where required or permitted by law to be otherwise signed and executed and except where the signing and execution thereof shall be expressly delegated by the Board of Directors to some other Officer or agent of the Foundation;
+- Execute bonds, mortgages, and other contracts requiring a seal, under the seal of the Foundation, except where required or permitted by law to be otherwise signed and executed and except where the signing and execution thereof shall be expressly delegated by the Board of Directors to some other Officer or agent of the Foundation;
 
-* Oversee the Executive Director (if any); and
+- Oversee the Executive Director (if any); and
 
-* Perform and/or delegate such other duties as may from time to time be assigned by the Board of Directors and/or any Executive Committee.
+- Perform and/or delegate such other duties as may from time to time be assigned by the Board of Directors and/or any Executive Committee.
 
 ### Section 6.6 (Vice-Chairs)
 
@@ -422,11 +425,11 @@ The Executive Director (if any) shall preside over the day-to-day affairs of the
 
 The Secretary shall have such powers and perform such duties as are incident to the office of Secretary, and shall:
 
-* Prepare and maintain lists of Members and their addresses as required;
+- Prepare and maintain lists of Members and their addresses as required;
 
-* Attend all meetings of the Board of Directors and all meetings of the Members and record all the proceedings of the meetings of the Foundation and of the Board of Directors in a book to be kept for that purpose and perform like duties for the standing Board Committees when required; and
+- Attend all meetings of the Board of Directors and all meetings of the Members and record all the proceedings of the meetings of the Foundation and of the Board of Directors in a book to be kept for that purpose and perform like duties for the standing Board Committees when required; and
 
-* Give, or cause to be given, notice of all meetings of the Members and special meetings of the Board of Directors, and perform such other duties as may be from time to time prescribed by the Board of Directors, and be under their supervision.
+- Give, or cause to be given, notice of all meetings of the Members and special meetings of the Board of Directors, and perform such other duties as may be from time to time prescribed by the Board of Directors, and be under their supervision.
 
 ### Section 6.9 (Treasurer)
 
@@ -435,29 +438,31 @@ The Treasurer (if any) shall perform such duties and shall have such powers as m
 ### Section 6.10 (Compensation)
 
 The compensation, if any, of the officers shall be fixed from time to time by the Board of Directors, and no officer shall be prevented from receiving such compensation by reason of the fact that the officer is also a Director of the Foundation.
+
 ## ARTICLE VII
 
 ### NOTICES
 
 ### Section 7.1 (Delivery)
 
-* Without limiting the manner by which notice otherwise may be given effectively to Members, any notice to Members given by the Foundation under any provision of the Delaware General Corporation Law (“DGCL”), the Certificate of Incorporation, or these By-laws may be given in writing directed to the Member’s mailing address (or by electronic transmission directed to the Member’s electronic mail address, as applicable) as it appears on the records of the Foundation and shall be given if mailed, when the notice is deposited in the U.S. mail, postage prepaid, if delivered by courier service, the earlier of when the notice is received or left at such Member’s address or (3) if given by electronic mail, when directed to such Member’s electronic mail address unless the Member has notified the Foundation in writing or by electronic transmission of an objection to receiving notice by electronic mail or such notice is prohibited by subsection (e) of this Section. A notice by electronic mail must include a prominent legend that the communication is an important notice regarding the Foundation.
+- Without limiting the manner by which notice otherwise may be given effectively to Members, any notice to Members given by the Foundation under any provision of the Delaware General Corporation Law (“DGCL”), the Certificate of Incorporation, or these By-laws may be given in writing directed to the Member’s mailing address (or by electronic transmission directed to the Member’s electronic mail address, as applicable) as it appears on the records of the Foundation and shall be given if mailed, when the notice is deposited in the U.S. mail, postage prepaid, if delivered by courier service, the earlier of when the notice is received or left at such Member’s address or (3) if given by electronic mail, when directed to such Member’s electronic mail address unless the Member has notified the Foundation in writing or by electronic transmission of an objection to receiving notice by electronic mail or such notice is prohibited by subsection (e) of this Section. A notice by electronic mail must include a prominent legend that the communication is an important notice regarding the Foundation.
 
-* Without limiting the manner by which notice otherwise may be given effectively to Members, but subject to subsection (e) of this Section, any notice to Members given by the Foundation under any provision of the DGCL, the Certificate of Incorporation, or these By-laws shall be effective if given by a form of electronic transmission consented to by the Members to whom the notice is given. Any such consent shall be revocable by the Member by written notice or electronic transmission to the Foundation.
+- Without limiting the manner by which notice otherwise may be given effectively to Members, but subject to subsection (e) of this Section, any notice to Members given by the Foundation under any provision of the DGCL, the Certificate of Incorporation, or these By-laws shall be effective if given by a form of electronic transmission consented to by the Members to whom the notice is given. Any such consent shall be revocable by the Member by written notice or electronic transmission to the Foundation.
 
-* Notice given pursuant to subsection (b) of this Section shall be deemed given: if by facsimile telecommunication, when directed to a number at which the Member has consented to receive notice; if by a posting on an electronic network together with separate notice to the Member or Director of such specific posting, upon the later of (A) such posting and (B) the giving of such separate notice; and (3) if by any other form of electronic transmission, when directed to the Member or Director
+- Notice given pursuant to subsection (b) of this Section shall be deemed given: if by facsimile telecommunication, when directed to a number at which the Member has consented to receive notice; if by a posting on an electronic network together with separate notice to the Member or Director of such specific posting, upon the later of (A) such posting and (B) the giving of such separate notice; and (3) if by any other form of electronic transmission, when directed to the Member or Director
 
-* For purposes of these By-laws, (1) “electronic transmission” means any form of communication, not directly involving the physical transmission of paper, including the use of, or participation in, or one or more electronic networks or databases (including one or more distributed electronic networks or databases), that creates a record that may be retained, retrieved, and reviewed by a recipient thereof, and that may be directly reproduced in paper form by such a recipient through an automated process, (2) “electronic mail” means an electronic transmission directed to a unique electronic mail address (which electronic mail shall be deemed to include any files attached thereto and any information hyperlinked to a website if such electronic mail includes the contact information of an officer or agent of the Foundation who is available to assist with accessing such files and information) and (3) “electronic mail address” means a destination, commonly expressed as a string of characters, consisting of a unique user name or mailbox (commonly referred to as the “local part” of the address) and a reference to an internet domain (commonly referred to as the “domain part” of the address), whether or not displayed, to which electronic mail can be sent or delivered.
+- For purposes of these By-laws, (1) “electronic transmission” means any form of communication, not directly involving the physical transmission of paper, including the use of, or participation in, or one or more electronic networks or databases (including one or more distributed electronic networks or databases), that creates a record that may be retained, retrieved, and reviewed by a recipient thereof, and that may be directly reproduced in paper form by such a recipient through an automated process, (2) “electronic mail” means an electronic transmission directed to a unique electronic mail address (which electronic mail shall be deemed to include any files attached thereto and any information hyperlinked to a website if such electronic mail includes the contact information of an officer or agent of the Foundation who is available to assist with accessing such files and information) and (3) “electronic mail address” means a destination, commonly expressed as a string of characters, consisting of a unique user name or mailbox (commonly referred to as the “local part” of the address) and a reference to an internet domain (commonly referred to as the “domain part” of the address), whether or not displayed, to which electronic mail can be sent or delivered.
 
-* Notwithstanding the foregoing, a notice may not be given by an electronic transmission from and after the time that (1) the Foundation is unable to deliver by such electronic transmission two consecutive notices given by the Foundation and (2) such inability becomes known to the secretary or an assistant secretary of the Foundation or to the transfer agent, or other person responsible for the giving of notice, provided, however, the inadvertent failure to discover such inability shall not invalidate any meeting or other action.
+- Notwithstanding the foregoing, a notice may not be given by an electronic transmission from and after the time that (1) the Foundation is unable to deliver by such electronic transmission two consecutive notices given by the Foundation and (2) such inability becomes known to the secretary or an assistant secretary of the Foundation or to the transfer agent, or other person responsible for the giving of notice, provided, however, the inadvertent failure to discover such inability shall not invalidate any meeting or other action.
 
-* Without limiting the foregoing, the Foundation adopts electronic mail as its principal source of communication with its Members. Each Member acknowledges and agrees that the Foundation shall not be under any obligation (except as required by law or these By-laws) to send any notice to any Member by any means other than electronic mail, and it is therefore the responsibility of each Member to avail itself of and make such arrangements as may be necessary to receive notice in such fashion.
+- Without limiting the foregoing, the Foundation adopts electronic mail as its principal source of communication with its Members. Each Member acknowledges and agrees that the Foundation shall not be under any obligation (except as required by law or these By-laws) to send any notice to any Member by any means other than electronic mail, and it is therefore the responsibility of each Member to avail itself of and make such arrangements as may be necessary to receive notice in such fashion.
 
-* An affidavit of the secretary or an assistant secretary or of the transfer agent or other agent of the Foundation that notice has been given shall, in the absence of fraud, be prima facie evidence of the facts stated therein.
+- An affidavit of the secretary or an assistant secretary or of the transfer agent or other agent of the Foundation that notice has been given shall, in the absence of fraud, be prima facie evidence of the facts stated therein.
 
 ### Section 7.2 (Waiver of Notice)
 
 Whenever any notice is required to be given under the provisions of law or of the Certificate of Incorporation or of these By-laws, a waiver thereof in writing, signed by the person or persons entitled to said notice, or a waiver by electronic transmission by the person entitled to notice, whether before or after the time stated therein, shall be deemed equivalent thereto. Attendance of a person at a meeting shall constitute a waiver of notice of such meeting, except when the person attends a meeting for the express purpose of objecting at the beginning of the meeting to the transaction of any business because the meeting is not lawfully called or convened. Neither the business to be transacted at, nor the purpose of, any meeting needs to be specified in any written waiver or any waiver by electronic transmission.
+
 ## ARTICLE VIII
 
 ### INDEMNIFICATION
@@ -505,6 +510,7 @@ If any word, clause or provision of this Article VIII or any award made hereunde
 ### Section 8.11 (Intent of Article)
 
 The intent of this Article VIII is to provide for indemnification and advancement of expenses to the fullest extent permitted by Section 145 of the General Corporation Law of Delaware. To the extent that such Section or any successor section may be amended or supplemented from time to time, this Article VIII shall be amended automatically and construed so as to permit indemnification and advancement of expenses to the fullest extent from time to time permitted by law.
+
 ## ARTICLE IX
 
 ### BOOKS AND RECORDS
@@ -532,6 +538,7 @@ The record date for determining Members entitled to express consent to corporate
 ### Section 9.5 (Registered Members)
 
 The Foundation shall be entitled to recognize the exclusive right of a person registered on its books as a Member or a representative of a Member to receive distributions, if any, and to vote, if such records indicate that such person is a Voting Member or a representative of a Voting Member, and to hold liable for Financial Obligations each Member registered on its books, and shall not be bound to recognize any equitable or other claim to or interest in Membership on the part of any other person, whether or not it shall have express or other notice thereof, except as otherwise provided by the Delaware General Corporation Law.
+
 ## ARTICLE X
 
 ### CERTAIN TRANSACTIONS
@@ -540,9 +547,9 @@ The Foundation shall be entitled to recognize the exclusive right of a person re
 
 No contract or transaction between the Foundation and one or more of its Directors or Officers, or between the Foundation and any other corporation, partnership, association, or other organization in which one or more of its directors or officers are directors or officers, or have a financial interest, shall be void or voidable solely for this reason, or solely because such Director or Officer (or other director or officer) is present at or participates in the meeting of the Board of Directors or Board Committee which authorizes the contract or transaction or solely because his, her or their votes are counted for such purpose, if:
 
-* The material facts as to his or her relationship or interest and as to the contract or transaction are disclosed or are known to the Board of Directors or such Board Committee, and the Board of Directors or such Board Committee in good faith authorizes the contract or transaction by the affirmative votes of a majority of the disinterested Directors, even though the disinterested Directors be less than a quorum; or
+- The material facts as to his or her relationship or interest and as to the contract or transaction are disclosed or are known to the Board of Directors or such Board Committee, and the Board of Directors or such Board Committee in good faith authorizes the contract or transaction by the affirmative votes of a majority of the disinterested Directors, even though the disinterested Directors be less than a quorum; or
 
-* The contract or transaction is fair as to the Foundation as of the time it is authorized, approved or ratified, by the Board of Directors, a Board Committee, or the Voting Members. Common or interested Directors may be counted in determining the presence of a quorum at a meeting of the Board of Directors or Board Committee that authorizes the contract or transaction.
+- The contract or transaction is fair as to the Foundation as of the time it is authorized, approved or ratified, by the Board of Directors, a Board Committee, or the Voting Members. Common or interested Directors may be counted in determining the presence of a quorum at a meeting of the Board of Directors or Board Committee that authorizes the contract or transaction.
 
 ## ARTICLE XI
 
@@ -563,6 +570,7 @@ All checks, drafts and other orders for the payment of money out of the funds of
 ### Section 11.4 (Deposits)
 
 The funds of the Foundation not otherwise employed shall be deposited from time to time to the order of the Foundation in such banks, trust companies, or other depositories, or shall be otherwise invested, as the Board of Directors may select or direct, or as may be selected or directed by an Officer, employee or agent of the Foundation to whom such power may from time to time be specifically delegated by the Board of Directors.
+
 ## ARTICLE XII
 
 ### GENERAL PROVISIONS
@@ -577,11 +585,11 @@ The Directors may set apart out of any funds of the Foundation a reserve or rese
 
 ### Section 12.3 (Proprietary Rights)
 
-* Except as specifically provided to the contrary in such policies and procedures as may from time to time be approved by the Board of Directors, all information disclosed by any participant during any official meeting or activity of the Foundation, including but not limited to Member meetings, Member Committee Meetings, subcommittee meetings, Board of Directors meetings, meetings of Board Committees and sub-committees thereof, electronic mail or the like, shall be deemed to have been disclosed on a non-confidential basis, but without waiver of any rights represented by valid patents, patent applications, and Federal and international statutory copyrights.
+- Except as specifically provided to the contrary in such policies and procedures as may from time to time be approved by the Board of Directors, all information disclosed by any participant during any official meeting or activity of the Foundation, including but not limited to Member meetings, Member Committee Meetings, subcommittee meetings, Board of Directors meetings, meetings of Board Committees and sub-committees thereof, electronic mail or the like, shall be deemed to have been disclosed on a non-confidential basis, but without waiver of any rights represented by valid patents, patent applications, and Federal and international statutory copyrights.
 
-* No express or implied right, whether by implication, estoppel, or otherwise, to any patent, copyright, trademark, trade secret, or other intellectual property right of any Member is or shall be deemed to be granted to the Foundation or to any other Member by reason of its membership in or participation in the activities of the Foundation, except as may be provided in a separate written agreement.
+- No express or implied right, whether by implication, estoppel, or otherwise, to any patent, copyright, trademark, trade secret, or other intellectual property right of any Member is or shall be deemed to be granted to the Foundation or to any other Member by reason of its membership in or participation in the activities of the Foundation, except as may be provided in a separate written agreement.
 
-* No Member shall at any time be required to exchange proprietary information with any other Member solely by reason of its being a Member of the Foundation.
+- No Member shall at any time be required to exchange proprietary information with any other Member solely by reason of its being a Member of the Foundation.
 
 ### Section 12.4 (Form of Records)
 
@@ -593,13 +601,14 @@ The Foundation shall convert any records so kept into clearly legible paper form
 
 Without limiting the manner in which any act or transaction may be documented, or the manner in which a document may be signed or delivered:
 
-* Any act or transaction contemplated or governed by the DGCL or the Certificate of Incorporation or these By-laws may be provided for in a document, and an electronic transmission shall be deemed the equivalent of a written document. “Document” means (i) any tangible medium on which information is inscribed, and includes handwritten, typed, printed or similar instruments, and copies of such instruments and (ii) an electronic transmission.
+- Any act or transaction contemplated or governed by the DGCL or the Certificate of Incorporation or these By-laws may be provided for in a document, and an electronic transmission shall be deemed the equivalent of a written document. “Document” means (i) any tangible medium on which information is inscribed, and includes handwritten, typed, printed or similar instruments, and copies of such instruments and (ii) an electronic transmission.
 
-* Whenever the DGCL or the Certificate of Incorporation or these By-laws requires or permits a signature, the signature may be a manual, facsimile, conformed or electronic signature. “Electronic signature” means an electronic symbol or process that is attached to, or logically associated with, a document and executed or adopted by a person with an intent to authenticate or adopt the document.
+- Whenever the DGCL or the Certificate of Incorporation or these By-laws requires or permits a signature, the signature may be a manual, facsimile, conformed or electronic signature. “Electronic signature” means an electronic symbol or process that is attached to, or logically associated with, a document and executed or adopted by a person with an intent to authenticate or adopt the document.
 
-* Unless otherwise agreed between the sender and recipient, an electronic transmission shall be deemed delivered to a person for purposes of the DGCL and the Certificate of Incorporation and By-laws when it enters an information processing system that the person has designated for the purpose of receiving electronic transmissions of the type delivered, so long as the electronic transmission is in a form capable of being processed by that system and such person is able to retrieve the electronic transmission. An electronic transmission is delivered under this Section even if no person is aware of its receipt. Receipt of an electronic acknowledgement from an information processing system establishes that an electronic transmission was received but, by itself, does not establish that the content sent corresponds to the content received.
+- Unless otherwise agreed between the sender and recipient, an electronic transmission shall be deemed delivered to a person for purposes of the DGCL and the Certificate of Incorporation and By-laws when it enters an information processing system that the person has designated for the purpose of receiving electronic transmissions of the type delivered, so long as the electronic transmission is in a form capable of being processed by that system and such person is able to retrieve the electronic transmission. An electronic transmission is delivered under this Section even if no person is aware of its receipt. Receipt of an electronic acknowledgement from an information processing system establishes that an electronic transmission was received but, by itself, does not establish that the content sent corresponds to the content received.
 
 This provision shall not prohibit one or more persons from conducting a transaction in accordance with any electronic signature rules so long as the part or parts of the transaction that are governed by the DGCL are documented, signed and delivered in accordance with this Section or otherwise in accordance with the DGCL. This Section shall apply solely for purposes of determining whether an act or transaction has been documented, and the document has been signed and delivered, in accordance with the DGCL, the Certificate of Incorporation and these By-laws.
+
 ## ARTICLE XIII
 
 ### ANTITRUST COMPLIANCE
@@ -617,6 +626,7 @@ It is the good faith objective of the Foundation (i) to make all Intellectual Pr
 ### Section 13.3 (No Obligation to Endorse)
 
 No Member shall, by reason of its Membership or participation in the Foundation or otherwise, be obligated to license from the Foundation, use or endorse any Intellectual Property (as defined in Section 2.6) developed or endorsed by the Foundation, or to conform any of its products to any standards or Specifications developed or adopted by the Foundation, nor shall any such Member be precluded from independently licensing, using or endorsing similar intellectual property, software, specifications or documentation developed by it or by others.
+
 ## ARTICLE XIV
 
 ### AMENDMENTS

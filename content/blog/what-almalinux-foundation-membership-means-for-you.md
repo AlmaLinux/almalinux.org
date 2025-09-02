@@ -1,17 +1,17 @@
 ---
 title: "What AlmaLinux Foundation Membership Means for You"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-10-05'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-10-05"
 post:
-    title: "AlmaLinux OS Foundation Membership Opens to the Public"
-    image: 
+  title: "AlmaLinux OS Foundation Membership Opens to the Public"
+  image:
 ---
 
-Hello Community. Today we announced that [membership in the AlmaLinux Foundation](/members/) is now open to ***everyone*** (It's 100% Free). First of all, many are probably asking what is this? Second, who cares? I wanted to take a few brief moments to share some insight, some feelings and hopefully explain why this is so important.
+Hello Community. Today we announced that [membership in the AlmaLinux Foundation](/members/) is now open to **_everyone_** (It's 100% Free). First of all, many are probably asking what is this? Second, who cares? I wanted to take a few brief moments to share some insight, some feelings and hopefully explain why this is so important.
 
 When CentOS was initially founded by Lance Davis in 2004 no one really knew how fundamentally important it would grow to become in the Linux ecosystem--as a concept, as a distribution and really as a lynchpin of the modern internet. The concept of a community-driven OS, which drew upon an enterprise grade base made freely and widely available was a real novelty. As far as the technical aspect, the "entOS" part of CentOS, it has been resoundingly successful.
 
@@ -19,7 +19,7 @@ However, the "C" part of CentOS, Community, got lost somewhere along the way. If
 
 CentOS has never been an organization with its own standing, it was always a loose collective of people. Throughout its history (which is a topic for another time) it has been wheeled and dealed, held hostage, transferred, fought about, bought and sold from one party to the next, ultimately landing at Red Hat. They own the Intellectual Property behind CentOS and are free and able to take it in whatever direction they want, as we have seen.
 
-***Today that all changes.***
+**_Today that all changes._**
 
 To answer our first question--What is this?--**This is your voice**. The AlmaLinux Foundation(Delaware Reg. 5561017) was created as a 501(c)(6) non-profit (the same as the [Linux Foundation](https://linuxfoundation.org/)) in order to put **OWNERSHIP** of the OS, the Intellectual Property and the direction of the project into the hands of the community. By joining as a member (100% free for community members) you have the right and the ability to vote on board members and the direction of the project and other decisions as they will come up in the future.
 

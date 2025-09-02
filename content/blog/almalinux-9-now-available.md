@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux 9 Now Available!"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2022-05-26'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2022-05-26"
 post:
-    title: "Say \"Hello\" to AlmaLinux 9. Peak inside for more information."
-    image: /blog-images/9-release-graphic.png
+  title: 'Say "Hello" to AlmaLinux 9. Peak inside for more information.'
+  image: /blog-images/9-release-graphic.png
 ---
 
 Hello Community! The AlmaLinux OS Foundation is proud to announce general availability of AlmaLinux OS 9.0. AlmaLinux 9 supports the following 4 architectures providing full parity with upstream:
@@ -27,13 +27,14 @@ Installation ISOs are nice but AlmaLinux has got you covered for so much more. W
 - [Live Media](https://wiki.almalinux.org/LiveMedia.html) for GNOME, GNOME-mini, KDE, XFCE and more.
 
 - Cloud Images
-    - [AWS AMIs](https://wiki.almalinux.org/cloud/AWS.html) for x86_64 and Graviton Instances
-    - [Azure](https://wiki.almalinux.org/cloud/Azure.html) Images for in standard and HPC flavors for x86_64 and aarch64
-    - [Google Cloud](https://wiki.almalinux.org/cloud/Google.html) (Hi, Googlers!)
-    - [Generic Cloud/Cloud-init](https://wiki.almalinux.org/cloud/Generic-cloud-on-local.html) for all 4 architectures
-    - [OpenNebula](https://wiki.almalinux.org/cloud/OpenNebula.html) for x86_64 and aarch64
-    - [Oracle Cloud Infrastructure](https://wiki.almalinux.org/cloud/OCI.html) for x86_64 and aarch64
+  - [AWS AMIs](https://wiki.almalinux.org/cloud/AWS.html) for x86_64 and Graviton Instances
+  - [Azure](https://wiki.almalinux.org/cloud/Azure.html) Images for in standard and HPC flavors for x86_64 and aarch64
+  - [Google Cloud](https://wiki.almalinux.org/cloud/Google.html) (Hi, Googlers!)
+  - [Generic Cloud/Cloud-init](https://wiki.almalinux.org/cloud/Generic-cloud-on-local.html) for all 4 architectures
+  - [OpenNebula](https://wiki.almalinux.org/cloud/OpenNebula.html) for x86_64 and aarch64
+  - [Oracle Cloud Infrastructure](https://wiki.almalinux.org/cloud/OCI.html) for x86_64 and aarch64
 - [Docker](https://wiki.almalinux.org/containers/docker-images.html#about-almalinux-docker-images) images including Platform and UBIs alternatives. We provide a wide variety of containers for your use. Please see our [Docker Official Image](https://hub.docker.com/_/almalinux) as well as [all AlmaLinux images](https://hub.docker.com/u/almalinux)
+
 * [Raspberry Pi](https://wiki.almalinux.org/documentation/raspberry-pi.html)
 * [Vagrant Boxes](https://app.vagrantup.com/almalinux/boxes/9) for Libvirt, VirtualBox, VMware, Hyper-V and Parallels
 * [Windows Subsystem for Linux](https://wiki.almalinux.org/documentation/wsl.html)
