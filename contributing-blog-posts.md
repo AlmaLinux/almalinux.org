@@ -2,6 +2,7 @@
 
 adding crap to see if prettier fixes it 
 *do not merge this* 
+still bad 
 
 We welcome blog posts of almost any kind from our community! We accept content that covers topics that relate to AlmaLinux OS, the AlmaLinux OS Foundation. If you aren't sure if your blog post topic would be a good one, feel free to create an issue on this repo and ask! You can also join our chat and ask in the Marketing room.
 
