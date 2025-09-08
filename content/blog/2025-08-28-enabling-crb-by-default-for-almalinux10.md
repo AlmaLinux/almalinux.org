@@ -2,16 +2,15 @@
 title: "Enabling CRB by default for AlmaLinux 10"
 type: blog
 author:
- name: "Neal Gompa"
- bio: "Principal Consultant, Velocity Limitless; AlmaLinux Engineering Steering Committee member"
- image: /users/nealgompa.png
-date: '2025-09-05'
+  name: "Neal Gompa"
+  bio: "Principal Consultant, Velocity Limitless; AlmaLinux Engineering Steering Committee member"
+  image: /users/nealgompa.png
+date: "2025-09-05"
 images:
   - /blog-images/2025/crb_enabled_almalinux10.png
 post:
-    title: "Enabling CRB by default for AlmaLinux 10"
-    image: /blog-images/2025/crb_enabled_almalinux10.png
-
+  title: "Enabling CRB by default for AlmaLinux 10"
+  image: /blog-images/2025/crb_enabled_almalinux10.png
 ---
 
 AlmaLinux OS 10 will have the CRB repository turned on by default via an update in AlmaLinux OS 10.0 ahead of the release of AlmaLinux OS 10.1 on **2025-09-06**,
@@ -32,7 +31,7 @@ that are not needed for the core Enterprise Linux solution set.
 Have you ever seen errors like this one?
 
 ```
-Error: 
+Error:
  Problem: package plasma-discover-6.3.6-1.el10_0.aarch64 from epel requires libDiscoverCommon.so()(64bit), but none of the providers can be installed
   - package plasma-discover-6.3.6-1.el10_0.aarch64 from epel requires plasma-discover-libs(aarch-64) = 6.3.6-1.el10_0, but none of the providers can be installed
   - conflicting requests
