@@ -13,7 +13,7 @@ post:
   image: /blog-images/2025/crb_enabled_almalinux10.png
 ---
 
-AlmaLinux OS 10 will have the CRB repository turned on by default via an update in AlmaLinux OS 10.0 ahead of the release of AlmaLinux OS 10.1 on **2025-09-09**, while AlmaLinux OS Kitten 10 has had it enabled by default since the update on 2025-08-27 (`almalinux-kitten-repos-10.0-9.el10.0.1`).
+AlmaLinux OS 10 will have the CRB repository turned on by default via an update in AlmaLinux OS 10.0 on **2025-09-09**, while AlmaLinux OS Kitten 10 has had it enabled by default since the update on 2025-08-27 (`almalinux-kitten-repos-10.0-9.el10.0.1`).
 
 As part of our efforts to continue improving the experience for AlmaLinux users, we are enabling the CRB repository by default. This reduces the friction in using software from Fedora Extra Packages from Enterprise Linux (EPEL).
 
