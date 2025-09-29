@@ -296,7 +296,7 @@
    "More details and guidance steps can be found on the ": "More details and guidance steps can be found on the ",
    "AlmaLinux WSL Wiki Page": "AlmaLinux WSL Wiki Page",
    "AlmaLinux builds standard Raspberry Pi images and images with GNOME desktop environment.": "AlmaLinux builds standard Raspberry Pi images and images with GNOME desktop environment.",
-   "More details can be found on the": "More details can be found on the",
+   "More details such as default login can be found on the": "More details such as default login can be found on the",
    "AlmaLinux Raspberry Pi Wiki Page": "AlmaLinux Raspberry Pi Wiki Page",
    "AlmaLinux provides official AlmaLinux OS 9.6 images for Vagrant:": "AlmaLinux provides official AlmaLinux OS 9.6 images for Vagrant:",
    "Build System": "Build System",
@@ -833,7 +833,6 @@
    "this full-day event will highlight content from all over the industry. Join us just before SIGGRAPH to kick of your time in Vancouver the right way.": "this full-day event will highlight content from all over the industry. Join us just before SIGGRAPH to kick of your time in Vancouver the right way.",
    "ALD Vancouver 2025": "ALD Vancouver 2025",
    "This event is governed by a Code of Conduct": "This event is governed by a Code of Conduct",
-   "Join us August 9th for ": "Join us August 9th for ",
    "to AlmaLinux 9.6": "to AlmaLinux 9.6",
    "Say Hello": "Say Hello",
    "to AlmaLinux 10.0!": "to AlmaLinux 10.0!",
@@ -846,5 +845,15 @@
    "Technical Marketing Manager at TuxCare | Educator | Linux Advocate": "Technical Marketing Manager at TuxCare | Educator | Linux Advocate",
    "Cinesite Director of IT for North America": "Cinesite Director of IT for North America",
    "Staff Developer Advocate at Grafana Labs": "Staff Developer Advocate at Grafana Labs",
-   "IT Infrastructure & Security Director at SHED": "IT Infrastructure & Security Director at SHED"
+   "IT Infrastructure & Security Director at SHED": "IT Infrastructure & Security Director at SHED",
+   "Want to volunteer?": "Want to volunteer?",
+   "AlmaLinux Days are entirely volunteer-run events, so we can use your help! If you will be in Vancouver and want to help out, send us an email": "AlmaLinux Days are entirely volunteer-run events, so we can use your help! If you will be in Vancouver and want to help out, send us an email",
+   "We would love to have you. Types of help we need:": "We would love to have you. Types of help we need:",
+   "The Night Before: Swag Prep Party": "The Night Before: Swag Prep Party",
+   "Check-In Desk": "Check-In Desk",
+   "Setup Crew": "Setup Crew",
+   "Teardown Team": "Teardown Team",
+   "AlmaLinux Elections start Aug 31st -": "AlmaLinux Elections start Aug 31st -",
+   "More information": "More information",
+   "Chat ": "Chat "
 }

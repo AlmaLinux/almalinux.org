@@ -2,32 +2,32 @@
 title: "AlmaLinux 10.0 Beta Now Available"
 type: blog
 author:
- name: "Eduard Abdullin"
- bio: "The Release and Automation Engineer."
- image: /users/eduard-abdullin.jpg
-date: '2024-12-11'
+  name: "Eduard Abdullin"
+  bio: "The Release and Automation Engineer."
+  image: /users/eduard-abdullin.jpg
+date: "2024-12-11"
 images:
   - /blog-images/2024/2024-12-10-10-0-beta.png
 post:
-    title: "AlmaLinux 10.0 Beta Now Available"
-    image: /blog-images/2024/2024-12-10-10-0-beta.png
-
+  title: "AlmaLinux 10.0 Beta Now Available"
+  image: /blog-images/2024/2024-12-10-10-0-beta.png
 ---
 
-Hello Community! 
+Hello Community!
 
 The AlmaLinux OS Foundation is announcing the availability of AlmaLinux 10.0 Beta "Purple Lion" for all supported architectures:
-* Intel/AMD (x86_64)
-* Intel/AMD (x86_64_v2)
-* ARM64 (aarch64)
-* IBM PowerPC (ppc64le)
-* IBM Z (s390x)
 
-Beta ISOs are available at [repo.almalinux.org](https://repo.almalinux.org/almalinux/10.0-beta/isos/). 
+- Intel/AMD (x86_64)
+- Intel/AMD (x86_64_v2)
+- ARM64 (aarch64)
+- IBM PowerPC (ppc64le)
+- IBM Z (s390x)
+
+Beta ISOs are available at [repo.almalinux.org](https://repo.almalinux.org/almalinux/10.0-beta/isos/).
 
 ### Beta or Kitten?
 
-[Newly introduced AlmaLinux OS Kitten](https://almalinux.org/blog/2024-10-22-introducing-almalinux-os-kitten/) is designed to serve for development and preparation purposes for the next AlmaLinux OS version. Kitten aims to bring more transparency, engagement, and  provide deeper insights into our build process. 
+[Newly introduced AlmaLinux OS Kitten](https://almalinux.org/blog/2024-10-22-introducing-almalinux-os-kitten/) is designed to serve for development and preparation purposes for the next AlmaLinux OS version. Kitten aims to bring more transparency, engagement, and provide deeper insights into our build process.
 
 The astute AlmaLinux user will notice that some of the software versions in AlmaLinux OS Kitten 10 are newer than what you will find in the AlmaLinux 10 beta release. That is because Kitten is based on CentOS Stream, and AlmaLinux 10 follows Red Hat 10's release versions. It should not be anticipated that Kitten is or will be exactly what will be provided in the BETA version.
 
@@ -47,8 +47,8 @@ You can read the full release notes for this version on the wiki: [AlmaLinux OS 
 
 ## What can you do to help?
 
-Your input into testing and feedback is crucial and essential for successful production releases. 
-Please, report any bugs you may see on the [Bug Tracker](https://bugs.almalinux.org/). Also, pop into the [AlmaLinux Community Chat](https://chat.almalinux.org) and join our Testing Channel, post a question on our [10.0 Beta Forum](https://forums.almalinux.org/c/devel/10-beta/42), on our AlmaLinux Community on [Reddit](https://reddit.com/r/almalinux) or catch us on [X](https://twitter.com/almalinux). 
+Your input into testing and feedback is crucial and essential for successful production releases.
+Please, report any bugs you may see on the [Bug Tracker](https://bugs.almalinux.org/). Also, pop into the [AlmaLinux Community Chat](https://chat.almalinux.org) and join our Testing Channel, post a question on our [10.0 Beta Forum](https://forums.almalinux.org/c/devel/10-beta/42), on our AlmaLinux Community on [Reddit](https://reddit.com/r/almalinux) or catch us on [X](https://twitter.com/almalinux).
 
 Enjoy this Beta release, let us know what you think and stay tuned.
 

@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux 8.6 Stable is Now Available!"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2022-05-12'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2022-05-12"
 post:
-    title: "Well, that was pretty quick. AlmaLinux OS 8.6 Stable is now available for x86_64, aarch64 and ppc64le! Containers and cloud images are coming right up!"
-    image: /blog-images/8.6stable.png
+  title: "Well, that was pretty quick. AlmaLinux OS 8.6 Stable is now available for x86_64, aarch64 and ppc64le! Containers and cloud images are coming right up!"
+  image: /blog-images/8.6stable.png
 ---
 
 Hi, Community! The AlmaLinux OS Foundation is excited to announce that AlmaLinux OS 8.6 Stable is now available. Just like a flash after the beta release. This stable release is for the x86_64, aarch64 and ppc64le architectures and is ready for production installations and to power all your computing needs and workloads. Grab it from the nearest [mirror](https://mirrors.almalinux.org/isos) and join us on the [AlmaLinux Community Chat](https://chat.almalinux.org/) to discuss.

@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux 8.5 Beta for PowerPC Now Available"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-12-30'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-12-30"
 post:
-    title: " We got the POWER!"
-    image: /blog-images/Almalinux-logo-white-v2_FTMhNrx.png
+  title: " We got the POWER!"
+  image: /blog-images/Almalinux-logo-white-v2_FTMhNrx.png
 ---
 
 Hello, Community! We have a belated Christmas present for you. Wanted to eek out just one more release before we ring in 2022. AlmaLinux 8.5 Beta is now available for PowerPC!

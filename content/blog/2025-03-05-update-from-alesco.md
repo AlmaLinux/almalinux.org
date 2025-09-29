@@ -1,16 +1,16 @@
 ---
 title: "ALESCo - Updates and requests!"
 type: blog
-author: 
- name: "Cody Robertson"
- bio: "CTO, Hawk Host"
- image: /users/cody.jpeg
-date: '2025-03-05'
+author:
+  name: "Cody Robertson"
+  bio: "CTO, Hawk Host"
+  image: /users/cody.jpeg
+date: "2025-03-05"
 images:
   - /blog-images/2025/mar-alesco-updates.png
 post:
-    title: "Come read what ALESCo has been up to, and the new process for taking requests!"
-    image: /blog-images/2025/mar-alesco-updates.png
+  title: "Come read what ALESCo has been up to, and the new process for taking requests!"
+  image: /blog-images/2025/mar-alesco-updates.png
 ---
 
 In case you missed it ALESCo ([The AlmaLinux Engineering Steering Committee](https://almalinux.org/blog/2024-05-21-introducing-alesco/)) that we announced in May of 2024 has been hard at work setting up processes and stretching our legs. It's been a bit since we've done this kind of update, so let's get to it! 
@@ -39,7 +39,7 @@ _For anyone not familiar with GitHub in general - [The front page of pull reques
 
 ### RFC - Build Fedora EPEL for AlmaLinux and AlmaLinux Kitten x86_64_v2
 
-The first RFC submitted for this process is to discuss a [potential rebuild of the Extra Packages for Enterprise Linux](https://github.com/AlmaLinux/ALESCo/pull/2) (or [EPEL](https://docs.fedoraproject.org/en-US/epel/)) to be used alongside the _v2 version of AlmaLinux that we are including with AlmaLinux 10.
+The first RFC submitted for this process is to discuss a [potential rebuild of the Extra Packages for Enterprise Linux](https://github.com/AlmaLinux/ALESCo/pull/2) (or [EPEL](https://docs.fedoraproject.org/en-US/epel/)) to be used alongside the \_v2 version of AlmaLinux that we are including with AlmaLinux 10.
 
 ### RFC0003 - Enable KVM on AlmaLinux 9 on ppc64le
 

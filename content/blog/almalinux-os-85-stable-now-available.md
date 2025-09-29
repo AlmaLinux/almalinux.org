@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux OS 8.5 Stable Now Available"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-11-12'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-11-12"
 post:
-    title: "The latest version of AlmaLinux OS is Now Available to Download. Read more about the updates and enhancements included in this release."
-    image: /blog-images/Almalinux-logo-white-v2.png
+  title: "The latest version of AlmaLinux OS is Now Available to Download. Read more about the updates and enhancements included in this release."
+  image: /blog-images/Almalinux-logo-white-v2.png
 ---
 
 Hi, Community! The AlmaLinux OS Foundation is thrilled to announce that AlmaLinux OS 8.5 Stable is now available. This stable release for x86_64 and ARM architectures is ready for production installations and to power all your computing needs and workloads. So grab it from the nearest [mirror](https://mirrors.almalinux.org/isos) and join us on the [AlmaLinux Community Chat](https://chat.almalinux.org/) to discuss.

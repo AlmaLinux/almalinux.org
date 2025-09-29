@@ -1,14 +1,14 @@
 ---
 title: "Live Launch Of The First AlmaLinux OS Stable Release"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-03-15'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-03-15"
 post:
-    title: "Watch the live stream Recording! To celebrate the launch of the stable release of AlmaLinux OS, we hosted an event showcasing the team, the communit..."
-    image: 
+  title: "Watch the live stream Recording! To celebrate the launch of the stable release of AlmaLinux OS, we hosted an event showcasing the team, the communit..."
+  image:
 ---
 
 ## Watch the live stream Recording!

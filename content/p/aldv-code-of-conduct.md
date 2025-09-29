@@ -13,24 +13,24 @@ We do not tolerate harassment in any form in our community. All communication an
 
 ### Expected Behavior
 
- All attendees, speakers, sponsors, and volunteers are expected to:
+All attendees, speakers, sponsors, and volunteers are expected to:
 
--   Be respectful, courteous, and considerate.
--   Collaborate openly and constructively, with a focus on open source ideals
--   Respect personal boundaries and ask for consent in interactions.
--   Follow all applicable venue rules, as well as instructions from organizers and volunteers.
+- Be respectful, courteous, and considerate.
+- Collaborate openly and constructively, with a focus on open source ideals
+- Respect personal boundaries and ask for consent in interactions.
+- Follow all applicable venue rules, as well as instructions from organizers and volunteers.
 
 ### Unacceptable Behavior
 
 Examples of unacceptable behavior include, but are not limited to:
 
--   Harassment, intimidation, or discrimination in any form
--   Personal attacks of any form, including offensive comments related to gender, sexual orientation, race, religion, disability, or physical appearance
--   Unwelcome sexual attention or advances
--   Deliberate misgendering or use of "dead names"
--   Diminishing, mocking, or belittling individuals, organizations, or competitors.
--   Publishing others' private information (such as a physical or electronic address) without explicit permission.
--   Advocating for or encouraging any of the prohibited behaviors.
+- Harassment, intimidation, or discrimination in any form
+- Personal attacks of any form, including offensive comments related to gender, sexual orientation, race, religion, disability, or physical appearance
+- Unwelcome sexual attention or advances
+- Deliberate misgendering or use of "dead names"
+- Diminishing, mocking, or belittling individuals, organizations, or competitors.
+- Publishing others' private information (such as a physical or electronic address) without explicit permission.
+- Advocating for or encouraging any of the prohibited behaviors.
 
 ## Reporting Issues
 
@@ -44,7 +44,6 @@ All reports will be handled with discretion. We take all reports seriously and a
 
 Anyone asked to stop unacceptable behavior is expected to comply immediately. Event organizers may take any action they deem appropriate, including:
 
--   Warning the offender
--   Expulsion from the event without a refund
--   Banning from future events
-
+- Warning the offender
+- Expulsion from the event without a refund
+- Banning from future events

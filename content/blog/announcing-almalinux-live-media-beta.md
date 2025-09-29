@@ -1,16 +1,15 @@
 ---
 title: "Announcing AlmaLinux Live Media Beta"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-08-05'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-08-05"
 post:
-    title: "Live Media for AlmaLinux is now available in several flavors."
-    image: /blog-images/LiveMedia.png
+  title: "Live Media for AlmaLinux is now available in several flavors."
+  image: /blog-images/LiveMedia.png
 ---
-
 
 Hi Community! We’ve got some great news. Announcing our AlmaLinux 8 Live Media beta.
 

@@ -1,14 +1,14 @@
 ---
 title: "Announcing ELevate -- Migration between Major Versions (7.x to 8x) of RHEL Derivative Distributions"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-10-19'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-10-19"
 post:
-    title: "ELevate is a project to develop the tools and data set to enable migrations between major versions of RHEL derivative distributions."
-    image: /blog-images/elevatelogo.png
+  title: "ELevate is a project to develop the tools and data set to enable migrations between major versions of RHEL derivative distributions."
+  image: /blog-images/elevatelogo.png
 ---
 
 Hey, all! We'd like to share a very cool project/initiative that we've been working on with the community.

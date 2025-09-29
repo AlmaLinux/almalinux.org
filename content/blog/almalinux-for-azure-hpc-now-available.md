@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux for Azure HPC -- Now Available!"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-12-14'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-12-14"
 post:
-    title: "AlmaLinux Delivers First HPC CentOS Alternative for Microsoft Azure"
-    image: /blog-images/azurelogo_Fa5ACBt.png
+  title: "AlmaLinux Delivers First HPC CentOS Alternative for Microsoft Azure"
+  image: /blog-images/azurelogo_Fa5ACBt.png
 ---
 
 Hello HPC Fans. A few weeks ago we updated our images on Microsoft Azure to 8.5. Today we are proud to announce the general availability of [AlmaLinux OS for Azure HPC](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.almalinux-hpc) based on AlmaLinux OS 8.5. This was a tremendous team effort starting from community requests and developed in collaboration between the AlmaLinux community and the team over at our amazing sponsors Microsoft Azure.

@@ -1,16 +1,16 @@
 ---
 title: "Introducing ALESCo: The AlmaLinux Engineering Steering Committee"
 type: blog
-author: 
- name: "Cody Robertson"
- bio: "CTO, Hawk Host"
- image: /users/cody.jpeg
-date: '2024-05-21'
+author:
+  name: "Cody Robertson"
+  bio: "CTO, Hawk Host"
+  image: /users/cody.jpeg
+date: "2024-05-21"
 images:
   - /blog-images/2024/alesco.png
 post:
-    title: "Introducing ALESCo: The AlmaLinux Engineering Steering Committee"
-    image: /blog-images/2024/alesco.png
+  title: "Introducing ALESCo: The AlmaLinux Engineering Steering Committee"
+  image: /blog-images/2024/alesco.png
 ---
 
 It's hard to believe that the first AlmaLinux stable release was over three years ago, but what a ride it's been! In those three years, we've grown from a small group of interested hobbyists and professionals to a fully formed organization, 501(c)(6) registered, with contributors of all types from every stretch of the globe. To say we're proud of the progress we've seen and how the Linux community has adopted us would be an understatement, and with that support comes a responsibility to ensure AlmaLinux is as technically proficient and responsible as it is valuable to the Linux community.
@@ -37,12 +37,12 @@ For example, after receiving feedback from our community and sponsors and discus
 
 The AlmaLinux OS Foundation board appointed the initial committee members, but the rest of the management of the members will be done by the committee itself.  If you've been active in the AlmaLinux community, you've likely seen these names around already:
 
-* Andrew Lukoshko - AlmaLinux Lead Architect, CloudLinux
-* Ben Thomas - Principal Research Infrastructure Developer, University College London
-* Cody Robertson - CTO, Hawk Host
-* Elkhan Mammadli - Cloud Engineer, CloudLinux
-* Jonathan Wright - AlmaLinux Evangelist, CloudLinux
-* Neal Gompa - Principal Consultant, Velocity Limitless
+- Andrew Lukoshko - AlmaLinux Lead Architect, CloudLinux
+- Ben Thomas - Principal Research Infrastructure Developer, University College London
+- Cody Robertson - CTO, Hawk Host
+- Elkhan Mammadli - Cloud Engineer, CloudLinux
+- Jonathan Wright - AlmaLinux Evangelist, CloudLinux
+- Neal Gompa - Principal Consultant, Velocity Limitless
 
 Keep your eyes out for our announcements around how we will manage membership in the future, if you want to get involved!
 

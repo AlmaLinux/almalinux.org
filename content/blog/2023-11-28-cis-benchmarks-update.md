@@ -2,23 +2,22 @@
 title: "CIS Benchmarks Update"
 type: blog
 author:
- name: "Simon John"
- bio: "Security Standards Architect"
- image: /users/sjohn.png
-date: '2023-11-28'
+  name: "Simon John"
+  bio: "Security Standards Architect"
+  image: /users/sjohn.png
+date: "2023-11-28"
 images:
   - /blog-images/cis_update.png
 post:
-    title: "CIS Benchmarks Update"
-    image: /blog-images/cis_update.png
-
+  title: "CIS Benchmarks Update"
+  image: /blog-images/cis_update.png
 ---
 
 Hello again AlmaLinux Community! We last posted about the [AlmaLinux OS 8 CIS benchmark](/blog/official-cis-benchmark-for-almalinux-and-openscap-guide-now-published/) almost two years ago. We've recently released the second update to that - [v3.0.0](https://workbench.cisecurity.org/benchmarks/15287) which was tested on AlmaLinux 8.8 and are about to start working on the first update to the [AlmaLinux OS 9 CIS benchmark](https://www.cisecurity.org/benchmark/almalinuxos_linux) for 9.2. So I thought it's about time we explained what it's all about.
 
 ## What are CIS benchmarks?
 
-The [Center for Internet Security](https://www.cisecurity.org/), to quote their website, is a *community-driven nonprofit, responsible for the CIS Controls and CIS Benchmarks, globally recognized best practices for securing IT systems and data*.
+The [Center for Internet Security](https://www.cisecurity.org/), to quote their website, is a _community-driven nonprofit, responsible for the CIS Controls and CIS Benchmarks, globally recognized best practices for securing IT systems and data_.
 
 Many organisations use the CIS benchmarks as their baseline for security hardening operating systems and applications. They can be either a starting point to build on or a goal to aspire towards - traditionally you'd have a percentage pass rate to achieve based on your organisation's policies for example "at least 70% at Level 2". Being an industry standard means that you can find plenty of tutorials, tools and experienced practitioners to help you.
 
@@ -26,10 +25,10 @@ The benchmarks cover topics like which SSH ciphers to use, AAA best practices li
 
 The benchmarks are just documents - you can read them as PDF's - no special software to install. You can find them on the [website](https://www.cisecurity.org/benchmark/almalinuxos_linux). They're available to all for free with no paywall.
 
-CIS controls *map* to various security frameworks, so you can show an auditor how you're compliant to ISO 27002 by applying CIS controls in the  benchmarks, for example:
+CIS controls _map_ to various security frameworks, so you can show an auditor how you're compliant to ISO 27002 by applying CIS controls in the benchmarks, for example:
 
 | **ISO 27002:2022**                            | **CIS Controls v8**                                                         | **AlmaLinux OS 9 Benchmark**         |
-|-----------------------------------------------|-----------------------------------------------------------------------------|--------------------------------------|
+| --------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------ |
 | 8.8 - Management of technical vulnerabilities | 7.3 - Perform Automated Operating System Patch Management                   | 1.2 - Configure Software Updates     |
 | 8.2 - Privileged access rights                | 5.4 - Restrict Administrator Privileges to Dedicated Administrator Accounts | 5.3 - Configure privilege escalation |
 
@@ -51,7 +50,7 @@ On my [GitHub](https://github.com/sej7278/virt-installs) I have a few scripts fo
 
 With CIS [SecureSuite](https://www.cisecurity.org/cis-hardened-images) membership you can get access to pre-hardended virtual machine images for most cloud providers, build-kits for hardening existing infrastructure and the CIS-CAT Pro tool for testing.
 
-Unlike some security frameworks which can be quite vague and high-level, the CIS benchmarks are distribution-specific and very descriptive - they tell you exactly which commands to type or what to put in a config file to remediate non-compliances and how to retest. This is what most companies I've worked with find attractive - a sysadmin can do the hardening and a SOC analyst can measure compliance without hiring a consultancy to tell you what is meant by phrases like *"use sufficient cryptographic controls for the classification of data at rest and in transit"*.
+Unlike some security frameworks which can be quite vague and high-level, the CIS benchmarks are distribution-specific and very descriptive - they tell you exactly which commands to type or what to put in a config file to remediate non-compliances and how to retest. This is what most companies I've worked with find attractive - a sysadmin can do the hardening and a SOC analyst can measure compliance without hiring a consultancy to tell you what is meant by phrases like _"use sufficient cryptographic controls for the classification of data at rest and in transit"_.
 
 Using an example from the table above, 1.2.2 tests if `gpgcheck=1` is set globally to ensure signatures on RPM's from YUM repositories are checked - so that you can be sure they came from a trusted source:
 
@@ -71,7 +70,7 @@ Easy right? You obviously should take some care before just running all of the r
 
 Well I'm glad you asked! I've been contributing to CIS benchmarks for a few years now, I think I first dabbled with the SLES 12 benchmark, but my first major contribution was the AlmaLinux OS 8 v1.0.0 benchmark, which was based on a draft Fedora 28 family benchmark and eventually became the basis for the Rocky/Oracle 8 benchmarks.
 
-The AlmaLinux OS 9 v1.0.0 benchmark was published in December 2022, which was actually the upstream of the RHEL 9 v1.0.0 benchmark that was published a couple of weeks *earlier!* We're currently working on the F34 family vNext benchmark which will become the next AlmaLinux OS 9 benchmark update.
+The AlmaLinux OS 9 v1.0.0 benchmark was published in December 2022, which was actually the upstream of the RHEL 9 v1.0.0 benchmark that was published a couple of weeks _earlier!_ We're currently working on the F34 family vNext benchmark which will become the next AlmaLinux OS 9 benchmark update.
 
 It's truly a collaborative community effort, with representatives from various distro's as well as end-users and security professionals from all over the world, regularly attending the [Weekly Webex](https://workbench.cisecurity.org/communities/1) with the folks at CIS. I attend the distribution-independent Linux calls, where we also work on Debian, Ubuntu and even recently Amazon Linux. It can be a great learning experience too.
 

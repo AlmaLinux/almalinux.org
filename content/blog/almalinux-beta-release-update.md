@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux Beta Release Update"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-01-20'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-01-20"
 post:
-    title: " Throughout the last few weeks, the team at CloudLinux has worked tirelessly to gear our internal infrastructure to meet the needs of launching a free,... "
-    image: 
+  title: " Throughout the last few weeks, the team at CloudLinux has worked tirelessly to gear our internal infrastructure to meet the needs of launching a free,... "
+  image:
 ---
 
 Throughout the last few weeks, the team at CloudLinux has worked tirelessly to gear our internal infrastructure to meet the needs of launching a free, open, public Linux distro that’s driven by the community. We’ve committed to AlmaLinux OS, and we see the associated responsibilities in a serious light. While we are preparing the new distro for launch within the next month, we are also putting in place the structures that will ensure continuity for AlmaLinux OS - and that ensures community involvement.

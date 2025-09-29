@@ -1,221 +1,287 @@
-
 {{ define "main" }}
-<style>
-@media (max-width: 800px){
-    .display-5 {
+  <style>
+    @media (max-width: 800px) {
+      .display-5 {
         font-size: calc(1.425rem + 2.1vw) !important;
         line-height: 1.2;
-    }
-    .row-cols-1 > * {
+      }
+      .row-cols-1 > * {
         flex: 0 0 auto;
         width: 100%;
-    }
-    .d-grid {
+      }
+      .d-grid {
         display: grid !important;
-    }
-    .row-cols-2 > * {
+      }
+      .row-cols-2 > * {
         flex: 0 0 auto;
         width: 50%;
-    }
-    .container-security {
+      }
+      .container-security {
         flex: 0 0 auto;
         display: flex;
-        flex-direction: column!important;
+        flex-direction: column !important;
+      }
+      .container-measure {
+        width: 100% !important;
+      }
     }
-    .container-measure {
-        width: 100%!important;
-    }
-}
-@media (min-width: 800px) {
-    .display-5 {
+    @media (min-width: 800px) {
+      .display-5 {
         font-size: 3rem;
+      }
     }
-}
-.lh-1 {
-    line-height: 1 !important;
-}
-.al-page-index .al-hero-cta-primary {
-    margin:10px;
-}
-.row > * {
-    margin-top: 20px;
-}
-.al-page-index .al-index-backed-by .al-backed-by-list {
-    justify-content: center;
-}
-@media (min-width: 768px) {
-    .row-cols-md-6 > * {
+    .lh-1 {
+      line-height: 1 !important;
+    }
+    .al-page-index .al-hero-cta-primary {
+      margin: 10px;
+    }
+    .row > * {
+      margin-top: 20px;
+    }
+    .al-page-index .al-index-backed-by .al-backed-by-list {
+      justify-content: center;
+    }
+    @media (min-width: 768px) {
+      .row-cols-md-6 > * {
         flex: 0 0 auto;
         width: 16.66667%;
+      }
     }
-}
-.h2, h2 {
-    font-size: calc(1.325rem + .9vw);
-}
-</style>
+    .h2,
+    h2 {
+      font-size: calc(1.325rem + 0.9vw);
+    }
+  </style>
 
-<div class="al-body-container">
-
+  <div class="al-body-container">
     <section class="al-page-index">
-        <!-- HERO -->
-        <div class="al-index-container" style="background: #0e3b5c!important;">
-          <div class="container px-0 al-py-lg">  
-            <div class="row flex-lg-row-reverse align-items-center py-2 py-md-5">
-                <div class="d-none d-lg-block col-10 col-sm-8 col-lg-6">
-                        <img src="/images/ALESCo.png" class="d-block mx-lg-auto img-fluid" alt="Hero image" width="624" height="429">
-                </div>
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold lh-1 mb-5 mb-md-3">
-                        {{ i18n "The AlmaLinux Engineering Steering Committee" }}
-                    </h1>
-                    <p class="lead mb-5 mb-md-3">
-                        {{ i18n "ALESCo acts as the central meeting point for collaboration between everyone working on anything related to the AlmaLinux Project. By having open discussions and inviting viewpoints from everyone that touches AlmaLinux, we ensure AlmaLinux continues to serve its community." }}
-                    </p>
-                    <div class="d-grid gap-3 d-md-flex justify-content-md-start pt-3">
-                        <a href="https://chat.almalinux.org/almalinux/channels/alesco" class="btn btn-lg px-4 me-md-2 al-cta-blue">
-                            <i class="bi bi-chat-left-dots pe-1"></i>
-                            {{ i18n "Join the conversation" }}
-                        </a>
-                        <a href="https://wiki.almalinux.org/alesco" class="btn btn-lg px-4 al-cta-green">
-                            <i class="bi bi-collection pe-1"></i>
-                            {{ i18n "Learn more" }}
-                        </a>
-                    </div>
-                </div>
+      <!-- HERO -->
+      <div class="al-index-container" style="background: #0e3b5c!important;">
+        <div class="container px-0 al-py-lg">
+          <div class="row flex-lg-row-reverse align-items-center py-2 py-md-5">
+            <div class="d-none d-lg-block col-10 col-sm-8 col-lg-6">
+              <img
+                src="/images/ALESCo.png"
+                class="d-block mx-lg-auto img-fluid"
+                alt="Hero image"
+                width="624"
+                height="429"
+              />
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold lh-1 mb-5 mb-md-3">
+                {{ i18n "The AlmaLinux Engineering Steering Committee" }}
+              </h1>
+              <p class="lead mb-5 mb-md-3">
+                {{ i18n "ALESCo acts as the central meeting point for collaboration between everyone working on anything related to the AlmaLinux Project. By having open discussions and inviting viewpoints from everyone that touches AlmaLinux, we ensure AlmaLinux continues to serve its community." }}
+              </p>
+              <div class="d-grid gap-3 d-md-flex justify-content-md-start pt-3">
+                <a
+                  href="https://chat.almalinux.org/almalinux/channels/alesco"
+                  class="btn btn-lg px-4 me-md-2 al-cta-blue"
+                >
+                  <i class="bi bi-chat-left-dots pe-1"></i>
+                  {{ i18n "Join the conversation" }}
+                </a>
+                <a
+                  href="https://wiki.almalinux.org/alesco"
+                  class="btn btn-lg px-4 al-cta-green"
+                >
+                  <i class="bi bi-collection pe-1"></i>
+                  {{ i18n "Learn more" }}
+                </a>
+              </div>
             </div>
           </div>
         </div>
-<!-- end HERO -->
+      </div>
+      <!-- end HERO -->
 
-<!-- About (includes Members) -->
-    <div class="container al-members">
-                <div class="row">
-					<!-- 'about' header and paragraph -->
-                        <div class="container-measure" style="display: flex; width: 70%;">
-                            <i class="bi bi-bezier2 pe-2" style="font-size:1.25em"></i>
-                            <div class="al-index-community-content-wrap" style="padding-left: 22px">
-                                <h4 class="fw-bold">About ALESCo</h4>
-                                <p>
-                                    {{ i18n "Dubbed “air traffic control” for all engineering matters, ALESCo will ensure AlmaLinux’s robustness, reliability, and sustainability while working collaboratively with and overseeing technical decisions in relevant Special Interest Groups (SIGs). The committee will hold five key responsibilities:" }}
-                                </p>
-								<ul>
-									<li>{{ i18n "Technical oversight for the operating system" }}</li>
-									<li>{{ i18n "Transparency in engineering decisions" }}</li>
-									<li>{{ i18n "Ensuring Long-Term Stability Focus" }}</li>
-									<li>{{ i18n "Release Management" }}</li>
-									<li>{{ i18n "SIG support" }}</li>
-								</ul>
-                            </div>
-                        </div>
-<!-- end 'about' header and paragraph -->
-						
-						
-<!-- Members -->
-                    <div class="col-12">
-                        <h6 class="pb-2 mb-5 border-bottom">
-                            {{ i18n "Members of ALESCo" }}
-                        </h6>
-                    </div>	
-
-<!-- Andrew -->						
-                        <div class="col-xl-3 col-sm-6 mb-5">
-                            <div class="py-5 px-4 text-center al-member-item">
-                                <div>
-                                    <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/alesco/alukoshko.jpg" alt="Andrew Lukoshko" style="max-width: 180px;">
-                                </div>
-                                <h5 class="mb-1">Andrew Lukoshko</h5>
-                                <div class="small mb-1">{{ i18n "AlmaLinux Lead Architect" }}</div>
-                                <div class="small fw-light">CloudLinux</div>
-                            </div>
-                        </div>
-<!-- end Andrew -->		
-<!-- Ben -->						
-                        <div class="col-xl-3 col-sm-6 mb-5">
-                            <div class="py-5 px-4 text-center al-member-item">
-                                <div>
-                                    <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/alesco/benthomas.jpg" alt="Ben Thomas" style="max-width: 180px;">
-                                </div>
-                                <h5 class="mb-1">Ben Thomas</h5>
-                                <div class="small mb-1">{{ i18n "Principal Research Infrastructure Developer" }}</div>
-                                <div class="small fw-light">UCL</div>
-                            </div>
-                        </div>
-<!-- end Ben -->		
-<!-- Cody -->						
-                        <div class="col-xl-3 col-sm-6 mb-5">
-                            <div class="py-5 px-4 text-center al-member-item">
-                                <div>
-                                    <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/alesco/cody.jpeg" alt="Cody Robertson" style="max-width: 180px;">
-                                </div>
-                                <h5 class="mb-1">Cody Robertson</h5>
-                                <div class="small mb-1">{{ i18n "CTO" }}</div>
-                                <div class="small fw-light">Hawk Host</div>
-                            </div>
-                        </div>
-<!-- end Cody -->	
-<!-- Elkhan -->						
-                        <div class="col-xl-3 col-sm-6 mb-5">
-                            <div class="py-5 px-4 text-center al-member-item">
-                                <div>
-                                    <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/alesco/elkhan.jpg" alt="Elkhan Mammadli" style="max-width: 180px;">
-                                </div>
-                                <h5 class="mb-1">Elkhan Mammadli</h5>
-                            </div>
-                        </div>
-<!-- end Elkhan -->
-<!-- Jonathan -->						
-                        <div class="col-xl-3 col-sm-6 mb-5">
-                            <div class="py-5 px-4 text-center al-member-item">
-                                <div>
-                                    <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/alesco/jonathan.jpg" alt="Jonathan Wright" style="max-width: 180px;">
-                                </div>
-                                <h5 class="mb-1">Jonathan Wright</h5>
-                                <div class="small mb-1">{{ i18n "AlmaLinux Evangelist" }}</div>
-                                <div class="small fw-light">CloudLinux</div>
-                            </div>
-                        </div>
-<!-- end Jonathan -->
-<!-- Neal -->						
-                        <div class="col-xl-3 col-sm-6 mb-5">
-                            <div class="py-5 px-4 text-center al-member-item">
-                                <div>
-                                    <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/alesco/nealgompa.png" alt="Neal Gompa" style="max-width: 180px;">
-                                </div>
-                                <h5 class="mb-1">Neal Gompa</h5>
-                                <div class="small mb-1">{{ i18n "Principal Consultant" }}</div>
-                                <div class="small fw-light">Velocity Limitless</div>
-                            </div>
-                        </div>
-<!-- end Neal -->
-                </div>
-        </div>
-<!-- end Members -->
-<!-- end About -->
-    <div class="al-index-stop" style="background: #22C2FF; color: #0A2335;">
-      <div class="container al-py-md" style="padding: 0 40px 0 40px;">
-        <div class="container-stop" style="display: flex;">
-          <div class="stop-item-1" style="width: 60%;">
-            <h2 style="font-size: 60px; font-weight: 700; line-height: 80px; color: #0A2335;">
-              {{ i18n "Come hang out with us!" }}
-            </h2>
+      <!-- About (includes Members) -->
+      <div class="container al-members">
+        <div class="row">
+          <!-- 'about' header and paragraph -->
+          <div class="container-measure" style="display: flex; width: 70%;">
+            <i class="bi bi-bezier2 pe-2" style="font-size:1.25em"></i>
+            <div
+              class="al-index-community-content-wrap"
+              style="padding-left: 22px"
+            >
+              <h4 class="fw-bold">About ALESCo</h4>
+              <p>
+                {{ i18n "Dubbed “air traffic control” for all engineering matters, ALESCo will ensure AlmaLinux’s robustness, reliability, and sustainability while working collaboratively with and overseeing technical decisions in relevant Special Interest Groups (SIGs). The committee will hold five key responsibilities:" }}
+              </p>
+              <ul>
+                <li>
+                  {{ i18n "Technical oversight for the operating system" }}
+                </li>
+                <li>{{ i18n "Transparency in engineering decisions" }}</li>
+                <li>{{ i18n "Ensuring Long-Term Stability Focus" }}</li>
+                <li>{{ i18n "Release Management" }}</li>
+                <li>{{ i18n "SIG support" }}</li>
+              </ul>
+            </div>
           </div>
-          <div class="stop-item-2" style="padding-left: 50px; color: #0A2335;">
-			  <h4 class="fw-bold mb-0 pb-2">{{ i18n "Follow us, join us, or find more information at the links below" }}</h4>
-				<ul>
-				  <li class="social-item-mattermost sociallist"><a href="https://chat.almalinux.org">chat.almalinux.org</a></li>
-				  <li class="social-item-fosstadon sociallist"><a href="https://fosstodon.org/@almalinux">fosstodon.org/@almalinux</a></li>
-				  <li class="social-item-twitter sociallist"><a href="https://twitter.com/almalinux">twitter.com/almalinux</a></li>
-				  <li class="social-item-reddit sociallist"><a href="https://reddit.com/r/almalinux">reddit.com/r/almalinux</a></li>
-				  <li class="social-item-lists sociallist"><a href="https://lists.almalinux.org">lists.almalinux.org</a></li>
-				  <li class="social-item-discourse sociallist"><a href="https://forums.almalinux.org">forums.almalinux.org</a></li>
-				  <li class="social-item-github sociallist"><a href="https://github.com/AlmaLinux">github.com/AlmaLinux</a></li>
-				  <li class="social-item-wiki sociallist"><a href="https://wiki.almalinux.org/">wiki.almalinux.org</a></li>
-				</ul>
+          <!-- end 'about' header and paragraph -->
+
+          <!-- Members -->
+          <div class="col-12">
+            <h6 class="pb-2 mb-5 border-bottom">
+              {{ i18n "Members of ALESCo" }}
+            </h6>
+          </div>
+
+          <!-- Andrew -->
+          <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="py-5 px-4 text-center al-member-item">
+              <div>
+                <img
+                  class="img-fluid rounded-circle mb-3 img-thumbnail"
+                  src="/alesco/alukoshko.jpg"
+                  alt="Andrew Lukoshko"
+                  style="max-width: 180px;"
+                />
+              </div>
+              <h5 class="mb-1">Andrew Lukoshko</h5>
+              <div class="small mb-1">
+                {{ i18n "AlmaLinux Lead Architect" }}
+              </div>
+              <div class="small fw-light">CloudLinux</div>
+            </div>
+          </div>
+          <!-- end Andrew -->
+          <!-- Ben -->
+          <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="py-5 px-4 text-center al-member-item">
+              <div>
+                <img
+                  class="img-fluid rounded-circle mb-3 img-thumbnail"
+                  src="/alesco/benthomas.jpg"
+                  alt="Ben Thomas"
+                  style="max-width: 180px;"
+                />
+              </div>
+              <h5 class="mb-1">Ben Thomas</h5>
+              <div class="small mb-1">
+                {{ i18n "Principal Research Infrastructure Developer" }}
+              </div>
+              <div class="small fw-light">UCL</div>
+            </div>
+          </div>
+          <!-- end Ben -->
+          <!-- Cody -->
+          <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="py-5 px-4 text-center al-member-item">
+              <div>
+                <img
+                  class="img-fluid rounded-circle mb-3 img-thumbnail"
+                  src="/alesco/cody.jpeg"
+                  alt="Cody Robertson"
+                  style="max-width: 180px;"
+                />
+              </div>
+              <h5 class="mb-1">Cody Robertson</h5>
+              <div class="small mb-1">{{ i18n "CTO" }}</div>
+              <div class="small fw-light">Hawk Host</div>
+            </div>
+          </div>
+          <!-- end Cody -->
+          <!-- Jonathan -->
+          <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="py-5 px-4 text-center al-member-item">
+              <div>
+                <img
+                  class="img-fluid rounded-circle mb-3 img-thumbnail"
+                  src="/alesco/jonathan.jpg"
+                  alt="Jonathan Wright"
+                  style="max-width: 180px;"
+                />
+              </div>
+              <h5 class="mb-1">Jonathan Wright</h5>
+              <div class="small mb-1">{{ i18n "AlmaLinux Evangelist" }}</div>
+              <div class="small fw-light">CloudLinux</div>
+            </div>
+          </div>
+          <!-- end Jonathan -->
+          <!-- Neal -->
+          <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="py-5 px-4 text-center al-member-item">
+              <div>
+                <img
+                  class="img-fluid rounded-circle mb-3 img-thumbnail"
+                  src="/alesco/nealgompa.png"
+                  alt="Neal Gompa"
+                  style="max-width: 180px;"
+                />
+              </div>
+              <h5 class="mb-1">Neal Gompa</h5>
+              <div class="small mb-1">{{ i18n "Principal Consultant" }}</div>
+              <div class="small fw-light">Velocity Limitless</div>
+            </div>
+          </div>
+          <!-- end Neal -->
+        </div>
+      </div>
+      <!-- end Members -->
+      <!-- end About -->
+      <div class="al-index-stop" style="background: #22C2FF; color: #0A2335;">
+        <div class="container al-py-md" style="padding: 0 40px 0 40px;">
+          <div class="container-stop" style="display: flex;">
+            <div class="stop-item-1" style="width: 60%;">
+              <h2
+                style="font-size: 60px; font-weight: 700; line-height: 80px; color: #0A2335;"
+              >
+                {{ i18n "Come hang out with us!" }}
+              </h2>
+            </div>
+            <div
+              class="stop-item-2"
+              style="padding-left: 50px; color: #0A2335;"
+            >
+              <h4 class="fw-bold mb-0 pb-2">
+                {{ i18n "Follow us, join us, or find more information at the links below" }}
+              </h4>
+              <ul>
+                <li class="social-item-mattermost sociallist">
+                  <a href="https://chat.almalinux.org">chat.almalinux.org</a>
+                </li>
+                <li class="social-item-fosstadon sociallist">
+                  <a href="https://fosstodon.org/@almalinux"
+                    >fosstodon.org/@almalinux</a
+                  >
+                </li>
+                <li class="social-item-twitter sociallist">
+                  <a href="https://twitter.com/almalinux"
+                    >twitter.com/almalinux</a
+                  >
+                </li>
+                <li class="social-item-reddit sociallist">
+                  <a href="https://reddit.com/r/almalinux"
+                    >reddit.com/r/almalinux</a
+                  >
+                </li>
+                <li class="social-item-lists sociallist">
+                  <a href="https://lists.almalinux.org">lists.almalinux.org</a>
+                </li>
+                <li class="social-item-discourse sociallist">
+                  <a href="https://forums.almalinux.org"
+                    >forums.almalinux.org</a
+                  >
+                </li>
+                <li class="social-item-github sociallist">
+                  <a href="https://github.com/AlmaLinux"
+                    >github.com/AlmaLinux</a
+                  >
+                </li>
+                <li class="social-item-wiki sociallist">
+                  <a href="https://wiki.almalinux.org/">wiki.almalinux.org</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-</section>	
-</div>
-
+    </section>
+  </div>
 {{ end }}

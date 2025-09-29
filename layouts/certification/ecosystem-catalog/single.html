@@ -1,361 +1,413 @@
 {{ define "main" }}
-<style>
-#ec-hero {
-    margin-bottom: 1rem;
-    h1 {
-        font-size:2rem;
-    }
-    .c-img {
+  <style>
+    #ec-hero {
+      margin-bottom: 1rem;
+      h1 {
+        font-size: 2rem;
+      }
+      .c-img {
         max-height: 150px;
         overflow: hidden;
-        max-width:100%;
-    }
-    p.provider {
+        max-width: 100%;
+      }
+      p.provider {
         color: lightgray;
-        font-size:1.1rem;
+        font-size: 1.1rem;
         margin: 1rem 0 1rem 0;
-    }
-    p.short-title {
-        font-size:1.2rem;
-    }
-    .clean-link {
+      }
+      p.short-title {
+        font-size: 1.2rem;
+      }
+      .clean-link {
         text-decoration: none;
-    }
-    .collateral {
+      }
+      .collateral {
         line-height: 1.5rem;
-    }
-    .collateral-item, .collateral-item div, .collateral-item p, .collateral-item a {
+      }
+      .collateral-item,
+      .collateral-item div,
+      .collateral-item p,
+      .collateral-item a {
         display: inline-block;
-    }
-    .collateral-item p {
+      }
+      .collateral-item p {
         margin: 0;
-    }
-    .separator {
+      }
+      .separator {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
         opacity: 0.5;
-        font-size:1.5rem;
-    }
-    .btn {
+        font-size: 1.5rem;
+      }
+      .btn {
         padding: 1rem 1.8rem 1rem 1.8rem;
-        font-size:1.2rem;
+        font-size: 1.2rem;
         margin-top: 2rem;
+      }
     }
-
-}
-#ec-overview {
-    margin: 2rem 0rem 2rem 0rem;
-    padding: 2rem 2rem 2rem 2rem;
-    background: white;
-    color: black;
-    p {
+    #ec-overview {
+      margin: 2rem 0rem 2rem 0rem;
+      padding: 2rem 2rem 2rem 2rem;
+      background: white;
+      color: black;
+      p {
         margin: 0;
+      }
     }
-}
 
-#ec-overview a{
-    color: #003eaa;
-}
+    #ec-overview a {
+      color: #003eaa;
+    }
 
-#ec-certification {
-    margin: 2rem 1rem 2rem 1rem;
-    summary {
+    #ec-certification {
+      margin: 2rem 1rem 2rem 1rem;
+      summary {
         font-size: 2rem;
         user-select: none;
-    }  
-    details {
+      }
+      details {
         border: 1px solid white;
         padding: 1rem;
-    }
-    summary span.architecture {
+      }
+      summary span.architecture {
         font-size: 1rem;
         margin-left: 2rem;
         display: block;
         color: lightgray;
-    }
-    summary span.badge {
+      }
+      summary span.badge {
         color: white;
         background: green;
         font-size: 1rem;
         line-height: 1rem;
-    }
-    h4 {
+      }
+      h4 {
         margin: 3rem 0 0.4rem 0;
-        font-size:1.6rem;
+        font-size: 1.6rem;
         font-weight: bold;
-    }
-    table.certs-table {
-        width: 90%; 
-        margin:0 auto;
-        border-collapse: collapse; 
+      }
+      table.certs-table {
+        width: 90%;
+        margin: 0 auto;
+        border-collapse: collapse;
         border: none;
-    }
+      }
 
-    table.certs-table th {
+      table.certs-table th {
         background-color: black;
         text-align: left;
         padding: 0.75rem;
-        border:none;
-        font-size:1.3rem;
-    }
+        border: none;
+        font-size: 1.3rem;
+      }
 
-    table.certs-table td {
+      table.certs-table td {
         padding: 0.625rem;
         border: none;
+      }
 
-    }
+      table.certs-table tr:hover td {
+        background-color: #f5f5f5;
+      }
 
-    table.certs-table tr:hover td {
-        background-color: #f5f5f5; 
-    }
+      .certs-table th:nth-child(2) {
+        width: 200px;
+      }
 
-    .certs-table th:nth-child(2) {
-        width:200px;
-    }
-
-    table.certs-table tr:nth-child(even) td {
+      table.certs-table tr:nth-child(even) td {
         background-color: #e0e0e0;
         color: black !important;
-        font-size:1.2rem;
-    }
-    table.certs-table tr:nth-child(odd) td {
-        background-color: #f2f2f2; 
+        font-size: 1.2rem;
+      }
+      table.certs-table tr:nth-child(odd) td {
+        background-color: #f2f2f2;
         color: black !important;
-        font-size:1.2rem;
-    }
-    summary h3 {
+        font-size: 1.2rem;
+      }
+      summary h3 {
         display: inline-block;
-    }
-}
-
-/*RESPONSIVE QUERIES */
-@media(max-width: 767px){
-    
-    .m-hide {
-      display: none !important;
+      }
     }
 
-    #ec-hero {
+    /*RESPONSIVE QUERIES */
+    @media (max-width: 767px) {
+      .m-hide {
+        display: none !important;
+      }
+
+      #ec-hero {
         h1 {
-            font-size:1.2rem;
-            font-weight: 1000;
-            text-align: center;
-            margin-bottom: 0.5rem;
+          font-size: 1.2rem;
+          font-weight: 1000;
+          text-align: center;
+          margin-bottom: 0.5rem;
         }
         .collateral-item {
-            display: block !important;
-            margin: 1rem 0 1rem 0;
+          display: block !important;
+          margin: 1rem 0 1rem 0;
         }
         .c-img {
-            margin:0 auto 2rem auto;
-            display: block;
-
+          margin: 0 auto 2rem auto;
+          display: block;
         }
+      }
+      table.certs-table {
+        overflow-x: auto;
+      }
     }
-    table.certs-table {
-        overflow-x: auto; 
+
+    .breadcrumb {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      background: none;
+      font-weight: bold;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      margin-top: 5px;
     }
-}
 
+    .breadcrumb-item {
+      white-space: nowrap;
+    }
 
+    .breadcrumb-item a {
+      color: white;
+      text-decoration: none;
+    }
 
-.breadcrumb {
-  display: flex;
-  list-style: none; 
-  padding: 0;
-  background: none;
-  font-weight: bold;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  margin-top: 5px;
-}
+    .breadcrumb-item.active {
+      color: lightgray;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .breadcrumb-item + .breadcrumb-item::before {
+      content: "»";
+    }
 
-.breadcrumb-item {
-  white-space: nowrap;
-  
-}
+    @media (max-width: 991px) {
+      .breadcrumb {
+        font-size: smaller;
+      }
+    }
 
-.breadcrumb-item a {
-  color: white; 
-  text-decoration: none;
-}
+    /*END RESPONSIVE QUERIES */
+  </style>
 
-.breadcrumb-item.active {
-    color: lightgray;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.breadcrumb-item + .breadcrumb-item::before {
-    content: "»";
-  }
-
-@media (max-width: 991px) {
-  .breadcrumb {
-    font-size: smaller;
-  }
-}
-
-/*END RESPONSIVE QUERIES */
-</style>
-
-<!-- BEGIN SEARCH METADATA SECTION-->
-<!--This section is used for search results and is hidden from end users-->
-<div data-pagefind-body style="display: none;">
+  <!-- BEGIN SEARCH METADATA SECTION-->
+  <!--This section is used for search results and is hidden from end users-->
+  <div data-pagefind-body style="display: none;">
     <span data-pagefind-meta="title">{{ .Params.searchTitle }}</span>
     <span data-pagefind-meta="excerpt">{{ .Params.searchDesc }}</span>
     <span data-pagefind-meta="image">{{ .Params.image }}</span>
     <span data-pagefind-meta="system">{{ .Params.system }}</span>
-    <span data-pagefind-meta="published">{{ .Params.date.Format "January 2, 2006" }}</span>
+    <span data-pagefind-meta="published"
+      >{{ .Params.date.Format "January 2, 2006" }}</span
+    >
     <span data-pagefind-meta="provider">{{ .Params.provider }}</span>
     {{ with .Params.es_collection }}
-        {{ range $key, $value := . }}
-            {{ if reflect.IsSlice $value }} {{/* Check if the value is an array */}}
-                {{ range $nestedValue := $value }}
-                    <span data-pagefind-filter="{{ $key }}">{{ $nestedValue }}</span><br>
-                {{ end }}
-            {{ else }} {{/* Otherwise, simple key-value pair */}}
-                <span data-pagefind-filter="{{ $key }}">{{ $value }}</span><br>
-            {{ end }}
+      {{ range $key, $value := . }}
+        {{ if reflect.IsSlice $value }}
+          {{/* Check if the value is an array */}}
+          {{ range $nestedValue := $value }}
+            <span data-pagefind-filter="{{ $key }}">{{ $nestedValue }}</span
+            ><br />
+          {{ end }}
+        {{ else }}
+          {{/* Otherwise, simple key-value pair */}}
+          <span data-pagefind-filter="{{ $key }}">{{ $value }}</span><br />
         {{ end }}
+      {{ end }}
     {{ else }}
-    <p>There was no metadata for this page.</p>
+      <p>There was no metadata for this page.</p>
     {{ end }}
-</div>
-<!-- END SEARCH METADATA SECTION-->
-<div class="container">
+  </div>
+  <!-- END SEARCH METADATA SECTION-->
+  <div class="container">
     <div class="row">
-        <div class="col-12">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ "/" | relLangURL }}">{{ i18n "Home" }}</a></li>
-                    <li class="breadcrumb-item"><a href="{{ "/certification/ecosystem-catalog" | relLangURL }}">{{ i18n "Ecosystem Catalog" }}</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
-                </ol>
-            </nav>
-        </div>
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="{{ "/" | relLangURL }}">{{ i18n "Home" }}</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="{{ "/certification/ecosystem-catalog" | relLangURL }}"
+                >{{ i18n "Ecosystem Catalog" }}</a
+              >
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              {{ .Title }}
+            </li>
+          </ol>
+        </nav>
+      </div>
     </div>
-</div>
-<section id="ec-hero">
+  </div>
+  <section id="ec-hero">
     <div class="container">
-        <div class="row">
+      <div class="row">
+        <div class="col-12 col-md-8 order-md-1 order-2">
+          <h1>{{ .Title }}</h1>
 
-            <div class="col-12 col-md-8 order-md-1 order-2">
-                <h1>{{ .Title }}</h1>
+          {{ with .Params.provider }}
+            <p class="provider">Provided by {{ . }}</p>
+          {{ end }}
 
-                {{ with .Params.provider }}
-                    <p class="provider">Provided by {{ . }}</p> 
-                {{ end }}
+          {{ with .Params.shortTitle }}
+            <p class="short-title">{{ . }}</p>
+          {{ end }}
 
-                {{ with .Params.shortTitle }}
-                    <p class="short-title">{{ . }}</p> 
-                {{ end }}
+          {{ with .Params.key_applications }}
+            <h3>Key Applications</h3>
+            <ul>
+              {{ range . }}
+                <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          {{ end }}
 
-                {{ with .Params.key_applications }}
-                    <h3>Key Applications</h3>
-                    <ul>
-                        {{ range . }}
-                        <li>{{ . }}</li>
-                        {{ end }}
-                    </ul>
-                {{ end }}
 
-                <div class="collateral">
-                    {{ with .Params.system }}
-                        <div class="collateral-item">
-                            <i class="bi bi-hdd-stack"></i>&nbsp;&nbsp;<p>System: {{ . }}</p>
-                            <div class ="separator m-hide">|</div>
-                        </div>
-                    {{ end }}
-
-                    {{ with .Params.specsLink }}
-                        <div class="collateral-item">
-                            <a class="clean-link" href="{{ . }}" rel="nofollow"><i class="bi bi-box-arrow-up-right"></i>&nbsp;&nbsp;{{ i18n "Product specs" }}</a>
-                            <div class ="separator m-hide">|</div>
-                        </div>
-                    {{ end }}
-
-                    {{ with .Params.supportLink }}
-                        <div class="collateral-item">
-                            <a class="clean-link" href="{{ . }}" rel="nofollow"><i class="bi bi-chat"></i>&nbsp;&nbsp;{{ i18n "Product Support" }}</a>
-                        </div>
-                    {{ end }}
-
-                </div>
-
-                {{ with .Params.buttonLink }}
-                    <a class="btn btn-primary" href="{{ . }}" rel="nofollow">{{ i18n "Learn More" }}</a>
-                {{ end }}
-
-            </div>
-
-            <div class="col-12 col-md-4 order-md-2 order-1">
-                <img src="{{ .Params.image }}" class="c-img">
-            </div>
-
-        </div>
-    </div>
-</section>
-
-{{ with .Params.overview_collection }}
-    <section id="ec-overview">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2>{{ i18n "Overview" }}</h2>
-                    {{ range . }}
-                        {{ if eq .key "Certification Inherited From"}}
-                        <p><strong>{{ .key }}: </strong><a href="{{ "/certification/ecosystem-catalog/{{ .link }}" | relLangURL }}" alt="">{{ .value }}</a></p>
-                        {{ else if eq .key "Test Logs"}}
-                        <p><strong>{{ .key }}: </strong><a href="https://github.com/AlmaLinux/certification/tree/master/{{ .link }}/" alt="">{{ .value }}</a></p>
-                        {{ else }}
-                        <p><strong>{{ .key }}: </strong>{{ .value }}</p>
-                        {{ end }}
-                    {{ end }}
-                </div>
-            </div>
-        </div>
-    </section>
-{{ end }}
-
-{{ with .Params.certification_collection }}
-  <section id="ec-certification">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-            <h2>{{ i18n "Certifications" }}</h2>
-            {{ range . }}
-                <details>
-                <summary><h3>{{ .name }}</h3> {{ with .certified }}{{ if . }}<span class="badge">{{ end }}{{ if eq . "official" }}CERTIFIED{{ else if eq . "community" }}COMMUNITY VALIDATED{{ end }}{{ if . }}</span>{{ end }}{{ end }}<span class="architecture">Architecture: {{ .architecture }}</span></summary>
-
-                {{ range $categoryKey, $categoryData := . }}
-                    {{ if (reflect.IsMap $categoryData) }}  
-                    <h4>{{ index $categoryData "name" }}: {{ index $categoryData "level" }}</h4>
-                    <table class="certs-table">
-                        <thead>
-                        <tr>
-                            <th>{{ i18n "Feature" }}</th>
-                            <th>{{ i18n "Level" }}</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        {{ range index $categoryData "features" }}
-                            {{ range $featureKey, $featureValue := . }}
-                            <tr>
-                                <td>{{ $featureKey }}</td>
-                                <td>{{ $featureValue }}</td>
-                            </tr>
-                            {{ end }}
-                        {{ end }}
-                        </tbody>
-                    </table>
-                    {{ end }}
-                {{ end }}
-                </details>
+          <div class="collateral">
+            {{ with .Params.system }}
+              <div class="collateral-item">
+                <i class="bi bi-hdd-stack"></i>&nbsp;&nbsp;
+                <p>System: {{ . }}</p>
+                <div class="separator m-hide">|</div>
+              </div>
             {{ end }}
-            </div>
+
+            {{ with .Params.specsLink }}
+              <div class="collateral-item">
+                <a class="clean-link" href="{{ . }}" rel="nofollow"
+                  ><i class="bi bi-box-arrow-up-right"></i
+                  >&nbsp;&nbsp;{{ i18n "Product specs" }}</a
+                >
+                <div class="separator m-hide">|</div>
+              </div>
+            {{ end }}
+
+            {{ with .Params.supportLink }}
+              <div class="collateral-item">
+                <a class="clean-link" href="{{ . }}" rel="nofollow"
+                  ><i class="bi bi-chat"></i
+                  >&nbsp;&nbsp;{{ i18n "Product Support" }}</a
+                >
+              </div>
+            {{ end }}
+
+          </div>
+
+          {{ with .Params.buttonLink }}
+            <a class="btn btn-primary" href="{{ . }}" rel="nofollow"
+              >{{ i18n "Learn More" }}</a
+            >
+          {{ end }}
+
         </div>
+
+        <div class="col-12 col-md-4 order-md-2 order-1">
+          <img src="{{ .Params.image }}" class="c-img" />
+        </div>
+      </div>
     </div>
   </section>
+
+  {{ with .Params.overview_collection }}
+    <section id="ec-overview">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>{{ i18n "Overview" }}</h2>
+            {{ range . }}
+              {{ if eq .key "Certification Inherited From" }}
+                <p>
+                  <strong>{{ .key }}: </strong
+                  ><a
+                    href='{{ "/certification/ecosystem-catalog/{{ .link }}" | relLangURL }}'
+                    alt=""
+                    >{{ .value }}</a
+                  >
+                </p>
+              {{ else if eq .key "Test Logs" }}
+                <p>
+                  <strong>{{ .key }}: </strong
+                  ><a
+                    href="https://github.com/AlmaLinux/certification/tree/master/{{ .link }}/"
+                    alt=""
+                    >{{ .value }}</a
+                  >
+                </p>
+              {{ else }}
+                <p><strong>{{ .key }}: </strong>{{ .value }}</p>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{ with .Params.certification_collection }}
+    <section id="ec-certification">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>{{ i18n "Certifications" }}</h2>
+            {{ range . }}
+              <details>
+                <summary>
+                  <h3>{{ .name }}</h3>
+                  {{ with .certified }}
+                    {{ if . }}
+                      <span class="badge"
+                        >{{ if eq . "official" }}
+                          CERTIFIED
+                        {{ else if eq . "community" }}
+                          COMMUNITY VALIDATED
+                        {{ end }}
+                      </span>
+                    {{ end }}
+
+                  {{ end }}
+                  <span class="architecture"
+                    >Architecture: {{ .architecture }}</span
+                  >
+                </summary>
+
+                {{ range $categoryKey, $categoryData := . }}
+                  {{ if (reflect.IsMap $categoryData) }}
+                    <h4>
+                      {{ index $categoryData "name" }}:
+                      {{ index $categoryData "level" }}
+                    </h4>
+                    <table class="certs-table">
+                      <thead>
+                        <tr>
+                          <th>{{ i18n "Feature" }}</th>
+                          <th>{{ i18n "Level" }}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {{ range index $categoryData "features" }}
+                          {{ range $featureKey, $featureValue := . }}
+                            <tr>
+                              <td>{{ $featureKey }}</td>
+                              <td>{{ $featureValue }}</td>
+                            </tr>
+                          {{ end }}
+                        {{ end }}
+                      </tbody>
+                    </table>
+                  {{ end }}
+                {{ end }}
+              </details>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
 {{ end }}
-{{end}}

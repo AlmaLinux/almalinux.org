@@ -39,7 +39,7 @@ key_applications:
 # under overview.  If it is removed no overview section will display
 overview_collection:
   - key: Tests Run By
-  # valid values are "AlmaLinux OS Foundation", "<Vendor Name>", or "Community"
+    # valid values are "AlmaLinux OS Foundation", "<Vendor Name>", or "Community"
     value: AlmaLinux OS Foundation
   # optional
   # - key: "Certification Inherited From"
@@ -97,7 +97,6 @@ certification_collection:
         - "AMD EPYC™ 7002 Series": "9.0+"
         - "AMD EPYC™ 7003 Series": "9.0+"
 
-
   - name: "AlmaLinux 8"
     # valid values are "official", or "community"
     certified: official
@@ -134,11 +133,11 @@ certification_collection:
         - "AMD EPYC™ 7002 Series": "8.3+"
         - "AMD EPYC™ 7003 Series": "8.3+"
 
-
 #Begin Search metadata
 searchTitle: "Supermicro A+ Server AS-2124BT-HNTR"
 # this is basically just tags, formatting doesn't much matter
-searchDesc: "2U DP CloudDC with 12 hot-swap 3.5 NVMe/SAS/SATA bays and 4 PCIe 5.0 x16 slots + 2 PCIe 5.0 x16 AIOM slots
+searchDesc:
+  "2U DP CloudDC with 12 hot-swap 3.5 NVMe/SAS/SATA bays and 4 PCIe 5.0 x16 slots + 2 PCIe 5.0 x16 AIOM slots
   Highly configurable 2U 4-node systems
   2-socket with 16 DIMMs or
   1-socket with 8 DIMMs per node
@@ -155,7 +154,7 @@ searchDesc: "2U DP CloudDC with 12 hot-swap 3.5 NVMe/SAS/SATA bays and 4 PCIe 5.
   customers in high-end enterprise, data center, HPC and Cloud Computing
   environments receive the greatest competitive advantage from data center resources
   with the Supermicro® TwinPro."
-es_collection: 
+es_collection:
   # valid values Server, Component, Component Collection
   type: ["Server"]
   provider: "Super Micro Computer, Inc."
@@ -164,7 +163,7 @@ es_collection:
   architecture: "x86_64"
   network: Configurable (SIOM)
   pcie-version: "4.0"
-  processor-line : "Dual AMD EPYC™ 7003/7002"
+  processor-line: "Dual AMD EPYC™ 7003/7002"
   processor-brand: "AMD"
   storage: ["NVMe", "SATA", "SAS"]
 ---

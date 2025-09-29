@@ -1,21 +1,21 @@
 ---
 title: "Join us for the 2025 Fosdem Distros Room!"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, AlmaLinux OS Foundation"
- image: /users/benny.jpeg
-date: '2024-11-14'
+author:
+  name: "benny Vasquez"
+  bio: "Chair, AlmaLinux OS Foundation"
+  image: /users/benny.jpeg
+date: "2024-11-14"
 images:
   - /blog-images/2024/2025distrosroom.png
-post: 
-    title: "Join us for the 2025 Fosdem Distros Room!"
-    image: /blog-images/2024/2025distrosroom.png
+post:
+  title: "Join us for the 2025 Fosdem Distros Room!"
+  image: /blog-images/2024/2025distrosroom.png
 ---
 
-It's almost time for the Linux Distributions DevRoom at FOSDEM again, but the Call for Participation is OPEN NOW! Let's dive into what we'd like to see and how you can get involved! 
+It's almost time for the Linux Distributions DevRoom at FOSDEM again, but the Call for Participation is OPEN NOW! Let's dive into what we'd like to see and how you can get involved!
 
-Submit your talk [to FOSDEM](https://fosdem.org/submit) in the Distributions track, when you're ready! 
+Submit your talk [to FOSDEM](https://fosdem.org/submit) in the Distributions track, when you're ready!
 
 ## What is the Distributions DevRoom?
 
@@ -37,21 +37,21 @@ We are looking for your most incredible talk for the Distributions DevRoom! Whet
 
 ### Important Dates
 
-* 30 October - Call for Participation (CFP) opens
-* 1 December - Call for Participation (CFP) closes
-* 1 - 5 December - Submissions reviewed
-* 6 December - Speakers notified
-* 12 December - Deadline for speakers to confirm
-* 15 December - developer rooms publish complete schedules
+- 30 October - Call for Participation (CFP) opens
+- 1 December - Call for Participation (CFP) closes
+- 1 - 5 December - Submissions reviewed
+- 6 December - Speakers notified
+- 12 December - Deadline for speakers to confirm
+- 15 December - developer rooms publish complete schedules
 
 ## Help out as a volunteer
 
 Will you be at FOSDEM in 2025? The Distributions DevRoom welcomes volunteers to help with various day-of logistics for running the dev room. The list isn't yet defined specifically, but generally we need people to do these things:
 
-* Speaker introduction and microphone-runner for questions
-* Time-keeping (reminding speakers how much time they have left to keep us on schedule)
-* Speaker support (making sure the on-deck speakers know what they need to do to get going on time)
-* Staffing the door (reminding folks in the hall or entering the room to be respectful)
+- Speaker introduction and microphone-runner for questions
+- Time-keeping (reminding speakers how much time they have left to keep us on schedule)
+- Speaker support (making sure the on-deck speakers know what they need to do to get going on time)
+- Staffing the door (reminding folks in the hall or entering the room to be respectful)
 
 If you are interested in helping out with the Distributions DevRoom, send an introduction email to the [FOSDEM Distributions Devroom mailing list](https://lists.fosdem.org/listinfo/distributions-devroom).
 
@@ -61,4 +61,4 @@ FOSDEM is a free conference that requires no registration of any kind. You just 
 
 When the Distributions DevRoom schedule is live, you’ll be able to find it on the [FOSDEM website](https://fosdem.org/2025/schedule/track/distributions/), so keep an eye out for updates!
 
-Sign up for the [FOSDEM Distributions Devroom mailing list](https://lists.fosdem.org/listinfo/distributions-devroom) list for ongoing updates! 
+Sign up for the [FOSDEM Distributions Devroom mailing list](https://lists.fosdem.org/listinfo/distributions-devroom) list for ongoing updates!

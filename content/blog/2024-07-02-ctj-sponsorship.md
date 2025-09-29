@@ -1,16 +1,16 @@
 ---
 title: "Welcoming Cybertrust Japan again as a Platinum Sponsor Member"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, AlmaLinux OS Foundation"
- image: /users/benny.jpeg
-date: '2024-07-02'
+author:
+  name: "benny Vasquez"
+  bio: "Chair, AlmaLinux OS Foundation"
+  image: /users/benny.jpeg
+date: "2024-07-02"
 images:
   - /blog-images/2024/2024-07-cybertrust-sponsorship.png
-post: 
-    title: "Welcoming Cybertrust Japan again as a Platinum Sponsor Member"
-    image: /blog-images/2024/2024-07-cybertrust-sponsorship.png
+post:
+  title: "Welcoming Cybertrust Japan again as a Platinum Sponsor Member"
+  image: /blog-images/2024/2024-07-cybertrust-sponsorship.png
 ---
 
 Earlier today, we announced that our friends at [Cybertrust Japan Co., Ltd](https://www.cybertrust.co.jp/), have renewed their platinum sponsor membership. As a subsidiary of SB Technology Corp, this level of commitment to the foundation is huge, and we cannot thank them enough.
@@ -21,9 +21,9 @@ As we highlighted in the press release, Cybertrust Japan's sizable contributions
 
 Since May of 2023...
 
--   We have more than doubled the number of mirrors hosted in Japan
--   We have nearly tripled the number of Japan-based ALOSF members
--   We have grown the number of devices calling home for updates in Asia by 40%
+- We have more than doubled the number of mirrors hosted in Japan
+- We have nearly tripled the number of Japan-based ALOSF members
+- We have grown the number of devices calling home for updates in Asia by 40%
 
 Cybertrust Japan's support is a clear catalyst for this, and we're so grateful!
 

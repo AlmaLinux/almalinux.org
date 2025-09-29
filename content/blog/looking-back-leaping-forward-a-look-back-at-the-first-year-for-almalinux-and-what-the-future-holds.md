@@ -1,14 +1,14 @@
 ---
 title: "Looking Back, Leaping Forward: A look back at the first year for AlmaLinux and what the future holds"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2022-02-02'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2022-02-02"
 post:
-    title: "Looking Back, Leaping Forward: A look back at the first year for AlmaLinux and what the future holds"
-    image: /blog-images/almalinux-infographic.png
+  title: "Looking Back, Leaping Forward: A look back at the first year for AlmaLinux and what the future holds"
+  image: /blog-images/almalinux-infographic.png
 ---
 
 WOW! What a first year! The [AlmaLinux](https://almalinux.org/) community finds itself looking back at a successful 12 months with so many significant advancements and milestones. We’ve managed to pull together people from all over the world and unite and unify everyone while leveling-up this new CentOS ecosystem. We’ve also delivered three releases, with download counts in the millions. We recently celebrated over [500K Docker pulls](/blog/celebrating-500k-docker-pulls/) (we have almost a million now), a [beta release for AlmaLinux 8.5 for PowerPC](/blog/almalinux-85-beta-for-powerpc-now-available/), our [first Platinum sponsor Codenotary](/blog/welcome-codenotary-almalinux-os-foundations-first-platinum-member/), and, of course, the [release of AlmaLinux 8.5](/blog/almalinux-os-85-stable-now-available/) within 48 hours of the Red Hat Enterprise Linux (RHEL) release. That was all just in the last couple of months.

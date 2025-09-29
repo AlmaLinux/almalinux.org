@@ -1,16 +1,16 @@
 ---
 title: "Meet us at CloudFest"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, board of directors"
- image: /users/benny.jpeg
-date: '2025-03-13'
+author:
+  name: "benny Vasquez"
+  bio: "Chair, board of directors"
+  image: /users/benny.jpeg
+date: "2025-03-13"
 images:
   - /blog-images/2025/2025-03-cloudfest.png
 post:
-    title: "Next week, we'll be at CloudFest with a booth and doing two talks. Check out where to find us!"
-    image: /blog-images/2025/2025-03-cloudfest.png
+  title: "Next week, we'll be at CloudFest with a booth and doing two talks. Check out where to find us!"
+  image: /blog-images/2025/2025-03-cloudfest.png
 ---
 
 Next week, we'll be at the world's largest cloud industry event, [CloudFest](https://www.cloudfest.com/)! Here's a rundown of what we'll be up to at the event.
@@ -51,14 +51,14 @@ In either case, the community has to show up in force to help keep the projects 
 
 That's OK! The first session will be recorded and shared on the CloudFest YouTube channel after the event! There are also plenty of other opportunities to see us coming up:
 
--   April 25-27: Linuxfest NW
--   June 5-8: Flock to Fedora
--   June 12-14: DevConf
--   August 10-14: SIGGRAPH and Academy Open Source days
--   September 23-27: nerdearla
--   October 12-14: All Things Open
--   November 7-8: SFSCon
--   November 16-21: SC25
+- April 25-27: Linuxfest NW
+- June 5-8: Flock to Fedora
+- June 12-14: DevConf
+- August 10-14: SIGGRAPH and Academy Open Source days
+- September 23-27: nerdearla
+- October 12-14: All Things Open
+- November 7-8: SFSCon
+- November 16-21: SC25
 
 If you like chatting with folks about Linux and open source and are interested in helping us staff a booth at an event, [fill out this Google form](https://docs.google.com/forms/d/1cQ0YQiAcRZXPnDqiHak-AXmsjEBz-IQE8s8jbPLykds/edit)! We'll cover your travel and hotel for events that you attend on behalf of AlmaLinux.
 

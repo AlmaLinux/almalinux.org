@@ -1,16 +1,16 @@
 ---
 title: "Hi, I'm benny. How can I help?"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, AlmaLinux OS Foundation"
- image: /users/benny.jpeg
-date: '2021-10-12'
+author:
+  name: "benny Vasquez"
+  bio: "Chair, AlmaLinux OS Foundation"
+  image: /users/benny.jpeg
+date: "2021-10-12"
 images:
   - /blog-images/2021-10-12-benny-chair-announcement.png
-post: 
-    title: "Hi, I'm benny. How can I help?"
-    image: /blog-images/2021-10-12-benny-chair-announcement.png
+post:
+  title: "Hi, I'm benny. How can I help?"
+  image: /blog-images/2021-10-12-benny-chair-announcement.png
 ---
 
 ## Hi, I'm benny. How can I help?

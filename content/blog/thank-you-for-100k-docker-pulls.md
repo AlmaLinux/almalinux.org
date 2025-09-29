@@ -1,14 +1,14 @@
 ---
 title: "Thank you for 100K Docker Pulls!"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-09-13'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-09-13"
 post:
-    title: "AlmaLinux OS Foundation Membership Opens to the Public"
-    image: /blog-images/docker100k.png
+  title: "AlmaLinux OS Foundation Membership Opens to the Public"
+  image: /blog-images/docker100k.png
 ---
 
 Thank you and Congratulations on 100K+ Docker Pulls!

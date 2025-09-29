@@ -1,15 +1,14 @@
 ---
 title: "AlmaLinux 9.1 Beta - Now Available"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2022-11-02'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2022-11-02"
 post:
-    title: " Hello Community! AlmaLinux OS is excited to present AlmaLinux 9.1 Beta “Lime Lynx” for x86_64, aarch64, ppc64le and s390x architectures."
-    image: "/blog-images/9.1_beta.png"
-
+  title: " Hello Community! AlmaLinux OS is excited to present AlmaLinux 9.1 Beta “Lime Lynx” for x86_64, aarch64, ppc64le and s390x architectures."
+  image: "/blog-images/9.1_beta.png"
 ---
 
 Hello Community! AlmaLinux OS is happy to announce that AlmaLinux 9.1 Beta "Lime Lynx" is available for [x86_64](https://mirrors.almalinux.org/isos/x86_64/9.1-beta.html), [aarch64](https://mirrors.almalinux.org/isos/aarch64/9.1-beta.html), [ppc64le](https://mirrors.almalinux.org/isos/ppc64le/9.1-beta.html) and [s390x](https://mirrors.almalinux.org/isos/s390x/9.1-beta.html) architectures.

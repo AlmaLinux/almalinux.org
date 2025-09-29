@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux now available on Microsoft Azure. Azure Sponsors AlmaLinux!"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-08-17'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-08-17"
 post:
-    title: "AlmaLinux now available on Microsoft Azure. Azure Sponsors AlmaLinux!"
-    image: /blog-images/azurelogo.png
+  title: "AlmaLinux now available on Microsoft Azure. Azure Sponsors AlmaLinux!"
+  image: /blog-images/azurelogo.png
 ---
 
 Today, we are glad to announce the availability of [AlmaLinux OS on the Azure marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.almalinux-x86_64?tab=Overview). Images are available for both Gen1 and Gen2 and are deployable from the Azure portal, Azure command line utility as well as from the marketplace link.

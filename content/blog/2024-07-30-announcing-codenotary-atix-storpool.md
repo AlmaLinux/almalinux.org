@@ -1,16 +1,16 @@
 ---
 title: "Announcing Silver Sponsor Members - Codenotary, ATIX AG, StorPool Storage AD"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, AlmaLinux OS Foundation"
- image: /users/benny.jpeg
-date: '2024-07-30'
+author:
+  name: "benny Vasquez"
+  bio: "Chair, AlmaLinux OS Foundation"
+  image: /users/benny.jpeg
+date: "2024-07-30"
 images:
   - /blog-images/2024/2024-07-ocharino-codenotary-storpool.png
-post: 
-    title: "Announcing Silver Sponsor Members - Codenotary, ATIX AG, StorPool Storage AD"
-    image: /blog-images/2024/2024-07-ocharino-codenotary-storpool.png
+post:
+  title: "Announcing Silver Sponsor Members - Codenotary, ATIX AG, StorPool Storage AD"
+  image: /blog-images/2024/2024-07-ocharino-codenotary-storpool.png
 ---
 
 I'm proud to announce three more Silver Sponsor Members of the AlmaLinux OS Foundation! We're so grateful for the contributions of our every-growing list of sponsors, as more and more companies prove that they believe in what we do. Here's a little bit about each of the three newly announced members. 
