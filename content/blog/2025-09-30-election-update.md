@@ -29,7 +29,7 @@ Transparency is necessary to maintain the trust that we have built with our comm
 
 - cancel the current election and reschedule it for 6 months from now
 - extend the terms of the expiring board members
-- Assign a group from the board to simplify the process for our elections, and bring the proposals to the full board for ratification
+- assign a group from the board to simplify the process for our elections, and bring the proposals to the full board for ratification
 
 In an email vote, the board unanimously approved this course of action and will be providing updates as appropriate going forward. Some of the things you can expect to see:
 
