@@ -5,7 +5,7 @@ author:
   name: "Eduard Abdullin"
   bio: "The Release and Automation Engineer."
   image: /users/eduard-abdullin.jpg
-date: "2025-10-07"
+date: "2025-10-08"
 images:
   - /blog-images/2025/2025-10-07-97-beta.png
 post:
