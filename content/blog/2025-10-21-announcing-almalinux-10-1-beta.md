@@ -29,7 +29,7 @@ A usual reminder: this is a **BETA** release. It should not be used for producti
 
 ## Release Notes and More Information
 
-AlmaLinux 10.1 Beta now supports the Btrfs filesystem, which has already been available in AlmaLinux OS Kitten since 2025-09-10. Btrfs support encompasses both kernel and userspace enablement, and it is now possible to install AlmaLinux OS on a Btrfs filesystem from the very beginning. Initial enablement was scoped to the installer and storage management stack, and broader support within the AlmaLinux software collection for Btrfs features is forthcoming.
+[As we announced earlier today](/blog/2025-10-21-announcing-btrfs-support-in-almalinux-10-1), AlmaLinux 10.1 also includes support for the Btrfs filesystem, which has already been available in AlmaLinux OS Kitten since early September. Btrfs support encompasses both kernel and userspace enablement, and it is now possible to install AlmaLinux OS on a Btrfs filesystem from the very beginning. Initial enablement was scoped to the installer and storage management stack, and broader support within the AlmaLinux software collection for Btrfs features is forthcoming.
 
 AlmaLinux 10.1 Beta also brings performance improvements, updated developer toolsets, and includes the latest GCC, LLVM, and Rust versions. This release also introduces updates to debugging and networking utilities for smoother and more efficient performance. Container and virtualization support deliver new versions of Podman, Buildah, Libvirt, and QEMU-KVM. Security is improved with updated SELinux policies, OpenSSL, and SSSD to keep your systems safe, stable, and reliable.
 
