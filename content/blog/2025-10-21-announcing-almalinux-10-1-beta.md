@@ -33,7 +33,6 @@ AlmaLinux 10.1 Beta now supports the Btrfs filesystem, which has already been av
 
 AlmaLinux 10.1 Beta also brings performance improvements, updated developer toolsets, and includes the latest GCC, LLVM, and Rust versions. This release also introduces updates to debugging and networking utilities for smoother and more efficient performance. Container and virtualization support deliver new versions of Podman, Buildah, Libvirt, and QEMU-KVM. Security is improved with updated SELinux policies, OpenSSL, and SSSD to keep your systems safe, stable, and reliable.
 
-
 You can read the full release notes for this version on the wiki: [AlmaLinux OS 10.1 Beta Release Notes](https://wiki.almalinux.org/release-notes/10.1-beta.html).
 
 ## What you can do to help?
