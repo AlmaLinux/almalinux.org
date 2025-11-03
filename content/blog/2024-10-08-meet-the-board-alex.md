@@ -1,16 +1,16 @@
 ---
 title: "Meet the board - Alex Iribarren"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, board of directors"
- image: /users/benny.jpeg
-date: '2024-10-08'
+author:
+  name: "benny Vasquez"
+  bio: "Chair, board of directors"
+  image: /users/benny.jpeg
+date: "2024-10-08"
 images:
   - /blog-images/2024/alex_qanda.png
 post:
-    title: "Meet the board - Alex Iribarren"
-    image: /blog-images/2024/alex_qanda.png
+  title: "Meet the board - Alex Iribarren"
+  image: /blog-images/2024/alex_qanda.png
 ---
 
 In 2023 [we launched a video series](/blog/2024-01-16-video-contributions/) in which we have community members answer common questions we're seeing from the community. This year, we're starting another video series, this time with the AlmaLinux OS Foundation board members. Our goal with this new series is to better introduce our board to the AlmaLinux community.
@@ -19,18 +19,18 @@ For our latest board member Q&A, we interviewed [Alex Iribarren](https://www.lin
 
 ## Learn more
 
-The AlmaLinux OS Foundation's board is community elected, by members of the AlmaLinux OS Foundation. If you use AlmaLinux, contribute to AlmaLinux, or support AlmaLinux in some way, we encourage you to [join the foundation](/members/). Individual membership is free, because you shouldn't have to pay to have a voice in the future of something you care about. 
+The AlmaLinux OS Foundation's board is community elected, by members of the AlmaLinux OS Foundation. If you use AlmaLinux, contribute to AlmaLinux, or support AlmaLinux in some way, we encourage you to [join the foundation](/members/). Individual membership is free, because you shouldn't have to pay to have a voice in the future of something you care about.
 
 If you'd like to learn more about our board and elections, you can check out [our Wiki](https://wiki.almalinux.org/election2023.html)! You can also watch the other videos in this series in [this YouTube playlist](https://www.youtube.com/playlist?list=PLqKzWfm6zyluP2R_6MTPvYJt20bwitQZJ).
 
 See the other interview blog posts here:
-* In September, we interviewed [Jack Aboutboul](https://www.linkedin.com/in/jackaboutboul/): [Meet the board - Jack Aboutboul](/blog/2024-09-12-meet-the-board-jack/)
-* In September, we interviewed [Jun Yoshida](https://www.linkedin.com/in/jun-yoshida-6b4b5a16/): [Meet the board - Jun Yoshida](blog/2024-09-23-meet-the-board-jun/)
+
+- In September, we interviewed [Jack Aboutboul](https://www.linkedin.com/in/jackaboutboul/): [Meet the board - Jack Aboutboul](/blog/2024-09-12-meet-the-board-jack/)
+- In September, we interviewed [Jun Yoshida](https://www.linkedin.com/in/jun-yoshida-6b4b5a16/): [Meet the board - Jun Yoshida](blog/2024-09-23-meet-the-board-jun/)
 
 We also had a panel of board members at AlmaLinux Day: Germany in 2024 where board members talked about everything from how they got involved in AlmaLinux to their feelings about the future of open source, which you can watch on YouTube [Meet the board!](https://www.youtube.com/watch?v=PP3OPvmUwTs)
 
 ## Interview
-
 
 Q: What got you involved in the world of Linux and/or open source?
 
@@ -59,4 +59,3 @@ Alex: I studied Computer Science in Madrid, Spain, and right after finishing my 
 Q: What was your dream job as a kid?
 
 Alex: My dream job as a child was being an astronaut. I was fascinated by space and I thought blasting off on a rocket was about the coolest thing one could do. While waiting to become an astronaut, I'd pass the time playing computer games. At some point, I got hold of a magazine that had an article about MS-DOS QBasic and included a simple program you could copy, and that totally derailed my astronaut career. I haven't yet given up on the dream of blasting off in a rocket, but now I'm just waiting for the space tourism market to be a bit more affordable. 🙂
-

@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux 8 Live Media beta – now with KDE and XFCE"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-08-13'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-08-13"
 post:
-    title: "AlmaLinux Images for KDE and XFCE are now available."
-    image: /blog-images/kfcelive.png
+  title: "AlmaLinux Images for KDE and XFCE are now available."
+  image: /blog-images/kfcelive.png
 ---
 
 Hey all! Time flies. Just last week we announced AlmaLinux Live Media beta images available in 2 options: [GNOME and GNOME Mini](/blog/announcing-almalinux-live-media-beta/).

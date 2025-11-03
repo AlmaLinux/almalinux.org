@@ -1,14 +1,14 @@
 ---
-title: "AlmaLinux 8.6 \"Sky Tiger\" Beta - Now Available"
+title: 'AlmaLinux 8.6 "Sky Tiger" Beta - Now Available'
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2022-05-06'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2022-05-06"
 post:
-    title: "AlmaLinux 8.6 Beta is now available for x86_64, aarch64 and ppc64le. Test away!"
-    image: /blog-images/8.6_Beta_Graphic.png
+  title: "AlmaLinux 8.6 Beta is now available for x86_64, aarch64 and ppc64le. Test away!"
+  image: /blog-images/8.6_Beta_Graphic.png
 ---
 
 # AlmaLinux 8.6 Beta is now available

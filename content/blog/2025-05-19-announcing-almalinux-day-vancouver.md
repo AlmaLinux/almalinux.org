@@ -1,16 +1,16 @@
 ---
 title: "AlmaLinux Day: Vancouver Set for August 9, 2025 --- Call for Speakers Now Open"
 type: blog
-author: 
- name: "Tristan Théroux"
- bio: "IT Infrastructure & Security Director at SHED, and AlmaLinux Volunteer"
- image: /users/tristan.jpeg
-date: '2025-05-19'
+author:
+  name: "Tristan Théroux"
+  bio: "IT Infrastructure & Security Director at SHED, and AlmaLinux Volunteer"
+  image: /users/tristan.jpeg
+date: "2025-05-19"
 images:
   - /blog-images/2025/aldv_blog_header.png
 post:
-    title: "AlmaLinux Day: Vancouver Set for August 9, 2025 --- Call for Speakers Now Open"
-    image: /blog-images/2025/aldv_blog_header.png
+  title: "AlmaLinux Day: Vancouver Set for August 9, 2025 --- Call for Speakers Now Open"
+  image: /blog-images/2025/aldv_blog_header.png
 ---
 
 We are excited to share that AlmaLinux Day: Vancouver will take place Saturday, August 9, 2025, at the Emily Carr University of Art + Design.

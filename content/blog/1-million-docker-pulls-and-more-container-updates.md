@@ -1,14 +1,14 @@
 ---
 title: "1 Million Docker pulls and more container updates"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2022-03-15'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2022-03-15"
 post:
-    title: "A mythical distribution with no upstream equivalent. Why did we do it? Because we can!"
-    image: /blog-images/Screen_Shot_2022-03-08_at_10.47.39.png
+  title: "A mythical distribution with no upstream equivalent. Why did we do it? Because we can!"
+  image: /blog-images/Screen_Shot_2022-03-08_at_10.47.39.png
 ---
 
 Wouldya take a look at that? A million! A million pulls of our [Docker Library Official Image](https://hub.docker.com/_/almalinux). What a huge milestone, WOW! We're seriously humbled and we'd like to thank the community, for all the contribution and support. AlmaLinux keeps getting better each day thanks to the efforts of our amazing community.

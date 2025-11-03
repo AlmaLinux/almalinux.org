@@ -1,14 +1,14 @@
 ---
 title: "Official CIS Benchmark for AlmaLinux and OpenSCAP Guide Now Published"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-11-05'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-11-05"
 post:
-    title: "Secure your system via the official CIS Benchmark published for AlmaLinux and learn to use OpenSCAP with our handy OpenSCAP Guide."
-    image: /blog-images/CISBenchmark.png
+  title: "Secure your system via the official CIS Benchmark published for AlmaLinux and learn to use OpenSCAP with our handy OpenSCAP Guide."
+  image: /blog-images/CISBenchmark.png
 ---
 
 Hello Community. Security minded people rejoice! Today, we are pleased to announce that the [Center for Internet Security](https://www.cisecurity.org/) CIS Benchmark for AlmaLinux OS has been published and is now available.

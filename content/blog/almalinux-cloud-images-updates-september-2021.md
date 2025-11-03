@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux Cloud Images Updates - September 2021"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-09-20'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-09-20"
 post:
-    title: "Bug fixes, AWS, Azure, aarch64 support, OpenNebula and more!"
-    image: 
+  title: "Bug fixes, AWS, Azure, aarch64 support, OpenNebula and more!"
+  image:
 ---
 
 Hello, Community! Lots going on here in AlmaLinux land as we continue our journey through the clouds. Today we're pleased to share the latest updates about [AlmaLinux Cloud Images](https://github.com/AlmaLinux/cloud-images). Those include aarch64 support for our AWS AMIs, support for OpenNebula x86_64 and aarch64, and aarch64 support for our Generic (cloud-init) Cloud images/OpenStack.

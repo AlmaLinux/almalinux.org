@@ -21,7 +21,6 @@ Automatically installs the following extensions for optimal Hugo development:
 - **System Updates:** Ensures all system packages are up-to-date.
 - **Software Installation:** Includes essential tools like `git`, `python3`, `python3-pyyaml`, `wget`, `tar`, `shadow-utils`, and `sudo`.
 - **Hugo Installation:** Fetches and installs Hugo with dynamic version support:
-
   - If `VERSION` is set to `latest`, it downloads the latest Hugo extended binary.
   - If a specific version is provided e.g. `v0.139.1`, it downloads and installs that version. This can be specified in `devcontainer.json` under `build.args`.
 

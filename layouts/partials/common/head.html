@@ -1,67 +1,119 @@
 <head>
-    <!-- Interested in what makes this website tick?      -->
-    <!-- Are you looking to contribute?                   -->
-    <!-- This website is Open Source!                     -->
-    <!-- Visit https://github.com/AlmaLinux/almalinux.org -->
+  <!-- Interested in what makes this website tick?      -->
+  <!-- Are you looking to contribute?                   -->
+  <!-- This website is Open Source!                     -->
+  <!-- Visit https://github.com/AlmaLinux/almalinux.org -->
 
-    <!-- OpenGraph -->
-    <!-- We don't use the internal template because we modify the logic -->
-    {{ partial "common/opengraph.html" . }}
+  <!-- OpenGraph -->
+  <!-- We don't use the internal template because we modify the logic -->
+  {{ partial "common/opengraph.html" . }}
 
-    <meta charset="UTF-8">
-    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
-    <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>AlmaLinux OS - Forever-Free Enterprise-Grade Operating System</title>
-    <meta property="og:site_name" content="AlmaLinux OS">
-    <meta name="description" content="
-    An Open Source, community owned and governed, forever-free enterprise Linux distribution.">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-	<meta name="facebook-domain-verification" content="qld5gvzurj87hxsdu0825vt6z15nx8" />
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed for AlmaLinux OS" href="/blog/index.xml">
-    <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
-    <link rel="manifest" href="/fav/site.webmanifest">
-    <link rel="mask-icon" href="/fav/safari-pinned-tab.svg" color="#0069da">
-    <link rel="shortcut icon" href="/fav/favicon.ico">
-    <meta name="msapplication-TileColor" content="#0069da">
-    <meta name="msapplication-config" content="/fav/browserconfig.xml">
-    <meta name="theme-color" content="#0f4266">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        /** Prevent load-blink **/
-        body {
-            background: #0f4266;
-            color: #fefefe;
-        }
 
-        a {
-            color: #c4e1ff;
-        }
+  <meta charset="UTF-8" />
+  <meta
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    name="viewport"
+  />
+  <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+  <title>AlmaLinux OS - Forever-Free Enterprise-Grade Operating System</title>
+  <meta property="og:site_name" content="AlmaLinux OS" />
+  <meta
+    name="description"
+    content="
+    An Open Source, community owned and governed, forever-free enterprise Linux distribution."
+  />
+  <meta
+    name="robots"
+    content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+  />
+  <meta
+    name="facebook-domain-verification"
+    content="qld5gvzurj87hxsdu0825vt6z15nx8"
+  />
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="RSS Feed for AlmaLinux OS"
+    href="/blog/index.xml"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/fav/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/fav/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/fav/favicon-16x16.png"
+  />
+  <link rel="manifest" href="/fav/site.webmanifest" />
+  <link rel="mask-icon" href="/fav/safari-pinned-tab.svg" color="#0069da" />
+  <link rel="shortcut icon" href="/fav/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#0069da" />
+  <meta name="msapplication-config" content="/fav/browserconfig.xml" />
+  <meta name="theme-color" content="#0f4266" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&amp;display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    /** Prevent load-blink **/
+    body {
+      background: #0f4266;
+      color: #fefefe;
+    }
 
-        .RSSFeedbtn{
-          float: right;
-          margin: 20px 20px 0px 0px;
-          width: 180px;
-          font-size: 14px;
-          padding: 10px 0px 10px 0px;
-          font-weight: 500;
-          color: white;
-          border-radius: 5px;
-          border: 1px solid #831883;
-          box-shadow: 7px 4px 15px 4px #402442;
-          background: #831883;
-        }
+    a {
+      color: #c4e1ff;
+    }
 
-    </style>
+    .RSSFeedbtn {
+      float: right;
+      margin: 20px 20px 0px 0px;
+      width: 180px;
+      font-size: 14px;
+      padding: 10px 0px 10px 0px;
+      font-weight: 500;
+      color: white;
+      border-radius: 5px;
+      border: 1px solid #831883;
+      box-shadow: 7px 4px 15px 4px #402442;
+      background: #831883;
+    }
+  </style>
 
-    {{$bundleCSS := resources.Get  "css/bundle.css" | resources.Minify | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $bundleCSS.RelPermalink }}" integrity="{{ $bundleCSS.Data.Integrity }}"/>
+  {{ $bundleCSS := resources.Get  "css/bundle.css" | resources.Minify | resources.Fingerprint }}
+  <link
+    rel="stylesheet"
+    href="{{ $bundleCSS.RelPermalink }}"
+    integrity="{{ $bundleCSS.Data.Integrity }}"
+  />
 </head>

@@ -1,14 +1,14 @@
 ---
 title: "This Distro Should Not Exist - AlmaLinux 8.6 for IBM Z"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2022-10-07'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2022-10-07"
 post:
-    title: "A mythical distribution with no upstream equivalent. Why did we do it? Because we can!"
-    image: /blog-images/8.6forZ.png
+  title: "A mythical distribution with no upstream equivalent. Why did we do it? Because we can!"
+  image: /blog-images/8.6forZ.png
 ---
 
 Hello, IBM Z fans and Linux world at large. Today we have an interesting story to share about a new release - AlmaLinux 8.6 for s390x. The thing is, this release should not exist! Let's explain.

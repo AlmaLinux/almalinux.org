@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux and Oracle Developers Present Pi Day!"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2022-03-04'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2022-03-04"
 post:
-    title: " This 3/14 join us online for a day filled with trivia, demos, labs, tons of giveaways and more. Check out the [Pi Day](https://314piday.com) for the full schedule and to register for your swag pack."
-    image: /blog-images/PiDay2022_Almalinux_Twitter.png
+  title: " This 3/14 join us online for a day filled with trivia, demos, labs, tons of giveaways and more. Check out the [Pi Day](https://314piday.com) for the full schedule and to register for your swag pack."
+  image: /blog-images/PiDay2022_Almalinux_Twitter.png
 ---
 
 Hello All. We know that things have been a little rough lately, so we're gonna try something to keep things on the lighter side.

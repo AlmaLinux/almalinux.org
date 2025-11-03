@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux now available on Oracle Cloud Marketplace"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2022-05-05'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2022-05-05"
 post:
-    title: "AlmaLinux continues its adventure in the clouds with the addition of Oracle Cloud Infrastructure."
-    image: /blog-images/social-og-oci-logo-1200x628.webp
+  title: "AlmaLinux continues its adventure in the clouds with the addition of Oracle Cloud Infrastructure."
+  image: /blog-images/social-og-oci-logo-1200x628.webp
 ---
 
 Did you know that Oracle has a cloud? Yup, that Oracle. It's pretty cool too.

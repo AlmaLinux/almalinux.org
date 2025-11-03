@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux 8.7 Beta - Now Available"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2022-10-25'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2022-10-25"
 post:
-    title: "Hello Community! AlmaLinux OS is excited to present AlmaLinux 8.7 Beta “Stone Smilodon” for x86_64, aarch64, ppc64le and s390x architectures."
-    image: /blog-images/8.7_Beta_Graphic.png
+  title: "Hello Community! AlmaLinux OS is excited to present AlmaLinux 8.7 Beta “Stone Smilodon” for x86_64, aarch64, ppc64le and s390x architectures."
+  image: /blog-images/8.7_Beta_Graphic.png
 ---
 
 Hello Community! AlmaLinux OS is excited to present AlmaLinux 8.7 Beta "Stone Smilodon" for [x86_64](https://mirrors.almalinux.org/isos/x86_64/8.7-beta.html), [aarch64](https://mirrors.almalinux.org/isos/aarch64/8.7-beta.html), [ppc64le](https://mirrors.almalinux.org/isos/ppc64le/8.7-beta.html) and [s390x](https://mirrors.almalinux.org/isos/s390x/8.7-beta.html) architectures.

@@ -1,84 +1,102 @@
 {{ define "main" }}
-
-<section class="al-page-contribute-index">
+  <section class="al-page-contribute-index">
     <div class="container">
-        <div class="row al-py-lg align-items-center">
-            <div class="col-lg-7 al-py-lg">
-                <h3 class="fw-bold pb-3">
-                    {{ i18n "Contribute to AlmaLinux OS development" }}
-                </h3>
-                <div class="al-subtle-links pb-2">
-                    <p>
-
-                        {{ i18n "AlmaLinux OS and infrastructure development are organized using our community chat." }}
-                        {{ i18n "There are many ways to contribute to AlmaLinux OS - testing, quality assurance, documentation, and more." }}
-                    </p>
-                    <p>
-                            <a href="https://chat.almalinux.org/almalinux/channels/introductions">{{ i18n "Introduce yourself" }}</a>
-                        {{ i18n "or join one of the topical channels below to find out more!" }}
-                    </p>
-                </div>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-3">
-                    <ul class="al-subtle-links">
-                        <li>
-                            <a href="https://chat.almalinux.org/almalinux/channels/town-square">
-                                {{ i18n "General chat" }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://chat.almalinux.org/almalinux/channels/development">
-                                {{ i18n "Development" }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://chat.almalinux.org/almalinux/channels/infrastructure">
-                                {{ i18n "Infrastructure" }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://chat.almalinux.org/almalinux/channels/security">
-                                {{ i18n "Security" }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://chat.almalinux.org/almalinux/channels/documentation">
-                                {{ i18n "Documentation" }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://chat.almalinux.org/almalinux/channels/marketing">
-                                {{ i18n "Marketing" }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://chat.almalinux.org/almalinux/channels/www">
-                                {{ i18n "Web presence" }}
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <a href="https://chat.almalinux.org/almalinux/channels/town-square"
-                       class="btn al-cta-chat btn-lg px-4">
-                        <i class="bi bi-chat-left-dots pe-1"></i>
-                        {{ i18n "Join AlmaLinux OS community chat" }}
-                    </a>
-                </div>
-                <div>
-                    <a href="{{ "members" | relLangURL }}"
-                       class="btn al-member-button btn-lg px-4 mt-3">
-                       <i class="bi bi-people-fill pe-1"></i>
-                        {{ i18n "Become a Member" }}
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 d-none d-lg-block">
-                <img class="rounded-lg-3 " src="/images/contribute-hero.png"
-                     alt="Contribute to AlmaLinux OS">
-            </div>
+      <div class="row al-py-lg align-items-center">
+        <div class="col-lg-7 al-py-lg">
+          <h3 class="fw-bold pb-3">
+            {{ i18n "Contribute to AlmaLinux OS development" }}
+          </h3>
+          <div class="al-subtle-links pb-2">
+            <p>
+              {{ i18n "AlmaLinux OS and infrastructure development are organized using our community chat." }}
+              {{ i18n "There are many ways to contribute to AlmaLinux OS - testing, quality assurance, documentation, and more." }}
+            </p>
+            <p>
+              <a
+                href="https://chat.almalinux.org/almalinux/channels/introductions"
+                >{{ i18n "Introduce yourself" }}</a
+              >
+              {{ i18n "or join one of the topical channels below to find out more!" }}
+            </p>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-3">
+            <ul class="al-subtle-links">
+              <li>
+                <a
+                  href="https://chat.almalinux.org/almalinux/channels/town-square"
+                >
+                  {{ i18n "General chat" }}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://chat.almalinux.org/almalinux/channels/development"
+                >
+                  {{ i18n "Development" }}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://chat.almalinux.org/almalinux/channels/infrastructure"
+                >
+                  {{ i18n "Infrastructure" }}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://chat.almalinux.org/almalinux/channels/security"
+                >
+                  {{ i18n "Security" }}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://chat.almalinux.org/almalinux/channels/documentation"
+                >
+                  {{ i18n "Documentation" }}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://chat.almalinux.org/almalinux/channels/marketing"
+                >
+                  {{ i18n "Marketing" }}
+                </a>
+              </li>
+              <li>
+                <a href="https://chat.almalinux.org/almalinux/channels/www">
+                  {{ i18n "Web presence" }}
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a
+              href="https://chat.almalinux.org/almalinux/channels/town-square"
+              class="btn al-cta-chat btn-lg px-4"
+            >
+              <i class="bi bi-chat-left-dots pe-1"></i>
+              {{ i18n "Join AlmaLinux OS community chat" }}
+            </a>
+          </div>
+          <div>
+            <a
+              href="{{ "members" | relLangURL }}"
+              class="btn al-member-button btn-lg px-4 mt-3"
+            >
+              <i class="bi bi-people-fill pe-1"></i>
+              {{ i18n "Become a Member" }}
+            </a>
+          </div>
         </div>
+        <div class="col-lg-4 d-none d-lg-block">
+          <img
+            class="rounded-lg-3 "
+            src="/images/contribute-hero.png"
+            alt="Contribute to AlmaLinux OS"
+          />
+        </div>
+      </div>
     </div>
-</section>
-
-
+  </section>
 {{ end }}

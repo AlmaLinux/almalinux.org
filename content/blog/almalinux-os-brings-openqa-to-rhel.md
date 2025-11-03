@@ -1,15 +1,14 @@
 ---
 title: "AlmaLinux OS brings openQA to RHEL ecosystem"
 type: blog
-author: 
- name: "Elkhan Mammadli"
- bio: "AlmaLinux OS Cloud and OpenQA engineer"
- image: /users/elkhan.jpg
-date: '2023-07-20'
+author:
+  name: "Elkhan Mammadli"
+  bio: "AlmaLinux OS Cloud and OpenQA engineer"
+  image: /users/elkhan.jpg
+date: "2023-07-20"
 post:
-    title: "AlmaLinux OS brings openQA to RHEL ecosystem"
-    image: /blog-images/openqa.png
-
+  title: "AlmaLinux OS brings openQA to RHEL ecosystem"
+  image: /blog-images/openqa.png
 ---
 
 Hello! I'm [Elkhan Mammadli](https://chat.almalinux.org/almalinux/messages/@lkhn) and you may know me as an avid AlmaLinux contributor and the head of AlmaLinux Cloud Images SIG. Today I'd like to share an absolutely awesome story about collaboration–the open source way.
@@ -39,6 +38,7 @@ Although currently AlmaLinux openQA only has what we consider the bare minimal s
 The AlmaLinux openQA testing system is available at [openqa.almalinux.org](https://openqa.almalinux.org/).
 
 ## Special Thanks
+
 I would also like to include a shout out to openQA developers for such a cool project, the Fedora project for the tests and inspiration, and “The GNOME guy”, Sam Thursfield, whose presentation on the FOSDEM played a big role for me."
 
 ## Contribute and Get Help

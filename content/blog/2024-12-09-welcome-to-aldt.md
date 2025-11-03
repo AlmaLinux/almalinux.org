@@ -1,16 +1,16 @@
 ---
 title: "Announcing AlmaLinux Day: Tokyo 2024"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, board of directors"
- image: /users/benny.jpeg
-date: '2024-12-09'
+author:
+  name: "benny Vasquez"
+  bio: "Chair, board of directors"
+  image: /users/benny.jpeg
+date: "2024-12-09"
 images:
   - /blog-images/2024/aldt-2024.png
 post:
-    title: "Announcing AlmaLinux Day: Tokyo 2024"
-    image: /blog-images/2024/aldt-2024.png
+  title: "Announcing AlmaLinux Day: Tokyo 2024"
+  image: /blog-images/2024/aldt-2024.png
 ---
 
 We are so happy to share that the Japanese AlmaLinux Users Group is hosting the second [AlmaLinux Day: Tokyo](https://almalinux.org/aldt-2024/) this Saturday! Registration is free for attendance, and you can join the closing social event for a small fee.
@@ -24,6 +24,7 @@ This year's AlmaLinux Day: Tokyo will take place on December 14th. I will be at 
 Opening talks begin at 1:00pm local time, with some awesome content in store from members of the user group!
 
 ### Schedule of lectures
+
 <table style="margin: auto;">
   <tbody>
     <tr>

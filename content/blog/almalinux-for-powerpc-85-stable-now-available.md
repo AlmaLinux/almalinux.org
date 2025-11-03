@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux for PowerPC 8.5 Stable Now Available!"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2022-02-25'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2022-02-25"
 post:
-    title: "AlmaLinux inches closer to parity with RHEL and CentOS Linux with support for the ppc64le architecture."
-    image: /blog-images/ibm-power-systems.png
+  title: "AlmaLinux inches closer to parity with RHEL and CentOS Linux with support for the ppc64le architecture."
+  image: /blog-images/ibm-power-systems.png
 ---
 
 Hello Сommunity and PowerPC enthusiasts around the world! The AlmaLinux Foundation is proud to announce that the general availability of AlmaLinux OS 8.5 Stable for ppc64le is live.

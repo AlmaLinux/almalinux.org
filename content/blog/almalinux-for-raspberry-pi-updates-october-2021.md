@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux For Raspberry Pi Updates - October 2021"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-10-07'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-10-07"
 post:
-    title: "New Repo, Kernel 5.10.60, Working Wi-Fi!"
-    image: /blog-images/almarpiupdate.png
+  title: "New Repo, Kernel 5.10.60, Working Wi-Fi!"
+  image: /blog-images/almarpiupdate.png
 ---
 
 Hello Everyone,

@@ -2,7 +2,8 @@
 title: "AlmaLinux Certification SIG's Hardware Certification Program"
 type: p
 ---
-###### last updated - Sept 8th, 2024 
+
+###### last updated - Sept 8th, 2024
 
 ### Abstract
 
@@ -20,22 +21,22 @@ The SIG invites experts, IHVs, and community members to participate in shaping t
 
 ## Table of Contents
 
-* [Introduction](#uintroductionu)
-  * [Background](#background)
-  * [Scope](#scope)
-* [Objectives and benefits](#uobjectives-and-benefitsu)
-* [Certification types](#ucertification-typesu)
-* [Collaboration Spaces and Tools](#ucollaboration-spaces-and-toolsu)
-* [Certification Process](#ucertification-processu)
-  * [Initiating the process](#initiating-the-process)
-  * [Pre-certification](#pre-certification)
-  * [Certification Testing](#certification-testing)
-  * [Post-Certification](#post-certification)
-  * [Certification Locations](#certification-locations)
-* [Certification Testing Areas](#ucertification-testing-areasu)
-* [Certification Lifecycle](#ucertification-lifecycleu)
-* [Contribute to testing: “Community Validated”](#ucontribute-to-testing-community-validatedu)
-* [Appendix: Glossary of terms](#uappendix-glossary-of-termsu)
+- [Introduction](#uintroductionu)
+  - [Background](#background)
+  - [Scope](#scope)
+- [Objectives and benefits](#uobjectives-and-benefitsu)
+- [Certification types](#ucertification-typesu)
+- [Collaboration Spaces and Tools](#ucollaboration-spaces-and-toolsu)
+- [Certification Process](#ucertification-processu)
+  - [Initiating the process](#initiating-the-process)
+  - [Pre-certification](#pre-certification)
+  - [Certification Testing](#certification-testing)
+  - [Post-Certification](#post-certification)
+  - [Certification Locations](#certification-locations)
+- [Certification Testing Areas](#ucertification-testing-areasu)
+- [Certification Lifecycle](#ucertification-lifecycleu)
+- [Contribute to testing: “Community Validated”](#ucontribute-to-testing-community-validatedu)
+- [Appendix: Glossary of terms](#uappendix-glossary-of-termsu)
 
 ## <u>Introduction</u>
 
@@ -58,10 +59,10 @@ Hardware certification for IHVs provides a verified, trusted foundation for ente
 
 While hardware certification has challenges both for IHVs and for AlmaLinux, the benefits to the AlmaLinux community far outweigh the work that will be put in.
 
--   Ensuring Workload Compatibility: Verifies hardware meets workload needs.
--   Promoting Interoperability: Encourages best practices for wide-ranging compatibility.
--   Maximizing Test Efficiency: Utilizes a holistic, needs-based approach to optimize resources.
--   Offering Free Resources: Including a no-cost certification suite & support improves the ecosystem overall.
+- Ensuring Workload Compatibility: Verifies hardware meets workload needs.
+- Promoting Interoperability: Encourages best practices for wide-ranging compatibility.
+- Maximizing Test Efficiency: Utilizes a holistic, needs-based approach to optimize resources.
+- Offering Free Resources: Including a no-cost certification suite & support improves the ecosystem overall.
 
 ## <u>Certification types</u>
 
@@ -79,16 +80,16 @@ The majority of this work is done in an asynchronous manner, so we rely on a col
 
 GitHub Board & Repositories, and other: 
 
--   [AlmaLinux/Certifications](https://github.com/AlmaLinux/certifications)
-    -   This repo is the primary point of contact for the SIG, acts as the holder of certification results, and is the location for certification requests that are not initiated by the foundation or the IHV. It is also the source for the Hardware Certification Program documentation.
--   [AlmaLinux/Hardware-Certification-Suite](https://github.com/AlmaLinux/Hardware-Certification-Suite)
-    -   This repo houses the certification suite itself, and documentation, issues tracking, and related code snippets.
--   [Certification SIG Board](https://github.com/orgs/AlmaLinux/projects/6)
-    -   This board provides an asynchronous method of communication, allowing for more flexible timelines, especially for international participants. Additionally, the GitHub platform serves as a mechanism for organizations to collaborate with the SIG on making certification requests from Independent Software Vendors (ISVs) and Independent Hardware Vendors (IHVs).
--   [Mattermost chat - SIGs/Certifcation](https://chat.almalinux.org/almalinux/channels/sigcertification)
-    -   This acts as the primary way for the community to engage with each other (including the SIG members) for work on certifications or the certification suite. The most collaborative place for the SIG is this chat room. This room is also bridged to matrix on [#sig-certification:almalinux.im](https://app.almalinux.im/#/room/#sig-certification:almalinux.im)
--   Private certification mailing list
-    -   The ([certification-sig\@lists.almalinux.org](mailto:certification-sig@lists.almalinux.org?subject=updateme)) mailing list acts as a private place for the Certification SIG to communicate with IHVs and ISVs. If you require your interaction with the SIG to be private (for example, if you are working with the SIG under NDA), you may reach out here.
+- [AlmaLinux/Certifications](https://github.com/AlmaLinux/certifications)
+  - This repo is the primary point of contact for the SIG, acts as the holder of certification results, and is the location for certification requests that are not initiated by the foundation or the IHV. It is also the source for the Hardware Certification Program documentation.
+- [AlmaLinux/Hardware-Certification-Suite](https://github.com/AlmaLinux/Hardware-Certification-Suite)
+  - This repo houses the certification suite itself, and documentation, issues tracking, and related code snippets.
+- [Certification SIG Board](https://github.com/orgs/AlmaLinux/projects/6)
+  - This board provides an asynchronous method of communication, allowing for more flexible timelines, especially for international participants. Additionally, the GitHub platform serves as a mechanism for organizations to collaborate with the SIG on making certification requests from Independent Software Vendors (ISVs) and Independent Hardware Vendors (IHVs).
+- [Mattermost chat - SIGs/Certifcation](https://chat.almalinux.org/almalinux/channels/sigcertification)
+  - This acts as the primary way for the community to engage with each other (including the SIG members) for work on certifications or the certification suite. The most collaborative place for the SIG is this chat room. This room is also bridged to matrix on [#sig-certification:almalinux.im](https://app.almalinux.im/#/room/#sig-certification:almalinux.im)
+- Private certification mailing list
+  - The ([certification-sig\@lists.almalinux.org](mailto:certification-sig@lists.almalinux.org?subject=updateme)) mailing list acts as a private place for the Certification SIG to communicate with IHVs and ISVs. If you require your interaction with the SIG to be private (for example, if you are working with the SIG under NDA), you may reach out here.
 
 ## <u>Certification Process</u>
 
@@ -140,9 +141,9 @@ If the IHV joins the foundation as a member, then the Marketing SIG will work wi
 
 If the IHV is not able to provide hosting for the hardware that is being tested, the ALOSF will provide three certification locations:
 
--   EU -- Poland, @Atman data center - staffed by CloudLinux
--   Asia -- TBD
--   USA -- Various, based on need and timing
+- EU -- Poland, @Atman data center - staffed by CloudLinux
+- Asia -- TBD
+- USA -- Various, based on need and timing
 
 If the hardware being tested is also being donated to the ALOSF, then it will need to be sent to the USA location in Atlanta for hosting. 
 
@@ -176,11 +177,11 @@ Once the certification suite has been run, results should be shared through a pu
 
 #### Benefits
 
--   Increased Coverage: With community support, we can vastly increase the range of hardware tested, providing more options for end-users.
--   Quick Feedback: Engaged community members running these tests can provide rapid feedback on compatibility, aiding in engagement with IHVs for the SIG.
--   Community Trust: Hardware that is "Community Certified" has been vetted by the very users who rely on it, creating a sense of trust and reliability.
+- Increased Coverage: With community support, we can vastly increase the range of hardware tested, providing more options for end-users.
+- Quick Feedback: Engaged community members running these tests can provide rapid feedback on compatibility, aiding in engagement with IHVs for the SIG.
+- Community Trust: Hardware that is "Community Certified" has been vetted by the very users who rely on it, creating a sense of trust and reliability.
 
-If you have a specific certification request, or have hardware in reserve, take a look at the Community Requested Certifications list. We'd love to have you! 
+If you have a specific certification request, or have hardware in reserve, take a look at the Community Requested Certifications list. We'd love to have you!
 
 <div class="btn-row">
 <a class="btn btn-primary btn-block p-2" href="https://github.com/AlmaLinux/certifications"><i class="bi bi-people-fill"></i> Request Certification</a>

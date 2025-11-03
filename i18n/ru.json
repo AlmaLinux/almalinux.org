@@ -560,7 +560,7 @@
     "AlmaLinux Live Media Wiki Page": "Вики-страница AlmaLinux Live Media",
     "More details and guidance steps can be found on the ": "Более подробную информацию и руководство к действию можно найти на сайте ",
     "AlmaLinux WSL Wiki Page": "Вики-страница AlmaLinux WSL",
-    "More details can be found on the": "Более подробную информацию можно найти на сайте",
+    "More details such as default login can be found on the": "Более подробную информацию, такую как вход в систему по умолчанию, можно найти на странице",
     "AlmaLinux Raspberry Pi Wiki Page": "Вики-страница AlmaLinux Raspberry Pi",
     "AlmaLinux provides official AlmaLinux OS 9 images for Vagrant:": "AlmaLinux предоставляет официальные образы AlmaLinux OS 9 для Vagrant:",
     "AlmaLinux OS Foundation publishes Errata to help users to determine what updates such as security issues and fixed bugs are available and their importance based on analysis.": "AlmaLinux OS Foundation публикует Errata, чтобы помочь пользователям определить, какие обновления, такие как проблемы безопасности и исправленные ошибки, доступны, а также их важность на основе анализа.",
@@ -927,5 +927,7 @@
     "Expired but remains a trusted key.": "Истек, но остается доверенным ключем.",
     "Expired:": "Истек:",
     "If your company would like to be added to this list, reach out to the Membership Committee about joining the Foundation as a sponsor": "Если ваша компания желает попасть в этот список, свяжитесь с Членским комитетом по поводу присоединения к Фонду в качестве спонсора.",
-    "Migration, Applications, and General support": "Миграция, Приложения и Общая поддержка"
+    "Migration, Applications, and General support": "Миграция, Приложения и Общая поддержка",
+    "AlmaLinux provides official AlmaLinux OS 9.6 images for Vagrant:": "AlmaLinux предоставляет официальные образы AlmaLinux OS 9.6 для Vagrant:",
+    "AlmaLinux offers AlmaLinux OS 8.10 and AlmaLinux OS 9.6 images for Azure across all Azure regions via the ": "AlmaLinux предлагает образы AlmaLinux OS 8.10 and AlmaLinux OS 9.6 для Azure по всем регионам Azure через "
 }

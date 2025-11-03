@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux Container Images Update - Full RHEL UBI Compatibility!"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-09-23'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-09-23"
 post:
-    title: "A Full Set of UBI Compatible Containers, Updates, New Registries and More."
-    image: 
+  title: "A Full Set of UBI Compatible Containers, Updates, New Registries and More."
+  image:
 ---
 
 Hello, Community, container and DevOps fans everywhere. Our [Cloud and Containers SIG](https://wiki.almalinux.org/sigs/Cloud.html) have been hard at work lately on a little bit of a project for you. Today we have some news to share about some container updates, new images, new registries and distribution so stick with us for all the info. Now, it's time to announce some goodness!
@@ -21,7 +21,7 @@ We are thrilled to announce that as of today, [AlmaLinux now provides fully comp
 
 Our new UBI compatible images come in four variants: Minimal, Base, Micro, and Init. Here is a quick summary of what they offer:
 
-*FYI*: Our *Default* container image isn’t going away! It’s been updated. Read more below!
+_FYI_: Our _Default_ container image isn’t going away! It’s been updated. Read more below!
 
 [**Minimal**](https://wiki.almalinux.org/containers/docker-images.html#almalinux-minimal): A minimal, compacted image that contains a limited package set and uses the microdnf package manager as a replacement for DNF. A minimal DNF uses libdnf and therefore doesn't require Python. This image is 52% smaller in size (37MB download, 102MB expanded). It is designed for applications that come with their dependencies bundled like GO, NodeJS, Java.
 

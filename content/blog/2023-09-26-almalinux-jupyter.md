@@ -1,11 +1,11 @@
 ---
 title: "AlmaLinux for DataScience, Containers, and ARM"
 type: blog
-author: 
- name: "Scott A. Williams - AKA vwbusguy"
- bio: "MA, Senior Linux DevOps Engineer, University of California, Santa Barbara"
- image: /users/vwbusguy.jpg
-date: '2023-09-26'
+author:
+  name: "Scott A. Williams - AKA vwbusguy"
+  bio: "MA, Senior Linux DevOps Engineer, University of California, Santa Barbara"
+  image: /users/vwbusguy.jpg
+date: "2023-09-26"
 images:
   - /blog-images/23.09.26.ucsb_blog.svg
 post:
@@ -13,7 +13,7 @@ post:
   image: /blog-images/23.09.26.ucsb_blog.svg
 ---
 
-*Note: This post is a bit of a departure from what you normally see on the AlmaLinux blog, but we would love to share more stories like this! If you would like to write a post about how AlmaLinux helps you in your daily life, reach out to <a href="mailto:benny@almalinux.org">benny</a>.*
+_Note: This post is a bit of a departure from what you normally see on the AlmaLinux blog, but we would love to share more stories like this! If you would like to write a post about how AlmaLinux helps you in your daily life, reach out to <a href="mailto:benny@almalinux.org">benny</a>._
 
 The [College of Letters and Science at the University of California, Santa Barbara](https://lsit.ucsb.edu/) (UCSB) uses AlmaLinux, among other Linux distributions, in regular day-to-day operations. One such use case for AlmaLinux is the build infrastructure behind data science environments that serve hundreds to thousands of students per term.
 
@@ -27,9 +27,9 @@ As more and more faculty turned to us to deploy Jupyter environments, the layers
 
 ## Continuous Integration (CI)
 
-While there were some early attempts at automation of the images via GitHub Actions, ultimately something more powerful became necessary and [Jenkins](https://jenkins.io) was leveraged to bring things under control. The first priority was getting old images simply working again, even if by messy means. Some of these images took over an hour to build on a new Ryzen 7 development laptop and had inconsistent break points making attempts to fix broken images an incredibly tedious and time-consuming process, especially when updates were needed with a quick turnaround for an ongoing production course. The time spent to generate a simple Build-Test-Deploy style Jenkinsfile very quickly paid for itself as the builds could be delegated to more powerful server hardware, making the feedback loop far more efficient and freeing up developer hardware to focus on working on the next incremental step, while the building and testing were handled by designated hardware (in this case, EPYC Gen 2 machines running AlmaLinux 8). 
+While there were some early attempts at automation of the images via GitHub Actions, ultimately something more powerful became necessary and [Jenkins](https://jenkins.io) was leveraged to bring things under control. The first priority was getting old images simply working again, even if by messy means. Some of these images took over an hour to build on a new Ryzen 7 development laptop and had inconsistent break points making attempts to fix broken images an incredibly tedious and time-consuming process, especially when updates were needed with a quick turnaround for an ongoing production course. The time spent to generate a simple Build-Test-Deploy style Jenkinsfile very quickly paid for itself as the builds could be delegated to more powerful server hardware, making the feedback loop far more efficient and freeing up developer hardware to focus on working on the next incremental step, while the building and testing were handled by designated hardware (in this case, EPYC Gen 2 machines running AlmaLinux 8).
 
-Once the immediate emergencies were remedied, work began on standardizing on a common image base. Previously, some images were based on old 3rd party upstreams, some were based on an outdated Microsoft platform, some were based on old Jupyter images, and some were totally custom. There had been some prior attempts to make a common internal base, but without a proper and predictable CI, it ended up adding to the chaos. 
+Once the immediate emergencies were remedied, work began on standardizing on a common image base. Previously, some images were based on old 3rd party upstreams, some were based on an outdated Microsoft platform, some were based on old Jupyter images, and some were totally custom. There had been some prior attempts to make a common internal base, but without a proper and predictable CI, it ended up adding to the chaos.
 
 Jupyter produces its own upstream images and they are regularly updated. It made sense to use Jupyter's upstreams directly, but we could not do it with the old methods for image building. If we were going to do it right, we needed to go all the way. We created new base images for Python, SciPy, and R based on [Jupyter upstream images](https://github.com/jupyter/docker-stacks) and made all course images be based on these bases. These base images, which are [public and open source](https://github.com/UCSB-PSTAT/jupyter-base), are built, tested, and updated against the upstream Jupyter images at least weekly in addition to the latest Jupyter version standardized on for the current term, and include common libraries and extensions used across the majority of courses in addition to what Jupyter provides.
 
@@ -48,7 +48,6 @@ All of the move to a CI-driven process was an attempt to cull technical debt by 
 As time went on, this system had proven itself invaluable. The time to launch from each request was a mere fraction of what it was before and with far better quality deployments. In looking to the future, anticipating that ARM may be an eventual reality, we acquired three Raspberry Pi 4 8GB model B units and have begun incorporating these into regular builds, including the regular python and scipy base images for both current and integration testing streams. These are running AlmaLinux 9 and build in parallel to the EPYC x86_64 AlmaLinux servers on builds where they are currently enabled and are also [published to Docker Hub](https://hub.docker.com/r/ucsb/jupyter-base/tags) alongside the x86_64 images.
 
 Ultimately, the stability and versatility of AlmaLinux made it an obvious choice, since whether it runs on new, high-end EPYC servers or on significantly less capable Raspberry Pis, it is easy to deploy and predictably reliable.
-
 
 —
 "These statements are my own, not those of the Regents of the University of California. References or pointers to non-University entities or resources do not represent endorsement by the Regents of the University of California." - Scott A. Williams

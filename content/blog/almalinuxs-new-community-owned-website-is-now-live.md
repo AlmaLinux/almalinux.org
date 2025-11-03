@@ -1,15 +1,14 @@
 ---
 title: "AlmaLinux's new community-owned website is now live!"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-07-16'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-07-16"
 post:
-    title: "AlmaLinux OS Foundation Membership Opens to the Public"
-    image: /blog-images/index.png
-
+  title: "AlmaLinux OS Foundation Membership Opens to the Public"
+  image: /blog-images/index.png
 ---
 
 There’s been a lot of progress since the AlmaLinux Beta release was announced back in January 2021. The AlmaLinux community has grown enormously, and we’ve established the AlmaLinux governance board. 
@@ -20,7 +19,7 @@ So we’re excited to announce that, as of July 5th, 2021, the new-and-improved 
 
 The website is entirely open-source. It is MIT-licensed and available on [GitHub](https://github.com/AlmaLinux/almalinux.org). The AlmaLinux team have spent months working on the website to bring you the absolute best user experience. Contributions to the development of the AlmaLinux website were 100% community-driven. According to Matīss from AlmaLinux web presence team -
 
-*“Working on the new AlmaLinux website alongside our community was an invaluable experience. The localization of the website was entirely crowd-sourced using the [Weblate](https://weblate.org/) platform. We want to extend a big shout-out to the team at Weblate for their sponsorship of the hosted localization platform and for their continued contributions to our community.”*
+_“Working on the new AlmaLinux website alongside our community was an invaluable experience. The localization of the website was entirely crowd-sourced using the [Weblate](https://weblate.org/) platform. We want to extend a big shout-out to the team at Weblate for their sponsorship of the hosted localization platform and for their continued contributions to our community.”_
 
 The updated website is available in eight languages and includes a modern design that is much more intuitive. It provides easier access to relevant community channels, forums, and content.
 
