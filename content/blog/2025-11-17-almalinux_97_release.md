@@ -13,7 +13,7 @@ post:
   image: /blog-images/2025/almalinux97stable.png
 ---
 
-# AlmaLinux 9.7 Stable Now Available
+# AlmaLinux OS 9.7 Stable Now Available
 
 Hello Community! The AlmaLinux OS Foundation is announcing the general availability of [AlmaLinux OS 9.7](https://mirrors.almalinux.org/isos.html) codenamed "Moss Jungle Cat"!
 
