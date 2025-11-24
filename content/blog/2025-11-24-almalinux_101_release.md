@@ -1,5 +1,5 @@
 ---
-title: "General Availability of AlmaLinux 10.1 Stable!"
+title: "General Availability of AlmaLinux OS 10.1 Stable!"
 type: blog
 author:
   name: "Eduard Abdullin"
