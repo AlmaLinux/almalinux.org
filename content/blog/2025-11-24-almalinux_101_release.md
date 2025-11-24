@@ -13,7 +13,7 @@ post:
   image: /blog-images/2025/almalinux101stable.png
 ---
 
-# AlmaLinux 10.1 Stable Now Available
+# AlmaLinux OS 10.1 Stable Now Available
 
 Hello Community! The AlmaLinux OS Foundation is announcing the general availability of [AlmaLinux OS 10.1](https://mirrors.almalinux.org/isos.html) codenamed "Heliotrope Lion"!
 
