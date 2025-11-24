@@ -9,7 +9,7 @@ date: "2025-11-24"
 images:
   - /blog-images/2025/almalinux101stable.png
 post:
-  title: "General Availability of AlmaLinux 10.1 Stable!"
+  title: "General Availability of AlmaLinux OS 10.1 Stable!"
   image: /blog-images/2025/almalinux101stable.png
 ---
 
