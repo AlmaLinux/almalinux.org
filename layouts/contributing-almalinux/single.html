@@ -1,0 +1,408 @@
+{{ define "main" }}
+  <style>
+    img {
+      max-width: 100%;
+    }
+    #hc-hero {
+      background: #0e3b5c;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    .bg-grey {
+      background: #f0efee !important;
+    }
+    .bg-dark-grey {
+      background: #e5e4e2 !important;
+    }
+    .bg-light-green {
+      background: #dfffe8 !important;
+    }
+    .al-page-index.al-get-sup-wrap {
+      padding-top: 20px;
+      padding-bottom: 50px;
+    }
+    .mx-w-500 {
+      max-width: 500px;
+    }
+    .al-contributing-almalinux .container > .row > .col-lg-3 {
+      border-bottom: 1px solid #fff;
+      border-right: 1px solid #fff;
+    }
+    .al-contributing-almalinux .container > .row {
+      border-top: 1px solid #fff;
+      border-left: 1px solid #fff;
+    }
+    .al-ca-s {
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+    .al-ca-s p {
+      max-width: 220px;
+      line-height: normal;
+      font-size: 14px;
+    }
+    .b-card {
+      border: 1px solid #fff;
+    }
+    .al-ca-s.b-card {
+      padding: 18px;
+      height: 100%;
+    }
+    .al-ca-s.b-card p {
+      max-width: 100%;
+    }
+    .al-getting-started .row {
+      margin-left: -15px !important;
+      margin-right: -15px !important;
+    }
+  </style>
+  <!-- HERO -->
+  <section id="hc-hero">
+    <div class="container px-0 al-py-lg">
+      <div class="row">
+        <div class="col-lg">
+          <h1 class="display-5 fw-bold">
+            {{ i18n "Contributing to the AlmaLinux project" }}
+          </h1>
+          <br />
+          <p>
+            <strong>{{ i18n "Help shape the future of AlmaLinux OS!" }}</strong>
+          </p>
+          <p class="mx-w-500">
+            {{ i18n "The AlmaLinux OS project thrives on community contributions – whether it’s testing, QA, documentation, or something else, your skills can make a real impact." }}
+          </p>
+          <p>{{ i18n "Come be part of our growing community!" }}</p>
+        </div>
+        <div class="col-lg">
+          <a href="https://www.youtube.com/watch?v=WCERQ4E_gl8" target="_blank"
+            ><img src="/support_page/contributing-almalinux.svg"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- start page content -->
+  <section class="al-page-index al-get-sup-wrap">
+    <div class="al-contributing-almalinux">
+      <div class="container al-py-lg">
+        <!-- Get support page inner start-->
+        <h2 class="mb-4 mx-w-500">
+          {{ i18n "What Contributing Could Look Like for You or Your Team" }}
+        </h2>
+        <br />
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="al-ca-s">
+              <img
+                src="/support_page/ico-Content-Creation.png"
+                alt="Content Creation"
+              />
+              <br /><br />
+              <h6><strong>{{ i18n "Content Creation" }}</strong></h6>
+              <p class="mb-0">
+                {{ i18n "Create engaging content showcasing AlmaLinux use in real-world projects" }}
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="al-ca-s">
+              <img
+                src="/support_page/ico-Enhancing-ELevate.png"
+                alt="Enhancing ELevate"
+              />
+              <br /><br />
+              <h6><strong>{{ i18n "Enhancing ELevate" }}</strong></h6>
+              <p class="mb-0">
+                {{ i18n "Help expand ELevate migrations and add PES data for more package support" }}
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="al-ca-s">
+              <img
+                src="/support_page/ico-Improving-Our-Wiki.png"
+                alt="Improving Our Wiki"
+              />
+              <br /><br />
+              <h6><strong>{{ i18n "Improving Our Wiki" }}</strong></h6>
+              <p class="mb-0">
+                {{ i18n "Expand, refine, or improve AlmaLinux wiki documentation for the community" }}
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="al-ca-s">
+              <img
+                src="/support_page/ico-Maintaining-Our-Infrastructure.png"
+                alt="Maintaining Our Infrastructure"
+              />
+              <br /><br />
+              <h6>
+                <strong>{{ i18n "Maintaining Our Infrastructure" }}</strong>
+              </h6>
+              <p class="mb-0">
+                {{ i18n "Help maintain core infrastructure like builds, testing, and mirrors" }}
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="al-ca-s">
+              <img
+                src="/support_page/Keeping-Things-Secure.png"
+                alt="Keeping Things Secure"
+              />
+              <br /><br />
+              <h6><strong>{{ i18n "Keeping Things Secure" }}</strong></h6>
+              <p class="mb-0">
+                {{ i18n "Join the security team – manage audits, logs, and define security practices" }}
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="al-ca-s">
+              <img
+                src="/support_page/Building-Packages.png"
+                alt="Building Packages"
+              />
+              <br /><br />
+              <h6><strong>{{ i18n "Building Packages" }}</strong></h6>
+              <p class="mb-0">
+                {{ i18n "Rebuild RHEL packages, handle EPEL requests, and support the build process" }}
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="al-ca-s">
+              <img
+                src="/support_page/Serving-as-an-Expert.png"
+                alt="Serving as an Expert"
+              />
+              <br /><br />
+              <h6><strong>{{ i18n "Serving as an Expert" }}</strong></h6>
+              <p class="mb-0">
+                {{ i18n "Offer expert help on our Mailing List, Mattermost chat, and Reddit channels" }}
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="al-ca-s">
+              <img
+                src="/support_page/Working-at-Events.png"
+                alt="Working at Events"
+              />
+              <br /><br />
+              <h6><strong>{{ i18n "Working at Events" }}</strong></h6>
+              <p class="mb-0">
+                {{ i18n "Staff local events and represent AlmaLinux at LUGs and open-source conferences" }}
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="al-ca-s">
+              <img
+                src="/support_page/Boost-the-Brand.png"
+                alt="Boost the Brand"
+              />
+              <br /><br />
+              <h6><strong>{{ i18n "Boost the Brand" }}</strong></h6>
+              <p class="mb-0">
+                {{ i18n "Contribute with web design, graphics, swag, or updates to almalinux.org" }}
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="al-ca-s">
+              <img
+                src="/support_page/Assist-Certification.png"
+                alt="Assist in Our Certification"
+              />
+              <br /><br />
+              <h6><strong>{{ i18n "Assist in Our Certification" }}</strong></h6>
+              <p class="mb-0">
+                {{ i18n "Support efforts for CIS, STIG, and Common Criteria security certifications" }}
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="al-ca-s">
+              <img src="/support_page/Developing.png" alt="Developing" />
+              <br /><br />
+              <h6><strong>{{ i18n "Developing" }}</strong></h6>
+              <p class="mb-0">
+                {{ i18n "Build or improve platforms like mirrors, builds, or other tools (Python/JS)" }}
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="al-ca-s">
+              <img src="/support_page/Translating.png" alt="Translating" />
+              <br /><br />
+              <h6><strong>{{ i18n "Translating" }}</strong></h6>
+              <p class="mb-0">
+                {{ i18n "Help expand and improve AlmaLinux website translations for global users" }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Get support page inner end-->
+      </div>
+    </div>
+  </section>
+
+  <section class="al-page-index al-get-sup-wrap">
+    <div
+      class="al-getting-started"
+      style="background: url('/support_page/bg-gsd.png') no-repeat right bottom / cover;"
+    >
+      <div class="container al-py-lg">
+        <!-- Get support page inner start-->
+        <h2 class="mb-4">{{ i18n "Getting Started" }}</h2>
+        <br />
+
+        <h4><strong>{{ i18n "Technical Contributions" }}</strong></h4>
+        <br />
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="al-ca-s b-card">
+              <img src="/support_page/gs-file.png" alt="Content Creation" />
+              <br /><br />
+              <h6><strong>{{ i18n "Improve the Documentation" }}</strong></h6>
+              <p>
+                {{ i18n "The importance of documentation cannot be understated, as it is like an investment in the future. It can take time and energy, but it is essential to create full and comprehensive documentation together." }}
+              </p>
+              <p class="mb-0">
+                {{ i18n "If you want to participate, please, follow the guidelines." }}
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="al-ca-s b-card">
+              <img src="/support_page/gs-file.png" alt="Content Creation" />
+              <br /><br />
+              <h6>
+                <strong>{{ i18n "Help with Azure Mirrors Deployment" }}</strong>
+              </h6>
+              <p>
+                {{ i18n "We want to make sure that AlmaLinux images in Azure Cloud will use local mirrors for each region, and don't pay for traffic." }}
+              </p>
+              <p class="mb-0">
+                {{ i18n "More info" }}
+                <a
+                  href="https://wiki.almalinux.org/cloud/Azure.html"
+                  target="_blank"
+                  >{{ i18n "here." }}</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="al-ca-s b-card">
+              <img src="/support_page/gs-file.png" alt="Content Creation" />
+              <br /><br />
+              <h6>
+                <strong
+                  >{{ i18n "More ways to help for DevOps & Programmers" }}</strong
+                >
+              </h6>
+              <p>
+                {{ i18n "Help our" }}
+                <a
+                  href="https://wiki.almalinux.org/sigs/Core.html#help-wanted"
+                  target="_blank"
+                  >{{ i18n "Core Infrastructure Group" }}</a
+                >
+              </p>
+              <p class="mb-0">
+                {{ i18n "More info" }} <a href="#">{{ i18n "here." }}</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br /><br /><br />
+        <h4><strong>{{ i18n "Non-Technical Contributions" }}</strong></h4>
+        <br />
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="al-ca-s b-card">
+              <img src="/support_page/gs-file.png" alt="Content Creation" />
+              <br /><br />
+              <h6>
+                <strong
+                  >{{ i18n "Not a developer? Flex your other skills!" }}</strong
+                >
+              </h6>
+              <p>
+                {{ i18n "Not all AlmaLinux contributors are directly involved in development." }}
+              </p>
+              <p class="mb-0">
+                {{ i18n "To contribute by writing a blog post, working at an event, designing, translating, or any other non-technical contribution you can think of, reach out in the Marketing (opens new window) channel for more info!" }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Get support page inner end-->
+      </div>
+    </div>
+  </section>
+
+  <section class="al-page-index al-get-sup-wrap">
+    <div class="al-getting-started">
+      <div class="container al-py-lg">
+        <!-- Get support page inner start-->
+        <img src="/support_page/bug.png" alt="bug" />
+        <br /><br />
+        <h2 class="mb-4">{{ i18n "Reporting bugs and making fixes" }}</h2>
+        <br />
+
+        <p>
+          {{ i18n "To make AlmaLinux successful, we need the close involvement of the community members. We use our bug tracking system to find, track, and fix bugs. We encourage AlmaLinux users to help us by filling in bug-reports. You can track and discuss all bugs on bugs.almalinux.org" }}
+        </p>
+
+        <p>
+          {{ i18n "Since AlmaLinux aims to be as close to RHEL as possible, it should have nearly identical bugs as the current release of RHEL. AlmaLinux recommends following an" }}
+          "upstream first"
+          {{ i18n "approach in order to help not just the AlmaLinux but the whole EL community:" }}
+        </p>
+
+        <p>
+          {{ i18n "Try to reproduce the steps and check whether the bug is present in CentOS Stream or has been already fixed." }}
+        </p>
+
+        <ul>
+          <li>
+            {{ i18n "If present, it means that the bug is upstream. Please, submit the bug to CentOS Stream bugzilla (opens new window)providing all the necessary information about an issue and reproducing steps. This is the contribution path to get the bug fix into the upstream, which will, in turn, be built into AlmaLinux." }}
+          </li>
+          <li>
+            {{ i18n "If you are able to help investigate and fix the bug, please collaborate with CentOS Stream, as this is the best an AlmaLinux Community Member can do. Check the CentOS Contributor's Guide (opens new window)for more details." }}
+          </li>
+          <li>
+            {{ i18n "If the bug is AlmaLinux-specific, please open a bug on AlmaLinux Bug Tracker (opens new window)providing all the necessary information about an issue and reproducing steps." }}
+          </li>
+          <li>
+            {{ i18n "Please, file your bugs (opens new window)and join us for discussions on GitHub (opens new window)and on AlmaLinux Chat on Mattermost." }}
+          </li>
+        </ul>
+
+        <p class="mb-0">
+          {{ i18n "If you are interested in contributing, and learning more details about the technology stack of the tool and tests, please, visit the repository." }}
+        </p>
+        <!-- Get support page inner end-->
+      </div>
+    </div>
+  </section>
+{{ end }}
