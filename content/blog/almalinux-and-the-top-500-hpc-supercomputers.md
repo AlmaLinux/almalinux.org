@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux and the Top 500 HPC Supercomputers"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2022-07-21'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2022-07-21"
 post:
-    title: "AlmaLinux Now Powers 4 of the World's Top Super Computers with More Coming!"
-    image: /blog-images/uploadstop500top500logo.png__250x250_q85_subsampling-2.png
+  title: "AlmaLinux Now Powers 4 of the World's Top Super Computers with More Coming!"
+  image: /blog-images/uploadstop500top500logo.png__250x250_q85_subsampling-2.png
 ---
 
 The [Top500 Supercomputers](https://top500.org/) list released for the [June 2022](https://www.top500.org/lists/top500/2022/06/) update came out a short while ago and some community members spotted a familiar name on the list--**AlmaLinux**! CentOS was such a large part of the HPC community and AlmaLinux is continuing that tradition. We've been working closely with many in the HPC space including software and hardware vendors, super computer operators and researchers to make sure things continue to run smoothly for those in the HPC space looking for their next steps and providing a drop-in replacement.

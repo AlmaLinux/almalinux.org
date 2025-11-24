@@ -1,19 +1,20 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}" dir="{{ .Site.Language.LanguageDirection | default "ltr" }}">
-{{- partial "common/head.html" . -}}
+<!doctype html>
+<html
+  lang="{{ .Site.Language.Lang }}"
+  dir="{{ .Site.Language.LanguageDirection | default "ltr" }}"
+>
+  {{- partial "common/head.html" . -}}
 
 
-<body>
+  <body>
     {{- partial "common/nav.html" . -}}
 
-    {{- block "main" . -}} {{- end -}}
+    {{- block "main" . -}}{{- end -}}
 
     {{- partial "common/newsletter.html" . -}}
     {{- partial "common/footer.html" . -}}
     {{- partial "common/scripts.html" . -}}
-    {{- block "scripts" . -}} {{- end -}}
+    {{- block "scripts" . -}}{{- end -}}
 
-
-</body>
-
+  </body>
 </html>

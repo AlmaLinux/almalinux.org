@@ -1,16 +1,16 @@
 ---
 title: "Meet our two new board members!"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, AlmaLinux OS Foundation"
- image: /users/benny.jpeg
+author:
+  name: "benny Vasquez"
+  bio: "Chair, AlmaLinux OS Foundation"
+  image: /users/benny.jpeg
 date: 2023-12-19
 images:
   - /blog-images/2023-12-19-new-board.png
-post: 
-    title: "Announcing the two newest members of the AlmaLinux OS Foundation board"
-    image: /blog-images/2023-12-19-new-board.png
+post:
+  title: "Announcing the two newest members of the AlmaLinux OS Foundation board"
+  image: /blog-images/2023-12-19-new-board.png
 ---
 
 The 2023 election has concluded and I am elated to announce our two newest members: [吉田淳 (Jun Yoshida)](https://www.linkedin.com/in/jun-yoshida-6b4b5a16/) and [Alejandro (Alex) Iribarren](https://www.linkedin.com/in/iribarren/).

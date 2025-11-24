@@ -1,14 +1,14 @@
 ---
 title: "The New and Improved AlmaLinux Mirror Service"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-08-04'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-08-04"
 post:
-    title: "Announcing our new and improved mirror service—making things faster for you."
-    image: 
+  title: "Announcing our new and improved mirror service—making things faster for you."
+  image:
 ---
 
 Great news about our mirror service! Our mirror service is what powers distribution of ISOs, packages and updates across the world. A while ago we developed and started testing a new geolocation-based mirror service which helps you get software faster and easier based on where in the world you are and what the closest source is. Thanks to all those who were involved in testing--It’s now official: our new mirror service is coming online on August 4th at 7.00 UTC.
@@ -21,7 +21,7 @@ Also, we would like to give a HUGE thanks to our sponsors [AWS](https://aws.amaz
 
 For all of you who are interested in details about how things work we couldn’t resist getting you some technical details on how our mirror service works.
 
-The mirror service uses the IP of an incoming request for detecting a country, a region, an [ASN](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) and a subnet. If you’re using anything like Tor, a proxy or VPN then you can expect it to use your current masked IP and not the actual IP at your physical location.
+The mirror service uses the IP of an incoming request for detecting a country, a region, an [ASN](<https://en.wikipedia.org/wiki/Autonomous_system_(Internet)>) and a subnet. If you’re using anything like Tor, a proxy or VPN then you can expect it to use your current masked IP and not the actual IP at your physical location.
 
 For detecting ASN and location by IP we’re using the GeoIP/ASN databases from https://www.maxmind.com. The mirror service returns all suitable mirrors by ASN/subnets:
 

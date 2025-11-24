@@ -1,14 +1,14 @@
 ---
 title: "Generic Cloud (cloud-init) Images Now Available for PPC64LE"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2022-02-03'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2022-02-03"
 post:
-    title: "Generic Cloud (cloud-init) images are now available for the PPC64LE architecture as part of the ongoing beta."
-    image: 
+  title: "Generic Cloud (cloud-init) images are now available for the PPC64LE architecture as part of the ongoing beta."
+  image:
 ---
 
 Just a quick note to let everyone know that cloud-init/generic cloud images are now available for the PPC64LE architecture as part of the ongoing beta.

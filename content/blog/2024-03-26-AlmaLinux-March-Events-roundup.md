@@ -1,18 +1,17 @@
 ---
 title: "SCaLE 21x, Hackathon, AlmaLinux Day, and CloudFest!"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, AlmaLinux OS Foundation"
- image: /users/benny.jpeg
+author:
+  name: "benny Vasquez"
+  bio: "Chair, AlmaLinux OS Foundation"
+  image: /users/benny.jpeg
 date: 2024-03-26
 images:
   - /blog-images/2024/march24events.png
-post: 
-    title: "SCaLE 21x, Hackathon, AlmaLinux Day, and CloudFest!"
-    image: /blog-images/2024/march24events.png
+post:
+  title: "SCaLE 21x, Hackathon, AlmaLinux Day, and CloudFest!"
+  image: /blog-images/2024/march24events.png
 ---
-
 
 March has been a whirlwind, and in the last two weeks, our event teams visited two sides of the world! In March, we saw both Pasadena, California, and Rust, Germany! Let’s talk about what we loved about each event.
 
@@ -30,12 +29,12 @@ We chose three primary goals for the Hackathon. Below I've included a bit more a
 
 ### What ideas did we have, and what were the results?
 
--   Deep Dive into User Space: Analyze commonly used software and CMSs to pinpoint potential upgrade obstacles, ensuring smoother transitions
-   -   We tested 3 different real-world scenarios and reported bugs against each scenario.
--   Focus on Industry Drivers: Identify key elements crucial to data consistency and other industry needs to facilitate necessary upgrades.
-   -   We identified and submitted patches for a number of drivers that could be easily and safely re-added to the kernel, allowing users a chance to continue using unsupported hardware (keep an eye out for the AlmaLinux 8 and 9 betas next month!)
--   Expand ELevate Support: Extend the capabilities for in-place upgrades across enterprise Linux distributions, including critical updates from CentOS 6 to 7.
-   -   We completed enough research to determine that it's possible and look forward to trying to implement the research over the coming months.
+- Deep Dive into User Space: Analyze commonly used software and CMSs to pinpoint potential upgrade obstacles, ensuring smoother transitions
+- We tested 3 different real-world scenarios and reported bugs against each scenario.
+- Focus on Industry Drivers: Identify key elements crucial to data consistency and other industry needs to facilitate necessary upgrades.
+- We identified and submitted patches for a number of drivers that could be easily and safely re-added to the kernel, allowing users a chance to continue using unsupported hardware (keep an eye out for the AlmaLinux 8 and 9 betas next month!)
+- Expand ELevate Support: Extend the capabilities for in-place upgrades across enterprise Linux distributions, including critical updates from CentOS 6 to 7.
+- We completed enough research to determine that it's possible and look forward to trying to implement the research over the coming months.
 
 Here are the slides from our [project reporting in PDF format](/files/2024/EasingOSUpgrades-cfhack-2024.pdf), in case folks would like to look at the details related to our work.
 
@@ -59,16 +58,16 @@ With the momentum of the hackathon and ALDG carrying us forward, we closed out t
 
 The rest of the year is packed with all kinds of ways to connect with other AlmaLinux Community members. Will you be at one of these events? If so, make sure to say hi and grab some swag.
 
--   April 8 - 10 - [FOSSAsia](https://fossasia.org/) | Hanoi, Vietnam
--   April 12-13 - [TexasLinux Fest](http://texaslinuxfest.org/) | Austin, TX, USA
--   April 15 - 19 - [HEPiX](https://www.hepix.org/) | Paris, France
--   April 26 - 28 - [PenguiCon](https://2024.penguicon.org/) | Ann Arbor, Mi, USA
--   April 26 - 28 - [Linuxfest NW](https://linuxfestnorthwest.org/) | Bellingham, WA, USA
--   July 28 - August 1st - [SIGGRAPH](https://s2024.siggraph.org/exhibit-at-siggraph/) | Denver, CO, USA
--   August 7th - 10th - [Flock to Fedora](https://flocktofedora.org/) | Rochester, NY, USA
--   Early September - [Ohio Linux Fest (OLF)](http://olfconference.org/) | Columbus, OH, USA
--   October 27-29 - [All things open](http://allthingsopen.org/) | Raleigh, NC, USA
--   November 17--22 - [SC (formerly Supercompute)](https://sc24.supercomputing.org/) | Atlanta, GA, USA
+- April 8 - 10 - [FOSSAsia](https://fossasia.org/) | Hanoi, Vietnam
+- April 12-13 - [TexasLinux Fest](http://texaslinuxfest.org/) | Austin, TX, USA
+- April 15 - 19 - [HEPiX](https://www.hepix.org/) | Paris, France
+- April 26 - 28 - [PenguiCon](https://2024.penguicon.org/) | Ann Arbor, Mi, USA
+- April 26 - 28 - [Linuxfest NW](https://linuxfestnorthwest.org/) | Bellingham, WA, USA
+- July 28 - August 1st - [SIGGRAPH](https://s2024.siggraph.org/exhibit-at-siggraph/) | Denver, CO, USA
+- August 7th - 10th - [Flock to Fedora](https://flocktofedora.org/) | Rochester, NY, USA
+- Early September - [Ohio Linux Fest (OLF)](http://olfconference.org/) | Columbus, OH, USA
+- October 27-29 - [All things open](http://allthingsopen.org/) | Raleigh, NC, USA
+- November 17--22 - [SC (formerly Supercompute)](https://sc24.supercomputing.org/) | Atlanta, GA, USA
 
 If you can dedicate at least 1/2 of the event to staffing a booth at any of the events below, fill out this [Google form](https://docs.google.com/forms/d/1cQ0YQiAcRZXPnDqiHak-AXmsjEBz-IQE8s8jbPLykds/edit)! We’ll cover your travel and hotel, and you’ll get a per-diem to help offset your food and assorted travel-related costs.
 

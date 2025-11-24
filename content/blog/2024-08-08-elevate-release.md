@@ -1,16 +1,16 @@
 ---
 title: "ELevate gets a huge update, plus 2 more OSes and hardware detection"
 type: blog
-author: 
- name: "Andrew Lukoshko"
- bio: "Release Engineering Lead"
- image: /users/alukoshko.jpg
+author:
+  name: "Andrew Lukoshko"
+  bio: "Release Engineering Lead"
+  image: /users/alukoshko.jpg
 date: 2024-08-08
 images:
   - /blog-images/2024/2024-08-elevate-updates.png
-post: 
-    title: "ELevate gets a huge update, plus 2 more OSes and hardware detection"
-    image: /blog-images/2024/2024-08-elevate-updates.png
+post:
+  title: "ELevate gets a huge update, plus 2 more OSes and hardware detection"
+  image: /blog-images/2024/2024-08-elevate-updates.png
 ---
 
 We're happy to announce that [ELevate](https://almalinux.org/elevate/) just received the biggest update since 2021 when the project was first announced.
@@ -27,8 +27,8 @@ This update includes a rebase on version [0.19.0](https://github.com/oamg/leapp-
 
 Changelog entries:
 
-* leapp is updated to version 0.16.0
-* leapp-repository is updated to version 0.19.0
+- leapp is updated to version 0.16.0
+- leapp-repository is updated to version 0.19.0
 
 ## Automatic hardware support detection
 
@@ -38,7 +38,7 @@ This is even more important because versions [8.10](https://wiki.almalinux.org/r
 
 Changelog entry:
 
-* ELevate now scans for hardware and checks to ensure that it will be supported in the target OS. 
+- ELevate now scans for hardware and checks to ensure that it will be supported in the target OS. 
 
 ## Repo support improved
 
@@ -50,8 +50,8 @@ In addition to EPEL, ELevate now supports other popular repositories: [Imunify](
 
 Changelog entries:
 
-* EPEL is now supported for both 7 to 8 and 8 to 9 upgrades when upgrading to AlmaLinux
-* Now supports other popular repositories: MariaDB, Nginx, PostgreSQL, Imunify, KernelCare. 
+- EPEL is now supported for both 7 to 8 and 8 to 9 upgrades when upgrading to AlmaLinux
+- Now supports other popular repositories: MariaDB, Nginx, PostgreSQL, Imunify, KernelCare. 
 
 ## Additional OS support: Scientific Linux 7, and CentOS Stream 8 to CentOS 9
 
@@ -59,7 +59,7 @@ In addition to our expansion earlier this year to [include CentOS 6 support in E
 
 <img loading="lazy" class="d-block mx-lg-auto img-fluid" width="624" height="430" src="/images/elevate-white-letters-no-background.png" alt="The migration paths when using ELevate">
 
-With this release of ELevate, users can safely upgrade orphaned Scientific Linux 7 devices as well. Enterprise Linux is a common choice in the science community, and Scientific Linux has been widely used all over the world. With Scientific Linux 7 now also reaching end of life, it is important for us to help those in the Scientific community to get to a supported operating system as well. 
+With this release of ELevate, users can safely upgrade orphaned Scientific Linux 7 devices as well. Enterprise Linux is a common choice in the science community, and Scientific Linux has been widely used all over the world. With Scientific Linux 7 now also reaching end of life, it is important for us to help those in the Scientific community to get to a supported operating system as well.
 
 We're happy to share that ELevate now also supports CentOS Stream 8 to CentOS Stream 9 support. The first version of ELevate supported upgrading to CentOS Stream 8, but with CentOS Stream 8 also now being end of life, it was even more important for users to be able to upgrade to CentOS Stream 9.
 

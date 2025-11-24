@@ -1,10 +1,8 @@
 on: pull_request_target
 
 jobs:
-
   authorize:
-    environment:
-      ${{ github.event_name == 'pull_request_target' &&
+    environment: ${{ github.event_name == 'pull_request_target' &&
       github.event.pull_request.head.repo.full_name != github.repository &&
       'external' || 'internal' }}
     runs-on: ubuntu-latest
@@ -29,7 +27,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.146.7'
+          hugo-version: "0.146.7"
           # extended: true
 
       - name: Generate language files

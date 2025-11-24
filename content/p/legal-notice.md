@@ -20,6 +20,7 @@ AlmaLinux OS software in source code and binary code form are publicly available
 ## Disclaimers
 
 All other trademarks throughout the AlmaLinux OS Foundation website are the property of their respective owners
+
 ### Links to 3rd party sites
 
 This website may be linked to other websites which are not under the control of and are not maintained by the AlmaLinux OS Foundation. The AlmaLinux OS Foundation is not responsible for the content of those sites. We provide these links to you only as a convenience, and the inclusion of any link to such sites does not imply endorsement by AlmaLinux OS foundation of those sites. We reserve the right to terminate any link or linking program at any time.

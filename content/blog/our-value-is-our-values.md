@@ -1,19 +1,19 @@
 ---
 title: "Our Value Is Our Values"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "AlmaLinux Community Manager"
- image: /users/jack.jpg
-date: '2023-06-30'
+author:
+  name: "Jack Aboutboul"
+  bio: "AlmaLinux Community Manager"
+  image: /users/jack.jpg
+date: "2023-06-30"
 post:
-    title: "Updates for the AlmaLinux OS Community around the current post-RHEL news status."
-    image: /blog-images/23.06.30.values.png
+  title: "Updates for the AlmaLinux OS Community around the current post-RHEL news status."
+  image: /blog-images/23.06.30.values.png
 ---
 
 ---
 
-***We posted a follow-up update on July 13, which you can read here: [The Future of AlmaLinux is Bright](/blog/future-of-almalinux/)***
+**_We posted a follow-up update on July 13, which you can read here: [The Future of AlmaLinux is Bright](/blog/future-of-almalinux/)_**
 
 ---
 
@@ -27,11 +27,11 @@ The first part of that chain is now broken. Only Red Hat customer accounts can a
 
 From a security and update perspective, this makes our job more difficult, but by no means impossible. Let's use OpenSSL as an example since it's a crucial package that (like all packages) occasionally issues security updates. The following timeline may be instructive, and demonstrates our ability to provide security updates to our users.
 
--   RHEL 9.2 shipped with OpenSSL 3.0.7 on May 10. That source code was published [here](https://git.centos.org/rpms/openssl/tree/f856de47f51f8c949c41527034be360d859d5489).
--   AlmaLinux 9.2 also shipped with OpenSSL 3.0.7 on May 10.
--   Upstream OpenSSL published [CVE-2023-2650](https://www.openssl.org/news/secadv/20230530.txt) on May 30, with a fix available in OpenSSL 3.0.7.
--   RHEL 9.2 [published](https://access.redhat.com/errata/RHSA-2023:3722) a patched OpenSSL 3.0.7 on June 21.
--   AlmaLinux [published](https://errata.almalinux.org/9/ALSA-2023-3722.html) OpenSSL 3.0.7 on June 23.
+- RHEL 9.2 shipped with OpenSSL 3.0.7 on May 10. That source code was published [here](https://git.centos.org/rpms/openssl/tree/f856de47f51f8c949c41527034be360d859d5489).
+- AlmaLinux 9.2 also shipped with OpenSSL 3.0.7 on May 10.
+- Upstream OpenSSL published [CVE-2023-2650](https://www.openssl.org/news/secadv/20230530.txt) on May 30, with a fix available in OpenSSL 3.0.7.
+- RHEL 9.2 [published](https://access.redhat.com/errata/RHSA-2023:3722) a patched OpenSSL 3.0.7 on June 21.
+- AlmaLinux [published](https://errata.almalinux.org/9/ALSA-2023-3722.html) OpenSSL 3.0.7 on June 23.
 
 We've been evaluating several ways to build updates. As we outlined in our previous post, "[Impact of RHEL changes to AlmaLinux](https://almalinux.org/blog/impact-of-rhel-changes/)", we will continue to put out updates as quickly as we can produce them. The process is more labor intensive as we require gathering data and patches from several sources, comparing them, testing them, and then building them for release. But rest assured, updates will continue flowing just as they have been.
 
@@ -47,4 +47,4 @@ We have also enriched the upstream community. AlmaLinux community members have s
 
 AlmaLinux, as a downstream of RHEL and as a community, has demonstrated our value both to Red Hat and to the open-source community at large. We're strongly committed to the principles upon which open-source was founded and which the community expects -- trust, transparency, honesty, integrity, and mutual respect. In short, our value is our values.
 
-*Edited June 30, 2023: Removed irrelevant comment and fixed typo from draft*
+_Edited June 30, 2023: Removed irrelevant comment and fixed typo from draft_

@@ -1,17 +1,16 @@
 ---
 title: "AlmaLinux OS 9 and 10 - Now with Native Support for NVIDIA"
 type: blog
-author: 
- name: "Neal Gompa and Jonathan Wright"
- bio: ""
- image: /users/nealandJonathan.png
-date: '2025-08-06'
+author:
+  name: "Neal Gompa and Jonathan Wright"
+  bio: ""
+  image: /users/nealandJonathan.png
+date: "2025-08-06"
 images:
   - /blog-images/2025/nvidia_support_announcement.png
 post:
-    title: "AlmaLinux OS 9 and 10 - Now with Native Support for NVIDIA"
-    image: /blog-images/2025/nvidia_support_announcement.png
-
+  title: "AlmaLinux OS 9 and 10 - Now with Native Support for NVIDIA"
+  image: /blog-images/2025/nvidia_support_announcement.png
 ---
 
 At long last, users of NVIDIA graphics cards can enjoy a drastically improved user experience with AlmaLinux.
@@ -37,17 +36,18 @@ dnf install almalinux-release-nvidia-driver
 ```
 
 Next, install the driver package:
+
 ```bash
 dnf install nvidia-open-kmod nvidia-driver
 ```
 
-It’s recommended to reboot your system now, which will load the driver automatically on the next boot.  Alternatively, if you’re booted into the latest kernel, you can load the kernel module with the `modprobe` utility
+It’s recommended to reboot your system now, which will load the driver automatically on the next boot. Alternatively, if you’re booted into the latest kernel, you can load the kernel module with the `modprobe` utility
 
 ```bash
 modprobe nvidia_drm
 ```
 
-The easiest way to confirm functionality is with the `nvidia-smi` utility.  This is provided by the `nvidia-driver-cuda` package.
+The easiest way to confirm functionality is with the `nvidia-smi` utility. This is provided by the `nvidia-driver-cuda` package.
 
 ```bash
 dnf install nvidia-driver-cuda

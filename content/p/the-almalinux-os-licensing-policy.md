@@ -3,7 +3,6 @@ title: "The AlmaLinux OS licensing policy"
 type: p
 ---
 
-
 ## AlmaLinux Licensing guidelines
 
 Licensing in open source can be complicated, so we've put together these guidelines to simplify the AlmaLinux approach for our community. The definitions below these guidelines expand on this information but simply stated, this is how we approach licensing:
@@ -14,11 +13,11 @@ Licensing in open source can be complicated, so we've put together these guideli
 
 1. **CC0 for some content -** CC0 is best for anything that cannot be subject to patents, but where attribution would cause undue burdens. For example, SBOMs. Anything patentable should be under a software license with a patent clause, using the guidelines below.
 
-2. **GPLv2 for unique OS software -** Anything that is unique to AlmaLinux and ships with the OS should be GPLv2 since GPLv2 and GPLv3 cannot be mixed in the same distribution.
+1. **GPLv2 for unique OS software -** Anything that is unique to AlmaLinux and ships with the OS should be GPLv2 since GPLv2 and GPLv3 cannot be mixed in the same distribution.
 
-3. **GPLv3 for unique non-OS software -** it's ideal for anything we make that does not have to be shipped with AlmaLinux OS.
+1. **GPLv3 for unique non-OS software -** it's ideal for anything we make that does not have to be shipped with AlmaLinux OS.
 
-4. **MIT for unique libraries -** any libraries that we're shipping should likely be shipped using an MIT license unless there's a specific reason not to (ie: preventing weaponization by bad actors).
+1. **MIT for unique libraries -** any libraries that we're shipping should likely be shipped using an MIT license unless there's a specific reason not to (ie: preventing weaponization by bad actors).
 
 **Note:** Licensing with an open source license does not relinquish ownership, only a copyright assignment would do that and we do not use copyright assignments. We believe it is healthy for a real community to have distributed copyright ownership, and will not decline code based solely on copyright ownership, as long as it is shared under an open source license.
 
@@ -67,7 +66,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 The Default License for Contributions not otherwise addressed in this policy, including mailing list postings, forum posts, website design elements, and content in issues and comments submitted to the AlmaLinux Bug Tracker, is the CC0 1.0 Universal Public Domain Dedication (CC0).
 AlmaLinux OS Logos
 
-AlmaLinux OS logos are covered by the AlmaLinux Trademark Guidelines and not within the scope of this policy. If you want to contribute to the development of AlmaLinux OS logos, please contact the AlmaLinux OS Foundation Governing Board. 
+AlmaLinux OS logos are covered by the AlmaLinux Trademark Guidelines and not within the scope of this policy. If you want to contribute to the development of AlmaLinux OS logos, please contact the AlmaLinux OS Foundation Governing Board.
 
 Last updated: August 23, 2023
 Updated and adapted from the [CentOS Project Licensing Policy](https://www.centos.org/legal/licensing-policy/)

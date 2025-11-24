@@ -5,7 +5,7 @@ author:
   name: "Koichiro Iwao"
   bio: "Engineer at Cybertrust Japan"
   image: /users/koichiroiwao.jpg
-date: '2025-04-08'
+date: "2025-04-08"
 images:
   - /blog-images/2025/2025-04-08-raspberry-pi-updates.png
 post:
@@ -49,11 +49,11 @@ We, the development team, have obtained the latest Raspberry Pi 5 rev 1.1 and ha
 
 See `/proc/cpuinfo` to check your Raspberry Pi 5 revision.
 
-
 ```bash
 $ grep ^Model /proc/cpuinfo
 Model           : Raspberry Pi 5 Model B Rev 1.0
 ```
 
 For more information on the D0 stepping, please refer to this article by Jeff Geerling:
+
 - [New 2GB Pi 5 has 33% smaller die, 30% idle power savings](https://www.jeffgeerling.com/blog/2024/new-2gb-pi-5-has-33-smaller-die-30-idle-power-savings)

@@ -1,16 +1,16 @@
 ---
 title: "Welcoming CloudLinux and Tuxcare - Platinum Sponsor Members"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, AlmaLinux OS Foundation"
- image: /users/benny.jpeg
-date: '2024-10-16'
+author:
+  name: "benny Vasquez"
+  bio: "Chair, AlmaLinux OS Foundation"
+  image: /users/benny.jpeg
+date: "2024-10-16"
 images:
   - /blog-images/2024/2024_10_cloudlinux_tuxcare_renewal.png
-post: 
-    title: "Welcoming CloudLinux and Tuxcare - Platinum Sponsor Members"
-    image: /blog-images/2024/2024_10_cloudlinux_tuxcare_renewal.png
+post:
+  title: "Welcoming CloudLinux and Tuxcare - Platinum Sponsor Members"
+  image: /blog-images/2024/2024_10_cloudlinux_tuxcare_renewal.png
 ---
 
 Earlier today [we announced](https://www.einpresswire.com/article/752045731/almalinux-os-foundation-announces-continued-platinum-level-support-from-cloudlinux-and-tuxcare) that CloudLinux and its sister company TuxCare have renewed their platinum-level sponsorship of the AlmaLinux OS Foundation. They are continuing the commitment they made in 2021 of providing $1 million in annual support for AlmaLinux. I want to take a minute to thank them for the support they provide.
@@ -23,9 +23,9 @@ In the 42 months since [AlmaLinux first released](/blog/almalinux-os-stable-rele
 
 Three thanks I'd like to give out specifically:
 
--   Thank you to the CloudLinux and Tuxcare employees who spend extra time on top of their jobs to support the AlmaLinux project, and who work to improve everything we do.
--   Thank you to the leadership team at CloudLinux and Tuxcare who continue to offer the use of their teams to help with things like graphic design (I am NOT a designer. :D), content creation, and so much more. 
--   And a special thank you to Igor specifically. He believed in the vision of a community-owned, and community-managed foundation to take the project forward, and made it happen. It's been two years since he stepped down from the board and [I was elected as Chair](/blog/hi-im-benny-how-can-i-help/). As he continues to step further back to allow more folks to take on responsibility, it's been incredible to see his support remains with equal enthusiasm.
+- Thank you to the CloudLinux and Tuxcare employees who spend extra time on top of their jobs to support the AlmaLinux project, and who work to improve everything we do.
+- Thank you to the leadership team at CloudLinux and Tuxcare who continue to offer the use of their teams to help with things like graphic design (I am NOT a designer. :D), content creation, and so much more. 
+- And a special thank you to Igor specifically. He believed in the vision of a community-owned, and community-managed foundation to take the project forward, and made it happen. It's been two years since he stepped down from the board and [I was elected as Chair](/blog/hi-im-benny-how-can-i-help/). As he continues to step further back to allow more folks to take on responsibility, it's been incredible to see his support remains with equal enthusiasm.
 
 ## What's Next?
 

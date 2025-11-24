@@ -833,10 +833,7 @@
    "this full-day event will highlight content from all over the industry. Join us just before SIGGRAPH to kick of your time in Vancouver the right way.": "this full-day event will highlight content from all over the industry. Join us just before SIGGRAPH to kick of your time in Vancouver the right way.",
    "ALD Vancouver 2025": "ALD Vancouver 2025",
    "This event is governed by a Code of Conduct": "This event is governed by a Code of Conduct",
-   "Join us August 9th for ": "Join us August 9th for ",
-   "to AlmaLinux 9.6": "to AlmaLinux 9.6",
    "Say Hello": "Say Hello",
-   "to AlmaLinux 10.0!": "to AlmaLinux 10.0!",
    "Upgrade from 9.x to 10.x within the same distribution": "Upgrade from 9.x to 10.x within the same distribution",
    "Reserve your spot!": "Reserve your spot!",
    "Swag, stickers, and a surprise giveaway!": "Swag, stickers, and a surprise giveaway!",
@@ -910,4 +907,7 @@
    "If the bug is AlmaLinux-specific, please open a bug on AlmaLinux Bug Tracker (opens new window)providing all the necessary information about an issue and reproducing steps.": "If the bug is AlmaLinux-specific, please open a bug on AlmaLinux Bug Tracker (opens new window)providing all the necessary information about an issue and reproducing steps.",
    "Please, file your bugs (opens new window)and join us for discussions on GitHub (opens new window)and on AlmaLinux Chat on Mattermost.": "Please, file your bugs (opens new window)and join us for discussions on GitHub (opens new window)and on AlmaLinux Chat on Mattermost.",
    "If you are interested in contributing, and learning more details about the technology stack of the tool and tests, please, visit the repository.": "If you are interested in contributing, and learning more details about the technology stack of the tool and tests, please, visit the repository."
+   "Chat ": "Chat ",
+   "to AlmaLinux OS 9.7": "to AlmaLinux OS 9.7",
+   "help us test AlmaLinux OS 10.1!": "help us test AlmaLinux OS 10.1!"
 }

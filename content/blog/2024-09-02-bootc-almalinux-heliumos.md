@@ -1,21 +1,22 @@
 ---
 title: "Bringing bootc to AlmaLinux"
 type: blog
-author: 
- name: "Isaac Beverly"
- bio: "Developer, HeliumOS"
- image: /users/imbev.jpg
+author:
+  name: "Isaac Beverly"
+  bio: "Developer, HeliumOS"
+  image: /users/imbev.jpg
 date: 2024-09-02
 images:
   - /blog-images/2024/2024-08-09-bootc-almalinux.png
-post: 
-    title: "Bringing bootc to AlmaLinux"
-    image: /blog-images/2024/2024-08-09-bootc-almalinux.png
+post:
+  title: "Bringing bootc to AlmaLinux"
+  image: /blog-images/2024/2024-08-09-bootc-almalinux.png
 ---
 
 bootc is a new deployment method that powers [Image mode for RHEL](https://www.redhat.com/en/about/press-releases/red-hat-reimagines-enterprise-linux-ai-future-image-mode-red-hat-enterprise-linux) and [HeliumOS](https://www.heliumos.org/), a new Linux distribution. We are excited to announce that AlmaLinux now offers [bootc images](https://quay.io/repository/almalinuxorg/almalinux-bootc?tab=tags) for Intel/AMD(x86_64) and ARM64(AArch4).
 
 ## How did this start?
+
 My goal as developer of HeliumOS is to produce a Linux-based desktop operating system that is user-friendly, stable, and reliable. The first foray towards this goal used a Debian base, however this had some issues:
 
 - Debian has 3-5 years of support. Though stable relative to most Linux distributions, I wanted more stability.

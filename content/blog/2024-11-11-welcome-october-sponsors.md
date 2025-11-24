@@ -1,18 +1,17 @@
 ---
 title: "Announcing Silver Sponsor Members - Fastly, AMD, world4you"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, board of directors"
- image: /users/benny.jpeg
-date: '2024-11-11'
+author:
+  name: "benny Vasquez"
+  bio: "Chair, board of directors"
+  image: /users/benny.jpeg
+date: "2024-11-11"
 images:
   - /blog-images/2024/oct_sponsors.png
 post:
-    title: "Announcing Silver Sponsor Members - Fastly, AMD, world4you"
-    image: /blog-images/2024/oct_sponsors.png
+  title: "Announcing Silver Sponsor Members - Fastly, AMD, world4you"
+  image: /blog-images/2024/oct_sponsors.png
 ---
-
 
 A couple of weeks ago we issued a press release announcing three more new and returning silver sponsor members of the AlmaLinux OS Foundation, and I wanted to thank them here as well! Fastly has joined us this year as a new sponsor member, and AMD and world4you have renewed their sponsorship memberships. We're so grateful for the contributions of our every-growing list of sponsors, as more and more companies prove that they believe in what we do. Here's a little bit about each of them.
 

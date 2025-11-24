@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux Live Media and Cloud Images 8.5 Updates"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2022-02-18'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2022-02-18"
 post:
-    title: "Updated Cloud, Container and Live images. Fresh out the oven."
-    image: /blog-images/Almalinux-logo-white-v2_jzMVHfK.png
+  title: "Updated Cloud, Container and Live images. Fresh out the oven."
+  image: /blog-images/Almalinux-logo-white-v2_jzMVHfK.png
 ---
 
 Hey Community, just wanted to share some quick news on updates to Live Media and cloud images. All Live media have been updated to 8.5 thanks to the great efforts on the parts of our community and our [Live Media SIG](https://chat.almalinux.org/almalinux/channels/siglivemedia).

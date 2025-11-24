@@ -1,14 +1,14 @@
 ---
 title: "Announcing CentOS SIG Repository Availability in AlmaLinux"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-09-01'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-09-01"
 post:
-    title: "Enabling Use of Native CentOS SIGs in AlmaLinux"
-    image: 
+  title: "Enabling Use of Native CentOS SIGs in AlmaLinux"
+  image:
 ---
 
 Hello Community. One of the top requests our team gets and many of the support inquiries that come our way are related to enabling, installing, or working with software from the [CentOS SIGs](https://wiki.centos.org/SpecialInterestGroup). For those who are unfamiliar with SIGs, they are Special Interest Groups (SIG) within the CentOS community that focus on a small set of issues, in order to either create awareness or to focus on development along a specific topic. Some of the more popular SIGs are the [Storage SIG](https://wiki.centos.org/SpecialInterestGroup/Storage), [Virtualization SIG](https://wiki.centos.org/SpecialInterestGroup/Virtualization) and the [Hyperscale SIG](https://wiki.centos.org/SpecialInterestGroup/Hyperscale).

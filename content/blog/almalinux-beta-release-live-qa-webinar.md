@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux Beta Release: Live Q&A Webinar"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-02-02'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-02-02"
 post:
-    title: "On Monday, February 1st, AlmaLinux OS went live! Our public Beta version is now available to everyone, and we anticipate your active participation in..."
-    image: 
+  title: "On Monday, February 1st, AlmaLinux OS went live! Our public Beta version is now available to everyone, and we anticipate your active participation in..."
+  image:
 ---
 
 - On Monday, February 1st, AlmaLinux OS went live! Our public Beta version is now [available to everyone](https://repo.almalinux.org/almalinux/8.3-beta/), and we anticipate your active participation in testing! To facilitate the communication and address the questions you might have after the first round of tests, we are hosting **a live QA webinar with AlmaLinux OS Community on February 10 at 5 PM (UTC) / 9 AM (PST)**. We are excited to share the results of the past month with you - the first AlmaLinux OS Beta release is live. As promised, the main development and maintenance were done by the CloudLinux team. And now, we appeal to the community for its contribution. In the spirit of the community-driven initiative, we require your assistance with testing, documentation, support and future direction.Our team has set up the internal infrastructure necessary to work with your feedback: We opened public repositories with all packages and registries for the project.

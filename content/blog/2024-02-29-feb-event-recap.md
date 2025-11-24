@@ -1,16 +1,16 @@
 ---
 title: "CentOS Connect, FOSDEM, and the AlmaLinux Leadership Summit!"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, AlmaLinux OS Foundation"
- image: /users/benny.jpeg
+author:
+  name: "benny Vasquez"
+  bio: "Chair, AlmaLinux OS Foundation"
+  image: /users/benny.jpeg
 date: 2024-02-29
 images:
   - /blog-images/2024/febeventrecap.png
-post: 
-    title: "February event recap!"
-    image: /blog-images/2024/febeventrecap.png
+post:
+  title: "February event recap!"
+  image: /blog-images/2024/febeventrecap.png
 ---
 
 Earlier this month, we had three back-to-back events: CentOS Connect, FOSDEM, and our AlmaLinux Leadership Summit. Here's what to know about them for those who weren't there, and a little bit about what's to come.
@@ -29,10 +29,9 @@ FOSDEM is one of the most intense and rewarding events available for open source
 
 ![Andrew, Jonathan, and Elkin at our FOSDEM booth with a crowd](/blog-images/2024/IMG_0911.png)
 
-Even though we brought twice as many stickers and pens to give away this year as we did last, we were still nearly entirely out by Sunday morning. 
+Even though we brought twice as many stickers and pens to give away this year as we did last, we were still nearly entirely out by Sunday morning.
 
 ![The table of swag at the booth](/blog-images/2024/084F7EF7-19A1-4983-B376-AAE911484698.jpg) ![A small collection of some of the stuff we had on the table](/blog-images/2024/3A5EE67D-51F1-4CB9-9CEC-8336BE3A6C6A.jpg)
-
 
 We also participated in two sessions at FOSDEM. Andrew Lukoshko, AlmaLinux OS Architect and Release Engineering Lead, presented on how to make a RHEL compatible distribution. You can [read more about it and watch the recording here](https://fosdem.org/2024/schedule/event/fosdem-2024-3161-almalinux-how-to-make-a-rhel-compatible-distribution/).
 
@@ -50,7 +49,7 @@ This is the second time we were able to bring together a few of the most influen
 
 As a group we agreed on a lot of things, but our two key goals for this year are:
 
-1.  Smooth the onboarding process for new contributors, and make it easier for folks to do drive-by contributions in their own time. 
+1.  Smooth the onboarding process for new contributors, and make it easier for folks to do drive-by contributions in their own time.
 2.  Shore up and streamline our practices and processes for the AlmaLinux project at large
 
 Our SIG leaders strongly believe that these are the things that will help keep the AlmaLinux regular group of contributors growing for this year and many years to come.
@@ -59,20 +58,20 @@ Our SIG leaders strongly believe that these are the things that will help keep t
 
 If you missed us at these February events, do not fear! We will have booths at a bunch of other events later this year, too, and we'd love to have you join us! So far this year we will be participating in all of these:
 
--   March 14-17 - [SCaLE](https://www.socallinuxexpo.org/) |
+- March 14-17 - [SCaLE](https://www.socallinuxexpo.org/) |
 
--   March 16-17 - [CloudFest Hackathon](https://hackathon.cloudfest.com/project/securing-more-infrastructure-by-easing-os-upgrades/) |
+- March 16-17 - [CloudFest Hackathon](https://hackathon.cloudfest.com/project/securing-more-infrastructure-by-easing-os-upgrades/) |
 
--   March 18th - [AlmaLinux Day Germany](https://almalinux.org/almalinux-day-germany-2024/) |
+- March 18th - [AlmaLinux Day Germany](https://almalinux.org/almalinux-day-germany-2024/) |
 
--   March 19-22 - [CloudFest](https://www.cloudfest.com/) |
+- March 19-22 - [CloudFest](https://www.cloudfest.com/) |
 
--   April 8 - 10 - [FOSS asia](https://fossasia.org/) |
+- April 8 - 10 - [FOSS asia](https://fossasia.org/) |
 
--   April 12-13 - [TexasLinux Fest](https://texaslinuxfest.org/) |
+- April 12-13 - [TexasLinux Fest](https://texaslinuxfest.org/) |
 
--   April 16 - 18 - [Open Source Summit NA](https://events.linuxfoundation.org/open-source-summit-north-america/) |
+- April 16 - 18 - [Open Source Summit NA](https://events.linuxfoundation.org/open-source-summit-north-america/) |
 
--   April 26 - 28 - [PenguiCon](https://2024.penguicon.org/) |
+- April 26 - 28 - [PenguiCon](https://2024.penguicon.org/) |
 
--   April 26 - 28 - [Linuxfest NW](https://linuxfestnorthwest.org/) |
+- April 26 - 28 - [Linuxfest NW](https://linuxfestnorthwest.org/) |

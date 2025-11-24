@@ -1,14 +1,14 @@
 ---
 title: "AlmaLinux Cloud Images Updates - June 18 2021"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2021-06-18'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2021-06-18"
 post:
-    title: "Hello Community! Here is a quick update on the various cloud images we have available as it's one of the top things we're asked about. The good news..."
-    image: /blog-images/YiMUiop.gif
+  title: "Hello Community! Here is a quick update on the various cloud images we have available as it's one of the top things we're asked about. The good news..."
+  image: /blog-images/YiMUiop.gif
 ---
 
 Hello Community! Here is a quick update on the various cloud images we have available as it's one of the top things we're asked about. The good news is we now have 150002657% more COW! That's right! We now have generic cloud images (cloud-init/qcow) available for your clouding adventures.

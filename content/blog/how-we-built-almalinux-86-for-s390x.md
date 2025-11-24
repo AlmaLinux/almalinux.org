@@ -1,14 +1,14 @@
 ---
 title: "How We Built AlmaLinux 8.6 for s390x"
 type: blog
-author: 
- name: "Jack Aboutboul"
- bio: "-"
- image: /users/jack.jpg
-date: '2022-11-07'
+author:
+  name: "Jack Aboutboul"
+  bio: "-"
+  image: /users/jack.jpg
+date: "2022-11-07"
 post:
-    title: "A Legendary Release for a Legendary Platform. It was a lot of work, but someone had to do it!"
-    image: /blog-images/Mainframe_Post_Cover.png
+  title: "A Legendary Release for a Legendary Platform. It was a lot of work, but someone had to do it!"
+  image: /blog-images/Mainframe_Post_Cover.png
 ---
 
 The AlmaLinux OS Foundation [announced support for the IBM z (s390x) platform](https://www.hpcwire.com/off-the-wire/almalinux-foundation-builds-almalinux-os-8-for-s390x/) thanks to a collaboration with Gold Partner, Sine Nomine Associates (SNA).
