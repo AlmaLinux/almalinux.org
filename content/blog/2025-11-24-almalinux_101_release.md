@@ -50,10 +50,10 @@ AlmaLinux also offers a variety of Cloud, Container and Live Images. The builds 
   - [OpenNebula](https://wiki.almalinux.org/cloud/OpenNebula.html) for x86_64 and AArch64 architectures
   - [Oracle Cloud Infrastructure](https://wiki.almalinux.org/cloud/OCI.html) for x86_64 and AArch64 Instances
 - [Vagrant Boxes](https://app.vagrantup.com/almalinux):
-    - Libvirt
-    - VirtualBox
-    - Hyper-V
-    - VMWare
+  - Libvirt
+  - VirtualBox
+  - Hyper-V
+  - VMWare
 - [Raspberry Pi](https://wiki.almalinux.org/documentation/raspberry-pi.html)
 - [Windows Subsystem for Linux](https://wiki.almalinux.org/documentation/wsl.html) for x86_64 and AArch64
 
