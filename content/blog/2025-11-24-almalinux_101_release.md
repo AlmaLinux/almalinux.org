@@ -57,15 +57,23 @@ AlmaLinux also offers a variety of Cloud, Container and Live Images. The builds 
 - [Raspberry Pi](https://wiki.almalinux.org/documentation/raspberry-pi.html)
 - [Windows Subsystem for Linux](https://wiki.almalinux.org/documentation/wsl.html) for x86_64 and AArch64
 
+## Btrfs Support
+
+AlmaLinux 10.1 also [includes support for the Btrfs filesystem](/blog/2025-10-21-announcing-btrfs-support-in-almalinux-10-1), which has already been available in AlmaLinux OS Kitten since early September. Btrfs support encompasses both kernel and userspace enablement, and it is now possible to install AlmaLinux OS on a Btrfs filesystem from the very beginning. Initial enablement was scoped to the installer and storage management stack, and broader support within the AlmaLinux software collection for Btrfs features is forthcoming.
+
+## Other Improvements 
+
+In addition to Btrfs support, AlmaLinux OS 10.1 includes numerous other improvements to serve our community. We have continued to extend hardware support both by [adding drivers](https://wiki.almalinux.org/release-notes/10.1.html#extended-hardware-support) and by adding a secondary version of AlmaLinux OS and [EPEL](/blog/2025-06-26-epel-v2-now-covers-almalinux-10-stable/) to extend support of x86_64_v2 processors. 
+
+We have also re-enabled SPICE support and Re-enabled frame pointers by default. We have continued our enablement of KVM for IBM POWER in the virtualization stack, and are [enabling the CRB repository](https://almalinux.org/blog/2025-09-08-enabling-crb-by-default-for-almalinux10/) by default for new AlmaLinux OS installations.
+
+The full list of improvements. can be found in the [AlmaLinux OS 10.1 Release Notes](https://wiki.almalinux.org/release-notes/10.1.html). 
+
 ## Release Notes and More Information
 
 AlmaLinux 10.1 introduces performance enhancements, updated development tools, and improved security. This release delivers new compiler toolsets and updated module streams, along with improvements to debugging and networking tools. Container and virtualization support is enhanced with the latest versions of Podman and Buildah. Security is improved with updated SELinux policies, OpenSSL featuring post-quantum cryptography support, and newer versions of SSSD and Keylime.
 
 You can read the full release notes for this version on the wiki: [AlmaLinux OS 10.1 Release Notes](https://wiki.almalinux.org/release-notes/10.1.html).
-
-## Btrfs Support
-
-AlmaLinux 10.1 also [includes support for the Btrfs filesystem](/blog/2025-10-21-announcing-btrfs-support-in-almalinux-10-1), which has already been available in AlmaLinux OS Kitten since early September. Btrfs support encompasses both kernel and userspace enablement, and it is now possible to install AlmaLinux OS on a Btrfs filesystem from the very beginning. Initial enablement was scoped to the installer and storage management stack, and broader support within the AlmaLinux software collection for Btrfs features is forthcoming.
 
 ## What can you do to help?
 
