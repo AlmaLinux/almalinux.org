@@ -33,6 +33,9 @@ jobs:
       - name: Generate language files
         run: python3 setup-pages-for-supported-languages.py
 
+      - name: Generate get_almalinux data
+        run: python3 tools/generate_get_almalinux_yaml.py
+
       - name: Build
         run: hugo --minify
 
