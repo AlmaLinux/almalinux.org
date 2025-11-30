@@ -1,0 +1,16 @@
+{{ $data := site.Data.get_almalinux }}
+<div class="tab-content al-tab-content">
+  {{ range $i, $version := $data.versions }}
+    {{ range $j, $arch := $version.arches }}
+      {{ $isActive := and (eq $i 0) (eq $j 0) }}
+      <div
+        class="tab-pane fade {{ if $isActive }}show active{{ end }}"
+        id="{{ $arch.id }}-{{ $version.id }}"
+        role="tabpanel"
+        aria-labelledby="{{ $arch.id }}-{{ $version.id }}-tab"
+      >
+        {{ partial "get-almalinux/arch-sections.html" (dict "Version" $version "Arch" $arch) }}
+      </div>
+    {{ end }}
+  {{ end }}
+</div>

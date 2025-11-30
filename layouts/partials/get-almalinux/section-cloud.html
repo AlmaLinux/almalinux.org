@@ -1,0 +1,266 @@
+{{ $version := .Version }}
+{{ $arch := .Arch }}
+{{ $section := .Section }}
+
+
+<div class="al-article-content p-0 pb-3 al-wysiwyg">
+  {{ if $section.aws }}
+    <h2 class="mt-5">Amazon AWS</h2>
+    <p class="mb-0">
+      {{ i18n "AlmaLinux OS offers official Amazon Machine Images via the AWS Marketplace and Community AMIs." }}
+      {{ i18n "All AlmaLinux OS AMIs are completely free of charge." }}<br />
+      {{ i18n "More information about AlmaLinux AWS images is available on the" }}
+      <a href="https://wiki.almalinux.org/cloud/AWS.html"
+        >{{ i18n "AlmaLinux AWS Wiki Page" }}</a
+      >.
+    </p>
+    <div class="AL d-flex gap-2">
+      <div class="mb-4 flex-fill">
+        <h4>AWS Marketplace</h4>
+        <p>
+          {{ i18n "The AlmaLinux OS Foundation's" }}
+          <a href="{{ $section.aws.sellerProfileUrl }}"
+            >{{ i18n "official AlmaLinux OS images" }}</a
+          ><br />
+          {{ i18n "are available via the AWS Marketplace at the links provided:" }}
+        </p>
+        <div class="align-items-center d-flex">
+          <a
+            class="btn px-3 me-md-2 al-cta-blue"
+            style="min-width: 136px;"
+            href="{{ $section.aws.marketplaceUrl }}"
+          >
+            AlmaLinux
+            {{ if $version.fullVersion }}
+              {{ $version.fullVersion }}
+            {{ else }}
+              {{ $version.id }}
+            {{ end }}
+          </a>
+        </div>
+      </div>
+      <div class="mb-4 flex-fill">
+        <h4>Community AMIs</h4>
+        <p>
+          {{ i18n "A complete list of AlmaLinux Community AMIs can be found on the" }}<br />
+          <a href="https://wiki.almalinux.org/cloud/AWS.html#community-amis"
+            >{{ i18n "AlmaLinux AWS Wiki Page" }}</a
+          >{{ i18n " and as a" }}
+          <a href="https://wiki.almalinux.org/ci-data/aws_amis.csv">CSV</a>
+          {{ i18n "file." }}
+        </p>
+      </div>
+    </div>
+  {{ end }}
+
+  {{ if $section.genericCloud }}
+    <h2 class="mt-5">Generic Cloud</h2>
+    <p>
+      {{ i18n "The AlmaLinux OS Generic Cloud images are available from our" }}
+      <a href="https://mirrors.almalinux.org/">{{ i18n "mirrors" }}</a>
+      {{ i18n "and from the main AlmaLinux OS repositories:" }}<br />
+    </p>
+    <div class="align-items-center d-flex">
+      <a
+        class="btn px-3 me-md-2 al-cta-blue"
+        style="min-width: 136px;"
+        href="{{ $section.genericCloud.imageUrl }}"
+      >
+        AlmaLinux
+        {{ if $version.fullVersion }}
+          {{ $version.fullVersion }}
+        {{ else }}
+          {{ $version.id }}
+        {{ end }}
+      </a>
+      <div class="d-flex flex-grow-1 align-items-center" style="min-width: 0;">
+        <img
+          src="/images/alma-fingerprint-A.svg"
+          alt="Fingerprint"
+          style="width: 40px; height: 40px; flex-shrink: 0;"
+        />
+        <div class="flex-column flex-grow-1 d-flex" style="min-width: 0;">
+          <span class="fw-bold">SHA-256:</span>
+          <span class="overflow-auto" style="max-width: 100%;">
+            {{ $section.genericCloud.sha256 }}
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-start mt-4 gap-30">
+      <div class="col-md2 mb-2">
+        <a href="https://mirrors.almalinux.org" class="fw-bold me-4">
+          {{ i18n "Download from mirrors" }}
+        </a>
+      </div>
+      <div class="mb-4 ms-lg-5">
+        <a href="{{ $section.genericCloud.checksumUrl }}" class="fw-bold me-4">
+          {{ i18n "Download CHECKSUM" }}
+        </a>
+      </div>
+    </div>
+    <p>
+      {{ i18n "More information about AlmaLinux Generic Cloud images and verification guidelines are available on the" }}
+      <a href="https://wiki.almalinux.org/cloud/Generic-cloud.html"
+        >{{ i18n "AlmaLinux Generic Cloud Wiki Page" }}</a
+      >.<br />
+      {{ i18n "You can also find the" }}
+      <a href="https://wiki.almalinux.org/cloud/Generic-cloud-on-local.html"
+        >{{ i18n "Using Generic Cloud on a local machine or server" }}</a
+      >
+      {{ i18n "guide there." }}
+    </p>
+  {{ end }}
+
+  {{ if $section.googleCloud }}
+    <h2 class="mt-5">Google Cloud</h2>
+    <p>
+      {{ i18n "Official AlmaLinux OS Images for Google Cloud are available via the" }}
+      <a href="{{ $section.googleCloud.marketplaceBrowseUrl }}">
+        {{ i18n "Google Cloud Marketplace" }} </a
+      >.
+    </p>
+    <div class="align-items-center d-flex">
+      <a
+        class="btn px-3 me-md-2 al-cta-blue"
+        style="min-width: 136px;"
+        href="{{ $section.googleCloud.productUrl }}"
+      >
+        {{ i18n "Get AlmaLinux" }}
+        {{ if $version.fullVersion }}
+          {{ $version.fullVersion }}
+        {{ else }}
+          {{ $version.id }}
+        {{ end }}
+        {{ i18n "Image" }}
+      </a>
+    </div>
+    <p>
+      {{ i18n "AlmaLinux OS Images are also available via the" }}
+      <code>gcloud</code>
+      {{ i18n " CLI. More information on the " }}
+      <a href="https://wiki.almalinux.org/cloud/Google.html">
+        {{ i18n "AlmaLinux Google Cloud Wiki Page" }} </a
+      >.
+    </p>
+  {{ end }}
+
+  {{ if $section.azure }}
+    <h2 class="mt-5">Microsoft Azure</h2>
+    <p>
+      {{ i18n "AlmaLinux offers images for Azure across all Azure regions via the " }}
+      <a href="{{ $section.azure.marketplaceUrl }}"
+        >{{ i18n "Azure Marketplace" }}</a
+      >.
+      {{ i18n "Images are deployable via the marketplace, portal and CLI." }}<br />
+      {{ i18n "More about AlmaLinux OS images for Azure" }} -
+      <a href="https://wiki.almalinux.org/cloud/Azure.html"
+        >{{ i18n "AlmaLinux Azure Wiki Page" }}</a
+      >.
+    </p>
+  {{ end }}
+
+  {{ if $section.openNebula }}
+    <h2 class="mt-5">OpenNebula</h2>
+    <p>
+      {{ i18n "The AlmaLinux OS OpenNebula image are available from our " }}
+      <a href="https://mirrors.almalinux.org">{{ i18n "mirrors" }}</a>
+      {{ i18n "and from the main AlmaLinux OS repositories:" }}<br />
+    </p>
+    <div class="align-items-center d-flex">
+      <a
+        class="btn px-3 me-md-2 al-cta-blue"
+        style="min-width: 136px;"
+        href="{{ $section.openNebula.imageUrl }}"
+      >
+        AlmaLinux
+        {{ if $version.fullVersion }}
+          {{ $version.fullVersion }}
+        {{ else }}
+          {{ $version.id }}
+        {{ end }}
+      </a>
+      <div class="d-flex flex-grow-1 align-items-center" style="min-width: 0;">
+        <img
+          src="/images/alma-fingerprint-A.svg"
+          alt="Fingerprint"
+          style="width: 40px; height: 40px; flex-shrink: 0;"
+        />
+        <div class="flex-column flex-grow-1 d-flex" style="min-width: 0;">
+          <span class="fw-bold">SHA-256:</span>
+          <span class="overflow-auto" style="max-width: 100%;">
+            {{ $section.openNebula.sha256 }}
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-start mt-4 gap-30">
+      <div class="col-md2 mb-2">
+        <b
+          ><a
+            href="https://mirrors.almalinux.org"
+            style="display:inline-block; margin-right:20px;"
+          >
+            {{ i18n "Download from mirrors" }}
+          </a></b
+        >
+      </div>
+      <div class="mb-4 ms-lg-5">
+        <b
+          ><a
+            href="{{ $section.openNebula.checksumUrl }}"
+            style="display:inline-block; margin-right:20px;"
+          >
+            {{ i18n "Download CHECKSUM" }}
+          </a></b
+        >
+      </div>
+    </div>
+    <p>
+      {{ i18n "More information about AlmaLinux OpenNebula images and verification guidelines are available on the " }}
+      <a href="https://wiki.almalinux.org/cloud/OpenNebula.html"
+        >{{ i18n "AlmaLinux OpenNebula Wiki Page" }}</a
+      >.
+    </p>
+  {{ end }}
+
+  {{ if $section.oci }}
+    <h2 class="mt-5">Oracle Cloud Infrastructure</h2>
+    <p>
+      {{ i18n "AlmaLinux offers images for Oracle Cloud Infrastructure across all OCI regions via the " }}
+      <a href="{{ $section.oci.marketplaceUrl }}"
+        >{{ i18n "Oracle Cloud Marketplace" }}</a
+      >.
+      {{ i18n "Images are deployable for Regular, Shielded and ARM type instances via the Oracle Cloud Marketplace, Partner Image on Oracle Cloud Infrastructure Console and " }}
+      <a
+        href="https://docs.oracle.com/en-us/iaas/Content/API/Concepts/cliconcepts.htm"
+        >{{ i18n "OCI CLI" }}</a
+      >.<br />
+      {{ i18n "The official AlmaLinux OS images are available on " }}
+      <a href="{{ $section.oci.partnerListingUrl }}"
+        >{{ i18n "Oracle Cloud Marketplace" }}</a
+      >
+      {{ i18n "at the links provided:" }}
+    </p>
+    <div class="align-items-center d-flex">
+      <a
+        class="btn px-3 me-md-2 al-cta-blue"
+        style="min-width: 136px;"
+        href="{{ $section.oci.x86ListingUrl }}"
+      >
+        AlmaLinux
+        {{ if $version.fullVersion }}
+          {{ $version.fullVersion }}
+        {{ else }}
+          {{ $version.id }}
+        {{ end }}
+      </a>
+    </div>
+    <p>
+      {{ i18n "More information about AlmaLinux Oracle Cloud Infrastructure images is available on the " }}
+      <a href="https://wiki.almalinux.org/cloud/OCI.html"
+        >{{ i18n "AlmaLinux Oracle Cloud Infrastructure Wiki Page" }}</a
+      >.
+    </p>
+  {{ end }}
+</div>

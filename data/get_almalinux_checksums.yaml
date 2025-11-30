@@ -1,0 +1,101 @@
+versions:
+  "10":
+    fullVersion: "10.0"
+    "x86_64":
+      iso:
+        dvd: "6c443f462b3993d15192a7c43ba8dfa3f232514db47d38796dab007a7455ae1a"
+        boot: "a1549729bfb66a28e3546c953033c9928eae7280917bb1c490983dba3bb9941c"
+        minimal: "e73ccc95ff21a43ab23eebe227257fa34df091570b2bcf8a23f918bf9b662fc3"
+      cloud:
+        genericCloud: "9c528c5895c7fb5fc906add749d48057dbba4a4258a708c224aa3ef60fda14bd"
+        openNebula: "eb3291b8b65b15a6863bd802eec52f21f0d8ad099b2fbff27ad4a7bbc07c3370"
+    "x86_64_v2":
+      iso:
+        dvd: "455665295dc5c1b4855891f5a26280dc0d930e30592b5f7ace444651dfda58e6"
+        boot: "5571cc6c826300a3d4aff9c2fc5203d03d4762bc5c9955ba061689d1af7867fc"
+        minimal: "2681c07e078b919a36aaba0ba5ca197030189530e7c3d97be6fbab43dd708685"
+      cloud:
+        genericCloud: "1d9688e346adb1deaacafc772f8623b3b10d8adfc5c3a421cee28374361d7682"
+        openNebula: "76631333cdfc775192c36127ab1a3b132fc19f3fd4afbe20b26fbfab1437b0e8"
+    "aarch64":
+      iso:
+        dvd: "ae539b6d86324e7061c4f9b577d59aee7eabcb565c2a3339b6954945e7ced040"
+        boot: "f06ce9bfce7565404afe7a71326a6cc23349ca6115329f378eb9a372f265ad80"
+        minimal: "6257c3425b634c0cef9016e008627584f7eb96b09d27c521a0cb299409293dab"
+      cloud:
+        genericCloud: "34f255fab5d82f5470b173016cf7265282f09fc36a0c50fde72c9a7166c450ea"
+        openNebula: "ae8a124cb926064b2c62cd4eb1a4e793cd5e8042b63e3f22a2c51dfa54503982"
+    "s390x":
+      iso:
+        dvd: "0eba30472c95bd6e50212949040bf30526bc70635e8b1d1d9cf275f669d421a4"
+        boot: "95ed03741103bb8399fc6922f3696b61efa46d8b2a535fc9346177075c77f2e1"
+        minimal: "dd7ecee550827051324d6d1fdbb5060cec7dcc0d335ee86896e65cadb85d52d2"
+      cloud:
+        genericCloud: "a867b0ee9b9e537aa2d599430ee9be0808fc66f723dbf5937b204bfeb449b207"
+    "ppc64le":
+      iso:
+        dvd: "c8562aeef7791a2c9e68845d15e13b924014e3db48ff49171745e36f8d2978d0"
+        boot: "24ba9754811701a6c5fdd44b12ad9d119a05f88869dbc05bb023034817a4561f"
+        minimal: "f3c2b6e4a3e5f8e5f88d5e3e3a2c3f4b5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0"
+  "9":
+    fullVersion: "9.6"
+    "x86_64":
+      iso:
+        dvd: "db7b45e071b6319d43781eb8d9bec9b8d6b0ac41ad5e49db7fe113c76f0d2ca2"
+        boot: "113521ec7f28aa4ab71ba4e5896719da69a0cc46cf341c4ebbd215877214f661"
+        minimal: "27a346c74d8755516a4ad2057ea29c2450454f1a928628734f26e12b0b8120d7"
+      cloud:
+        genericCloud: "b08cd5db79bf32860412f5837e8c7b8df9447e032376e3c622840b31aaf26bc6"
+        openNebula: "47f64d3de1fbf5d004c2640bfcd08b56e3d2eff31c7b8903daaf8830b6004293"
+    "aarch64":
+      iso:
+        dvd: "bc35b7d19c92ed5de816df19322777a2b63118f75945e2d9d5d0e05ddca6c0d1"
+        boot: "79276ba0578d133baeaa84b46c476f8ed37ff6f8678b8ed26dbcf64b538ea87b"
+        minimal: "a0ec54cffa36c674633f5b031dcc3034d6e0aff1dd8e58bbfe4be9b5cb7a079a"
+      cloud:
+        genericCloud: "47e6801d066c311c44a5ce8100bed16b5976bde610e599dd384d1dca73b31ac5"
+        openNebula: "15caaff777b6e6c6d70532f01e83928df2f5d2ba501cf70f12a58704726ed782"
+    "s390x":
+      iso:
+        dvd: "f5b31d7f721134accf7486c9ba686f1baf4da08974c53017ffd5f295dbb7c7cb"
+        boot: "301a9905ffe478f29289a3f17739e8a3132b74cee6432e0f390772ff8e950ad2"
+        minimal: "4d48777ee863f7e4e4f4db4dba2b2c3b3b6f286a24a4a686c87329e09207268a"
+      cloud:
+        genericCloud: "81f5b96794668d6b7009d4edcd00980b6043fc4b7bd954ffa50dd74ebccb1b44"
+    "ppc64le":
+      iso:
+        dvd: "c8562aeef7791a2c9e68845d15e13b924014e3db48ff49171745e36f8d2978d0"
+        boot: "24ba9754811701a6c5fdd44b12ad9d119a05f88869dbc05bb023034817a4561f"
+        minimal: "4d48777ee863f7e4e4f4db4dba2b2c3b3b6f286a24a4a686c87329e09207268a"
+  "8":
+    fullVersion: "8.10"
+    "x86_64":
+      iso:
+        dvd: "463fa92155b886e31627f6713e1c2824343762245a914715ffd6f2efc300b7a1"
+        boot: "1cc3e61faf2dd6c9c80d3beeb47eaaba235ac13fe1b617209c3c1e546528ccb99"
+        minimal: "e524329700abe47ce1f509bed7e2d3c68b336a54c712daa1b492b2429a64d419"
+      cloud:
+        genericCloud: "669bd580dcef5491d4dfd5724d252cce7cde1b2b33a3ca951e688d71386875e3"
+        openNebula: "af4106ba06481efb33fdfb5c305c17b92d8a2d6760e242c9c65b2bffb2081af8"
+    "aarch64":
+      iso:
+        dvd: "49feeaa7876ede4f544ae7ddcf5a8d63649bc087aa0f1c75eac38ee456b99736"
+        boot: "309ef3de5404f5246f02f5cfdf3ff094404167f7de7fbc6517f3de3b77b5e87d"
+        minimal: "e2fcef261a236fb19e69fceffce7a31b1afafbe8afe9f24553677684571cea81"
+      cloud:
+        genericCloud: "5508d4df26925806da507f59b4990e996ef982de3d546a356891acc87e161c32"
+        openNebula: "92bace2cb4efe57930d0c3774593f172aedfbb2aa646629a5e5552b9ee7c721c"
+    "s390x":
+      iso:
+        dvd: "4a75edc17e5ab21d8452a6b64b5f24863285120f82d62a90491072a48216ae8c"
+        boot: "01cd63c35e1a4adf89538e693724f1a2f7d217780e5dc82c140b0d2802026a65"
+        minimal: "4f0bdf1e4f122a8e474803e621181041ca33f4763bef1c72b1f286fa72a21541"
+      cloud:
+        genericCloud: "7f8866a4247ad57c81f5d2c5a0fa64940691f9df1e858a1510d34a0de008eb16"
+    "ppc64le":
+      iso:
+        dvd: "b5de561a86d99ef624ed25376b1f88ec0e5b7ae05717dd78d57fd9c19f53ce73"
+        boot: "6f9115328e6edfd6c46f87036df2e3544ee05ecc8f2bef8482a54a7e9f38e163"
+        minimal: "869dad6ec5bd9050a2a5188e5aff3e519a3b9a403e88639a564c884922b14af7"
+      cloud:
+        genericCloud: "01acccc74009ebe8ddb13ea6a313479b85a372cb5b898f9090a12a2bd2d62520"

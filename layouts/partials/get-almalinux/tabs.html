@@ -1,0 +1,33 @@
+{{ $data := site.Data.get_almalinux }}
+<ul class="nav nav-tabs al-os-tabs" role="tablist">
+  {{ range $i, $version := $data.versions }}
+    {{ $isActive := eq $i 0 }}
+    <li class="nav-item dropdown" role="presentation">
+      <button
+        class="nav-link dropdown-toggle {{ if $isActive }}active{{ end }}"
+        id="os{{ $version.id }}Dropdown"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+        style="font-size: 1.3rem; font-weight: 600; line-height: 1.2;"
+      >
+        {{ $version.label }}
+      </button>
+      <ul class="dropdown-menu">
+        {{ range $j, $arch := $version.arches }}
+          {{ $archIsActive := and $isActive (eq $j 0) }}
+          <li>
+            <a
+              class="dropdown-item {{ if $archIsActive }}active{{ end }}"
+              id="{{ $arch.id }}-{{ $version.id }}-tab"
+              data-bs-toggle="tab"
+              href="#{{ $arch.id }}-{{ $version.id }}"
+              role="tab"
+            >
+              {{ $arch.label }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </li>
+  {{ end }}
+</ul>
