@@ -282,7 +282,7 @@ def main() -> int:
                 elif section_key == "vagrant":
                     vagrant_pat = section_cfg
                     vagrant = {
-                        "registryUrl": vagrant_pat.get("registryUrl", "").format(major=major, full=full, arch=arch_str)
+                        "registryUrl": per_arch_url(vagrant_pat, "registryUrls", arch_str).format(major=major, full=full, arch=arch_str)
                     }
                     vagrant_section = {
                         "id": "vagrant_boxes",

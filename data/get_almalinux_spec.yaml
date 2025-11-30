@@ -57,7 +57,10 @@ common:
     # Raspberry Pi images are aarch64-only.
     url: "https://repo.almalinux.org/rpi/{major}/images/"
   vagrant:
-    registryUrl: "https://portal.cloud.hashicorp.com/vagrant/discover/almalinux/{major}"
+    registryUrls:
+      x86_64: "https://portal.cloud.hashicorp.com/vagrant/discover/almalinux/{major}"
+      x86_64_v2: "https://portal.cloud.hashicorp.com/vagrant/discover/almalinux/{major}-{arch}"
+      aarch64: "https://portal.cloud.hashicorp.com/vagrant/discover/almalinux/{major}"
   incusLxc:
     urls:
       x86_64: "https://images.linuxcontainers.org/images/almalinux/{major}/amd64/"
