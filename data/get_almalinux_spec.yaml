@@ -113,6 +113,60 @@ versions:
         arches: ["x86_64", "x86_64_v2", "aarch64"]
       incusLxc: # Empty block, not supported on 10
 
+  - id: "10-kitten"
+    label: "AlmaLinux 10 Kitten"
+    # The list of supported architectures for this version.
+    arches: ["x86_64", "x86_64_v2", "aarch64", "s390x", "ppc64le"]
+    patterns:
+      iso:
+        base: "https://kitten.repo.almalinux.org/{major}/isos/{arch}/AlmaLinux-Kitten-10-latest-{arch}-{variant}.iso"
+        mirrorsUrl: "https://mirrors.almalinux.org/isos/{arch}/{full}.html" # TODO: Fix
+        torrentUrl: "https://repo.almalinux.org/almalinux/{full}/isos/{arch}/AlmaLinux-{full}-{arch}.torrent" # TODO: Fix
+        checksumUrl: "https://kitten.repo.almalinux.org/{major}/isos/{arch}/CHECKSUM"
+      cloud:
+        # Top-level `arches` here means "cloud images exist only for these arches".
+        arches: ["x86_64", "x86_64_v2", "aarch64", "s390x"]
+        aws:
+          # Nested `arches` further narrow support for this provider only.
+          arches: ["x86_64", "aarch64"]
+          sellerProfileUrl: "https://aws.amazon.com/marketplace/seller-profile?id=529d1014-352c-4bed-8b63-6120e4bd3342"
+          marketplaceUrls:
+            x86_64: "https://aws.amazon.com/marketplace/pp/prodview-j3zhkcd5ys6vg"
+            aarch64: "https://aws.amazon.com/marketplace/pp/prodview-5ap2rmg7bsfsu"
+        genericCloud:
+          imageUrl: "https://kitten.repo.almalinux.org/{major}/cloud/{arch}/images/AlmaLinux-Kitten-GenericCloud-10-latest.{arch}.qcow2"
+          checksumUrl: "https://kitten.repo.almalinux.org/{major}/cloud/{arch}/images/CHECKSUM"
+        azure:
+          arches: ["x86_64", "aarch64"]
+          marketplaceUrls:
+            x86_64: "https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.kitten"
+            aarch64: "https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.kitten" # TODO: Fix?
+        openNebula:
+          arches: ["x86_64", "x86_64_v2", "aarch64"]
+          imageUrl: "https://kitten.repo.almalinux.org/{major}/cloud/{arch}/images/AlmaLinux-Kitten-OpenNebula-10-latest.{arch}.qcow2"
+          checksumUrl: "https://kitten.repo.almalinux.org/{major}/cloud/{arch}/images/CHECKSUM"
+        oci: # No Kitten on OCI
+      container:
+        bootc:
+          arches: ["x86_64", "x86_64_v2", "aarch64"]
+      live:
+        # Live media exist only for the listed arches; the generator expands
+        # each variant below into arch-specific URLs and a shared checksum URL.
+        arches: ["x86_64", "x86_64_v2", "aarch64"]
+        variants:
+          gnome:
+            label: "GNOME"
+            url: "https://kitten.repo.almalinux.org/{major}/live/{arch}/AlmaLinux-Kitten-10-latest-{arch}-Live-GNOME.iso"
+          kde:
+            label: "KDE"
+            url: "https://kitten.repo.almalinux.org/{major}/live/{arch}/AlmaLinux-Kitten-10-latest-{arch}-Live-KDE.iso"
+      raspberrypi:
+        # Raspberry Pi images are aarch64-only.
+        arches: ["aarch64"]
+        url: "https://kitten.repo.almalinux.org/{major}/raspberrypi/images/"
+      vagrant:
+        arches: ["x86_64", "x86_64_v2"]
+
   - id: "9"
     label: "AlmaLinux 9"
     arches: ["x86_64", "aarch64", "s390x", "ppc64le"]
