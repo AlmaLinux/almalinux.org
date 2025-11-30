@@ -2,13 +2,10 @@
 {{ $arch := .Arch }}
 {{ $section := .Section }}
 
-{{/* Helpers for mirror/torrent/checksum URLs, derived from version/arch instead of data. */}}
-{{- $full := $version.fullVersion -}}
-{{- $archID := $arch.id -}}
-
-{{- $mirrorsUrl := printf "https://mirrors.almalinux.org/isos/%s/%s.html" $archID $full -}}
-{{- $torrentUrl := printf "https://repo.almalinux.org/almalinux/%s/isos/%s/AlmaLinux-%s-%s.torrent" $full $archID $full $archID -}}
-{{- $checksumUrl := printf "https://repo.almalinux.org/almalinux/%s/isos/%s/CHECKSUM" $full $archID -}}
+{{/* Mirrors/torrent/checksum URLs now come from data/get_almalinux.yaml (merged from common+per-version iso spec). */}}
+{{- $mirrorsUrl := $section.mirrorsUrl -}}
+{{- $torrentUrl := $section.torrentUrl -}}
+{{- $checksumUrl := $section.checksumUrl -}}
 
 
 <div class="al-article-content p-0 pb-3 al-wysiwyg">

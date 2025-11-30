@@ -10,6 +10,9 @@ common:
     # and let the generator expand them into per-arch URLs and checksums.
     base: "https://repo.almalinux.org/almalinux/{major}/isos/{arch}/AlmaLinux-{full}-{arch}-{variant}.iso"
     variants: ["dvd", "boot", "minimal"]
+    mirrorsUrl: "https://mirrors.almalinux.org/isos/{arch}/{full}.html"
+    torrentUrl: "https://repo.almalinux.org/almalinux/{full}/isos/{arch}/AlmaLinux-{full}-{arch}.torrent"
+    checksumUrl: "https://repo.almalinux.org/almalinux/{full}/isos/{arch}/CHECKSUM"
   cloud:
     genericCloud:
       imageUrl: "https://repo.almalinux.org/almalinux/{major}/cloud/{arch}/images/AlmaLinux-{major}-GenericCloud-latest.{arch}.qcow2"

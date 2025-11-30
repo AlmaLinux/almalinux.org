@@ -160,12 +160,29 @@ def main() -> int:
                         }
                         blocks.append(block)
 
+                    mirrors_url_tmpl = iso_pat.get("mirrorsUrl", "")
+                    torrent_url_tmpl = iso_pat.get("torrentUrl", "")
+                    checksum_url_tmpl = iso_pat.get("checksumUrl", "")
+
                     iso_section = {
                         "id": "iso_images",
                         "anchorPrefix": "ISO_Images",
                         "title": "ISO Images",
                         "blocks": blocks,
                     }
+
+                    if mirrors_url_tmpl:
+                        iso_section["mirrorsUrl"] = mirrors_url_tmpl.format(
+                            major=major, full=full, arch=arch_str
+                        )
+                    if torrent_url_tmpl:
+                        iso_section["torrentUrl"] = torrent_url_tmpl.format(
+                            major=major, full=full, arch=arch_str
+                        )
+                    if checksum_url_tmpl:
+                        iso_section["checksumUrl"] = checksum_url_tmpl.format(
+                            major=major, full=full, arch=arch_str
+                        )
                     sections.append(iso_section)
 
                 elif section_key == "cloud":
