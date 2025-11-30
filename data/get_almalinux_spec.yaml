@@ -55,6 +55,7 @@ common:
     checksumUrl: "https://repo.almalinux.org/almalinux/{major}/live/{arch}/CHECKSUM"
   raspberrypi:
     # Raspberry Pi images are aarch64-only.
+    arches: ["aarch64"]
     url: "https://repo.almalinux.org/rpi/{major}/images/"
   vagrant:
     registryUrls:
@@ -81,7 +82,7 @@ versions:
         aws:
           # Nested `arches` further narrow support for this provider only.
           arches: ["x86_64", "aarch64"]
-          sellerProfileUrl: "https://aws.amazon.com/marketplace/seller-profile?id=125035508"
+          sellerProfileUrl: "https://aws.amazon.com/marketplace/seller-profile?id=529d1014-352c-4bed-8b63-6120e4bd3342"
           marketplaceUrls:
             x86_64: "https://aws.amazon.com/marketplace/pp/prodview-tommf6drdxv4w"
             aarch64: "https://aws.amazon.com/marketplace/pp/prodview-kh5sf2hbb7rnw"
@@ -108,9 +109,6 @@ versions:
           kde:
             label: "KDE"
             url: "https://repo.almalinux.org/almalinux/{major}/live/{arch}/AlmaLinux-{full}-{arch}-Live-KDE.iso"
-      raspberrypi:
-        # Raspberry Pi images are aarch64-only.
-        arches: ["aarch64"]
       vagrant:
         arches: ["x86_64", "x86_64_v2", "aarch64"]
       incusLxc: # Empty block, not supported on 10
@@ -199,7 +197,7 @@ versions:
       container:
         bootc: # No bootc images for AlmaLinux 8
       live:
-        arches: ["x86_64", "aarch64"]
+        arches: ["x86_64"]
         variants:
           gnome:
             label: "GNOME"
@@ -218,6 +216,7 @@ versions:
             url: "https://repo.almalinux.org/almalinux/{major}/live/{arch}/AlmaLinux-{full}-{arch}-Live-MATE.iso"
       raspberrypi:
         arches: ["aarch64"]
+        url: "https://repo.almalinux.org/rpi/images/"
       vagrant:
         arches: ["x86_64", "aarch64"]
       incusLxc:
