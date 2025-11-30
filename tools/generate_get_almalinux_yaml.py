@@ -204,7 +204,7 @@ def main() -> int:
                             "sha256": cloud_hashes.get("openNebula", ""),
                         } if enabled_for_arch(openneb, arch_str) else {},
                         "oci": {
-                            "marketplaceUrl": oci.get("marketplaceUrl", ""),
+                            "marketplaceUrl": per_arch_url(oci, "marketplaceUrls", arch_str),
                             "partnerListingUrl": oci.get("partnerListingUrl", ""),
                             "x86ListingUrl": oci.get("x86ListingUrl", oci.get("marketplaceUrl", "")),
                         } if enabled_for_arch(oci, arch_str) else {},
