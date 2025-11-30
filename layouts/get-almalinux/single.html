@@ -84,21 +84,4 @@
       </script>
     </section>
   </div>
-
-  <script>
-    // Ensure the first tab-button (if present) is marked active on load
-    (function () {
-      const btns = document.querySelectorAll(".tab-button");
-      if (!btns.length) return;
-
-      btns.forEach((item) =>
-        item.addEventListener("click", () => {
-          btns.forEach((element) => element.classList.remove("active"));
-          item.classList.add("active");
-        }),
-      );
-
-      btns[0].classList.add("active");
-    })();
-  </script>
 {{ end }}
