@@ -76,7 +76,7 @@ versions:
           # Nested `arches` further narrow support for this provider only.
           arches: ["x86_64", "aarch64"]
           sellerProfileUrl: "https://aws.amazon.com/marketplace/seller-profile?id=125035508"
-          marketplaceUrl: "https://aws.amazon.com/marketplace/pp/prodview-todo-alma10-x86_64"
+          marketplaceUrl: "https://aws.amazon.com/marketplace/pp/prodview-tommf6drdxv4w"
         azure:
           arches: ["x86_64", "aarch64"]
         openNebula:
@@ -114,7 +114,7 @@ versions:
         aws:
           arches: ["x86_64", "aarch64"]
           sellerProfileUrl: "https://aws.amazon.com/marketplace/pp/prodview-ykmb6re2rcouy"
-          marketplaceUrl: "https://aws.amazon.com/marketplace/pp/prodview-tommf6drdxv4w"
+          marketplaceUrl: "https://aws.amazon.com/marketplace/pp/prodview-ykmb6re2rcouy"
         googleCloud:
           arches: ["x86_64"]
           marketplaceBrowseUrl: "https://console.cloud.google.com/marketplace/browse?filter=partner:AlmaLinux"
