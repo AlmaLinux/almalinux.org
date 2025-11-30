@@ -76,7 +76,9 @@ versions:
           # Nested `arches` further narrow support for this provider only.
           arches: ["x86_64", "aarch64"]
           sellerProfileUrl: "https://aws.amazon.com/marketplace/seller-profile?id=125035508"
-          marketplaceUrl: "https://aws.amazon.com/marketplace/pp/prodview-tommf6drdxv4w"
+          marketplaceUrls:
+            x86_64: "https://aws.amazon.com/marketplace/pp/prodview-tommf6drdxv4w"
+            aarch64: "https://aws.amazon.com/marketplace/pp/prodview-kh5sf2hbb7rnw"
         azure:
           arches: ["x86_64", "aarch64"]
         openNebula:
@@ -114,7 +116,9 @@ versions:
         aws:
           arches: ["x86_64", "aarch64"]
           sellerProfileUrl: "https://aws.amazon.com/marketplace/pp/prodview-ykmb6re2rcouy"
-          marketplaceUrl: "https://aws.amazon.com/marketplace/pp/prodview-ykmb6re2rcouy"
+          marketplaceUrls:
+            x86_64: "https://aws.amazon.com/marketplace/pp/prodview-ykmb6re2rcouy"
+            aarch64: "https://aws.amazon.com/marketplace/pp/prodview-pvttztrj2uzjk"
         googleCloud:
           arches: ["x86_64"]
           marketplaceBrowseUrl: "https://console.cloud.google.com/marketplace/browse?filter=partner:AlmaLinux"
@@ -166,7 +170,9 @@ versions:
         aws:
           arches: ["x86_64", "aarch64"]
           sellerProfileUrl: "https://aws.amazon.com/marketplace/seller-profile?id=529d1014-352c-4bed-8b63-6120e4bd3342"
-          marketplaceUrl: "https://aws.amazon.com/marketplace/pp/prodview-mku4y3g4sjrye"
+          marketplaceUrls:
+            x86_64: "https://aws.amazon.com/marketplace/pp/prodview-mku4y3g4sjrye"
+            aarch64: "https://aws.amazon.com/marketplace/pp/prodview-zgsymdwitnxmm"
         googleCloud:
           arches: ["x86_64"]
           marketplaceBrowseUrl: "https://console.cloud.google.com/marketplace/browse?filter=partner:AlmaLinux"

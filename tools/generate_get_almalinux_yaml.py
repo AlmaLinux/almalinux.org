@@ -75,22 +75,22 @@ def enabled_for_arch(cfg: dict | None, arch_value: str) -> bool:
     return str(arch_value) in arches
 
 
-def azure_url_for_arch(azure_cfg: dict, arch_value: str) -> str:
+def per_arch_url(config: dict, url_key: str, arch_value: str) -> str:
     """Return the Azure marketplace URL appropriate for this arch.
 
-    Supports either a single top-level "marketplaceUrl" or a mapping of per-arch
-    entries under "marketplaceUrls".
+    Supports either a single top-level "url_key" or a mapping of per-arch
+    entries under "url_keys".
     """
 
-    if not isinstance(azure_cfg, dict):
+    if not isinstance(config, dict):
         return ""
-    per_arch = azure_cfg.get("marketplaceUrls", {})
+    per_arch = config.get(url_key, {})
     if isinstance(per_arch, dict):
         url = per_arch.get(str(arch_value))
         if url:
             return url
-    # Fallback to shared marketplaceUrl if defined
-    return azure_cfg.get("marketplaceUrl", "")
+    # Fallback to shared url_key if defined
+    return config.get(url_key, "")
 
 
 def main() -> int:
@@ -184,7 +184,7 @@ def main() -> int:
                         "title": "Cloud Images",
                         "aws": {
                             "sellerProfileUrl": aws.get("sellerProfileUrl", ""),
-                            "marketplaceUrl": aws.get("marketplaceUrl", ""),
+                            "marketplaceUrl": per_arch_url(aws, "marketplaceUrls", arch_str),
                         } if enabled_for_arch(aws, arch_str) else {},
                         "genericCloud": {
                             "imageUrl": generic.get("imageUrl", "").format(major=major, full=full, arch=arch_str),
@@ -196,7 +196,7 @@ def main() -> int:
                             "productUrl": google.get("productUrl", "").format(major=major, full=full, arch=arch_str),
                         } if enabled_for_arch(google, arch_str) else {},
                         "azure": {
-                            "marketplaceUrl": azure_url_for_arch(azure, arch_str),
+                            "marketplaceUrl": per_arch_url(azure, "marketplaceUrls", arch_str),
                         } if enabled_for_arch(azure, arch_str) else {},
                         "openNebula": {
                             "imageUrl": openneb.get("imageUrl", "").format(major=major, full=full, arch=arch_str),
