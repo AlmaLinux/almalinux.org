@@ -85,7 +85,9 @@ versions:
           arches: ["x86_64", "x86_64_v2", "aarch64"]
         oci:
           arches: ["x86_64", "aarch64"]
-          marketplaceUrl: "https://cloudmarketplace.oracle.com/marketplace/en_US/listing/189119150"
+          marketplaceUrls:
+            x86_64: "https://cloudmarketplace.oracle.com/marketplace/en_US/listing/189119150"
+            aarch64: "https://cloudmarketplace.oracle.com/marketplace/en_US/listing/189119919"
       container:
         bootc:
           arches: ["x86_64", "x86_64_v2", "aarch64"]
@@ -129,7 +131,9 @@ versions:
           arches: ["x86_64", "x86_64_v2", "aarch64"]
         oci:
           arches: ["x86_64", "aarch64"]
-          marketplaceUrl: "https://cloudmarketplace.oracle.com/marketplace/en_US/listing/127985411"
+          marketplaceUrls:
+            x86_64: "https://cloudmarketplace.oracle.com/marketplace/en_US/listing/127985411"
+            aarch64: "https://cloudmarketplace.oracle.com/marketplace/en_US/listing/127985893"
       container:
         bootc:
           arches: ["x86_64", "x86_64_v2", "aarch64"]
@@ -183,7 +187,9 @@ versions:
           arches: ["x86_64", "x86_64_v2", "aarch64"]
         oci:
           arches: ["x86_64", "aarch64"]
-          marketplaceUrl: "https://cloudmarketplace.oracle.com/marketplace/en_US/listing/125544666"
+          marketplaceUrls:
+            x86_64: "https://cloudmarketplace.oracle.com/marketplace/en_US/listing/125544666"
+            aarch64: "https://cloudmarketplace.oracle.com/marketplace/en_US/listing/125567282"
       container:
         bootc: # No bootc images for AlmaLinux 8
       live:
