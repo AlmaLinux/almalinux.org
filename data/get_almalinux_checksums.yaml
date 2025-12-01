@@ -37,6 +37,44 @@ versions:
         dvd: "f4cce5d72c013285e6282ef3e531c6ecd7a0b2086bdaf3873b4c55d4f3d51f3a"
         boot: "e4e246af934c56de2609e218bacaa9cf32a90c4bfe2f53526a2c4bc1cce61ba3"
         minimal: "925a7c82cbf997ae22aeb5d6f5d798dd9a44ea7288cd68bb84a939af13021ec3"
+  "10-kitten":
+    # do not add a fullVersion for kitten releases
+    "x86_64":
+      iso:
+        dvd: "f4e8d01488528a84f63a297250bedc839d102fa7449568558f7990279a1ba042"
+        boot: "ad5ea95bbcfe930a427f55a066691260829b37eb6e2ad842e45718f484c53d68"
+        minimal: "01d6943805e05b2117f2c9ba9a84c52b582115d15a0a36ed2042393caad6652f"
+      cloud:
+        genericCloud: "cb06a7fd9829c7fdb318963703dea3822e509af0d93e786225d79be7200bdbeb"
+        openNebula: "6283aadfabefed677b69b0f14a5df0298499d7a276a5695d78c336d51f189e63"
+    "x86_64_v2":
+      iso:
+        dvd: "5d22be0b92bdc159f3f828c764c7ce233845fe918b622f2af9c8970a87ed9e0c"
+        boot: "192397c9dbe429f4a05bcae186fb088d34ae49de5deab5dd55973e0d237caf3d"
+        minimal: "af9b67b5fbc6146ba21c205a8da90414cf6bcbf60a86acf5890930c8a558a3bb"
+      cloud:
+        genericCloud: "1b6bf6f803ef6c56f2213ea81f865fc6bb73569f6f35277886ad1637049a6374"
+        openNebula: "56b4c10868e6436fce662b82ebd52a80233b16bf3bb83c8d49ddae8f375fec21"
+    "aarch64":
+      iso:
+        dvd: "902ce8666a1a9562aa1dc8bcff10b9d196d3379bb92a8fadca21b48b28e0f1a2"
+        boot: "4b3fa1244e4d495e6475c8cc33ac5f2a1df0e8bf6d3682d0ef11ded7552108c4"
+        minimal: "e4cc3c48d0feabfc4cabced441e9f179fb998fc574190d8458ccbf511f677dff"
+      cloud:
+        genericCloud: "31838872e87f7d264cfd865ef288e5a4b7f31ba88ab84984ac5d4491a1c1a9e8"
+        openNebula: "82e2210d24ff0571c2705b6026d895dc50c37b2a6c6e883f27a1bf204803b3c7"
+    "s390x":
+      iso:
+        dvd: "fbb65f1a1a76300033bf6e901bb12080cc40866d5d7b4682fd882540a60fb23b"
+        boot: "90c79a68661a3dfac13a9468d8c8837990e45f8c8e64382db854ba40b5dbb281"
+        minimal: "2bb92a2a44546acf0caa6d218579100b2afa469caa29462932feff68bb5914a5"
+      cloud:
+        genericCloud: "b4174bd71f59346bc35c32b3743d13e0a06458f203cc3736580cc9f8d28f6725"
+    "ppc64le":
+      iso:
+        dvd: "c1ad688f4f9a3c8ee19c2a008588dcf150e0bb0ea6eae0a2ad018ee4148f79df"
+        boot: "a2f54aaf14e05f2ecf1d2bb73fd908228dafee99e1660c345cbc6c6ca7da5acc"
+        minimal: "f90d5a7731729db12b8ab784007b20b45abc2468e99887da6f369bd74602f894"
   "9":
     fullVersion: "9.7"
     "x86_64":
