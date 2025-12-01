@@ -118,7 +118,7 @@ def main() -> int:
         label = v_merged.get("label", f"AlmaLinux {full}")
         major = vid
 
-        patterns = v_merged.get("patterns", {})
+        patterns = v_merged.get("sections", {})
 
         arches_out = []
         for arch in v_merged.get("arches", []):

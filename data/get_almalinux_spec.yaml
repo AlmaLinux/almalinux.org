@@ -1,10 +1,12 @@
+# If you make changes to this file, be sure to run
+# `python3 tools/generate_get_almalinux_yaml.py` to generate the new data.
+# Also, please first read the documentation in README.md, section "Updating 'Get AlmaLinux' page".
+
 # Shared configuration that is common across all AlmaLinux versions.
 # Individual versions can still override pieces of this under their own
-# blocks (e.g. `containerDefaults`) if necessary.
+# blocks if necessary.
 common:
-  # Shared container configuration used by the Get AlmaLinux Containers section.
-  # This lives under `common.container` to mirror the `container` pattern/section
-  # name used elsewhere in the spec and generated data.
+  # Shared container configuration used by the Get AlmaLinux page.
   iso:
     # All versions use the same ISO layout: we list the variants we want
     # and let the generator expand them into per-arch URLs and checksums.
@@ -74,7 +76,7 @@ versions:
     label: "AlmaLinux 10"
     # The list of supported architectures for this version.
     arches: ["x86_64", "x86_64_v2", "aarch64", "s390x", "ppc64le"]
-    patterns:
+    sections:
       iso:
       cloud:
         # Top-level `arches` here means "cloud images exist only for these arches".
@@ -117,7 +119,7 @@ versions:
     label: "AlmaLinux 10 Kitten"
     # The list of supported architectures for this version.
     arches: ["x86_64", "x86_64_v2", "aarch64", "s390x", "ppc64le"]
-    patterns:
+    sections:
       iso:
         base: "https://kitten.repo.almalinux.org/{major}/isos/{arch}/AlmaLinux-Kitten-10-latest-{arch}-{variant}.iso"
         mirrorsUrl: "" # TODO: Fix
@@ -171,7 +173,7 @@ versions:
   - id: "9"
     label: "AlmaLinux 9"
     arches: ["x86_64", "aarch64", "s390x", "ppc64le"]
-    patterns:
+    sections:
       iso:
       cloud:
         aws:
@@ -227,7 +229,7 @@ versions:
   - id: "8"
     label: "AlmaLinux 8"
     arches: ["x86_64", "aarch64", "s390x", "ppc64le"]
-    patterns:
+    sections:
       iso:
       cloud:
         aws:
