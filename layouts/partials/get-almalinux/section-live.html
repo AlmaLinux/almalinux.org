@@ -1,0 +1,47 @@
+{{/* Live Media section for a given version/arch.
+  Expects:
+  .Version
+  .Arch
+  .Section (with .live data as defined in data/get_almalinux.yaml)
+*/}}
+
+{{- $live := .Section.live -}}
+{{- $variants := $live.variants -}}
+
+
+<div class="al-article-content p-0 pb-3 al-wysiwyg">
+  <p>
+    {{ i18n "AlmaLinux builds Live Media images for GNOME, GNOME Mini, KDE, XFCE and MATE options." }}<br />
+    {{ i18n "The guide on how to use Live Media images can be found on the " }}<a
+      href="https://wiki.almalinux.org/LiveMedia.html"
+      >{{ i18n "AlmaLinux Live Media Wiki Page" }}</a
+    >.<br />
+    {{ i18n "Supported AlmaLinux OS versions:" }}
+  </p>
+  {{ if $variants }}
+    <div class="AL d-flex my-3 flex-wrap">
+      {{ range $variants }}
+        <div class="align-items-center d-flex mb-2">
+          <a
+            class="btn px-3 me-md-2 al-cta-blue"
+            style="min-width: 136px;"
+            href="{{ .url }}"
+          >
+            {{ .label }}
+          </a>
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
+  <p style="margin-bottom: 0px;">
+    {{ i18n "The guide on how to use Live Media images can be found on the " }}<a
+      href="https://wiki.almalinux.org/LiveMedia.html"
+      >{{ i18n "AlmaLinux Live Media Wiki Page" }}</a
+    >.
+  </p>
+  <p style="margin-bottom: 0px;">
+    <b>
+      <a href="{{ $live.checksumUrl }}">{{ i18n "Download CHECKSUM" }}</a>
+    </b>
+  </p>
+</div>

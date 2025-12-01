@@ -1,0 +1,32 @@
+{{/* WSL section for a given version/arch.
+  Expects:
+  .Version
+  .Arch
+  .Section (with .storeUrl as defined in data/get_almalinux.yaml)
+*/}}
+
+{{- $v := .Version -}}
+{{- $s := .Section -}}
+
+
+<div class="al-article-content p-0 pb-3 al-wysiwyg">
+  <p>
+    {{ i18n "Windows Subsystem for Linux (WSL) is designed as an integration between Windows and Linux. You can run the AlmaLinux terminal environment on a Windows machine." }}<br />
+    {{ i18n "Supported AlmaLinux OS versions:" }}
+  </p>
+  <div class="align-items-center d-flex">
+    <a
+      class="btn px-3 me-md-2 al-cta-blue"
+      style="min-width: 136px;"
+      href="{{ $s.storeUrl }}"
+    >
+      AlmaLinux {{ $v.id }} WSL
+    </a>
+  </div>
+  <p class="mb-0">
+    {{ i18n "More details and guidance steps can be found on the " }}
+    <a href="https://wiki.almalinux.org/documentation/wsl.html"
+      >{{ i18n "AlmaLinux WSL Wiki Page" }}</a
+    >.
+  </p>
+</div>
