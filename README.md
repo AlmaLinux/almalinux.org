@@ -81,20 +81,19 @@ The "Get AlmaLinux" page is dynamically generated using structured data and Hugo
 **How it works:**
 
 - **Data sources:**
-   - `data/get_almalinux_spec.yaml`: Defines available AlmaLinux versions, supported architectures, and the configuration for each section (e.g., ISO, Cloud, Container).
-   - `data/get_almalinux_checksums.yaml`: Contains, for each version, the current highest point release (`fullVersion`) and the checksums for all artifacts (ISOs and cloud images) per architecture.
+  - `data/get_almalinux_spec.yaml`: Defines available AlmaLinux versions, supported architectures, and the configuration for each section (e.g., ISO, Cloud, Container).
+  - `data/get_almalinux_checksums.yaml`: Contains, for each version, the current highest point release (`fullVersion`) and the checksums for all artifacts (ISOs and cloud images) per architecture.
 
 - **Generation script:**
-   - The script `tools/generate_get_almalinux_yaml.py` reads both YAML files, merges their data, and produces `data/get_almalinux.yaml`. This merged file is used by the Hugo partials to render the page.
-   - `data/get_almalinux.yaml` is **not** tracked in git. It is generated automatically by the GitHub CI workflow during site builds, but you must run the script manually for local development if you change the source YAML files.
+  - The script `tools/generate_get_almalinux_yaml.py` reads both YAML files, merges their data, and produces `data/get_almalinux.yaml`. This merged file is used by the Hugo partials to render the page.
+  - `data/get_almalinux.yaml` is **not** tracked in git. It is generated automatically by the GitHub CI workflow during site builds, but you must run the script manually for local development if you change the source YAML files.
 
 - **Templates:**
-   - Hugo partials in `layouts/partials/get-almalinux/` render the page:
-      - `tabs.html`: Renders version tabs and architecture dropdowns.
-      - `tab-content.html`: Generates the content for each tab panel.
-      - `arch-sections.html`: Generates the page for each version+architecture combination.
-      - `section-*.html`: Renders each section (ISO, Cloud, Container, etc.) that makes up a full page.
-
+  - Hugo partials in `layouts/partials/get-almalinux/` render the page:
+    - `tabs.html`: Renders version tabs and architecture dropdowns.
+    - `tab-content.html`: Generates the content for each tab panel.
+    - `arch-sections.html`: Generates the page for each version+architecture combination.
+    - `section-*.html`: Renders each section (ISO, Cloud, Container, etc.) that makes up a full page.
 
 ##### Editing for a New Point Release
 
@@ -102,12 +101,11 @@ The "Get AlmaLinux" page is dynamically generated using structured data and Hugo
 
 1. Open `data/get_almalinux_checksums.yaml` and edit the entry for the given major version. Update `fullVersion` with the new point release and upddate the checksums for each architecture and artifact. The format is designed to be self-explanatory.
 2. Run the generation script to see your changes locally:
-    ```bash
-    python3 tools/generate_get_almalinux_yaml.py
-    ```
-    This updates `data/get_almalinux.yaml` for use by Hugo.
-    This will be done automatically by the Gitlab CI scripts during deployment.
-
+   ```bash
+   python3 tools/generate_get_almalinux_yaml.py
+   ```
+   This updates `data/get_almalinux.yaml` for use by Hugo.
+   This will be done automatically by the Gitlab CI scripts during deployment.
 
 ##### Editing Sections, Architectures, or URL Patterns
 
@@ -115,15 +113,14 @@ If you need to change which sections or architectures are shown, or adjust how U
 
 - The YAML file contains a `common` block, which sets default configuration for each section. These defaults are merged with per-version overrides in the `versions` array.
 - Each version entry includes:
-   - `id`: The major version (e.g., `10`, `10-kitten`).
-   - `label`: The tab title.
-   - `arches`: List of supported architectures (becomes dropdowns in the page).
-   - `sections`: List of sections to configure for that version.
+  - `id`: The major version (e.g., `10`, `10-kitten`).
+  - `label`: The tab title.
+  - `arches`: List of supported architectures (becomes dropdowns in the page).
+  - `sections`: List of sections to configure for that version.
 - Each section (such as `iso` or `cloud`) can inherit from `common` but may be overridden per version or architecture.
-   - A section may have its own `arches` array to restrict it to certain architectures. For example, if cloud images for AlmaLinux 10 on `ppc64le` are not supported, the `cloud` section's `arches` array should exclude `ppc64le`.
-   - To remove a section entirely for a version, omit it from the version's `sections` list.
-   - To remove a specific cloud image within the `cloud` section, define it with no content (see the `oci` section in 10-kitten as an example).
-
+  - A section may have its own `arches` array to restrict it to certain architectures. For example, if cloud images for AlmaLinux 10 on `ppc64le` are not supported, the `cloud` section's `arches` array should exclude `ppc64le`.
+  - To remove a section entirely for a version, omit it from the version's `sections` list.
+  - To remove a specific cloud image within the `cloud` section, define it with no content (see the `oci` section in 10-kitten as an example).
 
 ##### URL Patterns and Variables
 
@@ -135,18 +132,16 @@ Most sections define URL templates for artifacts, using variables such as:
 
 Some URLs may allow other variables (like `variant`), or require different patterns per architecture (e.g., `vagrant`'s `registryUrls`). For advanced options, consult the code in `tools/generate_get_almalinux_yaml.py`.
 
-
 ##### Summary of Workflow
 
 1. Edit `get_almalinux_checksums.yaml` for new point releases, or `get_almalinux_spec.yaml` for section/architecture changes.
 2. Run the generation script to update the merged YAML:
-    ```bash
-    python3 tools/generate_get_almalinux_yaml.py
-    ```
+   ```bash
+   python3 tools/generate_get_almalinux_yaml.py
+   ```
 3. Start or restart the Hugo server to see your changes locally.
 
 If you have questions about advanced configuration or variable support, refer to the script or open an issue for help.
-
 
 ### Localization and Translation
 
