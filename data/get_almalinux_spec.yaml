@@ -113,7 +113,8 @@ versions:
             url: "https://repo.almalinux.org/almalinux/{major}/live/{arch}/AlmaLinux-{full}-{arch}-Live-KDE.iso"
       vagrant:
         arches: ["x86_64", "x86_64_v2", "aarch64"]
-      incusLxc: # Empty block, not supported on 10
+      incusLxc:
+        arches: ["x86_64", "aarch64"]
 
   - id: "10-kitten"
     label: "AlmaLinux 10 Kitten"
