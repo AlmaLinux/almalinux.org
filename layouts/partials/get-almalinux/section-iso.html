@@ -1,0 +1,79 @@
+{{ $version := .Version }}
+{{ $arch := .Arch }}
+{{ $section := .Section }}
+
+{{/* Mirrors/torrent/checksum URLs now come from data/get_almalinux.yaml (merged from common+per-version iso spec). */}}
+{{- $mirrorsUrl := $section.mirrorsUrl -}}
+{{- $torrentUrl := $section.torrentUrl -}}
+{{- $checksumUrl := $section.checksumUrl -}}
+
+
+<div class="al-article-content p-0 pb-3 al-wysiwyg">
+  {{ range $block := $section.blocks }}
+    <div class="mt-4">
+      <p>
+        {{- if eq $block.id "dvd" -}}
+          <b>{{ i18n "DVD" }}</b> -
+          {{ i18n "effortless installation with all packages included, no additional repositories required." }}
+        {{- else if eq $block.id "boot" -}}
+          <b>{{ i18n "Boot" }}</b> -
+          {{ i18n "a single network installation CD image that downloads packages over the Internet." }}
+        {{- else if eq $block.id "minimal" -}}
+          <b>{{ i18n "Minimal" }}</b> -
+          {{ i18n "a minimal self-containing DVD image that makes possible offline installation." }}
+        {{- end -}}
+      </p>
+      <div class="align-items-center d-flex">
+        <a
+          class="btn px-3 me-md-2 al-cta-blue"
+          style="min-width: 136px;"
+          href="{{ $block.url }}"
+        >
+          {{ i18n "Download" }}
+          {{ if $version.fullVersion }}
+            {{ $version.fullVersion }}
+          {{ else }}
+            {{ $version.id }}
+          {{ end }}
+          ISO
+        </a>
+        <div
+          class="d-flex flex-grow-1 align-items-center"
+          style="min-width: 0;"
+        >
+          <img
+            src="/images/alma-fingerprint-A.svg"
+            alt="Fingerprint"
+            style="width: 40px; height: 40px; flex-shrink: 0;"
+          />
+          <div class="flex-column flex-grow-1 d-flex" style="min-width: 0;">
+            <span class="fw-bold">SHA-256:</span>
+            <span class="overflow-auto" style="max-width: 100%;">
+              {{ $block.sha256 }}
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {{ if eq $block.id "minimal" }}
+        <div class="Link-Downloads-OS{{ $version.id }} d-flex gap-30 mt-4">
+          {{- with $mirrorsUrl }}
+            <a href="{{ $mirrorsUrl }}" class="fw-bold">
+              {{ i18n "Download ISO from mirrors" }}
+            </a>
+          {{- end }}
+          {{- with $torrentUrl }}
+            <a href="{{ $torrentUrl }}" class="fw-bold">
+              {{ i18n "Download .torrent file" }}
+            </a>
+          {{- end }}
+          {{- with $checksumUrl }}
+            <a href="{{ $checksumUrl }}" class="fw-bold">
+              {{ i18n "Download CHECKSUM" }}
+            </a>
+          {{- end }}
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
+</div>

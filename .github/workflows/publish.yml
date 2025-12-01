@@ -27,6 +27,9 @@ jobs:
       - name: Generate language files
         run: python3 setup-pages-for-supported-languages.py
 
+      - name: Generate get_almalinux data
+        run: python3 tools/generate_get_almalinux_yaml.py
+
       - name: Create Pull Request for i18n string changes
         uses: peter-evans/create-pull-request@v5
         with:

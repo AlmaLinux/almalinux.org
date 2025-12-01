@@ -1,0 +1,37 @@
+{{/* Incus and LXC section for a given version/arch.
+  Expects:
+  .Version
+  .Arch
+  .Section (with .url as defined in data/get_almalinux.yaml)
+*/}}
+
+{{- $v := .Version -}}
+{{- $s := .Section -}}
+
+
+<div class="al-article-content p-0 pb-3 al-wysiwyg">
+  <p>
+    {{ i18n "AlmaLinux images are available for Incus and LXC." }}<br />
+    {{ i18n "Supported AlmaLinux OS versions:" }}
+  </p>
+  <div class="align-items-center d-flex">
+    <a
+      class="btn px-3 me-md-2 al-cta-blue"
+      style="min-width: 136px;"
+      href="{{ $s.url }}"
+    >
+      AlmaLinux
+      {{ if $v.fullVersion }}
+        {{ $v.fullVersion }}
+      {{ else }}
+        {{ $v.id }}
+      {{ end }}
+    </a>
+  </div>
+  <p class="mb-0">
+    {{ i18n "You can get official AlmaLinux OS images at the link provided: " }}<a
+      href="https://images.linuxcontainers.org"
+      >images.linuxcontainers.org</a
+    >.
+  </p>
+</div>

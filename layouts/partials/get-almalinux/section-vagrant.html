@@ -1,0 +1,28 @@
+{{/* Vagrant Boxes section for a given version/arch.
+  Expects:
+  .Version
+  .Arch
+  .Section (with .vagrant data as defined in data/get_almalinux.yaml)
+*/}}
+
+{{- $version := .Version -}}
+{{- $v := .Section.vagrant -}}
+
+
+<div class="al-article-content p-0 pb-3 al-wysiwyg">
+  <p>
+    {{ i18n "AlmaLinux provides official images for Vagrant:" }}
+  </p>
+  <ul>
+    <li>Libvirt</li>
+    <li>VirtualBox</li>
+    <li>Hyper-V</li>
+    <li>VMWare</li>
+  </ul>
+  <p class="mb-0">
+    {{ i18n "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: " }}<a
+      href="{{ $v.registryUrl }}"
+      >{{ $v.registryUrl }}</a
+    >.
+  </p>
+</div>

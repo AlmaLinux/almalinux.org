@@ -1,0 +1,170 @@
+{{/* Renders the Container Images section for a given version/arch.
+  Expected context:
+  .Version : the version object (with id, label, fullVersion)
+  .Arch    : the arch object (not used here but kept for symmetry)
+  .Section : the container_images section data from data/get_almalinux.yaml
+*/}}
+
+{{- $version := .Version -}}
+{{- $section := .Section -}}
+{{- $bootc := $section.bootc -}}
+{{- $ctas := slice
+  (dict "class" "itemAl_01" "url" "https://hub.docker.com/_/almalinux" "repoUrl" "https://hub.docker.com/r/almalinux" "i18nKey" "Get Docker Image")
+  (dict "class" "itemAl_02" "url" "https://quay.io/organization/almalinuxorg" "repoUrl" "https://quay.io/repository/almalinuxorg" "i18nKey" "Get OCI Image from Quay.io")
+  (dict "class" "itemAl_03" "url" "https://github.com/orgs/AlmaLinux/packages" "repoUrl" "https://github.com/orgs/AlmaLinux/packages" "i18nKey" "Get OCI Image from GitHub")
+-}}
+
+
+<div class="al-article-content p-0 pb-3 al-wysiwyg">
+  <p>
+    {{ i18n "AlmaLinux provides official OCI, Docker and four fully compatible alternatives for the Red Hat Universal Base Images (UBI)." }}
+  </p>
+
+  {{/* Primary CTA buttons (Docker Hub, Quay, GitHub) */}}
+  <div class="row my-3">
+    {{- range $ctas }}
+      <div class="{{ .class }} align-items-center d-flex col-12 col-lg-4 mb-3">
+        <a
+          class="btn px-3 me-md-2 al-cta-blue w-100 text-nowrap"
+          style="min-width: 136px;"
+          href="{{ .url }}"
+        >
+          {{ i18n .i18nKey }}
+        </a>
+      </div>
+    {{- end }}
+  </div>
+
+  {{/* Official Platform Images table */}}
+  <h4>{{ i18n "Official Platform Images:" }}</h4>
+  <div
+    class="d-flex justify-content-between mb-4 flex-nowrap w-100 px-0"
+    style="max-width: 600px;"
+  >
+    <div
+      class="d-flex flex-column flex-shrink=0 flex-lg-grow-0 col-lg-4 px-2"
+      style="width: 100px;"
+    >
+      <div class="main-itemsOff">
+        <b>{{ i18n "Image" }}</b>
+      </div>
+      {{- with $section.platformImages }}
+        {{- range $row := .rows }}
+          <div class="itemsOff">
+            <p>{{ $row.imageLabel }}</p>
+          </div>
+        {{- end }}
+      {{- end }}
+    </div>
+    <div
+      class="container-itemsAL d-flex flex-column flex-shrink=0 flex-lg-grow-0 col-lg-4 px-2"
+      style="width: 201px;"
+    >
+      <div class="main-itemsOff">
+        <b>{{ i18n "Container tag" }}</b>
+      </div>
+      {{- with $section.platformImages }}
+        {{- range $row := .rows }}
+          <div class="itemsOff">
+            <p><code>{{ $row.tag }}</code></p>
+          </div>
+        {{- end }}
+      {{- end }}
+    </div>
+    <div
+      class="container-itemsAL d-flex flex-column flex-grow-1 flex-lg-grow-0 col-lg-4 px-2"
+    >
+      <div class="main-itemsOff">
+        <b>{{ i18n "Link to the repository" }}</b>
+      </div>
+      {{- with $section.platformImages }}
+        {{- range $row := .rows }}
+          <div class="itemsOff">
+            <p>
+              <a href="{{ $row.repoUrl }}">{{ $row.repoLabel }}</a>
+            </p>
+          </div>
+        {{- end }}
+      {{- end }}
+    </div>
+  </div>
+
+  {{/* UBI alternatives table */}}
+  {{- with $section.ubiAlternatives }}
+    <h4>{{ i18n "AlmaLinux OS UBI-alternatives:" }}</h4>
+    <div class="container-AL d-flex">
+      <div class="container-AlmaLinuxOS10 d-flex">
+        <div class="container-itemsAL" style="margin: 0 10px 0 0;">
+          <div class="main-itemsTr">
+            <b>{{ i18n "Image" }}</b>
+          </div>
+          <div class="image-items">
+            {{- range .images }}
+              <div class="itemsTr">
+                <p>{{ .name }}</p>
+              </div>
+            {{- end }}
+          </div>
+        </div>
+        <div
+          class="container-itemsAL d-flex flex-column ps-3"
+          style="margin: 0 10px 0 0;"
+        >
+          <div class="main-itemsTr">
+            <b>{{ i18n "Container tag" }}</b>
+          </div>
+          <div class="tag-items">
+            {{- range .images }}
+              <div class="itemsTr">
+                {{- $tag := printf "%s-%s" $version.id .suffix -}}
+                <p><code>almalinux/{{ $tag }}</code></p>
+              </div>
+            {{- end }}
+          </div>
+        </div>
+        <div class="container-itemsAL d-flex flex-column ps-3">
+          <div class="main-itemsTr">
+            <b>{{ i18n "Link to the repository" }}</b>
+          </div>
+          <div class="link-items">
+            {{- range .images }}
+              {{- $tag := printf "%s-%s" $version.id .suffix -}}
+              <div class="itemsTr">
+                <p>
+                  {{- range $ctas }}
+                    {{- /* assume the base URL ends with the image name; append /$tag */ -}}
+                    {{- $url := printf "%s/%s" .repoUrl $tag -}}
+                    <a href="{{ $url }}">
+                      <span class="d-none d-md-inline"
+                        >{{ replace $url "https://" "" }}</span
+                      >
+                      <span class="d-inline d-md-none"
+                        >{{ replace $url "https://" "" }}</span
+                      > </a
+                    ><br />
+                  {{- end }}
+                </p>
+              </div>
+            {{- end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  {{- end }}
+
+  {{- with $bootc }}
+    <h4>{{ i18n "Official Bootable Container Base Image (bootc):" }}</h4>
+    <div class="al-article-content p-0 pb-3 al-wysiwyg">
+      <p>
+        {{ i18n "(Experimental) bootc images can be found here:" }}
+        <a href="{{ .repoUrl }}">{{ replace .repoUrl "https://" "" }}</a>
+      </p>
+      <p>
+        {{ i18n "Additional bootc images maintained by the " }}
+        <a href="https://wiki.almalinux.org/sigs/Atomic.html"
+          >AlmaLinux Atomic SIG</a
+        >.
+      </p>
+    </div>
+  {{- end }}
+</div>

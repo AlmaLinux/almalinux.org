@@ -1,0 +1,73 @@
+{{ $version := .Version }}
+{{ $arch := .Arch }}
+
+{{/* Map section id to icon asset so icons are defined in the template, not data. */}}
+{{ $iconMap := dict
+  "iso_images" (dict "src" "/images/iso-icon-F.svg" "alt" "ISO Image")
+  "cloud_images" (dict "src" "/images/cloud-icon-F.svg" "alt" "Cloud Image")
+  "container_images" (dict "src" "/images/container-icon-F.svg" "alt" "Container Image")
+  "live_media" (dict "src" "/images/live-icon-F.svg" "alt" "Live Media Image")
+  "vagrant_boxes" (dict "src" "/images/vagrant-icon-F1.svg" "alt" "Vagrant Image")
+  "incus_lxc" (dict "src" "/images/Incus-and-LXC-icon-F.svg" "alt" "Incus and LXC Image")
+  "wsl" (dict "src" "/images/wsl-icon-F.svg" "alt" "WSL Image")
+  "raspberry_pi" (dict "src" "/images/raspberry-pi-icon-F.svg" "alt" "Raspberry Image")
+}}
+
+
+<div class="mt-3 icons">
+  {{ $sectionCount := len $arch.sections }}
+  <div
+    class="container-all-options d-flex mb-3 px-3 justify-content-between"
+    {{ if lt $sectionCount 3 }}
+      style="justify-content: space-around !important;"
+    {{ end }}
+  >
+    {{ range $arch.sections }}
+      {{ $icon := index $iconMap .id }}
+      {{ if $icon }}
+        <a href="#{{ .anchorPrefix }}-{{ $arch.id }}-{{ $version.id }}">
+          <img
+            loading="lazy"
+            class="al-index-download-icon img"
+            src="{{ $icon.src }}"
+            alt="{{ $icon.alt }}"
+          />
+        </a>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
+
+{{ range $arch.sections }}
+  <div class="p-4 container-{{ .anchorPrefix }}">
+    <a
+      class="anchor"
+      id="{{ .anchorPrefix }}-{{ $arch.id }}-{{ $version.id }}"
+      style="position: relative; top: -116px;"
+    ></a>
+    <h2
+      class="pb-2 text-center border-bottom"
+      style="border-bottom-color: #14598a!important;"
+    >
+      {{ .title }}
+    </h2>
+
+    {{ if eq .id "iso_images" }}
+      {{ partial "get-almalinux/section-iso.html" (dict "Version" $version "Arch" $arch "Section" .) }}
+    {{ else if eq .id "cloud_images" }}
+      {{ partial "get-almalinux/section-cloud.html" (dict "Version" $version "Arch" $arch "Section" .) }}
+    {{ else if eq .id "container_images" }}
+      {{ partial "get-almalinux/section-container.html" (dict "Version" $version "Arch" $arch "Section" .) }}
+    {{ else if eq .id "live_media" }}
+      {{ partial "get-almalinux/section-live.html" (dict "Version" $version "Arch" $arch "Section" .) }}
+    {{ else if eq .id "vagrant_boxes" }}
+      {{ partial "get-almalinux/section-vagrant.html" (dict "Version" $version "Arch" $arch "Section" .) }}
+    {{ else if eq .id "incus_lxc" }}
+      {{ partial "get-almalinux/section-incus-lxc.html" (dict "Version" $version "Arch" $arch "Section" .) }}
+    {{ else if eq .id "wsl" }}
+      {{ partial "get-almalinux/section-wsl.html" (dict "Version" $version "Arch" $arch "Section" .) }}
+    {{ else if eq .id "raspberry_pi" }}
+      {{ partial "get-almalinux/section-raspberrypi.html" (dict "Version" $version "Arch" $arch "Section" .) }}
+    {{ end }}
+  </div>
+{{ end }}
