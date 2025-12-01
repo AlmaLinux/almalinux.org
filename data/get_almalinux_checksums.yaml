@@ -1,3 +1,7 @@
+# If you make changes to this file, be sure to run
+# `python3 tools/generate_get_almalinux_yaml.py` to generate the new data.
+# Also, please first read the documentation in README.md, section "Updating 'Get AlmaLinux' page".
+
 versions:
   "10":
     fullVersion: "10.1"
@@ -38,7 +42,7 @@ versions:
         boot: "e4e246af934c56de2609e218bacaa9cf32a90c4bfe2f53526a2c4bc1cce61ba3"
         minimal: "925a7c82cbf997ae22aeb5d6f5d798dd9a44ea7288cd68bb84a939af13021ec3"
   "10-kitten":
-    # do not add a fullVersion for kitten releases
+    # do not add a fullVersion for kitten releases, it will mess up the artifact URLs
     "x86_64":
       iso:
         dvd: "f4e8d01488528a84f63a297250bedc839d102fa7449568558f7990279a1ba042"

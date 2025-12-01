@@ -143,7 +143,7 @@ versions:
           arches: ["x86_64", "aarch64"]
           marketplaceUrls:
             x86_64: "https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.kitten"
-            aarch64: "https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.kitten" # TODO: Fix?
+            aarch64: "https://azuremarketplace.microsoft.com/en-us/marketplace/apps/almalinux.kitten"
         openNebula:
           arches: ["x86_64", "x86_64_v2", "aarch64"]
           imageUrl: "https://kitten.repo.almalinux.org/{major}/cloud/{arch}/images/AlmaLinux-Kitten-OpenNebula-10-latest.{arch}.qcow2"

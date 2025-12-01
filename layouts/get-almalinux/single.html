@@ -1,3 +1,8 @@
+{{/*
+  If you need to update this page to show the newest AlmaLinux release,
+  please read the documentation in README.md, section "Updating 'Get AlmaLinux' page".
+*/}}
+
 {{ define "main" }}
   <div class="al-body-container">
     <section class="al-page-index">
@@ -10,7 +15,6 @@
           <div class="al-tab-wrap">
             <!-- OS Version + Architecture Tabs Combined -->
             {{ partial "get-almalinux/tabs" . }}
-
 
             <!-- Tab Content from data -->
             {{ partial "get-almalinux/tab-content" . }}
