@@ -9,9 +9,9 @@
 {{- $section := .Section -}}
 {{- $bootc := $section.bootc -}}
 {{- $ctas := slice
-  (dict "class" "itemAl_01" "url" "https://hub.docker.com/_/almalinux" "i18nKey" "Get Docker Image")
-  (dict "class" "itemAl_02" "url" "https://quay.io/organization/almalinuxorg" "i18nKey" "Get OCI Image from Quay.io")
-  (dict "class" "itemAl_03" "url" "https://github.com/orgs/AlmaLinux/packages" "i18nKey" "Get OCI Image from GitHub")
+  (dict "class" "itemAl_01" "url" "https://hub.docker.com/_/almalinux" "repoUrl" "https://hub.docker.com/r/almalinux" "i18nKey" "Get Docker Image")
+  (dict "class" "itemAl_02" "url" "https://quay.io/organization/almalinuxorg" "repoUrl" "https://quay.io/repository/almalinuxorg" "i18nKey" "Get OCI Image from Quay.io")
+  (dict "class" "itemAl_03" "url" "https://github.com/orgs/AlmaLinux/packages" "repoUrl" "https://github.com/orgs/AlmaLinux/packages" "i18nKey" "Get OCI Image from GitHub")
 -}}
 
 
@@ -133,13 +133,13 @@
                 <p>
                   {{- range $ctas }}
                     {{- /* assume the base URL ends with the image name; append /$tag */ -}}
-                    {{- $url := printf "%s/%s" .url $tag -}}
+                    {{- $url := printf "%s/%s" .repoUrl $tag -}}
                     <a href="{{ $url }}">
                       <span class="d-none d-md-inline"
-                        >{{ replace (printf "%s/%s" .url $tag) "https://" "" }}</span
+                        >{{ replace $url "https://" "" }}</span
                       >
                       <span class="d-inline d-md-none"
-                        >{{ replace .url "https://" "" }}</span
+                        >{{ replace $url "https://" "" }}</span
                       > </a
                     ><br />
                   {{- end }}
