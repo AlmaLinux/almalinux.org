@@ -58,19 +58,19 @@
       {{ if eq $block.id "minimal" }}
         <div class="Link-Downloads-OS{{ $version.id }} d-flex gap-30 mt-4">
           {{- with $mirrorsUrl }}
-          <a href="{{ $mirrorsUrl }}" class="fw-bold">
-            {{ i18n "Download ISO from mirrors" }}
-          </a>
+            <a href="{{ $mirrorsUrl }}" class="fw-bold">
+              {{ i18n "Download ISO from mirrors" }}
+            </a>
           {{- end }}
           {{- with $torrentUrl }}
-          <a href="{{ $torrentUrl }}" class="fw-bold">
-            {{ i18n "Download .torrent file" }}
-          </a>
+            <a href="{{ $torrentUrl }}" class="fw-bold">
+              {{ i18n "Download .torrent file" }}
+            </a>
           {{- end }}
           {{- with $checksumUrl }}
-          <a href="{{ $checksumUrl }}" class="fw-bold">
-            {{ i18n "Download CHECKSUM" }}
-          </a>
+            <a href="{{ $checksumUrl }}" class="fw-bold">
+              {{ i18n "Download CHECKSUM" }}
+            </a>
           {{- end }}
         </div>
       {{ end }}
