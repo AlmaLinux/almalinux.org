@@ -1,16 +1,16 @@
 ---
 title: "AlmaLinux Day: Vancouver Recap"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, board of directors"
- image: /users/benny.jpeg
-date: '2025-12-01'
+author:
+  name: "benny Vasquez"
+  bio: "Chair, board of directors"
+  image: /users/benny.jpeg
+date: "2025-12-01"
 images:
   - /blog-images/2025/aldv_vancouver_recap.png
 post:
-    title: "AlmaLinux Day: Vancouver Recap"
-    image: /blog-images/2025/aldv_vancouver_recap.png
+  title: "AlmaLinux Day: Vancouver Recap"
+  image: /blog-images/2025/aldv_vancouver_recap.png
 ---
 
 [AlmaLinux Day: Vancouver](https://almalinux.org/almalinux-day-vancouver-2025/) took place in August, and what a great event it was! As our virst time in Vancouver, and our first event adjacent to SIGGRAPH, we had no idea what to expect, but it was a blast! Keep reading to get a full rundown of what went on at the event.
@@ -27,9 +27,9 @@ I also want to give a special shout-out to @Tristan Theroux for all his efforts 
 
 ### Speaking Sessions
 
-We also had an amazing group of speakers! Thank you to everyone who submitted a talk, and to the incredible folks who helped make the day great! 
+We also had an amazing group of speakers! Thank you to everyone who submitted a talk, and to the incredible folks who helped make the day great!
 
-Watch the individual sessions below, or find [the full AlmaLinux Day: Vancouver playlist on Youtube](https://www.youtube.com/watch?v=vOHII_pax0I&list=PLqKzWfm6zyltyY1kcVB66K4-qunmfNSmh). 
+Watch the individual sessions below, or find [the full AlmaLinux Day: Vancouver playlist on Youtube](https://www.youtube.com/watch?v=vOHII_pax0I&list=PLqKzWfm6zyltyY1kcVB66K4-qunmfNSmh).
 
 <figure>
   {{< youtube id="vOHII_pax0I" width="65%" height="36%" autoplay="false" controls="true" mute="false" >}}
@@ -76,7 +76,6 @@ Watch the individual sessions below, or find [the full AlmaLinux Day: Vancouver 
   <figcaption>A Strategic Playbook for Large-Scale Linux Migrations with AlmaLinux</figcaption>
 </figure>
 
-
 ### Swag
 
 We had a lot of AlmaLinux swag to share with ALDV attendees, including stickers (with some new ones that went like hotcakes!), an ALDV bag, t-shirts, pins, sunglasses, and pens.
@@ -117,10 +116,10 @@ We are definitely planning to bring AlmaLinux Day back to Vancouver, so if you a
 
 ### Coming Soon: A New SIG!
 
-Another exciting update to come out of ALDV is the plan to create a new SIG around Media & Entertainment! Watch for that announcement soon! 
+Another exciting update to come out of ALDV is the plan to create a new SIG around Media & Entertainment! Watch for that announcement soon!
 
 ## More AlmaLinux days? Keep in touch, and get involved!
 
-If you have event planning experience and want to help us, we're always looking for help! Just join the Marketing room on [chat.almalinux.org](https://chat.almalinux.org), and we'll get you up to speed! 
+If you have event planning experience and want to help us, we're always looking for help! Just join the Marketing room on [chat.almalinux.org](https://chat.almalinux.org), and we'll get you up to speed!
 
 If you want to stay up-to-date, follow us on all of the various places: [our forum](https://almalinux.discourse.group/), [Reddit](https://www.reddit.com/r/AlmaLinux/), [X](https://twitter.com/AlmaLinux), [Mastodon](https://fosstodon.org/@almalinux/), [LinkedIn](https://www.linkedin.com/company/80320905/), and [YouTube](https://www.youtube.com/channel/UCt9lpkqUPp1FUEi9uqVlPQA). We also launched a newsletter this year, which you can [subscribe to on LinkedIn](https://www.linkedin.com/newsletters/almalinux-news-7123058222835376128/) or via email on [our mailing list](https://lists.almalinux.org/postorius/lists/newsletters.lists.almalinux.org/).
