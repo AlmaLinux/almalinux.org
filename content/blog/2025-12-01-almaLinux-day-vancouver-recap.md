@@ -112,7 +112,7 @@ Jonathan Wright and Neal Gompa showcased how much easier and more robust the ins
 
 ### Future AlmaLinux Days
 
-We are definitely planning to bring AlmaLinux Day back to Vancouver, so if you are interested in joining us at one in the future, stay tuned for future announcements!
+We are definitely planning to bring AlmaLinux Day back to SIGGRAPH and to more locations around the world. If you are interested in joining us in the future, stay tuned for the announcements!
 
 ### Coming Soon: A New SIG!
 
