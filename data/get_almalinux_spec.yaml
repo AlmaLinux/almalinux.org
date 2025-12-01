@@ -120,8 +120,8 @@ versions:
     patterns:
       iso:
         base: "https://kitten.repo.almalinux.org/{major}/isos/{arch}/AlmaLinux-Kitten-10-latest-{arch}-{variant}.iso"
-        mirrorsUrl: "https://mirrors.almalinux.org/isos/{arch}/{full}.html" # TODO: Fix
-        torrentUrl: "https://repo.almalinux.org/almalinux/{full}/isos/{arch}/AlmaLinux-{full}-{arch}.torrent" # TODO: Fix
+        mirrorsUrl: "" # TODO: Fix
+        torrentUrl: "" # TODO: Fix?
         checksumUrl: "https://kitten.repo.almalinux.org/{major}/isos/{arch}/CHECKSUM"
       cloud:
         # Top-level `arches` here means "cloud images exist only for these arches".
@@ -153,6 +153,7 @@ versions:
         # Live media exist only for the listed arches; the generator expands
         # each variant below into arch-specific URLs and a shared checksum URL.
         arches: ["x86_64", "x86_64_v2", "aarch64"]
+        checksumUrl: "https://kitten.repo.almalinux.org/{major}/live/{arch}/CHECKSUM"
         variants:
           gnome:
             label: "GNOME"
