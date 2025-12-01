@@ -115,8 +115,8 @@ def main() -> int:
         # fullVersion now lives in the checksums file so there's a single
         # place to bump when a new point release comes out.
         full = str(v_checks.get("fullVersion", vid))
-        label = v_merged.get("label", f"AlmaLinux {vid}")
-        major = full.split(".")[0]
+        label = v_merged.get("label", f"AlmaLinux {full}")
+        major = vid
 
         patterns = v_merged.get("patterns", {})
 
