@@ -17,7 +17,7 @@ The AlmaLinux community is thrilled to announce the formation of our newest Spec
 
 This group is dedicated to supporting and enhancing the use of AlmaLinux within the professional visual effects (VFX), animation, and post-production industry. With recent changes, licensing and support costs are creating significant disruption in the M&E software ecosystem.The need for a stable, community-owned, enterprise-grade Linux platform has never been more urgent.
 
-The Media & Entertainment SIG is here to bridge that gap.
+[The Media & Entertainment SIG](https://wiki.almalinux.org//sigs/MediaAndEntertainmentSIG) is here to bridge that gap.
 
 ### Our Mission: Ensuring Production-Ready Stability
 
