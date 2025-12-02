@@ -1,6 +1,6 @@
 versions:
-  '10':
-    fullVersion: '10.1'
+  "10":
+    fullVersion: "10.1"
     x86_64:
       iso:
         boot: 68a9e14fa252c817d11a3c80306e5a21b2db37c21173fd3f52a9eb6ced25a4a0
@@ -74,8 +74,8 @@ versions:
         boot: a2f54aaf14e05f2ecf1d2bb73fd908228dafee99e1660c345cbc6c6ca7da5acc
         dvd: c1ad688f4f9a3c8ee19c2a008588dcf150e0bb0ea6eae0a2ad018ee4148f79df
         minimal: f90d5a7731729db12b8ab784007b20b45abc2468e99887da6f369bd74602f894
-  '9':
-    fullVersion: '9.7'
+  "9":
+    fullVersion: "9.7"
     x86_64:
       iso:
         boot: 494d09f608b325ef42899b5ce38ba1b17755a639f5558b9b98a031b0696e694a
@@ -106,8 +106,8 @@ versions:
         minimal: 652b2791a40a67f581c2c45a39cef8ef1708b9beb5b44f690a4174496f509c29
       cloud:
         genericCloud: f16abd0ff12ba54f43c6a5675546cc72bc8f4a76bf7852e645ccf54cca1e8827
-  '8':
-    fullVersion: '8.10'
+  "8":
+    fullVersion: "8.10"
     x86_64:
       iso:
         boot: cc3e61faf2dd6c9c80d3beeb47eaaba235ac13fe1b617209c3c1e546528ccb99
