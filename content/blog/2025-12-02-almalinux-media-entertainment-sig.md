@@ -31,7 +31,7 @@ Excited and want to get involved? We're immediately looking for individuals with
 
 Join our efforts:
 
-- Meetings: First Wednesday of every month at 16:00 UTC (virtual).
+- Meetings: First Wednesday of every month at 18:00 UTC (virtual).
 - Communication: [~sig-media-entertainment on chat.almalinux.org](https://chat.almalinux.org/almalinux/channels/sig-media-entertainment) and [our mailing list](https://lists.almalinux.org/mailman3/lists/media-entertainment-sig.lists.almalinux.org/).
 
 ### What's Next on the Timeline?
