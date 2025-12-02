@@ -81,10 +81,15 @@ The "Get AlmaLinux" page is dynamically generated using structured data and Hugo
 **How it works:**
 
 - **Data sources:**
-  - `data/get_almalinux_spec.yaml`: Defines available AlmaLinux versions, supported architectures, and the configuration for each section (e.g., ISO, Cloud, Container).
-  - `data/get_almalinux_checksums.yaml`: Contains, for each version, the current highest point release (`fullVersion`) and the checksums for all artifacts (ISOs and cloud images) per architecture.
+  - `data/get_almalinux_spec.yaml`: Defines available AlmaLinux versions, supported architectures, and the configuration for
+  each section (e.g., ISO, Cloud, Container).
+  - `data/get_almalinux_checksums.yaml`: Contains, for each version, the current highest point release (`fullVersion`) and the
+  checksums for all artifacts (ISOs and cloud images) per architecture. This file can (and probably will) be generated.
 
 - **Generation script:**
+  - The script `tools/generate_get_almalinux_checksums.py` reads `data/get_almalinux_spec.yaml`, queries
+  the CHECKSUM URLs defined for ISO and Cloud images, extracts the checksums and the current minor release
+  and produces `data/get_almalinux_checksums.yaml`.
   - The script `tools/generate_get_almalinux_yaml.py` reads both YAML files, merges their data, and produces `data/get_almalinux.yaml`. This merged file is used by the Hugo partials to render the page.
   - `data/get_almalinux.yaml` is **not** tracked in git. It is generated automatically by the GitHub CI workflow during site builds, but you must run the script manually for local development if you change the source YAML files.
 
@@ -99,13 +104,17 @@ The "Get AlmaLinux" page is dynamically generated using structured data and Hugo
 
 **In most cases, you only need to update `get_almalinux_checksums.yaml` when a new point release is available.**
 
-1. Open `data/get_almalinux_checksums.yaml` and edit the entry for the given major version. Update `fullVersion` with the new point release and upddate the checksums for each architecture and artifact. The format is designed to be self-explanatory.
-2. Run the generation script to see your changes locally:
+1. Run the checksum generation script to update `get_almalinux_checksums.yaml` by looking at the source repos:
+   ```bash
+   python3 tools/generate_get_almalinux_checksums.py
+   ```
+2. Optionally, run the generation script to see your changes locally:
    ```bash
    python3 tools/generate_get_almalinux_yaml.py
    ```
    This updates `data/get_almalinux.yaml` for use by Hugo.
    This will be done automatically by the Gitlab CI scripts during deployment.
+3. Commit the resulting changes to `data/get_almalinux_checksums.yaml` and open a PR.
 
 ##### Editing Sections, Architectures, or URL Patterns
 
