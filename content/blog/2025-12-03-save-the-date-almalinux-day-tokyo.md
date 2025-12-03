@@ -1,16 +1,16 @@
 ---
 title: "Save the date - AlmaLinux Day: Tokyo January 23rd!"
 type: blog
-author: 
- name: "benny Vasquez"
- bio: "Chair, board of directors"
- image: /users/benny.jpeg
-date: '2025-12-03'
+author:
+  name: "benny Vasquez"
+  bio: "Chair, board of directors"
+  image: /users/benny.jpeg
+date: "2025-12-03"
 images:
   - /blog-images/2025/tokyo-2026.png
 post:
-    title: "Save the date - AlmaLinux Day: Tokyo January 23rd!"
-    image: /blog-images/2025/tokyo-2026.png
+  title: "Save the date - AlmaLinux Day: Tokyo January 23rd!"
+  image: /blog-images/2025/tokyo-2026.png
 ---
 
 Our friends in the [Japan AlmaLinux Users Group](https://almalinux.connpass.com/) are planning the next AlmaLinux Day: Tokyo!
@@ -42,5 +42,3 @@ We have had four AlmaLinux Days in the last two years! With nearly incredible sp
 	<a href="https://youtu.be/vOHII_pax0I?si=-EJM7rjwGj_B-7pl"><img src="/blog-images/2025/aldv_25.png" class="img-fluid" width="55%" alt="Welcome to AlmaLinux Day: Tokyo 2023"></a>
 	<figcaption>AlmaLinux Day: Vancouver 2025</figcaption>
 </figure>
-
-
