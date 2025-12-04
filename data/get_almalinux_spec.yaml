@@ -56,7 +56,7 @@ common:
   raspberrypi:
     # Raspberry Pi images are aarch64-only.
     arches: ["aarch64"]
-    url: "https://repo.almalinux.org/rpi/{major}/images/"
+    url: "https://repo.almalinux.org/almalinux/{major}/raspberrypi/images/"
   vagrant:
     registryUrls:
       x86_64: "https://portal.cloud.hashicorp.com/vagrant/discover/almalinux/{major}"
@@ -109,6 +109,8 @@ versions:
           kde:
             label: "KDE"
             url: "https://repo.almalinux.org/almalinux/{major}/live/{arch}/AlmaLinux-{full}-{arch}-Live-KDE.iso"
+      raspberrypi:
+        arches: ["aarch64"]
       vagrant:
         arches: ["x86_64", "x86_64_v2", "aarch64"]
       incusLxc: # Empty block, not supported on 10
@@ -271,7 +273,6 @@ versions:
             url: "https://repo.almalinux.org/almalinux/{major}/live/{arch}/AlmaLinux-{full}-{arch}-Live-MATE.iso"
       raspberrypi:
         arches: ["aarch64"]
-        url: "https://repo.almalinux.org/rpi/images/"
       vagrant:
         arches: ["x86_64", "aarch64"]
       incusLxc:
