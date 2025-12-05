@@ -14,8 +14,7 @@
                 <a
                   class="al-article-title-link"
                   href="{{ .RelPermalink }}"
-                  style="text-decoration:none;"
-                >
+                  style="text-decoration:none;">
                   <h3>{{ .Title }}</h3>
                 </a>
               </div>
@@ -41,8 +40,7 @@
               <div
                 class="al-article-date d-flex align-items-center pb-4"
                 title=""
-                dir="ltr"
-              >
+                dir="ltr">
                 <i class="bi bi-calendar pe-1"></i>
                 <span>{{ .Date.Format "Mon Jan 2, 2006" }}</span>
               </div>
@@ -61,8 +59,7 @@
                 <div class="al-article-actions" dir="ltr">
                   <a
                     href=" {{ .RelPermalink }} "
-                    class="al-article-continue d-flex align-items-center"
-                  >
+                    class="al-article-continue d-flex align-items-center">
                     <i class="bi bi-chevron-double-right pe-1"></i>
                     <span>{{ i18n "Continue reading" }}</span>
                   </a>
@@ -83,8 +80,7 @@
                     href="{{ $paginator.Prev.URL }}"
                     tabindex="-1"
                     aria-disabled="true"
-                    style="text-decoration:none;"
-                  >
+                    style="text-decoration:none;">
                     Previous
                   </a>
                 </li>
@@ -94,8 +90,7 @@
                     class="page-link disabled"
                     tabindex="-1"
                     aria-disabled="true"
-                    style="text-decoration:none;"
-                  >
+                    style="text-decoration:none;">
                     Previous
                   </a>
                 </li>
@@ -107,8 +102,7 @@
                   <a
                     class="page-link "
                     href="{{ .URL }}"
-                    class="pagination__link"
-                  >
+                    class="pagination__link">
                     {{ .PageNumber }}
                   </a>
                 </li>
@@ -121,8 +115,7 @@
                     href="{{ $paginator.Next.URL }}"
                     tabindex="-1"
                     aria-disabled="true"
-                    style="text-decoration:none;"
-                  >
+                    style="text-decoration:none;">
                     Next
                   </a>
                 </li>
@@ -132,8 +125,7 @@
                     class="page-link disabled"
                     tabindex="-1"
                     aria-disabled="true"
-                    style="text-decoration:none;"
-                  >
+                    style="text-decoration:none;">
                     Next
                   </a>
                 </li>

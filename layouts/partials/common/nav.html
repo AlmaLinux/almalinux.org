@@ -13,16 +13,14 @@
 </style>
 <nav
   id="al-primary-navbar"
-  class="al-primary-navbar navbar p-0 sticky-top navbar-expand-lg navbar-dark flex-column with-motd"
->
+  class="al-primary-navbar navbar p-0 sticky-top navbar-expand-lg navbar-dark flex-column with-motd">
   <div class="container  my-3">
     <a class="navbar-brand" href="{{ "" | relLangURL }}">
       <img
         src="/images/logo.svg"
         alt="AlmaLinux OS logo"
         width="165.93"
-        height="32"
-      />
+        height="32" />
     </a>
     <button
       class="navbar-toggler"
@@ -31,8 +29,7 @@
       data-bs-target="#main-navbar"
       aria-controls="main-navbar"
       aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="main-navbar">
@@ -41,8 +38,7 @@
           <a
             class="nav-link"
             href="{{ "/blog" | relLangURL }}"
-            style="margin-top:5px"
-          >
+            style="margin-top:5px">
             {{ i18n "Blog" }}
           </a>
         </li>
@@ -50,8 +46,7 @@
           <a
             class="nav-link"
             href="https://wiki.almalinux.org"
-            style="margin-top:5px"
-          >
+            style="margin-top:5px">
             {{ i18n "Wiki" }}
           </a>
         </li>
@@ -61,20 +56,17 @@
             id="navbarDropResources"
             data-toggle="dropdown"
             aria-expanded="false"
-            style="margin-top:5px"
-          >
+            style="margin-top:5px">
             {{ i18n "Resources" }}
           </a>
           <ul
             class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-start"
-            aria-labelledby="navbarDropResources"
-          >
+            aria-labelledby="navbarDropResources">
             <li>
               <a
                 class="dropdown-item"
                 href="https://wiki.almalinux.org/documentation/migration-guide"
-                style="color:aliceblue"
-              >
+                style="color:aliceblue">
                 {{ i18n "Migrate from CentOS 8" }}
               </a>
             </li>
@@ -82,8 +74,7 @@
               <a
                 class="dropdown-item"
                 href="{{ "/certification" | relLangURL }}"
-                style="color:aliceblue"
-              >
+                style="color:aliceblue">
                 {{ i18n "Certification" }}
               </a>
               <ul>
@@ -91,8 +82,7 @@
                   <a
                     class="dropdown-nested dropdown-item"
                     href="{{ "/certification/hardware-certification" | relLangURL }}"
-                    style="color:aliceblue"
-                  >
+                    style="color:aliceblue">
                     {{ i18n "Hardware" }}
                   </a>
                 </li>
@@ -100,8 +90,7 @@
                   <a
                     class="dropdown-item dropdown-nested"
                     href="{{ "/certification/hardware-certification/hardware-certification-program" | relLangURL }}"
-                    style="color:aliceblue"
-                  >
+                    style="color:aliceblue">
                     {{ i18n "Certification Program" }}
                   </a>
                 </li>
@@ -109,8 +98,7 @@
                   <a
                     class="dropdown-item dropdown-nested"
                     href="{{ "/certification/software-certification" | relLangURL }}"
-                    style="color:aliceblue"
-                  >
+                    style="color:aliceblue">
                     {{ i18n "Software" }}
                   </a>
                 </li>
@@ -120,8 +108,7 @@
               <a
                 class="dropdown-item"
                 href="{{ "/alesco" | relLangURL }}"
-                style="color:aliceblue"
-              >
+                style="color:aliceblue">
                 {{ i18n "ALESCo" }}
               </a>
             </li>
@@ -129,8 +116,7 @@
               <a
                 class="dropdown-item"
                 href="https://bugs.almalinux.org"
-                style="color:aliceblue"
-              >
+                style="color:aliceblue">
                 {{ i18n "Report Bugs" }}
               </a>
             </li>
@@ -138,8 +124,7 @@
               <a
                 class="dropdown-item"
                 href="{{ "/members" | relLangURL }}"
-                style="color:aliceblue"
-              >
+                style="color:aliceblue">
                 {{ i18n "Membership" }}
               </a>
             </li>
@@ -147,8 +132,7 @@
               <a
                 class="dropdown-item"
                 href="{{ "/elevate" | relLangURL }}"
-                style="color:aliceblue"
-              >
+                style="color:aliceblue">
                 ELevate
               </a>
             </li>
@@ -156,8 +140,7 @@
               <a
                 class="dropdown-item"
                 href="https://lists.almalinux.org/"
-                style="color:aliceblue"
-              >
+                style="color:aliceblue">
                 {{ i18n "Mailing Lists" }}
               </a>
             </li>
@@ -165,8 +148,7 @@
               <a
                 class="dropdown-item"
                 href="https://openqa.almalinux.org/"
-                style="color:aliceblue"
-              >
+                style="color:aliceblue">
                 {{ i18n "openQA" }}
               </a>
             </li>
@@ -174,8 +156,7 @@
               <a
                 class="dropdown-item"
                 href="https://build.almalinux.org/"
-                style="color:aliceblue"
-              >
+                style="color:aliceblue">
                 {{ i18n "Build System" }}
               </a>
             </li>
@@ -183,8 +164,7 @@
               <a
                 class="dropdown-item"
                 href="{{ "/security" | relLangURL }}"
-                style="color:aliceblue"
-              >
+                style="color:aliceblue">
                 {{ i18n "Security" }}
               </a>
             </li>
@@ -192,9 +172,8 @@
               <a
                 class="dropdown-item"
                 href="https://events.almalinux.org/"
-                style="color:aliceblue"
-              >
-                {{ i18n "Meetings, ALESCo and other events" }}
+                style="color:aliceblue">
+                {{ i18n "SIGs, ALESCo and other events" }}
               </a>
               <ul>
                 <li>
@@ -210,8 +189,7 @@
                   <a
                     class="dropdown-nested dropdown-item"
                     href="{{ "/almalinux-day-vancouver-2025/" | relLangURL }}"
-                    style="color:aliceblue"
-                  >
+                    style="color:aliceblue">
                     {{ i18n "ALD Vancouver 2025" }}
                   </a>
                 </li>
@@ -219,8 +197,7 @@
                   <a
                     class="dropdown-nested dropdown-item"
                     href="{{ "/aldt-2024" | relLangURL }}"
-                    style="color:aliceblue"
-                  >
+                    style="color:aliceblue">
                     {{ i18n "ALD Tokyo 2024" }}
                   </a>
                 </li>
@@ -228,8 +205,7 @@
                   <a
                     class="dropdown-item dropdown-nested"
                     href="{{ "/almalinux-day-germany-2024/" | relLangURL }}"
-                    style="color:aliceblue"
-                  >
+                    style="color:aliceblue">
                     {{ i18n "ALD Germany 2024" }}
                   </a>
                 </li>
@@ -237,8 +213,7 @@
                   <a
                     class="dropdown-item dropdown-nested"
                     href="{{ "/aldt-2023" | relLangURL }}"
-                    style="color:aliceblue"
-                  >
+                    style="color:aliceblue">
                     {{ i18n "ALD Tokyo 2023" }}
                   </a>
                 </li>
@@ -250,8 +225,7 @@
           <a
             class="nav-link"
             href="https://shop.almalinux.org/"
-            style="margin-top:5px"
-          >
+            style="margin-top:5px">
             {{ i18n "Shop" }}
           </a>
         </li>
@@ -259,8 +233,7 @@
           <a
             class="nav-link"
             href="{{ "/support" | relLangURL }}"
-            style="margin-top:5px"
-          >
+            style="margin-top:5px">
             {{ i18n "Get Support" }}
           </a>
         </li>
@@ -270,14 +243,12 @@
             id="navbarDropLanguages"
             data-toggle="dropdown"
             aria-expanded="false"
-            style="margin-top:3px"
-          >
+            style="margin-top:3px">
             <img src="/images/lang.svg" alt="Language" width="24" height="24" />
           </button>
           <ul
             class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-start"
-            aria-labelledby="navbarDropLanguages"
-          >
+            aria-labelledby="navbarDropLanguages">
             {{ range $.AllTranslations }}
               <li>
                 <a
@@ -285,8 +256,7 @@
                     active
                   {{ end }}"
                   href="{{ .RelPermalink }}"
-                  hreflang="{{ $.Lang }}"
-                >
+                  hreflang="{{ $.Lang }}">
                   {{ .Language.LanguageName }}
                 </a>
               </li>
@@ -297,8 +267,7 @@
             <li class="al-translate-callout">
               <a
                 class="dropdown-item al-language-link"
-                href="https://hosted.weblate.org/engage/almalinux/"
-              >
+                href="https://hosted.weblate.org/engage/almalinux/">
                 <i class="bi bi-pencil"></i>
                 {{ i18n "Translate" }}
               </a>
@@ -308,8 +277,7 @@
         <li class="nav-item ps-md-2">
           <a
             class="nav-link btn btn al-download-button"
-            href="{{ "/get-almalinux" | relLangURL }}"
-          >
+            href="{{ "/get-almalinux" | relLangURL }}">
             <i class="bi bi-download pe-1 d-none d-xl-inline"></i>
             {{ i18n "Download" }}
           </a>
@@ -323,8 +291,7 @@
   id="al-motd"
   dir="ltr"
   data-nosnippet=""
-  style="display: block; letter-spacing: 0px;"
->
+  style="display: block; letter-spacing: 0px;">
   <div class="container pl-3">
     <div class="text">
       <i class="bi bi-megaphone"></i> {{ i18n "Say Hello" }}

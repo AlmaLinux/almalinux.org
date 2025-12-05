@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "sass --watch assets/scss/main.scss assets/css/bundle.css"
+    "watch": "sass --watch assets/scss/main.scss assets/css/bundle.css",
+    "generate:get": "python3 tools/generate_get_almalinux_yaml.py"
   },
   "keywords": [],
   "author": "",
