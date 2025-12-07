@@ -172,7 +172,11 @@ def main():
                     output["versions"][vid][arch]["cloud"].update(checksums)
 
     with open(OUTPUT_FILE, "w") as f:
-        yaml.dump(output, f, sort_keys=False)
+        # We'll output the yaml to a string first so we can replace the
+        # single quotes for double quotes just like Prettier wants it.
+        yaml_str = yaml.dump(output, sort_keys=False)
+        yaml_str = yaml_str.replace("'", '"')
+        f.write(yaml_str)
     print(f"Wrote {OUTPUT_FILE}")
 
 if __name__ == "__main__":
