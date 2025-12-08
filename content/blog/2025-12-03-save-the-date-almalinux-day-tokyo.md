@@ -5,7 +5,7 @@ author:
   name: "benny Vasquez"
   bio: "Chair, board of directors"
   image: /users/benny.jpeg
-date: "2025-12-07"
+date: "2025-12-08"
 images:
   - /blog-images/2025/aldt-2026-annoucement.png
 post:
@@ -49,3 +49,10 @@ We have had four AlmaLinux Days in the last two years! With nearly incredible sp
 	<a href="https://youtu.be/vOHII_pax0I?si=-EJM7rjwGj_B-7pl"><img src="/blog-images/2025/aldv_25.png" class="img-fluid" width="55%" alt="Welcome to AlmaLinux Day: Tokyo 2023"></a>
 </figure>
 </center>
+
+## Where do you want to see AlmaLinux?
+
+We're working on our 2026 show schedule and looking at expanding our AlmaLinux days again. Where would you like to see AlmaLinux Days? 
+
+<a href="mailto:benny@almalinux.org?subject=bring%20AlmaLinux%20Day%20to...">Tell us to bring AlmaLinux Days to you</a>, and then watch the newsletter ([subscribe to on LinkedIn](https://www.linkedin.com/newsletters/almalinux-news-7123058222835376128/) or [subscribe via email](https://lists.almalinux.org/postorius/lists/newsletters.lists.almalinux.org/)) to see when we'll be close to you!
+
