@@ -1,0 +1,771 @@
+{{ define "main" }}
+  <style>
+    @media (max-width: 1199px) {
+      h1 {
+        font-size: 60px !important;
+      }
+      .toppic_item_1 {
+        padding-top: 18% !important;
+      }
+    }
+    @media (max-width: 991px) {
+      h1 {
+        font-size: 50px !important;
+      }
+      h2 {
+        font-size: 40px !important;
+      }
+      h3 {
+        font-size: 20px !important;
+      }
+      .container-event {
+        max-height: none !important;
+        flex-direction: column !important;
+        align-items: center;
+      }
+      .item-event-1 {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .item-event-2 {
+        padding-left: 0 !important;
+      }
+      .item-headshot {
+        width: 50% !important;
+      }
+    }
+    @media (max-width: 767px) {
+      h1 {
+        font-size: 30px !important;
+        line-height: normal !important;
+      }
+      h2 {
+        font-size: 25px !important;
+      }
+      .toppic_item_1 {
+        padding-top: 44% !important;
+      }
+    }
+    @media (max-width: 474px) {
+      .item-headshot {
+        width: 80% !important;
+      }
+      table {
+        font-size: 8px !important;
+      }
+    }
+  </style>
+
+  <section>
+    <div class="al-body-container">
+      <section class="al-page-index">
+        <!-- thank you block block
+        <div class="al-index-register">
+          <div class="container al-py-md" style="padding: 0 40px 0 40px;">
+            <h2 style="font-size: 50px; letter-spacing: 0.80px; font-weight: 600; margin-bottom: 20px;">
+              {{ i18n "Thank you, Tokyo!!" }}
+            </h2>
+            <div style="margin-bottom: 20px; line-height: 28px; letter-spacing: 0.25px;" >
+              <i>{{ i18n "some words" }}</i>
+              <div>--from a person</div>
+              <span class="small text-uppercase mb-1">Chair of the Board of Directors</span>
+              <span class="small fw-light">AlmaLinux OS Foundation</span>
+            </div>
+            <div style="text-align: center">
+              <a href="youtube link" class="btn btn-lg px-4 me-md-2 al-cta-blue">{{ i18n "See the recordings on Youtube" }}</a>
+            </div>
+          </div>
+        </div>
+end thank you block-->
+        <div
+          class="al-index-topic-ALD"
+          style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('/landingpages/aldt-2026/aldt-2026-header.jpg');">
+          <div class="container al-py-lg">
+            <div class="topic_item_1" style="padding-top: 15%;">
+              <h1>{{ i18n "AlmaLinux Day: Tokyo" }}</h1>
+              <h3>
+                {{ i18n "January 23rd, 2026" }}
+              </h3>
+              <div>
+                {{ i18n "Fujitsu Uvance Kawasaki Tower" }}<br />
+                {{ i18n "Uvance Innovation Studio, 26th floor" }}<br />
+                {{ i18n "JR Kawasaki Tower" }}<br />
+                {{ i18n "1-5 Omiyacho" }}<br />
+                {{ i18n "Saiwai-ku" }}<br />
+                {{ i18n "Kawasaki City" }}<br />
+                {{ i18n "Kanagawa Prefecture" }}<br />
+              </div>
+            </div>
+            <div class="topic_item_2" style="padding-top: 30px;">
+              <a
+                href="https://almalinux.connpass.com/event/377157/"
+                class="btn btn-lg px-4 me-md-2 al-cta-blue"
+                ><i
+                  class="bi bi-box-arrow-in-right al-index-community-icon"></i>
+                {{ i18n "Reserve your spot!" }}</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="al-index-register">
+          <div class="container pt-4 px-3">
+            <h1>
+              {{ i18n "Register early to find all of the day's joys together!" }}
+            </h1>
+            <div>
+              {{ i18n "The details of this event are still being finalized, but you can find a preview of the schedule on the Japan AlmaLinux User's group page." }}
+
+
+              <h3>
+                <a href="https://almalinux.connpass.com/event/377157/"
+                  >AlmaLinux Day: Tokyo 2026</a
+                >
+              </h3>
+
+              <a href="https://almalinux.connpass.com/event/377157">
+                <div class="d-flex justify-content-center pt-5 px-3">
+                  <img
+                    loading="lazy"
+                    src="/landingpages/aldt-2026/aldt-2026-annoucement.png"
+                    alt="a header image that shows the event details"
+                    class="img-fluid w-75" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- schedule 
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1 class="py-3">
+                {{ i18n "A day of sharing and learning, celebrating open source" }}
+              </h1>
+              <div>
+                {{ i18n "Hosted at the beautiful" }}
+                <a href="https://www.ecuad.ca/about/visit/parking-transit"
+                  >{{ i18n "Emily Carr University of Art + Design" }}</a
+                >,
+                {{ i18n "this full-day event will highlight content from all over the industry. Join us just before SIGGRAPH to kick of your time in Vancouver the right way." }}
+              </div>
+              <div>{{ i18n "What to Expect:" }}</div>
+              <ul>
+                <li>{{ i18n "Engaging technical talks and demos" }}</li>
+                <li>{{ i18n "Community and enterprise use cases" }}</li>
+                <li>
+                  {{ i18n "Deep dives into Linux, containers, automation, and more" }}
+                </li>
+                <li>{{ i18n "Swag, stickers, and a surprise giveaway!" }}</li>
+              </ul>
+              <img
+                class="img-thumbnail"
+                src="/landingpages/aldv-2025/reliancetheatre.jpg"
+                alt="a collection of people sitting at a table with laptops in front of them"
+              />
+
+              <a
+                href="https://events.almalinux.org/e/almalinuxdayvancouver"
+                class="btn btn-lg px-4 me-md-2 al-cta-green"
+                ><i
+                  class="bi bi-box-arrow-in-right al-index-community-icon"
+                ></i>
+                {{ i18n "Reserve your spot!" }}</a
+              >
+
+              <h1 class="py-3">{{ i18n "Want to volunteer?" }}</h1>
+              <div>
+                {{ i18n "AlmaLinux Days are entirely volunteer-run events, so we can use your help! If you will be in Vancouver and want to help out, send us an email" }}
+                <a href="mailto:aldv@almalimux.org">aldv@almalimux.org</a>
+                {{ i18n "We would love to have you. Types of help we need:" }}
+              </div>
+              <ul>
+                <li>{{ i18n "The Night Before: Swag Prep Party" }} 🎁</li>
+                <li>{{ i18n "Check-In Desk" }} 📋</li>
+                <li>{{ i18n "Setup Crew" }} 🔧</li>
+                <li>{{ i18n "Teardown Team" }} 🧹</li>
+              </ul>
+              <a href="/blog/2025-07-22-volunteer-at-aldv/"
+                ><img
+                  class="img-thumbnail"
+                  src="/landingpages/aldv-2025/aldv_volunteers.png"
+                  alt="Volunteer at AlmaLinux Day: Vancouver"
+              /></a>
+            </div>
+            <div class="col">
+              <script
+                type="text/javascript"
+                src="https://sessionize.com/api/v2/0h3tcs0g/view/GridSmart"
+              ></script>
+            </div>
+          </div>
+        </div>
+ <!-- end schedule -->
+
+        <!-- speaker section
+        <div class="al-index-meet">
+          <h1 class="pt-3 px-3">
+            {{ i18n "Experience and lessons learned from every industry" }}
+          </h1>
+          <div class="row">
+            <!-- speaker one 
+            <div class="col-xl-3 col-sm-6 mb-5">
+              <div class="py-5 px-4 text-center al-member-item">
+                <div>
+                  <img
+                    class="img-fluid rounded-circle mb-3 img-thumbnail"
+                    src="/aldv_speakers/neal-gompa.png"
+                    alt="Neal Gompa"
+                    style="max-width: 180px;"
+                  />
+                </div>
+                <h5 class="mb-1">Neal Gompa</h5>
+                <div class="small mb-1">{{ i18n "Principal Consultant" }}</div>
+                <div class="small fw-light">Velocity Limitless</div>
+              </div>
+            </div>
+            <!-- end speaker one 
+ 
+            <!-- / al-index-meet
+          </div>
+        </div> -->
+        <div class="al-index-sponsors">
+          <div class="container al-py-md px-3">
+            <h1>{{ i18n "Thank you to our event sponsors!" }}</h1>
+            <div
+              class="row row-cols-2 row-cols-sm-4 row-cols-md-6 g-5 al-backed-by-list">
+              <a href="https://www.cloudlinux.com">
+                <div
+                  class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                  <img
+                    loading="lazy"
+                    src="/brands/cloudlinux.svg"
+                    alt="CloudLinux"
+                    class="al-backer-logo" />
+                </div>
+              </a>
+              <a href="https://tuxcare.com/">
+                <div
+                  class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                  <img
+                    loading="lazy"
+                    src="/brands/TuxCare_Horizontal_Logo_NoTagLine_White.svg"
+                    alt="TuxCare"
+                    class="al-backer-logo" />
+                </div>
+              </a>
+              <a href="https://www.cybertrust.co.jp/almalinux/">
+                <div
+                  class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                  <img
+                    loading="lazy"
+                    src="/brands/cybertrust-japan.svg"
+                    alt="Cybertrust Japan"
+                    class="al-backer-logo" />
+                </div>
+              </a>
+            </div>
+            <!-- start call for sponsors -->
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col">
+                  <div>
+                    <img
+                      src="/landingpages/aldv-2025/aldg_2024.jpg"
+                      style="object-fit: cover; width: 100%; height: 100%;" />
+                  </div>
+                </div>
+                <div class="col">
+                  <h2>{{ i18n "Sponsor AlmaLinux Day: Tokyo!!" }}</h2>
+                  <div>
+                    {{ i18n "AlmaLinux Days have already hosted hundreds of people across the world, and we are expecting just as strong a turnout at this event. Whether you are just a lover of Open Source, or hoping to get your company or product in front of more potential users, we would love to have you join us as a sponsor for this event." }}
+                    <a href="mailto:marketing-sig@almalinux.org"
+                      >marketing-sig@almalinux.org</a
+                    >
+                  </div>
+                  <h2>{{ i18n "Ready for something deeper?" }}</h2>
+                  <div>
+                    {{ i18n "Members of the AlmaLinux OS Foundation enjoy benefits year-round, and get first access to sponsor AlmaLinux events. Take a look and join today!" }}
+                    <a href="https://almalinux.org/members"
+                      >almalinux.org/members</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end call for sponsors -->
+            <!--begin small logos -->
+            <div class="pt-4">
+              <h2>
+                {{ i18n "A big thank you to all Sponsor Members of the AlmaLinux OS Foundation" }}
+              </h2>
+              <div
+                class="row row-cols-2 row-cols-sm-4 row-cols-md-6 g-5 al-backed-by-list">
+                <a href="https://www.cloudlinux.com">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/cloudlinux.svg"
+                      alt="CloudLinux"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+                <a href="https://tuxcare.com/">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/TuxCare_Horizontal_Logo_NoTagLine_White.svg"
+                      alt="TuxCare"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+                <a href="https://www.cybertrust.co.jp/almalinux/">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/cybertrust-japan.svg"
+                      alt="Cybertrust Japan"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+                <!-- Gold -->
+                <a href="https://www.knownhost.com/">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/KnownHostLogoFLATWHITE.svg"
+                      alt="KnownHost"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://www.equinix.com">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/equinix.svg"
+                      alt="Equinix"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://ipinfo.io/">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/ipinfo.svg"
+                      alt="IPInfo"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://codenotary.com">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/codenotary.svg"
+                      alt="Codenotary"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://engineering.fb.com/">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/meta.svg"
+                      alt="Meta"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://www.plesk.com">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/plesk.svg"
+                      alt="Plesk"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://cpanel.net">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/cpanel.svg"
+                      alt="cPanel"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+                <a href="https://aws.amazon.com">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/aws.svg"
+                      alt="Amazon AWS"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://azure.microsoft.com">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/azurelarge1.svg"
+                      alt="Microsoft Azure"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://www.arm.com">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/arm.svg"
+                      alt="ARM"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://www.sinenomine.net/offerings/linux/almalinux">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/sine_nomine_logo_grayscale.svg"
+                      alt="Sine Nomine"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+                <!-- Silver -->
+                <a href="https://www.hawkhost.com">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/HawkHost.svg"
+                      alt="HawkHost"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+                <a href="https://www.hivelocity.net">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/hivelocity.svg"
+                      alt="Hivelocity"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://osuosl.org">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/osuosl.svg"
+                      alt="OSU Open Source Lab"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://mattermost.com">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/mattermost.svg"
+                      alt="Mattermost"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://www.algolia.com">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/logo-algolia-nebula-blue-full_a52auc4.svg"
+                      alt="Algolia"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://www.amd.com/">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/AMD_Logo.svg"
+                      alt="AMD"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://black.host/">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/blackhost_logo.svg"
+                      alt="BlackHOST"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://www.cloudfest.com/">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/Cloudfest_logo_2022_white_1.svg"
+                      alt="CloudFest"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://procomputers.com/">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/procomputers_logo_white.svg"
+                      alt="ProComputers"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://orcharhino.com/en/">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/orcharhino.svg"
+                      alt="Orcharhino"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://world4you.com">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/w4y_logo_4C_white.svg"
+                      alt="World4You"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://www.megware.com/">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/MEGWARE.svg"
+                      alt="MEGWARE"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://www.virtuozzo.com/">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/virtuozzo.svg"
+                      alt="Virtuozzo"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://home.cern/">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/cern.svg"
+                      alt="CERN"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://storpool.com/">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/StorPool.svg"
+                      alt="StorPool Storage AD"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://fastly.com/">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/fastly.svg"
+                      alt="Fastly"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://www.fsastech.com/">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/fti_brand.svg"
+                      alt="Fsas Technologies Inc."
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://www.sie.es">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/sie_logo.svg"
+                      alt="SIE LADÓN"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://www.litmusit.com">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/litmusinformationsystems.svg"
+                      alt="Litmus information Systems LLP"
+                      class="al-backer-logo-small"
+                      style="max-height:100px" />
+                  </div>
+                </a>
+
+                <a href="https://www.rackSPEED.de">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/rackspeed-logo-reverse.svg"
+                      alt="rackSPEED"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+
+                <a href="https://www.viatel.se/">
+                  <div
+                    class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+                    <img
+                      loading="lazy"
+                      src="/brands/viatel.svg"
+                      alt="Viatel"
+                      class="al-backer-logo-small" />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!--end small logos -->
+          </div>
+        </div>
+        <div class="al-index-stop" style="background: #22C2FF;">
+          <div class="container al-py-md" style="padding: 0 40px 0 40px;">
+            <div class="container-stop" style="display: flex;">
+              <div class="stop-item-1" style="width: 60%;">
+                <h1
+                  style="font-size: 60px; font-weight: 700; line-height: 80px;">
+                  {{ i18n "Can't make it?" }}
+                </h1>
+                <div>
+                  {{ i18n "We'll miss you, but if you can't make it to AlmaLinux Day this time, you can still enjoy the day! Just like our other events, we'll be posting the videos from the event as soon as we can afterward. Sign up for the AlmaLinux Newsletter below, so you don't miss the announcement!" }}
+                </div>
+              </div>
+              <div class="stop-item-2" style="padding-left: 50px;">
+                <h4 class="fw-bold mb-0 pb-2">
+                  {{ i18n "Come hang out with us!" }}
+                </h4>
+                <ul>
+                  <li class="social-item-mattermost sociallist">
+                    <a href="https://chat.almalinux.org">chat.almalinux.org</a>
+                  </li>
+                  <li class="social-item-fosstadon sociallist">
+                    <a href="https://fosstodon.org/@almalinux"
+                      >fosstodon.org/@almalinux</a
+                    >
+                  </li>
+                  <li class="social-item-twitter sociallist">
+                    <a href="https://x.com/almalinux">x.com/almalinux</a>
+                  </li>
+                  <li class="social-item-reddit sociallist">
+                    <a href="https://reddit.com/r/almalinux"
+                      >reddit.com/r/almalinux</a
+                    >
+                  </li>
+                  <li class="social-item-lists sociallist">
+                    <a href="https://lists.almalinux.org"
+                      >lists.almalinux.org</a
+                    >
+                  </li>
+                  <li class="social-item-discourse sociallist">
+                    <a href="https://forums.almalinux.org"
+                      >forums.almalinux.org</a
+                    >
+                  </li>
+                  <li class="social-item-github sociallist">
+                    <a href="https://github.com/AlmaLinux"
+                      >github.com/AlmaLinux</a
+                    >
+                  </li>
+                  <li class="social-item-wiki sociallist">
+                    <a href="https://wiki.almalinux.org/">wiki.almalinux.org</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="al-index-image-by" style="background: #0e3b5c;">
+          <div class="container pt-3 pb-2">
+            <div>
+              {{ i18n "This event is governed by a Code of Conduct" }}
+              <a style="color: #fff;" href="/p/aldv-code-of-conduct/"
+                >Code of Conduct</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="al-index-image-by" style="background: #0e3b5c;">
+          <div class="container pt-3 pb-2">
+            <div class="small">
+              {{ i18n "Header image by " }}
+              <a
+                style="color: #fff;"
+                href="https://www.pexels.com/photo/illuminated-tower-2614818/"
+                >Nick Kwan</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+{{ end }}
