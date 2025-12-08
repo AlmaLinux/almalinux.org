@@ -1121,5 +1121,13 @@
     "Download 8.10 ISO": "Завантажити ISO-образ 8.10",
     "Get AlmaLinux 10.0": "Отримайте AlmaLinux 10.0",
     "Get AlmaLinux 9.6": "Отримайте AlmaLinux 9.6",
-    "Get AlmaLinux 8.10": "Отримайте AlmaLinux 8.10"
+    "Get AlmaLinux 8.10": "Отримайте AlmaLinux 8.10",
+    "AlmaLinux offers images for Azure across all Azure regions via the ": "AlmaLinux пропонує образи для Azure у всіх регіонах Azure через ",
+    "Our inaugural AlmaLinux Day adjacent to SIGGRAPH won't be our last! We are so grateful to everyone who is trusting us every day in the the VFX, production, and post-production community.": "Наш перший День AlmaLinux, що відбудеться поруч із SIGGRAPH, не буде останнім! Ми дуже вдячні всім, хто щодня довіряє нам у спільноті візуальних ефектів, продакшену та постпродакшну.",
+    "AlmaLinux OS 10.1!": "AlmaLinux OS 10.1!",
+    "Official Bootable Container Base Image (bootc):": "Офіційний базовий образ завантажувального контейнера (bootc):",
+    "Additional bootc images maintained by the ": "Додаткові образи bootc, що підтримуються ",
+    "Get AlmaLinux": "Отримати AlmaLinux",
+    "More details can be found on the": "Більш детальну інформацію можна знайти на",
+    "(Experimental) bootc images can be found here:": "(Експериментальні) образи bootc можна знайти тут:"
 }
