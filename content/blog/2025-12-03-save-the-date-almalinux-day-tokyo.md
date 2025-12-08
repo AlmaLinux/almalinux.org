@@ -26,24 +26,26 @@ We have had four AlmaLinux Days in the last two years! With nearly incredible sp
 <center>
 
 ### AlmaLinux Day: Tokyo 2023
+
 <figure>
 	<a href="https://youtu.be/Hxwhw6Q6ITc?si=I3iN507Y1Kiv_jNv"><img src="/blog-images/2025/aldt_23.png" class="img-fluid" width="55%" alt="Welcome to AlmaLinux Day: Tokyo 2023"></a>
 </figure>
 
 ### AlmaLinux Day: Germany 2024
+
 <figure>
 	<a href="https://youtu.be/P9pO0fPGVeo?si=xtsGNr8pq7QPN3ag"><img src="/blog-images/2025/aldg_24.png" class="img-fluid" width="55%" alt="Welcome to AlmaLinux Day: Tokyo 2023"></a>
 </figure>
 
 ### AlmaLinux Day: Tokyo 2024
+
 <figure>
 	<a href="https://youtu.be/legImJHBWzk?si=Ko0WztvIMB7L5axP"><img src="/blog-images/2025/aldt_24.png" class="img-fluid" width="55%" alt="Welcome to AlmaLinux Day: Tokyo 2023"></a>
 </figure>
 
 ### AlmaLinux Day: Vancouver 2025
+
 <figure>
 	<a href="https://youtu.be/vOHII_pax0I?si=-EJM7rjwGj_B-7pl"><img src="/blog-images/2025/aldv_25.png" class="img-fluid" width="55%" alt="Welcome to AlmaLinux Day: Tokyo 2023"></a>
 </figure>
 </center>
-
-
