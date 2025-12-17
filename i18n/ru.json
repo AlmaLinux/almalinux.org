@@ -929,5 +929,6 @@
     "If your company would like to be added to this list, reach out to the Membership Committee about joining the Foundation as a sponsor": "Если ваша компания желает попасть в этот список, свяжитесь с Членским комитетом по поводу присоединения к Фонду в качестве спонсора.",
     "Migration, Applications, and General support": "Миграция, Приложения и Общая поддержка",
     "AlmaLinux provides official AlmaLinux OS 9.6 images for Vagrant:": "AlmaLinux предоставляет официальные образы AlmaLinux OS 9.6 для Vagrant:",
-    "AlmaLinux offers AlmaLinux OS 8.10 and AlmaLinux OS 9.6 images for Azure across all Azure regions via the ": "AlmaLinux предлагает образы AlmaLinux OS 8.10 and AlmaLinux OS 9.6 для Azure по всем регионам Azure через "
+    "AlmaLinux offers AlmaLinux OS 8.10 and AlmaLinux OS 9.6 images for Azure across all Azure regions via the ": "AlmaLinux предлагает образы AlmaLinux OS 8.10 and AlmaLinux OS 9.6 для Azure по всем регионам Azure через ",
+    "AlmaLinux offers images for Azure across all Azure regions via the ": "AlmaLinux предлагает образы для Azure по всем регионам Azure через "
 }
