@@ -9,16 +9,14 @@
     {{ else }}
       {{ with .Site.Params.description }}{{ . }}{{ end }}
     {{ end }}
-  {{ end }}"
-/>
+  {{ end }}" />
 <meta
   property="og:type"
   content="{{ if .IsPage }}
     article
   {{ else }}
     website
-  {{ end }}"
-/>
+  {{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 
 {{- with $.Params.images -}}
@@ -41,8 +39,7 @@
       <!-- Default image if no other image is found -->
       <meta
         property="og:image"
-        content="{{ "images/og/newhero.png" | absURL }}"
-      />
+        content="{{ "images/og/newhero.png" | absURL }}" />
     {{- end -}}
   {{- end -}}
 {{- end -}}
@@ -53,14 +50,12 @@
   {{ with .PublishDate }}
     <meta
       property="article:published_time"
-      {{ .Format $iso8601 | printf "content=%q" | safeHTMLAttr }}
-    />
+      {{ .Format $iso8601 | printf "content=%q" | safeHTMLAttr }} />
   {{ end }}
   {{ with .Lastmod }}
     <meta
       property="article:modified_time"
-      {{ .Format $iso8601 | printf "content=%q" | safeHTMLAttr }}
-    />
+      {{ .Format $iso8601 | printf "content=%q" | safeHTMLAttr }} />
   {{ end }}
 {{- end -}}
 

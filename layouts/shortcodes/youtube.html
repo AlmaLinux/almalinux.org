@@ -132,8 +132,7 @@
           {{- if $v }}
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}
           {{- end }}
-        {{- end }}
-      ></iframe>
+        {{- end }}></iframe>
     </div>
   {{- else }}
     {{- errorf "The %q shortcode requires an id argument. See %s" .Name .Position }}

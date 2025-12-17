@@ -20,8 +20,7 @@
     class="container-all-options d-flex mb-3 px-3 justify-content-between"
     {{ if lt $sectionCount 3 }}
       style="justify-content: space-around !important;"
-    {{ end }}
-  >
+    {{ end }}>
     {{ range $arch.sections }}
       {{ $icon := index $iconMap .id }}
       {{ if $icon }}
@@ -30,8 +29,7 @@
             loading="lazy"
             class="al-index-download-icon img"
             src="{{ $icon.src }}"
-            alt="{{ $icon.alt }}"
-          />
+            alt="{{ $icon.alt }}" />
         </a>
       {{ end }}
     {{ end }}
@@ -43,12 +41,10 @@
     <a
       class="anchor"
       id="{{ .anchorPrefix }}-{{ $arch.id }}-{{ $version.id }}"
-      style="position: relative; top: -116px;"
-    ></a>
+      style="position: relative; top: -116px;"></a>
     <h2
       class="pb-2 text-center border-bottom"
-      style="border-bottom-color: #14598a!important;"
-    >
+      style="border-bottom-color: #14598a!important;">
       {{ .title }}
     </h2>
 

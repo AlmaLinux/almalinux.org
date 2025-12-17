@@ -8,8 +8,7 @@
         id="os{{ $version.id }}Dropdown"
         data-bs-toggle="dropdown"
         aria-expanded="false"
-        style="font-size: 1.3rem; font-weight: 600; line-height: 1.2;"
-      >
+        style="font-size: 1.3rem; font-weight: 600; line-height: 1.2;">
         {{ $version.label }}
       </button>
       <ul class="dropdown-menu">
@@ -21,8 +20,7 @@
               id="{{ $arch.id }}-{{ $version.id }}-tab"
               data-bs-toggle="tab"
               href="#{{ $arch.id }}-{{ $version.id }}"
-              role="tab"
-            >
+              role="tab">
               {{ $arch.label }}
             </a>
           </li>
