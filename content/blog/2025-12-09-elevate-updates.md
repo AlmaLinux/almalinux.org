@@ -19,7 +19,7 @@ Earlier this year at [DevConf](https://www.devconf.info/cz/), I learned of some 
 
 In case you have not yet heard of ELevate: ELevate is an AlmaLinux project that, since 2021 has provided the ability to upgrade between major versions of RHEL-based distributions.
 
-components: updates to [the open source LEAPP project](https://github.com/AlmaLinux/leapp-repository/tree/almalinux) and a data library called [leapp-data](https://github.com/AlmaLinux/leapp-data). These together allow users to upgrade in-place from an unsupported operating system to a modern operating system, and then from 8 to 9 and 9 to 10 of that operating system.
+ELevate has two components: updates to [the open source LEAPP project](https://github.com/AlmaLinux/leapp-repository/tree/almalinux), and a data library called [leapp-data](https://github.com/AlmaLinux/leapp-data). These together allow users to upgrade in-place from an unsupported operating system to a modern operating system, and then from 8 to 9 and 9 to 10 of that operating system.
 
 In the years [since ELevate was first announced](/blog/announcing-elevate-migration-between-major-versions-7x-to-8x-of-rhel-derivative-distributions/) four years ago, we have removed support for both Oracle Linux and CentOS Stream, and added support for [upgrading from CentOS 6](/blog/2024-04-25-elevate-supports-centos-6-to-centos-7/), [Scientific Linux 7](/blog/2024-08-08-elevate-release/), and for upgrading to enterprise linux versions of all kinds to 9 and 10. This update is maybe our most disruptive yet.
 
