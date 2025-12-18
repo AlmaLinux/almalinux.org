@@ -7,8 +7,7 @@
         class="tab-pane fade {{ if $isActive }}show active{{ end }}"
         id="{{ $arch.id }}-{{ $version.id }}"
         role="tabpanel"
-        aria-labelledby="{{ $arch.id }}-{{ $version.id }}-tab"
-      >
+        aria-labelledby="{{ $arch.id }}-{{ $version.id }}-tab">
         {{ partial "get-almalinux/arch-sections.html" (dict "Version" $version "Arch" $arch) }}
       </div>
     {{ end }}
