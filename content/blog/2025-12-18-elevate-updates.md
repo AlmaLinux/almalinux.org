@@ -5,7 +5,7 @@ author:
   name: "Andrew Lukoshko"
   bio: "Lead Architect"
   image: /users/alukoshko.jpg
-date: "2025-12-15"
+date: "2025-12-18"
 images:
   - /blog-images/2025/2025-12-elevate-updates.png
 post:
