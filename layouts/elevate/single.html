@@ -272,7 +272,10 @@ add new preview image for link previews
             </ul>
             *
             {{ i18n "Migration to Oracle Linux 9 is available with the" }}
-            <a href="https://blogs.oracle.com/linux/post/upgrade-oracle-linux-8-to-oracle-linux-9-using-leapp">Oracle Leapp utility</a>
+            <a
+              href="https://blogs.oracle.com/linux/post/upgrade-oracle-linux-8-to-oracle-linux-9-using-leapp"
+              >Oracle Leapp utility</a
+            >
             {{ i18n "and will not be supported by ELevate project." }}
             <br />
             *
@@ -306,9 +309,13 @@ add new preview image for link previews
                 aria-labelledby="flush-heading-1"
                 data-parent="#accordionFAQ">
                 <div class="accordion-body">
-                  {{ i18n "ELevate is a project aimed to provide the ability to upgrade between major versions of RHEL-based distributions. First announced by AlmaLinux in 2021, ELevate combines two key components: updates to " }}<a>{{ i18n "the open source LEAPP project" }}</a>
+                  {{ i18n "ELevate is a project aimed to provide the ability to upgrade between major versions of RHEL-based distributions. First announced by AlmaLinux in 2021, ELevate combines two key components: updates to " }}<a
+                    >{{ i18n "the open source LEAPP project" }}</a
+                  >
                   {{ i18n "and a data library called " }}
-                  <a href="https://github.com/AlmaLinux/leapp-data">{{ i18n "leapp-data" }}</a>.
+                  <a href="https://github.com/AlmaLinux/leapp-data"
+                    >{{ i18n "leapp-data" }}</a
+                  >.
                   {{ i18n "These together allow users to upgrade in-place from an unsupported operating system to a modern operating system, and then from 8 to 9 and 9 to 10 of that operating system." }}
                 </div>
               </div>
@@ -429,9 +436,13 @@ add new preview image for link previews
                 data-parent="#accordionFAQ">
                 <div class="accordion-body">
                   {{ i18n "Yes! For the first four years of ELevate, we did support using ELevate to upgrade out of date CentOS installations to Rocky Linux, and migrating between major versions of Rocky Linux. As of the update to ELevate on 2025-11-03, that is no longer supported." }}<br /><br />
-				  {{ i18n "With the release of leapp-repository 0.23.0, two big things changed. First, LEAPP now supports CentOS Stream natively, and the LEAPP team accepted a pull request to add AlmaLinux support as well. That significantly reduces the amount of work that we have to maintain in ELevate." }}
-				  {{ i18n "Second, the format of the migration data (the data the describes the package upgrade paths) was changed. That meant that all supported OSes needed to have their migration data updated to retain supporting upgrades." }} {{ i18n "You can read more" }} <a href="/blog/2025-12-18-elevate-updates/">{{ i18n "in this blog post." }}</a><br /><br />
-				  {{ i18n "To date, no one from the Rocky community has contributed an update to allow for the continued support of this upgrade path in ELevate." }}
+                  {{ i18n "With the release of leapp-repository 0.23.0, two big things changed. First, LEAPP now supports CentOS Stream natively, and the LEAPP team accepted a pull request to add AlmaLinux support as well. That significantly reduces the amount of work that we have to maintain in ELevate." }}
+                  {{ i18n "Second, the format of the migration data (the data the describes the package upgrade paths) was changed. That meant that all supported OSes needed to have their migration data updated to retain supporting upgrades." }}
+                  {{ i18n "You can read more" }}
+                  <a href="/blog/2025-12-18-elevate-updates/"
+                    >{{ i18n "in this blog post." }}</a
+                  ><br /><br />
+                  {{ i18n "To date, no one from the Rocky community has contributed an update to allow for the continued support of this upgrade path in ELevate." }}
                 </div>
               </div>
             </div>
