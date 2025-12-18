@@ -877,7 +877,6 @@
    "SIGs, ALESCo and other events": "SIGs, ALESCo and other events",
    "ALD Tokyo 2026": "ALD Tokyo 2026",
    "AlmaLinux Day: Tokyo!": "AlmaLinux Day: Tokyo!",
-   "SIGs, ALESCo and other events": "SIGs, ALESCo and other events",
    "With ELevate you can easily upgrade in-place from CentOS 6.x or 7.x AlmaLinux 8 or CentOS Stream 8. You can also use ELevate to upgrade from 8 or 9 all the way through version 10 within the same OS. Used all over the world to upgrade more than 500,000 devices, ELevate is your answer to the headache of upgrading your operating system in the Enterprise Linux ecosystem. ": "With ELevate you can easily upgrade in-place from CentOS 6.x or 7.x AlmaLinux 8 or CentOS Stream 8. You can also use ELevate to upgrade from 8 or 9 all the way through version 10 within the same OS. Used all over the world to upgrade more than 500,000 devices, ELevate is your answer to the headache of upgrading your operating system in the Enterprise Linux ecosystem. ",
    "Upgrade from CentOS 7 to AlmaLinux 8 or CentOS Stream 8": "Upgrade from CentOS 7 to AlmaLinux 8 or CentOS Stream 8",
    "Didn't you used to support migrations to Rocky Linux?": "Didn't you used to support migrations to Rocky Linux?",
@@ -888,7 +887,7 @@
    "in this blog post,": "in this blog post,",
    "To help contributors get started,": "To help contributors get started,",
    "we have the ELevate contribution guide.": "we have the ELevate contribution guide.",
-   "To date, Rocky support has not been contributed.": "To date, Rocky support has not been contributed.",
    "Thank you again, Tokyo!!": "Thank you again, Tokyo!!",
-   "Our return to Tokyo for this AlmaLinux Day was just as incredible as the first. Thank you to all of our incredible speakers and to everyone who joined us today. We are so grateful for your investment in the AlmaLinux community.": "Our return to Tokyo for this AlmaLinux Day was just as incredible as the first. Thank you to all of our incredible speakers and to everyone who joined us today. We are so grateful for your investment in the AlmaLinux community."
+   "Our return to Tokyo for this AlmaLinux Day was just as incredible as the first. Thank you to all of our incredible speakers and to everyone who joined us today. We are so grateful for your investment in the AlmaLinux community.": "Our return to Tokyo for this AlmaLinux Day was just as incredible as the first. Thank you to all of our incredible speakers and to everyone who joined us today. We are so grateful for your investment in the AlmaLinux community.",
+   "To date, the migration data required for Rocky Linux support has not been contributed.": "To date, the migration data required for Rocky Linux support has not been contributed."
 }
