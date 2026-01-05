@@ -39,7 +39,7 @@ key_applications:
 # under overview.  If it is removed no overview section will display
 overview_collection:
   - key: Tests Run By
-  # valid values are "AlmaLinux OS Foundation", "<Vendor Name>", or "Community"
+    # valid values are "AlmaLinux OS Foundation", "<Vendor Name>", or "Community"
     value: Fsas Technologies
   # optional
   # - key: "Certification Inherited From"
@@ -91,16 +91,16 @@ certification_collection:
         - "SATA SSD": "9.4+"
         - "PCIe NVMe": "9.4+"
 
-
 #Begin Search metadata
 searchTitle: "Fsas Technologies PRIMERGY RX2530 M8"
 # this is basically just tags, formatting doesn't much matter
-searchDesc: "Dual-socket x86 server providing reliable performance and optimized scalability in a 1U chassis
-    Ideal for virtualization, scale-out scenarios, databases as well as HPC infrastructures
-    Improved performance with Intel® Xeon® 6 Processors with P-cores (up to 86 P-cores per CPU)
-    Maximize performance with 32 DIMM modules (up to 8TB DDR5 @6,400 or 8,000 MT/s)
-    Gain storage flexibility with 4x 3.5” or up to 10x 2.5” storage devices"
-es_collection: 
+searchDesc:
+  "Dual-socket x86 server providing reliable performance and optimized scalability in a 1U chassis
+  Ideal for virtualization, scale-out scenarios, databases as well as HPC infrastructures
+  Improved performance with Intel® Xeon® 6 Processors with P-cores (up to 86 P-cores per CPU)
+  Maximize performance with 32 DIMM modules (up to 8TB DDR5 @6,400 or 8,000 MT/s)
+  Gain storage flexibility with 4x 3.5” or up to 10x 2.5” storage devices"
+es_collection:
   # valid values Server, Component, Component Collection
   type: ["Server"]
   provider: "Fsas Technologies"
@@ -109,7 +109,7 @@ es_collection:
   architecture: "x86_64"
   network: Onboard, OCP v3
   pcie-version: "5.0"
-  processor-line : "Dual Intel® Xeon® 6"
+  processor-line: "Dual Intel® Xeon® 6"
   processor-brand: "Intel"
   storage: ["NVMe", "SATA", "SAS"]
 ---
