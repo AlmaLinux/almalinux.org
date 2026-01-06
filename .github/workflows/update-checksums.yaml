@@ -42,4 +42,3 @@ jobs:
           labels: automated, checksums
           delete-branch: true
           assignees: bennyvasquez, jonathanspw, andrewlukoshko
-          reviewers: alexiri
