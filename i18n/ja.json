@@ -1095,5 +1095,13 @@
     "Check-In Desk": "来場者受付",
     "Setup Crew": "準備スタッフ",
     "Teardown Team": "片付けスタッフ",
-    "Chat ": "チャット "
+    "Chat ": "チャット ",
+    "AlmaLinux OS 10.1!": "AlmaLinux OS 10.1 ！",
+    "Official Bootable Container Base Image (bootc):": "起動可能な公式コンテナベース イメージ（bootc）:",
+    "Get AlmaLinux": "AlmaLinux の入手",
+    "(Experimental) bootc images can be found here:": "試験段階の bootc イメージの設置場所：",
+    "to AlmaLinux OS 9.7": "AlmaLinux OS 9.7 向けに",
+    "Our inaugural AlmaLinux Day adjacent to SIGGRAPH won't be our last! We are so grateful to everyone who is trusting us every day in the the VFX, production, and post-production community.": "SIGGRAPH の日程と開催地に合わせて開催した初の AlmaLinux Day は、これが最後ではありません！VFX、制作、ポスト プロダクションのコミュニティで、日々私たちを信頼してくださっている皆さまに心から感謝しています。",
+    "AlmaLinux offers images for Azure across all Azure regions via the ": "AlmaLinux は、すべての Azure 地域を経由して Azure 用の画像を提供しています ",
+    "Additional bootc images maintained by the ": "維持される付加的な bootc イメージ "
 }
