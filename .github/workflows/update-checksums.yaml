@@ -1,0 +1,44 @@
+name: Update Checksums YAML
+
+on:
+  schedule:
+    - cron: "10 */4 * * *" # Runs every 4 hours at minute 10
+  workflow_dispatch:
+
+jobs:
+  update-checksums:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Run generate_get_almalinux_checksums.py
+        run: python3 tools/generate_get_almalinux_checksums.py
+
+      - name: Check for changes
+        id: check-for-changes
+        run: |
+          if git diff --quiet data/get_almalinux_checksums.yaml; then
+            echo "No changes detected in get_almalinux_checksums.yaml. Exiting."
+            echo "CHANGES_DETECTED=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changes detected in get_almalinux_checksums.yaml."
+            echo "CHANGES_DETECTED=true" >> $GITHUB_OUTPUT
+            git diff
+          fi
+
+      - name: Create or update PR for checksums
+        uses: peter-evans/create-pull-request@v7
+        if: steps.check-for-changes.outputs.CHANGES_DETECTED == 'true'
+        with:
+          commit-message: "Update Get AlmaLinux checksums file"
+          branch: update-checksums-yaml
+          title: "Automagic Get AlmaLinux checksum updates"
+          body: "Automated update of Get AlmaLinux checksums file. This PR is maintained by a scheduled workflow and will be updated if new changes are detected."
+          add-paths: |
+            data/get_almalinux_checksums.yaml
+          labels: automated, checksums
+          delete-branch: true
+          assignees: bennyvasquez, jonathanspw, andrewlukoshko

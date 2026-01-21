@@ -7,11 +7,6 @@
 /discord https://discord.com/invite/juVTqYFVJB 301
 /discord/ https://discord.com/invite/juVTqYFVJB 301
 /blog/2023-9-14-election-2023/ blog/2023-09-14-election-2023/ 301
-/contribute https://wiki.almalinux.org/Contribute.html 302
-/contribute/ https://wiki.almalinux.org/Contribute.html 302
-/*/contribute https://wiki.almalinux.org/Contribute.html 302
-/*/contribute/ https://wiki.almalinux.org/Contribute.html 302
-
 
 # added for marketing reasons
 /fips/ /blog/2023-09-19-fips-validation-for-almalinux/ 302
