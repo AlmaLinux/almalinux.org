@@ -3,16 +3,16 @@
 type: "certification/ecosystem-catalog"
 
 #Required
-date: 2025-12-22
+date: 2026-02-06
 
 #Required
-title: "Fsas Technologies PRIMERGY RX2530 M8 Rack Server"
+title: "Fsas Technologies PRIMERGY RX4770 M8 Rack Server"
 
 #Required
 image: "/images/ec/fsas-logo.svg"
 
 #Required
-shortTitle: "PRIMERGY RX2530 M8 Rack Server"
+shortTitle: "PRIMERGY RX4770 M8 Rack Server"
 
 #Required
 provider: "Fsas Technologies"
@@ -21,17 +21,17 @@ provider: "Fsas Technologies"
 system: "Server"
 
 #Optional
-specsLink: "https://eu.fsastech.com/eu/products-services/primergy-servers/primergy-rx2530-m8/"
+specsLink: "https://eu.fsastech.com/eu/products-services/primergy-servers/primergy-rx4770-m8/"
 
 #Optional
 supportLink: "https://support.ts.fujitsu.com/index.asp?ld=us"
 
 #Optional - If not provided no button will be rendered
-buttonLink: "https://eu.fsastech.com/eu/products-services/primergy-servers/primergy-rx2530-m8/"
+buttonLink: "https://eu.fsastech.com/eu/products-services/primergy-servers/primergy-rx4770-m8/"
 
 # optional
 key_applications:
-  - AI
+  - Backend Operations
   - Virtualization
   - Databases
 
@@ -48,17 +48,17 @@ overview_collection:
   # optional
   - key: "Test Logs"
     value: "Click here"
-    link: systems/fsas-technologies/primergy-rx2530-m8
+    link: systems/fsas-technologies/primergy-rx4770-m8
   - key: "CPU"
-    value: "2 x Intel Xeon 6760P @ 3.80GHz (128 Cores / 256 Threads)"
+    value: "4 x Intel Xeon 6788P @ 3.80GHz (344 Cores / 688 Threads)"
   - key: "Chipset"
     value: "Intel Ice Lake IEH"
   - key: "RAM"
-    value: "2 x 32 GB DDR5-6400MT/s Micron"
+    value: "4 x 64 GB DDR5-6400MT/s Micron"
   - key: "STORAGE"
-    value: "960GB Micron_7450_MTFDKBA960TFR + 0GB 2115"
+    value: "960GB Micron_7450_MTFDKBA960TFR"
   - key: "NETWORK"
-    value: "Intel I210 + 4 x Intel I350"
+    value: "Intel I210 + 2 x Intel I350"
 
 certification_collection:
   - name: "AlmaLinux 9"
@@ -92,14 +92,14 @@ certification_collection:
         - "PCIe NVMe": "9.6+"
 
 #Begin Search metadata
-searchTitle: "Fsas Technologies PRIMERGY RX2530 M8"
+searchTitle: "Fsas Technologies PRIMERGY RX4770 M8"
 # this is basically just tags, formatting doesn't much matter
 searchDesc:
-  "Dual-socket x86 server providing reliable performance and optimized scalability in a 1U chassis
-  Ideal for virtualization, scale-out scenarios, databases as well as HPC infrastructures
-  Improved performance with Intel® Xeon® 6 Processors with P-cores (up to 86 P-cores per CPU)
-  Maximize performance with 32 DIMM modules (up to 8TB DDR5 @6,400 or 8,000 MT/s)
-  Gain storage flexibility with 4x 3.5” or up to 10x 2.5” storage devices"
+  "Quad-socket x86 system providing superior levels of scalability and reliable performance in a 3U chassis
+  Ideal for business-critical workloads, large-scale virtualization, and in-memory databases
+  Boost performance with Intel® Xeon® 6 Processors with P-cores (up to 86 P-cores per CPU)
+  Address large data sets with up to 64 DIMMs with DDR5 DIMM with up to 6,400 MT/s
+  Scale capacity with up to 24x 2.5” storage drives, 10x PCIe 5.0 slots, and support for M.2 hot plug module"
 es_collection:
   # valid values Server, Component, Component Collection
   type: ["Server"]

@@ -69,27 +69,27 @@ certification_collection:
       name: "Compute"
       level: 9.0
       features:
-        - "CPU Core Performance Counters": "9.4+"
-        - "CPU Scaling Governor": "9.4+"
-        - "System Memory": "9.4+"
-        - "Virtualization (Host)": "9.4+"
+        - "CPU Core Performance Counters": "9.6+"
+        - "CPU Scaling Governor": "9.6+"
+        - "System Memory": "9.6+"
+        - "Virtualization (Host)": "9.6+"
     management:
       name: "Management"
       level: 9.0
       features:
-        - "Graphical Console": "9.4+"
-        - "Virtual Media": "9.4+"
+        - "Graphical Console": "9.6+"
+        - "Virtual Media": "9.6+"
     network:
       name: "Network"
       level: 9.0
       features:
-        - "25Gb Ethernet": "9.4+"
+        - "25Gb Ethernet": "9.6+"
     storage:
       name: "Storage"
       level: 9.0
       features:
-        - "SATA SSD": "9.4+"
-        - "PCIe NVMe": "9.4+"
+        - "SATA SSD": "9.6+"
+        - "PCIe NVMe": "9.6+"
 
 #Begin Search metadata
 searchTitle: "Fsas Technologies PRIMERGY RX2540 M8"
