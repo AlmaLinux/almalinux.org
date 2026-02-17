@@ -5,12 +5,12 @@ author:
  name: "benny Vasquez"
  bio: "Chair, board of directors"
  image: /users/benny.jpeg
- date: '2026-02-17'
- images:
-   - /blog-images/2026/feb_2026_returning_silver_sponsors.png
- post:
-     title: "Announcing Returning Silver Sponsor Members - Codenotary, Fastly, and StorPool Storage AD"
-     image: /blog-images/2026/feb_2026_returning_silver_sponsors.png
+date: 2026-02-17
+images:
+  - /blog-images/2026/feb_2026_returning_silver_sponsors.png
+post:
+    title: "Announcing Returning Silver Sponsor Members - Codenotary, Fastly, and StorPool Storage AD"
+    image: /blog-images/2026/feb_2026_returning_silver_sponsors.png
 ---
 
 Today, we issued a press release announcing three returning silver sponsor members of the AlmaLinux OS Foundation, and I wanted to thank them here as well! We're always blown away by the support of new and continued sponsors. Here's a little bit about each of these three returning silver sponsors.
