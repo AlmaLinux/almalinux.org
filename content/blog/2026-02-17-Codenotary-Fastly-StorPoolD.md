@@ -13,7 +13,7 @@ post:
     image: /blog-images/2026/feb_2026_returning_silver_sponsors.png
 ---
 
-Today, we issued a press release announcing three returning silver sponsor members of the AlmaLinux OS Foundation, and I wanted to thank them here as well! We're always blown away by the support of new and continued sponsors. Here's a little bit about each of these three returning silver sponsors.
+Today, we issued a press release announcing three returning silver sponsor members of the AlmaLinux OS Foundation, and I wanted to thank them here as well! We're always blown away by the support of new and returning sponsor members. Here's a little bit about each of these three returning silver sponsor members.
 
 ## Codenotary
 
@@ -35,4 +35,4 @@ Fastly's powerful, programmable edge cloud platform helps the world's top brands
 
 ## What's Next?
 
-We're looking forward to announcing more new and returning sponsors as this year continues. All of our sponsorships help us continue to meet the goals and needs of our community, and expand the number of ways and places we get to meet our users. If you've been on the fence about joining us as a sponsor member, feel free to [reach out to me](mailto:benny@almalinux.org)! I'd love to help you decide where your support matches the foundation's needs.
+We're looking forward to announcing more new and returning sponsor members as this year continues. All of our sponsorships help us continue to meet the goals and needs of our community, and expand the number of ways and places we get to meet our users. If you've been on the fence about joining us as a sponsor member, feel free to [reach out to me](mailto:benny@almalinux.org)! I'd love to help you decide where your support matches the foundation's needs.
