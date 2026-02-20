@@ -206,7 +206,6 @@ Still not a great error, but it's better than before. In this particular case, y
 
 Once you figure it out the issue and fix it, undo your changes to `.prettierrc` and run it on the file again to verify that it's all good.
 
-
 ### Localization and Translation
 
 AlmaLinux.org translations are managed on [Weblate](https://hosted.weblate.org/engage/almalinux/). To contribute, join the [AlmaLinux project](https://hosted.weblate.org/projects/almalinux/) on Weblate. Submissions through Weblate generate automated PRs to this repo, which are reviewed and merged by the Marketing SIG or another team lead.
