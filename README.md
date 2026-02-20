@@ -204,7 +204,7 @@ layouts/almalinux-day-tokyo-2026/single.html
 
 Still not a great error, but it's better than before. In this particular case, you now know that `section` was already closed so the HTML is malformed somehow. Sometimes it's relatively easy to spot how because the offending tag is nearby, sometimes it's not. In this particular example, there were two unclosed `divs` in line 148, so it was NOT easy to spot. AI is remarkibly good at parsing HTML and actually giving you a better error than prettier, so you can give it the file and the prettier error and ask it to find the error.
 
-Once you figure it out the issue and fix it, undo your changes to `.prettierrc` and run it on the file again to verify that it's all good.
+Once you figure out the issue and fix it, undo your changes to `.prettierrc` and run it on the file again to verify that it's all good.
 
 ### Localization and Translation
 
