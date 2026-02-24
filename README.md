@@ -152,6 +152,60 @@ Some URLs may allow other variables (like `variant`), or require different patte
 
 If you have questions about advanced configuration or variable support, refer to the script or open an issue for help.
 
+#### Prettier errors
+
+Sometimes, prettier will fail with very unhelpful errors, such as:
+
+```
+[error] layouts/almalinux-day-tokyo-2026/single.html: Error: An error occured during printing. Found invalid node root.
+[error]     at Object.print (/home/runner/work/almalinux.org/almalinux.org/node_modules/prettier-plugin-go-template/lib/index.js:65:19)
+[error]     at callPluginPrintFunction (file:///home/runner/work/almalinux.org/almalinux.org/node_modules/prettier/index.mjs:16929:20)
+[error]     at printAstToDoc (file:///home/runner/work/almalinux.org/almalinux.org/node_modules/prettier/index.mjs:16876:22)
+[error]     at async coreFormat (file:///home/runner/work/almalinux.org/almalinux.org/node_modules/prettier/index.mjs:17294:14)
+[error]     at async formatWithCursor (file:///home/runner/work/almalinux.org/almalinux.org/node_modules/prettier/index.mjs:17504:14)
+[error]     at async formatFiles (file:///home/runner/work/almalinux.org/almalinux.org/node_modules/prettier/internal/legacy-cli.mjs:4279:18)
+[error]     at async main (file:///home/runner/work/almalinux.org/almalinux.org/node_modules/prettier/internal/legacy-cli.mjs:4698:5)
+[error]     at async Module.run (file:///home/runner/work/almalinux.org/almalinux.org/node_modules/prettier/internal/legacy-cli.mjs:4641:5)
+```
+
+The real error is being hidden by the `go-template` plugin, so the best way of figuring out what the problem is is by disabling it temporarily.
+
+In your local checkout, edit `.prettierrc` and edit it so `go-template` isn't applied. For example, by changing the like this:
+
+```
+{
+  "bracketSameLine": true,
+  "plugins": ["prettier-plugin-go-template"],
+  "overrides": [
+    {
+      "files": ["*.html-not-today-my-friend"],
+      "options": {
+        "parser": "go-template"
+      }
+    }
+  ]
+}
+```
+
+With that change done, you'll now get a different error when you run `prettier` locally:
+
+```bash
+> prettier layouts/almalinux-day-tokyo-2026/single.html
+layouts/almalinux-day-tokyo-2026/single.html
+[error] layouts/almalinux-day-tokyo-2026/single.html: SyntaxError: Unexpected closing tag "section". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags (858:7)
+[error]   856 |         </div>
+[error]   857 | end Attribution block -->
+[error] > 858 |       </section>
+[error]       |       ^^^^^^^^^^
+[error]   859 |     </div>
+[error]   860 |   </section>
+[error]   861 | {{ end }}
+```
+
+Still not a great error, but it's better than before. In this particular case, you now know that `section` was already closed so the HTML is malformed somehow. Sometimes it's relatively easy to spot how because the offending tag is nearby, sometimes it's not. In this particular example, there were two unclosed `divs` in line 148, so it was NOT easy to spot. AI is remarkibly good at parsing HTML and actually giving you a better error than prettier, so you can give it the file and the prettier error and ask it to find the error.
+
+Once you figure out the issue and fix it, undo your changes to `.prettierrc` and run it on the file again to verify that it's all good.
+
 ### Localization and Translation
 
 AlmaLinux.org translations are managed on [Weblate](https://hosted.weblate.org/engage/almalinux/). To contribute, join the [AlmaLinux project](https://hosted.weblate.org/projects/almalinux/) on Weblate. Submissions through Weblate generate automated PRs to this repo, which are reviewed and merged by the Marketing SIG or another team lead.
