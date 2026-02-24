@@ -117,6 +117,9 @@ versions:
         arches: ["x86_64", "x86_64_v2", "aarch64"]
       incusLxc:
         arches: ["x86_64", "aarch64"]
+      wsl:
+        arches: ["x86_64", "aarch64"]
+        storeUrl: "https://apps.microsoft.com/store/detail/almalinux-{major}/9N2VHJMS6J50"
 
   - id: "10-kitten"
     label: "AlmaLinux 10 Kitten"
