@@ -1,5 +1,5 @@
 ---
-title: "2025 AlmaLinux Recap!"
+title: "2025 AlmaLinux Year in Review"
 type: blog
 author:
   name: "benny Vasquez"
@@ -9,7 +9,7 @@ date: 2026-02-25
 images:
   - /blog-images/2026/2025-recap.png
 post:
-  title: "2025 AlmaLinux Recap!"
+  title: "2025 AlmaLinux Year in Review"
   image: /blog-images/2026/2025-recap.png
 ---
 
