@@ -15,8 +15,7 @@ post:
 
 2025 was another year of growth and excitement for AlmaLinux. Here's a look back at what we achieved, all thanks to our amazing community! Whether you've been involved from the start, just recently joined us, or have yet to start contributing, we'd like to thank you for being a part of this community.
 
-AlmaLinux OS versions and AlmaLinux OS Kitten Updates
-======================================================
+# AlmaLinux OS versions and AlmaLinux OS Kitten Updates
 
 Our main goal is to provide stable, secure, Red Hat Enterprise Linux-compatible releases of AlmaLinux OS. In 2025, we released AlmaLinux OS [9.6](/blog/2025-05-20-almalinux_96_release/), [10.0](/blog/2025-05-27-welcoming-almalinux-10/), [9.7](/blog/2025-11-17-almalinux_97_release/), and [10.1](/blog/2025-11-24-almalinux_101_release/).
 
@@ -24,41 +23,39 @@ With these releases, we not only continue to meet the expectations of AlmaLinux 
 
 In addition, we've also continuously updated AlmaLinux OS Kitten, which is our development-focused distribution of AlmaLinux OS that we announced back in October of 2024. It was the first place you saw AlmaLinux OS 10, and the first place you saw Btrfs support. If you want to learn more about Kitten, [take a look at the docs in the Wiki](https://wiki.almalinux.org/development/almalinux-os-kitten-10.html)!
 
-ALESCo in 2025
-==============
+# ALESCo in 2025
 
 Transparency is a big part of any open source project, and ALESCo plays a key role in our transparency as an OS. In case you are unfamiliar, [ALESCo](/alesco/) is a group of engineers heavily involved in using and developing AlmaLinux, formed into a committee that has been generally guiding the technical progression and growth of AlmaLinux as an operating system. It acts as a central collaboration point for the AlmaLinux SIGs and community in general, and is the driving force behind any deviations that AlmaLinux takes from our upstreams while ensuring we maintain full compatibility with RHEL.
 
 In 2025, ALESCo was involved in a number of decisions that shaped AlmaLinux OS:
 
--   [Patches for Rsync vulnerabilities](/blog/2025-01-17-rsync-vulnerabilities/)
+- [Patches for Rsync vulnerabilities](/blog/2025-01-17-rsync-vulnerabilities/)
 
--   [Patches for OpenSSH CVE-2025-26465](/blog/2025-02-20-test-patches-for-cve-2025-26465/)
+- [Patches for OpenSSH CVE-2025-26465](/blog/2025-02-20-test-patches-for-cve-2025-26465/)
 
--   [Patches for FreeType CVE-2025-27363](/blog/2025-03-13-cve-2025-27363-patches/)
+- [Patches for FreeType CVE-2025-27363](/blog/2025-03-13-cve-2025-27363-patches/)
 
--   x86_64_v2 support for [AlmaLinux OS Kitten 10](/blog/2025-05-13-epel-10-kitten-v2/) and [AlmaLinux OS 10](/blog/2025-06-26-epel-v2-now-covers-almalinux-10-stable/)
+- x86_64_v2 support for [AlmaLinux OS Kitten 10](/blog/2025-05-13-epel-10-kitten-v2/) and [AlmaLinux OS 10](/blog/2025-06-26-epel-v2-now-covers-almalinux-10-stable/)
 
--   [AlmaLinux OS 9 and 10 having native support for NVIDIA ](/blog/2025-08-06-announcing-native-nvidia-suport/)
+- [AlmaLinux OS 9 and 10 having native support for NVIDIA ](/blog/2025-08-06-announcing-native-nvidia-suport/)
 
--   [Enabling the CRB repository by default for AlmaLinux OS 10](/blog/2025-09-08-enabling-crb-by-default-for-almalinux10/)
+- [Enabling the CRB repository by default for AlmaLinux OS 10](/blog/2025-09-08-enabling-crb-by-default-for-almalinux10/)
 
--   [Btrfs support in AlmaLinux OS 10.1](/blog/2025-10-21-announcing-btrfs-support-in-almalinux-10-1/)
+- [Btrfs support in AlmaLinux OS 10.1](/blog/2025-10-21-announcing-btrfs-support-in-almalinux-10-1/)
 
 ALESCo will continue to guide the OS in a very public way, furthering our goal of providing full transparency regarding the technical decisions surrounding AlmaLinux. If you'd like to get involved, [join the Mattermost channel](https://chat.almalinux.org/almalinux/channels/alesco), or [join us for a meeting](https://events.almalinux.org/category/7/)! They're all open to the public.
 
-ELevate in 2025
-===============
+# ELevate in 2025
 
 If you don't know, the ELevate project is an initiative to support upgrades between major versions of RHEL-derivatives. You can learn more about it [here on our Wiki](https://wiki.almalinux.org/elevate/).
 
 As of 2025, you can now [ELevate to EL 10](/blog/2025-07-07-elevate-to-el-10/). New paths include:
 
--   AlmaLinux OS 9 to AlmaLinux OS 10.0
+- AlmaLinux OS 9 to AlmaLinux OS 10.0
 
--   AlmaLinux OS 9 to AlmaLinux OS Kitten 10
+- AlmaLinux OS 9 to AlmaLinux OS Kitten 10
 
--   CentOS Stream 9 to CentOS Stream 10
+- CentOS Stream 9 to CentOS Stream 10
 
 We also had a major ELevate update in December of 2025: [ELevate is now supported in upstream LEAPP](/blog/2025-12-18-elevate-updates/)! That significantly reduces the amount of work that we have to maintain in ELevate.
 
@@ -66,8 +63,7 @@ AlmaLinux and CentOS Stream will be supported upgrade paths in ELevate for the l
 
 We take feedback in the form of issues and pull requests on our own [leapp-repository repo](https://github.com/AlmaLinux/leapp-repository), or as part of a discussion in the [~Migration channel in Mattermost](https://chat.almalinux.org/), and can't wait to hear from you!
 
-2025 Events
-===========
+# 2025 Events
 
 In 2025, we hosted the first AlmaLinux Day: Vancouver, which took place adjacent to SIGGRAPH! We've said it before and we'll say it again, but we couldn't have pulled it off without our amazing volunteers who helped to organize it, as well as all of our wonderful speakers.
 
@@ -95,13 +91,11 @@ We also attended a lot of community events over the course of the year, and it w
 
 We're looking forward to another year filled with events, including some more AlmaLinux Day events, so keep your eyes peeled!
 
-Growth in the AlmaLinux Community
-=================================
+# Growth in the AlmaLinux Community
 
 We're grateful to have such an amazing community. Here's a little bit more about them!
 
-AlmaSponsors
-------------
+## AlmaSponsors
 
 Our AlmaSponsors invest in forever-free, community-owned enterprise Linux. For an independent open source project, maintaining funding through a variety of sponsor members is key to our ability to remain impartial, and is key to our long-term goal of achieving 501(c)(3) status. We remain grateful to our entire community for their support, and are especially grateful for the sponsor members who support the project with funds or resources that are critical to helping us keep up with our explosive growth.
 
@@ -115,8 +109,7 @@ Ruby: [rackSPEED GmbH](https://rackspeed.de/)
 
 If you're interested in sponsoring AlmaLinux, [learn more here](/members/)!
 
-AlmaHelpers
------------
+## AlmaHelpers
 
 Behind every release and support thread are real people making AlmaLinux what it is!
 
@@ -128,8 +121,7 @@ One way we are seeing more people show up to help is in the new SIGs formed in 2
 
 If you'd like to get involved, take a look at the [Contribute page to get inspired](/contribute/), and then [join us in Mattermost](http://chat.almalinux.org)!
 
-AlmaMembers
------------
+## AlmaMembers
 
 Community-owned means something real when you have members who show up.
 
@@ -137,8 +129,7 @@ To the individual members of the AlmaLinux OS Foundation, thank you for believin
 
 Individual membership is free, and open to anyone who touches the AlmaLinux project in nearly any way. If you'd like to become a member, [learn more here](/members/)!
 
-AlmaMirrors
------------
+## AlmaMirrors
 
 Fast, reliable downloads don't happen by magic. They happen because people host mirrors!
 
@@ -148,8 +139,7 @@ A special thanks to our Rsync mirror hosts and our technology sponsors - you hel
 
 If you'd like to create a public AlmaLinux mirror, [learn more here](https://wiki.almalinux.org/Mirrors.html)! You can also [become an AlmaLinux mirror member](/members/).
 
-AlmaFriends
------------
+## AlmaFriends
 
 The strength of open source is in its ecosystem. 💪
 
@@ -173,15 +163,13 @@ We also like to thank all of the open source projects that WE use to make AlmaLi
 
 Together we're building a better future for enterprise Linux!
 
-Continued Growth
-----------------
+## Continued Growth
 
 It's thanks to all of these members of the AlmaLinux community that we're able to keep AlmaLinux growing, which we can see by looking at the devices reaching out to the mirror system for updates. While this number only shows a fraction of the devices running AlmaLinux (because not everyone uses the public update system) it is one more good representation of the continued expansion of our global community.
 
 {{< figure src="/blog-images/2026/2025-recap-mirror-stats.png" width="50%" class="text-center" >}}
 
-Encouraging Help in the Greater Open Source Community
-=====================================================
+# Encouraging Help in the Greater Open Source Community
 
 With our ever-growing community and the reach of AlmaLinux, we are constantly looking for ways to ensure that we're engaging with the greater open source world. Some are relatively small ways - like attending events or responding to community questions in the forums.
 
@@ -189,8 +177,7 @@ Some are bigger or more far-reaching ways, like submitting bug fixes and feature
 
 These intangible ways that we are committed to improving the whole ecosystem are what you encounter if you come to the [AlmaLinux chat](http://chat.almalinux.org). 
 
-2026 and Beyond
-===============
+# 2026 and Beyond
 
 Through all the growth and excitement in 2025, our community continues to show up and show out! We'd like to once again thank everyone who has contributed to AlmaLinux's journey, and we're looking forward to another exciting year for AlmaLinux in 2026.
 
