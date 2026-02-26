@@ -35,6 +35,7 @@ hero_image: "/landingpages/your-event/hero.jpg"
 event_name: "AlmaLinux Day: City"
 event_tagline: "Optional tagline"           # omit if not needed
 event_date: "Month Nth, YYYY"
+event_time: "HH:MM AM – HH:MM PM"          # optional; shown below the date
 venue:
   - "Venue Name"
   - "Street Address"
@@ -86,6 +87,21 @@ speakers:
 - Hero image → `static/landingpages/your-event/`
 - Speaker photos → `static/landingpages/your-event/` (or anywhere under `static/`)
 - OG/social preview image → `static/images/og/`
+
+### Step 4: Add to the navigation menu
+
+Add the new event to the events sub-list in `layouts/partials/common/nav.html`, inside the `<ul>` nested under "SIGs, ALESCo and other events". Events are listed newest-first. Add a new `<li>`:
+
+```html
+<li>
+  <a
+    class="dropdown-item dropdown-nested"
+    href="{{ "/your-event-slug/" | relLangURL }}"
+    style="color:aliceblue">
+    {{ i18n "ALD City YYYY" }}
+  </a>
+</li>
+```
 
 ### Toggling post-event state
 

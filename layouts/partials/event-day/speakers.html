@@ -1,24 +1,26 @@
 {{ $data := index $.Site.Data.events .Params.event_data_key }}
 {{ if and $data $data.speakers }}
-<div class="al-index-meet">
-  <h1 class="pt-3 px-3">{{ i18n "Experience and lessons learned from every industry" }}</h1>
-  <div class="row">
-    {{ range $data.speakers }}
-    <div class="col-xl-3 col-sm-6 mb-5">
-      <div class="py-5 px-4 text-center al-member-item">
-        <div>
-          <img
-            class="img-fluid rounded-circle mb-3 img-thumbnail"
-            src="{{ .photo }}"
-            alt="{{ .name }}"
-            style="max-width: 180px;" />
+<div class="al-index-meet" style="clear: both;">
+  <div class="container al-py-md px-5">
+    <h1 class="pt-3">{{ i18n "Experience and lessons learned from every industry" }}</h1>
+    <div class="row">
+      {{ range $data.speakers }}
+      <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="py-5 px-4 text-center al-member-item">
+          <div>
+            <img
+              class="img-fluid rounded-circle mb-3 img-thumbnail"
+              src="{{ .photo }}"
+              alt="{{ .name }}"
+              style="max-width: 180px;" />
+          </div>
+          <h5 class="mb-1">{{ .name }}</h5>
+          {{ with .title }}<div class="small mb-1">{{ . }}</div>{{ end }}
+          {{ with .org }}<div class="small fw-light">{{ . }}</div>{{ end }}
         </div>
-        <h5 class="mb-1">{{ .name }}</h5>
-        {{ with .title }}<div class="small mb-1">{{ . }}</div>{{ end }}
-        {{ with .org }}<div class="small fw-light">{{ . }}</div>{{ end }}
       </div>
+      {{ end }}
     </div>
-    {{ end }}
   </div>
 </div>
 {{ end }}
