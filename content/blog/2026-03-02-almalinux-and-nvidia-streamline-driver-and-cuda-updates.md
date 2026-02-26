@@ -5,7 +5,7 @@ author:
   name: "Jonathan Wright"
   bio: "Infrastructure SIG lead & ALESCo member"
   image: /users/jonathan.jpg
-date: 2026-02-26
+date: 2026-03-02
 images:
   - /blog-images/2026/2026-02-26-nvidia-cuda-updates.png
 post:
@@ -29,14 +29,9 @@ We also now have an agreement with NVIDIA that allows us to distribute NVIDIA's 
 Why the change?
 ---------------
 
-Right now, when NVIDIA releases a new driver, there is a very slight delay in our release of the updates, which can result in brief version mismatches for users of NVIDIA hardware and AlmaLinux. Shipping both the open source drivers and the userspace, and CUDA components, ourselves means that all the packages are updated in tandem. There won't be any delay at all between the release of the two package sets, ensuring the versions are always in sync
+Right now, when NVIDIA releases a new driver, there is a very slight delay in our release of the updates, which can result in brief version mismatches for users of NVIDIA hardware and AlmaLinux. Shipping both the open source drivers and the userspace, and CUDA components, ourselves means that all the packages are updated in tandem. There won't be any delay at all between the release of the two package sets, ensuring the versions are always in sync. 
 
-Some notes
-----------
-
-If you look, you'll find that the updated almalinux-release-nvidia-driver package points to nvidia.repo.almalinux.org instead of being distributed through the [AlmaLinux Mirror System](https://mirrors.almalinux.org/) like the rest of our packages. This allows both us and NVIDIA to better gauge usage and interest in these packages which is helpful for other similar additions in the future. 
-
-You will also notice that the userspace and CUDA component RPMs are signed by NVIDIA, which is exactly the same as what users see now. We are only redistributing the packages that NVIDIA builds, not rebuilding them ourselves.
+You will notice that the userspace and CUDA component RPMs are signed by NVIDIA, and are being distributed from nvidia.repo.almalinux.org instead of being distributed through the [AlmaLinux Mirror System](https://mirrors.almalinux.org/). We are only redistributing the packages that NVIDIA builds, not building them ourselves. 
 
 How to see what version of the NVIDIA packages you are using right now
 ------------------------------------------------------------
