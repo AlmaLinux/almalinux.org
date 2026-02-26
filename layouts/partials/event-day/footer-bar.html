@@ -1,0 +1,20 @@
+{{ with .Params.coc_url }}
+<div class="al-index-image-by" style="background: #0e3b5c;">
+  <div class="container pt-3 pb-2">
+    <div>
+      {{ i18n "This event is governed by a Code of Conduct" }}
+      <a style="color: #fff;" href="{{ . }}">Code of Conduct</a>
+    </div>
+  </div>
+</div>
+{{ end }}
+{{ if and .Params.photo_credit_name .Params.photo_credit_url }}
+<div class="al-index-image-by" style="background: #0e3b5c;">
+  <div class="container pt-3 pb-2">
+    <div class="small">
+      {{ i18n "Header image by " }}
+      <a style="color: #fff;" href="{{ .Params.photo_credit_url }}">{{ .Params.photo_credit_name }}</a>
+    </div>
+  </div>
+</div>
+{{ end }}

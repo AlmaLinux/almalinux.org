@@ -11,8 +11,89 @@ The site is built using the [Hugo](https://gohugo.io/) static site generator.
 We welcome contributions for website updates, design improvements, and translations. Please follow the specific instructions provided for each contribution type:
 
 - For blog content, see [Contributing - Blog Posts](https://github.com/AlmaLinux/almalinux.org/blob/main/contributing-blog-posts.md)
+- For event pages, see [Contributing - Event Pages](#contributing-event-pages)
 - For code or design improvements, see [Contributing - Code and Design](#contributing-code-and-design)
 - For translations, see [Contributing - Translations](#localization-and-translation)
+
+## Contributing - Event Pages
+
+Event landing pages (AlmaLinux Day, ALDT, etc.) use the `event-day` Hugo layout. A new event page requires only two files — no HTML editing needed.
+
+### Step 1: Create the content file
+
+Create `content/your-event-slug.md`:
+
+```yaml
+---
+title: "AlmaLinux Day: City Year"
+type: event-day
+images:
+  - /images/og/your-og-image.png
+
+# Hero banner
+hero_image: "/landingpages/your-event/hero.jpg"
+event_name: "AlmaLinux Day: City"
+event_tagline: "Optional tagline"           # omit if not needed
+event_date: "Month Nth, YYYY"
+venue:
+  - "Venue Name"
+  - "Street Address"
+  - "City, Country"
+venue_link: "https://maps-or-transit-link"
+venue_link_text: "Getting here"
+registration_url: "https://events.almalinux.org/e/your-event"
+registration_cta: "Reserve your spot!"
+registration_button: "al-cta-green"         # or al-cta-blue
+
+# Post-event — set to true and fill in after the event
+post_event: false
+thankyou_city: "City"
+thankyou_quote: "Quote from benny after the event."
+thankyou_youtube: "https://www.youtube.com/watch?v=..."
+
+# Footer bars — omit either field to hide that bar
+coc_url: "/p/your-event-code-of-conduct/"
+photo_credit_name: "Photographer Name"
+photo_credit_url: "https://unsplash.com/..."
+
+# Must match the filename in data/events/ (without .yaml)
+event_data_key: "your-event-slug"
+---
+```
+
+The markdown body (below `---`) is rendered between the hero and the speakers section. Use it for the event description, schedule embed, venue photos, and any other event-specific content. Raw HTML is supported.
+
+### Step 2: Create the data file
+
+Create `data/events/your-event-slug.yaml`:
+
+```yaml
+event_sponsors:
+  - name: "Sponsor Name"
+    url: "https://sponsor.example.com"
+    logo: "/brands/sponsor-logo.svg"
+    size: "large"    # "large" = prominent; omit for smaller display
+
+speakers:
+  - name: "Speaker Name"
+    photo: "/landingpages/your-event/speaker.jpg"
+    title: "Speaker Title or Talk Title"   # optional
+    org: "Speaker Organization"            # optional
+```
+
+### Step 3: Add images
+
+- Hero image → `static/landingpages/your-event/`
+- Speaker photos → `static/landingpages/your-event/` (or anywhere under `static/`)
+- OG/social preview image → `static/images/og/`
+
+### Toggling post-event state
+
+Once the event is over, set `post_event: true` in the front matter and fill in `thankyou_quote` and `thankyou_youtube`. This automatically shows the thank-you block at the top of the page with a link to the recordings.
+
+### Foundation member sponsors
+
+The foundation member sponsor logos are rendered automatically on every event page — you do not need to add them. To update the list, edit `layouts/partials/event-day/foundation-members.html`.
 
 ## Contributing - Code and Design
 
