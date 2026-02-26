@@ -17,7 +17,21 @@ Our website is built in Hugo and served using CloudFlare pages, so you may find 
 
 Blog content is served using the `layouts/blog/single.html` format. Note: if you would like to suggest changes to this format, they should be submitted in a PR outside the PR of your blog post.
 
-- create a new file in `./content/blog` named what you'd like the slug (URL) to be, with a file extension of '.md'. For example, the blog post at [almalinux.org/blog/celebrating-500k-docker-pulls](almalinux.org/blog/celebrating-500k-docker-pulls) is in a file named `./content/blog/celebrating-500k-docker-pulls.md`.
+The easiest way to create a new blog post is with the Hugo archetype, which generates a file with the correct front matter pre-populated:
+
+```bash
+hugo new blog/YYYY-MM-DD-your-post-title.md
+```
+
+For example:
+
+```bash
+hugo new blog/2026-03-01-announcing-new-feature.md
+```
+
+This creates a file in `./content/blog/` with the title derived from the filename and the current year pre-filled in the image paths. You'll still need to fill in your author info and image paths before submitting.
+
+Alternatively, you can create the file manually: create a new file in `./content/blog` named what you'd like the slug (URL) to be, with a file extension of '.md'. For example, the blog post at [almalinux.org/blog/celebrating-500k-docker-pulls](almalinux.org/blog/celebrating-500k-docker-pulls) is in a file named `./content/blog/celebrating-500k-docker-pulls.md`.
 
 **The Meta data**
 
