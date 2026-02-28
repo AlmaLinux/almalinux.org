@@ -37,7 +37,7 @@ jobs:
         run: python3 tools/generate_get_almalinux_yaml.py
 
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --buildFuture
 
       - name: move redirects file into place
         run: cp _redirects public/
