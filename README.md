@@ -110,7 +110,7 @@ Once the event is over, set `post_event: true` in the front matter and fill in `
 
 ### Foundation member sponsors
 
-The foundation member sponsor logos are rendered automatically on every event page — you do not need to add them. To update the list, edit `layouts/partials/event-day/foundation-members.html`.
+The foundation member sponsor logos are rendered automatically on every event page — you do not need to add them. To update the list, edit `layouts/partials/common/foundation-members.html`.
 
 ## Contributing - Code and Design
 
