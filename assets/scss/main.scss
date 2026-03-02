@@ -182,7 +182,7 @@ button:focus, .btn:focus{
 
 #al-motd {
   width: 100%;
-  background: darken($al-c-black-pearl, 5%);
+  background: $al-c-black-pearl-lighter;
   padding-top: 12px;
   padding-bottom: 12px;
   font-size: 0.8rem;
@@ -200,10 +200,11 @@ button:focus, .btn:focus{
    
       a {
         text-decoration: none;
+        color: $al-c-candlelight;
 
         &:hover {
           text-decoration: underline;
-          color: inherit;
+          color: $al-c-candlelight-lighter;
         }
       }
     }
