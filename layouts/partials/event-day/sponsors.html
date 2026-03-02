@@ -1,0 +1,28 @@
+{{ $data := index $.Site.Data.events .Params.event_data_key }}
+<div class="al-index-sponsors">
+  <div class="container al-py-md px-5">
+    {{ if and $data $data.event_sponsors }}
+      <h1>{{ i18n "Thank you to our event sponsors!" }}</h1>
+      <div
+        class="row row-cols-2 row-cols-sm-4 row-cols-md-6 g-5 al-backed-by-list">
+        {{ range $data.event_sponsors }}
+          <a href="{{ .url }}">
+            <div
+              class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+              <img
+                loading="lazy"
+                src="{{ .logo }}"
+                alt="{{ .name }}"
+                class="{{ if eq .size "large" }}
+                  al-backer-logo
+                {{ else }}
+                  al-backer-logo-small
+                {{ end }}" />
+            </div>
+          </a>
+        {{ end }}
+      </div>
+    {{ end }}
+    {{ partial "event-day/foundation-members.html" . }}
+  </div>
+</div>

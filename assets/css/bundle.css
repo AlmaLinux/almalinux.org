@@ -665,7 +665,7 @@ outline: none !important;
 
 #al-motd {
   width: 100%;
-  background: #051520;
+  background: #264154;
   /* margin-top: 8px; */
   padding-top: 12px;
   padding-bottom: 12px;
@@ -684,10 +684,11 @@ outline: none !important;
 }
 #al-motd > .container > .text a {
   text-decoration: none;
+  color: #ffcb12;
 }
 #al-motd > .container > .text a:hover {
   text-decoration: underline;
-  color: inherit;
+  color: #ffe930;
 }
 
 section h1.al-section-title {
