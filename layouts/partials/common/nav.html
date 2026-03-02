@@ -168,71 +168,103 @@
                 {{ i18n "Security" }}
               </a>
             </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            id="navbarDropEvents"
+            data-toggle="dropdown"
+            aria-expanded="false"
+            style="margin-top:5px">
+            {{ i18n "Events" }}
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-start"
+            aria-labelledby="navbarDropEvents">
             <li>
               <a
                 class="dropdown-item"
-                href="https://events.almalinux.org/"
+                href="https://events.almalinux.org/category/1/"
                 style="color:aliceblue">
-                {{ i18n "SIGs, ALESCo and other events" }}
+                {{ i18n "SIG Meetings" }}
               </a>
-              <ul>
-                <li>
-                  <a
-                    class="dropdown-item dropdown-nested"
-                    href="{{ "/almalinux-day-germany-2026/" | relLangURL }}"
-                    style="color:aliceblue">
-                    {{ i18n "ALD Germany 2026" }}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item dropdown-nested"
-                    href="{{ "/almalinux-day-los-angeles-2026/" | relLangURL }}"
-                    style="color:aliceblue">
-                    {{ i18n "ALD Los Angeles 2026" }}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item dropdown-nested"
-                    href="{{ "/almalinux-day-tokyo-2026/" | relLangURL }}"
-                    style="color:aliceblue">
-                    {{ i18n "ALD Tokyo 2026" }}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-nested dropdown-item"
-                    href="{{ "/almalinux-day-vancouver-2025/" | relLangURL }}"
-                    style="color:aliceblue">
-                    {{ i18n "ALD Vancouver 2025" }}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-nested dropdown-item"
-                    href="{{ "/aldt-2024" | relLangURL }}"
-                    style="color:aliceblue">
-                    {{ i18n "ALD Tokyo 2024" }}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item dropdown-nested"
-                    href="{{ "/almalinux-day-germany-2024/" | relLangURL }}"
-                    style="color:aliceblue">
-                    {{ i18n "ALD Germany 2024" }}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item dropdown-nested"
-                    href="{{ "/aldt-2023" | relLangURL }}"
-                    style="color:aliceblue">
-                    {{ i18n "ALD Tokyo 2023" }}
-                  </a>
-                </li>
-              </ul>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://events.almalinux.org/category/7/"
+                style="color:aliceblue">
+                {{ i18n "ALESCo Meetings" }}
+              </a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <h6 class="dropdown-header" style="color: white;">
+                {{ i18n "Upcoming Events" }}
+              </h6>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="{{ "/almalinux-day-germany-2026/" | relLangURL }}"
+                style="color:aliceblue">
+                {{ i18n "ALD Germany 2026" }}
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="{{ "/almalinux-day-los-angeles-2026/" | relLangURL }}"
+                style="color:aliceblue">
+                {{ i18n "ALD Los Angeles 2026" }}
+              </a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <h6 class="dropdown-header" style="color: white;">
+                {{ i18n "Past Events" }}
+              </h6>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="{{ "/almalinux-day-tokyo-2026/" | relLangURL }}"
+                style="color:aliceblue">
+                {{ i18n "ALD Tokyo 2026" }}
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="{{ "/almalinux-day-vancouver-2025/" | relLangURL }}"
+                style="color:aliceblue">
+                {{ i18n "ALD Vancouver 2025" }}
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="{{ "/aldt-2024" | relLangURL }}"
+                style="color:aliceblue">
+                {{ i18n "ALD Tokyo 2024" }}
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="{{ "/almalinux-day-germany-2024/" | relLangURL }}"
+                style="color:aliceblue">
+                {{ i18n "ALD Germany 2024" }}
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="{{ "/aldt-2023" | relLangURL }}"
+                style="color:aliceblue">
+                {{ i18n "ALD Tokyo 2023" }}
+              </a>
             </li>
           </ul>
         </li>

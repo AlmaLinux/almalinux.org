@@ -869,7 +869,6 @@
    "Please, file your bugs, and join us for discussions on GitHub and on AlmaLinux Chat on Mattermost.": "Please, file your bugs, and join us for discussions on GitHub and on AlmaLinux Chat on Mattermost.",
    "File a big": "File a big",
    "Find us on Github": "Find us on Github",
-   "SIGs, ALESCo and other events": "SIGs, ALESCo and other events",
    "ALD Germany 2026": "ALD Germany 2026",
    "ALD Los Angeles 2026": "ALD Los Angeles 2026",
    "ALD Tokyo 2026": "ALD Tokyo 2026",
@@ -897,5 +896,10 @@
    "Register to attend!": "Register to attend!",
    "Membership of the foundation is determined and managed by the Membership Committee. The membership committee meets regularly to review applications and welcome new members to the foundation. The qualifications for each type of membership are below. If you have any interest in joining the membership committee, reach out to the committee directly via email": "Membership of the foundation is determined and managed by the Membership Committee. The membership committee meets regularly to review applications and welcome new members to the foundation. The qualifications for each type of membership are below. If you have any interest in joining the membership committee, reach out to the committee directly via email",
    "Thank you": "Thank you",
-   "Thanks to all Sponsor Members of the AlmaLinux OS Foundation": "Thanks to all Sponsor Members of the AlmaLinux OS Foundation"
+   "Thanks to all Sponsor Members of the AlmaLinux OS Foundation": "Thanks to all Sponsor Members of the AlmaLinux OS Foundation",
+   "Events": "Events",
+   "SIG Meetings": "SIG Meetings",
+   "ALESCo Meetings": "ALESCo Meetings",
+   "Upcoming Events": "Upcoming Events",
+   "Past Events": "Past Events"
 }
