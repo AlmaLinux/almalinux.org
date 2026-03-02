@@ -46,6 +46,18 @@ Our call for speakers is open! If you are a VFX or pipeline engineer, Linux prof
 
 **Submissions close April 5, 2026.** Submit your proposal at [sessionize.com/almalinux-day-los-angeles](https://sessionize.com/almalinux-day-los-angeles).
 
+<table class="table table-dark table-striped table-bordered">
+  <thead>
+    <tr><th>Stage</th><th>Date</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Submissions close</td><td>April 5, 2026</td></tr>
+    <tr><td>Speakers notified</td><td>April 10, 2026</td></tr>
+    <tr><td>Speaker confirmation deadline</td><td>April 30, 2026</td></tr>
+    <tr><td>Schedule announced</td><td>May 5, 2026</td></tr>
+  </tbody>
+</table>
+
 ---
 
 For years, the VFX and Media industries have sought a bedrock — a stable ground where the most demanding renders and the most complex simulations could live without fear of shifting underfoot. In 2026, that ground becomes solid.

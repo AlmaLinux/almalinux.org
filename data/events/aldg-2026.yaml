@@ -9,6 +9,10 @@ speakers:
     photo: "/landingpages/aldg-2026/peter.png"
     title: "Chief Operating Officer (COO)" # optional
     org: "MEGWARE Computer" # optional
+  - name: "Alexander Troshin"
+    photo: "/landingpages/aldg-2026/Alex_amd.jpg"
+    title: "Product Marketing Manager" # optional
+    org: "AMD" # optional
   - name: "benny Vasquez"
     photo: "/landingpages/aldg-2026/benny.jpeg"
     title: "Chair of the Board" # optional

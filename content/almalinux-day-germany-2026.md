@@ -75,7 +75,6 @@ The schedule is still being finalized, but the structure of the day is set!
   </thead>
   <tbody>
     <tr><td>9:00 AM</td><td>Doors open</td></tr>
-    <tr class="table-primary"><td><strong>10:00 AM</strong></td><td><strong>Public event starts</strong></td></tr>
     <tr><td>10:00 AM</td><td>Keynote</td></tr>
     <tr><td>11:00 AM</td><td>talks</td></tr>
     <tr><td>12:30 PM</td><td>Lunch</td></tr>
@@ -88,10 +87,14 @@ The schedule is still being finalized, but the structure of the day is set!
 
 <img src="/landingpages/aldg-2026/sayhitoAlmaLinux.png" alt="AlmaLinux booth at CloudFest 2026" style="float: right; width: 45%; margin-left: 2rem; margin-bottom: 1rem; border-radius: 8px;" />
 
+### Call for Lightning Talks
+
+Have something to share? We are accepting lightning talk submissions for AlmaLinux Day: Germany! If you have a 5-minute session you'd like to pitch for inclusion in the day, submit your proposal at [sessionize.com/almalinux-day-germany](https://sessionize.com/almalinux-day-germany/).
+
 ### Registration & Logistics
 
 AlmaLinux Day: Germany takes place during the final day of [CloudFest 2026](https://cloudfest.com/). To attend AlmaLinux Day: Germany you must register for CloudFest and pick up your badge.
 
-You can get your free Standard Pass using this this [AlmaLinux-Day specific link!](https://registration.cloudfest.com/?code=g6peC9RM)
+You can get your free Standard Pass using this [AlmaLinux-Day specific link!](https://registration.cloudfest.com/?code=g6peC9RM)
 
 If you are attending CloudFest, you can also stop by and see us in the Dome at booth [Z29](https://www.cloudfest.com/event/floor-plan)!
