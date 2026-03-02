@@ -5,12 +5,18 @@
   "main": "index.js",
   "scripts": {
     "watch": "sass --watch assets/scss/main.scss assets/css/bundle.css",
-    "generate:get": "python3 tools/generate_get_almalinux_yaml.py"
+    "generate:get": "python3 tools/generate_get_almalinux_yaml.py",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "lint-staged": {
+    "**/*.{html,css,scss,md,json,yaml,yml,js}": "prettier --write"
+  },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.3.1",
     "prettier": "^3.6.2",
     "prettier-plugin-go-template": "^0.0.15"
   }
