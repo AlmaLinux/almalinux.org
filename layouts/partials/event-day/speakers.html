@@ -2,7 +2,7 @@
 {{ if and $data $data.speakers }}
 <div class="al-index-meet" style="clear: both;">
   <div class="container al-py-md px-5">
-    <h1 class="pt-3">{{ i18n "Experience and lessons learned from every industry" }}</h1>
+    <h1 class="pt-3">{{ with $.Page.Params.speakers_header }}{{ i18n . | default . }}{{ else }}{{ i18n "Experience and lessons learned from every industry" }}{{ end }}</h1>
     <div class="row">
       {{ range $data.speakers }}
       <div class="col-xl-3 col-sm-6 mb-5">

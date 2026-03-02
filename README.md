@@ -59,6 +59,7 @@ photo_credit_url: "https://unsplash.com/..."
 
 # Must match the filename in data/events/ (without .yaml)
 event_data_key: "your-event-slug"
+speakers_header: "On stage at AlmaLinux Day: City"  # optional; overrides default heading
 ---
 ```
 

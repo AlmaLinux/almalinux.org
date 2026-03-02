@@ -33,6 +33,7 @@ photo_credit_url: ""
 
 # Must match the filename in data/events/ (without .yaml)
 event_data_key: "aldg-2026"
+speakers_header: "Confirmed Speakers for AlmaLinux Day: Germany"
 ---
 
 <img src="/landingpages/aldg-2026/IMG_1455.jpeg" alt="AlmaLinux Day: Germany venue" style="float: left; width: 45%; margin-right: 2rem; margin-bottom: 1rem; border-radius: 8px;" />
