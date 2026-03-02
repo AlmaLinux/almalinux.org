@@ -41,7 +41,7 @@ Attending either event is straightforward, but the details differ a bit by city.
 
 For **Germany**, attendance is tied to CloudFest — you'll need a CloudFest badge to get in. The good news: you can grab a free Standard Pass using [our AlmaLinux-specific registration link](/almalinux-day-germany-2026/). If you're already planning to be at CloudFest, just stop by the Convento room on Thursday, March 26.
 
-We're also accepting lightning talk submissions for Germany! If you have a 10-minute session you'd like to pitch for inclusion in the day, reach out to us — details on how to submit are on the [AlmaLinux Day: Germany page](/almalinux-day-germany-2026/).
+We're also accepting lightning talk submissions for Germany! If you have a 5-minute session you'd like to pitch for inclusion in the day, reach out to us — details on how to submit are on the [AlmaLinux Day: Germany page](/almalinux-day-germany-2026/).
 
 For **Los Angeles**, registration is free and open at [events.almalinux.org](https://events.almalinux.org/). Space is limited and the first 100 registrants get a special gift, so grab your spot early.
 
