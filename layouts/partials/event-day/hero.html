@@ -10,12 +10,14 @@
         {{ with .Params.event_time }}<br />{{ i18n . | default . }}{{ end }}
       </h3>
       {{ with .Params.venue }}
-      <div>
-        {{ range . }}{{ . }}<br />{{ end }}
-        {{ with $.Params.venue_link }}
-        <a href="{{ . }}">{{ i18n ($.Params.venue_link_text | default "Getting here") | default ($.Params.venue_link_text | default "Getting here") }}</a>
-        {{ end }}
-      </div>
+        <div>
+          {{ range . }}{{ . }}<br />{{ end }}
+          {{ with $.Params.venue_link }}
+            <a href="{{ . }}"
+              >{{ i18n ($.Params.venue_link_text | default "Getting here") | default ($.Params.venue_link_text | default "Getting here") }}</a
+            >
+          {{ end }}
+        </div>
       {{ end }}
     </div>
     <div class="topic_item_2" style="padding-top: 30px;">

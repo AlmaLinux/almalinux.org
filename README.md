@@ -33,9 +33,9 @@ images:
 # Hero banner
 hero_image: "/landingpages/your-event/hero.jpg"
 event_name: "AlmaLinux Day: City"
-event_tagline: "Optional tagline"           # omit if not needed
+event_tagline: "Optional tagline" # omit if not needed
 event_date: "Month Nth, YYYY"
-event_time: "HH:MM AM – HH:MM PM"          # optional; shown below the date
+event_time: "HH:MM AM – HH:MM PM" # optional; shown below the date
 venue:
   - "Venue Name"
   - "Street Address"
@@ -44,7 +44,7 @@ venue_link: "https://maps-or-transit-link"
 venue_link_text: "Getting here"
 registration_url: "https://events.almalinux.org/e/your-event"
 registration_cta: "Reserve your spot!"
-registration_button: "al-cta-green"         # or al-cta-blue
+registration_button: "al-cta-green" # or al-cta-blue
 
 # Post-event — set to true and fill in after the event
 post_event: false
@@ -59,7 +59,7 @@ photo_credit_url: "https://unsplash.com/..."
 
 # Must match the filename in data/events/ (without .yaml)
 event_data_key: "your-event-slug"
-speakers_header: "On stage at AlmaLinux Day: City"  # optional; overrides default heading
+speakers_header: "On stage at AlmaLinux Day: City" # optional; overrides default heading
 ---
 ```
 
@@ -74,13 +74,13 @@ event_sponsors:
   - name: "Sponsor Name"
     url: "https://sponsor.example.com"
     logo: "/brands/sponsor-logo.svg"
-    size: "large"    # "large" = prominent; omit for smaller display
+    size: "large" # "large" = prominent; omit for smaller display
 
 speakers:
   - name: "Speaker Name"
     photo: "/landingpages/your-event/speaker.jpg"
-    title: "Speaker Title or Talk Title"   # optional
-    org: "Speaker Organization"            # optional
+    title: "Speaker Title or Talk Title" # optional
+    org: "Speaker Organization" # optional
 ```
 
 ### Step 3: Add images

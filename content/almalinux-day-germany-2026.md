@@ -40,13 +40,14 @@ speakers_header: "Confirmed Speakers for AlmaLinux Day: Germany"
 
 Join the AlmaLinux OS Foundation and the open-source community for a dedicated day of deep dives, technical insights, and networking at the world’s #1 internet infrastructure festival.
 
-__When:__ Thursday, March 26, 2026
+**When:** Thursday, March 26, 2026
 
-__Where:__ Europa-Park, Rust, Germany (In conjunction with CloudFest 2026)
+**Where:** Europa-Park, Rust, Germany (In conjunction with CloudFest 2026)
 
-__Time:__ 09:00 AM – 4:00 PM (followed by the legendary CloudFest BierFest)
+**Time:** 09:00 AM – 4:00 PM (followed by the legendary CloudFest BierFest)
 
 ### Why Attend?
+
 **>> AlmaLinux Day:** Germany is the premier gathering for European users, contributors, and partners. This year, we are focusing on the evolution of the ecosystem and the power of community-driven development.
 
 **>> Expert Keynotes:** Hear from the AlmaLinux OS Foundation board and lead architects.
@@ -63,7 +64,7 @@ __Time:__ 09:00 AM – 4:00 PM (followed by the legendary CloudFest BierFest)
 
 ### Schedule
 
-The schedule is still being finalized, but the structure of the day is set! 
+The schedule is still being finalized, but the structure of the day is set!
 
 <table class="table table-dark table-striped table-bordered">
   <thead>
@@ -88,8 +89,9 @@ The schedule is still being finalized, but the structure of the day is set!
 <img src="/landingpages/aldg-2026/sayhitoAlmaLinux.png" alt="AlmaLinux booth at CloudFest 2026" style="float: right; width: 45%; margin-left: 2rem; margin-bottom: 1rem; border-radius: 8px;" />
 
 ### Registration & Logistics
-AlmaLinux Day: Germany takes place during the final day of [CloudFest 2026](https://cloudfest.com/). To attend AlmaLinux Day: Germany you must register for CloudFest and pick up your badge. 
 
-You can get your free Standard Pass using this this [AlmaLinux-Day specific link!](https://registration.cloudfest.com/?code=g6peC9RM) 
+AlmaLinux Day: Germany takes place during the final day of [CloudFest 2026](https://cloudfest.com/). To attend AlmaLinux Day: Germany you must register for CloudFest and pick up your badge.
+
+You can get your free Standard Pass using this this [AlmaLinux-Day specific link!](https://registration.cloudfest.com/?code=g6peC9RM)
 
 If you are attending CloudFest, you can also stop by and see us in the Dome at booth [Z29](https://www.cloudfest.com/event/floor-plan)!
