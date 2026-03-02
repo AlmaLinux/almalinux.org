@@ -88,6 +88,10 @@
   height: 100%;
   width: 120px;
 }
+.al-page-index .al-index-backed-by .al-backed-by-list .al-backer-logo-small {
+  max-height: 100%;
+  width: 120px;
+}
 .al-page-index .al-index-commercial-support h2.border-bottom {
   border-bottom-color: #14598a !important;
 }
