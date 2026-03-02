@@ -76,7 +76,7 @@ The schedule is still being finalized, but the structure of the day is set!
   <tbody>
     <tr><td>9:00 AM</td><td>Doors open</td></tr>
     <tr><td>10:00 AM</td><td>Keynote</td></tr>
-    <tr><td>11:00 AM</td><td>talks</td></tr>
+    <tr><td>11:00 AM</td><td>Talks</td></tr>
     <tr><td>12:30 PM</td><td>Lunch</td></tr>
     <tr><td>2:00 PM</td><td>Workshop</td></tr>
     <tr><td>3:00 PM</td><td>Talks</td></tr>

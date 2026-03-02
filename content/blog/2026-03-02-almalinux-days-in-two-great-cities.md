@@ -9,7 +9,7 @@ date: 2026-03-02
 images:
   - /blog-images/2026/2026-03-02-almalinux-days-in-two-great-cities.png
 post:
-  title: "Anouncing AlmaLinux Day: Germany, and AlmaLinux Day: LA"
+  title: "Announcing AlmaLinux Day: Germany, and AlmaLinux Day: LA"
   image: /blog-images/2026/2026-03-02-almalinux-days-in-two-great-cities.png
 ---
 
@@ -45,10 +45,10 @@ We're also accepting lightning talk submissions for Germany! If you have a 5-min
 
 For **Los Angeles**, registration is free and open at [events.almalinux.org](https://events.almalinux.org/). Space is limited and the first 100 registrants get a special gift, so grab your spot early.
 
-We also have a full Call for Speakers open for LA! If you're working on something related to VFX pipelines, Linux infrastructure, cloud rendering, or open-source in the Media & Entertainment space, we want to hear from you. Submit your proposal at [sessionize.com/almalinux-day-los-angeles](https://sessionize.com/almalinux-day-los-angeles/) — submissions close April 5, 2026, and we will announce speakers no later than May 4th, giving you plenty of time to book your travel!
+We also have a full Call for Speakers open for LA! If you're working on something related to VFX pipelines, Linux infrastructure, cloud rendering, or open-source in the Media & Entertainment space, we want to hear from you. Submit your proposal at [sessionize.com/almalinux-day-los-angeles](https://sessionize.com/almalinux-day-los-angeles/) — submissions close April 5, 2026, and we will announce speakers no later than May 5th, giving you plenty of time to book your travel!
 
 ## Where else should we go?
 
-While these two will be a great events because we know that huge parts of our community will already be gathered, we are also strongly considering hosting an independent event later this year. Help us make informed decisions about that by filling out a quick survey for us! Answer on your favorite social media platform: <list>
+While these two will be a great events because we know that huge parts of our community will already be gathered, we are also strongly considering hosting an independent event later this year. Help us make informed decisions about that by joining us on [chat.almalinux.org](https://chat.almalinux.org) in the ~marketing chat room!
 
 Can’t wait to see you!

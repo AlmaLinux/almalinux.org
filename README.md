@@ -91,12 +91,12 @@ speakers:
 
 ### Step 4: Add to the navigation menu
 
-Add the new event to the events sub-list in `layouts/partials/common/nav.html`, inside the `<ul>` nested under "SIGs, ALESCo and other events". Events are listed newest-first. Add a new `<li>`:
+Add the new event to `layouts/partials/common/nav.html`, inside the Events dropdown under the "Upcoming Events" header. Events are listed newest-first. Once the event has passed, move it under the "Past Events" header. Add a new `<li>`:
 
 ```html
 <li>
   <a
-    class="dropdown-item dropdown-nested"
+    class="dropdown-item"
     href="{{ "/your-event-slug/" | relLangURL }}"
     style="color:aliceblue">
     {{ i18n "ALD City YYYY" }}
