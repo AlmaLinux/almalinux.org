@@ -9,7 +9,7 @@ hero_image: "/landingpages/aldg-2026/IMG_1455.jpeg"
 event_name: "AlmaLinux Day: Germany"
 event_tagline: "A tribute to the code, the connectivity, and the community."
 event_date: "March 26th, 2026"
-event_time: "09:00 AM – 4:00 PM"
+event_time: "09:00 AM – 5:00 PM"
 venue:
   - "Convento room at Sala Santa Isabel"
   - "Europa-Park-Str. 4+6"

@@ -7,7 +7,7 @@ images:
 # Hero banner
 hero_image: "/landingpages/aldla-2026/la-convention-center.jpg"
 event_name: "AlmaLinux Day: Los Angeles"
-event_tagline: "Powering the Creativity of the Future."
+event_tagline: "Powering the creativity of the future"
 event_date: "July 18th, 2026"
 event_time: "10:00 AM – 5:00 PM"
 venue:
