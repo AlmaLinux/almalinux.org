@@ -7,10 +7,10 @@ author:
   image: /board/alexiribarren.jpg
 date: 2026-03-04
 images:
-  - /blog-images/2026/astra_profile.png
+  - /blog-images/2026/astra_hero.png
 post:
   title: "Introducing AlmaLinux Astra: a new self-service portal for AlmaLinux Foundation members"
-  image: /blog-images/2026/astra_profile.png
+  image: /blog-images/2026/astra_hero.png
 ---
 
 Today we’re rolling out **[AlmaLinux Astra](https://github.com/AlmaLinux/astra)**: a new self-service platform for identity, organizations, memberships, and elections for the AlmaLinux OS Foundation.
