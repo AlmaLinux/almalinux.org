@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1345 856" width="1345" height="856">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="60%" r="70%">
+      <stop offset="0%" stop-color="#0d2240"/>
+      <stop offset="100%" stop-color="#060e1f"/>
+    </radialGradient>
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00b4d8" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#00b4d8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="envGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a3a5c"/>
+      <stop offset="100%" stop-color="#0f2540"/>
+    </linearGradient>
+    <linearGradient id="flapGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e4570"/>
+      <stop offset="100%" stop-color="#163558"/>
+    </linearGradient>
+    <linearGradient id="wingL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="40%" stop-color="#00b4d8"/>
+      <stop offset="100%" stop-color="#0077a8"/>
+    </linearGradient>
+    <linearGradient id="wingR" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="40%" stop-color="#00b4d8"/>
+      <stop offset="100%" stop-color="#0077a8"/>
+    </linearGradient>
+    <filter id="pglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bfly" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="13" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="eshadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="35" flood-color="#00b4d8" flood-opacity="0.22"/>
+    </filter>
+    <clipPath id="ec"><rect x="273" y="430" width="800" height="340" rx="10"/></clipPath>
+  </defs>
+  <!-- Background -->
+  <rect width="1345" height="856" fill="url(#bgGrad)"/>
+  <!-- Star field -->
+  <g opacity="0.45">
+    <circle cx="70" cy="60" r="1.2" fill="white"/>
+    <circle cx="185" cy="120" r="1.8" fill="white" opacity="0.6"/>
+    <circle cx="55" cy="220" r="1.2" fill="white"/>
+    <circle cx="1180" cy="50" r="1.8" fill="white" opacity="0.7"/>
+    <circle cx="1260" cy="145" r="1.2" fill="white"/>
+    <circle cx="1300" cy="280" r="1.5" fill="white" opacity="0.5"/>
+    <circle cx="1140" cy="340" r="1.2" fill="white" opacity="0.4"/>
+    <circle cx="160" cy="350" r="1.2" fill="white" opacity="0.5"/>
+    <circle cx="35" cy="490" r="1.8" fill="white" opacity="0.3"/>
+    <circle cx="1320" cy="610" r="1.2" fill="white" opacity="0.6"/>
+    <circle cx="970" cy="780" r="1.5" fill="white" opacity="0.4"/>
+    <circle cx="230" cy="770" r="1.2" fill="white" opacity="0.3"/>
+    <circle cx="440" cy="50" r="1.2" fill="white" opacity="0.5"/>
+    <circle cx="672" cy="100" r="1.8" fill="white" opacity="0.6"/>
+    <circle cx="880" cy="60" r="1.2" fill="white" opacity="0.5"/>
+    <circle cx="1060" cy="180" r="1" fill="white" opacity="0.4"/>
+    <circle cx="310" cy="180" r="1" fill="white" opacity="0.4"/>
+    <circle cx="790" cy="790" r="1.2" fill="white" opacity="0.3"/>
+    <circle cx="570" cy="820" r="1" fill="white" opacity="0.3"/>
+    <circle cx="1100" cy="500" r="1" fill="white" opacity="0.35"/>
+    <circle cx="90" cy="680" r="1.2" fill="white" opacity="0.3"/>
+  </g>
+  <!-- Teal ambient glow -->
+  <ellipse cx="672" cy="590" rx="520" ry="310" fill="url(#glowGrad)"/>
+  <!-- Subtle grid lines -->
+  <g stroke="#1a3a5c" stroke-width="0.5" opacity="0.22">
+    <line x1="0" y1="170" x2="1345" y2="170"/>
+    <line x1="0" y1="340" x2="1345" y2="340"/>
+    <line x1="0" y1="510" x2="1345" y2="510"/>
+    <line x1="0" y1="680" x2="1345" y2="680"/>
+  </g>
+  <!-- Envelope -->
+  <g filter="url(#eshadow)">
+    <!-- Body -->
+    <rect x="273" y="430" width="800" height="340" rx="10" fill="url(#envGrad)" stroke="#1e4a72" stroke-width="2"/>
+    <!-- Interior paper lines -->
+    <g clip-path="url(#ec)" opacity="0.15">
+      <line x1="330" y1="540" x2="1016" y2="540" stroke="#00b4d8" stroke-width="1.2"/>
+      <line x1="330" y1="572" x2="1016" y2="572" stroke="#00b4d8" stroke-width="1.2"/>
+      <line x1="330" y1="604" x2="870" y2="604" stroke="#00b4d8" stroke-width="1.2"/>
+    </g>
+    <!-- Bottom V shadow -->
+    <path d="M273 770 L673 590 L1073 770" fill="#0d2a45" opacity="0.5"/>
+    <!-- Open flap -->
+    <path d="M273 430 L673 348 L1073 430" fill="url(#flapGrad)" stroke="#1e4a72" stroke-width="2"/>
+    <line x1="273" y1="430" x2="1073" y2="430" stroke="#00b4d8" stroke-width="1" opacity="0.4"/>
+    <!-- Crease lines -->
+    <line x1="273" y1="770" x2="673" y2="590" stroke="#1e4a72" stroke-width="1.2" opacity="0.5"/>
+    <line x1="1073" y1="770" x2="673" y2="590" stroke="#1e4a72" stroke-width="1.2" opacity="0.5"/>
+    <!-- AL stamp -->
+    <circle cx="988" cy="482" r="36" fill="none" stroke="#00b4d8" stroke-width="1.2" opacity="0.4"/>
+    <circle cx="988" cy="482" r="26" fill="#0d2240" stroke="#00b4d8" stroke-width="1" opacity="0.5"/>
+    <text x="988" y="490" text-anchor="middle" font-family="monospace" font-size="15" fill="#00b4d8" opacity="0.75" font-weight="bold">AL</text>
+  </g>
+  <!-- Butterfly -->
+  <g filter="url(#bfly)" transform="translate(673, 330) scale(2.1)">
+    <path d="M0,-10 C-15,-45 -80,-70 -90,-40 C-100,-10 -60,10 -20,20 C-35,5 -30,-10 0,-10 Z" fill="url(#wingL)" opacity="0.92"/>
+    <path d="M0,10 C-15,35 -65,60 -70,40 C-75,20 -45,5 -15,0 C-25,8 -20,18 0,10 Z" fill="url(#wingL)" opacity="0.75"/>
+    <path d="M0,-10 C15,-45 80,-70 90,-40 C100,-10 60,10 20,20 C35,5 30,-10 0,-10 Z" fill="url(#wingR)" opacity="0.92"/>
+    <path d="M0,10 C15,35 65,60 70,40 C75,20 45,5 15,0 C25,8 20,18 0,10 Z" fill="url(#wingR)" opacity="0.75"/>
+    <path d="M0,-10 C-15,-30 -50,-50 -70,-38" stroke="#e0f8ff" stroke-width="0.8" fill="none" opacity="0.4"/>
+    <path d="M-5,-5 C-20,-20 -45,-30 -60,-20" stroke="#e0f8ff" stroke-width="0.6" fill="none" opacity="0.25"/>
+    <path d="M0,-10 C15,-30 50,-50 70,-38" stroke="#e0f8ff" stroke-width="0.8" fill="none" opacity="0.4"/>
+    <path d="M5,-5 C20,-20 45,-30 60,-20" stroke="#e0f8ff" stroke-width="0.6" fill="none" opacity="0.25"/>
+    <ellipse cx="0" cy="0" rx="4" ry="22" fill="#00e5ff" opacity="0.9"/>
+    <ellipse cx="-1" cy="-2" rx="1.5" ry="10" fill="white" opacity="0.3"/>
+    <circle cx="0" cy="-26" r="5" fill="#00b4d8"/>
+    <path d="M-2,-30 C-10,-50 -20,-58 -18,-65" stroke="#00b4d8" stroke-width="1.2" fill="none"/>
+    <circle cx="-18" cy="-65" r="2.5" fill="#00e5ff"/>
+    <path d="M2,-30 C10,-50 20,-58 18,-65" stroke="#00b4d8" stroke-width="1.2" fill="none"/>
+    <circle cx="18" cy="-65" r="2.5" fill="#00e5ff"/>
+    <circle cx="-45" cy="-35" r="2.5" fill="white" opacity="0.3"/>
+    <circle cx="-60" cy="-25" r="1.5" fill="white" opacity="0.2"/>
+    <circle cx="45" cy="-35" r="2.5" fill="white" opacity="0.3"/>
+    <circle cx="60" cy="-25" r="1.5" fill="white" opacity="0.2"/>
+  </g>
+  <!-- Floating particles -->
+  <g filter="url(#pglow)" opacity="0.75">
+    <circle cx="430" cy="390" r="3.5" fill="#00e5ff"/>
+    <circle cx="530" cy="345" r="2.5" fill="#00b4d8"/>
+    <circle cx="673" cy="315" r="3.5" fill="#00e5ff"/>
+    <circle cx="816" cy="345" r="2.5" fill="#00b4d8"/>
+    <circle cx="916" cy="390" r="3.5" fill="#00e5ff"/>
+    <circle cx="480" cy="295" r="2" fill="#00e5ff"/>
+    <circle cx="866" cy="295" r="2" fill="#00e5ff"/>
+    <circle cx="380" cy="430" r="2" fill="#00e5ff" opacity="0.5"/>
+    <circle cx="966" cy="425" r="2" fill="#00e5ff" opacity="0.5"/>
+    <circle cx="330" cy="520" r="1.8" fill="#00b4d8" opacity="0.4"/>
+    <circle cx="1016" cy="515" r="1.8" fill="#00b4d8" opacity="0.4"/>
+    <circle cx="673" cy="270" r="2.5" fill="#00e5ff" opacity="0.6"/>
+  </g>
+</svg>

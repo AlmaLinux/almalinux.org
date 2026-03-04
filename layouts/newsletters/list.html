@@ -1,0 +1,110 @@
+{{ define "main" }}
+  <div class="al-body-container">
+    <!-- HERO -->
+    <div style="background: #0e3b5c;">
+      <div class="container px-0 al-py-lg">
+        <div class="row flex-lg-row-reverse align-items-center py-2 py-md-5">
+          <div class="d-none d-lg-block col-10 col-sm-8 col-lg-6">
+            <img
+              src="/newsletter-images/newslettersignup-hero.svg"
+              class="d-block mx-lg-auto img-fluid rounded"
+              alt="AlmaLinux Newsletters"
+              width="624"
+              height="356" />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-4" style="color:#fff;">
+              {{ i18n "AlmaLinux Newsletters" }}
+            </h1>
+            <p class="lead mb-4" style="color:#cde;">
+              {{ i18n "Stay up to date with the latest AlmaLinux news, releases, and community updates. Subscribe via your preferred channel:" }}
+            </p>
+            <div class="d-flex flex-wrap gap-3 align-items-center pt-2">
+              <a
+                href="/newsletters/index.xml"
+                class="btn btn-lg px-4 al-cta-blue d-flex align-items-center gap-2">
+                <i class="bi bi-rss-fill pe-1"></i> {{ i18n "RSS Feed" }}
+              </a>
+              <a
+                href="https://lists.almalinux.org/mailman3/lists/newsletters.lists.almalinux.org/"
+                target="_blank"
+                class="btn btn-lg px-4 al-cta-yellow d-flex align-items-center gap-2">
+                <i class="bi bi-envelope-fill pe-1"></i>
+                {{ i18n "Mailing List" }}
+              </a>
+              <a
+                href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7123058222835376128"
+                target="_blank"
+                style="display:flex;flex-direction:column;justify-content:center;padding:7px;text-align:center;text-decoration:none!important;color:#ffffff!important;width:200px;height:32px;border-radius:16px;background-color:#0A66C2;font-family:'SF Pro Text',Helvetica,sans-serif;">
+                {{ i18n "Subscribe on LinkedIn" }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="al-page-blog-post custom-blog-page-section" dir="ltr">
+      <div class="container py-5">
+        {{- $years := (.Pages.ByDate.Reverse).GroupByDate "2006" -}}
+
+
+        <!-- Year jump links -->
+        <nav class="mb-5">
+          <div class="d-flex flex-wrap gap-2">
+            {{ range $years }}
+              <a href="#year-{{ .Key }}" class="btn btn-sm al-cta-blue"
+                >{{ .Key }}</a
+              >
+            {{ end }}
+          </div>
+        </nav>
+
+        <!-- Posts grouped by year -->
+        {{ range $i, $group := $years }}
+          <article class="mb-5" dir="ltr">
+            <h2
+              id="year-{{ .Key }}"
+              class="mb-4 px-3 py-2"
+              style="background:#082336;color:#fff;border-radius:4px;">
+              {{ .Key }}
+            </h2>
+            {{ range .Pages }}
+              <div>
+                <a
+                  class="al-article-title-link"
+                  href="{{ .RelPermalink }}"
+                  style="text-decoration:none;">
+                  <h3>{{ .Title }}</h3>
+                </a>
+              </div>
+
+              <div
+                class="al-article-date d-flex align-items-center pb-1"
+                title=""
+                dir="ltr">
+                <i class="bi bi-calendar pe-1"></i>
+                <span>{{ .Date.Format "Mon Jan 2, 2006" }}</span>
+              </div>
+
+              <div class="al-article-feature mb-4">
+                <div class="al-article-excerpt mb-3">
+                  {{ .Params.summary }}
+                </div>
+                <div class="al-article-actions" dir="ltr">
+                  <a
+                    href="{{ .RelPermalink }}"
+                    class="al-article-continue d-flex align-items-center">
+                    <i class="bi bi-chevron-double-right pe-1"></i>
+                    <span>{{ i18n "Continue reading" }}</span>
+                  </a>
+                </div>
+              </div>
+            {{ end }}
+          </article>
+        {{ end }}
+
+      </div>
+    </section>
+  </div>
+{{ end }}
