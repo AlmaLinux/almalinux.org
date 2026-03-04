@@ -62,11 +62,11 @@ However, many existing members do not yet have an AlmaLinux Accounts login. If y
 
 ## Ranked-choice elections with deterministic tallying
 
-Astra supports **ranked-choice voting**, where eligible members vote by ranking candidates.
+As mentioned, we will be using Astra for all things around voting an elections. Your vote will continue to be anonymous, but there are a few things that will make it easier for the Membership and Election Committees to manage our elections. 
 
-Results are computed using a documented **Meek STV** (high-precision) method with deterministic tallying, which means results are proportional, transparent, and reproducible for recounts.
+First, Astra includes ranked-choice voting, where eligible members vote by ranking candidates. 
 
-## Vote receipts and auditable artifacts
+Results are computed using a documented Meek STV (high-precision) method with deterministic tallying, which means results are proportional, transparent, and reproducible for recounts.
 
 Astra also supports **vote receipts** and publishing **audit artifacts** for community verification.
 
