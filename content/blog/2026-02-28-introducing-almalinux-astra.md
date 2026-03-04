@@ -49,7 +49,7 @@ Organization profiles are coming soon to Astra. The goal is to highlight contrib
 
 # Elections: all AlmaLinux elections will use Astra
 
-This is the biggest change.
+While this started out as a project to help make managing memberships easier for the Membership Committee, this is the biggest and most exciting part of the project.
 
 **All AlmaLinux OS Foundation elections going forward will be conducted through Astra.** To vote, you must:
 
