@@ -32,6 +32,8 @@ Automatically installs the following extensions for optimal Hugo development:
 
 **Starting the Server:** Upon opening the project in the container, Hugo's live server automatically starts. You can access it by navigating to `http://localhost:1313` in your web browser. This server runs in the background, allowing for real-time testing of your Hugo site.
 
+Note: The devcontainer runs Hugo with `--buildFuture` so future-dated (scheduled) posts are visible in local previews.
+
 **Editing and Hot Rebuild:**
 
 - **Editing Files:** You can edit project files directly within your devcontainer supported editor of choice as the container mounts your local project directory, changes are reflected in real-time. This setup is not limited to VS Code; any editor that supports devcontainers will work.
