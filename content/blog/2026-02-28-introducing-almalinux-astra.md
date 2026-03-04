@@ -13,7 +13,7 @@ post:
   image: /blog-images/2026/astra_profile.png
 ---
 
-Today we’re rolling out **AlmaLinux Astra**: a new self-service platform for identity, organizations, memberships, and elections for the AlmaLinux OS Foundation.
+Today we’re rolling out **[AlmaLinux Astra](https://github.com/AlmaLinux/astra)**: a new self-service platform for identity, organizations, memberships, and elections for the AlmaLinux OS Foundation.
 
 Astra is built to keep workflows clear, accountable, and easy to audit. It helps contributors and communities move from “who are you?” to “you can participate” with fewer manual handoffs and more transparent status updates.
 
@@ -85,6 +85,6 @@ If you want to participate in AlmaLinux governance—especially voting in electi
 - Consider enabling OTP/2FA on your account
 - If you’re applying for (or renewing) membership, complete any prerequisites Astra prompts you for
 
-If you have questions about memberships, reach out to the Membership Committee at [membership@almalinux.org](mailto:membership@almalinux.org). For election-specific questions, you can reach the Election Committee at [elections@almalinux.org](mailto:elections@almalinux.org).
+If you have questions about memberships, reach out to the Membership Committee at [membership@almalinux.org](mailto:membership@almalinux.org). For election-specific questions, you can reach the Election Committee at [elections@almalinux.org](mailto:elections@almalinux.org). Finally, if you have any general problems with Astra or have some suggestions reach out to [astra@almalinux.org](mailto:astra@almalinux.org).
 
 Thank you for helping us keep AlmaLinux governance transparent, secure, and community-driven.
