@@ -56,7 +56,9 @@ This is the biggest change.
 - Have an AlmaLinux Accounts login at https://accounts.almalinux.org
 - Have a valid, active AlmaLinux OS Foundation membership linked to that account
 
-To make this transition easier, we will **pre-seed Astra with our current member list**. However, many existing members do not yet have an AlmaLinux Accounts login. If you’re currently a member and you don’t have an account yet, you will need to create one in order to remain a member of the AlmaLinux OS Foundation and to be eligible to vote in future elections. We will be sending out targetted emails inviting you to create an account.
+To make this transition easier, we will **pre-seed Astra with our current member list**, using email addresses and full names to match members with their current AlmaLinux Accounts login. If you already have an AlmaLinux Accounts login and you don't see your membership registered when you log in, [contact us](mailto:astra@almalinux.org) with your username, email address and full name and we'll sort it out.
+
+However, many existing members do not yet have an AlmaLinux Accounts login. If you’re currently a member and you don’t have an account yet, you will need to create one in order to remain a member of the AlmaLinux OS Foundation and to be eligible to vote in future elections. We will be sending out targetted emails inviting you to create an account, and once you do we'll be able to associate your membership to it.
 
 ## Ranked-choice elections with deterministic tallying
 
