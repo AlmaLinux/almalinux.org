@@ -40,15 +40,15 @@ Open the generated file and update the following fields:
 
 ```yaml
 ---
-title: "Your Post Title"       # Update if needed
+title: "Your Post Title" # Update if needed
 type: blog
 author:
-  name: "Your Name"            # Your full name
-  bio: "Your Title or Role"    # e.g., "Chair, board of directors"
-  image: /users/username.jpg   # Your author photo (add to /static/users/ if new)
-date: "YYYY-MM-DD"             # Publication date
+  name: "Your Name" # Your full name
+  bio: "Your Title or Role" # e.g., "Chair, board of directors"
+  image: /users/username.jpg # Your author photo (add to /static/users/ if new)
+date: "YYYY-MM-DD" # Publication date
 images:
-  - /blog-images/YYYY/image-name.png   # Social/OG preview image
+  - /blog-images/YYYY/image-name.png # Social/OG preview image
 post:
   title: "Your Post Title"
   image: /blog-images/YYYY/image-name.png
