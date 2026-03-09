@@ -43,8 +43,10 @@ For example, for AlmaLinux 9 and 10:
 
 ### AlmaLinux OS 9
 
+```
 [root@alma9-nvidia ~]# rpm -q almalinux-release-nvidia-driver
 almalinux-release-nvidia-driver-9-4.el9.x86_64
+```
 
 ### AlmaLinux OS 10
 
