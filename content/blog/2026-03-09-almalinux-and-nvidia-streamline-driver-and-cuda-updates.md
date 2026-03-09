@@ -37,7 +37,7 @@ For anyone that was already using our release of the open source NVIDIA drivers 
 
 If you are curious, you can confirm you are using the packages from AlmaLinux by running the following commands in your terminal application:
 
-rpm -q almalinux-release-nvidia-driver
+`rpm -q almalinux-release-nvidia-driver`
 
 For example, for AlmaLinux 9 and 10:
 
