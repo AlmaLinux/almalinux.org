@@ -57,6 +57,9 @@ almalinux-release-nvidia-driver-10-4.el10.x86_64
 
 If you see DNF errors, it may mean that you have installed NVIDIA packages directly or have other conflicts. We can help on [chat.almalinux.org](http://chat.almalinux.org)!
 
+## Get the drivers
+Documentation on how to install the driver and CUDA stack is available at https://wiki.almalinux.org/documentation/nvidia.html
+
 ## How you can give help, or get it!
 
 We would love to hear feedback from anyone who gets a chance to use these new packages in testing or production. If you have any questions or would like some community support, please join us in [chat.almalinux.org](http://chat.almalinux.org).
