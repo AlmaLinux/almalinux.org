@@ -27,6 +27,8 @@ Two important features remain at the core of AlmaLinux Accounts (and are worth c
 
 - **Two-factor authentication (OTP/2FA)** — Enable one-time passwords as an extra sign-in factor. This significantly reduces account-takeover risk if a password is reused or leaked.
 
+{{< figure src="/blog-images/2026/astra_profile.png" width="50%" class="text-center" >}}
+
 # Memberships, with clearer workflows
 
 Astra expands AlmaLinux Accounts beyond “login” into a structured system for membership management.
@@ -71,12 +73,6 @@ Results are computed using a documented Meek STV (high-precision) method with de
 Astra also supports **vote receipts** and publishing **audit artifacts** for community verification.
 
 The intent is to strengthen trust in election integrity while aiming to protect vote anonymity after elections close.
-
-{{< figure src="/blog-images/2026/astra_election1.png" width="50%" class="text-center" >}}
-
-{{< figure src="/blog-images/2026/astra_election2.png" width="50%" class="text-center" >}}
-
-{{< figure src="/blog-images/2026/astra_election3.png" width="50%" class="text-center" >}}
 
 # What you should do now
 
