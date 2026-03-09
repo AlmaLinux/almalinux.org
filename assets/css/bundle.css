@@ -165,6 +165,10 @@ border-bottom-color: #14598a !important;
   max-height: 100%;
   width: 120px;
 }
+.al-page-index .al-index-backed-by .al-backed-by-list .al-backer-logo-small {
+  max-height: 100%;
+  width: 120px;
+}
 
 /* formatting the sponsors on the event pages. */
 .al-page-index .al-index-sponsors .al-backed-by-list {
@@ -665,7 +669,7 @@ outline: none !important;
 
 #al-motd {
   width: 100%;
-  background: #051520;
+  background: #264154;
   /* margin-top: 8px; */
   padding-top: 12px;
   padding-bottom: 12px;
@@ -684,10 +688,11 @@ outline: none !important;
 }
 #al-motd > .container > .text a {
   text-decoration: none;
+  color: #ffcb12;
 }
 #al-motd > .container > .text a:hover {
   text-decoration: underline;
-  color: inherit;
+  color: #ffe930;
 }
 
 section h1.al-section-title {

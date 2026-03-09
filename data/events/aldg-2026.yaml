@@ -1,0 +1,24 @@
+event_sponsors:
+
+speakers:
+  - name: "Alex Iribarren"
+    photo: "/landingpages/aldg-2026/alexiribarren.jpg"
+    title: "Section Leader, Cloud & Linux Infrastructure @ CERN" # optional
+    org: "Board Member @ AlmaLinux OS Foundation" # optional
+  - name: "Peter Grossoehme"
+    photo: "/landingpages/aldg-2026/peter.png"
+    title: "Chief Operating Officer (COO)" # optional
+    org: "MEGWARE Computer" # optional
+  - name: "Alexander Troshin"
+    photo: "/landingpages/aldg-2026/Alex_amd.jpg"
+    title: "Product Marketing Manager" # optional
+    org: "AMD" # optional
+  - name: "benny Vasquez"
+    photo: "/landingpages/aldg-2026/benny.jpeg"
+    title: "Chair of the Board" # optional
+    org: "AlmaLinux OS Foundation" # optional
+  - name: "Jonathan Wright"
+    photo: "/landingpages/aldg-2026/jonathan.jpg"
+    title: "Infrastructure SIG lead & ALESCo member" # optional
+    org: "AlmaLinux OS Foundation" # optional
+
