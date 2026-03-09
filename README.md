@@ -112,6 +112,59 @@ Once the event is over, set `post_event: true` in the front matter and fill in `
 
 The foundation member sponsor logos are rendered automatically on every event page — you do not need to add them. To update the list, edit `layouts/partials/common/foundation-members.html`.
 
+## Contributing - Blog Posts
+
+Blog posts live in `content/blog/` and are written in Markdown with Hugo front matter.
+
+### Creating a New Blog Post
+
+Use the Hugo archetype to generate a pre-populated file:
+
+```bash
+hugo new blog/YYYY-MM-DD-your-post-title.md
+```
+
+For example:
+
+```bash
+hugo new blog/2026-03-01-announcing-new-feature.md
+```
+
+This will create a new file in `content/blog/` with the correct front matter already filled in, including the title (derived from the filename) and the current year in the image paths.
+
+### Filling in the Front Matter
+
+Open the generated file and update the following fields:
+
+```yaml
+---
+title: "Your Post Title" # Update if needed
+type: blog
+author:
+  name: "Your Name" # Your full name
+  bio: "Your Title or Role" # e.g., "Chair, board of directors"
+  image: /users/username.jpg # Your author photo (add to /static/users/ if new)
+date: "YYYY-MM-DD" # Publication date
+images:
+  - /blog-images/YYYY/image-name.png # Social/OG preview image
+post:
+  title: "Your Post Title"
+  image: /blog-images/YYYY/image-name.png
+---
+```
+
+### Adding Images
+
+- Place blog images in `static/blog-images/YYYY/` (where `YYYY` is the publication year).
+- Author photos go in `static/users/`.
+- Use the Hugo `figure` shortcode to embed images in the post body:
+
+```
+{{</* figure src="/blog-images/YYYY/image-name.png" width="50%" class="text-center" */>}}
+```
+
+For more detailed guidance, see [Contributing - Blog Posts](https://github.com/AlmaLinux/almalinux.org/blob/main/contributing-blog-posts.md).
+
 ## Contributing - Code and Design
 
 All development for the AlmaLinux website happens through this repository on GitHub.
