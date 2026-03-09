@@ -5,7 +5,7 @@ author:
   name: "Jonathan Wright"
   bio: "Infrastructure SIG lead & ALESCo member"
   image: /users/jonathan.jpg
-date: 2026-03-02
+date: 2026-03-09
 images:
   - /blog-images/2026/2026-02-26-nvidia-cuda-updates.png
 post:
@@ -15,23 +15,23 @@ post:
 
 [Last August](https://almalinux.org/blog/2025-08-06-announcing-native-nvidia-suport/) we started shipping NVIDIA's open GPU kernel modules, and saw incredible amounts of adoption and excitement about that announcement!
 
-Today we are excited to share that with the release of version $version, NVIDIA has added official support for enterprise Linux compatible distributions, including AlmaLinux to CUDA. That means that users of NVIDIA hardware can receive support for NVIDIA drivers and CUDA on AlmaLinux within NVIDIA's supported configurations
+Today we are excited to share that with the release of version 13.2, NVIDIA has added official support for enterprise Linux compatible distributions, including AlmaLinux, to CUDA. That means that users of NVIDIA hardware can receive support for NVIDIA drivers and CUDA on AlmaLinux within NVIDIA's supported configurations.
 
 We are also excited to be able to ship NVIDIA's CUDA drivers in AlmaLinux - streamlining updates and uses of NVIDIA for AlmaLinux users worldwide.
 
 What changed?
 -------------
 
-NVIDIA has added official support for enterprise Linux compatible distributions, including AlmaLinux, ensuring that our users can get support from NVIDIA when using NVIDIA AI infrastructure.
+NVIDIA has added official support for enterprise Linux compatible distributions, including AlmaLinux, ensuring that our users can get support from NVIDIA when using NVIDIA infrastructure.
 
 We also now have an agreement with NVIDIA that allows us to distribute NVIDIA's packages directly from our repositories, rather than users getting the drivers separately from us. 
 
 Why the change?
 ---------------
 
-Right now, when NVIDIA releases a new driver, there is a very slight delay in our release of the updates, which can result in brief version mismatches for users of NVIDIA hardware and AlmaLinux. Shipping both the open source drivers and the userspace, and CUDA components, ourselves means that all the packages are updated in tandem. There won't be any delay at all between the release of the two package sets, ensuring the versions are always in sync. 
+Right now, when NVIDIA releases a new driver, there is a very slight delay in our release of the updates, which can result in brief version mismatches for users of NVIDIA hardware and AlmaLinux. Shipping the open source drivers along with the userspace and CUDA components ourselves means that all the packages are updated in tandem. There won't be any delay between the release of the two package sets, ensuring the versions are always in sync. 
 
-You will notice that the userspace and CUDA component RPMs are signed by NVIDIA, and are being distributed from nvidia.repo.almalinux.org instead of being distributed through the [AlmaLinux Mirror System](https://mirrors.almalinux.org/). We are only redistributing the packages that NVIDIA builds, not building them ourselves. 
+You will notice that the userspace and CUDA component RPMs are signed by NVIDIA, and are being distributed from nvidia.repo.almalinux.org instead of being distributed through the [AlmaLinux Mirror System](https://mirrors.almalinux.org/). We are only redistributing those packages that NVIDIA builds, not building them ourselves. The open source drivers will continue to be built and signed by us.
 
 How to see what version of the NVIDIA packages you are using right now
 ------------------------------------------------------------
