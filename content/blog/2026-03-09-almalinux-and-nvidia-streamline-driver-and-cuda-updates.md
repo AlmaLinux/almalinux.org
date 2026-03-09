@@ -17,7 +17,7 @@ post:
 
 Today we are excited to share that with the release of version 13.2, NVIDIA has added official support for enterprise Linux compatible distributions, including AlmaLinux, to CUDA. That means that users of NVIDIA hardware can receive support for NVIDIA drivers and CUDA on AlmaLinux within NVIDIA's supported configurations.
 
-We are also excited to be able to ship NVIDIA's CUDA drivers in AlmaLinux - streamlining updates and uses of NVIDIA for AlmaLinux users worldwide.
+We are also excited to be able to ship NVIDIA's CUDA drivers in an official AlmaLinux repository - streamlining updates and uses of NVIDIA for AlmaLinux users worldwide.
 
 ## What changed?
 
