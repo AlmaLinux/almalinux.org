@@ -48,8 +48,10 @@ almalinux-release-nvidia-driver-9-4.el9.x86_64
 
 ### AlmaLinux OS 10
 
+```
 [root@alma10-nvidia ~]# rpm -q almalinux-release-nvidia-driver
 almalinux-release-nvidia-driver-10-4.el10.x86_64
+```
 
 If you see DNF errors, it may mean that you have installed NVIDIA packages directly or have other conflicts. We can help on [chat.almalinux.org](http://chat.almalinux.org)!
 
