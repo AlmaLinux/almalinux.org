@@ -15,7 +15,7 @@ venue:
   - "Los Angeles, CA"
 venue_link: ""
 venue_link_text: "Getting here"
-registration_url: "https://events.almalinux.org/"
+registration_url: "https://events.almalinux.org/event/189/"
 registration_cta: "Register Early — Space is Limited!"
 registration_button: "al-cta-blue"
 
@@ -97,9 +97,9 @@ We know Sunday is all about those official "Birds of a Feather" sessions. By joi
     <tr><th>Event</th><th>Date</th></tr>
   </thead>
   <tbody>
-    <tr><td><a href="https://events.almalinux.org/">AlmaLinux Day: Los Angeles</a></td><td>Saturday, July 18, 2026</td></tr>
+    <tr><td><a href="https://events.almalinux.org/event/189/">AlmaLinux Day: Los Angeles</a></td><td>Saturday, July 18, 2026</td></tr>
     <tr><td><a href="https://s2026.siggraph.org/">SIGGRAPH 2026</a></td><td>Sunday, July 19 – Thursday, July 23, 2026</td></tr>
   </tbody>
 </table>
 
-Register early — space in our LA venue is limited. Sign up for updates and be the first to grab a seat at [events.almalinux.org](https://events.almalinux.org/).
+Register early — space in our LA venue is limited. Sign up for updates and be the first to grab a seat at [events.almalinux.org](https://events.almalinux.org/event/189/).
