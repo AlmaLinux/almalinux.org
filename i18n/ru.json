@@ -872,7 +872,7 @@
     "Social Gathering and Lightning talks!": "Социальный сбор и молниеносные выступления!",
     "Venue:": "Место проведения:",
     "Cafe Shiba WORLD SPACE": "Кафе \"Шиба\" - МИРОВОЕ ПРОСТРАНСТВО",
-    "Host:": "Хост:",
+    "Host:": "Ведущий:",
     "Japan AlmaLinux Users Group": "Япония AlmaLinux Группа пользователей",
     "Participation fee:": "Сбор за участие:",
     "Free": "Бесплатно",
@@ -897,7 +897,7 @@
     "ALD Tokyo 2024": "ALD Токио 2024",
     "ALD Tokyo 2023": "ALD Токио 2023",
     "ALD Germany 2024": "ALD Германия 2024",
-    "Co-host:": "Co-host:",
+    "Co-host:": "Соведущий:",
     "Platinum Sponsor + Founder": "Платиновый спонсор + основатель",
     "TuxCare, a division of CloudLinux Inc., the founding sponsor of the AlmaLinux OS Project, provides tailored support to enhance the performance, security, and reliability of your AlmaLinux workloads.": "TuxCare, подразделение CloudLinux Inc., спонсора-основателя проекта ОС AlmaLinux, предоставляет индивидуальную поддержку для повышения производительности, безопасности и надежности ваших рабочих нагрузок AlmaLinux.",
     "The AlmaLinux Wiki is a comprehensive resource hub with detailed information on the project’s history, development, installation, migration, the Foundation, and houses all of the OS and ELevate release notes. We also invite community contributions to continually expand its wealth of knowledge!": "AlmaLinux Wiki — это всеобъемлющий ресурсный центр с подробной информацией об истории проекта, разработке, установке, миграции, Foundation, а также содержит все заметки о выпуске ОС и ELevate. Мы также приглашаем сообщество вносить вклады для постоянного расширения его знаний!",
@@ -949,5 +949,8 @@
     "anyone approved as a contributing member by membership committee based on their contribution to the AlmaLinux project": "любой может быть одобрен комитетом членства как вносящий вклад участник на основании его вклада в проект AlmaLinux",
     "acceptance as AlmaLinux mirror by the infrastructure SIG, and approval by the membership committee": "признание зеркалом AlmaLinux инфраструктурной рабочей группой (SIG), и одобрение комитетом членства",
     "as long as the mirror is operational, reviewed annually": "пока зеркало работает, пересматривается ежегодно",
-    "Contributor (individual) Member": "Вносящий вклад (индивидуальный) участник"
+    "Contributor (individual) Member": "Вносящий вклад (индивидуальный) участник",
+    "AlmaLinux Wiki": "AlmaLinux Wiki",
+    "FedRAMP, ISO-27001, SOC2, NIS 2, CC, software, hardware": "FedRAMP, ISO-27001, SOC2, NIS 2, CC, программное обеспечение, аппаратное обеспечение",
+    "For an independent open source project, maintaining funding through a variety of sponsor members is key to our ability to remain impartial, and is key to our long-term goal of achieving 501(c)(3) status. We remain grateful to our entire community for their support, and are especially grateful for the sponsor members who support the project with funds or resources that are critical to helping us keep up with our explosive growth.": "Для независимого проекта с открытым исходным кодом поддержание финансирования за счет различных спонсоров-членов является важным условием для сохранения нашей беспристрастности и достижения нашей долгосрочной цели — получения статуса 501(c)(3). Мы по-прежнему благодарны всему нашему сообществу за поддержку и особенно благодарны спонсорам-членам, которые поддерживают проект средствами или ресурсами, которые имеют решающее значение для поддержания нашего стремительного роста."
 }
