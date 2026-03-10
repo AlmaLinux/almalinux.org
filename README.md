@@ -152,6 +152,7 @@ Add a header image at `static/newsletter-images/mon-yy.png` (e.g. `jan-26.png`).
 ### Step 3: Open a pull request
 
 Open a PR targeting the `main` branch. Once merged, the newsletter will appear on the [newsletters listing page](https://almalinux.org/newsletters/) under its year, and will be included in the RSS feed automatically.
+
 ## Contributing - Blog Posts
 
 Blog posts live in `content/blog/` and are written in Markdown with Hugo front matter.
