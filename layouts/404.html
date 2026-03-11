@@ -4,10 +4,89 @@
       <section
         class="d-flex flex-column flex-fill align-items-center justify-content-center py-3">
         <h1 class="al-section-title">404 Not Found</h1>
-        <div>
+        <div id="not-found-message">
           {{ i18n "Sorry, but the page you were trying to access could not be found." }}
         </div>
+        <p id="redirect-status" class="mt-3" hidden>Redirecting to the closest match...</p>
       </section>
     </div>
   </div>
+{{ end }}
+
+{{ define "scripts" }}
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      const notFoundEl = document.getElementById("not-found-message");
+      const statusEl = document.getElementById("redirect-status");
+      const requestedPath = window.location.pathname;
+      const normalizedPath = normalizePath(requestedPath);
+
+      try {
+        const response = await fetch('{{ "index.json" | relURL }}', {
+          headers: { Accept: "application/json" },
+        });
+
+        if (!response.ok) {
+          return;
+        }
+
+        const pages = await response.json();
+
+        if (!Array.isArray(pages) || pages.length === 0) {
+          return;
+        }
+
+        // Try a cheap prefix match before falling back to fuzzy matching.
+        const prefixMatch = pages.find((page) => {
+          const permalink = normalizePath(page.permalink || "");
+
+          return permalink !== normalizedPath && permalink.startsWith(normalizedPath);
+        });
+
+        const fuse = new Fuse(pages, {
+          includeScore: true,
+          keys: ["permalink", "title"],
+          threshold: 0.38,
+          ignoreLocation: true,
+        });
+
+        const fuzzyMatch = fuse.search(normalizedPath, { limit: 1 })[0] || null;
+        const bestMatch = prefixMatch ||
+          (fuzzyMatch && fuzzyMatch.score <= 0.38 ? fuzzyMatch.item : null);
+
+        if (!bestMatch || !bestMatch.permalink) {
+          return;
+        }
+
+        const targetPath = normalizePath(bestMatch.permalink);
+
+        if (targetPath === normalizedPath) {
+          return;
+        }
+
+        notFoundEl.hidden = true;
+        statusEl.hidden = false;
+
+        window.setTimeout(() => {
+          window.location.replace(bestMatch.permalink);
+        }, 250);
+      } catch (error) {
+        console.error("Closest-match redirect failed", error);
+      }
+    });
+
+    function normalizePath(path) {
+      const sanitizedPath = decodeURIComponent(path || "/")
+        .toLowerCase()
+        .replace(/\/+/g, "/")
+        .replace(/\/index\.html$/, "/");
+
+      if (sanitizedPath === "/") {
+        return sanitizedPath;
+      }
+
+      return sanitizedPath.endsWith("/") ? sanitizedPath : `${sanitizedPath}/`;
+    }
+  </script>
 {{ end }}
