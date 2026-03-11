@@ -5,7 +5,7 @@ author:
   name: "Alex Iribarren"
   bio: "Director, AlmaLinux OS Foundation"
   image: /board/alexiribarren.jpg
-date: 2026-03-11
+date: 2026-03-12
 images:
   - /blog-images/2026/astra_hero.png
 post:
