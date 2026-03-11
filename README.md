@@ -11,6 +11,7 @@ The site is built using the [Hugo](https://gohugo.io/) static site generator.
 We welcome contributions for website updates, design improvements, and translations. Please follow the specific instructions provided for each contribution type:
 
 - For blog content, see [Contributing - Blog Posts](https://github.com/AlmaLinux/almalinux.org/blob/main/contributing-blog-posts.md)
+- For newsletter issues, see [Contributing - Newsletters](#contributing---newsletters)
 - For event pages, see [Contributing - Event Pages](#contributing-event-pages)
 - For code or design improvements, see [Contributing - Code and Design](#contributing-code-and-design)
 - For translations, see [Contributing - Translations](#localization-and-translation)
@@ -111,6 +112,46 @@ Once the event is over, set `post_event: true` in the front matter and fill in `
 ### Foundation member sponsors
 
 The foundation member sponsor logos are rendered automatically on every event page — you do not need to add them. To update the list, edit `layouts/partials/common/foundation-members.html`.
+
+## Contributing - Newsletters
+
+Newsletter issues are published by the [Marketing SIG](https://wiki.almalinux.org/sigs/Marketing.html) as markdown files in `content/newsletters/`. Each file maps to a single newsletter issue.
+
+### Step 1: Create the content file
+
+Create a new file in `content/newsletters/` named `YYYY-MM-DD-almalinux-news-month-YY.md`, where the date is the publish date:
+
+```markdown
+---
+title: "AlmaLinux News for Month 'YY"
+type: newsletters
+date: "YYYY-MM-DD"
+summary: "One-sentence summary shown on the newsletters listing page."
+image: /newsletter-images/mon-yy.png
+draft: false
+---
+
+Your newsletter content here in Markdown.
+```
+
+**Front matter fields:**
+
+| Field     | Description                                                                   |
+| --------- | ----------------------------------------------------------------------------- |
+| `title`   | Displayed as the issue heading. Format: `AlmaLinux News for Month 'YY`        |
+| `type`    | Must be `newsletters`                                                         |
+| `date`    | Publish date in `YYYY-MM-DD` format — controls sort order on the listing page |
+| `summary` | Short description shown on the listing page under the title                   |
+| `image`   | Path to the newsletter header image (see Step 2)                              |
+| `draft`   | Set to `false` to publish, `true` to hide                                     |
+
+### Step 2: Add a header image
+
+Add a header image at `static/newsletter-images/mon-yy.png` (e.g. `jan-26.png`). The image should be 1200×630px.
+
+### Step 3: Open a pull request
+
+Open a PR targeting the `main` branch. Once merged, the newsletter will appear on the [newsletters listing page](https://almalinux.org/newsletters/) under its year, and will be included in the RSS feed automatically.
 
 ## Contributing - Blog Posts
 
