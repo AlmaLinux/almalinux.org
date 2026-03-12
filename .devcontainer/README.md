@@ -32,7 +32,7 @@ Automatically installs the following extensions for optimal Hugo development:
 
 **Starting the Server:** Upon opening the project in the container, Hugo's live server automatically starts. You can access it by navigating to `http://localhost:1313` in your web browser. This server runs in the background, allowing for real-time testing of your Hugo site.
 
-Note: The devcontainer runs Hugo with `--buildFuture` so future-dated (scheduled) posts are visible in local previews.
+Note: The devcontainer runs Hugo with `--bind=0.0.0.0 --buildFuture --poll=700ms` by default, so future-dated (scheduled) posts are visible in local previews and filesystem changes are picked up reliably from the mounted workspace.
 
 **Editing and Hot Rebuild:**
 
@@ -44,5 +44,6 @@ Note: The devcontainer runs Hugo with `--buildFuture` so future-dated (scheduled
 
 - **Docker Not Running:** Ensure Docker is installed and running on your machine before opening the project in a devcontainer.
 - **Connection Issues:** If `localhost:1313` doesn't work, check your port forwarding settings or ensure no other service is using port 1313.
+- **Manual Restarts:** If you start Hugo manually inside the container, use `hugo server --bind=0.0.0.0 --buildFuture --poll=700ms` to match the default devcontainer behavior.
 
 For more detailed information on Hugo's live server and hot reloading, refer to the [Hugo documentation](https://gohugo.io/getting-started/usage/#livereload).
