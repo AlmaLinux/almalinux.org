@@ -34,11 +34,10 @@ The fix batches all element fragments into a single `"add element"` operation pe
 
 Using a 12,000-entry ipset with the nftables backend and `firewall-cmd --reload`:
 
-| System | Before | After |
-|---|---:|---:|
+| System                             |     Before |     After |
+| ---------------------------------- | ---------: | --------: |
 | EL 8 (nftables 1.0.4, kernel 4.18) | ~82,600 ms | ~2,600 ms |
-| EL 9 (nftables 1.0.9, kernel 5.14) | ~1,560 ms | ~1,240 ms |
-
+| EL 9 (nftables 1.0.9, kernel 5.14) |  ~1,560 ms | ~1,240 ms |
 
 On EL 8 that's a **~32x improvement** — from over a minute down to under 3 seconds.
 
