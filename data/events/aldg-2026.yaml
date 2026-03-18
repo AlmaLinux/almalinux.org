@@ -13,6 +13,10 @@ speakers:
     photo: "/landingpages/aldg-2026/Alex_amd.jpg"
     title: "Product Marketing Manager" # optional
     org: "AMD" # optional
+  - name: "Igor Seletskiy"
+    photo: "/landingpages/aldg-2026/igor.jpeg"
+    title: "CEO"
+    org: "CloudLinux and TuxCare"
   - name: "benny Vasquez"
     photo: "/landingpages/aldg-2026/benny.jpeg"
     title: "Chair of the Board" # optional
@@ -21,4 +25,31 @@ speakers:
     photo: "/landingpages/aldg-2026/jonathan.jpg"
     title: "Infrastructure SIG lead & ALESCo member" # optional
     org: "AlmaLinux OS Foundation" # optional
-
+  - name: "Andrew Lukoshko"
+    photo: "/landingpages/aldg-2026/alukoshko.jpg"
+    title: "Lead Architect"
+    org: "AlmaLinux OS Foundation"
+  - name: "Federico Pellegrin"
+    photo: "/landingpages/aldg-2026/federico.jpeg"
+    title: "Software Engineer"
+    org: "European Southern Observatory"
+  - name: "Roberto Luna Rojas"
+    photo: "/landingpages/aldg-2026/roberto.jpg"
+    title: "Sr Developer Advocate"
+    org: "Valkey"
+  - name: "Dennis Zimmer"
+    photo: "/landingpages/aldg-2026/zimmer.png"
+    title: "Co-Founder & CTO"
+    org: "Codenotary Inc"
+  - name: "Tristan Théroux"
+    photo: "/landingpages/aldg-2026/tristan.jpeg"
+    title: "Host for the day"
+    org: ""
+  - name: "Sven Sellen"
+    photo: "/landingpages/aldg-2026/sven.jpg"
+    title: "Director Enterprise Sales"
+    org: "TuxCare"
+  - name: "Piotr Szubiak"
+    photo: "/landingpages/aldg-2026/default.png"
+    title: "Software Engineer"
+    org: "European Southern Observatory"
