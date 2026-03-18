@@ -1,0 +1,387 @@
+// Rules migrated from bundle.css that were not in any SCSS partial
+// These should be reviewed and potentially moved to more specific partials over time
+
+@import "./variables";
+
+// CTA button variants (used on index page)
+.al-cta-blue {
+  background: #24c2ff;
+  color: #222222;
+  margin: 10px 10px 10px 0;
+
+  &:hover {
+    background: #0bbbff;
+  }
+}
+
+.al-cta-green {
+  background: $al-c-atlantis;
+  color: #222222;
+  margin: 10px;
+
+  &:hover {
+    background: darken($al-c-atlantis, 5%);
+  }
+}
+
+.al-cta-yellow {
+  background: $al-c-candlelight;
+  color: #222222;
+  margin: 10px;
+
+  img {
+    display: inline;
+    height: 1em;
+  }
+
+  &:hover {
+    background: darken($al-c-candlelight, 5%);
+  }
+}
+
+// Dark background utility
+.al-dark-background {
+  background: #0e3b5c !important;
+}
+
+// Commercial supporter styling
+.al-commercial-supporter-list {
+  text-align: center;
+  background: #0e3b5c;
+
+  .platinum_sponsor {
+    padding: .5rem;
+    font-size: 1rem;
+    background-color: #e5e4e2;
+    color: #0e3b5c;
+    border-radius: 25px;
+  }
+
+  .silver_sponsor {
+    padding: .5rem;
+    font-size: 1rem;
+    background-color: #c0c0c0;
+    color: #0e3b5c;
+    border-radius: 25px;
+  }
+}
+
+.al-commercial-supporter-logo-container {
+  background: $al-c-black-pearl;
+  text-align: center;
+}
+
+// Sponsor section (event pages)
+.al-page-index .al-index-sponsors .al-backed-by-list {
+  justify-content: center;
+  padding: 0;
+
+  div.col {
+    text-align: center;
+  }
+
+  .al-backer-logo-container {
+    height: 100%;
+  }
+
+  .al-backer-logo {
+    height: 100%;
+    width: 160px;
+  }
+
+  .al-backer-logo-small {
+    height: 100%;
+    width: 70px;
+    object-fit: contain;
+
+    img {
+      object-fit: contain;
+    }
+  }
+}
+
+// Security page icon sizing
+.al-page-index .al-index-security-container .al-index-community-icon.img {
+  height: 32px;
+  box-sizing: border-box;
+  font-size: 32px;
+}
+
+// Index security link color
+.al-index-security-measures-container a {
+  color: #f1f8ff;
+}
+
+// Photo/download icon sizing
+.Photo__Lock, .al-index-download-icon {
+  width: 40px;
+  height: 40px;
+}
+
+// Tab button styling (alternative to accordion)
+.tab-button.active {
+  outline: none !important;
+  box-shadow: inset 0 0.1875rem #ff4649 !important;
+}
+
+.tab-button:focus {
+  outline: none !important;
+}
+
+.al-page-index .al-index-faq .tab-button {
+  border: 1px;
+  font-weight: normal;
+  background: #104469;
+  width: 100% !important;
+  padding: 20px 10px !important;
+  color: #fefefe !important;
+  font-size: 18px;
+}
+
+.items__01 .accordion-body > ul {
+  padding: 0px !important;
+}
+
+// Sizing items for index page
+.itemsOff {
+  height: 36px;
+  margin: 15px 0 15px 0;
+}
+
+.itemsTr {
+  height: 72px;
+  margin: 15px 0 15px 0;
+}
+
+// Blog table styling
+.al-page-blog-post table, th, td {
+  color: #fefefe !important;
+  border: 1px solid #fefefe;
+  padding: 10px;
+}
+
+// Members page
+.al-members .al-member-item {
+  height: 100%;
+}
+
+.al-membership-info table {
+  color: #fefefe !important;
+}
+
+// Download page OS tabs
+.al-os-tabs .nav-link {
+  background-color: #0e3b5c;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  border: none;
+  position: relative;
+  padding: 12px 32px;
+  margin: 0 6px;
+}
+
+.nav-tabs {
+  justify-content: center;
+  border-bottom: none !important;
+}
+
+.al-os-tabs .nav-link:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #777;
+}
+
+.dropdown-menu {
+  background-color: #0e3b5c;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+
+  .dropdown-item {
+    background-color: #0e3b5c;
+    color: #ffffff;
+
+    &:hover {
+      background-color: #9db4cc;
+    }
+
+    &.active, &:focus {
+      background-color: #0e3b5c !important;
+      color: #ff4649;
+    }
+  }
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  background-color: #0e3b5c !important;
+  color: #ffffff !important;
+}
+
+.al-os-tabs .nav-link.active {
+  background-color: #0e3b5c;
+  color: #ffffff;
+  font-weight: 700;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ff4649;
+  }
+}
+
+.al-index-download-icon {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+// Code blocks
+pre, code {
+  font-size: 15px;
+  color: #fff;
+  background-color: #1f1f24;
+  border-radius: 4px;
+  padding: 0 3px 0 3px;
+}
+
+pre > code {
+  padding: 0;
+}
+
+.highlight > pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+
+a {
+  overflow-wrap: anywhere;
+}
+
+a:hover {
+  color: #9db4cc;
+}
+
+// Display-4 override (BS5 bridge)
+.display-4 {
+  font-size: 1rem !important;
+  line-height: 1rem;
+}
+
+// Pagination overrides
+.pagination .page-item .page-link {
+  background: #196da9 !important;
+  padding: .375rem .75rem !important;
+  color: #c4e1ff;
+  border: none;
+  text-decoration: none;
+}
+
+.pagination .active .page-link {
+  background: #1f8ad5 !important;
+}
+
+.pagination .disabled {
+  color: #000 !important;
+}
+
+// ALD (AlmaLinux Day) event page styling
+.al-body-container .al-index-topic-ALD {
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container {
+    padding: 0 40px 0 40px;
+    max-height: 900px;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 75px;
+      font-weight: 700;
+    }
+  }
+}
+
+// Social media icon list items
+.sociallist a {
+  color: #0D3654;
+}
+
+.social-item-mattermost,
+.social-item-twitter,
+.social-item-reddit,
+.social-item-lists,
+.social-item-discourse,
+.social-item-github,
+.social-item-docker,
+.social-item-wiki,
+.social-item-fosstadon {
+  list-style: none;
+  padding-left: 24px;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: 0 50%;
+}
+
+.social-item-mattermost { background-image: url('/socialicons/mattermost.png'); }
+.social-item-twitter { background-image: url('/socialicons/xtwitter.png'); }
+.social-item-reddit { background-image: url('/socialicons/reddit.png'); }
+.social-item-lists { background-image: url('/socialicons/lists.png'); }
+.social-item-discourse { background-image: url('/socialicons/discourse.png'); }
+.social-item-github { background-image: url('/socialicons/github.png'); }
+.social-item-docker { background-image: url('/socialicons/docker.png'); }
+.social-item-wiki { background-image: url('/socialicons/wiki.png'); }
+.social-item-fosstadon { background-image: url('/socialicons/mastodon.svg'); }
+
+// Footer tax note
+.footer_tax_note {
+  font-size: .7rem;
+  padding-top: .5rem;
+}
+
+// Newsletter styling
+.newsletter-img {
+  max-height: 300px;
+  max-width: 100%;
+  height: auto;
+  float: right;
+
+  @media (max-width: 1000px) {
+    float: left;
+  }
+}
+
+.newsletter-div {
+  max-width: 650px;
+}
+
+// Nested dropdown menu list reset
+.navbar-nav .dropdown-menu ul {
+  padding: 0;
+  margin: 0 0 0 1rem;
+  list-style-type: none;
+}
+
+// Download page gap utility
+.gap-30 {
+  gap: 30px;
+}
