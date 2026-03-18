@@ -49,35 +49,11 @@ button:focus, .btn:focus{
   outline: none !important;
   box-shadow: none !important;
 }
-.row{
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-.container{
-  padding: 0 ;
-}
-.al-primary-navbar .container {
-  padding-left: 15px !important;
-  padding-right: 15px !important;
-}
-.al-index-faq .container {
-  padding-left: 15px !important;
-  padding-right: 15px !important;
-}
-.al-index-press .container {
-  padding-right: 15px !important;
-  padding-left: 15px !important;
-}
-.elevate-container-wrap{
-  padding-right: 15px !important;
-  padding-left: 15px !important;
-}
 .custom-blog-page-section{
   margin: auto;
 }
 .al-page-blog-post .container{
-  padding: 3rem 15px !important;
+  padding: 3rem 15px;
 }
 .fw-bold{
   font-weight: 700 !important;
@@ -133,11 +109,23 @@ button:focus, .btn:focus{
     border-bottom: 0;
   }
   
+  .navbar-toggler {
+    border: 0 solid transparent;
+  }
+
+  .navbar-toggler-icon {
+    border: none;
+  }
+
   .dropdown-menu-dark {
     background: $al-c-black-pearl;
-    border: 0;  
+    border: 0;
+    .dropdown-header {
+      color: white;
+    }
     .dropdown-item{
       text-decoration: none !important;
+      color: aliceblue;
     }
     .dropdown-item:hover{
       background-color: #ffffff26 !important;
