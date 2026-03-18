@@ -102,9 +102,9 @@
     }
   </style>
 
-  {{ $bundleCSS := resources.Get  "css/bundle.css" | resources.Minify | resources.Fingerprint }}
+  {{ $scss := resources.Get "scss/main.scss" | toCSS (dict "targetPath" "css/main.css") | resources.Minify | resources.Fingerprint }}
   <link
     rel="stylesheet"
-    href="{{ $bundleCSS.RelPermalink }}"
-    integrity="{{ $bundleCSS.Data.Integrity }}" />
+    href="{{ $scss.RelPermalink }}"
+    integrity="{{ $scss.Data.Integrity }}" />
 </head>
