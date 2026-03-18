@@ -7,16 +7,26 @@
     <section class="al-page-index">
       <div class="al-index-faq">
         <div class="container al-py-lg">
-          <h1 class="mb-3" style="text-align: center;">
+          <h1 class="mb-3 text-center">
             {{ i18n "Get AlmaLinux OS" }}
           </h1>
+          <!-- Quick links for common use cases -->
+          <div class="al-quickstart-wrap">
+            <h2 class="text-center mb-3">
+              {{ i18n "Quickstart: How will you use AlmaLinux OS?" }}
+            </h2>
+            {{ partial "get-almalinux/persona-cards" . }}
+          </div>
+
           <!-- AlmaLinux OS Version & Architecture Tabs -->
+          <h2 class="text-center mb-2 mt-5">
+            {{ i18n "All Download Options" }}
+          </h2>
+          <p class="text-center mb-4 al-text-muted">
+            {{ i18n "First, choose your version and architecture. Then, select an image format below." }}
+          </p>
           <div class="al-tab-wrap">
-            <!-- OS Version + Architecture Tabs Combined -->
             {{ partial "get-almalinux/tabs" . }}
-
-
-            <!-- Tab Content from data -->
             {{ partial "get-almalinux/tab-content" . }}
           </div>
         </div>
@@ -85,6 +95,37 @@
               pane.scrollIntoView({ behavior: "smooth", block: "start" });
           }
         })();
+
+        // When an arch tab is shown, move the active indicator to its parent version button
+        // Uses a MutationObserver since Bootstrap 4's jQuery tab events aren't accessible from vanilla JS
+        var tabContent = document.querySelector(".tab-content.al-tab-content");
+        if (tabContent) {
+          new MutationObserver(function () {
+            var activePane = tabContent.querySelector(".tab-pane.active");
+            if (!activePane) return;
+            var paneId = activePane.id; // e.g. "aarch64-8"
+            var tabLink = document.querySelector(
+              '[data-toggle="tab"][href="#' + paneId + '"]',
+            );
+            if (!tabLink) return;
+            // Move active to the parent version dropdown button
+            document
+              .querySelectorAll(".al-os-tabs .nav-link.dropdown-toggle")
+              .forEach(function (btn) {
+                btn.classList.remove("active");
+              });
+            var dropdown = tabLink.closest(".nav-item.dropdown");
+            if (dropdown) {
+              dropdown
+                .querySelector(".nav-link.dropdown-toggle")
+                .classList.add("active");
+            }
+          }).observe(tabContent, {
+            subtree: true,
+            attributes: true,
+            attributeFilter: ["class"],
+          });
+        }
       </script>
     </section>
   </div>

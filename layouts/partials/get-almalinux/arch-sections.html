@@ -17,19 +17,23 @@
 <div class="mt-3 icons">
   {{ $sectionCount := len $arch.sections }}
   <div
-    class="container-all-options d-flex mb-3 px-3 justify-content-between"
-    {{ if lt $sectionCount 3 }}
-      style="justify-content: space-around !important;"
-    {{ end }}>
+    class="container-all-options d-flex mb-3 px-3 {{ if lt $sectionCount 3 }}
+      justify-content-around
+    {{ else }}
+      justify-content-between
+    {{ end }}">
     {{ range $arch.sections }}
       {{ $icon := index $iconMap .id }}
       {{ if $icon }}
-        <a href="#{{ .anchorPrefix }}-{{ $arch.id }}-{{ $version.id }}">
+        <a
+          href="#{{ .anchorPrefix }}-{{ $arch.id }}-{{ $version.id }}"
+          class="text-center text-decoration-none">
           <img
             loading="lazy"
-            class="al-index-download-icon img"
+            class="al-index-download-icon img d-block mx-auto"
             src="{{ $icon.src }}"
             alt="{{ $icon.alt }}" />
+          <small class="d-block mt-1 al-text-muted">{{ .title }}</small>
         </a>
       {{ end }}
     {{ end }}
@@ -41,10 +45,8 @@
     <a
       class="anchor"
       id="{{ .anchorPrefix }}-{{ $arch.id }}-{{ $version.id }}"
-      style="position: relative; top: -116px;"></a>
-    <h2
-      class="pb-2 text-center border-bottom"
-      style="border-bottom-color: #14598a!important;">
+      class="al-scroll-anchor"></a>
+    <h2 class="pb-2 text-center border-bottom al-border-accent">
       {{ .title }}
     </h2>
 
