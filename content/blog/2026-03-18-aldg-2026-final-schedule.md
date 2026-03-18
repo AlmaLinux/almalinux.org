@@ -7,10 +7,10 @@ author:
   image: /users/benny.jpeg
 date: 2026-03-18
 images:
-  - /blog-images/2026/2026-03-02-almalinux-days-in-two-great-cities.png
+  - /blog-images/2026/aldg-schedule-2026.png
 post:
   title: "AlmaLinux Day: Germany 2026 — Full Schedule Announced"
-  image: /blog-images/2026/2026-03-02-almalinux-days-in-two-great-cities.png
+  image: /blog-images/2026/aldg-schedule-2026.png
 ---
 
 We're just 9 days out from AlmaLinux Day: Germany 2026, and the full schedule is here!
