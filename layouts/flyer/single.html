@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="{{ .Lang }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ .Title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <style>
+      /* ===== Base ===== */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family:
+          "Montserrat",
+          -apple-system,
+          BlinkMacSystemFont,
+          sans-serif;
+        font-size: 11px;
+        line-height: 1.5;
+        color: #fefefe;
+        background: #333;
+      }
+
+      a {
+        color: #c4e1ff;
+      }
+
+      /* ===== Page structure ===== */
+      .flyer-page {
+        width: 8.5in;
+        min-height: 11in;
+        background: #0e3b5c;
+        margin: 20px auto;
+        padding: 0.5in;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* ===== Header ===== */
+      .flyer-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 0.3in;
+      }
+
+      .flyer-header h1 {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.3;
+        max-width: 60%;
+      }
+
+      .flyer-header-accent {
+        background: #082336;
+        margin: -0.5in -0.5in 0.3in -0.5in;
+        padding: 0.4in 0.5in 0.3in 0.5in;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .flyer-header-accent h1 {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.3;
+        white-space: nowrap;
+      }
+
+      .flyer-header-right {
+        text-align: right;
+        font-size: 11px;
+      }
+
+      .flyer-header-right img {
+        height: 36px;
+        margin-bottom: 6px;
+      }
+
+      .flyer-header-right a {
+        display: block;
+        color: #c4e1ff;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      /* ===== Intro block (front page) ===== */
+      .flyer-intro {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 0.25in;
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
+      .flyer-intro-text {
+        flex: 1;
+      }
+
+      .flyer-intro strong {
+        font-weight: 700;
+      }
+
+      .flyer-arch-badge {
+        flex-shrink: 0;
+        text-align: center;
+      }
+
+      .flyer-arch-badge img {
+        width: 180px;
+        height: auto;
+      }
+
+      /* ===== Two-column grid ===== */
+      .flyer-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+
+      .flyer-columns-fill {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        flex: 1;
+      }
+
+      .flyer-page-flex {
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* ===== Feature card ===== */
+      .flyer-card {
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 8px;
+        padding: 14px 16px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .flyer-card-links {
+        margin-top: auto;
+        text-align: right;
+        padding-top: 4px;
+        font-size: 10px;
+        line-height: 1.6;
+      }
+
+      .flyer-card-links a {
+        display: block;
+        font-weight: 600;
+      }
+
+      .flyer-card h2 {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 6px;
+        line-height: 1.3;
+      }
+
+      .flyer-card h2 i {
+        margin-right: 6px;
+        font-size: 16px;
+        vertical-align: -1px;
+        color: #86da2f;
+      }
+
+      .flyer-card p,
+      .flyer-card ul {
+        font-size: 10.5px;
+        line-height: 1.55;
+        margin-bottom: 6px;
+      }
+
+      .flyer-card ul {
+        padding-left: 18px;
+      }
+
+      .flyer-card a {
+        font-weight: 600;
+      }
+
+      /* ===== Sponsors strip ===== */
+      .flyer-sponsors {
+        margin-top: 16px;
+        text-align: center;
+      }
+
+      .flyer-sponsors h2 {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+
+      .flyer-sponsors p {
+        font-size: 10px;
+        margin-top: 6px;
+      }
+
+      .flyer-sponsors a {
+        font-weight: 600;
+      }
+
+      /* ===== Footer bar ===== */
+      .flyer-footer-bar {
+        background: #082336;
+        margin: auto -0.5in -0.5in -0.5in;
+        padding: 12px 0.5in;
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+        font-size: 9.5px;
+      }
+
+      .flyer-footer-bar a {
+        color: #c4e1ff;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      /* ===== Arch icons (front page) ===== */
+      .flyer-arch-icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 8px;
+      }
+
+      .flyer-arch-icons img {
+        height: 50px;
+      }
+
+      /* ===== Screen-only controls ===== */
+      .flyer-controls {
+        text-align: center;
+        padding: 20px;
+      }
+
+      .flyer-controls button {
+        background: #86da2f;
+        color: #222;
+        border: none;
+        padding: 12px 32px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 6px;
+        cursor: pointer;
+        font-family: inherit;
+      }
+
+      .flyer-controls button:hover {
+        background: #79cb24;
+      }
+
+      .flyer-controls p {
+        color: #aaa;
+        margin-top: 8px;
+        font-size: 13px;
+      }
+
+      /* ===== Sponsor logo grid ===== */
+      .flyer-sponsor-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 20px;
+        padding: 10px 0;
+      }
+
+      .flyer-sponsor-grid img {
+        height: 28px;
+        width: 100px;
+        object-fit: contain;
+        filter: brightness(0) invert(1);
+        opacity: 0.85;
+      }
+
+      .flyer-sponsor-grid img.already-white {
+        filter: none;
+      }
+
+      /* ===== Print styles ===== */
+      @media print {
+        body {
+          background: none;
+        }
+
+        .flyer-controls {
+          display: none;
+        }
+
+        .flyer-page {
+          margin: 0;
+          padding: 0.35in;
+          width: 8.5in;
+          height: 11in;
+          max-height: 11in;
+          overflow: hidden;
+          page-break-after: always;
+          page-break-inside: avoid;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+
+        .flyer-page:last-child {
+          page-break-after: auto;
+        }
+
+        .flyer-header,
+        .flyer-header-accent {
+          margin-bottom: 0.2in;
+        }
+
+        .flyer-header-accent {
+          margin: -0.35in -0.35in 0.2in -0.35in;
+          padding: 0.3in 0.35in 0.2in 0.35in;
+        }
+
+        .flyer-intro {
+          margin-bottom: 0.15in;
+          font-size: 11.5px;
+        }
+
+        .flyer-columns,
+        .flyer-columns-fill {
+          gap: 10px;
+        }
+
+        .flyer-card {
+          padding: 10px 12px;
+        }
+
+        .flyer-card h2 {
+          font-size: 12.5px;
+          margin-bottom: 4px;
+        }
+
+        .flyer-card p,
+        .flyer-card ul {
+          font-size: 9.5px;
+          line-height: 1.45;
+          margin-bottom: 4px;
+        }
+
+        .flyer-sponsors {
+          margin-top: 10px;
+        }
+
+        .flyer-sponsors h2 {
+          font-size: 13px;
+          margin-bottom: 6px;
+        }
+
+        .flyer-sponsor-grid {
+          gap: 8px 16px;
+        }
+
+        .flyer-footer-bar {
+          margin: auto -0.35in -0.35in -0.35in;
+          padding: 10px 0.35in;
+        }
+      }
+
+      @page {
+        size: letter;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Print button -->
+    <div class="flyer-controls">
+      <button onclick="window.print()">{{ i18n "Print / Save as PDF" }}</button>
+      <p>
+        {{ i18n "Use your browser's print dialog to save as PDF or print directly." }}
+      </p>
+    </div>
+
+    <!-- ==================== PAGE 1: FRONT ==================== -->
+    <div class="flyer-page flyer-page-flex">
+      <div class="flyer-header-accent">
+        <div>
+          <h1>{{ i18n "No drama, just Linux." }}</h1>
+          <p
+            style="font-size: 11px; color: #c4e1ff; margin-top: 6px; font-weight: 500;">
+            {{ i18n "RHEL compatible. 6 architectures. 10 years of support. Forever free." }}
+          </p>
+        </div>
+        <div class="flyer-header-right">
+          <img src="/images/logo.svg" alt="AlmaLinux OS" /><br />
+          <a href="https://almalinux.org">almalinux.org</a>
+          <a href="https://fosstodon.org/@almalinux"
+            >@almalinux@fosstodon.org</a
+          >
+        </div>
+      </div>
+
+      <div class="flyer-intro">
+        <div class="flyer-intro-text">
+          <p>
+            {{ i18n "An Open Source, 100%" }}
+            <strong>{{ i18n "community-owned" }}</strong
+            >{{ i18n ", governed and forever-free, RHEL-compatible enterprise Linux distribution, focused on long-term stability, providing a robust production-grade platform with" }}
+            <strong>{{ i18n "10 years of support" }}</strong>
+            {{ i18n "for each major version." }}
+          </p>
+          <p style="margin-top: 8px;">
+            {{ i18n "Everything that runs on RHEL runs on AlmaLinux. Period. If it doesn't, we consider that a bug. We release typically within one week of Red Hat, for both major and minor versions." }}
+          </p>
+        </div>
+        <div class="flyer-arch-badge">
+          <img src="/images/flyer-multi-arch.svg" alt="Multi-Arch Support" />
+        </div>
+      </div>
+
+      <div class="flyer-columns">
+        <div class="flyer-card">
+          <h2>
+            <i class="bi bi-check2-circle"></i
+            >{{ i18n "RHEL Compatible, Not a Copy" }}
+          </h2>
+          <p>
+            {{ i18n "We promise complete compatibility with RHEL, but with the freedom to serve our community without restriction. We match Red Hat in software versions, release cycles, and version numbers — and we go further by adding bugfixes, re-enabling hardware support, and restoring software features dropped from RHEL." }}
+          </p>
+        </div>
+
+        <div class="flyer-card">
+          <h2>
+            <i class="bi bi-lightning"></i
+            >{{ i18n "Features RHEL Dropped — We Kept" }}
+          </h2>
+          <ul>
+            <li>{{ i18n "140+ legacy storage & network device drivers" }}</li>
+            <li>{{ i18n "SPICE protocol for virtualization" }}</li>
+            <li>{{ i18n "KVM on IBM Power (ppc64le)" }}</li>
+            <li>
+              {{ i18n "Btrfs filesystem (tech preview, requested by Meta)" }}
+            </li>
+            <li>{{ i18n "x86_64_v2 CPU support for AlmaLinux 10" }}</li>
+            <li>{{ i18n "Frame Pointers for debugging" }}</li>
+            <li>{{ i18n "NVIDIA open source driver repo config" }}</li>
+          </ul>
+        </div>
+
+        <div class="flyer-card">
+          <h2>
+            <i class="bi bi-speedometer2"></i
+            >{{ i18n "Fast Releases, Trusted Testing" }}
+          </h2>
+          <p>
+            {{ i18n "We release typically within 1 week of Red Hat, for major and minor versions. We can do this because we have built automated, trusted testing that kicks off immediately. Our open source build system (ALBS) generates errata, signs packages, and builds for all supported platforms — including SBOMs." }}
+          </p>
+        </div>
+
+        <div class="flyer-card">
+          <h2>
+            <i class="bi bi-shield-lock"></i>{{ i18n "Security & Compliance" }}
+          </h2>
+          <p>
+            {{ i18n "AlmaLinux OS 9.2 is FIPS 140-3 validated and on the NIST Active list. We provide full errata, OVAL streams for security scanners, and OpenSCAP support both during and after installation — features CentOS Linux never had." }}
+          </p>
+          <div class="flyer-card-links">
+            <a href="https://almalinux.org/security">almalinux.org/security</a>
+          </div>
+        </div>
+
+        <div class="flyer-card">
+          <h2>
+            <i class="bi bi-shield-check"></i>{{ i18n "Neutral Governance" }}
+          </h2>
+          <p>
+            {{ i18n "The AlmaLinux OS Foundation is a 501(c)(6) non-profit with 400+ members, a volunteer-elected board, and an open Engineering Steering Committee (ALESCo). Every major decision is made by foundation members. Individual membership is free." }}
+          </p>
+          <div class="flyer-card-links">
+            <a href="https://almalinux.org/members">almalinux.org/members</a>
+          </div>
+        </div>
+
+        <div class="flyer-card">
+          <h2>
+            <i class="bi bi-cloud"></i>{{ i18n "Everywhere You Need It" }}
+          </h2>
+          <p>
+            {{ i18n "Available on AWS, Azure, Google Cloud, Oracle Cloud, and nearly all independent hosting providers. Official containers on Docker Hub and Quay.io. VMWare, Hyper-V, VirtualBox, Vagrant, Incus/LXC, WSL, Raspberry Pi, and Live Media images." }}
+          </p>
+        </div>
+
+        <div class="flyer-card">
+          <h2>
+            <i class="bi bi-building"></i>{{ i18n "Trusted by Industry" }}
+          </h2>
+          <p>{{ i18n "Companies around the world build on AlmaLinux:" }}</p>
+          <ul>
+            <li>{{ i18n "Arista Networks — EOS network operating system" }}</li>
+            <li>{{ i18n "Cisco — Unified Communications Manager" }}</li>
+            <li>{{ i18n "CERN — particle physics research" }}</li>
+            <li>{{ i18n "Meta, Verizon, Chevron, Zoom" }}</li>
+            <li>{{ i18n "CloudLinux, HeliumOS, stillOS, Oreon OS" }}</li>
+          </ul>
+        </div>
+
+        <div class="flyer-card">
+          <h2>
+            <i class="bi bi-arrow-repeat"></i
+            >{{ i18n "Easy Migration with ELevate" }}
+          </h2>
+          <p>
+            {{ i18n "ELevate makes it easy to migrate from CentOS, or upgrade between major versions of AlmaLinux — in place, with a single tool." }}
+          </p>
+          <img
+            src="/images/elevate.svg"
+            alt="ELevate"
+            style="width: 85%; margin-top: 2px;" />
+          <div class="flyer-card-links">
+            <a href="https://almalinux.org/elevate">almalinux.org/elevate</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flyer-footer-bar">
+        <a href="https://almalinux.org">almalinux.org</a>
+        <a href="https://wiki.almalinux.org">wiki.almalinux.org</a>
+        <a href="https://chat.almalinux.org">chat.almalinux.org</a>
+        <a href="https://bugs.almalinux.org">bugs.almalinux.org</a>
+        <a href="https://fosstodon.org/@almalinux">@almalinux@fosstodon.org</a>
+        <a href="https://github.com/AlmaLinux">github.com/AlmaLinux</a>
+      </div>
+    </div>
+
+    <!-- ==================== PAGE 2: BACK ==================== -->
+    <div class="flyer-page flyer-page-flex">
+      <div class="flyer-header">
+        <h1>{{ i18n "Free Linux OS for the community, by the community" }}</h1>
+        <div class="flyer-header-right">
+          <img src="/images/logo.svg" alt="AlmaLinux OS" /><br />
+          <a href="https://almalinux.org">almalinux.org</a>
+          <a href="https://fosstodon.org/@almalinux"
+            >@almalinux@fosstodon.org</a
+          >
+        </div>
+      </div>
+
+      <div class="flyer-columns">
+        <div class="flyer-card">
+          <h2>
+            <i class="bi bi-people"></i
+            >{{ i18n "Support: Community & Enterprise" }}
+          </h2>
+          <p>
+            {{ i18n "A vast community of experts supports AlmaLinux users through chat, forums, and mailing lists. Enterprise support is available from TuxCare and Cybertrust Japan — partners who are actually involved in building AlmaLinux." }}
+          </p>
+          <div class="flyer-card-links">
+            <a href="https://almalinux.org/support">almalinux.org/support</a>
+          </div>
+        </div>
+
+        <div class="flyer-card">
+          <h2>
+            <i class="bi bi-chat-dots"></i
+            >{{ i18n "Shape the Future of AlmaLinux" }}
+          </h2>
+          <p>
+            {{ i18n "Anyone can propose changes to AlmaLinux by submitting an RFC to ALESCo. All meetings are public and scheduled at" }}
+            <a href="https://events.almalinux.org">events.almalinux.org</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Contribute section with SIG diagram -->
+      <div class="flyer-columns" style="margin-top: 16px;">
+        <div class="flyer-card">
+          <h2>
+            <i class="bi bi-code-slash"></i
+            >{{ i18n "Contribute to AlmaLinux!" }}
+          </h2>
+          <p>
+            {{ i18n "Whether you're an engineer, sysadmin, marketer, designer, or translator — there's a SIG for you. Help with testing, documentation, packaging, events, or website updates. Companies can join as sponsor members." }}
+          </p>
+          <div class="flyer-card-links">
+            <a href="https://almalinux.org/contribute"
+              >almalinux.org/contribute</a
+            >
+            <a href="https://wiki.almalinux.org/sigs/"
+              >wiki.almalinux.org/sigs</a
+            >
+          </div>
+        </div>
+        <div>
+          <img
+            src="/images/flyer-sigs.svg"
+            alt="AlmaLinux SIGs"
+            style="width: 100%; height: auto;" />
+        </div>
+      </div>
+
+      <div class="flyer-card" style="margin-top: 16px;">
+        <h2><i class="bi bi-globe"></i>{{ i18n "400+ Mirrors Worldwide" }}</h2>
+        <p>
+          {{ i18n "The AlmaLinux community contributed over 400 mirrors around the world, with fully geo-aware infrastructure ensuring the fastest downloads wherever you are." }}
+          {{ i18n "Host a mirror:" }}
+          <a href="https://almalinux.org/mirrors">almalinux.org/mirrors</a>
+        </p>
+      </div>
+
+      <div class="flyer-sponsors">
+        <h2>{{ i18n "Backed by amazing sponsor members:" }}</h2>
+        <div class="flyer-sponsor-grid">
+          <img src="/brands/cloudlinux.svg" alt="CloudLinux" />
+          <img
+            src="/brands/TuxCare_Horizontal_Logo_NoTagLine_White.svg"
+            alt="TuxCare" />
+          <img src="/brands/cybertrust-japan.svg" alt="Cybertrust Japan" />
+          <img
+            src="/brands/KnownHostLogoFLATWHITE.svg"
+            alt="KnownHost"
+            class="already-white" />
+          <img src="/brands/ipinfo.svg" alt="IPInfo" />
+          <img src="/brands/codenotary.svg" alt="Codenotary" />
+          <img src="/brands/meta.svg" alt="Meta" />
+          <img src="/brands/aws.svg" alt="Amazon AWS" />
+          <img src="/brands/azurelarge1.svg" alt="Microsoft Azure" />
+          <img src="/brands/arm.svg" alt="ARM" />
+          <img src="/brands/sine_nomine_logo_grayscale.svg" alt="Sine Nomine" />
+          <img src="/brands/HawkHost.svg" alt="HawkHost" />
+          <img src="/brands/hivelocity.svg" alt="Hivelocity" />
+          <img src="/brands/osuosl.svg" alt="OSU Open Source Lab" />
+          <img src="/brands/mattermost.svg" alt="Mattermost" />
+          <img
+            src="/brands/logo-algolia-nebula-blue-full_a52auc4.svg"
+            alt="Algolia"
+            class="already-white" />
+          <img src="/brands/AMD_Logo.svg" alt="AMD" />
+          <img src="/brands/blackhost_logo.svg" alt="BlackHOST" />
+          <img src="/brands/procomputers_logo_white.svg" alt="ProComputers" />
+          <img src="/brands/MEGWARE.svg" alt="MEGWARE" />
+          <img src="/brands/cern.svg" alt="CERN" />
+          <img src="/brands/StorPool.svg" alt="StorPool" />
+          <img src="/brands/fastly.svg" alt="Fastly" />
+          <img src="/brands/sie_logo.svg" alt="SIE LADÓN" />
+          <img
+            src="/brands/rackspeed-logo-reverse.svg"
+            alt="rackSPEED"
+            class="already-white" />
+          <img src="/brands/viatel.svg" alt="Viatel" />
+          <img src="/brands/fujitsu.svg" alt="Fujitsu" />
+          <img src="/brands/logo_arista.png" alt="Arista Networks" />
+          <img src="/brands/anywair_white.svg" alt="anywair" />
+        </div>
+        <p>
+          {{ i18n "Join the foundation:" }}
+          <a href="https://almalinux.org/members">almalinux.org/members</a>
+        </p>
+      </div>
+
+      <div class="flyer-footer-bar">
+        <a href="https://almalinux.org">almalinux.org</a>
+        <a href="https://wiki.almalinux.org">wiki.almalinux.org</a>
+        <a href="https://chat.almalinux.org">chat.almalinux.org</a>
+        <a href="https://bugs.almalinux.org">bugs.almalinux.org</a>
+        <a href="https://fosstodon.org/@almalinux">@almalinux@fosstodon.org</a>
+        <a href="https://github.com/AlmaLinux">github.com/AlmaLinux</a>
+      </div>
+    </div>
+  </body>
+</html>

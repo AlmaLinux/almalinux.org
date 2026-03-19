@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" fill="none">
+  <rect width="200" height="160" rx="12" fill="#0e3b5c"/>
+  <text x="100" y="24" text-anchor="middle" fill="#86da2f" font-family="Montserrat,sans-serif" font-weight="700" font-size="13">6 supported architectures</text>
+  <!-- Row 1 -->
+  <text x="50" y="52" text-anchor="middle" fill="#fff" font-family="monospace" font-size="10">x86_64</text>
+  <text x="150" y="52" text-anchor="middle" fill="#fff" font-family="monospace" font-size="10">x86_64_v2</text>
+  <!-- Row 2 -->
+  <text x="50" y="78" text-anchor="middle" fill="#fff" font-family="monospace" font-size="10">aarch64</text>
+  <text x="150" y="78" text-anchor="middle" fill="#fff" font-family="monospace" font-size="10">ppc64le</text>
+  <!-- Row 3 -->
+  <text x="50" y="104" text-anchor="middle" fill="#fff" font-family="monospace" font-size="10">s390x</text>
+  <text x="150" y="104" text-anchor="middle" fill="#fff" font-family="monospace" font-size="10">riscv64</text>
+  <!-- Accent line -->
+  <rect x="20" y="30" width="160" height="2" rx="1" fill="#86da2f" opacity="0.6"/>
+  <!-- Label -->
+  <text x="100" y="135" text-anchor="middle" fill="#c4e1ff" font-family="Montserrat,sans-serif" font-size="9">including RISC-V</text>
+  <!-- Decorative chips -->
+  <rect x="20" y="40" width="56" height="18" rx="4" fill="rgba(255,255,255,0.08)"/>
+  <rect x="124" y="40" width="56" height="18" rx="4" fill="rgba(255,255,255,0.08)"/>
+  <rect x="20" y="66" width="56" height="18" rx="4" fill="rgba(255,255,255,0.08)"/>
+  <rect x="124" y="66" width="56" height="18" rx="4" fill="rgba(255,255,255,0.08)"/>
+  <rect x="20" y="92" width="56" height="18" rx="4" fill="rgba(255,255,255,0.08)"/>
+  <rect x="124" y="92" width="56" height="18" rx="4" fill="rgba(255,255,255,0.08)"/>
+</svg>
