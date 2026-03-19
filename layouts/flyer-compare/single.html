@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="{{ .Lang }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ .Title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <style>
+      /* ===== Base ===== */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family:
+          "Montserrat",
+          -apple-system,
+          BlinkMacSystemFont,
+          sans-serif;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #fefefe;
+        background: #333;
+      }
+
+      a {
+        color: #c4e1ff;
+      }
+
+      /* ===== Page structure (half-page) ===== */
+      .flyer-page {
+        width: 8.5in;
+        height: 5.5in;
+        background: #0e3b5c;
+        margin: 20px auto;
+        padding: 0.4in;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* ===== Header bar ===== */
+      .flyer-header {
+        background: #082336;
+        margin: -0.4in -0.4in 0.2in -0.4in;
+        padding: 0.1in 0.4in 0.08in 0.4in;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .flyer-header h1 {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.2;
+      }
+
+      .flyer-header-sub {
+        font-size: 9px;
+        color: #c4e1ff;
+        margin-top: 2px;
+        font-weight: 500;
+      }
+
+      .flyer-header-right {
+        text-align: right;
+        flex-shrink: 0;
+      }
+
+      .flyer-header-right img {
+        height: 22px;
+      }
+
+      .flyer-header-plain {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: -0.2in 0 0.15in 0;
+      }
+
+      .flyer-header-plain h1 {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.2;
+      }
+
+      /* ===== Content area ===== */
+      .flyer-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .flyer-intro {
+        font-size: 10px;
+        line-height: 1.6;
+        margin-bottom: 12px;
+      }
+
+      /* ===== Comparison table ===== */
+      .flyer-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 9.5px;
+        flex: 1;
+      }
+
+      .flyer-table thead th {
+        background: #082336;
+        padding: 6px 8px;
+        font-weight: 700;
+        text-align: center;
+        font-size: 9px;
+        border-bottom: 2px solid #86da2f;
+      }
+
+      .flyer-table thead th:first-child {
+        text-align: left;
+        width: 34%;
+      }
+
+      .flyer-table thead th.alma-col {
+        background: #143d5e;
+        color: #86da2f;
+        font-size: 10px;
+      }
+
+      .flyer-table tbody td {
+        padding: 5px 8px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .flyer-table tbody td:first-child {
+        text-align: left;
+        font-weight: 600;
+        font-size: 9px;
+      }
+
+      .flyer-table tbody td:first-child span {
+        display: block;
+        font-weight: 400;
+        font-size: 8px;
+        color: #c4e1ff;
+        margin-top: 1px;
+      }
+
+      .flyer-table tbody tr:nth-child(even) {
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .flyer-table tbody td.alma-col {
+        background: rgba(134, 218, 47, 0.06);
+      }
+
+      .flyer-table .check {
+        color: #86da2f;
+        font-size: 14px;
+      }
+
+      .flyer-table .cross {
+        color: #ff6b6b;
+        font-size: 14px;
+      }
+
+      .flyer-table .partial {
+        color: #f0c040;
+        font-size: 10px;
+        font-weight: 600;
+      }
+
+      /* ===== Card grid ===== */
+      .flyer-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        flex: 1;
+      }
+
+      .flyer-card {
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 8px;
+        padding: 10px 12px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .flyer-card h2 {
+        font-size: 11px;
+        font-weight: 700;
+        margin-bottom: 6px;
+        line-height: 1.3;
+      }
+
+      .flyer-card h2 i {
+        margin-right: 6px;
+        font-size: 13px;
+        vertical-align: -1px;
+        color: #86da2f;
+      }
+
+      .flyer-card p,
+      .flyer-card ul {
+        font-size: 8.5px;
+        line-height: 1.5;
+        margin-bottom: 4px;
+      }
+
+      .flyer-card ul {
+        padding-left: 14px;
+      }
+
+      .flyer-card a {
+        font-weight: 600;
+      }
+
+      .flyer-card-links {
+        margin-top: auto;
+        text-align: right;
+        padding-top: 4px;
+        font-size: 9px;
+        line-height: 1.6;
+      }
+
+      .flyer-card-links a {
+        display: block;
+        font-weight: 600;
+      }
+
+      /* ===== Footer bar ===== */
+      .flyer-footer-bar {
+        background: #082336;
+        margin: auto -0.4in -0.4in -0.4in;
+        padding: 8px 0.4in;
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+        font-size: 9.5px;
+      }
+
+      .flyer-footer-bar a {
+        color: #c4e1ff;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      /* ===== Sponsor strip ===== */
+      .flyer-sponsors-sm {
+        margin-top: 8px;
+        text-align: center;
+      }
+
+      .flyer-sponsors-sm h2 {
+        font-size: 9px;
+        font-weight: 700;
+        margin-bottom: 3px;
+      }
+
+      .flyer-sponsor-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px 10px;
+        padding: 3px 0;
+      }
+
+      .flyer-sponsor-grid img {
+        height: 11px;
+        width: 40px;
+        object-fit: contain;
+        filter: brightness(0) invert(1);
+        opacity: 0.85;
+      }
+
+      .flyer-sponsor-grid img.already-white {
+        filter: none;
+      }
+
+      /* ===== Screen controls ===== */
+      .flyer-controls {
+        text-align: center;
+        padding: 20px;
+      }
+
+      .flyer-controls button {
+        background: #86da2f;
+        color: #222;
+        border: none;
+        padding: 12px 32px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 6px;
+        cursor: pointer;
+        font-family: inherit;
+      }
+
+      .flyer-controls button:hover {
+        background: #79cb24;
+      }
+
+      .flyer-controls p {
+        color: #aaa;
+        margin-top: 8px;
+        font-size: 13px;
+      }
+
+      /* ===== Print styles ===== */
+      @media print {
+        body {
+          background: none;
+        }
+
+        .flyer-controls {
+          display: none;
+        }
+
+        .flyer-page {
+          margin: 0;
+          padding: 0.4in;
+          width: 8.5in;
+          height: 5.5in;
+          max-height: 5.5in;
+          overflow: hidden;
+          page-break-after: always;
+          page-break-inside: avoid;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+
+        .flyer-page:last-child {
+          page-break-after: auto;
+        }
+
+        .flyer-header {
+          margin: -0.4in -0.4in 0.15in -0.4in;
+          padding: 0.1in 0.4in 0.08in 0.4in;
+        }
+
+        .flyer-footer-bar {
+          margin: auto -0.4in -0.4in -0.4in;
+          padding: 8px 0.4in;
+        }
+      }
+
+      @page {
+        size: 8.5in 5.5in;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Print button -->
+    <div class="flyer-controls">
+      <button onclick="window.print()">{{ i18n "Print / Save as PDF" }}</button>
+      <p>
+        {{ i18n "Use your browser's print dialog to save as PDF or print directly." }}
+      </p>
+    </div>
+
+    <!-- ==================== PAGE 1: FRONT ==================== -->
+    <div class="flyer-page">
+      <div class="flyer-header">
+        <div>
+          <h1>{{ i18n "Why AlmaLinux OS?" }}</h1>
+          <p class="flyer-header-sub">
+            {{ i18n "RHEL compatible. 6 architectures. 10 years of support. Forever free." }}
+          </p>
+        </div>
+        <div class="flyer-header-right">
+          <img src="/images/logo.svg" alt="AlmaLinux OS" />
+        </div>
+      </div>
+
+      <div class="flyer-content">
+        <p class="flyer-intro">
+          {{ i18n "Choosing an enterprise Linux distribution matters. AlmaLinux OS is a 100% free, community-owned, production-grade distribution built for every workload — from edge devices to the cloud. Here's how we compare." }}
+        </p>
+
+        <table class="flyer-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="alma-col">AlmaLinux</th>
+              <th>Red Hat</th>
+              <th>Ubuntu</th>
+              <th>Debian</th>
+              <th>Rocky Linux</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                {{ i18n "Forever free, no subscription" }}<span
+                  >{{ i18n "No cost, no limits, no strings attached" }}</span
+                >
+              </td>
+              <td class="alma-col">
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td>
+                <span class="cross"><i class="bi bi-x-lg"></i></span>
+              </td>
+              <td><span class="partial">{{ i18n "Partial" }}</span></td>
+              <td>
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td>
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {{ i18n "1:1 RHEL binary compatibility" }}<span
+                  >{{ i18n "Run any RHEL-certified workload without changes" }}</span
+                >
+              </td>
+              <td class="alma-col">
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td>
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td>
+                <span class="cross"><i class="bi bi-x-lg"></i></span>
+              </td>
+              <td>
+                <span class="cross"><i class="bi bi-x-lg"></i></span>
+              </td>
+              <td>
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {{ i18n "Non-profit, community governance" }}<span
+                  >{{ i18n "501(c)(6) foundation, elected board, open decisions" }}</span
+                >
+              </td>
+              <td class="alma-col">
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td>
+                <span class="cross"><i class="bi bi-x-lg"></i></span>
+              </td>
+              <td>
+                <span class="cross"><i class="bi bi-x-lg"></i></span>
+              </td>
+              <td>
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td><span class="partial">{{ i18n "Partial" }}</span></td>
+            </tr>
+            <tr>
+              <td>
+                {{ i18n "6 supported architectures" }}<span
+                  >{{ i18n "x86_64, ARM, Power, s390x, RISC-V, and x86_64_v2" }}</span
+                >
+              </td>
+              <td class="alma-col">
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td><span class="partial">{{ i18n "4" }}</span></td>
+              <td><span class="partial">{{ i18n "5" }}</span></td>
+              <td>
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td><span class="partial">{{ i18n "4" }}</span></td>
+            </tr>
+            <tr>
+              <td>
+                {{ i18n "In-place major version upgrades" }}<span
+                  >{{ i18n "ELevate: CentOS 6 → 7 → 8 → 9 → 10, no reinstall" }}</span
+                >
+              </td>
+              <td class="alma-col">
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td>
+                <span class="cross"><i class="bi bi-x-lg"></i></span>
+              </td>
+              <td>
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td>
+                <span class="cross"><i class="bi bi-x-lg"></i></span>
+              </td>
+              <td>
+                <span class="cross"><i class="bi bi-x-lg"></i></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {{ i18n "FIPS 140-3 validated" }}<span
+                  >{{ i18n "On the NIST active list — required for government & finance" }}</span
+                >
+              </td>
+              <td class="alma-col">
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td>
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td>
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td>
+                <span class="cross"><i class="bi bi-x-lg"></i></span>
+              </td>
+              <td>
+                <span class="cross"><i class="bi bi-x-lg"></i></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {{ i18n "140+ legacy drivers restored" }}<span
+                  >{{ i18n "Hardware support RHEL dropped — AlmaLinux brought back" }}</span
+                >
+              </td>
+              <td class="alma-col">
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td>
+                <span class="cross"><i class="bi bi-x-lg"></i></span>
+              </td>
+              <td>
+                <span class="cross"><i class="bi bi-x-lg"></i></span>
+              </td>
+              <td>
+                <span class="cross"><i class="bi bi-x-lg"></i></span>
+              </td>
+              <td>
+                <span class="cross"><i class="bi bi-x-lg"></i></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {{ i18n "10-year support lifecycle" }}<span
+                  >{{ i18n "Long-term stability for production environments" }}</span
+                >
+              </td>
+              <td class="alma-col">
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td>
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td><span class="partial">{{ i18n "5 yr" }}</span></td>
+              <td><span class="partial">{{ i18n "5 yr" }}</span></td>
+              <td>
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="flyer-sponsors-sm">
+        <h2>{{ i18n "Backed by our amazing partners:" }}</h2>
+        <div class="flyer-sponsor-grid">
+          <img src="/brands/cloudlinux.svg" alt="CloudLinux" />
+          <img
+            src="/brands/TuxCare_Horizontal_Logo_NoTagLine_White.svg"
+            alt="TuxCare" />
+          <img src="/brands/cybertrust-japan.svg" alt="Cybertrust Japan" />
+          <img
+            src="/brands/KnownHostLogoFLATWHITE.svg"
+            alt="KnownHost"
+            class="already-white" />
+          <img src="/brands/ipinfo.svg" alt="IPInfo" />
+          <img src="/brands/codenotary.svg" alt="Codenotary" />
+          <img src="/brands/meta.svg" alt="Meta" />
+          <img src="/brands/aws.svg" alt="Amazon AWS" />
+          <img src="/brands/azurelarge1.svg" alt="Microsoft Azure" />
+          <img src="/brands/arm.svg" alt="ARM" />
+          <img src="/brands/sine_nomine_logo_grayscale.svg" alt="Sine Nomine" />
+          <img src="/brands/HawkHost.svg" alt="HawkHost" />
+          <img src="/brands/hivelocity.svg" alt="Hivelocity" />
+          <img src="/brands/osuosl.svg" alt="OSU Open Source Lab" />
+          <img src="/brands/mattermost.svg" alt="Mattermost" />
+          <img
+            src="/brands/logo-algolia-nebula-blue-full_a52auc4.svg"
+            alt="Algolia"
+            class="already-white" />
+          <img src="/brands/AMD_Logo.svg" alt="AMD" />
+          <img src="/brands/blackhost_logo.svg" alt="BlackHOST" />
+          <img src="/brands/procomputers_logo_white.svg" alt="ProComputers" />
+          <img src="/brands/MEGWARE.svg" alt="MEGWARE" />
+          <img src="/brands/cern.svg" alt="CERN" />
+          <img src="/brands/StorPool.svg" alt="StorPool" />
+          <img src="/brands/fastly.svg" alt="Fastly" />
+          <img src="/brands/sie_logo.svg" alt="SIE LADÓN" />
+          <img
+            src="/brands/rackspeed-logo-reverse.svg"
+            alt="rackSPEED"
+            class="already-white" />
+          <img src="/brands/viatel.svg" alt="Viatel" />
+          <img src="/brands/fujitsu.svg" alt="Fujitsu" />
+          <img src="/brands/logo_arista.png" alt="Arista Networks" />
+          <img src="/brands/anywair_white.svg" alt="anywair" />
+        </div>
+      </div>
+
+      <div class="flyer-footer-bar">
+        <a href="https://almalinux.org">almalinux.org</a>
+        <a href="https://almalinux.org/elevate">almalinux.org/elevate</a>
+        <a href="https://wiki.almalinux.org">wiki.almalinux.org</a>
+        <a href="https://chat.almalinux.org">chat.almalinux.org</a>
+        <a href="https://fosstodon.org/@almalinux">@almalinux@fosstodon.org</a>
+        <a href="https://github.com/AlmaLinux">github.com/AlmaLinux</a>
+      </div>
+    </div>
+
+    <!-- ==================== PAGE 2: BACK ==================== -->
+    <div class="flyer-page">
+      <div class="flyer-header-plain">
+        <div>
+          <h1>{{ i18n "Why Organizations Choose AlmaLinux" }}</h1>
+          <p class="flyer-header-sub">
+            {{ i18n "Trusted by enterprises, non-profits, and individuals worldwide." }}
+          </p>
+        </div>
+        <div class="flyer-header-right">
+          <img src="/images/logo.svg" alt="AlmaLinux OS" />
+        </div>
+      </div>
+
+      <div class="flyer-content">
+        <div class="flyer-columns">
+          <!-- Commercial -->
+          <div class="flyer-card">
+            <h2>
+              <i class="bi bi-building"></i>{{ i18n "Enterprise & Commercial" }}
+            </h2>
+            <ul>
+              <li>
+                {{ i18n "1:1 RHEL compatibility — certified workloads run without changes" }}
+              </li>
+              <li>
+                {{ i18n "FIPS 140-3 validated for government and regulated industries" }}
+              </li>
+              <li>
+                {{ i18n "Enterprise support from TuxCare and Cybertrust Japan" }}
+              </li>
+              <li>
+                {{ i18n "Available on AWS, Azure, Google Cloud, and Oracle Cloud" }}
+              </li>
+              <li>
+                {{ i18n "No per-socket or per-node subscription fees — ever" }}
+              </li>
+              <li>
+                {{ i18n "Used by CERN, Arista Networks, Cisco, Verizon, and Zoom" }}
+              </li>
+            </ul>
+            <div class="flyer-card-links">
+              <a href="https://almalinux.org/certification"
+                >almalinux.org/certification</a
+              >
+            </div>
+          </div>
+
+          <!-- Non-profit -->
+          <div class="flyer-card">
+            <h2>
+              <i class="bi bi-heart"></i>{{ i18n "Non-Profit & Education" }}
+            </h2>
+            <ul>
+              <li>
+                {{ i18n "Zero licensing cost frees budget for your actual mission" }}
+              </li>
+              <li>
+                {{ i18n "501(c)(6) non-profit governance — no corporate agenda" }}
+              </li>
+              <li>
+                {{ i18n "10-year support means fewer disruptive upgrades" }}
+              </li>
+              <li>
+                {{ i18n "ELevate makes major version upgrades painless" }}
+              </li>
+              <li>
+                {{ i18n "400+ community mirrors with geo-aware delivery" }}
+              </li>
+              <li>
+                {{ i18n "Community support on chat.almalinux.org and forums" }}
+              </li>
+            </ul>
+            <div class="flyer-card-links">
+              <a href="https://almalinux.org/contribute"
+                >almalinux.org/contribute</a
+              >
+            </div>
+          </div>
+
+          <!-- At-home / Enthusiast -->
+          <div class="flyer-card">
+            <h2>
+              <i class="bi bi-house"></i>{{ i18n "Homelab & Enthusiasts" }}
+            </h2>
+            <ul>
+              <li>
+                {{ i18n "Free forever — perfect for homelab and self-hosting" }}
+              </li>
+              <li>{{ i18n "Runs on Raspberry Pi, x86, ARM, and more" }}</li>
+              <li>
+                {{ i18n "140+ restored drivers for older and specialized hardware" }}
+              </li>
+              <li>{{ i18n "Live media ISOs to try before you install" }}</li>
+              <li>
+                {{ i18n "Learn enterprise Linux skills that translate to the job market" }}
+              </li>
+              <li>
+                {{ i18n "Welcoming community — join a SIG and contribute back" }}
+              </li>
+            </ul>
+            <div class="flyer-card-links">
+              <a href="https://almalinux.org/get-almalinux"
+                >almalinux.org/get-almalinux</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flyer-footer-bar">
+        <a href="https://almalinux.org">almalinux.org</a>
+        <a href="https://almalinux.org/elevate">almalinux.org/elevate</a>
+        <a href="https://wiki.almalinux.org">wiki.almalinux.org</a>
+        <a href="https://chat.almalinux.org">chat.almalinux.org</a>
+        <a href="https://fosstodon.org/@almalinux">@almalinux@fosstodon.org</a>
+        <a href="https://github.com/AlmaLinux">github.com/AlmaLinux</a>
+      </div>
+    </div>
+  </body>
+</html>
