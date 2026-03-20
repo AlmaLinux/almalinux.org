@@ -416,6 +416,11 @@ a:hover {
   gap: 30px;
 }
 
+// Offset anchor targets so sticky nav doesn't cover the section header
+.anchor {
+  scroll-margin-top: 70px;
+}
+
 // Quickstart section wrapper
 .al-quickstart-wrap {
   background: rgba(255, 255, 255, 0.05);

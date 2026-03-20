@@ -43,9 +43,8 @@
 {{ range $arch.sections }}
   <div class="p-4 container-{{ .anchorPrefix }}">
     <a
-      class="anchor"
-      id="{{ .anchorPrefix }}-{{ $arch.id }}-{{ $version.id }}"
-      class="al-scroll-anchor"></a>
+      class="anchor al-scroll-anchor"
+      id="{{ .anchorPrefix }}-{{ $arch.id }}-{{ $version.id }}"></a>
     <h2 class="pb-2 text-center border-bottom al-border-accent">
       {{ .title }}
     </h2>
