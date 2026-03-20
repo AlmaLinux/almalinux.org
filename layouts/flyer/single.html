@@ -12,19 +12,6 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    {{ $scss := resources.Get "scss/main.scss" | toCSS (dict "targetPath" "css/main.css") | resources.Minify | resources.Fingerprint }}
-    <link
-      rel="stylesheet"
-      href="{{ $scss.RelPermalink }}"
-      integrity="{{ $scss.Data.Integrity }}" />
     <style>
       /* ===== Base ===== */
       *,
@@ -62,7 +49,6 @@
         margin: 20px auto;
         padding: 0.5in;
         position: relative;
-        overflow: hidden;
       }
 
       /* ===== Header ===== */
@@ -284,6 +270,19 @@
         background: #79cb24;
       }
 
+      .flyer-lang {
+        font-family: inherit;
+        font-size: 14px;
+        padding: 10px 16px;
+        margin-left: 12px;
+        border-radius: 6px;
+        border: 2px solid #555;
+        background: #444;
+        color: #fefefe;
+        cursor: pointer;
+        vertical-align: middle;
+      }
+
       .flyer-controls p {
         color: #aaa;
         margin-top: 8px;
@@ -317,16 +316,15 @@
           background: none;
         }
 
-        .flyer-controls,
-        .flyer-no-print {
+        .flyer-controls {
           display: none;
         }
 
         .flyer-page {
           margin: 0;
-          padding: 0.35in;
-          width: 8.5in;
-          height: 11in;
+          padding: 0.3in;
+          width: 100%;
+          height: 100%;
           max-height: 11in;
           overflow: hidden;
           page-break-after: always;
@@ -336,7 +334,7 @@
         }
 
         .flyer-page:last-child {
-          page-break-after: auto;
+          page-break-after: avoid;
         }
 
         .flyer-header,
@@ -345,8 +343,8 @@
         }
 
         .flyer-header-accent {
-          margin: -0.35in -0.35in 0.2in -0.35in;
-          padding: 0.3in 0.35in 0.2in 0.35in;
+          margin: -0.3in -0.3in 0.2in -0.3in;
+          padding: 0.25in 0.3in 0.15in 0.3in;
         }
 
         .flyer-intro {
@@ -389,8 +387,8 @@
         }
 
         .flyer-footer-bar {
-          margin: auto -0.35in -0.35in -0.35in;
-          padding: 10px 0.35in;
+          margin: auto -0.3in -0.3in -0.3in;
+          padding: 8px 0.3in;
         }
       }
 
@@ -401,14 +399,22 @@
     </style>
   </head>
   <body>
-    <!-- Site navigation (hidden when printing) -->
-    <div class="flyer-no-print">
-      {{ partial "common/nav.html" . }}
-    </div>
-
-    <!-- Print button -->
+    <!-- Print button + language selector -->
     <div class="flyer-controls">
       <button onclick="window.print()">{{ i18n "Print / Save as PDF" }}</button>
+      <select
+        class="flyer-lang"
+        onchange="if(this.value) window.location.href=this.value;">
+        {{ range .Site.Languages }}
+          {{ $url := printf "/%s/" ($.Page.File.ContentBaseName) }}
+          {{ if ne .Lang $.Site.Language.Lang }}
+            {{ $url = printf "/%s/%s/" .Lang ($.Page.File.ContentBaseName) }}
+          {{ end }}
+          <option value="{{ $url }}" {{ if eq .Lang $.Lang }}selected{{ end }}>
+            {{ .LanguageName }}
+          </option>
+        {{ end }}
+      </select>
       <p>
         {{ i18n "Use your browser's print dialog to save as PDF or print directly." }}
       </p>
@@ -699,20 +705,6 @@
         <a href="https://github.com/AlmaLinux">github.com/AlmaLinux</a>
       </div>
     </div>
-    <!-- Bootstrap JS for nav dropdowns -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"></script>
-
     <script>
       /* Auto-scale text to fit within each flyer page.
          Handles translated text that may be longer than English. */
