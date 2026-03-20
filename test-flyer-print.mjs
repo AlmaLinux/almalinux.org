@@ -16,9 +16,27 @@ import { writeFileSync } from "fs";
 const BASE = process.argv[2] || "http://localhost:1313";
 
 const FLYERS = [
-  { path: "/flyer/", expectedPages: 2, name: "Main flyer (letter)", width: "8.5in", height: "11in" },
-  { path: "/flyer-elevate/", expectedPages: 2, name: "ELevate flyer (half-page)", width: "8.5in", height: "5.5in" },
-  { path: "/flyer-compare/", expectedPages: 2, name: "Comparison flyer (half-page)", width: "8.5in", height: "5.5in" },
+  {
+    path: "/flyer/",
+    expectedPages: 2,
+    name: "Main flyer (letter)",
+    width: "8.5in",
+    height: "11in",
+  },
+  {
+    path: "/flyer-elevate/",
+    expectedPages: 2,
+    name: "ELevate flyer (half-page)",
+    width: "8.5in",
+    height: "5.5in",
+  },
+  {
+    path: "/flyer-compare/",
+    expectedPages: 2,
+    name: "Comparison flyer (half-page)",
+    width: "8.5in",
+    height: "5.5in",
+  },
 ];
 
 // Count pages in a PDF buffer by counting /Type /Page (not /Pages) objects
@@ -61,7 +79,9 @@ async function main() {
     if (passed) {
       console.log(`  PASS  ${flyer.name}: ${pageCount} pages — ${outPath}`);
     } else {
-      console.log(`  FAIL  ${flyer.name}: ${pageCount} pages (expected ${flyer.expectedPages}) — ${outPath}`);
+      console.log(
+        `  FAIL  ${flyer.name}: ${pageCount} pages (expected ${flyer.expectedPages}) — ${outPath}`,
+      );
       allPassed = false;
     }
 
@@ -71,7 +91,9 @@ async function main() {
   await browser.close();
 
   if (!allPassed) {
-    console.log("\nSome flyers have unexpected page counts. Check the PDFs in /tmp.");
+    console.log(
+      "\nSome flyers have unexpected page counts. Check the PDFs in /tmp.",
+    );
     process.exit(1);
   } else {
     console.log("\nAll flyers passed.");
