@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="{{ .Lang }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ .Title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <style>
+      /* ===== Base ===== */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family:
+          "Montserrat",
+          -apple-system,
+          BlinkMacSystemFont,
+          sans-serif;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #fefefe;
+        background: #333;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        word-break: break-word;
+      }
+
+      a {
+        color: #c4e1ff;
+      }
+
+      /* ===== Page structure (landscape half-page) ===== */
+      .flyer-page {
+        width: 8.5in;
+        min-height: 5.5in;
+        background: #0e3b5c;
+        margin: 20px auto;
+        padding: 0.4in;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* ===== Header bar ===== */
+      .flyer-header {
+        background: #082336;
+        margin: -0.4in -0.4in 0.3in -0.4in;
+        padding: 0.1in 0.4in 0.08in 0.4in;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .flyer-header h1 {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.2;
+      }
+
+      .flyer-header-right {
+        text-align: right;
+        flex-shrink: 0;
+      }
+
+      .flyer-header-right img {
+        height: 22px;
+        margin-bottom: 4px;
+      }
+
+      .flyer-header-right a {
+        display: block;
+        color: #c4e1ff;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .flyer-header-plain {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: -0.2in 0 0.15in 0;
+      }
+
+      .flyer-header-plain h1 {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.2;
+      }
+
+      /* ===== Content area ===== */
+      .flyer-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* ===== Intro section ===== */
+      .flyer-elevate-intro {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        margin-bottom: 0.25in;
+      }
+
+      .flyer-elevate-intro img {
+        height: 48px;
+        flex-shrink: 0;
+      }
+
+      .flyer-elevate-intro h2 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+
+      .flyer-elevate-intro p {
+        font-size: 12px;
+        line-height: 1.6;
+      }
+
+      /* ===== Diagram area ===== */
+      .flyer-elevate-diagram {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 0;
+      }
+
+      .flyer-elevate-diagram img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      .flyer-elevate-diagram-with-text {
+        flex: 1;
+        display: flex;
+        gap: 24px;
+        align-items: center;
+      }
+
+      .flyer-elevate-diagram-with-text img {
+        flex: 1;
+        max-width: 65%;
+      }
+
+      .flyer-elevate-diagram-with-text .flyer-diagram-text {
+        flex-shrink: 0;
+        max-width: 30%;
+      }
+
+      .flyer-diagram-text h3 {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+
+      .flyer-diagram-text p {
+        font-size: 11px;
+        line-height: 1.6;
+      }
+
+      /* ===== Card grid ===== */
+      .flyer-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+
+      .flyer-card {
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 8px;
+        padding: 10px 12px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .flyer-card-links {
+        margin-top: auto;
+        text-align: right;
+        padding-top: 4px;
+        font-size: 10px;
+        line-height: 1.6;
+      }
+
+      .flyer-card-links a {
+        display: block;
+        font-weight: 600;
+      }
+
+      .flyer-card h2 {
+        font-size: 10.5px;
+        font-weight: 700;
+        margin-bottom: 4px;
+        line-height: 1.3;
+      }
+
+      .flyer-card h2 i {
+        margin-right: 6px;
+        font-size: 12px;
+        vertical-align: -1px;
+        color: #86da2f;
+      }
+
+      .flyer-card p,
+      .flyer-card ul {
+        font-size: 8.5px;
+        line-height: 1.45;
+        margin-bottom: 4px;
+      }
+
+      .flyer-card a {
+        font-weight: 600;
+      }
+
+      /* ===== Footer bar ===== */
+      .flyer-footer-bar {
+        background: #082336;
+        margin: auto -0.4in -0.4in -0.4in;
+        padding: 8px 0.4in;
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+        font-size: 9.5px;
+      }
+
+      .flyer-footer-bar a {
+        color: #c4e1ff;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      /* ===== Sponsor strip ===== */
+      .flyer-sponsors {
+        margin-top: 16px;
+        text-align: center;
+      }
+
+      .flyer-sponsors h2 {
+        font-size: 13px;
+        font-weight: 700;
+        margin-bottom: 6px;
+      }
+
+      .flyer-sponsors p {
+        font-size: 9px;
+        margin-top: 4px;
+      }
+
+      .flyer-sponsors a {
+        font-weight: 600;
+      }
+
+      .flyer-sponsor-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 16px;
+        padding: 6px 0;
+      }
+
+      .flyer-sponsor-grid img {
+        height: 22px;
+        width: 80px;
+        object-fit: contain;
+        filter: brightness(0) invert(1);
+        opacity: 0.85;
+      }
+
+      .flyer-sponsor-grid img.already-white {
+        filter: none;
+      }
+
+      .flyer-sponsors-sm {
+        margin-top: 8px;
+      }
+
+      .flyer-sponsors-sm h2 {
+        font-size: 9px;
+      }
+
+      .flyer-sponsors-sm .flyer-sponsor-grid {
+        gap: 4px 10px;
+        padding: 3px 0;
+      }
+
+      .flyer-sponsors-sm .flyer-sponsor-grid img {
+        height: 11px;
+        width: 40px;
+      }
+
+      /* ===== Diagram with text above ===== */
+      .flyer-elevate-wrap {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .flyer-elevate-wrap img {
+        width: 100%;
+        flex: 1;
+        object-fit: contain;
+        object-position: left top;
+      }
+
+      .flyer-elevate-wrap p {
+        font-size: 13px;
+        line-height: 1.7;
+        margin-bottom: 6px;
+        flex-shrink: 0;
+      }
+
+      /* ===== Two-column layout ===== */
+      .flyer-two-col {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 16px;
+        margin-top: 16px;
+        align-items: start;
+      }
+
+      .flyer-whats-new h3 {
+        font-size: 13px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+
+      .flyer-whats-new ul {
+        padding-left: 16px;
+        font-size: 10px;
+        line-height: 1.6;
+      }
+
+      .flyer-qr {
+        text-align: center;
+      }
+
+      .flyer-qr img {
+        width: 130px;
+        height: auto;
+      }
+
+      /* ===== Screen controls ===== */
+      .flyer-controls {
+        text-align: center;
+        padding: 20px;
+      }
+
+      .flyer-controls button {
+        background: #86da2f;
+        color: #222;
+        border: none;
+        padding: 12px 32px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 6px;
+        cursor: pointer;
+        font-family: inherit;
+      }
+
+      .flyer-controls button:hover {
+        background: #79cb24;
+      }
+
+      .flyer-lang {
+        font-family: inherit;
+        font-size: 14px;
+        padding: 10px 16px;
+        margin-left: 12px;
+        border-radius: 6px;
+        border: 2px solid #555;
+        background: #444;
+        color: #fefefe;
+        cursor: pointer;
+        vertical-align: middle;
+      }
+
+      .flyer-controls p {
+        color: #aaa;
+        margin-top: 8px;
+        font-size: 13px;
+      }
+
+      /* ===== Print styles ===== */
+      @media print {
+        body {
+          background: none;
+        }
+
+        .flyer-controls {
+          display: none;
+        }
+
+        .flyer-page {
+          margin: 0;
+          padding: 0.4in;
+          width: 8.5in;
+          height: 5.5in;
+          max-height: 5.5in;
+          overflow: hidden;
+          page-break-after: always;
+          page-break-inside: avoid;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+
+        .flyer-page:last-child {
+          page-break-after: auto;
+        }
+
+        .flyer-header {
+          margin: -0.4in -0.4in 0.15in -0.4in;
+          padding: 0.1in 0.4in 0.08in 0.4in;
+        }
+
+        .flyer-footer-bar {
+          margin: auto -0.4in -0.4in -0.4in;
+          padding: 8px 0.4in;
+        }
+      }
+
+      @page {
+        size: 8.5in 5.5in;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Print button + language selector -->
+    <div class="flyer-controls">
+      <button onclick="window.print()">{{ i18n "Print / Save as PDF" }}</button>
+      <select
+        class="flyer-lang"
+        onchange="if(this.value) window.location.href=this.value;">
+        {{ range .Site.Languages }}
+          {{ $url := printf "/%s/" ($.Page.File.ContentBaseName) }}
+          {{ if ne .Lang $.Site.Language.Lang }}
+            {{ $url = printf "/%s/%s/" .Lang ($.Page.File.ContentBaseName) }}
+          {{ end }}
+          <option value="{{ $url }}" {{ if eq .Lang $.Lang }}selected{{ end }}>
+            {{ .LanguageName }}
+          </option>
+        {{ end }}
+      </select>
+      <p>
+        {{ i18n "Use your browser's print dialog to save as PDF or print directly." }}
+      </p>
+    </div>
+
+    <!-- ==================== PAGE 1: FRONT ==================== -->
+    <div class="flyer-page">
+      <div class="flyer-header">
+        <div>
+          <h1>{{ i18n "ELevate Your Distribution" }}</h1>
+          <p
+            style="font-size: 9px; color: #c4e1ff; margin-top: 2px; font-weight: 500;">
+            {{ i18n "In-place upgrades from CentOS 6 through AlmaLinux 10. 500,000+ systems upgraded worldwide." }}
+          </p>
+        </div>
+        <div class="flyer-header-right">
+          <img src="/images/logo.svg" alt="AlmaLinux OS" />
+        </div>
+      </div>
+
+      <div class="flyer-content">
+        <div class="flyer-elevate-wrap">
+          <p>
+            {{ i18n "ELevate enables upgrades between major versions of RHEL derivatives. Upgrade in-place from CentOS 6.x or 7.x to AlmaLinux 8 or CentOS Stream 8, and then from 8.x to 9.x and from 9.x to 10.x within the same derivative. Used all over the world to upgrade more than 500,000 devices, ELevate is your answer to the headache of major version upgrades in the Enterprise Linux ecosystem." }}
+          </p>
+          <img src="/images/elevate.svg" alt="ELevate migration paths" />
+        </div>
+      </div>
+
+      <div class="flyer-sponsors flyer-sponsors-sm">
+        <h2>{{ i18n "AlmaLinux is backed by our amazing partners:" }}</h2>
+        <div class="flyer-sponsor-grid">
+          <img src="/brands/cloudlinux.svg" alt="CloudLinux" />
+          <img
+            src="/brands/TuxCare_Horizontal_Logo_NoTagLine_White.svg"
+            alt="TuxCare" />
+          <img src="/brands/cybertrust-japan.svg" alt="Cybertrust Japan" />
+          <img
+            src="/brands/KnownHostLogoFLATWHITE.svg"
+            alt="KnownHost"
+            class="already-white" />
+          <img src="/brands/ipinfo.svg" alt="IPInfo" />
+          <img src="/brands/codenotary.svg" alt="Codenotary" />
+          <img src="/brands/meta.svg" alt="Meta" />
+          <img src="/brands/aws.svg" alt="Amazon AWS" />
+          <img src="/brands/azurelarge1.svg" alt="Microsoft Azure" />
+          <img src="/brands/arm.svg" alt="ARM" />
+          <img src="/brands/sine_nomine_logo_grayscale.svg" alt="Sine Nomine" />
+          <img src="/brands/HawkHost.svg" alt="HawkHost" />
+          <img src="/brands/hivelocity.svg" alt="Hivelocity" />
+          <img src="/brands/osuosl.svg" alt="OSU Open Source Lab" />
+          <img src="/brands/mattermost.svg" alt="Mattermost" />
+          <img
+            src="/brands/logo-algolia-nebula-blue-full_a52auc4.svg"
+            alt="Algolia"
+            class="already-white" />
+          <img src="/brands/AMD_Logo.svg" alt="AMD" />
+          <img src="/brands/blackhost_logo.svg" alt="BlackHOST" />
+          <img src="/brands/procomputers_logo_white.svg" alt="ProComputers" />
+          <img src="/brands/MEGWARE.svg" alt="MEGWARE" />
+          <img src="/brands/cern.svg" alt="CERN" />
+          <img src="/brands/StorPool.svg" alt="StorPool" />
+          <img src="/brands/fastly.svg" alt="Fastly" />
+          <img src="/brands/sie_logo.svg" alt="SIE LADÓN" />
+          <img
+            src="/brands/rackspeed-logo-reverse.svg"
+            alt="rackSPEED"
+            class="already-white" />
+          <img src="/brands/viatel.svg" alt="Viatel" />
+          <img src="/brands/fujitsu.svg" alt="Fujitsu" />
+          <img src="/brands/logo_arista.png" alt="Arista Networks" />
+          <img src="/brands/anywair_white.svg" alt="anywair" />
+        </div>
+      </div>
+
+      <div class="flyer-footer-bar">
+        <a href="https://almalinux.org">almalinux.org</a>
+        <a href="https://almalinux.org/elevate">almalinux.org/elevate</a>
+        <a href="https://wiki.almalinux.org">wiki.almalinux.org</a>
+        <a href="https://chat.almalinux.org">chat.almalinux.org</a>
+        <a href="https://fosstodon.org/@almalinux">@almalinux@fosstodon.org</a>
+        <a href="https://github.com/AlmaLinux">github.com/AlmaLinux</a>
+      </div>
+    </div>
+
+    <!-- ==================== PAGE 2: BACK (FAQ) ==================== -->
+    <div class="flyer-page">
+      <div class="flyer-header-plain">
+        <div>
+          <h1>{{ i18n "ELevate Your Distribution" }}</h1>
+          <p
+            style="font-size: 9px; color: #c4e1ff; margin-top: 2px; font-weight: 500;">
+            {{ i18n "In-place upgrades from CentOS 6 through AlmaLinux 10. 500,000+ systems upgraded worldwide." }}
+          </p>
+        </div>
+        <div class="flyer-header-right">
+          <img src="/images/logo.svg" alt="AlmaLinux OS" />
+        </div>
+      </div>
+
+      <div class="flyer-content">
+        <div class="flyer-columns" style="grid-template-columns: 1fr 1fr 1fr;">
+          <div class="flyer-card">
+            <h2>
+              <i class="bi bi-check-circle"></i
+              >{{ i18n "Is this ready for production?" }}
+            </h2>
+            <p>
+              {{ i18n "Yes! ELevate has been used to upgrade more than 500,000 environments across industries and across the world, but always test! We highly recommend testing in a sandbox before upgrading production systems." }}
+            </p>
+          </div>
+
+          <div class="flyer-card">
+            <h2>
+              <i class="bi bi-signpost-split"></i
+              >{{ i18n "What upgrade paths are supported?" }}
+            </h2>
+            <p>
+              {{ i18n "CentOS 6 → CentOS 7 → AlmaLinux 8 or CentOS Stream 8. Then 8 → 9 → 10 within AlmaLinux or CentOS Stream. LEAPP now supports CentOS Stream and AlmaLinux natively upstream." }}
+            </p>
+          </div>
+
+          <div class="flyer-card">
+            <h2>
+              <i class="bi bi-arrow-left-right"></i
+              >{{ i18n "Will migration be in-place?" }}
+            </h2>
+            <p>
+              {{ i18n "Yes. All your data, applications and settings will be kept. Migrations will require your system to reboot twice." }}
+            </p>
+          </div>
+
+          <div class="flyer-card">
+            <h2>
+              <i class="bi bi-shield-check"></i
+              >{{ i18n "Why include CentOS 6?" }}
+            </h2>
+            <p>
+              {{ i18n "We know how hard sysadmins work because most of us have done it! Adding CentOS 6 to ELevate has already improved the lives of sysadmins who couldn't migrate applications between devices." }}
+            </p>
+          </div>
+
+          <div class="flyer-card">
+            <h2>
+              <i class="bi bi-globe"></i>{{ i18n "A community-wide project" }}
+            </h2>
+            <p>
+              {{ i18n "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux. That is the open source way." }}
+            </p>
+          </div>
+
+          <div class="flyer-card">
+            <h2>
+              <i class="bi bi-code-slash"></i>{{ i18n "How can I contribute?" }}
+            </h2>
+            <p>
+              {{ i18n "Join us in the ~migration channel on chat.almalinux.org. Find the LEAPP code in the AlmaLinux GitHub organization." }}
+            </p>
+            <div class="flyer-card-links">
+              <a href="https://almalinux.org/contribute"
+                >almalinux.org/contribute</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flyer-two-col">
+        <div class="flyer-whats-new">
+          <h3>
+            <i
+              class="bi bi-stars"
+              style="color: #86da2f; margin-right: 4px;"></i
+            >{{ i18n "What's New in ELevate" }}
+          </h3>
+          <ul>
+            <li>
+              {{ i18n "Upgrade paths to AlmaLinux 10, Kitten 10, and CentOS Stream 10" }}
+            </li>
+            <li>{{ i18n "500,000+ successful upgrades worldwide" }}</li>
+            <li>
+              {{ i18n "LEAPP now supports AlmaLinux and CentOS Stream natively upstream" }}
+            </li>
+            <li>
+              {{ i18n "3rd party repo support: EPEL, Docker CE, PostgreSQL, MariaDB, nginx, Imunify, KernelCare, TuxCare" }}
+            </li>
+            <li>
+              {{ i18n "Full path from CentOS 6 through AlmaLinux 10 — no dead ends" }}
+            </li>
+          </ul>
+        </div>
+
+        <div class="flyer-qr">
+          <img
+            src="/for-printable-handouts/elevate.png"
+            alt="QR code for wiki.almalinux.org/elevate"
+            style="border-radius: 8px;" />
+        </div>
+      </div>
+
+      <div class="flyer-footer-bar">
+        <a href="https://almalinux.org">almalinux.org</a>
+        <a href="https://almalinux.org/elevate">almalinux.org/elevate</a>
+        <a href="https://wiki.almalinux.org">wiki.almalinux.org</a>
+        <a href="https://chat.almalinux.org">chat.almalinux.org</a>
+        <a href="https://fosstodon.org/@almalinux">@almalinux@fosstodon.org</a>
+        <a href="https://github.com/AlmaLinux">github.com/AlmaLinux</a>
+      </div>
+    </div>
+    <script>
+      /* Auto-scale text to fit within each flyer page.
+         Handles translated text that may be longer than English. */
+      (function () {
+        function fitPages() {
+          document.querySelectorAll(".flyer-page").forEach(function (page) {
+            var scale = 100;
+            page.style.fontSize = "";
+            while (page.scrollHeight > page.clientHeight && scale > 60) {
+              scale -= 2;
+              page.style.fontSize = scale + "%";
+            }
+          });
+        }
+        document.addEventListener("DOMContentLoaded", fitPages);
+        window.addEventListener("beforeprint", fitPages);
+      })();
+    </script>
+  </body>
+</html>
