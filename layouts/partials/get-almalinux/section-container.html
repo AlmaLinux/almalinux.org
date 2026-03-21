@@ -25,8 +25,7 @@
     {{- range $ctas }}
       <div class="{{ .class }} align-items-center d-flex col-12 col-lg-4 mb-3">
         <a
-          class="btn px-3 me-md-2 al-cta-blue w-100 text-nowrap"
-          style="min-width: 136px;"
+          class="btn px-3 me-md-2 al-cta-blue al-btn-min w-100 text-nowrap"
           href="{{ .url }}">
           {{ i18n .i18nKey }}
         </a>
@@ -89,7 +88,7 @@
     <h4>{{ i18n "AlmaLinux OS UBI-alternatives:" }}</h4>
     <div class="container-AL d-flex">
       <div class="container-AlmaLinuxOS10 d-flex">
-        <div class="container-itemsAL" style="margin: 0 10px 0 0;">
+        <div class="container-itemsAL me-2">
           <div class="main-itemsTr">
             <b>{{ i18n "Image" }}</b>
           </div>
@@ -101,9 +100,7 @@
             {{- end }}
           </div>
         </div>
-        <div
-          class="container-itemsAL d-flex flex-column ps-3"
-          style="margin: 0 10px 0 0;">
+        <div class="container-itemsAL d-flex flex-column ps-3 me-2">
           <div class="main-itemsTr">
             <b>{{ i18n "Container tag" }}</b>
           </div>
