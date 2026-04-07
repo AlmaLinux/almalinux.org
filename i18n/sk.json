@@ -581,8 +581,8 @@
     "More details on Errata and how to use it can be found on the ": "",
     "errata.full.json for AlmaLinux OS 9": "",
     "Errata in JSON format for 3rd party software integration:": "",
-    "Boot": "",
-    "The guide on how to use Live Media images can be found on the ": "",
+    "Boot": "Bootovať",
+    "The guide on how to use Live Media images can be found on the ": "Sprievodca ako používať žívé iso súbory môže byť nájdený na: ",
     "More details and guidance steps can be found on the ": "",
     "You can get official AlmaLinux OS images at the link provided: ": "",
     "AlmaLinux WSL Wiki Page": "",
@@ -677,5 +677,11 @@
     "AlmaLinux-deploy": "",
     "errata.full.json for AlmaLinux OS 8": "",
     "AlmaLinux Day: Tokyo": "",
-    "Never has there been a better gathering of AlmaLinux experts. Hear all of the latest about the project, hear from industry experts about the current trends in the enterprise Linux ecosystem, and make connections with the people who can help solve every technology problem you're facing.": ""
+    "Never has there been a better gathering of AlmaLinux experts. Hear all of the latest about the project, hear from industry experts about the current trends in the enterprise Linux ecosystem, and make connections with the people who can help solve every technology problem you're facing.": "",
+    "Newsletters": "Newslettery",
+    "AlmaLinux Newsletters": "AlmaLinux newslettery",
+    "Stay up to date with the latest AlmaLinux news, releases, and community updates. Subscribe via your preferred channel:": "Byť informovaný o najnovších správach, vydaniach a komunitných noviniek z projektu Alma Linux. Prihláste sa na odber cez svoj preferovaný kanál:",
+    "RSS Feed": "RSS Feed",
+    "Subscribe on LinkedIn": "Sledovať na LinkedIn",
+    "Individual Member": "Individuálny člen"
 }
