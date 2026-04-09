@@ -385,3 +385,166 @@ a:hover {
 .gap-30 {
   gap: 30px;
 }
+
+// ─── VFX & AlmaLinux page ────────────────────────────────────────────────────
+
+.al-page-vfx {
+
+  // Hero
+  .al-vfx-hero {
+    background: #0e3b5c;
+  }
+
+  .al-vfx-heart {
+    color: #e05a6e;
+  }
+
+  .al-vfx-reel-placeholder {
+    min-height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .al-vfx-reel-wrap {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  }
+
+  // Trusted-by logo strip
+  .al-vfx-trusted {
+    background: rgba(255, 255, 255, 0.03);
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  .al-vfx-logo-strip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .al-vfx-logo-placeholder {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.4);
+    min-width: 140px;
+    text-align: center;
+  }
+
+  .al-vfx-feature-icon {
+    font-size: 2rem;
+    color: #1e87f8;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  // Software logo grid (works-on section)
+  .al-vfx-software {
+    background: #0e3b5c;
+  }
+
+  .al-vfx-software-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+
+  .al-vfx-software-item {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    min-width: 120px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    img {
+      height: 40px;
+      width: auto;
+      filter: brightness(0) invert(1);
+      opacity: 0.8;
+    }
+
+    span {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  // MaE SIG section
+  .al-vfx-mae-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.25rem 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.35rem 0;
+      font-size: 1rem;
+    }
+
+    i {
+      color: #57c759;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+  }
+
+  .al-vfx-mae-placeholder {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px dashed rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 220px;
+  }
+
+  // Get started steps
+  .al-vfx-start {
+    background: #0e3b5c;
+  }
+
+  .al-vfx-step {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .al-vfx-step-number {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #1e87f8;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+  }
+}
