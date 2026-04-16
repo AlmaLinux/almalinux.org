@@ -26,8 +26,7 @@
         </p>
         <div class="align-items-center d-flex">
           <a
-            class="btn px-3 me-md-2 al-cta-blue"
-            style="min-width: 136px;"
+            class="btn px-3 me-md-2 al-cta-blue al-btn-min"
             href="{{ $section.aws.marketplaceUrl }}">
             AlmaLinux
             {{ if $version.fullVersion }}
@@ -61,8 +60,7 @@
     </p>
     <div class="align-items-center d-flex">
       <a
-        class="btn px-3 me-md-2 al-cta-blue"
-        style="min-width: 136px;"
+        class="btn px-3 me-md-2 al-cta-blue al-btn-min"
         href="{{ $section.genericCloud.imageUrl }}">
         AlmaLinux
         {{ if $version.fullVersion }}
@@ -75,10 +73,10 @@
         <img
           src="/images/alma-fingerprint-A.svg"
           alt="Fingerprint"
-          style="width: 40px; height: 40px; flex-shrink: 0;" />
+          class="al-icon-40" />
         <div class="flex-column flex-grow-1 d-flex" style="min-width: 0;">
           <span class="fw-bold">SHA-256:</span>
-          <span class="overflow-auto" style="max-width: 100%;">
+          <span class="overflow-auto mw-100">
             {{ $section.genericCloud.sha256 }}
           </span>
         </div>
@@ -119,8 +117,7 @@
     </p>
     <div class="align-items-center d-flex">
       <a
-        class="btn px-3 me-md-2 al-cta-blue"
-        style="min-width: 136px;"
+        class="btn px-3 me-md-2 al-cta-blue al-btn-min"
         href="{{ $section.googleCloud.productUrl }}">
         {{ i18n "Get AlmaLinux" }}
         {{ if $version.fullVersion }}
@@ -165,8 +162,7 @@
     </p>
     <div class="align-items-center d-flex">
       <a
-        class="btn px-3 me-md-2 al-cta-blue"
-        style="min-width: 136px;"
+        class="btn px-3 me-md-2 al-cta-blue al-btn-min"
         href="{{ $section.openNebula.imageUrl }}">
         AlmaLinux
         {{ if $version.fullVersion }}
@@ -179,10 +175,10 @@
         <img
           src="/images/alma-fingerprint-A.svg"
           alt="Fingerprint"
-          style="width: 40px; height: 40px; flex-shrink: 0;" />
+          class="al-icon-40" />
         <div class="flex-column flex-grow-1 d-flex" style="min-width: 0;">
           <span class="fw-bold">SHA-256:</span>
-          <span class="overflow-auto" style="max-width: 100%;">
+          <span class="overflow-auto mw-100">
             {{ $section.openNebula.sha256 }}
           </span>
         </div>
@@ -191,9 +187,7 @@
     <div class="d-flex align-items-start mt-4 gap-30">
       <div class="col-md2 mb-2">
         <b
-          ><a
-            href="https://mirrors.almalinux.org"
-            style="display:inline-block; margin-right:20px;">
+          ><a href="https://mirrors.almalinux.org" class="d-inline-block me-3">
             {{ i18n "Download from mirrors" }}
           </a></b
         >
@@ -202,7 +196,7 @@
         <b
           ><a
             href="{{ $section.openNebula.checksumUrl }}"
-            style="display:inline-block; margin-right:20px;">
+            class="d-inline-block me-3">
             {{ i18n "Download CHECKSUM" }}
           </a></b
         >
@@ -236,8 +230,7 @@
     </p>
     <div class="align-items-center d-flex">
       <a
-        class="btn px-3 me-md-2 al-cta-blue"
-        style="min-width: 136px;"
+        class="btn px-3 me-md-2 al-cta-blue al-btn-min"
         href="{{ $section.oci.marketplaceUrl }}">
         AlmaLinux
         {{ if $version.fullVersion }}

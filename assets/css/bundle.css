@@ -1168,6 +1168,51 @@ font-weight: 700;
 
 /* Download page */
 
+.al-persona-cards {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.al-persona-card {
+  background: #0e3b5c;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  width: 200px;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.al-persona-card:hover {
+  transform: translateY(-4px);
+  background: #14598a;
+  color: #fff;
+  text-decoration: none;
+}
+
+.al-persona-card img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.75rem;
+}
+
+.al-persona-card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.al-persona-card-desc {
+  font-size: 0.82rem;
+  color: #c4e1ff;
+  line-height: 1.3;
+}
+
 .gap-30 {
   gap: 30px;
 }

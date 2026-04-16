@@ -906,5 +906,8 @@
    "SIG Meetings": "SIG Meetings",
    "ALESCo Meetings": "ALESCo Meetings",
    "Upcoming Events": "Upcoming Events",
-   "Past Events": "Past Events"
+   "Past Events": "Past Events",
+   "All Download Options": "All Download Options",
+   "First, choose your version and architecture. Then, select an image format below.": "First, choose your version and architecture. Then, select an image format below.",
+   "Quickstart: How will you use AlmaLinux OS?": "Quickstart: How will you use AlmaLinux OS?"
 }

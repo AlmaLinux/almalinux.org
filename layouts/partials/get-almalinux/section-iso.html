@@ -25,8 +25,7 @@
       </p>
       <div class="align-items-center d-flex">
         <a
-          class="btn px-3 me-md-2 al-cta-blue"
-          style="min-width: 136px;"
+          class="btn px-3 me-md-2 al-cta-blue al-btn-min"
           href="{{ $block.url }}">
           {{ i18n "Download" }}
           {{ if $version.fullVersion }}
@@ -42,10 +41,10 @@
           <img
             src="/images/alma-fingerprint-A.svg"
             alt="Fingerprint"
-            style="width: 40px; height: 40px; flex-shrink: 0;" />
+            class="al-icon-40" />
           <div class="flex-column flex-grow-1 d-flex" style="min-width: 0;">
             <span class="fw-bold">SHA-256:</span>
-            <span class="overflow-auto" style="max-width: 100%;">
+            <span class="overflow-auto mw-100">
               {{ $block.sha256 }}
             </span>
           </div>
