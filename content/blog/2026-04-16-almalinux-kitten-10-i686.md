@@ -5,7 +5,7 @@ author:
   name: "Eduard Abdullin"
   bio: "AlmaLinux Release Engineering"
   image: /users/eduard-abdullin.jpg
-date: 2026-04-15
+date: 2026-04-16
 images:
   - /blog-images/2026/2026-04-15-almalinux-kitten-10-i686.png
 post:
