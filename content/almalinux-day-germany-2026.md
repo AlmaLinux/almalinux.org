@@ -21,10 +21,10 @@ registration_cta: "Register for CloudFest to attend AlmaLinux Day!"
 registration_button: "al-cta-blue"
 
 # Post-event — set to true and fill in after the event
-post_event: false
+post_event: true
 thankyou_city: "CloudFest"
-thankyou_quote: ""
-thankyou_youtube: ""
+thankyou_quote: "The warms we always feel at CloudFest is incredible. Thank you to our incredibly strong community in the webhosting world! Videos will be released soon!"
+thankyou_youtube_url: ""
 
 # Footer bars — omit either field to hide that bar
 coc_url: "/p/aldv-code-of-conduct/"

@@ -23,7 +23,7 @@ registration_button: "al-cta-blue"
 post_event: false
 thankyou_city: "Los Angeles"
 thankyou_quote: ""
-thankyou_youtube: ""
+thankyou_youtube_url: ""
 
 # Footer bars — omit either field to hide that bar
 coc_url: "/p/aldv-code-of-conduct/"
