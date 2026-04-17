@@ -3,11 +3,11 @@
 
 @import "./variables";
 
-// CTA button variants (used on index page)
+// CTA button variants. Color only; spacing is the template's job
+// via Bootstrap utilities (gap, m*, me-*, etc.).
 .al-cta-blue {
   background: #24c2ff;
   color: #222222;
-  margin: 10px 10px 10px 0;
 
   &:hover {
     background: #0bbbff;
@@ -17,7 +17,6 @@
 .al-cta-blue-deep {
   background: $al-c-science-blue-light;
   color: #222222;
-  margin: 10px 10px 10px 0;
 
   &:hover {
     background: darken($al-c-science-blue-light, 5%);
@@ -27,7 +26,6 @@
 .al-cta-green {
   background: $al-c-atlantis;
   color: #222222;
-  margin: 10px;
 
   &:hover {
     background: darken($al-c-atlantis, 5%);
@@ -37,7 +35,6 @@
 .al-cta-yellow {
   background: $al-c-candlelight;
   color: #222222;
-  margin: 10px;
 
   img {
     display: inline;
