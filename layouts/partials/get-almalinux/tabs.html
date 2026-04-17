@@ -6,7 +6,7 @@
       <button
         class="nav-link dropdown-toggle {{ if $isActive }}active{{ end }}"
         id="os{{ $version.id }}Dropdown"
-        data-toggle="dropdown"
+        data-bs-toggle="dropdown"
         aria-expanded="false">
         {{ $version.label }}
       </button>
@@ -17,7 +17,7 @@
             <a
               class="dropdown-item {{ if $archIsActive }}active{{ end }}"
               id="{{ $arch.id }}-{{ $version.id }}-tab"
-              data-toggle="tab"
+              data-bs-toggle="tab"
               href="#{{ $arch.id }}-{{ $version.id }}"
               role="tab">
               {{ $arch.label }}

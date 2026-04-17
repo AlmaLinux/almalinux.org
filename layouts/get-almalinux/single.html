@@ -65,7 +65,7 @@
               tabInstance.show();
             } else {
               const allTabLinks = document.querySelectorAll(
-                "[data-toggle='tab']",
+                "[data-bs-toggle='tab']",
               );
               allTabLinks.forEach((el) => el.classList.remove("active"));
               tabLink.classList.add("active");
@@ -97,7 +97,7 @@
         })();
 
         // When an arch tab is shown, move the active indicator to its parent version button
-        // Uses a MutationObserver since Bootstrap 4's jQuery tab events aren't accessible from vanilla JS
+        // Uses a MutationObserver to watch for tab changes and update the active version indicator
         var tabContent = document.querySelector(".tab-content.al-tab-content");
         if (tabContent) {
           new MutationObserver(function () {
@@ -105,7 +105,7 @@
             if (!activePane) return;
             var paneId = activePane.id; // e.g. "aarch64-8"
             var tabLink = document.querySelector(
-              '[data-toggle="tab"][href="#' + paneId + '"]',
+              '[data-bs-toggle="tab"][href="#' + paneId + '"]',
             );
             if (!tabLink) return;
             // Move active to the parent version dropdown button
