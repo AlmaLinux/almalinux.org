@@ -401,11 +401,6 @@ a:hover {
   flex-shrink: 0;
 }
 
-.al-scroll-anchor {
-  position: relative;
-  top: -116px;
-}
-
 // Download page gap utility
 .gap-30 {
   gap: 30px;
@@ -413,7 +408,7 @@ a:hover {
 
 // Offset anchor targets so sticky nav doesn't cover the section header
 .anchor {
-  scroll-margin-top: 70px;
+  scroll-margin-top: 120px;
 }
 
 // Quickstart section wrapper
