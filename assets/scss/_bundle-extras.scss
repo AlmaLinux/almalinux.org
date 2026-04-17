@@ -14,6 +14,16 @@
   }
 }
 
+.al-cta-blue-deep {
+  background: $al-c-science-blue-light;
+  color: #222222;
+  margin: 10px 10px 10px 0;
+
+  &:hover {
+    background: darken($al-c-science-blue-light, 5%);
+  }
+}
+
 .al-cta-green {
   background: $al-c-atlantis;
   color: #222222;
