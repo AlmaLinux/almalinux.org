@@ -95,37 +95,30 @@
       <div class="row">
         <div class="col-lg-6">
           <h1 class="display-5 fw-bold">{{ i18n "Hardware Certification" }}</h1>
-          <p class="display-4">
+          <p class="fs-6">
             <i class="bi bi-building-fill-check"></i>
             {{ i18n "Part of the AlmaLinux Certification Program" }}
           </p>
           <p class="lead mb-5 mb-md-3">
             {{ i18n "The AlmaLinux Hardware Certification Program ensures hardware compatibility and promotes OS adoption through community-first, flexible certification types. The process is built just like AlmaLinux: with focus on long-term reliability and performance." }}
           </p>
-          <div class="row btn-row">
-            <div class="d-grid d-md-flex justify-content-md-start">
-              <a
-                class="btn al-cta-blue"
-                href="{{ "/certification/ecosystem-catalog/" | relLangURL }}"
-                ><i class="bi bi-check-all"></i>
-                {{ i18n "Certified Hardware" }}</a
-              >
-            </div>
-            <div class="d-grid d-md-flex justify-content-md-start">
-              <a
-                class="btn al-cta-green"
-                href="{{ "/certification/hardware-certification/hardware-certification-program/" | relLangURL }}"
-                ><i class="bi bi-journal-medical"></i>
-                {{ i18n "Get started" }}</a
-              >
-            </div>
-            <div class="d-grid d-md-flex justify-content-md-start">
-              <a
-                class="btn al-cta-yellow"
-                href="https://wiki.almalinux.org/sigs/Certification.html"
-                ><i class="bi bi-people-fill"></i> {{ i18n "Get involved" }}</a
-              >
-            </div>
+          <div class="d-flex flex-wrap gap-2">
+            <a
+              class="btn al-cta-blue"
+              href="{{ "/certification/ecosystem-catalog/" | relLangURL }}"
+              ><i class="bi bi-check-all"></i>
+              {{ i18n "Certified Hardware" }}</a
+            >
+            <a
+              class="btn al-cta-green"
+              href="{{ "/certification/hardware-certification/hardware-certification-program/" | relLangURL }}"
+              ><i class="bi bi-journal-medical"></i> {{ i18n "Get started" }}</a
+            >
+            <a
+              class="btn al-cta-yellow"
+              href="https://wiki.almalinux.org/sigs/Certification.html"
+              ><i class="bi bi-people-fill"></i> {{ i18n "Get involved" }}</a
+            >
           </div>
         </div>
         <div class="col-lg-6 imgswitch">
@@ -162,7 +155,7 @@
           <div class="btn-row">
             <i class="bi bi-send p"></i>
             <a
-              class="btn btn-primary btn-block p-2"
+              class="btn btn-primary w-100 p-2"
               href="https://github.com/AlmaLinux/certifications"
               >{{ i18n "Request Certification" }}</a
             >
@@ -193,7 +186,7 @@
           </p>
           <div class="btn-row pt-3">
             <a
-              class="btn btn-primary btn-block p-2"
+              class="btn btn-primary w-100 p-2"
               href="{{ "/certification/hardware-certification/hardware-certification-program/" | relLangURL }}"
               >{{ i18n "Get Certified" }}</a
             >

@@ -97,22 +97,23 @@
               <p class="lead mb-5 mb-md-3">
                 {{ i18n "An Open Source, community owned and governed, forever-free enterprise Linux distribution, focused on long-term stability, providing a robust production-grade platform. AlmaLinux OS is binary compatible with RHEL®." }}
               </p>
-              <div class="d-grid gap-3 d-md-flex justify-content-md-start pt-3">
+              <div
+                class="d-grid gap-3 d-md-flex flex-md-wrap justify-content-md-start pt-3">
                 <a
                   href="{{ "/contribute" | relLangURL }}"
-                  class="btn btn-lg px-4 me-md-2 al-cta-blue">
+                  class="btn btn-lg px-4 me-md-2 text-nowrap al-cta-blue">
                   <i class="bi bi-people pe-1"></i>
                   {{ i18n "Contribute" }}
                 </a>
                 <a
                   href="{{ "/get-almalinux" | relLangURL }}"
-                  class="btn btn-lg px-4 al-cta-green">
+                  class="btn btn-lg px-4 text-nowrap al-cta-green">
                   <i class="bi bi-download pe-1"></i>
                   {{ i18n "Download" }}
                 </a>
                 <a
                   href="https://wiki.almalinux.org/documentation/migration-guide"
-                  class="btn btn-lg px-4 al-cta-yellow">
+                  class="btn btn-lg px-4 text-nowrap al-cta-yellow">
                   <img
                     src="/images/icon-almalinux-black.svg"
                     alt="Icon"
@@ -551,14 +552,15 @@
             Minimize your risk while getting the most out of your AlmaLinux
             systems
           </p>
-          <div class="container_support row">
+          <div class="container_support row g-4">
             <!-- Start Cybertrust -->
-            <div class="row_support col-lg-6 pl-1">
+            <div class="row_support col-lg-6">
               <div
-                class="col-image my-0"
-                style="height: 25%; padding: 0; background: #082336;">
+                class="rounded"
+                style="background: #0e3b5c; overflow: hidden;">
                 <div
-                  class="p-3 al-commercial-supporter-logo-container rounded-top">
+                  class="al-commercial-supporter-logo-container p-3"
+                  style="background: #082336;">
                   <a href="https://www.cybertrust.co.jp/almalinux/">
                     <img
                       loading="lazy"
@@ -567,8 +569,6 @@
                       style="max-height: 70px !important;" />
                   </a>
                 </div>
-              </div>
-              <div class="col-text my-0 " style="height: 40%; padding: 0;">
                 <div class="p-3 al-commercial-supporter-list">
                   <p class="platinum_sponsor">Platinum Sponsor</p>
                   <p>
@@ -579,26 +579,23 @@
                     20 years.
                   </p>
                 </div>
-              </div>
-              <div class="col-button my-0" style="height: 35%; padding: 0;">
-                <div class="p-3 al-commercial-supporter-list rounded-bottom">
-                  <p>
-                    <br /><a
-                      class="btn btn-primary btn-block p-2 rounded text-decoration-none"
-                      href="https://www.cybertrust.co.jp/almalinux/"
-                      >Get support</a
-                    >
-                  </p>
+                <div class="p-3 al-commercial-supporter-list">
+                  <a
+                    class="btn btn-primary w-100 p-2 rounded text-decoration-none"
+                    href="https://www.cybertrust.co.jp/almalinux/"
+                    >Get support</a
+                  >
                 </div>
               </div>
             </div>
             <!-- start CloudLinux -->
-            <div class="row_support col-lg-6 pl-1">
+            <div class="row_support col-lg-6">
               <div
-                class="col-image my-0"
-                style="height: 25%; padding: 0; background: #082336;">
+                class="rounded"
+                style="background: #0e3b5c; overflow: hidden;">
                 <div
-                  class="p-3 al-commercial-supporter-logo-container rounded-top">
+                  class="al-commercial-supporter-logo-container p-3"
+                  style="background: #082336;">
                   <a href="https://tuxcare.com/almalinux-enterprise-support/">
                     <img
                       loading="lazy"
@@ -608,8 +605,6 @@
                       style="max-height: 70px !important;" />
                   </a>
                 </div>
-              </div>
-              <div class="col-text my-0" style="height: 40%; padding: 0;">
                 <div class="p-3 al-commercial-supporter-list">
                   <p class="platinum_sponsor">
                     Platinum Sponsor, <em>Founder</em>
@@ -623,23 +618,17 @@
                     pay-as-you-go technical support bundles.
                   </p>
                 </div>
-              </div>
-              <div class="col-button my-0" style="height: 35%; padding: 0;">
-                <div class="p-3 al-commercial-supporter-list rounded-bottom">
-                  <p>
-                    <br /><a
-                      class="btn btn-primary btn-block p-2 rounded text-decoration-none"
-                      href="https://tuxcare.com/almalinux-enterprise-support/"
-                      >Get support</a
-                    >
-                  </p>
-                  <p>
-                    <a
-                      class="btn btn-primary btn-block p-2 rounded text-decoration-none"
-                      href="https://tuxcare.com/fips-for-almalinux/"
-                      >Get FIPS</a
-                    >
-                  </p>
+                <div class="p-3 al-commercial-supporter-list">
+                  <a
+                    class="btn btn-primary w-100 p-2 rounded text-decoration-none mb-2"
+                    href="https://tuxcare.com/almalinux-enterprise-support/"
+                    >Get support</a
+                  >
+                  <a
+                    class="btn btn-primary w-100 p-2 rounded text-decoration-none"
+                    href="https://tuxcare.com/fips-for-almalinux/"
+                    >Get FIPS</a
+                  >
                 </div>
               </div>
             </div>
@@ -659,8 +648,8 @@
                 <button
                   class="accordion-button"
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#flush-collapse-1"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse-1"
                   aria-expanded="true"
                   aria-controls="flush-collapse-1">
                   {{ i18n "Who is AlmaLinux OS for?" }}
@@ -670,7 +659,7 @@
                 id="flush-collapse-1"
                 class="accordion-collapse collapse show"
                 aria-labelledby="flush-heading-1"
-                data-parent="#accordionFAQ">
+                data-bs-parent="#accordionFAQ">
                 <div class="accordion-body">
                   {{ i18n "Anyone that requires an enterprise-grade linux distribution, without the need for a commercial license agreement. AlmaLinux OS is also a perfect replacement for anyone who has historically relied on the CentOS Linux releases to achieve computing objectives, and for whom CentOS Stream is not the right solution." }}
                 </div>
@@ -682,8 +671,8 @@
                 <button
                   class="accordion-button collapsed"
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#flush-collapse-2"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse-2"
                   aria-expanded="true"
                   aria-controls="flush-collapse-3">
                   {{ i18n "What does binary compatible with RHEL mean?" }}
@@ -693,7 +682,7 @@
                 id="flush-collapse-2"
                 class="accordion-collapse collapse"
                 aria-labelledby="flush-heading-2"
-                data-parent="#accordionFAQ">
+                data-bs-parent="#accordionFAQ">
                 <div class="accordion-body">
                   {{ i18n "In July of 2023, " }}
                   <a href="{{ "/blog/future-of-almalinux/" | relLangURL }}"
@@ -709,8 +698,8 @@
                 <button
                   class="accordion-button collapsed"
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#flush-collapse-3"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse-3"
                   aria-expanded="true"
                   aria-controls="flush-collapse-3">
                   {{ i18n "Is AlmaLinux OS FIPS-140 compliant?" }}
@@ -720,7 +709,7 @@
                 id="flush-collapse-3"
                 class="accordion-collapse collapse"
                 aria-labelledby="flush-heading-3"
-                data-parent="#accordionFAQ">
+                data-bs-parent="#accordionFAQ">
                 <div class="accordion-body">
                   {{ i18n "AlmaLinux OS 9.2 is FIPS 140-3 validated and on the NIST Active list. Read more in this blog post: " }}
                   <a
@@ -736,8 +725,8 @@
                 <button
                   class="accordion-button collapsed"
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#flush-collapse-4"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse-4"
                   aria-expanded="true"
                   aria-controls="flush-collapse-4">
                   {{ i18n "Why did we call it AlmaLinux OS?" }}
@@ -747,7 +736,7 @@
                 id="flush-collapse-4"
                 class="accordion-collapse collapse"
                 aria-labelledby="flush-heading-4"
-                data-parent="#accordionFAQ">
+                data-bs-parent="#accordionFAQ">
                 <div class="accordion-body">
                   {{ i18n "Alma means soul in Spanish and other Latin languages. Looking back, it is easy to see that Linux is as popular and pervasive as it is thanks to the efforts of a passionate, diverse developer community. That community is the soul of Linux, and everyone that relies on a Linux distribution is indebted to the efforts of the Linux community. That is why we called our distribution AlmaLinux OS." }}
                 </div>
@@ -759,8 +748,8 @@
                 <button
                   class="accordion-button collapsed"
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#flush-collapse-5"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse-5"
                   aria-expanded="true"
                   aria-controls="flush-collapse-5">
                   {{ i18n "What motivated us?" }}
@@ -770,7 +759,7 @@
                 id="flush-collapse-5"
                 class="accordion-collapse collapse"
                 aria-labelledby="flush-heading-5"
-                data-parent="#accordionFAQ">
+                data-bs-parent="#accordionFAQ">
                 <div class="accordion-body">
                   {{ i18n "The initial backers and supporters for AlmaLinux OS were already extremely active in the enterprise Linux ecosystem, and had significant experience with RHEL forks. They knew the impact that the loss of CentOS Linux would have across all industries, and had the means and knowledge and need to help the community move forward." }}
                 </div>
@@ -782,8 +771,8 @@
                 <button
                   class="accordion-button collapsed"
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#flush-collapse-6"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse-6"
                   aria-expanded="true"
                   aria-controls="flush-collapse-6">
                   {{ i18n "How is the community protected from future course changes for AlmaLinux OS?" }}
@@ -793,7 +782,7 @@
                 id="flush-collapse-6"
                 class="accordion-collapse collapse"
                 aria-labelledby="flush-heading-6"
-                data-parent="#accordionFAQ">
+                data-bs-parent="#accordionFAQ">
                 <div class="accordion-body">
                   {{ i18n "The AlmaLinux OS Foundation is a 501(c)(6) that was founded in March of 2021 to own and manage the AlmaLinux OS project. We have been involving the community since the beginning, and the governing board is chosen by members of the foundation. For as long as our community needs a free operating system in the RHEL ecosystem, AlmaLinux OS will be free and open." }}
                 </div>
@@ -805,8 +794,8 @@
                 <button
                   class="accordion-button collapsed"
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#flush-collapse-7"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse-7"
                   aria-expanded="true"
                   aria-controls="flush-collapse-7">
                   {{ i18n "I want to convert from CentOS to AlmaLinux OS. How do I do it?" }}
@@ -816,7 +805,7 @@
                 id="flush-collapse-7"
                 class="accordion-collapse collapse "
                 aria-labelledby="flush-heading-7"
-                data-parent="#accordionFAQ">
+                data-bs-parent="#accordionFAQ">
                 <div class="accordion-body">
                   {{ i18n "Switching Linux distros can be a headache, but that is not the case when switching from CentOS 8 to AlmaLinux OS. Using " }}
                   <a href="https://github.com/AlmaLinux/almalinux-deploy"
@@ -836,8 +825,8 @@
                 <button
                   class="accordion-button collapsed"
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#flush-collapse-8"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse-8"
                   aria-expanded="true"
                   aria-controls="flush-collapse-8">
                   {{ i18n "Can I really port an entire fleet of servers from CentOS to AlmaLinux OS with a single command?" }}
@@ -847,7 +836,7 @@
                 id="flush-collapse-8"
                 class="accordion-collapse collapse "
                 aria-labelledby="flush-heading-8"
-                data-parent="#accordionFAQ">
+                data-bs-parent="#accordionFAQ">
                 <div class="accordion-body">
                   {{ i18n "Since AlmaLinux is binary compatible with RHEL®, your applications and services should be completely interoperable. You can rapidly migrate any number of servers using " }}<a
                     href="https://github.com/AlmaLinux/almalinux-deploy"
@@ -867,8 +856,8 @@
                 <button
                   class="accordion-button collapsed"
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#flush-collapse-9"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse-9"
                   aria-expanded="true"
                   aria-controls="flush-collapse-9">
                   {{ i18n "When will support for AlmaLinux OS 8 and 9 reach end of life?" }}
@@ -878,7 +867,7 @@
                 id="flush-collapse-9"
                 class="accordion-collapse collapse "
                 aria-labelledby="flush-heading-9"
-                data-parent="#accordionFAQ">
+                data-bs-parent="#accordionFAQ">
                 <div class="accordion-body">
                   {{ i18n "Each minor version of AlmaLinux reaches end of life when the following minor version is released, but stable and thoroughly tested updates and security patches will be shipped for AlmaLinux OS 8.x until 2029, and AlmaLinux 9.x until 2032." }}
                 </div>
@@ -890,8 +879,8 @@
                 <button
                   class="accordion-button"
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#flush-collapse-10"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse-10"
                   aria-expanded="true"
                   aria-controls="flush-collapse-10">
                   {{ i18n "What is AlmaLinux OS Kitten?" }}
@@ -901,7 +890,7 @@
                 id="flush-collapse-10"
                 class="accordion-collapse collapse "
                 aria-labelledby="flush-heading-10"
-                data-parent="#accordionFAQ">
+                data-bs-parent="#accordionFAQ">
                 <div class="accordion-body">
                   {{ i18n "It is the direct upstream for AlmaLinux OS 10 and is the primary point for the AlmaLinux community to engage and influence the future of AlmaLinux OS. Fixes and features land here first and trickle down into AlmaLinux OS as appropriate. It is the integration and collaboration point for AlmaLinux to its upstreams as well, such as CentOS Stream and Fedora. You can read more about it:  " }}<a
                     href="https://wiki.almalinux.org/development/almalinux-os-kitten-10/"

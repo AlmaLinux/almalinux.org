@@ -56,23 +56,6 @@ button:focus, .btn:focus{
 .al-page-blog-post .container{
   padding: 3rem 15px;
 }
-.fw-bold{
-  font-weight: 700 !important;
-}
-.fw-light{
-  font-weight: 300;
-}
-.fs-6 {
-  font-size: 1rem!important;
-}
-.display-5{
-  font-size: 46px !important;
-  line-height: 47px !important;
-}
-.lead {
-  font-size: 1.25rem !important;
-  font-weight: 400 !important;
-}
 
 // Main navigation
 .al-primary-navbar {
@@ -92,11 +75,12 @@ button:focus, .btn:focus{
   }
   
   .nav-link {
-    
+
     padding-left: 1rem !important;
     padding-right: 1rem !important;
     color: #fff !important;
     font-size: 15px;
+    white-space: nowrap;
     transition: .3s ease-in-out;
     text-decoration: none !important;
     cursor: pointer !important;
