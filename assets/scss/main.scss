@@ -75,11 +75,12 @@ button:focus, .btn:focus{
   }
   
   .nav-link {
-    
+
     padding-left: 1rem !important;
     padding-right: 1rem !important;
     color: #fff !important;
     font-size: 15px;
+    white-space: nowrap;
     transition: .3s ease-in-out;
     text-decoration: none !important;
     cursor: pointer !important;
