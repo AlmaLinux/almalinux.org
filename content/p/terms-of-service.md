@@ -19,9 +19,9 @@ You agree to comply with all applicable local, state, national and international
 
 ## Copyrights
 
-AlmaLinux either owns the intellectual property rights in the text, images audio, video, software, and other content that is made available on this website, or has obtained the permission of the owner of the intellectual property to make it available on this website. You may not redistribute or copy of any part of this website or its content without prior written permission of AlmaLinux except when explicitly stated otherwise by a legal agreement, terms and conditions or license superseding these terms of service, as noted in these terms of service.
+AlmaLinux either owns the intellectual property rights in the text, images, audio, video, software, and other content that is made available on this website, or has obtained the permission of the owner of the intellectual property to make it available on this website. You may not redistribute or copy of any part of this website or its content without prior written permission of AlmaLinux except when explicitly stated otherwise by a legal agreement, terms and conditions or license superseding these terms of service, as noted in these terms of service.
 
-Unless stated otherwise by a a legal agreement, terms and conditions or license superseding these terms of service, you may display on your computer, download and print pages from this website provided: (a) the copyright notice appears on all such printouts, (b) the information will not be altered, (c) the content is only used for personal, educational and non-commercial use, and (d) you do not redistribute or copy the information to any other media.
+Unless stated otherwise by a legal agreement, terms and conditions or license superseding these terms of service, you may display on your computer, download and print pages from this website provided: (a) the copyright notice appears on all such printouts, (b) the information will not be altered, (c) the content is only used for personal, educational and non-commercial use, and (d) you do not redistribute or copy the information to any other media.
 
 ### Superseding licenses, agreements and terms of service
 

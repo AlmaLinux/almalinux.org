@@ -21,7 +21,7 @@ registration_button: "al-cta-green"
 
 post_event: true
 thankyou_city: "Vancouver"
-thankyou_quote: "Our inaugural AlmaLinux Day adjacent to SIGGRAPH won't be our last! We are so grateful to everyone who is trusting us every day in the the VFX, production, and post-production community."
+thankyou_quote: "Our inaugural AlmaLinux Day adjacent to SIGGRAPH won't be our last! We are so grateful to everyone who is trusting us every day in the VFX, production, and post-production community."
 thankyou_youtube_url: "https://www.youtube.com/watch?v=vOHII_pax0I&list=PLqKzWfm6zyltyY1kcVB66K4-qunmfNSmh"
 
 coc_url: "/p/aldv-code-of-conduct/"
