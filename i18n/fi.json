@@ -367,7 +367,7 @@
     "Hear all of the latest about the project, listen as industry experts talk about what they're doing with AlmaLinux, and find out what we're doing to make this the most stable free enterprise linux distribution in the world.": "",
     "First join us in the ": "Liity meihin ensin ",
     "When we got our start we were a downstream rebuild of Red Hat Enterprise Linux, but earlier this year we shifted to": "",
-    "Header image by Trevor Dobson": "Otsikkokuva (Tekijä: Trevor Dobson)",
+    "Header image by Trevor Dobson": "Ylätunnisteen kuva: Trevor Dobson",
     " and from the main AlmaLinux OS repositories:": " ja AlmaLinux OS:n päätietovarastoista:",
     "Internet Initiative Co., Ltd. Seminar Room": "Internet Initiative Co., Ltd. Seminar Room",
     "When will support AlmaLinux OS 8 and 9 reach end of life?": "",
@@ -385,10 +385,10 @@
     "Every night 500,000+ servers are calling home to our geo-located mirror system, and that number doesn’t account for systems using their own mirrors or sharing an IP address.": "Joka ilta yli 500 000 palvelinta soittaa kotiin maantieteelliseen peilijärjestelmäämme, eikä tämä numero oteta huomioon järjestelmiä, jotka käyttävät omia peilejä tai jakavat IP-osoitetta.",
     "It wasn't possible--until now. Move from CentOS 7.x to 8.x version of the RHEL derivative of your choice, or upgrade from 8.x to 9.x within the same derivative. Preserve your applications, your data, and your sanity.": "",
     "Using Generic Cloud on a local machine or server": "Generic Cloudin käyttö paikallisella koneella tai palvelimella",
-    "Building AlmaLinux OS without RHEL sources code": "",
+    "Building AlmaLinux OS without RHEL sources code": "AlmaLinux-käyttöjärjestelmän rakentaminen ilman RHEL-lähdekoodia",
     "As users of the historic CentOS, we have been working diligently to solve the problems and pain points that we all experienced, and one way we’ve done that is with": "Historiallisen CentOS:n käyttäjinä olemme työskennelleet ahkerasti ratkaistaksemme kaikki kokemamme ongelmat ja kipukohdat, ja yksi tapa olemme tehneet sen kanssa",
     "Download from mirrors": "Lataa peilisivustolta",
-    "As CentOS Linux enters its final 6 months support, AlmaLinux OS is attracting the most attention as a RHEL-compatible Linux.": "",
+    "As CentOS Linux enters its final 6 months support, AlmaLinux OS is attracting the most attention as a RHEL-compatible Linux.": "CentOS Linuxin viimeisen kuuden kuukauden tuen alkaessa AlmaLinux OS herättää eniten huomiota RHEL-yhteensopivana Linuxina.",
     "ELevate has been used to migrate production environments across industries and across the world, but we still advise caution.": "ELevatea on käytetty tuotantoympäristöjen siirtämiseen eri toimialoilla ja eri puolilla maailmaa, mutta suosittelemme silti varovaisuutta.",
     "As CentOS Linux enters its final 6 months of support, the whole world is looking at where they go next. The AlmaLinux community benefits from the stability and intentionality that we take to building a stable, free operating system. Come hear all about what we do and how we're supporting our community at AlmaLinux Day: Germany": "",
     "AlmaLinux OS offers official Amazon Machine Images via the AWS Marketplace and Community AMIs.": "AlmaLinux OS tarjoaa virallisia Amazon Machine -kuvia AWS Marketplacen ja Community AMI:ien kautta.",
@@ -535,7 +535,7 @@
     "effortless installation with all packages included, no additional repositories required.": "vaivaton asennus kaikkien pakettien kanssa, lisätietovarastoja ei tarvita.",
     "* - migration to CentOS Stream 9 is currently in process and will be available later.": "* - Siirtyminen CentOS Stream 9:ään on parhaillaan käynnissä ja on saatavilla myöhemmin.",
     "AlmaLinux Azure Wiki Page": "AlmaLinux Azure -wikisivu",
-    "Abstract: AlmaLinux OS has historically been built to be an exact copy of RHEL, using RHEL's provided resources. With RedHat's shift away from sharing the full building blocks on git.centos.org, the AlmaLinux team has been hard at work to find a new, reliable path forward. Come hear about what we've been doing since June, and what we're planning for the future.": "",
+    "Abstract: AlmaLinux OS has historically been built to be an exact copy of RHEL, using RHEL's provided resources. With RedHat's shift away from sharing the full building blocks on git.centos.org, the AlmaLinux team has been hard at work to find a new, reliable path forward. Come hear about what we've been doing since June, and what we're planning for the future.": "Tiivistelmä: AlmaLinux-käyttöjärjestelmä on historiallisesti rakennettu RHEL:n tarkaksi kopioksi käyttäen RHEL:n tarjoamia resursseja. RedHatin siirtyessä pois kokonaisten rakennuspalikoiden jakamisesta git.centos.org-sivustolla AlmaLinux-tiimi on työskennellyt ahkerasti löytääkseen uuden ja luotettavan polun eteenpäin. Tule kuulemaan, mitä olemme tehneet kesäkuusta lähtien ja mitä suunnittelemme tulevaisuutta varten.",
     "FIPS Validation for AlmaLinux OS": "",
     "An event like no other": "Tapahtuma vertaansa vailla",
     "More details and guidance steps can be found on the ": "Tarkemmat tiedot ja ohjeet löytyvät kohteesta ",
@@ -828,5 +828,6 @@
     "Subscribe on LinkedIn": "Tilaa Linkedinissä",
     "Individual Member": "Jäsen",
     "Apply (individual)": "Hae (henkilö)",
-    "Apply (organization)": "Hae (yhteisö)"
+    "Apply (organization)": "Hae (yhteisö)",
+    "AlmaLinux offers images for Azure across all Azure regions via the ": "AlmaLinux tarjoaa Azure-kuvia kaikille Azure-alueille seuraavan kautta: "
 }
