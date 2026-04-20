@@ -15,6 +15,7 @@ jobs:
     permissions:
       contents: read
       deployments: write
+      pull-requests: write
     name: Publish Preview to Cloudflare Pages
     steps:
       - uses: actions/checkout@v4
@@ -49,9 +50,30 @@ jobs:
         run: npx pagefind --site "public"
 
       - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+        id: deploy
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
-          directory: public
+          command: pages deploy public --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }} --branch=${{ github.head_ref }}
+
+      - name: Comment deployment URL on PR
+        if: always() && github.event.pull_request.number
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const aliasUrl = `${{ steps.deploy.outputs.pages-deployment-alias-url }}`;
+            const deploymentUrl = `${{ steps.deploy.outputs.deployment-url }}`;
+            const url = aliasUrl || deploymentUrl;
+            const status = `${{ steps.deploy.outcome }}`;
+
+            const body = status === "success" && url
+              ? `✅ Preview deployment is ready: ${url}`
+              : `⚠️ Preview deployment step finished with status: ${status}.`;
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body,
+            });

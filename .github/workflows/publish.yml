@@ -64,9 +64,8 @@ jobs:
         run: npx pagefind --site "public"
 
       - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
-          directory: public
+          command: pages deploy public --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }}
