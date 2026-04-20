@@ -389,7 +389,7 @@ Each member of a Board Committee shall serve for such term as shall be establish
 
 ### Section 6.1 (Officers)
 
-The Officers of the Foundation shall be a Chair, a Treasurer and a Secretary. The Chair shall also be a Director, and the Secretary and Treasurer may, but are not required to be, Directors. . The Foundation may also have, at the discretion of the Board of Directors, an Executive Director, one or more Vice-Chairs, one or more Assistant Secretaries and/or Assistant Treasurers, and such other Officers with such titles, terms of office and duties as may be elected in accordance with the provisions of Section 4.3. The Chair shall preside over meetings of the Board of Directors. One person may hold two or more offices unless the Certificate ofIncorporation or these By-laws otherwise provide.
+The Officers of the Foundation shall be a Chair, a Treasurer and a Secretary. The Chair shall also be a Director, and the Secretary and Treasurer may, but are not required to be, Directors. The Foundation may also have, at the discretion of the Board of Directors, an Executive Director, one or more Vice-Chairs, one or more Assistant Secretaries and/or Assistant Treasurers, and such other Officers with such titles, terms of office and duties as may be elected in accordance with the provisions of Section 4.3. The Chair shall preside over meetings of the Board of Directors. One person may hold two or more offices unless the Certificate of Incorporation or these By-laws otherwise provide.
 
 ### Section 6.2 (Vacancies)
 

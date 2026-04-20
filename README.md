@@ -51,7 +51,7 @@ registration_button: "al-cta-green" # or al-cta-blue
 post_event: false
 thankyou_city: "City"
 thankyou_quote: "Quote from benny after the event."
-thankyou_youtube: "https://www.youtube.com/watch?v=..."
+thankyou_youtube_url: "https://www.youtube.com/watch?v=..."
 
 # Footer bars — omit either field to hide that bar
 coc_url: "/p/your-event-code-of-conduct/"
@@ -107,7 +107,7 @@ Add the new event to `layouts/partials/common/nav.html`, inside the Events dropd
 
 ### Toggling post-event state
 
-Once the event is over, set `post_event: true` in the front matter and fill in `thankyou_quote` and `thankyou_youtube`. This automatically shows the thank-you block at the top of the page with a link to the recordings.
+Once the event is over, set `post_event: true` in the front matter and fill in `thankyou_quote` and `thankyou_youtube_url`. This automatically shows the thank-you block at the top of the page with a link to the recordings.
 
 ### Foundation member sponsors
 
