@@ -670,5 +670,11 @@
     "Get Incus and LXC Images": "Pobierz obrazy Incus i LXC",
     "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: ": "Możesz pobrać obrazy systemu operacyjnego AlmaLinux na HCP Vagrant Registry pod podanym linkiem: ",
     "AlmaLinux OS provides a set of security features: Errata, GPG keys, Mailing Lists, OpenSCAP, OVAL, SBOM, and Secure Boot": "AlmaLinux OS oferuje zestaw funkcji bezpieczeństwa: errata, klucze GPG, listy mailingowe, OpenSCAP, OVAL, SBOM oraz Secure Boot",
-    "AlmaLinux offers images for Azure across all Azure regions via the ": "AlmaLinux oferuje obrazy Azure we wszystkich regionach Azure za pośrednictwem· "
+    "AlmaLinux offers images for Azure across all Azure regions via the ": "AlmaLinux oferuje obrazy Azure we wszystkich regionach Azure za pośrednictwem· ",
+    "AlmaLinux Newsletters": "Biuletyny AlmaLinux",
+    "Stay up to date with the latest AlmaLinux news, releases, and community updates. Subscribe via your preferred channel:": "Bądź na bieżąco z najnowszymi wiadomościami, wydaniami i aktualizacjami społecznymi AlmaLinux. Subskrybuj za pomocą twojego preferowanego kanału:",
+    "RSS Feed": "Kanał RSS",
+    "Mailing List": "Lista mailingowa",
+    "Subscribe on LinkedIn": "Subskrybuj na LinkedIn",
+    "Individual Member": "Indywidualny Członek"
 }
