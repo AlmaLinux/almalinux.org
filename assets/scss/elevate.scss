@@ -9,24 +9,6 @@
     padding-right: 15px !important;
     padding-left: 15px !important;
   }
-  .al-cta-discuss {
-    background: $al-c-science-blue-light;
-    color: #222;
-
-    &:hover {
-      background: darken($al-c-science-blue-light, 5%);
-    }
-  }
-
-  .al-cta-learn-how {
-    background: $al-c-atlantis;
-    color: #222222;
-
-    &:hover {
-      background: darken($al-c-atlantis, 5%);
-    }
-  }
-
   .faq-container {
     margin-bottom: 120px;
   }
