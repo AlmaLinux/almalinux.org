@@ -1296,5 +1296,8 @@
     "Subscribe on LinkedIn": "Prenumerera på LinkedIn",
     "Individual Member": "Enskild medlem",
     "Apply (individual)": "Ansök (enskild)",
-    "Apply (organization)": "Ansök (organisation)"
+    "Apply (organization)": "Ansök (organisation)",
+    "All Download Options": "Alla nedladdningsalternativ",
+    "First, choose your version and architecture. Then, select an image format below.": "Välj först din version och arkitektur. Välj sedan ett avbildsformat nedan.",
+    "Quickstart: How will you use AlmaLinux OS?": "Snabbstart: Hur kommer du att använda AlmaLinux OS?"
 }
