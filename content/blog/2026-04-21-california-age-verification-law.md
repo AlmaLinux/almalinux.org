@@ -5,7 +5,7 @@ author:
   name: "benny Vasquez"
   bio: "Chair, board of directors"
   image: /users/benny.jpeg
-date: 2026-04-09
+date: 2026-04-21
 images:
   - /blog-images/2026/2026-04-california-age-verification.png
 post:
@@ -29,11 +29,15 @@ There are two things we're watching closely:
 
 1. **The courts.** Laws like this often face legal challenges, and AB-1043 is unlikely to be an exception.
 
-2. **How Red Hat handles it.** As a downstream distribution, how Red Hat Enterprise Linux chooses to address (or not address) these requirements will significantly influence how we respond.
+2. **How our upstream operating systems handle it.** As a downstream distribution, how Fedora and Red Hat Enterprise Linux chooses to address (or not address) these requirements will significantly influence how we respond.
 
 In the meantime, we don't believe this law requires immediate action on our part. The law's requirements seem to be primarily aimed at commercial platforms with centralized app distribution and account management — not community-driven Linux distributions.
 
 ## We'll keep you informed of our decisions
+
+There continues to be developments in the greater open source world and goverments around the world around this, which makes it hard to make a "this is where we will land" decision for AlmaLinux, but rest-assured, our goal is to serve our communituy in the best way possible.
+
+I'll take this moment to remind you: the best way to ensure that you have a voice in the future of AlmaLinux is to [become a member of the Foundation](/members). Individual membership is free, because you shouldn't have to pay to be heard.
 
 If anything changes for us, whether through court rulings, regulatory guidance, or upstream decisions from Red Hat, we'll communicate how we plan to react to you. As always, transparency is a core value for us, and we won't make decisions about something like this without keeping you in the loop.
 
