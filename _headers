@@ -1,3 +1,6 @@
+# Response headers for Cloudflare Pages. See SECURITY_HEADERS.md for how
+# this policy was built and what to do when an embed trips a CSP violation.
+
 /*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
