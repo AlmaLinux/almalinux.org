@@ -22,7 +22,7 @@ The policy also allows `'unsafe-inline'` for scripts and styles. That's not grea
 
 ## Troubleshooting
 
-### I added a YouTube/Mastodon/widget embed and the console shows "Refused to load" or "violates Content Security Policy"
+### I added a YouTube/Mastodon/widget embed and the browser console shows "Refused to load" or "violates Content Security Policy"
 
 The embed loads a resource from an origin the policy doesn't allow. The error message tells you exactly which directive rejected it and what URL:
 
@@ -39,13 +39,11 @@ Add `https://example.com` to the named directive in `_headers`. Common gotchas:
 
 ### The console shows CSP violations in Report-Only mode but nothing's broken on the page
 
-That's expected — Report-Only logs but doesn't block. The point is to catch violations before we flip to enforcing. Fix them so that when we flip the header to `Content-Security-Policy` (no `-Report-Only`), real visitors don't hit broken functionality.
+That's expected — Report-Only alerts but doesn't block. The point is to catch violations before we flip to enforcing. Fix them so that when we flip the header to `Content-Security-Policy` (no `-Report-Only`), real visitors don't hit broken functionality.
 
-### How do I verify a change covers everything before pushing?
+### How do I verify a page that includes embeds is covered before deploying?
 
-Cheap version: push to a branch, let the Cloudflare Pages preview deploy, then open a few representative pages (home, a blog post with a video, whichever page uses the new embed) with DevTools → Console and look for violations.
-
-Thorough version: crawl all the pages and compare against the policy. There's no committed script for this; it was done ad-hoc with curl + Python when the policy was first built. If we do another big third-party integration, worth writing a proper tool.
+Easy! Push to a branch, let the preview site deploy, then open the page, open DevTools → Console and look for violations.
 
 ### I see these errors but they're NOT CSP
 
