@@ -699,6 +699,8 @@
    "To avoid any surprises, we highly recommend that you test upgrade scenarios in a virtual machine or sandbox before running upgrades in production.": "To avoid any surprises, we highly recommend that you test upgrade scenarios in a virtual machine or sandbox before running upgrades in production.",
    "If you are able to help investigate and fix the bug, please collaborate with CentOS Stream. This is the most impactful thing an AlmaLinux Community Member can do. Check the CentOS Contributor's Guide (opens new window) for more details.": "If you are able to help investigate and fix the bug, please collaborate with CentOS Stream. This is the most impactful thing an AlmaLinux Community Member can do. Check the CentOS Contributor's Guide (opens new window) for more details.",
    "Navigating the fluctuating compatibility and dependencies for your environment is hard enough without having to dig into your operating system. Make the best use of your time by checking the list of compatible solutions for your needs, environment.": "Navigating the fluctuating compatibility and dependencies for your environment is hard enough without having to dig into your operating system. Make the best use of your time by checking the list of compatible solutions for your needs, environment.",
+   "All newsletters": "All newsletters",
+   "All blog posts": "All blog posts",
    "On this page": "On this page",
    "Back to top": "Back to top"
 }
