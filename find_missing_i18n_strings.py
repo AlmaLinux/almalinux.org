@@ -1,45 +1,101 @@
-import re
-import os
+#!/usr/bin/env python3
+"""Audit i18n/en.json against {{ i18n "..." }} usages in layouts/.
+
+Adds any keys referenced by templates but missing from en.json, removes any
+keys in en.json that no templates reference, and prunes the same stale keys
+from every other i18n/<lang>.json so translators don't see strings the site
+no longer uses.
+
+Run with --check to exit 1 without writing — useful in CI / pre-commit.
+"""
+import argparse
 import json
+import os
+import re
+import sys
 
-# Open the json file and load its contents into a dictionary
-with open('i18n/en.json', 'r', encoding='utf-8') as f:
-    en = json.load(f)
+I18N_DIR = 'i18n'
+EN_PATH = os.path.join(I18N_DIR, 'en.json')
+TEMPLATE_DIR = 'layouts'
+I18N_PATTERN = re.compile(r'{{\s+?i18n\s+?(?:"|`)(.*?)(?:"|`)\s+?}}', re.DOTALL)
 
-# Create a copy of the en dictionary's keys and convert it to a set for better performance
-unused_keys = set(en.keys())
 
-error = False
-missing_keys = {}
-
-for rootdir in ('layouts', 'content'):
-    for folder, dirs, files in os.walk(rootdir):
+def find_used_keys(template_dir):
+    used = set()
+    for folder, _dirs, files in os.walk(template_dir):
         for file in files:
-            if file.endswith('.html'):
-                fullpath = os.path.join(folder, file)
-                with open(fullpath, 'r', encoding='utf-8') as f:
-                    for line in f:
-                        m = re.findall(r'{{\s+?i18n\s+?(?:"|`)(.*?)(?:"|`)\s+?}}', line, re.DOTALL)
-                        if m:
-                            for string in m:
-                                if string not in en:
-                                    error = True
-                                    print(f'TRANSLATION ERROR: {string}')
-                                    missing_keys[string] = ''
-                                    print(f"Adding '{string}'")
-                                    en[string] = string  # Add the missing key to the dictionary
-                                elif string in unused_keys:
-                                    unused_keys.remove(string)
+            if not file.endswith('.html'):
+                continue
+            with open(os.path.join(folder, file), 'r', encoding='utf-8') as f:
+                for line in f:
+                    used.update(I18N_PATTERN.findall(line))
+    return used
 
-# If there are missing keys, dump the updated dictionary back into the json file
-if error or unused_keys:
-    # Remove unused keys
-    if unused_keys:
-        for key in unused_keys:
-            print(f"Removing '{key}'")
-            del en[key]
-    else:
-        print("No unused keys found.")
 
-    with open('i18n/en.json', 'w', encoding='utf-8') as f:
-        json.dump(en, f, indent=3, ensure_ascii=False)
+def load(path):
+    with open(path, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+
+def dump(path, data):
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=3, ensure_ascii=False)
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        '--check',
+        action='store_true',
+        help="Don't write changes; exit 1 if any are needed.",
+    )
+    args = parser.parse_args()
+
+    en = load(EN_PATH)
+    used = find_used_keys(TEMPLATE_DIR)
+
+    missing = sorted(used - en.keys())
+    unused = sorted(en.keys() - used)
+
+    other_locales = []
+    for name in sorted(os.listdir(I18N_DIR)):
+        if not name.endswith('.json') or name == 'en.json':
+            continue
+        path = os.path.join(I18N_DIR, name)
+        data = load(path)
+        stale = sorted(set(data.keys()) - used)
+        if stale:
+            other_locales.append((path, data, stale))
+
+    has_changes = bool(missing or unused or other_locales)
+
+    for key in missing:
+        print(f"Adding '{key}' to en.json")
+    for key in unused:
+        print(f"Removing '{key}' from en.json")
+    for path, _data, stale in other_locales:
+        print(f"{os.path.basename(path)}: pruning {len(stale)} stale key(s)")
+
+    if args.check:
+        if has_changes:
+            print('\nfind_missing_i18n_strings.py would modify i18n/. Re-run without --check.')
+            sys.exit(1)
+        return
+
+    if not has_changes:
+        return
+
+    for key in missing:
+        en[key] = key
+    for key in unused:
+        del en[key]
+    dump(EN_PATH, en)
+
+    for path, data, stale in other_locales:
+        for key in stale:
+            del data[key]
+        dump(path, data)
+
+
+if __name__ == '__main__':
+    main()
