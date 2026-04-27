@@ -411,13 +411,31 @@ Once you figure out the issue and fix it, undo your changes to `.prettierrc` and
 
 ### Localization and Translation
 
-AlmaLinux.org translations are managed on [Weblate](https://hosted.weblate.org/engage/almalinux/). To contribute, join the [AlmaLinux project](https://hosted.weblate.org/projects/almalinux/) on Weblate. Submissions through Weblate generate automated PRs to this repo, which are reviewed and merged by the Marketing SIG or another team lead.
+AlmaLinux.org translations are managed on [Weblate](https://hosted.weblate.org/engage/almalinux/). Submissions through Weblate generate automated PRs to this repo, which are reviewed and merged by the Marketing SIG or another team lead.
 
-For translation guidelines, see [our Wiki](https://wiki.almalinux.org/Help-translating-site.html).
+If you'd like to **contribute translations**, see the [translation guide on our Wiki](https://wiki.almalinux.org/Help-translating-site.html) — that page walks you through creating a Weblate account and translating strings.
 
-To request a new language, open an issue in [GitHub issues](https://github.com/AlmaLinux/almalinux.org/issues).
+To **request a new language**, open an issue in [GitHub issues](https://github.com/AlmaLinux/almalinux.org/issues).
 
 [![Translation status](https://hosted.weblate.org/widget/almalinux/website-backend/multi-auto.svg)](https://hosted.weblate.org/engage/almalinux/)
+
+#### Adding a new language (maintainers)
+
+When a new language is requested, a project admin needs to enable it on both Weblate and in this repo. The order matters: do the Weblate step first so the JSON file already exists when Hugo tries to render the new locale.
+
+1. **Enable the language on Weblate.** As a project admin on [hosted.weblate.org/projects/almalinux/](https://hosted.weblate.org/projects/almalinux/), open the `website-backend` component (and any other components covering this site) and use **Start new translation** to add the language. Weblate generates a new `i18n/<lang>.json` from the English source and opens a PR against this repo.
+2. **Add the language to `config.yaml`.** In the `languages:` map, add a new entry using the same code Weblate used for the JSON filename. Use the language's native name for `languagename`, and add `languageDirection: rtl` for right-to-left scripts. For example:
+   ```yaml
+   ro: { weight: 2, languagename: Română }
+   ```
+   Note: existing entries like `pt-br` and `zh-hans` use lowercase/dashed slugs to match Weblate's output — match that style for the new code.
+3. **Generate placeholder content pages.** From the repo root, run:
+   ```bash
+   python3 setup-pages-for-supported-languages.py
+   python3 find_missing_i18n_strings.py
+   ```
+   The first script reads `config.yaml` and creates `content/<page>.<lang>.md` stubs for every page so Hugo has something to render until translators fill them in. The second sanity-checks `i18n/en.json`.
+4. **Open a PR** with the `config.yaml` change and the generated `content/` stubs. Merge it together with (or right after) the Weblate-generated PR from step 1 so the new locale builds cleanly on the next deploy.
 
 ### Change Approval Process
 
