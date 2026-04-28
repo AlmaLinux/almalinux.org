@@ -8,7 +8,6 @@ author:
 date: "2026-04-30"
 post:
   title: "Linux Kernel 6.18 for Raspberry Pi is now available for testing! Try it out and let us know your feedback."
-
 ---
 
 As announced in the [Raspberry Pi Forum](https://forums.raspberrypi.com/viewtopic.php?t=394580), the kernel of Raspberry Pi OS is planned move to 6.18, the next upstream LTS, in the near future.
@@ -36,4 +35,3 @@ or
 channel on Mattermost.
 
 Reports confirming that no issues were encountered are equally important when validating the new kernel.
-
