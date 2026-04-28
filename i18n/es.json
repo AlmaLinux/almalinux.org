@@ -1293,5 +1293,15 @@
     "SIG Meetings": "Reuniones del SIG",
     "ALESCo Meetings": "Reuniones de ALESCo",
     "Upcoming Events": "Próximos Actos",
-    "Past Events": "Actos Celebrados"
+    "Past Events": "Actos Celebrados",
+    "All Download Options": "Todas las Opciones de Descarga",
+    "First, choose your version and architecture. Then, select an image format below.": "Primero, elija su versión y arquitectura. Luego, seleccione un formato de imagen a continuación.",
+    "Quickstart: How will you use AlmaLinux OS?": "Inicio rápido: ¿Cómo usará AlmaLinux OS?",
+    "It is the direct upstream for AlmaLinux OS 10 and is the primary point for the AlmaLinux community to engage and influence the future of AlmaLinux OS. Fixes and features land here first and trickle down into AlmaLinux OS as appropriate. It is the integration and collaboration point for AlmaLinux to its upstreams as well, such as CentOS Stream and Fedora. You can read more about it: ": "Es el flujo ascendente directo de AlmaLinux OS 10 y es el punto principal para que la comunidad de AlmaLinux se involucre e influya en el futuro de AlmaLinux OS. Las correcciones y funciones llegan aquí primero y se filtran en AlmaLinux OS según corresponda. También es el punto de integración y colaboración de AlmaLinux en sus flujos ascendentes, como CentOS Stream y Fedora. Puedes leer más al respecto: ",
+    "To make AlmaLinux successful, we need the close involvement of the community members. We use our bug tracking system to find, track, and fix bugs. We encourage AlmaLinux users to help us by filling in bug-reports. You can track and discuss all bugs on bugs.almalinux.org.": "Para que AlmaLinux tenga éxito, necesitamos la estrecha participación de los miembros de la comunidad. Utilizamos nuestro sistema de seguimiento de errores para encontrar, rastrear y corregir errores. Animamos a los usuarios de AlmaLinux a que nos ayuden rellenando informes de errores. Puede rastrear y discutir todos los errores en bugs.almalinux.org.",
+    "approach in order to help not just the AlmaLinux but the whole EL community.": "enfoque para ayudar no solo a AlmaLinux sino a toda la comunidad EL.",
+    "If present, it means that the bug is upstream. Please, submit the bug to CentOS Stream bugzilla (opens new window) providing all the necessary information about an issue and reproducing steps. This is the contribution path to get the bug fix into the upstream, which will, in turn, be built into AlmaLinux.": "Si está presente, significa que el error está más arriba. Por favor, envia el error a CentOS Stream de bugzilla (se abre en ventana nueva) proporcionar toda la información necesaria acerca de un tema y la reproducción de los pasos. Esta es la forma de contribuir para llegar a la corrección de errores en la parte superior, que, a su vez, contribuye en AlmaLinux.",
+    "If the bug is AlmaLinux-specific, please open a bug on AlmaLinux Bug Tracker (opens new window) providing all the necessary information about an issue and reproducing steps.": "Si el error es específico de AlmaLinux, abrir un error en el Rastreador de errores de AlmaLinux (se abre en una ventana nueva) proporciona toda la información necesaria sobre un problema y reproduce los pasos.",
+    "On this page": "En esta página",
+    "Back to top": "Volver arriba"
 }
