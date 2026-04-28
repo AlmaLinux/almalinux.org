@@ -1,3 +1,8 @@
 event_sponsors:
 
+media_sponsors:
+  - alt: "DevITJobs"
+    url: "https://devitjobs.com"
+    icon: "/landingpages/aldla-2026/devitus-rectangle-transparent.svg"
+
 speakers:
