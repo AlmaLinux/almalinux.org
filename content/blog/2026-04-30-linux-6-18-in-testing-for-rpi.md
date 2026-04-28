@@ -25,6 +25,7 @@ The testing kernel is available for AlmaLinux OS 9 and 10 (and will be available
 ```bash
 dnf copr --hub build.almalinux.org enable metalefty/raspberrypi-testing
 dnf update
+reboot
 ```
 
 Please note that the testing kernel may be unstable and is not intended for production environments.
