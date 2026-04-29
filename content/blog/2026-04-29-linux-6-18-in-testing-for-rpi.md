@@ -11,14 +11,13 @@ images:
 post:
   title: "Linux Kernel 6.18 for Raspberry Pi is now available for testing in AlmaLinux OS! Try it out and let us know your feedback."
   image: /blog-images/2026/2026-04-29-pi-testing.png
-
 ---
 
 As announced in the [Raspberry Pi Forum](https://forums.raspberrypi.com/viewtopic.php?t=394580), the kernel of Raspberry Pi OS is planning a move to 6.18, the next upstream LTS kernel version, in the near future.
 
 We are also considering migrating our AlmaLinux images for Raspberry Pi to the 6.18 kernel, and we now offer a pre-release Raspberry Pi kernel for users interested in these cutting-edge updates.
 
-The testing kernel is available for AlmaLinux OS 9 and 10 (and will be available for Kitten 10 as well). To use it, need to enable an additional repo, and reboot. 
+The testing kernel is available for AlmaLinux OS 9 and 10 (and will be available for Kitten 10 as well). To use it, need to enable an additional repo, and reboot.
 
 ### To enable the testing repo
 
