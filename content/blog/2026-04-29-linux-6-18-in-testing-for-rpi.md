@@ -5,7 +5,7 @@ author:
   name: "Koichiro Iwao"
   bio: "AltArch SIG Lead for Raspberry Pi Builds, AlmaLinux OS Foundation"
   image: /users/koichiroiwao.jpg
-date: "2026-04-29"
+date: "2026-04-29T13:00:00Z"
 images:
   - /blog-images/2026/2026-04-29-pi-testing.png
 post:
