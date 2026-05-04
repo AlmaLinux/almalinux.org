@@ -36,6 +36,8 @@ AlmaLinux 10.2 Beta also brings i686 userspace packages — enabling legacy 32-b
 
 You can read the full release notes for this version on the wiki: [AlmaLinux OS 10.2 Beta Release Notes](https://wiki.almalinux.org/release-notes/10.2-beta.html).
 
+As a note, this beta is already patched for the [Copy Fail (CVE-2026-31431) flaw.](/blog/2026-05-01-cve-2026-31431-copy-fail/)
+
 ## What can you do to help?
 
 Your input into testing and feedback is crucial and essential for successful production releases.
