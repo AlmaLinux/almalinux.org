@@ -77,12 +77,19 @@ event_sponsors:
     logo: "/brands/sponsor-logo.svg"
     size: "large" # "large" = prominent; omit for smaller display
 
+media_sponsors: # optional, omit the whole block if there are none
+  - alt: "Sponsor Name"
+    url: "https://media-sponsor.example.com"
+    icon: "/landingpages/your-event/media-sponsor.svg"
+
 speakers:
   - name: "Speaker Name"
     photo: "/landingpages/your-event/speaker.jpg"
     title: "Speaker Title or Talk Title" # optional
     org: "Speaker Organization" # optional
 ```
+
+Media sponsors render in their own small section at the bottom of the page under the heading "Media sponsors for {event_name}". Use this for press, job-board, or community-amplification partners that should be acknowledged but kept separate from the main event sponsor lineup.
 
 ### Step 3: Add images
 
