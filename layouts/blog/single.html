@@ -2,6 +2,12 @@
   <div class="al-body-container" style="margin: auto;">
     <section class="al-page-blog-post  " dir="ltr">
       <div class="container py-5">
+        <a
+          href="/blog/"
+          class="al-article-back d-inline-flex align-items-center mb-3 text-decoration-none small">
+          <i class="bi bi-chevron-left pe-1"></i>
+          <span>{{ i18n "All blog posts" }}</span>
+        </a>
         <h1 class="al-section-title mb-3">{{ .Title }}</h1>
         <article>
           <div class="al-page-blog-author">
@@ -41,14 +47,18 @@
           </div>
         </article>
         <div class="al-blog-pagination mt-3">
-          {{ if .Prev }}
-            <a class="al-blog-previous-button " href="{{ .Prev.RelPermalink }}">
+          {{ if .PrevInSection }}
+            <a
+              class="al-blog-previous-button "
+              href="{{ .PrevInSection.RelPermalink }}">
               <span>« {{ i18n "Previous" }}</span>
             </a>
           {{ end }}
 
-          {{ if .Next }}
-            <a class="al-blog-next-button " href="{{ .Next.RelPermalink }}">
+          {{ if .NextInSection }}
+            <a
+              class="al-blog-next-button "
+              href="{{ .NextInSection.RelPermalink }}">
               <span> {{ i18n "Next" }} »</span>
             </a>
           {{ end }}
