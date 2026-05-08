@@ -17,14 +17,14 @@ post:
 
 A week after [Copy Fail](/blog/2026-05-01-cve-2026-31431-copy-fail/), researcher Hyunwoo Kim disclosed a second Linux kernel flaw in the same broad area — IPsec ESP and rxrpc — that they have named _Dirty Frag_. The bug lives in the in-place decryption fast paths of `esp4`, `esp6`, and `rxrpc`: when a socket buffer carries paged fragments that are not privately owned by the kernel (e.g. pipe pages attached via `splice(2)`/`sendfile(2)`/`MSG_SPLICE_PAGES`), the receive path decrypts directly over those externally-backed pages, exposing or corrupting plaintext that an unprivileged process still holds a reference to.
 
-Like the previous Copy Fail vulnerability, **Dirty Frag immediately yields root on all major distributions**. Every supported AlmaLinux release is affected. Dirty Frag chains two distinct kernel bugs, each with its own CVE: [CVE-2026-43284](https://nvd.nist.gov/vuln/detail/CVE-2026-43284) covers the IPsec ESP half (`esp4` / `esp6`), and [CVE-2026-43500](https://nvd.nist.gov/vuln/detail/CVE-2026-43500) covers the `rxrpc` half. Per Hyunwoo Kim's [public disclosure on oss-security](https://www.openwall.com/lists/oss-security/2026/05/07/8) (2026-05-07), the responsible-disclosure embargo was broken before distributions could coordinate, and a working exploit is publicly available. A second public exploit, [Copy Fail 2: Electric Boogaloo](https://github.com/0xdeadbeefnetwork/Copy_Fail2-Electric_Boogaloo), targets the same vulnerability under a different name; both reach root through the same `esp4`/`esp6`/`rxrpc` code paths and are blocked by the same fix.
+Like the previous Copy Fail vulnerability, **Dirty Frag immediately yields root on all major distributions**. Every supported AlmaLinux release is affected. Dirty Frag chains two distinct kernel bugs, each with its own CVE: [CVE-2026-43284](https://nvd.nist.gov/vuln/detail/CVE-2026-43284) covers the IPsec ESP half (`esp4` / `esp6`), and CVE-2026-43500 (NVD entry pending) covers the `rxrpc` half. Per Hyunwoo Kim's [public disclosure on oss-security](https://www.openwall.com/lists/oss-security/2026/05/07/8) (2026-05-07), the responsible-disclosure embargo was broken before distributions could coordinate, and a working exploit is publicly available. A second public exploit, [Copy Fail 2: Electric Boogaloo](https://github.com/0xdeadbeefnetwork/Copy_Fail2-Electric_Boogaloo), targets the same vulnerability under a different name; both reach root through the same `esp4`/`esp6`/`rxrpc` code paths and are blocked by the same fix.
 
 If you run AlmaLinux on a multi-tenant host, container build farm, CI runner, or any system where untrusted users can get a shell, this one matters — and with public exploit code in the wild, it matters today.
 
 More information about the vulnerability:
 
-- NVD entry (ESP): <https://nvd.nist.gov/vuln/detail/CVE-2026-43284>
-- NVD entry (rxrpc): <https://nvd.nist.gov/vuln/detail/CVE-2026-43500>
+- NVD entry (ESP, CVE-2026-43284): <https://nvd.nist.gov/vuln/detail/CVE-2026-43284>
+- rxrpc half is tracked as CVE-2026-43500 (NVD entry pending publication)
 - Public disclosure on oss-security: <https://www.openwall.com/lists/oss-security/2026/05/07/8>
 - Researcher write-up: <https://dirtyfrag.io>
 - Upstream fix for ESP: <https://git.kernel.org/pub/scm/linux/kernel/git/netdev/net.git/commit/?id=f4c50a4034e62ab75f1d5cdd191dd5f9c77fdff4>
