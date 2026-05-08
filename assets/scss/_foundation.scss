@@ -1,0 +1,197 @@
+// Foundation page tokens & utilities
+// Component classes are added in subsequent tasks.
+
+$al-foundation-band-deep: #0e3b5c;
+$al-foundation-divider:   #14598a;
+$al-foundation-card-bg:   rgb(14, 59, 92);
+$al-foundation-pullquote-accent: $al-c-atlantis; // #86da2f
+
+// Tier accents (applied as inline --tier-accent CSS custom property)
+$al-tier-individual: $al-link-color;   // #c4e1ff
+$al-tier-mirror:     $al-c-atlantis;   // #86da2f
+$al-tier-silver:     #b8c5d1;
+$al-tier-ruby:       #e0115f;
+$al-tier-gold:       $al-c-candlelight; // #ffcb12
+$al-tier-platinum:   $al-c-candlelight;
+
+// Band utility — body background already covers the mid band, deep is opt-in
+.al-foundation-band-deep {
+  background: $al-foundation-band-deep;
+}
+
+// Section title with the 2px divider underline
+.al-foundation-section-title {
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 700;
+  border-bottom: 2px solid $al-foundation-divider;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.al-foundation-hero-collage {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  aspect-ratio: 4 / 3;
+  gap: 0.65rem;
+}
+
+.al-foundation-hero-frame {
+  border: 1px dashed rgba(196, 225, 255, 0.28);
+  border-radius: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: rgba(196, 225, 255, 0.5);
+
+  &--main {
+    grid-row: 1 / span 2;
+    grid-column: 1;
+  }
+}
+
+.al-foundation-pullquote {
+  border-left: 4px solid $al-foundation-pullquote-accent;
+  padding: 0.5rem 1.5rem;
+  font-style: italic;
+  font-size: 1.1rem;
+
+  .who {
+    font-style: normal;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    color: rgba(254, 254, 254, 0.7);
+  }
+}
+
+.al-foundation-info-card {
+  background: $al-foundation-card-bg;
+  border-radius: 6px;
+  padding: 1.5rem;
+
+  h4 {
+    margin-bottom: 0.75rem;
+  }
+
+  // When the card is itself an <a> (Foundations we belong to)
+  &:is(a) {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      background: lighten($al-foundation-card-bg, 4%);
+    }
+  }
+}
+
+.al-foundation-tier {
+  position: relative;
+  background: $al-foundation-card-bg;
+  border-radius: 6px;
+  padding: 1.25rem 1rem;
+
+  .who {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--tier-accent);
+    margin-bottom: 0.4rem;
+  }
+
+  .head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+
+    .name {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .price {
+      font-size: 0.72rem;
+      color: rgba(254, 254, 254, 0.65);
+    }
+  }
+
+  .votes {
+    font-size: 0.85rem;
+    padding-bottom: 0.6rem;
+    margin-bottom: 0.6rem;
+    border-bottom: 1px dashed rgba(196, 225, 255, 0.2);
+  }
+
+  ul.perks {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    font-size: 0.8rem;
+
+    li {
+      position: relative;
+      padding-left: 0.9rem;
+      margin-bottom: 0.3rem;
+
+      &::before {
+        content: "•";
+        color: var(--tier-accent);
+        position: absolute;
+        left: 0;
+        top: -0.05em;
+      }
+    }
+  }
+
+  &.is-featured {
+    background: linear-gradient(180deg, rgba(255, 203, 18, 0.08), $al-foundation-card-bg 60%);
+    box-shadow: 0 0 0 1px rgba(255, 203, 18, 0.15), 0 8px 24px rgba(0, 0, 0, 0.25);
+  }
+
+  .ribbon {
+    position: absolute;
+    top: -0.55rem;
+    right: 0.7rem;
+    background: $al-c-candlelight;
+    color: #000;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+  }
+}
+
+.al-foundation-downstream {
+  --bs-table-bg: transparent;
+  --bs-table-color: #fefefe;
+  color: #fefefe;
+
+  th, td {
+    background: $al-foundation-card-bg;
+    border: 1px dashed rgba(196, 225, 255, 0.18);
+    padding: 0.85rem 1rem;
+    vertical-align: middle;
+  }
+
+  thead th {
+    background: rgba(255, 203, 18, 0.1);
+    color: $al-c-candlelight;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+  }
+
+  tbody th {
+    font-weight: 600;
+
+    .cat {
+      color: rgba(254, 254, 254, 0.6);
+    }
+  }
+}
