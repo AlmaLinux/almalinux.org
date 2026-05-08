@@ -1,5 +1,5 @@
 ---
-title: "Dirty Frag (CVE-2026-43284, CVE-2026-43500) vulnerability fix is ready for testing"
+title: "Dirty Frag (CVE-2026-43284, CVE-2026-43500) Patches Released"
 type: blog
 author:
   name: "Andrew Lukoshko"
@@ -11,6 +11,23 @@ images:
 post:
   title: "A second high-severity local-root flaw landed in the Linux kernel a week after Copy Fail. If you run AlmaLinux on a multi-tenant host, container build farm, CI runner, or any system where untrusted users can get a shell, help us test the fix — or apply the one-line mitigation now."
   image: /blog-images/2026/2026-05-07-dirty-frag.png
+---
+
+## Update: Patched kernels are now in production
+
+**2026-05-08 15:22 UTC** — The patched kernels are now rolling out to **production** repositories/mirrors. You no longer need to enable the testing repo to get them. Just run:
+
+```bash
+sudo dnf clean metadata && sudo dnf upgrade
+sudo reboot
+```
+
+Most mirrors have a sync frequency of 3 hours. If the updates are not available to you yet we recommend trying again in about an hour.
+
+The testing-repo instructions further down in this post remain for reference but are no longer the recommended path.
+
+The kernels released to production repositories are bit for bit identical to those from testing. We'd like to thank everyone who helped verify them — community testing got these patches into production faster than we could have managed alone.
+
 ---
 
 ## The Announcement
@@ -130,6 +147,8 @@ Thanks to the AlmaLinux core team for turning around patched builds for every su
 Remaining aware of these vulnerabilities and acting quickly can keep your system and data safe. Follow the AlmaLinux Blog, join the [Mattermost Community Chat](https://chat.almalinux.org/), and subscribe to [Announce](https://lists.almalinux.org/mailman3/lists/announce.lists.almalinux.org/) and [Security Mailing List](https://lists.almalinux.org/mailman3/lists/security.lists.almalinux.org/) to stay informed and updated. We will update this post when the patched kernels move from testing to production.
 
 ## Changelog
+
+- **2026-05-08 15:22 UTC** — Patched kernels released to the AlmaLinux production repositories. Added a notice at the top of the post directing readers to `sudo dnf clean metadata && sudo dnf upgrade` instead of the testing-repo flow described below. Post title updated to reflect release.
 
 - **2026-05-08 11:27 UTC** — Added the CVE-2026-43500 (rxrpc) fix on top of the existing CVE-2026-43284 (ESP) fix on AlmaLinux 10; the combined kernel was released to testing as `kernel-6.12.0-124.55.3.el10_1`. Clarified affected versions: AlmaLinux 8 is only affected by CVE-2026-43284 (no `rxrpc` module shipped); AlmaLinux 9 and 10 are affected by CVE-2026-43500 only when `kernel-modules-partner` from the Devel repository is installed.
 
