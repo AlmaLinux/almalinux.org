@@ -96,7 +96,7 @@ Confirm with `uname -r` against the Kitten version listed below.
 If updating and rebooting right now is not an option, you can neutralize the attack surface by blacklisting the affected modules. None of `esp4`, `esp6`, or `rxrpc` are loaded on a typical workload that does not use IPsec transport mode or AFS, so on most systems this is safe to apply immediately:
 
 ```bash
-sh -c "printf 'install esp4 /bin/false\ninstall esp6 /bin/false\ninstall rxrpc /bin/false\n' > /etc/modprobe.d/dirtyfrag.conf; rmmod esp4 esp6 rxrpc 2>/dev/null; true"
+sudo sh -c "printf 'install esp4 /bin/false\ninstall esp6 /bin/false\ninstall rxrpc /bin/false\n' > /etc/modprobe.d/dirtyfrag.conf; rmmod esp4 esp6 rxrpc 2>/dev/null; true"
 ```
 
 This writes a `modprobe` config that prevents the three modules from loading, and unloads them if they happen to be loaded already (the `rmmod` is best-effort and silent if the module isn't present). The command is safe to run unchanged on all supported releases. To revert, remove `/etc/modprobe.d/dirtyfrag.conf`.
