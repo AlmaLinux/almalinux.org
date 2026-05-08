@@ -86,7 +86,13 @@ sudo reboot
 
 Confirm with `uname -r` against the Kitten version listed below.
 
-## Patched kernel versions
+## Affected versions and patched kernels
+
+**All supported AlmaLinux releases (8, 9, 10) are affected by CVE-2026-43284** — the IPsec ESP half — through `esp4`/`esp6`, which are part of the standard kernel package on every release.
+
+**CVE-2026-43500** — the rxrpc half — additionally affects **AlmaLinux 9 and 10, but only on systems that have installed the `kernel-modules-partner` package**. That package ships `rxrpc.ko` and lives in the AlmaLinux **Devel** repository, which **is not part of the official AlmaLinux repositories** — it is publicly available but kept outside the default release set. AlmaLinux 8 does not build the `rxrpc` module at all and is unaffected by CVE-2026-43500. If you don't know what `kernel-modules-partner` is or whether it's installed, you almost certainly don't have it — `rpm -q kernel-modules-partner` will tell you.
+
+Patched kernel versions:
 
 - AlmaLinux 8 is patched in `kernel-4.18.0-553.123.2.el8_10` and above
 - AlmaLinux 9 is patched in `kernel-5.14.0-611.54.3.el9_7` and above
@@ -111,12 +117,6 @@ sudo sh -c 'echo 3 > /proc/sys/vm/drop_caches'
 
 This is safe to run on a live system — it only frees clean cache and dentry/inode entries — and pairs well with the blacklist above.
 
-A note on `rxrpc.ko`: on AlmaLinux it ships only as part of the `kernel-modules-partner` subpackage, which is published exclusively in the AlmaLinux **Devel** repository. `kernel-modules-partner` is not enabled by default and **should not be installed on any production system** — it carries unsupported partner-only modules and exposes additional code paths (including `rxrpc`, the second half of Dirty Frag) that are absent on a standard install. If you have it installed, the simplest mitigation is to remove it entirely:
-
-```bash
-sudo dnf remove kernel-modules-partner
-```
-
 **Do not rely on this if you actually use IPsec ESP or AFS/rxrpc** — those workloads will break. The proper fix is to install the patched kernel and reboot.
 
 ## Thanks
@@ -130,6 +130,8 @@ Thanks to the AlmaLinux core team for turning around patched builds for every su
 Remaining aware of these vulnerabilities and acting quickly can keep your system and data safe. Follow the AlmaLinux Blog, join the [Mattermost Community Chat](https://chat.almalinux.org/), and subscribe to [Announce](https://lists.almalinux.org/mailman3/lists/announce.lists.almalinux.org/) and [Security Mailing List](https://lists.almalinux.org/mailman3/lists/security.lists.almalinux.org/) to stay informed and updated. We will update this post when the patched kernels move from testing to production.
 
 ## Changelog
+
+- **2026-05-08 11:27 UTC** — Added the CVE-2026-43500 (rxrpc) fix on top of the existing CVE-2026-43284 (ESP) fix on AlmaLinux 10; the combined kernel was released to testing as `kernel-6.12.0-124.55.3.el10_1`. Clarified affected versions: AlmaLinux 8 is only affected by CVE-2026-43284 (no `rxrpc` module shipped); AlmaLinux 9 and 10 are affected by CVE-2026-43500 only when `kernel-modules-partner` from the Devel repository is installed.
 
 - **2026-05-08 10:04 UTC** — CVE-2026-43500 has been allocated for the rxrpc half of Dirty Frag.
 
