@@ -17,7 +17,7 @@ post:
 
 A week after [Copy Fail](/blog/2026-05-01-cve-2026-31431-copy-fail/), researcher Hyunwoo Kim disclosed a second Linux kernel flaw in the same broad area — IPsec ESP and rxrpc — that they have named _Dirty Frag_. The bug lives in the in-place decryption fast paths of `esp4`, `esp6`, and `rxrpc`: when a socket buffer carries paged fragments that are not privately owned by the kernel (e.g. pipe pages attached via `splice(2)`/`sendfile(2)`/`MSG_SPLICE_PAGES`), the receive path decrypts directly over those externally-backed pages, exposing or corrupting plaintext that an unprivileged process still holds a reference to.
 
-Like the previous Copy Fail vulnerability, **Dirty Frag immediately yields root on all major distributions**. Every supported AlmaLinux release is affected. The flaw is now tracked as [CVE-2026-43284](https://nvd.nist.gov/vuln/detail/CVE-2026-43284). Per Hyunwoo Kim's [public disclosure on oss-security](https://www.openwall.com/lists/oss-security/2026/05/07/8) (2026-05-07), the responsible-disclosure embargo was broken before distributions could coordinate, and a working exploit is publicly available.
+Like the previous Copy Fail vulnerability, **Dirty Frag immediately yields root on all major distributions**. Every supported AlmaLinux release is affected. The flaw is now tracked as [CVE-2026-43284](https://nvd.nist.gov/vuln/detail/CVE-2026-43284). Per Hyunwoo Kim's [public disclosure on oss-security](https://www.openwall.com/lists/oss-security/2026/05/07/8) (2026-05-07), the responsible-disclosure embargo was broken before distributions could coordinate, and a working exploit is publicly available. A second public exploit, [Copy Fail 2: Electric Boogaloo](https://github.com/0xdeadbeefnetwork/Copy_Fail2-Electric_Boogaloo), targets the same vulnerability under a different name; both reach root through the same `esp4`/`esp6`/`rxrpc` code paths and are blocked by the same fix.
 
 If you run AlmaLinux on a multi-tenant host, container build farm, CI runner, or any system where untrusted users can get a shell, this one matters — and with public exploit code in the wild, it matters today.
 
@@ -129,5 +129,7 @@ Thanks to the AlmaLinux core team for turning around patched builds for every su
 Remaining aware of these vulnerabilities and acting quickly can keep your system and data safe. Follow the AlmaLinux Blog, join the [Mattermost Community Chat](https://chat.almalinux.org/), and subscribe to [Announce](https://lists.almalinux.org/mailman3/lists/announce.lists.almalinux.org/) and [Security Mailing List](https://lists.almalinux.org/mailman3/lists/security.lists.almalinux.org/) to stay informed and updated. We will update this post when the patched kernels move from testing to production.
 
 ## Changelog
+
+- **2026-05-08 09:06 UTC** — Noted that the public exploit "Copy Fail 2: Electric Boogaloo" targets the same vulnerability and is blocked by the same fix.
 
 - **2026-05-08 08:28 UTC** — CVE-2026-43284 has been allocated for Dirty Frag.
