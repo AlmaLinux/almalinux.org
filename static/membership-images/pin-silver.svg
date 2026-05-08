@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 260">
+  <defs>
+    <linearGradient id="silver-fill" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#d4dade"></stop>
+      <stop offset="50%" stop-color="#9098a0"></stop>
+      <stop offset="100%" stop-color="#5c656d"></stop>
+    </linearGradient>
+    <filter id="silver-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-opacity="0.35"></feDropShadow>
+    </filter>
+  </defs>
+  <g filter="url(#silver-shadow)">
+    <path d="M 24 24 Q 24 14 36 14 L 264 14 Q 276 14 276 24 L 276 160 Q 276 200 150 250 Q 24 200 24 160 Z" fill="#0f4266" stroke="#5c656d" stroke-width="2.5"></path>
+    <rect x="24" y="100" width="252" height="42" fill="url(#silver-fill)"></rect>
+  </g>
+  <image x="50" y="30" width="200" height="44" preserveAspectRatio="xMidYMid meet"></image>
+  <text x="150" y="131" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="800" font-size="24" letter-spacing="6" fill="#1a1a1a">SILVER</text>
+  <text x="150" y="200" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="600" font-size="12" letter-spacing="3.5" fill="rgba(255,255,255,0.92)">SPONSOR MEMBER</text>
+</svg>

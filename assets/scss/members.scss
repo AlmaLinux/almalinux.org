@@ -2,67 +2,287 @@
 @import "./functions";
 @import "./bootstrap";
 
-.al-page-foundation-members-index {
-  .al-members {
-    .table{
-      color: #fefefe !important;
-    }
-    .al-member-item {
-      height: 100%;
-      background: rgb(14, 59, 92);
-    }
+// Existing apply-CTA rule preserved — still used by the new layout
+.al-member-apply-cta {
+  min-width: 120px;
+}
+
+// Members page tokens reuse the foundation page's palette so the two pages
+// read as a coherent pair.
+$al-members-card-bg: rgb(14, 59, 92);
+$al-members-divider: rgba(196, 225, 255, 0.18);
+
+.al-members-divider {
+  border: 0;
+  border-top: 1px solid $al-members-divider;
+  margin: 2rem 0;
+}
+
+.al-members-spotlight {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  @media (min-width: 992px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.al-members-spotlight-card {
+  background: $al-members-card-bg;
+  border-radius: 8px;
+  padding: 1.75rem;
+
+  .eyebrow {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent, #c4e1ff);
+    margin-bottom: 0.6rem;
+    font-weight: 700;
   }
 
-  .al-member-apply-category-icon {
-    color: lighten($al-font-color, 10%);
-    font-size: 32px;
-    padding-right: 22px;
+  &.indiv  { --accent: #c4e1ff; }
+  &.mirror { --accent: #86da2f; }
 
-    @at-root {
-      [dir=rtl] & {
-        padding-right: 0;
-        padding-left: 22px;
-      }
-    }
+  img {
+    border-radius: 0.6rem;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
   }
 
-  .al-member-apply-cta {
-    min-width: 120px;
-  }
+  .al-members-stats {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
 
-  .fw-light {
-    .al-laws-link, .al-guideline-link {
-      text-decoration: none;
-
-      &:hover, &:active {
-        text-decoration: underline;
-      }
-    }
-  }
-
-  .al-membership-info {
-    display: none;
-  }
-
-  #al-mirror-info, #al-sponsor-info {
-    ul {
-        list-style-type: '-   ';
-    }
-  }
-
-  .member-info:hover {
-    color: #86da2f;
-  }
-
-
-    .al-foundation-members-apply-content-wrap {
-      display: flex;
-      flex-direction: column;
+    > div {
       flex: 1;
+      min-width: 6rem;
+      border: 1px solid rgba(196, 225, 255, 0.18);
+      border-radius: 4px;
+      padding: 0.6rem 0.85rem;
+      background: rgba(0, 0, 0, 0.15);
 
-      p {
-        flex: 1;
+      b {
+        display: block;
+        font-size: 1.05rem;
+        color: #fefefe;
+      }
+
+      span {
+        display: block;
+        font-size: 0.65rem;
+        color: rgba(254, 254, 254, 0.6);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-top: 0.15rem;
       }
     }
   }
 
+  .ctas {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+}
+
+.al-members-matrix {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(4, 1fr);
+  background: $al-members-card-bg;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 1.5rem;
+
+  .head {
+    padding: 1rem 0.85rem;
+    border-bottom: 2px solid $al-members-divider;
+    border-right: 1px solid rgba(196, 225, 255, 0.08);
+
+    img {
+      width: 48px;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+
+    .nm { font-weight: 700; font-size: 0.95rem; }
+    .pr { font-size: 1.15rem; font-weight: 700; }
+    .or {
+      font-size: 0.7rem;
+      color: rgba(254, 254, 254, 0.6);
+      margin-bottom: 0.5rem;
+    }
+    .vt {
+      display: inline-block;
+      background: rgba(196, 225, 255, 0.1);
+      padding: 0.2rem 0.5rem;
+      border-radius: 3px;
+      font-size: 0.75rem;
+    }
+
+    &--explain {
+      .explain-eyebrow {
+        font-size: 0.7rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #9bb1c4;
+      }
+      .explain-note {
+        font-size: 0.85rem;
+        color: #dbe8f3;
+        line-height: 1.5;
+        margin-top: 6px;
+      }
+    }
+
+    &.is-platinum {
+      background: rgba(255, 203, 18, 0.08);
+      border-left: 1px solid #ffcb12;
+
+      .nm { color: #ffcb12; }
+      .vt {
+        background: rgba(255, 203, 18, 0.2);
+        color: #ffcb12;
+      }
+    }
+  }
+
+  .group-row {
+    grid-column: 1 / -1;
+    background: rgba(0, 0, 0, 0.3);
+    color: #ffcb12;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    padding: 0.75rem 1rem;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(255, 203, 18, 0.2);
+  }
+
+  .cell {
+    padding: 0.7rem 0.85rem;
+    border-bottom: 1px solid rgba(196, 225, 255, 0.08);
+    border-right: 1px solid rgba(196, 225, 255, 0.08);
+    font-size: 0.85rem;
+
+    &.lbl   { color: rgba(254, 254, 254, 0.85); }
+    &.center { text-align: center; }
+  }
+
+  .check {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: #86da2f;
+    border-radius: 50%;
+    vertical-align: middle;
+    box-shadow: 0 0 0 2px rgba(134, 218, 47, 0.15);
+  }
+
+  .dash {
+    display: inline-block;
+    width: 1.1rem;
+    height: 2px;
+    background: rgba(196, 225, 255, 0.35);
+    vertical-align: middle;
+  }
+
+  .num {
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+
+  // Highlight the entire Platinum column (header + every cell), not just the header
+  [data-tier="platinum"] {
+    background: rgba(255, 203, 18, 0.06);
+  }
+  .head.is-platinum {
+    background: rgba(255, 203, 18, 0.1);
+  }
+
+  .footer-row {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1.4fr repeat(4, 1fr);
+    border-top: 2px solid $al-members-divider;
+    background: rgba(8, 35, 54, 0.4);
+
+    .cta-cell {
+      padding: 0.85rem;
+      text-align: center;
+    }
+  }
+
+  // Mobile: collapse to a single column with per-tier labels
+  @media (max-width: 991.98px) {
+    grid-template-columns: 1fr;
+
+    .head--explain { display: none; }
+
+    .head {
+      border-right: none;
+      border-bottom: 2px solid $al-members-divider;
+
+      img { margin-bottom: 0.25rem; }
+    }
+
+    .cell.center::before {
+      content: attr(data-tier);
+      display: block;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(254, 254, 254, 0.5);
+      margin-bottom: 0.2rem;
+    }
+
+    .cell.lbl {
+      grid-column: 1 / -1;
+      background: rgba(255, 255, 255, 0.04);
+      font-weight: 600;
+      padding: 0.6rem 0.85rem;
+    }
+
+    .group-row {
+      margin-top: 0.5rem;
+    }
+
+    .footer-row {
+      grid-template-columns: 1fr;
+
+      .cta-cell { padding: 0.6rem; }
+      .cta-cell:first-child { display: none; }
+    }
+  }
+}
+
+.al-members-platinum-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background: rgba(8, 35, 54, 0.6);
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+
+  .label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(254, 254, 254, 0.6);
+    margin-right: 0.5rem;
+  }
+
+  img {
+    height: 36px;
+    width: auto;
+    max-width: 180px;
+  }
+}
