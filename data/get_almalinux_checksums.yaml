@@ -31,7 +31,7 @@ versions:
         dvd: b73073b35187790a978705801dcd0ab5ed7fc66316e0335565848309afb91e90
         minimal: 35e7e36b385005c16ba4ea6b0fcca042a240e81e6b0c827150a89577b0e779b2
       cloud:
-        genericCloud: 8680b50091904071c9b9f0288a94432c6461275b83c26a59a602ec234fac08a2
+        genericCloud: 04f89e54870900a21751c59e8bc1e2b5dd10b0edad2784fedd88cef5f23475f2
     ppc64le:
       iso:
         boot: e4e246af934c56de2609e218bacaa9cf32a90c4bfe2f53526a2c4bc1cce61ba3
@@ -98,14 +98,14 @@ versions:
         dvd: 214fa840ecb5d4fd4b5df52ab4c2bac2b1afc6bb659195ffd68edec2a07d8611
         minimal: 9add077d63d24b02f332f6056f7a5db8f0a6501fcacf86ba3fb65fe29159d91d
       cloud:
-        genericCloud: 07c8e5badd17ced892a7fcd30848638059ff9c157d10e834f0133dc58fa28b3d
+        genericCloud: 2ad09483618e275c0a38ac0d65e00fefbd79bebc3c70232643a27962f83f6d3f
     ppc64le:
       iso:
         boot: 9f3b82f2463cb725d2ef1be7128ca5a5ecf89c56417721f1f4ed98811d6a59ab
         dvd: f1c5ee1777f12f388c0be1ffd1d121043df43f8a7ee9dc1babbdc7a3726a86ed
         minimal: 652b2791a40a67f581c2c45a39cef8ef1708b9beb5b44f690a4174496f509c29
       cloud:
-        genericCloud: 984c05b009e09064256816e0f1401ce537097d3f5eca2d7e80d4d7d35b6f0db0
+        genericCloud: a0e0f5b0dd2d082495d7aca9df265a0845ffadbddeee6a76f9495715f50ee81f
   "8":
     fullVersion: "8.10"
     x86_64:
@@ -130,11 +130,11 @@ versions:
         dvd: 4a75edc17e5ab21d8452a6b64b5f24863285120f82d62a90491072a48216ae8c
         minimal: 4f0bdf1e4f122a8e474803e621181041ca33f4763bef1c72b1f286fa72a21541
       cloud:
-        genericCloud: bbcf44b1b4326b67034c7c31afe0e1e3cbcc99d97897c5182355db82948245a4
+        genericCloud: 45d569a74a663b2438fda36f964ceb93ac113d01dc8eaed9d04211fb521c1f7a
     ppc64le:
       iso:
         boot: 6f9115328e6edfd6c46f87036df2e3544ee05ecc8f2bef8482a54a7e9f38e163
         dvd: b5de561a86d99ef624ed25376b1f88ec0e5b7ae05717dd78d57fd9c19f53ce73
         minimal: 869dad6ec5bd9050a2a5188e5aff3e519a3b9a403e88639a564c884922b14af7
       cloud:
-        genericCloud: 9752eadafa23f832e38129a712001fae2a0bc9800cf5f3434e3aad2a1670e598
+        genericCloud: b64879465e5c45262f8c61057ec4e33b00f591a7d3d5b0f6c5b4e2a75a374d30
