@@ -20,23 +20,26 @@
             </p>
           </div>
           <div class="col-lg-5">
-            <img
-              src="/membership-images/foundation.png"
-              alt=""
-              class="img-fluid rounded-3" />
+            <div class="al-members-hero-placeholder">
+              {{ i18n "Hero photo — replace before launch" }}
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     {{/* SECTION 3: Free Membership */}}
-    <section class="al-foundation-band-deep al-py-lg">
+    <section class="al-py-lg">
       <div class="container">
-        <div class="text-center mb-5">
-          <h2>{{ i18n "Free Membership" }}</h2>
-          <p>
-            {{ i18n "For individuals & mirror hosts. No fees — just a real contribution to the project." }}
-          </p>
+        <div class="row align-items-end mb-5 g-3 al-members-section-header">
+          <div class="col-md-6">
+            <h2 class="mb-0">{{ i18n "Free Membership" }}</h2>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="mb-0">
+              {{ i18n "For individuals & mirror hosts. No fees — just a real contribution to the project." }}
+            </p>
+          </div>
         </div>
 
         <div class="al-members-spotlight">
@@ -126,10 +129,10 @@
               </a>
               <a
                 href="https://accounts.almalinux.org/organizations/"
-                class="btn btn-outline-light al-member-apply-cta"
+                class="btn btn-warning al-member-apply-cta"
                 target="_blank">
                 <i class="bi bi-building"></i>
-                {{ i18n "Apply (organization)" }}
+                {{ i18n "Apply (org)" }}
               </a>
             </div>
           </div>
@@ -137,19 +140,36 @@
       </div>
     </section>
 
-    {{/* SECTION 4: Divider */}}
-    <div class="container">
-      <hr class="al-members-divider" />
-    </div>
-
     {{/* SECTION 5: Sponsor Membership */}}
-    <section class="al-foundation-band-deep al-py-lg">
+    <section class="al-py-lg">
       <div class="container">
-        <div class="text-center mb-5">
-          <h2>{{ i18n "Sponsor Membership" }}</h2>
-          <p>
-            {{ i18n "For companies & organizations contributing funding or resources. Annually renewed; reviewed by the Membership Committee." }}
-          </p>
+        <div class="row align-items-end mb-5 g-3 al-members-section-header">
+          <div class="col-md-6">
+            <h2 class="mb-0">{{ i18n "Sponsor Membership" }}</h2>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="mb-0">
+              {{ i18n "For companies & organizations contributing funding or resources. Annually renewed; reviewed by the Membership Committee." }}
+            </p>
+          </div>
+        </div>
+
+        <div class="al-members-platinum-strip">
+          <span class="label">{{ i18n "Our current Platinum sponsors" }}</span>
+          <a href="https://www.cloudlinux.com" target="_blank">
+            <img loading="lazy" src="/brands/cloudlinux.svg" alt="CloudLinux" />
+          </a>
+          <a href="https://www.cybertrust.co.jp/almalinux/" target="_blank">
+            <img
+              loading="lazy"
+              src="/brands/cybertrust-japan.svg"
+              alt="Cybertrust Japan" />
+          </a>
+          <a href="https://tuxcare.com/" target="_blank">
+            <img
+              src="/brands/TuxCare_Horizontal_Logo_NoTagLine_White.svg"
+              alt="TuxCare" />
+          </a>
         </div>
 
         <div class="al-members-matrix">
@@ -163,74 +183,82 @@
             </div>
           </div>
           <div class="head" data-tier="silver">
-            <img
-              src="/membership-images/pin-silver.svg"
-              alt=""
-              width="36"
-              height="48" />
+            <a href="/membership-images/pin-silver.svg" target="_blank">
+              <img
+                src="/membership-images/pin-silver.svg"
+                alt=""
+                width="36"
+                height="48" />
+            </a>
             <div class="nm">{{ i18n "Silver" }}</div>
             <div class="pr">$2,500</div>
             <div class="or">
               {{ i18n "/yr — or hardware / services equivalent" }}
             </div>
-            <div class="vt">{{ i18n "5 votes / seat" }}</div>
+            <div class="vt">{{ i18n "5-vote ballot" }}</div>
           </div>
           <div class="head" data-tier="ruby">
-            <img
-              src="/membership-images/pin-ruby.svg"
-              alt=""
-              width="36"
-              height="48" />
+            <a href="/membership-images/pin-ruby.svg" target="_blank">
+              <img
+                src="/membership-images/pin-ruby.svg"
+                alt=""
+                width="36"
+                height="48" />
+            </a>
             <div class="nm">{{ i18n "Ruby" }}</div>
             <div class="pr">$5,000</div>
             <div class="or">
               {{ i18n "/yr — or hardware / services equivalent" }}
             </div>
-            <div class="vt">{{ i18n "5 votes / seat" }}</div>
+            <div class="vt">{{ i18n "5-vote ballot" }}</div>
           </div>
           <div class="head" data-tier="gold">
-            <img
-              src="/membership-images/pin-gold.svg"
-              alt=""
-              width="36"
-              height="48" />
+            <a href="/membership-images/pin-gold.svg" target="_blank">
+              <img
+                src="/membership-images/pin-gold.svg"
+                alt=""
+                width="36"
+                height="48" />
+            </a>
             <div class="nm">{{ i18n "Gold" }}</div>
             <div class="pr">$20,000</div>
             <div class="or">
               {{ i18n "/yr — or 1 dedicated FTE / hardware / service credits" }}
             </div>
-            <div class="vt">{{ i18n "15 votes / seat" }}</div>
+            <div class="vt">{{ i18n "15-vote ballot" }}</div>
           </div>
           <div class="head is-platinum" data-tier="platinum">
-            <img
-              src="/membership-images/pin-platinum.svg"
-              alt=""
-              width="36"
-              height="48" />
+            <a href="/membership-images/pin-platinum.svg" target="_blank">
+              <img
+                src="/membership-images/pin-platinum.svg"
+                alt=""
+                width="36"
+                height="48" />
+            </a>
             <div class="nm">{{ i18n "Platinum" }}</div>
             <div class="pr">$100,000</div>
             <div class="or">
               {{ i18n "/yr — or 3 dedicated FTEs working on AlmaLinux" }}
             </div>
-            <div class="vt">{{ i18n "50 votes / seat" }}</div>
+            <div class="vt">{{ i18n "50-vote ballot" }}</div>
           </div>
 
           {{/* GROUP: Voting & Governance */}}
           <div class="group-row">{{ i18n "Voting & Governance" }}</div>
           <div class="cell lbl">{{ i18n "Nominate board candidates" }}</div>
           <div class="cell center" data-tier="silver">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell center" data-tier="ruby">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell center" data-tier="gold">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell center" data-tier="platinum">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
-          <div class="cell lbl">{{ i18n "Votes per open board seat" }}</div>
+          <div class="cell lbl">{{ i18n "Votes per ballot" }}</div>
           <div class="cell center" data-tier="silver">
             <span class="num">5</span>
           </div>
@@ -259,13 +287,13 @@
           </div>
           <div class="cell lbl">{{ i18n "Group press release" }}</div>
           <div class="cell center" data-tier="silver">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell center" data-tier="ruby">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell center" data-tier="gold">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell center" data-tier="platinum">
             {{ i18n "Dedicated PR" }}
@@ -298,16 +326,16 @@
           </div>
           <div class="cell lbl">{{ i18n "Events on community calendar" }}</div>
           <div class="cell center" data-tier="silver">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell center" data-tier="ruby">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell center" data-tier="gold">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell center" data-tier="platinum">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell lbl">{{ i18n "Priority event sponsorship" }}</div>
           <div class="cell center" data-tier="silver">
@@ -317,22 +345,22 @@
             <span class="dash"></span>
           </div>
           <div class="cell center" data-tier="gold">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell center" data-tier="platinum">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell lbl">
             {{ i18n "Round-up blog post for new members" }}
           </div>
           <div class="cell center" data-tier="silver">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell center" data-tier="ruby">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell center" data-tier="gold">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell center" data-tier="platinum">
             <span class="dash"></span>
@@ -344,13 +372,13 @@
             <span class="dash"></span>
           </div>
           <div class="cell center" data-tier="ruby">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell center" data-tier="gold">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell center" data-tier="platinum">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell lbl">
             {{ i18n "Social media support (Linux content)" }}
@@ -362,10 +390,10 @@
             <span class="dash"></span>
           </div>
           <div class="cell center" data-tier="gold">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell center" data-tier="platinum">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
 
           {{/* GROUP: Technical Benefits */}}
@@ -377,13 +405,13 @@
             <span class="dash"></span>
           </div>
           <div class="cell center" data-tier="ruby">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell center" data-tier="gold">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell center" data-tier="platinum">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell lbl">
             {{ i18n "Direct access to AlmaLinux execs / advance info" }}
@@ -398,7 +426,7 @@
             <span class="dash"></span>
           </div>
           <div class="cell center" data-tier="platinum">
-            <span class="check"></span>
+            <i class="bi bi-check-circle-fill check"></i>
           </div>
 
           {{/* FOOTER row: Apply CTAs */}}
@@ -431,58 +459,13 @@
             <div class="cta-cell">
               <a
                 href="https://accounts.almalinux.org/organizations/"
-                class="btn btn-primary btn-sm"
+                class="btn btn-warning btn-sm"
                 target="_blank">
                 {{ i18n "Apply Platinum" }}
               </a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    {{/* SECTION 6: Current Platinum sponsors strip */}}
-    <section class="al-py-md">
-      <div class="container">
-        <div class="al-members-platinum-strip">
-          <span class="label">{{ i18n "Our current Platinum sponsors" }}</span>
-          <a href="https://www.cloudlinux.com" target="_blank">
-            <img loading="lazy" src="/brands/cloudlinux.svg" alt="CloudLinux" />
-          </a>
-          <a href="https://www.cybertrust.co.jp/almalinux/" target="_blank">
-            <img
-              loading="lazy"
-              src="/brands/cybertrust-japan.svg"
-              alt="Cybertrust Japan" />
-          </a>
-          <a href="https://tuxcare.com/" target="_blank">
-            <img
-              src="/brands/TuxCare_Horizontal_Logo_NoTagLine_White.svg"
-              alt="TuxCare" />
-          </a>
-        </div>
-      </div>
-    </section>
-
-    {{/* SECTION 7: Footer note */}}
-    <section class="al-py-md text-center">
-      <div class="container">
-        <p class="small text-muted">
-          {{ i18n "All information pulled directly from the" }}
-          <a href="/p/foundation-bylaws/"
-            >{{ i18n "AlmaLinux OS Foundation Bylaws" }}</a
-          >
-          {{ i18n "and the" }}
-          <a
-            href="https://docs.google.com/document/d/1TGYu9Ga8oqIN16RxUQzqbFJZTImy5EQDO1tOhq4ymGw/edit?tab=t.0#heading=h.wpc7akebv4b"
-            target="_blank"
-            >{{ i18n "expanded membership document adopted in April 2024" }}</a
-          >.
-          {{ i18n "Questions?" }}
-          <a href="mailto:membership@almalinux.org"
-            >{{ i18n "Email the membership committee" }}</a
-          >.
-        </p>
       </div>
     </section>
   </main>

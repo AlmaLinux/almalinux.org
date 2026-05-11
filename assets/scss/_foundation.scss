@@ -76,6 +76,15 @@ $al-tier-platinum:   $al-c-candlelight;
     margin-bottom: 0.75rem;
   }
 
+  .al-foundation-award-eyebrow {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $al-c-candlelight;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+  }
+
   // When the card is itself an <a> (Foundations we belong to)
   &:is(a) {
     display: block;
@@ -92,7 +101,8 @@ $al-tier-platinum:   $al-c-candlelight;
   position: relative;
   background: $al-foundation-card-bg;
   border-radius: 6px;
-  padding: 1.25rem 1rem;
+  border-top: 3px solid var(--tier-accent);
+  padding: calc(1.25rem - 3px) 1rem 1.25rem;
 
   .who {
     font-size: 0.6rem;
@@ -111,6 +121,7 @@ $al-tier-platinum:   $al-c-candlelight;
     .name {
       font-size: 1rem;
       font-weight: 700;
+      color: var(--tier-accent);
     }
 
     .price {

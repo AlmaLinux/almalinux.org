@@ -7,15 +7,28 @@
   min-width: 120px;
 }
 
-// Members page tokens reuse the foundation page's palette so the two pages
-// read as a coherent pair.
-$al-members-card-bg: rgb(14, 59, 92);
-$al-members-divider: rgba(196, 225, 255, 0.18);
+// Sections sit on the page's default mid-blue body background; cards and
+// the matrix go a shade darker for visual depth. Border uses the link-blue
+// tint at low opacity for the muted teal/cyan outline.
+$al-members-card-bg:     #0e3b5c;
+$al-members-card-border: rgba(196, 225, 255, 0.22);
 
-.al-members-divider {
-  border: 0;
-  border-top: 1px solid $al-members-divider;
-  margin: 2rem 0;
+.al-members-section-header {
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid $al-members-card-border;
+}
+
+.al-members-hero-placeholder {
+  aspect-ratio: 4 / 3;
+  border: 1px dashed rgba(196, 225, 255, 0.28);
+  border-radius: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: rgba(196, 225, 255, 0.5);
 }
 
 .al-members-spotlight {
@@ -30,8 +43,9 @@ $al-members-divider: rgba(196, 225, 255, 0.18);
 
 .al-members-spotlight-card {
   background: $al-members-card-bg;
-  border-radius: 8px;
-  padding: 1.75rem;
+  border: 1px solid $al-members-card-border;
+  border-radius: 10px;
+  padding: 2rem;
 
   .eyebrow {
     font-size: 0.7rem;
@@ -42,8 +56,14 @@ $al-members-divider: rgba(196, 225, 255, 0.18);
     font-weight: 700;
   }
 
-  &.indiv  { --accent: #c4e1ff; }
-  &.mirror { --accent: #86da2f; }
+  &.indiv {
+    --accent: #86da2f;
+    background: linear-gradient(135deg, rgba(134, 218, 47, 0.22), transparent 55%), $al-members-card-bg;
+  }
+  &.mirror {
+    --accent: #ffcb12;
+    background: linear-gradient(135deg, rgba(255, 203, 18, 0.22), transparent 55%), $al-members-card-bg;
+  }
 
   img {
     border-radius: 0.6rem;
@@ -61,10 +81,10 @@ $al-members-divider: rgba(196, 225, 255, 0.18);
     > div {
       flex: 1;
       min-width: 6rem;
-      border: 1px solid rgba(196, 225, 255, 0.18);
+      border: 1px solid $al-members-card-border;
       border-radius: 4px;
       padding: 0.6rem 0.85rem;
-      background: rgba(0, 0, 0, 0.15);
+      background: $al-c-black-pearl;
 
       b {
         display: block;
@@ -95,34 +115,48 @@ $al-members-divider: rgba(196, 225, 255, 0.18);
   display: grid;
   grid-template-columns: 1.4fr repeat(4, 1fr);
   background: $al-members-card-bg;
-  border-radius: 8px;
+  border: 1px solid $al-members-card-border;
+  border-radius: 10px;
   overflow: hidden;
   margin-top: 1.5rem;
 
   .head {
-    padding: 1rem 0.85rem;
-    border-bottom: 2px solid $al-members-divider;
-    border-right: 1px solid rgba(196, 225, 255, 0.08);
+    padding: 1.25rem 1rem;
+    border-bottom: 1px solid $al-members-card-border;
+    border-right: 1px solid $al-members-card-border;
 
-    img {
-      width: 48px;
-      height: auto;
-      margin-bottom: 0.5rem;
+    &[data-tier] {
+      background: $al-c-black-pearl;
     }
 
-    .nm { font-weight: 700; font-size: 0.95rem; }
-    .pr { font-size: 1.15rem; font-weight: 700; }
+    a {
+      float: right;
+      margin-left: 0.5rem;
+    }
+
+    img {
+      width: 72px;
+      height: auto;
+      display: block;
+    }
+
+    .nm { font-weight: 700; font-size: 1rem; margin-bottom: 0.1rem; }
+    .pr { font-size: 1.25rem; font-weight: 700; }
     .or {
       font-size: 0.7rem;
       color: rgba(254, 254, 254, 0.6);
-      margin-bottom: 0.5rem;
+      margin: 0.25rem 0 0.75rem;
     }
     .vt {
       display: inline-block;
-      background: rgba(196, 225, 255, 0.1);
-      padding: 0.2rem 0.5rem;
-      border-radius: 3px;
-      font-size: 0.75rem;
+      background: rgba(196, 225, 255, 0.12);
+      color: rgba(254, 254, 254, 0.85);
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
 
     &--explain {
@@ -141,11 +175,32 @@ $al-members-divider: rgba(196, 225, 255, 0.18);
       }
     }
 
-    &.is-platinum {
-      background: rgba(255, 203, 18, 0.08);
-      border-left: 1px solid #ffcb12;
+    // Per-tier accent: name color + matching 3px top border
+    &[data-tier="silver"] {
+      border-top: 3px solid #14b8a6;
+      padding-top: calc(1.25rem - 3px);
+      .nm { color: #14b8a6; }
+    }
+    &[data-tier="ruby"] {
+      border-top: 3px solid #e0115f;
+      padding-top: calc(1.25rem - 3px);
+      .nm { color: #e0115f; }
+    }
+    &[data-tier="gold"] {
+      border-top: 3px solid #e9b94a;
+      padding-top: calc(1.25rem - 3px);
+      .nm { color: #e9b94a; }
+    }
 
-      .nm { color: #ffcb12; }
+    &.is-platinum {
+      // Yellow tint layered over the black-pearl tier background; the
+      // silvery-white border + name read as 'platinum the metal' while the
+      // yellow gradient + votes badge stay as the universal premium marker.
+      background: linear-gradient(rgba(255, 203, 18, 0.12), rgba(255, 203, 18, 0.12)), $al-c-black-pearl;
+      border-top: 3px solid #e8eef5;
+      padding-top: calc(1.25rem - 3px);
+
+      .nm { color: #e8eef5; }
       .vt {
         background: rgba(255, 203, 18, 0.2);
         color: #ffcb12;
@@ -155,34 +210,33 @@ $al-members-divider: rgba(196, 225, 255, 0.18);
 
   .group-row {
     grid-column: 1 / -1;
-    background: rgba(0, 0, 0, 0.3);
+    background: $al-body-background;
     color: #ffcb12;
     text-transform: uppercase;
-    font-size: 0.78rem;
-    letter-spacing: 0.1em;
-    padding: 0.75rem 1rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    padding: 0.6rem 1rem;
     font-weight: 700;
-    border-bottom: 1px solid rgba(255, 203, 18, 0.2);
+    border-top: 1px solid rgba(196, 225, 255, 0.08);
+    border-bottom: 1px solid rgba(196, 225, 255, 0.08);
   }
 
   .cell {
-    padding: 0.7rem 0.85rem;
-    border-bottom: 1px solid rgba(196, 225, 255, 0.08);
-    border-right: 1px solid rgba(196, 225, 255, 0.08);
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(196, 225, 255, 0.06);
+    border-right: 1px solid rgba(196, 225, 255, 0.06);
     font-size: 0.85rem;
 
     &.lbl   { color: rgba(254, 254, 254, 0.85); }
     &.center { text-align: center; }
   }
 
+  // Bootstrap Icons check-circle-fill — green icon, no background fill
   .check {
-    display: inline-block;
-    width: 1.2rem;
-    height: 1.2rem;
-    background: #86da2f;
-    border-radius: 50%;
+    color: #86da2f;
+    font-size: 1.35rem;
+    line-height: 1;
     vertical-align: middle;
-    box-shadow: 0 0 0 2px rgba(134, 218, 47, 0.15);
   }
 
   .dash {
@@ -198,19 +252,16 @@ $al-members-divider: rgba(196, 225, 255, 0.18);
     font-size: 1.05rem;
   }
 
-  // Highlight the entire Platinum column (header + every cell), not just the header
+  // Highlight the entire Platinum column (header + every cell)
   [data-tier="platinum"] {
     background: rgba(255, 203, 18, 0.06);
-  }
-  .head.is-platinum {
-    background: rgba(255, 203, 18, 0.1);
   }
 
   .footer-row {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: 1.4fr repeat(4, 1fr);
-    border-top: 2px solid $al-members-divider;
+    border-top: 1px solid $al-members-card-border;
     background: rgba(8, 35, 54, 0.4);
 
     .cta-cell {
@@ -227,7 +278,7 @@ $al-members-divider: rgba(196, 225, 255, 0.18);
 
     .head {
       border-right: none;
-      border-bottom: 2px solid $al-members-divider;
+      border-bottom: 1px solid $al-members-card-border;
 
       img { margin-bottom: 0.25rem; }
     }
@@ -249,10 +300,6 @@ $al-members-divider: rgba(196, 225, 255, 0.18);
       padding: 0.6rem 0.85rem;
     }
 
-    .group-row {
-      margin-top: 0.5rem;
-    }
-
     .footer-row {
       grid-template-columns: 1fr;
 
@@ -265,10 +312,11 @@ $al-members-divider: rgba(196, 225, 255, 0.18);
 .al-members-platinum-strip {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 2rem;
   flex-wrap: wrap;
   background: rgba(8, 35, 54, 0.6);
+  border: 1px solid $al-members-card-border;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
 
