@@ -272,7 +272,7 @@ To use a container-based development environment, install Docker and use an edit
 - `/content/` — Markdown content for site pages
 - `/data/` — Source data, currently only for the "Get AlmaLinux" page
 - `config.yaml` — Hugo configuration
-- `find_missing_i18n_strings.py` — Detects untranslated strings in `i18n/en.json`
+- `find_missing_i18n_strings.py` — Adds keys missing from `i18n/en.json` and removes keys no longer used in templates. Only touches `en.json`; non-English locale files are managed by Weblate.
 - `setup-pages-for-supported-languages.py` — Creates placeholder markdown pages for missing languages
 
 #### Fuzzy 404 Redirects
@@ -419,6 +419,8 @@ Once you figure out the issue and fix it, undo your changes to `.prettierrc` and
 ### Localization and Translation
 
 AlmaLinux.org translations are managed on [Weblate](https://hosted.weblate.org/engage/almalinux/). Submissions through Weblate generate automated PRs to this repo, which are reviewed and merged by the Marketing SIG or another team lead.
+
+**File ownership:** `i18n/en.json` is the source-of-truth and is managed in this repo — use `find_missing_i18n_strings.py` to keep it in sync with template usage. All other locale files (`es.json`, `de.json`, etc.) are owned by Weblate. Do not edit them directly or run any script that modifies them; doing so causes merge conflicts when Weblate pushes its translator commits back. Stale-key cleanup for non-English locales is handled automatically by Weblate's "Cleanup translation files" add-on (`weblate.cleanup.generic`).
 
 If you'd like to **contribute translations**, see the [translation guide on our Wiki](https://wiki.almalinux.org/Help-translating-site.html) — that page walks you through creating a Weblate account and translating strings.
 

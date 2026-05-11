@@ -1,10 +1,17 @@
 #!/usr/bin/env python3
 """Audit i18n/en.json against {{ i18n "..." }} usages in layouts/.
 
-Adds any keys referenced by templates but missing from en.json, removes any
-keys in en.json that no templates reference, and prunes the same stale keys
-from every other i18n/<lang>.json so translators don't see strings the site
-no longer uses.
+Adds any keys referenced by templates but missing from en.json, and removes
+any keys in en.json that no templates reference.
+
+Non-English locale files (es.json, de.json, etc.) are intentionally NOT
+modified by this script. Those files are owned by Weblate — editing them
+externally causes merge conflicts when Weblate pushes its translator commits
+back to the repo. Stale-key cleanup for non-English locales is handled on the
+Weblate side via its "Cleanup translation files" add-on
+(weblate.cleanup.generic), which runs post-update and keeps every locale in
+sync with en.json without touching the git working tree outside of Weblate's
+own commits.
 
 Run with --check to exit 1 without writing — useful in CI / pre-commit.
 """
@@ -57,28 +64,16 @@ def main():
     missing = sorted(used - en.keys())
     unused = sorted(en.keys() - used)
 
-    other_locales = []
-    for name in sorted(os.listdir(I18N_DIR)):
-        if not name.endswith('.json') or name == 'en.json':
-            continue
-        path = os.path.join(I18N_DIR, name)
-        data = load(path)
-        stale = sorted(set(data.keys()) - used)
-        if stale:
-            other_locales.append((path, data, stale))
-
-    has_changes = bool(missing or unused or other_locales)
+    has_changes = bool(missing or unused)
 
     for key in missing:
         print(f"Adding '{key}' to en.json")
     for key in unused:
         print(f"Removing '{key}' from en.json")
-    for path, _data, stale in other_locales:
-        print(f"{os.path.basename(path)}: pruning {len(stale)} stale key(s)")
 
     if args.check:
         if has_changes:
-            print('\nfind_missing_i18n_strings.py would modify i18n/. Re-run without --check.')
+            print('\nfind_missing_i18n_strings.py would modify i18n/en.json. Re-run without --check.')
             sys.exit(1)
         return
 
@@ -90,11 +85,6 @@ def main():
     for key in unused:
         del en[key]
     dump(EN_PATH, en)
-
-    for path, data, stale in other_locales:
-        for key in stale:
-            del data[key]
-        dump(path, data)
 
 
 if __name__ == '__main__':
