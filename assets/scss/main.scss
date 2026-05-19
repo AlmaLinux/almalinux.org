@@ -179,6 +179,14 @@ button:focus, .btn:focus{
           text-decoration: underline;
           color: $al-c-candlelight-lighter;
         }
+
+        &.al-motd-event {
+          color: $al-c-atlantis;
+
+          &:hover {
+            color: $al-c-atlantis-lighter;
+          }
+        }
       }
     }
   }
@@ -507,4 +515,76 @@ a{
     position: sticky;
     top: 1rem;
   }
+}
+
+figcaption,
+.figure-caption {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.al-table-card {
+  background: #ffffff;
+  border: none;
+  border-top: 4px solid #24c2ff;
+  border-radius: 8px;
+  max-width: 340px;
+  float: right;
+  margin: 0.25rem 0 1rem 1.5rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+
+  th,
+  td {
+    border: none;
+    padding: 0.6rem 0.9rem;
+    color: #1c2535 !important; // override site-wide `th, td` !important rule
+  }
+
+  thead th {
+    color: #0e3b5c !important;
+    font-family: $al-font-family-accent;
+    font-weight: 600;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    background: rgba(36, 194, 255, 0.12);
+    border-bottom: 1px solid rgba(36, 194, 255, 0.35);
+  }
+
+  tbody tr:nth-of-type(even) td {
+    background: rgba(36, 194, 255, 0.04);
+  }
+
+  tbody tr + tr td {
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  a {
+    color: #0a5fb5;
+    text-decoration: none;
+
+    &:hover {
+      color: #24c2ff;
+      text-decoration: underline;
+    }
+  }
+
+  @media (max-width: 768px) {
+    float: none;
+    max-width: 100%;
+    margin: 1.5rem auto;
+  }
+}
+
+// Keep floated tables contained to their section
+.al-index-register .container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+hr {
+  clear: both;
 }
