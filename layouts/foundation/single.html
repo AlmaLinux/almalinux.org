@@ -123,20 +123,6 @@
             <div class="py-3 px-3 text-center al-member-item">
               <img
                 class="img-fluid rounded-circle mb-3 img-thumbnail"
-                src="/board/jesse.jpg"
-                alt="Jesse Asklund"
-                style="max-width: 130px;" />
-              <h5 class="mb-1">Jesse Asklund</h5>
-              <div class="small mb-1">
-                {{ i18n "Global head of Customer Experience" }}
-              </div>
-              <div class="small fw-light">WebPros</div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="py-3 px-3 text-center al-member-item">
-              <img
-                class="img-fluid rounded-circle mb-3 img-thumbnail"
                 src="/board/simon.jpg"
                 alt="Simon Phipps"
                 style="max-width: 130px;" />
@@ -169,18 +155,6 @@
               <h5 class="mb-1">Daniel Pearson</h5>
               <div class="small mb-1">{{ i18n "CEO" }}</div>
               <div class="small fw-light">KnownHost</div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="py-3 px-3 text-center al-member-item">
-              <img
-                class="img-fluid rounded-circle mb-3 img-thumbnail"
-                src="/board/JunYoshida.jpg"
-                alt="Jun Yoshida"
-                style="max-width: 130px;" />
-              <h5 class="mb-1">Jun Yoshida</h5>
-              <div class="small mb-1">{{ i18n "Corporate Officer" }}</div>
-              <div class="small fw-light">Cybertrust Japan</div>
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-3">
@@ -227,7 +201,7 @@
             <div class="al-foundation-info-card h-100">
               <h4>{{ i18n "Construction" }}</h4>
               <p>
-                {{ i18n "Up to 13 voting seats (nine currently). Four-year staggered terms. No employer holds more than one seat. Chair is elected by the board. Vacancies trigger a member vote, unless within three months of the next election." }}
+                {{ i18n "Up to 13 voting seats (six voting plus one non-voting invited expert currently). Four-year staggered terms. No employer holds more than one seat. Chair is elected by the board. Vacancies trigger a member vote, unless within three months of the next election." }}
               </p>
               <p class="mb-0">
                 <a href="/p/foundation-bylaws/#article-iv-board-of-directors"
@@ -253,7 +227,7 @@
             <div class="al-foundation-info-card h-100">
               <h4>{{ i18n "Operations" }}</h4>
               <p>
-                {{ i18n "Monthly board meetings. Public minutes published within 14 days. An annual member meeting." }}
+                {{ i18n "The board meets monthly on the second Tuesday of the month. The working agenda is shared and built openly over the course of each month, so members can see what's coming, and public minutes from each meeting are published within 14 days." }}
               </p>
               <p class="mb-0">
                 <a
@@ -271,18 +245,13 @@
     <section id="join" class="al-foundation-band-deep al-py-lg">
       <div class="container">
         <div class="row align-items-center mb-4">
-          <div class="col-lg-8">
+          <div class="col-12">
             <h2 class="al-foundation-section-title mb-3">
               {{ i18n "Membership" }}
             </h2>
             <p class="mb-0">
-              {{ i18n "Six classes of foundation membership, each with a vote in board elections. Pick the one that fits how you support AlmaLinux." }}
+              {{ i18n "Six classes of foundation membership, all of them vote in board elections. Pick the one that fits how you support AlmaLinux." }}
             </p>
-          </div>
-          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
-            <a href="/members/" class="btn btn-primary">
-              {{ i18n "See full membership page →" }}
-            </a>
           </div>
         </div>
 
@@ -296,11 +265,9 @@
                 <span class="name">{{ i18n "Individual" }}</span>
                 <span class="price">{{ i18n "Free" }}</span>
               </div>
-              <div class="votes">{{ i18n "1-vote ballot" }}</div>
               <ul class="perks">
                 <li>{{ i18n "Vote in elections" }}</li>
                 <li>{{ i18n "Nominate or be nominated to run" }}</li>
-                <li>{{ i18n "Members-only forum" }}</li>
               </ul>
             </div>
           </div>
@@ -314,11 +281,9 @@
                 <span class="name">{{ i18n "Mirror" }}</span>
                 <span class="price">{{ i18n "In-kind" }}</span>
               </div>
-              <div class="votes">{{ i18n "1-vote ballot" }}</div>
               <ul class="perks">
-                <li>{{ i18n "Listed on mirror map" }}</li>
-                <li>{{ i18n "Vote in elections" }}</li>
-                <li>{{ i18n "Bandwidth contribution counts" }}</li>
+                <li>{{ i18n "Listed on mirror list" }}</li>
+                <li>{{ i18n "Official AlmaLinux mirror logo" }}</li>
               </ul>
             </div>
           </div>
@@ -327,16 +292,17 @@
             <div
               class="al-foundation-tier h-100"
               style="--tier-accent: #14b8a6;">
-              <div class="who">{{ i18n "Starter sponsor" }}</div>
+              <div class="who">{{ i18n "Startup or Non-profit sponsor" }}</div>
               <div class="head">
                 <span class="name">{{ i18n "Silver" }}</span>
                 <span class="price">{{ i18n "$2,500/yr" }}</span>
               </div>
-              <div class="votes">{{ i18n "5-vote ballot" }}</div>
               <ul class="perks">
-                <li>{{ i18n "Logo on sponsors page" }}</li>
-                <li>{{ i18n "Quarterly briefing" }}</li>
-                <li>{{ i18n "Newsletter shout-out" }}</li>
+                <li>{{ i18n "Press/blog coverage" }}</li>
+                <li>
+                  {{ i18n "Logo on AlmaLinux.org and promotional materials" }}
+                </li>
+                <li>{{ i18n "AlmaLinux member logo for your site" }}</li>
               </ul>
             </div>
           </div>
@@ -350,11 +316,12 @@
                 <span class="name">{{ i18n "Ruby" }}</span>
                 <span class="price">{{ i18n "$5,000/yr" }}</span>
               </div>
-              <div class="votes">{{ i18n "5-vote ballot" }}</div>
               <ul class="perks">
                 <li>{{ i18n "Kernel module signing" }}</li>
-                <li>{{ i18n "Logo on sponsors page" }}</li>
-                <li>{{ i18n "Co-marketing on case studies" }}</li>
+                <li>
+                  {{ i18n "Logo on AlmaLinux.org and promotional materials" }}
+                </li>
+                <li>{{ i18n "AlmaLinux member logo for your site" }}</li>
               </ul>
             </div>
           </div>
@@ -368,13 +335,10 @@
                 <span class="name">{{ i18n "Gold" }}</span>
                 <span class="price">{{ i18n "$20,000/yr" }}</span>
               </div>
-              <div class="votes">{{ i18n "15-vote ballot" }}</div>
               <ul class="perks">
                 <li>{{ i18n "Larger logo placement" }}</li>
-                <li>{{ i18n "Roadmap input sessions" }}</li>
-                <li>
-                  {{ i18n "Eligible to lead working groups / committees" }}
-                </li>
+                <li>{{ i18n "Sponsored webinar (1/yr)" }}</li>
+                <li>{{ i18n "Sponsored blog posts (up to 4/yr)" }}</li>
               </ul>
             </div>
           </div>
@@ -389,20 +353,27 @@
                 <span class="name">{{ i18n "Platinum" }}</span>
                 <span class="price">{{ i18n "$100,000/yr" }}</span>
               </div>
-              <div class="votes">{{ i18n "50-vote ballot" }}</div>
               <ul class="perks">
                 <li>{{ i18n "Premier logo placement" }}</li>
-                <li>{{ i18n "Dedicated foundation liaison" }}</li>
                 <li>{{ i18n "Co-branded press & events" }}</li>
-                <li>{{ i18n "Priority on roadmap discussions" }}</li>
+                <li>{{ i18n "Direct access to AlmaLinux Leadership" }}</li>
               </ul>
             </div>
           </div>
         </div>
 
-        <p class="small mt-4 mb-0" style="color: rgba(254, 254, 254, 0.65);">
-          {{ i18n "One company, one voting board seat — regardless of tier. Higher tiers carry more weight per board-seat election, not more seats." }}
-        </p>
+        <div class="row align-items-center mt-4">
+          <div class="col-md-8">
+            <p class="small mb-0" style="color: rgba(254, 254, 254, 0.65);">
+              {{ i18n "Every membership category — Individual, Mirror, Silver, Ruby, Gold, and Platinum — can vote in board elections and nominate or be nominated for the board." }}
+            </p>
+          </div>
+          <div class="col-md-4 text-md-end mt-3 mt-md-0">
+            <a href="/members/" class="btn btn-primary">
+              {{ i18n "See full membership page →" }}
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 

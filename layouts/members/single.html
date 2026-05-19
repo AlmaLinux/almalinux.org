@@ -60,8 +60,7 @@
                 <b>{{ i18n "Free" }}</b><span>{{ i18n "Membership fee" }}</span>
               </div>
               <div>
-                <b>{{ i18n "1 vote" }}</b
-                ><span>{{ i18n "per board seat" }}</span>
+                <b>{{ i18n "1 vote" }}</b><span>{{ i18n "per election" }}</span>
               </div>
               <div>
                 <b>{{ i18n "Annual" }}</b><span>{{ i18n "Re-qualified" }}</span>
@@ -69,11 +68,11 @@
             </div>
             <p class="small mb-2">
               <b>{{ i18n "Qualifies:" }}</b>
-              {{ i18n "anyone approved as a contributing member by the membership committee based on their contribution to the AlmaLinux project." }}
+              {{ i18n "anyone approved by the Membership Committee based on their contribution to the AlmaLinux project." }}
             </p>
             <p class="small">
               <b>{{ i18n "Benefits:" }}</b>
-              {{ i18n "nominate a board candidate · 1 vote per seat · listed on the contributing members page · contributing member AlmaLinux logo." }}
+              {{ i18n "nominate or be nominated to run · 1 vote per election · contributing member AlmaLinux logo." }}
             </p>
             <div class="ctas">
               <a
@@ -93,7 +92,7 @@
             </div>
             <h3>{{ i18n "Mirror Sponsor Member" }}</h3>
             <p class="lead">
-              {{ i18n "For those who support AlmaLinux by hosting any of the devices in our 400+ mirror network." }}
+              {{ i18n "For those who support AlmaLinux by hosting any of our 400+ mirrors." }}
             </p>
             <img
               src="/membership-images/mirrorheatmap.2024.08.png"
@@ -103,12 +102,10 @@
                 <b>{{ i18n "Free" }}</b><span>{{ i18n "Membership fee" }}</span>
               </div>
               <div>
-                <b>{{ i18n "1 vote" }}</b
-                ><span>{{ i18n "per board seat" }}</span>
+                <b>{{ i18n "1 vote" }}</b><span>{{ i18n "per election" }}</span>
               </div>
               <div>
-                <b>{{ i18n "Active" }}</b
-                ><span>{{ i18n "While mirror runs" }}</span>
+                <b>{{ i18n "Annual" }}</b><span>{{ i18n "Re-qualified" }}</span>
               </div>
             </div>
             <p class="small mb-2">
@@ -117,7 +114,7 @@
             </p>
             <p class="small">
               <b>{{ i18n "Benefits:" }}</b>
-              {{ i18n "nominate a board candidate · 1 vote per seat · listed as an official AlmaLinux mirror · official mirror logo." }}
+              {{ i18n "nominate or be nominated to run · 1 vote per election · listed as an official AlmaLinux mirror · official mirror logo." }}
             </p>
             <div class="ctas">
               <a
@@ -125,14 +122,14 @@
                 class="btn btn-primary al-member-apply-cta"
                 target="_blank">
                 <i class="bi bi-people-fill"></i>
-                {{ i18n "Apply (individual)" }}
+                {{ i18n "Apply (as individual)" }}
               </a>
               <a
                 href="https://accounts.almalinux.org/organizations/"
                 class="btn btn-warning al-member-apply-cta"
                 target="_blank">
                 <i class="bi bi-building"></i>
-                {{ i18n "Apply (org)" }}
+                {{ i18n "Apply (as organization)" }}
               </a>
             </div>
           </div>
@@ -258,7 +255,7 @@
           <div class="cell center" data-tier="platinum">
             <i class="bi bi-check-circle-fill check"></i>
           </div>
-          <div class="cell lbl">{{ i18n "Votes per ballot" }}</div>
+          <div class="cell lbl">{{ i18n "Votes per election" }}</div>
           <div class="cell center" data-tier="silver">
             <span class="num">5</span>
           </div>
@@ -366,6 +363,21 @@
             <span class="dash"></span>
           </div>
           <div class="cell lbl">
+            {{ i18n "Dedicated welcome blog post" }}
+          </div>
+          <div class="cell center" data-tier="silver">
+            <span class="dash"></span>
+          </div>
+          <div class="cell center" data-tier="ruby">
+            <span class="dash"></span>
+          </div>
+          <div class="cell center" data-tier="gold">
+            <span class="dash"></span>
+          </div>
+          <div class="cell center" data-tier="platinum">
+            <i class="bi bi-check-circle-fill check"></i>
+          </div>
+          <div class="cell lbl">
             {{ i18n "AlmaLinux member logo for your site" }}
           </div>
           <div class="cell center" data-tier="silver">
@@ -381,7 +393,7 @@
             <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell lbl">
-            {{ i18n "Social media support (Linux content)" }}
+            {{ i18n "Social re-shares to our community" }}
           </div>
           <div class="cell center" data-tier="silver">
             <span class="dash"></span>
@@ -414,7 +426,7 @@
             <i class="bi bi-check-circle-fill check"></i>
           </div>
           <div class="cell lbl">
-            {{ i18n "Direct access to AlmaLinux execs / advance info" }}
+            {{ i18n "Direct access to AlmaLinux Leadership" }}
           </div>
           <div class="cell center" data-tier="silver">
             <span class="dash"></span>

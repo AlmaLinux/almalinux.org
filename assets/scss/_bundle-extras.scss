@@ -127,7 +127,7 @@
 // Uses :has() so the partial doesn't need a tier class on the wrapper.
 .al-sponsor-tier-block:has(.is-platinum) .al-sponsor-tier-label { color: #e8eef5; }
 .al-sponsor-tier-block:has(.is-gold)     .al-sponsor-tier-label { color: #e9b94a; }
-.al-sponsor-tier-block:has(.is-ruby)     .al-sponsor-tier-label { color: #e0115f; }
+.al-sponsor-tier-block:has(.is-ruby)     .al-sponsor-tier-label { color: #ff6b9a; }
 .al-sponsor-tier-block:has(.is-silver)   .al-sponsor-tier-label { color: #14b8a6; }
 
 .al-sponsor-tier-logos {
