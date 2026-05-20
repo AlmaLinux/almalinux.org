@@ -30,16 +30,18 @@
           </div>
           <div class="col-lg-5">
             <div class="al-foundation-hero-collage">
-              <div
-                class="al-foundation-hero-frame al-foundation-hero-frame--main">
-                {{ i18n "Hero photo — group shot from a conference, booth, or community meetup" }}
-              </div>
-              <div class="al-foundation-hero-frame">
-                {{ i18n "Speaker / panel" }}
-              </div>
-              <div class="al-foundation-hero-frame">
-                {{ i18n "Booth / banner" }}
-              </div>
+              <img
+                class="al-foundation-hero-frame al-foundation-hero-frame--main"
+                src="/blog-images/2025/sc_2024.jpg"
+                alt="{{ i18n "AlmaLinux community members at the SC24 conference booth" }}" />
+              <img
+                class="al-foundation-hero-frame"
+                src="/foundation-images/ald-germany-2026.jpg"
+                alt="{{ i18n "A speaker presenting at AlmaLinux Day: Germany" }}" />
+              <img
+                class="al-foundation-hero-frame"
+                src="/foundation-images/ald-tokyo-2026-booth.jpg"
+                alt="{{ i18n "Attendees at the AlmaLinux booth at AlmaLinux Day: Tokyo" }}" />
             </div>
           </div>
         </div>
@@ -91,6 +93,12 @@
             >{{ i18n "the AlmaLinux Wiki" }}</a
           >.
         </p>
+        <p>
+          {{ i18n "Current term dates reflect the staggered four-year cohorts established by the amended bylaws adopted in April 2026, after the" }}
+          <a href="/blog/2025-09-30-election-update/"
+            >{{ i18n "2025 election was rescheduled" }}</a
+          >.
+        </p>
 
         <div class="row">
           <div class="col-xl-3 col-sm-6 mb-3">
@@ -105,6 +113,8 @@
                 {{ i18n "Chair, Board of Directors" }}
               </div>
               <div class="small fw-light">AlmaLinux OS Foundation</div>
+              <div class="small fw-light">{{ i18n "Elected" }} 2022</div>
+              <div class="small fw-light">{{ i18n "Term ends" }} 2029</div>
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-3">
@@ -117,6 +127,8 @@
               <h5 class="mb-1">Jack Aboutboul</h5>
               <div class="small mb-1">{{ i18n "Program Manager" }}</div>
               <div class="small fw-light">Microsoft Azure AOSI</div>
+              <div class="small fw-light">{{ i18n "Elected" }} 2022</div>
+              <div class="small fw-light">{{ i18n "Term ends" }} 2027</div>
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-3">
@@ -130,7 +142,8 @@
               <div class="small mb-1">
                 {{ i18n "Open source advocate, former president of OSI" }}
               </div>
-              <div class="small fw-light">&nbsp;</div>
+              <div class="small fw-light">{{ i18n "Elected" }} 2022</div>
+              <div class="small fw-light">{{ i18n "Term ends" }} 2027</div>
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-3">
@@ -143,6 +156,8 @@
               <h5 class="mb-1">Moshe Bar</h5>
               <div class="small mb-1">{{ i18n "CEO" }}</div>
               <div class="small fw-light">Codenotary Inc.</div>
+              <div class="small fw-light">{{ i18n "Elected" }} 2022</div>
+              <div class="small fw-light">{{ i18n "Term ends" }} 2028</div>
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-3">
@@ -155,6 +170,8 @@
               <h5 class="mb-1">Daniel Pearson</h5>
               <div class="small mb-1">{{ i18n "CEO" }}</div>
               <div class="small fw-light">KnownHost</div>
+              <div class="small fw-light">{{ i18n "Elected" }} 2022</div>
+              <div class="small fw-light">{{ i18n "Term ends" }} 2028</div>
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-3">
@@ -169,6 +186,8 @@
                 {{ i18n "Penguin Wrangler and Cloud Watcher" }}
               </div>
               <div class="small fw-light">CERN</div>
+              <div class="small fw-light">{{ i18n "Elected" }} 2023</div>
+              <div class="small fw-light">{{ i18n "Term ends" }} 2029</div>
             </div>
           </div>
           <div class="col-xl-3 col-sm-6 mb-3">
@@ -672,20 +691,35 @@
       <div class="container">
         <h2 class="mb-3">{{ i18n "Help us keep AlmaLinux free." }}</h2>
         <p class="lead mb-4">
-          {{ i18n "Become a member, sponsor the foundation, or contribute to the project — every path supports a free, community-governed Linux." }}
+          {{ i18n "Join the foundation, contribute to the project, or donate directly — every path supports a free, community-governed Linux." }}
         </p>
         <div class="d-grid gap-3 d-md-flex justify-content-md-center">
-          <a href="/members/" class="btn btn-primary btn-lg">
-            <i class="bi bi-people-fill"></i>
-            {{ i18n "Become a member" }}
-          </a>
-          <a
-            href="https://accounts.almalinux.org/organizations/"
-            class="btn btn-warning btn-lg">
-            {{ i18n "Sponsor the foundation" }}
+          <a href="/members/" class="btn btn-warning btn-lg">
+            {{ i18n "Join as a sponsor or individual member" }}
           </a>
           <a href="/contribute/" class="btn btn-primary btn-lg">
             {{ i18n "Contribute" }}
+          </a>
+        </div>
+        <p class="mt-4 mb-3">
+          {{ i18n "Prefer to give directly? Support the foundation with a one-time or recurring donation:" }}
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a
+            href="https://github.com/sponsors/AlmaLinux"
+            class="btn btn-outline-light"
+            target="_blank"
+            rel="noopener">
+            <i class="bi bi-github"></i>
+            {{ i18n "GitHub Sponsors" }}
+          </a>
+          <a
+            href="https://opencollective.com/almalinux-os-foundation"
+            class="btn btn-outline-light"
+            target="_blank"
+            rel="noopener">
+            <i class="bi bi-heart-fill"></i>
+            {{ i18n "Open Collective" }}
           </a>
         </div>
       </div>

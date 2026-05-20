@@ -18,19 +18,6 @@ $al-members-card-border: rgba(196, 225, 255, 0.22);
   border-bottom: 1px solid $al-members-card-border;
 }
 
-.al-members-hero-placeholder {
-  aspect-ratio: 4 / 3;
-  border: 1px dashed rgba(196, 225, 255, 0.28);
-  border-radius: 0.9rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.85rem;
-  color: rgba(196, 225, 255, 0.5);
-}
-
 .al-members-spotlight {
   display: grid;
   grid-template-columns: 1fr;
