@@ -111,10 +111,10 @@ Confirm with `uname -r` against the Kitten version listed below.
 
 Patched kernel versions:
 
-- AlmaLinux 8 is patched in `kernel-4.18.0-553.123.2.el8_10` and above
-- AlmaLinux 9 is patched in `kernel-5.14.0-611.54.3.el9_7` and above
-- AlmaLinux 10 is patched in `kernel-6.12.0-124.55.2.el10_1` and above
-- AlmaLinux Kitten 10 will be patched in the next regular kernel build; see the Kitten repo for the current version
+- AlmaLinux 8 is patched in `kernel-4.18.0-553.123.2.el8_10` and above ([ALSA-2026:A004](https://errata.almalinux.org/8/ALSA-2026-A004.html))
+- AlmaLinux 9 is patched in `kernel-5.14.0-611.54.3.el9_7` and above ([ALSA-2026:A005](https://errata.almalinux.org/9/ALSA-2026-A005.html))
+- AlmaLinux 10 is patched in `kernel-6.12.0-124.55.3.el10_1` and above ([ALSA-2026:A006](https://errata.almalinux.org/10/ALSA-2026-A006.html))
+- AlmaLinux Kitten 10 is patched in `kernel-6.12.0-226.el10` and above
 
 ## Temporary mitigation if you cannot reboot yet
 
@@ -147,6 +147,8 @@ Thanks to the AlmaLinux core team for turning around patched builds for every su
 Remaining aware of these vulnerabilities and acting quickly can keep your system and data safe. Follow the AlmaLinux Blog, join the [Mattermost Community Chat](https://chat.almalinux.org/), and subscribe to [Announce](https://lists.almalinux.org/mailman3/lists/announce.lists.almalinux.org/) and [Security Mailing List](https://lists.almalinux.org/mailman3/lists/security.lists.almalinux.org/) to stay informed and updated. We will update this post when the patched kernels move from testing to production.
 
 ## Changelog
+
+- **2026-05-08:** AlmaLinux errata published on 2026-05-08 for the CVE-2026-43284 (IPsec ESP) fix: [ALSA-2026:A004](https://errata.almalinux.org/8/ALSA-2026-A004.html) (AlmaLinux 8), [ALSA-2026:A005](https://errata.almalinux.org/9/ALSA-2026-A005.html) (AlmaLinux 9), and [ALSA-2026:A006](https://errata.almalinux.org/10/ALSA-2026-A006.html) (AlmaLinux 10). Added the errata references to the "Affected versions and patched kernels" section. The AlmaLinux 10 NVR listed in that section was also corrected to `kernel-6.12.0-124.55.3.el10_1`, the combined-fix build that shipped to production.
 
 - **2026-05-08 15:22 UTC** — Patched kernels released to the AlmaLinux production repositories. Added a notice at the top of the post directing readers to `sudo dnf clean metadata && sudo dnf upgrade` instead of the testing-repo flow described below. Post title updated to reflect release.
 
