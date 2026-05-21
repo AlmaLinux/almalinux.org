@@ -6,14 +6,6 @@ $al-foundation-divider:   #14598a;
 $al-foundation-card-bg:   rgb(14, 59, 92);
 $al-foundation-pullquote-accent: $al-c-atlantis; // #86da2f
 
-// Tier accents (applied as inline --tier-accent CSS custom property)
-$al-tier-individual: $al-link-color;   // #c4e1ff
-$al-tier-mirror:     $al-c-atlantis;   // #86da2f
-$al-tier-silver:     #b8c5d1;
-$al-tier-ruby:       #e0115f;
-$al-tier-gold:       $al-c-candlelight; // #ffcb12
-$al-tier-platinum:   $al-c-candlelight;
-
 // Band utility — body background already covers the mid band, deep is opt-in
 .al-foundation-band-deep {
   background: $al-foundation-band-deep;
@@ -92,85 +84,84 @@ $al-tier-platinum:   $al-c-candlelight;
   }
 }
 
-.al-foundation-tier {
-  position: relative;
-  background: $al-foundation-card-bg;
+// Partner/foundation logos shown in place of a text headline
+.al-foundation-org-logo {
+  display: block;
+  max-height: 60px;
+  max-width: 100%;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+.al-foundation-membership-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.13);
   border-radius: 6px;
-  border-top: 3px solid var(--tier-accent);
-  padding: calc(1.25rem - 3px) 1rem 1.25rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
 
-  .who {
-    font-size: 0.6rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--tier-accent);
-    margin-bottom: 0.4rem;
+  .btn {
+    margin-top: auto;
+    align-self: flex-start;
   }
+}
 
-  .head {
+.al-foundation-membership-tiers {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 1.25rem;
+  columns: 2;
+  column-gap: 1.25rem;
+
+  li {
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
-
-    .name {
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--tier-accent);
-    }
-
-    .price {
-      font-size: 0.72rem;
-      color: rgba(254, 254, 254, 0.65);
-    }
+    align-items: center;
+    gap: 0.45rem;
+    margin-bottom: 0.4rem;
+    break-inside: avoid;
   }
 
-  .votes {
-    font-size: 0.85rem;
-    padding-bottom: 0.6rem;
-    margin-bottom: 0.6rem;
-    border-bottom: 1px dashed rgba(196, 225, 255, 0.2);
+  .dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    flex: none;
   }
 
-  ul.perks {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-    font-size: 0.8rem;
-
-    li {
-      position: relative;
-      padding-left: 0.9rem;
-      margin-bottom: 0.3rem;
-
-      &::before {
-        content: "•";
-        color: var(--tier-accent);
-        position: absolute;
-        left: 0;
-        top: -0.05em;
-      }
-    }
-  }
-
-  &.is-featured {
-    background: linear-gradient(180deg, rgba(255, 203, 18, 0.08), $al-foundation-card-bg 60%);
-    box-shadow: 0 0 0 1px rgba(255, 203, 18, 0.15), 0 8px 24px rgba(0, 0, 0, 0.25);
-  }
-
-  .ribbon {
-    position: absolute;
-    top: -0.55rem;
-    right: 0.7rem;
-    background: $al-c-candlelight;
-    color: #000;
-    font-size: 0.65rem;
+  .name {
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    padding: 0.15rem 0.5rem;
-    border-radius: 3px;
   }
+
+  .price {
+    margin-left: auto;
+    color: rgba(254, 254, 254, 0.6);
+  }
+}
+
+.al-foundation-membership-video {
+  display: block;
+  border-radius: 6px;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.15s ease;
+  }
+
+  &:hover img {
+    opacity: 0.88;
+  }
+}
+
+.al-foundation-membership-caption {
+  margin-top: 0.6rem;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: rgba(254, 254, 254, 0.65);
 }
 
 .al-foundation-downstream {

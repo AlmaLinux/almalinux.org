@@ -263,134 +263,66 @@
     {{/* SECTION 6: Membership */}}
     <section id="join" class="al-foundation-band-deep al-py-lg">
       <div class="container">
-        <div class="row align-items-center mb-4">
-          <div class="col-12">
-            <h2 class="al-foundation-section-title mb-3">
-              {{ i18n "Membership" }}
-            </h2>
-            <p class="mb-0">
-              {{ i18n "Six classes of foundation membership, all of them vote in board elections. Pick the one that fits how you support AlmaLinux." }}
-            </p>
-          </div>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-md-6 col-xl-2">
-            <div
-              class="al-foundation-tier h-100"
-              style="--tier-accent: #86da2f;">
-              <div class="who">{{ i18n "For people" }}</div>
-              <div class="head">
-                <span class="name">{{ i18n "Individual" }}</span>
-                <span class="price">{{ i18n "Free" }}</span>
-              </div>
-              <ul class="perks">
-                <li>{{ i18n "Vote in elections" }}</li>
-                <li>{{ i18n "Nominate or be nominated to run" }}</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-xl-2">
-            <div
-              class="al-foundation-tier h-100"
-              style="--tier-accent: #ffcb12;">
-              <div class="who">{{ i18n "For mirror hosts" }}</div>
-              <div class="head">
-                <span class="name">{{ i18n "Mirror" }}</span>
-                <span class="price">{{ i18n "In-kind" }}</span>
-              </div>
-              <ul class="perks">
-                <li>{{ i18n "Listed on mirror list" }}</li>
-                <li>{{ i18n "Official AlmaLinux mirror logo" }}</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-xl-2">
-            <div
-              class="al-foundation-tier h-100"
-              style="--tier-accent: #14b8a6;">
-              <div class="who">{{ i18n "Startup or Non-profit sponsor" }}</div>
-              <div class="head">
-                <span class="name">{{ i18n "Silver" }}</span>
-                <span class="price">{{ i18n "$2,500/yr" }}</span>
-              </div>
-              <ul class="perks">
-                <li>{{ i18n "Press/blog coverage" }}</li>
+        <h2 class="al-foundation-section-title mb-4">
+          {{ i18n "Become a member — Help sustain and steer AlmaLinux" }}
+        </h2>
+        <div class="row g-4 align-items-stretch">
+          <div class="col-12 col-lg-6">
+            <div class="al-foundation-membership-card h-100">
+              <p>
+                {{ i18n "Membership is how people and organizations keep AlmaLinux independent — and shape where it goes. Every member can vote in board elections and be nominated for the board; sponsors also gain logo placement, press coverage, and more. Six tiers:" }}
+              </p>
+              <ul class="al-foundation-membership-tiers">
                 <li>
-                  {{ i18n "Logo on AlmaLinux.org and promotional materials" }}
+                  <span class="dot" style="background: #c4e1ff;"></span>
+                  <span class="name">{{ i18n "Individual" }}</span>
+                  <span class="price">{{ i18n "Free" }}</span>
                 </li>
-                <li>{{ i18n "AlmaLinux member logo for your site" }}</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-xl-2">
-            <div
-              class="al-foundation-tier h-100"
-              style="--tier-accent: #e0115f;">
-              <div class="who">{{ i18n "Mid-tier sponsor" }}</div>
-              <div class="head">
-                <span class="name">{{ i18n "Ruby" }}</span>
-                <span class="price">{{ i18n "$5,000/yr" }}</span>
-              </div>
-              <ul class="perks">
-                <li>{{ i18n "Kernel module signing" }}</li>
                 <li>
-                  {{ i18n "Logo on AlmaLinux.org and promotional materials" }}
+                  <span class="dot" style="background: #86da2f;"></span>
+                  <span class="name">{{ i18n "Mirror" }}</span>
+                  <span class="price">{{ i18n "In-kind" }}</span>
                 </li>
-                <li>{{ i18n "AlmaLinux member logo for your site" }}</li>
+                <li>
+                  <span class="dot" style="background: #14b8a6;"></span>
+                  <span class="name">{{ i18n "Silver" }}</span>
+                  <span class="price">{{ i18n "$2,500/yr" }}</span>
+                </li>
+                <li>
+                  <span class="dot" style="background: #ff6e71;"></span>
+                  <span class="name">{{ i18n "Ruby" }}</span>
+                  <span class="price">{{ i18n "$5,000/yr" }}</span>
+                </li>
+                <li>
+                  <span class="dot" style="background: #e9b94a;"></span>
+                  <span class="name">{{ i18n "Gold" }}</span>
+                  <span class="price">{{ i18n "$20,000/yr" }}</span>
+                </li>
+                <li>
+                  <span class="dot" style="background: #e8eef5;"></span>
+                  <span class="name">{{ i18n "Platinum" }}</span>
+                  <span class="price">{{ i18n "$100,000/yr" }}</span>
+                </li>
               </ul>
+              <a href="/members/" class="btn btn-primary">
+                {{ i18n "Explore membership options →" }}
+              </a>
             </div>
           </div>
-
-          <div class="col-md-6 col-xl-2">
-            <div
-              class="al-foundation-tier h-100"
-              style="--tier-accent: #e9b94a;">
-              <div class="who">{{ i18n "Strategic sponsor" }}</div>
-              <div class="head">
-                <span class="name">{{ i18n "Gold" }}</span>
-                <span class="price">{{ i18n "$20,000/yr" }}</span>
-              </div>
-              <ul class="perks">
-                <li>{{ i18n "Larger logo placement" }}</li>
-                <li>{{ i18n "Sponsored webinar (1/yr)" }}</li>
-                <li>{{ i18n "Sponsored blog posts (up to 4/yr)" }}</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-xl-2">
-            <div
-              class="al-foundation-tier is-featured h-100"
-              style="--tier-accent: #e8eef5;">
-              <div class="ribbon">{{ i18n "Top tier" }}</div>
-              <div class="who">{{ i18n "Anchor sponsor" }}</div>
-              <div class="head">
-                <span class="name">{{ i18n "Platinum" }}</span>
-                <span class="price">{{ i18n "$100,000/yr" }}</span>
-              </div>
-              <ul class="perks">
-                <li>{{ i18n "Premier logo placement" }}</li>
-                <li>{{ i18n "Co-branded press & events" }}</li>
-                <li>{{ i18n "Direct access to AlmaLinux Leadership" }}</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="row align-items-center mt-4">
-          <div class="col-md-8">
-            <p class="small mb-0" style="color: rgba(254, 254, 254, 0.65);">
-              {{ i18n "Every membership category — Individual, Mirror, Silver, Ruby, Gold, and Platinum — can vote in board elections and nominate or be nominated for the board." }}
-            </p>
-          </div>
-          <div class="col-md-4 text-md-end mt-3 mt-md-0">
-            <a href="/members/" class="btn btn-primary">
-              {{ i18n "See full membership page →" }}
+          <div class="col-12 col-lg-6">
+            <a
+              href="https://www.youtube.com/live/D2QaUrt2DDo?t=33091"
+              class="al-foundation-membership-video"
+              target="_blank"
+              rel="noopener">
+              <img
+                src="/foundation-images/oss-not-a-spectator-sport.jpg"
+                alt="{{ i18n "Watch Joe Brockmeier's talk 'Open source is not a spectator sport' from Ohio LinuxFest 2023" }}"
+                loading="lazy" />
             </a>
+            <p class="al-foundation-membership-caption">
+              {{ i18n "“Open source is not a spectator sport” — Joe Brockmeier, Ohio LinuxFest, September 2023." }}
+            </p>
           </div>
         </div>
       </div>
@@ -419,7 +351,11 @@
               class="al-foundation-info-card h-100"
               target="_blank"
               rel="noopener">
-              <h4>FINOS</h4>
+              <img
+                src="/foundation-images/FINOS_Icon_Wordmark_White.webp"
+                alt="FINOS"
+                class="al-foundation-org-logo"
+                loading="lazy" />
               <p class="mb-0">
                 {{ i18n "Open-source foundation for the financial services industry. AlmaLinux is a member, expanding our reach into regulated environments." }}
               </p>
@@ -431,7 +367,11 @@
               class="al-foundation-info-card h-100"
               target="_blank"
               rel="noopener">
-              <h4>{{ i18n "Open Invention Network" }}</h4>
+              <img
+                src="/foundation-images/opennetworkinitiative.png"
+                alt="Open Invention Network"
+                class="al-foundation-org-logo"
+                loading="lazy" />
               <p class="mb-0">
                 {{ i18n "Defensive patent pool that shields Linux and adjacent open-source projects from patent threats." }}
               </p>
@@ -443,7 +383,11 @@
               class="al-foundation-info-card h-100"
               target="_blank"
               rel="noopener">
-              <h4>OpenHPC</h4>
+              <img
+                src="/foundation-images/openhpc-horizontal-color.svg"
+                alt="OpenHPC"
+                class="al-foundation-org-logo"
+                loading="lazy" />
               <p class="mb-0">
                 {{ i18n "Community for high-performance computing. AlmaLinux is the supported HPC base for many of OpenHPC's reference stacks." }}
               </p>
