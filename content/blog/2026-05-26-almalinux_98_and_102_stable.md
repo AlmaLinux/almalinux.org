@@ -57,7 +57,6 @@ Installation ISOs are available on the mirrors now for all supported architectur
 
 - [Intel/AMD (x86_64)](https://mirrors.almalinux.org/isos/x86_64/10.2.html)
 - [Intel/AMD (x86_64_v2)](https://mirrors.almalinux.org/isos/x86_64_v2/10.2.html)
-- [Intel/AMD 32-bit (i686)](https://mirrors.almalinux.org/isos/i686/10.2.html)
 - [ARM64 (aarch64)](https://mirrors.almalinux.org/isos/aarch64/10.2.html)
 - [IBM PowerPC (ppc64le)](https://mirrors.almalinux.org/isos/ppc64le/10.2.html)
 - [IBM Z (s390x)](https://mirrors.almalinux.org/isos/s390x/10.2.html)
