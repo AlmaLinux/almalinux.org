@@ -1,0 +1,33 @@
+{{ $logos := slice
+  (dict "src" "/usedby/akamai.svg" "alt" "Akamai")
+  (dict "src" "/usedby/arista.svg" "alt" "Arista")
+  (dict "src" "/usedby/coloradostateuniversity.svg" "alt" "Colorado State University")
+  (dict "src" "/usedby/globallayer.svg" "alt" "GlobalLayer")
+  (dict "src" "/usedby/hetzner.png" "alt" "Hetzner")
+  (dict "src" "/usedby/inmotion.svg" "alt" "InMotion Hosting")
+  (dict "src" "/usedby/phoronix.svg" "alt" "Phoronix")
+}}
+
+
+<div class="al-index-used-by al-py-lg">
+  <div class="container">
+    <h2 class="pb-2 text-center border-bottom">{{ i18n "Trusted by" }}</h2>
+    <div class="al-used-by-marquee" aria-label="{{ i18n "Trusted by" }}">
+      <div class="al-used-by-marquee-track">
+        {{ range $logos }}
+          <div class="al-used-by-marquee-item">
+            <img src="{{ .src }}" alt="{{ .alt }}" loading="lazy" />
+          </div>
+        {{ end }}
+        {{/* Duplicate set for a seamless loop; alt="" + aria-hidden so screen
+          readers don't announce each logo twice.
+        */}}
+        {{ range $logos }}
+          <div class="al-used-by-marquee-item" aria-hidden="true">
+            <img src="{{ .src }}" alt="" loading="lazy" />
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
