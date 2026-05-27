@@ -1,4 +1,18 @@
 {{ define "main" }}
+  <script>
+    // Must run before footer.html queues trackPageView, so the 404 hit is
+    // recorded with this rewritten title (filterable in Matomo under Page Titles).
+    window._paq = window._paq || [];
+    window._paq.push([
+      "setDocumentTitle",
+      "404/URL = " +
+        encodeURIComponent(
+          document.location.pathname + document.location.search,
+        ) +
+        " /From = " +
+        encodeURIComponent(document.referrer),
+    ]);
+  </script>
   <div class="container">
     <div class="py-5">
       <section
