@@ -93,6 +93,40 @@ def per_arch_url(config: dict, url_key: str, arch_value: str) -> str:
     return config.get(url_key, "")
 
 
+def artifact_sha256(artifacts: dict, key: str) -> str:
+    artifact = artifacts.get(key, "") if isinstance(artifacts, dict) else ""
+    if isinstance(artifact, dict):
+        return artifact.get("sha256", "")
+    return artifact or ""
+
+
+def artifact_full_version(artifacts: dict, key: str, default: str) -> str:
+    artifact = artifacts.get(key, {}) if isinstance(artifacts, dict) else {}
+    if isinstance(artifact, dict) and artifact.get("fullVersion"):
+        return str(artifact["fullVersion"])
+    return default
+
+
+def first_artifact_full_version(artifacts: dict, default: str) -> str:
+    if not isinstance(artifacts, dict):
+        return default
+    for artifact in artifacts.values():
+        if isinstance(artifact, dict) and artifact.get("fullVersion"):
+            return str(artifact["fullVersion"])
+    return default
+
+
+def version_full_version(version_checks: dict, default: str) -> str:
+    for arch_checks in version_checks.values():
+        if not isinstance(arch_checks, dict):
+            continue
+        for section_checks in arch_checks.values():
+            full_version = first_artifact_full_version(section_checks, "")
+            if full_version:
+                return full_version
+    return default
+
+
 def main() -> int:
     spec = load_yaml(SPEC_PATH)
     checksums = load_yaml(CHECKSUMS_PATH)
@@ -112,9 +146,8 @@ def main() -> int:
         vid = str(v_merged["id"])
         v_checks = versions_checks.get(vid, {}) or {}
 
-        # fullVersion now lives in the checksums file so there's a single
-        # place to bump when a new point release comes out.
-        full = str(v_checks.get("fullVersion", vid))
+        # Keep a version-level fallback for sections that are not checksum-backed.
+        full = version_full_version(v_checks, vid)
         label = v_merged.get("label", f"AlmaLinux {full}")
         major = vid
 
@@ -151,18 +184,21 @@ def main() -> int:
                     for name in variants_cfg:
                         name = str(name)
                         variant = name
-                        url = base.format(major=major, full=full, arch=arch_str, variant=variant)
+                        iso_full = artifact_full_version(iso_hashes, name, full)
+                        url = base.format(major=major, full=iso_full, arch=arch_str, variant=variant)
                         block = {
                             "id": name,
                             "variant": name.capitalize(),
+                            "fullVersion": iso_full,
                             "url": url,
-                            "sha256": iso_hashes.get(name, ""),
+                            "sha256": artifact_sha256(iso_hashes, name),
                         }
                         blocks.append(block)
 
                     mirrors_url_tmpl = iso_pat.get("mirrorsUrl", "")
                     torrent_url_tmpl = iso_pat.get("torrentUrl", "")
                     checksum_url_tmpl = iso_pat.get("checksumUrl", "")
+                    iso_section_full = first_artifact_full_version(iso_hashes, full)
 
                     iso_section = {
                         "id": "iso_images",
@@ -173,15 +209,15 @@ def main() -> int:
 
                     if mirrors_url_tmpl:
                         iso_section["mirrorsUrl"] = mirrors_url_tmpl.format(
-                            major=major, full=full, arch=arch_str
+                            major=major, full=iso_section_full, arch=arch_str
                         )
                     if torrent_url_tmpl:
                         iso_section["torrentUrl"] = torrent_url_tmpl.format(
-                            major=major, full=full, arch=arch_str
+                            major=major, full=iso_section_full, arch=arch_str
                         )
                     if checksum_url_tmpl:
                         iso_section["checksumUrl"] = checksum_url_tmpl.format(
-                            major=major, full=full, arch=arch_str
+                            major=major, full=iso_section_full, arch=arch_str
                         )
                     sections.append(iso_section)
 
@@ -194,21 +230,27 @@ def main() -> int:
                     azure = cloud_pat.get("azure", {})
                     openneb = cloud_pat.get("openNebula", {})
                     oci = cloud_pat.get("oci", {})
+                    generic_full = artifact_full_version(cloud_hashes, "genericCloud", full)
+                    openneb_full = artifact_full_version(cloud_hashes, "openNebula", full)
+                    cloud_full = generic_full if enabled_for_arch(generic, arch_str) else openneb_full
 
                     cloud_section = {
                         "id": "cloud_images",
                         "anchorPrefix": "Cloud_Images",
                         "title": "Cloud Images",
                         "aws": {
+                            "fullVersion": cloud_full,
                             "sellerProfileUrl": aws.get("sellerProfileUrl", ""),
                             "marketplaceUrl": per_arch_url(aws, "marketplaceUrls", arch_str),
                         } if enabled_for_arch(aws, arch_str) else {},
                         "genericCloud": {
-                            "imageUrl": generic.get("imageUrl", "").format(major=major, full=full, arch=arch_str),
-                            "checksumUrl": generic.get("checksumUrl", "").format(major=major, full=full, arch=arch_str),
-                            "sha256": cloud_hashes.get("genericCloud", ""),
+                            "fullVersion": generic_full,
+                            "imageUrl": generic.get("imageUrl", "").format(major=major, full=generic_full, arch=arch_str),
+                            "checksumUrl": generic.get("checksumUrl", "").format(major=major, full=generic_full, arch=arch_str),
+                            "sha256": artifact_sha256(cloud_hashes, "genericCloud"),
                         } if enabled_for_arch(generic, arch_str) else {},
                         "googleCloud": {
+                            "fullVersion": cloud_full,
                             "marketplaceBrowseUrl": google.get("marketplaceBrowseUrl", ""),
                             "productUrl": google.get("productUrl", "").format(major=major, full=full, arch=arch_str),
                         } if enabled_for_arch(google, arch_str) else {},
@@ -216,11 +258,13 @@ def main() -> int:
                             "marketplaceUrl": per_arch_url(azure, "marketplaceUrls", arch_str),
                         } if enabled_for_arch(azure, arch_str) else {},
                         "openNebula": {
-                            "imageUrl": openneb.get("imageUrl", "").format(major=major, full=full, arch=arch_str),
-                            "checksumUrl": openneb.get("checksumUrl", "").format(major=major, full=full, arch=arch_str),
-                            "sha256": cloud_hashes.get("openNebula", ""),
+                            "fullVersion": openneb_full,
+                            "imageUrl": openneb.get("imageUrl", "").format(major=major, full=openneb_full, arch=arch_str),
+                            "checksumUrl": openneb.get("checksumUrl", "").format(major=major, full=openneb_full, arch=arch_str),
+                            "sha256": artifact_sha256(cloud_hashes, "openNebula"),
                         } if enabled_for_arch(openneb, arch_str) else {},
                         "oci": {
+                            "fullVersion": cloud_full,
                             "marketplaceUrl": per_arch_url(oci, "marketplaceUrls", arch_str),
                             "partnerListingUrl": oci.get("partnerListingUrl", ""),
                         } if enabled_for_arch(oci, arch_str) else {},
@@ -303,6 +347,7 @@ def main() -> int:
                         "id": "incus_lxc",
                         "anchorPrefix": "Incus-LXC",
                         "title": "Incus and LXC",
+                        "fullVersion": full,
                         "url": base_url,
                     }
                     sections.append(incus_section)
@@ -338,7 +383,6 @@ def main() -> int:
         versions_out.append({
             "id": vid,
             "label": label,
-            "fullVersion": full,
             "arches": arches_out,
         })
 
