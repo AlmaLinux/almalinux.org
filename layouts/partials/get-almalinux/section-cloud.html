@@ -29,7 +29,7 @@
             class="btn px-3 me-md-2 al-cta-blue al-btn-min"
             href="{{ $section.aws.marketplaceUrl }}">
             AlmaLinux
-            {{ default $version.id $section.aws.fullVersion }}
+            {{ default (default $version.id $section.aws.fullVersion) $section.aws.displayVersion }}
           </a>
         </div>
       </div>
@@ -59,7 +59,7 @@
         class="btn px-3 me-md-2 al-cta-blue al-btn-min"
         href="{{ $section.genericCloud.imageUrl }}">
         AlmaLinux
-        {{ default $version.id $section.genericCloud.fullVersion }}
+        {{ default (default $version.id $section.genericCloud.fullVersion) $section.genericCloud.displayVersion }}
       </a>
       <div class="d-flex flex-grow-1 align-items-center" style="min-width: 0;">
         <img
@@ -112,7 +112,7 @@
         class="btn px-3 me-md-2 al-cta-blue al-btn-min"
         href="{{ $section.googleCloud.productUrl }}">
         {{ i18n "Get AlmaLinux" }}
-        {{ default $version.id $section.googleCloud.fullVersion }}
+        {{ default (default $version.id $section.googleCloud.fullVersion) $section.googleCloud.displayVersion }}
         {{ i18n "Image" }}
       </a>
     </div>
@@ -153,7 +153,7 @@
         class="btn px-3 me-md-2 al-cta-blue al-btn-min"
         href="{{ $section.openNebula.imageUrl }}">
         AlmaLinux
-        {{ default $version.id $section.openNebula.fullVersion }}
+        {{ default (default $version.id $section.openNebula.fullVersion) $section.openNebula.displayVersion }}
       </a>
       <div class="d-flex flex-grow-1 align-items-center" style="min-width: 0;">
         <img
@@ -217,7 +217,7 @@
         class="btn px-3 me-md-2 al-cta-blue al-btn-min"
         href="{{ $section.oci.marketplaceUrl }}">
         AlmaLinux
-        {{ default $version.id $section.oci.fullVersion }}
+        {{ default (default $version.id $section.oci.fullVersion) $section.oci.displayVersion }}
       </a>
     </div>
     <p>

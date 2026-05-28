@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import sys
 from pathlib import Path
+from typing import Any
 
 import yaml
 
@@ -93,21 +94,21 @@ def per_arch_url(config: dict, url_key: str, arch_value: str) -> str:
     return config.get(url_key, "")
 
 
-def artifact_sha256(artifacts: dict, key: str) -> str:
+def artifact_sha256(artifacts: dict[str, Any], key: str) -> str:
     artifact = artifacts.get(key, "") if isinstance(artifacts, dict) else ""
     if isinstance(artifact, dict):
         return artifact.get("sha256", "")
     return artifact or ""
 
 
-def artifact_full_version(artifacts: dict, key: str, default: str) -> str:
+def artifact_full_version(artifacts: dict[str, Any], key: str, default: str) -> str:
     artifact = artifacts.get(key, {}) if isinstance(artifacts, dict) else {}
     if isinstance(artifact, dict) and artifact.get("fullVersion"):
         return str(artifact["fullVersion"])
     return default
 
 
-def first_artifact_full_version(artifacts: dict, default: str) -> str:
+def first_artifact_full_version(artifacts: dict[str, Any], default: str) -> str:
     if not isinstance(artifacts, dict):
         return default
     for artifact in artifacts.values():
@@ -116,7 +117,7 @@ def first_artifact_full_version(artifacts: dict, default: str) -> str:
     return default
 
 
-def version_full_version(version_checks: dict, default: str) -> str:
+def version_full_version(version_checks: dict[str, Any], default: str) -> str:
     for arch_checks in version_checks.values():
         if not isinstance(arch_checks, dict):
             continue
@@ -125,6 +126,10 @@ def version_full_version(version_checks: dict, default: str) -> str:
             if full_version:
                 return full_version
     return default
+
+
+def display_version(version_id: str, full_version: str) -> str:
+    return version_id if "kitten" in version_id else full_version
 
 
 def main() -> int:
@@ -190,6 +195,7 @@ def main() -> int:
                             "id": name,
                             "variant": name.capitalize(),
                             "fullVersion": iso_full,
+                            "displayVersion": display_version(vid, iso_full),
                             "url": url,
                             "sha256": artifact_sha256(iso_hashes, name),
                         }
@@ -240,32 +246,37 @@ def main() -> int:
                         "title": "Cloud Images",
                         "aws": {
                             "fullVersion": cloud_full,
+                            "displayVersion": display_version(vid, cloud_full),
                             "sellerProfileUrl": aws.get("sellerProfileUrl", ""),
                             "marketplaceUrl": per_arch_url(aws, "marketplaceUrls", arch_str),
                         } if enabled_for_arch(aws, arch_str) else {},
                         "genericCloud": {
                             "fullVersion": generic_full,
+                            "displayVersion": display_version(vid, generic_full),
                             "imageUrl": generic.get("imageUrl", "").format(major=major, full=generic_full, arch=arch_str),
                             "checksumUrl": generic.get("checksumUrl", "").format(major=major, full=generic_full, arch=arch_str),
                             "sha256": artifact_sha256(cloud_hashes, "genericCloud"),
                         } if enabled_for_arch(generic, arch_str) else {},
                         "googleCloud": {
                             "fullVersion": cloud_full,
+                            "displayVersion": display_version(vid, cloud_full),
                             "marketplaceBrowseUrl": google.get("marketplaceBrowseUrl", ""),
-                            "productUrl": google.get("productUrl", "").format(major=major, full=full, arch=arch_str),
+                            "productUrl": google.get("productUrl", "").format(major=major, full=cloud_full, arch=arch_str),
                         } if enabled_for_arch(google, arch_str) else {},
                         "azure": {
                             "marketplaceUrl": per_arch_url(azure, "marketplaceUrls", arch_str),
                         } if enabled_for_arch(azure, arch_str) else {},
                         "openNebula": {
                             "fullVersion": openneb_full,
+                            "displayVersion": display_version(vid, openneb_full),
                             "imageUrl": openneb.get("imageUrl", "").format(major=major, full=openneb_full, arch=arch_str),
                             "checksumUrl": openneb.get("checksumUrl", "").format(major=major, full=openneb_full, arch=arch_str),
                             "sha256": artifact_sha256(cloud_hashes, "openNebula"),
                         } if enabled_for_arch(openneb, arch_str) else {},
                         "oci": {
                             "fullVersion": cloud_full,
-                            "marketplaceUrl": per_arch_url(oci, "marketplaceUrls", arch_str),
+                            "displayVersion": display_version(vid, cloud_full),
+                            "marketplaceUrl": per_arch_url(oci, "marketplaceUrls", arch_str).format(major=major, full=cloud_full, arch=arch_str),
                             "partnerListingUrl": oci.get("partnerListingUrl", ""),
                         } if enabled_for_arch(oci, arch_str) else {},
                     }
@@ -348,6 +359,7 @@ def main() -> int:
                         "anchorPrefix": "Incus-LXC",
                         "title": "Incus and LXC",
                         "fullVersion": full,
+                        "displayVersion": display_version(vid, full),
                         "url": base_url,
                     }
                     sections.append(incus_section)

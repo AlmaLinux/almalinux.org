@@ -14,8 +14,7 @@ DATA_DIR = ROOT / "data"
 SPEC_FILE = DATA_DIR / "get_almalinux_spec.yaml"
 OUTPUT_FILE = DATA_DIR / "get_almalinux_checksums.yaml"
 
-VERSION_REGEX = r"[0-9.]+"
-VERSION_TOKEN_REGEX = r"\d+(?:\.\d+)*"
+VERSION_REGEX = r"\d+(?:\.\d+)*"
 
 def build_filename_pattern(template: str, replacements: Dict[str, str], version_regex: str) -> str:
     """
@@ -35,7 +34,7 @@ def build_filename_pattern(template: str, replacements: Dict[str, str], version_
 
 def extract_version_from_filename(filename: str) -> Optional[str]:
     """Return the most specific AlmaLinux version-looking token in a filename."""
-    version_matches = re.findall(rf"(?<![0-9.])({VERSION_TOKEN_REGEX})(?![0-9.])", filename)
+    version_matches = re.findall(rf"(?<![0-9.])({VERSION_REGEX})(?![0-9.])", filename)
     if not version_matches:
         return None
 
