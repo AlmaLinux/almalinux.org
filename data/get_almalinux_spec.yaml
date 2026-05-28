@@ -103,16 +103,14 @@ versions:
       live:
         # Live media exist only for the listed arches; the generator expands
         # each variant below into arch-specific URLs and a shared checksum URL.
-        # NOTE: Live media URLs are pinned to 10.1 until the 10.2 live images
-        # are published to the mirror. Restore `{full}` once they ship.
         arches: ["x86_64", "x86_64_v2", "aarch64"]
         variants:
           gnome:
             label: "GNOME"
-            url: "https://repo.almalinux.org/almalinux/{major}/live/{arch}/AlmaLinux-10.1-{arch}-Live-GNOME.iso"
+            url: "https://repo.almalinux.org/almalinux/{major}/live/{arch}/AlmaLinux-{full}-{arch}-Live-GNOME.iso"
           kde:
             label: "KDE"
-            url: "https://repo.almalinux.org/almalinux/{major}/live/{arch}/AlmaLinux-10.1-{arch}-Live-KDE.iso"
+            url: "https://repo.almalinux.org/almalinux/{major}/live/{arch}/AlmaLinux-{full}-{arch}-Live-KDE.iso"
       raspberrypi:
         arches: ["aarch64"]
       vagrant:
@@ -207,25 +205,23 @@ versions:
         bootc:
           arches: ["x86_64", "x86_64_v2", "aarch64"]
       live:
-        # NOTE: Live media URLs are pinned to 9.7 until the 9.8 live images are
-        # published to the mirror. Restore `{full}` once they ship.
         arches: ["x86_64", "aarch64"]
         variants:
           gnome:
             label: "GNOME"
-            url: "https://repo.almalinux.org/almalinux/{major}/live/{arch}/AlmaLinux-9.7-{arch}-Live-GNOME.iso"
+            url: "https://repo.almalinux.org/almalinux/{major}/live/{arch}/AlmaLinux-{full}-{arch}-Live-GNOME.iso"
           gnomeMini:
             label: "GNOME Mini"
-            url: "https://repo.almalinux.org/almalinux/{major}/live/{arch}/AlmaLinux-9.7-{arch}-Live-GNOME-Mini.iso"
+            url: "https://repo.almalinux.org/almalinux/{major}/live/{arch}/AlmaLinux-{full}-{arch}-Live-GNOME-Mini.iso"
           kde:
             label: "KDE"
-            url: "https://repo.almalinux.org/almalinux/{major}/live/{arch}/AlmaLinux-9.7-{arch}-Live-KDE.iso"
+            url: "https://repo.almalinux.org/almalinux/{major}/live/{arch}/AlmaLinux-{full}-{arch}-Live-KDE.iso"
           xfce:
             label: "XFCE"
-            url: "https://repo.almalinux.org/almalinux/{major}/live/{arch}/AlmaLinux-9.7-{arch}-Live-XFCE.iso"
+            url: "https://repo.almalinux.org/almalinux/{major}/live/{arch}/AlmaLinux-{full}-{arch}-Live-XFCE.iso"
           mate:
             label: "MATE"
-            url: "https://repo.almalinux.org/almalinux/{major}/live/{arch}/AlmaLinux-9.7-{arch}-Live-MATE.iso"
+            url: "https://repo.almalinux.org/almalinux/{major}/live/{arch}/AlmaLinux-{full}-{arch}-Live-MATE.iso"
       raspberrypi:
         arches: ["aarch64"]
       vagrant:
