@@ -28,11 +28,7 @@
           class="btn px-3 me-md-2 al-cta-blue al-btn-min"
           href="{{ $block.url }}">
           {{ i18n "Download" }}
-          {{ if $version.fullVersion }}
-            {{ $version.fullVersion }}
-          {{ else }}
-            {{ $version.id }}
-          {{ end }}
+          {{ default (default $version.id $block.fullVersion) $block.displayVersion }}
           ISO
         </a>
         <div

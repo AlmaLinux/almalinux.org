@@ -4,7 +4,7 @@ Script to generate get_almalinux_checksums.yaml by fetching and parsing ISO and 
 """
 import re
 from pathlib import Path
-from typing import Dict, Optional, Tuple
+from typing import Dict, Optional
 
 import requests
 import yaml
@@ -14,7 +14,7 @@ DATA_DIR = ROOT / "data"
 SPEC_FILE = DATA_DIR / "get_almalinux_spec.yaml"
 OUTPUT_FILE = DATA_DIR / "get_almalinux_checksums.yaml"
 
-VERSION_REGEX = r"[0-9.]+"
+VERSION_REGEX = r"\d+(?:\.\d+)*"
 
 def build_filename_pattern(template: str, replacements: Dict[str, str], version_regex: str) -> str:
     """
@@ -32,47 +32,58 @@ def build_filename_pattern(template: str, replacements: Dict[str, str], version_
     pat = pat.replace(re.escape("{full}"), version_regex)
     return pat
 
-def parse_iso_checksum(content: str, filename_patterns: Dict[str, str]) -> Tuple[Dict[str, str], Optional[str]]:
-    """
-    Parse ISO checksum file content and extract checksums and version.
-    Args:
-        content: The text content of the checksum file
-        filename_patterns: Dict of variant to regex pattern
-    Returns:
-        (checksums dict, extracted version or None)
-    """
-    checksums = {}
-    extracted_version = None
-    for line in content.splitlines():
-        m = re.match(r"SHA256 \(([^)]+)\) = ([a-f0-9]{64})", line)
-        if m:
-            fname, sha = m.groups()
-            for variant, pattern in filename_patterns.items():
-                if re.fullmatch(pattern, fname):
-                    checksums[variant] = sha
-                    # Only extract version for accepted files
-                    ver_match = re.match(rf".*-({VERSION_REGEX})-[^-]+-[^-]+\.iso$", fname)
-                    if ver_match:
-                        extracted_version = ver_match.group(1)
-    return checksums, extracted_version
+def extract_version_from_filename(filename: str) -> Optional[str]:
+    """Return the most specific AlmaLinux version-looking token in a filename."""
+    version_matches = re.findall(rf"(?<![0-9.])({VERSION_REGEX})(?![0-9.])", filename)
+    if not version_matches:
+        return None
 
-def parse_cloud_checksum(content: str, filename_patterns: Dict[str, str]) -> Dict[str, str]:
-    """
-    Parse cloud image checksum file content and extract checksums.
-    Args:
-        content: The text content of the checksum file
-        filename_patterns: Dict of image type to regex pattern
-    Returns:
-        checksums dict
-    """
+    for version in version_matches:
+        if "." in version:
+            return version
+    return version_matches[0]
+
+
+def parse_checksum_lines(content: str) -> Dict[str, str]:
+    """Return filename to sha256 mappings from supported checksum formats."""
     checksums = {}
     for line in content.splitlines():
-        m = re.match(r"([a-f0-9]{64})\s+([^.\s]+.*)", line)
-        if m:
-            sha, fname = m.groups()
-            for image_type, pattern in filename_patterns.items():
-                if re.fullmatch(pattern, fname):
-                    checksums[image_type] = sha
+        iso_match = re.match(r"SHA256 \(([^)]+)\) = ([a-f0-9]{64})", line)
+        if iso_match:
+            fname, sha = iso_match.groups()
+            checksums[fname] = sha
+            continue
+
+        cloud_match = re.match(r"([a-f0-9]{64})\s+([^\s]+)", line)
+        if cloud_match:
+            sha, fname = cloud_match.groups()
+            checksums[fname] = sha
+    return checksums
+
+
+def artifact_metadata(filename: str, sha: str, all_checksums: Dict[str, str]) -> Dict[str, str]:
+    artifact = {}
+
+    for candidate, candidate_sha in [(filename, sha), *all_checksums.items()]:
+        if candidate_sha != sha:
+            continue
+        version = extract_version_from_filename(candidate)
+        if version and "." in version:
+            artifact["fullVersion"] = version
+            break
+
+    artifact["sha256"] = sha
+    return artifact
+
+
+def parse_checksum(content: str, filename_patterns: Dict[str, str]) -> Dict[str, Dict[str, str]]:
+    """Return artifact metadata for filenames matching the requested patterns."""
+    checksums = {}
+    all_checksums = parse_checksum_lines(content)
+    for fname, sha in all_checksums.items():
+        for artifact_type, pattern in filename_patterns.items():
+            if re.fullmatch(pattern, fname):
+                checksums[artifact_type] = artifact_metadata(fname, sha, all_checksums)
     return checksums
 
 def get_checksum_file(url: str) -> str:
@@ -103,8 +114,6 @@ def main():
     for version in spec["versions"]:
         vid = version["id"]
         output["versions"][vid] = {}
-        # Make sure fullVersion ends up at the top
-        output["versions"][vid]["fullVersion"] = None
         arches = version.get("arches", [])
         sections = version.get("sections", {})
         # ISO section
@@ -131,15 +140,9 @@ def main():
                 replacements = {"major": vid, "arch": arch, "variant": variant}
                 fname_pat = build_filename_pattern(iso_base_filename, replacements, VERSION_REGEX)
                 filename_patterns[variant] = fname_pat
-            checksums, extracted_version = parse_iso_checksum(content, filename_patterns)
+            checksums = parse_checksum(content, filename_patterns)
             if checksums:
                 output["versions"][vid][arch]["iso"] = checksums
-            if extracted_version:
-                output["versions"][vid]["fullVersion"] = extracted_version
-
-        # Remove fullVersion if not set
-        if not output["versions"][vid]["fullVersion"]:
-            del output["versions"][vid]["fullVersion"]
 
         # Cloud section
         cloud_section = sections.get("cloud")
@@ -165,7 +168,7 @@ def main():
                 replacements = {"major": vid, "arch": arch}
                 fname_pat = build_filename_pattern(image_base_filename, replacements, VERSION_REGEX)
                 patterns[cloud_type] = fname_pat
-                checksums = parse_cloud_checksum(content, patterns)
+                checksums = parse_checksum(content, patterns)
                 if checksums:
                     if "cloud" not in output["versions"][vid][arch]:
                         output["versions"][vid][arch]["cloud"] = {}
