@@ -2,67 +2,322 @@
 @import "./functions";
 @import "./bootstrap";
 
-.al-page-foundation-members-index {
-  .al-members {
-    .table{
-      color: #fefefe !important;
-    }
-    .al-member-item {
-      height: 100%;
-      background: rgb(14, 59, 92);
-    }
+// Existing apply-CTA rule preserved — still used by the new layout
+.al-member-apply-cta {
+  min-width: 120px;
+}
+
+// Sections sit on the page's default mid-blue body background; cards and
+// the matrix go a shade darker for visual depth. Border uses the link-blue
+// tint at low opacity for the muted teal/cyan outline.
+$al-members-card-bg:     #0e3b5c;
+$al-members-card-border: rgba(196, 225, 255, 0.22);
+
+.al-members-section-header {
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid $al-members-card-border;
+}
+
+.al-members-spotlight {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  @media (min-width: 992px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.al-members-spotlight-card {
+  background: $al-members-card-bg;
+  border: 1px solid $al-members-card-border;
+  border-radius: 10px;
+  padding: 2rem;
+
+  .eyebrow {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent, #c4e1ff);
+    margin-bottom: 0.6rem;
+    font-weight: 700;
   }
 
-  .al-member-apply-category-icon {
-    color: lighten($al-font-color, 10%);
-    font-size: 32px;
-    padding-right: 22px;
-
-    @at-root {
-      [dir=rtl] & {
-        padding-right: 0;
-        padding-left: 22px;
-      }
-    }
+  &.indiv {
+    --accent: #86da2f;
+    background: linear-gradient(135deg, rgba(134, 218, 47, 0.22), transparent 55%), $al-members-card-bg;
+  }
+  &.mirror {
+    --accent: #ffcb12;
+    background: linear-gradient(135deg, rgba(255, 203, 18, 0.22), transparent 55%), $al-members-card-bg;
   }
 
-  .al-member-apply-cta {
-    min-width: 120px;
+  img {
+    border-radius: 0.6rem;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
   }
 
-  .fw-light {
-    .al-laws-link, .al-guideline-link {
-      text-decoration: none;
+  .al-members-stats {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
 
-      &:hover, &:active {
-        text-decoration: underline;
-      }
-    }
-  }
-
-  .al-membership-info {
-    display: none;
-  }
-
-  #al-mirror-info, #al-sponsor-info {
-    ul {
-        list-style-type: '-   ';
-    }
-  }
-
-  .member-info:hover {
-    color: #86da2f;
-  }
-
-
-    .al-foundation-members-apply-content-wrap {
-      display: flex;
-      flex-direction: column;
+    > div {
       flex: 1;
+      min-width: 6rem;
+      border: 1px solid $al-members-card-border;
+      border-radius: 4px;
+      padding: 0.6rem 0.85rem;
+      background: $al-c-black-pearl;
 
-      p {
-        flex: 1;
+      b {
+        display: block;
+        font-size: 1.05rem;
+        color: #fefefe;
+      }
+
+      span {
+        display: block;
+        font-size: 0.65rem;
+        color: rgba(254, 254, 254, 0.6);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-top: 0.15rem;
       }
     }
   }
 
+  .ctas {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+}
+
+.al-members-matrix {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(4, 1fr);
+  background: $al-members-card-bg;
+  border: 1px solid $al-members-card-border;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 1.5rem;
+
+  .head {
+    padding: 1.25rem 1rem;
+    border-bottom: 1px solid $al-members-card-border;
+    border-right: 1px solid $al-members-card-border;
+
+    &[data-tier] {
+      background: $al-c-black-pearl;
+    }
+
+    a {
+      float: right;
+      margin-left: 0.5rem;
+    }
+
+    img {
+      width: 72px;
+      height: auto;
+      display: block;
+    }
+
+    .nm { font-weight: 700; font-size: 1rem; margin-bottom: 0.1rem; }
+    .pr { font-size: 1.25rem; font-weight: 700; }
+    .or {
+      font-size: 0.7rem;
+      color: rgba(254, 254, 254, 0.6);
+      margin: 0.25rem 0 0.75rem;
+    }
+    .vt {
+      display: inline-block;
+      background: rgba(196, 225, 255, 0.12);
+      color: rgba(254, 254, 254, 0.85);
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    &--explain {
+      .explain-eyebrow {
+        font-size: 0.7rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #9bb1c4;
+      }
+      .explain-note {
+        font-size: 0.85rem;
+        color: #dbe8f3;
+        line-height: 1.5;
+        margin-top: 6px;
+      }
+    }
+
+    // Per-tier accent: name color + matching 3px top border
+    &[data-tier="silver"] {
+      border-top: 3px solid #14b8a6;
+      padding-top: calc(1.25rem - 3px);
+      .nm { color: #14b8a6; }
+    }
+    &[data-tier="ruby"] {
+      border-top: 3px solid #ff6e71;
+      padding-top: calc(1.25rem - 3px);
+      .nm { color: #ff6e71; }
+    }
+    &[data-tier="gold"] {
+      border-top: 3px solid #e9b94a;
+      padding-top: calc(1.25rem - 3px);
+      .nm { color: #e9b94a; }
+    }
+
+    &.is-platinum {
+      // Yellow tint layered over the black-pearl tier background; the
+      // silvery-white border + name read as 'platinum the metal' while the
+      // yellow gradient + votes badge stay as the universal premium marker.
+      background: linear-gradient(rgba(255, 203, 18, 0.12), rgba(255, 203, 18, 0.12)), $al-c-black-pearl;
+      border-top: 3px solid #e8eef5;
+      padding-top: calc(1.25rem - 3px);
+
+      .nm { color: #e8eef5; }
+      .vt {
+        background: rgba(255, 203, 18, 0.2);
+        color: #ffcb12;
+      }
+    }
+  }
+
+  .group-row {
+    grid-column: 1 / -1;
+    background: $al-body-background;
+    color: #ffcb12;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    padding: 0.6rem 1rem;
+    font-weight: 700;
+    border-top: 1px solid rgba(196, 225, 255, 0.08);
+    border-bottom: 1px solid rgba(196, 225, 255, 0.08);
+  }
+
+  .cell {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(196, 225, 255, 0.06);
+    border-right: 1px solid rgba(196, 225, 255, 0.06);
+    font-size: 0.85rem;
+
+    &.lbl   { color: rgba(254, 254, 254, 0.85); }
+    &.center { text-align: center; }
+  }
+
+  // Bootstrap Icons check-circle-fill — green icon, no background fill
+  .check {
+    color: #86da2f;
+    font-size: 1.35rem;
+    line-height: 1;
+    vertical-align: middle;
+  }
+
+  .dash {
+    display: inline-block;
+    width: 1.1rem;
+    height: 2px;
+    background: rgba(196, 225, 255, 0.35);
+    vertical-align: middle;
+  }
+
+  .num {
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+
+  // Highlight the entire Platinum column (header + every cell)
+  [data-tier="platinum"] {
+    background: rgba(255, 203, 18, 0.06);
+  }
+
+  .footer-row {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1.4fr repeat(4, 1fr);
+    border-top: 1px solid $al-members-card-border;
+    background: rgba(8, 35, 54, 0.4);
+
+    .cta-cell {
+      padding: 0.85rem;
+      text-align: center;
+    }
+  }
+
+  // Mobile: collapse to a single column with per-tier labels
+  @media (max-width: 991.98px) {
+    grid-template-columns: 1fr;
+
+    .head--explain { display: none; }
+
+    .head {
+      border-right: none;
+      border-bottom: 1px solid $al-members-card-border;
+
+      img { margin-bottom: 0.25rem; }
+    }
+
+    .cell.center::before {
+      content: attr(data-tier);
+      display: block;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(254, 254, 254, 0.5);
+      margin-bottom: 0.2rem;
+    }
+
+    .cell.lbl {
+      grid-column: 1 / -1;
+      background: rgba(255, 255, 255, 0.04);
+      font-weight: 600;
+      padding: 0.6rem 0.85rem;
+    }
+
+    .footer-row {
+      grid-template-columns: 1fr;
+
+      .cta-cell { padding: 0.6rem; }
+      .cta-cell:first-child { display: none; }
+    }
+  }
+}
+
+.al-members-platinum-strip {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background: rgba(8, 35, 54, 0.6);
+  border: 1px solid $al-members-card-border;
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+
+  .label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(254, 254, 254, 0.6);
+    margin-right: 0.5rem;
+  }
+
+  img {
+    height: 36px;
+    width: auto;
+    max-width: 180px;
+  }
+}
