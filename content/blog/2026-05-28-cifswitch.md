@@ -1,5 +1,5 @@
 ---
-title: "CIFSwitch: Help Us Test the Patched Kernels"
+title: "CIFSwitch (CVE-2026-46243) Patches Released"
 type: blog
 author:
   name: "Andrew Lukoshko"
@@ -9,9 +9,20 @@ date: "2026-05-28"
 images:
   - /blog-images/2026/2026-05-28-cifswitch.png
 post:
-  title: "A new local-root flaw, dubbed CIFSwitch, lets an unprivileged user become root through the cifs.spnego request-key helper on any system with cifs-utils installed and unprivileged user namespaces enabled. Patched kernels are in the AlmaLinux testing repository now. Help us verify them, or apply one of the mitigations below."
+  title: "A local-root flaw, dubbed CIFSwitch and now tracked as CVE-2026-46243, lets an unprivileged user become root through the cifs.spnego request-key helper on any system with cifs-utils installed and unprivileged user namespaces enabled. The patched kernels have now been released to the production repositories — update and reboot."
   image: /blog-images/2026/2026-05-28-cifswitch.png
 ---
+
+> **Update: CVE assigned and patched kernels are now in production**
+>
+> **2026-06-02 15:31 UTC:** The vulnerability has been assigned **CVE-2026-46243**, and the patched kernels have been released to the **production** repositories/mirrors. You no longer need to enable the testing repo to get them. Just run:
+>
+> ```bash
+> sudo dnf clean metadata && sudo dnf upgrade
+> sudo reboot
+> ```
+>
+> Thanks to everyone in the community who helped verify these builds. The kernels released to production are bit for bit identical to those that were in testing. The rest of this post is preserved as originally published.
 
 A new Linux local-root vulnerability, nicknamed **CIFSwitch** by its discoverer Asim Manizada, was [disclosed today on oss-security](https://www.openwall.com/lists/oss-security/2026/05/28/2) after the linux-distros embargo expired. A CVE has been requested but is not yet assigned at the time of writing. The flaw chains a userspace `request-key` helper from `cifs-utils` with a missing input check in the kernel's CIFS client. Any unprivileged user on a system that has `cifs-utils` installed, the CIFS kernel module loadable, and unprivileged user namespaces enabled (the default on every supported AlmaLinux release) can pivot to root.
 
