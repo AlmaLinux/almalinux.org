@@ -1,4 +1,55 @@
 <style>
+  .al-index-topic-ALD-post {
+    position: relative;
+  }
+  .al-index-topic-ALD-post .topic_item_1,
+  .al-index-topic-ALD-post .topic_item_2 {
+    max-width: 65%;
+  }
+  .al-post-event-float {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    width: 33%;
+    max-width: 33%;
+    background: rgba(255, 255, 255, 0.95);
+    color: #222;
+    padding: 20px 24px;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+  }
+  .al-post-event-float .al-post-event-title {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    margin-bottom: 12px;
+  }
+  .al-post-event-float .al-post-event-quote {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+  .al-post-event-float .btn {
+    font-size: 14px;
+  }
+  @media (max-width: 991px) {
+    .al-index-topic-ALD-post {
+      padding-top: 24px;
+    }
+    .al-index-topic-ALD-post .topic_item_1,
+    .al-index-topic-ALD-post .topic_item_2 {
+      max-width: none;
+    }
+    .al-post-event-float {
+      position: static;
+      width: 80%;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .al-post-event-float .al-post-event-title {
+      font-size: 22px;
+    }
+  }
   @media (max-width: 1199px) {
     h1 {
       font-size: 60px !important;

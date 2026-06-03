@@ -31,7 +31,7 @@ Your host for the day will be **Tristan Théroux**, who will be keeping things m
   </thead>
   <tbody>
     <tr><td>9:00 AM</td><td>Doors open</td><td>Host: Tristan Théroux</td></tr>
-    <tr><td>10:00 AM</td><td>Open Source: This sh*t don't just happen</td><td>benny Vasquez, AlmaLinux OS Foundation</td></tr>
+    <tr><td>10:00 AM</td><td>AlmaLinux at StorPool</td><td>Boyan Krosnov, StorPool Storage</td></tr>
     <tr><td>10:30 AM</td><td>AlmaLinux and the open source way</td><td>Andrew Lukoshko, AlmaLinux OS Foundation</td></tr>
     <tr><td>11:00 AM</td><td>AlmaLinux at CERN</td><td>Alex Iribarren, CERN</td></tr>
     <tr><td>11:30 AM</td><td>ELT: standing on the shoulders of Open Source and AlmaLinux</td><td>Federico Pellegrin &amp; Piotr Szubiak, ESO</td></tr>

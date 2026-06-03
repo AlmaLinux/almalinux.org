@@ -45,7 +45,7 @@ We're also accepting lightning talk submissions for Germany! If you have a 5-min
 
 For **Los Angeles**, registration is free and open at [events.almalinux.org](https://events.almalinux.org/). Space is limited and the first 100 registrants get a special gift, so grab your spot early.
 
-We also have a full Call for Speakers open for LA! If you're working on something related to VFX pipelines, Linux infrastructure, cloud rendering, or open-source in the Media & Entertainment space, we want to hear from you. Submit your proposal at [sessionize.com/almalinux-day-los-angeles](https://sessionize.com/almalinux-day-los-angeles/) — submissions close April 5, 2026, and we will announce speakers no later than May 5th, giving you plenty of time to book your travel!
+We also have a full Call for Speakers open for LA! If you're working on something related to VFX pipelines, Linux infrastructure, cloud rendering, or open-source in the Media & Entertainment space, we want to hear from you. Submit your proposal at [sessionize.com/almalinux-day-los-angeles](https://sessionize.com/almalinux-day-los-angeles/) — submissions close June 5, 2026, and we will announce speakers no later than June 15th, giving you plenty of time to book your travel!
 
 ## Where else should we go?
 

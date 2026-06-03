@@ -1,140 +1,290 @@
 versions:
   "10":
-    fullVersion: "10.1"
     x86_64:
       iso:
-        boot: 68a9e14fa252c817d11a3c80306e5a21b2db37c21173fd3f52a9eb6ced25a4a0
-        dvd: 4597a7483fd7b49bbb7a46958fe2574b7c575531e5ee64ad4d6c1d2779494400
-        minimal: 049efd183a5a841dd432b3427eb6faa7deb3bf6c6bf2c63cbffa024b9c651725
+        boot:
+          fullVersion: "10.2"
+          sha256: b3f865468075bcada8f208d830289302c67529789d668041d24e8d6fc697ba6a
+        dvd:
+          fullVersion: "10.2"
+          sha256: 90244ac532f67c978831a381b420da8bda363729e1f4cf8fb8991daca70ee287
+        minimal:
+          fullVersion: "10.2"
+          sha256: 1b532f534231da0d1cd0ccae622bea6cd588d8a0d7b259f1f131501a6eed41a4
       cloud:
-        genericCloud: 8729862a9e2d93c478c2334b33d01d7ee21934a795a9b68550cc1c63ffd0efae
-        openNebula: 0922cf17581e26f51263dbb732dc1b4af8a7b7f049d9544bcb7a78e0f8900995
+        genericCloud:
+          fullVersion: "10.2"
+          sha256: 47f2218668dd4776be140dd92fa3bea700be1766e2c7d88bdfd6a4b50f477b4d
+        openNebula:
+          fullVersion: "10.2"
+          sha256: 020e2abd5ca77c2ea3ad62dbb68b1d111202658feca4c714183cd656bf26a646
     x86_64_v2:
       iso:
-        boot: cc373a97c8584f957cfbecc4b3f75a87a04d6bee54a362b9992b8c2d40951718
-        dvd: 9640ecde9d8fd080a8d4991341aec8c3cf929f58e9fbb60b3d78ddab45425957
-        minimal: b0dd2dc3ff4b390a6af8e79c231931bc547cd3f71a89e9bca2a01118f48e200e
+        boot:
+          fullVersion: "10.2"
+          sha256: 97b38e392dfe51b62a61c7dc400ce730228135e827c214fbaf32efc3a766607f
+        dvd:
+          fullVersion: "10.2"
+          sha256: 320a10d3195ece72d99a10ae8316f78124ae6228a5f542b6f5870126d5708b91
+        minimal:
+          fullVersion: "10.2"
+          sha256: c75ee2e209dcb4ec6fde01e421074edddf5d19bb7388fa12a102edb40fc47eb0
       cloud:
-        genericCloud: a1cca6d695b308b7d892885656fb5c6fd0ffca4b09fbc9d5b9cf28f2a0ae4326
-        openNebula: e0dffca226a673ac36dff1efaf2cf73602262eb5a1e55e5ea247c76fce812cd9
+        genericCloud:
+          fullVersion: "10.2"
+          sha256: cd17bcbd7ac62a7f179c30fb24f5795c411d540650b4f060d2167859e2fd3d95
+        openNebula:
+          fullVersion: "10.2"
+          sha256: d6cabdc0f1108b907676bc59b8d01292cd1619a8225bad95ec1aa5ac83ddb27c
     aarch64:
       iso:
-        boot: 76cdd787aeb9c786e589c0ebb625ca50fa9864c54293330be29b258f10e0b6b8
-        dvd: 1e4a23eafebb92f01064c47d5d01db54419e8dbdc41b0d07e0f07810c968fb58
-        minimal: 20cb3bbb084827b30f3d2a17bc4305cf48462bf07991a2ef2967fc17b77d430e
+        boot:
+          fullVersion: "10.2"
+          sha256: 20807d65338627a0afa3d5fbd3bee222115d66ce34ac1e4647b0af8fc6c4aa23
+        dvd:
+          fullVersion: "10.2"
+          sha256: bc3790b1200254790e03f1d941162a9f9082d46dcdff841b83f348501625b29e
+        minimal:
+          fullVersion: "10.2"
+          sha256: ca5dd9b7e1193de5881df850a93b611c6ba0ba8c5860f54ee822c53585b3014d
       cloud:
-        genericCloud: 6aebd793c098d40e5ca119aee7531bb49c3b1bbaccedf8ab6c92cd7299ce1c6e
-        openNebula: d7cb82a14e0c0be8ac07b5b08aa8a88101eef9a6d190e4524f45d064a69b4e4e
+        genericCloud:
+          fullVersion: "10.2"
+          sha256: 336c6861fe0ba9115af00f557ed1b09385a3525612dd0cb9cce7e0486f8e74a4
+        openNebula:
+          fullVersion: "10.2"
+          sha256: c0c5733e05d051bd409fd9e86111067aaf96ab2d663461e4b80d8e98b7b4d0fe
     s390x:
       iso:
-        boot: 93f3c12f30ffd16b5391ee9d439e71e510203cb2879d27037edea319705161a3
-        dvd: b73073b35187790a978705801dcd0ab5ed7fc66316e0335565848309afb91e90
-        minimal: 35e7e36b385005c16ba4ea6b0fcca042a240e81e6b0c827150a89577b0e779b2
+        boot:
+          fullVersion: "10.2"
+          sha256: 31902701a6b50ac227f16992b01e09039c9e86826b3e95ac6f1345d86879e07a
+        dvd:
+          fullVersion: "10.2"
+          sha256: fba6a4088db5b835572c5a978b8e7e7dd795d9a782b6907d64b32a12e3864258
+        minimal:
+          fullVersion: "10.2"
+          sha256: bc4ab16b8501222da9af41f543b7b702b0dd5759aeeeabb5d20e90d63082fea6
       cloud:
-        genericCloud: 8e42c18ada02c8db72f51ed90a4a4db8ef7503b64dfd6431d4d7e62295ca6819
+        genericCloud:
+          fullVersion: "10.2"
+          sha256: db1f7e8247e150e6da902da348f6894960bfd3590001207d0bf3732992d98ac7
     ppc64le:
       iso:
-        boot: e4e246af934c56de2609e218bacaa9cf32a90c4bfe2f53526a2c4bc1cce61ba3
-        dvd: f4cce5d72c013285e6282ef3e531c6ecd7a0b2086bdaf3873b4c55d4f3d51f3a
-        minimal: 925a7c82cbf997ae22aeb5d6f5d798dd9a44ea7288cd68bb84a939af13021ec3
+        boot:
+          fullVersion: "10.2"
+          sha256: a81a74356e90e0f6ad056f64435b2bc892a8d80d4cfcdb8e6753612607d56315
+        dvd:
+          fullVersion: "10.2"
+          sha256: 6a9de2f07d4cfc171c6f5bc6609662b993d04554f5591e203c6d8167d079d3b0
+        minimal:
+          fullVersion: "10.2"
+          sha256: ce8618654c90af07725026b40adbfde761149ab0bd1df58e5fd1a1a495b3b291
   10-kitten:
     x86_64:
       iso:
-        boot: c4bff298d533e4de81bb1968529cbb3998ab104709d3b3c0076f5c78aaa50964
-        dvd: 69c23577943e3c85b8939407e4d2c7cbf7f8c3f1c796ec52ba666b343b46b489
-        minimal: d005963827939a939328da454f48d90f2a3b8d91adfe63b8a9c039658c942775
+        boot:
+          fullVersion: "20260320.0"
+          sha256: 209af77b9c688203aff2f29cf3fc42b995df79c7e038f31e6807746bff669878
+        dvd:
+          fullVersion: "20260320.0"
+          sha256: e59ec6edcb23e48cbc90563bdf98e5cd7b457dd799d5ab57f5a7b59f9f28b933
+        minimal:
+          fullVersion: "20260320.0"
+          sha256: 96dff8deb4895a742782353a94a9547f75126ea26a07fe94e604988f081feee9
       cloud:
-        genericCloud: 897a47031eb7cc240915afebe60f0485535b38cc77a9d72d4c7a5626a74bb246
-        openNebula: 6283aadfabefed677b69b0f14a5df0298499d7a276a5695d78c336d51f189e63
+        genericCloud:
+          sha256: cc70d33280a46c93982a9d4c11065077991cb59967678a62ef0822465c4ded57
+        openNebula:
+          sha256: ecda82d6e8fd02ed88c9816c6f7030afc253c167a1bb888cf439a3cc2af80f28
     x86_64_v2:
       iso:
-        boot: 99a9e9e76cda7cb6c38a674827df0a08304349ed7f36075645cd95221ba4c765
-        dvd: b8ef4ae0ea8bb97bdf80c47f941ec90227e9dfc440afea85f55c3577a9d71abd
-        minimal: f2886ce6af7a395b25aff91ea688ca0704788250ebbd9f0500597cf82659ce72
+        boot:
+          fullVersion: "20260320.0"
+          sha256: 2cc37dde1a83a4359ba4dd972bb7f536b9e08561ddeef1b0af9633a0881c75d5
+        dvd:
+          fullVersion: "20260320.0"
+          sha256: 14021ebb6571445179fee5e26ae372cb4e7371a0297087be53e3926550870e18
+        minimal:
+          fullVersion: "20260320.0"
+          sha256: 3937755d28f8f80cdbdedd64e0ca31e2947a7f66036e216040d8105388de2340
       cloud:
-        genericCloud: c0ced25e1ebd50d119c056d78496f32ae2db0c566274c265df5e7cd0c482d326
-        openNebula: 56b4c10868e6436fce662b82ebd52a80233b16bf3bb83c8d49ddae8f375fec21
+        genericCloud:
+          sha256: c3b28e0ced5e0ef9af333e74ed55fee085fa0a7f27f6706ac0b294c89ccfa95f
+        openNebula:
+          sha256: ac3e55b7970528835ddc9e82ef855239f765786204a6446e4525100bfc9c60b8
     aarch64:
       iso:
-        boot: 937f04cca893ae5fb28907177aa748690e195c35952177885d40ae903c78105c
-        dvd: 1e2391dae8d9d06fa3aede2e1f27c34c7fda550e3f640916a54dda46307d1282
-        minimal: 4248e06511c1f507b94c1f4b128e043350da29b9a20fb4422ed63f9d84c4648d
+        boot:
+          fullVersion: "20260320.0"
+          sha256: c1d488b4cd6c3b2b15ae413c6de62521e1861dbdb661290623c04164e6ddac82
+        dvd:
+          fullVersion: "20260320.0"
+          sha256: 7c9064c23b483e71eb5aed6c3a8ddccd1a56c66d680b6179126992351225430a
+        minimal:
+          fullVersion: "20260320.0"
+          sha256: 65812450e63cc57b0947c4bc84c6a74d28ebbfc7e64ef8e20730ad6430e1afc7
       cloud:
-        genericCloud: 98c9c64488ae243b8165db1a6af9fd54f2b2dce9335e7940ec15a34adee968db
-        openNebula: 82e2210d24ff0571c2705b6026d895dc50c37b2a6c6e883f27a1bf204803b3c7
+        genericCloud:
+          sha256: 3bebcedce81e0224cac268a9e1b4bb64d74d68586efd14140a20874aa781a652
+        openNebula:
+          sha256: 320b2c22d57f762d1fc7b0ea3fe132f7a101acf7d3c1916f92c4b5f35ad76b24
     s390x:
       iso:
-        boot: d71fbfcbb6614831fe746c9e9c43da860d62cc048e17d076300d27891be49194
-        dvd: 75a10a5dc263ec47bcfa467183784e3c8ae3e102d1c1660d99b5e726cda6bb8c
-        minimal: 41b6a062a78f30ff22f057a52c7fd070b126709d0f03c21df5fd2311c13d26a7
+        boot:
+          fullVersion: "20260320.0"
+          sha256: 54c4b24779a8cc471e384a76c16510fe96c449f6e1ae18ab069cb021b4d52ff8
+        dvd:
+          fullVersion: "20260320.0"
+          sha256: 3b56954e0404019c98d08878727fc4200626f86fca8fe5ce9891cd90b63e1376
+        minimal:
+          fullVersion: "20260320.0"
+          sha256: 6b4ff1e71b7eef484bd684ed2c63e03b856b4e5f22593c91ad56ca227bdcead0
       cloud:
-        genericCloud: b4174bd71f59346bc35c32b3743d13e0a06458f203cc3736580cc9f8d28f6725
+        genericCloud:
+          sha256: 4f1ebc8f1b228917ff8d2727581c779b0e8a38c06b977ba9fff97350249995bb
     ppc64le:
       iso:
-        boot: 0094bd54ad97c193475906a38e55d143e40a190d6bb6ec04f4c416f3ece59740
-        dvd: bd1949e8407f7e54fa80bfa5287c5f209f37848cd18e32023c4fc94bd2e4f5d5
-        minimal: 85ae036bb573202567af6c2df4c9fc56da8866e12ada2c38b835502626bc07a5
+        boot:
+          fullVersion: "20260320.0"
+          sha256: d4712a177802d7c24b67ae21d31483372d847810f9d72670f81ce04b9b39b55b
+        dvd:
+          fullVersion: "20260320.0"
+          sha256: c5c7ae9b8d50783042889c0ffc069b6f4dec031e9054bee0bd304d0b56a5f654
+        minimal:
+          fullVersion: "20260320.0"
+          sha256: 0af3d57b9c7c1cb81460c3e749babd4cc3f94c3e55c23937212c0b0b387867ea
   "9":
-    fullVersion: "9.7"
     x86_64:
       iso:
-        boot: 494d09f608b325ef42899b5ce38ba1b17755a639f5558b9b98a031b0696e694a
-        dvd: 56f8bf5e44d293a040203b73b70f08bb7dc52f27654b047c20be8598f63ec1f8
-        minimal: d51ed22cf272a0f30fcf55579d2748ff6ee1fddd6e36ba728cb386b933ceb7fc
+        boot:
+          fullVersion: "9.8"
+          sha256: 445f99e24399bbe98aab86111d60751c142eda049d2444fd76da5eb03472e4ab
+        dvd:
+          fullVersion: "9.8"
+          sha256: 7a392bdc879afd159b30da39a356b7b26c1ddf618b01549164da9aadbc40d814
+        minimal:
+          fullVersion: "9.8"
+          sha256: 7762a4b45a66235726db145a573658964bf77bf7b9bc1c018afe86a4cf37cc2e
       cloud:
-        genericCloud: 5ff9c048859046f41db4a33b1f1a96675711288078aac66b47d0be023af270d1
-        openNebula: 67cd4104d2a7f521bd005886acde67276fb452a046f2501d0f0fe843dd39a084
+        genericCloud:
+          fullVersion: "9.8"
+          sha256: c397eed7023e92c841155831b1f47e26300e5bef0f0256c129322307c897a251
+        openNebula:
+          fullVersion: "9.8"
+          sha256: a15a6fb775f3b39c82efe1498daf31016729eb78864c45ff82584f3ed5e9fbe9
     aarch64:
       iso:
-        boot: fff9af332c09542b29ac04ae61d04f3951fcb4371beefa6be80d1d9d007e9599
-        dvd: c3c5ef5a047d41ea7bd35c41864de00d6ca344e881a827c57ad3c75a46d61bbf
-        minimal: 92f13da08b593b3588c21474a1ee80f7a8df598c89c2684194827bed2952b511
+        boot:
+          fullVersion: "9.8"
+          sha256: 144b4a6c0535dc393864c82238c96e196f703c1ba7ce0096551db517f55310dc
+        dvd:
+          fullVersion: "9.8"
+          sha256: 916ec3ec8ceff4ea206daf1a030af77f811cdfcbef598c58639b6ddf39aeaf0f
+        minimal:
+          fullVersion: "9.8"
+          sha256: 08913740ab695c5f1003165c1d0e41c0615d0ffe4114ab92a8e13ae49fb691ac
       cloud:
-        genericCloud: c6c09af3b5be62e0ca82ccfafe0b1de9be90890fa8fddbd6118fa8b76b36de2d
-        openNebula: 30c4a53c96bddd14fc0d4b0a6f6aeefae695dda114c750115d0bd04ff8799e73
+        genericCloud:
+          fullVersion: "9.8"
+          sha256: b5d883c5f84c68a9828fbd3aac863f9a723b43f8965a32ff7a1c198301f42a29
+        openNebula:
+          fullVersion: "9.8"
+          sha256: 1bc98d3500ee7f7042fdefcb5029f1c5b82adcf6abaaa08e031a9e9c50dca42d
     s390x:
       iso:
-        boot: 7bebd34f7405e5d2ea1086be189aa3feacb702b76e117b39b99436719b98a219
-        dvd: 214fa840ecb5d4fd4b5df52ab4c2bac2b1afc6bb659195ffd68edec2a07d8611
-        minimal: 9add077d63d24b02f332f6056f7a5db8f0a6501fcacf86ba3fb65fe29159d91d
+        boot:
+          fullVersion: "9.8"
+          sha256: bae0a971cf525cf615f54c3934f1963477252a982581daea443bdaddef578bd8
+        dvd:
+          fullVersion: "9.8"
+          sha256: e5d9d794e64425845f9b067c3a5e81c5a75de9257603f310a4e7e43e1c9950d6
+        minimal:
+          fullVersion: "9.8"
+          sha256: 2587baef97d9a6897d620735e536b6d992145ac5a200e35f01d908a1e760b535
       cloud:
-        genericCloud: fdd52f3fae45fe47fe258bf77f63c4b29c9b8870b74166490bdaefe9a6717685
+        genericCloud:
+          fullVersion: "9.8"
+          sha256: 772eacf66540673b947b927e7f2c00aa1a9697d3416f3964291379976e8e3b76
     ppc64le:
       iso:
-        boot: 9f3b82f2463cb725d2ef1be7128ca5a5ecf89c56417721f1f4ed98811d6a59ab
-        dvd: f1c5ee1777f12f388c0be1ffd1d121043df43f8a7ee9dc1babbdc7a3726a86ed
-        minimal: 652b2791a40a67f581c2c45a39cef8ef1708b9beb5b44f690a4174496f509c29
+        boot:
+          fullVersion: "9.8"
+          sha256: 7c06f0c17fb1f2b26400d0154003cefbb45a63adc2d48e54854d79b8da1d42af
+        dvd:
+          fullVersion: "9.8"
+          sha256: 9ab92d6a534de8c14c7ef83830744d9626cde7a48adb6ebc6f728d23fe542346
+        minimal:
+          fullVersion: "9.8"
+          sha256: bed3e7cbfdb78d824cb776603ee24dcd8cb3be9b3a37ecd68da2a4e535cc6508
       cloud:
-        genericCloud: f16abd0ff12ba54f43c6a5675546cc72bc8f4a76bf7852e645ccf54cca1e8827
+        genericCloud:
+          fullVersion: "9.8"
+          sha256: e1e5e2c7af98f0b23f509ee26b33f8885a7a55b44bce85770d3b3b13b4a968e4
   "8":
-    fullVersion: "8.10"
     x86_64:
       iso:
-        boot: cc3e61faf2dd6c9c80d3beeb47eaaba235ac13fe1b617209c3c1e546528ccb99
-        dvd: 463fa92155b886e31627f6713e1c2824343762245a914715ffd6f2efc300b7a1
-        minimal: e524329700abe47ce1f509bed7e2d3c68b336a54c712daa1b492b2429a64d419
+        boot:
+          fullVersion: "8.10"
+          sha256: cc3e61faf2dd6c9c80d3beeb47eaaba235ac13fe1b617209c3c1e546528ccb99
+        dvd:
+          fullVersion: "8.10"
+          sha256: 463fa92155b886e31627f6713e1c2824343762245a914715ffd6f2efc300b7a1
+        minimal:
+          fullVersion: "8.10"
+          sha256: e524329700abe47ce1f509bed7e2d3c68b336a54c712daa1b492b2429a64d419
       cloud:
-        genericCloud: 669bd580dcef5491d4dfd5724d252cce7cde1b2b33a3ca951e688d71386875e3
-        openNebula: af4106ba06481efb33fdfb5c305c17b92d8a2d6760e242c9c65b2bffb2081af8
+        genericCloud:
+          fullVersion: "8.10"
+          sha256: 9e6e3f98b809bca9bc89d8ac3c7fbb7d5aed76e34b7339233138319adb7f0343
+        openNebula:
+          fullVersion: "8.10"
+          sha256: 5ebf2a6071108c494121c0fece69514c5d760290719a7d103fe4942af4417f50
     aarch64:
       iso:
-        boot: 309ef3de5404f5246f02f5cfdf3ff094404167f7de7fbc6517f3de3b77b5e87d
-        dvd: 49feeaa7876ede4f544ae7ddcf5a8d63649bc087aa0f1c75eac38ee456b99736
-        minimal: e2fcef261a236fb19e69fceffce7a31b1afafbe8afe9f24553677684571cea81
+        boot:
+          fullVersion: "8.10"
+          sha256: 309ef3de5404f5246f02f5cfdf3ff094404167f7de7fbc6517f3de3b77b5e87d
+        dvd:
+          fullVersion: "8.10"
+          sha256: 49feeaa7876ede4f544ae7ddcf5a8d63649bc087aa0f1c75eac38ee456b99736
+        minimal:
+          fullVersion: "8.10"
+          sha256: e2fcef261a236fb19e69fceffce7a31b1afafbe8afe9f24553677684571cea81
       cloud:
-        genericCloud: cec6736cbc562d06895e218b6f022621343c553bfa79192ca491381b4636c7b8
-        openNebula: ca834a694c20db274df61b88be18d04566e93df3a3a1367de8c8424055c0c135
+        genericCloud:
+          fullVersion: "8.10"
+          sha256: 8667b32e7dd487794a96e01f459d3ed13356967b1e36f4702c3b53ff740515f1
+        openNebula:
+          fullVersion: "8.10"
+          sha256: 050707e93466842f642cd9bb3f6d8a1f366eb99df4261e480938e1defbaaef6b
     s390x:
       iso:
-        boot: 01cd63c35e1a4adf89538e693724f1a2f7d217780e5dc82c140b0d2802026a65
-        dvd: 4a75edc17e5ab21d8452a6b64b5f24863285120f82d62a90491072a48216ae8c
-        minimal: 4f0bdf1e4f122a8e474803e621181041ca33f4763bef1c72b1f286fa72a21541
+        boot:
+          fullVersion: "8.10"
+          sha256: 01cd63c35e1a4adf89538e693724f1a2f7d217780e5dc82c140b0d2802026a65
+        dvd:
+          fullVersion: "8.10"
+          sha256: 4a75edc17e5ab21d8452a6b64b5f24863285120f82d62a90491072a48216ae8c
+        minimal:
+          fullVersion: "8.10"
+          sha256: 4f0bdf1e4f122a8e474803e621181041ca33f4763bef1c72b1f286fa72a21541
       cloud:
-        genericCloud: 7f8866a4247ad57c81f5d2c5a0fa64940691f9df1e858a1510d34a0de008eb16
+        genericCloud:
+          fullVersion: "8.10"
+          sha256: a532004d8d3034608e321d126d7a25f587de8bcdf117b388bf56b1aab6505ff6
     ppc64le:
       iso:
-        boot: 6f9115328e6edfd6c46f87036df2e3544ee05ecc8f2bef8482a54a7e9f38e163
-        dvd: b5de561a86d99ef624ed25376b1f88ec0e5b7ae05717dd78d57fd9c19f53ce73
-        minimal: 869dad6ec5bd9050a2a5188e5aff3e519a3b9a403e88639a564c884922b14af7
+        boot:
+          fullVersion: "8.10"
+          sha256: 6f9115328e6edfd6c46f87036df2e3544ee05ecc8f2bef8482a54a7e9f38e163
+        dvd:
+          fullVersion: "8.10"
+          sha256: b5de561a86d99ef624ed25376b1f88ec0e5b7ae05717dd78d57fd9c19f53ce73
+        minimal:
+          fullVersion: "8.10"
+          sha256: 869dad6ec5bd9050a2a5188e5aff3e519a3b9a403e88639a564c884922b14af7
       cloud:
-        genericCloud: 01acccc74009ebe8ddb13ea6a313479b85a372cb5b898f9090a12a2bd2d62520
+        genericCloud:
+          fullVersion: "8.10"
+          sha256: 0b9608c674fe3a0476b21455909af0c1afa6246a78f2d2570ef8074344698945

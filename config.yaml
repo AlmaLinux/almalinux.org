@@ -50,3 +50,8 @@ markup:
   highlight:
     noClasses: true
     style: xcode-dark
+
+outputs:
+  home:
+    - HTML
+    - JSON

@@ -86,7 +86,7 @@ GitHub Board & Repositories, and other: 
   - This repo houses the certification suite itself, and documentation, issues tracking, and related code snippets.
 - [Certification SIG Board](https://github.com/orgs/AlmaLinux/projects/6)
   - This board provides an asynchronous method of communication, allowing for more flexible timelines, especially for international participants. Additionally, the GitHub platform serves as a mechanism for organizations to collaborate with the SIG on making certification requests from Independent Software Vendors (ISVs) and Independent Hardware Vendors (IHVs).
-- [Mattermost chat - SIGs/Certifcation](https://chat.almalinux.org/almalinux/channels/sigcertification)
+- [Mattermost chat - SIGs/Certification](https://chat.almalinux.org/almalinux/channels/sigcertification)
   - This acts as the primary way for the community to engage with each other (including the SIG members) for work on certifications or the certification suite. The most collaborative place for the SIG is this chat room. This room is also bridged to matrix on [#sig-certification:almalinux.im](https://app.almalinux.im/#/room/#sig-certification:almalinux.im)
 - Private certification mailing list
   - The ([certification-sig\@lists.almalinux.org](mailto:certification-sig@lists.almalinux.org?subject=updateme)) mailing list acts as a private place for the Certification SIG to communicate with IHVs and ISVs. If you require your interaction with the SIG to be private (for example, if you are working with the SIG under NDA), you may reach out here.
@@ -105,7 +105,7 @@ For IHVs, initiating the process is as simple as filling out this [google form](
 <a class="btn al-cta-green" href="https://forms.gle/wuCSDisQwR5nFz3d8"><i class="bi bi-people-fill"></i> Get Certified</a>
 </div>
 
-We strongly recommend you join the [Mattermost chat - SIGs/Certifcation](https://chat.almalinux.org/almalinux/channels/sigcertification), if you have not already done so, after submitting your form to help facilitate collaboration throughout the process and engagement with the community.
+We strongly recommend you join the [Mattermost chat - SIGs/Certification](https://chat.almalinux.org/almalinux/channels/sigcertification), if you have not already done so, after submitting your form to help facilitate collaboration throughout the process and engagement with the community.
 
 ### Pre-certification
 
@@ -171,7 +171,7 @@ The Certification SIG will engage the IHVs for another round of certification wh
 
 In addition to the certification processes with IHVs managed by the AlmaLinux OS Foundation (ALOSF), we encourage community involvement in hardware testing. Individuals with access to hardware that we have yet to certify are encouraged and invited to participate. This not only amplifies the scope of our hardware compatibility and validates the strength of the certification suite, but also shows IHVs the types and scope of the AlmaLinux user base.
 
-Hardware that has been certified without input from the IHV will be described on the AlmaLinux website with a "Community Certified" status. This serves as a first confirmation of compatibility until a relationship with the IHV can be confirmed, and provides users with confidence in hardware compatibility.
+Hardware that has been certified without input from the IHV will be described on the AlmaLinux website with a "Community Validated" status. This serves as a first confirmation of compatibility until a relationship with the IHV can be confirmed, and provides users with confidence in hardware compatibility.
 
 Once the certification suite has been run, results should be shared through a pull request to the [Certifications](https://github.com/AlmaLinux/certification-test-results) repo.
 
@@ -179,7 +179,7 @@ Once the certification suite has been run, results should be shared through a pu
 
 - Increased Coverage: With community support, we can vastly increase the range of hardware tested, providing more options for end-users.
 - Quick Feedback: Engaged community members running these tests can provide rapid feedback on compatibility, aiding in engagement with IHVs for the SIG.
-- Community Trust: Hardware that is "Community Certified" has been vetted by the very users who rely on it, creating a sense of trust and reliability.
+- Community Trust: Hardware that is "Community Validated" has been vetted by the very users who rely on it, creating a sense of trust and reliability.
 
 If you have a specific certification request, or have hardware in reserve, take a look at the Community Requested Certifications list. We'd love to have you!
 

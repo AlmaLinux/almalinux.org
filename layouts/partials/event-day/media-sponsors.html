@@ -1,0 +1,25 @@
+{{ $data := index $.Site.Data.events .Params.event_data_key }}
+{{ if and $data $data.media_sponsors }}
+  <div class="al-index-sponsors">
+    <div class="container al-py-md px-5">
+      <h2 class="h4">
+        {{ i18n "Media sponsors for " }}{{ .Params.event_name }}
+      </h2>
+      <div
+        class="row row-cols-2 row-cols-sm-4 row-cols-md-6 g-4 al-backed-by-list">
+        {{ range $data.media_sponsors }}
+          <a href="{{ .url }}">
+            <div
+              class="col d-flex flex-fill align-items-center justify-content-center al-backer-logo-container">
+              <img
+                loading="lazy"
+                src="{{ .icon }}"
+                alt="{{ .alt }}"
+                class="al-backer-logo-small" />
+            </div>
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+{{ end }}

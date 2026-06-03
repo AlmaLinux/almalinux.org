@@ -4,3 +4,4 @@ static/pagefind/
 .DS_Store
 node_modules/
 data/get_almalinux.yaml
+resources/_gen/

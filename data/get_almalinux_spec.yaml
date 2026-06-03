@@ -73,7 +73,7 @@ common:
 # on the Get AlmaLinux page; list the newest version first.
 versions:
   - id: "10"
-    label: "AlmaLinux 10"
+    label: "AlmaLinux OS 10"
     # The list of supported architectures for this version.
     arches: ["x86_64", "x86_64_v2", "aarch64", "s390x", "ppc64le"]
     sections:
@@ -122,7 +122,7 @@ versions:
         storeUrl: "https://apps.microsoft.com/store/detail/almalinux-{major}/9N2VHJMS6J50"
 
   - id: "10-kitten"
-    label: "AlmaLinux 10 Kitten"
+    label: "AlmaLinux OS 10 Kitten"
     # The list of supported architectures for this version.
     arches: ["x86_64", "x86_64_v2", "aarch64", "s390x", "ppc64le"]
     sections:
@@ -177,7 +177,7 @@ versions:
         arches: ["x86_64", "x86_64_v2"]
 
   - id: "9"
-    label: "AlmaLinux 9"
+    label: "AlmaLinux OS 9"
     arches: ["x86_64", "aarch64", "s390x", "ppc64le"]
     sections:
       iso:
@@ -233,7 +233,7 @@ versions:
         storeUrl: "https://apps.microsoft.com/store/detail/almalinux-{major}/9P5RWLM70SN9"
 
   - id: "8"
-    label: "AlmaLinux 8"
+    label: "AlmaLinux OS 8"
     arches: ["x86_64", "aarch64", "s390x", "ppc64le"]
     sections:
       iso:

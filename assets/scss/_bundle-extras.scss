@@ -3,21 +3,29 @@
 
 @import "./variables";
 
-// CTA button variants (used on index page)
+// CTA button variants. Color only; spacing is the template's job
+// via Bootstrap utilities (gap, m*, me-*, etc.).
 .al-cta-blue {
   background: #24c2ff;
   color: #222222;
-  margin: 10px 10px 10px 0;
 
   &:hover {
     background: #0bbbff;
   }
 }
 
+.al-cta-blue-deep {
+  background: $al-c-science-blue-light;
+  color: #222222;
+
+  &:hover {
+    background: darken($al-c-science-blue-light, 5%);
+  }
+}
+
 .al-cta-green {
   background: $al-c-atlantis;
   color: #222222;
-  margin: 10px;
 
   &:hover {
     background: darken($al-c-atlantis, 5%);
@@ -27,7 +35,6 @@
 .al-cta-yellow {
   background: $al-c-candlelight;
   color: #222222;
-  margin: 10px;
 
   img {
     display: inline;
@@ -97,6 +104,81 @@
     img {
       object-fit: contain;
     }
+  }
+}
+
+// Tiered sponsor logos — used by layouts/partials/common/foundation-members.html
+// (homepage + foundation page). Larger tiers get bigger logos and more breathing room.
+.al-sponsor-tier-block {
+  margin-top: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.al-sponsor-tier-label {
+  font-size: 0.95rem;
+  color: rgba(254, 254, 254, 0.7);
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(196, 225, 255, 0.18);
+}
+
+// Tint each tier label to match the tier accent on the members + foundation pages.
+// Uses :has() so the partial doesn't need a tier class on the wrapper.
+.al-sponsor-tier-block:has(.is-platinum) .al-sponsor-tier-label { color: #e8eef5; }
+.al-sponsor-tier-block:has(.is-gold)     .al-sponsor-tier-label { color: #e9b94a; }
+.al-sponsor-tier-block:has(.is-ruby)     .al-sponsor-tier-label { color: #ff6b9a; }
+.al-sponsor-tier-block:has(.is-silver)   .al-sponsor-tier-label { color: #14b8a6; }
+
+.al-sponsor-tier-logos {
+  display: grid;
+  gap: 1.5rem 2rem;
+  align-items: center;
+  justify-items: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  img {
+    width: auto;
+    object-fit: contain;
+  }
+
+  &.is-platinum {
+    grid-template-columns: 1fr;
+    img { max-height: 80px; max-width: 220px; }
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &.is-gold {
+    grid-template-columns: repeat(2, 1fr);
+    img { max-height: 56px; max-width: 170px; }
+
+    @media (min-width: 768px) { grid-template-columns: repeat(4, 1fr); }
+    @media (min-width: 992px) { grid-template-columns: repeat(5, 1fr); }
+  }
+
+  &.is-ruby {
+    grid-template-columns: 1fr;
+    img { max-height: 50px; max-width: 150px; }
+
+    @media (min-width: 768px) { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  &.is-silver {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem 1.5rem;
+    img { max-height: 38px; max-width: 130px; }
+
+    @media (min-width: 768px) { grid-template-columns: repeat(5, 1fr); }
+    @media (min-width: 992px) { grid-template-columns: repeat(6, 1fr); }
   }
 }
 
@@ -170,6 +252,12 @@
 }
 
 // Download page OS tabs
+.al-os-tabs .nav-link.dropdown-toggle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
 .al-os-tabs .nav-link {
   background-color: #0e3b5c;
   color: #ffffff;
@@ -177,8 +265,8 @@
   font-weight: 700;
   border: none;
   position: relative;
-  padding: 12px 32px;
-  margin: 0 6px;
+  padding: 8px 16px;
+  margin: 0 3px;
 }
 
 .nav-tabs {
@@ -280,11 +368,6 @@ a:hover {
   color: #9db4cc;
 }
 
-// Display-4 override (BS5 bridge)
-.display-4 {
-  font-size: 1rem !important;
-  line-height: 1rem;
-}
 
 // Pagination overrides
 .pagination .page-item .page-link {
@@ -379,6 +462,25 @@ a:hover {
   padding: 0;
   margin: 0 0 0 1rem;
   list-style-type: none;
+}
+
+// Download page utilities
+.al-text-muted {
+  color: #c4e1ff;
+}
+
+.al-border-accent {
+  border-bottom-color: #14598a !important;
+}
+
+.al-btn-min {
+  min-width: 136px;
+}
+
+.al-icon-40 {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
 }
 
 // Download page gap utility
@@ -547,4 +649,64 @@ a:hover {
     margin-bottom: 1rem;
     flex-shrink: 0;
   }
+}
+
+// Offset anchor targets so sticky nav doesn't cover the section header
+.anchor {
+  scroll-margin-top: 120px;
+}
+
+// Quickstart section wrapper
+.al-quickstart-wrap {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem 1.5rem 1rem;
+  margin-bottom: 3rem;
+}
+
+// Persona quick-link cards on download page
+.al-persona-cards {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.al-persona-card {
+  background: #0e3b5c;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  width: 200px;
+  transition: transform 0.2s, background 0.2s;
+
+  &:hover {
+    transform: translateY(-4px);
+    background: #14598a;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.al-persona-card-title {
+  font-family: $al-font-family-accent;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.al-persona-card-desc {
+  font-size: 0.82rem;
+  color: #c4e1ff;
+  line-height: 1.3;
 }

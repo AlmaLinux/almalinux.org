@@ -1,0 +1,23 @@
+{{ $data := site.Data.get_almalinux }}
+{{ $defaultVersion := index $data.versions 0 }}
+{{ $defaultArch := index $defaultVersion.arches 0 }}
+
+{{ $personas := slice
+  (dict "title" "Desktop User" "desc" "Try AlmaLinux with a full desktop environment" "sectionId" "live_media" "anchorPrefix" "Live_Media" "icon" "/images/live-icon-F.svg")
+  (dict "title" "Server Admin" "desc" "Install on bare metal or in a VM" "sectionId" "iso_images" "anchorPrefix" "ISO_Images" "icon" "/images/iso-icon-F.svg")
+  (dict "title" "Cloud / DevOps" "desc" "Deploy on AWS, Azure, GCP, or OpenNebula" "sectionId" "cloud_images" "anchorPrefix" "Cloud_Images" "icon" "/images/cloud-icon-F.svg")
+  (dict "title" "Developer" "desc" "Containers, Vagrant, and WSL" "sectionId" "container_images" "anchorPrefix" "Container_Images" "icon" "/images/container-icon-F.svg")
+}}
+
+
+<div class="al-persona-cards">
+  {{ range $personas }}
+    <a
+      class="al-persona-card"
+      href="#{{ .anchorPrefix }}-{{ $defaultArch.id }}-{{ $defaultVersion.id }}">
+      <img src="{{ .icon }}" alt="{{ .title }}" />
+      <div class="al-persona-card-title">{{ .title }}</div>
+      <div class="al-persona-card-desc">{{ .desc }}</div>
+    </a>
+  {{ end }}
+</div>
