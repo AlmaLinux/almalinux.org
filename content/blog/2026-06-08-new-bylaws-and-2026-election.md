@@ -27,7 +27,7 @@ The goal of this rework was simple: make our elections predictable, fair, and ea
 
 **Voting is now ranked choice.** Rather than picking a single name, you'll rank the candidates in your order of preference. It's a fairer reflection of what the membership actually wants, especially when there are more good candidates than open seats.
 
-**An independent Election Committee runs the election.** This is how we've been doing things already, but now it's codified in the byloaws: A committee is appointed by the board to run the election, and is made up of members in good standing. Its members can't be nominated in the election they're running.
+**An independent Election Committee runs the election.** This is how we've been doing things already, but now it's codified in the bylaws: A committee is appointed by the board to run the election, and is made up of members in good standing. Its members can't be nominated in the election they're running.
 
 The rest of the structure is unchanged from what you'd expect. All six membership classes vote together, with votes weighted by membership level — Platinum 50, Gold 15, Ruby 5, Silver 5, and Individual and Mirror members 1 each. You can read the full details in [the bylaws](/p/foundation-bylaws/).
 
