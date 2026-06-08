@@ -196,10 +196,12 @@ date: "YYYY-MM-DD" # Publication date
 images:
   - /blog-images/YYYY/image-name.png # Social/OG preview image
 post:
-  title: "Your Post Title"
+  title: "A one- or two-sentence summary of the post" # Shown on the blog listing page — NOT a copy of the title above
   image: /blog-images/YYYY/image-name.png
 ---
 ```
+
+> **Note:** Despite its name, `post.title` is the post's **summary**, displayed as the excerpt on the [blog listing page](https://almalinux.org/blog/) beneath the post image. Write a real one- or two-sentence summary here rather than repeating the `title` field.
 
 ### Adding Images
 
