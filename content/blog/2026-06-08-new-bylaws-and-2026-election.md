@@ -56,7 +56,7 @@ There are two dates worth putting on your calendar right now.
 
 ## Questions are welcome
 
-This is a real improvement to how we govern ourselves, and I'd much rather answer your questions than have you guess. The best place to ask is the ~foundation room on [chat.almalinux.org](https://chat.almalinux.org), or you can email me directly.
+This is a real improvement to how we govern ourselves, and I'd much rather answer your questions than have you guess. The best place to ask is the [~foundation](https://chat.almalinux.org/almalinux/channels/foundation) room on [chat.almalinux.org](https://chat.almalinux.org), or you can email me directly.
 
 Thank you, as always, for the trust you put in us and for everything you do for each other. I'm looking forward to a clean, straightforward election this year.
 
