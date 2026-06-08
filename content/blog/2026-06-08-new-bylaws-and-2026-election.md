@@ -62,4 +62,4 @@ Thank you, as always, for the trust you put in us and for everything you do for 
 
 ## Want to help?
 
-As a note: if you are intersted in joining the election committee, please let me know! It's a very low-lift process (probably 1 - 3 hours each week during the election window at most). That's especially true with the introduction of our new Accounts software, but your priticipation increases the accountability we have, and validates the trust you're putting in us.
+As a note: if you are intersted in joining the election committee, please let me know! It's a very low-lift process (probably 1 - 3 hours each week during the election window at most). That's especially true with the [introduction of our new Accounts software](/blog/2026-03-12-introducing-almalinux-astra/), but your participation increases the accountability we have, and validates the trust you're putting in us.
