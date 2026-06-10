@@ -5,7 +5,7 @@ author:
   name: "benny Vasquez"
   bio: "Chair, board of directors"
   image: /users/benny.jpeg
-date: "2026-06-08"
+date: "2026-06-10"
 images:
   - /blog-images/2026/2026-board-election.png
 post:
@@ -17,7 +17,7 @@ Last September, [we cancelled an election in progress](/blog/2025-09-30-election
 
 The work is done. I'm happy to share that as of the [April Board meeting](https://wiki.almalinux.org/Transparency.html), we have adopted [new bylaws](/p/foundation-bylaws/), along with a reworked election process and a predictable annual election calendar. This post explains what changed, why, and — most importantly — what you can do to get ready for this year's election.
 
-The result of all of this work is a more stable organization by overlapping board terms, and easier and more consistent prcesses for us to follow.
+The result of all of this work is a more stable organization with overlapping board terms, and easier and more consistent election prcesses for us to follow.
 
 ## What changed, and why
 
@@ -37,7 +37,7 @@ The 2026 election is the first under the new bylaws, and it covers **Cohort A** 
 
 | Milestone                                   | Date               |
 | ------------------------------------------- | ------------------ |
-| Voter eligibility cutoff                    | **July 15, 2026**  |
+| Voter eligibility cutoff                    | **July 16, 2026**  |
 | Nominations open                            | **August 3, 2026** |
 | Nominations close, candidate list published | September 8, 2026  |
 | Voting opens                                | September 14, 2026 |
@@ -50,16 +50,16 @@ Going forward, you can expect this same shape every year: eligibility set in mid
 
 There are two dates worth putting on your calendar right now.
 
-**July 15 — be a member if you want to vote.** Only members in good standing as of the eligibility cutoff can vote in this year's election. If you've been meaning to join, or your membership has lapsed, now is the time to take care of it. You can [find the membership level that fits you and apply here](/members/). As a reminder: individual membership is free.
+**July 16 — be a member if you want to vote or run for election.** Only members in good standing as of the eligibility cutoff can vote in this year's election. If you've been meaning to join, or your membership has lapsed, now is the time to take care of it. You can [find the membership level that fits you and apply here](/members/). As a reminder: individual membership is free. Membership requests are reviewed by the Membership Committee and approval isn't immediate, so if you want to be eligible by the deadline, please apply early.
 
 **August 3 — nominations open.** If you've thought about helping steer the Foundation, or you know someone who'd serve the community well, start thinking about it now. Individual and Mirror members can each nominate one candidate other than themselves, and Sponsor members can nominate a representative. We'll share the full nomination details when the window opens.
 
 ## Questions are welcome
 
-This is a real improvement to how we govern ourselves, and I'd much rather answer your questions than have you guess. The best place to ask is the [~foundation](https://chat.almalinux.org/almalinux/channels/foundation) room on [chat.almalinux.org](https://chat.almalinux.org), or you can email me directly.
+This is a real improvement to how we govern ourselves, and we'd much rather answer your questions than have you guess. The best place to ask is the [~foundation](https://chat.almalinux.org/almalinux/channels/foundation) room on [chat.almalinux.org](https://chat.almalinux.org), or you can email me directly.
 
 Thank you, as always, for the trust you put in us and for everything you do for each other. I'm looking forward to a clean, straightforward election this year.
 
 ## Want to help?
 
-As a note: if you are intersted in joining the election committee, please let me know! It's a very low-lift process (probably 1 - 3 hours each week during the election window at most). That's especially true with the [introduction of our new Accounts software](/blog/2026-03-12-introducing-almalinux-astra/), but your participation increases the accountability we have, and validates the trust you're putting in us.
+As a note: if you are interested in joining the election committee, please let me know! It's a very low-lift process (probably 1 - 3 hours each week during the election window at most). That's especially true with the [introduction of our new Accounts software](/blog/2026-03-12-introducing-almalinux-astra/), but your participation increases the accountability we have, and validates the trust you're putting in us.
