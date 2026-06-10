@@ -188,6 +188,15 @@ button:focus, .btn:focus{
             color: $al-c-atlantis-lighter;
           }
         }
+
+        // Matches the Ruby membership tier accent on /members
+        &.al-motd-election {
+          color: #ff6e71;
+
+          &:hover {
+            color: #ff9092;
+          }
+        }
       }
     }
   }
