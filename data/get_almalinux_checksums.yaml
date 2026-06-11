@@ -269,10 +269,6 @@ versions:
         minimal:
           fullVersion: "8.10"
           sha256: 4f0bdf1e4f122a8e474803e621181041ca33f4763bef1c72b1f286fa72a21541
-      cloud:
-        genericCloud:
-          fullVersion: "8.10"
-          sha256: a532004d8d3034608e321d126d7a25f587de8bcdf117b388bf56b1aab6505ff6
     ppc64le:
       iso:
         boot:
