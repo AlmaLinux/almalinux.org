@@ -52,6 +52,54 @@
     h2 {
       font-size: calc(1.325rem + 0.9vw);
     }
+    /* GitHub-style RFC stage labels */
+    .al-rfc-label {
+      display: inline-block;
+      border: 1px solid transparent;
+      border-radius: 2em;
+      padding: 1px 10px;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 22px;
+      white-space: nowrap;
+    }
+    .al-rfc-submitted {
+      color: #57606a;
+      background: #6e77811a;
+      border-color: #6e778133;
+    }
+    .al-rfc-discussion,
+    .al-rfc-accepted {
+      color: #1a7f37;
+      background: #1a7f371a;
+      border-color: #1a7f3733;
+    }
+    .al-rfc-fcp {
+      color: #9a6700;
+      background: #9a67001a;
+      border-color: #9a670033;
+    }
+    .al-rfc-decision {
+      color: #8250df;
+      background: #8250df1a;
+      border-color: #8250df33;
+    }
+    .al-rfc-rejected {
+      color: #cf222e;
+      background: #cf222e1a;
+      border-color: #cf222e33;
+    }
+    .al-rfc-withdrawn {
+      color: #57606a;
+      background: #6e77811a;
+      border-color: #6e778133;
+    }
+    .al-rfc-row a {
+      text-decoration: none;
+    }
+    .al-rfc-row a:hover {
+      text-decoration: underline;
+    }
   </style>
 
   <div class="al-body-container">
@@ -117,11 +165,144 @@
                 <li>{{ i18n "Release Management" }}</li>
                 <li>{{ i18n "SIG support" }}</li>
               </ul>
+              <p class="mt-3">
+                {{ i18n "ALESCo brings together the maintainers, packagers, and SIG leads who build and sustain AlmaLinux OS. It is not a closed body. Anyone working on AlmaLinux is welcome to bring proposals, raise concerns, and help shape technical direction in the open." }}
+              </p>
             </div>
           </div>
           <!-- end 'about' header and paragraph -->
+        </div>
+      </div>
+      <!-- end About -->
 
-          <!-- Members -->
+      <!-- How ALESCo works -->
+      <div class="container al-members">
+        <div class="row">
+          <div class="container-measure" style="display: flex; width: 70%;">
+            <i class="bi bi-people pe-2" style="font-size:1.25em"></i>
+            <div
+              class="al-index-community-content-wrap"
+              style="padding-left: 22px">
+              <h4 class="fw-bold">{{ i18n "How ALESCo works" }}</h4>
+              <p>
+                {{ i18n "ALESCo meets every two weeks, and the schedule is posted on events.almalinux.org. Decisions are made by majority vote of the committee, and the chair role rotates among members every six months. Discussion happens in the open in the alesco channel on chat.almalinux.org, and technical proposals are tracked as pull requests in the ALESCo repository on GitHub. Anyone working on AlmaLinux is welcome to join a meeting, raise a topic, or open a proposal." }}
+              </p>
+              <p class="mb-0">
+                <a href="https://events.almalinux.org/category/7/" class="me-3"
+                  >{{ i18n "View the meeting schedule" }}</a
+                >
+                <a href="https://github.com/AlmaLinux/ALESCo" class="me-3"
+                  >{{ i18n "ALESCo on GitHub" }}</a
+                >
+                <a href="https://wiki.almalinux.org/alesco.html"
+                  >{{ i18n "Read the full charter" }}</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end How ALESCo works -->
+
+      <!-- Lifecycle of a proposal -->
+      <div class="container al-members">
+        <div class="row">
+          <div class="container-measure" style="display: flex; width: 70%;">
+            <i class="bi bi-signpost-split pe-2" style="font-size:1.25em"></i>
+            <div
+              class="al-index-community-content-wrap"
+              style="padding-left: 22px">
+              <h4 class="fw-bold">{{ i18n "Lifecycle of a proposal" }}</h4>
+              <p>
+                {{ i18n "Proposals to ALESCo are written as RFCs (requests for comments) and submitted as pull requests in the ALESCo repository. Each one moves through a clear set of stages, in the open." }}
+              </p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="row row-cols-1 row-cols-md-4">
+              <div class="col">
+                <span class="al-rfc-label al-rfc-submitted"
+                  >{{ i18n "Submitted" }}</span
+                >
+                <p class="small mt-2">
+                  {{ i18n "A new RFC is opened as a pull request and checked for formatting." }}
+                </p>
+              </div>
+              <div class="col">
+                <span class="al-rfc-label al-rfc-discussion"
+                  >{{ i18n "Open for Discussion" }}</span
+                >
+                <p class="small mt-2">
+                  {{ i18n "The committee and community review and refine it in the open. The standard review period is two weeks." }}
+                </p>
+              </div>
+              <div class="col">
+                <span class="al-rfc-label al-rfc-fcp"
+                  >{{ i18n "Final Comment Period" }}</span
+                >
+                <p class="small mt-2">
+                  {{ i18n "ALESCo signals that a decision is close and invites any last feedback." }}
+                </p>
+              </div>
+              <div class="col">
+                <span class="al-rfc-label al-rfc-decision"
+                  >{{ i18n "Decision" }}</span
+                >
+                <p class="small mt-2 mb-2">
+                  {{ i18n "ALESCo makes the final call, weighing community feedback. A proposal ends in one of these outcomes:" }}
+                </p>
+                <span class="al-rfc-label al-rfc-accepted me-1"
+                  >{{ i18n "Accepted" }}</span
+                >
+                <span class="al-rfc-label al-rfc-rejected me-1"
+                  >{{ i18n "Rejected" }}</span
+                >
+                <span class="al-rfc-label al-rfc-withdrawn"
+                  >{{ i18n "Withdrawn" }}</span
+                >
+              </div>
+            </div>
+            <p class="small fst-italic mt-4">
+              {{ i18n "In rare cases that touch trademarks, significant resources, or partnerships, the AlmaLinux Foundation Board provides input before a vote." }}
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end Lifecycle of a proposal -->
+
+      <!-- Open Proposals -->
+      <div class="container al-members">
+        <div class="row">
+          <div class="container-measure" style="display: flex; width: 70%;">
+            <i class="bi bi-inbox pe-2" style="font-size:1.25em"></i>
+            <div
+              class="al-index-community-content-wrap"
+              style="padding-left: 22px">
+              <h4 class="fw-bold">{{ i18n "Open Proposals" }}</h4>
+              <p>
+                {{ i18n "These are the RFCs currently open in the ALESCo repository. Each one links to the pull request on GitHub, where you can read it and add your feedback." }}
+              </p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div id="alesco-prs" class="al-rfc-list">
+              <p id="alesco-prs-status" class="text-muted">
+                {{ i18n "Loading open proposals..." }}
+              </p>
+            </div>
+            <p class="mt-3 mb-0">
+              <a href="https://github.com/AlmaLinux/ALESCo/pulls"
+                >{{ i18n "View all on GitHub" }}</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end Open Proposals -->
+
+      <!-- Members -->
+      <div class="container al-members">
+        <div class="row">
           <div class="col-12">
             <h6 class="pb-2 mb-5 border-bottom">
               {{ i18n "Members of ALESCo" }}
@@ -196,10 +377,27 @@
             </div>
           </div>
           <!-- end Neal -->
+          <!-- Lance -->
+          <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="py-5 px-4 text-center al-member-item">
+              <div>
+                <img
+                  class="img-fluid rounded-circle mb-3 img-thumbnail"
+                  src="/alesco/lance.png"
+                  alt="Lance Albertson"
+                  style="max-width: 180px;" />
+              </div>
+              <h5 class="mb-1">Lance Albertson</h5>
+              <div class="small mb-1">{{ i18n "Director" }}</div>
+              <div class="small fw-light">
+                Oregon State University Open Source Lab
+              </div>
+            </div>
+          </div>
+          <!-- end Lance -->
         </div>
       </div>
       <!-- end Members -->
-      <!-- end About -->
       <div class="al-index-stop" style="background: #22C2FF; color: #0A2335;">
         <div class="container al-py-md" style="padding: 0 40px 0 40px;">
           <div class="container-stop" style="display: flex;">
@@ -255,4 +453,62 @@
       </div>
     </section>
   </div>
+
+  <!-- Live fetch of open ALESCo RFCs (pull requests). Strings are baked in
+       at build time via i18n so translations keep working at runtime. -->
+  <script>
+    (function () {
+      var listEl = document.getElementById("alesco-prs");
+      var statusEl = document.getElementById("alesco-prs-status");
+      if (!listEl || !statusEl) {
+        return;
+      }
+      var labels = {
+        by: "{{ i18n "by" }}",
+        updated: "{{ i18n "Updated" }}",
+        none: "{{ i18n "No open proposals right now." }}",
+        error: "{{ i18n "Could not load open proposals right now." }}"
+      };
+      var api =
+        "https://api.github.com/repos/AlmaLinux/ALESCo/pulls" +
+        "?state=open&sort=updated&direction=desc&per_page=20";
+      fetch(api, { headers: { Accept: "application/vnd.github+json" } })
+        .then(function (res) {
+          if (!res.ok) {
+            throw new Error("HTTP " + res.status);
+          }
+          return res.json();
+        })
+        .then(function (prs) {
+          if (!prs.length) {
+            statusEl.textContent = labels.none;
+            return;
+          }
+          listEl.innerHTML = "";
+          prs.forEach(function (pr) {
+            var updated = new Date(pr.updated_at).toLocaleDateString(
+              undefined,
+              { year: "numeric", month: "short", day: "numeric" }
+            );
+            var row = document.createElement("div");
+            row.className = "al-rfc-row py-2 border-bottom";
+            var link = document.createElement("a");
+            link.href = pr.html_url;
+            link.className = "fw-bold";
+            link.textContent = pr.title;
+            var meta = document.createElement("div");
+            meta.className = "small text-muted";
+            meta.textContent =
+              "#" + pr.number + " " + labels.by + " " + pr.user.login +
+              " · " + labels.updated + " " + updated;
+            row.appendChild(link);
+            row.appendChild(meta);
+            listEl.appendChild(row);
+          });
+        })
+        .catch(function () {
+          statusEl.textContent = labels.error;
+        });
+    })();
+  </script>
 {{ end }}
