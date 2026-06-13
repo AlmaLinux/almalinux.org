@@ -3,7 +3,7 @@
     "Sorry, but the page you were trying to access could not be found.": "Lo sentimos, pero no se pudo encontrar la página a la que intentaba acceder.",
     "Resources": "Recursos",
     "Wiki": "Wiki",
-    "Bugs": "Fallos",
+    "Bugs": "Bugs",
     "Repository": "Repositorio",
     "Downloads": "Descargas",
     "Membership": "Membresía",
@@ -19,7 +19,7 @@
     "Foundation Bylaws": "Estatutos de la fundación",
     "Blog": "Blog",
     "Migrate from CentOS 8": "Migrar desde CentOS 8",
-    "Report Bugs": "Reportar errores",
+    "Report Bugs": "Reportar bugs",
     "Shop": "Tienda",
     "Translate": "Traducir",
     "Download": "Descargar",
@@ -631,5 +631,13 @@
     "50-vote ballot": "50 votos",
     "A US-based non-profit stewarding the AlmaLinux project — and anyone can join. Join as an individual, a mirror host, or a sponsor and own a vote in shaping the future of AlmaLinux.": "Una organización sin fines de lucro con sede en Estados Unidos que administra el proyecto AlmaLinux, y cualquiera puede unirse. Únete como un individuo, un anfitrión de espejo, o un patrocinador y posee un voto para configurar el futuro de AlmaLinux.",
     "About the Foundation": "Acerca de la Fundación",
-    "Accountable leadership": "Liderazgo responsable"
+    "Accountable leadership": "Liderazgo responsable",
+    "Our current Platinum sponsors": "Patrocinadores actuales",
+    "All sponsor memberships renew annually and need Membership Committee approval. In-kind sponsorships also require board approval.": "Todas las membresías patrocinadoras son renovadas anualmente y requieren aprovación del comité de membresías. Patrocinios en especie, también requieren aprovación del consejo directivo.",
+    "Sponsor Membership": "Membresías Patrocinadoras",
+    "/yr — or 1 dedicated FTE / hardware / service credits": "/año — ó 1 persona de Tiempo completeo/ hardware / créditos de servicio",
+    "/yr — or 3 dedicated FTEs working on AlmaLinux": "/año — ó 3 personas de Tiempo completeo trabajando en AlmaLinux",
+    "/yr — or hardware / services equivalent": "/año — ó hardware / servicios equivalentes",
+    "2023 Best in Biz Awards": "2023 Best in Biz Awards",
+    "Want to support us? Become a Sponsor Member!": "Desea apoyarnos? Regístrese como miembro patrocinador!"
 }
