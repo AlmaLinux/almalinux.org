@@ -104,15 +104,12 @@
   }
 
   // --- Lifecycle stepper cards ---
+  // Two-by-two inside the half-width Lifecycle column; single column on phones.
   .al-rfc-steps {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin-top: 1.5rem;
-
-    @media (max-width: 991px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
 
     @media (max-width: 575px) {
       grid-template-columns: 1fr;
@@ -175,5 +172,14 @@
     font-size: 0.85rem;
     color: rgba(254, 254, 254, 0.6);
     margin-top: 0.25rem;
+  }
+
+  // Row of state + GitHub label pills on each open proposal card. Label
+  // colors come from the GitHub API and are applied inline per pill.
+  .al-rfc-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0.5rem 0 0.35rem;
   }
 }
