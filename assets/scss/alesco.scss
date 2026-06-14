@@ -1,0 +1,185 @@
+// ALESCo page — layouts/alesco/single.html
+// Scoped under .al-page-alesco so the hero/layout helpers do not leak
+// site-wide. Section bands, titles, and person cards reuse the shared
+// foundation design system (see _foundation.scss); only the RFC-specific
+// pieces below are unique to this page.
+
+.al-page-alesco {
+  // --- Hero + layout helpers (moved out of the template's inline <style>) ---
+  @media (max-width: 800px) {
+    .display-5 {
+      font-size: calc(1.425rem + 2.1vw) !important;
+      line-height: 1.2;
+    }
+    .row-cols-1 > * {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+    .d-grid {
+      display: grid !important;
+    }
+    .row-cols-2 > * {
+      flex: 0 0 auto;
+      width: 50%;
+    }
+    .container-security {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column !important;
+    }
+    .container-measure {
+      width: 100% !important;
+    }
+  }
+
+  @media (min-width: 800px) {
+    .display-5 {
+      font-size: 3rem;
+    }
+  }
+
+  .lh-1 {
+    line-height: 1 !important;
+  }
+
+  .al-page-index .al-hero-cta-primary {
+    margin: 10px;
+  }
+
+  .row > * {
+    margin-top: 20px;
+  }
+
+  .al-page-index .al-index-backed-by .al-backed-by-list {
+    justify-content: center;
+  }
+
+  @media (min-width: 768px) {
+    .row-cols-md-6 > * {
+      flex: 0 0 auto;
+      width: 16.66667%;
+    }
+  }
+
+  .h2,
+  h2 {
+    font-size: calc(1.325rem + 0.9vw);
+  }
+
+  // --- RFC stage labels (GitHub-style pills, dark-theme palette) ---
+  // Solid-fill pills with white text, matching GitHub's issue/PR state badges.
+  .al-rfc-label {
+    display: inline-block;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 2em;
+    padding: 2px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+
+  .al-rfc-submitted,
+  .al-rfc-withdrawn {
+    background: #6e7781;
+  }
+
+  .al-rfc-discussion,
+  .al-rfc-accepted,
+  .al-rfc-open {
+    background: #1f883d;
+  }
+
+  .al-rfc-fcp {
+    background: #9a6700;
+  }
+
+  .al-rfc-decision {
+    background: #8250df;
+  }
+
+  .al-rfc-rejected {
+    background: #cf222e;
+  }
+
+  // --- Lifecycle stepper cards ---
+  // Two-by-two inside the half-width Lifecycle column; single column on phones.
+  .al-rfc-steps {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+
+    @media (max-width: 575px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .al-rfc-step {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    padding: 1.25rem;
+
+    p {
+      font-size: 0.9rem;
+      color: rgba(254, 254, 254, 0.75);
+      margin: 0.75rem 0 0;
+    }
+  }
+
+  .al-rfc-step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: $al-c-atlantis;
+    color: #0a2335;
+    font-size: 13px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  // --- Open Proposals cards (rendered client-side from the GitHub API) ---
+  .al-rfc-card {
+    display: block;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.75rem;
+    text-decoration: none;
+    color: inherit;
+    transition:
+      border-color 0.15s ease,
+      background 0.15s ease;
+
+    &:hover {
+      border-color: rgba(196, 225, 255, 0.5);
+      background: rgba(255, 255, 255, 0.07);
+    }
+  }
+
+  .al-rfc-card-title {
+    font-weight: 600;
+    color: #c4e1ff;
+  }
+
+  .al-rfc-card-meta {
+    font-size: 0.85rem;
+    color: rgba(254, 254, 254, 0.6);
+    margin-top: 0.25rem;
+  }
+
+  // Row of state + GitHub label pills on each open proposal card. Label
+  // colors come from the GitHub API and are applied inline per pill.
+  .al-rfc-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0.5rem 0 0.35rem;
+  }
+}
