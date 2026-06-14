@@ -6,6 +6,7 @@
   "scripts": {
     "watch": "sass --watch assets/scss/main.scss assets/css/bundle.css",
     "generate:get": "python3 tools/generate_get_almalinux_yaml.py",
+    "generate:design-colors": "python3 tools/generate_design_colors.py",
     "prepare": "husky"
   },
   "keywords": [],

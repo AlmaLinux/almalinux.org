@@ -7,46 +7,44 @@ $al-font-family-accent: 'Montserrat', -apple-system, BlinkMacSystemFont, 'segoe 
 $al-font-family-mono: 'SF Mono', 'source code pro', consolas, 'courier new', courier, monospace;
 
 // Base colors
-$al-body-background: #0f4266;
-$al-link-color: #c4e1ff;
+$al-body-background: #0f4266; // @usage Default page background
+$al-link-color: #c4e1ff; // @usage Inline text links on dark backgrounds
 
 // Brand colors
-$al-c-brand-primary: #0069da;
-$al-c-brand-secondary: #86da2f;
-$al-c-brand-tertiary: #ffcb12;
+$al-c-brand-primary: #0069da; // @usage Primary buttons, active links, key CTAs
+$al-c-brand-secondary: #86da2f; // @usage Secondary accents and highlights
+$al-c-brand-tertiary: #ffcb12; // @usage Warning buttons and attention highlights
 
 // Brand palette
-$al-c-science-blue: #0069DA;
-$al-c-science-blue-dark: #004bbc;
-$al-c-science-blue-lighter: #1e87f8;
-$al-c-science-blue-light: #2891ff;
+$al-c-science-blue: #0069DA; // @usage Brand blue, same value as brand-primary
+$al-c-science-blue-dark: #004bbc; // @usage Darker blue, hover/pressed states
+$al-c-science-blue-lighter: #1e87f8; // @usage Lighter blue, subtle accents
+$al-c-science-blue-light: #2891ff; // @usage Lightest blue, backgrounds and tints
 
-$al-c-atlantis: #86da2f;
-$al-c-atlantis-dark: #68bc11;
-$al-c-atlantis-lighter: #a4f84d;
-$al-c-atlantis-light: #aeff57;
+$al-c-atlantis: #86da2f; // @usage Brand green, same value as brand-secondary
+$al-c-atlantis-dark: #68bc11; // @usage Darker green, hover/pressed states
+$al-c-atlantis-lighter: #a4f84d; // @usage Lighter green, subtle accents
+$al-c-atlantis-light: #aeff57; // @usage Lightest green, backgrounds and tints
 
-$al-c-candlelight: #ffcb12;
-$al-c-candlelight-dark: #e1ad00;
-$al-c-candlelight-lighter: #ffe930;
-$al-c-candlelight-light: #fff33a;
+$al-c-candlelight: #ffcb12; // @usage Brand yellow, same value as brand-tertiary
+$al-c-candlelight-dark: #e1ad00; // @usage Darker yellow, hover/pressed states
+$al-c-candlelight-lighter: #ffe930; // @usage Lighter yellow, subtle accents
+$al-c-candlelight-light: #fff33a; // @usage Lightest yellow, backgrounds and tints
 
-$al-c-black-pearl: #082336;
-$al-c-black-pearl-dark: #000518;
-$al-c-black-pearl-lighter: #264154;
-$al-c-black-pearl-light: #304b5e;
+$al-c-black-pearl: #082336; // @usage Dark surface, deep-band section backgrounds
+$al-c-black-pearl-dark: #000518; // @usage Darkest surface, near-black fills and text
+$al-c-black-pearl-lighter: #264154; // @usage Lighter dark surface, raised cards
+$al-c-black-pearl-light: #304b5e; // @usage Lightest dark surface, borders on dark
 
-$al-c-soft-peach: #faf5f5;
-$al-c-soft-peach-dark: #dcd7d7;
-$al-c-soft-peach-lighter: #ffffff;
-$al-c-soft-peach-light: #ffffff;
+$al-c-soft-peach: #faf5f5; // @usage Light surface, light-band section backgrounds
+$al-c-soft-peach-dark: #dcd7d7; // @usage Muted light surface, borders on light
+$al-c-soft-peach-lighter: #ffffff; // @usage White, light cards and fills
+$al-c-soft-peach-light: #ffffff; // @usage White, light surfaces
 
-$al-c-sunburnt-cyclops: #ff4949;
-$al-c-sunburnt-cyclops-dark: #e1282b;
-$al-c-sunburnt-cyclops-lighter: #ff6467;
-$al-c-sunburnt-cyclops-light: #ff6e71;
+$al-c-sunburnt-cyclops: #ff4949; // @usage Error and danger states
+$al-c-sunburnt-cyclops-dark: #e1282b; // @usage Darker red, error hover/pressed
+$al-c-sunburnt-cyclops-lighter: #ff6467; // @usage Lighter red, error accents
+$al-c-sunburnt-cyclops-light: #ff6e71; // @usage Lightest red, error backgrounds
 
 // Sizing
 $al-page-readable-max-width: 680px;
-
-

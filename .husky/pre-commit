@@ -1,1 +1,10 @@
 npx lint-staged
+
+# Keep the DESIGN.md brand-colors table in sync with variables.scss.
+if git diff --cached --name-only | grep -qx 'assets/scss/variables.scss'; then
+  if ! python3 tools/generate_design_colors.py --check; then
+    echo "✖ DESIGN.md brand-colors table is out of date."
+    echo "  Run 'npm run generate:design-colors', then stage DESIGN.md."
+    exit 1
+  fi
+fi
