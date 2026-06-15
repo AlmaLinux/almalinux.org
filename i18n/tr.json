@@ -308,5 +308,14 @@
     " (developed and maintained by the AlmaLinux Community) allows you to migrate to, and upgrade AlmaLinux in-place.": "",
     "The Security Content Automation Protocol (SCAP) automates vulnerability management, measurement, and policy compliance evaluation of systems. AlmaLinux OS offers an OpenSCAP Guide that instructs on how to use the OpenSCAP and SCAP Workbench to audit your AlmaLinux system security compliance.": "",
     "geo-located mirrors": "",
-    "To receive security updates and errata, users can sign up for the ": ""
+    "To receive security updates and errata, users can sign up for the ": "",
+    "Newsletters": "Bültenler",
+    "AlmaLinux Newsletters": "AlmaLinux Bültenleri",
+    "Stay up to date with the latest AlmaLinux news, releases, and community updates. Subscribe via your preferred channel:": "En yeni AlmaLinux haberleri, yayınları ve topluluk gelişmeleri ile güncel kalın. Tercih ettiğiniz kanal aracılığıyla abone olun:",
+    "RSS Feed": "RSS Akışı",
+    "Mailing List": "Postalama Listesi",
+    "Subscribe on LinkedIn": "LinkedIn'de Abone Ol",
+    "Individual Member": "Bireysel Üye",
+    "AlmaLinux images are available for Incus and LXC.": "AlmaLinux imajı Incus ve LXC için mevcut.",
+    "Get Incus and LXC Images": "Incus ve LXC Imajını Al"
 }
