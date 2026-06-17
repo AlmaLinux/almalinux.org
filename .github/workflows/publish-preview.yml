@@ -28,7 +28,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.146.7"
+          hugo-version: "0.163.2"
           extended: true
 
       - name: Generate language files
