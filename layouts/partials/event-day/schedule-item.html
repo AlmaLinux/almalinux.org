@@ -1,0 +1,55 @@
+{{/* Renders one schedule entry. Context: dict with "s" (a Sessionize session)
+  and "speakers" (the full speakers array, for resolving speaker ids).
+  Talks with a description get a Bootstrap collapse toggle that expands the
+  abstract inline (same mechanism as the homepage FAQ accordion). Service
+  sessions (registration, breaks, lunch) show their short note inline.
+*/}}
+{{ $s := .s }}
+{{ $speakers := .speakers }}
+{{ $desc := trim ($s.description | default "") " \r\n" }}
+{{ $hasDesc := ne $desc "" }}
+{{ $expandable := and (not $s.isServiceSession) $hasDesc }}
+{{ $id := printf "s-%v" $s.id }}
+<div class="al-sched-item{{ if $s.isServiceSession }}is-break{{ end }}">
+  <div class="al-sched-time">{{ dateFormat "3:04 PM" $s.startsAt }}</div>
+  <div class="al-sched-body">
+    {{ if $expandable }}
+      <button
+        class="al-sched-toggle"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#{{ $id }}"
+        aria-expanded="false"
+        aria-controls="{{ $id }}">
+        <span class="al-sched-title">{{ $s.title }}</span>
+        <i class="bi bi-chevron-down al-sched-chevron" aria-hidden="true"></i>
+      </button>
+    {{ else }}
+      <div class="al-sched-title">{{ $s.title }}</div>
+    {{ end }}
+    {{ with $s.speakers }}
+      {{ $names := slice }}
+      {{ range . }}
+        {{ $sp := index (where $speakers "id" .) 0 }}{{ with $sp }}
+          {{ $names = $names | append .fullName }}
+        {{ end }}
+      {{ end }}
+      {{ with $names }}
+        <div class="al-sched-speakers">{{ delimit . ", " }}</div>
+      {{ end }}
+    {{ end }}
+    {{ if $expandable }}
+      <div id="{{ $id }}" class="collapse al-sched-desc">
+        {{ range (split (replace $s.description "\r" "") "\n\n") }}
+          {{ $p := trim . "\n " }}{{ with $p }}<p>{{ . }}</p>{{ end }}
+        {{ end }}
+      </div>
+    {{ else if $hasDesc }}
+      <div class="al-sched-desc al-sched-desc--inline">
+        {{ range (split (replace $s.description "\r" "") "\n\n") }}
+          {{ $p := trim . "\n " }}{{ with $p }}<p>{{ . }}</p>{{ end }}
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</div>
