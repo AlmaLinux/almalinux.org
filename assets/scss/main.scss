@@ -7,6 +7,7 @@
 @import "./members";
 @import "./contribute";
 @import "./foundation";
+@import "./event-schedule";
 @import "./bundle-extras";
 
 
@@ -586,6 +587,12 @@ figcaption,
     max-width: 100%;
     margin: 1.5rem auto;
   }
+}
+
+// Block variant: never float, for narrow columns where content should stack below it
+.al-table-card--block {
+  float: none;
+  margin: 1.5rem 0;
 }
 
 // Keep floated tables contained to their section
