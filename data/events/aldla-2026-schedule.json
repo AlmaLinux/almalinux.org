@@ -203,24 +203,6 @@
       "isConfirmed": false
     },
     {
-      "id": "1252944",
-      "title": "Typical mistakes when submitting a new code to Linux kernel: Ten years later.",
-      "description": "Ten years ago I gathered my experience of reviewing the code that was submitted to be included into Linux kernel. Code review is a crucial part of developing a stable and robust open source project. New comers and surprisingly many active and known contributors have been making same mistakes, like using non-scalable APIs, over and over. For the time being many things were changed including AI reviews waiting for entering just behind our doors. What was happened during this decade? How is the code review process changed and what are the typical mistakes the contributors (still) make? An attempt answering to these questions among providing a heavily updated examples and recommendations is in the proposed talk.",
-      "startsAt": "2026-07-18T15:30:00",
-      "endsAt": "2026-07-18T16:00:00",
-      "isServiceSession": false,
-      "isPlenumSession": false,
-      "speakers": ["6b35b481-8c72-4313-b4da-788e16d1cbe0"],
-      "categoryItems": [],
-      "questionAnswers": [],
-      "roomId": 79977,
-      "liveUrl": null,
-      "recordingUrl": null,
-      "status": "Accepted",
-      "isInformed": true,
-      "isConfirmed": false
-    },
-    {
       "id": "1238083",
       "title": "The Next Display Layer: A Live Preview of Amazon DCV's Future on Linux",
       "description": "The way we build Linux workstations is fundamentally evolving, and the industry's reliance on legacy display layers is drawing to a close. As studios transition toward a modern desktop future, infrastructure teams face a singular challenge: maintaining the high-performance, enterprise-grade remote protocols that our pipelines demand. \r\n\r\nIn this technical demonstration, engineered in collaboration with the remote desktop experts at NI SP GmbH, we are unveiling a critical piece of that puzzle: a live preview of the Amazon DCV beta running on the next generation of the Linux desktop stack. No fluff, no deep-dive architecture theory, just a direct look at the low-latency, high-fidelity future of remote creative workflows. \r\n\r\nIf you are mapping your studio's hardware and protocol lifecycle, this is the session you can't afford to miss.",
@@ -279,20 +261,6 @@
     }
   ],
   "speakers": [
-    {
-      "id": "6b35b481-8c72-4313-b4da-788e16d1cbe0",
-      "firstName": "Andy",
-      "lastName": "Shevchenko",
-      "bio": "Andy Shevchenko was born in Donetsk in 1977. He studied electrical engineering at the State University of Donetsk and graduated in 1999. Andy joined Intel Finland Oy in May 2011.\r\n\r\nHe has participated in a few projects since and eventually become one of the active contributors to the Linux kernel.\r\n\r\nAndy has over twenty years of software development experience in the Linux environment, especially in a device drivers area in the kernel. During this time he has contributed thousands of patches to the Linux kernel. In his current position, he has been working on the pin control, GPIO, ACPI, and other areas related to the hardware enabling and support.\r\n",
-      "tagLine": "Linux driver developer",
-      "profilePicture": "https://sessionize.com/image/e70c-400o400o1-V9Y78hj6o56jF9jaebUwnz.png",
-      "isTopSpeaker": false,
-      "links": [],
-      "sessions": [1252944],
-      "fullName": "Andy Shevchenko",
-      "categoryItems": [],
-      "questionAnswers": []
-    },
     {
       "id": "1aca3cba-57b4-47bc-aed7-b569b3ae7903",
       "firstName": "benny",

@@ -5,7 +5,7 @@ author:
   name: "benny Vasquez"
   bio: "Chair, board of directors"
   image: /users/benny.jpeg
-date: 2026-06-17
+date: 2026-06-18
 images:
   - /images/og/aldla-2026.png
 post:
@@ -25,13 +25,12 @@ But they aren't just using it. Through the AlmaLinux Media & Entertainment SIG, 
 
 ## The talks
 
-It's a single track day, and it runs from the creative pipeline all the way down to the kernel. A few I want to call out:
+It's a single track day, and it spans the whole creative pipeline. A few I want to call out:
 
 - **Fueling the Frame: What's New with the AlmaLinux Media & Entertainment SIG** and **Introducing: AlmaLinux M&E SIG Creative Installer**, both from Tristan Théroux, on what the SIG has been building, including the one-click installer that drops 30+ creative apps onto AlmaLinux without opening a terminal.
 - **The Next Display Layer: A Live Preview of Amazon DCV's Future on Linux**, from Tristan Théroux and Karsten Gaier, with a first look at where remote desktops for creative work are going.
 - **Workshop! AlmaLinux M&E For You**, a hands-on session with Neal Gompa, Tristan Théroux, and David Duncan to help you make AlmaLinux fit your own pipeline.
 - **Introducing the Wayland for Artists ASWF Working Group**, from Nick Cannon of the Visual Effects Society, and SVP of Production and Technology at Walt Disney Animation Studios.
-- **Typical mistakes when submitting new code to the Linux kernel: Ten years later**, from Andy Shevchenko, which is exactly the kind of upstream experience you don't get to hear often.
 - **Does your EDR actually do that?** from Chris Taylor, and **5 Practical Tips to Improve Your Linux Log File Analysis** from Syed Usman Ahmad, for the security and operations work that quietly keeps studios running.
 
 The [full schedule is on the event page](/almalinux-day-los-angeles-2026/), along with the descriptions and speaker details.
