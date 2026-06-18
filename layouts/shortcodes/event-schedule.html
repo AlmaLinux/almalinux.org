@@ -1,0 +1,42 @@
+{{/* Renders a two-column (morning / afternoon) schedule from a Sessionize
+  "view/All" JSON export stored at data/events/<schedule_data_key>.json.
+  The columns split at the lunch break. Refresh the schedule by re-exporting
+  the JSON from Sessionize and replacing the data file.
+*/}}
+{{ $key := .Page.Params.schedule_data_key }}
+{{ with index .Site.Data.events $key }}
+  {{ $data := . }}
+  {{/* Cutoff = end of the lunch service session; everything before it is morning. */}}
+  {{ $cutoff := "" }}
+  {{ range $data.sessions }}
+    {{ if and .isServiceSession (in (lower .title) "lunch") }}
+      {{ $cutoff = .endsAt }}
+    {{ end }}
+  {{ end }}
+  {{ $sorted := sort $data.sessions "startsAt" }}
+  {{ $morning := $sorted }}
+  {{ $afternoon := slice }}
+  {{ if $cutoff }}
+    {{ $morning = where $sorted "startsAt" "lt" $cutoff }}
+    {{ $afternoon = where $sorted "startsAt" "ge" $cutoff }}
+  {{ end }}
+  <div class="al-schedule">
+    <p class="al-schedule__note">
+      {{ i18n "All times are shown in Pacific time (PT)." }}
+    </p>
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <h4 class="al-schedule__heading">{{ i18n "Morning" }}</h4>
+        {{ range $morning }}
+          {{ partial "event-day/schedule-item.html" (dict "s" . "speakers" $data.speakers) }}
+        {{ end }}
+      </div>
+      <div class="col-lg-6">
+        <h4 class="al-schedule__heading">{{ i18n "Afternoon" }}</h4>
+        {{ range $afternoon }}
+          {{ partial "event-day/schedule-item.html" (dict "s" . "speakers" $data.speakers) }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+{{ end }}

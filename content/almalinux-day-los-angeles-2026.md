@@ -32,54 +32,16 @@ photo_credit_url: "https://downtownla.com/go/los-angeles-convention-center"
 
 # Must match the filename in data/events/ (without .yaml)
 event_data_key: "aldla-2026"
+
+# Schedule data: data/events/<key>.json (a Sessionize "view/All" JSON export),
+# rendered as a two-column morning/afternoon schedule by the event-schedule shortcode.
+schedule_data_key: "aldla-2026-schedule"
+
+# Short intro shown above the speaker grid
+speakers_intro: "The relationship between AlmaLinux and Media & Entertainment runs both ways: the industry runs on it, and through the Media & Entertainment SIG it's molding AlmaLinux into the perfect fit. These are some of the people doing that work."
 ---
 
-<div class="row align-items-center" style="margin-top: 1rem; margin-bottom: 2rem;">
-  <div class="col-md-6">
-    <img src="/landingpages/aldla-2026/ecentral.jpg" alt="The event space at E-Central Downtown Los Angeles Hotel" class="img-fluid" style="border-radius: 8px;" />
-    <figcaption class="figure-caption" style="margin-top: 0.5rem;">These seats are waiting for you! The event space at E-Central Downtown Los Angeles Hotel.</figcaption>
-  </div>
-  <div class="col-md-6">
-    <h3>These seats are waiting for you</h3>
-    <p>Before the lights go up at SIGGRAPH, join the AlmaLinux OS Foundation for a day dedicated to the OS that powers the world's most demanding visual effects, rendering, and simulation pipelines.</p>
-    <p>Los Angeles is the natural home for this conversation. The films, the shows, the games, and the immersive experiences shaping global culture this year are being rendered, simulated, and finished on Linux — and increasingly on AlmaLinux. On July 18, the people behind that work are getting in the same room.</p>
-    <p>Expect a full day of technical deep-dives, candid conversations with the engineers building AlmaLinux, and a first look at something we have been quietly preparing specifically for the Media &amp; Entertainment industry. Expect to leave with sharper answers, new collaborators, and a clearer view of where enterprise Linux is headed for the creative pipeline.</p>
-    <p>Why Saturday? Beat the Sunday BoF rush and get your technical deep-dives in before the 10,000+ attendee crowd arrives. Smaller room, bigger signal, no compromises.</p>
-  </div>
-</div>
-
----
-
-### Call for Speakers
-
-<table class="al-table-card">
-  <thead>
-    <tr><th>Stage</th><th>Date</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Submissions close</td><td>June 5, 2026</td></tr>
-    <tr><td>Speakers notified</td><td>June 6, 2026</td></tr>
-    <tr><td>Speaker confirmation deadline</td><td>June 12, 2026</td></tr>
-    <tr><td>Schedule announced</td><td>June 15, 2026</td></tr>
-  </tbody>
-</table>
-
-Our call for speakers is open. If you are a VFX or pipeline engineer, a Linux professional, a cloud or DevOps engineer, an open-source contributor, or anyone with a story the room would learn from, we want to hear from you.
-
-The Vancouver lineup last year set the bar. **"AlmaLinux for Always-On VFX Pipelines"**, **"Linux in VFX: A Panel on Pain, Power, and Progress"**, **"A Strategic Playbook for Large-Scale Linux Migrations"**, and the **"KDE, NVIDIA, and AlmaLinux OS 10.1"** workshop sat alongside hard-won practical talks on container monitoring and workstation security — the unglamorous, load-bearing work that quietly keeps studios shipping. ([Watch the full Vancouver playlist on YouTube](https://www.youtube.com/playlist?list=PLqKzWfm6zyltyY1kcVB66K4-qunmfNSmh).)
-
-We'd love to see more of that this year. Some areas we are particularly hungry for:
-
-- **Render farms and pipelines at scale** — always-on architectures, queueing and scheduling, hybrid on-prem/cloud, the TCO math you actually use to make the case to finance.
-- **Migration stories from the trenches** — CentOS, RHEL, or anything else → AlmaLinux. What broke, what didn't, what you'd do differently if you had to do it again.
-- **Security and CVE response** — workstation hardening, vulnerability response in production, kernel patching strategies, what your incident timeline really looks like.
-- **Containers and orchestration for studios** — monitoring, observability, image management, the operational pieces that don't get pitched at the bigger conferences.
-
-**Submissions close June 5, 2026.** Submit your proposal at [sessionize.com/almalinux-day-los-angeles](https://sessionize.com/almalinux-day-los-angeles).
-
----
-
-#### The Pillars of the Day
+#### Welcome to AlmaLinux Day: LA
 
 For years, the VFX and Media industries have sought a bedrock — a stable ground where the most demanding renders and the most complex simulations could live without fear of shifting underfoot. In 2026, that ground becomes solid.
 
@@ -115,7 +77,11 @@ AlmaLinux Day: LA is not just a conference; it is a convergence. As the industry
   </div>
 </div>
 
-<div class="row align-items-center g-4" style="margin-top: 2rem; margin-bottom: 2rem;">
+### The Day's Schedule
+
+{{< event-schedule >}}
+
+<div class="row align-items-center g-4" style="margin-top: 2.5rem; margin-bottom: 2rem;">
   <div class="col-md-5">
     <a href="https://kernelchief.github.io/almalinux-creative-installer/">
       <img src="/landingpages/aldla-2026/creative-installer.png" alt="The AlmaLinux Creative Installer landing page" class="img-fluid" style="border-radius: 8px;" />
@@ -131,22 +97,54 @@ AlmaLinux Day: LA is not just a conference; it is a convergence. As the industry
   </div>
 </div>
 
-### The "Pre-SIGGRAPH" Advantage
-
-We know Sunday is all about those official "Birds of a Feather" sessions. By joining us on Saturday, you get:
-
-- **Uninterrupted Networking:** High-signal conversations before the 10,000+ attendee crowd arrives.
-- **Technical Access:** Direct 1-on-1 time with the AlmaLinux Engineering, Marketing, and Media & Entertainment SIGs.
-- **The "Satur-Day" Mixer:** An exclusive evening social to kick off your week in LA.
-
-<div class="text-center" style="margin-top: 2.5rem; margin-bottom: 2.5rem;">
+<div class="text-center" style="margin-top: 1rem; margin-bottom: 2.5rem;">
   <a href="https://events.almalinux.org/event/189/" class="btn btn-lg px-4 al-cta-blue">
     <i class="bi bi-box-arrow-in-right"></i>
     Register Free — Space is Limited
   </a>
 </div>
 
+<div class="row align-items-start g-5" style="margin-top: 2rem; margin-bottom: 2rem;">
+  <div class="col-lg-6">
+    <h3>Want to volunteer?</h3>
+    <p>AlmaLinux Days are run entirely by volunteers, so we can always use a hand. A few ways to help:</p>
+    <ul>
+      <li>The night before: swag prep party 🎁</li>
+      <li>Check-in desk 📋</li>
+      <li>Setup crew 🔧</li>
+      <li>Teardown team 🧹</li>
+    </ul>
+    <p>If you will be in Los Angeles and want to pitch in, email <a href="mailto:ald@almalinux.org">ald@almalinux.org</a>. Volunteers get a meal with the crew!</p>
+  </div>
+  <div class="col-lg-6">
+    <h3>Important Dates</h3>
+    <table class="al-table-card al-table-card--block">
+      <thead><tr><th>Event</th><th>Date</th></tr></thead>
+      <tbody>
+        <tr><td><a href="https://events.almalinux.org/event/189/">AlmaLinux Day: Los Angeles</a></td><td>Saturday, July 18, 2026</td></tr>
+        <tr><td><a href="https://events.linuxfoundation.org/open-source-days/">ASWF Open Source Days</a></td><td>Sunday, July 19 to Monday, July 20, 2026</td></tr>
+        <tr><td><a href="https://s2026.siggraph.org/">SIGGRAPH 2026</a></td><td>Sunday, July 19 to Thursday, July 23, 2026</td></tr>
+      </tbody>
+    </table>
+    <p>These dates anchor your week: AlmaLinux Day: LA opens the conversation on Saturday before the SIGGRAPH crowd arrives, then ASWF Open Source Days and SIGGRAPH 2026 carry it through the rest of the week.</p>
+  </div>
+</div>
+
 ---
+
+<div class="row align-items-center" style="margin-top: 1rem; margin-bottom: 2rem;">
+  <div class="col-md-6">
+    <img src="/landingpages/aldla-2026/ecentral.jpg" alt="The event space at E-Central Downtown Los Angeles Hotel" class="img-fluid" style="border-radius: 8px;" />
+    <figcaption class="figure-caption" style="margin-top: 0.5rem;">These seats are waiting for you! The event space at E-Central Downtown Los Angeles Hotel.</figcaption>
+  </div>
+  <div class="col-md-6">
+    <h3>These seats are waiting for you</h3>
+    <p>Before the lights go up at SIGGRAPH, join the AlmaLinux OS Foundation for a day dedicated to the OS that powers the world's most demanding visual effects, rendering, and simulation pipelines.</p>
+    <p>Los Angeles is the natural home for this conversation. The films, the shows, the games, and the immersive experiences shaping global culture this year are being rendered, simulated, and finished on Linux — and increasingly on AlmaLinux. On July 18, the people behind that work are getting in the same room.</p>
+    <p>Expect a full day of technical deep-dives, candid conversations with the engineers building AlmaLinux, and a first look at something we have been quietly preparing specifically for the Media &amp; Entertainment industry. Expect to leave with sharper answers, new collaborators, and a clearer view of where enterprise Linux is headed for the creative pipeline.</p>
+    <p>Why Saturday? Beat the Sunday BoF rush and get your technical deep-dives in before the 10,000+ attendee crowd arrives. Smaller room, bigger signal, no compromises.</p>
+  </div>
+</div>
 
 ### Where to Stay
 
@@ -164,23 +162,3 @@ Whether you're coming for just AlmaLinux Day or staying through SIGGRAPH, bookin
     Book direct with the hotel
   </a>
 </div>
-
----
-
-### Important Dates
-
-<table class="al-table-card">
-  <thead>
-    <tr><th>Event</th><th>Date</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><a href="https://events.almalinux.org/event/189/">AlmaLinux Day: Los Angeles</a></td><td>Saturday, July 18, 2026</td></tr>
-    <tr><td><a href="https://s2026.siggraph.org/">SIGGRAPH 2026</a></td><td>Sunday, July 19 – Thursday, July 23, 2026</td></tr>
-  </tbody>
-</table>
-
-These two dates anchor the rest of your week. AlmaLinux Day: LA opens the conversation on Saturday before the SIGGRAPH crowd arrives, and SIGGRAPH 2026 picks it up Sunday and runs through Thursday. If you are planning travel, the easy move is a single trip that covers both — fly in Friday or Saturday morning, walk to AlmaLinux Day, and you're already where you need to be for the rest of the week.
-
-A few related dates worth pinning to your calendar: the Call for Speakers closes **June 5**, the schedule is announced **June 15**, and SIGGRAPH's own registration and housing deadlines start arriving shortly after — check [s2026.siggraph.org](https://s2026.siggraph.org/) for those.
-
-Register early — space in our LA venue is limited. Sign up for updates and be the first to grab a seat at [events.almalinux.org](https://events.almalinux.org/event/189/).
