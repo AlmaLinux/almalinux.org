@@ -1,4 +1,4 @@
-{{ $data := index $.Site.Data.events .Params.event_data_key }}
+{{ $data := index hugo.Data.events .Params.event_data_key }}
 {{ if and $data $data.speakers }}
   <div class="al-index-meet" style="clear: both;">
     <div class="container al-py-md px-5">
