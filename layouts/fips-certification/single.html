@@ -1,0 +1,283 @@
+{{ define "main" }}
+  <main class="al-body-container al-fips">
+    {{/* 1. Hero (matches the foundation hero pattern: copy + media space) */}}
+    <section id="fips-hero" class="al-foundation-band-deep al-py-lg">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-7">
+            <h1 class="display-5 fw-bold mb-4">
+              {{ i18n "AlmaLinux OS is FIPS 140-3 validated" }}
+            </h1>
+            <p class="lead mb-4">
+              {{ i18n "AlmaLinux OS 9.2 carries FIPS 140-3 validated cryptographic modules on the NIST CMVP Active list, including the first FIPS 140-3 kernel certificate for an EL9 distribution. You can enable FIPS mode and meet a recognized cryptographic standard at no cost." }}
+            </p>
+            <p>
+              <a
+                href="https://chat.almalinux.org/almalinux/channels/security"
+                class="btn btn-primary btn-lg me-2">
+                {{ i18n "Get involved" }}
+              </a>
+              <a
+                href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search?ModuleName=almalinux"
+                class="btn btn-outline-light btn-lg"
+                target="_blank"
+                rel="noopener">
+                {{ i18n "Verify on NIST" }}
+              </a>
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <img
+              class="al-fips-hero-img"
+              src="/blog-images/fips140.png"
+              alt="{{ i18n "A terminal on AlmaLinux 9 showing the OpenSSL FIPS provider active and FIPS mode enabled" }}" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{/* 2. Intro paragraph beside the At-a-glance info box (50% + 50%) */}}
+    <section id="fips-intro" class="al-py-lg">
+      <div class="container">
+        <h2 class="al-foundation-section-title">{{ i18n "Overview" }}</h2>
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <p>
+              {{ i18n "FIPS 140-3 is widely treated as the gold standard for cryptographic security, recognized and required well beyond the United States. AlmaLinux OS 9.2 meets it: its kernel and OpenSSL cryptographic modules are independently validated by the NIST Cryptographic Module Validation Program and listed as Active." }}
+            </p>
+            <p>
+              {{ i18n "That makes AlmaLinux the first EL9 distribution with a FIPS 140-3 validated kernel, and it is available to everyone for free. Here is what FIPS is, why it matters, and how to turn it on." }}
+            </p>
+            <p>
+              {{ i18n "The validation was sponsored by TuxCare, the enterprise support division of CloudLinux and a longtime AlmaLinux platinum sponsor. TuxCare covered the considerable cost and engineering effort, and contributes the validated modules back to the community at no charge." }}
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <aside class="al-fips-infobox">
+              <h2 class="al-fips-infobox-title">{{ i18n "At a glance" }}</h2>
+              <dl class="al-fips-facts">
+                <div class="al-fips-fact">
+                  <dt>{{ i18n "Standard" }}</dt>
+                  <dd>{{ i18n "FIPS 140-3" }}</dd>
+                </div>
+                <div class="al-fips-fact">
+                  <dt>{{ i18n "Product" }}</dt>
+                  <dd>{{ i18n "AlmaLinux OS 9.2" }}</dd>
+                </div>
+                <div class="al-fips-fact">
+                  <dt>{{ i18n "Validated by" }}</dt>
+                  <dd>{{ i18n "NIST CMVP (Active list)" }}</dd>
+                </div>
+                <div class="al-fips-fact">
+                  <dt>{{ i18n "Kernel module" }}</dt>
+                  <dd>
+                    <a
+                      href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4750"
+                      target="_blank"
+                      rel="noopener"
+                      >{{ i18n "Certificate #4750" }}</a
+                    >
+                  </dd>
+                </div>
+                <div class="al-fips-fact">
+                  <dt>{{ i18n "OpenSSL module" }}</dt>
+                  <dd>
+                    <a
+                      href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4823"
+                      target="_blank"
+                      rel="noopener"
+                      >{{ i18n "Certificate #4823" }}</a
+                    >
+                  </dd>
+                </div>
+                <div class="al-fips-fact">
+                  <dt>{{ i18n "Cost" }}</dt>
+                  <dd>{{ i18n "Free" }}</dd>
+                </div>
+                <div class="al-fips-fact">
+                  <dt>{{ i18n "Sponsored by" }}</dt>
+                  <dd>{{ i18n "TuxCare (CloudLinux)" }}</dd>
+                </div>
+              </dl>
+              <p class="al-fips-infobox-verify">
+                <a
+                  href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search?ModuleName=almalinux"
+                  target="_blank"
+                  rel="noopener"
+                  >{{ i18n "View AlmaLinux modules on the NIST CMVP list" }}</a
+                >
+              </p>
+            </aside>
+          </div>
+        </div>
+
+        <h3 class="al-fips-timeline-title">{{ i18n "How we got here" }}</h3>
+        <table class="al-fips-timeline">
+          <thead>
+            <tr>
+              <th scope="col">{{ i18n "Date" }}</th>
+              <th scope="col">{{ i18n "Milestone" }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ i18n "December 2022" }}</td>
+              <td>
+                {{ i18n "The AlmaLinux OS 9 kernel and OpenSSL modules are added to NIST's Implementation Under Test list." }}
+              </td>
+            </tr>
+            <tr>
+              <td>{{ i18n "June 2023" }}</td>
+              <td>
+                {{ i18n "CAVP certificates received, confirming the cryptographic algorithms are implemented correctly." }}
+              </td>
+            </tr>
+            <tr>
+              <td>{{ i18n "September 2023" }}</td>
+              <td>
+                {{ i18n "ESV entropy certificates received. AlmaLinux is the first software implementation to earn a FIPS 140-3 ESV certificate using SHA3-256 as a conditioner." }}
+              </td>
+            </tr>
+            <tr>
+              <td>{{ i18n "October 2024" }}</td>
+              <td>
+                {{ i18n "The AlmaLinux OS 9.2 kernel is FIPS 140-3 validated on the NIST CMVP Active list (certificate #4750), the first FIPS 140-3 kernel certificate for an EL9 distribution." }}
+              </td>
+            </tr>
+            <tr>
+              <td>{{ i18n "October 2024" }}</td>
+              <td>
+                {{ i18n "The OpenSSL FIPS provider is added to the Active list (certificate #4823)." }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          {{ i18n "Read the full story in the original" }}
+          <a href="/blog/2023-09-19-fips-validation-for-almalinux/"
+            >{{ i18n "FIPS validation announcement" }}</a
+          >
+          {{ i18n "and the" }}
+          <a href="/blog/2024-10-07-fips-validation-for-almalinux-update/"
+            >{{ i18n "9.2 validation update" }}</a
+          >.
+        </p>
+      </div>
+    </section>
+
+    {{/* 3. What is FIPS? / Why it matters (two columns) */}}
+    <section id="fips-what-why" class="al-foundation-band-deep al-py-lg">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-md-6">
+            <h2 class="al-foundation-section-title">
+              {{ i18n "What is FIPS?" }}
+            </h2>
+            <p>
+              {{ i18n "FIPS (Federal Information Processing Standards) are cryptographic standards published by the United States government. FIPS 140-3 is the current version, and it defines the security requirements a cryptographic module must meet." }}
+            </p>
+            <p>
+              {{ i18n "A module earns validation only after an accredited laboratory tests it and the NIST Cryptographic Module Validation Program certifies the result. AlmaLinux OS 9.2 was the first software implementation to receive a FIPS 140-3 ESV certificate using SHA3-256 as a conditioner." }}
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h2 class="al-foundation-section-title">
+              {{ i18n "Why it matters" }}
+            </h2>
+            <p>
+              {{ i18n "FIPS 140-3 is recognized and respected worldwide. The European Union's NIS 2 Directive, for example, calls for up-to-date encryption built on established standards." }}
+            </p>
+            <p>
+              {{ i18n "For government, finance, healthcare, and anyone handling sensitive data, running on validated cryptography is often a requirement rather than a nice to have. FIPS validation gives those organizations independent assurance about the cryptography underneath their systems." }}
+            </p>
+            <p>
+              {{ i18n "Validated cryptography is also a prerequisite for the DISA Security Technical Implementation Guide (STIG). AlmaLinux OS 9 is one of the few RHEL family distributions with a published DISA STIG, which gives regulated and United States Department of Defense environments an official hardening baseline. See the" }}
+              <a
+                href="https://ncp.nist.gov/checklist/1264"
+                target="_blank"
+                rel="noopener"
+                >{{ i18n "AlmaLinux OS 9 STIG on the NIST National Checklist Program" }}</a
+              >
+              {{ i18n "and TuxCare's" }}
+              <a
+                href="https://tuxcare.com/blog/linux-stig/"
+                target="_blank"
+                rel="noopener"
+                >{{ i18n "FIPS and STIG overview" }}</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{/* 4. Enable FIPS mode (practical steps) + the 9.2 support caveat */}}
+    <section id="fips-enable" class="al-py-lg">
+      <div class="container">
+        <h2 class="al-foundation-section-title">
+          {{ i18n "Enable FIPS mode for free" }}
+        </h2>
+        <p>
+          {{ i18n "Anyone running AlmaLinux OS 9.2 can enable FIPS mode and meet the standard at no cost. Install the packages from the TuxCare repository, turn on FIPS mode, and reboot:" }}
+        </p>
+        <pre
+          class="al-fips-code"><code>dnf -y install https://repo.tuxcare.com/fips/tuxcare-fips-release-latest-9.noarch.rpm
+dnf -y install openssl-3.0.7-20.el9_2.tuxcare.1 kernel-5.14.0-284.11.1.el9_2.tuxcare.5
+fips-mode-setup --enable
+reboot</code></pre>
+        <p>
+          {{ i18n "Once the system comes back up it is running validated cryptography. For a full walkthrough, including how to verify it, see the" }}
+          <a
+            href="https://almalinux.org/blog/2024-10-07-fips-validation-for-almalinux-update/"
+            >{{ i18n "FIPS validation update blog post" }}</a
+          >.
+        </p>
+
+        <div class="al-fips-callout" role="note">
+          <h3 class="al-fips-callout-title">
+            {{ i18n "Important: AlmaLinux OS 9.2 support status" }}
+          </h3>
+          <p>
+            {{ i18n "AlmaLinux OS 9.2 is no longer supported by the AlmaLinux OS Foundation, which means we are not publishing updates for it. It went out of Foundation support when AlmaLinux OS 9.3 was released. For details on release support, see the" }}
+            <a href="https://wiki.almalinux.org/release-notes/"
+              >{{ i18n "AlmaLinux release notes" }}</a
+            >.
+          </p>
+          <p class="mb-0">
+            {{ i18n "If you need ongoing supported coverage, including for FIPS, see our" }}
+            <a href="https://almalinux.org/support/"
+              >{{ i18n "support options" }}</a
+            >.
+          </p>
+        </div>
+
+        <p class="al-fips-next">
+          {{ i18n "Validation work continues on newer AlmaLinux releases." }}
+          <span class="al-fips-placeholder"
+            >🟥 PLACEHOLDER - NEEDS REAL VALUE: confirm the latest validated
+            release (9.6 or newer) and its certificate numbers 🟥</span
+          >
+        </p>
+      </div>
+    </section>
+
+    {{/* 5. CTA band */}}
+    <section id="fips-cta" class="al-foundation-band-deep al-py-lg">
+      <div class="container text-center">
+        <h2 class="al-foundation-section-title d-inline-block">
+          {{ i18n "Want to know more?" }}
+        </h2>
+        <p>
+          {{ i18n "Questions about FIPS on AlmaLinux OS? Come talk with the people who do this work. We are happy to help." }}
+        </p>
+        <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+          <a
+            href="https://chat.almalinux.org/almalinux/channels/security"
+            class="btn btn-primary btn-lg">
+            {{ i18n "Join the security room" }}
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+{{ end }}

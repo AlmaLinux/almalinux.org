@@ -1,0 +1,152 @@
+// FIPS 140-3 validation landing page (/security/fips-certification)
+// Scoped under .al-fips. Reuses the foundation design system for bands and titles.
+.al-fips {
+
+  // Loud, unmistakable styling for the one not-yet-confirmed value.
+  .al-fips-placeholder {
+    display: inline-block;
+    background: #ff2d2d;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+  }
+
+  // Hero screenshot (terminal showing FIPS mode active on AlmaLinux 9)
+  .al-fips-hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  }
+
+  // At-a-glance info box (sits in a 1/3 column beside the intro copy)
+  .al-fips-infobox {
+    background: rgba(8, 35, 54, 0.55);
+    border: 1px solid rgba(196, 225, 255, 0.15);
+    border-radius: 8px;
+    padding: 1.5rem;
+  }
+
+  .al-fips-infobox-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid $al-c-candlelight;
+  }
+
+  .al-fips-infobox-verify {
+    margin: 1rem 0 0;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(196, 225, 255, 0.15);
+  }
+
+  // Fact list inside the info box (two columns now the box is wider)
+  .al-fips-facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 1.5rem;
+    margin: 0;
+
+    @media (max-width: 575.98px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .al-fips-fact {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(196, 225, 255, 0.12);
+
+    // Last fact (Sponsored by) needs no divider; the full-width verify
+    // line below the list already serves as the separator.
+    &:last-of-type {
+      border-bottom: 0;
+    }
+
+    dt {
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: $al-c-candlelight;
+      margin-bottom: 0.2rem;
+    }
+
+    dd {
+      margin: 0;
+      font-size: 0.98rem;
+    }
+  }
+
+  // How-we-got-here timeline table
+  .al-fips-timeline-title {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  .al-fips-timeline {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+
+    // Override the site-wide `th, td` rule (white border + 10px padding)
+    th,
+    td {
+      border: none;
+      border-bottom: 1px solid rgba(196, 225, 255, 0.15);
+      padding: 0.75rem 1rem;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    thead th {
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: 0.75rem;
+      color: $al-c-candlelight !important; // beats the global `color !important`
+      border-bottom: 2px solid $al-c-candlelight;
+    }
+
+    tbody td:first-child {
+      width: 1%;
+      white-space: nowrap;
+      font-weight: 700;
+      color: $al-c-candlelight !important; // beats the global `color !important`
+    }
+  }
+
+  // Command block for enabling FIPS mode
+  .al-fips-code {
+    background: #1f1f24;
+    color: #f4f4f5;
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    overflow-x: auto;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  // Support-status caveat callout (warning tone, no green)
+  .al-fips-callout {
+    margin: 2rem 0 0;
+    padding: 1.25rem 1.5rem;
+    background: rgba(255, 203, 18, 0.1);
+    border: 1px solid $al-c-candlelight;
+    border-left: 4px solid $al-c-candlelight;
+    border-radius: 6px;
+  }
+
+  .al-fips-callout-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $al-c-candlelight;
+    margin-bottom: 0.5rem;
+  }
+
+  .al-fips-next {
+    margin-top: 1.5rem;
+  }
+}
