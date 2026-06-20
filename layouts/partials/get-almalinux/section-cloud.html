@@ -29,11 +29,7 @@
             class="btn px-3 me-md-2 al-cta-blue al-btn-min"
             href="{{ $section.aws.marketplaceUrl }}">
             AlmaLinux
-            {{ if $version.fullVersion }}
-              {{ $version.fullVersion }}
-            {{ else }}
-              {{ $version.id }}
-            {{ end }}
+            {{ default (default $version.id $section.aws.fullVersion) $section.aws.displayVersion }}
           </a>
         </div>
       </div>
@@ -63,11 +59,7 @@
         class="btn px-3 me-md-2 al-cta-blue al-btn-min"
         href="{{ $section.genericCloud.imageUrl }}">
         AlmaLinux
-        {{ if $version.fullVersion }}
-          {{ $version.fullVersion }}
-        {{ else }}
-          {{ $version.id }}
-        {{ end }}
+        {{ default (default $version.id $section.genericCloud.fullVersion) $section.genericCloud.displayVersion }}
       </a>
       <div class="d-flex flex-grow-1 align-items-center" style="min-width: 0;">
         <img
@@ -120,11 +112,7 @@
         class="btn px-3 me-md-2 al-cta-blue al-btn-min"
         href="{{ $section.googleCloud.productUrl }}">
         {{ i18n "Get AlmaLinux" }}
-        {{ if $version.fullVersion }}
-          {{ $version.fullVersion }}
-        {{ else }}
-          {{ $version.id }}
-        {{ end }}
+        {{ default (default $version.id $section.googleCloud.fullVersion) $section.googleCloud.displayVersion }}
         {{ i18n "Image" }}
       </a>
     </div>
@@ -165,11 +153,7 @@
         class="btn px-3 me-md-2 al-cta-blue al-btn-min"
         href="{{ $section.openNebula.imageUrl }}">
         AlmaLinux
-        {{ if $version.fullVersion }}
-          {{ $version.fullVersion }}
-        {{ else }}
-          {{ $version.id }}
-        {{ end }}
+        {{ default (default $version.id $section.openNebula.fullVersion) $section.openNebula.displayVersion }}
       </a>
       <div class="d-flex flex-grow-1 align-items-center" style="min-width: 0;">
         <img
@@ -233,11 +217,7 @@
         class="btn px-3 me-md-2 al-cta-blue al-btn-min"
         href="{{ $section.oci.marketplaceUrl }}">
         AlmaLinux
-        {{ if $version.fullVersion }}
-          {{ $version.fullVersion }}
-        {{ else }}
-          {{ $version.id }}
-        {{ end }}
+        {{ default (default $version.id $section.oci.fullVersion) $section.oci.displayVersion }}
       </a>
     </div>
     <p>

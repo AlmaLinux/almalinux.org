@@ -14,7 +14,7 @@ images:
 
 - /blog-images/{{ $year }}/image-name.png
   post:
-  title: "{{ replace .Name "-" " " | title }}"
+  title: "A one- or two-sentence summary of the post, shown on the blog listing page"
   image: /blog-images/{{ $year }}/image-name.png
 
 ---

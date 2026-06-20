@@ -1,0 +1,676 @@
+{{ define "main" }}
+  <main class="al-body-container">
+    {{/* SECTION 2: Hero */}}
+    <section id="foundation-hero" class="al-foundation-band-deep al-py-lg">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-7">
+            <h1 class="display-5 fw-bold mb-4">
+              {{ i18n "The AlmaLinux OS Foundation" }}
+            </h1>
+            <p class="lead mb-4">
+              {{ i18n "The AlmaLinux OS Foundation is a 501(c)(6) that stewards the AlmaLinux project. We exist to keep an enterprise-grade Linux free, open, and community-governed — through elected leadership, public minutes, and a structure no single sponsor can capture." }}
+            </p>
+            <p>
+              <a href="#join" class="btn btn-primary btn-lg me-2">
+                <i class="bi bi-people-fill"></i>
+                {{ i18n "Become a member" }}
+              </a>
+              <a
+                href="/p/foundation-bylaws/"
+                class="btn btn-outline-light btn-lg me-2">
+                {{ i18n "Read the bylaws" }}
+              </a>
+              <a
+                href="https://wiki.almalinux.org/Transparency.html"
+                class="btn btn-outline-light btn-lg">
+                {{ i18n "Transparency" }}
+              </a>
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <div class="al-foundation-hero-collage">
+              <img
+                class="al-foundation-hero-frame al-foundation-hero-frame--main"
+                src="/blog-images/2025/sc_2024.jpg"
+                alt="{{ i18n "AlmaLinux community members at the SC24 conference booth" }}" />
+              <img
+                class="al-foundation-hero-frame"
+                src="/foundation-images/ald-germany-2026.jpg"
+                alt="{{ i18n "A speaker presenting at AlmaLinux Day: Germany" }}" />
+              <img
+                class="al-foundation-hero-frame"
+                src="/foundation-images/ald-tokyo-2026-booth.jpg"
+                alt="{{ i18n "Attendees at the AlmaLinux booth at AlmaLinux Day: Tokyo" }}" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{/* SECTION 3: What we believe */}}
+    <section class="al-py-lg">
+      <div class="container">
+        <h2 class="al-foundation-section-title text-center">
+          {{ i18n "What we believe" }}
+        </h2>
+        <p class="lead text-center mb-5">
+          {{ i18n "Three principles shape every decision the foundation makes about the AlmaLinux project." }}
+        </p>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h4>{{ i18n "Open governance" }}</h4>
+            <p>
+              {{ i18n "The community elects the board, and minutes are published within 14 days of every meeting." }}
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4>{{ i18n "No single owner" }}</h4>
+            <p>
+              {{ i18n "By bylaw, no single employer holds more than one voting board seat — regardless of how much they sponsor." }}
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4>{{ i18n "Accountable leadership" }}</h4>
+            <p>
+              {{ i18n "The chair is elected by the board. Annual elections fill expiring seats and any vacancies that have come up." }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{/* SECTION 4: Board of Directors */}}
+    <section class="al-foundation-band-deep al-py-lg">
+      <div class="container">
+        <h2 class="al-foundation-section-title">
+          {{ i18n "Board of Directors" }}
+        </h2>
+        <p>
+          {{ i18n "The AlmaLinux OS Foundation is led by a community-elected board with four-year staggered terms. The board elects its own officers, including the chair. Agendas and minutes are published on" }}
+          <a
+            href="https://wiki.almalinux.org/Transparency.html#minutes-of-almalinux-os-foundation-board-meetings"
+            >{{ i18n "the AlmaLinux Wiki" }}</a
+          >.
+        </p>
+        <p>
+          {{ i18n "Current term dates reflect the staggered four-year cohorts established by the amended bylaws adopted in April 2026, after the" }}
+          <a href="/blog/2025-09-30-election-update/"
+            >{{ i18n "2025 election was rescheduled" }}</a
+          >.
+        </p>
+
+        <div class="row">
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="py-3 px-3 text-center al-member-item">
+              <img
+                class="img-fluid rounded-circle mb-3 img-thumbnail"
+                src="/board/benny.jpg"
+                alt="benny Vasquez"
+                style="max-width: 130px;" />
+              <h5 class="mb-1">benny Vasquez</h5>
+              <div class="small mb-1">
+                {{ i18n "Chair, Board of Directors" }}
+              </div>
+              <div class="small fw-light">AlmaLinux OS Foundation</div>
+              <div class="small fw-light">{{ i18n "Elected" }} 2022</div>
+              <div class="small fw-light">{{ i18n "Term ends" }} 2029</div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="py-3 px-3 text-center al-member-item">
+              <img
+                class="img-fluid rounded-circle mb-3 img-thumbnail"
+                src="/board/jack.jpg"
+                alt="Jack Aboutboul"
+                style="max-width: 130px;" />
+              <h5 class="mb-1">Jack Aboutboul</h5>
+              <div class="small mb-1">{{ i18n "Program Manager" }}</div>
+              <div class="small fw-light">Microsoft Azure AOSI</div>
+              <div class="small fw-light">{{ i18n "Elected" }} 2022</div>
+              <div class="small fw-light">{{ i18n "Term ends" }} 2027</div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="py-3 px-3 text-center al-member-item">
+              <img
+                class="img-fluid rounded-circle mb-3 img-thumbnail"
+                src="/board/simon.jpg"
+                alt="Simon Phipps"
+                style="max-width: 130px;" />
+              <h5 class="mb-1">Simon Phipps</h5>
+              <div class="small mb-1">
+                {{ i18n "Open source advocate, former president of OSI" }}
+              </div>
+              <div class="small fw-light">{{ i18n "Elected" }} 2022</div>
+              <div class="small fw-light">{{ i18n "Term ends" }} 2027</div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="py-3 px-3 text-center al-member-item">
+              <img
+                class="img-fluid rounded-circle mb-3 img-thumbnail"
+                src="/board/moshe-bar-board.jpg"
+                alt="Moshe Bar"
+                style="max-width: 130px;" />
+              <h5 class="mb-1">Moshe Bar</h5>
+              <div class="small mb-1">{{ i18n "CEO" }}</div>
+              <div class="small fw-light">Codenotary Inc.</div>
+              <div class="small fw-light">{{ i18n "Elected" }} 2022</div>
+              <div class="small fw-light">{{ i18n "Term ends" }} 2028</div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="py-3 px-3 text-center al-member-item">
+              <img
+                class="img-fluid rounded-circle mb-3 img-thumbnail"
+                src="/board/daniel.jpeg"
+                alt="Daniel Pearson"
+                style="max-width: 130px;" />
+              <h5 class="mb-1">Daniel Pearson</h5>
+              <div class="small mb-1">{{ i18n "CEO" }}</div>
+              <div class="small fw-light">KnownHost</div>
+              <div class="small fw-light">{{ i18n "Elected" }} 2022</div>
+              <div class="small fw-light">{{ i18n "Term ends" }} 2028</div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="py-3 px-3 text-center al-member-item">
+              <img
+                class="img-fluid rounded-circle mb-3 img-thumbnail"
+                src="/board/alexiribarren.jpg"
+                alt="Alex Iribarren"
+                style="max-width: 130px;" />
+              <h5 class="mb-1">Alex Iribarren</h5>
+              <div class="small mb-1">
+                {{ i18n "Penguin Wrangler and Cloud Watcher" }}
+              </div>
+              <div class="small fw-light">CERN</div>
+              <div class="small fw-light">{{ i18n "Elected" }} 2023</div>
+              <div class="small fw-light">{{ i18n "Term ends" }} 2029</div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="py-3 px-3 text-center al-member-item">
+              <img
+                class="img-fluid rounded-circle mb-3 img-thumbnail"
+                src="/board/davidsnead.jpg"
+                alt="David Snead"
+                style="max-width: 130px;" />
+              <h5 class="mb-1">David Snead</h5>
+              <div class="small mb-1">{{ i18n "General Counsel" }}</div>
+              <div class="small fw-light">WebPros</div>
+              <div class="small fw-light">
+                {{ i18n "Non-voting Invited Expert" }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{/* SECTION 5: How the board operates */}}
+    <section class="al-py-lg">
+      <div class="container">
+        <h2 class="al-foundation-section-title">
+          {{ i18n "How the board operates" }}
+        </h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="al-foundation-info-card h-100">
+              <h4>{{ i18n "Construction" }}</h4>
+              <p>
+                {{ i18n "Up to 13 voting seats (six voting plus one non-voting invited expert currently). Four-year staggered terms. No employer holds more than one seat. Chair is elected by the board. Vacancies trigger a member vote, unless within three months of the next election." }}
+              </p>
+              <p class="mb-0">
+                <a href="/p/foundation-bylaws/#article-iv-board-of-directors"
+                  >{{ i18n "Read the bylaws →" }}</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="al-foundation-info-card h-100">
+              <h4>{{ i18n "Ethics" }}</h4>
+              <p>
+                {{ i18n "Conflicts of interest disclosed; interested transactions require approval by disinterested directors. No paid board roles. The Code of Conduct applies." }}
+              </p>
+              <p class="mb-0">
+                <a href="/p/foundation-board-operations-and-ethics/"
+                  >{{ i18n "Board operations & ethics →" }}</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="al-foundation-info-card h-100">
+              <h4>{{ i18n "Operations" }}</h4>
+              <p>
+                {{ i18n "The board meets monthly on the second Tuesday of the month. The working agenda is shared and built openly over the course of each month, so members can see what's coming, and public minutes from each meeting are published within 14 days." }}
+              </p>
+              <p class="mb-0">
+                <a
+                  href="https://wiki.almalinux.org/Transparency.html#minutes-of-almalinux-os-foundation-board-meetings"
+                  >{{ i18n "Read the minutes →" }}</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{/* SECTION 6: Membership */}}
+    <section id="join" class="al-foundation-band-deep al-py-lg">
+      <div class="container">
+        <h2 class="al-foundation-section-title mb-4">
+          {{ i18n "Become a member — Help sustain and steer AlmaLinux" }}
+        </h2>
+        <div class="row g-4 align-items-stretch">
+          <div class="col-12 col-lg-6">
+            <div class="al-foundation-membership-card h-100">
+              <p>
+                {{ i18n "Membership is how people and organizations keep AlmaLinux independent — and shape where it goes. Every member can vote in board elections and be nominated for the board; sponsors also gain logo placement, press coverage, and more. Six tiers:" }}
+              </p>
+              <ul class="al-foundation-membership-tiers">
+                <li>
+                  <span class="dot" style="background: #c4e1ff;"></span>
+                  <span class="name">{{ i18n "Individual" }}</span>
+                  <span class="price">{{ i18n "Free" }}</span>
+                </li>
+                <li>
+                  <span class="dot" style="background: #86da2f;"></span>
+                  <span class="name">{{ i18n "Mirror" }}</span>
+                  <span class="price">{{ i18n "In-kind" }}</span>
+                </li>
+                <li>
+                  <span class="dot" style="background: #14b8a6;"></span>
+                  <span class="name">{{ i18n "Silver" }}</span>
+                  <span class="price">{{ i18n "$2,500/yr" }}</span>
+                </li>
+                <li>
+                  <span class="dot" style="background: #ff6e71;"></span>
+                  <span class="name">{{ i18n "Ruby" }}</span>
+                  <span class="price">{{ i18n "$5,000/yr" }}</span>
+                </li>
+                <li>
+                  <span class="dot" style="background: #e9b94a;"></span>
+                  <span class="name">{{ i18n "Gold" }}</span>
+                  <span class="price">{{ i18n "$20,000/yr" }}</span>
+                </li>
+                <li>
+                  <span class="dot" style="background: #e8eef5;"></span>
+                  <span class="name">{{ i18n "Platinum" }}</span>
+                  <span class="price">{{ i18n "$100,000/yr" }}</span>
+                </li>
+              </ul>
+              <a href="/members/" class="btn btn-primary">
+                {{ i18n "Explore membership options →" }}
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <a
+              href="https://www.youtube.com/live/D2QaUrt2DDo?t=33091"
+              class="al-foundation-membership-video"
+              target="_blank"
+              rel="noopener">
+              <img
+                src="/foundation-images/oss-not-a-spectator-sport.jpg"
+                alt="{{ i18n "Watch Joe Brockmeier's talk 'Open source is not a spectator sport' from Ohio LinuxFest 2023" }}"
+                loading="lazy" />
+            </a>
+            <p class="al-foundation-membership-caption">
+              {{ i18n "“Open source is not a spectator sport” — Joe Brockmeier, Ohio LinuxFest, September 2023." }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{/* SECTION 7: Sponsor logo wall — flat treatment via existing partial. Tiered display deferred until sponsors carry tier metadata. */}}
+    <section class="al-py-lg">
+      <div class="container">
+        {{ partial "common/foundation-members.html" . }}
+      </div>
+    </section>
+
+    {{/* SECTION 8: Foundations we belong to */}}
+    <section class="al-foundation-band-deep al-py-lg">
+      <div class="container">
+        <h2 class="al-foundation-section-title">
+          {{ i18n "Foundations we belong to" }}
+        </h2>
+        <p class="mb-4">
+          {{ i18n "AlmaLinux participates in industry foundations to keep our work aligned with the broader open-source ecosystem and to extend protection to our community." }}
+        </p>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <a
+              href="https://www.finos.org/members"
+              class="al-foundation-info-card h-100"
+              target="_blank"
+              rel="noopener">
+              <img
+                src="/foundation-images/FINOS_Icon_Wordmark_White.webp"
+                alt="FINOS"
+                class="al-foundation-org-logo"
+                loading="lazy" />
+              <p class="mb-0">
+                {{ i18n "Open-source foundation for the financial services industry. AlmaLinux is a member, expanding our reach into regulated environments." }}
+              </p>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://openinventionnetwork.com/community/almalinux-os-foundation/"
+              class="al-foundation-info-card h-100"
+              target="_blank"
+              rel="noopener">
+              <img
+                src="/foundation-images/opennetworkinitiative.png"
+                alt="Open Invention Network"
+                class="al-foundation-org-logo"
+                loading="lazy" />
+              <p class="mb-0">
+                {{ i18n "Defensive patent pool that shields Linux and adjacent open-source projects from patent threats." }}
+              </p>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://openhpc.community/about/members/"
+              class="al-foundation-info-card h-100"
+              target="_blank"
+              rel="noopener">
+              <img
+                src="/foundation-images/openhpc-horizontal-color.svg"
+                alt="OpenHPC"
+                class="al-foundation-org-logo"
+                loading="lazy" />
+              <p class="mb-0">
+                {{ i18n "Community for high-performance computing. AlmaLinux is the supported HPC base for many of OpenHPC's reference stacks." }}
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{/* SECTION 9: Distributions, products, and appliances built on AlmaLinux */}}
+    <section class="al-py-lg">
+      <div class="container">
+        <h2 class="al-foundation-section-title">
+          {{ i18n "Built on AlmaLinux" }}
+        </h2>
+        <p class="mb-4">
+          {{ i18n "Companies and projects build on AlmaLinux — from downstream Linux distributions to commercial appliances and management platforms. The list below reflects what we know publicly — confirmed entries only." }}
+        </p>
+        <div class="table-responsive">
+          <table class="table al-foundation-downstream">
+            <colgroup>
+              <col style="width: 28%;" />
+              <col />
+              <col style="width: 22%;" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">{{ i18n "Product" }}</th>
+                <th scope="col">{{ i18n "Product Description" }}</th>
+                <th scope="col">{{ i18n "Maintainer" }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <a
+                    href="https://docs.alertlogic.com/prepare/alma-linux-update-legacy-azure.htm"
+                    target="_blank"
+                    rel="noopener"
+                    >Alert Logic Virtual Appliance</a
+                  >
+                  <div class="cat small fw-light">
+                    {{ i18n "Security appliance" }}
+                  </div>
+                </th>
+                <td>
+                  {{ i18n "Managed detection and response (MDR) virtual appliance; Alert Logic transitioned its appliance platform from CentOS to AlmaLinux." }}
+                </td>
+                <td>Alert Logic</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <a
+                    href="https://www.arista.com/en/support/toi/eos-4-32-0f"
+                    target="_blank"
+                    rel="noopener"
+                    >Arista EOS</a
+                  >
+                  <div class="cat small fw-light">
+                    {{ i18n "Network OS" }}
+                  </div>
+                </th>
+                <td>
+                  {{ i18n "Cloud network operating system for Arista switches and routers; userland rebased to AlmaLinux 9 starting with EOS 4.32." }}
+                </td>
+                <td>Arista Networks</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <a
+                    href="https://www.cisco.com/c/en/us/td/docs/unified_computing/Intersight/b_Cisco_Intersight_Appliance_Getting_Started_Guide/m_updating_the_intersight_virtual_appliance_software.html"
+                    target="_blank"
+                    rel="noopener"
+                    >Cisco Intersight Virtual Appliance</a
+                  >
+                  <div class="cat small fw-light">
+                    {{ i18n "Cloud management" }}
+                  </div>
+                </th>
+                <td>
+                  {{ i18n "Cisco's unified infrastructure-management appliance; Intersight 1.1.0 and later ship on AlmaLinux 9." }}
+                </td>
+                <td>Cisco</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <a
+                    href="https://www.cisco.com/c/en/us/td/docs/net_mgmt/prime/network_registrar/11-4/install/guide/Install_Guide/Install_Guide_chapter_0111.html"
+                    target="_blank"
+                    rel="noopener"
+                    >Cisco Prime Network Registrar</a
+                  >
+                  <div class="cat small fw-light">
+                    {{ i18n "Network management" }}
+                  </div>
+                </th>
+                <td>
+                  {{ i18n "DNS, DHCP, and IP-address-management appliance; ships on AlmaLinux." }}
+                </td>
+                <td>Cisco</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <a
+                    href="https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/rel_notes/15/cucm_b_release-notes-for-cucm-imp-15.html"
+                    target="_blank"
+                    rel="noopener"
+                    >Cisco Unified Communications Manager 15</a
+                  >
+                  <div class="cat small fw-light">
+                    {{ i18n "Communications platform" }}
+                  </div>
+                </th>
+                <td>
+                  {{ i18n "Cisco's enterprise voice / video / messaging platform; CUCM 15 transitioned from CentOS to AlmaLinux for long-term support." }}
+                </td>
+                <td>Cisco</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <a
+                    href="https://blog.cloudlinux.com/cloudlinux-os-8-and-9-in-post-redhat-world"
+                    target="_blank"
+                    rel="noopener"
+                    >CloudLinux OS</a
+                  >
+                  <div class="cat small fw-light">{{ i18n "Hosting OS" }}</div>
+                </th>
+                <td>
+                  {{ i18n "Hosting-focused enterprise OS; versions 8, 9, and 10 are built on AlmaLinux." }}
+                </td>
+                <td>CloudLinux Inc.</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <a
+                    href="https://www.sardinasystems.com/fishos/"
+                    target="_blank"
+                    rel="noopener"
+                    >FishOS</a
+                  >
+                  <div class="cat small fw-light">
+                    {{ i18n "Cloud platform" }}
+                  </div>
+                </th>
+                <td>
+                  {{ i18n "OpenStack-based cloud-management platform built on AlmaLinux." }}
+                </td>
+                <td>Sardina Systems</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <a
+                    href="https://www.heliumos.org/"
+                    target="_blank"
+                    rel="noopener"
+                    >HeliumOS</a
+                  >
+                  <div class="cat small fw-light">
+                    {{ i18n "Atomic desktop" }}
+                  </div>
+                </th>
+                <td>
+                  {{ i18n "Immutable / atomic desktop Linux with bootable container images, built on AlmaLinux." }}
+                </td>
+                <td>HeliumOS Project</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <a
+                    href="https://documentation.n-able.com/N-central/troubleshooting/Content/kb/System_Requirements_Changes_from_2024.6_CentOS7_to_2025.1_Almalinux.htm"
+                    target="_blank"
+                    rel="noopener"
+                    >N-able N-central</a
+                  >
+                  <div class="cat small fw-light">
+                    {{ i18n "RMM platform" }}
+                  </div>
+                </th>
+                <td>
+                  {{ i18n "Remote monitoring and management platform for managed service providers; rebased from CentOS 7 to AlmaLinux in version 2025.1." }}
+                </td>
+                <td>N-able</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    {{/* SECTION 10: Awards & recognition */}}
+    <section class="al-foundation-band-deep al-py-lg">
+      <div class="container">
+        <h2 class="al-foundation-section-title">
+          {{ i18n "Awards & recognition" }}
+        </h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <a
+              class="al-foundation-info-card h-100"
+              href="https://stevieawards.com/"
+              target="_blank"
+              rel="noopener">
+              <div class="al-foundation-award-eyebrow">
+                {{ i18n "2024 American Business Awards" }}
+              </div>
+              <h4>{{ i18n "Silver Stevie Award" }}</h4>
+              <p class="mb-0">
+                {{ i18n "Organization of the Year — Non-Profit." }}
+              </p>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              class="al-foundation-info-card h-100"
+              href="https://www.einnews.com/pr_news/676482100/almalinux-os-foundation-named-a-nonprofit-organization-of-the-year-in-2023-best-in-biz-awards"
+              target="_blank"
+              rel="noopener">
+              <div class="al-foundation-award-eyebrow">
+                {{ i18n "2023 Best in Biz Awards" }}
+              </div>
+              <h4>{{ i18n "Gold — Nonprofit Organization of the Year" }}</h4>
+              <p class="mb-0">
+                {{ i18n "Judged by editors and reporters from top-tier North American publications." }}
+              </p>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              class="al-foundation-info-card h-100"
+              href="https://hermesawards.com/"
+              target="_blank"
+              rel="noopener">
+              <div class="al-foundation-award-eyebrow">
+                {{ i18n "2026 Hermes Creative Awards" }}
+              </div>
+              <h4>{{ i18n "Honorable Mention — Promotional Stickers" }}</h4>
+              <p class="mb-0">
+                {{ i18n "AlmaLinux Day: Germany sticker recognized for promotional creative." }}
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{/* SECTION 11: CTA strip */}}
+    <section class="al-py-lg text-center">
+      <div class="container">
+        <h2 class="mb-3">{{ i18n "Help us keep AlmaLinux free." }}</h2>
+        <p class="lead mb-4">
+          {{ i18n "Join the foundation, contribute to the project, or donate directly — every path supports a free, community-governed Linux." }}
+        </p>
+        <div class="d-grid gap-3 d-md-flex justify-content-md-center">
+          <a href="/members/" class="btn btn-warning btn-lg">
+            {{ i18n "Join as a sponsor or individual member" }}
+          </a>
+          <a href="/contribute/" class="btn btn-primary btn-lg">
+            {{ i18n "Contribute" }}
+          </a>
+        </div>
+        <p class="mt-4 mb-3">
+          {{ i18n "Prefer to give directly? Support the foundation with a one-time or recurring donation:" }}
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a
+            href="https://github.com/sponsors/AlmaLinux"
+            class="btn btn-outline-light"
+            target="_blank"
+            rel="noopener">
+            <i class="bi bi-github"></i>
+            {{ i18n "GitHub Sponsors" }}
+          </a>
+          <a
+            href="https://opencollective.com/almalinux-os-foundation"
+            class="btn btn-outline-light"
+            target="_blank"
+            rel="noopener">
+            <i class="bi bi-heart-fill"></i>
+            {{ i18n "Open Collective" }}
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+{{ end }}

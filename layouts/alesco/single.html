@@ -1,74 +1,11 @@
 {{ define "main" }}
-  <style>
-    @media (max-width: 800px) {
-      .display-5 {
-        font-size: calc(1.425rem + 2.1vw) !important;
-        line-height: 1.2;
-      }
-      .row-cols-1 > * {
-        flex: 0 0 auto;
-        width: 100%;
-      }
-      .d-grid {
-        display: grid !important;
-      }
-      .row-cols-2 > * {
-        flex: 0 0 auto;
-        width: 50%;
-      }
-      .container-security {
-        flex: 0 0 auto;
-        display: flex;
-        flex-direction: column !important;
-      }
-      .container-measure {
-        width: 100% !important;
-      }
-    }
-    @media (min-width: 800px) {
-      .display-5 {
-        font-size: 3rem;
-      }
-    }
-    .lh-1 {
-      line-height: 1 !important;
-    }
-    .al-page-index .al-hero-cta-primary {
-      margin: 10px;
-    }
-    .row > * {
-      margin-top: 20px;
-    }
-    .al-page-index .al-index-backed-by .al-backed-by-list {
-      justify-content: center;
-    }
-    @media (min-width: 768px) {
-      .row-cols-md-6 > * {
-        flex: 0 0 auto;
-        width: 16.66667%;
-      }
-    }
-    .h2,
-    h2 {
-      font-size: calc(1.325rem + 0.9vw);
-    }
-  </style>
-
-  <div class="al-body-container">
+  <div class="al-body-container al-page-alesco">
     <section class="al-page-index">
       <!-- HERO -->
       <div class="al-index-container" style="background: #0e3b5c!important;">
-        <div class="container px-0 al-py-lg">
-          <div class="row flex-lg-row-reverse align-items-center py-2 py-md-5">
-            <div class="d-none d-lg-block col-10 col-sm-8 col-lg-6">
-              <img
-                src="/images/ALESCo.png"
-                class="d-block mx-lg-auto img-fluid"
-                alt="Hero image"
-                width="624"
-                height="429" />
-            </div>
-            <div class="col-lg-6">
+        <div class="container al-py-lg">
+          <div class="row g-5 align-items-center py-2 py-md-5">
+            <div class="col-lg-7">
               <h1 class="display-5 fw-bold lh-1 mb-5 mb-md-3">
                 {{ i18n "The AlmaLinux Engineering Steering Committee" }}
               </h1>
@@ -90,21 +27,26 @@
                 </a>
               </div>
             </div>
+            <div class="col-lg-5">
+              <img
+                class="img-fluid rounded-3"
+                src="/alesco/leadership-summit-2024.jpg"
+                alt="{{ i18n "AlmaLinux contributors working together at the 2024 leadership summit" }}" />
+            </div>
           </div>
         </div>
       </div>
       <!-- end HERO -->
 
-      <!-- About (includes Members) -->
-      <div class="container al-members">
-        <div class="row">
-          <!-- 'about' header and paragraph -->
-          <div class="container-measure" style="display: flex; width: 70%;">
-            <i class="bi bi-bezier2 pe-2" style="font-size:1.25em"></i>
-            <div
-              class="al-index-community-content-wrap"
-              style="padding-left: 22px">
-              <h4 class="fw-bold">About ALESCo</h4>
+      <!-- About + How ALESCo works (side by side) -->
+      <div class="al-py-lg">
+        <div class="container">
+          <div class="row g-5">
+            <!-- About -->
+            <div class="col-lg-6">
+              <h2 class="al-foundation-section-title">
+                {{ i18n "About ALESCo" }}
+              </h2>
               <p>
                 {{ i18n "Dubbed “air traffic control” for all engineering matters, ALESCo will ensure AlmaLinux’s robustness, reliability, and sustainability while working collaboratively with and overseeing technical decisions in relevant Special Interest Groups (SIGs). The committee will hold five key responsibilities:" }}
               </p>
@@ -117,89 +59,245 @@
                 <li>{{ i18n "Release Management" }}</li>
                 <li>{{ i18n "SIG support" }}</li>
               </ul>
+              <p class="mb-0">
+                {{ i18n "ALESCo brings together the maintainers, packagers, and SIG leads who build and sustain AlmaLinux OS. It is not a closed body. Anyone working on or using AlmaLinux is welcome to bring proposals, raise concerns, and help shape technical direction in the open." }}
+              </p>
             </div>
-          </div>
-          <!-- end 'about' header and paragraph -->
+            <!-- end About -->
 
-          <!-- Members -->
-          <div class="col-12">
-            <h6 class="pb-2 mb-5 border-bottom">
-              {{ i18n "Members of ALESCo" }}
-            </h6>
+            <!-- How ALESCo works -->
+            <div class="col-lg-6">
+              <h2 class="al-foundation-section-title">
+                {{ i18n "How ALESCo works" }}
+              </h2>
+              <p>
+                {{ i18n "ALESCo meets every two weeks, and the schedule is posted on" }}
+                <a href="https://events.almalinux.org/category/7/"
+                  >events.almalinux.org</a
+                >.
+                {{ i18n "Decisions are made by majority vote of the committee, and the chair role rotates among members every six months. Discussion happens in the open in the alesco channel on chat.almalinux.org, and technical proposals are tracked as pull requests in the ALESCo repository on GitHub. Anyone working on or using AlmaLinux is welcome to join a meeting, raise a topic, or open a proposal." }}
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <a
+                  href="https://events.almalinux.org/category/7/"
+                  class="btn btn-outline-light">
+                  <i class="bi bi-calendar-event pe-1"></i>
+                  {{ i18n "View the meeting schedule" }}
+                </a>
+                <a
+                  href="https://github.com/AlmaLinux/ALESCo"
+                  class="btn btn-outline-light">
+                  <i class="bi bi-github pe-1"></i>
+                  {{ i18n "ALESCo on GitHub" }}
+                </a>
+                <a
+                  href="https://wiki.almalinux.org/alesco.html"
+                  class="btn btn-outline-light">
+                  <i class="bi bi-journal-text pe-1"></i>
+                  {{ i18n "Read the full charter" }}
+                </a>
+              </div>
+            </div>
+            <!-- end How ALESCo works -->
           </div>
+        </div>
+      </div>
+      <!-- end About + How ALESCo works -->
 
-          <!-- Andrew -->
-          <div class="col-xl-3 col-sm-6 mb-5">
-            <div class="py-5 px-4 text-center al-member-item">
-              <div>
+      <!-- Lifecycle + Open Proposals (side by side) -->
+      <div class="al-foundation-band-deep al-py-lg">
+        <div class="container">
+          <div class="row g-5">
+            <!-- Lifecycle of a proposal -->
+            <div class="col-lg-6">
+              <h2 class="al-foundation-section-title">
+                {{ i18n "Lifecycle of a proposal" }}
+              </h2>
+              <p>
+                {{ i18n "Proposals are written as RFCs and submitted as pull requests, then move through these stages in the open." }}
+              </p>
+              <div class="al-rfc-steps">
+                <div class="al-rfc-step">
+                  <div class="d-flex align-items-center">
+                    <span class="al-rfc-step-num me-2">1</span>
+                    <span class="al-rfc-label al-rfc-submitted"
+                      >{{ i18n "Submitted" }}</span
+                    >
+                  </div>
+                  <p>
+                    {{ i18n "The RFC is opened as a pull request and reviewed for formatting and fit with the RFC process. Once it qualifies, the “accepted for discussion” tag is added." }}
+                  </p>
+                </div>
+                <div class="al-rfc-step">
+                  <div class="d-flex align-items-center">
+                    <span class="al-rfc-step-num me-2">2</span>
+                    <span class="al-rfc-label al-rfc-discussion"
+                      >{{ i18n "Accepted for Discussion" }}</span
+                    >
+                  </div>
+                  <p>
+                    {{ i18n "The RFC is under active discussion in the open and may go through several revisions." }}
+                  </p>
+                </div>
+                <div class="al-rfc-step">
+                  <div class="d-flex align-items-center">
+                    <span class="al-rfc-step-num me-2">3</span>
+                    <span class="al-rfc-label al-rfc-vote"
+                      >{{ i18n "Vote at Next Meeting" }}</span
+                    >
+                  </div>
+                  <p>
+                    {{ i18n "ALESCo announces a Final Comment Period to signal that a decision is near, and adds the “vote at next meeting” tag." }}
+                  </p>
+                </div>
+                <div class="al-rfc-step">
+                  <div class="d-flex align-items-center">
+                    <span class="al-rfc-step-num me-2">4</span>
+                    <span class="al-rfc-label al-rfc-decision"
+                      >{{ i18n "Closed" }}</span
+                    >
+                  </div>
+                  <p>
+                    {{ i18n "ALESCo makes the final call, weighing community feedback. An RFC ends in one of these outcomes:" }}
+                  </p>
+                  <div class="al-rfc-outcomes">
+                    <span class="al-rfc-outcome al-rfc-o-accepted"
+                      >{{ i18n "Accepted" }}</span
+                    >
+                    <span class="al-rfc-outcome al-rfc-o-rejected"
+                      >{{ i18n "Rejected" }}</span
+                    >
+                    <span class="al-rfc-outcome al-rfc-o-withdrawn"
+                      >{{ i18n "Withdrawn" }}</span
+                    >
+                    <span class="al-rfc-outcome al-rfc-o-superseded"
+                      >{{ i18n "Superseded" }}</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <p class="small fst-italic mt-4 mb-0">
+                {{ i18n "In rare cases that touch trademarks, significant resources, or partnerships, the AlmaLinux Foundation Board provides input before a vote." }}
+              </p>
+            </div>
+            <!-- end Lifecycle of a proposal -->
+
+            <!-- Open Proposals -->
+            <div class="col-lg-6">
+              <h2 class="al-foundation-section-title">
+                {{ i18n "Open Proposals" }}
+              </h2>
+              <p>
+                {{ i18n "These are the RFCs currently before ALESCo, along with their status. We love hearing from our community about the proposals under consideration, so every perspective is in the room before a decision is made." }}
+              </p>
+              <div id="alesco-prs" class="mt-4">
+                <p id="alesco-prs-status" class="text-muted">
+                  Loading open proposals...
+                </p>
+              </div>
+              <p class="mt-3 mb-0">
+                <a href="https://github.com/AlmaLinux/ALESCo/pulls"
+                  >{{ i18n "View all on GitHub" }}</a
+                >
+              </p>
+            </div>
+            <!-- end Open Proposals -->
+          </div>
+        </div>
+      </div>
+      <!-- end Lifecycle + Open Proposals -->
+
+      <!-- Members -->
+      <div class="al-py-lg">
+        <div class="container">
+          <h2 class="al-foundation-section-title">
+            {{ i18n "Members of ALESCo" }}
+          </h2>
+          <p>
+            {{ i18n "The maintainers, packagers, and SIG leads who steer AlmaLinux’s technical direction." }}
+          </p>
+          <div class="row">
+            <!-- Andrew -->
+            <div class="col-xl-3 col-sm-6 mb-3">
+              <div class="py-3 px-3 text-center al-member-item">
                 <img
                   class="img-fluid rounded-circle mb-3 img-thumbnail"
                   src="/alesco/alukoshko.jpg"
                   alt="Andrew Lukoshko"
-                  style="max-width: 180px;" />
+                  style="max-width: 130px;" />
+                <h5 class="mb-1">Andrew Lukoshko</h5>
+                <div class="small mb-1">
+                  {{ i18n "AlmaLinux Lead Architect" }}
+                </div>
+                <div class="small fw-light">CloudLinux</div>
               </div>
-              <h5 class="mb-1">Andrew Lukoshko</h5>
-              <div class="small mb-1">
-                {{ i18n "AlmaLinux Lead Architect" }}
-              </div>
-              <div class="small fw-light">CloudLinux</div>
             </div>
-          </div>
-          <!-- end Andrew -->
-          <!-- Ben -->
-          <div class="col-xl-3 col-sm-6 mb-5">
-            <div class="py-5 px-4 text-center al-member-item">
-              <div>
+            <!-- end Andrew -->
+            <!-- Ben -->
+            <div class="col-xl-3 col-sm-6 mb-3">
+              <div class="py-3 px-3 text-center al-member-item">
                 <img
                   class="img-fluid rounded-circle mb-3 img-thumbnail"
                   src="/alesco/benthomas.jpg"
                   alt="Ben Thomas"
-                  style="max-width: 180px;" />
+                  style="max-width: 130px;" />
+                <h5 class="mb-1">Ben Thomas</h5>
+                <div class="small mb-1">
+                  {{ i18n "Principal Research Infrastructure Developer" }}
+                </div>
+                <div class="small fw-light">UCL</div>
               </div>
-              <h5 class="mb-1">Ben Thomas</h5>
-              <div class="small mb-1">
-                {{ i18n "Principal Research Infrastructure Developer" }}
-              </div>
-              <div class="small fw-light">UCL</div>
             </div>
-          </div>
-          <!-- end Ben -->
-          <!-- Jonathan -->
-          <div class="col-xl-3 col-sm-6 mb-5">
-            <div class="py-5 px-4 text-center al-member-item">
-              <div>
+            <!-- end Ben -->
+            <!-- Jonathan -->
+            <div class="col-xl-3 col-sm-6 mb-3">
+              <div class="py-3 px-3 text-center al-member-item">
                 <img
                   class="img-fluid rounded-circle mb-3 img-thumbnail"
                   src="/alesco/jonathan.jpg"
                   alt="Jonathan Wright"
-                  style="max-width: 180px;" />
+                  style="max-width: 130px;" />
+                <h5 class="mb-1">Jonathan Wright</h5>
+                <div class="small mb-1">{{ i18n "AlmaLinux Evangelist" }}</div>
+                <div class="small fw-light">CloudLinux</div>
               </div>
-              <h5 class="mb-1">Jonathan Wright</h5>
-              <div class="small mb-1">{{ i18n "AlmaLinux Evangelist" }}</div>
-              <div class="small fw-light">CloudLinux</div>
             </div>
-          </div>
-          <!-- end Jonathan -->
-          <!-- Neal -->
-          <div class="col-xl-3 col-sm-6 mb-5">
-            <div class="py-5 px-4 text-center al-member-item">
-              <div>
+            <!-- end Jonathan -->
+            <!-- Neal -->
+            <div class="col-xl-3 col-sm-6 mb-3">
+              <div class="py-3 px-3 text-center al-member-item">
                 <img
                   class="img-fluid rounded-circle mb-3 img-thumbnail"
                   src="/alesco/nealgompa.png"
                   alt="Neal Gompa"
-                  style="max-width: 180px;" />
+                  style="max-width: 130px;" />
+                <h5 class="mb-1">Neal Gompa</h5>
+                <div class="small mb-1">{{ i18n "Principal Consultant" }}</div>
+                <div class="small fw-light">Velocity Limitless</div>
               </div>
-              <h5 class="mb-1">Neal Gompa</h5>
-              <div class="small mb-1">{{ i18n "Principal Consultant" }}</div>
-              <div class="small fw-light">Velocity Limitless</div>
             </div>
+            <!-- end Neal -->
+            <!-- Lance -->
+            <div class="col-xl-3 col-sm-6 mb-3">
+              <div class="py-3 px-3 text-center al-member-item">
+                <img
+                  class="img-fluid rounded-circle mb-3 img-thumbnail"
+                  src="/alesco/lance.png"
+                  alt="Lance Albertson"
+                  style="max-width: 130px;" />
+                <h5 class="mb-1">Lance Albertson</h5>
+                <div class="small mb-1">{{ i18n "Director" }}</div>
+                <div class="small fw-light">
+                  Oregon State University Open Source Lab
+                </div>
+              </div>
+            </div>
+            <!-- end Lance -->
           </div>
-          <!-- end Neal -->
         </div>
       </div>
       <!-- end Members -->
-      <!-- end About -->
+
       <div class="al-index-stop" style="background: #22C2FF; color: #0A2335;">
         <div class="container al-py-md" style="padding: 0 40px 0 40px;">
           <div class="container-stop" style="display: flex;">
@@ -255,4 +353,98 @@
       </div>
     </section>
   </div>
+
+  <!-- Live fetch of open ALESCo RFCs (pull requests) from the GitHub API,
+       rendered client-side on page load. -->
+  <script>
+    (function () {
+      var listEl = document.getElementById("alesco-prs");
+      var statusEl = document.getElementById("alesco-prs-status");
+      if (!listEl || !statusEl) {
+        return;
+      }
+      var labels = {
+        open: "Open",
+        by: "by",
+        updated: "Updated",
+        none: "No open PRs in the ALESCo repo to show",
+        error: "Could not load open proposals right now.",
+      };
+      // Black or white text for a label's background, matching GitHub.
+      function contrastColor(hex) {
+        var r = parseInt(hex.slice(0, 2), 16);
+        var g = parseInt(hex.slice(2, 4), 16);
+        var b = parseInt(hex.slice(4, 6), 16);
+        var yiq = (r * 299 + g * 587 + b * 114) / 1000;
+        return yiq >= 150 ? "#1f2328" : "#ffffff";
+      }
+      var api =
+        "https://api.github.com/repos/AlmaLinux/ALESCo/pulls" +
+        "?state=open&sort=updated&direction=desc&per_page=20";
+      fetch(api, { headers: { Accept: "application/vnd.github+json" } })
+        .then(function (res) {
+          if (!res.ok) {
+            throw new Error("HTTP " + res.status);
+          }
+          return res.json();
+        })
+        .then(function (prs) {
+          if (!prs.length) {
+            statusEl.textContent = labels.none;
+            return;
+          }
+          listEl.innerHTML = "";
+          prs.forEach(function (pr) {
+            var updated = new Date(pr.updated_at).toLocaleDateString(
+              undefined,
+              { year: "numeric", month: "short", day: "numeric" },
+            );
+            var card = document.createElement("a");
+            card.href = pr.html_url;
+            card.className = "al-rfc-card";
+
+            var title = document.createElement("div");
+            title.className = "al-rfc-card-title";
+            title.textContent = pr.title;
+
+            var tags = document.createElement("div");
+            tags.className = "al-rfc-tags";
+            var statePill = document.createElement("span");
+            statePill.className = "al-rfc-label al-rfc-open";
+            statePill.textContent = labels.open;
+            tags.appendChild(statePill);
+            (pr.labels || []).forEach(function (label) {
+              var tag = document.createElement("span");
+              tag.className = "al-rfc-label";
+              tag.textContent = label.name;
+              tag.style.backgroundColor = "#" + label.color;
+              tag.style.color = contrastColor(label.color);
+              tags.appendChild(tag);
+            });
+
+            var meta = document.createElement("div");
+            meta.className = "al-rfc-card-meta";
+            meta.textContent =
+              "#" +
+              pr.number +
+              " " +
+              labels.by +
+              " " +
+              pr.user.login +
+              " · " +
+              labels.updated +
+              " " +
+              updated;
+
+            card.appendChild(title);
+            card.appendChild(tags);
+            card.appendChild(meta);
+            listEl.appendChild(card);
+          });
+        })
+        .catch(function () {
+          statusEl.textContent = labels.error;
+        });
+    })();
+  </script>
 {{ end }}

@@ -196,10 +196,12 @@ date: "YYYY-MM-DD" # Publication date
 images:
   - /blog-images/YYYY/image-name.png # Social/OG preview image
 post:
-  title: "Your Post Title"
+  title: "A one- or two-sentence summary of the post" # Shown on the blog listing page — NOT a copy of the title above
   image: /blog-images/YYYY/image-name.png
 ---
 ```
+
+> **Note:** Despite its name, `post.title` is the post's **summary**, displayed as the excerpt on the [blog listing page](https://almalinux.org/blog/) beneath the post image. Write a real one- or two-sentence summary here rather than repeating the `title` field.
 
 ### Adding Images
 
@@ -293,15 +295,16 @@ The "Get AlmaLinux" page is dynamically generated using structured data and Hugo
 - **Data sources:**
   - `data/get_almalinux_spec.yaml`: Defines available AlmaLinux versions, supported architectures, and the configuration for
     each section (e.g., ISO, Cloud, Container).
-  - `data/get_almalinux_checksums.yaml`: Contains, for each version, the current highest point release (`fullVersion`) and the
-    checksums for all artifacts (ISOs and cloud images) per architecture. This file can (and probably will) be generated.
+  - `data/get_almalinux_checksums.yaml`: Contains, for each version, the checksums and detected point release (`fullVersion`)
+    for each generated artifact (ISOs and cloud images) per architecture. This file can (and probably will) be generated.
+    `fullVersion` is stored on the artifact that uses it, not once per AlmaLinux version.
 
 - **Generation script:**
   - The script `tools/generate_get_almalinux_checksums.py` reads `data/get_almalinux_spec.yaml`, queries
-    the CHECKSUM URLs defined for ISO and Cloud images, extracts the checksums and the current minor release
+    the CHECKSUM URLs defined for ISO and Cloud images, extracts each artifact's checksum and current minor release
     and produces `data/get_almalinux_checksums.yaml`.
   - The script `tools/generate_get_almalinux_yaml.py` reads both YAML files, merges their data, and produces `data/get_almalinux.yaml`. This merged file is used by the Hugo partials to render the page.
-  - `data/get_almalinux.yaml` is **not** tracked in git. It is generated automatically by the GitHub CI workflow during site builds, but you must run the script manually for local development if you change the source YAML files.
+  - `data/get_almalinux.yaml` is **not** tracked in git. It is generated automatically by CI during site builds, but you must run the script manually for local development if you change the source YAML files.
 
 - **Templates:**
   - Hugo partials in `layouts/partials/get-almalinux/` render the page:
@@ -325,6 +328,7 @@ The "Get AlmaLinux" page is dynamically generated using structured data and Hugo
    This updates `data/get_almalinux.yaml` for use by Hugo.
    This will be done automatically by the Gitlab CI scripts during deployment.
 3. Commit the resulting changes to `data/get_almalinux_checksums.yaml` and open a PR.
+   Do not commit `data/get_almalinux.yaml`; it is generated output.
 
 ##### Editing Sections, Architectures, or URL Patterns
 
@@ -346,8 +350,10 @@ If you need to change which sections or architectures are shown, or adjust how U
 Most sections define URL templates for artifacts, using variables such as:
 
 - `major`: The major version, from `id` (e.g., `10`, `10-kitten`).
-- `full`: The full version, from `fullVersion` in `get_almalinux_checksums.yaml` (e.g., `10.1`). If `fullVersion` is not set, it falls back to `id`.
+- `full`: The artifact-specific full version, from `fullVersion` in `get_almalinux_checksums.yaml` (e.g., `10.1`). If an artifact does not have `fullVersion` set, it falls back to the first detected version for that AlmaLinux release, then to `id`.
 - `arch`: The architecture (e.g., `x86_64`, `x86_64_v2`).
+
+In the generated `data/get_almalinux.yaml`, `fullVersion` is attached to the artifact or provider entry that uses it, such as an ISO block or Generic Cloud image. It is not emitted as a top-level version field. Button labels use `displayVersion`, which usually matches `fullVersion`; special cases such as AlmaLinux Kitten can display the version ID while still using the artifact `fullVersion` in URLs.
 
 Some URLs may allow other variables (like `variant`), or require different patterns per architecture (e.g., `vagrant`'s `registryUrls`). For advanced options, consult the code in `tools/generate_get_almalinux_yaml.py`.
 

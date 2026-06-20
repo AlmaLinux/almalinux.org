@@ -1,6 +1,6 @@
 <nav
   id="al-primary-navbar"
-  class="al-primary-navbar navbar p-0 sticky-top navbar-expand-lg navbar-dark flex-column with-motd">
+  class="al-primary-navbar navbar p-0 sticky-top navbar-expand-xl navbar-dark flex-column with-motd">
   <div class="container  my-3">
     <a class="navbar-brand" href="{{ "" | relLangURL }}">
       <img
@@ -40,7 +40,7 @@
             {{ i18n "Resources" }}
           </a>
           <ul
-            class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-start"
+            class="dropdown-menu dropdown-menu-dark dropdown-menu-xl-start"
             aria-labelledby="navbarDropResources">
             <li>
               <a
@@ -80,18 +80,8 @@
               </ul>
             </li>
             <li>
-              <a class="dropdown-item" href="{{ "/alesco" | relLangURL }}">
-                {{ i18n "ALESCo" }}
-              </a>
-            </li>
-            <li>
               <a class="dropdown-item" href="https://bugs.almalinux.org">
                 {{ i18n "Report Bugs" }}
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="{{ "/members" | relLangURL }}">
-                {{ i18n "Membership" }}
               </a>
             </li>
             <li>
@@ -135,7 +125,7 @@
             {{ i18n "Events" }}
           </a>
           <ul
-            class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-start"
+            class="dropdown-menu dropdown-menu-dark dropdown-menu-xl-start"
             aria-labelledby="navbarDropEvents">
             <li>
               <a
@@ -210,6 +200,48 @@
             </li>
           </ul>
         </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle mt-1"
+            id="navbarDropFoundation"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+            {{ i18n "Foundation" }}
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-dark dropdown-menu-xl-start"
+            aria-labelledby="navbarDropFoundation">
+            <li>
+              <a class="dropdown-item" href="{{ "/foundation" | relLangURL }}">
+                {{ i18n "About the Foundation" }}
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="{{ "/members" | relLangURL }}">
+                {{ i18n "Membership" }}
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="{{ "/alesco" | relLangURL }}">
+                {{ i18n "ALESCo" }}
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="{{ "/p/foundation-bylaws" | relLangURL }}">
+                {{ i18n "Bylaws" }}
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="{{ "/p/foundation-board-operations-and-ethics" | relLangURL }}">
+                {{ i18n "Board operations & ethics" }}
+              </a>
+            </li>
+          </ul>
+        </li>
         <li class="nav-item">
           <a class="nav-link mt-1" href="https://shop.almalinux.org/">
             {{ i18n "Shop" }}
@@ -229,7 +261,7 @@
             <img src="/images/lang.svg" alt="Language" width="24" height="24" />
           </button>
           <ul
-            class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-start"
+            class="dropdown-menu dropdown-menu-dark dropdown-menu-xl-start"
             aria-labelledby="navbarDropLanguages">
             {{ range $.AllTranslations }}
               <li>
@@ -239,7 +271,7 @@
                   {{ end }}"
                   href="{{ .RelPermalink }}"
                   hreflang="{{ $.Lang }}">
-                  {{ .Language.LanguageName }}
+                  {{ .Language.Label }}
                 </a>
               </li>
             {{ end }}
@@ -284,7 +316,13 @@
         href="{{ "/blog/2026-05-26-almalinux_98_and_102_stable/" | relLangURL }}"
         >{{ i18n "AlmaLinux OS 9.8 and 10.2 Stable" }}</a
       >
-      {{ i18n "now available!" }}
+      {{ i18n "now available!" }} &nbsp;|&nbsp;
+      <i class="bi bi-building"></i>
+      <a
+        class="al-motd-election"
+        href="{{ "/blog/2026-06-10-new-bylaws-and-2026-election/" | relLangURL }}"
+        >{{ i18n "New bylaws & the 2026 board election" }}</a
+      >
     </div>
   </div>
 </div>

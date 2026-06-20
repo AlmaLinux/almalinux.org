@@ -1,7 +1,8 @@
-{{ $data := index $.Site.Data.events .Params.event_data_key }}
+{{ $data := index hugo.Data.events .Params.event_data_key }}
 {{ if and $data $data.speakers }}
   <div class="al-index-meet" style="clear: both;">
     <div class="container al-py-md px-5">
+      <hr class="al-index-meet-rule" />
       <h1 class="pt-3">
         {{ with $.Page.Params.speakers_header }}
           {{ i18n . | default . }}
@@ -9,6 +10,9 @@
           {{ i18n "Experience and lessons learned from every industry" }}
         {{ end }}
       </h1>
+      {{ with $.Page.Params.speakers_intro }}
+        <p class="al-index-meet-intro">{{ . }}</p>
+      {{ end }}
       <div class="row">
         {{ range $data.speakers }}
           <div class="col-xl-3 col-sm-6 mb-5">

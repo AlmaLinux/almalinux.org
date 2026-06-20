@@ -107,6 +107,81 @@
   }
 }
 
+// Tiered sponsor logos — used by layouts/partials/common/foundation-members.html
+// (homepage + foundation page). Larger tiers get bigger logos and more breathing room.
+.al-sponsor-tier-block {
+  margin-top: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.al-sponsor-tier-label {
+  font-size: 0.95rem;
+  color: rgba(254, 254, 254, 0.7);
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(196, 225, 255, 0.18);
+}
+
+// Tint each tier label to match the tier accent on the members + foundation pages.
+// Uses :has() so the partial doesn't need a tier class on the wrapper.
+.al-sponsor-tier-block:has(.is-platinum) .al-sponsor-tier-label { color: #e8eef5; }
+.al-sponsor-tier-block:has(.is-gold)     .al-sponsor-tier-label { color: #e9b94a; }
+.al-sponsor-tier-block:has(.is-ruby)     .al-sponsor-tier-label { color: #ff6b9a; }
+.al-sponsor-tier-block:has(.is-silver)   .al-sponsor-tier-label { color: #14b8a6; }
+
+.al-sponsor-tier-logos {
+  display: grid;
+  gap: 1.5rem 2rem;
+  align-items: center;
+  justify-items: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  img {
+    width: auto;
+    object-fit: contain;
+  }
+
+  &.is-platinum {
+    grid-template-columns: 1fr;
+    img { max-height: 80px; max-width: 220px; }
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &.is-gold {
+    grid-template-columns: repeat(2, 1fr);
+    img { max-height: 56px; max-width: 170px; }
+
+    @media (min-width: 768px) { grid-template-columns: repeat(4, 1fr); }
+    @media (min-width: 992px) { grid-template-columns: repeat(5, 1fr); }
+  }
+
+  &.is-ruby {
+    grid-template-columns: 1fr;
+    img { max-height: 50px; max-width: 150px; }
+
+    @media (min-width: 768px) { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  &.is-silver {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem 1.5rem;
+    img { max-height: 38px; max-width: 130px; }
+
+    @media (min-width: 768px) { grid-template-columns: repeat(5, 1fr); }
+    @media (min-width: 992px) { grid-template-columns: repeat(6, 1fr); }
+  }
+}
+
 // Security page icon sizing
 .al-page-index .al-index-security-container .al-index-community-icon.img {
   height: 32px;
