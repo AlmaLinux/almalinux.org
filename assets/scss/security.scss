@@ -1,0 +1,138 @@
+// /security page redesign. Scoped under .al-security.
+// Reuses the foundation design system for bands and section titles.
+.al-security {
+
+  // Loud placeholder for not-yet-real values.
+  .al-security-placeholder {
+    display: inline-block;
+    background: #ff2d2d;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+  }
+
+  // Hero screenshot (the live AlmaLinux Errata advisory portal)
+  .al-security-hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  }
+
+  // Pillar and capability cards
+  .al-security-cards {
+    margin-top: 1.5rem;
+  }
+
+  .al-security-card {
+    height: 100%;
+    padding: 1.5rem;
+    background: rgba(8, 35, 54, 0.55);
+    border: 1px solid rgba(196, 225, 255, 0.15);
+    border-radius: 8px;
+  }
+
+  .al-security-card-icon {
+    font-size: 1.75rem;
+    color: $al-c-candlelight;
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  .al-security-card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .al-security-card-links {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.75rem 0 0;
+
+    li {
+      margin-bottom: 0.3rem;
+    }
+  }
+
+  .al-security-step-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $al-c-candlelight;
+    margin-bottom: 0.5rem;
+  }
+
+  // GPG key cards
+  .al-security-keycard {
+    font-size: 0.92rem;
+  }
+
+  .al-security-keymeta {
+    margin-bottom: 0.5rem;
+    word-break: break-word;
+  }
+
+  .al-security-fingerprint {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+    white-space: nowrap; // keep the fingerprint on one line (cards are 2-up)
+    overflow-x: auto; // scroll rather than wrap on very narrow screens
+  }
+
+  // Expandable holding expired-but-trusted GPG keys
+  .al-security-expired {
+    margin-top: 1.5rem;
+
+    summary {
+      cursor: pointer;
+      font-weight: 700;
+      color: $al-c-candlelight;
+    }
+  }
+
+  // Sub-section heading inside a reference section
+  .al-security-subhead {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $al-c-candlelight;
+    margin: 1.5rem 0 0.75rem;
+  }
+
+  // "Previous" variant: white instead of gold
+  .al-security-subhead--muted {
+    color: #fff;
+  }
+
+  // Secure Boot table (override the site-wide `th, td` white-border rule)
+  .al-security-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+
+    th,
+    td {
+      border: none;
+      border-bottom: 1px solid rgba(196, 225, 255, 0.15);
+      padding: 0.75rem 1rem;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    thead th {
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: 0.75rem;
+      color: $al-c-candlelight !important; // beats the global `color !important`
+      border-bottom: 2px solid $al-c-candlelight;
+    }
+  }
+
+  // "Previous" Secure Boot table: white column headings instead of gold
+  .al-security-table--muted thead th {
+    color: #fff !important;
+    border-bottom-color: rgba(255, 255, 255, 0.4);
+  }
+}

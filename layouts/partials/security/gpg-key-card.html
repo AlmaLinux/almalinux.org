@@ -1,0 +1,18 @@
+{{/* One GPG key card. Context (.) is a single entry from data/security/gpg_keys.yaml. */}}
+<div class="col-md-6">
+  <div class="al-security-card al-security-keycard">
+    <h3 class="al-security-card-title">{{ .name }}</h3>
+    <p class="al-security-keymeta">
+      <b>{{ .key_id }} ({{ .key_date }})</b><br />
+      {{ .uid }}<br />
+      <b>{{ i18n "Location:" }}</b> {{ .location }}
+    </p>
+    <p class="al-security-keymeta">
+      <b>{{ i18n "Download:" }}</b>
+      {{ range $i, $d := .downloads }}
+        {{ if $i }},{{ end }}<a href="{{ $d.url }}">{{ $d.label }}</a>
+      {{ end }}
+    </p>
+    <p class="al-security-fingerprint">{{ .fingerprint }}</p>
+  </div>
+</div>
