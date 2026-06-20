@@ -80,27 +80,68 @@
     white-space: nowrap;
   }
 
-  .al-rfc-submitted,
-  .al-rfc-withdrawn {
+  .al-rfc-submitted {
     background: #6e7781;
   }
 
-  .al-rfc-discussion,
-  .al-rfc-accepted,
   .al-rfc-open {
     background: #1f883d;
   }
 
-  .al-rfc-fcp {
-    background: #9a6700;
+  .al-rfc-discussion {
+    background: #0e8a16;
+  }
+
+  .al-rfc-vote {
+    background: #fbca04;
+    color: #1f2328;
   }
 
   .al-rfc-decision {
     background: #8250df;
   }
 
-  .al-rfc-rejected {
+  // --- Decision outcomes ---
+  // Shown as a small color-coded legend rather than pills, so they don't read
+  // as GitHub labels applied to a proposal the way the stage tags do.
+  .al-rfc-outcomes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 1.25rem;
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .al-rfc-outcome {
+    display: inline-flex;
+    align-items: center;
+    color: rgba(254, 254, 254, 0.85);
+
+    &::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      margin-right: 0.4rem;
+      flex-shrink: 0;
+    }
+  }
+
+  .al-rfc-o-accepted::before {
+    background: #1f883d;
+  }
+
+  .al-rfc-o-rejected::before {
     background: #cf222e;
+  }
+
+  .al-rfc-o-withdrawn::before {
+    background: #6e7781;
+  }
+
+  .al-rfc-o-superseded::before {
+    background: #8250df;
   }
 
   // --- Lifecycle stepper cards ---

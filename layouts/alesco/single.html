@@ -125,50 +125,53 @@
                     >
                   </div>
                   <p>
-                    {{ i18n "A new RFC is opened as a pull request and checked for formatting." }}
+                    {{ i18n "The RFC is opened as a pull request and reviewed for formatting and fit with the RFC process. Once it qualifies, the “accepted for discussion” tag is added." }}
                   </p>
                 </div>
                 <div class="al-rfc-step">
                   <div class="d-flex align-items-center">
                     <span class="al-rfc-step-num me-2">2</span>
                     <span class="al-rfc-label al-rfc-discussion"
-                      >{{ i18n "Open for Discussion" }}</span
+                      >{{ i18n "Accepted for Discussion" }}</span
                     >
                   </div>
                   <p>
-                    {{ i18n "The committee and community review and refine it in the open. The standard review period is two weeks." }}
+                    {{ i18n "The RFC is under active discussion in the open and may go through several revisions." }}
                   </p>
                 </div>
                 <div class="al-rfc-step">
                   <div class="d-flex align-items-center">
                     <span class="al-rfc-step-num me-2">3</span>
-                    <span class="al-rfc-label al-rfc-fcp"
-                      >{{ i18n "Final Comment Period" }}</span
+                    <span class="al-rfc-label al-rfc-vote"
+                      >{{ i18n "Vote at Next Meeting" }}</span
                     >
                   </div>
                   <p>
-                    {{ i18n "ALESCo signals that a decision is close and invites any last feedback." }}
+                    {{ i18n "ALESCo announces a Final Comment Period to signal that a decision is near, and adds the “vote at next meeting” tag." }}
                   </p>
                 </div>
                 <div class="al-rfc-step">
                   <div class="d-flex align-items-center">
                     <span class="al-rfc-step-num me-2">4</span>
                     <span class="al-rfc-label al-rfc-decision"
-                      >{{ i18n "Decision" }}</span
+                      >{{ i18n "Closed" }}</span
                     >
                   </div>
                   <p>
-                    {{ i18n "ALESCo makes the final call, weighing community feedback. A proposal ends in one of these outcomes:" }}
+                    {{ i18n "ALESCo makes the final call, weighing community feedback. An RFC ends in one of these outcomes:" }}
                   </p>
-                  <div class="mt-2 text-center">
-                    <span class="al-rfc-label al-rfc-accepted me-1 mb-1"
+                  <div class="al-rfc-outcomes">
+                    <span class="al-rfc-outcome al-rfc-o-accepted"
                       >{{ i18n "Accepted" }}</span
                     >
-                    <span class="al-rfc-label al-rfc-rejected me-1 mb-1"
+                    <span class="al-rfc-outcome al-rfc-o-rejected"
                       >{{ i18n "Rejected" }}</span
                     >
-                    <span class="al-rfc-label al-rfc-withdrawn mb-1"
+                    <span class="al-rfc-outcome al-rfc-o-withdrawn"
                       >{{ i18n "Withdrawn" }}</span
+                    >
+                    <span class="al-rfc-outcome al-rfc-o-superseded"
+                      >{{ i18n "Superseded" }}</span
                     >
                   </div>
                 </div>
