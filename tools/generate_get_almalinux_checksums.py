@@ -3,6 +3,7 @@
 Script to generate get_almalinux_checksums.yaml by fetching and parsing ISO and cloud image checksum files.
 """
 import re
+import sys
 from pathlib import Path
 from typing import Dict, Optional
 
@@ -110,6 +111,7 @@ def main():
 
     output = {"versions": {}}
     common = spec["common"]
+    errors = []
 
     for version in spec["versions"]:
         vid = version["id"]
@@ -131,7 +133,8 @@ def main():
             iso_checksum_url = iso_checksum_url_tpl.format(major=vid, full=vid, arch=arch)
             try:
                 content = get_checksum_file(iso_checksum_url)
-            except Exception:
+            except Exception as e:
+                errors.append(str(e))
                 continue
             # Build filename patterns for each variant using the base template
             filename_patterns = {}
@@ -160,7 +163,8 @@ def main():
                 checksum_url = checksum_url_tpl.format(major=vid, arch=arch)
                 try:
                     content = get_checksum_file(checksum_url)
-                except Exception:
+                except Exception as e:
+                    errors.append(str(e))
                     continue
                 # Build filename patterns
                 patterns = {}
@@ -173,6 +177,10 @@ def main():
                     if "cloud" not in output["versions"][vid][arch]:
                         output["versions"][vid][arch]["cloud"] = {}
                     output["versions"][vid][arch]["cloud"].update(checksums)
+
+    if errors:
+        print(f"Aborting: {len(errors)} fetch error(s) occurred, not writing output file.", flush=True)
+        sys.exit(1)
 
     with open(OUTPUT_FILE, "w") as f:
         # We'll output the yaml to a string first so we can replace the
