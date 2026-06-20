@@ -1,5 +1,5 @@
 ---
-title: "security"
+title: "Security"
 type: security
 ---
 
