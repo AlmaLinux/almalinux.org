@@ -135,12 +135,12 @@
     }
   }
 
-  .al-index-used-by {
+  .al-index-trusted-by {
     h2.border-bottom {
       border-bottom-color: lighten($al-body-background, 8%) !important;
     }
 
-    .al-used-by-marquee {
+    .al-trusted-by-marquee {
       overflow: hidden;
       position: relative;
       margin-top: 2.5rem;
@@ -148,19 +148,19 @@
       -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
               mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
 
-      &:hover .al-used-by-marquee-track {
+      &:hover .al-trusted-by-marquee-track {
         animation-play-state: paused;
       }
     }
 
-    .al-used-by-marquee-track {
+    .al-trusted-by-marquee-track {
       display: flex;
       width: max-content;
       // 30s feels readable for ~10 items (5 logos x2). Adjust if list grows.
-      animation: al-used-by-scroll 30s linear infinite;
+      animation: al-trusted-by-scroll 30s linear infinite;
     }
 
-    .al-used-by-marquee-item {
+    .al-trusted-by-marquee-item {
       flex: 0 0 auto;
       display: flex;
       align-items: center;
@@ -177,13 +177,13 @@
     }
 
     @media (max-width: 768px) {
-      .al-used-by-marquee-item {
+      .al-trusted-by-marquee-item {
         padding: 0 1.5rem;
       }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .al-used-by-marquee-track {
+      .al-trusted-by-marquee-track {
         animation: none;
         flex-wrap: wrap;
         justify-content: center;
@@ -191,7 +191,7 @@
     }
   }
 
-  @keyframes al-used-by-scroll {
+  @keyframes al-trusted-by-scroll {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
   }
