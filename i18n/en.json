@@ -773,7 +773,6 @@
    "OVAL stream for AlmaLinux OS 9": "OVAL stream for AlmaLinux OS 9",
    "OpenSCAP, OVAL, and CIS tooling to audit and harden your systems.": "OpenSCAP, OVAL, and CIS tooling to audit and harden your systems.",
    "Our Build System produces an SBOM for traceability and supply chain security.": "Our Build System produces an SBOM for traceability and supply chain security.",
-   "Public OVAL streams provide machine-readable vulnerability information for AlmaLinux OS 8 and 9.": "Public OVAL streams provide machine-readable vulnerability information for AlmaLinux OS 8 and 9.",
    "Public errata and advisories for every fix we ship.": "Public errata and advisories for every fix we ship.",
    "Report a vulnerability": "Report a vulnerability",
    "Secure Boot": "Secure Boot",
@@ -806,7 +805,6 @@
    "Report a vulnerability, subscribe for advisories, or talk security with us directly.": "Report a vulnerability, subscribe for advisories, or talk security with us directly.",
    "Secure Boot certificates": "Secure Boot certificates",
    "Signed for:": "Signed for:",
-   "Sometimes an issue matters enough to the community that we apply a patch ahead of upstream. These are reviewed and approved by ALESCo, the AlmaLinux Engineering Steering Committee, which guides the technical direction of the distribution. When upstream ships its own fix, we re-align with it. Anyone can request that a patch be considered by raising it in the": "Sometimes an issue matters enough to the community that we apply a patch ahead of upstream. These are reviewed and approved by ALESCo, the AlmaLinux Engineering Steering Committee, which guides the technical direction of the distribution. When upstream ships its own fix, we re-align with it. Anyone can request that a patch be considered by raising it in the",
    "Stay in the loop": "Stay in the loop",
    "Subscribe to advisories": "Subscribe to advisories",
    "Validity": "Validity",
@@ -834,5 +832,11 @@
    "for full details.": "for full details.",
    "You can also subscribe to the": "You can also subscribe to the",
    "to get advisories as soon as they are published.": "to get advisories as soon as they are published.",
-   "The AlmaLinux Errata portal listing recent security advisories with their severity and publish date": "The AlmaLinux Errata portal listing recent security advisories with their severity and publish date"
+   "The AlmaLinux Errata portal listing recent security advisories with their severity and publish date": "The AlmaLinux Errata portal listing recent security advisories with their severity and publish date",
+   "Anyone can request that a patch be considered by raising it in the": "Anyone can request that a patch be considered by raising it in the",
+   "OVAL stream for AlmaLinux OS 10": "OVAL stream for AlmaLinux OS 10",
+   "Public OVAL streams provide machine-readable vulnerability information for AlmaLinux OS 8, 9, and 10.": "Public OVAL streams provide machine-readable vulnerability information for AlmaLinux OS 8, 9, and 10.",
+   "Sometimes an issue matters enough to the community that we apply a patch ahead of upstream. These are reviewed and approved by ALESCo, the AlmaLinux Engineering Steering Committee, which guides the technical direction of the distribution. When upstream ships its own fix, we re-align with it.": "Sometimes an issue matters enough to the community that we apply a patch ahead of upstream. These are reviewed and approved by ALESCo, the AlmaLinux Engineering Steering Committee, which guides the technical direction of the distribution. When upstream ships its own fix, we re-align with it.",
+   "Whenever possible or appropriate, we also send patches that we've released upstream: everyone should benefit from the work of open source.": "Whenever possible or appropriate, we also send patches that we've released upstream: everyone should benefit from the work of open source.",
+   "errata.full.json for AlmaLinux OS 10": "errata.full.json for AlmaLinux OS 10"
 }

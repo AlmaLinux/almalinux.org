@@ -137,6 +137,11 @@
                   >
                 </li>
                 <li>
+                  <a href="https://errata.almalinux.org/10/errata.full.json"
+                    >{{ i18n "errata.full.json for AlmaLinux OS 10" }}</a
+                  >
+                </li>
+                <li>
                   <a href="https://errata.almalinux.org/9/errata.full.json"
                     >{{ i18n "errata.full.json for AlmaLinux OS 9" }}</a
                   >
@@ -197,9 +202,15 @@
                 {{ i18n "Vulnerability data" }}
               </h3>
               <p>
-                {{ i18n "Public OVAL streams provide machine-readable vulnerability information for AlmaLinux OS 8 and 9." }}
+                {{ i18n "Public OVAL streams provide machine-readable vulnerability information for AlmaLinux OS 8, 9, and 10." }}
               </p>
               <ul class="al-security-card-links">
+                <li>
+                  <a
+                    href="https://security.almalinux.org/oval/org.almalinux.alsa-10.xml"
+                    >{{ i18n "OVAL stream for AlmaLinux OS 10" }}</a
+                  >
+                </li>
                 <li>
                   <a
                     href="https://security.almalinux.org/oval/org.almalinux.alsa-9.xml"
@@ -300,7 +311,9 @@
               {{ i18n "Patching ahead of upstream" }}
             </h3>
             <p>
-              {{ i18n "Sometimes an issue matters enough to the community that we apply a patch ahead of upstream. These are reviewed and approved by ALESCo, the AlmaLinux Engineering Steering Committee, which guides the technical direction of the distribution. When upstream ships its own fix, we re-align with it. Anyone can request that a patch be considered by raising it in the" }}
+              {{ i18n "Sometimes an issue matters enough to the community that we apply a patch ahead of upstream. These are reviewed and approved by ALESCo, the AlmaLinux Engineering Steering Committee, which guides the technical direction of the distribution. When upstream ships its own fix, we re-align with it." }}
+              {{ i18n "Whenever possible or appropriate, we also send patches that we've released upstream: everyone should benefit from the work of open source." }}
+              {{ i18n "Anyone can request that a patch be considered by raising it in the" }}
               <a href="https://chat.almalinux.org/almalinux/channels/alesco"
                 >{{ i18n "ALESCo channel" }}</a
               >
