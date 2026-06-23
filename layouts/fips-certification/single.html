@@ -9,7 +9,7 @@
               {{ i18n "AlmaLinux OS is FIPS 140-3 validated" }}
             </h1>
             <p class="lead mb-4">
-              {{ i18n "AlmaLinux OS 9.2 carries FIPS 140-3 validated cryptographic modules on the NIST CMVP Active list, including the first FIPS 140-3 kernel certificate for an EL9 distribution. You can enable FIPS mode and meet a recognized cryptographic standard at no cost." }}
+              {{ i18n "AlmaLinux OS 9.2 carries FIPS 140-3 validated cryptographic modules on the NIST CMVP Active list, including the first FIPS 140-3 kernel certificate for an EL9 distribution. You can enable FIPS mode and meet a recognized cryptographic standard, free for non-commercial use." }}
             </p>
             <p>
               <a
@@ -46,10 +46,10 @@
               {{ i18n "FIPS 140-3 is widely treated as the gold standard for cryptographic security, recognized and required well beyond the United States. AlmaLinux OS 9.2 meets it: its kernel and OpenSSL cryptographic modules are independently validated by the NIST Cryptographic Module Validation Program and listed as Active." }}
             </p>
             <p>
-              {{ i18n "That makes AlmaLinux the first EL9 distribution with a FIPS 140-3 validated kernel, and it is available to everyone for free. Here is what FIPS is, why it matters, and how to turn it on." }}
+              {{ i18n "That makes AlmaLinux the first EL9 distribution with a FIPS 140-3 validated kernel, and the validated packages are free for non-commercial use. Here is what FIPS is, why it matters, and how to turn it on." }}
             </p>
             <p>
-              {{ i18n "The validation was sponsored by TuxCare, the enterprise support division of CloudLinux and a longtime AlmaLinux platinum sponsor. TuxCare covered the considerable cost and engineering effort, and contributes the validated modules back to the community at no charge." }}
+              {{ i18n "The validation was sponsored by TuxCare, the enterprise support division of CloudLinux and a founding AlmaLinux platinum sponsor. TuxCare covered the considerable cost and engineering effort, and makes the validated packages available to the community for non-commercial use." }}
             </p>
           </div>
           <div class="col-lg-6">
@@ -92,7 +92,7 @@
                 </div>
                 <div class="al-fips-fact">
                   <dt>{{ i18n "Cost" }}</dt>
-                  <dd>{{ i18n "Free" }}</dd>
+                  <dd>{{ i18n "Free for non-commercial use" }}</dd>
                 </div>
                 <div class="al-fips-fact">
                   <dt>{{ i18n "Sponsored by" }}</dt>
@@ -179,6 +179,15 @@
             <p>
               {{ i18n "A module earns validation only after an accredited laboratory tests it and the NIST Cryptographic Module Validation Program certifies the result. AlmaLinux OS 9.2 was the first software implementation to receive a FIPS 140-3 ESV certificate using SHA3-256 as a conditioner." }}
             </p>
+            <p>
+              {{ i18n "Validation and compliance are not the same thing. A module earns validation by passing independent lab testing and joining the Active list. A system is compliant only when it runs a validated module in FIPS mode within its certified operational environment, and routine changes to the validated cryptography, such as an ordinary patch or kernel update, can move it outside that boundary. Keeping a system compliant over time therefore depends on updates that preserve the validated modules. Those packages are free for non-commercial use; ongoing FIPS-compliant patching and commercial use are offered through TuxCare's Enterprise Support. See" }}
+              <a
+                href="https://tuxcare.com/fips-for-almalinux/"
+                target="_blank"
+                rel="noopener"
+                >{{ i18n "TuxCare's FIPS page" }}</a
+              >.
+            </p>
           </div>
           <div class="col-md-6">
             <h2 class="al-foundation-section-title">
@@ -218,7 +227,7 @@
           {{ i18n "Enable FIPS mode for free" }}
         </h2>
         <p>
-          {{ i18n "Anyone running AlmaLinux OS 9.2 can enable FIPS mode and meet the standard at no cost. Install the packages from the TuxCare repository, turn on FIPS mode, and reboot:" }}
+          {{ i18n "Anyone running AlmaLinux OS 9.2 can enable FIPS mode and meet the standard at no cost, for non-commercial use. Install the community packages from the TuxCare repository, turn on FIPS mode, and reboot:" }}
         </p>
         <pre
           class="al-fips-code"><code>dnf -y install https://repo.tuxcare.com/fips/tuxcare-fips-release-latest-9.noarch.rpm
@@ -253,10 +262,15 @@ reboot</code></pre>
 
         <p class="al-fips-next">
           {{ i18n "Validation work continues on newer AlmaLinux releases." }}
-          <span class="al-fips-placeholder"
-            >🟥 PLACEHOLDER - NEEDS REAL VALUE: confirm the latest validated
-            release (9.6 or newer) and its certificate numbers 🟥</span
+          {{ i18n "FIPS 140-3 certification for AlmaLinux 9.6 is now in progress, with its cryptographic modules on NIST's Modules in Process list. For details, see" }}
+          <a href="https://tuxcare.com/fips-for-almalinux/"
+            >{{ i18n "TuxCare's FIPS page" }}</a
           >
+          {{ i18n "and the" }}
+          <a
+            href="https://tuxcare.com/blog/almalinux-fips-140-3-certification-expands-9-6-now-in-validation-pipeline/"
+            >{{ i18n "9.6 validation update" }}</a
+          >.
         </p>
       </div>
     </section>

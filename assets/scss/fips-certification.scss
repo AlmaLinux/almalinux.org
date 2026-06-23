@@ -2,16 +2,6 @@
 // Scoped under .al-fips. Reuses the foundation design system for bands and titles.
 .al-fips {
 
-  // Loud, unmistakable styling for the one not-yet-confirmed value.
-  .al-fips-placeholder {
-    display: inline-block;
-    background: #ff2d2d;
-    color: #fff;
-    font-weight: 700;
-    padding: 0.1rem 0.5rem;
-    border-radius: 4px;
-  }
-
   // Hero screenshot (terminal showing FIPS mode active on AlmaLinux 9)
   .al-fips-hero-img {
     width: 100%;
