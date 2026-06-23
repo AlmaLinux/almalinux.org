@@ -5,7 +5,7 @@
     "dockerfile": "Dockerfile",
     "args": {
       "VARIANT": "hugo_extended",
-      "VERSION": "v0.141.0",
+      "VERSION": "v0.163.3",
       "WORKSPACE_DIR": "${containerWorkspaceFolder}"
     }
   },
