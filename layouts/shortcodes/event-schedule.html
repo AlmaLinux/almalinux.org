@@ -4,7 +4,7 @@
   the JSON from Sessionize and replacing the data file.
 */}}
 {{ $key := .Page.Params.schedule_data_key }}
-{{ with index .Site.Data.events $key }}
+{{ with index hugo.Data.events $key }}
   {{ $data := . }}
   {{/* Cutoff = end of the lunch service session; everything before it is morning. */}}
   {{ $cutoff := "" }}
