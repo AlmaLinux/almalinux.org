@@ -80,11 +80,6 @@
               </ul>
             </li>
             <li>
-              <a class="dropdown-item" href="{{ "/alesco" | relLangURL }}">
-                {{ i18n "ALESCo" }}
-              </a>
-            </li>
-            <li>
               <a class="dropdown-item" href="https://bugs.almalinux.org">
                 {{ i18n "Report Bugs" }}
               </a>
@@ -227,6 +222,11 @@
               </a>
             </li>
             <li>
+              <a class="dropdown-item" href="{{ "/alesco" | relLangURL }}">
+                {{ i18n "ALESCo" }}
+              </a>
+            </li>
+            <li>
               <a
                 class="dropdown-item"
                 href="{{ "/p/foundation-bylaws" | relLangURL }}">
@@ -271,7 +271,7 @@
                   {{ end }}"
                   href="{{ .RelPermalink }}"
                   hreflang="{{ $.Lang }}">
-                  {{ .Language.LanguageName }}
+                  {{ .Language.Label }}
                 </a>
               </li>
             {{ end }}

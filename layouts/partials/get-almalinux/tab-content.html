@@ -1,4 +1,4 @@
-{{ $data := site.Data.get_almalinux }}
+{{ $data := hugo.Data.get_almalinux }}
 <div class="tab-content al-tab-content">
   {{ range $i, $version := $data.versions }}
     {{ range $j, $arch := $version.arches }}
