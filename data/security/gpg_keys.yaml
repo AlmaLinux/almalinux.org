@@ -1,0 +1,63 @@
+# AlmaLinux GPG signing keys, shown on /security.
+# Hand-maintained: add a new entry when a key is added; set expired: true to
+# show the "Expired but remains a trusted key" note.
+- name: "AlmaLinux OS 10 / AlmaLinux OS Kitten 10"
+  key_id: "rsa4096/DEE5C11CC2A1E572"
+  key_date: "2024-07-11"
+  uid: "AlmaLinux OS 10 <packager@almalinux.org>"
+  location: "/etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux-10"
+  fingerprint: "EE6D B7B9 8F5B F5ED D9DA 0DE5 DEE5 C11C C2A1 E572"
+  expired: false
+  downloads:
+    - label: "AlmaLinux"
+      url: "https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux-10"
+    - label: "pgp.mit.edu"
+      url: "https://pgp.mit.edu/pks/lookup?op=index&search=0xDEE5C11CC2A1E572"
+- name: "AlmaLinux OS 9"
+  key_id: "rsa4096/D36CB86CB86B3716"
+  key_date: "2022-01-18"
+  uid: "AlmaLinux OS 9 <packager@almalinux.org>"
+  location: "/etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux-9"
+  fingerprint: "BF18 AC28 7617 8908 D6E7 1267 D36C B86C B86B 3716"
+  expired: false
+  downloads:
+    - label: "AlmaLinux"
+      url: "https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux-9"
+    - label: "pgp.mit.edu"
+      url: "https://pgp.mit.edu/pks/lookup?op=index&search=0xD36CB86CB86B3716"
+- name: "AlmaLinux OS 8 #1"
+  key_id: "rsa4096/488FCF7C3ABB34F8"
+  key_date: "2021-01-12"
+  uid: "AlmaLinux <packager@almalinux.org>"
+  location: "/etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux"
+  fingerprint: "5E9B 8F56 17B5 066C E920 57C3 488F CF7C 3ABB 34F8"
+  expired: true
+  downloads:
+    - label: "AlmaLinux"
+      url: "https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux"
+    - label: "pgp.mit.edu"
+      url: "https://pgp.mit.edu/pks/lookup?op=index&search=0x488FCF7C3ABB34F8"
+- name: "AlmaLinux OS 8 #2"
+  key_id: "rsa4096/2AE81E8ACED7258B"
+  key_date: "2023-10-10"
+  uid: "AlmaLinux OS 8 <packager@almalinux.org>"
+  location: "/etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux"
+  fingerprint: "BC5E DDCA DF50 2C07 7F15 8288 2AE8 1E8A CED7 258B"
+  expired: false
+  downloads:
+    - label: "AlmaLinux"
+      url: "https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux"
+    - label: "pgp.mit.edu"
+      url: "https://pgp.mit.edu/pks/lookup?op=index&search=0x2AE81E8ACED7258B"
+- name: "ELevate"
+  key_id: "rsa4096/429785E181B961A5"
+  key_date: "2021-08-20"
+  uid: "ELevate <packager@almalinux.org>"
+  location: "/etc/pki/rpm-gpg/RPM-GPG-KEY-ELevate"
+  fingerprint: "74E7 F249 EE69 8A4D ACFB 48C8 4297 85E1 81B9 61A5"
+  expired: false
+  downloads:
+    - label: "AlmaLinux"
+      url: "https://repo.almalinux.org/elevate/RPM-GPG-KEY-ELevate"
+    - label: "pgp.mit.edu"
+      url: "https://pgp.mit.edu/pks/lookup?op=index&search=0x429785E181B961A5"

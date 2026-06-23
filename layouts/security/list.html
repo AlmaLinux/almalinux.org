@@ -1,541 +1,498 @@
 {{ define "main" }}
-  <style>
-    @media (max-width: 1200px) {
-      .items__01 {
-        word-wrap: break-word;
-        display: flex;
-        flex-direction: column;
-      }
-      .itemAl_02 {
-        padding-left: 0px !important;
-      }
-      .itemAl_04 {
-        padding-left: 0px !important;
-      }
-      .AL {
-        word-wrap: break-word;
-        display: flex;
-        flex-direction: column;
-      }
-    }
-  </style>
-  <div class="al-body-container">
-    <section class="al-page-index">
-      <div class="al-index-security-measures-container">
-        <div class="container al-py-lg">
-          <h1 class="pb-2 text-center">{{ i18n "Security Measures" }}</h1>
-          <div
-            class="Errata-container"
-            style="display: flex; flex-direction: column; padding: 40px 20px;">
-            <h2
-              class="pb-2 text-center border-bottom"
-              style="border-bottom-color: #14598a!important;">
-              Errata
-            </h2>
-            <div
-              class="al-article-content pb-3 al-wysiwyg"
-              style="padding: 0px!important;">
-              <section>
-                <p>
-                  {{ i18n "AlmaLinux OS Foundation provides errata to inform users about available updates, including security issues and bug fixes, and their significance through analysis. Users can easily access this information by accessing our AlmaLinux security advisory portal, known as " }}<a
-                    href="https://errata.almalinux.org/"
-                    >{{ i18n "AlmaLinux Errata" }}</a
-                  >.
-                  {{ i18n "More details on Errata and how to use it can be found on the " }}<a
-                    href="https://wiki.almalinux.org/documentation/errata.html"
-                    >{{ i18n "AlmaLinux Errata Wiki page" }}</a
-                  >. <br />
-                  {{ i18n "Additionally, AlmaLinux OS is present in the " }}<a
-                    href="https://github.com/AlmaLinux/osv-database"
-                    >{{ i18n "OSV database" }}</a
-                  >.<br /><br />
-                  {{ i18n "Errata in JSON format for 3rd party software integration:" }}
-                </p>
-                <div class="AL" style="display: flex;">
-                  <div class="itemAl_01" style="width: 300px;">
-                    <b
-                      ><a href="https://errata.almalinux.org/9/errata.full.json"
-                        >{{ i18n "errata.full.json for AlmaLinux OS 9" }}</a
-                      ></b
-                    >
-                  </div>
-                  <div class="itemAl_02">
-                    <b
-                      ><a href="https://errata.almalinux.org/8/errata.full.json"
-                        >{{ i18n "errata.full.json for AlmaLinux OS 8" }}</a
-                      ></b
-                    >
-                  </div>
-                </div>
-              </section>
+  <main class="al-body-container al-security">
+    {{/* 1. Hero */}}
+    <section id="sec-hero" class="al-foundation-band-deep al-py-lg">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-7">
+            <h1 class="display-5 fw-bold mb-4">
+              {{ i18n "Security at AlmaLinux" }}
+            </h1>
+            <p class="lead mb-4">
+              {{ i18n "AlmaLinux OS is built to be transparent, verifiable, and independently certified. From signed packages and public errata to compliance tooling and formal certifications, here is how we help you trust the system underneath your work." }}
+            </p>
+            <p>
+              <a
+                href="https://errata.almalinux.org/"
+                class="btn btn-primary btn-lg me-2"
+                >{{ i18n "Security advisories" }}</a
+              >
+              <a
+                href="{{ "/p/vulnerability-disclosure-policy/" | relLangURL }}"
+                class="btn btn-outline-light btn-lg me-2"
+                >{{ i18n "Report a vulnerability" }}</a
+              >
+              <a
+                href="https://chat.almalinux.org/almalinux/channels/security"
+                class="btn btn-outline-light btn-lg"
+                >{{ i18n "Security chat" }}</a
+              >
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <img
+              class="al-security-hero-img"
+              src="/images/security/errata-portal.png"
+              alt="{{ i18n "The AlmaLinux Errata portal listing recent security advisories with their severity and publish date" }}" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{/* 2. How we approach security (pillars) */}}
+    <section id="sec-approach" class="al-py-lg">
+      <div class="container">
+        <h2 class="al-foundation-section-title">
+          {{ i18n "How we approach security" }}
+        </h2>
+        <p class="lead">
+          {{ i18n "Four ideas shape everything we do around security: keep it transparent, make it verifiable, give you the tools to prove compliance, and back it with independent certification." }}
+        </p>
+        <div class="row g-4 al-security-cards">
+          <div class="col-md-6 col-lg-3">
+            <div class="al-security-card">
+              <i class="bi bi-megaphone al-security-card-icon"></i>
+              <h3 class="al-security-card-title">{{ i18n "Transparency" }}</h3>
+              <p>
+                {{ i18n "Public errata and advisories for every fix we ship." }}
+              </p>
             </div>
           </div>
-          <div
-            class="GPGKeys-container"
-            style="display: flex; flex-direction: column; padding: 40px 20px;">
-            <h2
-              class="pb-2 text-center border-bottom"
-              style="border-bottom-color: #14598a!important;">
-              GPG Keys
-            </h2>
-            <div
-              class="al-article-content pb-3 al-wysiwyg"
-              style="padding: 0px!important;">
-              <section>
-                <p>
-                  {{ i18n "AlmaLinux OS Foundation signs all of its software packages using a GPG signature key, which is verified by default when installing packages via dnf or graphical update tools. If a package is not signed or has an invalid signature, dnf or graphical update tools will warn the user and will refuse to install it." }}<br />
-                  {{ i18n "It’s recommended to verify the signature of a package before you install it." }}
-                </p>
-                <div
-                  class="AL"
-                  style="display: flex; justify-content: space-between;">
-                  <div
-                    class="itemAl_01"
-                    style="display: flex; flex-direction: column;">
-                    <h3>AlmaLinux OS 10 / AlmaLinux OS Kitten 10</h3>
-                    <span>AlmaLinux OS 10 / AlmaLinux OS Kitten 10</span>
-                    <span><b>rsa4096/DEE5C11CC2A1E572 (2024-07-11):</b></span>
-                    <span>AlmaLinux OS 10 &lt;packager@almalinux.org&gt;</span>
-                    <span
-                      ><b>{{ i18n "Location:" }}</b>
-                      /etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux-10</span
-                    >
-                    <span
-                      ><b>{{ i18n "Download:" }}</b>
-                      <a
-                        href="https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux-10"
-                        >AlmaLinux</a
-                      ></span
-                    >
-                    <span
-                      ><b>{{ i18n "Download:" }}</b>
-                      <a
-                        href="https://pgp.mit.edu/pks/lookup?op=index&search=0xDEE5C11CC2A1E572"
-                        >pgp.mit.edu</a
-                      ></span
-                    >
-                    <div
-                      class="container-locks"
-                      style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
-                      <img
-                        class="Photo__Lock"
-                        style="width: 40px; height: 40px;"
-                        src="/images/alma-fingerprint-A.svg" />
-                      <div style="display: flex; flex-direction: column;">
-                        <p
-                          style="margin-left: 10px; font-family: monospace; font-size: 14px; color: #fff;">
-                          EE6D B7B9 8F5B F5ED D9DA 0DE5 DEE5 C11C C2A1 E572
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="itemAl_05"
-                    style="display: flex; flex-direction: column;">
-                    <h3>AlmaLinux OS 9</h3>
-                    <span><b>rsa4096/D36CB86CB86B3716 (2022-01-18):</b></span>
-                    <span>AlmaLinux OS 9 &lt;packager@almalinux.org&gt;</span>
-                    <span
-                      ><b>{{ i18n "Location:" }}</b>
-                      /etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux-9</span
-                    >
-                    <span
-                      ><b>{{ i18n "Download:" }}</b>
-                      <a
-                        href="https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux-9"
-                        >AlmaLinux</a
-                      ></span
-                    >
-                    <span
-                      ><b>{{ i18n "Download:" }}</b>
-                      <a
-                        href="https://pgp.mit.edu/pks/lookup?op=index&search=0xD36CB86CB86B3716"
-                        >pgp.mit.edu</a
-                      ></span
-                    >
-                    <div
-                      class="container-locks"
-                      style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
-                      <img
-                        class="Photo__Lock"
-                        style="width: 40px; height: 40px;"
-                        src="/images/alma-fingerprint-A.svg" />
-                      <div style="display: flex; flex-direction: column;">
-                        <p
-                          style="margin-left: 10px; font-family: monospace; font-size: 14px; color: #fff;">
-                          BF18 AC28 7617 8908 D6E7 1267 D36C B86C B86B 3716
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="AL"
-                  style="display: flex; justify-content: space-between; margin-top: 30px;">
-                  <div
-                    class="itemAl_02"
-                    style="display: flex; flex-direction: column;">
-                    <div class="wrapper" style="display: flex;">
-                      <h3>AlmaLinux OS 8 #1</h3>
-                      <p
-                        class="valid_date"
-                        style="margin-top: 17px; font-size: 11px; font-weight: 700;">
-                        *
-                        {{ i18n "Expired but remains a trusted key." }}
-                      </p>
-                    </div>
-                    <span><b>rsa4096/488FCF7C3ABB34F8 (2021-01-12):</b></span>
-                    <span>AlmaLinux &lt;packager@almalinux.org&gt;</span>
-                    <span
-                      ><b>{{ i18n "Location:" }}</b>
-                      /etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux</span
-                    >
-                    <span
-                      ><b>{{ i18n "Download:" }}</b>
-                      <a
-                        href="https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux"
-                        >AlmaLinux</a
-                      ></span
-                    >
-                    <span
-                      ><b>{{ i18n "Download:" }}</b>
-                      <a
-                        href="https://pgp.mit.edu/pks/lookup?op=index&search=0x488FCF7C3ABB34F8"
-                        >pgp.mit.edu</a
-                      ></span
-                    >
-                    <div
-                      class="container-locks"
-                      style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
-                      <img
-                        class="Photo__Lock"
-                        style="width: 40px; height: 40px;"
-                        src="/images/alma-fingerprint-A.svg" />
-                      <p
-                        style="margin-left: 10px; font-family: monospace; font-size: 14px; color: #fff;">
-                        5E9B 8F56 17B5 066C E920 57C3 488F CF7C 3ABB 34F8
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    class="itemAl_04"
-                    style="display: flex; flex-direction: column;">
-                    <h3>AlmaLinux OS 8 #2</h3>
-                    <span><b>rsa4096/2AE81E8ACED7258B (2023-10-10):</b></span>
-                    <span>AlmaLinux OS 8 &lt;packager@almalinux.org&gt;</span>
-                    <span
-                      ><b>{{ i18n "Location:" }}</b>
-                      /etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux</span
-                    >
-                    <span
-                      ><b>{{ i18n "Download:" }}</b>
-                      <a
-                        href="https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux"
-                        >AlmaLinux</a
-                      ></span
-                    >
-                    <span
-                      ><b>{{ i18n "Download:" }}</b>
-                      <a
-                        href="https://pgp.mit.edu/pks/lookup?op=index&search=0x2AE81E8ACED7258B"
-                        >pgp.mit.edu</a
-                      ></span
-                    >
-                    <div
-                      class="container-locks"
-                      style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
-                      <img
-                        class="Photo__Lock"
-                        style="width: 40px; height: 40px;"
-                        src="/images/alma-fingerprint-A.svg" />
-                      <div style="display: flex; flex-direction: column;">
-                        <p
-                          style="margin-left: 10px; font-family: monospace; font-size: 14px; color: #fff;">
-                          BC5E DDCA DF50 2C07 7F15 8288 2AE8 1E8A CED7 258B
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="AL"
-                  style="display: flex; justify-content: flex-start; margin-top: 30px;">
-                  <div
-                    class="itemAl_03"
-                    style="display: flex; flex-direction: column;">
-                    <h3>ELevate</h3>
-                    <span><b>rsa4096/429785E181B961A5 (2021-08-20):</b></span>
-                    <span>ELevate &lt;packager@almalinux.org&gt;</span>
-                    <span
-                      ><b>{{ i18n "Location:" }}</b>
-                      /etc/pki/rpm-gpg/RPM-GPG-KEY-ELevate</span
-                    >
-                    <span
-                      ><b>{{ i18n "Download:" }}</b>
-                      <a
-                        href="https://repo.almalinux.org/elevate/RPM-GPG-KEY-ELevate"
-                        >AlmaLinux</a
-                      ></span
-                    >
-                    <span
-                      ><b>{{ i18n "Download:" }}</b>
-                      <a
-                        href="https://pgp.mit.edu/pks/lookup?op=index&search=0x429785E181B961A5"
-                        >pgp.mit.edu</a
-                      ></span
-                    >
-                    <div
-                      class="container-locks"
-                      style="display: flex; justify-content: flex-start; align-items: center; margin-top: 15px;">
-                      <img
-                        class="Photo__Lock"
-                        style="width: 40px; height: 40px;"
-                        src="/images/alma-fingerprint-A.svg" />
-                      <div style="display: flex; flex-direction: column;">
-                        <p
-                          style="margin-left: 10px; font-family: monospace; font-size: 14px; color: #fff;">
-                          74E7 F249 EE69 8A4D ACFB 48C8 4297 85E1 81B9 61A5
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
+          <div class="col-md-6 col-lg-3">
+            <div class="al-security-card">
+              <i class="bi bi-shield-check al-security-card-icon"></i>
+              <h3 class="al-security-card-title">
+                {{ i18n "Verifiable supply chain" }}
+              </h3>
+              <p>
+                {{ i18n "Signed packages and a Software Bill of Materials you can check." }}
+              </p>
             </div>
           </div>
-          <div
-            class="SecurityMailingList-container"
-            style="display: flex; flex-direction: column; padding: 40px 20px;">
-            <h2
-              class="pb-2 text-center border-bottom"
-              style="border-bottom-color: #14598a!important;">
-              Security Mailing List
-            </h2>
-            <div
-              class="al-article-content pb-3 al-wysiwyg"
-              style="padding: 0px!important;">
-              <section>
-                <p>
-                  {{ i18n "To receive security updates and errata, users can sign up for the " }}
-                  <a
-                    href="https://lists.almalinux.org/mailman3/lists/security.lists.almalinux.org/"
-                    >{{ i18n "AlmaLinux Security Mailing List" }}</a
-                  >.
-                  {{ i18n "Subscribing to the list will allow users to stay informed and updated on any security fixes as soon as they are available." }}
-                </p>
-              </section>
+          <div class="col-md-6 col-lg-3">
+            <div class="al-security-card">
+              <i class="bi bi-clipboard-check al-security-card-icon"></i>
+              <h3 class="al-security-card-title">
+                {{ i18n "Compliance and hardening" }}
+              </h3>
+              <p>
+                {{ i18n "OpenSCAP, OVAL, and CIS tooling to audit and harden your systems." }}
+              </p>
             </div>
           </div>
-          <div
-            class="OpenSCAPandSCAPWorkbench-container"
-            style="display: flex; flex-direction: column; padding: 40px 20px;">
-            <h2
-              class="pb-2 text-center border-bottom"
-              style="border-bottom-color: #14598a!important;">
-              OpenSCAP and SCAP Workbench
-            </h2>
-            <div
-              class="al-article-content pb-3 al-wysiwyg"
-              style="padding: 0px!important;">
-              <section>
-                <p>
-                  {{ i18n "The Security Content Automation Protocol (SCAP) automates vulnerability management, measurement, and policy compliance evaluation of systems. AlmaLinux OS offers an OpenSCAP Guide that instructs on how to use the OpenSCAP and SCAP Workbench to audit your AlmaLinux system security compliance." }}
-                </p>
-                <div class="AL" style="display: flex;">
-                  <div class="itemAl_01" style="width: 300px;">
-                    <b
-                      ><a
-                        href="https://wiki.almalinux.org/documentation/openscap-guide-for-9.html"
-                        >{{ i18n "OpenSCAP Guide for AlmaLinux OS 9" }}</a
-                      ></b
-                    >
-                  </div>
-                  <div class="itemAl_02">
-                    <b
-                      ><a
-                        href="https://wiki.almalinux.org/documentation/openscap-guide.html"
-                        >{{ i18n "OpenSCAP Guide for AlmaLinux OS 8" }}</a
-                      ></b
-                    >
-                  </div>
-                </div>
-                <p>
-                  {{ i18n "AlmaLinux OS also has the availability of the CIS Benchmark." }}
-                </p>
-              </section>
-            </div>
-          </div>
-          <div
-            class="OVAL-container"
-            style="display: flex; flex-direction: column; padding: 40px 20px;">
-            <h2
-              class="pb-2 text-center border-bottom"
-              style="border-bottom-color: #14598a!important;">
-              OVAL
-            </h2>
-            <div
-              class="al-article-content pb-3 al-wysiwyg"
-              style="padding: 0px!important;">
-              <section>
-                <p>
-                  {{ i18n "The Open Vulnerability and Assessment Language (OVAL), offers publicly accessible security information. This includes AlmaLinux OS 8 and 9, which have available public OVAL streams." }}
-                </p>
-                <div class="AL" style="display: flex;">
-                  <div class="itemAl_01" style="width: 300px;">
-                    <b
-                      ><a
-                        href="https://security.almalinux.org/oval/org.almalinux.alsa-9.xml"
-                        >AlmaLinux OS 9</a
-                      ></b
-                    >
-                  </div>
-                  <div class="itemAl_02">
-                    <b
-                      ><a
-                        href="https://security.almalinux.org/oval/org.almalinux.alsa-8.xml"
-                        >AlmaLinux OS 8</a
-                      ></b
-                    >
-                  </div>
-                </div>
-                <p>
-                  {{ i18n "You can find more about OVAL Streams on the " }}
-                  <a
-                    href="https://wiki.almalinux.org/documentation/oval-streams.html"
-                    >{{ i18n "AlmaLinux OVAL Wiki Page" }}</a
-                  >.
-                </p>
-              </section>
-            </div>
-          </div>
-          <div
-            class="SBOM-container"
-            style="display: flex; flex-direction: column; padding: 40px 20px;">
-            <h2
-              class="pb-2 text-center border-bottom"
-              style="border-bottom-color: #14598a!important;">
-              SBOM
-            </h2>
-            <div
-              class="al-article-content pb-3 al-wysiwyg"
-              style="padding: 0px!important;">
-              <section>
-                <p>
-                  {{ i18n "The Software Bill of Materials (SBOM) provides a comprehensive list of third-party and open-source components in a codebase, including version numbers, licensing information, and potential vulnerabilities." }}
-                  {{ i18n "AlmaLinux Build System has implemented SBOM into its pipeline for security purposes, such as tracing the build process, making it more secure, and reducing the risk of data corruption. " }}
-                  <a href="{{ "sbom" | relLangURL }}">{{ i18n "Read more" }}</a>
-                  {{ i18n "about SBOM integration in AlmaLinux." }}<br />
-                  {{ i18n "AlmaLinux OS also provides " }}
-                  <a
-                    href="https://wiki.almalinux.org/documentation/sbom-guide.html"
-                    >{{ i18n "AlmaLinux SBOM User Guide" }}</a
-                  >
-                </p>
-              </section>
-            </div>
-          </div>
-          <div
-            class="SecureBoot-container"
-            style="display: flex; flex-direction: column; padding: 40px 20px;">
-            <h2
-              class="pb-2 text-center border-bottom"
-              style="border-bottom-color: #14598a!important;">
-              Secure Boot
-            </h2>
-            <div
-              class="al-article-content pb-3 al-wysiwyg"
-              style="padding: 0px!important;">
-              <section>
-                <p>
-                  {{ i18n "Secure Boot is a security feature that ensures a system boots only with trusted software, preventing the loading of unauthorized operating systems or software that could potentially compromise the system's integrity." }}
-                  <br />{{ i18n "AlmaLinux provides Secure Boot support starting with the AlmaLinux 8.4 release." }}
-                  <br />{{ i18n "AlmaLinux shim passes the " }}<a
-                    href="https://github.com/AlmaLinux/shim-review"
-                    >{{ i18n "official review" }}</a
-                  >
-                  {{ i18n "and is signed by Microsoft." }} <br />
-                  <br />{{ i18n "AlmaLinux shim trusts 3 certificates:" }}
-                </p>
-                <div
-                  class="AL"
-                  style="display: flex; justify-content: space-between">
-                  <div
-                    class="itemAl_01"
-                    style="display: flex; flex-direction: column;">
-                    <div class="wrapper" style="display: flex;">
-                      <h3>
-                        <a
-                          href="https://git.almalinux.org/rpms/shim-unsigned-x64/raw/branch/a8/SOURCES/almalinux-sb-cert-1.der"
-                          >almalinux-sb-cert-1.der</a
-                        >
-                      </h3>
-                      <p
-                        class="valid_date"
-                        style="margin-top: 17px; font-size: 11px; font-weight: 700;">
-                        * Expired but remains a trusted key.
-                      </p>
-                    </div>
-                    <span
-                      ><b>{{ i18n "Signed for:" }}</b> AlmaLinux OS
-                      Foundation</span
-                    >
-                    <span
-                      ><b>{{ i18n "Verified by:" }}</b> Sectigo Public Code
-                      Signing CA EV R36</span
-                    >
-                    <span><b>{{ i18n "Expired:" }}</b> 30.01.2025</span>
-                  </div>
-                  <div
-                    class="itemAl_02"
-                    style="display: flex; flex-direction: column;">
-                    <div class="wrapper" style="display: flex;">
-                      <h3>
-                        <a
-                          href="https://git.almalinux.org/rpms/shim-unsigned-x64/raw/branch/a8/SOURCES/almalinux-sb-cert-2.der"
-                          >almalinux-sb-cert-2.der</a
-                        >
-                      </h3>
-                      <p
-                        class="valid_date"
-                        style="margin-top: 17px; font-size: 11px; font-weight: 700;">
-                        * Expired but remains a trusted key.
-                      </p>
-                    </div>
-                    <span
-                      ><b>{{ i18n "Signed for:" }}</b> AlmaLinux OS
-                      Foundation</span
-                    >
-                    <span
-                      ><b>{{ i18n "Verified by:" }}</b> SSL.com EV Code Signing
-                      Intermediate CA RSA</span
-                    >
-                    <span><b>{{ i18n "Expired:" }}</b> 19.01.2025</span>
-                  </div>
-                  <div
-                    class="itemAl_03"
-                    style="display: flex; flex-direction: column;">
-                    <h3>
-                      <a
-                        href="https://git.almalinux.org/rpms/shim-unsigned-x64/raw/branch/a8/SOURCES/almalinux-sb-cert-3.der"
-                        >almalinux-sb-cert-3.der</a
-                      >
-                    </h3>
-                    <span
-                      ><b>{{ i18n "Signed for:" }}</b> AlmaLinux Secure Boot
-                      CA</span
-                    >
-                    <span
-                      ><b>{{ i18n "Verified by:" }}</b> AlmaLinux Secure Boot
-                      CA</span
-                    >
-                    <span><b>{{ i18n "Expires:" }}</b> 14.03.2034</span>
-                  </div>
-                </div>
-              </section>
+          <div class="col-md-6 col-lg-3">
+            <div class="al-security-card">
+              <i class="bi bi-patch-check al-security-card-icon"></i>
+              <h3 class="al-security-card-title">
+                {{ i18n "Independent certification" }}
+              </h3>
+              <p>
+                {{ i18n "FIPS 140-3 validated, with more certifications underway." }}
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-  </div>
+
+    {{/* 3. Capabilities grid */}}
+    <section id="sec-capabilities" class="al-foundation-band-deep al-py-lg">
+      <div class="container">
+        <h2 class="al-foundation-section-title">
+          {{ i18n "What we provide" }}
+        </h2>
+        <p class="lead">
+          {{ i18n "These are the building blocks AlmaLinux gives you to secure, verify, and audit your systems, from the advisories we publish to the tooling you run yourself." }}
+          {{ i18n "You can also subscribe to the" }}
+          <a
+            href="https://lists.almalinux.org/mailman3/lists/security.lists.almalinux.org/"
+            >{{ i18n "AlmaLinux Security Mailing List" }}</a
+          >
+          {{ i18n "to get advisories as soon as they are published." }}
+        </p>
+        <div class="row g-4 al-security-cards">
+          <div class="col-md-6 col-lg-4">
+            <div class="al-security-card">
+              <i class="bi bi-megaphone al-security-card-icon"></i>
+              <h3 class="al-security-card-title">
+                {{ i18n "Errata and advisories" }}
+              </h3>
+              <p>
+                {{ i18n "We publish errata for security issues and bug fixes, with analysis of their significance." }}
+              </p>
+              <ul class="al-security-card-links">
+                <li>
+                  <a href="https://errata.almalinux.org/"
+                    >{{ i18n "AlmaLinux Errata" }}</a
+                  >
+                </li>
+                <li>
+                  <a href="https://wiki.almalinux.org/documentation/errata.html"
+                    >{{ i18n "AlmaLinux Errata Wiki page" }}</a
+                  >
+                </li>
+                <li>
+                  <a href="https://github.com/AlmaLinux/osv-database"
+                    >{{ i18n "OSV database" }}</a
+                  >
+                </li>
+                <li>
+                  <a href="https://errata.almalinux.org/10/errata.full.json"
+                    >{{ i18n "errata.full.json for AlmaLinux OS 10" }}</a
+                  >
+                </li>
+                <li>
+                  <a href="https://errata.almalinux.org/9/errata.full.json"
+                    >{{ i18n "errata.full.json for AlmaLinux OS 9" }}</a
+                  >
+                </li>
+                <li>
+                  <a href="https://errata.almalinux.org/8/errata.full.json"
+                    >{{ i18n "errata.full.json for AlmaLinux OS 8" }}</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="al-security-card">
+              <i class="bi bi-key al-security-card-icon"></i>
+              <h3 class="al-security-card-title">
+                {{ i18n "Signed packages" }}
+              </h3>
+              <p>
+                {{ i18n "Every package is signed with a GPG key and verified by default when you install it." }}
+              </p>
+              <ul class="al-security-card-links">
+                <li>
+                  <a href="#sec-gpg-keys">{{ i18n "View the GPG keys" }}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="al-security-card">
+              <i class="bi bi-clipboard-check al-security-card-icon"></i>
+              <h3 class="al-security-card-title">
+                {{ i18n "Compliance and hardening" }}
+              </h3>
+              <p>
+                {{ i18n "Audit and harden your systems with the OpenSCAP and SCAP Workbench guides and the CIS Benchmark." }}
+              </p>
+              <ul class="al-security-card-links">
+                <li>
+                  <a
+                    href="https://wiki.almalinux.org/documentation/openscap-guide-for-9.html"
+                    >{{ i18n "OpenSCAP Guide for AlmaLinux OS 9" }}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://wiki.almalinux.org/documentation/openscap-guide.html"
+                    >{{ i18n "OpenSCAP Guide for AlmaLinux OS 8" }}</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="al-security-card">
+              <i class="bi bi-bug al-security-card-icon"></i>
+              <h3 class="al-security-card-title">
+                {{ i18n "Vulnerability data" }}
+              </h3>
+              <p>
+                {{ i18n "Public OVAL streams provide machine-readable vulnerability information for AlmaLinux OS 8, 9, and 10." }}
+              </p>
+              <ul class="al-security-card-links">
+                <li>
+                  <a
+                    href="https://security.almalinux.org/oval/org.almalinux.alsa-10.xml"
+                    >{{ i18n "OVAL stream for AlmaLinux OS 10" }}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://security.almalinux.org/oval/org.almalinux.alsa-9.xml"
+                    >{{ i18n "OVAL stream for AlmaLinux OS 9" }}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://security.almalinux.org/oval/org.almalinux.alsa-8.xml"
+                    >{{ i18n "OVAL stream for AlmaLinux OS 8" }}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://wiki.almalinux.org/documentation/oval-streams.html"
+                    >{{ i18n "AlmaLinux OVAL Wiki Page" }}</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="al-security-card">
+              <i class="bi bi-box-seam al-security-card-icon"></i>
+              <h3 class="al-security-card-title">
+                {{ i18n "Software Bill of Materials" }}
+              </h3>
+              <p>
+                {{ i18n "Our Build System produces an SBOM for traceability and supply chain security." }}
+              </p>
+              <ul class="al-security-card-links">
+                <li>
+                  <a href="{{ "sbom" | relLangURL }}"
+                    >{{ i18n "About SBOM in AlmaLinux" }}</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://wiki.almalinux.org/documentation/sbom-guide.html"
+                    >{{ i18n "AlmaLinux SBOM User Guide" }}</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="al-security-card">
+              <i class="bi bi-hdd-stack al-security-card-icon"></i>
+              <h3 class="al-security-card-title">{{ i18n "Secure Boot" }}</h3>
+              <p>
+                {{ i18n "AlmaLinux supports Secure Boot, with a shim signed by Microsoft, so systems boot only trusted software." }}
+              </p>
+              <ul class="al-security-card-links">
+                <li>
+                  <a href="#sec-secure-boot"
+                    >{{ i18n "View the Secure Boot certificates" }}</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{/* 4. How we respond to security issues */}}
+    <section id="sec-response" class="al-py-lg">
+      <div class="container">
+        <h2 class="al-foundation-section-title">
+          {{ i18n "How we respond to security issues" }}
+        </h2>
+        <p class="lead">
+          {{ i18n "The volume of disclosed vulnerabilities keeps rising, and AI-assisted research, proof-of-concept creation, and public disclosure are accelerating it further. No distribution can promise to fix every vulnerability on every timeline. What we can offer is a clear, consistent process for how we handle them." }}
+        </p>
+        <div class="row g-5 mt-2">
+          <div class="col-lg-6">
+            <h3 class="al-security-step-title">
+              {{ i18n "Patching from upstream" }}
+            </h3>
+            <p>
+              {{ i18n "We follow upstream for most patches. AlmaLinux OS is built from the same sources as the rest of the enterprise Linux ecosystem, so as upstream fixes land we build, test, and publish them. Each security fix ships as an advisory (an ALSA), rated Critical, Important, Moderate, or Low, with machine-readable OVAL and OSV data and an announcement to the security mailing list." }}
+            </p>
+            <ul class="al-security-card-links">
+              <li>
+                <a href="https://errata.almalinux.org/"
+                  >{{ i18n "AlmaLinux Errata" }}</a
+                >
+              </li>
+              <li>
+                <a href="https://wiki.almalinux.org/documentation/errata.html"
+                  >{{ i18n "AlmaLinux Errata Wiki page" }}</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="al-security-step-title">
+              {{ i18n "Patching ahead of upstream" }}
+            </h3>
+            <p>
+              {{ i18n "Sometimes an issue matters enough to the community that we apply a patch ahead of upstream. These are reviewed and approved by ALESCo, the AlmaLinux Engineering Steering Committee, which guides the technical direction of the distribution. When upstream ships its own fix, we re-align with it." }}
+              {{ i18n "Whenever possible or appropriate, we also send patches that we've released upstream: everyone should benefit from the work of open source." }}
+              {{ i18n "Anyone can request that a patch be considered by raising it in the" }}
+              <a href="https://chat.almalinux.org/almalinux/channels/alesco"
+                >{{ i18n "ALESCo channel" }}</a
+              >
+              {{ i18n "on chat.almalinux.org. A few examples of patches we have shipped or provided for testing:" }}
+            </p>
+            <ul class="al-security-card-links">
+              <li>
+                <a
+                  href="{{ "/blog/2024-04-02-xz-and-cve-2024-1086/" | relLangURL }}"
+                  >{{ i18n "XZ backdoor and CVE-2024-1086" }}</a
+                >
+              </li>
+              <li>
+                <a
+                  href="{{ "/blog/2024-07-01-almalinux-9-CVE-2024-6387/" | relLangURL }}"
+                  >{{ i18n "regreSSHion (CVE-2024-6387)" }}</a
+                >
+              </li>
+              <li>
+                <a
+                  href="{{ "/blog/2025-03-13-cve-2025-27363-patches/" | relLangURL }}"
+                  >{{ i18n "CVE-2025-27363 patches" }}</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12">
+            <h3 class="al-security-step-title">{{ i18n "Direct reports" }}</h3>
+            <p>
+              {{ i18n "How we handle an issue reported directly to us depends on what it affects. We aim to acknowledge reports within 2 to 3 days." }}
+            </p>
+            <ul>
+              <li>
+                {{ i18n "OS issues that need coordinated disclosure: email security@almalinux.org so we can coordinate a responsible patch and release." }}
+              </li>
+              <li>
+                {{ i18n "OS issues that do not need coordination: file them at bugs.almalinux.org." }}
+              </li>
+              <li>
+                {{ i18n "Anything that is not the operating system itself, such as ELevate or this website: open an issue on that project's repository." }}
+              </li>
+            </ul>
+            <p>
+              {{ i18n "If a direct report is really an upstream issue, we point you to report it upstream so it is fixed at the source for everyone. Critical issues reported to the linux-distros mailing list are patched on the date of disclosure. See our" }}
+              <a href="{{ "/p/vulnerability-disclosure-policy/" | relLangURL }}"
+                >{{ i18n "vulnerability disclosure policy" }}</a
+              >
+              {{ i18n "for full details." }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{/* 5. Certifications cross-link */}}
+    <section id="sec-certifications" class="al-foundation-band-deep al-py-lg">
+      <div class="container">
+        <h2 class="al-foundation-section-title">
+          {{ i18n "Independent certifications" }}
+        </h2>
+        <p class="lead">
+          {{ i18n "Formal, third-party certification backs our security work with independent validation. AlmaLinux OS is FIPS 140-3 validated, with more underway." }}
+        </p>
+        <div class="row g-4 al-security-cards">
+          <div class="col-md-6">
+            <a
+              class="al-security-card d-block"
+              href="{{ "/security/fips-certification/" | relLangURL }}">
+              <i class="bi bi-patch-check al-security-card-icon"></i>
+              <h3 class="al-security-card-title">{{ i18n "FIPS 140-3" }}</h3>
+              <p>
+                {{ i18n "AlmaLinux OS 9.2 carries FIPS 140-3 validated cryptographic modules on the NIST CMVP Active list." }}
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{/* 6a. Reference: GPG keys */}}
+    <section id="sec-gpg-keys" class="al-py-lg">
+      <div class="container">
+        <h2 class="al-foundation-section-title">{{ i18n "GPG keys" }}</h2>
+        <p>
+          {{ i18n "AlmaLinux signs all packages with a GPG key, verified by default by dnf and graphical update tools. We recommend verifying a package signature before installing." }}
+        </p>
+        <div class="row g-4">
+          {{ range where site.Data.security.gpg_keys "expired" false }}
+            {{ partial "security/gpg-key-card.html" . }}
+          {{ end }}
+        </div>
+        {{ with where site.Data.security.gpg_keys "expired" true }}
+          <details class="al-security-expired">
+            <summary>{{ i18n "Expired but remains a trusted key." }}</summary>
+            <div class="row g-4 mt-1">
+              {{ range . }}
+                {{ partial "security/gpg-key-card.html" . }}
+              {{ end }}
+            </div>
+          </details>
+        {{ end }}
+      </div>
+    </section>
+
+    {{/* 6b. Reference: Secure Boot */}}
+    <section id="sec-secure-boot" class="al-foundation-band-deep al-py-lg">
+      <div class="container">
+        <h2 class="al-foundation-section-title">
+          {{ i18n "Secure Boot certificates" }}
+        </h2>
+        <p>
+          {{ i18n "AlmaLinux provides Secure Boot support starting with the 8.4 release. Its shim passes the" }}
+          <a href="https://github.com/AlmaLinux/shim-review"
+            >{{ i18n "official review" }}</a
+          >
+          {{ i18n "and is signed by Microsoft. The AlmaLinux shim trusts these certificates:" }}
+        </p>
+        <h3 class="al-security-subhead">{{ i18n "Current" }}</h3>
+        <table class="al-security-table">
+          <thead>
+            <tr>
+              <th scope="col">{{ i18n "Certificate" }}</th>
+              <th scope="col">{{ i18n "Signed for:" }}</th>
+              <th scope="col">{{ i18n "Verified by:" }}</th>
+              <th scope="col">{{ i18n "Validity" }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ partial "security/secure-boot-rows.html" (where site.Data.security.secure_boot "expired" false) }}
+          </tbody>
+        </table>
+
+        <h3 class="al-security-subhead al-security-subhead--muted">
+          {{ i18n "Previous" }}
+        </h3>
+        <p>{{ i18n "These certificates have expired but remain trusted." }}</p>
+        <table class="al-security-table al-security-table--muted">
+          <thead>
+            <tr>
+              <th scope="col">{{ i18n "Certificate" }}</th>
+              <th scope="col">{{ i18n "Signed for:" }}</th>
+              <th scope="col">{{ i18n "Verified by:" }}</th>
+              <th scope="col">{{ i18n "Validity" }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ partial "security/secure-boot-rows.html" (where site.Data.security.secure_boot "expired" true) }}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    {{/* 7. CTA band */}}
+    <section id="sec-cta" class="al-py-lg">
+      <div class="container text-center">
+        <h2 class="al-foundation-section-title d-inline-block">
+          {{ i18n "Stay in the loop" }}
+        </h2>
+        <p>
+          {{ i18n "Report a vulnerability, subscribe for advisories, or talk security with us directly." }}
+        </p>
+        <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+          <a
+            href="{{ "/p/vulnerability-disclosure-policy/" | relLangURL }}"
+            class="btn btn-primary btn-lg"
+            >{{ i18n "Report a vulnerability" }}</a
+          >
+          <a
+            href="https://lists.almalinux.org/mailman3/lists/security.lists.almalinux.org/"
+            class="btn btn-outline-light btn-lg"
+            >{{ i18n "Subscribe to advisories" }}</a
+          >
+          <a
+            href="https://chat.almalinux.org/almalinux/channels/security"
+            class="btn btn-warning btn-lg"
+            >{{ i18n "Join the security room" }}</a
+          >
+        </div>
+      </div>
+    </section>
+  </main>
 {{ end }}
