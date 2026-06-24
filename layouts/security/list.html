@@ -87,7 +87,7 @@
                 {{ i18n "Independent certification" }}
               </h3>
               <p>
-                {{ i18n "FIPS 140-3 validated, with more certifications underway." }}
+                {{ i18n "FIPS 140-3 validated and Common Criteria certified, with more underway." }}
               </p>
             </div>
           </div>
@@ -375,7 +375,7 @@
           {{ i18n "Independent certifications" }}
         </h2>
         <p class="lead">
-          {{ i18n "Formal, third-party certification backs our security work with independent validation. AlmaLinux OS is FIPS 140-3 validated, with more underway." }}
+          {{ i18n "Formal, third-party certification backs our security work with independent validation. AlmaLinux OS is FIPS 140-3 validated and Common Criteria certified, with more underway." }}
         </p>
         <div class="row g-4 al-security-cards">
           <div class="col-md-6">
@@ -386,6 +386,19 @@
               <h3 class="al-security-card-title">{{ i18n "FIPS 140-3" }}</h3>
               <p>
                 {{ i18n "AlmaLinux OS 9.2 carries FIPS 140-3 validated cryptographic modules on the NIST CMVP Active list." }}
+              </p>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a
+              class="al-security-card d-block"
+              href="{{ "/security/cc-certification/" | relLangURL }}">
+              <i class="bi bi-patch-check al-security-card-icon"></i>
+              <h3 class="al-security-card-title">
+                {{ i18n "Common Criteria" }}
+              </h3>
+              <p>
+                {{ i18n "AlmaLinux OS 9.2 is certified under Common Criteria (ISO/IEC 15408), the first such certification for an operating system in Japan." }}
               </p>
             </a>
           </div>
