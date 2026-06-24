@@ -18,7 +18,7 @@
                 {{ i18n "Get involved" }}
               </a>
               <a
-                href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search?ModuleName=almalinux"
+                href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search?SearchMode=Basic&Vendor=tuxcare&CertificateStatus=Active&ValidationYear=0"
                 class="btn btn-outline-light btn-lg"
                 target="_blank"
                 rel="noopener">
@@ -101,7 +101,7 @@
               </dl>
               <p class="al-fips-infobox-verify">
                 <a
-                  href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search?ModuleName=almalinux"
+                  href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search?SearchMode=Basic&Vendor=tuxcare&CertificateStatus=Active&ValidationYear=0"
                   target="_blank"
                   rel="noopener"
                   >{{ i18n "View AlmaLinux modules on the NIST CMVP list" }}</a
@@ -262,7 +262,12 @@ reboot</code></pre>
 
         <p class="al-fips-next">
           {{ i18n "Validation work continues on newer AlmaLinux releases." }}
-          {{ i18n "FIPS 140-3 certification for AlmaLinux 9.6 is now in progress, with its cryptographic modules on NIST's Modules in Process list. For details, see" }}
+          {{ i18n "FIPS 140-3 certification for AlmaLinux 9.6 is now in progress, with its cryptographic modules on NIST's Modules in Process list. The free OpenSSL and kernel modules for AlmaLinux 9.6 are already available to install; see" }}
+          <a
+            href="https://docs.tuxcare.com/enterprise-support-for-almalinux/fips/"
+            >{{ i18n "the TuxCare AlmaLinux FIPS documentation" }}</a
+          >
+          {{ i18n "for the steps. For more background, see" }}
           <a href="https://tuxcare.com/fips-for-almalinux/"
             >{{ i18n "TuxCare's FIPS page" }}</a
           >
