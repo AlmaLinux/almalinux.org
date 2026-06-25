@@ -240,6 +240,7 @@ For everything else, use Bootstrap's spacing utilities (`m-*`, `p-*`, `gap-*`, `
 ## 10. Image guidelines
 
 - **Format preference:** SVG > PNG > JPG. Use SVG for logos and icons, PNG for screenshots or images that need transparency, and JPG for photographs.
+- **Optimizing PNGs:** compress PNGs (hero, OG, screenshots) with `pngquant` before committing (`brew install pngquant`): `pngquant --quality=70-95 --force --strip --output /tmp/opt.png <input.png>`, check the result for gradient banding, then replace the original. It typically cuts size 80-90% with no visible loss. Keep hero and OG images as PNG (best social-platform compatibility), not WebP.
 - **Blog header images:** 1280×720 (16:9), following `static/blog-images/blog_images_template.svg`. Keep each file at or under 500 KB (optimize before committing, and prefer JPG for photo-heavy headers). The exported file goes in `static/blog-images/` and serves from `/blog-images/`. See [contributing-blog-posts.md](contributing-blog-posts.md) for the full workflow.
 - **Board headshots:** 130px.
 - **File locations:** `/static/board/` (board photos), `/static/brands/` (sponsor and partner logos), `/static/membership-images/` (membership imagery), `/static/blog-images/` (blog header and in-post images).
