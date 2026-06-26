@@ -19,7 +19,7 @@ I keep coming back to how big this is for a community project. AlmaLinux is a co
 
 ## How we got here
 
-We did this alongside [Cybertrust Inc.](https://www.cybertrust.co.jp/english/), a longtime platinum sponsor of the [AlmaLinux OS Foundation](/foundation/). The work was led and carried by Cybertrust engineers who are themselves members of the Foundation. That is exactly the kind of collaboration that makes AlmaLinux what it is: sponsors and contributors investing in the project together.
+We did this alongside [Cybertrust Co., Ltd.](https://www.cybertrust.co.jp/english/), a longtime platinum sponsor of the [AlmaLinux OS Foundation](/foundation/). The work was led and carried by Cybertrust engineers who are themselves members of the Foundation. That is exactly the kind of collaboration that makes AlmaLinux what it is: sponsors and contributors investing in the project together.
 
 ## What Common Criteria is
 
