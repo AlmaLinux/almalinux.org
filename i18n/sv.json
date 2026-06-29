@@ -793,5 +793,6 @@
     "The RFC is under active discussion in the open and may go through several revisions.": "RFC diskuteras aktivt öppet och kan komma att genomgå flera revideringar.",
     "Closed": "Stängd",
     "Accepted for Discussion": "Godkänd för diskussion",
-    "Vote at Next Meeting": "Rösta vid nästa möte"
+    "Vote at Next Meeting": "Rösta vid nästa möte",
+    "About SBOM in AlmaLinux": "Om SBOM i AlmaLinux"
 }
