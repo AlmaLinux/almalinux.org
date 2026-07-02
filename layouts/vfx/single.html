@@ -1,0 +1,279 @@
+{{ define "main" }}
+  <!--
+    TODO — items still needed before publishing:
+    1. Hero: replace the placeholder box with a reel embed or image
+    2. Trusted-by logos: replace placeholder divs in .al-vfx-logo-strip with:
+         <a href="https://studio-website.com" target="_blank" rel="noopener">
+           <img src="/landingpages/vfx/logo-studio-name.svg" alt="Studio Name" />
+         </a>
+    3. Software logos: replace placeholder divs in .al-vfx-software-grid with:
+         <div class="al-vfx-software-item">
+           <img src="/landingpages/vfx/logo-houdini.svg" alt="SideFX Houdini" />
+           <span>Houdini</span>
+         </div>
+  -->
+  <div class="al-body-container al-page-vfx">
+    <!-- ═══════════════════════════════════════════════════════
+         HERO: reel + tagline
+    ════════════════════════════════════════════════════════ -->
+    <section class="al-vfx-hero">
+      <div class="container al-py-lg">
+        <div class="row align-items-center g-5">
+          <!-- Reel / video -->
+          <div class="col-12 col-lg-5">
+            <div class="al-vfx-logo-placeholder al-vfx-reel-placeholder">
+              {{ i18n "maybe a reel? maybe an image?" }}
+            </div>
+          </div>
+
+          <!-- Copy -->
+          <div class="col-12 col-lg-7">
+            <h1 class="fw-bold mb-4">
+              {{ i18n "Creative Production" }}
+              <span class="al-vfx-heart">&hearts;</span> AlmaLinux
+            </h1>
+            <p class="lead">
+              {{ i18n "Creative production demands an OS that won't let you down mid-render, mid-shoot, or mid-deadline. AlmaLinux is the foundation trusted by VFX studios, animation houses, broadcasters, and game developers around the world." }}
+            </p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="#get-started" class="btn al-cta-green btn-lg px-4">
+                <i class="bi bi-play-circle pe-1"></i>
+                {{ i18n "Get started" }}
+              </a>
+              <a
+                href="https://wiki.almalinux.org/sigs/MediaAndEntertainmentSIG.html"
+                class="btn al-cta-blue btn-lg px-4"
+                target="_blank"
+                rel="noopener">
+                <i class="bi bi-people pe-1"></i>
+                {{ i18n "Join the M&E SIG" }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         TRUSTED BY: VFX studio logos
+    ════════════════════════════════════════════════════════ -->
+    <section class="al-vfx-trusted al-py-lg">
+      <div class="container">
+        <h2 class="text-center mb-4">
+          {{ i18n "Trusted by leading studios & production houses" }}
+        </h2>
+        <div class="al-vfx-logo-strip">
+          <div class="al-vfx-logo-placeholder">Studio Logo</div>
+          <div class="al-vfx-logo-placeholder">Studio Logo</div>
+          <div class="al-vfx-logo-placeholder">Studio Logo</div>
+          <div class="al-vfx-logo-placeholder">Studio Logo</div>
+          <div class="al-vfx-logo-placeholder">Studio Logo</div>
+          <div class="al-vfx-logo-placeholder">Studio Logo</div>
+          <div class="al-vfx-logo-placeholder">Studio Logo</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         CONTENT 1: Why VFX pros choose AlmaLinux
+    ════════════════════════════════════════════════════════ -->
+    <section class="al-vfx-why al-py-lg">
+      <div class="container">
+        <h2 class="text-center mb-2">
+          {{ i18n "Built for the demands of production" }}
+        </h2>
+        <p class="text-center al-text-muted mb-5">
+          {{ i18n "AlmaLinux delivers what creative pipelines require: long-term stability, enterprise-grade reliability, and a community that moves at production speed." }}
+        </p>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <i class="bi bi-shield-check al-vfx-feature-icon"></i>
+            <h4>{{ i18n "10-year support lifecycle" }}</h4>
+            <p>
+              {{ i18n "Ship a project today knowing AlmaLinux 9 is supported through 2032. No forced migrations mid-production." }}
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <i class="bi bi-box-seam al-vfx-feature-icon"></i>
+            <h4>{{ i18n "Drop-in RHEL compatibility" }}</h4>
+            <p>
+              {{ i18n "Binary-compatible with RHEL, so every application certified for RHEL runs on AlmaLinux without requalification." }}
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <i class="bi bi-people al-vfx-feature-icon"></i>
+            <h4>{{ i18n "Community-owned, vendor-free" }}</h4>
+            <p>
+              {{ i18n "No licensing fees. No corporate lock-in. A foundation governed by its members — including people from the creative industry." }}
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <i class="bi bi-cpu al-vfx-feature-icon"></i>
+            <h4>{{ i18n "Multi-architecture" }}</h4>
+            <p>
+              {{ i18n "x86_64, aarch64, ppc64le, and s390x. Run your render farm on the hardware that makes sense for your pipeline." }}
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <i class="bi bi-cloud al-vfx-feature-icon"></i>
+            <h4>{{ i18n "Cloud & hybrid pipelines" }}</h4>
+            <p>
+              {{ i18n "Official images on AWS, Azure, GCP, and OpenNebula. Burst renders to the cloud without changing your base OS." }}
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <i class="bi bi-lock al-vfx-feature-icon"></i>
+            <h4>{{ i18n "Security & compliance" }}</h4>
+            <p>
+              {{ i18n "FIPS 140-3 support, OVAL feeds, and regular CVE patches. Meet studio and facility security requirements out of the box." }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         WORKS ON: VFX software logos
+    ════════════════════════════════════════════════════════ -->
+    <section class="al-vfx-software al-py-lg">
+      <div class="container">
+        <h2 class="text-center mb-2">
+          {{ i18n "Works with the tools you rely on" }}
+        </h2>
+        <p class="text-center al-text-muted mb-5">
+          {{ i18n "The software your pipeline depends on runs on AlmaLinux." }}
+        </p>
+        <div class="al-vfx-software-grid">
+          <div class="al-vfx-software-item"><span>Houdini</span></div>
+          <div class="al-vfx-software-item"><span>Nuke</span></div>
+          <div class="al-vfx-software-item"><span>Maya</span></div>
+          <div class="al-vfx-software-item"><span>Blender</span></div>
+          <div class="al-vfx-software-item"><span>DaVinci Resolve</span></div>
+          <div class="al-vfx-software-item"><span>Katana</span></div>
+          <div class="al-vfx-software-item"><span>Mari</span></div>
+          <div class="al-vfx-software-item"><span>RenderMan</span></div>
+          <div class="al-vfx-software-item"><span>Arnold</span></div>
+          <div class="al-vfx-software-item"><span>V-Ray</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         CONTENT 2: M&E SIG
+    ════════════════════════════════════════════════════════ -->
+    <section class="al-vfx-mae al-py-lg">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-lg-6">
+            <h2 class="mb-3">{{ i18n "The Media & Entertainment SIG" }}</h2>
+            <p>
+              {{ i18n "The AlmaLinux Media & Entertainment Special Interest Group (M&E SIG) is a community of VFX artists, pipeline TDs, facility engineers, and open source contributors working together to make AlmaLinux the best platform for creative production." }}
+            </p>
+            <ul class="al-vfx-mae-list">
+              <li>
+                <i class="bi bi-check2-circle"></i>
+                {{ i18n "VFX Reference Platform tracking" }}
+              </li>
+              <li>
+                <i class="bi bi-check2-circle"></i>
+                {{ i18n "Pipeline-tested package builds" }}
+              </li>
+              <li>
+                <i class="bi bi-check2-circle"></i>
+                {{ i18n "Studio deployment guides" }}
+              </li>
+              <li>
+                <i class="bi bi-check2-circle"></i>
+                {{ i18n "Direct collaboration with software vendors" }}
+              </li>
+            </ul>
+            <a
+              href="https://wiki.almalinux.org/sigs/MediaAndEntertainmentSIG.html"
+              class="btn al-cta-blue btn-lg px-4 mt-3"
+              target="_blank"
+              rel="noopener">
+              <i class="bi bi-arrow-up-right-square pe-1"></i>
+              {{ i18n "Learn about the M&E SIG" }}
+            </a>
+          </div>
+          <div class="col-12 col-lg-6 text-center">
+            <img
+              src="/landingpages/vfx/third-alma.png"
+              alt="{{ i18n "AlmaLinux Media & Entertainment SIG" }}"
+              class="img-fluid rounded" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         HOW TO GET STARTED
+    ════════════════════════════════════════════════════════ -->
+    <section id="get-started" class="al-vfx-start al-py-lg">
+      <div class="container">
+        <h2 class="text-center mb-2">{{ i18n "How to get started" }}</h2>
+        <p class="text-center al-text-muted mb-5">
+          {{ i18n "Three steps to a production-ready AlmaLinux workstation or render node." }}
+        </p>
+        <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+          <div class="col">
+            <div class="al-vfx-step">
+              <div class="al-vfx-step-number">1</div>
+              <h4>{{ i18n "Download AlmaLinux" }}</h4>
+              <p>
+                {{ i18n "Grab the latest ISO for your architecture. Both workstation and minimal server images are available." }}
+              </p>
+              <a
+                href="{{ "/get-almalinux" | relLangURL }}"
+                class="btn al-cta-green px-4 mt-2">
+                <i class="bi bi-download pe-1"></i>
+                {{ i18n "Download" }}
+              </a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="al-vfx-step">
+              <div class="al-vfx-step-number">2</div>
+              <h4>{{ i18n "Follow the M&E SIG setup guide" }}</h4>
+              <p>
+                {{ i18n "The M&E SIG wiki covers GPU drivers, VFX Reference Platform libraries, and software installation for common DCC tools." }}
+              </p>
+              <a
+                href="https://wiki.almalinux.org/sigs/MediaAndEntertainmentSIG.html"
+                class="btn al-cta-blue px-4 mt-2"
+                target="_blank"
+                rel="noopener">
+                <i class="bi bi-book pe-1"></i>
+                {{ i18n "Read the wiki" }}
+              </a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="al-vfx-step">
+              <div class="al-vfx-step-number">3</div>
+              <h4>{{ i18n "Join the community" }}</h4>
+              <p>
+                {{ i18n "Chat with M&E users and contributors in the AlmaLinux community forums and the M&E SIG chat channel." }}
+              </p>
+              <a
+                href="https://chat.almalinux.org"
+                class="btn al-cta-blue px-4 mt-2"
+                target="_blank"
+                rel="noopener">
+                <i class="bi bi-chat-dots pe-1"></i>
+                {{ i18n "Join the chat" }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+{{ end }}
