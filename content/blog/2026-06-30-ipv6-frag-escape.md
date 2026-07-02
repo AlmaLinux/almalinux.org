@@ -1,5 +1,5 @@
 ---
-title: "IPV6_FRAG_ESCAPE vulnerability fix: Call for testing"
+title: "IPV6_FRAG_ESCAPE vulnerability: Fixed!"
 type: blog
 author:
   name: "Andrew Lukoshko"
@@ -11,6 +11,21 @@ images:
 post:
   title: "A newly disclosed Linux kernel flaw in the IPv6 fragmentation path lets an unprivileged user inside a container escape to root on the host. It only affects AlmaLinux 10 and Kitten 10, and there is no CVE yet. A patched kernel for AlmaLinux 10 is in the testing repository now (Kitten's fix is coming in the next update). If you run containers or any multi-tenant workload, help us verify it."
   image: /blog-images/2026/2026-06-30-ipv6-frag-escape.png
+---
+
+## Update: The fix is now in production
+
+**The patched AlmaLinux 10 kernel has been released to the production repositories.** You no longer need to enable the testing repo to get it. Just run:
+
+```bash
+sudo dnf clean metadata && sudo dnf upgrade
+sudo reboot
+```
+
+The fixed version released to the public is **`kernel-6.12.0-211.29.1.el10_2`** (or higher). Confirm you are running it with `uname -r` after rebooting. Most mirrors sync every few hours, so if the update is not available to you yet, try again a little later.
+
+The testing-repo instructions further down in this post remain for reference but are no longer the recommended path. Thanks to everyone who helped verify the patch — community testing got it into production faster than we could have managed alone.
+
 ---
 
 A new Linux kernel local-privilege-escalation flaw has been disclosed in the IPv6 fragmentation code, and it is serious: an **unprivileged user inside a container can use it to escape to a root shell on the host**. There is no CVE assigned yet, so for now we are referring to it as **`IPV6_FRAG_ESCAPE`**, the name its proof-of-concept uses. Only **AlmaLinux 10 and AlmaLinux Kitten 10** are affected. A patched kernel for AlmaLinux 10 is available in the testing repository today, and we would like your help verifying it before we push it to production.
@@ -82,7 +97,7 @@ AlmaLinux Kitten 10 is affected, but **a patched kernel is not available for Kit
 
 Only the AlmaLinux 10 family is affected:
 
-- **AlmaLinux 10** is patched in `kernel-6.12.0-211.28.2.el10_2` and above (available in the testing repository now).
+- **AlmaLinux 10** is fixed in `kernel-6.12.0-211.29.1.el10_2` and above, now available in the **production** repositories. (The earlier `kernel-6.12.0-211.28.2.el10_2` build was the testing-repo candidate; the production build supersedes it.)
 - **AlmaLinux Kitten 10** is affected; a patched kernel is **not available yet** and will land in the next Kitten kernel update. Apply the temporary mitigation below in the meantime.
 
 **AlmaLinux 8 and AlmaLinux 9 are not affected** and require no action.
