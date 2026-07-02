@@ -585,5 +585,12 @@
     "If you are able to help investigate and fix the bug, please collaborate with CentOS Stream. This is the most impactful thing an AlmaLinux Community Member can do. Check the CentOS Contributor's Guide (opens new window) for more details.": "バグの調査や修正に協力できる場合は、CentOS Stream での作業にご参加ください。これは AlmaLinux コミュニティメンバーが行える最も影響力の大きい貢献です。詳細については、CentOS Contributor's Guide（別ウィンドウで開きます）をご確認ください。",
     "Navigating the fluctuating compatibility and dependencies for your environment is hard enough without having to dig into your operating system. Make the best use of your time by checking the list of compatible solutions for your needs, environment.": "環境における互換性や依存関係の変動に対応するだけでも大変です。OS の内部まで調べる手間を省くためにも、ご利用の環境や要件に対応した互換ソリューション一覧を確認し、時間を有効に活用してください。",
     "On this page": "このページについて",
-    "Back to top": "先頭へ戻る"
+    "Back to top": "先頭へ戻る",
+    "All newsletters": "全ニュースレター",
+    "All blog posts": "すべてのブログ投稿",
+    "Silver Sponsor": "シルバースポンサー",
+    "Fujitsu, a Silver Sponsor of the AlmaLinux OS Foundation, provides enterprise-grade support services tailored to the needs of Japanese enterprises. Fujitsu offers “AlmaLinux OS Advanced Longterm Support,” delivering new fixes for specific minor releases for up to 10 years, enabling stable and predictable long-term operation in mission-critical environments.": "AlmaLinux OS Foundationのシルバースポンサーである富士通は、日本企業のニーズに合わせた企業向けサポートを提供しています。「AlmaLinux OS Advanced Longterm Support」は、最大10年間、特定のマイナーリリース用の新しい修正を提供しており、ミッションクリティカルな環境で安定した予測可能な長期運用を実現します。",
+    "Service overview (Japanese):": "サービスの概要(日本語):",
+    "View Brochure": "パンフレットを見る",
+    "2024 American Business Awards": "2024 アメリカビジネスアワード"
 }
