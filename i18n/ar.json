@@ -469,5 +469,7 @@
     "The AlmaLinux Certificated Software list, managed by the AlmaLinux Certification SIG, encourages the global adoption of the AlmaLinux by ensuring third-party software critical to our community has been certified to run on AlmaLinux.": "تشجع قائمة برامج AlmaLinux المعتمدة، التي تديرها AlmaLinux Certification SIG، على الاعتماد العالمي لـ AlmaLinux من خلال ضمان أن البرامج الهامة لمجتمعنا من الطرف الثالث قد تم اعتمادها للتشغيل على AlmaLinux.",
     "For providers": "للمقدمين",
     "Certifying in the Linux ecosystem is too often a tedious, painful process. The AlmaLinux Certification SIG has partnered with some of the biggest hardware and software providers in the world to develop the": "غالبًا ما تكون عملية الاعتماد في نظام Linux البيئي عملية مملة ومؤلمة. عقدت AlmaLinux Certification SIG شراكة مع بعض أكبر مزودي الأجهزة والبرامج في العالم لتطوير",
-    "AlmaLinux images are available for Incus and LXC.": "صور AlmaLinux متاحة لـ Incus وLXC."
+    "AlmaLinux images are available for Incus and LXC.": "صور AlmaLinux متاحة لـ Incus وLXC.",
+    "Newsletters": "النشرات الإخبارية",
+    "AlmaLinux Newsletters": "نشرات ألما لينكس الإخبارية"
 }
