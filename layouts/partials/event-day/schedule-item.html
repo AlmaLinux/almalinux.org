@@ -10,7 +10,9 @@
 {{ $hasDesc := ne $desc "" }}
 {{ $expandable := and (not $s.isServiceSession) $hasDesc }}
 {{ $id := printf "s-%v" $s.id }}
-<div class="al-sched-item{{ if $s.isServiceSession }}is-break{{ end }}">
+{{ $itemClass := "al-sched-item" }}
+{{ if $s.isServiceSession }}{{ $itemClass = "al-sched-item is-break" }}{{ end }}
+<div class="{{ $itemClass }}">
   <div class="al-sched-time">{{ dateFormat "3:04 PM" $s.startsAt }}</div>
   <div class="al-sched-body">
     {{ if $expandable }}

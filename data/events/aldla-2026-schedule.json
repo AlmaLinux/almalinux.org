@@ -152,7 +152,10 @@
       "endsAt": "2026-07-18T14:15:00",
       "isServiceSession": false,
       "isPlenumSession": false,
-      "speakers": ["ed83e70b-d88d-4012-a76c-94121390630c"],
+      "speakers": [
+        "ed83e70b-d88d-4012-a76c-94121390630c",
+        "09c16781-8b88-4bc5-9e19-a74b66201417"
+      ],
       "categoryItems": [],
       "questionAnswers": [],
       "roomId": 79977,
@@ -206,8 +209,8 @@
       "id": "1238083",
       "title": "The Next Display Layer: A Live Preview of Amazon DCV's Future on Linux",
       "description": "The way we build Linux workstations is fundamentally evolving, and the industry's reliance on legacy display layers is drawing to a close. As studios transition toward a modern desktop future, infrastructure teams face a singular challenge: maintaining the high-performance, enterprise-grade remote protocols that our pipelines demand. \r\n\r\nIn this technical demonstration, engineered in collaboration with the remote desktop experts at NI SP GmbH, we are unveiling a critical piece of that puzzle: a live preview of the Amazon DCV beta running on the next generation of the Linux desktop stack. No fluff, no deep-dive architecture theory, just a direct look at the low-latency, high-fidelity future of remote creative workflows. \r\n\r\nIf you are mapping your studio's hardware and protocol lifecycle, this is the session you can't afford to miss.",
-      "startsAt": "2026-07-18T16:00:00",
-      "endsAt": "2026-07-18T16:30:00",
+      "startsAt": "2026-07-18T15:30:00",
+      "endsAt": "2026-07-18T16:00:00",
       "isServiceSession": false,
       "isPlenumSession": false,
       "speakers": [
@@ -258,6 +261,24 @@
       "status": null,
       "isInformed": false,
       "isConfirmed": false
+    },
+    {
+      "id": "1281840",
+      "title": "Trust, but Verify: The New Rules of Open Source",
+      "description": "For a long time, the open source world ran on trust. The xz utils backdoor changed that, and the rise of AI is making the problem even harder to ignore. We are now seeing attacks where AI tools accidentally trick developers into downloading fake, malicious code instead of real libraries. In this keynote, we will examine the future direction of open source and discuss how we can better protect our infrastructures.  Attendees will leave with practical steps to ensure they aren't falling behind in the quickly evolving AI landscape.",
+      "startsAt": "2026-07-18T16:00:00",
+      "endsAt": "2026-07-18T16:30:00",
+      "isServiceSession": false,
+      "isPlenumSession": false,
+      "speakers": ["841fe519-7caf-4814-98f3-aed0da198a05"],
+      "categoryItems": [],
+      "questionAnswers": [],
+      "roomId": 79977,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": true,
+      "isConfirmed": true
     }
   ],
   "speakers": [
@@ -370,6 +391,34 @@
       "links": [],
       "sessions": [1237960, 1265780, 1231443, 1238083],
       "fullName": "Tristan Theroux",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "841fe519-7caf-4814-98f3-aed0da198a05",
+      "firstName": "Stephen",
+      "lastName": "Winters",
+      "bio": "With over 15 years of experience within the visual effects and feature animation technology arena, Stephen Winters now serves as the Director of IT for North America at Cinesite, based out of the Montreal studio.",
+      "tagLine": "Cinesite Director of IT for North America",
+      "profilePicture": "https://sessionize.com/image/7229-400o400o1-HMLUpeydDbjknVLrvtKQzS.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [1281840],
+      "fullName": "Stephen Winters",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
+    {
+      "id": "09c16781-8b88-4bc5-9e19-a74b66201417",
+      "firstName": "Jean-Francois",
+      "lastName": "Panisset",
+      "bio": "Jean-Francois Panisset is a consulting systems engineer helping animation and visual effects companies at all levels of their technology stack. He is a member of the Visual Effects Society Technology Company where he helps run the VFX Platform effort, and leads the ASWF Continuous Integration Working Group which helps to provide tooling, build environments and processes common to ASWF open source projects.",
+      "tagLine": "ASWF Continuous Integration Working Group / VES Technology Committee",
+      "profilePicture": "https://sessionize.com/image/2542-400o400o1-ErauwiUUjXYTMqytuAHQte.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [1263836],
+      "fullName": "Jean-Francois Panisset",
       "categoryItems": [],
       "questionAnswers": []
     }

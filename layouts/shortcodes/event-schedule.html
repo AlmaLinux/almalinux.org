@@ -6,11 +6,13 @@
 {{ $key := .Page.Params.schedule_data_key }}
 {{ with index hugo.Data.events $key }}
   {{ $data := . }}
-  {{/* Cutoff = end of the lunch service session; everything before it is morning. */}}
+  {{/* Cutoff = start of the lunch service session; lunch and everything after
+    it go in the afternoon column.
+  */}}
   {{ $cutoff := "" }}
   {{ range $data.sessions }}
     {{ if and .isServiceSession (in (lower .title) "lunch") }}
-      {{ $cutoff = .endsAt }}
+      {{ $cutoff = .startsAt }}
     {{ end }}
   {{ end }}
   {{ $sorted := sort $data.sessions "startsAt" }}
