@@ -23,7 +23,7 @@ registration_button: "al-cta-blue"
 # Post-event — set to true and fill in after the event
 post_event: true
 thankyou_city: "CloudFest"
-thankyou_quote: "The warms we always feel at CloudFest is incredible. Thank you to our incredibly strong community in the webhosting world! Videos will be released soon!"
+thankyou_quote: "The warms we always feel at CloudFest is incredible. Thank you to our incredibly strong community in the webhosting world!"
 thankyou_youtube_url: "https://youtube.com/playlist?list=PLqKzWfm6zyltyQCJCBTDp425cKUIzDRA3&si=3CD6M3MQT9VtzTam"
 
 # Footer bars — omit either field to hide that bar
