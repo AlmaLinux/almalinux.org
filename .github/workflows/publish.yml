@@ -13,13 +13,13 @@ jobs:
     name: Publish to Cloudflare Pages
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Check for missing base language strings
         run: python3 find_missing_i18n_strings.py
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "0.163.2"
           extended: true
@@ -31,7 +31,7 @@ jobs:
         run: python3 tools/generate_get_almalinux_yaml.py
 
       - name: Create Pull Request for i18n string changes
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v8
         with:
           add-paths: i18n/en.json
           title: Automagic i18n string updates

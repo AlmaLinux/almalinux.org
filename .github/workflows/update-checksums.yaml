@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           persist-credentials: false
 
@@ -30,7 +30,7 @@ jobs:
           fi
 
       - name: Create or update PR for checksums
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         if: steps.check-for-changes.outputs.CHANGES_DETECTED == 'true'
         with:
           commit-message: "Update Get AlmaLinux checksums file"
