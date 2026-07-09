@@ -1,5 +1,5 @@
 ---
-title: "Two kernel vulnerabilities, Januscape and Bad Epoll: Call for testing"
+title: "Januscape and Bad Epoll: AlmaLinux 9 and 10 patches released"
 type: blog
 author:
   name: "Andrew Lukoshko"
@@ -11,6 +11,23 @@ images:
 post:
   title: "We are shipping patched kernels for two serious flaws: Januscape (CVE-2026-53359), a KVM/x86 guest-to-host escape that gives an attacker root on the host, and Bad Epoll (CVE-2026-46242), a local privilege escalation. Januscape affects every AlmaLinux release; Bad Epoll affects AlmaLinux 9 and 10. Patched kernels are in the testing repository now — please help us verify them."
   image: /blog-images/2026/2026-07-06-januscape-bad-epoll.png
+---
+
+## Update: AlmaLinux 9 and 10 patches are now in production
+
+**The patched kernels for Januscape (CVE-2026-53359) and Bad Epoll (CVE-2026-46242) have been released to the production repositories for AlmaLinux 9 and AlmaLinux 10.** On those releases you no longer need to enable the testing repo. Just run:
+
+```bash
+sudo dnf clean metadata && sudo dnf upgrade
+sudo reboot
+```
+
+The fixed versions released to production are **`kernel-5.14.0-687.23.1.el9_8`** (AlmaLinux 9) and **`kernel-6.12.0-211.31.1.el10_2`** (AlmaLinux 10), or higher. Confirm you are running the patched version with `uname -r` after rebooting. Most mirrors sync every few hours, so if the update is not available to you yet, try again a little later.
+
+**AlmaLinux 8 is still in the testing repository.** Its patched kernel has not yet moved to production; AlmaLinux 8 users should follow the testing-repo steps below (and we would still appreciate your help verifying it). We will update this post again when the AlmaLinux 8 kernel is released to production.
+
+Thanks to everyone who helped verify these patches — community testing got them into production faster than we could have managed alone.
+
 ---
 
 We are shipping patched kernels for **two** serious Linux kernel vulnerabilities and would like your help verifying them before they go to production. The first, **Januscape** ([CVE-2026-53359](https://www.cve.org/CVERecord?id=CVE-2026-53359)), is a flaw in KVM/x86 with several distinct impacts. In its most serious form it is a guest-to-host escape: an attacker who can start a virtual machine can break out and run commands as root on the host. The same bug can also be used from inside a guest to crash the host kernel, a denial of service against every other tenant on that machine. And on any host where the KVM modules are loaded and `/dev/kvm` is world-accessible at `0666`, as it is by default, an unprivileged local user can trigger it to gain root with no virtual machine in use at all. The second, **Bad Epoll** ([CVE-2026-46242](https://github.com/J-jaeyoung/bad-epoll)), is a use-after-free in the kernel's epoll subsystem that lets an unprivileged local user escalate to root.
@@ -82,11 +99,11 @@ If you encounter problems, please let us know as soon as you can, either in [Alm
 
 ## Affected versions and patched kernels
 
-| Release      | Januscape | Bad Epoll | Patched kernel                   |
-| ------------ | :-------: | :-------: | -------------------------------- |
-| AlmaLinux 8  |    yes    |    no     | `kernel-4.18.0-553.139.4.el8_10` |
-| AlmaLinux 9  |    yes    |    yes    | `kernel-5.14.0-687.20.3.el9_8`   |
-| AlmaLinux 10 |    yes    |    yes    | `kernel-6.12.0-211.30.3.el10_2`  |
+| Release      | Januscape | Bad Epoll | Patched kernel                   | Availability   |
+| ------------ | :-------: | :-------: | -------------------------------- | -------------- |
+| AlmaLinux 8  |    yes    |    no     | `kernel-4.18.0-553.139.4.el8_10` | testing        |
+| AlmaLinux 9  |    yes    |    yes    | `kernel-5.14.0-687.23.1.el9_8`   | **production** |
+| AlmaLinux 10 |    yes    |    yes    | `kernel-6.12.0-211.31.1.el10_2`  | **production** |
 
 Install the version listed for your release, or higher.
 
