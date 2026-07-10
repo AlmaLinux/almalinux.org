@@ -1,5 +1,5 @@
 ---
-title: "Januscape and Bad Epoll: AlmaLinux 9 and 10 patches released"
+title: "Januscape and Bad Epoll: Patches released"
 type: blog
 author:
   name: "Andrew Lukoshko"
@@ -13,20 +13,18 @@ post:
   image: /blog-images/2026/2026-07-06-januscape-bad-epoll.png
 ---
 
-## Update: AlmaLinux 9 and 10 patches are now in production
+## Update: All patches are now in production
 
-**The patched kernels for Januscape (CVE-2026-53359) and Bad Epoll (CVE-2026-46242) have been released to the production repositories for AlmaLinux 9 and AlmaLinux 10.** On those releases you no longer need to enable the testing repo. Just run:
+**The patched kernels for Januscape (CVE-2026-53359) and Bad Epoll (CVE-2026-46242) have been released to the production repositories for every affected AlmaLinux release — 8, 9, and 10.** You no longer need to enable the testing repo. Just run:
 
 ```bash
 sudo dnf clean metadata && sudo dnf upgrade
 sudo reboot
 ```
 
-The fixed versions released to production are **`kernel-5.14.0-687.23.1.el9_8`** (AlmaLinux 9) and **`kernel-6.12.0-211.31.1.el10_2`** (AlmaLinux 10), or higher. Confirm you are running the patched version with `uname -r` after rebooting. Most mirrors sync every few hours, so if the update is not available to you yet, try again a little later.
+The fixed versions released to production are **`kernel-4.18.0-553.141.2.el8_10`** (AlmaLinux 8), **`kernel-5.14.0-687.23.1.el9_8`** (AlmaLinux 9), and **`kernel-6.12.0-211.31.1.el10_2`** (AlmaLinux 10), or higher. Confirm you are running the patched version with `uname -r` after rebooting. Most mirrors sync every few hours, so if the update is not available to you yet, try again a little later.
 
-**AlmaLinux 8 is still in the testing repository.** Its patched kernel has not yet moved to production; AlmaLinux 8 users should follow the testing-repo steps below (and we would still appreciate your help verifying it). We will update this post again when the AlmaLinux 8 kernel is released to production.
-
-Thanks to everyone who helped verify these patches — community testing got them into production faster than we could have managed alone.
+The testing-repo instructions further down in this post remain for reference but are no longer the recommended path. Thanks to everyone who helped verify these patches — community testing got them into production faster than we could have managed alone.
 
 ---
 
@@ -101,7 +99,7 @@ If you encounter problems, please let us know as soon as you can, either in [Alm
 
 | Release      | Januscape | Bad Epoll | Patched kernel                   | Availability   |
 | ------------ | :-------: | :-------: | -------------------------------- | -------------- |
-| AlmaLinux 8  |    yes    |    no     | `kernel-4.18.0-553.139.4.el8_10` | testing        |
+| AlmaLinux 8  |    yes    |    no     | `kernel-4.18.0-553.141.2.el8_10` | **production** |
 | AlmaLinux 9  |    yes    |    yes    | `kernel-5.14.0-687.23.1.el9_8`   | **production** |
 | AlmaLinux 10 |    yes    |    yes    | `kernel-6.12.0-211.31.1.el10_2`  | **production** |
 
