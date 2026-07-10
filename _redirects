@@ -8,6 +8,9 @@
 /discord/ https://discord.gg/5aGPYDwBQA 301
 /blog/2023-9-14-election-2023/ blog/2023-09-14-election-2023/ 301
 
+# old brand book PDF now lives as an HTML page
+/branding/AlmaLinux%20BrandBook.pdf /branding/brand-book.html 301
+
 # added for marketing reasons
 /fips/ /blog/2023-09-19-fips-validation-for-almalinux/ 302
 /comparison/ https://wiki.almalinux.org/Comparison.html 302

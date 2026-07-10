@@ -1,0 +1,253 @@
+.al-branding {
+  .al-branding-hero {
+    background: $al-c-black-pearl;
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  // Tighter section rhythm on this page: ~2rem between content sections.
+  // The base al-py-md utility is declared !important, so this override must be too.
+  .al-py-md {
+    padding-block: 1rem !important;
+  }
+
+  .al-branding-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .al-branding-asset-card {
+    border: 1px solid $al-c-black-pearl-light;
+    border-radius: 0.75rem;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 160px;
+      object-fit: contain;
+      padding: 1.5rem;
+    }
+
+    &.is-light img {
+      background: $al-c-soft-peach;
+    }
+
+    &.is-dark img {
+      background: $al-c-black-pearl-dark;
+    }
+  }
+
+  .al-branding-asset-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .al-branding-asset-name {
+    font-weight: 600;
+  }
+
+  .al-branding-asset-links a {
+    margin-left: 0.5rem;
+  }
+
+  .al-branding-swatches {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 0.75rem;
+
+    // Logo colors sit a step above the compact ramps, without dominating.
+    &.al-branding-swatches--logo {
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1rem;
+
+      .al-branding-swatch-chip {
+        height: 76px;
+      }
+    }
+  }
+
+  .al-branding-swatch {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    code {
+      font-size: 0.85rem;
+    }
+  }
+
+  .al-branding-color-family {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+  }
+
+  .al-branding-color-section {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid $al-c-black-pearl-light;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba($al-c-soft-peach, 0.85);
+  }
+
+  .al-branding-colors-note {
+    color: rgba($al-c-soft-peach, 0.75);
+  }
+
+  .al-branding-swatch-chip {
+    display: block;
+    height: 52px;
+    border-radius: 0.5rem;
+    border: 1px solid $al-c-black-pearl-light;
+
+    // Blue family
+    &.is-science-blue-dark {
+      background: $al-c-science-blue-dark;
+    }
+    &.is-science-blue {
+      background: $al-c-science-blue;
+    }
+    &.is-cta-blue {
+      background: #24c2ff; // al-cta-blue; no $al-c-* token exists for it
+    }
+    &.is-science-blue-lighter {
+      background: $al-c-science-blue-lighter;
+    }
+    &.is-science-blue-light {
+      background: $al-c-science-blue-light;
+    }
+
+    // Green family
+    &.is-atlantis-dark {
+      background: $al-c-atlantis-dark;
+    }
+    &.is-atlantis {
+      background: $al-c-atlantis;
+    }
+    &.is-atlantis-lighter {
+      background: $al-c-atlantis-lighter;
+    }
+    &.is-atlantis-light {
+      background: $al-c-atlantis-light;
+    }
+
+    // Yellow family
+    &.is-candlelight-dark {
+      background: $al-c-candlelight-dark;
+    }
+    &.is-candlelight {
+      background: $al-c-candlelight;
+    }
+    &.is-candlelight-lighter {
+      background: $al-c-candlelight-lighter;
+    }
+    &.is-candlelight-light {
+      background: $al-c-candlelight-light;
+    }
+
+    // Red family
+    &.is-cyclops-dark {
+      background: $al-c-sunburnt-cyclops-dark;
+    }
+    &.is-cyclops {
+      background: $al-c-sunburnt-cyclops;
+    }
+    &.is-cyclops-lighter {
+      background: $al-c-sunburnt-cyclops-lighter;
+    }
+    &.is-cyclops-light {
+      background: $al-c-sunburnt-cyclops-light;
+    }
+
+    // Black Pearl family
+    &.is-black-pearl-dark {
+      background: $al-c-black-pearl-dark;
+    }
+    &.is-black-pearl {
+      background: $al-c-black-pearl;
+    }
+    &.is-black-pearl-lighter {
+      background: $al-c-black-pearl-lighter;
+    }
+    &.is-black-pearl-light {
+      background: $al-c-black-pearl-light;
+    }
+
+    // Surfaces
+    &.is-soft-peach {
+      background: $al-c-soft-peach;
+    }
+    &.is-body-background {
+      background: $al-body-background;
+    }
+  }
+
+  .al-branding-swatch-name {
+    font-weight: 600;
+  }
+
+  .al-branding-do,
+  .al-branding-dont {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  .al-branding-do {
+    color: $al-c-atlantis;
+  }
+
+  .al-branding-dont {
+    color: $al-c-sunburnt-cyclops-lighter;
+  }
+
+  .al-branding-voice-lead {
+    max-width: 62ch;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+
+  .al-branding-resources-intro {
+    max-width: 66ch;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .al-branding-resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .al-branding-resource-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 1.25rem;
+    border: 1px solid $al-c-black-pearl-light;
+    border-radius: 0.75rem;
+    text-decoration: none;
+
+    &:hover {
+      border-color: $al-link-color;
+    }
+  }
+
+  .al-branding-resource-title {
+    font-weight: 600;
+    color: $al-link-color;
+  }
+
+  .al-branding-resource-desc {
+    font-size: 0.9rem;
+    color: rgba($al-c-soft-peach, 0.75);
+  }
+}
