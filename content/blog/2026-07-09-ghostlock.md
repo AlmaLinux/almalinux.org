@@ -1,5 +1,5 @@
 ---
-title: "GhostLock (CVE-2026-43499) kernel privilege escalation: Call for testing"
+title: "GhostLock (CVE-2026-43499) kernel privilege escalation: Patch released"
 type: blog
 author:
   name: "Andrew Lukoshko"
@@ -11,6 +11,21 @@ images:
 post:
   title: "GhostLock (CVE-2026-43499) is a use-after-free in the kernel's real-time mutex code that lets an unprivileged local user escalate to root and escape containers. It has been present since 2011 and affects every supported AlmaLinux release. Patched kernels are in the testing repository now — please help us verify them."
   image: /blog-images/2026/2026-07-09-ghostlock.png
+---
+
+## Update: The fix is now in production
+
+**The patched kernel for GhostLock (CVE-2026-43499) has been released to the production repositories for every affected AlmaLinux release — 8, 9, and 10.** You no longer need to enable the testing repo. Just run:
+
+```bash
+sudo dnf clean metadata && sudo dnf upgrade
+sudo reboot
+```
+
+The fixed versions released to production are **`kernel-4.18.0-553.141.2.el8_10`** (AlmaLinux 8), **`kernel-5.14.0-687.24.1.el9_8`** (AlmaLinux 9), and **`kernel-6.12.0-211.32.1.el10_2`** (AlmaLinux 10), or higher. Confirm you are running the patched version with `uname -r` after rebooting. Most mirrors sync every few hours, so if the update is not available to you yet, try again a little later.
+
+The testing-repo instructions further down in this post remain for reference but are no longer the recommended path. Thanks to everyone who helped verify this patch — community testing got it into production faster than we could have managed alone.
+
 ---
 
 A new Linux kernel local-privilege-escalation flaw has been disclosed, and we are shipping patched kernels for it. **GhostLock** ([CVE-2026-43499](https://www.cve.org/CVERecord?id=CVE-2026-43499)) is a use-after-free in the kernel's real-time mutex (rtmutex) priority-inheritance code. An unprivileged local user can exploit it to gain root, and it works from inside a container to escape to the host. No special capabilities are required. **Every supported AlmaLinux release (8, 9, and 10) is affected.** Patched kernels are available in the testing repository today, and we would like your help verifying them before we push them to production.
@@ -73,8 +88,8 @@ If you encounter problems, please let us know as soon as you can, either in [Alm
 All supported AlmaLinux releases are affected:
 
 - **AlmaLinux 8** is patched in `kernel-4.18.0-553.141.2.el8_10` and above.
-- **AlmaLinux 9** is patched in `kernel-5.14.0-687.23.2.el9_8` and above.
-- **AlmaLinux 10** is patched in `kernel-6.12.0-211.31.2.el10_2` and above.
+- **AlmaLinux 9** is patched in `kernel-5.14.0-687.24.1.el9_8` and above.
+- **AlmaLinux 10** is patched in `kernel-6.12.0-211.32.1.el10_2` and above.
 
 Install the version listed for your release, or higher.
 
