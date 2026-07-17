@@ -1,10 +1,10 @@
 # AlmaLinux.org Design System
 
-Version 1.0 · Last updated 2026-07-09
+Version 1.0 · Last updated 2026-07-16
 
 Adopted by: _pending Marketing SIG approval (date recorded on adoption)_
 
-A reference for contributors working on the almalinux.org website: brand colors, components, and the conventions that keep the site consistent.
+A reference for contributors working on the almalinux.org website: brand colors, components, and the conventions that keep the site consistent. It complements the AlmaLinux Brand Book: the Brand Book defines the brand itself (identity, print, intent), while this document is the implementation reference for the website's code. Where the two overlap, the Brand Book is authoritative (see [§3](#3-logo-and-brand-assets)).
 
 ## Table of contents
 
@@ -35,7 +35,7 @@ When you weigh a tradeoff (thorough versus fast, refactor versus ship, add a tes
 
 ## 2. Brand colors
 
-The palette below is generated from `assets/scss/variables.scss`, the single source of truth. Edit colors there (including the `// @usage` comments), then run `npm run generate:design-colors` to refresh this table.
+The palette below is generated from `assets/scss/variables.scss`, the source of truth for the palette as implemented on the site. The AlmaLinux Brand Book defines the intended brand colors; where the two disagree, the Brand Book wins (see [§3](#3-logo-and-brand-assets)). Edit colors in `variables.scss` (including the `// @usage` comments), then run `npm run generate:design-colors` to refresh this table.
 
 <!-- BEGIN GENERATED: brand-colors -->
 
@@ -56,32 +56,34 @@ The palette below is generated from `assets/scss/variables.scss`, the single sou
 
 ### Brand palette
 
-| Variable                         | Hex       | Usage                                         |
-| -------------------------------- | --------- | --------------------------------------------- |
-| `$al-c-science-blue`             | `#0069da` | Brand blue, same value as brand-primary       |
-| `$al-c-science-blue-dark`        | `#004bbc` | Darker blue, hover/pressed states             |
-| `$al-c-science-blue-lighter`     | `#1e87f8` | Lighter blue, subtle accents                  |
-| `$al-c-science-blue-light`       | `#2891ff` | Lightest blue, backgrounds and tints          |
-| `$al-c-atlantis`                 | `#86da2f` | Brand green, same value as brand-secondary    |
-| `$al-c-atlantis-dark`            | `#68bc11` | Darker green, hover/pressed states            |
-| `$al-c-atlantis-lighter`         | `#a4f84d` | Lighter green, subtle accents                 |
-| `$al-c-atlantis-light`           | `#aeff57` | Lightest green, backgrounds and tints         |
-| `$al-c-candlelight`              | `#ffcb12` | Brand yellow, same value as brand-tertiary    |
-| `$al-c-candlelight-dark`         | `#e1ad00` | Darker yellow, hover/pressed states           |
-| `$al-c-candlelight-lighter`      | `#ffe930` | Lighter yellow, subtle accents                |
-| `$al-c-candlelight-light`        | `#fff33a` | Lightest yellow, backgrounds and tints        |
-| `$al-c-black-pearl`              | `#082336` | Dark surface, deep-band section backgrounds   |
-| `$al-c-black-pearl-dark`         | `#000518` | Darkest surface, near-black fills and text    |
-| `$al-c-black-pearl-lighter`      | `#264154` | Lighter dark surface, raised cards            |
-| `$al-c-black-pearl-light`        | `#304b5e` | Lightest dark surface, borders on dark        |
-| `$al-c-soft-peach`               | `#faf5f5` | Light surface, light-band section backgrounds |
-| `$al-c-soft-peach-dark`          | `#dcd7d7` | Muted light surface, borders on light         |
-| `$al-c-soft-peach-lighter`       | `#ffffff` | White, light cards and fills                  |
-| `$al-c-soft-peach-light`         | `#ffffff` | White, light surfaces                         |
-| `$al-c-sunburnt-cyclops`         | `#ff4649` | Error and danger states                       |
-| `$al-c-sunburnt-cyclops-dark`    | `#e1282b` | Darker red, error hover/pressed               |
-| `$al-c-sunburnt-cyclops-lighter` | `#ff6467` | Lighter red, error accents                    |
-| `$al-c-sunburnt-cyclops-light`   | `#ff6e71` | Lightest red, error backgrounds               |
+| Variable                         | Hex       | Usage                                                                |
+| -------------------------------- | --------- | -------------------------------------------------------------------- |
+| `$al-c-science-blue`             | `#0069da` | Brand blue, same value as brand-primary                              |
+| `$al-c-science-blue-dark`        | `#004bbc` | Darker blue, hover/pressed states                                    |
+| `$al-c-science-blue-lighter`     | `#1e87f8` | Lighter blue, subtle accents                                         |
+| `$al-c-science-blue-light`       | `#2891ff` | Lightest blue, backgrounds and tints                                 |
+| `$al-c-cta-blue`                 | `#24c2ff` | Bright CTA button blue (al-cta-blue); logo light blue, Pantone 298 C |
+| `$al-c-cta-blue-dark`            | `#0bbbff` | CTA blue hover/pressed state                                         |
+| `$al-c-atlantis`                 | `#86da2f` | Brand green, same value as brand-secondary                           |
+| `$al-c-atlantis-dark`            | `#68bc11` | Darker green, hover/pressed states                                   |
+| `$al-c-atlantis-lighter`         | `#a4f84d` | Lighter green, subtle accents                                        |
+| `$al-c-atlantis-light`           | `#aeff57` | Lightest green, backgrounds and tints                                |
+| `$al-c-candlelight`              | `#ffcb12` | Brand yellow, same value as brand-tertiary                           |
+| `$al-c-candlelight-dark`         | `#e1ad00` | Darker yellow, hover/pressed states                                  |
+| `$al-c-candlelight-lighter`      | `#ffe930` | Lighter yellow, subtle accents                                       |
+| `$al-c-candlelight-light`        | `#fff33a` | Lightest yellow, backgrounds and tints                               |
+| `$al-c-black-pearl`              | `#082336` | Dark surface, deep-band section backgrounds                          |
+| `$al-c-black-pearl-dark`         | `#000518` | Darkest surface, near-black fills and text                           |
+| `$al-c-black-pearl-lighter`      | `#264154` | Lighter dark surface, raised cards                                   |
+| `$al-c-black-pearl-light`        | `#304b5e` | Lightest dark surface, borders on dark                               |
+| `$al-c-soft-peach`               | `#faf5f5` | Light surface, light-band section backgrounds                        |
+| `$al-c-soft-peach-dark`          | `#dcd7d7` | Muted light surface, borders on light                                |
+| `$al-c-soft-peach-lighter`       | `#ffffff` | White, light cards and fills                                         |
+| `$al-c-soft-peach-light`         | `#ffffff` | White, light surfaces                                                |
+| `$al-c-sunburnt-cyclops`         | `#ff4649` | Error and danger states                                              |
+| `$al-c-sunburnt-cyclops-dark`    | `#e1282b` | Darker red, error hover/pressed                                      |
+| `$al-c-sunburnt-cyclops-lighter` | `#ff6467` | Lighter red, error accents                                           |
+| `$al-c-sunburnt-cyclops-light`   | `#ff6e71` | Lightest red, error backgrounds                                      |
 
 <!-- END GENERATED: brand-colors -->
 
@@ -124,7 +126,7 @@ Print (spot color) equivalents from the AlmaLinux Brand Book. Hex is the source 
 | `$al-c-black-pearl-lighter`      | `#264154` | 7477 C     |
 | `$al-c-black-pearl-light`        | `#304b5e` | 4161 C     |
 
-The CTA / light blue `#24c2ff` (Pantone 298 C) is a Brand Book logo color; it is not a `variables.scss` token today (it is defined in `_bundle-extras.scss` as `al-cta-blue`).
+The CTA / light blue (`#24c2ff`, Pantone 298 C) is a Brand Book logo color, stored as the `$al-c-cta-blue` token in `variables.scss` and used by the `al-cta-blue` button class.
 
 ## 3. Logo and brand assets
 
@@ -134,7 +136,14 @@ The AlmaLinux brand assets live in `static/branding/`. The **AlmaLinux Brand Boo
 
 **Icon (the "A" mark).** The standalone mark is `static/branding/AlmaLinux Icon.svg` (and `.png`), with a circular variant `AlmaLinux Icon Circle.svg` and monochrome `icon-bw.svg` / `icon-gray.svg`. The footer uses the small mark at `/images/icon.svg`.
 
-**"Powered by AlmaLinux" badges.** For showing that a project or product runs on AlmaLinux, use the ready-made badges: `Powered-by-AL-White` and `Powered-by-Dark-AL` (each in SVG, PNG, and PDF). Do not recreate these by hand.
+**"Powered by AlmaLinux" badges.** For showing that a project or product runs on AlmaLinux, use the ready-made badges (do not recreate them by hand). Each comes in SVG, PNG, and PDF in `static/branding/`; the paths below are the same files the site serves from `/branding/`, so updating a badge carries to both places.
+
+| Badge                                                                         | Use on                                   |
+| ----------------------------------------------------------------------------- | ---------------------------------------- |
+| ![Powered by AlmaLinux, white badge](static/branding/Powered-by-AL-White.svg) | Dark backgrounds (`Powered-by-AL-White`) |
+| ![Powered by AlmaLinux, dark badge](static/branding/Powered-by-Dark-AL.svg)   | Light backgrounds (`Powered-by-Dark-AL`) |
+
+The white badge is meant for dark backgrounds, so it will look faint or near-invisible against GitHub's light document background. That is expected: view it on a dark surface (or in GitHub dark mode) to see it properly.
 
 **Favicons and app icons.** The full favicon set lives in `static/fav/` (`favicon.ico`, 16/32 PNGs, `apple-touch-icon.png`, the `android-chrome` sizes, `safari-pinned-tab.svg`, and `site.webmanifest`). If the icon ever changes, regenerate the whole set together so every platform stays consistent.
 
@@ -159,12 +168,16 @@ The four paid tiers use one accent across both pages:
 | Gold     | `#e9b94a` | Muted gold    | `members.scss` `[data-tier="gold"]` + dot   |
 | Platinum | `#e8eef5` | Silvery white | `members.scss` `.is-platinum` + dot         |
 
-The two free tiers (Individual and Mirror) are shown differently on each page and do not share a single accent:
+The two free tiers (Individual and Mirror) currently use different accents on each page:
 
-- On `/members` they are spotlight cards: Individual uses `--accent: #86da2f` (atlantis green), Mirror uses `--accent: #ffcb12` (candlelight yellow).
+- On `/members` they are spotlight cards: Individual `--accent: #86da2f` (atlantis green), Mirror `--accent: #ffcb12` (candlelight yellow).
 - On `/foundation` they are list rows with a colored dot: Individual `#c4e1ff`, Mirror `#86da2f`.
 
+Individual's accent differing between the two pages is a known inconsistency to reconcile after this lands (see the post-launch cleanup list).
+
 Implementation: the paid-tier accents are set through `[data-tier="..."]` attribute selectors (and `.is-platinum`) in `assets/scss/members.scss`; the foundation tier list sets its dot colors inline in `layouts/foundation/single.html`. There is no shared `--tier-accent` custom property today. When you add a tier or show tiers on a new page, reuse the paid-tier hexes above so a tier stays recognizable across the site.
+
+Platinum is the exception to the pattern: its dot and card use the `.is-platinum` class, while the `/members` comparison matrix uses `[data-tier="platinum"]`. Unifying these onto one selector is on the post-launch cleanup list.
 
 Accessibility: the Ruby accent started as a darker red that failed contrast against the dark card background and was corrected to `#ff6e71`. That is why every tier accent needs a contrast check against the surface it sits on (see [§14](#14-accessibility)).
 
@@ -416,3 +429,4 @@ The point is big, legible type: these slides are read from the back of a room, s
 - **(2026-07-06):** Added a note pointing to the public /branding assets page.
 - **(2026-07-07):** Added the Pantone reference from the Brand Book and corrected the brand red to `#ff4649`.
 - **(2026-07-09):** Added the Presentations section, and required a stable `id` on major page sections.
+- **(2026-07-16):** Promoted the CTA blue to the `$al-c-cta-blue` token, embedded the "Powered by AlmaLinux" badges, clarified the Brand Book relationship and the platinum tier selector, and reworded the palette source-of-truth and free-tier accent notes (review feedback on PR #1101).

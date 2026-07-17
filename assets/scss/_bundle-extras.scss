@@ -6,11 +6,11 @@
 // CTA button variants. Color only; spacing is the template's job
 // via Bootstrap utilities (gap, m*, me-*, etc.).
 .al-cta-blue {
-  background: #24c2ff;
+  background: $al-c-cta-blue;
   color: #222222;
 
   &:hover {
-    background: #0bbbff;
+    background: $al-c-cta-blue-dark;
   }
 }
 

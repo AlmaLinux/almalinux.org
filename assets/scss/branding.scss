@@ -117,7 +117,7 @@
       background: $al-c-science-blue;
     }
     &.is-cta-blue {
-      background: #24c2ff; // al-cta-blue; no $al-c-* token exists for it
+      background: $al-c-cta-blue;
     }
     &.is-science-blue-lighter {
       background: $al-c-science-blue-lighter;
