@@ -6,11 +6,11 @@
 // CTA button variants. Color only; spacing is the template's job
 // via Bootstrap utilities (gap, m*, me-*, etc.).
 .al-cta-blue {
-  background: #24c2ff;
+  background: $al-c-cta-blue;
   color: #222222;
 
   &:hover {
-    background: #0bbbff;
+    background: $al-c-cta-blue-dark;
   }
 }
 
@@ -546,4 +546,22 @@ a:hover {
   font-size: 0.82rem;
   color: #c4e1ff;
   line-height: 1.3;
+}
+
+// Section anchor indicator: a small "#" beside a heading that links to the
+// section's id. Subtle by default, full-strength on hover or focus.
+// Background-agnostic via inherited color plus opacity.
+.al-anchor {
+  margin-left: 0.4rem;
+  font-size: 0.7em;
+  font-weight: 400;
+  color: inherit;
+  opacity: 0.35;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
 }
