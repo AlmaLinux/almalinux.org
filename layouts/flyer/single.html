@@ -193,6 +193,25 @@
         padding-left: 18px;
       }
 
+      .flyer-rpi-models {
+        columns: 2;
+        column-gap: 20px;
+      }
+
+      /* Back page: RPi + Contribute stacked, SIG map beside them */
+      .flyer-back-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        align-items: center;
+      }
+
+      .flyer-back-left {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
       .flyer-card a {
         font-weight: 600;
       }
@@ -464,14 +483,14 @@
             >{{ i18n "RHEL Compatible, Not a Copy" }}
           </h2>
           <p>
-            {{ i18n "We promise complete compatibility with RHEL, but with the freedom to serve our community without restriction. We match Red Hat in software versions, release cycles, and version numbers — and we go further by adding bugfixes, re-enabling hardware support, and restoring software features dropped from RHEL." }}
+            {{ i18n "We promise complete compatibility with RHEL, but with the freedom to serve our community without restriction. We match Red Hat in software versions, release cycles, and version numbers, and we go further by adding bugfixes, re-enabling hardware support, and restoring software features dropped from RHEL." }}
           </p>
         </div>
 
         <div class="flyer-card">
           <h2>
             <i class="bi bi-lightning"></i
-            >{{ i18n "Features RHEL Dropped — We Kept" }}
+            >{{ i18n "Features RHEL Dropped, We Kept" }}
           </h2>
           <ul>
             <li>{{ i18n "140+ legacy storage & network device drivers" }}</li>
@@ -492,7 +511,7 @@
             >{{ i18n "Fast Releases, Trusted Testing" }}
           </h2>
           <p>
-            {{ i18n "We release typically within 1 week of Red Hat, for major and minor versions. We can do this because we have built automated, trusted testing that kicks off immediately. Our open source build system (ALBS) generates errata, signs packages, and builds for all supported platforms — including SBOMs." }}
+            {{ i18n "We release typically within 1 week of Red Hat, for major and minor versions. We can do this because we have built automated, trusted testing that kicks off immediately. Our open source build system (ALBS) generates errata, signs packages, and builds for all supported platforms, including SBOMs." }}
           </p>
         </div>
 
@@ -501,7 +520,7 @@
             <i class="bi bi-shield-lock"></i>{{ i18n "Security & Compliance" }}
           </h2>
           <p>
-            {{ i18n "AlmaLinux OS 9.2 is FIPS 140-3 validated and on the NIST Active list. We provide full errata, OVAL streams for security scanners, and OpenSCAP support both during and after installation — features CentOS Linux never had." }}
+            {{ i18n "AlmaLinux OS 9.2 is FIPS 140-3 validated and on the NIST Active list. We provide full errata, OVAL streams for security scanners, and OpenSCAP support both during and after installation, features CentOS Linux never had." }}
           </p>
           <div class="flyer-card-links">
             <a href="https://almalinux.org/security">almalinux.org/security</a>
@@ -535,9 +554,9 @@
           </h2>
           <p>{{ i18n "Companies around the world build on AlmaLinux:" }}</p>
           <ul>
-            <li>{{ i18n "Arista Networks — EOS network operating system" }}</li>
-            <li>{{ i18n "Cisco — Unified Communications Manager" }}</li>
-            <li>{{ i18n "CERN — particle physics research" }}</li>
+            <li>{{ i18n "Arista Networks: EOS network operating system" }}</li>
+            <li>{{ i18n "Cisco: Unified Communications Manager" }}</li>
+            <li>{{ i18n "CERN: particle physics research" }}</li>
             <li>{{ i18n "Meta, Verizon, Chevron, Zoom" }}</li>
             <li>{{ i18n "CloudLinux, HeliumOS, stillOS, Oreon OS" }}</li>
           </ul>
@@ -549,7 +568,7 @@
             >{{ i18n "Easy Migration with ELevate" }}
           </h2>
           <p>
-            {{ i18n "ELevate makes it easy to migrate from CentOS, or upgrade between major versions of AlmaLinux — in place, with a single tool." }}
+            {{ i18n "ELevate makes it easy to migrate from CentOS, or upgrade between major versions of AlmaLinux, in place, with a single tool." }}
           </p>
           <img
             src="/images/elevate.svg"
@@ -591,7 +610,7 @@
             >{{ i18n "Support: Community & Enterprise" }}
           </h2>
           <p>
-            {{ i18n "A vast community of experts supports AlmaLinux users through chat, forums, and mailing lists. Enterprise support is available from TuxCare and Cybertrust Japan — partners who are actually involved in building AlmaLinux." }}
+            {{ i18n "A vast community of experts supports AlmaLinux users through chat, forums, and mailing lists. Enterprise support is available from TuxCare and Cybertrust Japan, partners who are actually involved in building AlmaLinux." }}
           </p>
           <div class="flyer-card-links">
             <a href="https://almalinux.org/support">almalinux.org/support</a>
@@ -610,25 +629,55 @@
         </div>
       </div>
 
-      <!-- Contribute section with SIG diagram -->
-      <div class="flyer-columns" style="margin-top: 16px;">
-        <div class="flyer-card">
-          <h2>
-            <i class="bi bi-code-slash"></i
-            >{{ i18n "Contribute to AlmaLinux!" }}
-          </h2>
-          <p>
-            {{ i18n "Whether you're an engineer, sysadmin, marketer, designer, or translator — there's a SIG for you. Help with testing, documentation, packaging, events, or website updates. Companies can join as sponsor members." }}
-          </p>
-          <div class="flyer-card-links">
-            <a href="https://almalinux.org/contribute"
-              >almalinux.org/contribute</a
-            >
-            <a href="https://wiki.almalinux.org/sigs/"
-              >wiki.almalinux.org/sigs</a
-            >
+      <!-- RPi + Contribute stacked, SIG map beside them -->
+      <div class="flyer-back-grid" style="margin-top: 16px;">
+        <div class="flyer-back-left">
+          <!-- Raspberry Pi support -->
+          <div class="flyer-card">
+            <h2>
+              <i class="bi bi-cpu"></i
+              ><a
+                href="https://wiki.almalinux.org/documentation/raspberry-pi.html"
+                style="color: inherit;"
+                >{{ i18n "Raspberry Pi support" }}</a
+              >
+            </h2>
+            <p>
+              {{ i18n "AlmaLinux OS releases are tested on these Raspberry Pi models:" }}
+            </p>
+            <ul class="flyer-rpi-models">
+              <li>
+                Raspberry Pi 5 ({{ i18n "supported since June 2024 images" }})
+              </li>
+              <li>Raspberry Pi 500, 500+</li>
+              <li>Raspberry Pi 4 Model B</li>
+              <li>Raspberry Pi 400</li>
+              <li>Raspberry Pi 3 Model B+</li>
+              <li>Raspberry Pi 3 Model A+</li>
+            </ul>
+          </div>
+
+          <!-- Contribute -->
+          <div class="flyer-card">
+            <h2>
+              <i class="bi bi-code-slash"></i
+              >{{ i18n "Contribute to AlmaLinux!" }}
+            </h2>
+            <p>
+              {{ i18n "Whether you're an engineer, sysadmin, marketer, designer, or translator, there's a SIG for you. Help with testing, documentation, packaging, events, or website updates. Companies can join as sponsor members." }}
+            </p>
+            <div class="flyer-card-links">
+              <a href="https://almalinux.org/contribute"
+                >almalinux.org/contribute</a
+              >
+              <a href="https://wiki.almalinux.org/sigs/"
+                >wiki.almalinux.org/sigs</a
+              >
+            </div>
           </div>
         </div>
+
+        <!-- SIG map -->
         <div>
           <img
             src="/images/flyer-sigs.svg"

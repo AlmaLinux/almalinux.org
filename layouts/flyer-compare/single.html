@@ -139,6 +139,14 @@
         font-size: 10px;
       }
 
+      .flyer-th-logo {
+        height: 11px;
+        width: auto;
+        vertical-align: middle;
+        margin-right: 3px;
+        filter: brightness(0) invert(1);
+      }
+
       .flyer-table tbody td {
         padding: 5px 8px;
         text-align: center;
@@ -468,18 +476,43 @@
 
       <div class="flyer-content">
         <p class="flyer-intro">
-          {{ i18n "Choosing an enterprise Linux distribution matters. AlmaLinux OS is a 100% free, community-owned, production-grade distribution built for every workload — from edge devices to the cloud. Here's how we compare." }}
+          {{ i18n "Choosing an enterprise Linux distribution matters. AlmaLinux OS is a 100% free, community-owned, production-grade distribution built for every workload, from edge devices to the cloud. Here's how we compare." }}
         </p>
 
         <table class="flyer-table">
           <thead>
             <tr>
               <th></th>
-              <th class="alma-col">AlmaLinux</th>
-              <th>Red Hat</th>
-              <th>Ubuntu</th>
-              <th>Debian</th>
-              <th>Rocky Linux</th>
+              <th class="alma-col">
+                <img
+                  class="flyer-th-logo"
+                  src="/images/icon-almalinux-black.svg"
+                  alt="" />AlmaLinux
+              </th>
+              <th>
+                <img
+                  class="flyer-th-logo"
+                  src="/brands/distro-redhat.svg"
+                  alt="" />Red Hat
+              </th>
+              <th>
+                <img
+                  class="flyer-th-logo"
+                  src="/brands/distro-ubuntu.svg"
+                  alt="" />Ubuntu
+              </th>
+              <th>
+                <img
+                  class="flyer-th-logo"
+                  src="/brands/distro-debian.svg"
+                  alt="" />Debian
+              </th>
+              <th>
+                <img
+                  class="flyer-th-logo"
+                  src="/brands/distro-rocky.svg"
+                  alt="" />Rocky Linux
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -589,7 +622,7 @@
             <tr>
               <td>
                 {{ i18n "FIPS 140-3 validated" }}<span
-                  >{{ i18n "On the NIST active list — required for government & finance" }}</span
+                  >{{ i18n "On the NIST active list, required for government & finance" }}</span
                 >
               </td>
               <td class="alma-col">
@@ -611,7 +644,7 @@
             <tr>
               <td>
                 {{ i18n "140+ legacy drivers restored" }}<span
-                  >{{ i18n "Hardware support RHEL dropped — AlmaLinux brought back" }}</span
+                  >{{ i18n "Hardware support RHEL dropped, AlmaLinux brought back" }}</span
                 >
               </td>
               <td class="alma-col">
@@ -692,7 +725,7 @@
             </h2>
             <ul>
               <li>
-                {{ i18n "1:1 RHEL compatibility — certified workloads run without changes" }}
+                {{ i18n "1:1 RHEL compatibility: certified workloads run without changes" }}
               </li>
               <li>
                 {{ i18n "FIPS 140-3 validated for government and regulated industries" }}
@@ -704,7 +737,7 @@
                 {{ i18n "Available on AWS, Azure, Google Cloud, and Oracle Cloud" }}
               </li>
               <li>
-                {{ i18n "No per-socket or per-node subscription fees — ever" }}
+                {{ i18n "No per-socket or per-node subscription fees, ever" }}
               </li>
               <li>
                 {{ i18n "Used by CERN, Arista Networks, Cisco, Verizon, and Zoom" }}
@@ -727,7 +760,7 @@
                 {{ i18n "Zero licensing cost frees budget for your actual mission" }}
               </li>
               <li>
-                {{ i18n "501(c)(6) non-profit governance — no corporate agenda" }}
+                {{ i18n "501(c)(6) non-profit governance, no corporate agenda" }}
               </li>
               <li>
                 {{ i18n "10-year support means fewer disruptive upgrades" }}
@@ -756,7 +789,7 @@
             </h2>
             <ul>
               <li>
-                {{ i18n "Free forever — perfect for homelab and self-hosting" }}
+                {{ i18n "Free forever, perfect for homelab and self-hosting" }}
               </li>
               <li>{{ i18n "Runs on Raspberry Pi, x86, ARM, and more" }}</li>
               <li>
@@ -767,7 +800,7 @@
                 {{ i18n "Learn enterprise Linux skills that translate to the job market" }}
               </li>
               <li>
-                {{ i18n "Welcoming community — join a SIG and contribute back" }}
+                {{ i18n "Welcoming community: join a SIG and contribute back" }}
               </li>
             </ul>
             <div class="flyer-card-links">
@@ -785,27 +818,27 @@
           </h2>
           <div class="flyer-quote-grid">
             <div class="flyer-quote">
-              {{ i18n "A gentler approach to decisions, people, and progress — and involvement in the Red Hat ecosystem that promotes coexistence rather than anti-sentiments." }}
+              {{ i18n "A gentler approach to decisions, people, and progress, and involvement in the Red Hat ecosystem that promotes coexistence rather than anti-sentiments." }}
               <span class="flyer-quote-attribution"
-                >— {{ i18n "AlmaLinux community member" }}</span
+                >{{ i18n "AlmaLinux community member" }}</span
               >
             </div>
             <div class="flyer-quote">
               {{ i18n "The amazing opportunity to be autonomous rather than a mere clone of RHEL. The recent support for additional hardware is an epitome of possible benefits." }}
               <span class="flyer-quote-attribution"
-                >— {{ i18n "AlmaLinux community member" }}</span
+                >{{ i18n "AlmaLinux community member" }}</span
               >
             </div>
             <div class="flyer-quote">
               {{ i18n "AlmaLinux chose not to join hands with corporates in source code matters. Production-grade by design, with real RHEL application-level compatibility." }}
               <span class="flyer-quote-attribution"
-                >— {{ i18n "AlmaLinux community member" }}</span
+                >{{ i18n "AlmaLinux community member" }}</span
               >
             </div>
             <div class="flyer-quote">
               {{ i18n "CentOS almost had all these characteristics when I started using it in 2012. After studying the options, I believed AlmaLinux would be a genuine replacement." }}
               <span class="flyer-quote-attribution"
-                >— {{ i18n "AlmaLinux community member" }}</span
+                >{{ i18n "AlmaLinux community member" }}</span
               >
             </div>
           </div>
