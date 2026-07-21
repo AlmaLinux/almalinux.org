@@ -15,21 +15,4 @@
     }
   }
 
-  .al-cta-chat {
-    background: $al-c-atlantis;
-    color: #222222;
-
-    &:hover {
-      background: darken($al-c-atlantis, 5%);
-    }
-  }
-
-  .al-member-button {
-    background: $al-c-atlantis;
-    color: #222222;
-
-    &:hover {
-      background: darken($al-c-atlantis, 5%);
-    }
-  }
 }

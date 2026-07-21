@@ -1,0 +1,120 @@
+// Styling for the custom two-column (morning / afternoon) event schedule rendered
+// by the event-schedule shortcode from a Sessionize "view/All" JSON export.
+// Scoped under .al-schedule; dark event theme to match the rest of the page.
+
+$al-sched-accent: #24c2ff; // matches the accent used elsewhere on the LA page
+$al-sched-panel: $al-c-black-pearl; // #082336
+$al-sched-panel-2: $al-c-black-pearl-lighter; // #264154
+$al-sched-text: $al-c-soft-peach; // near-white
+$al-sched-muted: rgba($al-c-soft-peach, 0.65);
+
+.al-schedule {
+  &__note {
+    font-size: 0.85rem;
+    color: $al-sched-muted;
+    margin-bottom: 1.25rem;
+  }
+
+  &__heading {
+    font-family: $al-font-family-accent;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $al-sched-accent;
+    margin-bottom: 1rem;
+  }
+}
+
+.al-sched-item {
+  display: flex;
+  gap: 0.9rem;
+  background: $al-sched-panel;
+  border: 1px solid rgba($al-sched-text, 0.1);
+  border-left: 4px solid $al-sched-accent;
+  border-radius: 8px;
+  padding: 0.7rem 0.9rem;
+  margin-bottom: 0.75rem;
+  color: $al-sched-text;
+
+  // Breaks / registration / lunch: quieter, no accent bar.
+  &.is-break {
+    background: rgba($al-sched-panel-2, 0.4);
+    border-left-color: rgba($al-sched-text, 0.25);
+    color: $al-sched-muted;
+
+    .al-sched-title {
+      font-weight: 500;
+    }
+  }
+}
+
+.al-sched-time {
+  flex: 0 0 5rem;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.85rem;
+  color: $al-sched-muted;
+  padding-top: 0.1rem;
+}
+
+.al-sched-title {
+  font-family: $al-font-family-accent;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.al-sched-speakers {
+  margin-top: 0.15rem;
+  font-size: 0.85rem;
+  color: $al-sched-accent;
+}
+
+// Expandable abstract toggle (Bootstrap collapse, like the homepage FAQ)
+.al-sched-toggle {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0;
+  background: none;
+  border: 0;
+  text-align: left;
+  color: inherit;
+  cursor: pointer;
+
+  .al-sched-chevron {
+    flex: none;
+    font-size: 0.8rem;
+    color: $al-sched-accent;
+    transition: transform 0.15s ease;
+  }
+
+  &[aria-expanded="true"] .al-sched-chevron {
+    transform: rotate(180deg);
+  }
+
+  &:hover .al-sched-title {
+    color: $al-sched-accent;
+  }
+}
+
+.al-sched-desc {
+  margin-top: 0.55rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: $al-sched-muted;
+
+  &--inline {
+    margin-top: 0.3rem;
+    font-size: 0.85rem;
+  }
+
+  p {
+    margin-bottom: 0.6rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

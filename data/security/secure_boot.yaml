@@ -1,0 +1,23 @@
+# AlmaLinux Secure Boot signing certificates, shown on /security.
+# Hand-maintained. expired: true shows the "Expired but remains a trusted key" note.
+- name: "almalinux-sb-cert-1.der"
+  url: "https://git.almalinux.org/rpms/shim-unsigned-x64/raw/branch/a8/SOURCES/almalinux-sb-cert-1.der"
+  signed_for: "AlmaLinux OS Foundation"
+  verified_by: "Sectigo Public Code Signing CA EV R36"
+  expiry_label: "Expired"
+  expiry_date: "30.01.2025"
+  expired: true
+- name: "almalinux-sb-cert-2.der"
+  url: "https://git.almalinux.org/rpms/shim-unsigned-x64/raw/branch/a8/SOURCES/almalinux-sb-cert-2.der"
+  signed_for: "AlmaLinux OS Foundation"
+  verified_by: "SSL.com EV Code Signing Intermediate CA RSA"
+  expiry_label: "Expired"
+  expiry_date: "19.01.2025"
+  expired: true
+- name: "almalinux-sb-cert-3.der"
+  url: "https://git.almalinux.org/rpms/shim-unsigned-x64/raw/branch/a8/SOURCES/almalinux-sb-cert-3.der"
+  signed_for: "AlmaLinux Secure Boot CA"
+  verified_by: "AlmaLinux Secure Boot CA"
+  expiry_label: "Expires"
+  expiry_date: "14.03.2034"
+  expired: false

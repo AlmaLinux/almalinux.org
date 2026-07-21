@@ -3,9 +3,6 @@
   <section>
     <div class="al-body-container">
       <section class="al-page-index">
-        {{ if .Params.post_event }}
-          {{ partial "event-day/thankyou.html" . }}
-        {{ end }}
         {{ partial "event-day/hero.html" . }}
         <div class="al-index-register">
           <div class="container al-py-md px-5">
@@ -14,6 +11,7 @@
         </div>
         {{ partial "event-day/speakers.html" . }}
         {{ partial "event-day/sponsors.html" . }}
+        {{ partial "event-day/media-sponsors.html" . }}
         {{ partial "event-day/cant-make-it.html" . }}
         {{ partial "event-day/footer-bar.html" . }}
       </section>

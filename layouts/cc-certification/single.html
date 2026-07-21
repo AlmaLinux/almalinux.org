@@ -1,0 +1,185 @@
+{{ define "main" }}
+  <main class="al-body-container al-ccc">
+    {{/* 1. Hero (matches the foundation/VFX hero pattern: copy + media space) */}}
+    <section id="ccc-hero" class="al-foundation-band-deep al-py-lg">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-7">
+            <h1 class="display-5 fw-bold mb-4">
+              {{ i18n "AlmaLinux OS is Common Criteria certified" }}
+            </h1>
+            <p class="lead mb-4">
+              {{ i18n "AlmaLinux OS 9.2 has been certified under Common Criteria (ISO/IEC 15408) in partnership with Cybertrust Inc. It is the first certification of its kind for an operating system in Japan." }}
+            </p>
+            <p>
+              <a
+                href="https://chat.almalinux.org"
+                class="btn btn-primary btn-lg me-2">
+                {{ i18n "Get involved" }}
+              </a>
+              <a
+                href="https://www.ipa.go.jp/en/security/jisec/software/certified-cert/c0869_it5912.html"
+                class="btn btn-outline-light btn-lg"
+                target="_blank"
+                rel="noopener">
+                {{ i18n "Verify the certificate" }}
+              </a>
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <img
+              class="al-ccc-hero-img"
+              src="/images/security/cc-certification.png"
+              alt="{{ i18n "AlmaLinux OS 9.2 Common Criteria EAL1 certified badge" }}" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{/* 2. Intro paragraph beside the At-a-glance info box (2/3 + 1/3) */}}
+    <section id="ccc-intro" class="al-py-lg">
+      <div class="container">
+        <h2 class="al-foundation-section-title">{{ i18n "Overview" }}</h2>
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <p class="lead">
+              {{ i18n "AlmaLinux OS 9.2 is certified under" }}
+              <a
+                href="https://www.commoncriteriaportal.org/"
+                target="_blank"
+                rel="noopener"
+                >{{ i18n "Common Criteria" }}</a
+              >{{ i18n ", the international standard (ISO/IEC 15408) for independently evaluating the security of IT products. For a free, community-built OS to meet that bar is a milestone for everyone who uses and contributes to AlmaLinux." }}
+            </p>
+            <p>
+              {{ i18n "We did it alongside Cybertrust Inc., a longtime platinum sponsor of the AlmaLinux OS Foundation, and it makes AlmaLinux the first operating system to earn this certification in Japan. Here is what that means, and why it matters for anyone who relies on the software underneath their most important systems." }}
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <aside class="al-ccc-infobox">
+              <h2 class="al-ccc-infobox-title">{{ i18n "At a glance" }}</h2>
+              <dl class="al-ccc-facts">
+                <div class="al-ccc-fact">
+                  <dt>{{ i18n "What" }}</dt>
+                  <dd>
+                    {{ i18n "Common Criteria certification (ISO/IEC 15408)" }}
+                  </dd>
+                </div>
+                <div class="al-ccc-fact">
+                  <dt>{{ i18n "Product" }}</dt>
+                  <dd>{{ i18n "AlmaLinux OS 9.2" }}</dd>
+                </div>
+                <div class="al-ccc-fact">
+                  <dt>{{ i18n "Partner" }}</dt>
+                  <dd>{{ i18n "Cybertrust Inc." }}</dd>
+                </div>
+                <div class="al-ccc-fact">
+                  <dt>{{ i18n "Assurance level" }}</dt>
+                  <dd>{{ i18n "EAL1" }}</dd>
+                </div>
+                <div class="al-ccc-fact">
+                  <dt>{{ i18n "Significance" }}</dt>
+                  <dd>
+                    {{ i18n "First operating system to obtain this certification in Japan" }}
+                  </dd>
+                </div>
+                <div class="al-ccc-fact">
+                  <dt>{{ i18n "Announced" }}</dt>
+                  <dd>{{ i18n "June 24, 2026" }}</dd>
+                </div>
+              </dl>
+              <p class="al-ccc-infobox-verify">
+                <a
+                  href="https://www.ipa.go.jp/en/security/jisec/software/certified-cert/c0869_it5912.html"
+                  target="_blank"
+                  rel="noopener"
+                  >{{ i18n "Verify the certificate" }}</a
+                >
+              </p>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{/* 3. What is Common Criteria? / Why it matters (two columns) */}}
+    <section id="ccc-what-why" class="al-foundation-band-deep al-py-lg">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-md-6">
+            <h2 class="al-foundation-section-title">
+              {{ i18n "What is Common Criteria?" }}
+            </h2>
+            <p>
+              {{ i18n "Common Criteria (ISO/IEC 15408) is an international standard for evaluating the security of IT products. Under it, an independent, accredited third party verifies that a product's security features are correctly designed, built, and actually do what they claim to do." }}
+            </p>
+            <p>
+              {{ i18n "A Common Criteria certificate is recognized across borders, so this independent assurance follows AlmaLinux wherever the community runs it, from personal projects to the most critical systems." }}
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h2 class="al-foundation-section-title">
+              {{ i18n "Why it matters" }}
+            </h2>
+            <p>
+              {{ i18n "The security of the operating system underneath everything else matters to everyone, whether you run AlmaLinux on a home lab, in a university, or across a national institution. Independent verification of that security is something the whole community benefits from." }}
+            </p>
+            <p>
+              {{ i18n "Common Criteria certification means an accredited third party has confirmed that the security functions of AlmaLinux OS meet a rigorous international bar. That now holds true for a free, openly developed OS, so anyone can build on it with confidence, including the regulated organizations for whom this certification is a requirement." }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{/* 4. A community OS, independently certified (text 2/3 + chart space 1/3) */}}
+    <section id="ccc-partnership" class="al-py-lg">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-8">
+            <h2 class="al-foundation-section-title">
+              {{ i18n "A community OS, independently certified" }}
+            </h2>
+            <p>
+              {{ i18n "AlmaLinux is a community owned, non-profit operating system with no single corporate owner. This certification was led and contributed by Cybertrust Inc., a Foundation platinum sponsor, with the work driven by Cybertrust employees who are members of the AlmaLinux OS Foundation." }}
+            </p>
+            <p>
+              {{ i18n "The result is the best of both worlds: a free, open, community operating system that now also carries a formal, independent security certification." }}
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <img
+              loading="lazy"
+              class="img-fluid rounded-3"
+              src="/membership-images/ald-tokyo-2026.jpg"
+              alt="{{ i18n "AlmaLinux community group photo at AlmaLinux Day: Tokyo" }}" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{/* 5. CTA band */}}
+    <section id="ccc-cta" class="al-foundation-band-deep al-py-lg">
+      <div class="container text-center">
+        <h2 class="al-foundation-section-title d-inline-block">
+          {{ i18n "Want to know more?" }}
+        </h2>
+        <p>
+          {{ i18n "Whether you are a contributor, a journalist, or just curious what this means for AlmaLinux, we are happy to talk. Reach out and find us in the community." }}
+        </p>
+        <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+          <a
+            href="https://chat.almalinux.org/almalinux/channels/security"
+            class="btn btn-primary btn-lg">
+            {{ i18n "Ask in the security room" }}
+          </a>
+          <a
+            href="https://chat.almalinux.org/almalinux/channels/user-group---japan"
+            class="btn btn-warning btn-lg">
+            {{ i18n "Ask in the Japan user group" }}
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+{{ end }}

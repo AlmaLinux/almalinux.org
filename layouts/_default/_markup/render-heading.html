@@ -1,0 +1,12 @@
+{{- printf "<h%d id=\"%s\">" .Level .Anchor | safeHTML -}}
+{{- if and (eq .Page.Section "p") (eq .Level 2) -}}
+  <a
+    href="#"
+    class="al-back-to-top"
+    aria-label="{{ i18n "Back to top" }}"
+    title="{{ i18n "Back to top" }}"
+    >↑</a
+  >
+{{- end -}}
+{{- .Text | safeHTML -}}
+{{- printf "</h%d>" .Level | safeHTML -}}

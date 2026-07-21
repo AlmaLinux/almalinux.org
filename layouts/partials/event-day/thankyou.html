@@ -1,24 +1,20 @@
-<div class="al-index-register">
-  <div class="container al-py-md" style="padding: 0 40px 0 40px;">
-    <h2
-      style="font-size: 50px; letter-spacing: 0.80px; font-weight: 600; margin-bottom: 20px;">
-      {{ i18n "Thank you" }}, {{ .Params.thankyou_city }}!!
-    </h2>
-    <div
-      style="margin-bottom: 20px; line-height: 28px; letter-spacing: 0.25px;">
-      <i>{{ .Params.thankyou_quote }}</i>
-      <div>--benny Vasquez</div>
-      <span class="small text-uppercase mb-1"
-        >Chair of the Board of Directors</span
-      >
-      <span class="small fw-light">AlmaLinux OS Foundation</span>
-    </div>
-    {{ with .Params.thankyou_youtube }}
-      <div style="text-align: center">
-        <a href="{{ . }}" class="btn btn-lg px-4 me-md-2 al-cta-blue">
-          {{ i18n "See the recordings on Youtube" }}
-        </a>
-      </div>
-    {{ end }}
+<aside class="al-post-event-float">
+  <h3 class="al-post-event-title">
+    {{ i18n "Thank you" }}, {{ .Params.thankyou_city }}!
+  </h3>
+  <div class="al-post-event-quote">
+    <i>{{ .Params.thankyou_quote }}</i>
+    <div class="mt-2">--benny Vasquez</div>
+    <span class="small text-uppercase d-block"
+      >{{ i18n "Chair of the Board of Directors" }}</span
+    >
+    <span class="small fw-light">AlmaLinux OS Foundation</span>
   </div>
-</div>
+  {{ with .Params.thankyou_youtube_url }}
+    <div class="text-center mt-3">
+      <a href="{{ . }}" class="btn px-3 al-cta-blue">
+        {{ i18n "See the recordings on Youtube" }}
+      </a>
+    </div>
+  {{ end }}
+</aside>

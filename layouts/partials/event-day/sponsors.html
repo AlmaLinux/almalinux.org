@@ -1,4 +1,4 @@
-{{ $data := index $.Site.Data.events .Params.event_data_key }}
+{{ $data := index hugo.Data.events .Params.event_data_key }}
 <div class="al-index-sponsors">
   <div class="container al-py-md px-5">
     {{ if and $data $data.event_sponsors }}

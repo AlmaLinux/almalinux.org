@@ -26,12 +26,12 @@ The primary purpose of the Membership Committee is to ensure that the membership
 
 - The committee will meet regularly, no less than once a month, as long as there are membership applications to consider. 
 - Committee members will review the applications that have been submitted ahead of the commencement of the meeting, to help keep the meeting time productive.
-- The committee will make decisions to grant or or decline member applications by consensus. If no consensus can be reached, the application is referred to the Board for a decision. 
+- The committee will make decisions to grant or decline member applications by consensus. If no consensus can be reached, the application is referred to the Board for a decision. 
 - Chair of the Committee will ensure that decisions are communicated to the applicants within 10 business days
 
 ## Procedure for each membership class
 
-Individuals or Organizations may one or more of the four membership classes below. 
+Individuals or Organizations may select one or more of the four membership classes below. 
 
 ### Contributor Membership
 

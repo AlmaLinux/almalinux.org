@@ -17,7 +17,7 @@ The nature of humans requires us to act very intentionally, and to hold ourselve
 
 1.  Honesty First
 
-1.  The key thing in this team is trust, and that requires honesty, both in word and deed. No one is asking you to share trade secrets or reveal your innermost desires, but subterfuge and manipulative tactics have no place in a group of humans moving toward a common goal. those undermine the very fabric of open source. 
+1.  The key thing in this team is trust, and that requires honesty, both in word and deed. No one is asking you to share trade secrets or reveal your innermost desires, but subterfuge and manipulative tactics have no place in a group of humans moving toward a common goal. Those undermine the very fabric of open source. 
 
 1.  Foundation First
 
@@ -63,7 +63,7 @@ Each director is responsible for:
 
 ### Chair, AlmaLinux OS Foundation Board of Directors
 
-The Chair is elected by the Board of Directors, and serves as the leader for the Board of Directors. This person serves as a central contact point for all board members on any foundation-related issues, acts as a trusted advisor to the President of the AlmaLinux foundation as they implement any strategic plans, and ensures the integrity of the board's governance.
+The Chair is elected by the Board of Directors, and serves as the leader for the Board of Directors. This person serves as a central contact point for all board members on any Foundation-related issues, acts as a trusted advisor to the President of the AlmaLinux Foundation as they implement any strategic plans, and ensures the integrity of the board's governance.
 
 The responsibilities of the chair include the responsibilities of a board member, and...
 
@@ -75,7 +75,7 @@ The responsibilities of the chair include the responsibilities of a board member
 
 - Assists in building brand awareness with industry leaders.
 
-- Ensuring the foundation consistently performs fundraising and sponsors recruiting.
+- Ensuring the Foundation consistently performs fundraising and sponsors recruiting.
 
 ## Transitioning between boards
 

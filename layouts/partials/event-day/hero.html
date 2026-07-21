@@ -1,6 +1,11 @@
 <div
-  class="al-index-topic-ALD"
+  class="al-index-topic-ALD{{ if .Params.post_event }}
+    al-index-topic-ALD-post
+  {{ end }}"
   style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('{{ .Params.hero_image }}');">
+  {{ if .Params.post_event }}
+    {{ partial "event-day/thankyou.html" . }}
+  {{ end }}
   <div class="container al-py-lg">
     <div class="topic_item_1" style="padding-top: 15%;">
       <h1>{{ i18n .Params.event_name | default .Params.event_name }}</h1>
@@ -20,13 +25,15 @@
         </div>
       {{ end }}
     </div>
-    <div class="topic_item_2" style="padding-top: 30px;">
-      <a
-        href="{{ .Params.registration_url }}"
-        class="btn btn-lg px-4 me-md-2 {{ .Params.registration_button | default "al-cta-blue" }}">
-        <i class="bi bi-box-arrow-in-right al-index-community-icon"></i>
-        {{ i18n (.Params.registration_cta | default "Reserve your spot!") | default (.Params.registration_cta | default "Reserve your spot!") }}
-      </a>
-    </div>
+    {{ if and .Params.registration_url (not .Params.post_event) }}
+      <div class="topic_item_2" style="padding-top: 30px;">
+        <a
+          href="{{ .Params.registration_url }}"
+          class="btn btn-lg px-4 me-md-2 {{ .Params.registration_button | default "al-cta-blue" }}">
+          <i class="bi bi-box-arrow-in-right al-index-community-icon"></i>
+          {{ i18n (.Params.registration_cta | default "Reserve your spot!") | default (.Params.registration_cta | default "Reserve your spot!") }}
+        </a>
+      </div>
+    {{ end }}
   </div>
 </div>

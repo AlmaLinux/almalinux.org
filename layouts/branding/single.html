@@ -1,0 +1,462 @@
+{{ define "main" }}
+  <div class="al-branding">
+    <section class="al-branding-hero">
+      <div class="container al-py-lg">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1 class="display-5 fw-bold">
+              {{ i18n "AlmaLinux Brand Assets" }}
+            </h1>
+            <p class="lead">
+              {{ i18n "Official logos, brand colors, and the basics for using them correctly." }}
+            </p>
+            <a class="btn btn-lg al-cta-blue" href="/branding/brand-book.html"
+              >{{ i18n "Read the Brand Book" }}</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="voice" class="al-branding-voice">
+      <div class="container al-py-md">
+        <h2>
+          {{ i18n "The AlmaLinux voice" }}
+          <a
+            class="al-anchor"
+            href="#voice"
+            aria-label="{{ i18n `Link to this section` }}"
+            >#</a
+          >
+        </h2>
+        <p class="al-branding-voice-lead">
+          {{ i18n "AlmaLinux is a community project run by volunteers. In copy, sound like a helpful person who is glad you are here: warm, plain, and confident, never hype. Write 'AlmaLinux' as one word with a capital A and L, and use a colon, a period, or parentheses instead of long dashes." }}
+        </p>
+      </div>
+    </section>
+    <section id="logos" class="al-branding-assets">
+      <div class="container al-py-md">
+        <h2>
+          {{ i18n "Logos & assets" }}
+          <a
+            class="al-anchor"
+            href="#logos"
+            aria-label="{{ i18n `Link to this section` }}"
+            >#</a
+          >
+        </h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="al-branding-do">{{ i18n "Do" }}</h3>
+            <ul>
+              <li>
+                {{ i18n "Use the white logo on dark backgrounds and the color logo on light backgrounds." }}
+              </li>
+              <li>
+                {{ i18n "Keep clear space around the logo of at least the height of the 'A' mark." }}
+              </li>
+              <li>
+                {{ i18n "Respect a minimum size so the wordmark stays legible." }}
+              </li>
+              <li>
+                {{ i18n "Write AlmaLinux as one word, with a capital A and L." }}
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h3 class="al-branding-dont">{{ i18n "Do not" }}</h3>
+            <ul>
+              <li>
+                {{ i18n "Recolor, stretch, rotate, or add effects to the logo." }}
+              </li>
+              <li>
+                {{ i18n "Place the logo on a busy or low-contrast background." }}
+              </li>
+              <li>
+                {{ i18n "Write it as 'Alma Linux' or lowercase it to 'Almalinux'." }}
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          {{ i18n "For the full terms of use, read the" }}
+          <a href="/p/the-almalinux-os-trademark-usage-policy/"
+            >{{ i18n "Trademark Usage Policy" }}</a
+          >.
+        </p>
+        <p>
+          {{ i18n "Download the official marks below. For full construction and spacing rules, see the" }}
+          <a href="/branding/brand-book.html">{{ i18n "Brand Book" }}</a>.
+        </p>
+        <div class="al-branding-grid">
+          <div class="al-branding-asset-card is-light">
+            <img
+              src="/branding/Almalinux-logo-color.png"
+              alt="{{ i18n `AlmaLinux color logo` }}" />
+            <div class="al-branding-asset-meta">
+              <span class="al-branding-asset-name"
+                >{{ i18n "Logo, color" }}</span
+              >
+              <span class="al-branding-asset-links">
+                <a href="/branding/Almalinux-logo-color.png">PNG</a>
+              </span>
+            </div>
+          </div>
+          <div class="al-branding-asset-card is-dark">
+            <img
+              src="/branding/Almalinux-logo-white.svg"
+              alt="{{ i18n `AlmaLinux white logo` }}" />
+            <div class="al-branding-asset-meta">
+              <span class="al-branding-asset-name"
+                >{{ i18n "Logo, white" }}</span
+              >
+              <span class="al-branding-asset-links">
+                <a href="/branding/Almalinux-logo-white.svg">SVG</a>
+              </span>
+            </div>
+          </div>
+          <div class="al-branding-asset-card is-dark">
+            <img
+              src="/branding/Powered-by-AL-White.svg"
+              alt="{{ i18n `Powered by AlmaLinux badge, white` }}" />
+            <div class="al-branding-asset-meta">
+              <span class="al-branding-asset-name"
+                >{{ i18n "Powered by AlmaLinux, white" }}</span
+              >
+              <span class="al-branding-asset-links">
+                <a href="/branding/Powered-by-AL-White.svg">SVG</a>
+                <a href="/branding/Powered-by-AL-White.png">PNG</a>
+                <a href="/branding/Powered-by-AL-White.pdf">PDF</a>
+              </span>
+            </div>
+          </div>
+          <div class="al-branding-asset-card is-light">
+            <img
+              src="/branding/Powered-by-Dark-AL.svg"
+              alt="{{ i18n `Powered by AlmaLinux badge, dark` }}" />
+            <div class="al-branding-asset-meta">
+              <span class="al-branding-asset-name"
+                >{{ i18n "Powered by AlmaLinux, dark" }}</span
+              >
+              <span class="al-branding-asset-links">
+                <a href="/branding/Powered-by-Dark-AL.svg">SVG</a>
+                <a href="/branding/Powered-by-Dark-AL.png">PNG</a>
+                <a href="/branding/Powered-by-Dark-AL.pdf">PDF</a>
+              </span>
+            </div>
+          </div>
+          <div class="al-branding-asset-card is-light">
+            <img
+              src="/branding/AlmaLinux%20Icon.svg"
+              alt="{{ i18n `AlmaLinux icon` }}" />
+            <div class="al-branding-asset-meta">
+              <span class="al-branding-asset-name">{{ i18n "Icon" }}</span>
+              <span class="al-branding-asset-links">
+                <a href="/branding/AlmaLinux%20Icon.svg">SVG</a>
+                <a href="/branding/AlmaLinux%20Icon.png">PNG</a>
+              </span>
+            </div>
+          </div>
+          <div class="al-branding-asset-card is-dark">
+            <img
+              src="/branding/AlmaLinux%20Icon%20Circle.svg"
+              alt="{{ i18n `AlmaLinux circular icon` }}" />
+            <div class="al-branding-asset-meta">
+              <span class="al-branding-asset-name"
+                >{{ i18n "Icon, circle" }}</span
+              >
+              <span class="al-branding-asset-links">
+                <a href="/branding/AlmaLinux%20Icon%20Circle.svg">SVG</a>
+              </span>
+            </div>
+          </div>
+          <div class="al-branding-asset-card is-light">
+            <img
+              src="/branding/icon-bw.svg"
+              alt="{{ i18n `AlmaLinux monochrome icon` }}" />
+            <div class="al-branding-asset-meta">
+              <span class="al-branding-asset-name"
+                >{{ i18n "Icon, monochrome" }}</span
+              >
+              <span class="al-branding-asset-links">
+                <a href="/branding/icon-bw.svg">{{ i18n "Black/white" }}</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="colors" class="al-branding-colors">
+      <div class="container al-py-md">
+        <h2>
+          {{ i18n "Brand colors" }}
+          <a
+            class="al-anchor"
+            href="#colors"
+            aria-label="{{ i18n `Link to this section` }}"
+            >#</a
+          >
+        </h2>
+        <p class="al-branding-colors-note">
+          {{ i18n "Hex is the source of truth on screen. For print, the Pantone equivalents are in the" }}
+          <a href="/branding/brand-book.html">{{ i18n "Brand Book" }}</a>.
+        </p>
+        <h3 class="al-branding-color-family">{{ i18n "Logo colors" }}</h3>
+        <div class="al-branding-swatches al-branding-swatches--logo">
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-science-blue"></span>
+            <span class="al-branding-swatch-name">{{ i18n "Logo blue" }}</span>
+            <code>#0069da</code>
+          </div>
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-cta-blue"></span>
+            <span class="al-branding-swatch-name"
+              >{{ i18n "Logo light blue" }}</span
+            >
+            <code>#24c2ff</code>
+          </div>
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-atlantis"></span>
+            <span class="al-branding-swatch-name">{{ i18n "Logo green" }}</span>
+            <code>#86da2f</code>
+          </div>
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-candlelight"></span>
+            <span class="al-branding-swatch-name"
+              >{{ i18n "Logo yellow" }}</span
+            >
+            <code>#ffcb12</code>
+          </div>
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-cyclops"></span>
+            <span class="al-branding-swatch-name">{{ i18n "Logo red" }}</span>
+            <code>#ff4649</code>
+          </div>
+        </div>
+        <h3 class="al-branding-color-section">
+          {{ i18n "These are additional colors approved for use in AlmaLinux design work." }}
+        </h3>
+        <h3 class="al-branding-color-family">{{ i18n "Blue" }}</h3>
+        <div class="al-branding-swatches">
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-science-blue-dark"></span>
+            <span class="al-branding-swatch-name">{{ i18n "Dark blue" }}</span>
+            <code>#004bbc</code>
+          </div>
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-science-blue"></span>
+            <span class="al-branding-swatch-name"
+              >{{ i18n "Science blue" }}</span
+            >
+            <code>#0069da</code>
+          </div>
+          <div class="al-branding-swatch">
+            <span
+              class="al-branding-swatch-chip is-science-blue-lighter"></span>
+            <span class="al-branding-swatch-name"
+              >{{ i18n "Lighter blue" }}</span
+            >
+            <code>#1e87f8</code>
+          </div>
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-science-blue-light"></span>
+            <span class="al-branding-swatch-name"
+              >{{ i18n "Lightest blue" }}</span
+            >
+            <code>#2891ff</code>
+          </div>
+        </div>
+        <h3 class="al-branding-color-family">{{ i18n "Green" }}</h3>
+        <div class="al-branding-swatches">
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-atlantis-dark"></span>
+            <span class="al-branding-swatch-name"
+              >{{ i18n "Darker green" }}</span
+            >
+            <code>#68bc11</code>
+          </div>
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-atlantis"></span>
+            <span class="al-branding-swatch-name"
+              >{{ i18n "Atlantis green" }}</span
+            >
+            <code>#86da2f</code>
+          </div>
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-atlantis-lighter"></span>
+            <span class="al-branding-swatch-name"
+              >{{ i18n "Lighter green" }}</span
+            >
+            <code>#a4f84d</code>
+          </div>
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-atlantis-light"></span>
+            <span class="al-branding-swatch-name"
+              >{{ i18n "Lightest green" }}</span
+            >
+            <code>#aeff57</code>
+          </div>
+        </div>
+        <h3 class="al-branding-color-family">{{ i18n "Yellow" }}</h3>
+        <div class="al-branding-swatches">
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-candlelight-dark"></span>
+            <span class="al-branding-swatch-name"
+              >{{ i18n "Dark yellow" }}</span
+            >
+            <code>#e1ad00</code>
+          </div>
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-candlelight"></span>
+            <span class="al-branding-swatch-name"
+              >{{ i18n "Candlelight yellow" }}</span
+            >
+            <code>#ffcb12</code>
+          </div>
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-candlelight-lighter"></span>
+            <span class="al-branding-swatch-name"
+              >{{ i18n "Lighter yellow" }}</span
+            >
+            <code>#ffe930</code>
+          </div>
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-candlelight-light"></span>
+            <span class="al-branding-swatch-name"
+              >{{ i18n "Lightest yellow" }}</span
+            >
+            <code>#fff33a</code>
+          </div>
+        </div>
+        <h3 class="al-branding-color-family">{{ i18n "Red" }}</h3>
+        <div class="al-branding-swatches">
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-cyclops-dark"></span>
+            <span class="al-branding-swatch-name">{{ i18n "Darker red" }}</span>
+            <code>#e1282b</code>
+          </div>
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-cyclops"></span>
+            <span class="al-branding-swatch-name"
+              >{{ i18n "Sunburnt cyclops red" }}</span
+            >
+            <code>#ff4649</code>
+          </div>
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-cyclops-lighter"></span>
+            <span class="al-branding-swatch-name"
+              >{{ i18n "Lighter red" }}</span
+            >
+            <code>#ff6467</code>
+          </div>
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-cyclops-light"></span>
+            <span class="al-branding-swatch-name"
+              >{{ i18n "Lightest red" }}</span
+            >
+            <code>#ff6e71</code>
+          </div>
+        </div>
+        <h3 class="al-branding-color-family">{{ i18n "Black pearl" }}</h3>
+        <div class="al-branding-swatches">
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-black-pearl-dark"></span>
+            <span class="al-branding-swatch-name">{{ i18n "Darkest" }}</span>
+            <code>#000518</code>
+          </div>
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-black-pearl"></span>
+            <span class="al-branding-swatch-name"
+              >{{ i18n "Black pearl" }}</span
+            >
+            <code>#082336</code>
+          </div>
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-black-pearl-lighter"></span>
+            <span class="al-branding-swatch-name"
+              >{{ i18n "Lighter pearl" }}</span
+            >
+            <code>#264154</code>
+          </div>
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-black-pearl-light"></span>
+            <span class="al-branding-swatch-name"
+              >{{ i18n "Lightest pearl" }}</span
+            >
+            <code>#304b5e</code>
+          </div>
+        </div>
+        <h3 class="al-branding-color-family">{{ i18n "Surfaces" }}</h3>
+        <div class="al-branding-swatches">
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-body-background"></span>
+            <span class="al-branding-swatch-name"
+              >{{ i18n "Body background" }}</span
+            >
+            <code>#0f4266</code>
+          </div>
+          <div class="al-branding-swatch">
+            <span class="al-branding-swatch-chip is-soft-peach"></span>
+            <span class="al-branding-swatch-name">{{ i18n "Soft peach" }}</span>
+            <code>#faf5f5</code>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="resources" class="al-branding-resources">
+      <div class="container al-py-md">
+        <h2>
+          {{ i18n "Dig deeper" }}
+          <a
+            class="al-anchor"
+            href="#resources"
+            aria-label="{{ i18n `Link to this section` }}"
+            >#</a
+          >
+        </h2>
+        <p class="al-branding-resources-intro">
+          {{ i18n "This page has the essentials. The brand book digs into logo construction (clear space, minimum size, and misuse), typography, iconography, the full voice and tone with examples, accessibility, guidance for building presentations, and who we are (vision, mission, and values). The design system covers the technical detail behind the site." }}
+        </p>
+        <div class="al-branding-resource-grid">
+          <a class="al-branding-resource-card" href="/branding/brand-book.html">
+            <span class="al-branding-resource-title"
+              >{{ i18n "Brand book" }}</span
+            >
+            <span class="al-branding-resource-desc"
+              >{{ i18n "The full brand story: values, logo, color, voice, and presentation guidance." }}</span
+            >
+          </a>
+          <a
+            class="al-branding-resource-card"
+            href="https://github.com/AlmaLinux/almalinux.org/blob/master/DESIGN.md">
+            <span class="al-branding-resource-title"
+              >{{ i18n "Design system (DESIGN.md)" }}</span
+            >
+            <span class="al-branding-resource-desc"
+              >{{ i18n "The living technical reference: every color with its Pantone, the components, and the presentation spec." }}</span
+            >
+          </a>
+          <a
+            class="al-branding-resource-card"
+            href="/p/the-almalinux-os-trademark-usage-policy/">
+            <span class="al-branding-resource-title"
+              >{{ i18n "Trademark Usage Policy" }}</span
+            >
+            <span class="al-branding-resource-desc"
+              >{{ i18n "The terms for using the AlmaLinux marks." }}</span
+            >
+          </a>
+          <a
+            class="al-branding-resource-card"
+            href="https://chat.almalinux.org">
+            <span class="al-branding-resource-title"
+              >{{ i18n "Questions? Ask the Marketing SIG" }}</span
+            >
+            <span class="al-branding-resource-desc"
+              >{{ i18n "Reach the Marketing SIG on chat.almalinux.org, including for the latest presentation template." }}</span
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+{{ end }}
