@@ -54,7 +54,7 @@ This is the last week to get nominated to the board. While we have a number of p
 - Be an AlmaLinux OS Foundation member for at least 3 months by August 31st, 2025
 - Be nominated by an AlmaLinux OS Foundation member in good standing
 
-To be nominated, you just need a current member of the foundation to send an email to the election committee nominating you! You can find the details all laid out on the wiki: [Election 2025](https://wiki.almalinux.org/Election2025.html)
+To be nominated, you just need a current member of the foundation to send an email to the election committee nominating you! You can find the details all laid out on the wiki: [Election 2025](https://wiki.almalinux.org/foundation/elections/2025.html)
 
 ## Last chance to have a voice in this year's election
 
