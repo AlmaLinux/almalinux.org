@@ -27,7 +27,7 @@ Lunch was onsite and so, so tasty. We had a fantastic partner in the folks at E-
 
 At the end of the day, Tristan talked me into offering to take everyone who could join us out for drinks and snacks to keep the conversations going. We had a great time connecting more deeply with some of our attendees, and even picked up some friends while we were waiting for the table!
 
-{{< figure src="/blog-images/2026/2026-07-28-aldla-dinner.jpg" width="45%" class="text-center" alt="Attendees over drinks and snacks after AlmaLinux Day: LA" caption="Our new besties at the cloest place that could suddenly take 15 people." >}}
+{{< figure src="/blog-images/2026/2026-07-28-aldla-dinner.jpg" width="45%" class="text-center" alt="Attendees over drinks and snacks after AlmaLinux Day: LA" caption="Our new besties at the closest place that could suddenly take 15 people." >}}
 
 ### The speakers
 
