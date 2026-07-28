@@ -9,7 +9,7 @@ date: "2026-07-28"
 images:
   - /blog-images/2026/2026-07-28-aldla-recap.png
 post:
-  title: "AlmaLinux Day: LA brought about 40 people into a room full of animation studios, VFX houses, and the cloud and silicon vendors that support them. Here's how the day went, and how the following week at SIGGRAPH went, where we showed AlmaLinux running across a range of Lenovo and AMD hardware."
+  title: "AlmaLinux Day: LA brought together a group of animation studios and VFX houses, with the cloud and silicon vendors that support them. Here's how the day went, and how the following week at SIGGRAPH went, where we showed AlmaLinux running across a range of Lenovo and AMD hardware."
   image: /blog-images/2026/2026-07-28-aldla-recap.png
 ---
 
