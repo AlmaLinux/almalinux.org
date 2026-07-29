@@ -69,7 +69,7 @@ We spent the rest of that week at SIGGRAPH, at booth 735, and it was a great cha
 
 {{< figure src="/blog-images/2026/2026-07-28-aldla-siggraph-booth.jpg" width="45%" class="text-center" alt="The AlmaLinux booth at SIGGRAPH 2026, showing Lenovo and AMD hardware running AlmaLinux" caption="Our SIGGRAPH booth (735), showing off AlmaLinux across a range of Lenovo hardware." >}}
 
-We were so excited to be able to show of Houdini running on AlmaLinux 10.2 (though it isn't officially supported yet) to help move the efforts of the [Wayland Working Group](https://www.aswf.io/blog/academy-software-foundation-launches-new-wayland-for-artists-working-group/) forward.
+We were so excited to be able to show off Houdini running on AlmaLinux 10.2 (though it isn't officially supported yet) to help move the efforts of the [Wayland Working Group](https://www.aswf.io/blog/academy-software-foundation-launches-new-wayland-for-artists-working-group/) forward.
 
 We were so grateful to the folks at [Lightcatcher Media](https://www.lightcatchermedia.com/) for allowing us to show off the [Little Margo Stories](https://disneynow.com/show/1ed873ae-db4d-4142-80e1-cbde2d01604a) trailer on one of our devices, too!
 
