@@ -1,5 +1,5 @@
 ---
-title: "Nominations are open: help steer AlmaLinux"
+title: "Board election nominations are open: help steer AlmaLinux"
 type: blog
 author:
   name: "Alex Iribarren"
@@ -7,13 +7,13 @@ author:
   image: /board/alexiribarren.jpg
 date: "2026-08-03"
 images:
-  - /blog-images/2026/2026-board-election-nominations.png
+  - /blog-images/2026/2026-08-03-board-election-nominations.png
 post:
   title: "Know someone who should help steer AlmaLinux? Nominations open today and close September 8. Here's what the role involves and how to put a name forward."
-  image: /blog-images/2026/2026-board-election-nominations.png
+  image: /blog-images/2026/2026-08-03-board-election-nominations.png
 ---
 
-Nominations for this year's board election open today, August 3, and they close on September 8. There are two Cohort A seats to fill, and this is the first election under our [new bylaws and election process](/blog/2026-06-10-new-bylaws-and-2026-election). Everything you need is on the [2026 election page](https://wiki.almalinux.org/foundation/elections/2026.html).
+Nominations for this year's board election open today, August 3, and they close on September 8. There are two Cohort A seats to fill, and this is the first election under our [new bylaws and election process](/blog/2026-06-10-new-bylaws-and-2026-election). More details are available on the [2026 election page](https://wiki.almalinux.org/foundation/elections/2026.html).
 
 AlmaLinux runs in places none of us can fully see: hospitals, banks, universities, someone's homelab, a shop floor with a machine that has to stay up. The board can only weigh the perspectives that are in the room, so if you know someone whose experience should be in that room, please ask them if they'd like you to send their name in.
 
@@ -25,7 +25,7 @@ Directors serve a four year term, and the work is usually between 2 and 10 hours
 
 Send their name and e-mail address to [elections@almalinux.org](mailto:elections@almalinux.org), from the address on your [AlmaLinux Accounts](https://accounts.almalinux.org) profile. That's it.
 
-One thing worth knowing before you write that email: Individual and Mirror members each nominate one person other than themselves. If you'd like to serve, ask someone to put your name in. Sponsor members can nominate a representative from their organization, including themselves.
+One thing worth knowing before you write that email: Individual and Mirror members can nominate one person, but cannot nominate themselves. If you'd like to serve, ask someone to put your name in. Sponsor members can nominate a representative from their organization, including themselves.
 
 ## The rest of the election calendar
 
