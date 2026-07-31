@@ -1,0 +1,341 @@
+{{ define "main" }}
+  <main class="al-body-container al-press">
+    {{/* Hero */}}
+    <section class="al-press-hero al-py-lg">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-8">
+            <h1 class="display-5 fw-light mb-3">
+              {{ i18n "AlmaLinux Press & Media Kit" }}
+            </h1>
+            <p class="lead mb-4">
+              {{ i18n "The boilerplate, quick facts, and contacts you need to write about AlmaLinux OS, plus where to find our logos and brand guidelines." }}
+            </p>
+            <a href="#media-contact" class="btn btn-lg al-cta-blue">
+              {{ i18n "Contact us" }}
+            </a>
+            <a
+              href="{{ "/branding/" | relLangURL }}"
+              class="btn btn-lg btn-link">
+              {{ i18n "Logos & brand assets" }}
+            </a>
+          </div>
+          <div class="col-lg-4 text-center">
+            <img
+              src="/images/logo.svg"
+              alt="AlmaLinux OS logo"
+              class="al-press-hero-logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{/* About boilerplate */}}
+    <section class="al-press-band-deep al-py-lg">
+      <div class="container">
+        <h2 class="fw-light mb-3">{{ i18n "About AlmaLinux" }}</h2>
+        <p class="al-press-boilerplate-note">
+          {{ i18n "Official boilerplate, free to copy verbatim for press use:" }}
+        </p>
+        <p class="al-press-boilerplate">
+          {{ i18n "AlmaLinux OS is an open source, community-governed, and forever-free enterprise Linux distribution focused on long-term stability and delivering a robust production-grade platform. Distributed from a network of over 400 mirrors across six continents, AlmaLinux is compatible with RHEL® and pre-Stream CentOS, and powers projects for governments, the defense sector, and scientific research institutions as well as numerous global business sectors and the web hosting industry. Adopted by some of today's foremost open source ecosystem projects such as VMware, GitLab and Tenable, it's available on all major public cloud platforms including AWS, Azure, Google Cloud, and Oracle OCI. The AlmaLinux OS Foundation is a 501(c)(6) non-profit entity created as the central collaboration point for everything to do with AlmaLinux and for the benefit of the AlmaLinux OS community. Visit almalinux.org." }}
+        </p>
+      </div>
+    </section>
+
+    {{/* Quick facts */}}
+    <section class="al-py-lg">
+      <div class="container">
+        <h2 class="fw-light mb-4">{{ i18n "Quick facts" }}</h2>
+        <ul class="al-press-factcards">
+          <li>
+            <a
+              class="al-press-factcard"
+              href="{{ "/foundation" | relLangURL }}">
+              <span class="ic"
+                ><i class="bi bi-calendar-event" aria-hidden="true"></i
+              ></span>
+              <span class="body">
+                <span class="k">{{ i18n "Founded" }}</span>
+                <span class="v">{{ i18n "2021" }}</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <div class="al-press-factcard">
+              <span class="ic"
+                ><i class="bi bi-check-circle" aria-hidden="true"></i
+              ></span>
+              <span class="body">
+                <span class="k">{{ i18n "Compatibility" }}</span>
+                <span class="v">{{ i18n "Fully compatible with RHEL" }}</span>
+              </span>
+            </div>
+          </li>
+          <li>
+            <a class="al-press-factcard" href="{{ "/security" | relLangURL }}">
+              <span class="ic"
+                ><i class="bi bi-patch-check" aria-hidden="true"></i
+              ></span>
+              <span class="body">
+                <span class="k">{{ i18n "Certifications" }}</span>
+                <span class="v"
+                  >{{ i18n "FIPS 140-3 validated and Common Criteria certified" }}</span
+                >
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="al-press-factcard"
+              href="{{ "/p/foundation-bylaws/" | relLangURL }}">
+              <span class="ic"
+                ><i class="bi bi-bank" aria-hidden="true"></i
+              ></span>
+              <span class="body">
+                <span class="k">{{ i18n "Governance" }}</span>
+                <span class="v"
+                  >{{ i18n "Community-governed AlmaLinux OS Foundation, a 501(c)(6) nonprofit, with a member-elected board" }}</span
+                >
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="al-press-factcard"
+              href="{{ "/get-almalinux" | relLangURL }}">
+              <span class="ic"
+                ><i class="bi bi-cpu" aria-hidden="true"></i
+              ></span>
+              <span class="body">
+                <span class="k">{{ i18n "Architectures" }}</span>
+                <span class="v"
+                  >{{ i18n "x86_64, aarch64, ppc64le, s390x" }}</span
+                >
+              </span>
+            </a>
+          </li>
+          <li>
+            <div class="al-press-factcard">
+              <span class="ic"
+                ><i class="bi bi-clock-history" aria-hidden="true"></i
+              ></span>
+              <span class="body">
+                <span class="k">{{ i18n "Support lifecycle" }}</span>
+                <span class="v"
+                  >{{ i18n "Ten years of support per major release" }}</span
+                >
+              </span>
+            </div>
+          </li>
+          <li>
+            <a class="al-press-factcard" href="https://mirrors.almalinux.org/">
+              <span class="ic"
+                ><i class="bi bi-globe" aria-hidden="true"></i
+              ></span>
+              <span class="body">
+                <span class="k">{{ i18n "Mirror network" }}</span>
+                <span class="v"
+                  >{{ i18n "Over 400 mirrors across six continents" }}</span
+                >
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="al-press-factcard"
+              href="{{ "/get-almalinux" | relLangURL }}">
+              <span class="ic"
+                ><i class="bi bi-cash-coin" aria-hidden="true"></i
+              ></span>
+              <span class="body">
+                <span class="k">{{ i18n "Cost" }}</span>
+                <span class="v"
+                  >{{ i18n "Forever free, with no paid tier for the OS" }}</span
+                >
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    {{/* Latest news | Official channels */}}
+    <section class="al-press-band-deep al-py-lg">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-6">
+            <h2 class="fw-light mb-4">{{ i18n "Latest news" }}</h2>
+            <ul class="al-press-news">
+              {{ range first 5 (where site.RegularPages "Type" "blog") }}
+                <li>
+                  <a href="{{ .RelPermalink }}">
+                    <span class="al-press-news-title">{{ .Title }}</span>
+                    <time datetime="{{ .Date.Format "2006-01-02" }}"
+                      >{{ .Date.Format "January 2, 2006" }}</time
+                    >
+                  </a>
+                </li>
+              {{ end }}
+            </ul>
+            <a href="{{ "/blog/" | relLangURL }}" class="al-press-news-all">
+              {{ i18n "See all news" }} &rarr;
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="fw-light mb-4">{{ i18n "Official channels" }}</h2>
+            <ul class="al-press-channels">
+              <li>
+                <a href="https://fosstodon.org/@almalinux" rel="me"
+                  ><i class="bi bi-mastodon" aria-hidden="true"></i> Mastodon</a
+                >
+              </li>
+              <li>
+                <a href="https://bsky.app/profile/almalinux.org"
+                  ><i class="bi bi-cloud-fill" aria-hidden="true"></i>
+                  Bluesky</a
+                >
+              </li>
+              <li>
+                <a href="https://x.com/AlmaLinux"
+                  ><i class="bi bi-twitter-x" aria-hidden="true"></i> X</a
+                >
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/almalinuxos/"
+                  ><i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/AlmaLinux/"
+                  ><i class="bi bi-github" aria-hidden="true"></i> GitHub</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@almalinuxos"
+                  ><i class="bi bi-youtube" aria-hidden="true"></i> YouTube</a
+                >
+              </li>
+              <li>
+                <a href="https://chat.almalinux.org"
+                  ><i class="bi bi-chat-dots" aria-hidden="true"></i> Chat</a
+                >
+              </li>
+              <li>
+                <a href="https://www.reddit.com/r/AlmaLinux/"
+                  ><i class="bi bi-reddit" aria-hidden="true"></i> Reddit</a
+                >
+              </li>
+              <li>
+                <a href="https://www.facebook.com/AlmaLinux/"
+                  ><i class="bi bi-facebook" aria-hidden="true"></i> Facebook</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{/* Naming & referencing */}}
+    <section class="al-py-lg">
+      <div class="container">
+        <h2 class="fw-light mb-4">{{ i18n "Naming & referencing" }}</h2>
+        <ul class="al-press-naming">
+          <li>
+            {{ i18n "Write AlmaLinux as one word with a capital A and L, never almalinux in running prose." }}
+          </li>
+          <li>
+            {{ i18n "The full name of the distribution is AlmaLinux OS." }}
+          </li>
+          <li>
+            {{ i18n "The organization is the AlmaLinux OS Foundation, never the AlmaLinux Foundation." }}
+          </li>
+          <li>
+            {{ i18n "You may say software is derived from AlmaLinux OS, or built for the AlmaLinux OS distribution. You may not call a modified build AlmaLinux OS." }}
+          </li>
+          <li>
+            {{ i18n "Use the Powered by AlmaLinux OS badge to state that your product runs on an official AlmaLinux OS release." }}
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    {{/* Trademark & permissions */}}
+    <section class="al-press-band-deep al-py-lg">
+      <div class="container">
+        <h2 class="fw-light mb-4">{{ i18n "Trademark & permissions" }}</h2>
+        <div class="al-press-tm">
+          <div class="al-press-tm-col is-may">
+            <h3>{{ i18n "You may" }}</h3>
+            <ul>
+              <li>
+                {{ i18n "Redistribute bit-for-bit identical copies of official AlmaLinux OS releases using the marks." }}
+              </li>
+              <li>
+                {{ i18n "Use the word mark to truthfully describe a relationship to AlmaLinux OS." }}
+              </li>
+            </ul>
+          </div>
+          <div class="al-press-tm-col is-maynot">
+            <h3>{{ i18n "You may not" }}</h3>
+            <ul>
+              <li>
+                {{ i18n "Use the logos in a way that implies endorsement." }}
+              </li>
+              <li>
+                {{ i18n "Register a confusingly similar name, or use the marks as part of your own product, company, or domain name." }}
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="al-press-tm-foot">
+          {{ i18n "The official policy governs in case of any conflict with this summary." }}
+        </p>
+        <a
+          href="{{ "/p/the-almalinux-os-trademark-usage-policy/" | relLangURL }}"
+          class="btn al-cta-blue">
+          {{ i18n "Read the full Trademark Usage Policy" }}
+        </a>
+      </div>
+    </section>
+
+    {{/* Brand assets & guidelines (cross-links) */}}
+    <section class="al-py-lg">
+      <div class="container">
+        <h2 class="fw-light mb-2">{{ i18n "Brand assets & guidelines" }}</h2>
+        <p class="mb-4">
+          {{ i18n "Logos, brand colors, and the rules for using them live on the pages below." }}
+        </p>
+        <div class="al-press-crosslink-grid">
+          <a class="al-press-crosslink" href="{{ "/branding/" | relLangURL }}">
+            <span class="title">{{ i18n "Brand Assets" }}</span>
+            <span class="desc"
+              >{{ i18n "Downloadable logos, brand colors, and logo usage do's and don'ts." }}</span
+            >
+          </a>
+          <a class="al-press-crosslink" href="/branding/brand-book.html">
+            <span class="title">{{ i18n "Brand Book" }}</span>
+            <span class="desc"
+              >{{ i18n "The full brand reference: logo construction, typography, voice, and more." }}</span
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+
+    {{/* Spokespeople & media contact */}}
+    <section id="media-contact" class="al-press-band-deep al-py-lg">
+      <div class="container">
+        <h2 class="fw-light mb-3">{{ i18n "Spokespeople & media contact" }}</h2>
+        <p>
+          {{ i18n "For interviews and quotes, our spokesperson is benny Vasquez, Chair of the Board of Directors of the AlmaLinux OS Foundation." }}
+        </p>
+        <p>
+          {{ i18n "Reach us for interviews, quotes, or asset requests:" }}
+          <a href="mailto:hello@almalinux.org">hello@almalinux.org</a>
+        </p>
+      </div>
+    </section>
+  </main>
+{{ end }}
