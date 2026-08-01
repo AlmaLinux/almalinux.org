@@ -17,15 +17,15 @@ Nominations for this year's board election open today, August 3, and they close 
 
 AlmaLinux runs in places none of us can fully see: hospitals, banks, universities, homelabs - everything from mission critical to playing around. The board can only weigh the perspectives that are in the room, so if you know someone whose experience should be in that room, we need to hear from them. Please ask them if they'd like you to send their name in.
 
-## What you'd be signing them up for
+## What Directors are signing up for
 
-Directors serve a four year term, and the work is usually between 2 and 10 hours a month. It isn't a paid position, and it isn't a full time job. We handle the financial health of the Foundation, its governance, and its overall direction. We don't make the technical calls: that's [ALESCo](https://almalinux.org/alesco/) and the [SIGs](https://wiki.almalinux.org/sigs/), and we listen to them closely.
+Directors serve a four year term, and the work is usually between 2 and 10 hours a month. It isn't a paid position, and it isn't a full time job. We handle the financial health of the Foundation, its governance, and its overall direction. While we are an escalation path for nearly everything, we don't make the technical calls. Those are handled by the [SIGs](https://wiki.almalinux.org/sigs/), and  [ALESCo](https://almalinux.org/alesco/), and we listen to them closely.
 
 ## How to nominate someone
 
-Send their name and e-mail address to [elections@almalinux.org](mailto:elections@almalinux.org), from the address on your [AlmaLinux Accounts](https://accounts.almalinux.org) profile. That's it.
+Once you have confirmed their interest, you can nominate them by sending their name and e-mail address to [elections@almalinux.org](mailto:elections@almalinux.org). The email addresses for both the nominator and the nominated need to match the address on your [AlmaLinux Accounts](https://accounts.almalinux.org) profiles. That will allow the election committee to confirm your membership status.
 
-One thing worth knowing before you write that email: Individual and Mirror members can nominate one person, but cannot nominate themselves. If you'd like to serve, ask someone to put your name in. Sponsor members can nominate a representative from their organization, including themselves.
+One thing worth knowing before you write that email: Individual and Mirror members can nominate one person, but cannot nominate themselves. If you'd like to serve, ask another Foundation member to put your name in. Sponsor members can nominate a representative from their organization, including themselves.
 
 ## The rest of the election calendar
 
