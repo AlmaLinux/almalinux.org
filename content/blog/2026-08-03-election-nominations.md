@@ -15,7 +15,7 @@ post:
 
 Nominations for this year's board election open today, August 3, and they close on September 8. There are two Cohort A seats to fill, and this is the first election under our [new bylaws and election process](/blog/2026-06-10-new-bylaws-and-2026-election). More details are available on the [2026 election page](https://wiki.almalinux.org/foundation/elections/2026.html).
 
-AlmaLinux runs in places none of us can fully see: hospitals, banks, universities, someone's homelab, a shop floor with a machine that has to stay up. The board can only weigh the perspectives that are in the room, so if you know someone whose experience should be in that room, please ask them if they'd like you to send their name in.
+AlmaLinux runs in places none of us can fully see: hospitals, banks, universities, homelabs - everything from mission critical to playing around. The board can only weigh the perspectives that are in the room, so if you know someone whose experience should be in that room, we need to hear from them. Please ask them if they'd like you to send their name in.
 
 ## What you'd be signing them up for
 
