@@ -19,7 +19,7 @@ AlmaLinux runs in places none of us can fully see: hospitals, banks, universitie
 
 ## What Directors are signing up for
 
-Directors serve a four year term, and the work is usually between 2 and 10 hours a month. It isn't a paid position, and it isn't a full time job. We handle the financial health of the Foundation, its governance, and its overall direction. While we are an escalation path for nearly everything, we don't make the technical calls. Those are handled by the [SIGs](https://wiki.almalinux.org/sigs/), and  [ALESCo](https://almalinux.org/alesco/), and we listen to them closely.
+Directors serve a four year term, and the work is usually between 2 and 10 hours a month. It isn't a paid position, and it isn't a full time job. We handle the financial health of the Foundation, its governance, and its overall direction. While we are an escalation path for nearly everything, we don't make the technical calls. Those are handled by the [SIGs](https://wiki.almalinux.org/sigs/), and [ALESCo](https://almalinux.org/alesco/), and we listen to them closely.
 
 ## How to nominate someone
 
