@@ -1,53 +1,55 @@
-on: pull_request_target
+name: Publish Preview Deployment
+on:
+  workflow_run:
+    workflows: ["build-preview"]
+    types: [completed]
 
 jobs:
-  authorize:
-    environment: ${{ github.event_name == 'pull_request_target' &&
-      github.event.pull_request.head.repo.full_name != github.repository &&
-      'external' || 'internal' }}
-    runs-on: ubuntu-latest
-    steps:
-      - run: true
-
-  publish:
-    needs: authorize
+  deploy:
+    if: >
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'pull_request'
     runs-on: ubuntu-latest
     permissions:
       contents: read
       deployments: write
       pull-requests: write
-    name: Publish Preview to Cloudflare Pages
+      actions: read
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Download artifact from triggering workflow
+        uses: actions/github-script@v7
         with:
-          ref: ${{ github.event.pull_request.head.sha || github.ref }}
+          script: |
+            const run_id = context.payload.workflow_run.id;
+            const { owner, repo } = context.repo;
 
-      - name: Check for missing base language strings
-        run: python3 find_missing_i18n_strings.py
+            const artifacts = await github.rest.actions.listWorkflowRunArtifacts({
+              owner,
+              repo,
+              run_id,
+            });
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: "0.163.2"
-          extended: true
+            const artifact = artifacts.data.artifacts.find(a => a.name === "preview-site");
+            if (!artifact) {
+              core.setFailed("preview-site artifact not found");
+              return;
+            }
 
-      - name: Generate language files
-        run: python3 setup-pages-for-supported-languages.py
+            const zip = await github.rest.actions.downloadArtifact({
+              owner,
+              repo,
+              artifact_id: artifact.id,
+              archive_format: "zip",
+            });
 
-      - name: Generate get_almalinux data
-        run: python3 tools/generate_get_almalinux_yaml.py
+            const fs = require("fs");
+            fs.writeFileSync(`${process.env.GITHUB_WORKSPACE}/preview-site.zip`, Buffer.from(zip.data));
 
-      - name: Build
-        run: hugo --minify --buildFuture
-
-      - name: move redirects file into place
-        run: cp _redirects public/
-
-      - name: move headers file into place
-        run: cp _headers public/
-
-      - name: build search index
-        run: npx pagefind --site "public"
+      - name: Unzip artifact
+        run: |
+          mkdir public
+          unzip preview-site.zip -d public
 
       - name: Publish to Cloudflare Pages
         id: deploy
@@ -55,13 +57,15 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy public --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }} --branch=${{ github.head_ref }}
+          command: pages deploy public --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }} --branch=pr-${{ github.event.workflow_run.pull_requests[0].number }}
 
       - name: Comment deployment URL on PR
-        if: always() && github.event.pull_request.number
         uses: actions/github-script@v7
         with:
           script: |
+            const pr = context.payload.workflow_run.pull_requests[0];
+            if (!pr) return;
+
             const aliasUrl = `${{ steps.deploy.outputs.pages-deployment-alias-url }}`;
             const deploymentUrl = `${{ steps.deploy.outputs.deployment-url }}`;
             const url = aliasUrl || deploymentUrl;
@@ -74,6 +78,6 @@ jobs:
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: context.payload.pull_request.number,
+              issue_number: pr.number,
               body,
             });
