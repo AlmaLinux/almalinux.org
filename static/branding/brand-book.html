@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AlmaLinux OS Brand Book</title>
+<meta name="description" content="Identity standards for the AlmaLinux OS brand: voice, logo, color, typography, iconography, and accessibility.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<style>
+  body { margin:0; background:#17171b; -webkit-font-smoothing:antialiased; }
+  a { color:#c4e1ff; text-decoration:none; }
+  a:hover { color:#e6f2ff; }
+  .book { display:flex; flex-direction:column; align-items:center; gap:40px; padding:56px 24px 96px; }
+  .spread { width:1280px; height:720px; position:relative; overflow:hidden; border-radius:6px; box-shadow:0 24px 70px rgba(0,0,0,.5); box-sizing:border-box; }
+  @page { size:1280px 720px; margin:0; }
+  @media print {
+    body { background:#ffffff; }
+    .book { display:block; padding:0; gap:0; }
+    .spread { border-radius:0; box-shadow:none; break-after:page; margin:0; }
+    .spread:last-child { break-after:auto; }
+  }
+</style>
+</head>
+<body>
+<div class="book">
+
+  <!-- ============================================================ COVER -->
+  <section class="spread" data-screen-label="Cover" style="background:#082336; font-family:'Montserrat',sans-serif; padding:80px;">
+    <div style="position:absolute; inset:0; padding:80px; box-sizing:border-box; display:flex; flex-direction:column; justify-content:space-between;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+        <img src="Almalinux-logo-white.svg" alt="AlmaLinux OS" style="height:60px; width:auto;">
+        <div style="display:flex; gap:12px; padding-top:34px;">
+          <span style="width:20px; height:20px; border-radius:50%; background:#0069da;"></span>
+          <span style="width:20px; height:20px; border-radius:50%; background:#86da2f;"></span>
+          <span style="width:20px; height:20px; border-radius:50%; background:#ffcb12;"></span>
+          <span style="width:20px; height:20px; border-radius:50%; background:#ff4649;"></span>
+          <span style="width:20px; height:20px; border-radius:50%; background:#24c2ff;"></span>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:ui-monospace,'SF Mono',Menlo,monospace; font-size:15px; letter-spacing:.24em; text-transform:uppercase; color:#24c2ff; margin-bottom:22px;">Identity Standards</div>
+        <div style="font-size:132px; font-weight:800; line-height:.92; color:#fefefe; letter-spacing:-.02em;">Brand Book</div>
+        <div style="font-size:26px; font-weight:500; color:#c4e1ff; margin-top:26px;">AlmaLinux OS</div>
+      </div>
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:15px; color:#8ba1b1;">
+        <span>Version 2.0 &middot; July 2026</span>
+        <span style="color:#c4e1ff;">almalinux.org/branding</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ CONTENTS -->
+  <section class="spread" data-screen-label="Contents" style="background:#0f4266; font-family:'Montserrat',sans-serif; padding:80px 90px;">
+    <div style="display:flex; height:100%; gap:70px;">
+      <div style="width:300px; flex-shrink:0; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h1 style="font-size:64px; font-weight:800; color:#fefefe; margin:0; letter-spacing:-.02em; line-height:1;">Contents</h1>
+          <div style="width:56px; height:4px; background:#24c2ff; margin-top:24px;"></div>
+        </div>
+        <p style="font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:15px; line-height:1.6; color:#a9c0d0; margin:0;">This book works in two layers. Read the Essentials to use the brand safely. Continue into the Full Reference for complete specifications.</p>
+      </div>
+      <div style="flex:1; display:flex; gap:48px; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;">
+        <div style="flex:1;">
+          <div style="font-family:ui-monospace,monospace; font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:#24c2ff; margin-bottom:18px;">Layer 1 &middot; Essentials</div>
+          <ol style="list-style:none; margin:0; padding:0; color:#dbe8f1; font-size:17px;">
+            <li style="display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid #ffffff14;"><a href="#essentials">Who We Are</a></li>
+            <li style="display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid #ffffff14;"><a href="#voice-brief">The Voice, in Brief</a></li>
+            <li style="display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid #ffffff14;"><a href="#logo-essentials">The Logo</a></li>
+            <li style="display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid #ffffff14;"><a href="#colors-essentials">Core Colors</a></li>
+            <li style="display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid #ffffff14;"><a href="#assets">Where to Get Assets</a></li>
+          </ol>
+        </div>
+        <div style="flex:1;">
+          <div style="font-family:ui-monospace,monospace; font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:#86da2f; margin-bottom:18px;">Layer 2 &middot; Full Reference</div>
+          <ol style="list-style:none; margin:0; padding:0; color:#dbe8f1; font-size:17px;">
+            <li style="display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid #ffffff14;"><a href="#voice-full">Voice and Tone</a></li>
+            <li style="display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid #ffffff14;"><a href="#logo-system">Logo System</a></li>
+            <li style="display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid #ffffff14;"><a href="#construction">Logo Construction</a></li>
+            <li style="display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid #ffffff14;"><a href="#color-full">Full Color Palette</a></li>
+            <li style="display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid #ffffff14;"><a href="#type">Typography</a></li>
+            <li style="display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid #ffffff14;"><a href="#icons">Iconography</a></li>
+            <li style="display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid #ffffff14;"><a href="#a11y">Accessibility</a></li>
+            <li style="display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid #ffffff14;"><a href="#presentations">Presentations</a></li>
+            <li style="display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px solid #ffffff14;"><a href="#index">Asset Index</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ ESSENTIALS DIVIDER -->
+  <section id="essentials" class="spread" data-screen-label="Essentials divider" style="background:#0069da; font-family:'Montserrat',sans-serif; padding:80px 90px;">
+    <div style="position:absolute; right:-30px; bottom:-160px; font-size:520px; font-weight:800; line-height:1; color:rgba(255,255,255,.10);">01</div>
+    <div style="position:relative; height:100%; display:flex; flex-direction:column; justify-content:center;">
+      <div style="font-family:ui-monospace,monospace; font-size:15px; letter-spacing:.24em; text-transform:uppercase; color:#cfe4ff; margin-bottom:20px;">Layer 1</div>
+      <h1 style="font-size:104px; font-weight:800; color:#ffffff; margin:0; letter-spacing:-.02em; line-height:.95;">Essentials</h1>
+      <p style="max-width:560px; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:20px; line-height:1.6; color:#e6f1ff; margin-top:28px;">The few things people get wrong most. If you use the brand only from this section, you will be safe. For partners, press, sponsors, and community members.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================ WHO WE ARE : INTRODUCTION -->
+  <section class="spread" data-screen-label="Who we are: Introduction" style="background:#082336; font-family:'Montserrat',sans-serif; padding:72px 90px;">
+    <div style="position:absolute; left:-30px; top:-120px; font-size:420px; font-weight:800; color:rgba(255,255,255,.035); line-height:1;">A</div>
+    <div style="position:relative; display:flex; height:100%; gap:70px;">
+      <div style="width:320px; flex-shrink:0;">
+        <div style="font-family:ui-monospace,monospace; font-size:13px; letter-spacing:.2em; text-transform:uppercase; color:#24c2ff; margin-bottom:12px;">Who We Are</div>
+        <h2 style="font-size:60px; font-weight:800; color:#fefefe; margin:0; letter-spacing:-.02em; line-height:1;">Introduction</h2>
+        <div style="width:56px; height:4px; background:#24c2ff; margin-top:24px;"></div>
+      </div>
+      <div style="flex:1; display:flex; flex-direction:column; justify-content:center; max-width:640px; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:19px; line-height:1.65; color:#dbe8f1;">
+        <p style="margin:0 0 20px;">This book is for everyone who wants to use the AlmaLinux OS brand correctly: our team, partners, press, sponsors, and the community. Anyone creating something that carries the brand.</p>
+        <p style="margin:0 0 20px;">It covers the essentials of how and when to use our identity, so it stays consistent and recognizable wherever it shows up. Use it freely, and reach out if you are ever unsure about anything.</p>
+        <p style="margin:0;">Usage of the AlmaLinux OS marks is governed by the AlmaLinux OS Trademark Usage Policy.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ VISION + MISSION -->
+  <section class="spread" data-screen-label="Vision and Mission" style="background:#0f4266; font-family:'Montserrat',sans-serif;">
+    <div style="display:flex; height:100%;">
+      <div style="flex:1; padding:80px 64px; box-sizing:border-box; display:flex; flex-direction:column; justify-content:center; position:relative; overflow:hidden;">
+        <div style="position:absolute; right:-30px; top:-80px; font-size:360px; font-weight:800; color:rgba(255,255,255,.05); line-height:1;">V</div>
+        <div style="position:relative;">
+          <div style="font-family:ui-monospace,monospace; font-size:13px; letter-spacing:.2em; text-transform:uppercase; color:#24c2ff; margin-bottom:10px;">Who We Are</div>
+          <h2 style="font-size:64px; font-weight:800; color:#fefefe; margin:0 0 22px; letter-spacing:-.02em;">Vision</h2>
+          <p style="max-width:520px; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:18px; line-height:1.6; color:#dbe8f1; margin:0;">AlmaLinux OS is an open source, community&#8209;governed enterprise Linux distribution, stewarded by the nonprofit AlmaLinux OS Foundation. It was founded in 2021 with initial backing from CloudLinux and is now owned and governed by its community. Why &ldquo;Alma&rdquo;? The community is the soul of Linux, and in the spirit of that dedicated community, the distribution was named Alma: a Latin word for soul.</p>
+        </div>
+      </div>
+      <div style="flex:1; background:#082336; padding:80px 64px; box-sizing:border-box; display:flex; flex-direction:column; justify-content:center; position:relative; overflow:hidden;">
+        <div style="position:absolute; right:-40px; bottom:-120px; font-size:360px; font-weight:800; color:rgba(255,255,255,.05); line-height:1;">M</div>
+        <div style="position:relative;">
+          <div style="font-family:ui-monospace,monospace; font-size:13px; letter-spacing:.2em; text-transform:uppercase; color:#86da2f; margin-bottom:10px;">Who We Are</div>
+          <h2 style="font-size:64px; font-weight:800; color:#fefefe; margin:0 0 22px; letter-spacing:-.02em;">Mission</h2>
+          <p style="max-width:480px; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:18px; line-height:1.6; color:#dbe8f1; margin:0;">To provide a free, enterprise&#8209;grade Linux distribution that is stable, long&#8209;supported, and fully compatible with RHEL, with regular releases and long support windows. Governed by the community through the AlmaLinux OS Foundation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ CORE VALUES -->
+  <section class="spread" data-screen-label="Core Values" style="background:#082336; font-family:'Montserrat',sans-serif; padding:66px 80px;">
+    <div style="display:flex; height:100%; gap:56px;">
+      <div style="width:340px; flex-shrink:0; display:flex; flex-direction:column;">
+        <div style="font-family:ui-monospace,monospace; font-size:13px; letter-spacing:.2em; text-transform:uppercase; color:#24c2ff; margin-bottom:12px;">Who We Are</div>
+        <h2 style="font-size:56px; font-weight:800; color:#fefefe; margin:0 0 22px; letter-spacing:-.02em; line-height:1;">Core Values</h2>
+        <p style="font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:15px; line-height:1.6; color:#a9c0d0; margin:0;">These values guide how AlmaLinux OS is built and governed: in the open, and by the community that depends on it. They are set and kept by that community, not handed down from a single owner.</p>
+      </div>
+      <div style="flex:1; display:grid; grid-template-columns:repeat(3,1fr); grid-auto-rows:1fr; gap:16px;">
+        <div style="background:#0069da; border-radius:10px; padding:20px; box-sizing:border-box; display:flex; flex-direction:column;"><div style="color:#fff; font-weight:700; font-size:18px; line-height:1.2;">Always free, forever</div><div style="color:#cfe4ff; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:12.5px; line-height:1.45; margin-top:8px;">Open source and forever free, owned by a nonprofit foundation. It cannot be bought or sold.</div></div>
+        <div style="background:#86da2f; border-radius:10px; padding:20px; box-sizing:border-box; display:flex; flex-direction:column;"><div style="color:#0a2a06; font-weight:700; font-size:18px; line-height:1.2;">Community&#8209;governed and democratic</div><div style="color:#2d5312; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:12.5px; line-height:1.45; margin-top:8px;">Individual membership is free for any community member, not only those who write code. Members elect the Board.</div></div>
+        <div style="background:#ffcb12; border-radius:10px; padding:20px; box-sizing:border-box; display:flex; flex-direction:column;"><div style="color:#3a2c00; font-weight:700; font-size:18px; line-height:1.2;">No single owner can capture it</div><div style="color:#6b5200; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:12.5px; line-height:1.45; margin-top:8px;">Bylaws stop any single employer or sponsor from holding more than one seat on the Board of Directors.</div></div>
+        <div style="background:#24c2ff; border-radius:10px; padding:20px; box-sizing:border-box; display:flex; flex-direction:column;"><div style="color:#00303f; font-weight:700; font-size:18px; line-height:1.2;">Fully compatible with the relevant RHEL release</div><div style="color:#004a63; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:12.5px; line-height:1.45; margin-top:8px;">Built for tight compatibility, so mission&#8209;critical workloads run without surprises or breaking changes.</div></div>
+        <div style="background:#304b5e; border-radius:10px; padding:20px; box-sizing:border-box; display:flex; flex-direction:column;"><div style="color:#fefefe; font-weight:700; font-size:18px; line-height:1.2;">A good open source citizen</div><div style="color:#c3d4e0; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:12.5px; line-height:1.45; margin-top:8px;">We send our patches and fixes upstream, so the whole open source ecosystem benefits, not just AlmaLinux users.</div></div>
+        <div style="background:#ff6467; border-radius:10px; padding:20px; box-sizing:border-box; display:flex; flex-direction:column;"><div style="color:#082336; font-weight:700; font-size:18px; line-height:1.2;">Considerate continuity</div><div style="color:#6e2222; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:12.5px; line-height:1.45; margin-top:8px;">Choices follow real user needs, like building x86&#8209;64&#8209;v2 packages to extend support for older hardware by another decade.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ VOICE IN BRIEF -->
+  <section id="voice-brief" class="spread" data-screen-label="Voice in brief" style="background:#0f4266; font-family:'Montserrat',sans-serif; padding:66px 80px;">
+    <div style="display:flex; height:100%; gap:56px;">
+      <div style="width:330px; flex-shrink:0; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <div style="font-family:ui-monospace,monospace; font-size:13px; letter-spacing:.2em; text-transform:uppercase; color:#24c2ff; margin-bottom:12px;">Essentials</div>
+          <h2 style="font-size:52px; font-weight:800; color:#fefefe; margin:0; letter-spacing:-.02em; line-height:1.02;">The Voice,<br>in Brief</h2>
+          <div style="width:56px; height:4px; background:#24c2ff; margin-top:22px;"></div>
+        </div>
+        <p style="font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:16px; line-height:1.6; color:#c4e1ff; margin:0;">AlmaLinux is a community project run by volunteers, not a corporation. Sound like a helpful person who is glad you are here.</p>
+      </div>
+      <div style="flex:1; display:grid; grid-template-columns:1fr 1fr; gap:18px 26px; align-content:center; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;">
+        <div><div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:19px; color:#fefefe; margin-bottom:6px;">Warm and human</div><div style="font-size:15px; line-height:1.55; color:#c3d4e0;">Welcome newcomers without talking down to them. Write the way you would explain something to a colleague you like.</div></div>
+        <div><div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:19px; color:#fefefe; margin-bottom:6px;">Plain over polished</div><div style="font-size:15px; line-height:1.55; color:#c3d4e0;">Say the thing directly. Prefer short, clear sentences and everyday words over jargon or buzzwords.</div></div>
+        <div><div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:19px; color:#fefefe; margin-bottom:6px;">Confident, not hype</div><div style="font-size:15px; line-height:1.55; color:#c3d4e0;">State what is true and useful. Skip breathless superlatives and fear&#8209;based messaging. The work speaks for itself.</div></div>
+        <div><div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:19px; color:#fefefe; margin-bottom:6px;">Inclusive and neutral</div><div style="font-size:15px; line-height:1.55; color:#c3d4e0;">Address the reader as &ldquo;you&rdquo;. When pronouns are not known, use they/them. Do not guess from a name.</div></div>
+        <div style="grid-column:span 2;"><div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:19px; color:#fefefe; margin-bottom:6px;">Consistent and specific</div><div style="font-size:15px; line-height:1.55; color:#c3d4e0;">Name things the same way every time and prefer concrete detail over vague claims.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ LOGO ESSENTIALS -->
+  <section id="logo-essentials" class="spread" data-screen-label="The logo (essentials)" style="background:#082336; font-family:'Montserrat',sans-serif; padding:66px 80px;">
+    <div style="display:flex; flex-direction:column; height:100%;">
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:30px;">
+        <div>
+          <div style="font-family:ui-monospace,monospace; font-size:13px; letter-spacing:.2em; text-transform:uppercase; color:#24c2ff; margin-bottom:10px;">Essentials</div>
+          <h2 style="font-size:52px; font-weight:800; color:#fefefe; margin:0; letter-spacing:-.02em;">The Logo</h2>
+        </div>
+        <p style="max-width:420px; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:15px; line-height:1.55; color:#a9c0d0; margin:0;">We are very proud of our logo, and we require that you follow these guidelines to ensure it always looks its best.</p>
+      </div>
+      <div style="display:flex; gap:22px; flex:1;">
+        <div style="flex:1; background:#faf5f5; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:16px;">
+          <img src="Almalinux-logo-color.png" alt="AlmaLinux OS color logo" style="max-width:280px; max-height:74px; width:auto; height:auto;">
+          <div style="font-family:system-ui,sans-serif; font-size:14px; color:#5b6b78;">Color logo, on <strong style="color:#000518;">light</strong> backgrounds</div>
+        </div>
+        <div style="flex:1; background:#000518; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:16px;">
+          <img src="Almalinux-logo-white.svg" alt="AlmaLinux OS white logo" style="max-width:280px; max-height:74px; width:auto; height:auto;">
+          <div style="font-family:system-ui,sans-serif; font-size:14px; color:#8ba1b1;">White logo, on <strong style="color:#fefefe;">dark</strong> backgrounds</div>
+        </div>
+        <div style="width:300px; background:#0f4266; border-radius:10px; padding:26px; box-sizing:border-box; display:flex; flex-direction:column; justify-content:center; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;">
+          <div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:16px; color:#fefefe; margin-bottom:14px;">Get it right</div>
+          <ul style="margin:0; padding-left:18px; color:#dbe8f1; font-size:14px; line-height:1.7;">
+            <li>Prefer the SVG source. Fall back to PNG only where SVG is not supported.</li>
+            <li>White on dark, color on light. Keep strong contrast.</li>
+            <li>Keep clear space of at least the height of the &ldquo;A&rdquo; mark.</li>
+            <li>Do not recolor, stretch, rotate, or add effects.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ CORE COLORS ESSENTIALS -->
+  <section id="colors-essentials" class="spread" data-screen-label="Core colors (essentials)" style="background:#0f4266; font-family:'Montserrat',sans-serif; padding:66px 80px;">
+    <div style="display:flex; flex-direction:column; height:100%;">
+      <div style="margin-bottom:28px;">
+        <div style="font-family:ui-monospace,monospace; font-size:13px; letter-spacing:.2em; text-transform:uppercase; color:#24c2ff; margin-bottom:10px;">Essentials</div>
+        <h2 style="font-size:52px; font-weight:800; color:#fefefe; margin:0; letter-spacing:-.02em;">Core Colors</h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:22px; flex:1;">
+        <div style="background:#0069da; border-radius:12px; padding:26px; box-sizing:border-box; display:flex; flex-direction:column; justify-content:space-between;">
+          <div style="font-family:system-ui,sans-serif; font-size:14px; color:#cfe4ff;">Science Blue</div>
+          <div><div style="color:#fff; font-weight:700; font-size:24px;">Brand Blue</div><div style="color:#fff; font-family:ui-monospace,monospace; font-size:16px; margin-top:8px;">#0069da</div><div style="color:#b6d6ff; font-family:ui-monospace,monospace; font-size:13px; margin-top:2px;">Pantone 2172 C</div></div>
+        </div>
+        <div style="background:#86da2f; border-radius:12px; padding:26px; box-sizing:border-box; display:flex; flex-direction:column; justify-content:space-between;">
+          <div style="font-family:system-ui,sans-serif; font-size:14px; color:#2d5312;">Atlantis</div>
+          <div><div style="color:#0a2a06; font-weight:700; font-size:24px;">Brand Green</div><div style="color:#12300a; font-family:ui-monospace,monospace; font-size:16px; margin-top:8px;">#86da2f</div><div style="color:#3f6b1d; font-family:ui-monospace,monospace; font-size:13px; margin-top:2px;">Pantone 2285 C</div></div>
+        </div>
+        <div style="background:#ffcb12; border-radius:12px; padding:26px; box-sizing:border-box; display:flex; flex-direction:column; justify-content:space-between;">
+          <div style="font-family:system-ui,sans-serif; font-size:14px; color:#6b5200;">Candlelight</div>
+          <div><div style="color:#3a2c00; font-weight:700; font-size:24px;">Brand Yellow</div><div style="color:#3a2c00; font-family:ui-monospace,monospace; font-size:16px; margin-top:8px;">#ffcb12</div><div style="color:#7a5f00; font-family:ui-monospace,monospace; font-size:13px; margin-top:2px;">Pantone 116 C</div></div>
+        </div>
+      </div>
+      <div style="display:flex; gap:16px; margin-top:22px; align-items:center;">
+        <div style="display:flex; align-items:center; gap:12px; background:#24c2ff; border-radius:10px; padding:14px 20px;"><span style="font-family:ui-monospace,monospace; font-size:15px; color:#00303f; font-weight:600;">#24c2ff</span><span style="font-family:system-ui,sans-serif; font-size:13px; color:#004a63;">CTA light blue, dark text</span></div>
+        <div style="display:flex; align-items:center; gap:12px; background:#ff4649; border-radius:10px; padding:14px 20px;"><span style="font-family:ui-monospace,monospace; font-size:15px; color:#fff; font-weight:600;">#ff4649</span><span style="font-family:system-ui,sans-serif; font-size:13px; color:#ffe1e1;">Error red</span></div>
+        <div style="flex:1; font-family:system-ui,sans-serif; font-size:14px; line-height:1.5; color:#a9c0d0;">Green is a reserved action color (for example event registration), not a general button color. Full palette and ramps are in the Full Reference.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ WHERE TO GET ASSETS -->
+  <section id="assets" class="spread" data-screen-label="Where to get assets" style="background:#000518; font-family:'Montserrat',sans-serif; padding:80px 90px;">
+    <div style="display:flex; height:100%; align-items:center; gap:70px;">
+      <div style="flex:1;">
+        <div style="font-family:ui-monospace,monospace; font-size:13px; letter-spacing:.2em; text-transform:uppercase; color:#24c2ff; margin-bottom:14px;">Essentials</div>
+        <h2 style="font-size:60px; font-weight:800; color:#fefefe; margin:0 0 24px; letter-spacing:-.02em; line-height:1.02;">Where to Get<br>Official Assets</h2>
+        <p style="max-width:520px; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:18px; line-height:1.6; color:#c3d4e0; margin:0 0 28px;">Always use the official files. Do not rebuild the logo, and do not typeset the word &ldquo;AlmaLinux&rdquo; as a stand&#8209;in for it.</p>
+        <a href="https://almalinux.org/branding/" style="display:inline-flex; align-items:center; gap:12px; background:#24c2ff; color:#00303f; font-weight:700; font-size:18px; padding:16px 26px; border-radius:8px; font-family:'Montserrat',sans-serif;">almalinux.org/branding</a>
+      </div>
+      <div style="width:360px; background:#082336; border-radius:12px; padding:30px; box-sizing:border-box; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;">
+        <div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:16px; color:#fefefe; margin-bottom:16px;">Source of truth</div>
+        <div style="font-size:15px; line-height:1.7; color:#c3d4e0;">
+          <div style="padding:10px 0; border-bottom:1px solid #ffffff14;">Published downloads: <a href="https://almalinux.org/branding/">almalinux.org/branding</a></div>
+          <div style="padding:10px 0; border-bottom:1px solid #ffffff14;">Repository path: <span style="font-family:ui-monospace,monospace; font-size:13px; color:#c4e1ff;">static/branding/</span></div>
+          <div style="padding:10px 0;">Definitive authority: the AlmaLinux OS design system (DESIGN.md) and this Brand Book.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ FULL REFERENCE DIVIDER -->
+  <section id="voice-full" class="spread" data-screen-label="Full reference divider" style="background:#000518; font-family:'Montserrat',sans-serif; padding:80px 90px;">
+    <div style="position:absolute; right:-30px; bottom:-160px; font-size:520px; font-weight:800; line-height:1; color:rgba(134,218,47,.10);">02</div>
+    <div style="position:relative; height:100%; display:flex; flex-direction:column; justify-content:center;">
+      <div style="font-family:ui-monospace,monospace; font-size:15px; letter-spacing:.24em; text-transform:uppercase; color:#86da2f; margin-bottom:20px;">Layer 2</div>
+      <h1 style="font-size:104px; font-weight:800; color:#ffffff; margin:0; letter-spacing:-.02em; line-height:.95;">Full Reference</h1>
+      <p style="max-width:560px; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:20px; line-height:1.6; color:#c3d4e0; margin-top:28px;">Complete specifications for contributors, designers, and anyone building AlmaLinux materials.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================ VOICE AND TONE FULL -->
+  <section class="spread" data-screen-label="Voice and tone (full)" style="background:#0f4266; font-family:'Montserrat',sans-serif; padding:60px 80px;">
+    <div style="margin-bottom:24px;">
+      <div style="font-family:ui-monospace,monospace; font-size:13px; letter-spacing:.2em; text-transform:uppercase; color:#86da2f; margin-bottom:8px;">Full Reference</div>
+      <h2 style="font-size:48px; font-weight:800; color:#fefefe; margin:0; letter-spacing:-.02em;">Voice and Tone</h2>
+    </div>
+    <div style="display:flex; gap:40px;">
+      <div style="flex:1;">
+        <div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:16px; color:#24c2ff; margin-bottom:14px;">Mechanics that carry the voice</div>
+        <ul style="margin:0; padding-left:18px; color:#dbe8f1; font-size:15px; line-height:1.75; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;">
+          <li>&ldquo;AlmaLinux&rdquo; is one word, capital A and L, in all copy.</li>
+          <li>No long dashes (em&#8209;dashes or en&#8209;dashes). Use a colon, a period, or parentheses instead.</li>
+          <li>&ldquo;AlmaLinux Day&rdquo; always takes a colon: &ldquo;AlmaLinux Day: Tokyo&rdquo;, &ldquo;AlmaLinux Day: LA&rdquo;.</li>
+          <li>Headings use Title Case; body lists and sentences use sentence case.</li>
+        </ul>
+        <div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:16px; color:#24c2ff; margin:24px 0 12px;">Naming, exactly</div>
+        <div style="display:flex; flex-direction:column; gap:8px; font-family:system-ui,sans-serif; font-size:14px;">
+          <div style="display:flex; gap:10px; align-items:center;"><span style="color:#86da2f; font-weight:700;">Do</span><span style="color:#dbe8f1;">AlmaLinux &middot; AlmaLinux OS &middot; benny Vasquez &middot; AlmaLinux Day: Tokyo</span></div>
+          <div style="display:flex; gap:10px; align-items:center;"><span style="color:#ff6467; font-weight:700;">Not</span><span style="color:#9fb4c2;">Almalinux &middot; Alma Linux &middot; Benny Vasquez &middot; AlmaLinux Day Tokyo</span></div>
+        </div>
+      </div>
+      <div style="flex:1; display:flex; flex-direction:column; gap:14px;">
+        <div style="background:#082336; border-radius:10px; padding:20px; border-left:4px solid #86da2f;">
+          <div style="font-family:system-ui,sans-serif; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:#86da2f; margin-bottom:8px;">On brand</div>
+          <div style="font-family:system-ui,sans-serif; font-size:16px; line-height:1.55; color:#eaf2f8;">&ldquo;New here? Welcome. AlmaLinux OS is free, and it will stay that way. Here is how to get started.&rdquo;</div>
+        </div>
+        <div style="background:#082336; border-radius:10px; padding:20px; border-left:4px solid #ff4649;">
+          <div style="font-family:system-ui,sans-serif; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:#ff6467; margin-bottom:8px;">Off brand</div>
+          <div style="font-family:system-ui,sans-serif; font-size:16px; line-height:1.55; color:#c3d4e0;">&ldquo;Alma Linux is a revolutionary, world&#8209;class enterprise solution that will transform your infrastructure.&rdquo;</div>
+        </div>
+        <div style="background:#082336; border-radius:10px; padding:16px 18px;">
+          <div style="font-family:system-ui,sans-serif; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:#24c2ff; margin-bottom:8px;">Official description &middot; use verbatim</div>
+          <div style="font-family:system-ui,sans-serif; font-size:11.5px; line-height:1.5; color:#c3d4e0;">AlmaLinux OS is an open source, community&#8209;governed, and forever&#8209;free enterprise Linux distribution focused on long&#8209;term stability and delivering a robust production&#8209;grade platform. Distributed from a network of over 400 mirrors across six continents, AlmaLinux is compatible with RHEL&reg; and pre&#8209;Stream CentOS, and powers projects for governments, the defense sector, and scientific research institutions as well as numerous global business sectors and the web hosting industry. Adopted by some of today&rsquo;s foremost open source ecosystem projects such as VMware, GitLab and Tenable, it&rsquo;s available on all major public cloud platforms including AWS, Azure, Google Cloud, and Oracle OCI. The AlmaLinux OS Foundation is a 501(c)(6) non&#8209;profit entity created as the central collaboration point for everything to do with AlmaLinux and for the benefit of the AlmaLinux OS community. Visit www.almalinux.org.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ LOGO SYSTEM -->
+  <section id="logo-system" class="spread" data-screen-label="Logo system: variants" style="background:#082336; font-family:'Montserrat',sans-serif; padding:56px 70px;">
+    <div style="margin-bottom:22px;">
+      <div style="font-family:ui-monospace,monospace; font-size:13px; letter-spacing:.2em; text-transform:uppercase; color:#86da2f; margin-bottom:8px;">Full Reference</div>
+      <h2 style="font-size:48px; font-weight:800; color:#fefefe; margin:0; letter-spacing:-.02em;">Logo System</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:16px;">
+      <div style="background:#faf5f5; border-radius:10px; height:150px; display:flex; align-items:center; justify-content:center; padding:14px; box-sizing:border-box;"><img src="Almalinux-logo-color.png" alt="Color logo" style="max-height:70px; max-width:90%; width:auto; height:auto;"></div>
+      <div style="background:#000518; border-radius:10px; height:150px; display:flex; align-items:center; justify-content:center; padding:14px; box-sizing:border-box;"><img src="Almalinux-logo-white.svg" alt="White logo" style="max-height:70px; max-width:90%; width:auto; height:auto;"></div>
+      <div style="background:#000518; border-radius:10px; height:150px; display:flex; align-items:center; justify-content:center; padding:14px; box-sizing:border-box;"><img src="Powered-by-AL-White.svg" alt="Powered by AlmaLinux, white" style="max-height:80px; max-width:90%; width:auto; height:auto;"></div>
+      <div style="background:#faf5f5; border-radius:10px; height:150px; display:flex; align-items:center; justify-content:center; padding:14px; box-sizing:border-box;"><img src="Powered-by-Dark-AL.svg" alt="Powered by AlmaLinux, dark" style="max-height:80px; max-width:90%; width:auto; height:auto;"></div>
+      <div style="background:#0f4266; border-radius:10px; height:150px; display:flex; align-items:center; justify-content:center; padding:14px; box-sizing:border-box;"><img src="AlmaLinux%20Icon.svg" alt="Icon" style="max-height:110px; max-width:90%; width:auto; height:auto;"></div>
+      <div style="background:#0f4266; border-radius:10px; height:150px; display:flex; align-items:center; justify-content:center; padding:14px; box-sizing:border-box;"><img src="AlmaLinux%20Icon%20Circle.svg" alt="Circle icon" style="max-height:110px; max-width:90%; width:auto; height:auto;"></div>
+      <div style="background:#faf5f5; border-radius:10px; height:150px; display:flex; align-items:center; justify-content:center; padding:14px; box-sizing:border-box;"><img src="icon-bw.svg" alt="Monochrome icon" style="max-height:110px; max-width:90%; width:auto; height:auto;"></div>
+    </div>
+    <div style="margin-top:16px; background:#0f4266; border-radius:8px; padding:12px 16px; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:13px; line-height:1.5; color:#c3d4e0;"><strong style="color:#fefefe;">&ldquo;Powered by AlmaLinux&rdquo; badges</strong> are free for anyone actively running AlmaLinux OS to show it. Use them as provided; do not alter them.</div>
+    <div style="display:flex; gap:30px; margin-top:16px; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;">
+      <div style="flex:1;"><div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:14px; color:#24c2ff; margin-bottom:8px;">Usage rules</div><ul style="margin:0; padding-left:16px; color:#c3d4e0; font-size:13px; line-height:1.65;"><li>Prefer SVG; fall back to PNG only where SVG is not supported.</li><li>White logo on dark, color logo on light. Keep strong contrast.</li><li>Clear space of at least the height of the &ldquo;A&rdquo; mark on all sides.</li></ul></div>
+      <div style="flex:1;"><div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:14px; color:#24c2ff; margin-bottom:8px;">Never</div><ul style="margin:0; padding-left:16px; color:#c3d4e0; font-size:13px; line-height:1.65;"><li>Recolor, stretch, squash, rotate, or add shadows and effects.</li><li>Place on a busy or low&#8209;contrast background.</li><li>Typeset the word as a stand&#8209;in, or rebuild the logo from the font.</li></ul></div>
+      <div style="width:250px;"><div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:14px; color:#24c2ff; margin-bottom:8px;">Construction &amp; misuse</div><div style="font-family:system-ui,sans-serif; font-size:12px; color:#c3d4e0; line-height:1.6;">Clear space, minimum size, and misuse examples are on the next page.</div></div>
+    </div>
+  </section>
+
+  <!-- ============================================================ LOGO CONSTRUCTION -->
+  <section id="construction" class="spread" data-screen-label="Logo construction" style="background:#082336; font-family:'Montserrat',sans-serif; padding:56px 70px;">
+    <div style="margin-bottom:22px;">
+      <div style="font-family:ui-monospace,monospace; font-size:13px; letter-spacing:.2em; text-transform:uppercase; color:#86da2f; margin-bottom:8px;">Full Reference</div>
+      <h2 style="font-size:48px; font-weight:800; color:#fefefe; margin:0; letter-spacing:-.02em;">Logo Construction</h2>
+    </div>
+    <div style="display:flex; gap:22px; margin-bottom:24px;">
+      <div style="flex:1; background:#0f4266; border-radius:10px; padding:22px; box-sizing:border-box;">
+        <div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:15px; color:#24c2ff; margin-bottom:14px;">Clear space</div>
+        <div style="background:#faf5f5; border-radius:8px; padding:30px; display:flex; align-items:center; justify-content:center;">
+          <div style="border:1.5px dashed #9aa7b0; padding:22px;"><img src="Almalinux-logo-color.png" alt="Clear space around the logo" style="max-width:220px; height:auto; display:block;"></div>
+        </div>
+        <div style="font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:13px; line-height:1.55; color:#c3d4e0; margin-top:12px;">Keep clear space on all sides of at least the height of the &ldquo;A&rdquo; mark. The dashed line shows the minimum; more is always fine.</div>
+      </div>
+      <div style="width:360px; background:#0f4266; border-radius:10px; padding:22px; box-sizing:border-box;">
+        <div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:15px; color:#24c2ff; margin-bottom:14px;">Minimum size</div>
+        <div style="background:#faf5f5; border-radius:8px; padding:26px; display:flex; align-items:center; justify-content:center;">
+          <img src="Almalinux-logo-color.png" alt="AlmaLinux logo at minimum size" style="width:120px; height:auto; display:block;">
+        </div>
+        <div style="font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:13px; line-height:1.6; color:#c3d4e0; margin-top:12px;">Do not reproduce the logo smaller than <strong style="color:#fefefe;">120&nbsp;px</strong> wide on screen or <strong style="color:#fefefe;">1&nbsp;inch (25&nbsp;mm)</strong> in print, so the wordmark stays legible. <span style="color:#8ba1b1;">(Proposed: confirm the sizes.)</span></div>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:15px; color:#ff6467; margin-bottom:12px;">Never do this</div>
+      <div style="display:grid; grid-template-columns:repeat(6,1fr); gap:12px;">
+        <div>
+          <div style="position:relative; background:#faf5f5; border-radius:8px; height:96px; display:flex; align-items:center; justify-content:center; overflow:hidden;"><img src="Almalinux-logo-color.png" alt="" style="max-width:120px; height:auto; transform:scaleX(1.8);"><span style="position:absolute; top:6px; right:6px; width:20px; height:20px; border-radius:50%; background:#ff4649; color:#fff; font-size:14px; line-height:1; display:flex; align-items:center; justify-content:center;">&times;</span></div>
+          <div style="font-family:system-ui,sans-serif; font-size:11.5px; color:#c3d4e0; margin-top:6px; text-align:center;">Stretched</div>
+        </div>
+        <div>
+          <div style="position:relative; background:#faf5f5; border-radius:8px; height:96px; display:flex; align-items:center; justify-content:center; overflow:hidden;"><img src="Almalinux-logo-color.png" alt="" style="max-width:120px; height:auto; filter:hue-rotate(150deg) saturate(1.5);"><span style="position:absolute; top:6px; right:6px; width:20px; height:20px; border-radius:50%; background:#ff4649; color:#fff; font-size:14px; line-height:1; display:flex; align-items:center; justify-content:center;">&times;</span></div>
+          <div style="font-family:system-ui,sans-serif; font-size:11.5px; color:#c3d4e0; margin-top:6px; text-align:center;">Recolored</div>
+        </div>
+        <div>
+          <div style="position:relative; background:#faf5f5; border-radius:8px; height:96px; display:flex; align-items:center; justify-content:center; overflow:hidden;"><img src="Almalinux-logo-color.png" alt="" style="max-width:120px; height:auto; transform:rotate(-12deg);"><span style="position:absolute; top:6px; right:6px; width:20px; height:20px; border-radius:50%; background:#ff4649; color:#fff; font-size:14px; line-height:1; display:flex; align-items:center; justify-content:center;">&times;</span></div>
+          <div style="font-family:system-ui,sans-serif; font-size:11.5px; color:#c3d4e0; margin-top:6px; text-align:center;">Rotated</div>
+        </div>
+        <div>
+          <div style="position:relative; background:#faf5f5; border-radius:8px; height:96px; display:flex; align-items:center; justify-content:center; overflow:hidden;"><img src="Almalinux-logo-color.png" alt="" style="max-width:120px; height:auto; filter:drop-shadow(2px 3px 2px rgba(0,0,0,.55));"><span style="position:absolute; top:6px; right:6px; width:20px; height:20px; border-radius:50%; background:#ff4649; color:#fff; font-size:14px; line-height:1; display:flex; align-items:center; justify-content:center;">&times;</span></div>
+          <div style="font-family:system-ui,sans-serif; font-size:11.5px; color:#c3d4e0; margin-top:6px; text-align:center;">Added effects</div>
+        </div>
+        <div>
+          <div style="position:relative; background:repeating-linear-gradient(45deg,#0069da,#0069da 10px,#86da2f 10px,#86da2f 20px); border-radius:8px; height:96px; display:flex; align-items:center; justify-content:center; overflow:hidden;"><img src="Almalinux-logo-color.png" alt="" style="max-width:120px; height:auto;"><span style="position:absolute; top:6px; right:6px; width:20px; height:20px; border-radius:50%; background:#ff4649; color:#fff; font-size:14px; line-height:1; display:flex; align-items:center; justify-content:center;">&times;</span></div>
+          <div style="font-family:system-ui,sans-serif; font-size:11.5px; color:#c3d4e0; margin-top:6px; text-align:center;">Busy background</div>
+        </div>
+        <div>
+          <div style="position:relative; background:#faf5f5; border-radius:8px; height:96px; display:flex; align-items:center; justify-content:center; overflow:hidden;"><span style="font-family:Georgia,'Times New Roman',serif; font-size:21px; font-weight:700; color:#082336;">AlmaLinux</span><span style="position:absolute; top:6px; right:6px; width:20px; height:20px; border-radius:50%; background:#ff4649; color:#fff; font-size:14px; line-height:1; display:flex; align-items:center; justify-content:center;">&times;</span></div>
+          <div style="font-family:system-ui,sans-serif; font-size:11.5px; color:#c3d4e0; margin-top:6px; text-align:center;">Retyped, not the logo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ FULL COLOR PALETTE -->
+  <section id="color-full" class="spread" data-screen-label="Full color palette" style="background:#0f4266; font-family:'Montserrat',sans-serif; padding:56px 70px;">
+    <div style="margin-bottom:20px;">
+      <div style="font-family:ui-monospace,monospace; font-size:13px; letter-spacing:.2em; text-transform:uppercase; color:#86da2f; margin-bottom:8px;">Full Reference</div>
+      <h2 style="font-size:48px; font-weight:800; color:#fefefe; margin:0; letter-spacing:-.02em;">Full Color Palette</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(6,1fr); gap:12px; margin-bottom:22px;">
+      <div><div style="height:96px; background:#0069da; border-radius:8px;"></div><div style="font-family:ui-monospace,monospace; font-size:12px; color:#eaf2f8; margin-top:6px;">#0069da</div><div style="font-family:system-ui,sans-serif; font-size:11px; color:#9fb4c2;">Brand Blue &middot; 2172 C</div></div>
+      <div><div style="height:96px; background:#86da2f; border-radius:8px;"></div><div style="font-family:ui-monospace,monospace; font-size:12px; color:#eaf2f8; margin-top:6px;">#86da2f</div><div style="font-family:system-ui,sans-serif; font-size:11px; color:#9fb4c2;">Brand Green &middot; 2285 C</div></div>
+      <div><div style="height:96px; background:#ffcb12; border-radius:8px;"></div><div style="font-family:ui-monospace,monospace; font-size:12px; color:#eaf2f8; margin-top:6px;">#ffcb12</div><div style="font-family:system-ui,sans-serif; font-size:11px; color:#9fb4c2;">Brand Yellow &middot; 116 C</div></div>
+      <div><div style="height:96px; background:#24c2ff; border-radius:8px;"></div><div style="font-family:ui-monospace,monospace; font-size:12px; color:#eaf2f8; margin-top:6px;">#24c2ff</div><div style="font-family:system-ui,sans-serif; font-size:11px; color:#9fb4c2;">CTA Blue &middot; 298 C</div></div>
+      <div><div style="height:96px; background:#ff4649; border-radius:8px;"></div><div style="font-family:ui-monospace,monospace; font-size:12px; color:#eaf2f8; margin-top:6px;">#ff4649</div><div style="font-family:system-ui,sans-serif; font-size:11px; color:#9fb4c2;">Error &middot; Warm Red C</div></div>
+      <div><div style="height:96px; background:#082336; border-radius:8px; border:1px solid #ffffff1f;"></div><div style="font-family:ui-monospace,monospace; font-size:12px; color:#eaf2f8; margin-top:6px;">#082336</div><div style="font-family:system-ui,sans-serif; font-size:11px; color:#9fb4c2;">Black Pearl &middot; 539 C</div></div>
+    </div>
+    <div style="display:flex; gap:20px;">
+      <div style="flex:1;">
+        <div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:14px; color:#24c2ff; margin-bottom:10px;">Tint &amp; shade ramps (dark to light)</div>
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <div><div style="font-family:system-ui,sans-serif; font-size:11px; color:#9fb4c2; margin-bottom:3px;">Blue</div><div style="display:flex; height:34px; border-radius:6px; overflow:hidden;"><span style="flex:1; background:#004bbc;"></span><span style="flex:1; background:#0069da;"></span><span style="flex:1; background:#1e87f8;"></span><span style="flex:1; background:#2891ff;"></span></div></div>
+          <div><div style="font-family:system-ui,sans-serif; font-size:11px; color:#9fb4c2; margin-bottom:3px;">Green</div><div style="display:flex; height:34px; border-radius:6px; overflow:hidden;"><span style="flex:1; background:#68bc11;"></span><span style="flex:1; background:#86da2f;"></span><span style="flex:1; background:#a4f84d;"></span><span style="flex:1; background:#aeff57;"></span></div></div>
+          <div><div style="font-family:system-ui,sans-serif; font-size:11px; color:#9fb4c2; margin-bottom:3px;">Yellow</div><div style="display:flex; height:34px; border-radius:6px; overflow:hidden;"><span style="flex:1; background:#e1ad00;"></span><span style="flex:1; background:#ffcb12;"></span><span style="flex:1; background:#ffe930;"></span><span style="flex:1; background:#fff33a;"></span></div></div>
+          <div><div style="font-family:system-ui,sans-serif; font-size:11px; color:#9fb4c2; margin-bottom:3px;">Red</div><div style="display:flex; height:34px; border-radius:6px; overflow:hidden;"><span style="flex:1; background:#e1282b;"></span><span style="flex:1; background:#ff4649;"></span><span style="flex:1; background:#ff6467;"></span><span style="flex:1; background:#ff6e71;"></span></div></div>
+          <div><div style="font-family:system-ui,sans-serif; font-size:11px; color:#9fb4c2; margin-bottom:3px;">Black Pearl</div><div style="display:flex; height:34px; border-radius:6px; overflow:hidden;"><span style="flex:1; background:#000518;"></span><span style="flex:1; background:#082336;"></span><span style="flex:1; background:#264154;"></span><span style="flex:1; background:#304b5e;"></span></div></div>
+          <div><div style="font-family:system-ui,sans-serif; font-size:11px; color:#9fb4c2; margin-bottom:3px;">Soft Peach</div><div style="display:flex; height:34px; border-radius:6px; overflow:hidden; border:1px solid #ffffff1f;"><span style="flex:1; background:#faf5f5;"></span><span style="flex:1; background:#dcd7d7;"></span><span style="flex:1; background:#ffffff;"></span></div></div>
+        </div>
+      </div>
+      <div style="width:360px; display:flex; flex-direction:column; gap:12px;">
+        <div style="background:#082336; border-radius:10px; padding:16px 18px;">
+          <div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:13px; color:#24c2ff; margin-bottom:8px;">Surfaces &amp; text</div>
+          <div style="font-family:system-ui,sans-serif; font-size:12.5px; line-height:1.7; color:#c3d4e0;">Page bg <span style="font-family:ui-monospace,monospace; color:#c4e1ff;">#0f4266</span> &middot; Darkest <span style="font-family:ui-monospace,monospace; color:#c4e1ff;">#000518</span> &middot; Light surface <span style="font-family:ui-monospace,monospace; color:#c4e1ff;">#faf5f5</span> &middot; Text on dark <span style="font-family:ui-monospace,monospace; color:#c4e1ff;">#fefefe</span> &middot; Text on light <span style="font-family:ui-monospace,monospace; color:#c4e1ff;">#000518</span> &middot; Inline link on dark <span style="font-family:ui-monospace,monospace; color:#c4e1ff;">#c4e1ff</span></div>
+        </div>
+        <div style="background:#082336; border-radius:10px; padding:16px 18px;">
+          <div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:13px; color:#24c2ff; margin-bottom:6px;">Contrast &amp; usage</div>
+          <div style="font-family:system-ui,sans-serif; font-size:12.5px; line-height:1.6; color:#c3d4e0;">Every combination must meet WCAG AA: 4.5:1 for normal text, 3:1 for large text and UI. Green is reserved for specific actions (for example event registration, certification sign&#8209;up), not a general button color.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ TYPOGRAPHY -->
+  <section id="type" class="spread" data-screen-label="Typography" style="background:#082336; font-family:'Montserrat',sans-serif; padding:60px 80px;">
+    <div style="margin-bottom:28px;">
+      <div style="font-family:ui-monospace,monospace; font-size:13px; letter-spacing:.2em; text-transform:uppercase; color:#86da2f; margin-bottom:8px;">Full Reference</div>
+      <h2 style="font-size:48px; font-weight:800; color:#fefefe; margin:0; letter-spacing:-.02em;">Typography</h2>
+    </div>
+    <div style="display:flex; gap:40px;">
+      <div style="flex:1; display:flex; flex-direction:column; gap:22px;">
+        <div style="border-bottom:1px solid #ffffff14; padding-bottom:18px;">
+          <div style="font-family:system-ui,sans-serif; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:#86da2f; margin-bottom:8px;">Headings &amp; display &middot; Montserrat&#8209;led stack</div>
+          <div style="font-family:'Montserrat',sans-serif; font-weight:800; font-size:52px; color:#fefefe; line-height:1;">Community first</div>
+        </div>
+        <div style="border-bottom:1px solid #ffffff14; padding-bottom:18px;">
+          <div style="font-family:system-ui,sans-serif; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:#86da2f; margin-bottom:8px;">Body &middot; system&#8209;UI stack</div>
+          <div style="font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:17px; line-height:1.6; color:#dbe8f1;">Say the thing directly. Prefer short, clear sentences and everyday words over jargon. AlmaLinux OS is free, and it will stay that way.</div>
+        </div>
+        <div>
+          <div style="font-family:system-ui,sans-serif; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:#86da2f; margin-bottom:8px;">Code &middot; monospace stack</div>
+          <div style="font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace; font-size:16px; color:#c4e1ff; background:#000518; border-radius:8px; padding:14px 16px;">sudo dnf install almalinux&#8209;release</div>
+        </div>
+      </div>
+      <div style="width:340px; background:#0f4266; border-radius:12px; padding:26px; box-sizing:border-box; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;">
+        <div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:16px; color:#fefefe; margin-bottom:16px;">Specs</div>
+        <div style="font-size:14px; line-height:1.9; color:#c3d4e0;">
+          <div style="display:flex; justify-content:space-between; border-bottom:1px solid #ffffff14; padding:6px 0;"><span>Base size</span><span style="font-family:ui-monospace,monospace; color:#c4e1ff;">16px</span></div>
+          <div style="display:flex; justify-content:space-between; border-bottom:1px solid #ffffff14; padding:6px 0;"><span>Text on dark</span><span style="font-family:ui-monospace,monospace; color:#c4e1ff;">#fefefe</span></div>
+          <div style="display:flex; justify-content:space-between; padding:6px 0;"><span>Text on light</span><span style="font-family:ui-monospace,monospace; color:#c4e1ff;">#000518</span></div>
+        </div>      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ ICONOGRAPHY -->
+  <section id="icons" class="spread" data-screen-label="Iconography" style="background:#0f4266; font-family:'Montserrat',sans-serif; padding:60px 80px;">
+    <div style="margin-bottom:26px;">
+      <div style="font-family:ui-monospace,monospace; font-size:13px; letter-spacing:.2em; text-transform:uppercase; color:#86da2f; margin-bottom:8px;">Full Reference</div>
+      <h2 style="font-size:48px; font-weight:800; color:#fefefe; margin:0; letter-spacing:-.02em;">Iconography</h2>
+    </div>
+    <div style="display:flex; gap:40px; align-items:flex-start;">
+      <div style="flex:1; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:17px; line-height:1.7; color:#dbe8f1;">
+        <p style="margin:0 0 16px;">The brand uses <strong style="color:#fefefe;">Bootstrap Icons</strong>, a specific open source icon set. Do not substitute another icon library or draw custom icons.</p>
+        <ul style="margin:0; padding-left:18px; color:#c3d4e0; font-size:15px; line-height:1.75;">
+          <li>Use icons with restraint: support meaning, do not decorate. An icon works best as a small label beside text.</li>
+          <li>Icons inherit the color of the surrounding text. Do not introduce a new accent color just for an icon.</li>
+          <li>Icons that carry meaning need an accessible text label; purely decorative icons are hidden from assistive technology.</li>
+        </ul>
+      </div>
+      <div style="width:360px; display:flex; flex-direction:column; gap:14px;">
+        <div style="background:#082336; border-radius:10px; padding:18px; border-left:4px solid #86da2f;">
+          <div style="font-family:system-ui,sans-serif; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:#86da2f; margin-bottom:10px;">Icon as a label beside text</div>
+          <div style="display:flex; gap:16px; font-family:system-ui,sans-serif; font-size:15px; color:#eaf2f8;">
+            <span style="display:flex; align-items:center; gap:7px;"><i class="bi bi-clock-history" aria-hidden="true"></i>Long support</span>
+            <span style="display:flex; align-items:center; gap:7px;"><i class="bi bi-check-lg" aria-hidden="true"></i>Fully compatible</span>
+          </div>
+        </div>
+        <div style="background:#082336; border-radius:10px; padding:18px; border-left:4px solid #ff4649;">
+          <div style="font-family:system-ui,sans-serif; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:#ff6467; margin-bottom:8px;">Avoid</div>
+          <div style="font-family:system-ui,sans-serif; font-size:14px; line-height:1.55; color:#c3d4e0;">Decorative icon walls, mixed icon sets, and recoloring an icon just to add an accent.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ ACCESSIBILITY -->
+  <section id="a11y" class="spread" data-screen-label="Accessibility" style="background:#082336; font-family:'Montserrat',sans-serif; padding:60px 80px;">
+    <div style="margin-bottom:30px;">
+      <div style="font-family:ui-monospace,monospace; font-size:13px; letter-spacing:.2em; text-transform:uppercase; color:#86da2f; margin-bottom:8px;">Full Reference</div>
+      <h2 style="font-size:48px; font-weight:800; color:#fefefe; margin:0; letter-spacing:-.02em;">Accessibility</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
+      <div style="background:#0f4266; border-radius:12px; padding:26px; box-sizing:border-box;">
+        <div style="font-family:'Montserrat',sans-serif; font-weight:800; font-size:40px; color:#24c2ff; line-height:1;">AA</div>
+        <div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:18px; color:#fefefe; margin:12px 0 8px;">Color contrast</div>
+        <div style="font-family:system-ui,sans-serif; font-size:14px; line-height:1.6; color:#c3d4e0;">Meet WCAG AA everywhere: 4.5:1 for normal text, 3:1 for large text and UI components.</div>
+      </div>
+      <div style="background:#0f4266; border-radius:12px; padding:26px; box-sizing:border-box;">
+        <div style="font-family:'Montserrat',sans-serif; font-weight:800; font-size:40px; color:#86da2f; line-height:1;">H1&#8209;H6</div>
+        <div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:18px; color:#fefefe; margin:12px 0 8px;">Heading hierarchy</div>
+        <div style="font-family:system-ui,sans-serif; font-size:14px; line-height:1.6; color:#c3d4e0;">Maintain a clear, logical heading hierarchy so structure is understandable without styling.</div>
+      </div>
+      <div style="background:#0f4266; border-radius:12px; padding:26px; box-sizing:border-box;">
+        <div style="font-family:'Montserrat',sans-serif; font-weight:800; font-size:40px; color:#ffcb12; line-height:1;">alt</div>
+        <div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:18px; color:#fefefe; margin:12px 0 8px;">Alternative text</div>
+        <div style="font-family:system-ui,sans-serif; font-size:14px; line-height:1.6; color:#c3d4e0;">Every meaningful image needs descriptive alternative text. Decorative images are hidden from assistive technology.</div>
+      </div>
+    </div>
+    <div style="margin-top:24px; display:flex; gap:12px; align-items:center;">
+      <div style="background:#0069da; color:#fff; font-family:system-ui,sans-serif; font-size:14px; padding:10px 16px; border-radius:8px;">White on Brand Blue &check; passes</div>
+      <div style="background:#24c2ff; color:#00303f; font-family:system-ui,sans-serif; font-size:14px; padding:10px 16px; border-radius:8px;">Dark text on CTA Blue &check; passes</div>
+      <div style="background:#ffcb12; color:#3a2c00; font-family:system-ui,sans-serif; font-size:14px; padding:10px 16px; border-radius:8px;">Dark text on Yellow &check; passes</div>
+    </div>
+  </section>
+
+  <!-- ============================================================ PRESENTATIONS -->
+  <section id="presentations" class="spread" data-screen-label="Presentations" style="background:#082336; font-family:'Montserrat',sans-serif; padding:56px 70px;">
+    <div style="margin-bottom:22px;">
+      <div style="font-family:ui-monospace,monospace; font-size:13px; letter-spacing:.2em; text-transform:uppercase; color:#86da2f; margin-bottom:8px;">Full Reference</div>
+      <h2 style="font-size:48px; font-weight:800; color:#fefefe; margin:0; letter-spacing:-.02em;">Presentations</h2>
+    </div>
+    <div style="display:flex; gap:44px;">
+      <div style="flex:1; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;">
+        <div style="display:flex; flex-direction:column; gap:13px;">
+          <div style="display:flex; gap:14px;"><span style="width:120px; flex-shrink:0; font-family:ui-monospace,monospace; font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:#24c2ff; padding-top:3px;">Canvas</span><span style="font-size:15px; color:#dbe8f1; line-height:1.5;">1920 &times; 1080 (16:9), one idea per slide</span></div>
+          <div style="display:flex; gap:14px;"><span style="width:120px; flex-shrink:0; font-family:ui-monospace,monospace; font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:#24c2ff; padding-top:3px;">Type</span><span style="font-size:15px; color:#dbe8f1; line-height:1.5;">Montserrat headings, Arial body (both export cleanly to Slides and PowerPoint)</span></div>
+          <div style="display:flex; gap:14px;"><span style="width:120px; flex-shrink:0; font-family:ui-monospace,monospace; font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:#24c2ff; padding-top:3px;">Background</span><span style="font-size:15px; color:#dbe8f1; line-height:1.5;">Dark by default; rotate #082336, #0f4266, and #000518 for rhythm</span></div>
+          <div style="display:flex; gap:14px;"><span style="width:120px; flex-shrink:0; font-family:ui-monospace,monospace; font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:#24c2ff; padding-top:3px;">Highlight</span><span style="font-size:15px; color:#dbe8f1; line-height:1.5;">Yellow, one word or number per slide</span></div>
+          <div style="display:flex; gap:14px;"><span style="width:120px; flex-shrink:0; font-family:ui-monospace,monospace; font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:#24c2ff; padding-top:3px;">Dividers</span><span style="font-size:15px; color:#dbe8f1; line-height:1.5;">Full brand color, cycling the palette between sections</span></div>
+          <div style="display:flex; gap:14px;"><span style="width:120px; flex-shrink:0; font-family:ui-monospace,monospace; font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:#24c2ff; padding-top:3px;">Voice</span><span style="font-size:15px; color:#dbe8f1; line-height:1.5;">Casual, peer-to-peer, sentence case</span></div>
+        </div>
+        <div style="margin-top:22px; font-family:'Montserrat',sans-serif; font-weight:700; font-size:22px; color:#ffcb12;">&ldquo;No drama, just Linux.&rdquo;</div>
+        <div style="margin-top:12px; font-family:system-ui,sans-serif; font-size:13px; line-height:1.55; color:#8ba1b1;">Defaults that keep decks recognizably AlmaLinux, not rigid rules. Full spec in the design system (DESIGN.md, &sect;16); the reusable template lives in PPTX / Google Slides, outside this repository.</div>
+      </div>
+      <div style="width:520px; flex-shrink:0;">
+        <div style="width:520px; height:292px; background:#0f4266; border-radius:10px; border:1px solid #ffffff1f; padding:22px; box-sizing:border-box; display:flex; flex-direction:column; justify-content:space-between; overflow:hidden;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div style="display:flex; align-items:center; gap:7px; font-family:system-ui,sans-serif; font-size:11px; color:#9fb4c2;"><span style="width:8px; height:8px; border-radius:50%; background:#ff4649;"></span>AlmaLinux Day: City</div>
+            <img src="Almalinux-logo-white.svg" alt="AlmaLinux OS" style="height:16px; width:auto;">
+          </div>
+          <div>
+            <div style="font-family:ui-monospace,monospace; font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:#24c2ff; margin-bottom:8px;">Eyebrow label</div>
+            <div style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:30px; color:#fefefe; line-height:1.05;">Headline, with a <span style="color:#ffcb12;">yellow</span> highlight</div>
+            <div style="width:44px; height:3px; background:#24c2ff; margin-top:12px;"></div>
+          </div>
+          <div style="display:flex; justify-content:space-between; align-items:center; font-family:system-ui,sans-serif; font-size:11px; color:#8ba1b1;"><span>Section name</span><span style="font-family:ui-monospace,monospace;">07 / 24</span></div>
+        </div>
+        <div style="margin-top:16px;">
+          <div style="font-family:system-ui,sans-serif; font-size:12px; color:#9fb4c2; margin-bottom:8px;">Section dividers cycle the palette</div>
+          <div style="display:flex; gap:8px;">
+            <span style="flex:1; height:32px; border-radius:6px; background:#000518;"></span>
+            <span style="flex:1; height:32px; border-radius:6px; background:#0069da;"></span>
+            <span style="flex:1; height:32px; border-radius:6px; background:#86da2f;"></span>
+            <span style="flex:1; height:32px; border-radius:6px; background:#ffcb12;"></span>
+            <span style="flex:1; height:32px; border-radius:6px; background:#ff4649;"></span>
+            <span style="flex:1; height:32px; border-radius:6px; background:#24c2ff;"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:20px; background:#0f4266; border-left:4px solid #ffcb12; border-radius:8px; padding:14px 18px; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; font-size:13px; line-height:1.55; color:#dbe8f1;"><strong style="color:#fefefe;">Representing the Foundation requires approval.</strong> You may always present yourself as a member of the community, but make it clear you are not representing the AlmaLinux OS Foundation unless you have explicit permission to do so.</div>
+  </section>
+
+  <!-- ============================================================ ASSET INDEX -->
+  <section id="index" class="spread" data-screen-label="Asset index" style="background:#000518; font-family:'Montserrat',sans-serif; padding:56px 70px;">
+    <div style="margin-bottom:22px;">
+      <div style="font-family:ui-monospace,monospace; font-size:13px; letter-spacing:.2em; text-transform:uppercase; color:#86da2f; margin-bottom:8px;">Full Reference</div>
+      <h2 style="font-size:48px; font-weight:800; color:#fefefe; margin:0; letter-spacing:-.02em;">Asset Index</h2>
+    </div>
+    <div style="display:flex; gap:40px;">
+      <div style="flex:1; font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;">
+        <div style="font-family:ui-monospace,monospace; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:#24c2ff; margin-bottom:10px;">Logo &amp; icon files</div>
+        <div style="font-family:ui-monospace,monospace; font-size:13px; line-height:2.1; color:#c3d4e0;">
+          <div style="border-bottom:1px solid #ffffff12;">Almalinux&#8209;logo&#8209;color.png</div>
+          <div style="border-bottom:1px solid #ffffff12;">Almalinux&#8209;logo&#8209;white.svg</div>
+          <div style="border-bottom:1px solid #ffffff12;">AlmaLinux Icon.svg / .png</div>
+          <div style="border-bottom:1px solid #ffffff12;">AlmaLinux Icon Circle.svg</div>
+          <div style="border-bottom:1px solid #ffffff12;">icon&#8209;bw.svg</div>          <div style="border-bottom:1px solid #ffffff12;">Powered&#8209;by&#8209;AL&#8209;White (svg / png / pdf)</div>
+          <div>Powered&#8209;by&#8209;Dark&#8209;AL (svg / png / pdf)</div>
+        </div>
+      </div>
+      <div style="flex:1; display:flex; flex-direction:column; gap:16px;">
+        <div>
+          <div style="font-family:ui-monospace,monospace; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:#24c2ff; margin-bottom:10px;">Where they live</div>
+          <div style="font-family:system-ui,sans-serif; font-size:15px; line-height:1.8; color:#c3d4e0;">Repository: <span style="font-family:ui-monospace,monospace; font-size:13px; color:#c4e1ff;">static/branding/</span><br>Downloads: <a href="https://almalinux.org/branding/">almalinux.org/branding</a><br>Design system: <span style="font-family:ui-monospace,monospace; font-size:13px; color:#c4e1ff;">DESIGN.md</span> in the website repository.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

@@ -1,5 +1,5 @@
 ---
-title: " The AlmaLinux OS trademark usage policy"
+title: "The AlmaLinux OS trademark usage policy"
 type: p
 ---
 

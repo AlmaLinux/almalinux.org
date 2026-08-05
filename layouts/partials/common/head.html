@@ -14,7 +14,13 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     name="viewport" />
   <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-  <title>AlmaLinux OS - Forever-Free Enterprise-Grade Operating System</title>
+  <title>
+    {{- if .IsHome -}}
+      AlmaLinux OS - Forever-Free Enterprise-Grade Operating System
+    {{- else -}}
+      {{ .Title }} | AlmaLinux OS
+    {{- end -}}
+  </title>
   <meta property="og:site_name" content="AlmaLinux OS" />
   <meta
     name="description"

@@ -23,8 +23,8 @@ registration_button: "al-cta-blue"
 # Post-event — set to true and fill in after the event
 post_event: true
 thankyou_city: "CloudFest"
-thankyou_quote: "The warms we always feel at CloudFest is incredible. Thank you to our incredibly strong community in the webhosting world! Videos will be released soon!"
-thankyou_youtube_url: ""
+thankyou_quote: "The warms we always feel at CloudFest is incredible. Thank you to our incredibly strong community in the webhosting world!"
+thankyou_youtube_url: "https://youtube.com/playlist?list=PLqKzWfm6zyltyQCJCBTDp425cKUIzDRA3&si=3CD6M3MQT9VtzTam"
 
 # Footer bars — omit either field to hide that bar
 coc_url: "/p/aldv-code-of-conduct/"
@@ -80,18 +80,18 @@ Join the AlmaLinux OS Foundation and the open-source community for a dedicated d
   </thead>
   <tbody>
     <tr><td>9:00 AM</td><td>Doors open</td><td>Host: Tristan Théroux</td></tr>
-    <tr><td>10:00 AM</td><td>AlmaLinux at StorPool</td><td>Boyan Krosnov, StorPool Storage</td></tr>
-    <tr><td>10:30 AM</td><td>AlmaLinux and the open source way</td><td>Andrew Lukoshko, AlmaLinux OS Foundation</td></tr>
-    <tr><td>11:00 AM</td><td>AlmaLinux at CERN</td><td>Alex Iribarren, CERN</td></tr>
-    <tr><td>11:30 AM</td><td>ELT: standing on the shoulders of Open Source and AlmaLinux</td><td>Federico Pellegrin & Piotr Szubiak, ESO</td></tr>
-    <tr><td>12:00 PM</td><td>How MEGWARE came to AlmaLinux for HPC</td><td>Peter Großöhme, MEGWARE</td></tr>
+    <tr><td>10:00 AM</td><td>AlmaLinux at StorPool<br><br><a href="https://youtu.be/aBG-dF20qsk?si=P0j_suqwElbpuLa-">Watch the talk</a> | <a href="/files/2026/aldg/aldg-2026-storpool-krosnov.pdf">View the slides</a></td><td>Boyan Krosnov, StorPool Storage</td></tr>
+    <tr><td>10:30 AM</td><td>AlmaLinux and the open source way<br><br><a href="https://youtu.be/fcifs5Wj5-c?si=g5KBCLKcmICrOT0t">Watch the talk</a> | <a href="/files/2026/aldg/aldg-2026-open-source-way-lukoshko.pdf">View the slides</a></td><td>Andrew Lukoshko, AlmaLinux OS Foundation</td></tr>
+    <tr><td>11:00 AM</td><td>AlmaLinux at CERN<br><br><a href="https://youtu.be/-RimaZ1pjVo?si=nrypPMqRbZGbsKjH">Watch the talk</a> | <a href="/files/2026/aldg/aldg-2026-cern-iribarren.pdf">View the slides</a></td><td>Alex Iribarren, CERN</td></tr>
+    <tr><td>11:30 AM</td><td>ELT: standing on the shoulders of Open Source and AlmaLinux<br><br><a href="https://youtu.be/FtAXtWJntIo?si=KO4Jl8S88iiraI_N">Watch the talk</a> | <a href="/files/2026/aldg/aldg-2026-elt-pellegrin-szubiak.pdf">View the slides</a></td><td>Federico Pellegrin & Piotr Szubiak, ESO</td></tr>
+    <tr><td>12:00 PM</td><td>How MEGWARE came to AlmaLinux for HPC<br><br><a href="https://youtu.be/DW_YfMErbi0?si=lXV9rAcNEt5QUl6p">Watch the talk</a> | <a href="/files/2026/aldg/aldg-2026-megware-hpc-grossoehme.pdf">View the slides</a></td><td>Peter Großöhme, MEGWARE</td></tr>
     <tr><td>12:30 PM</td><td>Lunch</td><td></td></tr>
-    <tr><td>2:00 PM</td><td>Keeping AlmaLinux secure</td><td>Dennis Zimmer, Codenotary Inc</td></tr>
-    <tr><td>2:30 PM</td><td>Elegantly Dumb, Powerfully Backed Mirroring: Community over Complexity</td><td>Jonathan Wright, AlmaLinux OS Foundation</td></tr>
-    <tr><td>3:00 PM</td><td>Scaling & Optimizing performance on AMD EPYC systems</td><td>Alexander Troshin, AMD</td></tr>
-    <tr><td>3:30 PM</td><td>Two Hard Things: Naming Things & Cache Invalidation, Valkey Edition</td><td>Roberto Luna Rojas, Valkey</td></tr>
-    <tr><td>4:00 PM</td><td>The Hidden Risks of Running AlmaLinux Without Enterprise Support</td><td>Sven Sellen, TuxCare</td></tr>
-    <tr><td>4:30 PM</td><td>Panel: The future of AlmaLinux</td><td>benny Vasquez (host), Tristan, Igor, Alex, Andrew, Jonathan</td></tr>
+    <tr><td>2:00 PM</td><td>Keeping AlmaLinux secure<br><br><a href="https://youtu.be/Gp7CTi9gWZI?si=gTaAYJ10z-dRWpea">Watch the talk</a> | <a href="/files/2026/aldg/aldg-2026-keeping-secure-zimmer.pdf">View the slides</a></td><td>Dennis Zimmer, Codenotary Inc</td></tr>
+    <tr><td>2:30 PM</td><td>Elegantly Dumb, Powerfully Backed Mirroring: Community over Complexity<br><br><a href="https://youtu.be/EqdRk6d8tDg?si=Qc_JDZ-wlKFsocUR">Watch the talk</a> | <a href="/files/2026/aldg/aldg-2026-mirroring-wright.pdf">View the slides</a></td><td>Jonathan Wright, AlmaLinux OS Foundation</td></tr>
+    <tr><td>3:00 PM</td><td>Scaling & Optimizing performance on AMD EPYC systems<br><br><a href="https://youtu.be/dTZordHOhmg?si=DgFQ4l7mBwg9ZRwd">Watch the talk</a> | <a href="/files/2026/aldg/aldg-2026-amd-epyc-troshin.pdf">View the slides</a></td><td>Alexander Troshin, AMD</td></tr>
+    <tr><td>3:30 PM</td><td>Two Hard Things: Naming Things & Cache Invalidation, Valkey Edition<br><br><a href="https://youtu.be/SA2W-z3mj3s?si=vwy3BjJeaO-1SW8V">Watch the talk</a> | <a href="/files/2026/aldg/aldg-2026-valkey-luna-rojas.pdf">View the slides</a></td><td>Roberto Luna Rojas, Valkey</td></tr>
+    <tr><td>4:00 PM</td><td>The Hidden Risks of Running AlmaLinux Without Enterprise Support<br><br><a href="https://youtu.be/Gn00mQB4hPY?si=1FaG6OG4w-Nh98Oz">Watch the talk</a> | <a href="/files/2026/aldg/aldg-2026-enterprise-support-sellen.pdf">View the slides</a></td><td>Sven Sellen, TuxCare</td></tr>
+    <tr><td>4:30 PM</td><td>Panel: The future of AlmaLinux<br><br><a href="https://youtu.be/rwinZyd-CJs?si=8QxskaUo2CzYohZZ">Watch the talk</a></td><td>benny Vasquez (host), Tristan, Igor, Alex, Andrew, Jonathan</td></tr>
     <tr><td>5:30 PM</td><td>Closing notes, thank yous, and raffle announcements</td><td></td></tr>
     <tr><td>7:00 PM</td><td>CloudFest BierFest 🍺</td><td></td></tr>
   </tbody>

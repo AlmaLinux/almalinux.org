@@ -1,0 +1,48 @@
+name: Build Preview
+on: pull_request
+
+jobs:
+  build-preview:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Check for missing base language strings
+        run: python3 find_missing_i18n_strings.py
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.163.2"
+          extended: true
+
+      - name: Generate language files
+        run: python3 setup-pages-for-supported-languages.py
+
+      - name: Generate get_almalinux data
+        run: python3 tools/generate_get_almalinux_yaml.py
+
+      - name: Build
+        run: hugo --minify --buildFuture
+
+      - name: Move redirects file into place
+        run: cp _redirects public/
+
+      - name: Move headers file into place
+        run: cp _headers public/
+
+      - name: Build search index
+        run: npx pagefind --site "public"
+
+      - name: Upload preview artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: preview-site
+          path: public
+          retention-days: 3

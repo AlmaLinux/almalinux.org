@@ -1,0 +1,9 @@
+{{/* Secure Boot table rows. Context (.) is a list of entries from data/security/secure_boot.yaml. */}}
+{{ range . }}
+  <tr>
+    <td><a href="{{ .url }}">{{ .name }}</a></td>
+    <td>{{ .signed_for }}</td>
+    <td>{{ .verified_by }}</td>
+    <td>{{ i18n .expiry_label }} {{ .expiry_date }}</td>
+  </tr>
+{{ end }}

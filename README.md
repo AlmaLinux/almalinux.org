@@ -196,10 +196,12 @@ date: "YYYY-MM-DD" # Publication date
 images:
   - /blog-images/YYYY/image-name.png # Social/OG preview image
 post:
-  title: "Your Post Title"
+  title: "A one- or two-sentence summary of the post" # Shown on the blog listing page — NOT a copy of the title above
   image: /blog-images/YYYY/image-name.png
 ---
 ```
+
+> **Note:** Despite its name, `post.title` is the post's **summary**, displayed as the excerpt on the [blog listing page](https://almalinux.org/blog/) beneath the post image. Write a real one- or two-sentence summary here rather than repeating the `title` field.
 
 ### Adding Images
 
@@ -245,6 +247,8 @@ For smaller contributions, follow this workflow:
 
 After review and approval, the changes will be merged into the `main` branch and deployed to the live site.
 
+For design tokens, components, and conventions, see [DESIGN.md](DESIGN.md).
+
 ### For Developers
 
 #### Local Development
@@ -272,6 +276,7 @@ To use a container-based development environment, install Docker and use an edit
 - `/content/` — Markdown content for site pages
 - `/data/` — Source data, currently only for the "Get AlmaLinux" page
 - `config.yaml` — Hugo configuration
+- `DESIGN.md`: Design system reference (brand colors, components, and conventions)
 - `find_missing_i18n_strings.py` — Adds keys missing from `i18n/en.json` and removes keys no longer used in templates. Only touches `en.json`; non-English locale files are managed by Weblate.
 - `setup-pages-for-supported-languages.py` — Creates placeholder markdown pages for missing languages
 

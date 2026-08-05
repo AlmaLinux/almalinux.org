@@ -1,4 +1,4 @@
-{{ $data := site.Data.get_almalinux }}
+{{ $data := hugo.Data.get_almalinux }}
 <ul class="nav nav-tabs al-os-tabs" role="tablist">
   {{ range $i, $version := $data.versions }}
     {{ $isActive := eq $i 0 }}
