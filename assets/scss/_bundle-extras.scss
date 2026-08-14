@@ -535,6 +535,113 @@ a:hover {
   }
 }
 
+// Industry landing pages index at /for. One card per child page, driven
+// entirely by each page's title and description, so a new industry needs no
+// markup here.
+.al-industry-lead {
+  max-width: 45rem;
+}
+
+.al-industry-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 100%;
+  padding: 2rem 1.75rem;
+  background: rgba($al-c-soft-peach-lighter, 0.05);
+  border: 1px solid rgba($al-c-soft-peach-lighter, 0.1);
+  border-radius: 12px;
+  color: $al-font-color;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s;
+
+  &:hover,
+  &:focus-visible {
+    background: rgba($al-c-soft-peach-lighter, 0.08);
+    border-color: $al-c-cta-blue;
+    color: $al-font-color;
+    text-decoration: none;
+  }
+
+  p {
+    color: rgba($al-font-color, 0.75);
+  }
+}
+
+.al-industry-card-cta {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  font-weight: 600;
+  color: $al-c-cta-blue;
+}
+
+// Creative ISO signpost, sits under the persona cards on /get-almalinux.
+// The M&E SIG ships a prepared image, so route that audience to it rather
+// than leaving them to assemble a creative workstation from the generic ISOs.
+.al-creative-callout {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  max-width: 56rem;
+  margin: 0 auto 2.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid $al-c-black-pearl-light;
+  border-left: 4px solid $al-c-cta-blue;
+  border-radius: 12px;
+  background: rgba($al-c-soft-peach-lighter, 0.04);
+  color: $al-font-color;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s;
+
+  &:hover,
+  &:focus-visible {
+    background: rgba($al-c-soft-peach-lighter, 0.08);
+    border-color: $al-c-cta-blue;
+    color: $al-font-color;
+    text-decoration: none;
+  }
+
+  > .bi {
+    flex-shrink: 0;
+    font-size: 1.75rem;
+    color: $al-c-cta-blue;
+  }
+}
+
+.al-creative-callout-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.al-creative-callout-title {
+  font-weight: 700;
+}
+
+.al-creative-callout-desc {
+  font-size: 0.9rem;
+  color: rgba($al-font-color, 0.75);
+}
+
+.al-creative-callout-cta {
+  flex-shrink: 0;
+  margin-left: auto;
+  font-weight: 600;
+  white-space: nowrap;
+  color: $al-c-cta-blue;
+}
+
+@media (max-width: 767.98px) {
+  .al-creative-callout {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .al-creative-callout-cta {
+    margin-left: 0;
+  }
+}
+
 .al-persona-card-title {
   font-family: $al-font-family-accent;
   font-weight: 600;

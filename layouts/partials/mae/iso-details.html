@@ -1,0 +1,83 @@
+{{/* What the Creative ISO gives you.
+
+  The image contents, then the cloud option. The Creative Installer used to sit
+  here, but it is one of the two ways in now, so it has its own section in
+  mae/installer.html.
+*/}}
+
+
+<!-- ═══════════════════════════════════════════════════════
+     WHAT'S ON IT
+════════════════════════════════════════════════════════ -->
+<section id="whats-on-it" class="al-mae-included al-py-lg">
+  <div class="container">
+    <h2 class="text-center mb-2">{{ i18n "What's on it" }}</h2>
+    <p class="text-center al-text-muted mb-5">
+      {{ i18n "All of this is already on the image. There is nothing to assemble after first boot." }}
+    </p>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <div class="col">
+        <div class="al-mae-way">
+          <h3 class="h5 mb-0">{{ i18n "AlmaLinux 10 base" }}</h3>
+          <p class="mb-0">
+            {{ i18n "Enterprise-grade stability, security, and long-term support, with AlmaLinux 10 as the base to be ready for the future with Wayland." }}
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="al-mae-way">
+          <h3 class="h5 mb-0">{{ i18n "KDE Plasma desktop" }}</h3>
+          <p class="mb-0">
+            {{ i18n "A modern, configurable desktop tuned for creative workstations: friendlier for users switching in, with out-of-the-box Wacom tablet support, HDR, VRR, and X tweaks available even on Wayland in the settings." }}
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="al-mae-way">
+          <h3 class="h5 mb-0">{{ i18n "Curated media apps" }}</h3>
+          <p class="mb-0">
+            {{ i18n "Image, video, 3D, and audio tools selected and tested for the pipeline. Every app currently available is tested to the best of our capacity at every change we make, on the Creative Installer and the ISO." }}
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="al-mae-way">
+          <h3 class="h5 mb-0">{{ i18n "Fully self-contained" }}</h3>
+          <p class="mb-0">
+            {{ i18n "Core packages and libraries ship on the ISO. A network connection is still needed for updates and additional software." }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     TRY IT IN THE CLOUD
+════════════════════════════════════════════════════════ -->
+<section id="creative-iso-cloud" class="al-mae-cloud al-py-lg">
+  <div class="container">
+    <div class="al-mae-panel">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-8">
+          <p class="al-mae-panel-eyebrow mb-2">{{ i18n "Cloud (AWS)" }}</p>
+          <h2 class="h3 mb-3">{{ i18n "Want to test it in the cloud?" }}</h2>
+          <p class="mb-0">
+            {{ i18n "almalinux-me-ec2 launches the official AlmaLinux 10 AMI on EC2 and configures it with Ansible into an M&E-style workstation: KDE Plasma, the open source creative suite, and a real remote desktop over Amazon DCV. No hardware to rack, spin it up and tear it down when you're done." }}
+          </p>
+        </div>
+        <div class="col-12 col-lg-4 text-lg-end">
+          <a
+            href="https://github.com/davdunc/almalinux-me-ec2"
+            class="btn al-cta-blue px-4"
+            target="_blank"
+            rel="noopener">
+            <i class="bi bi-github pe-1" aria-hidden="true"></i>
+            {{ i18n "View almalinux-me-ec2" }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
