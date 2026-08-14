@@ -31,6 +31,30 @@
             {{ i18n "Wiki" }}
           </a>
         </li>
+        {{/* Industry landing pages. Each lives at /for/<industry> and is
+          titled "AlmaLinux for <Industry>", so the menu label is the stem and
+          the items complete it.
+        */}}
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle mt-1"
+            id="navbarDropIndustries"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+            {{ i18n "AlmaLinux for..." }}
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-dark dropdown-menu-xl-start"
+            aria-labelledby="navbarDropIndustries">
+            <li>
+              <a
+                class="dropdown-item"
+                href="{{ "/for/media-and-entertainment" | relLangURL }}">
+                {{ i18n "AlmaLinux for Media and Entertainment" }}
+              </a>
+            </li>
+          </ul>
+        </li>
         <li class="nav-item dropdown ">
           <a
             class="nav-link dropdown-toggle mt-1"
