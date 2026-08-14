@@ -1,0 +1,112 @@
+{{/* The M&E SIG, and where to go next.
+
+  Closes the page: who builds the Creative ISO, then the two follow-on steps.
+  Downloading is handled by mae/creative-iso.html above, so it is not repeated
+  here.
+*/}}
+
+
+<!-- ═══════════════════════════════════════════════════════
+     CONTENT 2: M&E SIG
+════════════════════════════════════════════════════════ -->
+<section class="al-mae-sig al-py-lg">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-12 col-lg-6">
+        <h2 class="mb-3">{{ i18n "The Media & Entertainment SIG" }}</h2>
+        <p>
+          {{ i18n "The AlmaLinux Media & Entertainment Special Interest Group (M&E SIG) is a community of VFX artists, pipeline TDs, facility engineers, and open source contributors working together to make AlmaLinux the best platform for creative production." }}
+        </p>
+        <ul class="al-mae-sig-list">
+          <li>
+            <i class="bi bi-check2-circle" aria-hidden="true"></i>
+            {{ i18n "VFX Reference Platform tracking" }}
+          </li>
+          <li>
+            <i class="bi bi-check2-circle" aria-hidden="true"></i>
+            {{ i18n "Pipeline-tested package builds" }}
+          </li>
+          <li>
+            <i class="bi bi-check2-circle" aria-hidden="true"></i>
+            {{ i18n "Studio deployment guides" }}
+          </li>
+          <li>
+            <i class="bi bi-check2-circle" aria-hidden="true"></i>
+            {{ i18n "Direct collaboration with software vendors" }}
+          </li>
+        </ul>
+        {{/* The meeting time is also burned into the banner image beside this.
+          Keeping it in text as well means screen readers and translators get
+          it, and it stays correct if the banner is ever redrawn.
+        */}}
+        <p class="mb-3">
+          {{ i18n "The SIG meets on the first Wednesday of every month at 1:00 PM EST (18:00 UTC)." }}
+        </p>
+        <a
+          href="https://wiki.almalinux.org/sigs/MediaAndEntertainmentSIG.html"
+          class="btn al-cta-blue btn-lg px-4"
+          target="_blank"
+          rel="noopener">
+          <i class="bi bi-arrow-up-right-square pe-1" aria-hidden="true"></i>
+          {{ i18n "Learn about the M&E SIG" }}
+        </a>
+      </div>
+      <div class="col-12 col-lg-6 text-center">
+        <img
+          src="/landingpages/mae/sig-meeting.png"
+          alt="{{ i18n "AlmaLinux Media & Entertainment SIG meeting announcement" }}"
+          class="img-fluid rounded" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     NEXT STEPS
+════════════════════════════════════════════════════════ -->
+<section id="next-steps" class="al-mae-start al-py-lg">
+  <div class="container">
+    <h2 class="text-center mb-2">{{ i18n "Next steps" }}</h2>
+    <p class="text-center al-text-muted mb-5">
+      {{ i18n "Once the ISO is written to a USB stick, these two will get you the rest of the way." }}
+    </p>
+    <div
+      class="row row-cols-1 row-cols-md-2 g-4 text-center justify-content-center">
+      <div class="col col-lg-4">
+        <div class="al-mae-step">
+          <div class="al-mae-step-number">1</div>
+          <h3 class="h4">{{ i18n "Follow the M&E SIG setup guide" }}</h3>
+          <p>
+            {{ i18n "The M&E SIG wiki covers GPU drivers, VFX Reference Platform libraries, and software installation for common DCC tools." }}
+          </p>
+          <a
+            href="https://wiki.almalinux.org/sigs/MediaAndEntertainmentSIG.html"
+            class="btn al-cta-blue px-4 mt-2"
+            target="_blank"
+            rel="noopener">
+            <i class="bi bi-book pe-1" aria-hidden="true"></i>
+            {{ i18n "Read the wiki" }}
+          </a>
+        </div>
+      </div>
+
+      <div class="col col-lg-4">
+        <div class="al-mae-step">
+          <div class="al-mae-step-number">2</div>
+          <h3 class="h4">{{ i18n "Join the community" }}</h3>
+          <p>
+            {{ i18n "Chat with M&E users and contributors in the AlmaLinux community forums and the M&E SIG chat channel." }}
+          </p>
+          <a
+            href="https://chat.almalinux.org"
+            class="btn al-cta-blue px-4 mt-2"
+            target="_blank"
+            rel="noopener">
+            <i class="bi bi-chat-dots pe-1" aria-hidden="true"></i>
+            {{ i18n "Join the chat" }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

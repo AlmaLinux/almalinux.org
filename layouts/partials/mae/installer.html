@@ -1,0 +1,57 @@
+{{/* The Creative Installer.
+
+  The second of the two ways in, so it gets its own section rather than sitting
+  inside "what's on it". It plays two roles and the copy has to carry both: it
+  ships on the ISO, and it runs standalone on an AlmaLinux machine someone
+  already has. Only the ISO download uses the light band, so this stays on the
+  page's normal dark surface.
+*/}}
+
+
+<section id="creative-installer" class="al-mae-installer al-py-lg">
+  <div class="container">
+    <h2 class="text-center mb-2">{{ i18n "The Creative Installer" }}</h2>
+    <p class="text-center al-text-muted mb-5">
+      {{ i18n "One guided setup for the creative apps, whether you started from the ISO or from a machine you already run." }}
+    </p>
+
+    <div class="al-mae-panel">
+      <div class="row align-items-center g-5">
+        <div class="col-12 col-lg-6">
+          <p class="al-mae-panel-eyebrow mb-2">
+            {{ i18n "Pre-built & ready to go" }}
+          </p>
+          <p class="mb-3">
+            {{ i18n "Both builds ship with the AlmaLinux Creative Installer already on board: a guided, one-click setup for DaVinci Resolve, Blender, and the rest of the creative apps. No manual package wrangling after first boot." }}
+          </p>
+          <p class="mb-4">
+            {{ i18n "It also installs on its own from COPR, so an AlmaLinux 9 or 10 system you already have can pick up the same set without reinstalling. More than 40 apps are covered, and it turns on EPEL, CRB, RPM Fusion, Flathub, and the NVIDIA drivers for you." }}
+          </p>
+          <a
+            href="https://kernelchief.github.io/almalinux-creative-installer/"
+            target="_blank"
+            rel="noopener"
+            class="fw-semibold">
+            {{ i18n "View the Creative Installer project" }}
+            <i class="bi bi-arrow-up-right-square ps-1" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="col-12 col-lg-6">
+          <a
+            class="al-mae-frame d-block"
+            href="https://kernelchief.github.io/almalinux-creative-installer/"
+            target="_blank"
+            rel="noopener">
+            <img
+              src="/landingpages/aldla-2026/creative-installer.png"
+              alt="{{ i18n "The AlmaLinux Creative Installer, showing its catalogue of creative applications" }}"
+              class="img-fluid"
+              width="2166"
+              height="1562"
+              loading="lazy" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,81 @@
+{{/* Credibility, then the split.
+
+  The page serves two audiences whose needs pull in opposite directions: a
+  freelancer who wants to be working today, and a facility that provisions its
+  own machines. Naming that split here is what lets the Creative ISO sit
+  naturally on the same page as the render-farm argument further down.
+
+  TODO before publishing:
+  1. Trusted-by logos: replace placeholder divs in .al-mae-logo-strip with:
+  <a href="https://studio-website.com" target="_blank" rel="noopener">
+  <img src="/landingpages/mae/logo-studio-name.svg" alt="Studio Name" />
+  </a>
+*/}}
+
+
+<!-- ═══════════════════════════════════════════════════════
+     TRUSTED BY: VFX studio logos
+════════════════════════════════════════════════════════ -->
+<section class="al-mae-trusted al-py-lg">
+  <div class="container">
+    <h2 class="text-center mb-4">
+      {{ i18n "Trusted by leading studios & production houses" }}
+    </h2>
+    {{/* Studios using AlmaLinux. Logos live in /static/usedby/ alongside the
+      homepage set, so the same file serves both. They need to be white on
+      transparent: nothing recolours them here. Add a line to grow the strip.
+    */}}
+    {{ $studios := slice
+      (dict "src" "/usedby/cinesite.png" "alt" "Cinesite")
+      (dict "src" "/usedby/nox.svg" "alt" "Nox")
+    }}
+    <div class="al-mae-logo-strip">
+      {{ range $studios }}
+        <img src="{{ .src }}" alt="{{ .alt }}" loading="lazy" />
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     TWO WAYS IN
+════════════════════════════════════════════════════════ -->
+<section id="ways-in" class="al-mae-ways al-py-lg">
+  <div class="container">
+    <h2 class="text-center mb-2">{{ i18n "Two ways in" }}</h2>
+    <p class="text-center al-text-muted mb-5">
+      {{ i18n "Start from a clean image, or add the creative tooling to an AlmaLinux machine you already run." }}
+    </p>
+    <div class="row g-4 justify-content-center">
+      <div class="col-12 col-lg-5">
+        <div class="al-mae-way">
+          <i class="bi bi-download al-mae-way-icon" aria-hidden="true"></i>
+          <h3 class="h4 mb-0">{{ i18n "Start with the Creative ISO" }}</h3>
+          <p class="mb-0">
+            {{ i18n "A ready-made creative workstation image. Write it to a USB stick and you can be working the same day, with the desktop, the drivers, and the media tools already in place." }}
+          </p>
+          <div class="al-mae-way-cta">
+            <a href="#creative-iso" class="btn al-cta-blue px-4">
+              {{ i18n "See the builds" }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <div class="al-mae-way">
+          <i class="bi bi-terminal al-mae-way-icon" aria-hidden="true"></i>
+          <h3 class="h4 mb-0">{{ i18n "Add the Creative Installer" }}</h3>
+          <p class="mb-0">
+            {{ i18n "Already running AlmaLinux 9 or 10? The Creative Installer sets up more than 40 creative apps on the machine you have, without reinstalling anything." }}
+          </p>
+          <div class="al-mae-way-cta">
+            <a href="#creative-installer" class="btn al-cta-blue px-4">
+              {{ i18n "About the Installer" }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,372 @@
+// AlmaLinux for Media and Entertainment (/for/media-and-entertainment)
+//
+// One long-scroll page in the deep-band pattern (DESIGN.md section 11). The
+// page runs dark throughout, with a single light band on the Creative ISO
+// download so that one moment reads as the thing to do. Everything else, the
+// Installer, the box contents, and the EC2 card included, uses the same dark
+// card surface, so the SIG's material sits in the page rather than on top of
+// it. Everything is scoped to .al-page-mae.
+
+@import "./variables";
+
+// One radius scale for the whole page. Cards take the larger value, small
+// inner elements the smaller, and nothing else invents its own.
+$al-mae-radius: 12px;
+$al-mae-radius-sm: 8px;
+
+.al-page-mae {
+  // ─── Band alternation ──────────────────────────────────────────────────────
+  //
+  // Reading order is hero, trusted, ways in, why, works with, ISO (light),
+  // Installer, what's on it, cloud, SIG, next steps. These take the deep
+  // surface; the rest sit on the page background so no two neighbours share a
+  // colour.
+
+  .al-mae-hero,
+  .al-mae-why,
+  .al-mae-installer,
+  .al-mae-cloud,
+  .al-mae-start {
+    background: $al-c-black-pearl;
+  }
+
+  // ─── Shared dark card surface ──────────────────────────────────────────────
+  //
+  // Used by the routing cards, the numbered steps, and the wide panels. Keeping
+  // them on one rule is what stops a second visual vocabulary appearing.
+
+  .al-mae-way,
+  .al-mae-step,
+  .al-mae-panel {
+    background: rgba($al-c-soft-peach-lighter, 0.05);
+    border: 1px solid rgba($al-c-soft-peach-lighter, 0.1);
+    border-radius: $al-mae-radius;
+    height: 100%;
+  }
+
+  // ─── Hero ──────────────────────────────────────────────────────────────────
+
+  .al-mae-reel-placeholder {
+    min-height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  // Framed media. Used by the Installer screenshot, and ready for the hero
+  // reel when that placeholder is replaced.
+  .al-mae-frame {
+    display: block;
+    border-radius: $al-mae-radius;
+    overflow: hidden;
+    line-height: 0;
+    box-shadow: 0 8px 32px rgba($al-c-black-pearl-dark, 0.4);
+  }
+
+  // The Installer screenshot is detail-dense and overpowers the copy beside it
+  // at full column width. Only capped once the panel is actually two columns;
+  // on narrow screens it stacks and should fill the width.
+  @media (min-width: 992px) {
+    .al-mae-installer .al-mae-frame {
+      max-width: 70%;
+      margin-inline: auto;
+    }
+  }
+
+  // ─── Trusted by ────────────────────────────────────────────────────────────
+
+  .al-mae-trusted {
+    background: rgba($al-c-soft-peach-lighter, 0.03);
+    border-top: 1px solid rgba($al-c-soft-peach-lighter, 0.07);
+    border-bottom: 1px solid rgba($al-c-soft-peach-lighter, 0.07);
+  }
+
+  .al-mae-logo-strip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  // Real studio logos. Sized to match the homepage marquee so the same asset
+  // reads consistently in both places.
+  .al-mae-logo-strip img {
+    width: 140px;
+    max-height: 56px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .al-mae-logo-placeholder {
+    background: rgba($al-c-soft-peach-lighter, 0.08);
+    border: 1px dashed rgba($al-c-soft-peach-lighter, 0.2);
+    border-radius: $al-mae-radius-sm;
+    padding: 1rem 2rem;
+    font-size: 0.85rem;
+    color: rgba($al-c-soft-peach-lighter, 0.4);
+    min-width: 140px;
+    text-align: center;
+  }
+
+  // ─── Two ways in ───────────────────────────────────────────────────────────
+
+  .al-mae-way {
+    padding: 2rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .al-mae-way-icon {
+    font-size: 1.75rem;
+    color: $al-c-cta-blue;
+    line-height: 1;
+  }
+
+  .al-mae-way-cta {
+    margin-top: auto;
+    padding-top: 0.75rem;
+  }
+
+  // ─── Feature grid ──────────────────────────────────────────────────────────
+
+  .al-mae-feature-icon {
+    font-size: 2rem;
+    color: $al-c-science-blue-lighter;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  // ─── Software grid ─────────────────────────────────────────────────────────
+
+  .al-mae-software-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+
+  .al-mae-software-item {
+    background: rgba($al-c-soft-peach-lighter, 0.07);
+    border: 1px solid rgba($al-c-soft-peach-lighter, 0.12);
+    border-radius: $al-mae-radius-sm;
+    padding: 1rem 1.5rem;
+    width: 180px;
+    height: 88px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    // Wordmarks ship as pure white on transparent, so nothing recolours them.
+    // Their aspect ratios vary wildly, from a wide "OpenColorIO" to a compact
+    // "GIMP", so the tile is a fixed box and each mark is contained inside it.
+    // That keeps optical weight even instead of letting wide marks dominate.
+    img {
+      max-width: 100%;
+      max-height: 40px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      opacity: 0.85;
+    }
+
+    span {
+      font-size: 0.85rem;
+      color: rgba($al-c-soft-peach-lighter, 0.7);
+    }
+  }
+
+  // TEMPORARY: proofing labels under each software tile, so the logo set can
+  // be checked against the names. Remove alongside the matching markup in
+  // mae/platform.html.
+  .al-mae-software-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .al-mae-software-label {
+    font-size: 0.8rem;
+    color: rgba($al-c-soft-peach-lighter, 0.6);
+  }
+
+  // ─── Wide panels: what's on it, the Installer, the EC2 card ────────────────
+
+  .al-mae-panel {
+    padding: 2.25rem;
+  }
+
+  .al-mae-panel-eyebrow {
+    color: $al-c-cta-blue;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  // ─── M&E SIG ───────────────────────────────────────────────────────────────
+
+  .al-mae-sig-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.25rem 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.35rem 0;
+      font-size: 1rem;
+    }
+
+    i {
+      color: $al-c-atlantis;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+  }
+
+  // ─── Next steps ────────────────────────────────────────────────────────────
+
+  .al-mae-step {
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .al-mae-step-number {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: $al-c-science-blue-lighter;
+    color: $al-c-soft-peach-lighter;
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+  }
+
+  // ─── The Creative ISO: the page's single light band ────────────────────────
+  //
+  // Only the download moment lives here. It inverts the page, so text colors
+  // are set explicitly against the site default of light-on-dark.
+
+  .al-mae-iso {
+    background: $al-c-soft-peach;
+    color: $al-font-color-light;
+    // Keep the sticky site header clear of anything linked to directly.
+    scroll-margin-top: 120px;
+
+    h2,
+    h3,
+    h4 {
+      color: $al-font-color-light;
+    }
+
+    p {
+      color: rgba($al-c-black-pearl, 0.78);
+    }
+
+    a:not(.btn) {
+      color: $al-c-science-blue-dark;
+
+      &:hover {
+        color: $al-c-science-blue;
+      }
+    }
+  }
+
+  // Attribution pill above the heading, the one eyebrow on the page
+  .al-mae-iso-eyebrow {
+    display: inline-block;
+    background: rgba($al-c-science-blue, 0.1);
+    color: $al-c-science-blue-dark;
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  // Line-length limit for prose centred on the wide light surface
+  .al-mae-iso-measure {
+    max-width: 45rem;
+  }
+
+  .al-mae-iso-card {
+    background: $al-c-soft-peach-lighter;
+    border: 1px solid $al-c-soft-peach-dark;
+    border-radius: $al-mae-radius;
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  // Which GPU this build is for. Kept because it carries real meaning.
+  .al-mae-iso-badge {
+    align-self: flex-start;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    &.is-accent {
+      background: rgba($al-c-science-blue, 0.12);
+      color: $al-c-science-blue-dark;
+    }
+
+    &.is-neutral {
+      background: rgba($al-c-black-pearl, 0.08);
+      color: $al-c-black-pearl;
+    }
+  }
+
+  // The "wrong build will not boot" warning, and the quieter default hint
+  .al-mae-iso-note {
+    border-radius: $al-mae-radius-sm;
+    padding: 0.75rem 0.9rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    display: flex;
+    gap: 0.55rem;
+
+    i {
+      flex-shrink: 0;
+      line-height: 1.5;
+    }
+
+    &.is-warning {
+      background: rgba($al-c-candlelight, 0.16);
+      border: 1px solid rgba($al-c-candlelight-dark, 0.5);
+      color: $al-font-color-light;
+    }
+
+    &.is-muted {
+      background: rgba($al-c-black-pearl, 0.05);
+      border: 1px solid $al-c-soft-peach-dark;
+      color: rgba($al-c-black-pearl, 0.78);
+    }
+  }
+
+  // Buttons sit at the card foot regardless of copy length
+  .al-mae-iso-card-cta {
+    margin-top: auto;
+  }
+}

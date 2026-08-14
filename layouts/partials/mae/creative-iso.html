@@ -1,0 +1,89 @@
+{{/* The Creative ISO: the page's one light band.
+
+  This is the single moment where a visitor does something, so it is the only
+  section that inverts the page. Keep it to the choice and the two buttons.
+  Everything that explains the image lives in mae/iso-details.html on the
+  normal dark surface.
+
+  TODO before publishing:
+  1. Replace the two href="#" download buttons with the published ISO URLs.
+*/}}
+
+
+<section id="creative-iso" class="al-mae-iso al-py-lg">
+  <div class="container">
+    <div class="text-center">
+      <p class="al-mae-iso-eyebrow mb-4">{{ i18n "From the M&E SIG" }}</p>
+      <h2 class="mb-3">{{ i18n "The AlmaLinux Creative ISO" }}</h2>
+      <p class="lead mx-auto mb-3 al-mae-iso-measure">
+        {{ i18n "A ready-to-work creative workstation image: AlmaLinux 10, KDE Plasma, and a curated set of open source media tools, fully self-contained and ready offline." }}
+      </p>
+      <p class="mx-auto mb-5 al-mae-iso-measure">
+        {{ i18n "Two builds, matched to your GPU. Picking the wrong one will fail to start the desktop, so check your hardware before you download." }}
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <!-- NVIDIA build -->
+      <div class="col-12 col-lg-6">
+        <div class="al-mae-iso-card">
+          <span class="al-mae-iso-badge is-accent"
+            >{{ i18n "NVIDIA GPU" }}</span
+          >
+          <h3 class="h4 mb-0">
+            {{ i18n "ISO with pre-installed NVIDIA drivers" }}
+          </h3>
+          <p class="mb-0">
+            {{ i18n "For systems with a discrete NVIDIA card already installed. Proprietary drivers are baked in so 3D acceleration and CUDA work out of the box." }}
+          </p>
+          <a
+            href="https://www.nvidia.com/en-us/drivers/unix/"
+            target="_blank"
+            rel="noopener"
+            class="fw-semibold">
+            {{ i18n "Check supported hardware and the current recommended Linux driver version" }}
+          </a>
+          <div class="al-mae-iso-note is-warning">
+            <i class="bi bi-exclamation-triangle-fill" aria-hidden="true"></i>
+            <span>
+              {{ i18n "Only use this build if an NVIDIA GPU is already installed. Booting it on AMD, Intel, or no dedicated GPU will fail to reach the desktop." }}
+            </span>
+          </div>
+          <div class="al-mae-iso-card-cta pt-2">
+            <a href="#" class="btn al-cta-blue w-100">
+              <i class="bi bi-download pe-1" aria-hidden="true"></i>
+              {{ i18n "Download NVIDIA ISO" }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Standard build -->
+      <div class="col-12 col-lg-6">
+        <div class="al-mae-iso-card">
+          <span class="al-mae-iso-badge is-neutral">
+            {{ i18n "No NVIDIA GPU? No problem" }}
+          </span>
+          <h3 class="h4 mb-0">
+            {{ i18n "Standard ISO (open-source drivers)" }}
+          </h3>
+          <p class="mb-0">
+            {{ i18n "For AMD and Intel graphics, or systems without a dedicated NVIDIA card. Ships with open-source drivers, the safe default for most laptops and workstations." }}
+          </p>
+          <div class="al-mae-iso-note is-muted">
+            <i class="bi bi-info-circle-fill" aria-hidden="true"></i>
+            <span>
+              {{ i18n "Recommended starting point if you're unsure which GPU your machine has." }}
+            </span>
+          </div>
+          <div class="al-mae-iso-card-cta pt-2">
+            <a href="#" class="btn al-cta-blue w-100">
+              <i class="bi bi-download pe-1" aria-hidden="true"></i>
+              {{ i18n "Download Standard ISO" }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

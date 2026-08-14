@@ -1,0 +1,46 @@
+{{/* Shared page hero for /for/media-and-entertainment.
+
+  Opens the page and carries its only <h1>. The primary CTA jumps to the
+  Creative ISO section, which is the concrete way this audience starts.
+
+  TODO before publishing:
+  1. Replace the placeholder box with a reel embed or image.
+*/}}
+
+
+<section class="al-mae-hero">
+  <div class="container al-py-lg">
+    <div class="row align-items-center g-5">
+      <!-- Reel / video -->
+      <div class="col-12 col-lg-5">
+        <div class="al-mae-logo-placeholder al-mae-reel-placeholder">
+          {{ i18n "maybe a reel? maybe an image?" }}
+        </div>
+      </div>
+
+      <!-- Copy -->
+      <div class="col-12 col-lg-7">
+        <h1 class="fw-bold mb-4">
+          {{ i18n "AlmaLinux for Media and Entertainment" }}
+        </h1>
+        <p class="lead">
+          {{ i18n "Creative production demands an OS that won't let you down mid-render, mid-shoot, or mid-deadline. AlmaLinux is the foundation trusted by VFX studios, animation houses, broadcasters, and game developers around the world, on everything from a single workstation to a render farm." }}
+        </p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="#creative-iso" class="btn al-cta-blue btn-lg px-4">
+            <i class="bi bi-download pe-1" aria-hidden="true"></i>
+            {{ i18n "Get the Creative ISO" }}
+          </a>
+          <a
+            href="https://wiki.almalinux.org/sigs/MediaAndEntertainmentSIG.html"
+            class="btn al-cta-blue btn-lg px-4"
+            target="_blank"
+            rel="noopener">
+            <i class="bi bi-people pe-1" aria-hidden="true"></i>
+            {{ i18n "Join the M&E SIG" }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
