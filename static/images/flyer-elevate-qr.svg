@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 160" fill="none">
+  <rect width="140" height="160" rx="8" fill="#082336"/>
+  <!-- QR code placeholder - replace with actual QR for wiki.almalinux.org/elevate -->
+  <rect x="20" y="16" width="100" height="100" rx="4" fill="white"/>
+  <text x="70" y="56" text-anchor="middle" fill="#082336" font-family="monospace" font-size="8" font-weight="700">QR CODE</text>
+  <text x="70" y="70" text-anchor="middle" fill="#082336" font-family="monospace" font-size="6">wiki.almalinux.org</text>
+  <text x="70" y="80" text-anchor="middle" fill="#082336" font-family="monospace" font-size="6">/elevate</text>
+  <text x="70" y="132" text-anchor="middle" fill="#c4e1ff" font-family="Montserrat,sans-serif" font-size="7" font-weight="600">Scan to get started</text>
+  <text x="70" y="146" text-anchor="middle" fill="#86da2f" font-family="Montserrat,sans-serif" font-size="6">wiki.almalinux.org/elevate</text>
+</svg>
