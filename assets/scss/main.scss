@@ -12,6 +12,7 @@
 @import "./fips-certification";
 @import "./alesco";
 @import "./event-schedule";
+@import "./press";
 @import "./branding";
 @import "./bundle-extras";
 
@@ -35,6 +36,12 @@ body, html {
 
 body {
   background: $al-body-background;
+}
+
+// Offset in-page anchor targets so the sticky navbar doesn't cover them.
+// One rule on the scroll root replaces per-page scroll-margin-top rules.
+html {
+  scroll-padding-top: 75px;
 }
 a{
   text-decoration: underline;
@@ -474,15 +481,6 @@ a{
 
 .al-page-toc-flat #TableOfContents ul ul {
   display: none;
-}
-
-.al-wysiwyg h1[id],
-.al-wysiwyg h2[id],
-.al-wysiwyg h3[id],
-.al-wysiwyg h4[id],
-.al-wysiwyg h5[id],
-.al-wysiwyg h6[id] {
-  scroll-margin-top: 120px;
 }
 
 .al-back-to-top {
