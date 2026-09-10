@@ -5,21 +5,21 @@ author:
   name: "Rodrigo de Avila"
   bio: "Member of the Election Committee, AlmaLinux OS Foundation"
   image: /images/elections2026/RodrigoDeAvila-small.webp
-date: "2026-09-10"
+date: "2026-09-14"
 images:
-  - /blog-images/2026/2026-09-10-2026-election-candidates.png
+  - /blog-images/2026/2026-09-14-2026-election-candidates.png
 post:
-  title: "Nominations have closed and we have our ballot: two candidates for the two open Cohort A seats. Meet Muuhh Ikeda and Tristan Theroux, and see why your vote still matters when voting opens September 14."
-  image: /blog-images/2026/2026-09-10-2026-election-candidates.png
+  title: "Nominations have closed and we have our ballot: two candidates for the two open Cohort A seats, and voting opens today. Meet Muuhh Ikeda and Tristan Theroux, and see why your vote still matters."
+  image: /blog-images/2026/2026-09-14-2026-election-candidates.png
 ---
 
 Nominations closed on September 8, and we have our ballot. Two people are running for the two open **Cohort A** seats: Muuhh Ikeda and Tristan Theroux.
 
-This is the first election under the [new bylaws and annual election process](/blog/2026-06-10-new-bylaws-and-2026-election) we adopted in April, and it fills the seats that Jun Yoshida and Jesse Asklund held. Voting opens September 14. If you were a member in good standing by July 16, your ballot link lands in your inbox that day and you're set. Everything else, including a long FAQ, is on the [2026 election page](https://wiki.almalinux.org/foundation/elections/2026.html).
+This is the first election under the [new bylaws and annual election process](/blog/2026-06-10-new-bylaws-and-2026-election) we adopted in April, and it fills the seats that Jun Yoshida and Jesse Asklund held. Voting opens today, September 14. If you were a member in good standing by July 16, your ballot link will be sent to the email address associated with your membership in [accounts.almalinux.org](https://accounts.almalinux.org). If you have any questions about the process, check the [2026 election page](https://wiki.almalinux.org/foundation/elections/2026.html) in the wiki.
 
 ## Meet the Candidates
 
-We asked both candidates to tell you who they are, in their own words.
+A connection between our members and the board is incredibly important, so we asked both candidates for introductions to share with the community. Learn more about who they are below!
 
 ### Muuhh Ikeda
 
@@ -41,25 +41,24 @@ Nominated by Jonathan Wright, an Individual and Mirror member. He's on [LinkedIn
 
 ## Why Your Vote Still Matters
 
-The math is tidy: two names, two openings. Your vote still counts, though.
+Your votes still matter (even with only two candidates for two open seats) because we still need 50 percent of the foundation members to vote.
 
-The board draws its authority from the membership, and an election is how that authority gets renewed each year. It only works if enough of you turn out. We need at least 10 percent of eligible members to vote before the result stands, and if we haven't reached that by October 2, voting stays open until we do. So please vote.
+The board draws its authority from the membership of the AlmaLinux OS Foundation, and this election is how that authority gets renewed each year. If we haven't reached that by October 2, voting will remain open until we do.
 
 The ballot is ranked choice. You order the candidates by preference instead of picking one name, and we count with Meek Single Transferable Vote. Votes carry different weight by membership level, the way they always have: Platinum 50, Gold 15, Ruby 5, Silver 5, and Individual and Mirror members 1 each.
 
 ## The Rest of the Calendar
 
-| Milestone                | Date               |
-| ------------------------ | ------------------ |
-| Candidate list published | September 8, 2026  |
-| Voting opens             | September 14, 2026 |
-| Voting closes            | October 2, 2026    |
-| Results announced        | by October 9, 2026 |
+| Milestone         | Date               |
+| ----------------- | ------------------ |
+| Voting opens      | September 14, 2026 |
+| Voting closes     | October 2, 2026    |
+| Results announced | by October 9, 2026 |
 
-Voting happens on [AlmaLinux Accounts](https://accounts.almalinux.org/elections/). Members in good standing by July 16 get a voting link and credentials by email the day voting opens, so there's nothing to do between now and then.
+Voting happens on [AlmaLinux Accounts](https://accounts.almalinux.org/elections/). Members who were in good standing by July 16, 2026 will get a voting link and credentials via email today.
 
 ## Questions
 
 The [election page](https://wiki.almalinux.org/foundation/elections/2026.html) has a detailed FAQ, and the Election Committee ([Igor Seletskiy](https://accounts.almalinux.org/user/iseletsk/), [Alex Iribarren](https://accounts.almalinux.org/user/alex/), and [me](https://accounts.almalinux.org/user/rdeavila/)) can take anything it doesn't cover. You can also find us in [~foundation](https://chat.almalinux.org/almalinux/channels/foundation) on [chat.almalinux.org](https://chat.almalinux.org).
 
-Thanks to Muuhh and Tristan for putting their names forward, and thanks to you for voting.
+Thanks to Muuhh and Tristan for accepting the nominations to join the board of directors, and thanks to all of you for voting.
