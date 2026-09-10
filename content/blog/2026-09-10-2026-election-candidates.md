@@ -13,7 +13,7 @@ post:
   image: /blog-images/2026/2026-09-10-2026-election-candidates.png
 ---
 
-Nominations closed on September 8, and we have our ballot. Two people are running for the two open **Cohort A** seats: Munehiro "Muuhh" Ikeda and Tristan Theroux.
+Nominations closed on September 8, and we have our ballot. Two people are running for the two open **Cohort A** seats: Muuhh Ikeda and Tristan Theroux.
 
 This is the first election under the [new bylaws and annual election process](/blog/2026-06-10-new-bylaws-and-2026-election) we adopted in April, and it fills the seats that Jun Yoshida and Jesse Asklund held. Voting opens September 14. If you were a member in good standing by July 16, your ballot link lands in your inbox that morning and you're set. Everything else, including a long FAQ, is on the [2026 election page](https://wiki.almalinux.org/foundation/elections/2026.html).
 
@@ -21,13 +21,13 @@ This is the first election under the [new bylaws and annual election process](/b
 
 We asked both candidates to tell you who they are, in their own words.
 
-### Munehiro "Muuhh" Ikeda
+### Muuhh Ikeda
 
-{{< figure src="/blog-images/2026/muuhh-small.webp" alt="Portrait of Munehiro Ikeda" width="150px" class="text-center" >}}
+{{< figure src="/blog-images/2026/muuhh-small.webp" alt="Portrait of Muuhh Ikeda" width="150px" class="text-center" >}}
 
-Nominated by Cybertrust Japan Co., Ltd., a Platinum sponsor. He goes by Muuhh, and that's the name he'd like us to use. He's on [LinkedIn](https://www.linkedin.com/in/munehiro-ikeda-a932a24/).
+Nominated by Cybertrust Japan Co., Ltd., a Platinum sponsor. He's on [LinkedIn](https://www.linkedin.com/in/munehiro-ikeda-a932a24/).
 
-> Ever since being first struck by how using gcc in the 1990s, simply by compiling with an option `-O2`, could make programs run several times faster than those compiled with commercial compilers, I, Muuhh IKEDA, have been a longtime OSS lover and believer. I later became involved in the development of the Linux kernel, primarily focusing on embedded and IoT applications. I currently serve as an OSS Evangelist and OSPO member at Cybertrust Japan Co., Ltd. I am also an LF Japan Evangelist. In addition to participating in the OSS community myself, I am leading the OpenSSF Japan community and active in efforts to raise the overall level of OSS security in Japan. I received the 2025 OpenSSF Golden Egg Award.
+> Ever since being first struck by how using gcc in the 1990s, simply by compiling with an option `-O2`, could make programs run several times faster than those compiled with commercial compilers, I, Muuhh IKEDA, have been a longtime OSS lover and believer. I later became involved in the development of the Linux kernel, primarily focusing on embedded and IoT applications. I currently serve as an OSS Evangelist and OSPO member at Cybertrust Japan Co., Ltd. I am also an LF Japan Evangelist. In addition to participating in the OSS community myself, I am leading the OpenSSF Japan community and active in efforts to raise the overall level of OSS security in Japan. I received the [2025 OpenSSF Golden Egg Award](https://openssf.org/press-release/2025/06/26/openssf-welcomes-new-members-and-presents-golden-egg-award/).
 >
 > I expect AlmaLinux to be strengthened in areas such as supply chain security and IoT, which are my areas of expertise. AlmaLinux's neutral and open stance is the very source of OSS's strength, and I would like to contribute to its further adoption by strengthening collaboration with other OSS projects that share the same fundamental principles.
 
@@ -35,7 +35,7 @@ Nominated by Cybertrust Japan Co., Ltd., a Platinum sponsor. He goes by Muuhh, a
 
 {{< figure src="/blog-images/2026/tristan-small.webp" alt="Portrait of Tristan Theroux" width="150px" class="text-center" >}}
 
-Nominated by Jonathan Wright, an Individual member. He's on [LinkedIn](https://www.linkedin.com/in/tristan-th%C3%A9roux-b588065a/?locale=en).
+Nominated by Jonathan Wright, an Individual and Mirror member. He's on [LinkedIn](https://www.linkedin.com/in/tristan-th%C3%A9roux-b588065a/?locale=en).
 
 > 9+ years keeping Linux, macOS, and Windows systems reliable and secure. I champion open source and automation first, Linux wherever it fits, macOS where it cannot, and I lead the AlmaLinux Media and Entertainment SIG.
 
