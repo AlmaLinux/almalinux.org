@@ -24,7 +24,7 @@ The AlmaLinux OS Foundation is announcing the availability of AlmaLinux 10.3 Bet
 - IBM PowerPC (ppc64le)
 - IBM Z (s390x)
 
-Beta ISOs are available at [repo.almalinux.org](https://repo.almalinux.org/almalinux/10.3-beta/isos/).
+Beta ISOs are available at [repo.almalinux.org](https://vault.almalinux.org/10.3-beta/isos/).
 
 A usual reminder: this is a **BETA** release. It should not be used for production installations. The provided upgrade instructions should not be used on production machines unless you don't mind if something breaks. If you are looking to see how things are going to work in stable, you are on the right track.
 
