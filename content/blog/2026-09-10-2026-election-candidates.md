@@ -3,7 +3,7 @@ title: "Meet the 2026 Board Election Candidates"
 type: blog
 author:
   name: "Rodrigo de Avila"
-  bio: "Election Committee, AlmaLinux OS Foundation"
+  bio: "Member of the Election Committee, AlmaLinux OS Foundation"
   image: /images/elections2026/RodrigoDeAvila-small.webp
 date: "2026-09-10"
 images:
