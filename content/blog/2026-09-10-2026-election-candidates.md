@@ -15,7 +15,7 @@ post:
 
 Nominations closed on September 8, and we have our ballot. Two people are running for the two open **Cohort A** seats: Muuhh Ikeda and Tristan Theroux.
 
-This is the first election under the [new bylaws and annual election process](/blog/2026-06-10-new-bylaws-and-2026-election) we adopted in April, and it fills the seats that Jun Yoshida and Jesse Asklund held. Voting opens September 14. If you were a member in good standing by July 16, your ballot link lands in your inbox that morning and you're set. Everything else, including a long FAQ, is on the [2026 election page](https://wiki.almalinux.org/foundation/elections/2026.html).
+This is the first election under the [new bylaws and annual election process](/blog/2026-06-10-new-bylaws-and-2026-election) we adopted in April, and it fills the seats that Jun Yoshida and Jesse Asklund held. Voting opens September 14. If you were a member in good standing by July 16, your ballot link lands in your inbox that day and you're set. Everything else, including a long FAQ, is on the [2026 election page](https://wiki.almalinux.org/foundation/elections/2026.html).
 
 ## Meet the Candidates
 
