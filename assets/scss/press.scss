@@ -258,4 +258,62 @@
     font-size: 0.9rem;
     color: rgba(254, 254, 254, 0.6);
   }
+
+  // Spokesperson: headshot beside contact details and speaking history.
+  .al-press-spokes {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 2rem;
+    align-items: start;
+
+    @media (max-width: 767.98px) {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+
+  .al-press-spokes-photo {
+    margin: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid rgba(196, 225, 255, 0.14);
+    }
+    figcaption {
+      margin-top: 0.6rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 767.98px) {
+      max-width: 220px;
+    }
+  }
+
+  .al-press-spokes-lead {
+    margin: 1.25rem 0 0.6rem;
+  }
+
+  // Two-up bullet list of events, collapsing to one column when narrow.
+  .al-press-speaking {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.35rem 1.25rem;
+
+    li {
+      position: relative;
+      padding-left: 1.1rem;
+      font-weight: 600;
+    }
+    li::before {
+      content: "\2022";
+      position: absolute;
+      left: 0;
+      color: $al-c-cta-blue;
+    }
+  }
 }

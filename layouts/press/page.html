@@ -327,14 +327,45 @@
     {{/* Spokespeople & media contact */}}
     <section id="media-contact" class="al-press-band-deep al-py-lg">
       <div class="container">
-        <h2 class="fw-light mb-3">{{ i18n "Spokespeople & media contact" }}</h2>
-        <p>
-          {{ i18n "For interviews and quotes, our spokesperson is benny Vasquez, Chair of the Board of Directors of the AlmaLinux OS Foundation." }}
-        </p>
-        <p>
-          {{ i18n "Reach us for interviews, quotes, or asset requests:" }}
-          <a href="mailto:hello@almalinux.org">hello@almalinux.org</a>
-        </p>
+        <h2 class="fw-light mb-4">{{ i18n "Spokespeople & media contact" }}</h2>
+        <div class="al-press-spokes">
+          <figure class="al-press-spokes-photo">
+            <img
+              src="/users/benny.jpeg"
+              alt="benny Vasquez, Chair of the Board of Directors of the AlmaLinux OS Foundation"
+              width="809"
+              height="812" />
+            {{ if os.FileExists "static/press/benny-vasquez-headshot.jpg" }}
+              <figcaption>
+                <a href="/press/benny-vasquez-headshot.jpg" download>
+                  {{ i18n "Download high-resolution headshot" }}
+                </a>
+              </figcaption>
+            {{ end }}
+          </figure>
+          <div class="al-press-spokes-body">
+            <p>
+              {{ i18n "For interviews and quotes, our spokesperson is benny Vasquez, Chair of the Board of Directors of the AlmaLinux OS Foundation." }}
+            </p>
+            <p class="al-press-spokes-lead">
+              {{ i18n "benny has served as a featured speaker at the following events:" }}
+            </p>
+            <ul class="al-press-speaking">
+              <li>All Things Open</li>
+              <li>Open Source Summit Japan</li>
+              <li>SFSCON</li>
+              <li>NERDEARLA</li>
+              <li>FOSSASIA Summit</li>
+              <li>Ohio LinuxFest</li>
+              <li>FOSSY</li>
+              <li>ASWF Open Source Days</li>
+            </ul>
+            <p class="mb-0">
+              {{ i18n "Reach us for interviews, quotes, or asset requests:" }}
+              <a href="mailto:hello@almalinux.org">hello@almalinux.org</a>
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
