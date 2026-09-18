@@ -12,6 +12,8 @@
 /branding/AlmaLinux%20BrandBook.pdf /branding/brand-book.html 301
 
 # added for marketing reasons
+/ato /ato-2026/ 302
+/ato/ /ato-2026/ 302
 /fips/ /blog/2023-09-19-fips-validation-for-almalinux/ 302
 /comparison/ https://wiki.almalinux.org/Comparison.html 302
 /migrate/ https://wiki.almalinux.org/migration/ 307

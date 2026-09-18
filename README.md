@@ -54,6 +54,10 @@ thankyou_quote: "Quote from benny after the event."
 thankyou_youtube_url: "https://www.youtube.com/watch?v=..."
 
 # Footer bars — omit either field to hide that bar
+# Optional: replace the AlmaLinux Day wording in the "Can't make it?" block
+# (useful for conferences we attend rather than host)
+cant_make_it_heading: "Can't make it to City?"
+cant_make_it_text: "What people who can't attend can still do."
 coc_url: "/p/your-event-code-of-conduct/"
 photo_credit_name: "Photographer Name"
 photo_credit_url: "https://unsplash.com/..."
@@ -65,6 +69,10 @@ speakers_header: "On stage at AlmaLinux Day: City" # optional; overrides default
 ```
 
 The markdown body (below `---`) is rendered between the hero and the speakers section. Use it for the event description, schedule embed, venue photos, and any other event-specific content. Raw HTML is supported.
+
+For styled blocks in the body, use the shared classes in `assets/scss/event-day.scss` instead of inline styles: `al-event-feature` (a highlighted panel, with `al-event-feature--green` for certification content), `al-event-card`, `al-event-eyebrow`, `al-event-steps` (a numbered list), and `al-event-headshot`. See `content/ato-2026.md` for an example.
+
+The same layout works for conferences where AlmaLinux has a booth or a talk but isn't the organizer: point `registration_url` at an anchor on the page, leave `speakers` out of the data file, and set `cant_make_it_heading` and `cant_make_it_text`.
 
 ### Step 2: Create the data file
 

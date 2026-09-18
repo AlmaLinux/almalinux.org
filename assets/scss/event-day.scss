@@ -1,0 +1,117 @@
+// Reusable content blocks for event-day page bodies (content/<event>.md).
+// Cards sit on the opposite brand blue from the page background, per the
+// deck card rule: page is $al-body-background (#0f4266), cards are Black Pearl.
+
+.al-event-eyebrow {
+  font-family: $al-font-family-accent;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $al-c-cta-blue;
+  margin-bottom: 0.4rem;
+}
+
+.al-event-feature {
+  background: $al-c-black-pearl;
+  border-left: 4px solid $al-c-cta-blue;
+  border-radius: 8px;
+  padding: 2rem;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  // Green accent for certification content (matches al-cta-green's purpose)
+  &--green {
+    border-left-color: $al-c-atlantis;
+
+    .al-event-eyebrow {
+      color: $al-c-atlantis;
+    }
+  }
+}
+
+.al-event-card {
+  background: $al-c-black-pearl;
+  border-top: 4px solid $al-c-cta-blue;
+  border-radius: 8px;
+  padding: 1.5rem;
+
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+.al-event-steps {
+  list-style: none;
+  counter-reset: al-event-step;
+  padding: 0;
+  margin: 0;
+
+  li {
+    counter-increment: al-event-step;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: $al-c-black-pearl-lighter;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.6rem;
+
+    code {
+      white-space: nowrap;
+    }
+
+    &::before {
+      content: counter(al-event-step);
+      flex: none;
+      width: 1.75rem;
+      height: 1.75rem;
+      border-radius: 50%;
+      background: $al-c-atlantis;
+      color: $al-c-black-pearl-dark;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.al-event-headshot {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid $al-c-cta-blue;
+}
+
+// "Can't make it?" band (layouts/partials/event-day/cant-make-it.html).
+// These rules replace the inline styles the partial used to carry; the
+// background is the CTA blue token rather than the old hand-written #22C2FF.
+.al-event-stop {
+  background: $al-c-cta-blue;
+
+  > .container {
+    padding: 0 40px;
+  }
+
+  .container-stop {
+    display: flex;
+  }
+
+  .stop-item-1 {
+    width: 60%;
+  }
+
+  .stop-item-2 {
+    padding-left: 50px;
+  }
+}
+
+.al-event-stop-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 80px;
+}
