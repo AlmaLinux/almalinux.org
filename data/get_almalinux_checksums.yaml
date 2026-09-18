@@ -84,14 +84,14 @@ versions:
     x86_64:
       iso:
         boot:
-          fullVersion: "20260610.0"
-          sha256: 239cf1fdff4ccc06d382f6a0e8bdcc739365584c5335443789e38a75d37aa53d
+          fullVersion: "20260917.0"
+          sha256: 8602388f84522556e1f4a6889e985a3a298595079eaa43984abb4d0d0ccbe9f3
         dvd:
-          fullVersion: "20260610.0"
-          sha256: d37178da3dceb71c7be7857050914decb005766a512e2d66539010798f1b38f1
+          fullVersion: "20260917.0"
+          sha256: ebb7fc266d93b9befac8059cb10b4056a4fe5090dc31d0e32ef0796ed4129414
         minimal:
-          fullVersion: "20260610.0"
-          sha256: f7281d04d90a913a31cda850655d64e427fc513924c173da0fa0fcb1cb490769
+          fullVersion: "20260917.0"
+          sha256: 326a810bd40a8646537997f7d52544e7781b75d92ddeb572d58776284a118f52
       cloud:
         genericCloud:
           sha256: cc70d33280a46c93982a9d4c11065077991cb59967678a62ef0822465c4ded57
@@ -100,14 +100,14 @@ versions:
     x86_64_v2:
       iso:
         boot:
-          fullVersion: "20260610.0"
-          sha256: 25f3808e59cf937648676a95e3a6e1ef95ecfbbbf417e7bedc7f67695cd306d0
+          fullVersion: "20260917.0"
+          sha256: df969caa5f3f06c809d02f1440b42117322c3b5cbfb8e324acd971390028e571
         dvd:
-          fullVersion: "20260610.0"
-          sha256: ee0b98ddd96efb1684f54f709bde598b0f9cf1d20886385d04d8462f4b943041
+          fullVersion: "20260917.0"
+          sha256: bb6b42e728e1310ba7bbc72e6ce2539ef788b4e57f1ed7a487c127f06362129a
         minimal:
-          fullVersion: "20260610.0"
-          sha256: b9ceb1b905fdb3fe1dc1e48de79b5d66b77980a151c9ebe9a5dea9433deb3cf6
+          fullVersion: "20260917.0"
+          sha256: 5fb05fd381ce8f29a071fd72b095bdd026dc4ef0a4ec123dc10d976a2c3bec6f
       cloud:
         genericCloud:
           sha256: c3b28e0ced5e0ef9af333e74ed55fee085fa0a7f27f6706ac0b294c89ccfa95f
@@ -116,14 +116,14 @@ versions:
     aarch64:
       iso:
         boot:
-          fullVersion: "20260610.0"
-          sha256: 532ca54401751b0d7c647830b8ca1fd7258fe8be08e43d097416210c2db48c21
+          fullVersion: "20260917.0"
+          sha256: 397b804e72a1bc32614a28536273c886ed3c7837da2e471ebfcedb46d5e38b8a
         dvd:
-          fullVersion: "20260610.0"
-          sha256: fbd26549c9faa7ec7b81285c4ca48cb235086087c8b76b824d3e8baad818ebe2
+          fullVersion: "20260917.0"
+          sha256: fbe89cae807b370c9c5fab58915eb1f407325b2851cebf3044f1e5813e34b774
         minimal:
-          fullVersion: "20260610.0"
-          sha256: 77c9f00d4c8014d81b55269498e306febc677915bbdc9866ddd278c47a431709
+          fullVersion: "20260917.0"
+          sha256: d232289a8372a2d8402f203b141637f9d75d3b2fab5c0131d4cec22da6409edc
       cloud:
         genericCloud:
           sha256: 3bebcedce81e0224cac268a9e1b4bb64d74d68586efd14140a20874aa781a652
@@ -132,28 +132,28 @@ versions:
     s390x:
       iso:
         boot:
-          fullVersion: "20260610.0"
-          sha256: fd4337773906b6fce6cf2a4b114a1a5afb7febbd61296d8cea3ddff631a74b49
+          fullVersion: "20260917.0"
+          sha256: 301ea984bd890fc24a4c63e0e6631fe7f6c241eb38c4118a63b728161e36ae69
         dvd:
-          fullVersion: "20260610.0"
-          sha256: 5a358d5503c9d10f0b1ff2f5648bd419d0e5b39d6d8e00cd9485e9f9fff107f8
+          fullVersion: "20260917.0"
+          sha256: c561461469da2ced18d9289760986ef436ad57a976c54e0226f904259710d4d6
         minimal:
-          fullVersion: "20260610.0"
-          sha256: 6fdfdbcd624730c3cad2bfa7a5b738fab72996443b05af778d15e045d182cefa
+          fullVersion: "20260917.0"
+          sha256: 1cc0613b92acc4b9c8dfd13fc8b162a8b72609e9f4365e21c58d1dd8593df6cb
       cloud:
         genericCloud:
           sha256: 4f1ebc8f1b228917ff8d2727581c779b0e8a38c06b977ba9fff97350249995bb
     ppc64le:
       iso:
         boot:
-          fullVersion: "20260610.0"
-          sha256: de2a704b8b9092633e166c6ca68515ce94fce6f9a1f58ab72485e5c7c4c8cec2
+          fullVersion: "20260917.0"
+          sha256: 91747dd55fb14a0f294e8ace50cd6fc28d2e5a9483f0843191767fdbbadd9180
         dvd:
-          fullVersion: "20260610.0"
-          sha256: 20c66b6e2c5b41f4dec0b878187313e09059d4b84c3c2c421c3843f9f07c7bc9
+          fullVersion: "20260917.0"
+          sha256: 9b8759b0eb37f03d0955294fd8430c8fe38514e66b18e8c103858a9ff2081938
         minimal:
-          fullVersion: "20260610.0"
-          sha256: 09940ceb3d09c134d73ec6a50c4f08a13500734fb709b0031ee8547be9c158c1
+          fullVersion: "20260917.0"
+          sha256: 8fe6599f4606d1b74040be08df737eef837a9dabce4f7a16c08ed22d5498318c
   "9":
     x86_64:
       iso:
