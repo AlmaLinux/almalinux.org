@@ -158,7 +158,7 @@ Add a header image at `static/newsletter-images/mon-yy.png` (e.g. `jan-26.png`).
 
 ### Step 3: Open a pull request
 
-Open a PR targeting the `main` branch. Once merged, the newsletter will appear on the [newsletters listing page](https://almalinux.org/newsletters/) under its year, and will be included in the RSS feed automatically.
+Open a PR targeting the `master` branch. Once merged, the newsletter will appear on the [newsletters listing page](https://almalinux.org/newsletters/) under its year, and will be included in the RSS feed automatically.
 
 ## Contributing - Blog Posts
 
@@ -243,9 +243,9 @@ For smaller contributions, follow this workflow:
 - Fork the project.
 - Create a new branch for your feature or bug fix.
 - Add your code, documentation, etc.
-- Submit a pull request (PR). All PRs should target the `main` branch. Once approved, a development site will automatically generate based on the PR.
+- Submit a pull request (PR). All PRs should target the `master` branch. Once approved, a development site will automatically generate based on the PR.
 
-After review and approval, the changes will be merged into the `main` branch and deployed to the live site.
+After review and approval, the changes will be merged into the `master` branch and deployed to the live site. See [README.DEPLOY.md](README.DEPLOY.md) for how deployment works.
 
 For design tokens, components, and conventions, see [DESIGN.md](DESIGN.md).
 
@@ -329,7 +329,7 @@ The "Get AlmaLinux" page is dynamically generated using structured data and Hugo
    python3 tools/generate_get_almalinux_yaml.py
    ```
    This updates `data/get_almalinux.yaml` for use by Hugo.
-   This will be done automatically by the Gitlab CI scripts during deployment.
+   This will be done automatically by GitHub Actions during deployment.
 3. Commit the resulting changes to `data/get_almalinux_checksums.yaml` and open a PR.
    Do not commit `data/get_almalinux.yaml`; it is generated output.
 
