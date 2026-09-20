@@ -1,6 +1,9 @@
 name: Publish Preview Deployment
 on:
   workflow_run:
+    # Matches the `name:` field of build-preview.yml, NOT its filename.
+    # A workflow_run trigger that matches nothing fails silently: no run is
+    # created and no error is logged anywhere. Keep these two in step.
     workflows: ["Build Preview"]
     types: [completed]
 
@@ -17,12 +20,13 @@ jobs:
       actions: read
 
     steps:
-      - name: Download artifact from triggering workflow
+      - name: Download artifacts from triggering workflow
         uses: actions/github-script@v7
         with:
           script: |
             const run_id = context.payload.workflow_run.id;
             const { owner, repo } = context.repo;
+            const fs = require("fs");
 
             const artifacts = await github.rest.actions.listWorkflowRunArtifacts({
               owner,
@@ -30,26 +34,63 @@ jobs:
               run_id,
             });
 
-            const artifact = artifacts.data.artifacts.find(a => a.name === "preview-site");
-            if (!artifact) {
-              core.setFailed("preview-site artifact not found");
-              return;
+            for (const name of ["preview-site", "pr-number"]) {
+              const artifact = artifacts.data.artifacts.find(a => a.name === name);
+              if (!artifact) {
+                core.setFailed(`${name} artifact not found`);
+                return;
+              }
+
+              const zip = await github.rest.actions.downloadArtifact({
+                owner,
+                repo,
+                artifact_id: artifact.id,
+                archive_format: "zip",
+              });
+
+              fs.writeFileSync(`${process.env.GITHUB_WORKSPACE}/${name}.zip`, Buffer.from(zip.data));
             }
 
-            const zip = await github.rest.actions.downloadArtifact({
-              owner,
-              repo,
-              artifact_id: artifact.id,
-              archive_format: "zip",
-            });
-
-            const fs = require("fs");
-            fs.writeFileSync(`${process.env.GITHUB_WORKSPACE}/preview-site.zip`, Buffer.from(zip.data));
-
-      - name: Unzip artifact
+      - name: Unzip artifacts
         run: |
           mkdir public
           unzip preview-site.zip -d public
+          unzip pr-number.zip -d .
+
+      - name: Resolve and verify PR number
+        id: pr
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require("fs");
+            const raw = fs.readFileSync("pr-number.txt", "utf8").trim();
+
+            if (!/^[0-9]+$/.test(raw)) {
+              core.setFailed(`pr-number.txt does not contain a PR number: ${JSON.stringify(raw)}`);
+              return;
+            }
+
+            // build-preview.yml runs from the pull request head. On a fork PR that
+            // is code we do not control, so the number above is untrusted input.
+            // This job holds real secrets and pull-requests: write, so confirm the
+            // PR it names is actually the one that was built before we deploy to a
+            // branch alias or comment anywhere. Do not remove this check.
+            const { owner, repo } = context.repo;
+            const { data: pr } = await github.rest.pulls.get({
+              owner,
+              repo,
+              pull_number: Number(raw),
+            });
+
+            const built = context.payload.workflow_run.head_sha;
+            if (pr.head.sha !== built) {
+              core.setFailed(
+                `PR #${raw} is at ${pr.head.sha} but this run built ${built}. Refusing to deploy.`
+              );
+              return;
+            }
+
+            core.setOutput("number", raw);
 
       - name: Publish to Cloudflare Pages
         id: deploy
@@ -57,15 +98,12 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy public --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }} --branch=pr-${{ github.event.workflow_run.pull_requests[0].number }}
+          command: pages deploy public --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }} --branch=pr-${{ steps.pr.outputs.number }}
 
       - name: Comment deployment URL on PR
         uses: actions/github-script@v7
         with:
           script: |
-            const pr = context.payload.workflow_run.pull_requests[0];
-            if (!pr) return;
-
             const aliasUrl = `${{ steps.deploy.outputs.pages-deployment-alias-url }}`;
             const deploymentUrl = `${{ steps.deploy.outputs.deployment-url }}`;
             const url = aliasUrl || deploymentUrl;
@@ -78,6 +116,6 @@ jobs:
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: pr.number,
+              issue_number: Number("${{ steps.pr.outputs.number }}"),
               body,
             });

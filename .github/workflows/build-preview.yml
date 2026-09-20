@@ -46,3 +46,16 @@ jobs:
           name: preview-site
           path: public
           retention-days: 3
+
+      # The deploy workflow runs on workflow_run, where GitHub leaves
+      # pull_requests[] empty for pull requests opened from a fork. Hand the
+      # number across in the artifact instead. See .github/workflows/README.md.
+      - name: Record PR number
+        run: echo "${{ github.event.pull_request.number }}" > pr-number.txt
+
+      - name: Upload PR number
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr-number
+          path: pr-number.txt
+          retention-days: 3
