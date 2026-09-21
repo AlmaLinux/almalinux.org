@@ -1,11 +1,14 @@
-{{/* Renders one schedule entry. Context: dict with "s" (a Sessionize session)
-  and "speakers" (the full speakers array, for resolving speaker ids).
+{{/* Renders one schedule entry. Context: dict with "s" (a Sessionize session),
+  "speakers" (the full speakers array, for resolving speaker ids) and an
+  optional "links" map (session id -> { video, slides }) rendered as
+  "Watch the talk | View the slides" under the speaker names.
   Talks with a description get a Bootstrap collapse toggle that expands the
   abstract inline (same mechanism as the homepage FAQ accordion). Service
   sessions (registration, breaks, lunch) show their short note inline.
 */}}
 {{ $s := .s }}
 {{ $speakers := .speakers }}
+{{ $links := index (.links | default dict) (printf "%v" $s.id) }}
 {{ $desc := trim ($s.description | default "") " \r\n" }}
 {{ $hasDesc := ne $desc "" }}
 {{ $expandable := and (not $s.isServiceSession) $hasDesc }}
@@ -38,6 +41,18 @@
       {{ end }}
       {{ with $names }}
         <div class="al-sched-speakers">{{ delimit . ", " }}</div>
+      {{ end }}
+    {{ end }}
+    {{ with $links }}
+      {{ $items := slice }}
+      {{ with .video }}
+        {{ $items = $items | append (printf `<a href="%s">%s</a>` . (i18n "Watch the talk")) }}
+      {{ end }}
+      {{ with .slides }}
+        {{ $items = $items | append (printf `<a href="%s">%s</a>` . (i18n "View the slides")) }}
+      {{ end }}
+      {{ with $items }}
+        <div class="al-sched-links">{{ delimit . " | " | safeHTML }}</div>
       {{ end }}
     {{ end }}
     {{ if $expandable }}

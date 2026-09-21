@@ -758,6 +758,8 @@
    "Afternoon": "Afternoon",
    "All times are shown in Pacific time (PT).": "All times are shown in Pacific time (PT).",
    "Morning": "Morning",
+   "View the slides": "View the slides",
+   "Watch the talk": "Watch the talk",
    "About SBOM in AlmaLinux": "About SBOM in AlmaLinux",
    "AlmaLinux OS is built to be transparent, verifiable, and independently certified. From signed packages and public errata to compliance tooling and formal certifications, here is how we help you trust the system underneath your work.": "AlmaLinux OS is built to be transparent, verifiable, and independently certified. From signed packages and public errata to compliance tooling and formal certifications, here is how we help you trust the system underneath your work.",
    "AlmaLinux supports Secure Boot, with a shim signed by Microsoft, so systems boot only trusted software.": "AlmaLinux supports Secure Boot, with a shim signed by Microsoft, so systems boot only trusted software.",
