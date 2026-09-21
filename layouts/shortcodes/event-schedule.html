@@ -1,9 +1,13 @@
 {{/* Renders a two-column (morning / afternoon) schedule from a Sessionize
   "view/All" JSON export stored at data/events/<schedule_data_key>.json.
   The columns split at the lunch break. Refresh the schedule by re-exporting
-  the JSON from Sessionize and replacing the data file.
+  the JSON from Sessionize and replacing the data file. Slide decks and
+  recordings are linked per session via the page's session_links front matter
+  (keyed by Sessionize session id) so they survive a data refresh.
 */}}
 {{ $key := .Page.Params.schedule_data_key }}
+{{/* Optional map of session id -> { slides, video } from the page front matter. */}}
+{{ $links := .Page.Params.session_links | default dict }}
 {{ with index hugo.Data.events $key }}
   {{ $data := . }}
   {{/* Cutoff = start of the lunch service session; lunch and everything after
@@ -30,13 +34,13 @@
       <div class="col-lg-6">
         <h4 class="al-schedule__heading">{{ i18n "Morning" }}</h4>
         {{ range $morning }}
-          {{ partial "event-day/schedule-item.html" (dict "s" . "speakers" $data.speakers) }}
+          {{ partial "event-day/schedule-item.html" (dict "s" . "speakers" $data.speakers "links" $links) }}
         {{ end }}
       </div>
       <div class="col-lg-6">
         <h4 class="al-schedule__heading">{{ i18n "Afternoon" }}</h4>
         {{ range $afternoon }}
-          {{ partial "event-day/schedule-item.html" (dict "s" . "speakers" $data.speakers) }}
+          {{ partial "event-day/schedule-item.html" (dict "s" . "speakers" $data.speakers "links" $links) }}
         {{ end }}
       </div>
     </div>

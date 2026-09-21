@@ -69,6 +69,25 @@ $al-sched-muted: rgba($al-c-soft-peach, 0.65);
   color: $al-sched-accent;
 }
 
+// "Watch the talk | View the slides" links under the speaker names
+.al-sched-links {
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  color: $al-sched-muted;
+
+  a {
+    color: $al-sched-text;
+    text-decoration: underline;
+    text-decoration-color: rgba($al-sched-text, 0.4);
+    text-underline-offset: 0.15em;
+
+    &:hover {
+      color: $al-sched-accent;
+      text-decoration-color: $al-sched-accent;
+    }
+  }
+}
+
 // Expandable abstract toggle (Bootstrap collapse, like the homepage FAQ)
 .al-sched-toggle {
   display: flex;
