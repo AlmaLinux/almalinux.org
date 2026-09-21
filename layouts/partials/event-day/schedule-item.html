@@ -44,15 +44,18 @@
       {{ end }}
     {{ end }}
     {{ with $links }}
-      {{ $items := slice }}
-      {{ with .video }}
-        {{ $items = $items | append (printf `<a href="%s">%s</a>` . (i18n "Watch the talk")) }}
-      {{ end }}
-      {{ with .slides }}
-        {{ $items = $items | append (printf `<a href="%s">%s</a>` . (i18n "View the slides")) }}
-      {{ end }}
-      {{ with $items }}
-        <div class="al-sched-links">{{ delimit . " | " | safeHTML }}</div>
+      {{ $video := .video | default "" }}
+      {{ $slides := .slides | default "" }}
+      {{ if or $video $slides }}
+        <div class="al-sched-links">
+          {{- with $video }}
+            <a href="{{ . }}">{{ i18n "Watch the talk" }}</a>
+          {{ end -}}
+          {{- if and $video $slides }}|{{ end -}}
+          {{- with $slides }}
+            <a href="{{ . }}">{{ i18n "View the slides" }}</a>
+          {{ end -}}
+        </div>
       {{ end }}
     {{ end }}
     {{ if $expandable }}
