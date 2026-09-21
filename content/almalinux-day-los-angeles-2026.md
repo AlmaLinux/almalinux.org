@@ -39,15 +39,15 @@ schedule_data_key: "aldla-2026-schedule"
 
 # Per-session links rendered under the speaker names in the schedule, keyed by
 # the Sessionize session id (the "id" field in the schedule JSON, quoted).
-# Each entry may have "slides" (a PDF/PPTX under static/files/) and/or "video"
+# Each entry may have "slides" (a PDF under static/files/) and/or "video"
 # (a YouTube URL, shown as "Watch the talk" once recordings are published).
 session_links:
   "1266409":
     slides: "/files/2026/aldla/aldla-2026-foundation-creative-pipelines-vasquez.pdf"
   "1237960":
-    slides: "/files/2026/aldla/aldla-2026-me-sig-overview-theroux.pptx"
+    slides: "/files/2026/aldla/aldla-2026-me-sig-overview-theroux.pdf"
   "1265780":
-    slides: "/files/2026/aldla/aldla-2026-creative-installer-theroux.pptx"
+    slides: "/files/2026/aldla/aldla-2026-creative-installer-theroux.pdf"
   "1174497":
     slides: "/files/2026/aldla/aldla-2026-edr-taylor.pdf"
   "1177727":
@@ -55,9 +55,9 @@ session_links:
   "1263836":
     slides: "/files/2026/aldla/aldla-2026-wayland-for-artists-cannon-panisset.pdf"
   "1231443":
-    slides: "/files/2026/aldla/aldla-2026-me-workshop-gompa-theroux-duncan.pptx"
+    slides: "/files/2026/aldla/aldla-2026-me-workshop-gompa-theroux-duncan.pdf"
   "1238083":
-    slides: "/files/2026/aldla/aldla-2026-dcv-next-display-layer-theroux-gaier.pptx"
+    slides: "/files/2026/aldla/aldla-2026-dcv-next-display-layer-theroux-gaier.pdf"
   "1281840":
     slides: "/files/2026/aldla/aldla-2026-trust-but-verify-winters.pdf"
   "1266442":
