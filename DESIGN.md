@@ -1,6 +1,6 @@
 # AlmaLinux.org Design System
 
-Version 1.0 · Last updated 2026-07-16
+Version 1.0 · Last updated 2026-09-21
 
 Adopted by: _pending Marketing SIG approval (date recorded on adoption)_
 
@@ -334,6 +334,8 @@ The following patterns are used site-wide:
 
 **Event schedule** (`al-schedule` / `al-sched-*`, `event-schedule.scss`; shortcode `layouts/shortcodes/event-schedule.html`). A two-column morning/afternoon schedule rendered from a Sessionize JSON export, with collapsible session descriptions. Used on event pages.
 
+**Event body blocks** (`al-event-*`, `event-day.scss`). Content blocks for the markdown body of event pages: `al-event-feature` (a Black Pearl panel with a CTA-blue left border, or `--green` for certification content), `al-event-card` (a Black Pearl card with a top border), `al-event-eyebrow`, `al-event-steps` (a numbered step list), and `al-event-headshot` (a circular portrait, with an `al-event-headshot--sm` modifier for headshots sharing a row with other columns). Use these instead of inline styles in event page content. The same file also styles the "Can't make it?" band (`al-event-stop`), whose heading is an `<h2>` so the page keeps a single `<h1>` (see [§14](#14-accessibility)).
+
 **ALESCo RFC cards** (`al-rfc-*`, `alesco.scss`). The proposal-lifecycle UI on the `/alesco` page: status-label pills, a lifecycle stepper, and proposal cards rendered client-side from the GitHub API.
 
 ## 12. Layout & spacing utilities
@@ -430,3 +432,4 @@ The point is big, legible type: these slides are read from the back of a room, s
 - **(2026-07-07):** Added the Pantone reference from the Brand Book and corrected the brand red to `#ff4649`.
 - **(2026-07-09):** Added the Presentations section, and required a stable `id` on major page sections.
 - **(2026-07-16):** Promoted the CTA blue to the `$al-c-cta-blue` token, embedded the "Powered by AlmaLinux" badges, clarified the Brand Book relationship and the platinum tier selector, and reworded the palette source-of-truth and free-tier accent notes (review feedback on PR #1101).
+- **(2026-09-21):** Added the event body blocks (`al-event-*`) used by event page content, and moved the "Can't make it?" band off inline styles onto `al-event-stop` in `event-day.scss`. Added the `al-event-headshot--sm` modifier for narrow columns.
