@@ -5,12 +5,12 @@ author:
   name: "Jonathan Wright"
   bio: "Infrastructure SIG Lead & ALESCo Member"
   image: /users/jonathan.jpg
-date: "2026-09-22"
+date: "2026-09-24"
 images:
-  - /blog-images/2026/2026-09-22-certification-in-minutes.png
+  - /blog-images/2026/2026-09-24-certification-in-minutes.png
 post:
   title: "Software certification is live, a hardware certification run now takes under 10 minutes, and we're proud to announce our brand new AlmaLinux Certification Catalog at catalog.almalinux.org."
-  image: /blog-images/2026/2026-09-22-certification-in-minutes.png
+  image: /blog-images/2026/2026-09-24-certification-in-minutes.png
 ---
 
 Two years ago we [announced the AlmaLinux Certification SIG](/blog/2024-09-10-announcing-new-certification-sig/) and the Hardware Certification Program. That post ended with three things we wanted and didn't have yet: software certification, toolkits so that vendors and community members could certify things easily themselves, and a way to certify a machine without installing AlmaLinux on it first. We have all three today, plus a new place to share the results.
