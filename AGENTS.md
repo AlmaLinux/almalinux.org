@@ -44,13 +44,13 @@ The source for the **almalinux.org** website, built with [Hugo](https://gohugo.i
 - **benny Vasquez** is written with a lowercase b and an uppercase V.
 - **No long dashes** (em-dashes or en-dashes) in copy. Use a colon, a period, or parentheses instead.
 - **AlmaLinux Day** always uses a colon: "AlmaLinux Day: Tokyo", "AlmaLinux Day: LA".
-- Headings use Title Case; bullet points and list items use sentence case.
+- Headings use sentence case, as do bullet points and list items. Proper nouns keep their capitals ("AlmaLinux Day: Tokyo"), and existing Title Case headings can stay until the page is next revised.
 
 ## Look and feel
 
 - The design system is in `DESIGN.md` (brand colors, buttons, components, conventions). Consult it for any visual change.
 - Do not invent new colors. Use the brand color variables, not raw hex.
-- Marketing CTAs use the `al-cta-*` classes (`al-cta-blue` is the default; `al-cta-green` only for registration and certification sign-ups). Bootstrap's `btn-primary` and `btn-warning` still appear on application and membership-apply actions, but prefer `al-cta-blue` for marketing CTAs. **Never use `btn-success`**: for a green button use `al-cta-green` within its approved purpose.
+- Marketing CTAs use the `al-cta-*` classes (`al-cta-blue` is the default; `al-cta-green` only for registration, certification sign-ups, and certification actions). Bootstrap's `btn-primary` and `btn-warning` still appear on application and membership-apply actions, but prefer `al-cta-blue` for marketing CTAs. **Never use `btn-success`**: for a green button use `al-cta-green` within its approved purpose.
 - Avoid inline styles (`style="..."`). Styles live in the SCSS files.
 - Every image needs short, descriptive alt text. Keep blog header images under 500 KB.
 

@@ -17,3 +17,13 @@
 /fips/ /blog/2023-09-19-fips-validation-for-almalinux/ 302
 /comparison/ https://wiki.almalinux.org/Comparison.html 302
 /migrate/ https://wiki.almalinux.org/migration/ 307
+
+# Ecosystem Catalog replaced by catalog.almalinux.org.
+# Off-site targets cannot use Hugo aliases, so these stay here. The :lang rules
+# cover the localized paths; see issue #1123 for the same gap on other redirects.
+/certification/ecosystem-catalog https://catalog.almalinux.org/ 301
+/certification/ecosystem-catalog/ https://catalog.almalinux.org/ 301
+/certification/ecosystem-catalog/* https://catalog.almalinux.org/ 301
+/:lang/certification/ecosystem-catalog https://catalog.almalinux.org/ 301
+/:lang/certification/ecosystem-catalog/ https://catalog.almalinux.org/ 301
+/:lang/certification/ecosystem-catalog/* https://catalog.almalinux.org/ 301

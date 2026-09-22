@@ -189,7 +189,7 @@ A call-to-action button combines Bootstrap's base `btn` class with a custom `al-
 
 - `al-cta-blue` is the default primary CTA: bright blue `#24c2ff` (hover `#0bbbff`) with dark text. It covers most CTAs on the site.
 - `al-cta-blue-deep` is a deeper blue (`$al-c-science-blue-light`) for the rare case where `al-cta-blue` lacks contrast on a lighter background.
-- `al-cta-green` is the one approved green CTA (`$al-c-atlantis`), reserved for event registration and certification sign-up actions ("Register", "Get Certified"). It is not a general-purpose CTA; use `al-cta-blue` everywhere else.
+- `al-cta-green` is the one approved green CTA (`$al-c-atlantis`), reserved for event registration, certification sign-ups, and certification actions ("Register", "Get Certified", "Run the certification suite"). It is not a general-purpose CTA; use `al-cta-blue` everywhere else.
 - `al-cta-yellow` is a yellow CTA (`$al-c-candlelight`) for attention and highlight cases; it supports an inline icon image.
 
 **Sizing and layout modifiers:**
@@ -222,7 +222,7 @@ Base size: `$al-font-base-size` is `16px`. Text colors: `$al-font-color` (`#fefe
 
 - "AlmaLinux" keeps its capital A and capital L in prose. Never write "Almalinux" or "almalinux"; lowercase is correct only in URLs, file paths, and package names.
 
-**Casing convention:** headings use Title Case; bullet and list items use sentence case.
+**Casing convention:** headings use sentence case, as do bullet and list items. Proper nouns keep their capitals; existing Title Case headings can stay until the page is next revised.
 
 ## 7. Voice and tone
 
@@ -239,7 +239,7 @@ Mechanics that carry the voice (see also [§6](#6-typography)):
 - "AlmaLinux" is one word, capital A and L, in all visible copy.
 - No long dashes (em-dashes or en-dashes). Use a colon, a period, or parentheses instead.
 - "AlmaLinux Day" always takes a colon: "AlmaLinux Day: Tokyo", "AlmaLinux Day: LA".
-- Headings use Title Case; body lists use sentence case.
+- Headings use sentence case, as do body lists. Proper nouns keep their capitals.
 
 ## 8. Iconography
 

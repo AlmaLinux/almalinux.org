@@ -1,0 +1,161 @@
+// Certification section (/certification and /certification/program).
+// Scoped under .al-certification. Reuses the foundation design system for
+// bands and section titles: use .al-foundation-band-deep for deep bands and
+// .al-foundation-section-title for underlined section headings rather than
+// redefining them here.
+.al-certification {
+  // The old templates set a bare `img` rule, which leaked to every image on
+  // the page including the header and footer. Scope it.
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  // Hero: sits inside .al-foundation-band-deep, so no background here.
+  .al-certification-hero {
+    .row {
+      align-items: center;
+    }
+
+    h1 {
+      font-weight: 800;
+      font-size: 2.3rem;
+    }
+
+    img {
+      border-radius: 1rem;
+    }
+  }
+
+  // Small line above the hero title, e.g. "Part of the AlmaLinux Certification Program"
+  .al-certification-eyebrow {
+    font-size: 0.95rem;
+    color: $al-link-color;
+
+    i {
+      margin-right: 0.35rem;
+    }
+  }
+
+  // The three validation tiers: community, AlmaLinux, and vendor validated.
+  .al-certification-tiers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .al-certification-tier {
+    background: rgba(8, 35, 54, 0.55);
+    border: 1px solid rgba(196, 225, 255, 0.15);
+    border-top: 4px solid $al-c-cta-blue;
+    border-radius: 8px;
+    padding: 1.5rem;
+
+    // Each tier carries its own accent so the three read as distinct at a glance.
+    &.al-certification-tier-community {
+      border-top-color: $al-c-atlantis;
+    }
+
+    &.al-certification-tier-vendor {
+      border-top-color: $al-c-candlelight;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 0.95rem;
+    }
+  }
+
+  // Numbered "how to certify" steps.
+  .al-certification-steps {
+    counter-reset: al-certification-step;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+
+    li {
+      counter-increment: al-certification-step;
+      position: relative;
+      padding-left: 2.75rem;
+      margin-bottom: 1.25rem;
+
+      &::before {
+        content: counter(al-certification-step);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1.9rem;
+        height: 1.9rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: $al-c-cta-blue;
+        color: $al-c-black-pearl-dark;
+        font-family: $al-font-family-accent;
+        font-weight: 700;
+        font-size: 0.95rem;
+      }
+    }
+  }
+
+  // Handoff block pointing at catalog.almalinux.org.
+  .al-certification-catalog-callout {
+    background: rgba(8, 35, 54, 0.55);
+    border: 1px solid rgba(196, 225, 255, 0.15);
+    border-radius: 8px;
+    padding: 2rem;
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  // Screenshot of the catalog, linked through to it. Sits left of the copy on
+  // wide screens and stacks above it on narrow ones.
+  .al-certification-catalog-shot {
+    display: block;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(196, 225, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    transition: border-color 0.15s ease;
+
+    &:hover,
+    &:focus {
+      border-color: $al-c-cta-blue;
+    }
+
+    img {
+      display: block;
+    }
+  }
+
+  .al-certification-catalog-body {
+    @media (max-width: 991.98px) {
+      margin-top: 1.5rem;
+    }
+  }
+
+  // Inline note for the detail worth not burying: running the suite needs no account.
+  .al-certification-note {
+    border-left: 3px solid $al-c-candlelight;
+    padding: 0.35rem 0 0.35rem 1rem;
+    margin: 1.5rem 0;
+  }
+}
