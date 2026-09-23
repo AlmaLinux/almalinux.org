@@ -81,4 +81,4 @@ So if you have hardware sitting in front of you, or software you rely on every d
 
 **Whatever you run in production**: databases, control panels, monitoring, backup agents.
 
-The [Certification SIG](https://wiki.almalinux.org/sigs/Certification.html) wiki page has the chat room and meeting details if you want to help shape where this goes next.
+If you want the commands in front of you, [Contribute a Certification](https://wiki.almalinux.org/sigs/certification/contribute-a-certification.html) walks through a run start to finish. The [Certification SIG](https://wiki.almalinux.org/sigs/Certification.html) wiki page has the chat room and meeting details if you want to help shape where this goes next.

@@ -35,6 +35,8 @@ Boot our regular [live media](/get-almalinux/#Live_Media-x86_64-10) on the syste
 
 The suite is packaged as an RPM in the [`extras` repository](https://wiki.almalinux.org/repos/AlmaLinux.html), so installing it is `dnf install alma-certify`. Nearly all hardware completes a certification run in under 10 minutes. Benchmarks do not run by default, and they take longer than that when you ask for them.
 
+This document covers what the program asserts and how results are handled. For the commands themselves, step by step, see [Contribute a Certification](https://wiki.almalinux.org/sigs/certification/contribute-a-certification.html) on the wiki.
+
 Live media cannot certify a GPU that needs a proprietary driver, because installing the NVIDIA driver requires a reboot and a live root does not survive one. Those cards need an installed system with the driver already working. Everything else, including cards on in-tree drivers, certifies from live media normally.
 
 `alma-certify` is open source and lives in the [alma-certify](https://github.com/AlmaLinux/alma-certify) repository, along with its documentation and issue tracker.
