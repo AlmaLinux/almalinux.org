@@ -67,4 +67,18 @@ You can also submit results for hardware you haven't announced yet and set the d
 
 Two things would make all of this worth it. A lot of people and organizations want proof that AlmaLinux runs on the hardware they already own before they'll give it a try, and now they can get that proof themselves. Every result that gets submitted makes the case to hardware and software vendors that supporting AlmaLinux officially is a low-effort thing to do.
 
-So if you have hardware sitting in front of you, or software you rely on every day, go tell us that it works. The [Certification SIG](https://wiki.almalinux.org/sigs/Certification.html) wiki page has the chat room and meeting details if you want to help shape where this goes next.
+So if you have hardware sitting in front of you, or software you rely on every day, go tell us that it works. Validations stack, so adding yours to something already listed helps just as much as being the first. A few things we'd especially like to see:
+
+**Mainstream desktops and servers, top of our list.** The machines that are already under desks and in racks by the thousand. A listing does the most good when a lot of people are running the same box.
+
+**Laptops.** We have a few, and we want a lot more. Whatever is on your desk counts.
+
+**Workstations and the GPUs in them**, especially the machines doing creative and engineering work.
+
+**Anything on aarch64.** The suite supports it, and we'd like the catalog to reflect how much of it people are actually running.
+
+**The creative bench**: DaVinci Resolve, Blender, Nuke, Houdini, Krita, GIMP, Kdenlive, OBS. The Media & Entertainment SIG has done the work to make AlmaLinux a home for this industry, and the catalog should show it.
+
+**Whatever you run in production**: databases, control panels, monitoring, backup agents.
+
+The [Certification SIG](https://wiki.almalinux.org/sigs/Certification.html) wiki page has the chat room and meeting details if you want to help shape where this goes next.

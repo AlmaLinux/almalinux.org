@@ -33,7 +33,7 @@ You run the suite and publish the results. We review what arrives.
 
 Boot our regular [live media](/get-almalinux/#Live_Media-x86_64-10) on the system you want to certify, or run the suite on an existing AlmaLinux installation. Nothing needs to be wiped or reinstalled, so you can certify hardware that is already in service.
 
-The suite is packaged as an RPM in the [`extras` repository](https://wiki.almalinux.org/repos/AlmaLinux.html), so installing it is `dnf install alma-certify`. Nearly all hardware completes a certification run in under 10 minutes. Benchmarks do not run by default, and they take longer than that when you ask for them, because some of them do real work such as building CPython from source.
+The suite is packaged as an RPM in the [`extras` repository](https://wiki.almalinux.org/repos/AlmaLinux.html), so installing it is `dnf install alma-certify`. Nearly all hardware completes a certification run in under 10 minutes. Benchmarks do not run by default, and they take longer than that when you ask for them.
 
 Live media cannot certify a GPU that needs a proprietary driver, because installing the NVIDIA driver requires a reboot and a live root does not survive one. Those cards need an installed system with the driver already working. Everything else, including cards on in-tree drivers, certifies from live media normally.
 
@@ -77,7 +77,7 @@ The validation checks are short functional runs that confirm the hardware behave
 - Kernel and platform: taint bits that indicate a real fault, kernel error messages, PCIe AER errors, the real-time clock, thermal trip points, watchdogs, Secure Boot state, and firmware versions.
 - Baseboard management controllers, where the machine has one, including chassis health as the controller reports it.
 - Virtualization, by loading the KVM modules and booting a minimal guest.
-- GPUs: NVIDIA driver and CUDA checks that confirm the card computes correct answers.
+- GPUs: NVIDIA driver, CUDA, OpenCL, and Vulkan checks that confirm the card computes correct answers and responds correctly to queries.
 - Power management and peripherals: frequency governors, display backlight, suspend and resume, and USB hotplug.
 
 Tests are required, conditional, or informational. A required test failing fails the certification. A conditional test skips with a reason when it does not apply, and fails certification if it runs and fails. An informational test is recorded for the reviewer and never gates the result. A few checks need somebody at the machine, such as a reboot, a suspend and resume, or plugging a USB device in and out, and those only run when you ask for them.
@@ -90,7 +90,7 @@ For the current catalog of tests on any machine, run `alma-certify list`.
 
 There is no suite to run against an application the way there is against a machine, so software certification works differently. A software certification covers a whole major version of AlmaLinux, so one listing applies across its minor releases.
 
-Publishers list their product in the catalog, cite the AlmaLinux releases it supports, and submit their own testing data for a vendor validated listing. A publisher that is not in the catalog yet can be added as part of the same submission.
+Publishers list their product in the catalog and cite the AlmaLinux releases it supports. A publisher that is not in the catalog yet can be added as part of the same submission.
 
 Anyone running the software can confirm that it works on the release they are using. Those confirmations are counted one per person per release, and they sit alongside the publisher's certification. If you are running a product on a release its publisher has not cited, you can report that too, and it appears on the listing once a reviewer accepts it. We want to get those reports back to publishers as the catalog grows.
 
@@ -118,5 +118,4 @@ If you need the Foundation to host hardware for ongoing testing, or you want to 
 
 - [Mattermost chat, SIGs/Certification](https://chat.almalinux.org/almalinux/channels/sigcertification), the primary place the community engages with the SIG, on both certifications and the suite itself. It is bridged to Matrix at [#sig-certification:almalinux.im](https://app.almalinux.im/#/room/#sig-certification:almalinux.im).
 - [AlmaLinux/alma-certify](https://github.com/AlmaLinux/alma-certify) for the suite, its documentation, and issue tracking.
-- [The Certification SIG board](https://github.com/orgs/AlmaLinux/projects/6) for asynchronous planning.
 - [certification-sig@lists.almalinux.org](mailto:certification-sig@lists.almalinux.org) for conversations that need to stay private.

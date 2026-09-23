@@ -16,9 +16,7 @@
                 <i class="bi bi-check-all"></i>
                 {{ i18n "Browse the catalog" }}
               </a>
-              <a
-                class="btn al-cta-green"
-                href="https://github.com/AlmaLinux/alma-certify">
+              <a class="btn al-cta-green" href="#how-to-certify">
                 <i class="bi bi-hdd-network"></i>
                 {{ i18n "Run the certification suite" }}
               </a>
@@ -61,7 +59,7 @@
               {{ i18n "Validation is recorded for each AlmaLinux major version separately, so you can see what has been tested on the release you are deploying." }}
             </p>
             <p>
-              {{ i18n "If what you need is not listed yet, you can test it yourself in a few minutes and add it." }}
+              {{ i18n "You can test anything yourself in a few minutes and add it, whether it is missing from the catalog or already there and worth confirming." }}
             </p>
           </div>
           <div class="col-lg-6">
@@ -101,10 +99,12 @@
                 {{ i18n "on the system you want to certify, or run the suite on an existing AlmaLinux installation. Nothing needs to be wiped or reinstalled." }}
               </li>
               <li>
-                {{ i18n "Install the suite with dnf install alma-certify, from the" }}
+                {{ i18n "Install the suite from the" }}
                 <a href="https://wiki.almalinux.org/repos/AlmaLinux.html"
                   >{{ i18n "extras repository" }}</a
-                >{{ i18n ", and run it. Nearly all hardware finishes a certification run in under 10 minutes." }}
+                >
+                {{ i18n "and run it. Nearly all hardware finishes a certification run in under 10 minutes." }}
+                <code>dnf install alma-certify</code>
               </li>
               <li>
                 {{ i18n "Publish your results to the catalog with a free" }}
@@ -114,7 +114,9 @@
               </li>
             </ol>
             <p class="al-certification-note">
-              {{ i18n "You only need an AlmaLinux Account if you want to publish what you find. If you are not sure what to run, run alma-certify with no arguments and it will walk you through the options." }}
+              {{ i18n "You only need an AlmaLinux Account if you want to publish what you find. If you are not sure what to run, run" }}
+              <code>alma-certify</code>
+              {{ i18n "with no arguments and it will walk you through the options." }}
             </p>
           </div>
           <div class="col-lg-5">
@@ -125,7 +127,7 @@
               class="btn al-cta-blue"
               href="https://github.com/AlmaLinux/alma-certify">
               <i class="bi bi-github"></i>
-              {{ i18n "Directions and source on GitHub" }}
+              {{ i18n "Source on GitHub" }}
             </a>
           </div>
         </div>
@@ -150,7 +152,7 @@
               {{ i18n "Software certification works differently, because there is no suite to run against an application the way there is against a machine. A software listing names the AlmaLinux major versions a product is certified for, and each of those versions carries its own evidence." }}
             </p>
             <p>
-              {{ i18n "If you publish software, list your product in the catalog, cite the AlmaLinux releases it supports, and submit your testing data. If your company is not in the catalog yet, you can add it from the same form." }}
+              {{ i18n "If you publish software, list your product in the catalog and cite the AlmaLinux releases it supports. If your company is not in the catalog yet, you can add it from the same form." }}
             </p>
           </div>
           <div class="col-lg-6">
