@@ -1,0 +1,38 @@
+{{ define "main" }}
+  {{/* AlmaLinux for Media and Entertainment (/for/media-and-entertainment).
+
+    One long-scroll page in the deep-band pattern used by /foundation and
+    /members (DESIGN.md section 11).
+
+    The page serves two audiences that pull in opposite directions: a
+    freelancer who wants to be working today, and a facility that provisions
+    its own machines. mae/ways-in.html names that split, which is what lets the
+    M&E SIG's Creative ISO sit on the same page as the render-farm argument.
+
+    Reading order:
+    1-2  hero, trusted by            mae/hero.html, mae/ways-in.html
+    3    two ways in                 mae/ways-in.html
+    4-5  why AlmaLinux, works with   mae/platform.html
+    6    the Creative ISO (light)    mae/creative-iso.html
+    7    the Creative Installer      mae/installer.html
+    8-9  what's on it, EC2           mae/iso-details.html
+    10-11 the M&E SIG, next steps    mae/community.html
+
+    Section 3 offers the two ways in, the ISO and the Installer, and both cards
+    jump to their section further down. The argument comes before either, so
+    readers who already know what they want skip it in one click, the same way
+    the hero CTA does.
+
+    Only section 6 uses the light band, so the one moment where a visitor
+    downloads something is the one moment that inverts.
+  */}}
+  <div class="al-body-container al-page-mae">
+    {{ partial "mae/hero.html" . }}
+    {{ partial "mae/ways-in.html" . }}
+    {{ partial "mae/platform.html" . }}
+    {{ partial "mae/creative-iso.html" . }}
+    {{ partial "mae/installer.html" . }}
+    {{ partial "mae/iso-details.html" . }}
+    {{ partial "mae/community.html" . }}
+  </div>
+{{ end }}
