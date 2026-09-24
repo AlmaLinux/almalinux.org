@@ -28,8 +28,32 @@ jobs:
       - name: Generate get_almalinux data
         run: python3 tools/generate_get_almalinux_yaml.py
 
+      # Cloudflare Pages serves this build at the alias publish-preview.yml
+      # creates, which is always pr-<number>. Build with that URL so absolute
+      # links (og:image, canonical, the RSS feed, the sitemap) point at the
+      # preview instead of production. If either value is missing, fall back to
+      # the baseURL in config.yaml rather than building a malformed host.
+      - name: Work out the preview base URL
+        id: baseurl
+        env:
+          PROJECT: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          if [ -n "$PROJECT" ] && [ -n "$PR" ]; then
+            echo "url=https://pr-$PR.$PROJECT.pages.dev/" >> "$GITHUB_OUTPUT"
+          else
+            echo "url=" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Build
-        run: hugo --minify --buildFuture
+        env:
+          PREVIEW_BASE_URL: ${{ steps.baseurl.outputs.url }}
+        run: |
+          if [ -n "$PREVIEW_BASE_URL" ]; then
+            hugo --minify --buildFuture --baseURL "$PREVIEW_BASE_URL"
+          else
+            hugo --minify --buildFuture
+          fi
 
       - name: Move redirects file into place
         run: cp _redirects public/

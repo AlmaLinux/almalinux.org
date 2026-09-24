@@ -47,13 +47,21 @@ This is why `build-preview.yml` writes the number into a `pr-number` artifact an
 
 Because the build workflow runs from the pull request head, a fork controls the contents of that artifact. The "Resolve and verify PR number" step therefore checks that the number is numeric and that the head SHA of the PR it names matches the SHA this run actually built. Do not remove that check.
 
+### The preview base URL is predicted, not read back
+
+`build-preview.yml` builds with `--baseURL https://pr-<number>.<project>.pages.dev/` so that absolute links resolve against the preview rather than production. Without it, `og:image`, the canonical tag, the RSS feed, and every sitemap entry on a preview point at almalinux.org, which makes link previews impossible to check before merging.
+
+The build cannot ask Cloudflare what the URL will be, because the deploy happens later, in a different workflow. It predicts it instead, and the prediction is only correct as long as `publish-preview.yml` keeps deploying with `--branch=pr-<number>`. **If you change that `--branch` value, change the formula in `build-preview.yml` in the same commit.** Nothing enforces this. A mismatch produces a preview whose pages all claim to live at a hostname that does not exist, and no step fails.
+
+If `CLOUDFLARE_PROJECT_NAME` or the PR number is empty, the build falls back to the `baseURL` in `config.yaml` rather than assembling a broken hostname. A fork pull request that cannot read the variable therefore still builds, just with production URLs.
+
 ## Secrets and variables
 
-| Name                      | Kind     | Used by                              |
-| ------------------------- | -------- | ------------------------------------ |
-| `CLOUDFLARE_API_TOKEN`    | secret   | `publish.yml`, `publish-preview.yml` |
-| `CLOUDFLARE_ACCOUNT_ID`   | variable | `publish.yml`, `publish-preview.yml` |
-| `CLOUDFLARE_PROJECT_NAME` | variable | `publish.yml`, `publish-preview.yml` |
+| Name                      | Kind     | Used by                                                   |
+| ------------------------- | -------- | --------------------------------------------------------- |
+| `CLOUDFLARE_API_TOKEN`    | secret   | `publish.yml`, `publish-preview.yml`                      |
+| `CLOUDFLARE_ACCOUNT_ID`   | variable | `publish.yml`, `publish-preview.yml`                      |
+| `CLOUDFLARE_PROJECT_NAME` | variable | `publish.yml`, `publish-preview.yml`, `build-preview.yml` |
 
 ## Who can trigger what
 
