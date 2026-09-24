@@ -41,6 +41,7 @@ The source for the **almalinux.org** website, built with [Hugo](https://gohugo.i
 ## Writing style
 
 - **AlmaLinux** is always one word with a capital A and L in copy. Never "Almalinux" or "almalinux" in visible text (lowercase is correct only in web addresses, file paths, and package names).
+- **AlmaLinux OS Foundation** is the full name of the organization. Never "AlmaLinux Foundation": the "OS" is not optional.
 - **benny Vasquez** is written with a lowercase b and an uppercase V.
 - **No long dashes** (em-dashes or en-dashes) in copy. Use a colon, a period, or parentheses instead.
 - **AlmaLinux Day** always uses a colon: "AlmaLinux Day: Tokyo", "AlmaLinux Day: LA".
