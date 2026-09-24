@@ -4,11 +4,6 @@
   concrete thing. The software grid mixes tools the Creative Installer sets up
   with commercial suites you install yourself, so the sub-line says so rather
   than implying one or the other.
-
-  TODO before publishing:
-  1. Software logos: add a "logo" key to entries in the $software slice below.
-  Names render as text chips until a logo is supplied, so they can be filled in
-  one at a time.
 */}}
 
 
@@ -92,51 +87,57 @@
     {{/* Ordered by discipline so related tools sit together: VFX and 3D,
       animation and 2D, editorial and broadcast and audio, then games.
 
-      These are the vendors' own wordmarks, recoloured to white on transparent
-      and otherwise unaltered. The wordmark carries the product name, so it
-      takes the name as its alt text and no text chip sits underneath. An entry
-      with no "logo" key falls back to a text chip instead.
+      These are the vendors' own marks, recoloured to white on transparent and
+      otherwise unaltered. Each takes its product name as alt text, and the
+      permanent label below the tile repeats it in plain text. An entry with no
+      "logo" key falls back to a text chip instead.
     */}}
     {{ $software := slice
-      (dict "name" "Houdini" "logo" "/landingpages/mae/software/houdini-white.svg")
-      (dict "name" "Nuke" "logo" "/landingpages/mae/software/nuke-white.svg")
-      (dict "name" "Maya" "logo" "/landingpages/mae/software/maya-white.svg")
-      (dict "name" "Katana" "logo" "/landingpages/mae/software/katana-white.svg")
-      (dict "name" "Mari" "logo" "/landingpages/mae/software/mari-white.svg")
-      (dict "name" "Arnold" "logo" "/landingpages/mae/software/arnold-white.svg")
-      (dict "name" "RenderMan" "logo" "/landingpages/mae/software/renderman-white.svg")
-      (dict "name" "V-Ray" "logo" "/landingpages/mae/software/vray-white.svg")
-      (dict "name" "Blender" "logo" "/landingpages/mae/software/blender-white.svg")
-      (dict "name" "Gaffer" "logo" "/landingpages/mae/software/gaffer-white.svg")
-      (dict "name" "Natron" "logo" "/landingpages/mae/software/natron-white.svg")
-      (dict "name" "OpenColorIO" "logo" "/landingpages/mae/software/opencolorio-white.svg")
-      (dict "name" "3DCoat" "logo" "/landingpages/mae/software/3dcoat-white.svg")
-      (dict "name" "OpenToonz" "logo" "/landingpages/mae/software/opentoonz-white.svg")
-      (dict "name" "Krita" "logo" "/landingpages/mae/software/krita-white.svg")
-      (dict "name" "GIMP" "logo" "/landingpages/mae/software/gimp-white.svg")
-      (dict "name" "Inkscape" "logo" "/landingpages/mae/software/inkscape-white.svg")
-      (dict "name" "DaVinci Resolve" "logo" "/landingpages/mae/software/davinci-resolve-white.svg")
-      (dict "name" "OBS Studio" "logo" "/landingpages/mae/software/obs-studio-white.svg")
-      (dict "name" "Ardour" "logo" "/landingpages/mae/software/ardour-white.svg")
-      (dict "name" "Audacity" "logo" "/landingpages/mae/software/audacity-white.svg")
-      (dict "name" "Unreal Engine" "logo" "/landingpages/mae/software/unreal-engine-white.svg")
-      (dict "name" "Godot Engine" "logo" "/landingpages/mae/software/godot-engine-white.svg")
+      (dict "name" "Houdini" "logo" "/landingpages/mae/software/houdini-white.svg" "url" "https://www.sidefx.com/")
+      (dict "name" "Nuke" "logo" "/landingpages/mae/software/nuke-white.svg" "url" "https://www.foundry.com/products/nuke-family/nuke")
+      (dict "name" "Maya" "logo" "/landingpages/mae/software/maya-white.svg" "url" "https://www.autodesk.com/products/maya/overview")
+      (dict "name" "Katana" "logo" "/landingpages/mae/software/katana-white.svg" "url" "https://www.foundry.com/products/katana")
+      (dict "name" "Mari" "logo" "/landingpages/mae/software/mari-white.svg" "url" "https://www.foundry.com/products/mari")
+      (dict "name" "Arnold" "logo" "/landingpages/mae/software/arnold-white.svg" "url" "https://www.autodesk.com/products/arnold/overview")
+      (dict "name" "RenderMan" "logo" "/landingpages/mae/software/renderman-white.svg" "url" "https://renderman.pixar.com/")
+      (dict "name" "V-Ray" "logo" "/landingpages/mae/software/vray-white.svg" "url" "https://www.chaos.com/vray")
+      (dict "name" "Blender" "logo" "/landingpages/mae/software/blender-white.svg" "url" "https://www.blender.org/")
+      (dict "name" "Gaffer" "logo" "/landingpages/mae/software/gaffer-white.svg" "url" "https://www.gafferhq.org/")
+      (dict "name" "Natron" "logo" "/landingpages/mae/software/natron-white.svg" "url" "https://natrongithub.github.io/")
+      (dict "name" "OpenColorIO" "logo" "/landingpages/mae/software/opencolorio-white.svg" "url" "https://opencolorio.org/")
+      (dict "name" "3DCoat" "logo" "/landingpages/mae/software/3dcoat-white.svg" "url" "https://3dcoat.com/")
+      (dict "name" "OpenToonz" "logo" "/landingpages/mae/software/opentoonz-white.svg" "url" "https://opentoonz.github.io/")
+      (dict "name" "Krita" "logo" "/landingpages/mae/software/krita-white.svg" "url" "https://krita.org/")
+      (dict "name" "GIMP" "logo" "/landingpages/mae/software/gimp-white.svg" "url" "https://www.gimp.org/")
+      (dict "name" "Inkscape" "logo" "/landingpages/mae/software/inkscape-white.svg" "url" "https://inkscape.org/")
+      (dict "name" "DaVinci Resolve" "logo" "/landingpages/mae/software/davinci-resolve-white.svg" "url" "https://www.blackmagicdesign.com/products/davinciresolve")
+      (dict "name" "OBS Studio" "logo" "/landingpages/mae/software/obs-studio-white.svg" "url" "https://obsproject.com/")
+      (dict "name" "Ardour" "logo" "/landingpages/mae/software/ardour-white.svg" "url" "https://ardour.org/")
+      (dict "name" "Audacity" "logo" "/landingpages/mae/software/audacity-white.svg" "url" "https://www.audacityteam.org/")
+      (dict "name" "Unreal Engine" "logo" "/landingpages/mae/software/unreal-engine-white.svg" "url" "https://www.unrealengine.com/")
+      (dict "name" "Godot Engine" "logo" "/landingpages/mae/software/godot-engine-white.svg" "url" "https://godotengine.org/")
     }}
     <div class="al-mae-software-grid">
       {{ range $software }}
-        {{/* TEMPORARY: the label under each tile is a proofing aid, so the
-          logo set can be checked against the names. Delete the wrapping
-          .al-mae-software-entry div and the label span to restore, and the
-          matching block in mae.scss with them.
+        {{/* The name under each tile is permanent. Several of these marks
+          are symbols rather than wordmarks, so the label is what tells you
+          which application a tile is for, without relying on logo recognition.
         */}}
         <div class="al-mae-software-entry">
-          <div class="al-mae-software-item">
+          {{/* Every entry carries a "url" to its project, so the tile is the
+            link. The label below it is plain text, to keep one link per tile.
+          */}}
+          <a
+            class="al-mae-software-item"
+            href="{{ .url }}"
+            target="_blank"
+            rel="noopener">
             {{ if .logo }}
               <img src="{{ .logo }}" alt="{{ .name }}" loading="lazy" />
             {{ else }}
               <span>{{ .name }}</span>
             {{ end }}
-          </div>
+          </a>
           <span class="al-mae-software-label">{{ .name }}</span>
         </div>
       {{ end }}

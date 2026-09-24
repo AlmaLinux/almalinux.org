@@ -46,17 +46,7 @@ $al-mae-radius-sm: 8px;
 
   // ─── Hero ──────────────────────────────────────────────────────────────────
 
-  .al-mae-reel-placeholder {
-    min-height: 240px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    width: 100%;
-  }
-
-  // Framed media. Used by the Installer screenshot, and ready for the hero
-  // reel when that placeholder is replaced.
+  // Framed media. Used by the hero image and the Installer screenshot.
   .al-mae-frame {
     display: block;
     border-radius: $al-mae-radius;
@@ -91,24 +81,17 @@ $al-mae-radius-sm: 8px;
     gap: 2rem;
   }
 
-  // Real studio logos. Sized to match the homepage marquee so the same asset
-  // reads consistently in both places.
+  // Real studio logos, capped to the homepage marquee size so the same asset
+  // reads consistently in both places. Width is a maximum rather than a fixed
+  // slot: wide wordmarks still stop at 140px, but a squarer mark takes only the
+  // width it needs instead of floating in the middle of a 140px gap. The flex
+  // gap above does the spacing.
   .al-mae-logo-strip img {
-    width: 140px;
+    max-width: 140px;
     max-height: 56px;
+    width: auto;
     height: auto;
     object-fit: contain;
-  }
-
-  .al-mae-logo-placeholder {
-    background: rgba($al-c-soft-peach-lighter, 0.08);
-    border: 1px dashed rgba($al-c-soft-peach-lighter, 0.2);
-    border-radius: $al-mae-radius-sm;
-    padding: 1rem 2rem;
-    font-size: 0.85rem;
-    color: rgba($al-c-soft-peach-lighter, 0.4);
-    min-width: 140px;
-    text-align: center;
   }
 
   // ─── Two ways in ───────────────────────────────────────────────────────────
@@ -163,6 +146,26 @@ $al-mae-radius-sm: 8px;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    // The tile itself links to the project, so strip the link defaults and
+    // lift it on hover instead.
+    text-decoration: none;
+    color: inherit;
+    transition:
+      background 0.2s ease,
+      border-color 0.2s ease,
+      transform 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+      background: rgba($al-c-soft-peach-lighter, 0.12);
+      border-color: rgba($al-c-soft-peach-lighter, 0.3);
+      transform: translateY(-2px);
+      text-decoration: none;
+
+      img {
+        opacity: 1;
+      }
+    }
 
     // Wordmarks ship as pure white on transparent, so nothing recolours them.
     // Their aspect ratios vary wildly, from a wide "OpenColorIO" to a compact
@@ -183,9 +186,9 @@ $al-mae-radius-sm: 8px;
     }
   }
 
-  // TEMPORARY: proofing labels under each software tile, so the logo set can
-  // be checked against the names. Remove alongside the matching markup in
-  // mae/platform.html.
+  // The name under each software tile. Permanent: several of these marks are
+  // symbols rather than wordmarks, so the label is what tells you which
+  // application a tile is for.
   .al-mae-software-entry {
     display: flex;
     flex-direction: column;
@@ -266,8 +269,6 @@ $al-mae-radius-sm: 8px;
   .al-mae-iso {
     background: $al-c-soft-peach;
     color: $al-font-color-light;
-    // Keep the sticky site header clear of anything linked to directly.
-    scroll-margin-top: 120px;
 
     h2,
     h3,

@@ -6,7 +6,8 @@
   normal dark surface.
 
   TODO before publishing:
-  1. Replace the two href="#" download buttons with the published ISO URLs.
+  1. The two download buttons are disabled placeholders. Swap each one back to
+  an <a href="..."> with the published ISO URL once the builds are out.
 */}}
 
 
@@ -50,10 +51,10 @@
             </span>
           </div>
           <div class="al-mae-iso-card-cta pt-2">
-            <a href="#" class="btn al-cta-blue w-100">
-              <i class="bi bi-download pe-1" aria-hidden="true"></i>
-              {{ i18n "Download NVIDIA ISO" }}
-            </a>
+            <span class="btn al-cta-blue w-100 disabled" aria-disabled="true">
+              <i class="bi bi-hourglass-split pe-1" aria-hidden="true"></i>
+              {{ i18n "Download pending" }}
+            </span>
           </div>
         </div>
       </div>
@@ -77,10 +78,10 @@
             </span>
           </div>
           <div class="al-mae-iso-card-cta pt-2">
-            <a href="#" class="btn al-cta-blue w-100">
-              <i class="bi bi-download pe-1" aria-hidden="true"></i>
-              {{ i18n "Download Standard ISO" }}
-            </a>
+            <span class="btn al-cta-blue w-100 disabled" aria-disabled="true">
+              <i class="bi bi-hourglass-split pe-1" aria-hidden="true"></i>
+              {{ i18n "Download pending" }}
+            </span>
           </div>
         </div>
       </div>

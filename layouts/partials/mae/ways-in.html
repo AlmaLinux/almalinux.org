@@ -4,12 +4,6 @@
   freelancer who wants to be working today, and a facility that provisions its
   own machines. Naming that split here is what lets the Creative ISO sit
   naturally on the same page as the render-farm argument further down.
-
-  TODO before publishing:
-  1. Trusted-by logos: replace placeholder divs in .al-mae-logo-strip with:
-  <a href="https://studio-website.com" target="_blank" rel="noopener">
-  <img src="/landingpages/mae/logo-studio-name.svg" alt="Studio Name" />
-  </a>
 */}}
 
 
@@ -27,7 +21,9 @@
     */}}
     {{ $studios := slice
       (dict "src" "/usedby/cinesite.png" "alt" "Cinesite")
+      (dict "src" "/usedby/ilm.png" "alt" "Industrial Light & Magic")
       (dict "src" "/usedby/nox.svg" "alt" "Nox")
+      (dict "src" "/usedby/wefx.png" "alt" "WeFX")
     }}
     <div class="al-mae-logo-strip">
       {{ range $studios }}
