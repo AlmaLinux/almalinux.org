@@ -1,0 +1,12 @@
+{{/* Plain-language hint for an architecture id, e.g. "aarch64" -> "ARM 64-bit". */}}
+{{- if eq . "x86_64" -}}
+  {{ i18n "Intel/AMD 64-bit" }}
+{{- else if eq . "x86_64_v2" -}}
+  {{ i18n "Intel/AMD 64-bit, older CPUs" }}
+{{- else if eq . "aarch64" -}}
+  {{ i18n "ARM 64-bit" }}
+{{- else if eq . "s390x" -}}
+  {{ i18n "IBM Z" }}
+{{- else if eq . "ppc64le" -}}
+  {{ i18n "IBM POWER" }}
+{{- end -}}
