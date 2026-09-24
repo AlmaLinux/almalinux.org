@@ -1105,5 +1105,11 @@
    "benny has served as a featured speaker at the following events:": "benny has served as a featured speaker at the following events:",
    "x86_64, aarch64, ppc64le, s390x": "x86_64, aarch64, ppc64le, s390x",
    "Download headshot": "Download headshot",
-   "Press & Media Kit": "Press & Media Kit"
+   "Press & Media Kit": "Press & Media Kit",
+   "ARM 64-bit": "ARM 64-bit",
+   "IBM POWER": "IBM POWER",
+   "IBM Z": "IBM Z",
+   "Intel/AMD 64-bit": "Intel/AMD 64-bit",
+   "Intel/AMD 64-bit, older CPUs": "Intel/AMD 64-bit, older CPUs",
+   "You're viewing": "You're viewing"
 }

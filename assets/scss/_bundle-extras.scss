@@ -328,6 +328,39 @@
   }
 }
 
+// Selected architecture, shown only on the active version button
+.al-os-tabs .al-os-tab-arch {
+  display: none;
+  font-size: 0.85em;
+  font-weight: 400;
+}
+
+.al-os-tabs .nav-link.active .al-os-tab-arch {
+  display: inline;
+}
+
+// Plain-language architecture hint in the version dropdown
+.al-os-tabs .al-os-arch-hint {
+  color: $al-link-color;
+  opacity: 0.8;
+}
+
+// "You're viewing" line at the top of each download tab
+.al-os-viewing {
+  display: inline-block;
+  max-width: 100%;
+  padding: 0.5rem 1.25rem;
+  background-color: $al-c-black-pearl-lighter;
+  border: 1px solid $al-c-black-pearl-light;
+  border-radius: 8px;
+  color: $al-link-color;
+  font-size: 1.05rem;
+
+  strong {
+    color: $al-font-color;
+  }
+}
+
 .al-index-download-icon {
   transition: transform 0.3s ease;
 
