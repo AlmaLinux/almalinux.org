@@ -1079,7 +1079,6 @@
    "Official boilerplate, free to copy verbatim for press use:": "Official boilerplate, free to copy verbatim for press use:",
    "Official channels": "Official channels",
    "Over 400 mirrors across six continents": "Over 400 mirrors across six continents",
-   "Press": "Press",
    "Press & media kit": "Press & media kit",
    "Quick facts": "Quick facts",
    "Reach us for interviews, quotes, or asset requests:": "Reach us for interviews, quotes, or asset requests:",
@@ -1105,5 +1104,6 @@
    "You may say software is derived from AlmaLinux OS, or built for the AlmaLinux OS distribution. You may not call a modified build AlmaLinux OS.": "You may say software is derived from AlmaLinux OS, or built for the AlmaLinux OS distribution. You may not call a modified build AlmaLinux OS.",
    "benny has served as a featured speaker at the following events:": "benny has served as a featured speaker at the following events:",
    "x86_64, aarch64, ppc64le, s390x": "x86_64, aarch64, ppc64le, s390x",
-   "Download headshot": "Download headshot"
+   "Download headshot": "Download headshot",
+   "Press & Media Kit": "Press & Media Kit"
 }
