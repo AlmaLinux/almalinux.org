@@ -10,7 +10,8 @@
         aria-expanded="false">
         {{ $version.label }}
         <span class="al-os-tab-arch">
-          · {{ (index $version.arches 0).label }}
+          ·
+          {{ (index $version.arches 0).label }}
         </span>
       </button>
       <ul class="dropdown-menu">
