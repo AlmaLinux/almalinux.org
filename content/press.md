@@ -1,4 +1,4 @@
 ---
-title: "Press & Brand Kit"
+title: "Press & Media Kit"
 type: press
 ---

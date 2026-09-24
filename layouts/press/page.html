@@ -116,7 +116,9 @@
             </a>
           </li>
           <li>
-            <div class="al-press-factcard">
+            <a
+              class="al-press-factcard"
+              href="https://wiki.almalinux.org/release-notes/">
               <span class="ic"
                 ><i class="bi bi-clock-history" aria-hidden="true"></i
               ></span>
@@ -126,7 +128,7 @@
                   >{{ i18n "Ten years of support per major release" }}</span
                 >
               </span>
-            </div>
+            </a>
           </li>
           <li>
             <a class="al-press-factcard" href="https://mirrors.almalinux.org/">
@@ -335,13 +337,11 @@
               alt="benny Vasquez, Chair of the Board of Directors of the AlmaLinux OS Foundation"
               width="809"
               height="812" />
-            {{ if os.FileExists "static/press/benny-vasquez-headshot.jpg" }}
-              <figcaption>
-                <a href="/press/benny-vasquez-headshot.jpg" download>
-                  {{ i18n "Download high-resolution headshot" }}
-                </a>
-              </figcaption>
-            {{ end }}
+            <figcaption>
+              <a href="/users/benny.jpeg" download>
+                {{ i18n "Download headshot" }}
+              </a>
+            </figcaption>
           </figure>
           <div class="al-press-spokes-body">
             <p>
