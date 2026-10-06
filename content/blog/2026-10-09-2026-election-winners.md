@@ -9,7 +9,7 @@ date: "2026-10-09"
 images:
   - /blog-images/2026/2026-10-09-2026-election-winners.png
 post:
-  title: "It’s official: please join us in welcoming [Tristan Théroux](https://www.linkedin.com/in/tristan-th%C3%A9roux-b588065a/) and [Muuhh (Munehiro) Ikeda](https://www.linkedin.com/in/munehiro-ikeda-a932a24/) to the AlmaLinux OS Foundation board!"
+  title: "It’s official: please join us in welcoming Tristan Théroux and Muuhh (Munehiro) Ikeda to the AlmaLinux OS Foundation board!"
   image: /blog-images/2026/2026-10-09-2026-election-winners.png
 ---
 
