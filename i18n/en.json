@@ -1111,5 +1111,7 @@
    "IBM Z": "IBM Z",
    "Intel/AMD 64-bit": "Intel/AMD 64-bit",
    "Intel/AMD 64-bit, older CPUs": "Intel/AMD 64-bit, older CPUs",
-   "You're viewing": "You're viewing"
+   "You're viewing": "You're viewing",
+   "Expired": "Expired",
+   "Expires": "Expires"
 }
