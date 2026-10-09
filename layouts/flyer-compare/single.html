@@ -121,7 +121,7 @@
 
       .flyer-table thead th {
         background: #082336;
-        padding: 6px 8px;
+        padding: 4px 8px;
         font-weight: 700;
         text-align: center;
         font-size: 9px;
@@ -148,7 +148,7 @@
       }
 
       .flyer-table tbody td {
-        padding: 5px 8px;
+        padding: 3px 8px;
         text-align: center;
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       }
@@ -476,7 +476,7 @@
 
       <div class="flyer-content">
         <p class="flyer-intro">
-          {{ i18n "Choosing an enterprise Linux distribution matters. AlmaLinux OS is a 100% free, community-owned, production-grade distribution built for every workload, from edge devices to the cloud. Here's how we compare." }}
+          {{ i18n "AlmaLinux OS is a free, community-owned, production-grade enterprise Linux distribution. Here's how we compare." }}
         </p>
 
         <table class="flyer-table">
@@ -526,9 +526,11 @@
                 <span class="check"><i class="bi bi-check-lg"></i></span>
               </td>
               <td>
-                <span class="cross"><i class="bi bi-x-lg"></i></span>
+                <span class="partial">{{ i18n "Partial" }}</span><sup>†</sup>
               </td>
-              <td><span class="partial">{{ i18n "Partial" }}</span></td>
+              <td>
+                <span class="partial">{{ i18n "Partial" }}</span><sup>†</sup>
+              </td>
               <td>
                 <span class="check"><i class="bi bi-check-lg"></i></span>
               </td>
@@ -607,13 +609,13 @@
                 <span class="check"><i class="bi bi-check-lg"></i></span>
               </td>
               <td>
-                <span class="cross"><i class="bi bi-x-lg"></i></span>
+                <span class="check"><i class="bi bi-check-lg"></i></span>
               </td>
               <td>
                 <span class="check"><i class="bi bi-check-lg"></i></span>
               </td>
               <td>
-                <span class="cross"><i class="bi bi-x-lg"></i></span>
+                <span class="check"><i class="bi bi-check-lg"></i></span>
               </td>
               <td>
                 <span class="cross"><i class="bi bi-x-lg"></i></span>
@@ -643,8 +645,30 @@
             </tr>
             <tr>
               <td>
-                {{ i18n "140+ legacy drivers restored" }}<span
-                  >{{ i18n "Hardware support RHEL dropped, AlmaLinux brought back" }}</span
+                {{ i18n "DISA STIG published" }}<span
+                  >{{ i18n "U.S. Department of Defense security hardening guide" }}</span
+                >
+              </td>
+              <td class="alma-col">
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td>
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td>
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td>
+                <span class="cross"><i class="bi bi-x-lg"></i></span>
+              </td>
+              <td>
+                <span class="cross"><i class="bi bi-x-lg"></i></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {{ i18n "Legacy hardware drivers" }}<span
+                  >{{ i18n "140+ drivers RHEL dropped, AlmaLinux brought back" }}</span
                 >
               </td>
               <td class="alma-col">
@@ -654,10 +678,32 @@
                 <span class="cross"><i class="bi bi-x-lg"></i></span>
               </td>
               <td>
-                <span class="cross"><i class="bi bi-x-lg"></i></span>
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td>
+                <span class="check"><i class="bi bi-check-lg"></i></span>
               </td>
               <td>
                 <span class="cross"><i class="bi bi-x-lg"></i></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {{ i18n "NVIDIA drivers with Secure Boot" }}<span
+                  >{{ i18n "Signed drivers, no manual key enrollment" }}</span
+                >
+              </td>
+              <td class="alma-col">
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td>
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td>
+                <span class="check"><i class="bi bi-check-lg"></i></span>
+              </td>
+              <td>
+                <span class="partial">{{ i18n "Partial" }}</span><sup>†</sup>
               </td>
               <td>
                 <span class="cross"><i class="bi bi-x-lg"></i></span>
@@ -689,6 +735,10 @@
           <a href="https://www.resf.org/faq/is-resf-nonprofit"
             >resf.org/faq/is-resf-nonprofit</a
           >
+        </p>
+        <p class="flyer-footnote">
+          †
+          {{ i18n "Partial: Red Hat offers no-cost RHEL for individuals on up to 16 systems. Ubuntu is free, but extended security updates need Ubuntu Pro, which is free for personal use on up to 5 machines. Debian's NVIDIA drivers work with Secure Boot after you enroll a signing key yourself." }}
         </p>
       </div>
 
