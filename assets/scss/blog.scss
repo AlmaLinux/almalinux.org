@@ -222,3 +222,57 @@
   overflow-wrap: anywhere;
 }
 }
+
+// Portrait floated beside a bio (e.g. new board member introductions).
+// Stacks above the text on narrow screens. Scoped under .al-wysiwyg so it
+// outranks the `all: revert` resets in main.scss.
+.al-page-blog-post .al-wysiwyg {
+  figure.al-blog-portrait {
+    clear: both;
+    margin: 0 0 1rem;
+    text-align: center;
+
+    @media (min-width: 576px) {
+      float: left;
+      margin: 0.25rem 1.5rem 1rem 0;
+
+      @at-root [dir="rtl"] & {
+        float: right;
+        margin: 0.25rem 0 1rem 1.5rem;
+      }
+    }
+
+    @media (min-width: 576px) {
+      width: 150px;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+
+    figcaption,
+    figcaption p {
+      margin: 0.5rem 0 0;
+      font-size: 0.85rem;
+      font-style: italic;
+    }
+  }
+
+  // Text beside a portrait stays in its own column instead of wrapping
+  // underneath the photo.
+  figure.al-blog-portrait ~ p,
+  figure.al-blog-portrait ~ blockquote {
+    display: flow-root;
+  }
+
+  h2,
+  h3 {
+    clear: both;
+  }
+
+  // The name heading right after a portrait sits beside it, not below it.
+  figure.al-blog-portrait + h3 {
+    clear: none;
+    margin-top: 0;
+  }
+}
