@@ -297,7 +297,6 @@
    " (developed and maintained by the AlmaLinux Community) allows you to migrate to, and upgrade AlmaLinux in-place.": " (developed and maintained by the AlmaLinux Community) allows you to migrate to, and upgrade AlmaLinux in-place.",
    "Thank you to our event sponsors!": "Thank you to our event sponsors!",
    "Can't make it?": "Can't make it?",
-   "General Counsel": "General Counsel",
    "Penguin Wrangler and Cloud Watcher": "Penguin Wrangler and Cloud Watcher",
    "See the recordings on Youtube": "See the recordings on Youtube",
    "AlmaLinux OS provides a set of security features: Errata, GPG keys, Mailing Lists, OpenSCAP, OVAL, SBOM": "AlmaLinux OS provides a set of security features: Errata, GPG keys, Mailing Lists, OpenSCAP, OVAL, SBOM",
@@ -621,7 +620,6 @@
    "Network management": "Network management",
    "No single owner": "No single owner",
    "Nominate board candidates": "Nominate board candidates",
-   "Non-voting Invited Expert": "Non-voting Invited Expert",
    "Open governance": "Open governance",
    "Open source advocate, former president of OSI": "Open source advocate, former president of OSI",
    "Open-source foundation for the financial services industry. AlmaLinux is a member, expanding our reach into regulated environments.": "Open-source foundation for the financial services industry. AlmaLinux is a member, expanding our reach into regulated environments.",
@@ -676,7 +674,6 @@
    "anyone approved by the Membership Committee based on their contribution to the AlmaLinux project.": "anyone approved by the Membership Committee based on their contribution to the AlmaLinux project.",
    "per election": "per election",
    "Direct access to AlmaLinux Leadership": "Direct access to AlmaLinux Leadership",
-   "Up to 13 voting seats (six voting plus one non-voting invited expert currently). Four-year staggered terms. No employer holds more than one seat. Chair is elected by the board. Vacancies trigger a member vote, unless within three months of the next election.": "Up to 13 voting seats (six voting plus one non-voting invited expert currently). Four-year staggered terms. No employer holds more than one seat. Chair is elected by the board. Vacancies trigger a member vote, unless within three months of the next election.",
    "Votes per election": "Votes per election",
    "nominate or be nominated to run · 1 vote per election · contributing member AlmaLinux logo.": "nominate or be nominated to run · 1 vote per election · contributing member AlmaLinux logo.",
    "nominate or be nominated to run · 1 vote per election · listed as an official AlmaLinux mirror · official mirror logo.": "nominate or be nominated to run · 1 vote per election · listed as an official AlmaLinux mirror · official mirror logo.",
@@ -704,7 +701,6 @@
    "AlmaLinux OS 10.3 Beta": "AlmaLinux OS 10.3 Beta",
    "now available!": "now available!",
    "Trusted by": "Trusted by",
-   "New bylaws & the 2026 board election": "New bylaws & the 2026 board election",
    "Afternoon": "Afternoon",
    "All times are shown in Pacific time (PT).": "All times are shown in Pacific time (PT).",
    "Morning": "Morning",
@@ -1113,5 +1109,9 @@
    "Intel/AMD 64-bit, older CPUs": "Intel/AMD 64-bit, older CPUs",
    "You're viewing": "You're viewing",
    "Expired": "Expired",
-   "Expires": "Expires"
+   "Expires": "Expires",
+   "OSS Evangelist": "OSS Evangelist",
+   "Senior Systems and Network Administrator": "Senior Systems and Network Administrator",
+   "Up to 13 voting seats (eight voting seats currently). Four-year staggered terms. No employer holds more than one seat. Chair is elected by the board. Vacancies trigger a member vote, unless within three months of the next election.": "Up to 13 voting seats (eight voting seats currently). Four-year staggered terms. No employer holds more than one seat. Chair is elected by the board. Vacancies trigger a member vote, unless within three months of the next election.",
+   "Meet our new board members": "Meet our new board members"
 }
