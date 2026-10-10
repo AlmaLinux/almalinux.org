@@ -273,7 +273,6 @@
     "and from the main AlmaLinux OS repositories:": "",
     "Windows Subsystem for Linux (WSL) is designed as an integration between Windows and Linux. You can run the AlmaLinux terminal environment on a Windows machine.": "",
     "OpenSCAP Guide for AlmaLinux OS 9": "",
-    "General Counsel": "",
     "When we got our start we were a downstream rebuild of Red Hat Enterprise Linux, but earlier this year we shifted to": "",
     "AlmaLinux OS provides a set of security features: Errata, GPG keys, Mailing Lists, OpenSCAP, OVAL, SBOM": "",
     "Project ELevate": "",
