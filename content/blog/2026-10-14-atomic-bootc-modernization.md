@@ -5,12 +5,12 @@ author:
   name: "Alex Iribarren"
   bio: "Atomic SIG Lead; Director, AlmaLinux OS Foundation"
   image: /board/alexiribarren.jpg
-date: "2026-10-15"
+date: "2026-10-14"
 images:
-  - /blog-images/2026/2026-10-15-atomic-bootc-modernization-header.png
+  - /blog-images/2026/2026-10-14-atomic-bootc-modernization-header.png
 post:
   title: "atomic-ci v13 brings the Atomic SIG's images up to date with the latest bootc tooling, adds aarch64 ISOs, and lets you try an image in a live session before you install it."
-  image: /blog-images/2026/2026-10-15-atomic-bootc-modernization-header.png
+  image: /blog-images/2026/2026-10-14-atomic-bootc-modernization-header.png
 ---
 
 The [Atomic SIG](https://wiki.almalinux.org/sigs/Atomic.html) has just released v13 of [atomic-ci](https://github.com/AlmaLinux/atomic-ci), and it's the biggest change to our build tooling in quite some time. When we started the Atomic SIG last year, we built our images with the best tools available at the time. Since then, the bootc community has learned a lot from those tools and built better ones. This release moves us onto them, aligning with the rest of the bootc community. Most of that is plumbing you'll never see, but some of it you will, like ISOs that boot into a live session, and ISOs for aarch64.
@@ -30,7 +30,7 @@ AlmaLinux has offered [bootc images](/blog/2024-09-02-bootc-almalinux-heliumos/)
 
 **ISOs built with `image-builder`.** We used to build ISOs with `bootc-image-builder`. They're now built with [`image-builder`](https://osbuild.org/docs/developer-guide/projects/image-builder/), which is what the community recommends for bootc ISOs today, and they boot into a live session of the image. You can try the desktop on your own hardware first, then run the installer from there. The image is on the ISO, so installing doesn't need a network connection, and the live session has a partitioning tool in case you need to prepare your disks first.
 
-{{< figure src="/blog-images/2026/2026-10-15-atomic-bootc-modernization-live-iso.png" width="45%" class="text-center" alt="COSMIC Desktop Live ISO image installer" caption="COSMIC Desktop Live ISO image installer" >}}
+{{< figure src="/blog-images/2026/2026-10-14-atomic-bootc-modernization-live-iso.png" width="45%" class="text-center" alt="COSMIC Desktop Live ISO image installer" caption="COSMIC Desktop Live ISO image installer" >}}
 
 **aarch64 ISOs.** We've published aarch64 images for a while. Now there are ISOs for them too.
 
