@@ -221,11 +221,12 @@ The site includes print-optimized flyer pages designed for conference handouts a
 
 ### Available flyers
 
-| Flyer                   | URL               | Size                     | Layout            |
-| ----------------------- | ----------------- | ------------------------ | ----------------- |
-| AlmaLinux OS (general)  | `/flyer/`         | Letter (8.5 × 11 in)     | 2-page front/back |
-| ELevate                 | `/flyer-elevate/` | Half-page (8.5 × 5.5 in) | 2-page front/back |
-| Distribution Comparison | `/flyer-compare/` | Half-page (8.5 × 5.5 in) | 2-page front/back |
+| Flyer                   | URL                | Size                     | Layout            |
+| ----------------------- | ------------------ | ------------------------ | ----------------- |
+| AlmaLinux OS (general)  | `/flyer/`          | Letter (8.5 × 11 in)     | 2-page front/back |
+| AlmaLinux OS overview   | `/flyer-overview/` | Letter (8.5 × 11 in)     | 2-page front/back |
+| ELevate                 | `/flyer-elevate/`  | Half-page (8.5 × 5.5 in) | 2-page front/back |
+| Distribution Comparison | `/flyer-compare/`  | Half-page (8.5 × 5.5 in) | 2-page front/back |
 
 Each flyer page shows a **Print / Save as PDF** button and a **language selector** dropdown. Visitors can switch languages and print or save the translated version directly from their browser.
 
@@ -233,14 +234,14 @@ Each flyer page shows a **Print / Save as PDF** button and a **language selector
 
 Each flyer consists of two files:
 
-- **Content file** — `content/flyer.md`, `content/flyer-elevate.md`, or `content/flyer-compare.md`. These contain only Hugo front matter (`type` and `layout`). The actual text comes from `i18n/en.json`.
-- **Layout file** — `layouts/flyer/single.html`, `layouts/flyer-elevate/single.html`, or `layouts/flyer-compare/single.html`. These are self-contained HTML documents with all CSS inline.
+- **Content file** — `content/flyer.md`, `content/flyer-overview.md`, `content/flyer-elevate.md`, or `content/flyer-compare.md`. These contain only Hugo front matter (`type` and `layout`). The actual text comes from `i18n/en.json`.
+- **Layout file** — `layouts/flyer/single.html`, `layouts/flyer-overview/single.html`, `layouts/flyer-elevate/single.html`, or `layouts/flyer-compare/single.html`. These are self-contained HTML documents with all CSS inline.
 
 All user-visible text uses Hugo's `{{ i18n "..." }}` function, so translations are handled automatically by Weblate.
 
 ### Updating flyer content
 
-1. **Text changes** — Edit the corresponding strings in `i18n/en.json`. The flyer layouts reference these strings with `{{ i18n "String Key" }}`. Search the layout file for the text you want to change to find the key.
+1. **Text changes** — Edit the text inside the `{{ i18n "..." }}` tag in the layout file, keeping each tag on one line, then run `python3 find_missing_i18n_strings.py` to update `i18n/en.json`. Never edit `en.json` by hand.
 2. **Layout changes** — Edit the layout file directly. All CSS is in the `<style>` block at the top of each file.
 3. **Sponsor logos** — Logos are referenced from `/brands/` in the `static/` directory. Add `.already-white` class to logos that are already white to prevent the inversion filter from turning them dark.
 4. **SVG assets** — Custom SVGs (architecture badge, SIG diagram, QR codes) are in `static/images/`.
@@ -250,7 +251,7 @@ All user-visible text uses Hugo's `{{ i18n "..." }}` function, so translations a
 Flyers include two mechanisms to handle translated text that may be longer than English:
 
 - **CSS** — `hyphens: auto` and `word-break: break-word` on the body allow long compound words (common in German, Finnish, etc.) to wrap gracefully.
-- **JavaScript** — An auto-scaling script runs on page load and before printing. If content overflows a flyer page, the font size is progressively reduced until everything fits (minimum 60% of original size).
+- **JavaScript** — `/flyer/`, `/flyer-elevate/`, and `/flyer-compare/` include an auto-scaling script that lowers the page's font size when content overflows. Their text sizes are set in `px`, though, so the script has no visible effect today. `/flyer-overview/` leaves the script out. Check every flyer with `test-flyer-print.mjs` after a text change.
 
 ### Creating a new flyer
 
@@ -268,7 +269,7 @@ Flyers include two mechanisms to handle translated text that may be longer than 
 
 ### Testing print output
 
-A Playwright-based test script verifies that each flyer generates the expected number of PDF pages:
+A Playwright-based test script verifies that each flyer generates the expected number of PDF pages and that nothing on any page is cut off at its paper size:
 
 ```bash
 node test-flyer-print.mjs              # defaults to http://localhost:1313
