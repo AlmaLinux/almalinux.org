@@ -5,7 +5,7 @@ author:
   name: "Alex Iribarren"
   bio: "Atomic SIG Lead; Director, AlmaLinux OS Foundation"
   image: /board/alexiribarren.jpg
-date: "2026-10-14"
+date: "2026-10-13"
 images:
   - /blog-images/2026/2026-10-14-atomic-bootc-modernization-header.png
 post:
