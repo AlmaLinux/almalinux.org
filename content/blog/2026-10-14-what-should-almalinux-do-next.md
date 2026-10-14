@@ -31,9 +31,9 @@ Right now our main focus is growing the [certification catalog](https://catalog.
 
 We're also working through the goals our SIG leaders and board set at this year's Leadership Summit, which you can read about in [AlmaLinux in 2026](https://almalinux.org/blog/2026-03-10-almalinux-in-2026/).
 
-## What's Next? Tell us what you need
+## What's next? Tell us what you need
 
-The question that is plaguing me: What should our project focus on next? Whether we think over the next two to three years, or even the next 10 years? I want to know what's working, what's missing, and - especially - the one thing you'd most like us to do.
+The question that is plaguing me: What should our project focus on next? Whether we're thinking about the next two to three years or even the next 10 years, I want to know what's working, what's missing, and - especially - the one thing you'd most like us to do.
 
 I've put together a [short survey](https://cryptpad.fr/form/#/3/form/view/67ef07bcb5a457edda013f62636527ab/). I hope that it won't take you more than 5 or so minutes to complete. Your answers are anonymous unless you choose to leave your email at the end. I built the survey with [CryptPad](https://cryptpad.org/), an open source, end-to-end encrypted tool, so you don't need an account to take part. The survey will remain open until Monday, November 16.
 
@@ -45,4 +45,4 @@ Please take a few minutes to fill out the survey, and share it with anyone you k
 
 ## Help us spread the word
 
-The easiest way to help AlmaLinux grow is to stay in touch and share what you learn. Sign up for the [announcements](https://lists.almalinux.org/mailman3/lists/announce.lists.almalinux.org/) or [newsletter](https://lists.almalinux.org/mailman3/lists/newsletters.lists.almalinux.org/) mailing lists to get news in your inbox, and follow us on [Mastodon](https://fosstodon.org/@almalinux), [Bluesky](https://bsky.app/profile/almalinux.org), [LinkedIn](https://www.linkedin.com/company/almalinuxos/), [Reddit](https://www.reddit.com/r/AlmaLinux/), [X](https://x.com/AlmaLinux), and [YouTube](https://www.youtube.com/@almalinuxos). When you share our posts and announcements, more people hear about AlmaLinux and the work our community is doing.
+The easiest way to help AlmaLinux grow is to stay in touch and share what you learn. Sign up for the [announcements](https://lists.almalinux.org/mailman3/lists/announce.lists.almalinux.org/) or [newsletter](https://lists.almalinux.org/mailman3/lists/newsletters.lists.almalinux.org/) mailing lists to get news in your inbox, and follow us on [Mastodon](https://fosstodon.org/@almalinux), [Bluesky](https://bsky.app/profile/almalinux.org), [Instagram](https://www.instagram.com/almalinuxos/), [LinkedIn](https://www.linkedin.com/company/almalinuxos/), [Reddit](https://www.reddit.com/r/AlmaLinux/), [X](https://x.com/AlmaLinux), and [YouTube](https://www.youtube.com/@almalinuxos). When you share our posts and announcements, more people hear about AlmaLinux and the work our community is doing.
