@@ -37,7 +37,7 @@ The question that is plaguing me: What should our project focus on next? Whether
 
 I've put together a [short survey](https://cryptpad.fr/form/#/3/form/view/67ef07bcb5a457edda013f62636527ab/). I hope that it won't take you more than 5 or so minutes to complete. Your answers are anonymous unless you choose to leave your email at the end. I built the survey with [CryptPad](https://cryptpad.org/), an open source, end-to-end encrypted tool, so you don't need an account to take part. The survey will remain open until Monday, November 16.
 
-If you'd rather share your ideas in a discussion format, please join the discussion on the [forums](https://forums.almalinux.org/c/general/8). Even better, if you're at [All Things Open](/ato-2026/) in Raleigh next week, come find us at the booth and tell us in person.
+If you'd rather share your ideas in a discussion format, please join the discussion on the [forums](https://forums.almalinux.org/t/what-should-almalinux-do-next-tell-us/7660). Even better, if you're at [All Things Open](/ato-2026/) in Raleigh next week, come find us at the booth and tell us in person.
 
 Our [board](https://wiki.almalinux.org/Transparency.html) is answering the same question for me. After the survey closes, I'll bring their answers and yours together and share them with the board at our December board meeting, and then I'll publish what we heard and what we plan to do about it.
 
