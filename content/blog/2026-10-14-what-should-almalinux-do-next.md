@@ -13,7 +13,7 @@ post:
   image: /blog-images/2026/2026-10-14-what-should-almalinux-do-next.png
 ---
 
-AlmaLinux has grown a lot since we started, and I want to make sure the work we take on next is the work you need from us. That means that before we decide, I want to hear from you!
+AlmaLinux has grown a lot since we started, and I want to make sure the work we take on next is the work you need from us. That means that before we decide, I want to hear from you! Take a few minutes and send your input to [this form](https://cryptpad.fr/form/#/2/form/view/NwP38NosjVABz996a8aVNkgs45x34Cu-U7bJL7pIYu4/).
 
 ## What we've built
 
@@ -35,7 +35,7 @@ We're also working through the goals our SIG leaders and board set at this year'
 
 The question that is plaguing me: What should our project focus on next? Whether we're thinking about the next two to three years or even the next 10 years, I want to know what's working, what's missing, and - especially - the one thing you'd most like us to do.
 
-I've put together a [short survey](https://cryptpad.fr/form/#/3/form/view/67ef07bcb5a457edda013f62636527ab/). I hope that it won't take you more than 5 or so minutes to complete. Your answers are anonymous unless you choose to leave your email at the end. I built the survey with [CryptPad](https://cryptpad.org/), an open source, end-to-end encrypted tool, so you don't need an account to take part. The survey will remain open until Monday, November 16.
+I've put together a [short survey](https://cryptpad.fr/form/#/2/form/view/NwP38NosjVABz996a8aVNkgs45x34Cu-U7bJL7pIYu4/). I hope that it won't take you more than 5 or so minutes to complete. Your answers are anonymous unless you choose to leave your email at the end. I built the survey with [CryptPad](https://cryptpad.org/), an open source, end-to-end encrypted tool, so you don't need an account to take part. The survey will remain open until Monday, November 16.
 
 If you'd rather share your ideas in a discussion format, please join the discussion on the [forums](https://forums.almalinux.org/t/what-should-almalinux-do-next-tell-us/7660). Even better, if you're at [All Things Open](/ato-2026/) in Raleigh next week, come find us at the booth and tell us in person.
 
