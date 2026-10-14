@@ -18,6 +18,10 @@
 /comparison/ https://wiki.almalinux.org/Comparison.html 302
 /migrate/ https://wiki.almalinux.org/migration/ 307
 
+# 2026 community survey (CryptPad strips the key from the address bar, so share this instead)
+/survey https://cryptpad.fr/form/#/2/form/view/NwP38NosjVABz996a8aVNkgs45x34Cu-U7bJL7pIYu4/ 302
+/survey/ https://cryptpad.fr/form/#/2/form/view/NwP38NosjVABz996a8aVNkgs45x34Cu-U7bJL7pIYu4/ 302
+
 # Ecosystem Catalog replaced by catalog.almalinux.org.
 # Off-site targets cannot use Hugo aliases, so these stay here. The :lang rules
 # cover the localized paths; see issue #1123 for the same gap on other redirects.
