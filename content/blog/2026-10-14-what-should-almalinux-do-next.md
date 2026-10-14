@@ -17,7 +17,7 @@ AlmaLinux has grown a lot since we started, and I want to make sure the work we 
 
 ## What we've built
 
-Over the last few years, we've built a pipeline for AlmaLinux OS with [security at its center](/security/), backed by a [mirror network](https://mirrors.almalinux.org/) that serves users all over the world, and with millions of devices running AlmaLinux. OS. Thank you to every mirror sponsor who donates bandwidth and hardware to make that possible.
+Over the last few years, we've built a pipeline for AlmaLinux OS with [security at its center](/security/), backed by a [mirror network](https://mirrors.almalinux.org/) that serves users all over the world, and with millions of devices running AlmaLinux OS. Thank you to every mirror sponsor who donates bandwidth and hardware to make that possible.
 
 We've worked with hosting and cloud providers so you can [run AlmaLinux wherever you want to](/get-almalinux/). Thank you to [Amazon Web Services (AWS)](https://wiki.almalinux.org/cloud/AWS.html) and [Microsoft Azure](https://wiki.almalinux.org/cloud/Azure.html), who also sponsor the AlmaLinux OS Foundation, and to [Google Cloud (GCP)](https://wiki.almalinux.org/cloud/Google.html), for making AlmaLinux images available to their users.
 
