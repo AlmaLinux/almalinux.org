@@ -20,9 +20,9 @@ registration_cta: "Register Early — Space is Limited!"
 registration_button: "al-cta-blue"
 
 # Post-event — set to true and fill in after the event
-post_event: false
+post_event: true
 thankyou_city: "Los Angeles"
-thankyou_quote: ""
+thankyou_quote: "You filled the room with the studios and the people who keep them running, and you made it clear that AlmaLinux belongs in creative infrastructure. Thank you for giving us your Saturday."
 thankyou_youtube_url: ""
 
 # Footer bars — omit either field to hide that bar
@@ -36,6 +36,32 @@ event_data_key: "aldla-2026"
 # Schedule data: data/events/<key>.json (a Sessionize "view/All" JSON export),
 # rendered as a two-column morning/afternoon schedule by the event-schedule shortcode.
 schedule_data_key: "aldla-2026-schedule"
+
+# Per-session links rendered under the speaker names in the schedule, keyed by
+# the Sessionize session id (the "id" field in the schedule JSON, quoted).
+# Each entry may have "slides" (a PDF under static/files/) and/or "video"
+# (a YouTube URL, shown as "Watch the talk" once recordings are published).
+session_links:
+  "1266409":
+    slides: "/files/2026/aldla/aldla-2026-foundation-creative-pipelines-vasquez.pdf"
+  "1237960":
+    slides: "/files/2026/aldla/aldla-2026-me-sig-overview-theroux.pdf"
+  "1265780":
+    slides: "/files/2026/aldla/aldla-2026-creative-installer-theroux.pdf"
+  "1174497":
+    slides: "/files/2026/aldla/aldla-2026-edr-taylor.pdf"
+  "1177727":
+    slides: "/files/2026/aldla/aldla-2026-log-analysis-ahmad.pdf"
+  "1263836":
+    slides: "/files/2026/aldla/aldla-2026-wayland-for-artists-cannon-panisset.pdf"
+  "1231443":
+    slides: "/files/2026/aldla/aldla-2026-me-workshop-gompa-theroux-duncan.pdf"
+  "1238083":
+    slides: "/files/2026/aldla/aldla-2026-dcv-next-display-layer-theroux-gaier.pdf"
+  "1281840":
+    slides: "/files/2026/aldla/aldla-2026-trust-but-verify-winters.pdf"
+  "1266442":
+    slides: "/files/2026/aldla/aldla-2026-jedi-vasquez.pdf"
 
 # Short intro shown above the speaker grid
 speakers_intro: "The relationship between AlmaLinux and Media & Entertainment runs both ways: the industry runs on it, and through the Media & Entertainment SIG it's molding AlmaLinux into the perfect fit. These are some of the people doing that work."
@@ -98,35 +124,29 @@ AlmaLinux Day: LA is not just a conference; it is a convergence. As the industry
 </div>
 
 <div class="text-center" style="margin-top: 1rem; margin-bottom: 2.5rem;">
-  <a href="https://events.almalinux.org/event/189/" class="btn btn-lg px-4 al-cta-blue">
-    <i class="bi bi-box-arrow-in-right"></i>
-    Register Free — Space is Limited
+  <a href="/blog/2026-07-22-aldla-recap/" class="btn btn-lg px-4 al-cta-blue">
+    <i class="bi bi-journal-text"></i>
+    Read the recap
   </a>
 </div>
 
 <div class="row align-items-start g-5" style="margin-top: 2rem; margin-bottom: 2rem;">
   <div class="col-lg-6">
-    <h3>Want to volunteer?</h3>
-    <p>AlmaLinux Days are run entirely by volunteers, so we can always use a hand. A few ways to help:</p>
-    <ul>
-      <li>The night before: swag prep party 🎁</li>
-      <li>Check-in desk 📋</li>
-      <li>Setup crew 🔧</li>
-      <li>Teardown team 🧹</li>
-    </ul>
-    <p>If you will be in Los Angeles and want to pitch in, email <a href="mailto:ald@almalinux.org">ald@almalinux.org</a>. Volunteers get a meal with the crew!</p>
+    <h3>Thank you, volunteers!</h3>
+    <p>AlmaLinux Days are run entirely by volunteers, and AlmaLinux Day: LA was no exception. Thank you to everyone who prepped swag the night before, staffed the check-in desk, wrangled the setup, and stayed to tear it all down again. None of it happens without you.</p>
+    <p>Want to help with the next one? Email <a href="mailto:ald@almalinux.org">ald@almalinux.org</a> or find us in the Marketing room on <a href="https://chat.almalinux.org">chat.almalinux.org</a>.</p>
   </div>
   <div class="col-lg-6">
     <h3>Important Dates</h3>
     <table class="al-table-card al-table-card--block">
       <thead><tr><th>Event</th><th>Date</th></tr></thead>
       <tbody>
-        <tr><td><a href="https://events.almalinux.org/event/189/">AlmaLinux Day: Los Angeles</a></td><td>Saturday, July 18, 2026</td></tr>
+        <tr><td><a href="/blog/2026-07-22-aldla-recap/">AlmaLinux Day: Los Angeles</a></td><td>Saturday, July 18, 2026</td></tr>
         <tr><td><a href="https://events.linuxfoundation.org/open-source-days/">ASWF Open Source Days</a></td><td>Sunday, July 19 to Monday, July 20, 2026</td></tr>
         <tr><td><a href="https://s2026.siggraph.org/">SIGGRAPH 2026</a></td><td>Sunday, July 19 to Thursday, July 23, 2026</td></tr>
       </tbody>
     </table>
-    <p>These dates anchor your week: AlmaLinux Day: LA opens the conversation on Saturday before the SIGGRAPH crowd arrives, then ASWF Open Source Days and SIGGRAPH 2026 carry it through the rest of the week.</p>
+    <p>AlmaLinux Day: LA opened the conversation on Saturday, and ASWF Open Source Days and SIGGRAPH 2026 carry it through the rest of the week. If you're still in town, come find us at SIGGRAPH.</p>
   </div>
 </div>
 
@@ -135,30 +155,16 @@ AlmaLinux Day: LA is not just a conference; it is a convergence. As the industry
 <div class="row align-items-center" style="margin-top: 1rem; margin-bottom: 2rem;">
   <div class="col-md-6">
     <img src="/landingpages/aldla-2026/ecentral.jpg" alt="The event space at E-Central Downtown Los Angeles Hotel" class="img-fluid" style="border-radius: 8px;" />
-    <figcaption class="figure-caption" style="margin-top: 0.5rem;">These seats are waiting for you! The event space at E-Central Downtown Los Angeles Hotel.</figcaption>
+    <figcaption class="figure-caption" style="margin-top: 0.5rem;">The event space at E-Central Downtown Los Angeles Hotel.</figcaption>
   </div>
   <div class="col-md-6">
-    <h3>These seats are waiting for you</h3>
-    <p>Before the lights go up at SIGGRAPH, join the AlmaLinux OS Foundation for a day dedicated to the OS that powers the world's most demanding visual effects, rendering, and simulation pipelines.</p>
-    <p>Los Angeles is the natural home for this conversation. The films, the shows, the games, and the immersive experiences shaping global culture this year are being rendered, simulated, and finished on Linux — and increasingly on AlmaLinux. On July 18, the people behind that work are getting in the same room.</p>
-    <p>Expect a full day of technical deep-dives, candid conversations with the engineers building AlmaLinux, and a first look at something we have been quietly preparing specifically for the Media &amp; Entertainment industry. Expect to leave with sharper answers, new collaborators, and a clearer view of where enterprise Linux is headed for the creative pipeline.</p>
-    <p>Why Saturday? Beat the Sunday BoF rush and get your technical deep-dives in before the 10,000+ attendee crowd arrives. Smaller room, bigger signal, no compromises.</p>
+    <h3>A full room, the day before SIGGRAPH</h3>
+    <p>Ahead of the lights going up at SIGGRAPH, the AlmaLinux OS Foundation spent a day on the OS that powers the world's most demanding visual effects, rendering, and simulation pipelines.</p>
+    <p>Los Angeles turned out to be exactly the right home for that conversation. The films, the shows, the games, and the immersive experiences shaping global culture this year are being rendered, simulated, and finished on Linux, and increasingly on AlmaLinux. On July 18, a lot of the people behind that work were in the same room.</p>
+    <p>The day ran on technical deep-dives, candid conversations with the engineers building AlmaLinux, and the work coming out of the Media &amp; Entertainment SIG. Recordings of every session are being edited now and will be linked here when they're ready.</p>
   </div>
 </div>
 
-### Where to Stay
+### The Venue
 
-AlmaLinux Day: LA is hosted at the **E-Central Downtown Los Angeles Hotel**, 1020 S Figueroa St — and we recommend you stay right where the event is. E-Central is steps from the LA Convention Center (no shuttles needed), and within walking distance of Crypto.com Arena, LA Live, the Grammy Museum, and the Peacock Theater. The rooms are contemporary, the wellness center is newly renovated, and the location lets you roll out of your room and straight into the conference all week long.
-
-Whether you're coming for just AlmaLinux Day or staying through SIGGRAPH, booking here means one hotel, no commute, and the easiest possible logistics for your week in LA.
-
-<div class="text-center" style="margin-top: 1.5rem; margin-bottom: 2rem;">
-  <a href="https://compass.onpeak.com/e/012607856/1" class="btn btn-lg px-4 me-md-2 al-cta-blue">
-    <i class="bi bi-box-arrow-in-right"></i>
-    Book through SIGGRAPH
-  </a>
-  <a href="https://www.ecentralhotel.com/book/accommodations" class="btn btn-lg px-4 al-cta-yellow">
-    <i class="bi bi-box-arrow-in-right"></i>
-    Book direct with the hotel
-  </a>
-</div>
+AlmaLinux Day: LA was hosted at the **E-Central Downtown Los Angeles Hotel**, 1020 S Figueroa St, steps from the LA Convention Center and within walking distance of Crypto.com Arena, LA Live, the Grammy Museum, and the Peacock Theater. It was a great room for the day, and being able to roll straight from the event into the rest of the SIGGRAPH week made the logistics easy for everyone.

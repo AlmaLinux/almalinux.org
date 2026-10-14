@@ -74,7 +74,7 @@ Jesse is a current Director at AlmaLinux and the CXO at WebPros.
 	        <img class="img-fluid rounded-circle mb-3 img-thumbnail" src="/board/daniel.jpeg" alt="Daniel Pearson" style="max-width: 180px;">
 	</div>
 </section>
-	
+
 [Daniel Pearson](https://www.linkedin.com/in/daniel-pearson-b2559b60/)
 
 Daniel is the CEO of KnownHost, LLC (promoted from COO during the election window), a current AlmaLinux Gold Sponsor, serves on the AlmaLinux OS Foundation membership committee, and is new to the AlmaLinux OS Foundation board.
@@ -105,4 +105,4 @@ The first meeting of this board will happen in early October, and we'll spend a 
 
 For those curious, the notes from [our regular board meetings are published in the AlmaLinux wiki](https://wiki.almalinux.org/Transparency.html#minutes-of-almalinux-os-foundation-board-meetings), along with the running agenda for the next meeting. If you ever have any questions about something that has been discussed in a board meeting, feel free to [send me an email](mailto:benny@almalinux.org)!
 
-If you are interested in finding out more about the AlmaLinux Board of Directors Election 2022, please see: https://wiki.almalinux.org/Election2022.html
+If you are interested in finding out more about the AlmaLinux Board of Directors Election 2022, please see: https://wiki.almalinux.org/foundation/elections/2022.html

@@ -55,29 +55,11 @@
                 href="{{ "/certification" | relLangURL }}">
                 {{ i18n "Certification" }}
               </a>
-              <ul>
-                <li>
-                  <a
-                    class="dropdown-nested dropdown-item"
-                    href="{{ "/certification/hardware-certification" | relLangURL }}">
-                    {{ i18n "Hardware" }}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item dropdown-nested"
-                    href="{{ "/certification/hardware-certification/hardware-certification-program" | relLangURL }}">
-                    {{ i18n "Certification Program" }}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item dropdown-nested"
-                    href="{{ "/certification/software-certification" | relLangURL }}">
-                    {{ i18n "Software" }}
-                  </a>
-                </li>
-              </ul>
+            </li>
+            <li>
+              <a class="dropdown-item" href="https://catalog.almalinux.org">
+                {{ i18n "Certification Catalog" }}
+              </a>
             </li>
             <li>
               <a class="dropdown-item" href="https://bugs.almalinux.org">
@@ -165,7 +147,7 @@
             <li><hr class="dropdown-divider" /></li>
             <li>
               <h6 class="dropdown-header text-white">
-                {{ i18n "Upcoming Events" }}
+                {{ i18n "Past Events" }}
               </h6>
             </li>
             <li>
@@ -174,12 +156,6 @@
                 href="{{ "/almalinux-day-los-angeles-2026/" | relLangURL }}">
                 {{ i18n "ALD Los Angeles 2026" }}
               </a>
-            </li>
-            <li><hr class="dropdown-divider" /></li>
-            <li>
-              <h6 class="dropdown-header text-white">
-                {{ i18n "Past Events" }}
-              </h6>
             </li>
             <li>
               <a
@@ -245,6 +221,11 @@
             <li>
               <a class="dropdown-item" href="{{ "/alesco" | relLangURL }}">
                 {{ i18n "ALESCo" }}
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="{{ "/press/" | relLangURL }}">
+                {{ i18n "Press & Media Kit" }}
               </a>
             </li>
             <li>
@@ -325,24 +306,26 @@
 <div id="al-motd" dir="ltr" data-nosnippet="">
   <div class="container ps-3">
     <div class="text">
-      <i class="bi bi-calendar-event"></i> Join us at
-      <a
-        class="al-motd-event"
-        href="{{ "/almalinux-day-los-angeles-2026/" | relLangURL }}"
-        >{{ i18n "AlmaLinux Day: Los Angeles" }}</a
-      >
-      on July 18! &nbsp;|&nbsp;
       <i class="bi bi-box-seam"></i>
-      <a
-        href="{{ "/blog/2026-05-26-almalinux_98_and_102_stable/" | relLangURL }}"
-        >{{ i18n "AlmaLinux OS 9.8 and 10.2 Stable" }}</a
+      <a href="{{ "/blog/2026-09-17-announcing-99-beta/" | relLangURL }}"
+        >{{ i18n "AlmaLinux OS 9.9 Beta" }}</a
       >
       {{ i18n "now available!" }} &nbsp;|&nbsp;
+      <i class="bi bi-box-seam"></i>
+      <a href="{{ "/blog/2026-09-10-announcing-103-beta/" | relLangURL }}"
+        >{{ i18n "AlmaLinux OS 10.3 Beta" }}</a
+      >
+      {{ i18n "now available!" }} &nbsp;|&nbsp;
+      <i class="bi bi-geo-alt"></i>
+      <a class="al-motd-event" href="{{ "/ato-2026/" | relLangURL }}"
+        >{{ i18n "Find us at ATO" }}</a
+      >
+      {{ i18n "Oct 19 & 20, booth #79" }} &nbsp;|&nbsp;
       <i class="bi bi-building"></i>
       <a
         class="al-motd-election"
-        href="{{ "/blog/2026-06-10-new-bylaws-and-2026-election/" | relLangURL }}"
-        >{{ i18n "New bylaws & the 2026 board election" }}</a
+        href="{{ "/blog/2026-10-09-2026-election-winners/" | relLangURL }}"
+        >{{ i18n "Meet our new board members" }}</a
       >
     </div>
   </div>

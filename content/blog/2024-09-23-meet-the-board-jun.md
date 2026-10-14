@@ -23,7 +23,7 @@ For our latest board member Q&A video, we interviewed [Jun Yoshida](https://www.
 
 The AlmaLinux OS Foundation's board is community elected, by members of the AlmaLinux OS Foundation. If you use AlmaLinux, contribute to AlmaLinux, or support AlmaLinux in some way, we encourage you to [join the foundation](/members/). Individual membership is free, because you shouldn't have to pay to have a voice in the future of something you care about.
 
-If you'd like to learn more about our board and elections, you can check out [our Wiki](https://wiki.almalinux.org/election2023.html)! You can also watch the other videos in this series in [this YouTube playlist](https://www.youtube.com/playlist?list=PLqKzWfm6zyluP2R_6MTPvYJt20bwitQZJ) (we'll be adding more soon!).
+If you'd like to learn more about our board and elections, you can check out [our Wiki](https://wiki.almalinux.org/foundation/elections/)! You can also watch the other videos in this series in [this YouTube playlist](https://www.youtube.com/playlist?list=PLqKzWfm6zyluP2R_6MTPvYJt20bwitQZJ) (we'll be adding more soon!).
 
 See the other interviews here:
 

@@ -116,9 +116,16 @@
               });
             var dropdown = tabLink.closest(".nav-item.dropdown");
             if (dropdown) {
-              dropdown
-                .querySelector(".nav-link.dropdown-toggle")
-                .classList.add("active");
+              var versionBtn = dropdown.querySelector(
+                ".nav-link.dropdown-toggle",
+              );
+              versionBtn.classList.add("active");
+              // Show the selected architecture on the version button
+              var archSpan = versionBtn.querySelector(".al-os-tab-arch");
+              if (archSpan) {
+                archSpan.textContent =
+                  "· " + tabLink.getAttribute("data-arch-label");
+              }
             }
           }).observe(tabContent, {
             subtree: true,

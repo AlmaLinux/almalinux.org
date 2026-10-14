@@ -31,7 +31,7 @@ See the other interviews here:
 
 We also had a panel of board members at AlmaLinux Day: Germany in 2024 where board members talked about everything from how they got involved in AlmaLinux to their feelings about the future of open source, which you can watch on YouTube [Meet the board!](https://www.youtube.com/watch?v=PP3OPvmUwTs)
 
-If you'd like to learn more about our board and elections, you can check out [our Wiki](https://wiki.almalinux.org/election2023.html)! You can also watch the other videos in this series in [this YouTube playlist](https://www.youtube.com/playlist?list=PLqKzWfm6zyluP2R_6MTPvYJt20bwitQZJ).
+If you'd like to learn more about our board and elections, you can check out [our Wiki](https://wiki.almalinux.org/foundation/elections/)! You can also watch the other videos in this series in [this YouTube playlist](https://www.youtube.com/playlist?list=PLqKzWfm6zyluP2R_6MTPvYJt20bwitQZJ).
 
 ## Transcript
 

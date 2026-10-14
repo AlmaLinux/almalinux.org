@@ -1,6 +1,6 @@
 # AlmaLinux.org Design System
 
-Version 1.0 · Last updated 2026-07-16
+Version 1.0 · Last updated 2026-09-21
 
 Adopted by: _pending Marketing SIG approval (date recorded on adoption)_
 
@@ -189,7 +189,7 @@ A call-to-action button combines Bootstrap's base `btn` class with a custom `al-
 
 - `al-cta-blue` is the default primary CTA: bright blue `#24c2ff` (hover `#0bbbff`) with dark text. It covers most CTAs on the site.
 - `al-cta-blue-deep` is a deeper blue (`$al-c-science-blue-light`) for the rare case where `al-cta-blue` lacks contrast on a lighter background.
-- `al-cta-green` is the one approved green CTA (`$al-c-atlantis`), reserved for event registration and certification sign-up actions ("Register", "Get Certified"). It is not a general-purpose CTA; use `al-cta-blue` everywhere else.
+- `al-cta-green` is the one approved green CTA (`$al-c-atlantis`), reserved for event registration, certification sign-ups, and certification actions ("Register", "Get Certified", "Run the certification suite"). It is not a general-purpose CTA; use `al-cta-blue` everywhere else.
 - `al-cta-yellow` is a yellow CTA (`$al-c-candlelight`) for attention and highlight cases; it supports an inline icon image.
 
 **Sizing and layout modifiers:**
@@ -222,7 +222,7 @@ Base size: `$al-font-base-size` is `16px`. Text colors: `$al-font-color` (`#fefe
 
 - "AlmaLinux" keeps its capital A and capital L in prose. Never write "Almalinux" or "almalinux"; lowercase is correct only in URLs, file paths, and package names.
 
-**Casing convention:** headings use Title Case; bullet and list items use sentence case.
+**Casing convention:** headings use sentence case, as do bullet and list items. Proper nouns keep their capitals; existing Title Case headings can stay until the page is next revised.
 
 ## 7. Voice and tone
 
@@ -239,7 +239,7 @@ Mechanics that carry the voice (see also [§6](#6-typography)):
 - "AlmaLinux" is one word, capital A and L, in all visible copy.
 - No long dashes (em-dashes or en-dashes). Use a colon, a period, or parentheses instead.
 - "AlmaLinux Day" always takes a colon: "AlmaLinux Day: Tokyo", "AlmaLinux Day: LA".
-- Headings use Title Case; body lists use sentence case.
+- Headings use sentence case, as do body lists. Proper nouns keep their capitals.
 
 ## 8. Iconography
 
@@ -333,6 +333,8 @@ The following patterns are used site-wide:
 **Persona cards** (`al-persona-card`, `_bundle-extras.scss`; partial `layouts/partials/get-almalinux/persona-cards.html`). A row of quick-link cards on the get-almalinux page that route visitors by audience (users, developers, sysadmins).
 
 **Event schedule** (`al-schedule` / `al-sched-*`, `event-schedule.scss`; shortcode `layouts/shortcodes/event-schedule.html`). A two-column morning/afternoon schedule rendered from a Sessionize JSON export, with collapsible session descriptions. Used on event pages.
+
+**Event body blocks** (`al-event-*`, `event-day.scss`). Content blocks for the markdown body of event pages: `al-event-feature` (a Black Pearl panel with a CTA-blue left border, or `--green` for certification content), `al-event-card` (a Black Pearl card with a top border), `al-event-eyebrow`, `al-event-steps` (a numbered step list), and `al-event-headshot` (a circular portrait, with an `al-event-headshot--sm` modifier for headshots sharing a row with other columns). Use these instead of inline styles in event page content. The same file also styles the "Can't make it?" band (`al-event-stop`), whose heading is an `<h2>` so the page keeps a single `<h1>` (see [§14](#14-accessibility)).
 
 **ALESCo RFC cards** (`al-rfc-*`, `alesco.scss`). The proposal-lifecycle UI on the `/alesco` page: status-label pills, a lifecycle stepper, and proposal cards rendered client-side from the GitHub API.
 
@@ -430,3 +432,4 @@ The point is big, legible type: these slides are read from the back of a room, s
 - **(2026-07-07):** Added the Pantone reference from the Brand Book and corrected the brand red to `#ff4649`.
 - **(2026-07-09):** Added the Presentations section, and required a stable `id` on major page sections.
 - **(2026-07-16):** Promoted the CTA blue to the `$al-c-cta-blue` token, embedded the "Powered by AlmaLinux" badges, clarified the Brand Book relationship and the platinum tier selector, and reworded the palette source-of-truth and free-tier accent notes (review feedback on PR #1101).
+- **(2026-09-21):** Added the event body blocks (`al-event-*`) used by event page content, and moved the "Can't make it?" band off inline styles onto `al-event-stop` in `event-day.scss`. Added the `al-event-headshot--sm` modifier for narrow columns.

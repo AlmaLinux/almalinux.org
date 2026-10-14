@@ -1,64 +1,106 @@
-on: pull_request_target
+name: Publish Preview Deployment
+on:
+  workflow_run:
+    # Matches the `name:` field of build-preview.yml, NOT its filename.
+    # A workflow_run trigger that matches nothing fails silently: no run is
+    # created and no error is logged anywhere. Keep these two in step.
+    workflows: ["Build Preview"]
+    types: [completed]
 
 jobs:
-  authorize:
-    environment: ${{ github.event_name == 'pull_request_target' &&
-      github.event.pull_request.head.repo.full_name != github.repository &&
-      'external' || 'internal' }}
-    runs-on: ubuntu-latest
-    steps:
-      - run: true
-
-  publish:
-    needs: authorize
+  deploy:
+    if: >
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'pull_request'
     runs-on: ubuntu-latest
     permissions:
       contents: read
       deployments: write
       pull-requests: write
-    name: Publish Preview to Cloudflare Pages
+      actions: read
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Download artifacts from triggering workflow
+        uses: actions/github-script@v7
         with:
-          ref: ${{ github.event.pull_request.head.sha || github.ref }}
+          script: |
+            const run_id = context.payload.workflow_run.id;
+            const { owner, repo } = context.repo;
+            const fs = require("fs");
 
-      - name: Check for missing base language strings
-        run: python3 find_missing_i18n_strings.py
+            const artifacts = await github.rest.actions.listWorkflowRunArtifacts({
+              owner,
+              repo,
+              run_id,
+            });
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+            for (const name of ["preview-site", "pr-number"]) {
+              const artifact = artifacts.data.artifacts.find(a => a.name === name);
+              if (!artifact) {
+                core.setFailed(`${name} artifact not found`);
+                return;
+              }
+
+              const zip = await github.rest.actions.downloadArtifact({
+                owner,
+                repo,
+                artifact_id: artifact.id,
+                archive_format: "zip",
+              });
+
+              fs.writeFileSync(`${process.env.GITHUB_WORKSPACE}/${name}.zip`, Buffer.from(zip.data));
+            }
+
+      - name: Unzip artifacts
+        run: |
+          mkdir public
+          unzip preview-site.zip -d public
+          unzip pr-number.zip -d .
+
+      - name: Resolve and verify PR number
+        id: pr
+        uses: actions/github-script@v7
         with:
-          hugo-version: "0.163.2"
-          extended: true
+          script: |
+            const fs = require("fs");
+            const raw = fs.readFileSync("pr-number.txt", "utf8").trim();
 
-      - name: Generate language files
-        run: python3 setup-pages-for-supported-languages.py
+            if (!/^[0-9]+$/.test(raw)) {
+              core.setFailed(`pr-number.txt does not contain a PR number: ${JSON.stringify(raw)}`);
+              return;
+            }
 
-      - name: Generate get_almalinux data
-        run: python3 tools/generate_get_almalinux_yaml.py
+            // build-preview.yml runs from the pull request head. On a fork PR that
+            // is code we do not control, so the number above is untrusted input.
+            // This job holds real secrets and pull-requests: write, so confirm the
+            // PR it names is actually the one that was built before we deploy to a
+            // branch alias or comment anywhere. Do not remove this check.
+            const { owner, repo } = context.repo;
+            const { data: pr } = await github.rest.pulls.get({
+              owner,
+              repo,
+              pull_number: Number(raw),
+            });
 
-      - name: Build
-        run: hugo --minify --buildFuture
+            const built = context.payload.workflow_run.head_sha;
+            if (pr.head.sha !== built) {
+              core.setFailed(
+                `PR #${raw} is at ${pr.head.sha} but this run built ${built}. Refusing to deploy.`
+              );
+              return;
+            }
 
-      - name: move redirects file into place
-        run: cp _redirects public/
-
-      - name: move headers file into place
-        run: cp _headers public/
-
-      - name: build search index
-        run: npx pagefind --site "public"
+            core.setOutput("number", raw);
 
       - name: Publish to Cloudflare Pages
         id: deploy
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy public --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }} --branch=${{ github.head_ref }}
+          command: pages deploy public --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }} --branch=pr-${{ steps.pr.outputs.number }}
 
       - name: Comment deployment URL on PR
-        if: always() && github.event.pull_request.number
         uses: actions/github-script@v7
         with:
           script: |
@@ -74,6 +116,6 @@ jobs:
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: context.payload.pull_request.number,
+              issue_number: Number("${{ steps.pr.outputs.number }}"),
               body,
             });

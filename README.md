@@ -54,6 +54,10 @@ thankyou_quote: "Quote from benny after the event."
 thankyou_youtube_url: "https://www.youtube.com/watch?v=..."
 
 # Footer bars — omit either field to hide that bar
+# Optional: replace the AlmaLinux Day wording in the "Can't make it?" block
+# (useful for conferences we attend rather than host)
+cant_make_it_heading: "Can't make it to City?"
+cant_make_it_text: "What people who can't attend can still do."
 coc_url: "/p/your-event-code-of-conduct/"
 photo_credit_name: "Photographer Name"
 photo_credit_url: "https://unsplash.com/..."
@@ -65,6 +69,10 @@ speakers_header: "On stage at AlmaLinux Day: City" # optional; overrides default
 ```
 
 The markdown body (below `---`) is rendered between the hero and the speakers section. Use it for the event description, schedule embed, venue photos, and any other event-specific content. Raw HTML is supported.
+
+For styled blocks in the body, use the shared classes in `assets/scss/event-day.scss` instead of inline styles: `al-event-feature` (a highlighted panel, with `al-event-feature--green` for certification content), `al-event-card`, `al-event-eyebrow`, `al-event-steps` (a numbered list), and `al-event-headshot`. See `content/ato-2026.md` for an example.
+
+The same layout works for conferences where AlmaLinux has a booth or a talk but isn't the organizer: point `registration_url` at an anchor on the page, leave `speakers` out of the data file, and set `cant_make_it_heading` and `cant_make_it_text`.
 
 ### Step 2: Create the data file
 
@@ -158,7 +166,7 @@ Add a header image at `static/newsletter-images/mon-yy.png` (e.g. `jan-26.png`).
 
 ### Step 3: Open a pull request
 
-Open a PR targeting the `main` branch. Once merged, the newsletter will appear on the [newsletters listing page](https://almalinux.org/newsletters/) under its year, and will be included in the RSS feed automatically.
+Open a PR targeting the `master` branch. Once merged, the newsletter will appear on the [newsletters listing page](https://almalinux.org/newsletters/) under its year, and will be included in the RSS feed automatically.
 
 ## Contributing - Blog Posts
 
@@ -306,9 +314,9 @@ For smaller contributions, follow this workflow:
 - Fork the project.
 - Create a new branch for your feature or bug fix.
 - Add your code, documentation, etc.
-- Submit a pull request (PR). All PRs should target the `main` branch. Once approved, a development site will automatically generate based on the PR.
+- Submit a pull request (PR). All PRs should target the `master` branch. Once approved, a development site will automatically generate based on the PR.
 
-After review and approval, the changes will be merged into the `main` branch and deployed to the live site.
+After review and approval, the changes will be merged into the `master` branch and deployed to the live site. See [README.DEPLOY.md](README.DEPLOY.md) for how deployment works.
 
 For design tokens, components, and conventions, see [DESIGN.md](DESIGN.md).
 
@@ -392,7 +400,7 @@ The "Get AlmaLinux" page is dynamically generated using structured data and Hugo
    python3 tools/generate_get_almalinux_yaml.py
    ```
    This updates `data/get_almalinux.yaml` for use by Hugo.
-   This will be done automatically by the Gitlab CI scripts during deployment.
+   This will be done automatically by GitHub Actions during deployment.
 3. Commit the resulting changes to `data/get_almalinux_checksums.yaml` and open a PR.
    Do not commit `data/get_almalinux.yaml`; it is generated output.
 
