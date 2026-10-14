@@ -779,7 +779,6 @@
     "FIPS 140-3 is recognized and respected worldwide. The European Union's NIS 2 Directive, for example, calls for up-to-date encryption built on established standards.": "FIPS 140-3在全球范围内受到认可。例如，欧盟的NIS 2指令要求采用基于成熟标准的最新加密技术。",
     "FIPS 140-3 is widely treated as the gold standard for cryptographic security, recognized and required well beyond the United States. AlmaLinux OS 9.2 meets it: its kernel and OpenSSL cryptographic modules are independently validated by the NIST Cryptographic Module Validation Program and listed as Active.": "FIPS 140-3被广泛视为密码安全领域的黄金标准，其认可和要求远超美国范围。AlmaLinux OS 9.2 符合该标准：其内核和 OpenSSL 密码模块已通过美国国家标准与技术研究院（NIST）密码模块验证计划的独立验证，并被列为“有效”状态。",
     "FIPS Certification": "FIPS认证",
-    "Meet our new board members": "认识我们的新董事会成员",
     "For government, finance, healthcare, and anyone handling sensitive data, running on validated cryptography is often a requirement rather than a nice to have. FIPS validation gives those organizations independent assurance about the cryptography underneath their systems.": "对于政府、金融、医疗以及任何处理敏感数据的机构而言，使用经过验证的加密技术通常已是基本要求，而不只是可选项。FIPS认证为这些组织提供了对其系统底层加密技术的独立保障。",
     "If you need ongoing supported coverage, including for FIPS, see our": "如需持续支持服务，包括FIPS支持，请参见我们的",
     "Kernel module": "内核模块",
