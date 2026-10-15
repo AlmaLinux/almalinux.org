@@ -1,6 +1,6 @@
 # Contributing - Blog Posts
 
-We welcome blog posts of almost any kind from our community! We accept content that covers topics that relate to AlmaLinux OS, the AlmaLinux OS Foundation. If you aren't sure if your blog post topic would be a good one, feel free to create an issue on this repo and ask! You can also join our chat and ask in the Marketing room.
+We welcome blog posts of almost any kind from our community! We accept content that covers topics that relate to AlmaLinux OS, the AlmaLinux OS Foundation. If you aren't sure if your blog post topic would be a good one, feel free to create an issue on this repo and ask! You can also join our chat and ask in the Promo SIG channel.
 
 ### Process
 
@@ -11,7 +11,7 @@ We welcome blog posts of almost any kind from our community! We accept content t
 
 #### The content of your .md file
 
-Our website is built in Hugo and served using CloudFlare pages, so you may find some quirks. To add a blog post successfully to the website, take the steps below, and reach out in [~marketing](https://chat.almalinux.org/almalinux/channels/marketing) on our chat server if you have any problems.
+Our website is built in Hugo and served using CloudFlare pages, so you may find some quirks. To add a blog post successfully to the website, take the steps below, and reach out in the [Promo SIG channel](https://chat.almalinux.org/almalinux/channels/marketing) on our chat server if you have any problems.
 
 **The blog file**
 

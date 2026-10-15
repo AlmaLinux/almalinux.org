@@ -112,7 +112,7 @@ Hardware can be certified before it is announced. Mark the submission as pre-rel
 
 If you need your interaction with the SIG to be private, for example because you are working under a non-disclosure agreement, the Certification SIG maintains a private mailing list at [certification-sig@lists.almalinux.org](mailto:certification-sig@lists.almalinux.org).
 
-Once a certification is published, we ask that you list AlmaLinux as a supported operating system for the tested hardware. If your organization joins the Foundation as a sponsor member, the Marketing SIG will work with you on publicity around the certification.
+Once a certification is published, we ask that you list AlmaLinux as a supported operating system for the tested hardware. If your organization joins the Foundation as a sponsor member, the Promo SIG will work with you on publicity around the certification.
 
 If you need the Foundation to host hardware for ongoing testing, or you want to donate hardware, reach out through the SIG chat room or the mailing list and we will make arrangements.
 

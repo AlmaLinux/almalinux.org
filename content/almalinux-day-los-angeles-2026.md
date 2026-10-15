@@ -134,7 +134,7 @@ AlmaLinux Day: LA is not just a conference; it is a convergence. As the industry
   <div class="col-lg-6">
     <h3>Thank you, volunteers!</h3>
     <p>AlmaLinux Days are run entirely by volunteers, and AlmaLinux Day: LA was no exception. Thank you to everyone who prepped swag the night before, staffed the check-in desk, wrangled the setup, and stayed to tear it all down again. None of it happens without you.</p>
-    <p>Want to help with the next one? Email <a href="mailto:ald@almalinux.org">ald@almalinux.org</a> or find us in the Marketing room on <a href="https://chat.almalinux.org">chat.almalinux.org</a>.</p>
+    <p>Want to help with the next one? Email <a href="mailto:ald@almalinux.org">ald@almalinux.org</a> or find us in the <a href="https://chat.almalinux.org/almalinux/channels/marketing">Promo SIG channel</a> on <a href="https://chat.almalinux.org">chat.almalinux.org</a>.</p>
   </div>
   <div class="col-lg-6">
     <h3>Important Dates</h3>

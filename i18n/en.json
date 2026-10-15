@@ -470,7 +470,6 @@
    "Join the AlmaLinux OS community chat": "Join the AlmaLinux OS community chat",
    "Need some inspiration? See a list of common ways that our community contributes below!": "Need some inspiration? See a list of common ways that our community contributes below!",
    "Contribute blog posts, videos, case studies, or presentations showcasing AlmaLinux in the real-world ": "Contribute blog posts, videos, case studies, or presentations showcasing AlmaLinux in the real-world ",
-   "Marketing SIG": "Marketing SIG",
    "Help expand ELevate testing and add data for more third-party vendor support": "Help expand ELevate testing and add data for more third-party vendor support",
    "Contribute to ELevate": "Contribute to ELevate",
    "Contribute to Docs": "Contribute to Docs",
@@ -490,7 +489,6 @@
    "Core Special Interest Group": "Core Special Interest Group",
    "Non-Developer Contributions": "Non-Developer Contributions",
    "Not all AlmaLinux contributors are directly involved in development or contributing code!": "Not all AlmaLinux contributors are directly involved in development or contributing code!",
-   "To contribute by writing a blog post, working at an event, designing, translating, or any other non-technical contribution you can think of, the Marketing SIG is a great place to start!": "To contribute by writing a blog post, working at an event, designing, translating, or any other non-technical contribution you can think of, the Marketing SIG is a great place to start!",
    "Find us on Github": "Find us on Github",
    "ALD Germany 2026": "ALD Germany 2026",
    "ALD Los Angeles 2026": "ALD Los Angeles 2026",
@@ -981,8 +979,6 @@
    "AlmaLinux is a community project run by volunteers. In copy, sound like a helpful person who is glad you are here: warm, plain, and confident, never hype. Write 'AlmaLinux' as one word with a capital A and L, and use a colon, a period, or parentheses instead of long dashes.": "AlmaLinux is a community project run by volunteers. In copy, sound like a helpful person who is glad you are here: warm, plain, and confident, never hype. Write 'AlmaLinux' as one word with a capital A and L, and use a colon, a period, or parentheses instead of long dashes.",
    "Design system (DESIGN.md)": "Design system (DESIGN.md)",
    "Dig deeper": "Dig deeper",
-   "Questions? Ask the Marketing SIG": "Questions? Ask the Marketing SIG",
-   "Reach the Marketing SIG on chat.almalinux.org, including for the latest presentation template.": "Reach the Marketing SIG on chat.almalinux.org, including for the latest presentation template.",
    "The AlmaLinux voice": "The AlmaLinux voice",
    "The living technical reference: every color with its Pantone, the components, and the presentation spec.": "The living technical reference: every color with its Pantone, the components, and the presentation spec.",
    "The terms for using the AlmaLinux marks.": "The terms for using the AlmaLinux marks.",
@@ -1115,5 +1111,9 @@
    "Up to 13 voting seats (eight voting seats currently). Four-year staggered terms. No employer holds more than one seat. Chair is elected by the board. Vacancies trigger a member vote, unless within three months of the next election.": "Up to 13 voting seats (eight voting seats currently). Four-year staggered terms. No employer holds more than one seat. Chair is elected by the board. Vacancies trigger a member vote, unless within three months of the next election.",
    "2026 International Business Awards": "2026 International Business Awards",
    "Non-Profit or Government Organizations, Small.": "Non-Profit or Government Organizations, Small.",
-   "Tell us what AlmaLinux should do next": "Tell us what AlmaLinux should do next"
+   "Tell us what AlmaLinux should do next": "Tell us what AlmaLinux should do next",
+   "Promo SIG": "Promo SIG",
+   "Questions? Ask the Promo SIG": "Questions? Ask the Promo SIG",
+   "Reach the Promo SIG on chat.almalinux.org, including for the latest presentation template.": "Reach the Promo SIG on chat.almalinux.org, including for the latest presentation template.",
+   "To contribute by writing a blog post, working at an event, designing, translating, or any other non-technical contribution you can think of, the Promo SIG is a great place to start!": "To contribute by writing a blog post, working at an event, designing, translating, or any other non-technical contribution you can think of, the Promo SIG is a great place to start!"
 }

@@ -130,7 +130,7 @@ The foundation member sponsor logos are rendered automatically on every event pa
 
 ## Contributing - Newsletters
 
-Newsletter issues are published by the [Marketing SIG](https://wiki.almalinux.org/sigs/Marketing.html) as markdown files in `content/newsletters/`. Each file maps to a single newsletter issue.
+Newsletter issues are published by the [Promo SIG](https://wiki.almalinux.org/sigs/Promo.html) as markdown files in `content/newsletters/`. Each file maps to a single newsletter issue.
 
 ### Step 1: Create the content file
 
@@ -240,7 +240,7 @@ Please check the [GitHub issues](https://github.com/AlmaLinux/almalinux.org/issu
 
 ### Contributing Code or Design Changes
 
-Before submitting code changes, please check if there are any open issues or pull requests that cover your proposal. If not, open an [issue](https://github.com/AlmaLinux/almalinux.org/issues) with a brief description and discuss it with the Marketing SIG first.
+Before submitting code changes, please check if there are any open issues or pull requests that cover your proposal. If not, open an [issue](https://github.com/AlmaLinux/almalinux.org/issues) with a brief description and discuss it with the Promo SIG first.
 
 This helps avoid duplicated work and ensures proposed changes align with project goals.
 
@@ -435,7 +435,7 @@ Once you figure out the issue and fix it, undo your changes to `.prettierrc` and
 
 ### Localization and Translation
 
-AlmaLinux.org translations are managed on [Weblate](https://hosted.weblate.org/engage/almalinux/). Submissions through Weblate generate automated PRs to this repo, which are reviewed and merged by the Marketing SIG or another team lead.
+AlmaLinux.org translations are managed on [Weblate](https://hosted.weblate.org/engage/almalinux/). Submissions through Weblate generate automated PRs to this repo, which are reviewed and merged by the Promo SIG or another team lead.
 
 **File ownership:** `i18n/en.json` is the source-of-truth and is managed in this repo — use `find_missing_i18n_strings.py` to keep it in sync with template usage. All other locale files (`es.json`, `de.json`, etc.) are owned by Weblate. Do not edit them directly or run any script that modifies them; doing so causes merge conflicts when Weblate pushes its translator commits back. Stale-key cleanup for non-English locales is handled automatically by Weblate's "Cleanup translation files" add-on (`weblate.cleanup.generic`).
 
@@ -467,4 +467,4 @@ When a new language is requested, a project admin needs to enable it on both Web
 
 - Minor or cosmetic changes (typos, small style tweaks) can be reviewed and approved by any contributor with merge rights.
 - Non-cosmetic changes require approval from the Marketing Lead.
-- Weblate automatically submits PRs for translated strings; these are reviewed and merged by the Marketing SIG or team leads.
+- Weblate automatically submits PRs for translated strings; these are reviewed and merged by the Promo SIG or team leads.
