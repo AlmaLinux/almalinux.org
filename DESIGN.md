@@ -2,7 +2,7 @@
 
 Version 1.0 · Last updated 2026-09-21
 
-Adopted by: _pending Promo SIG approval (date recorded on adoption)_
+Adopted by: Promo SIG 2026-09-24
 
 A reference for contributors working on the almalinux.org website: brand colors, components, and the conventions that keep the site consistent. It complements the AlmaLinux Brand Book: the Brand Book defines the brand itself (identity, print, intent), while this document is the implementation reference for the website's code. Where the two overlap, the Brand Book is authoritative (see [§3](#3-logo-and-brand-assets)).
 
