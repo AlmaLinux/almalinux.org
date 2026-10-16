@@ -5,7 +5,7 @@ author:
   name: "benny Vasquez"
   bio: "Chair, board of directors"
   image: /users/benny.jpeg
-date: 2026-10-15
+date: 2026-10-16
 images:
   - /blog-images/2026/2026-10-15-promo-sig.png
 post:
