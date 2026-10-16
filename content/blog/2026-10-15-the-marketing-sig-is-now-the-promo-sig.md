@@ -15,7 +15,7 @@ post:
 
 This change has been a long time coming, and I'm excited to tell you about it. The Marketing SIG is now the Promo SIG!
 
-If you haven't run into us before, the Marketing SIG is one of the many SIGs (Special Interest Groups) at that make the AlmaLinux project do all the cool things it does. We started it in the project's early days, and it's grown to manage a lot of important things related to the project. What we do isn't changing. We're only changing the name.
+If you haven't run into us before, the Marketing SIG is one of the many SIGs (Special Interest Groups) that make the AlmaLinux project do all the cool things it does. We started it in the project's early days, and it's grown to manage a lot of important things related to the project. What we do isn't changing. We're only changing the name.
 
 ## What does the Promo SIG do?
 
@@ -23,7 +23,7 @@ We keep AlmaLinux branding consistent, handle outreach, and look after AlmaLinux
 
 {{< youtube id="J7JzHVkRSe0" width="45%" height="25%" autoplay="false" controls="true" mute="false" title="AlmaLinux Promo SIG - Deshea and benny Q&A" >}}
 
-Here's what that work looks like:
+Here are some examples of what the Promo SIG does:
 
 - Planning and staffing events
 - Creating content (writing, graphics, videos, and more)
@@ -36,7 +36,7 @@ Many of you care a lot about your privacy, and we respect that. We collect as li
 
 ## Why the new name?
 
-In the open source world, "marketing" is a loaded word, and a lot of people tune it out or avoid it altogether. "Promo" is a better fit for what we do, which is spreading the word about AlmaLinux and helping more people find out it exists. Our focus is awareness. We don't do ad targeting, we don't collect data intending to sell you anything, and that means that really we don't do traditional Marketing.
+In the open source world, "marketing" is a loaded word, and a lot of people tune it out or avoid it altogether. "Promo" is a better fit for what we do, which is spreading the word about AlmaLinux and helping more people find out it exists. Our focus is awareness. We don't do ad targeting, and we don't collect data to sell you anything, so "marketing" never quite fit.
 
 ## How does the Promo SIG's work help the community?
 
@@ -54,11 +54,11 @@ Only a few things really impact the general community with this change:
 
 Contributions come in all shapes and sizes, and everyone is welcome. If you have some expertise or time to share, here's where we could use your help. For any of these, the easiest place to start is the [Promo SIG channel](https://chat.almalinux.org/almalinux/channels/marketing) on chat.almalinux.org.
 
-- **Event staffing:** We attend 30-40 events a year, and you can help us join more events by staffing the ones near you.
+- **Event staffing:** We attend 30 to 40 events a year, and you can help us join more events by staffing the ones near you.
 - **Content writing:** We're always looking for blog posts, how-to guides, and fun ideas for social media.
 - **Video:** We'd love new participants for our Q&A video series. You can suggest questions or volunteer [on the forums](https://forums.almalinux.org/t/faq-q-a-video-questions/3445).
 - **Website maintenance:** The site is built with [Hugo](https://gohugo.io/), a static site generator, and there's plenty of cleanup and addition work to pick up.
-- **Graphic design:** We have stickers, but they aren't nearly as pretty as they could be! We have ideas, but our execution is... lacking. 😄 If you are a decent designer, throw some ideas at us in the channel!
+- **Graphic design:** We have stickers, but they aren't nearly as pretty as they could be! We have ideas, but our execution is... lacking. 😄 If you have an eye for design, throw some ideas at us in the channel!
 - **Website translation:** Translations go through [Weblate](https://hosted.weblate.org/projects/almalinux/website-backend/) and are sent to the website repository automatically. To get started, read the [Help translating site](https://wiki.almalinux.org/Help-translating-site.html) guide.
 
 We also track lots of ideas and bugs in the [website repository](https://github.com/AlmaLinux/almalinux.org/issues) and on our [GitHub project board](https://github.com/orgs/AlmaLinux/projects/5/views/1). The [Promo SIG wiki page](https://wiki.almalinux.org/sigs/Promo.html) has more about how we work and when we meet.
