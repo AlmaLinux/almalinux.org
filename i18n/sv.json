@@ -469,7 +469,6 @@
     "Join the AlmaLinux OS community chat": "Gå med i AlmaLinux OS gemenskapens chatt",
     "Need some inspiration? See a list of common ways that our community contributes below!": "Behöver du lite inspiration? Se en lista över vanliga sätt som vår gemenskap bidrar på nedan!",
     "Contribute blog posts, videos, case studies, or presentations showcasing AlmaLinux in the real-world ": "Bidra med blogginlägg, videor, fallstudier eller presentationer som visar upp AlmaLinux i verkligheten ",
-    "Marketing SIG": "Marketing SIG",
     "Help expand ELevate testing and add data for more third-party vendor support": "Hjälp till att utöka ELevate testning och lägg till data för mer support från tredjepartsleverantörer",
     "Contribute to ELevate": "Bidra till ELevate",
     "Contribute to Docs": "Bidra till dokumentation",
@@ -489,7 +488,6 @@
     "Core Special Interest Group": "Kärn särskild intressegrupp",
     "Non-Developer Contributions": "Bidrag från andra än utvecklare",
     "Not all AlmaLinux contributors are directly involved in development or contributing code!": "Inte alla AlmaLinux-bidragsgivare är direkt involverade i utveckling eller kodbidrag!",
-    "To contribute by writing a blog post, working at an event, designing, translating, or any other non-technical contribution you can think of, the Marketing SIG is a great place to start!": "För att bidra genom att skriva ett blogginlägg, arbeta på ett evenemang, designa, översätta eller vilket annat icke-tekniskt bidrag du kan tänka dig, är Marketing SIG ett bra ställe att börja!",
     "Find us on Github": "Hitta oss på Github",
     "ALD Tokyo 2026": "ALD Tokyo 2026",
     "With ELevate you can easily upgrade in-place from CentOS 6.x or 7.x AlmaLinux 8 or CentOS Stream 8. You can also use ELevate to upgrade from 8 or 9 all the way through version 10 within the same OS. Used all over the world to upgrade more than 500,000 devices, ELevate is your answer to the headache of upgrading your operating system in the Enterprise Linux ecosystem. ": "Med ELevate kan du enkelt uppgradera direkt från CentOS 6.x eller 7.x, AlmaLinux 8 eller CentOS Stream 8. Du kan också använda ELevate för att uppgradera från 8 eller 9 hela vägen upp till version 10 inom samma operativsystem. ELevate används över hela världen för att uppgradera fler än 500 000 enheter och är ditt svar på huvudvärken med att uppgradera ditt operativsystem i Enterprise Linux-ekosystemet. ",
@@ -977,8 +975,6 @@
     "AlmaLinux is a community project run by volunteers. In copy, sound like a helpful person who is glad you are here: warm, plain, and confident, never hype. Write 'AlmaLinux' as one word with a capital A and L, and use a colon, a period, or parentheses instead of long dashes.": "AlmaLinux är ett gemenskapsprojekt som drivs av volontärer. Låt i texten som en hjälpsam person som är glad att du är här: varm, enkel och självsäker, aldrig överdriven. Skriv 'AlmaLinux' som ett enda ord med versaler A och L, och använd kolon, punkt eller parentes istället för långa bindestreck.",
     "Design system (DESIGN.md)": "Design system (DESIGN.md)",
     "Dig deeper": "Gräv djupare",
-    "Questions? Ask the Marketing SIG": "Frågor? Fråga Marketing SIG",
-    "Reach the Marketing SIG on chat.almalinux.org, including for the latest presentation template.": "Kontakta Marketing SIG på chat.almalinux.org, inklusive för den senaste presentationsmallen.",
     "The AlmaLinux voice": "AlmaLinux röst",
     "The living technical reference: every color with its Pantone, the components, and the presentation spec.": "Den levande tekniska referensen: varje färg med sin Pantone, komponenterna och presentationsspecifikation.",
     "The terms for using the AlmaLinux marks.": "Villkoren för användning av AlmaLinux-varumärkena.",
@@ -1114,5 +1110,6 @@
     "Senior Systems and Network Administrator": "Senior system och nätverksadministratör",
     "Up to 13 voting seats (eight voting seats currently). Four-year staggered terms. No employer holds more than one seat. Chair is elected by the board. Vacancies trigger a member vote, unless within three months of the next election.": "Upp till 13 platser med rösträtt (för närvarande åtta). Mandatperioder på fyra år, fördelade så att de löper omlott. Ingen arbetsgivare innehar mer än en plats. Ordföranden väljs av styrelsen. Vid vakanser hålls en omröstning bland medlemmarna, såvida det inte återstår mindre än tre månader till nästa val.",
     "2026 International Business Awards": "2026 International Business Awards",
-    "Non-Profit or Government Organizations, Small.": "Små ideella organisationer eller offentliga organ."
+    "Non-Profit or Government Organizations, Small.": "Små ideella organisationer eller offentliga organ.",
+    "Tell us what AlmaLinux should do next": "Berätta för oss vad AlmaLinux bör göra härnäst"
 }
