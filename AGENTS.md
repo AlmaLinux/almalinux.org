@@ -2,7 +2,7 @@
 
 Instructions for any AI agent working in this repository (Claude Code, Gemini CLI, Copilot, Cursor, Codex, and others). This file is the tool-neutral source of truth; `CLAUDE.md` and `GEMINI.md` simply import it.
 
-If you are a human contributor who is new to this, an AI assistant pointed at this repository will read this file and help you follow these conventions. For project setup and the contribution workflow, see `README.md`, and ask in the Marketing SIG channel on chat.almalinux.org.
+If you are a human contributor who is new to this, an AI assistant pointed at this repository will read this file and help you follow these conventions. For project setup and the contribution workflow, see `README.md`, and ask in the Promo SIG channel on chat.almalinux.org.
 
 ## What this repository is
 

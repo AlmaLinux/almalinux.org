@@ -2,7 +2,7 @@
 
 Version 1.0 · Last updated 2026-09-21
 
-Adopted by: _pending Marketing SIG approval (date recorded on adoption)_
+Adopted by: Promo SIG 2026-09-24
 
 A reference for contributors working on the almalinux.org website: brand colors, components, and the conventions that keep the site consistent. It complements the AlmaLinux Brand Book: the Brand Book defines the brand itself (identity, print, intent), while this document is the implementation reference for the website's code. Where the two overlap, the Brand Book is authoritative (see [§3](#3-logo-and-brand-assets)).
 
@@ -381,7 +381,7 @@ This section is guidance for building AlmaLinux talk decks: think defaults and a
 
 > **Note:** Representing the AlmaLinux OS Foundation anywhere requires official approval. You may always present yourself as a member of the community, but make it clear that you are not representing the Foundation unless you have explicit permission to do so.
 
-Slides are their own medium, so this reconciles our brand system with what most common presentation builders need. Decks are usually **1920x1080 (16:9)**, one idea per slide. A reusable deck template (PPTX or Google Slides) is maintained separately, outside this repository. Ask in the marketing channel on chat.almalinux.org for the most current one.
+Slides are their own medium, so this reconciles our brand system with what most common presentation builders need. Decks are usually **1920x1080 (16:9)**, one idea per slide. A reusable deck template (PPTX or Google Slides) is maintained separately, outside this repository. Ask in the Promo SIG channel on chat.almalinux.org for the most current one.
 
 **Fonts (fixed).** Use Montserrat for headings and display (weights 600 to 800, tight tracking near `-0.02em`) and Arial for body. Both render natively in Google Slides and PowerPoint, so exported decks stay faithful. Use monospace only inside code blocks, and keep to these two families. (The website uses the system-UI body stack in [§6](#6-typography); Arial is the deliberate choice for slide portability.)
 
@@ -419,7 +419,7 @@ The point is big, legible type: these slides are read from the back of a room, s
 
 ## 17. How to add a new design element
 
-1. Propose the change in a GitHub issue or PR and discuss it with the Marketing SIG. See the README's [Contributing - Code and Design](README.md#contributing---code-and-design) section for the overall workflow.
+1. Propose the change in a GitHub issue or PR and discuss it with the Promo SIG. See the README's [Contributing - Code and Design](README.md#contributing---code-and-design) section for the overall workflow.
 2. Add any new tokens to the correct SCSS file. For a new color, add it to `variables.scss` with a `// @usage` comment, then run `npm run generate:design-colors`.
 3. Add a real example of the component to an actual page. Do not commit unused CSS.
 4. Document the element in the relevant `DESIGN.md` section.
