@@ -357,25 +357,10 @@
           {{ i18n "Foundations we belong to" }}
         </h2>
         <p class="mb-4">
-          {{ i18n "AlmaLinux participates in industry foundations to keep our work aligned with the broader open-source ecosystem and to extend protection to our community." }}
+          {{ i18n "AlmaLinux is a member of these foundations so that our community is represented in them, and so we can connect with the AlmaLinux users in their communities." }}
         </p>
+        {{/* Ordered by join date, oldest first. "Member since" months come from LFX (Open Invention Network from the May 2021 announcement). */}}
         <div class="row g-4">
-          <div class="col-md-4">
-            <a
-              href="https://www.finos.org/members"
-              class="al-foundation-info-card h-100"
-              target="_blank"
-              rel="noopener">
-              <img
-                src="/foundation-images/FINOS_Icon_Wordmark_White.webp"
-                alt="FINOS"
-                class="al-foundation-org-logo"
-                loading="lazy" />
-              <p class="mb-0">
-                {{ i18n "Open-source foundation for the financial services industry. AlmaLinux is a member, expanding our reach into regulated environments." }}
-              </p>
-            </a>
-          </div>
           <div class="col-md-4">
             <a
               href="https://openinventionnetwork.com/community/almalinux-os-foundation/"
@@ -387,8 +372,52 @@
                 alt="Open Invention Network"
                 class="al-foundation-org-logo"
                 loading="lazy" />
+              <p class="al-foundation-member-since">
+                {{ i18n "Member since" }}
+                {{ time.Format "January 2006" "2021-05-01" }}
+              </p>
               <p class="mb-0">
                 {{ i18n "Defensive patent pool that shields Linux and adjacent open-source projects from patent threats." }}
+              </p>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://www.linuxfoundation.org/about/members"
+              class="al-foundation-info-card h-100"
+              target="_blank"
+              rel="noopener">
+              <img
+                src="/foundation-images/lf-stacked-white.svg"
+                alt="The Linux Foundation"
+                class="al-foundation-org-logo"
+                loading="lazy" />
+              <p class="al-foundation-member-since">
+                {{ i18n "Member since" }}
+                {{ time.Format "January 2006" "2021-07-01" }}
+              </p>
+              <p class="mb-0">
+                {{ i18n "Home of the Linux kernel and many of the open source projects AlmaLinux is built with. AlmaLinux is an associate member." }}
+              </p>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://www.finos.org/members"
+              class="al-foundation-info-card h-100"
+              target="_blank"
+              rel="noopener">
+              <img
+                src="/foundation-images/FINOS_Icon_Wordmark_White.webp"
+                alt="FINOS"
+                class="al-foundation-org-logo"
+                loading="lazy" />
+              <p class="al-foundation-member-since">
+                {{ i18n "Member since" }}
+                {{ time.Format "January 2006" "2021-07-01" }}
+              </p>
+              <p class="mb-0">
+                {{ i18n "Open source foundation for the financial services industry." }}
               </p>
             </a>
           </div>
@@ -403,8 +432,52 @@
                 alt="OpenHPC"
                 class="al-foundation-org-logo"
                 loading="lazy" />
+              <p class="al-foundation-member-since">
+                {{ i18n "Member since" }}
+                {{ time.Format "January 2006" "2025-03-01" }}
+              </p>
               <p class="mb-0">
-                {{ i18n "Community for high-performance computing. AlmaLinux is the supported HPC base for many of OpenHPC's reference stacks." }}
+                {{ i18n "Community for high-performance computing (HPC). OpenHPC publishes install guides for AlmaLinux 9 and AlmaLinux 10." }}
+              </p>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://openinfra.org/members/"
+              class="al-foundation-info-card h-100"
+              target="_blank"
+              rel="noopener">
+              <img
+                src="/foundation-images/openinfra-horiz-white.svg"
+                alt="OpenInfra Foundation"
+                class="al-foundation-org-logo"
+                loading="lazy" />
+              <p class="al-foundation-member-since">
+                {{ i18n "Member since" }}
+                {{ time.Format "January 2006" "2025-12-01" }}
+              </p>
+              <p class="mb-0">
+                {{ i18n "Home of OpenStack, Kata Containers, StarlingX, and Zuul." }}
+              </p>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://www.aswf.io/members/"
+              class="al-foundation-info-card h-100"
+              target="_blank"
+              rel="noopener">
+              <img
+                src="/foundation-images/aswf-logo-white.svg"
+                alt="Academy Software Foundation"
+                class="al-foundation-org-logo"
+                loading="lazy" />
+              <p class="al-foundation-member-since">
+                {{ i18n "Member since" }}
+                {{ time.Format "January 2006" "2026-08-01" }}
+              </p>
+              <p class="mb-0">
+                {{ i18n "Open source foundation for the motion picture and media industry, home of projects like OpenEXR and OpenColorIO." }}
               </p>
             </a>
           </div>
