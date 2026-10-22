@@ -554,7 +554,6 @@
    "All sponsor memberships renew annually and need Membership Committee approval. In-kind sponsorships also require board approval.": "All sponsor memberships renew annually and need Membership Committee approval. In-kind sponsorships also require board approval.",
    "AlmaLinux Day: Germany sticker recognized for promotional creative.": "AlmaLinux Day: Germany sticker recognized for promotional creative.",
    "AlmaLinux OS Foundation Membership": "AlmaLinux OS Foundation Membership",
-   "AlmaLinux participates in industry foundations to keep our work aligned with the broader open-source ecosystem and to extend protection to our community.": "AlmaLinux participates in industry foundations to keep our work aligned with the broader open-source ecosystem and to extend protection to our community.",
    "Annual": "Annual",
    "Apply Gold": "Apply Gold",
    "Apply Platinum": "Apply Platinum",
@@ -577,7 +576,6 @@
    "Cloud network operating system for Arista switches and routers; userland rebased to AlmaLinux 9 starting with EOS 4.32.": "Cloud network operating system for Arista switches and routers; userland rebased to AlmaLinux 9 starting with EOS 4.32.",
    "Cloud platform": "Cloud platform",
    "Communications platform": "Communications platform",
-   "Community for high-performance computing. AlmaLinux is the supported HPC base for many of OpenHPC's reference stacks.": "Community for high-performance computing. AlmaLinux is the supported HPC base for many of OpenHPC's reference stacks.",
    "Companies and projects build on AlmaLinux — from downstream Linux distributions to commercial appliances and management platforms. The list below reflects what we know publicly — confirmed entries only.": "Companies and projects build on AlmaLinux — from downstream Linux distributions to commercial appliances and management platforms. The list below reflects what we know publicly — confirmed entries only.",
    "Compare all four sponsor tiers": "Compare all four sponsor tiers",
    "Conflicts of interest disclosed; interested transactions require approval by disinterested directors. No paid board roles. The Code of Conduct applies.": "Conflicts of interest disclosed; interested transactions require approval by disinterested directors. No paid board roles. The Code of Conduct applies.",
@@ -620,7 +618,6 @@
    "Nominate board candidates": "Nominate board candidates",
    "Open governance": "Open governance",
    "Open source advocate, former president of OSI": "Open source advocate, former president of OSI",
-   "Open-source foundation for the financial services industry. AlmaLinux is a member, expanding our reach into regulated environments.": "Open-source foundation for the financial services industry. AlmaLinux is a member, expanding our reach into regulated environments.",
    "OpenStack-based cloud-management platform built on AlmaLinux.": "OpenStack-based cloud-management platform built on AlmaLinux.",
    "Operations": "Operations",
    "Organization of the Year — Non-Profit.": "Organization of the Year — Non-Profit.",
@@ -1115,5 +1112,12 @@
    "Promo SIG": "Promo SIG",
    "Questions? Ask the Promo SIG": "Questions? Ask the Promo SIG",
    "Reach the Promo SIG on chat.almalinux.org, including for the latest presentation template.": "Reach the Promo SIG on chat.almalinux.org, including for the latest presentation template.",
-   "To contribute by writing a blog post, working at an event, designing, translating, or any other non-technical contribution you can think of, the Promo SIG is a great place to start!": "To contribute by writing a blog post, working at an event, designing, translating, or any other non-technical contribution you can think of, the Promo SIG is a great place to start!"
+   "To contribute by writing a blog post, working at an event, designing, translating, or any other non-technical contribution you can think of, the Promo SIG is a great place to start!": "To contribute by writing a blog post, working at an event, designing, translating, or any other non-technical contribution you can think of, the Promo SIG is a great place to start!",
+   "Home of OpenStack, Kata Containers, StarlingX, and Zuul.": "Home of OpenStack, Kata Containers, StarlingX, and Zuul.",
+   "Home of the Linux kernel and many of the open source projects AlmaLinux is built with. AlmaLinux is an associate member.": "Home of the Linux kernel and many of the open source projects AlmaLinux is built with. AlmaLinux is an associate member.",
+   "Member since": "Member since",
+   "Open source foundation for the motion picture and media industry, home of projects like OpenEXR and OpenColorIO.": "Open source foundation for the motion picture and media industry, home of projects like OpenEXR and OpenColorIO.",
+   "AlmaLinux is a member of these foundations so that our community is represented in them, and so we can connect with the AlmaLinux users in their communities.": "AlmaLinux is a member of these foundations so that our community is represented in them, and so we can connect with the AlmaLinux users in their communities.",
+   "Community for high-performance computing (HPC). OpenHPC publishes install guides for AlmaLinux 9 and AlmaLinux 10.": "Community for high-performance computing (HPC). OpenHPC publishes install guides for AlmaLinux 9 and AlmaLinux 10.",
+   "Open source foundation for the financial services industry.": "Open source foundation for the financial services industry."
 }

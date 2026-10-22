@@ -93,6 +93,17 @@ $al-foundation-pullquote-accent: $al-c-atlantis; // #86da2f
   margin-bottom: 1rem;
 }
 
+// "Member since" line under each logo in Foundations we belong to
+.al-foundation-member-since {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: $al-c-candlelight;
+  margin-top: -0.25rem;
+  margin-bottom: 0.75rem;
+}
+
 .al-foundation-membership-card {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.13);
