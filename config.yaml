@@ -43,6 +43,7 @@ languages:
   sk: { weight: 2, label: Slovensky }
   sr: { weight: 2, label: Српски }
   sv: { weight: 2, label: svenska }
+  sw: { weight: 2, label: Kiswahili }
   ta: { weight: 2, label: தமிழ் }
   tr: { weight: 2, label: Türkçe }
   uk: { weight: 2, label: Українська }
