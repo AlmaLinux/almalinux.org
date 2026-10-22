@@ -19,7 +19,9 @@
   {{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 
-{{- with $.Params.images -}}
+{{- with partial "blog/header-image.html" (dict "page" . "social" true) -}}
+  <meta property="og:image" content="{{ . | absURL }}" />
+{{- else with $.Params.images -}}
   {{- range first 6 . }}
     <meta property="og:image" content="{{ . | absURL }}" />
   {{ end -}}

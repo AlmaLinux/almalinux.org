@@ -1,0 +1,43 @@
+{{- /* Returns the URL of a post's generated header image, or "" if it has no `header` block. */ -}}
+{{- /* Templates are configured in data/header_templates.yaml; usage is in contributing-blog-posts.md. */ -}}
+{{- /* Call with the page for the on-page image, or with (dict "page" . "social" true) for og:image. */ -}}
+{{- $page := . -}}
+{{- $social := false -}}
+{{- if reflect.IsMap . -}}
+  {{- $page = .page -}}
+  {{- $social = .social -}}
+{{- end -}}
+{{- $url := "" -}}
+{{- with $page.Params.header -}}
+  {{- $header := . -}}
+  {{- $tpl := index hugo.Data.header_templates .template -}}
+  {{- if not $tpl -}}
+    {{- errorf "%s: unknown header template %q (see data/header_templates.yaml)" $page.File.Path .template -}}
+  {{- end -}}
+  {{- $bg := resources.Get (printf "header-templates/%s" $tpl.background) -}}
+  {{- if not $bg -}}
+    {{- errorf "header template %q: background assets/header-templates/%s not found" .template $tpl.background -}}
+  {{- end -}}
+
+  {{- $filters := slice -}}
+  {{- range $field := slice "title" "subtitle" -}}
+    {{- with index $header $field -}}
+      {{- $style := index $tpl $field -}}
+      {{- $opts := merge $style (dict "font" (resources.Get $style.font)) -}}
+      {{- $filters = $filters | append (images.Text . $opts) -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- /* Defaults are documented in data/header_templates.yaml. */ -}}
+  {{- $format := $tpl.format | default "resize 1700x webp q85 Lanczos text" -}}
+  {{- if $social -}}
+    {{- $format = $tpl.social_format | default "resize 1200x jpg q85 Lanczos" -}}
+  {{- end -}}
+  {{- $img := ($bg | images.Filter $filters).Process $format -}}
+
+  {{- /* Readable file name; the hash changes with the text so social media caches refresh. */ -}}
+  {{- $hash := substr (md5 (jsonify $header)) 0 8 -}}
+  {{- $name := printf "blog-images/generated/%s-%s%s" $page.File.ContentBaseName $hash $img.MediaType.FirstSuffix.FullSuffix -}}
+  {{- $url = ($img | resources.Copy $name).RelPermalink -}}
+{{- end -}}
+{{- return $url -}}
