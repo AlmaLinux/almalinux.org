@@ -1,0 +1,4 @@
+{{- /* Alt text for a generated header image: "Title. Subtitle". */ -}}
+{{- with .Params.header -}}
+  {{- replace .title "\n" " " -}}{{- with .subtitle }}. {{ . }}{{ end -}}
+{{- end -}}

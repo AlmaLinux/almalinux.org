@@ -1,0 +1,47 @@
+# Blog header image templates.
+#
+# A blog post can set `header:` in its front matter instead of `images:` and
+# `post.image:`, and Hugo draws the title and subtitle onto the template's
+# background at build time. See contributing-blog-posts.md.
+#
+# Each template has:
+#   background:    image file in assets/header-templates/
+#   format:        optional; on-page image (Hugo image processing spec).
+#                  Default: "resize 1700x webp q85 Lanczos text". The page
+#                  shows it at most 850px wide, so 1700px keeps it sharp on
+#                  high-DPI screens. Lanczos resampling and the "text" hint
+#                  keep the lettering crisp.
+#   social_format: optional; og:image for link previews.
+#                  Default: "resize 1200x jpg q85 Lanczos". JPEG, because not
+#                  every preview crawler reads WebP.
+#   title / subtitle: options for Hugo's images.Text filter
+#     font:   TTF file in assets/
+#     size:   font size in pixels
+#     x, y:   position in pixels from the top-left corner
+#     alignx: left, center or right (x is the anchor point)
+#     aligny: top, center or bottom (y is the anchor point; with "bottom",
+#             y is the baseline of the last line, so a title that wraps
+#             grows upward instead of running into the subtitle)
+#     linespacing: extra pixels between wrapped lines
+#     color:  hex color
+
+vulnerability:
+  background: vulnerability.png
+  title:
+    font: fonts/Montserrat-SemiBold.ttf
+    size: 140
+    x: 110
+    y: 560
+    alignx: left
+    aligny: bottom
+    linespacing: 10
+    color: "#ffffff"
+  subtitle:
+    font: fonts/Montserrat-Regular.ttf
+    size: 64
+    x: 110
+    y: 593
+    alignx: left
+    aligny: top
+    linespacing: 8
+    color: "#ffffff"
