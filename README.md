@@ -130,7 +130,7 @@ The foundation member sponsor logos are rendered automatically on every event pa
 
 ## Contributing - Newsletters
 
-Newsletter issues are published by the [Marketing SIG](https://wiki.almalinux.org/sigs/Marketing.html) as markdown files in `content/newsletters/`. Each file maps to a single newsletter issue.
+Newsletter issues are published by the [Promo SIG](https://wiki.almalinux.org/sigs/Promo.html) as markdown files in `content/newsletters/`. Each file maps to a single newsletter issue.
 
 ### Step 1: Create the content file
 
@@ -240,7 +240,7 @@ Please check the [GitHub issues](https://github.com/AlmaLinux/almalinux.org/issu
 
 ### Contributing Code or Design Changes
 
-Before submitting code changes, please check if there are any open issues or pull requests that cover your proposal. If not, open an [issue](https://github.com/AlmaLinux/almalinux.org/issues) with a brief description and discuss it with the Marketing SIG first.
+Before submitting code changes, please check if there are any open issues or pull requests that cover your proposal. If not, open an [issue](https://github.com/AlmaLinux/almalinux.org/issues) with a brief description and discuss it with the Promo SIG first.
 
 This helps avoid duplicated work and ensures proposed changes align with project goals.
 
@@ -269,7 +269,7 @@ Run `hugo server` to start a near-production local development instance.
 
 After cloning, run `npm install` to install dependencies. This sets up the pre-commit hook (via [husky](https://typicode.github.io/husky/)) that automatically runs [Prettier](https://prettier.io/) on staged files before each commit, keeping formatting consistent with CI.
 
-Localization is important! Please include proper localization formatting in your PR. After formatting, run `find_missing_i18n_strings.py` and `setup-pages-for-supported-languages.py`, then commit the changes. If you encounter issues with these scripts, please open an [issue](https://github.com/AlmaLinux/almalinux.org/issues) with details.
+Localization is important! Wrap all visible text in templates in `{{ i18n "..." }}` tags, then run `python3 find_missing_i18n_strings.py` and commit the updated `i18n/en.json`. Don't run `setup-pages-for-supported-languages.py` for everyday changes: it's only for adding a language, and the build workflows already run it (see [Adding a new language](#adding-a-new-language-maintainers)). If you encounter issues with these scripts, please open an [issue](https://github.com/AlmaLinux/almalinux.org/issues) with details.
 
 #### Container Development
 
@@ -435,7 +435,7 @@ Once you figure out the issue and fix it, undo your changes to `.prettierrc` and
 
 ### Localization and Translation
 
-AlmaLinux.org translations are managed on [Weblate](https://hosted.weblate.org/engage/almalinux/). Submissions through Weblate generate automated PRs to this repo, which are reviewed and merged by the Marketing SIG or another team lead.
+AlmaLinux.org translations are managed on [Weblate](https://hosted.weblate.org/engage/almalinux/). Submissions through Weblate generate automated PRs to this repo, which are reviewed and merged by the Promo SIG or another team lead.
 
 **File ownership:** `i18n/en.json` is the source-of-truth and is managed in this repo — use `find_missing_i18n_strings.py` to keep it in sync with template usage. All other locale files (`es.json`, `de.json`, etc.) are owned by Weblate. Do not edit them directly or run any script that modifies them; doing so causes merge conflicts when Weblate pushes its translator commits back. Stale-key cleanup for non-English locales is handled automatically by Weblate's "Cleanup translation files" add-on (`weblate.cleanup.generic`).
 
@@ -447,24 +447,20 @@ To **request a new language**, open an issue in [GitHub issues](https://github.c
 
 #### Adding a new language (maintainers)
 
-When a new language is requested, a project admin needs to enable it on both Weblate and in this repo. The order matters: do the Weblate step first so the JSON file already exists when Hugo tries to render the new locale.
+When a new language is requested, a project admin needs to enable it on Weblate first and then in this repo. The order matters: the `i18n/<lang>.json` file has to exist before Hugo tries to render the new locale.
 
-1. **Enable the language on Weblate.** As a project admin on [hosted.weblate.org/projects/almalinux/](https://hosted.weblate.org/projects/almalinux/), open the `website-backend` component (and any other components covering this site) and use **Start new translation** to add the language. Weblate generates a new `i18n/<lang>.json` from the English source and opens a PR against this repo.
-2. **Add the language to `config.yaml`.** In the `languages:` map, add a new entry using the same code Weblate used for the JSON filename. Use the language's native name for `languagename`, and add `languageDirection: rtl` for right-to-left scripts. For example:
+1. **Enable the language on Weblate.** As a project admin on [hosted.weblate.org/projects/almalinux/](https://hosted.weblate.org/projects/almalinux/), open the **Operations** menu and choose **Start new translation**. Weblate generates `i18n/<lang>.json` from the English source and pushes it to this repo, usually as a new commit on the open Weblate PR rather than a PR of its own.
+2. **Merge the Weblate PR** so the new JSON file is on `master`.
+3. **Add the language to `config.yaml`.** In the `languages:` map, add an entry using the same code Weblate used for the JSON filename, in alphabetical order by code. Use the language's native name for `label`, and add `direction: rtl` for right-to-left scripts. For example:
    ```yaml
-   ro: { weight: 2, languagename: Română }
+   eo: { weight: 2, label: Esperanto }
    ```
-   Note: existing entries like `pt-br` and `zh-hans` use lowercase/dashed slugs to match Weblate's output — match that style for the new code.
-3. **Generate placeholder content pages.** From the repo root, run:
-   ```bash
-   python3 setup-pages-for-supported-languages.py
-   python3 find_missing_i18n_strings.py
-   ```
-   The first script reads `config.yaml` and creates `content/<page>.<lang>.md` stubs for every page so Hugo has something to render until translators fill them in. The second sanity-checks `i18n/en.json`.
-4. **Open a PR** with the `config.yaml` change and the generated `content/` stubs. Merge it together with (or right after) the Weblate-generated PR from step 1 so the new locale builds cleanly on the next deploy.
+   Existing entries like `pt-br` and `zh-hans` use lowercase, dashed codes to match Weblate's output, so match that style for the new code.
+4. **Build locally** with `hugo` and confirm the new language appears in the language picker and its pages render. Strings that aren't translated yet fall back to English.
+5. **Open a PR** with the `config.yaml` change. You don't need to generate or commit any content pages: the publish and preview workflows run `setup-pages-for-supported-languages.py` at build time, which creates a `content/<page>.<lang>.md` copy of every page for each language in `config.yaml`.
 
 ### Change Approval Process
 
 - Minor or cosmetic changes (typos, small style tweaks) can be reviewed and approved by any contributor with merge rights.
 - Non-cosmetic changes require approval from the Marketing Lead.
-- Weblate automatically submits PRs for translated strings; these are reviewed and merged by the Marketing SIG or team leads.
+- Weblate automatically submits PRs for translated strings; these are reviewed and merged by the Promo SIG or team leads.

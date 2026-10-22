@@ -57,7 +57,7 @@ event_data_key: "aldt-2026"
       <h2>Sponsor AlmaLinux Day: Tokyo!!</h2>
       <div>
         AlmaLinux Days have already hosted hundreds of people across the world, and we are expecting just as strong a turnout at this event. Whether you are just a lover of Open Source, or hoping to get your company or product in front of more potential users, we would love to have you join us as a sponsor for this event.
-        <a href="mailto:marketing-sig@almalinux.org">marketing-sig@almalinux.org</a>
+        <a href="mailto:promo-sig@almalinux.org">promo-sig@almalinux.org</a>
       </div>
       <h2>Ready for something deeper?</h2>
       <div>

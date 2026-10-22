@@ -194,15 +194,30 @@
             <div class="py-3 px-3 text-center al-member-item">
               <img
                 class="img-fluid rounded-circle mb-3 img-thumbnail"
-                src="/board/davidsnead.jpg"
-                alt="David Snead"
+                src="/board/munehiro.ikeda.png"
+                alt="Muuhh Ikeda"
                 style="max-width: 130px;" />
-              <h5 class="mb-1">David Snead</h5>
-              <div class="small mb-1">{{ i18n "General Counsel" }}</div>
-              <div class="small fw-light">WebPros</div>
-              <div class="small fw-light">
-                {{ i18n "Non-voting Invited Expert" }}
+              <h5 class="mb-1">Muuhh Ikeda</h5>
+              <div class="small mb-1">{{ i18n "OSS Evangelist" }}</div>
+              <div class="small fw-light">Cybertrust Japan Co., Ltd.</div>
+              <div class="small fw-light">{{ i18n "Elected" }} 2026</div>
+              <div class="small fw-light">{{ i18n "Term ends" }} 2030</div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="py-3 px-3 text-center al-member-item">
+              <img
+                class="img-fluid rounded-circle mb-3 img-thumbnail"
+                src="/board/tristan.jpeg"
+                alt="Tristan Théroux"
+                style="max-width: 130px;" />
+              <h5 class="mb-1">Tristan Théroux</h5>
+              <div class="small mb-1">
+                {{ i18n "Senior Systems and Network Administrator" }}
               </div>
+              <div class="small fw-light">Biron Health Group</div>
+              <div class="small fw-light">{{ i18n "Elected" }} 2026</div>
+              <div class="small fw-light">{{ i18n "Term ends" }} 2030</div>
             </div>
           </div>
         </div>
@@ -220,7 +235,7 @@
             <div class="al-foundation-info-card h-100">
               <h4>{{ i18n "Construction" }}</h4>
               <p>
-                {{ i18n "Up to 13 voting seats (six voting plus one non-voting invited expert currently). Four-year staggered terms. No employer holds more than one seat. Chair is elected by the board. Vacancies trigger a member vote, unless within three months of the next election." }}
+                {{ i18n "Up to 13 voting seats (eight voting seats currently). Four-year staggered terms. No employer holds more than one seat. Chair is elected by the board. Vacancies trigger a member vote, unless within three months of the next election." }}
               </p>
               <p class="mb-0">
                 <a href="/p/foundation-bylaws/#article-iv-board-of-directors"
@@ -342,25 +357,10 @@
           {{ i18n "Foundations we belong to" }}
         </h2>
         <p class="mb-4">
-          {{ i18n "AlmaLinux participates in industry foundations to keep our work aligned with the broader open-source ecosystem and to extend protection to our community." }}
+          {{ i18n "AlmaLinux is a member of these foundations so that our community is represented in them, and so we can connect with the AlmaLinux users in their communities." }}
         </p>
+        {{/* Ordered by join date, oldest first. "Member since" months come from LFX (Open Invention Network from the May 2021 announcement). */}}
         <div class="row g-4">
-          <div class="col-md-4">
-            <a
-              href="https://www.finos.org/members"
-              class="al-foundation-info-card h-100"
-              target="_blank"
-              rel="noopener">
-              <img
-                src="/foundation-images/FINOS_Icon_Wordmark_White.webp"
-                alt="FINOS"
-                class="al-foundation-org-logo"
-                loading="lazy" />
-              <p class="mb-0">
-                {{ i18n "Open-source foundation for the financial services industry. AlmaLinux is a member, expanding our reach into regulated environments." }}
-              </p>
-            </a>
-          </div>
           <div class="col-md-4">
             <a
               href="https://openinventionnetwork.com/community/almalinux-os-foundation/"
@@ -372,8 +372,52 @@
                 alt="Open Invention Network"
                 class="al-foundation-org-logo"
                 loading="lazy" />
+              <p class="al-foundation-member-since">
+                {{ i18n "Member since" }}
+                {{ time.Format "January 2006" "2021-05-01" }}
+              </p>
               <p class="mb-0">
                 {{ i18n "Defensive patent pool that shields Linux and adjacent open-source projects from patent threats." }}
+              </p>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://www.linuxfoundation.org/about/members"
+              class="al-foundation-info-card h-100"
+              target="_blank"
+              rel="noopener">
+              <img
+                src="/foundation-images/lf-stacked-white.svg"
+                alt="The Linux Foundation"
+                class="al-foundation-org-logo"
+                loading="lazy" />
+              <p class="al-foundation-member-since">
+                {{ i18n "Member since" }}
+                {{ time.Format "January 2006" "2021-07-01" }}
+              </p>
+              <p class="mb-0">
+                {{ i18n "Home of the Linux kernel and many of the open source projects AlmaLinux is built with. AlmaLinux is an associate member." }}
+              </p>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://www.finos.org/members"
+              class="al-foundation-info-card h-100"
+              target="_blank"
+              rel="noopener">
+              <img
+                src="/foundation-images/FINOS_Icon_Wordmark_White.webp"
+                alt="FINOS"
+                class="al-foundation-org-logo"
+                loading="lazy" />
+              <p class="al-foundation-member-since">
+                {{ i18n "Member since" }}
+                {{ time.Format "January 2006" "2021-07-01" }}
+              </p>
+              <p class="mb-0">
+                {{ i18n "Open source foundation for the financial services industry." }}
               </p>
             </a>
           </div>
@@ -388,8 +432,52 @@
                 alt="OpenHPC"
                 class="al-foundation-org-logo"
                 loading="lazy" />
+              <p class="al-foundation-member-since">
+                {{ i18n "Member since" }}
+                {{ time.Format "January 2006" "2025-03-01" }}
+              </p>
               <p class="mb-0">
-                {{ i18n "Community for high-performance computing. AlmaLinux is the supported HPC base for many of OpenHPC's reference stacks." }}
+                {{ i18n "Community for high-performance computing (HPC). OpenHPC publishes install guides for AlmaLinux 9 and AlmaLinux 10." }}
+              </p>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://openinfra.org/members/"
+              class="al-foundation-info-card h-100"
+              target="_blank"
+              rel="noopener">
+              <img
+                src="/foundation-images/openinfra-horiz-white.svg"
+                alt="OpenInfra Foundation"
+                class="al-foundation-org-logo"
+                loading="lazy" />
+              <p class="al-foundation-member-since">
+                {{ i18n "Member since" }}
+                {{ time.Format "January 2006" "2025-12-01" }}
+              </p>
+              <p class="mb-0">
+                {{ i18n "Home of OpenStack, Kata Containers, StarlingX, and Zuul." }}
+              </p>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://www.aswf.io/members/"
+              class="al-foundation-info-card h-100"
+              target="_blank"
+              rel="noopener">
+              <img
+                src="/foundation-images/aswf-logo-white.svg"
+                alt="Academy Software Foundation"
+                class="al-foundation-org-logo"
+                loading="lazy" />
+              <p class="al-foundation-member-since">
+                {{ i18n "Member since" }}
+                {{ time.Format "January 2006" "2026-08-01" }}
+              </p>
+              <p class="mb-0">
+                {{ i18n "Open source foundation for the motion picture and media industry, home of projects like OpenEXR and OpenColorIO." }}
               </p>
             </a>
           </div>
@@ -585,7 +673,37 @@
           {{ i18n "Awards & recognition" }}
         </h2>
         <div class="row g-4">
-          <div class="col-md-4">
+          <div class="col-md-6 col-lg-3">
+            <a
+              class="al-foundation-info-card h-100"
+              href="https://iba.stevieawards.com/awards/IBA-Winners/2026/Company-Organization-Category-Winners"
+              target="_blank"
+              rel="noopener">
+              <div class="al-foundation-award-eyebrow">
+                {{ i18n "2026 International Business Awards" }}
+              </div>
+              <h4>{{ i18n "Silver Stevie Award" }}</h4>
+              <p class="mb-0">
+                {{ i18n "Non-Profit or Government Organizations, Small." }}
+              </p>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <a
+              class="al-foundation-info-card h-100"
+              href="https://hermesawards.com/"
+              target="_blank"
+              rel="noopener">
+              <div class="al-foundation-award-eyebrow">
+                {{ i18n "2026 Hermes Creative Awards" }}
+              </div>
+              <h4>{{ i18n "Honorable Mention — Promotional Stickers" }}</h4>
+              <p class="mb-0">
+                {{ i18n "AlmaLinux Day: Germany sticker recognized for promotional creative." }}
+              </p>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3">
             <a
               class="al-foundation-info-card h-100"
               href="https://stevieawards.com/"
@@ -600,7 +718,7 @@
               </p>
             </a>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-6 col-lg-3">
             <a
               class="al-foundation-info-card h-100"
               href="https://www.einnews.com/pr_news/676482100/almalinux-os-foundation-named-a-nonprofit-organization-of-the-year-in-2023-best-in-biz-awards"
@@ -612,21 +730,6 @@
               <h4>{{ i18n "Gold — Nonprofit Organization of the Year" }}</h4>
               <p class="mb-0">
                 {{ i18n "Judged by editors and reporters from top-tier North American publications." }}
-              </p>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              class="al-foundation-info-card h-100"
-              href="https://hermesawards.com/"
-              target="_blank"
-              rel="noopener">
-              <div class="al-foundation-award-eyebrow">
-                {{ i18n "2026 Hermes Creative Awards" }}
-              </div>
-              <h4>{{ i18n "Honorable Mention — Promotional Stickers" }}</h4>
-              <p class="mb-0">
-                {{ i18n "AlmaLinux Day: Germany sticker recognized for promotional creative." }}
               </p>
             </a>
           </div>

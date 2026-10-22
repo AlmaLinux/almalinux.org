@@ -21,14 +21,18 @@ languages:
   da: { weight: 2, label: Dansk }
   de: { weight: 2, label: Deutsch }
   el: { weight: 2, label: Ελληνικά }
+  eo: { weight: 2, label: Esperanto }
   es: { weight: 2, label: Español }
+  et: { weight: 2, label: Eesti }
   fa: { weight: 2, label: فارسى }
   fi: { weight: 2, label: Suomi }
   fr: { weight: 2, label: Français }
   he: { weight: 2, label: עברית, direction: rtl }
   hu: { weight: 2, label: magyar }
+  id: { weight: 2, label: Bahasa Indonesia }
   it: { weight: 2, label: Italiano }
   ja: { weight: 2, label: 日本語 }
+  kk: { weight: 2, label: Қазақша }
   ko: { weight: 2, label: 한국어 }
   lt: { weight: 2, label: Lietuvių }
   lv: { weight: 2, label: latviešu }
@@ -37,7 +41,9 @@ languages:
   pt-br: { weight: 2, label: Português Brasileiro }
   ru: { weight: 2, label: Русский }
   sk: { weight: 2, label: Slovensky }
+  sr: { weight: 2, label: Српски }
   sv: { weight: 2, label: svenska }
+  ta: { weight: 2, label: தமிழ் }
   tr: { weight: 2, label: Türkçe }
   uk: { weight: 2, label: Українська }
   zh-hans: { weight: 2, label: 简体中文 }

@@ -4,6 +4,19 @@
     <td><a href="{{ .url }}">{{ .name }}</a></td>
     <td>{{ .signed_for }}</td>
     <td>{{ .verified_by }}</td>
-    <td>{{ i18n .expiry_label }} {{ .expiry_date }}</td>
+    {{/* expiry_label comes from the data file, so passing it straight to i18n
+      looked up a key the extraction script can never register: it only sees
+      literal i18n calls in templates. The result was an empty label and a bare
+      date. Branching on the value keeps both strings literal here, so they are
+      picked up and stay translatable.
+    */}}
+    <td>
+      {{ if eq .expiry_label "Expired" }}
+        {{ i18n "Expired" }}
+      {{ else }}
+        {{ i18n "Expires" }}
+      {{ end }}
+      {{ .expiry_date }}
+    </td>
   </tr>
 {{ end }}
