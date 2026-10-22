@@ -1145,7 +1145,6 @@
    "Creative production demands an OS that won't let you down mid-render, mid-shoot, or mid-deadline. AlmaLinux is the foundation trusted by VFX studios, animation houses, broadcasters, and game developers around the world, on everything from a single workstation to a render farm.": "Creative production demands an OS that won't let you down mid-render, mid-shoot, or mid-deadline. AlmaLinux is the foundation trusted by VFX studios, animation houses, broadcasters, and game developers around the world, on everything from a single workstation to a render farm.",
    "Curated media apps": "Curated media apps",
    "Direct collaboration with software vendors": "Direct collaboration with software vendors",
-   "Download pending": "Download pending",
    "Drop-in RHEL compatibility": "Drop-in RHEL compatibility",
    "Enterprise-grade stability, security, and long-term support, with AlmaLinux 10 as the base to be ready for the future with Wayland.": "Enterprise-grade stability, security, and long-term support, with AlmaLinux 10 as the base to be ready for the future with Wayland.",
    "Everything here runs on AlmaLinux. The Creative Installer sets up many of them for you, and the commercial suites install the same way they do anywhere else.": "Everything here runs on AlmaLinux. The Creative Installer sets up many of them for you, and the commercial suites install the same way they do anywhere else.",
@@ -1155,7 +1154,6 @@
    "For systems with a discrete NVIDIA card already installed. Proprietary drivers are baked in so 3D acceleration and CUDA work out of the box.": "For systems with a discrete NVIDIA card already installed. Proprietary drivers are baked in so 3D acceleration and CUDA work out of the box.",
    "From the M&E SIG": "From the M&E SIG",
    "Fully self-contained": "Fully self-contained",
-   "Get the Creative ISO": "Get the Creative ISO",
    "ISO with pre-installed NVIDIA drivers": "ISO with pre-installed NVIDIA drivers",
    "Image, video, 3D, and audio tools selected and tested for the pipeline. Every app currently available is tested to the best of our capacity at every change we make, on the Creative Installer and the ISO.": "Image, video, 3D, and audio tools selected and tested for the pipeline. Every app currently available is tested to the best of our capacity at every change we make, on the Creative Installer and the ISO.",
    "It also installs on its own from COPR, so an AlmaLinux 9 or 10 system you already have can pick up the same set without reinstalling. More than 40 apps are covered, and it turns on EPEL, CRB, RPM Fusion, Flathub, and the NVIDIA drivers for you.": "It also installs on its own from COPR, so an AlmaLinux 9 or 10 system you already have can pick up the same set without reinstalling. More than 40 apps are covered, and it turns on EPEL, CRB, RPM Fusion, Flathub, and the NVIDIA drivers for you.",
@@ -1193,7 +1191,6 @@
    "The M&E SIG wiki covers GPU drivers, VFX Reference Platform libraries, and software installation for common DCC tools.": "The M&E SIG wiki covers GPU drivers, VFX Reference Platform libraries, and software installation for common DCC tools.",
    "The Media & Entertainment SIG": "The Media & Entertainment SIG",
    "The Media & Entertainment SIG builds a ready-to-work Creative ISO with KDE Plasma and a curated set of open source media tools.": "The Media & Entertainment SIG builds a ready-to-work Creative ISO with KDE Plasma and a curated set of open source media tools.",
-   "The SIG meets on the first Wednesday of every month at 1:00 PM EST (18:00 UTC).": "The SIG meets on the first Wednesday of every month at 1:00 PM EST (18:00 UTC).",
    "Trusted by leading studios & production houses": "Trusted by leading studios & production houses",
    "Two builds, matched to your GPU. Picking the wrong one will fail to start the desktop, so check your hardware before you download.": "Two builds, matched to your GPU. Picking the wrong one will fail to start the desktop, so check your hardware before you download.",
    "Two ways in": "Two ways in",
@@ -1206,5 +1203,9 @@
    "Working in VFX, animation, or video?": "Working in VFX, animation, or video?",
    "Works with the tools you rely on": "Works with the tools you rely on",
    "almalinux-me-ec2 launches the official AlmaLinux 10 AMI on EC2 and configures it with Ansible into an M&E-style workstation: KDE Plasma, the open source creative suite, and a real remote desktop over Amazon DCV. No hardware to rack, spin it up and tear it down when you're done.": "almalinux-me-ec2 launches the official AlmaLinux 10 AMI on EC2 and configures it with Ansible into an M&E-style workstation: KDE Plasma, the open source creative suite, and a real remote desktop over Amazon DCV. No hardware to rack, spin it up and tear it down when you're done.",
-   "x86_64, aarch64, ppc64le, and s390x. Run your render farm on the hardware that makes sense for your pipeline.": "x86_64, aarch64, ppc64le, and s390x. Run your render farm on the hardware that makes sense for your pipeline."
+   "x86_64, aarch64, ppc64le, and s390x. Run your render farm on the hardware that makes sense for your pipeline.": "x86_64, aarch64, ppc64le, and s390x. Run your render farm on the hardware that makes sense for your pipeline.",
+   "About the Creative ISO": "About the Creative ISO",
+   "Ask about the ISO": "Ask about the ISO",
+   "The Creative ISO builds aren't published yet. If you have questions about them, the M&E SIG chat channel is the place to ask.": "The Creative ISO builds aren't published yet. If you have questions about them, the M&E SIG chat channel is the place to ask.",
+   "The SIG meets on the first Wednesday of every month at 1:00 PM Eastern Time (Montreal), which is 18:00 UTC in winter and 17:00 UTC in summer.": "The SIG meets on the first Wednesday of every month at 1:00 PM Eastern Time (Montreal), which is 18:00 UTC in winter and 17:00 UTC in summer."
 }

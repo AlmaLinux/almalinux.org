@@ -37,10 +37,12 @@
         </ul>
         {{/* The meeting time is also burned into the banner image beside this.
           Keeping it in text as well means screen readers and translators get
-          it, and it stays correct if the banner is ever redrawn.
+          it, and it stays correct if the banner is ever redrawn. The time is
+          set on Montreal's clock, which observes daylight saving, so the UTC
+          equivalent moves with the season.
         */}}
         <p class="mb-3">
-          {{ i18n "The SIG meets on the first Wednesday of every month at 1:00 PM EST (18:00 UTC)." }}
+          {{ i18n "The SIG meets on the first Wednesday of every month at 1:00 PM Eastern Time (Montreal), which is 18:00 UTC in winter and 17:00 UTC in summer." }}
         </p>
         <a
           href="https://wiki.almalinux.org/sigs/MediaAndEntertainmentSIG.html"
@@ -98,7 +100,7 @@
             {{ i18n "Chat with M&E users and contributors in the AlmaLinux community forums and the M&E SIG chat channel." }}
           </p>
           <a
-            href="https://chat.almalinux.org"
+            href="https://chat.almalinux.org/almalinux/channels/sig-media-entertainment"
             class="btn al-cta-blue px-4 mt-2"
             target="_blank"
             rel="noopener">
