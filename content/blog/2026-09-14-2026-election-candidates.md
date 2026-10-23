@@ -6,11 +6,12 @@ author:
   bio: "Member of the Election Committee, AlmaLinux OS Foundation"
   image: /images/elections2026/RodrigoDeAvila-small.webp
 date: "2026-09-14"
-images:
-  - /blog-images/2026/2026-09-14-2026-election-candidates.png
 post:
   title: "Nominations have closed and we have our ballot: two candidates for the two open Cohort A seats, and voting opens today. Meet Muuhh Ikeda and Tristan Theroux, and see why your vote still matters."
-  image: /blog-images/2026/2026-09-14-2026-election-candidates.png
+header:
+  template: election
+  title: "Meet the 2026 Board\nElection Candidates"
+  subtitle: "Help steer AlmaLinux"
 ---
 
 Nominations closed on September 8, and we have our ballot. Two people are running for the two open **Cohort A** seats: Muuhh Ikeda and Tristan Theroux.

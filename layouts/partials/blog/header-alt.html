@@ -2,7 +2,16 @@
 {{- with .Params.header -}}
   {{- $alt := replace .title "\n" " " -}}
   {{- with replace .subtitle "\n" " " -}}
-    {{- $alt = printf "%s. %s" $alt . -}}
+    {{- $sep := cond (findRE `[.!?:]$` $alt) " " ". " -}}
+    {{- $alt = printf "%s%s%s" $alt $sep . -}}
+  {{- end -}}
+  {{- $captions := slice -}}
+  {{- range .images -}}
+    {{- with .caption }}{{ $captions = $captions | append . }}{{ end -}}
+  {{- end -}}
+  {{- with $captions -}}
+    {{- $sep := cond (findRE `[.!?:]$` $alt) " " ". " -}}
+    {{- $alt = printf "%s%sPictured: %s" $alt $sep (delimit . ", " " and ") -}}
   {{- end -}}
   {{- $alt -}}
 {{- end -}}
