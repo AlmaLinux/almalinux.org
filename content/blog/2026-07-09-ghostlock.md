@@ -6,11 +6,12 @@ author:
   bio: "AlmaLinux Lead Architect"
   image: /users/alukoshko.jpg
 date: "2026-07-09"
-images:
-  - /blog-images/2026/2026-07-09-ghostlock.png
 post:
   title: "GhostLock (CVE-2026-43499) is a use-after-free in the kernel's real-time mutex code that lets an unprivileged local user escalate to root and escape containers. It has been present since 2011 and affects every supported AlmaLinux release. Patched kernels are in the testing repository now — please help us verify them."
-  image: /blog-images/2026/2026-07-09-ghostlock.png
+header:
+  template: vulnerability
+  title: "GhostLock: patched"
+  subtitle: "CVE-2026-43499"
 ---
 
 ## Update: The fix is now in production

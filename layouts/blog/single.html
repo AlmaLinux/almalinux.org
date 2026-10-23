@@ -36,7 +36,14 @@
           </div>
 
           <div class="al-article-content pb-5 al-wysiwyg">
-            {{ with .Params.post.image }}
+            {{ with partial "blog/header-image.html" . }}
+              <div class="mx-auto" style="max-width: 850px">
+                <img
+                  style="max-width: 100%; height: auto;"
+                  src="{{ . }}"
+                  alt="{{ partial "blog/header-alt.html" $ }}" />
+              </div>
+            {{ else with .Params.post.image }}
               <div class="mx-auto" style="max-width: 850px">
                 <img style="max-width: 100%; height: auto;" src="{{ . }}" />
               </div>

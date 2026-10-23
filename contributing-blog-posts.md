@@ -65,6 +65,56 @@ post:
 - A post **image** should be included, and will be displayed both on the [almalinux.org/blog/](almalinux.org/blog/) feed, and as the header image on the full-page blog post. Use this template to get started: `./static/blog-images/blog_images_template.svg`
   - Your image should not violate any trademarks or copyrights, and should be relevant to blog content. Once created, a PNG version of your image should be placed in `./static/blog-images/` The file will serve from `/blog-images/`, so do not change the beginning of this path.
 
+**Generated header images**
+
+For posts that follow a standard look (security advisories, for example), you don't need to make an image. Replace `images` and the post `image` with a `header` block, and Hugo draws the text onto a template when it builds the site:
+
+```yaml
+header:
+  template: vulnerability
+  title: "GhostLock: patched"
+  subtitle: "CVE-2026-43499"
+```
+
+- The image is used as the header, on the blog listing, and as the social image, with the title and subtitle as its alt text.
+- Keep the title short (about 20 characters fits on one line). Longer titles wrap upward. To choose where a title breaks, write it with a line break: `title: "Januscape and\nBad Epoll: patched"`.
+- The subtitle is optional.
+- If the text doesn't fit the template well, you can override any of the template's options for this post under `style`, for example a smaller title:
+
+  ```yaml
+  header:
+    template: vulnerability
+    title: "IPV6_FRAG_ESCAPE: patched"
+    subtitle: "Call for testing"
+    style:
+      title:
+        size: 120
+  ```
+
+  The options are the ones listed for `title` and `subtitle` in `data/header_templates.yaml`.
+
+- To add pictures, such as portraits, list them under `images`. Each picture is a file in `./static/`, placed with its top-left corner at `x`, `y` (the image is 1920x1080) and cropped to `width` x `height`. A `caption` is drawn centered below it, if the template has a caption style. You'll usually need to move the title up to make room:
+
+  ```yaml
+  header:
+    template: election
+    title: "Meet our new\nBoard Members"
+    style:
+      title:
+        y: 440
+    images:
+      - src: /blog-images/2026/munehiro.ikeda.png
+        x: 555
+        y: 500
+        width: 270
+        height: 270
+        caption: "Munehiro Ikeda"
+  ```
+
+  Captions are added to the alt text.
+
+- Templates are listed in `data/header_templates.yaml`, and their backgrounds live in `assets/header-templates/`. To add one, export a background with the logo but no text at 1920x1080, put it in that folder, and add an entry with the font, size and position of each line.
+
 **The meat of your post**
 
 - Below the --- of the metadata block, you should place the content of your blog post. This content should be in markdown format, and any images you want to include in your post can be added to `./static/blog-images/` and will serve from `/blog-images/`.
