@@ -560,7 +560,6 @@
     "All sponsor memberships renew annually and need Membership Committee approval. In-kind sponsorships also require board approval.": "Semua keanggotaan sponsor diperbarui setiap tahun dan memerlukan persetujuan Komite Keanggotaan. Sponsorship dalam bentuk natura juga memerlukan persetujuan dewan.",
     "AlmaLinux Day: Germany sticker recognized for promotional creative.": "Stiker AlmaLinux Day: Germany mendapatkan pengakuan untuk materi promosi kreatif.",
     "AlmaLinux OS Foundation Membership": "Keanggotaan AlmaLinux OS Foundation",
-    "AlmaLinux participates in industry foundations to keep our work aligned with the broader open-source ecosystem and to extend protection to our community.": "AlmaLinux berpartisipasi dalam foundation industri untuk menjaga agar pekerjaan kami tetap selaras dengan ekosistem open-source yang lebih luas dan untuk memperluas perlindungan kepada komunitas kami.",
     "Annual": "Tahunan",
     "Apply Gold": "Ajukan Gold",
     "Apply Platinum": "Ajukan Platinum",
@@ -583,7 +582,6 @@
     "Cloud network operating system for Arista switches and routers; userland rebased to AlmaLinux 9 starting with EOS 4.32.": "Sistem operasi jaringan cloud untuk switch dan router Arista; userland di-rebase ke AlmaLinux 9 mulai EOS 4.32.",
     "Cloud platform": "Platform cloud",
     "Communications platform": "Platform komunikasi",
-    "Community for high-performance computing. AlmaLinux is the supported HPC base for many of OpenHPC's reference stacks.": "Komunitas untuk high-performance computing. AlmaLinux adalah basis HPC yang didukung untuk banyak stack referensi OpenHPC.",
     "Companies and projects build on AlmaLinux — from downstream Linux distributions to commercial appliances and management platforms. The list below reflects what we know publicly — confirmed entries only.": "Perusahaan dan proyek membangun di atas AlmaLinux — mulai dari distribusi Linux turunan hingga appliance komersial dan platform manajemen. Daftar di bawah ini mencerminkan apa yang kami ketahui secara publik — hanya entri yang telah dikonfirmasi.",
     "Compare all four sponsor tiers": "Bandingkan keempat tingkat sponsor",
     "Conflicts of interest disclosed; interested transactions require approval by disinterested directors. No paid board roles. The Code of Conduct applies.": "Konflik kepentingan diungkapkan; transaksi yang memiliki kepentingan memerlukan persetujuan dari direktur yang tidak berkepentingan. Tidak ada peran dewan yang dibayar. Kode Etik berlaku.",
@@ -626,7 +624,6 @@
     "Nominate board candidates": "Nominasikan kandidat dewan",
     "Open governance": "Tata kelola terbuka",
     "Open source advocate, former president of OSI": "Advokat open source, mantan presiden OSI",
-    "Open-source foundation for the financial services industry. AlmaLinux is a member, expanding our reach into regulated environments.": "Foundation open-source untuk industri layanan keuangan. AlmaLinux menjadi anggota, memperluas jangkauan kami ke environment yang teregulasi.",
     "OpenStack-based cloud-management platform built on AlmaLinux.": "Platform manajemen cloud berbasis OpenStack yang dibangun di atas AlmaLinux.",
     "Operations": "Operasional",
     "Organization of the Year — Non-Profit.": "Organisasi Tahun Ini — Nirlaba.",
@@ -1115,5 +1112,12 @@
     "Promo SIG": "SIG Promosi",
     "Questions? Ask the Promo SIG": "Ada pertanyaan? Tanyakan kepada SIG Promosi",
     "Reach the Promo SIG on chat.almalinux.org, including for the latest presentation template.": "Hubungi SIG Promosi di chat.almalinux.org, termasuk untuk mendapatkan templat presentasi terbaru.",
-    "To contribute by writing a blog post, working at an event, designing, translating, or any other non-technical contribution you can think of, the Promo SIG is a great place to start!": "Jika Anda ingin berkontribusi dengan menulis artikel blog, membantu penyelenggaraan acara, membuat desain, menerjemahkan, atau memberikan kontribusi nonteknis lainnya, SIG Promosi adalah tempat yang tepat untuk memulai!"
+    "To contribute by writing a blog post, working at an event, designing, translating, or any other non-technical contribution you can think of, the Promo SIG is a great place to start!": "Jika Anda ingin berkontribusi dengan menulis artikel blog, membantu penyelenggaraan acara, membuat desain, menerjemahkan, atau memberikan kontribusi nonteknis lainnya, SIG Promosi adalah tempat yang tepat untuk memulai!",
+    "Home of OpenStack, Kata Containers, StarlingX, and Zuul.": "Wadah bagi OpenStack, Kata Containers, StarlingX, dan Zuul.",
+    "Home of the Linux kernel and many of the open source projects AlmaLinux is built with. AlmaLinux is an associate member.": "Wadah bagi kernel Linux dan berbagai proyek sumber terbuka yang digunakan untuk membangun AlmaLinux. AlmaLinux merupakan anggota asosiasi.",
+    "Member since": "Anggota sejak",
+    "Open source foundation for the motion picture and media industry, home of projects like OpenEXR and OpenColorIO.": "Yayasan sumber terbuka untuk industri perfilman dan media yang menaungi proyek seperti OpenEXR dan OpenColorIO.",
+    "AlmaLinux is a member of these foundations so that our community is represented in them, and so we can connect with the AlmaLinux users in their communities.": "AlmaLinux menjadi anggota yayasan-yayasan ini agar komunitas kami terwakili di dalamnya, sekaligus agar kami dapat terhubung dengan pengguna AlmaLinux di komunitas mereka.",
+    "Community for high-performance computing (HPC). OpenHPC publishes install guides for AlmaLinux 9 and AlmaLinux 10.": "Komunitas komputasi berkinerja tinggi (HPC). OpenHPC menerbitkan panduan instalasi untuk AlmaLinux 9 dan AlmaLinux 10.",
+    "Open source foundation for the financial services industry.": "Yayasan sumber terbuka untuk industri jasa keuangan."
 }

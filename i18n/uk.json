@@ -561,7 +561,6 @@
     "All sponsor memberships renew annually and need Membership Committee approval. In-kind sponsorships also require board approval.": "Усі членства спонсорів щорічно поновлюються та потребують схвалення Комітету з членства. Негрошове спонсорство також потребує схвалення правління.",
     "AlmaLinux Day: Germany sticker recognized for promotional creative.": "AlmaLinux Day: наліпка з Німеччини отримала визнання за креативність у рекламі.",
     "AlmaLinux OS Foundation Membership": "Членство у Фонді AlmaLinux OS",
-    "AlmaLinux participates in industry foundations to keep our work aligned with the broader open-source ecosystem and to extend protection to our community.": "AlmaLinux бере участь у діяльності галузевих фондів, щоб забезпечити узгодженість нашої роботи з більш широкою екосистемою відкритого програмного забезпечення та посилити захист нашої спільноти.",
     "Annual": "Щорічний",
     "Apply Gold": "Застосувати Золото",
     "Apply Platinum": "Застосувати Platinum",
@@ -584,7 +583,6 @@
     "Cloud network operating system for Arista switches and routers; userland rebased to AlmaLinux 9 starting with EOS 4.32.": "Хмарна мережева операційна система для комутаторів і маршрутизаторів Arista; користувацьке середовище перенесено на AlmaLinux 9, починаючи з версії EOS 4.32.",
     "Cloud platform": "Хмарна платформа",
     "Communications platform": "Комунікаційна платформа",
-    "Community for high-performance computing. AlmaLinux is the supported HPC base for many of OpenHPC's reference stacks.": "Спільнота з високопродуктивних обчислень. AlmaLinux є офіційно підтримуваною базовою платформою для багатьох еталонних стеків OpenHPC.",
     "Companies and projects build on AlmaLinux — from downstream Linux distributions to commercial appliances and management platforms. The list below reflects what we know publicly — confirmed entries only.": "На базі AlmaLinux створюються компанії та проєкти — від похідних дистрибутивів Linux до комерційних пристроїв та платформ управління. Наведений нижче перелік містить лише ті відомості, які є загальнодоступними, — виключно підтверджені записи.",
     "Compare all four sponsor tiers": "Порівняйте всі чотири рівні спонсорства",
     "Conflicts of interest disclosed; interested transactions require approval by disinterested directors. No paid board roles. The Code of Conduct applies.": "Розкрито інформацію про конфлікти інтересів; угоди, що становлять інтерес, підлягають затвердженню незалежними членами ради директорів. Члени ради директорів не отримують винагороди за виконання своїх обов’язків. Застосовується Кодекс поведінки.",
@@ -627,7 +625,6 @@
     "Nominate board candidates": "Висунути кандидатів до складу правління",
     "Open governance": "Відкрите врядування",
     "Open source advocate, former president of OSI": "Прихильник відкритого програмного забезпечення, колишній президент OSI",
-    "Open-source foundation for the financial services industry. AlmaLinux is a member, expanding our reach into regulated environments.": "Фонд з відкритим кодом для галузі фінансових послуг. AlmaLinux є його членом, що розширює нашу присутність у регульованих середовищах.",
     "OpenStack-based cloud-management platform built on AlmaLinux.": "Платформа для управління хмарними середовищами на базі OpenStack, створена на базі AlmaLinux.",
     "Operations": "Операції",
     "Organization of the Year — Non-Profit.": "Організація року — некомерційна.",
@@ -1115,5 +1112,12 @@
     "Promo SIG": "Промо SIG",
     "Questions? Ask the Promo SIG": "Є питання? Зверніться до Promo SIG",
     "Reach the Promo SIG on chat.almalinux.org, including for the latest presentation template.": "Зверніться до групи Promo SIG на сайті chat.almalinux.org, зокрема щоб отримати найновіший шаблон презентації.",
-    "To contribute by writing a blog post, working at an event, designing, translating, or any other non-technical contribution you can think of, the Promo SIG is a great place to start!": "Якщо ви хочете долучитися до справи, написавши допис у блозі, працюючи на заході, займаючись дизайном, перекладами чи будь-якою іншою нетехнічною діяльністю, яка вам спаде на думку, Promo SIG — це чудове місце для початку!"
+    "To contribute by writing a blog post, working at an event, designing, translating, or any other non-technical contribution you can think of, the Promo SIG is a great place to start!": "Якщо ви хочете долучитися до справи, написавши допис у блозі, працюючи на заході, займаючись дизайном, перекладами чи будь-якою іншою нетехнічною діяльністю, яка вам спаде на думку, Promo SIG — це чудове місце для початку!",
+    "Home of OpenStack, Kata Containers, StarlingX, and Zuul.": "Домівка OpenStack, Kata Containers, StarlingX та Zuul.",
+    "Home of the Linux kernel and many of the open source projects AlmaLinux is built with. AlmaLinux is an associate member.": "Це осередок ядра Linux та багатьох проєктів з відкритим кодом, на основі яких створено AlmaLinux. AlmaLinux є асоційованим членом цієї організації.",
+    "Member since": "Член з",
+    "Open source foundation for the motion picture and media industry, home of projects like OpenEXR and OpenColorIO.": "Фонд з відкритим кодом для кіно- та медіа-індустрії, де реалізуються такі проєкти, як OpenEXR та OpenColorIO.",
+    "AlmaLinux is a member of these foundations so that our community is represented in them, and so we can connect with the AlmaLinux users in their communities.": "AlmaLinux є членом цих фондів, щоб наша спільнота була в них представлена, а також щоб ми могли налагоджувати зв’язки з користувачами AlmaLinux у їхніх спільнотах.",
+    "Community for high-performance computing (HPC). OpenHPC publishes install guides for AlmaLinux 9 and AlmaLinux 10.": "Спільнота, що займається високопродуктивними обчисленнями (HPC). OpenHPC публікує посібники з інсталяції для AlmaLinux 9 та AlmaLinux 10.",
+    "Open source foundation for the financial services industry.": "Фонд відкритого програмного забезпечення для галузі фінансових послуг."
 }

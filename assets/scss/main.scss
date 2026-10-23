@@ -118,6 +118,17 @@ button:focus, .btn:focus{
     border: none;
   }
 
+  // The navbar is sticky, so on small screens an open menu taller than the
+  // viewport can't be scrolled into view. Scroll the menu itself instead.
+  @media (max-width: 1199.98px) {
+    .navbar-collapse {
+      max-height: calc(100vh - 4.5rem);
+      max-height: calc(100dvh - 4.5rem);
+      overflow-y: auto;
+      overscroll-behavior: contain;
+    }
+  }
+
   .dropdown-menu-dark {
     background: $al-c-black-pearl;
     border: 0;
