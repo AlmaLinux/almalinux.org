@@ -79,6 +79,20 @@ header:
 - The image is used as the header, on the blog listing, and as the social image, with the title and subtitle as its alt text.
 - Keep the title short (about 20 characters fits on one line). Longer titles wrap upward. To choose where a title breaks, write it with a line break: `title: "Januscape and\nBad Epoll: patched"`.
 - The subtitle is optional.
+- If the text doesn't fit the template well, you can override any of the template's options for this post under `style`, for example a smaller title:
+
+  ```yaml
+  header:
+    template: vulnerability
+    title: "IPV6_FRAG_ESCAPE: patched"
+    subtitle: "Call for testing"
+    style:
+      title:
+        size: 120
+  ```
+
+  The options are the ones listed for `title` and `subtitle` in `data/header_templates.yaml`.
+
 - Templates are listed in `data/header_templates.yaml`, and their backgrounds live in `assets/header-templates/`. To add one, export a background with the logo but no text at 1920x1080, put it in that folder, and add an entry with the font, size and position of each line.
 
 **The meat of your post**
