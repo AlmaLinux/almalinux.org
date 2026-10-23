@@ -22,7 +22,14 @@
   {{- $filters := slice -}}
   {{- range $field := slice "title" "subtitle" -}}
     {{- with index $header $field -}}
-      {{- $style := index $tpl $field -}}
+      {{- /* A post can override the template's options per line with header.style.title / header.style.subtitle. */ -}}
+      {{- $override := index ($header.style | default dict) $field | default dict -}}
+      {{- range $key, $_ := $override -}}
+        {{- if not (isset (index $tpl $field) $key) -}}
+          {{- errorf "%s: unknown header style option %s.%s (see data/header_templates.yaml)" $page.File.Path $field $key -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $style := merge (index $tpl $field) $override -}}
       {{- $opts := merge $style (dict "font" (resources.Get $style.font)) -}}
       {{- $filters = $filters | append (images.Text . $opts) -}}
     {{- end -}}

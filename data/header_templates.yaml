@@ -24,6 +24,9 @@
 #             grows upward instead of running into the subtitle)
 #     linespacing: extra pixels between wrapped lines
 #     color:  hex color
+#
+# A post can override any title / subtitle option for itself under
+# header.style.title or header.style.subtitle in its front matter.
 
 vulnerability:
   background: vulnerability.png
