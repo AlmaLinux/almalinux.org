@@ -1,0 +1,146 @@
+{{/* The platform underneath.
+
+  The argument for AlmaLinux itself, which lands after the visitor has seen the
+  concrete thing. The software grid mixes tools the Creative Installer sets up
+  with commercial suites you install yourself, so the sub-line says so rather
+  than implying one or the other.
+*/}}
+
+
+<!-- ═══════════════════════════════════════════════════════
+     BUILT FOR THE DEMANDS OF PRODUCTION
+════════════════════════════════════════════════════════ -->
+<section id="why-almalinux" class="al-mae-why al-py-lg">
+  <div class="container">
+    <h2 class="text-center mb-2">
+      {{ i18n "Built for the demands of production" }}
+    </h2>
+    <p class="text-center al-text-muted mb-5">
+      {{ i18n "AlmaLinux delivers what creative pipelines require: long-term stability, enterprise-grade reliability, and a community that moves at production speed." }}
+    </p>
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4">
+        <i
+          class="bi bi-shield-check al-mae-feature-icon"
+          aria-hidden="true"></i>
+        <h3 class="h4">{{ i18n "10-year support lifecycle" }}</h3>
+        <p>
+          {{ i18n "Ship a project today knowing AlmaLinux 9 is supported through 2032. No forced migrations mid-production." }}
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <i class="bi bi-box-seam al-mae-feature-icon" aria-hidden="true"></i>
+        <h3 class="h4">{{ i18n "Drop-in RHEL compatibility" }}</h3>
+        <p>
+          {{ i18n "Binary-compatible with RHEL, so every application certified for RHEL runs on AlmaLinux without requalification." }}
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <i class="bi bi-people al-mae-feature-icon" aria-hidden="true"></i>
+        <h3 class="h4">{{ i18n "Community-owned, vendor-free" }}</h3>
+        <p>
+          {{ i18n "No licensing fees. No corporate lock-in. A foundation governed by its members, including people from the creative industry." }}
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <i class="bi bi-cpu al-mae-feature-icon" aria-hidden="true"></i>
+        <h3 class="h4">{{ i18n "Multi-architecture" }}</h3>
+        <p>
+          {{ i18n "x86_64, aarch64, ppc64le, and s390x. Run your render farm on the hardware that makes sense for your pipeline." }}
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <i class="bi bi-cloud al-mae-feature-icon" aria-hidden="true"></i>
+        <h3 class="h4">{{ i18n "Cloud & hybrid pipelines" }}</h3>
+        <p>
+          {{ i18n "Official images on AWS, Azure, GCP, and OpenNebula. Burst renders to the cloud without changing your base OS." }}
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <i class="bi bi-lock al-mae-feature-icon" aria-hidden="true"></i>
+        <h3 class="h4">{{ i18n "Security & compliance" }}</h3>
+        <p>
+          {{ i18n "FIPS 140-3 support, OVAL feeds, and regular CVE patches. Meet studio and facility security requirements out of the box." }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     WORKS ON: VFX software logos
+════════════════════════════════════════════════════════ -->
+<section id="works-with" class="al-mae-software al-py-lg">
+  <div class="container">
+    <h2 class="text-center mb-2">
+      {{ i18n "Works with the tools you rely on" }}
+    </h2>
+    <p class="text-center al-text-muted mb-5 mx-auto al-mae-iso-measure">
+      {{ i18n "Everything here runs on AlmaLinux. The Creative Installer sets up many of them for you, and the commercial suites install the same way they do anywhere else." }}
+    </p>
+
+    {{/* Ordered by discipline so related tools sit together: VFX and 3D,
+      animation and 2D, editorial and broadcast and audio, then games.
+
+      These are the vendors' own marks, recoloured to white on transparent and
+      otherwise unaltered. Each takes its product name as alt text, and the
+      permanent label below the tile repeats it in plain text. An entry with no
+      "logo" key falls back to a text chip instead.
+    */}}
+    {{ $software := slice
+      (dict "name" "Houdini" "logo" "/landingpages/mae/software/houdini-white.svg" "url" "https://www.sidefx.com/")
+      (dict "name" "Nuke" "logo" "/landingpages/mae/software/nuke-white.svg" "url" "https://www.foundry.com/products/nuke-family/nuke")
+      (dict "name" "Maya" "logo" "/landingpages/mae/software/maya-white.svg" "url" "https://www.autodesk.com/products/maya/overview")
+      (dict "name" "Katana" "logo" "/landingpages/mae/software/katana-white.svg" "url" "https://www.foundry.com/products/katana")
+      (dict "name" "Mari" "logo" "/landingpages/mae/software/mari-white.svg" "url" "https://www.foundry.com/products/mari")
+      (dict "name" "Arnold" "logo" "/landingpages/mae/software/arnold-white.svg" "url" "https://www.autodesk.com/products/arnold/overview")
+      (dict "name" "RenderMan" "logo" "/landingpages/mae/software/renderman-white.svg" "url" "https://renderman.pixar.com/")
+      (dict "name" "V-Ray" "logo" "/landingpages/mae/software/vray-white.svg" "url" "https://www.chaos.com/vray")
+      (dict "name" "Blender" "logo" "/landingpages/mae/software/blender-white.svg" "url" "https://www.blender.org/")
+      (dict "name" "Gaffer" "logo" "/landingpages/mae/software/gaffer-white.svg" "url" "https://www.gafferhq.org/")
+      (dict "name" "Natron" "logo" "/landingpages/mae/software/natron-white.svg" "url" "https://natrongithub.github.io/")
+      (dict "name" "OpenColorIO" "logo" "/landingpages/mae/software/opencolorio-white.svg" "url" "https://opencolorio.org/")
+      (dict "name" "3DCoat" "logo" "/landingpages/mae/software/3dcoat-white.svg" "url" "https://3dcoat.com/")
+      (dict "name" "OpenToonz" "logo" "/landingpages/mae/software/opentoonz-white.svg" "url" "https://opentoonz.github.io/")
+      (dict "name" "Krita" "logo" "/landingpages/mae/software/krita-white.svg" "url" "https://krita.org/")
+      (dict "name" "GIMP" "logo" "/landingpages/mae/software/gimp-white.svg" "url" "https://www.gimp.org/")
+      (dict "name" "Inkscape" "logo" "/landingpages/mae/software/inkscape-white.svg" "url" "https://inkscape.org/")
+      (dict "name" "DaVinci Resolve" "logo" "/landingpages/mae/software/davinci-resolve-white.svg" "url" "https://www.blackmagicdesign.com/products/davinciresolve")
+      (dict "name" "OBS Studio" "logo" "/landingpages/mae/software/obs-studio-white.svg" "url" "https://obsproject.com/")
+      (dict "name" "Ardour" "logo" "/landingpages/mae/software/ardour-white.svg" "url" "https://ardour.org/")
+      (dict "name" "Audacity" "logo" "/landingpages/mae/software/audacity-white.svg" "url" "https://www.audacityteam.org/")
+      (dict "name" "Unreal Engine" "logo" "/landingpages/mae/software/unreal-engine-white.svg" "url" "https://www.unrealengine.com/")
+      (dict "name" "Godot Engine" "logo" "/landingpages/mae/software/godot-engine-white.svg" "url" "https://godotengine.org/")
+    }}
+    <div class="al-mae-software-grid">
+      {{ range $software }}
+        {{/* The name under each tile is permanent. Several of these marks
+          are symbols rather than wordmarks, so the label is what tells you
+          which application a tile is for, without relying on logo recognition.
+        */}}
+        <div class="al-mae-software-entry">
+          {{/* Every entry carries a "url" to its project, so the tile is the
+            link. The label below it is plain text, to keep one link per tile.
+          */}}
+          <a
+            class="al-mae-software-item"
+            href="{{ .url }}"
+            target="_blank"
+            rel="noopener">
+            {{ if .logo }}
+              <img src="{{ .logo }}" alt="{{ .name }}" loading="lazy" />
+            {{ else }}
+              <span>{{ .name }}</span>
+            {{ end }}
+          </a>
+          <span class="al-mae-software-label">{{ .name }}</span>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

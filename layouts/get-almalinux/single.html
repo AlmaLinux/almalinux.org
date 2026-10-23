@@ -16,6 +16,27 @@
               {{ i18n "Quickstart: How will you use AlmaLinux OS?" }}
             </h2>
             {{ partial "get-almalinux/persona-cards" . }}
+
+            {{/* Creative work has its own prepared image, built by the M&E
+              SIG, so point that audience at it rather than the generic ISOs.
+            */}}
+            <a
+              class="al-creative-callout"
+              href="{{ "/for/media-and-entertainment#creative-iso" | relLangURL }}">
+              <i class="bi bi-palette" aria-hidden="true"></i>
+              <span class="al-creative-callout-text">
+                <span class="al-creative-callout-title">
+                  {{ i18n "Working in VFX, animation, or video?" }}
+                </span>
+                <span class="al-creative-callout-desc">
+                  {{ i18n "The Media & Entertainment SIG builds a ready-to-work Creative ISO with KDE Plasma and a curated set of open source media tools." }}
+                </span>
+              </span>
+              <span class="al-creative-callout-cta">
+                {{ i18n "See the Creative ISO" }}
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </span>
+            </a>
           </div>
 
           <!-- AlmaLinux OS Version & Architecture Tabs -->
