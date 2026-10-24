@@ -19,14 +19,23 @@ Automatically installs the following extensions for optimal Hugo development:
 
 - **Base Image:** Utilizes the latest AlmaLinux image for compatibility and security.
 - **System Updates:** Ensures all system packages are up-to-date.
-- **Software Installation:** Includes essential tools like `git`, `python3`, `python3-pyyaml`, `wget`, `tar`, `shadow-utils`, and `sudo`.
-- **Hugo Installation:** Fetches and installs Hugo with dynamic version support:
-  - If `VERSION` is set to `latest`, it downloads the latest Hugo extended binary.
-  - If a specific version is provided e.g. `v0.139.1`, it downloads and installs that version. This can be specified in `devcontainer.json` under `build.args`.
+- **Software Installation:** Includes essential tools like `git`, `python3`, `python3-pyyaml`, Node.js 24 with npm, `shadow-utils`, and `sudo`.
+- **Hugo Installation:** Runs `npm ci` against the repository's `package.json` and `package-lock.json`, which installs Hugo (extended), Dart Sass and Pagefind at the same pinned versions CI uses. To change a version, update it in `package.json` and rebuild the container. The build context is the repository root, but `Dockerfile.dockerignore` limits it to those two files.
 
 - **User Management:** Creates and configures an `alma_www_user` with sudo privileges to enhance security and usability.
 - **Port Exposure:** Exposes port 1313 to allow Hugo's development server to be accessed externally.
 - **Working Directory:** Sets the working directory to the specified `WORKSPACE_DIR`.
+
+## Building the Image Without an Editor
+
+To build and run the same image directly with Podman or Docker, run these from the repository root:
+
+```bash
+podman build -f .devcontainer/Dockerfile --build-arg WORKSPACE_DIR=/src -t almalinux-www .
+podman run --rm -p 1313:1313 --userns=keep-id -v "$PWD":/src:Z almalinux-www
+```
+
+Rebuild the image whenever the versions in `package.json` change. Site edits don't need a rebuild, because the repository is mounted into the container.
 
 ## Accessing the Live Server
 

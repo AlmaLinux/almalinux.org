@@ -1,10 +1,14 @@
 // Foundation page tokens & utilities
 // Component classes are added in subsequent tasks.
 
+@use "sass:color";
+
+@use "variables";
+
 $al-foundation-band-deep: #0e3b5c;
 $al-foundation-divider:   #14598a;
 $al-foundation-card-bg:   rgb(14, 59, 92);
-$al-foundation-pullquote-accent: $al-c-atlantis; // #86da2f
+$al-foundation-pullquote-accent: variables.$al-c-atlantis; // #86da2f
 
 // Band utility — body background already covers the mid band, deep is opt-in
 .al-foundation-band-deep {
@@ -67,7 +71,7 @@ $al-foundation-pullquote-accent: $al-c-atlantis; // #86da2f
     font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: $al-c-candlelight;
+    color: variables.$al-c-candlelight;
     font-weight: 700;
     margin-bottom: 0.4rem;
   }
@@ -79,7 +83,7 @@ $al-foundation-pullquote-accent: $al-c-atlantis; // #86da2f
     text-decoration: none;
 
     &:hover {
-      background: lighten($al-foundation-card-bg, 4%);
+      background: color.adjust($al-foundation-card-bg, $lightness: 4%, $space: hsl);
     }
   }
 }
@@ -99,7 +103,7 @@ $al-foundation-pullquote-accent: $al-c-atlantis; // #86da2f
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 700;
-  color: $al-c-candlelight;
+  color: variables.$al-c-candlelight;
   margin-top: -0.25rem;
   margin-bottom: 0.75rem;
 }
@@ -189,7 +193,7 @@ $al-foundation-pullquote-accent: $al-c-atlantis; // #86da2f
 
   thead th {
     background: rgba(255, 203, 18, 0.1);
-    color: $al-c-candlelight;
+    color: variables.$al-c-candlelight;
     text-transform: uppercase;
     font-size: 0.75rem;
     letter-spacing: 0.06em;

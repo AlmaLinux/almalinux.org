@@ -1,3 +1,5 @@
+@use "variables";
+
 // Common Criteria certification press landing page (/security/cc-certification)
 // Scoped under .al-ccc. Reuses the foundation design system for bands and titles.
 .al-ccc {
@@ -23,7 +25,7 @@
     font-weight: 700;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
-    border-bottom: 2px solid $al-c-candlelight;
+    border-bottom: 2px solid variables.$al-c-candlelight;
   }
 
   .al-ccc-infobox-verify {
@@ -57,7 +59,7 @@
       letter-spacing: 0.05em;
       font-size: 0.7rem;
       font-weight: 700;
-      color: $al-c-candlelight;
+      color: variables.$al-c-candlelight;
       margin-bottom: 0.2rem;
     }
 
