@@ -1,12 +1,14 @@
+@use "variables";
+
 // Styling for the custom two-column (morning / afternoon) event schedule rendered
 // by the event-schedule shortcode from a Sessionize "view/All" JSON export.
 // Scoped under .al-schedule; dark event theme to match the rest of the page.
 
 $al-sched-accent: #24c2ff; // matches the accent used elsewhere on the LA page
-$al-sched-panel: $al-c-black-pearl; // #082336
-$al-sched-panel-2: $al-c-black-pearl-lighter; // #264154
-$al-sched-text: $al-c-soft-peach; // near-white
-$al-sched-muted: rgba($al-c-soft-peach, 0.65);
+$al-sched-panel: variables.$al-c-black-pearl; // #082336
+$al-sched-panel-2: variables.$al-c-black-pearl-lighter; // #264154
+$al-sched-text: variables.$al-c-soft-peach; // near-white
+$al-sched-muted: rgba(variables.$al-c-soft-peach, 0.65);
 
 .al-schedule {
   &__note {
@@ -16,7 +18,7 @@ $al-sched-muted: rgba($al-c-soft-peach, 0.65);
   }
 
   &__heading {
-    font-family: $al-font-family-accent;
+    font-family: variables.$al-font-family-accent;
     font-weight: 600;
     font-size: 1rem;
     text-transform: uppercase;
@@ -58,7 +60,7 @@ $al-sched-muted: rgba($al-c-soft-peach, 0.65);
 }
 
 .al-sched-title {
-  font-family: $al-font-family-accent;
+  font-family: variables.$al-font-family-accent;
   font-weight: 600;
   line-height: 1.25;
 }

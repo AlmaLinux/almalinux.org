@@ -1,6 +1,6 @@
-@import "./variables";
-@import "./functions";
-@import "./bootstrap";
+@use "variables";
+@use "functions";
+@use "bootstrap";
 
 // Existing apply-CTA rule preserved — still used by the new layout
 .al-member-apply-cta {
@@ -71,7 +71,7 @@ $al-members-card-border: rgba(196, 225, 255, 0.22);
       border: 1px solid $al-members-card-border;
       border-radius: 4px;
       padding: 0.6rem 0.85rem;
-      background: $al-c-black-pearl;
+      background: variables.$al-c-black-pearl;
 
       b {
         display: block;
@@ -113,7 +113,7 @@ $al-members-card-border: rgba(196, 225, 255, 0.22);
     border-right: 1px solid $al-members-card-border;
 
     &[data-tier] {
-      background: $al-c-black-pearl;
+      background: variables.$al-c-black-pearl;
     }
 
     a {
@@ -183,7 +183,7 @@ $al-members-card-border: rgba(196, 225, 255, 0.22);
       // Yellow tint layered over the black-pearl tier background; the
       // silvery-white border + name read as 'platinum the metal' while the
       // yellow gradient + votes badge stay as the universal premium marker.
-      background: linear-gradient(rgba(255, 203, 18, 0.12), rgba(255, 203, 18, 0.12)), $al-c-black-pearl;
+      background: linear-gradient(rgba(255, 203, 18, 0.12), rgba(255, 203, 18, 0.12)), variables.$al-c-black-pearl;
       border-top: 3px solid #e8eef5;
       padding-top: calc(1.25rem - 3px);
 
@@ -197,7 +197,7 @@ $al-members-card-border: rgba(196, 225, 255, 0.22);
 
   .group-row {
     grid-column: 1 / -1;
-    background: $al-body-background;
+    background: variables.$al-body-background;
     color: #ffcb12;
     text-transform: uppercase;
     font-size: 0.7rem;

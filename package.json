@@ -16,9 +16,21 @@
     "**/*.{html,css,scss,md,json,yaml,yml,js}": "prettier --write"
   },
   "devDependencies": {
+    "hugo-extended": "0.168.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.3.1",
+    "pagefind": "1.5.2",
     "prettier": "^3.6.2",
-    "prettier-plugin-go-template": "^0.0.15"
+    "prettier-plugin-go-template": "^0.0.15",
+    "sass-embedded": "1.106.1"
+  },
+  "allowScripts": {
+    "hugo-extended": true
+  },
+  "engines": {
+    "npm": ">=11"
+  },
+  "overrides": {
+    "adm-zip": "0.6.1"
   }
 }

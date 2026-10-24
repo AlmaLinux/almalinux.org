@@ -16,11 +16,17 @@ jobs:
       - name: Check for missing base language strings
         run: python3 find_missing_i18n_strings.py
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+      - name: Setup Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
-          hugo-version: "0.163.2"
-          extended: true
+          node-version: lts/*
+          cache: npm
+
+      # Installs Hugo and Dart Sass at the versions pinned in package.json
+      - name: Install npm dependencies
+        run: npm ci
+        env:
+          HUSKY: 0
 
       - name: Generate language files
         run: python3 setup-pages-for-supported-languages.py
@@ -50,9 +56,9 @@ jobs:
           PREVIEW_BASE_URL: ${{ steps.baseurl.outputs.url }}
         run: |
           if [ -n "$PREVIEW_BASE_URL" ]; then
-            hugo --minify --buildFuture --baseURL "$PREVIEW_BASE_URL"
+            npx --no-install hugo --minify --buildFuture --baseURL "$PREVIEW_BASE_URL"
           else
-            hugo --minify --buildFuture
+            npx --no-install hugo --minify --buildFuture
           fi
 
       - name: Move redirects file into place
@@ -62,7 +68,7 @@ jobs:
         run: cp _headers public/
 
       - name: Build search index
-        run: npx pagefind --site "public"
+        run: npx --no-install pagefind --site "public"
 
       - name: Upload preview artifact
         uses: actions/upload-artifact@v4
