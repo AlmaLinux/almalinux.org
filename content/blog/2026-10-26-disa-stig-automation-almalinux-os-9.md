@@ -60,4 +60,4 @@ For those of you who need a passing result for an audit, our [FIPS for AlmaLinux
 
 For anything about ESU, the FIPS packages, or Security Hardening Support, email our sales team at [sales@tuxcare.com](mailto:sales@tuxcare.com).
 
-Questions about the profile are welcome at [chat.almalinux.org](https://chat.almalinux.org), where you'll find the rest of the community and us.
+Questions about the profile are welcome at [chat.almalinux.org](https://chat.almalinux.org), where you'll find us hanging out with the rest of the community.
