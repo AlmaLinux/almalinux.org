@@ -50,7 +50,7 @@ Open `report.html` in your browser, and you'll see every check in the profile wi
 
 ## Can I pass the full STIG with this?
 
-You can use the profile to scan and harden any AlmaLinux OS 9 system for free. Passing the complete STIG is a different matter because the STIG itself names specific components: a system only passes when it runs TuxCare ESU for AlmaLinux 9.2 or 9.6 with our FIPS 140-3 validated packages. We're starting FIPS validation work for AlmaLinux 9.10 in November 2026.
+You can use the profile to scan and harden any AlmaLinux OS 9 system for free. Passing the complete STIG is a different matter because the STIG itself names specific components. Specifically because AlmaLinux 9.2 and 9.6 are no longer supported by the AlmaLinux OS Foundation, a system only passes when it runs TuxCare ESU for AlmaLinux 9.2 or 9.6 with our FIPS 140-3 validated packages. We're starting FIPS validation work for AlmaLinux 9.10 in November 2026.
 
 FIPS cryptography is mandatory under the STIG, and ALMA-09-004310, another CAT I requirement, says the system must use the TuxCare ESU repository. A community AlmaLinux OS 9 install will fail that check, and the report will tell you so.
 
