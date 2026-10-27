@@ -377,8 +377,6 @@
     "SIG and ALESCo meetings": "SIG och ALESCo möten",
     "AlmaLinux images are available for Incus and LXC.": "AlmaLinux avbilder finns tillgängliga för Incus och LXC.",
     "Get Incus and LXC Images": "Skaffa Incus och LXC avbilder",
-    "Get AlmaLinux on HCP Vagrant Registry": "Skaffa AlmaLinux på HCP Vagrant register",
-    "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: ": "Du kan hämta AlmaLinux OS-bilder på HCP Vagrant register på länken som tillhandahålls här: ",
     "If your company would like to be added to this list, reach out to the Membership Committee about joining the Foundation as a sponsor": "Om ditt företag vill läggas till den här listan, kontakta medlemskommittén om att gå med i stiftelsen som sponsor",
     "the AlmaLinux Wiki": "AlmaLinux-wikin",
     "AlmaLinux OS 9.2 is FIPS 140-3 validated and on the NIST Active list. Read more in this blog post: ": "AlmaLinux OS 9.2 är FIPS 140-3-validerat och finns på NIST Active-listan. Läs mer i detta blogginlägg: ",
@@ -1119,5 +1117,8 @@
     "Open source foundation for the motion picture and media industry, home of projects like OpenEXR and OpenColorIO.": "Stiftelse med öppen källkod för film och mediebranschen; hem för projekt som OpenEXR och OpenColorIO.",
     "AlmaLinux is a member of these foundations so that our community is represented in them, and so we can connect with the AlmaLinux users in their communities.": "AlmaLinux är medlem i dessa stiftelser så att vår gemenskap är representerad i dem, och så att vi kan få kontakt med AlmaLinux användarna i deras gemenskaper.",
     "Community for high-performance computing (HPC). OpenHPC publishes install guides for AlmaLinux 9 and AlmaLinux 10.": "Gemenskap för högpresterande datoranvändning (HPC). OpenHPC publicerar installationsguider för AlmaLinux 9 och AlmaLinux 10.",
-    "Open source foundation for the financial services industry.": "Stiftelse för öppen källkod inom finanssektorn."
+    "Open source foundation for the financial services industry.": "Stiftelse för öppen källkod inom finanssektorn.",
+    "Get AlmaLinux Vagrant boxes": "Hämta AlmaLinux Vagrant boxar",
+    "To use them by name, set the VAGRANT_SERVER_URL environment variable to ": "För att använda dem med ett namn, sätt miljövariabeln VAGRANT_SERVER_URL till ",
+    "You can get AlmaLinux OS Vagrant boxes from the AlmaLinux Vagrant box catalog at the link provided: ": "Du kan hämta AlmaLinux OS Vagran boxar från AlmaLinux Vagrant boxkatalogen via den medföljande länken: "
 }
