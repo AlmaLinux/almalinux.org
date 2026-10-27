@@ -64,7 +64,6 @@
    "AlmaLinux builds Live Media images for GNOME, GNOME Mini, KDE, XFCE and MATE options.": "AlmaLinux builds Live Media images for GNOME, GNOME Mini, KDE, XFCE and MATE options.",
    "Get Live Media Image": "Get Live Media Image",
    "AlmaLinux provides official images for Vagrant:": "AlmaLinux provides official images for Vagrant:",
-   "Get AlmaLinux on HCP Vagrant Registry": "Get AlmaLinux on HCP Vagrant Registry",
    "AlmaLinux images are available for Incus and LXC.": "AlmaLinux images are available for Incus and LXC.",
    "Get Incus and LXC Images": "Get Incus and LXC Images",
    "AlmaLinux builds Raspberry Pi images, and also with GNOME desktop environment.": "AlmaLinux builds Raspberry Pi images, and also with GNOME desktop environment.",
@@ -222,7 +221,6 @@
    "AlmaLinux OS UBI-alternatives:": "AlmaLinux OS UBI-alternatives:",
    "The guide on how to use Live Media images can be found on the ": "The guide on how to use Live Media images can be found on the ",
    "AlmaLinux Live Media Wiki Page": "AlmaLinux Live Media Wiki Page",
-   "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: ": "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: ",
    "You can get official AlmaLinux OS images at the link provided: ": "You can get official AlmaLinux OS images at the link provided: ",
    "Windows Subsystem for Linux (WSL) is designed as an integration between Windows and Linux. You can run the AlmaLinux terminal environment on a Windows machine.": "Windows Subsystem for Linux (WSL) is designed as an integration between Windows and Linux. You can run the AlmaLinux terminal environment on a Windows machine.",
    "More details and guidance steps can be found on the ": "More details and guidance steps can be found on the ",
@@ -1119,5 +1117,8 @@
    "Open source foundation for the motion picture and media industry, home of projects like OpenEXR and OpenColorIO.": "Open source foundation for the motion picture and media industry, home of projects like OpenEXR and OpenColorIO.",
    "AlmaLinux is a member of these foundations so that our community is represented in them, and so we can connect with the AlmaLinux users in their communities.": "AlmaLinux is a member of these foundations so that our community is represented in them, and so we can connect with the AlmaLinux users in their communities.",
    "Community for high-performance computing (HPC). OpenHPC publishes install guides for AlmaLinux 9 and AlmaLinux 10.": "Community for high-performance computing (HPC). OpenHPC publishes install guides for AlmaLinux 9 and AlmaLinux 10.",
-   "Open source foundation for the financial services industry.": "Open source foundation for the financial services industry."
+   "Open source foundation for the financial services industry.": "Open source foundation for the financial services industry.",
+   "Get AlmaLinux Vagrant boxes": "Get AlmaLinux Vagrant boxes",
+   "To use them by name, set the VAGRANT_SERVER_URL environment variable to ": "To use them by name, set the VAGRANT_SERVER_URL environment variable to ",
+   "You can get AlmaLinux OS Vagrant boxes from the AlmaLinux Vagrant box catalog at the link provided: ": "You can get AlmaLinux OS Vagrant boxes from the AlmaLinux Vagrant box catalog at the link provided: "
 }
