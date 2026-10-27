@@ -411,8 +411,6 @@
     "AlmaLinux Kitten OS": "AlmaLinux Kitten OS",
     "AlmaLinux images are available for Incus and LXC.": "Imagens do AlmaLinux estão disponíveis para Incus e LXC.",
     "Get Incus and LXC Images": "Descarregue as imagens de Incus e LXC",
-    "Get AlmaLinux on HCP Vagrant Registry": "Descarregue o AlmaLinux no HCP Vagrant Registry",
-    "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: ": "Pode descarregar a imagem do AlmaLinux OS em HCP Vagrant Registry nesta ligação: ",
     "Who is ELevate for?": "Para quem é indicado o ELevate?",
     "Yes, and yes! All your data, applications and settings will be kept. Migrations will require your system to reboot twice.": "Sim, e sim! Todos os seus dados, aplicações e configurações serão mantidos. As migrações exigirão que o seu sistema seja reinicializado duas vezes.",
     "Preserve your applications, your data, and your sanity. Run the most recent version of the OS you and software you need. Run a modern and secure operating system, without having to reconfigure or rebuild the software you need.": "Preserve os seus aplicativos, os seus dados e a sua sanidade. Execute a versão mais recente do sistema operativo e do software necessário. Execute um sistema operativo moderno e seguro, sem precisar reconfigurar ou recriar o software necessário.",
