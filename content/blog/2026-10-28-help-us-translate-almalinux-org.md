@@ -13,45 +13,48 @@ post:
   image: /blog-images/2026/2026-10-26-translations.png
 ---
 
-The translated text on almalinux.org is written by volunteers, and some of them have been doing it for years. I want to thank the people who have been contributing already. I want to show you how it works and where we stand today. I also want to show you how easily you can help!
+For a very long time, our community has done a fantastic job of translating the text on almalinux.org. I want to pause both to thank the people who have been contributing already, and to highlight where we might need some assistance. And also to show you how easy it is!
 
 ## How website translations work
 
-The text on almalinux.org (the navigation, buttons, page sections, and other shared site text) lives in translation files in the [website repository](https://github.com/AlmaLinux/almalinux.org). We manage those translations with [Weblate](https://hosted.weblate.org/projects/almalinux/), an open source, web-based translation platform. You don't need to know Git, Hugo, or any code to contribute. You sign in to Weblate, pick your language, and translate strings one at a time in your browser.
+Everything from the navigation, buttons, page sections, and other shared site text (nearly everything except blog posts) lives in translation files in the [website GitHub repository](https://github.com/AlmaLinux/almalinux.org). We accept translations of those strings with [Weblate](https://hosted.weblate.org/projects/almalinux/), an open source, web-based translation platform. You don't need to know Git, Hugo, or any code at all to contribute. You sign in to Weblate, pick your language, and translate strings one at a time from your browser.
 
-When you save a translation, Weblate bundles it into a pull request on the website repository. A member of the [Promo SIG](/blog/2026-10-16-the-marketing-sig-is-now-the-promo-sig/) (Special Interest Group) reviews it. Once it's merged, your translation goes live on the site. That process usually takes a day or two.
+At regular intervals, Weblate bundles saved translations into a pull request on the website repository. A member of the [Promo SIG](/blog/2026-10-16-the-marketing-sig-is-now-the-promo-sig/) (Special Interest Group) reviews it, looking for anything that seems woefully out of place or incorrect, and then merges it. Once merged, your translation is deployed and used on the site! That review process usually takes a day or two (depending mostly on who has time to review the pull request).
 
 A few things to keep in mind before you start:
 
-- Please only translate into a language you speak natively. Machine translation reads poorly to native speakers, and reviewers will catch it.
-- If you see a translation in your language that could be better, you can suggest an improvement. Improving and polishing existing work is as valuable as filling in new strings.
-- If your navtive language isn't listed, you can request it from the project page in Weblate, or [open an issue on GitHub](https://github.com/AlmaLinux/almalinux.org/issues).
+- Please only translate into a language you speak natively. While machine translation has come a long way in helping us understand each other, nearly all cases of machine translation read poorly to native speakers.
+- If you see a translation in your language that could be better, please suggest an improvement! Improving and polishing existing work is just as valuable as filling in new strings.
+- If your native language isn't listed and you would like to help contribute that translation, you can request it from the project page in Weblate, or [open an issue on GitHub](https://github.com/AlmaLinux/almalinux.org/issues).
 
-Our wiki has a [step-by-step guide to translating the site](https://wiki.almalinux.org/Help-translating-site.html), with screenshots, if you'd like a walkthrough.
+## Contributing translations
+
+Our wiki has a [step-by-step guide to translating the site](https://wiki.almalinux.org/Help-translating-site.html), with screenshots, if you'd like a walkthrough. Getting started just takes a couple steps!
 
 ## Where we are today
 
-The site has 1,117 strings to translate, and translators are working in more than 30 languages. Here's how they stand as of October 22.
+The site has 1,121 strings to translate, and translators are working in more than 30 languages. These numbers are shifting all the time as text is added or changed on the website, but here's how they stand as of October 28th.
 
 ### Complete, or nearly there
 
-Four languages are fully translated:
+Five languages are at 98% or higher:
 
-- Indonesian (100%)
-- Russian (100%)
+- Indonesian (99%)
+- Kazakh (98%)
+- Russian (99%)
 - Swedish (100%)
 - Ukrainian (100%)
 
-Kazakh is at 99%, and Simplified Chinese is at 93%. Russian and Simplified Chinese both made big jumps in just the past week. Indonesian, Kazakh, and Tamil were only added this summer, and Indonesian and Kazakh are already done.
+Simplified Chinese is right behind them at 97%. Russian and Simplified Chinese both made big jumps in just the past week. Indonesian, Kazakh, and Tamil were only added this summer, and Indonesian and Kazakh are already nearly complete.
 
-### More than halfway
+### Halfway or more
 
-All of these languages have had nearly complete translations in the past, but as content is updated we need folks to come back and fill it in again.
+Nearly all of these languages have had nearly complete translations in the past, but as content is updated we need folks to come back and fill it in again.
 
-- Spanish (75%)
+- Spanish (78%)
 - Tamil (65%)
 - Portuguese (52%)
-- French (51%)
+- French (50%)
 
 ### Languages that need help
 
@@ -65,8 +68,8 @@ These languages have a lot of AlmaLinux users and are close to the halfway mark,
 
 These languages are further from done, and every string you translate shows up right away:
 
-- Finnish (33%), Hebrew (32%), Czech (25%), Polish (25%), and Turkish (20%)
-- Slovak (19%), Hungarian (15%), Korean (14%), and Catalan (13%)
+- Finnish (33%), Hebrew (32%), Czech (25%), Polish (24%), and Turkish (20%)
+- Slovak (19%), Hungarian (14%), Korean (13%), and Catalan (13%)
 - Persian (8%), Serbian (8%), Greek (5%), Latvian (4%), and Lithuanian (3%)
 - Danish, Estonian, and Esperanto, which haven't been started yet
 
@@ -89,14 +92,14 @@ I also want to thank translators who did a huge amount of work in earlier years,
 
 And a big thank you to the people who've pushed languages forward recently:
 
-- **Andrei Stepanov** finished Russian this week.
+- **Andrei Stepanov** took Russian to 99% this week.
 - **Ziki Shay**, along with **xiezhihai**, **eNoWater**, **Lezhe Gao**, and **Ziqi Shen**, took Simplified Chinese past 90%.
-- **Arif Budiman** translated Indonesian to 100%.
-- **Baurzhan Muftakhidinov** translated Kazakh to 99%.
+- **Arif Budiman** translated Indonesian to 99%.
+- **Baurzhan Muftakhidinov** translated Kazakh to 98%.
 - **Opam** has been moving Italian forward.
 - **Enrique Sanchez**, **Javi Hernandez**, **Francisco Serrador**, and **Guillermo Patterer** (Spanish), **armada bzh**, **Adrien D**, and **Titouan Mandeville** (French), **Gustavo Kreischer de Almeida**, **Guilherme Wilson**, and **Jonathan M** (Brazilian Portuguese), **Ettore Atalan**, **Kurt Schumacher**, **Max Kleinehelleforth**, and **leinaduhcs** (German), **Daniel Nylander** (Swedish), **Wiesław Fijołek** (Polish), **Şükrü Eren Gökırmak** (Turkish), **vale-decem** (Serbian), **Mp Mp** (Persian), and **தமிழ்நேரம்** (Tamil) all contributed this year.
 
-Thank you also to the Weblate team for hosting our project, and to the Promo SIG members who review every translation pull request.
+Also, a big, huge thank you to the Weblate team for hosting our project, and to the Promo SIG members who review every translation pull request.
 
 If you translated for us and I missed you, please tell me in the Promo SIG channel and I'll add you! You deserve the recognition for sure.
 
