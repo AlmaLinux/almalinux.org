@@ -294,8 +294,6 @@
     "AlmaLinux OS provides a set of security features: Errata, GPG keys, Mailing Lists, OpenSCAP, OVAL, SBOM, and Secure Boot": "AlmaLinux OS offre une gamme complète de fonctionnalités de sécurité : Errata, clés GPG, listes de diffusion, OpenSCAP, OVAL, SBOM et Secure Boot",
     "AlmaLinux images are available for Incus and LXC.": "Des images AlmaLinux sont disponibles pour Incus et LXC.",
     "Get Incus and LXC Images": "Obtenir les images d'Incus et de LXC",
-    "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: ": "Vous pouvez obtenir des images du système d'exploitation AlmaLinux sur HCP Vagrant Registry en cliquant sur le lien fourni : ",
-    "Get AlmaLinux on HCP Vagrant Registry": "Obtenez AlmaLinux sur le registre HCP Vagrant",
     "(Tax ID 86-2791864)": "(Tax ID 86-2791864)",
     "Get OCI Image from GitHub": "Ibtenir les images OCI sur GitHub",
     "Signed for:": "Signé pour :",

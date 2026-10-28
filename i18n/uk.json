@@ -377,8 +377,6 @@
     "SIG and ALESCo meetings": "Зустрічі SIG та ALESCo",
     "Get Incus and LXC Images": "Отримайте зображення Incus і LXC",
     "AlmaLinux images are available for Incus and LXC.": "Образи AlmaLinux доступні для Incus і LXC.",
-    "Get AlmaLinux on HCP Vagrant Registry": "Отримайте AlmaLinux у HCP Vagrant Registry",
-    "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: ": "Ви можете отримати образи ОС AlmaLinux у HCP Vagrant Registry за наданим посиланням: ",
     "Mirror Sponsor Member": "Дзеркальний спонсор",
     "AlmaLinux member logo for your site": "Логотип члена AlmaLinux для вашого сайту",
     "the AlmaLinux Wiki": "AlmaLinux Wiki",
@@ -1119,5 +1117,8 @@
     "Open source foundation for the motion picture and media industry, home of projects like OpenEXR and OpenColorIO.": "Фонд з відкритим кодом для кіно- та медіа-індустрії, де реалізуються такі проєкти, як OpenEXR та OpenColorIO.",
     "AlmaLinux is a member of these foundations so that our community is represented in them, and so we can connect with the AlmaLinux users in their communities.": "AlmaLinux є членом цих фондів, щоб наша спільнота була в них представлена, а також щоб ми могли налагоджувати зв’язки з користувачами AlmaLinux у їхніх спільнотах.",
     "Community for high-performance computing (HPC). OpenHPC publishes install guides for AlmaLinux 9 and AlmaLinux 10.": "Спільнота, що займається високопродуктивними обчисленнями (HPC). OpenHPC публікує посібники з інсталяції для AlmaLinux 9 та AlmaLinux 10.",
-    "Open source foundation for the financial services industry.": "Фонд відкритого програмного забезпечення для галузі фінансових послуг."
+    "Open source foundation for the financial services industry.": "Фонд відкритого програмного забезпечення для галузі фінансових послуг.",
+    "Get AlmaLinux Vagrant boxes": "Отримайте Vagrant-бокси AlmaLinux",
+    "To use them by name, set the VAGRANT_SERVER_URL environment variable to ": "Щоб використовувати їх за іменем, встановіть значення змінної середовища VAGRANT_SERVER_URL на ",
+    "You can get AlmaLinux OS Vagrant boxes from the AlmaLinux Vagrant box catalog at the link provided: ": "Ви можете завантажити Vagrant-бокси з ОС AlmaLinux із каталогу Vagrant-боксів AlmaLinux за вказаним посиланням: "
 }

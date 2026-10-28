@@ -332,8 +332,6 @@
     "This looks awesome! How do I get involved?": "Tämä näyttää upealta! Miten pääsen mukaan?",
     "You can find the LEAPP code ": "Löydät LEAPPin säännöt ",
     "Yes, and yes! All your data, applications and settings will be kept. Migrations will require your system to reboot twice.": "Kyllä; kaikki tietosi, sovelluksesi ja asetuksesi säilytetään. Siirrot edellyttävät järjestelmän uudelleenkäynnistystä kahdesti.",
-    "Get AlmaLinux on HCP Vagrant Registry": "Hanki AlmaLinux HCP Vagrant -rekisteriin",
-    "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: ": "Voit saada AlmaLinux OS -kuvia HCP Vagrant -rekisteristä oheisesta linkistä: ",
     "This demo takes you through upgrading in place from CentOS 7 to AlmaLinux 8": "Tämä esittely opastaa sinua päivittämään paikan päällä CentOS 7:stä AlmaLinux 8:aan",
     "Certification": "Sertifiointi",
     "Get involved": "Osallistu",

@@ -292,6 +292,5 @@
     "Download .torrent file": ".torrent letöltés",
     "We are so grateful to the All Things Open": "",
     "Get Incus and LXC Images": "Szerezd be az Incus és LXC képfájlokat",
-    "AlmaLinux images are available for Incus and LXC.": "Az AlmaLinux képfájlok elérhetők Incus és LXC számára.",
-    "Get AlmaLinux on HCP Vagrant Registry": "Szerezd be az AlmaLinuxot a HCP Vagrant Registry-n keresztül"
+    "AlmaLinux images are available for Incus and LXC.": "Az AlmaLinux képfájlok elérhetők Incus és LXC számára."
 }
