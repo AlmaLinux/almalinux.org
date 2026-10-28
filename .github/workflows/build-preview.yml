@@ -9,7 +9,7 @@ jobs:
       actions: read
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
@@ -71,7 +71,7 @@ jobs:
         run: npx --no-install pagefind --site "public"
 
       - name: Upload preview artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: preview-site
           path: public
@@ -84,7 +84,7 @@ jobs:
         run: echo "${{ github.event.pull_request.number }}" > pr-number.txt
 
       - name: Upload PR number
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: pr-number
           path: pr-number.txt
