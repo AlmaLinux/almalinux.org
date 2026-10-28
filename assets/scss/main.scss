@@ -1,22 +1,24 @@
-@import "./variables";
-@import "./functions";
-@import "./bootstrap";
-@import "./home";
-@import "./blog";
-@import "./elevate";
-@import "./members";
-@import "./contribute";
-@import "./foundation";
-@import "./cc-certification";
-@import "./security";
-@import "./fips-certification";
-@import "./alesco";
-@import "./event-schedule";
-@import "./event-day";
-@import "./press";
-@import "./branding";
-@import "./certification";
-@import "./bundle-extras";
+@use "sass:color";
+
+@use "variables";
+@use "functions";
+@use "bootstrap";
+@use "home";
+@use "blog";
+@use "elevate";
+@use "members";
+@use "contribute";
+@use "foundation";
+@use "cc-certification";
+@use "security";
+@use "fips-certification";
+@use "alesco";
+@use "event-schedule";
+@use "event-day";
+@use "press";
+@use "branding";
+@use "certification";
+@use "bundle-extras";
 
 
 body, html {
@@ -37,7 +39,7 @@ body, html {
 }
 
 body {
-  background: $al-body-background;
+  background: variables.$al-body-background;
 }
 
 // Offset in-page anchor targets so the sticky navbar doesn't cover them.
@@ -50,7 +52,7 @@ a{
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $al-font-family-accent;
+  font-family: variables.$al-font-family-accent;
 }
 
 .al-body-container {
@@ -75,18 +77,18 @@ button:focus, .btn:focus{
 
 // Main navigation
 .al-primary-navbar {
-  background: $al-c-black-pearl;
-  font-family: $al-font-family-accent;
+  background: variables.$al-c-black-pearl;
+  font-family: variables.$al-font-family-accent;
   font-weight: 500;
-  box-shadow: al-shadow(3, 0.5);
+  box-shadow: functions.al-shadow(3, 0.5);
   .nav-link.al-download-button {
     font-weight: 500;
-    background: $al-c-atlantis;
-    color: $al-font-color-light !important;
+    background: variables.$al-c-atlantis;
+    color: variables.$al-font-color-light !important;
 
     &:hover {
-      color: $al-font-color-light;
-      background: darken($al-c-atlantis, 5%);
+      color: variables.$al-font-color-light;
+      background: color.adjust(variables.$al-c-atlantis, $lightness: -5%, $space: hsl);
     }
   }
   
@@ -130,7 +132,7 @@ button:focus, .btn:focus{
   }
 
   .dropdown-menu-dark {
-    background: $al-c-black-pearl;
+    background: variables.$al-c-black-pearl;
     border: 0;
     .dropdown-header {
       color: white;
@@ -146,7 +148,7 @@ button:focus, .btn:focus{
 		padding: .25rem -1.5rem !important;
 	}   
     .dropdown-divider {
-      border-color: $al-c-black-pearl-lighter;
+      border-color: variables.$al-c-black-pearl-lighter;
     }
   }
 
@@ -182,7 +184,7 @@ button:focus, .btn:focus{
 
 #al-motd {
   width: 100%;
-  background: $al-c-black-pearl-lighter;
+  background: variables.$al-c-black-pearl-lighter;
   padding-top: 12px;
   padding-bottom: 12px;
   font-size: 0.8rem;
@@ -200,18 +202,18 @@ button:focus, .btn:focus{
    
       a {
         text-decoration: none;
-        color: $al-c-candlelight;
+        color: variables.$al-c-candlelight;
 
         &:hover {
           text-decoration: underline;
-          color: $al-c-candlelight-lighter;
+          color: variables.$al-c-candlelight-lighter;
         }
 
         &.al-motd-event {
-          color: $al-c-atlantis;
+          color: variables.$al-c-atlantis;
 
           &:hover {
-            color: $al-c-atlantis-lighter;
+            color: variables.$al-c-atlantis-lighter;
           }
         }
 
@@ -275,14 +277,14 @@ a{
 
 // WYSIWYG
 .al-wysiwyg {
-  $al-wysiwyg-font-size: $al-font-base-size - 1px;
+  $al-wysiwyg-font-size: variables.$al-font-base-size - 1px;
   all: revert;
-  font-family: $al-font-family;
+  font-family: variables.$al-font-family;
   font-size: $al-wysiwyg-font-size;
 
   h1, h2, h3, h4, h5, h6 {
     all: revert;
-    font-family: $al-font-family-accent;
+    font-family: variables.$al-font-family-accent;
   }
 
   ul,
@@ -293,7 +295,7 @@ a{
   pre,
   blockquote {
     all: revert;
-    font-family: $al-font-family;
+    font-family: variables.$al-font-family;
     font-size: $al-wysiwyg-font-size;
   }
 
@@ -470,7 +472,7 @@ a{
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: $al-c-candlelight;
+  color: variables.$al-c-candlelight;
   margin-bottom: 0.5rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid rgba(196, 225, 255, 0.15);
@@ -500,7 +502,7 @@ a{
   font-size: 0.7em;
   margin-right: 0.6em;
   padding: 0.05em 0.45em;
-  color: $al-link-color;
+  color: variables.$al-link-color;
   background: rgba(8, 35, 54, 0.4);
   border: 1px solid rgba(196, 225, 255, 0.25);
   border-radius: 3px;
@@ -513,8 +515,8 @@ a{
 
 .al-back-to-top:hover {
   opacity: 1;
-  color: $al-c-candlelight;
-  border-color: $al-c-candlelight;
+  color: variables.$al-c-candlelight;
+  border-color: variables.$al-c-candlelight;
 }
 
 .al-page-toc #TableOfContents li {
@@ -523,7 +525,7 @@ a{
 }
 
 .al-page-toc #TableOfContents a {
-  color: $al-link-color;
+  color: variables.$al-link-color;
   text-decoration: none;
   display: block;
   padding: 0.2rem 0.5rem;
@@ -533,7 +535,7 @@ a{
 
 .al-page-toc #TableOfContents a:hover {
   color: #fff;
-  border-left-color: $al-c-candlelight;
+  border-left-color: variables.$al-c-candlelight;
   background: rgba(255, 203, 18, 0.1);
 }
 
@@ -571,7 +573,7 @@ figcaption,
 
   thead th {
     color: #0e3b5c !important;
-    font-family: $al-font-family-accent;
+    font-family: variables.$al-font-family-accent;
     font-weight: 600;
     font-size: 0.78rem;
     text-transform: uppercase;

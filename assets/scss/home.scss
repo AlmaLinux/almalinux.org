@@ -1,6 +1,8 @@
-@import "./variables";
-@import "./functions";
-@import "./bootstrap";
+@use "sass:color";
+
+@use "variables";
+@use "functions";
+@use "bootstrap";
 
 
 
@@ -11,22 +13,22 @@
     margin:10px 10px 10px 0;
 
     &:hover {
-      background: darken(#24c2ff, 5%);
+      background: color.adjust(#24c2ff, $lightness: -5%, $space: hsl);
     }
   }
 
   .al-hero-cta-secondary {
-    background: $al-c-atlantis;
+    background: variables.$al-c-atlantis;
     color: #222222;
     margin: 10px;
 
     &:hover {
-      background: darken($al-c-atlantis, 5%);
+      background: color.adjust(variables.$al-c-atlantis, $lightness: -5%, $space: hsl);
     }
   }
 
   .al-hero-cta-tertiary {
-    background: $al-c-candlelight;
+    background: variables.$al-c-candlelight;
     color: #222222;
     margin: 10px;
 
@@ -36,7 +38,7 @@
     }
 
     &:hover {
-      background: darken($al-c-candlelight, 5%);
+      background: color.adjust(variables.$al-c-candlelight, $lightness: -5%, $space: hsl);
     }
   }
 
@@ -44,7 +46,7 @@
     background: #0e3b5c;
 
     .al-index-feature-icon {
-      color: lighten($al-font-color, 10%);
+      color: color.to-gamut(color.adjust(variables.$al-font-color, $lightness: 10%, $space: hsl), $method: clip);
       font-size: 32px;
       padding-right: 22px;
 
@@ -61,7 +63,7 @@
     background: #0e3b5c;
 
     .al-index-community-icon {
-      color: $al-font-color;
+      color: variables.$al-font-color;
       font-size: 32px;
       padding-right: 22px;
       flex: 0;
@@ -97,7 +99,7 @@
 
   .al-index-backed-by {
     h2.border-bottom {
-      border-bottom-color: lighten($al-body-background, 8%) !important;
+      border-bottom-color: color.adjust(variables.$al-body-background, $lightness: 8%, $space: hsl) !important;
     }
 
 
@@ -137,7 +139,7 @@
 
   .al-index-trusted-by {
     h2.border-bottom {
-      border-bottom-color: lighten($al-body-background, 8%) !important;
+      border-bottom-color: color.adjust(variables.$al-body-background, $lightness: 8%, $space: hsl) !important;
     }
 
     .al-trusted-by-marquee {
@@ -198,7 +200,7 @@
 
   .al-index-commercial-support {
     h2.border-bottom {
-      border-bottom-color: lighten($al-body-background, 8%) !important;
+      border-bottom-color: color.adjust(variables.$al-body-background, $lightness: 8%, $space: hsl) !important;
     }
 
 
@@ -244,7 +246,7 @@
 
       &:not(.collapsed) {
         background: #104469;
-        color: $al-font-color;
+        color: variables.$al-font-color;
       }
     }
 
@@ -287,7 +289,7 @@
 
       blockquote.blockquote {
         padding-bottom: 7px;
-        font-family: $al-font-family-accent;
+        font-family: variables.$al-font-family-accent;
         font-size: 1.4rem;
 
         &:before {
@@ -302,7 +304,7 @@
 
         &:before,
         &:after {
-          font-family: $al-font-family-accent;
+          font-family: variables.$al-font-family-accent;
           vertical-align: top;
           display: inline-block;
           color: #faf5f5;
@@ -312,7 +314,7 @@
       }
 
       figcaption.blockquote-footer {
-        color: $al-font-color;
+        color: variables.$al-font-color;
 
         cite {
           font-style: normal;
@@ -323,7 +325,7 @@
 
           &:hover {
             text-decoration: underline;
-            color: lighten($al-link-color, 10%);
+            color: color.adjust(variables.$al-link-color, $lightness: 10%, $space: hsl);
           }
         }
       }

@@ -1,39 +1,41 @@
+@use "sass:color";
+
 // Rules migrated from bundle.css that were not in any SCSS partial
 // These should be reviewed and potentially moved to more specific partials over time
 
-@import "./variables";
+@use "variables";
 
 // CTA button variants. Color only; spacing is the template's job
 // via Bootstrap utilities (gap, m*, me-*, etc.).
 .al-cta-blue {
-  background: $al-c-cta-blue;
+  background: variables.$al-c-cta-blue;
   color: #222222;
 
   &:hover {
-    background: $al-c-cta-blue-dark;
+    background: variables.$al-c-cta-blue-dark;
   }
 }
 
 .al-cta-blue-deep {
-  background: $al-c-science-blue-light;
+  background: variables.$al-c-science-blue-light;
   color: #222222;
 
   &:hover {
-    background: darken($al-c-science-blue-light, 5%);
+    background: color.adjust(variables.$al-c-science-blue-light, $lightness: -5%, $space: hsl);
   }
 }
 
 .al-cta-green {
-  background: $al-c-atlantis;
+  background: variables.$al-c-atlantis;
   color: #222222;
 
   &:hover {
-    background: darken($al-c-atlantis, 5%);
+    background: color.adjust(variables.$al-c-atlantis, $lightness: -5%, $space: hsl);
   }
 }
 
 .al-cta-yellow {
-  background: $al-c-candlelight;
+  background: variables.$al-c-candlelight;
   color: #222222;
 
   img {
@@ -42,7 +44,7 @@
   }
 
   &:hover {
-    background: darken($al-c-candlelight, 5%);
+    background: color.adjust(variables.$al-c-candlelight, $lightness: -5%, $space: hsl);
   }
 }
 
@@ -74,7 +76,7 @@
 }
 
 .al-commercial-supporter-logo-container {
-  background: $al-c-black-pearl;
+  background: variables.$al-c-black-pearl;
   text-align: center;
 }
 
@@ -341,7 +343,7 @@
 
 // Plain-language architecture hint in the version dropdown
 .al-os-tabs .al-os-arch-hint {
-  color: $al-link-color;
+  color: variables.$al-link-color;
   opacity: 0.8;
 }
 
@@ -350,14 +352,14 @@
   display: inline-block;
   max-width: 100%;
   padding: 0.5rem 1.25rem;
-  background-color: $al-c-black-pearl-lighter;
-  border: 1px solid $al-c-black-pearl-light;
+  background-color: variables.$al-c-black-pearl-lighter;
+  border: 1px solid variables.$al-c-black-pearl-light;
   border-radius: 8px;
-  color: $al-link-color;
+  color: variables.$al-link-color;
   font-size: 1.05rem;
 
   strong {
-    color: $al-font-color;
+    color: variables.$al-font-color;
   }
 }
 
@@ -564,7 +566,7 @@ a:hover {
 }
 
 .al-persona-card-title {
-  font-family: $al-font-family-accent;
+  font-family: variables.$al-font-family-accent;
   font-weight: 600;
   font-size: 1rem;
   margin-bottom: 0.4rem;

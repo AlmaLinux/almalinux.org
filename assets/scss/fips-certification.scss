@@ -1,3 +1,5 @@
+@use "variables";
+
 // FIPS 140-3 validation landing page (/security/fips-certification)
 // Scoped under .al-fips. Reuses the foundation design system for bands and titles.
 .al-fips {
@@ -23,7 +25,7 @@
     font-weight: 700;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
-    border-bottom: 2px solid $al-c-candlelight;
+    border-bottom: 2px solid variables.$al-c-candlelight;
   }
 
   .al-fips-infobox-verify {
@@ -59,7 +61,7 @@
       letter-spacing: 0.05em;
       font-size: 0.7rem;
       font-weight: 700;
-      color: $al-c-candlelight;
+      color: variables.$al-c-candlelight;
       margin-bottom: 0.2rem;
     }
 
@@ -96,15 +98,15 @@
       text-transform: uppercase;
       letter-spacing: 0.05em;
       font-size: 0.75rem;
-      color: $al-c-candlelight !important; // beats the global `color !important`
-      border-bottom: 2px solid $al-c-candlelight;
+      color: variables.$al-c-candlelight !important; // beats the global `color !important`
+      border-bottom: 2px solid variables.$al-c-candlelight;
     }
 
     tbody td:first-child {
       width: 1%;
       white-space: nowrap;
       font-weight: 700;
-      color: $al-c-candlelight !important; // beats the global `color !important`
+      color: variables.$al-c-candlelight !important; // beats the global `color !important`
     }
   }
 
@@ -124,15 +126,15 @@
     margin: 2rem 0 0;
     padding: 1.25rem 1.5rem;
     background: rgba(255, 203, 18, 0.1);
-    border: 1px solid $al-c-candlelight;
-    border-left: 4px solid $al-c-candlelight;
+    border: 1px solid variables.$al-c-candlelight;
+    border-left: 4px solid variables.$al-c-candlelight;
     border-radius: 6px;
   }
 
   .al-fips-callout-title {
     font-size: 1.1rem;
     font-weight: 700;
-    color: $al-c-candlelight;
+    color: variables.$al-c-candlelight;
     margin-bottom: 0.5rem;
   }
 

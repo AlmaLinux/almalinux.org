@@ -20,13 +20,13 @@ Blog content is served using the `layouts/blog/single.html` format. Note: if you
 The easiest way to create a new blog post is with the Hugo archetype, which generates a file with the correct front matter pre-populated:
 
 ```bash
-hugo new blog/YYYY-MM-DD-your-post-title.md
+npx hugo new blog/YYYY-MM-DD-your-post-title.md
 ```
 
 For example:
 
 ```bash
-hugo new blog/2026-03-01-announcing-new-feature.md
+npx hugo new blog/2026-03-01-announcing-new-feature.md
 ```
 
 This creates a file in `./content/blog/` with the title derived from the filename and the current year pre-filled in the image paths. You'll still need to fill in your author info and image paths before submitting.
@@ -70,7 +70,7 @@ post:
 - Below the --- of the metadata block, you should place the content of your blog post. This content should be in markdown format, and any images you want to include in your post can be added to `./static/blog-images/` and will serve from `/blog-images/`.
 - Using the '[figure](https://gohugo.io/content-management/shortcodes/#figure)' short code for images can give you more control in how they're displayed. For example:
   `{{< figure src="/images/certificationimages/certificationprocess.svg" link="/images/certificationimages/certificationprocess.svg" caption="The Hardware Certification Process" width="100%">}}`
-- Before submitting your PR, please test that your content loads correctly by building the site locally with the command `hugo server`
+- Before submitting your PR, please test that your content loads correctly by building the site locally with the command `npx hugo server`
 - Adding YouTube embeds:\
   To embed YouTube videos we suggest you use the [YouTube shortcode](https://gohugo.io/content-management/shortcodes/#youtube) supplied by Hugo and modified by our contributors to include height and width customization with better mobile support, here is an overview of how to use it:
   - **YouTube ID** - The youtube ID can be allocated from the video link, for example in this video `https://www.youtube.com/watch?v=dQw4w9WgXcQ`, the ID is `dQw4w9WgXcQ`. (the value of "v" is the video ID)

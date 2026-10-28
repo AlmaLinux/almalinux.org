@@ -177,13 +177,13 @@ Blog posts live in `content/blog/` and are written in Markdown with Hugo front m
 Use the Hugo archetype to generate a pre-populated file:
 
 ```bash
-hugo new blog/YYYY-MM-DD-your-post-title.md
+npx hugo new blog/YYYY-MM-DD-your-post-title.md
 ```
 
 For example:
 
 ```bash
-hugo new blog/2026-03-01-announcing-new-feature.md
+npx hugo new blog/2026-03-01-announcing-new-feature.md
 ```
 
 This will create a new file in `content/blog/` with the correct front matter already filled in, including the title (derived from the filename) and the current year in the image paths.
@@ -261,13 +261,13 @@ For design tokens, components, and conventions, see [DESIGN.md](DESIGN.md).
 
 #### Local Development
 
-To set up a local development environment, you need the following installed:
+To set up a local development environment, you need Node.js 24 or newer (npm 11 or newer).
 
-- Hugo
+After cloning, run `npm install`. This installs Hugo (extended) and Dart Sass at the versions the site is built with, and sets up the pre-commit hook (via [husky](https://typicode.github.io/husky/)) that automatically runs [Prettier](https://prettier.io/) on staged files before each commit, keeping formatting consistent with CI.
 
-Run `hugo server` to start a near-production local development instance.
+Run `npx hugo server` to start a near-production local development instance.
 
-After cloning, run `npm install` to install dependencies. This sets up the pre-commit hook (via [husky](https://typicode.github.io/husky/)) that automatically runs [Prettier](https://prettier.io/) on staged files before each commit, keeping formatting consistent with CI.
+The Hugo and Dart Sass versions are pinned in `package.json` (`hugo-extended` and `sass-embedded`), and CI and the devcontainer use the same ones. To upgrade either, change its version there and run `npm install`.
 
 Localization is important! Wrap all visible text in templates in `{{ i18n "..." }}` tags, then run `python3 find_missing_i18n_strings.py` and commit the updated `i18n/en.json`. Don't run `setup-pages-for-supported-languages.py` for everyday changes: it's only for adding a language, and the build workflows already run it (see [Adding a new language](#adding-a-new-language-maintainers)). If you encounter issues with these scripts, please open an [issue](https://github.com/AlmaLinux/almalinux.org/issues) with details.
 
@@ -456,7 +456,7 @@ When a new language is requested, a project admin needs to enable it on Weblate 
    eo: { weight: 2, label: Esperanto }
    ```
    Existing entries like `pt-br` and `zh-hans` use lowercase, dashed codes to match Weblate's output, so match that style for the new code.
-4. **Build locally** with `hugo` and confirm the new language appears in the language picker and its pages render. Strings that aren't translated yet fall back to English.
+4. **Build locally** with `npx hugo` and confirm the new language appears in the language picker and its pages render. Strings that aren't translated yet fall back to English.
 5. **Open a PR** with the `config.yaml` change. You don't need to generate or commit any content pages: the publish and preview workflows run `setup-pages-for-supported-languages.py` at build time, which creates a `content/<page>.<lang>.md` copy of every page for each language in `config.yaml`.
 
 ### Change Approval Process

@@ -1,8 +1,10 @@
-@import "./variables";
-@import "./functions";
+@use "sass:color";
+
+@use "variables";
+@use "functions";
 
 // Colors
-$primary: $al-c-brand-primary;
+$primary: variables.$al-c-brand-primary;
 $secondary: #6c757d;
 $success: #2e633a;
 $info: #17a2b8;
@@ -11,16 +13,16 @@ $danger: #b60000;
 $light: #f8f9fa;
 $dark: #343a40;
 
-$body-color: $al-font-color;
-$body-bg: $al-body-background;
+$body-color: variables.$al-font-color;
+$body-bg: variables.$al-body-background;
 
 // Font
-$font-size-root: $al-font-base-size;
-$font-family-sans-serif: $al-font-family;
+$font-size-root: variables.$al-font-base-size;
+$font-family-sans-serif: variables.$al-font-family;
 $lead-font-weight: normal;
 
 // Links
-$link-color: $al-link-color;
+$link-color: variables.$al-link-color;
 
 // Border visuals
 $border-radius: 2px;
@@ -29,10 +31,10 @@ $border-radius-sm: $border-radius;
 
 // Navbar
 $navbar-padding-y: 16px;
-$navbar-dark-color: $al-c-soft-peach;
-$navbar-dark-hover-color: $al-c-science-blue-lighter;
-$navbar-dark-active-color: $al-c-science-blue-lighter;
-$navbar-dark-disabled-color: darken($al-c-soft-peach-dark, 10%);
+$navbar-dark-color: variables.$al-c-soft-peach;
+$navbar-dark-hover-color: variables.$al-c-science-blue-lighter;
+$navbar-dark-active-color: variables.$al-c-science-blue-lighter;
+$navbar-dark-disabled-color: color.adjust(variables.$al-c-soft-peach-dark, $lightness: -10%, $space: hsl);
 $navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"#ffffff\" viewBox=\"0 0 16 16\"><defs/> <path d=\"M9.5 13a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm0-5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm0-5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z\"/> </svg>");
 $navbar-dark-toggler-border-color: transparent;
 $navbar-nav-link-padding-x: 15px;
@@ -41,4 +43,4 @@ $navbar-nav-link-padding-x: 15px;
 $dropdown-border-radius: 0;
 
 // Inputs
-$input-color: $al-font-color-light;
+$input-color: variables.$al-font-color-light;
