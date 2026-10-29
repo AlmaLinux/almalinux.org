@@ -6,13 +6,14 @@ The preview system broke twice in a row in 2026, both times silently, because th
 
 ## The workflows
 
-| File                    | Name                       | Trigger                         | What it does                                                                                                                          |
-| ----------------------- | -------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `build-preview.yml`     | Build Preview              | `pull_request`                  | Builds the site for a PR and uploads two artifacts: `preview-site` (the built site) and `pr-number` (the PR number). Deploys nothing. |
-| `publish-preview.yml`   | Publish Preview Deployment | `workflow_run` on Build Preview | Downloads those artifacts, deploys to a Cloudflare Pages preview alias, and comments the URL on the PR.                               |
-| `publish.yml`           | (unnamed)                  | `push` to `master`              | Builds and deploys the live site. Also opens an automatic PR if `find_missing_i18n_strings.py` changed `i18n/en.json`.                |
-| `prettier.yml`          | autofix.ci                 | `pull_request`, `push`          | Runs `npx prettier --write .` and pushes formatting fixes back to the branch.                                                         |
-| `update-checksums.yaml` | Update Checksums YAML      | schedule, every 4 hours         | Regenerates `data/get_almalinux_checksums.yaml` and opens or updates a PR when it changes.                                            |
+| File                    | Name                         | Trigger                         | What it does                                                                                                                          |
+| ----------------------- | ---------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| `build-preview.yml`     | Build Preview                | `pull_request`                  | Builds the site for a PR and uploads two artifacts: `preview-site` (the built site) and `pr-number` (the PR number). Deploys nothing. |
+| `publish-preview.yml`   | Publish Preview Deployment   | `workflow_run` on Build Preview | Downloads those artifacts, deploys to a Cloudflare Pages preview alias, and comments the URL on the PR.                               |
+| `cleanup-preview.yml`   | Clean Up Preview Deployments | PR closed, or manual            | Deletes the Cloudflare preview deployments of every PR that is no longer open. See "Cleaning up old previews" below.                  |
+| `publish.yml`           | (unnamed)                    | `push` to `master`              | Builds and deploys the live site. Also opens an automatic PR if `find_missing_i18n_strings.py` changed `i18n/en.json`.                |
+| `prettier.yml`          | autofix.ci                   | `pull_request`, `push`          | Runs `npx prettier --write .` and pushes formatting fixes back to the branch.                                                         |
+| `update-checksums.yaml` | Update Checksums YAML        | schedule, every 4 hours         | Regenerates `data/get_almalinux_checksums.yaml` and opens or updates a PR when it changes.                                            |
 
 ## How the two preview workflows fit together
 
@@ -57,11 +58,26 @@ If `CLOUDFLARE_PROJECT_NAME` or the PR number is empty, the build falls back to 
 
 ## Secrets and variables
 
-| Name                      | Kind     | Used by                                                   |
-| ------------------------- | -------- | --------------------------------------------------------- |
-| `CLOUDFLARE_API_TOKEN`    | secret   | `publish.yml`, `publish-preview.yml`                      |
-| `CLOUDFLARE_ACCOUNT_ID`   | variable | `publish.yml`, `publish-preview.yml`                      |
-| `CLOUDFLARE_PROJECT_NAME` | variable | `publish.yml`, `publish-preview.yml`, `build-preview.yml` |
+| Name                      | Kind     | Used by                                                                          |
+| ------------------------- | -------- | -------------------------------------------------------------------------------- |
+| `CLOUDFLARE_API_TOKEN`    | secret   | `publish.yml`, `publish-preview.yml`, `cleanup-preview.yml`                      |
+| `CLOUDFLARE_ACCOUNT_ID`   | variable | `publish.yml`, `publish-preview.yml`, `cleanup-preview.yml`                      |
+| `CLOUDFLARE_PROJECT_NAME` | variable | `publish.yml`, `publish-preview.yml`, `build-preview.yml`, `cleanup-preview.yml` |
+
+The cleanup workflow needs the token to have Pages Write, which deploying already requires.
+
+## Cleaning up old previews
+
+Cloudflare never deletes Pages deployments by itself, so every preview ever deployed stays public until someone removes it. `cleanup-preview.yml` lists all preview deployments, lists the open PRs, and deletes every deployment named `pr-<number>` or `pr-<number>-<sha>` whose PR is not open. It does not look at which PR triggered it, so any run also catches leftovers, such as a preview that finished deploying just after its PR closed.
+
+It runs when any PR is closed, merged or not, and from the Actions tab with "Run workflow". A manual run is a dry run by default, which only lists what it would delete. Untick "Only list what would be deleted" to actually delete.
+
+Deployments whose alias is not named after a PR, for example from before the `pr-<number>` naming, or the bare `pr-` aliases left by the fork PR bug described above, are not deleted automatically. Each run lists them in its log. To remove them, run the workflow by hand and set "extra_pattern" to a JavaScript regex matched against the alias, for example `^(autoimage|pr-)$`, or `.*` for all of them. Do a dry run with the pattern first and check the list. The pattern never applies to `pr-<number>` aliases, so it cannot delete the preview of an open PR.
+
+Two things to know:
+
+- It uses `pull_request_target`, so that a PR closed from a fork still gets the Cloudflare secrets. That is only safe because the job never checks out or runs anything from the PR. Keep it that way. Like `workflow_run`, this trigger is read from `master`, so changes to it cannot be tested on their own PR.
+- Deletes pass `force=true`, because Cloudflare refuses to delete the latest deployment of an alias without it.
 
 ## Who can trigger what
 
