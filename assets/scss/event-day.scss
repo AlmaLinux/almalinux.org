@@ -26,14 +26,25 @@
 }
 
 // A plain column of content inside a .row: no background or border, just the
-// heading size. Icons in the heading carry the visual weight.
+// heading size. Icons in the heading carry the visual weight. A button at the
+// end of the column sits on the bottom edge, so buttons in side-by-side
+// columns line up even when the text above them differs in length.
 .al-event-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
   h3 {
     font-size: 1.25rem;
   }
 
   p:last-child {
     margin-bottom: 0;
+  }
+
+  > .btn {
+    align-self: flex-start;
+    margin-top: auto;
   }
 }
 
