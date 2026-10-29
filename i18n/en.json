@@ -984,8 +984,6 @@
    "Brand Book": "Brand Book",
    "Read the Brand Book": "Read the Brand Book",
    "Keep clear space around the logo of at least the height of the 'A' mark.": "Keep clear space around the logo of at least the height of the 'A' mark.",
-   "Find us at ATO": "Find us at ATO",
-   "Oct 19 & 20, booth #79": "Oct 19 & 20, booth #79",
    ", or keep them to yourself. Everything published goes through review before it appears.": ", or keep them to yourself. Everything published goes through review before it appears.",
    "A preview of the AlmaLinux Catalog, listing certified hardware and software": "A preview of the AlmaLinux Catalog, listing certified hardware and software",
    "A rack of servers, a tower, a laptop, a mini PC, and a single board computer, each marked as certified for AlmaLinux": "A rack of servers, a tower, a laptop, a mini PC, and a single board computer, each marked as certified for AlmaLinux",
@@ -1120,5 +1118,7 @@
    "Open source foundation for the financial services industry.": "Open source foundation for the financial services industry.",
    "Get AlmaLinux Vagrant boxes": "Get AlmaLinux Vagrant boxes",
    "To use them by name, set the VAGRANT_SERVER_URL environment variable to ": "To use them by name, set the VAGRANT_SERVER_URL environment variable to ",
-   "You can get AlmaLinux OS Vagrant boxes from the AlmaLinux Vagrant box catalog at the link provided: ": "You can get AlmaLinux OS Vagrant boxes from the AlmaLinux Vagrant box catalog at the link provided: "
+   "You can get AlmaLinux OS Vagrant boxes from the AlmaLinux Vagrant box catalog at the link provided: ": "You can get AlmaLinux OS Vagrant boxes from the AlmaLinux Vagrant box catalog at the link provided: ",
+   "Find us at SC26": "Find us at SC26",
+   "Nov 16 to 19, booth #1704": "Nov 16 to 19, booth #1704"
 }

@@ -1,48 +1,60 @@
 @use "variables";
 
 // Reusable content blocks for event-day page bodies (content/<event>.md).
-// Cards sit on the opposite brand blue from the page background, per the
-// deck card rule: page is $al-body-background (#0f4266), cards are Black Pearl.
+// Sections are separated by full-width color bands rather than boxed cards:
+// plain sections sit on $al-body-background (#0f4266) and bands on Black Pearl.
+// Keep decoration out of these blocks (no accent stripes, no uppercase kickers).
 
-.al-event-eyebrow {
-  font-family: variables.$al-font-family-accent;
-  font-weight: 600;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: variables.$al-c-cta-blue;
-  margin-bottom: 0.4rem;
-}
-
-.al-event-feature {
+// A full-width Black Pearl band. The markdown body sits inside the layout's
+// .container, so the band paints its background past the container edges with
+// a spread box-shadow, and clip-path trims it to the band's own height. The
+// text stays aligned with the rest of the page and nothing scrolls sideways.
+.al-event-band {
   background: variables.$al-c-black-pearl;
-  border-left: 4px solid variables.$al-c-cta-blue;
-  border-radius: 8px;
-  padding: 2rem;
+  box-shadow: 0 0 0 100vmax variables.$al-c-black-pearl;
+  clip-path: inset(0 -100vmax);
+  padding: 3.5rem 0;
+  margin: 3.5rem 0;
 
-  h2 {
+  > :first-child {
     margin-top: 0;
   }
 
-  // Green accent for certification content (matches al-cta-green's purpose)
-  &--green {
-    border-left-color: variables.$al-c-atlantis;
-
-    .al-event-eyebrow {
-      color: variables.$al-c-atlantis;
-    }
+  > :last-child {
+    margin-bottom: 0;
   }
 }
 
+// A plain column of content inside a .row: no background or border, just the
+// heading size. Icons in the heading carry the visual weight. A button at the
+// end of the column sits on the bottom edge, so buttons in side-by-side
+// columns line up even when the text above them differs in length.
 .al-event-card {
-  background: variables.$al-c-black-pearl;
-  border-top: 4px solid variables.$al-c-cta-blue;
-  border-radius: 8px;
-  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   h3 {
     font-size: 1.25rem;
   }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  > .btn {
+    align-self: flex-start;
+    margin-top: auto;
+  }
+}
+
+// A date, time, or place shown just above a heading. Use it only for that kind
+// of information, never as a decorative label.
+.al-event-eyebrow {
+  font-family: variables.$al-font-family-accent;
+  font-weight: 600;
+  color: variables.$al-link-color;
+  margin-bottom: 0.4rem;
 }
 
 .al-event-steps {
@@ -56,10 +68,7 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    background: variables.$al-c-black-pearl-lighter;
-    border-radius: 8px;
-    padding: 0.75rem 1rem;
-    margin-bottom: 0.6rem;
+    padding: 0.5rem 0;
 
     code {
       white-space: nowrap;
