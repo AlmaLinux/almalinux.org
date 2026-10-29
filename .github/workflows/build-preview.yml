@@ -34,19 +34,26 @@ jobs:
       - name: Generate get_almalinux data
         run: python3 tools/generate_get_almalinux_yaml.py
 
-      # Cloudflare Pages serves this build at the alias publish-preview.yml
-      # creates, which is always pr-<number>. Build with that URL so absolute
-      # links (og:image, canonical, the RSS feed, the sitemap) point at the
-      # preview instead of production. If either value is missing, fall back to
-      # the baseURL in config.yaml rather than building a malformed host.
+      # Cloudflare Pages serves this build at pr-<number>-<first 7 chars of head
+      # SHA>. The alias is handed to publish-preview.yml in the pr-number
+      # artifact, which deploys to it. Build with that URL so absolute links
+      # (og:image, canonical, the RSS feed, the sitemap) point at the preview
+      # instead of production. If any value is missing, fall back to the
+      # baseURL in config.yaml rather than building a malformed host.
       - name: Work out the preview base URL
         id: baseurl
         env:
           PROJECT: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
           PR: ${{ github.event.pull_request.number }}
+          SHA: ${{ github.event.pull_request.head.sha }}
         run: |
-          if [ -n "$PROJECT" ] && [ -n "$PR" ]; then
-            echo "url=https://pr-$PR.$PROJECT.pages.dev/" >> "$GITHUB_OUTPUT"
+          alias=""
+          if [ -n "$PR" ] && [ -n "$SHA" ]; then
+            alias="pr-$PR-${SHA:0:7}"
+          fi
+          echo "alias=$alias" >> "$GITHUB_OUTPUT"
+          if [ -n "$PROJECT" ] && [ -n "$alias" ]; then
+            echo "url=https://$alias.$PROJECT.pages.dev/" >> "$GITHUB_OUTPUT"
           else
             echo "url=" >> "$GITHUB_OUTPUT"
           fi
@@ -79,13 +86,20 @@ jobs:
 
       # The deploy workflow runs on workflow_run, where GitHub leaves
       # pull_requests[] empty for pull requests opened from a fork. Hand the
-      # number across in the artifact instead. See .github/workflows/README.md.
-      - name: Record PR number
-        run: echo "${{ github.event.pull_request.number }}" > pr-number.txt
+      # number across in the artifact instead, along with the alias this build
+      # was made for. See .github/workflows/README.md.
+      - name: Record PR number and preview alias
+        env:
+          ALIAS: ${{ steps.baseurl.outputs.alias }}
+        run: |
+          echo "${{ github.event.pull_request.number }}" > pr-number.txt
+          echo "$ALIAS" > preview-alias.txt
 
-      - name: Upload PR number
+      - name: Upload PR number and preview alias
         uses: actions/upload-artifact@v4
         with:
           name: pr-number
-          path: pr-number.txt
+          path: |
+            pr-number.txt
+            preview-alias.txt
           retention-days: 3
