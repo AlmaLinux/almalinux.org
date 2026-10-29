@@ -14,9 +14,6 @@
 # added for marketing reasons
 /ato /ato-2026/ 302
 /ato/ /ato-2026/ 302
-# SC26 has no translated page, so send localized links from the announcement bar to the English one
-/:lang/sc26 /sc26/ 302
-/:lang/sc26/ /sc26/ 302
 /fips/ /blog/2023-09-19-fips-validation-for-almalinux/ 302
 /comparison/ https://wiki.almalinux.org/Comparison.html 302
 /migrate/ https://wiki.almalinux.org/migration/ 307
