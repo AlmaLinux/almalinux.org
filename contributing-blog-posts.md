@@ -93,26 +93,6 @@ header:
 
   The options are the ones listed for `title` and `subtitle` in `data/header_templates.yaml`.
 
-- To add pictures, such as portraits, list them under `images`. Each picture is a file in `./static/`, placed with its top-left corner at `x`, `y` (the image is 1920x1080) and cropped to `width` x `height`. A `caption` is drawn centered below it, if the template has a caption style. You'll usually need to move the title up to make room:
-
-  ```yaml
-  header:
-    template: election
-    title: "Meet our new\nBoard Members"
-    style:
-      title:
-        y: 440
-    images:
-      - src: /blog-images/2026/munehiro.ikeda.png
-        x: 555
-        y: 500
-        width: 270
-        height: 270
-        caption: "Munehiro Ikeda"
-  ```
-
-  Captions are added to the alt text.
-
 - Templates are listed in `data/header_templates.yaml`, and their backgrounds live in `assets/header-templates/`. To add one, export a background with the logo but no text at 1920x1080, put it in that folder, and add an entry with the font, size and position of each line.
 
 **The meat of your post**

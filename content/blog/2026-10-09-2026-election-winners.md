@@ -6,27 +6,11 @@ author:
   bio: "Chair, board of directors"
   image: /users/benny.jpeg
 date: "2026-10-08"
+images:
+  - /blog-images/2026/2026-10-09-2026-election-results.png
 post:
   title: "It’s official: please join us in welcoming Tristan Théroux and Muuhh (Munehiro) Ikeda to the AlmaLinux OS Foundation board!"
-header:
-  template: election
-  title: "Meet our new\nBoard Members"
-  style:
-    title:
-      y: 440
-  images:
-    - src: /blog-images/2026/munehiro.ikeda.png
-      x: 555
-      y: 500
-      width: 270
-      height: 270
-      caption: "Munehiro Ikeda"
-    - src: /blog-images/2026/tristan.jpeg
-      x: 1095
-      y: 500
-      width: 270
-      height: 270
-      caption: "Tristan Théroux"
+  image: /blog-images/2026/2026-10-09-2026-election-results.png
 ---
 
 It’s official! Please join us in welcoming [Tristan Théroux](https://www.linkedin.com/in/tristan-th%C3%A9roux-b588065a/) and [Muuhh (Munehiro) Ikeda](https://www.linkedin.com/in/munehiro-ikeda-a932a24/) to the AlmaLinux OS Foundation board!

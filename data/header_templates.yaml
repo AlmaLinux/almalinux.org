@@ -24,17 +24,9 @@
 #             grows upward instead of running into the subtitle)
 #     linespacing: extra pixels between wrapped lines
 #     color:  hex color
-#   caption: optional; text options for picture captions (font, size,
-#     linespacing, color), plus margin: pixels between picture and caption.
-#     Captions are centered below their picture.
 #
-# A post can also place pictures from static/ on its header with
-# header.images, a list of {src, x, y, width, height, caption}: x and y are
-# the picture's top-left corner, and it is cropped to width x height.
-#
-# A post can override any title / subtitle / caption option for itself under
-# header.style.title, header.style.subtitle or header.style.caption in its
-# front matter.
+# A post can override any title / subtitle option for itself under
+# header.style.title or header.style.subtitle in its front matter.
 
 vulnerability:
   background: vulnerability.png
@@ -56,30 +48,3 @@ vulnerability:
     aligny: top
     linespacing: 8
     color: "#ffffff"
-
-election:
-  background: election.png
-  title:
-    font: fonts/Montserrat-SemiBold.ttf
-    size: 160
-    x: 960
-    y: 660
-    alignx: center
-    aligny: bottom
-    linespacing: 24
-    color: "#ffffff"
-  subtitle:
-    font: fonts/Montserrat-Regular.ttf
-    size: 80
-    x: 960
-    y: 770
-    alignx: center
-    aligny: top
-    linespacing: 8
-    color: "#ffffff"
-  caption:
-    font: fonts/Montserrat-Regular.ttf
-    size: 40
-    linespacing: 6
-    color: "#ffffff"
-    margin: 30

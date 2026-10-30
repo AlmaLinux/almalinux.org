@@ -6,12 +6,11 @@ author:
   bio: "Director, AlmaLinux OS Foundation, member of the Election Committee"
   image: /board/alexiribarren.jpg
 date: "2026-08-03"
+images:
+  - /blog-images/2026/2026-08-03-board-election-nominations.png
 post:
   title: "Know someone who should help steer AlmaLinux? Nominations open today and close September 8. Here's what the role involves and how to put a name forward."
-header:
-  template: election
-  title: "Board nominations\nare open!"
-  subtitle: "Help steer AlmaLinux"
+  image: /blog-images/2026/2026-08-03-board-election-nominations.png
 ---
 
 Nominations for this year's board election open today, August 3, and they close on September 8. There are two Cohort A seats to fill, and this is the first election under our [new bylaws and election process](/blog/2026-06-10-new-bylaws-and-2026-election). More details are available on the [2026 election page](https://wiki.almalinux.org/foundation/elections/2026.html).
