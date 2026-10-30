@@ -95,8 +95,8 @@
     "The Linux Foundation and Open Source Security Foundation (OpenSSF) have also produced a plan called the": "La Linux Foundation e l'Open Source Security Foundation (OpenSSF) hanno prodotto anche un piano chiamato il",
     "which calls for industry action to develop software component frameworks, including SBOMs, to expedite discovery of and response to future vulnerabilities like Log4j.": "che invita l'industria a sviluppare strutture di componenti software, compresi gli SBOM, per accelerare la scoperta e la risposta alle future vulnerabilità come Log4j.",
     "has implemented SBOM into the pipeline for the reasons listed above, to enable:": "ha implementato l'SBOM nella pipeline per i motivi elencati sopra, al fine di:",
-    "Tracing the whole build process from pulling sources from CentOS git repositories to releasing a verified and signed package in the public repository": "Tracciare l'intero processo di compilazione, dall'estrazione dei codici sorgente dai repository git di CentOS alla distribuzione di un pacchetto verificato e firmato nel repository pubblico.",
-    "Making the build pipeline more secure like ensuring that only trusted sources are used for builds, avoiding attack consequences, etc": "Rendere la pipeline di compilazione più sicura, garantendo che siano utilizzate solo codici sorgente attendibili, evitando conseguenze di attacchi, ecc.",
+    "Tracing the whole build process from pulling sources from CentOS git repositories to releasing a verified and signed package in the public repository": "Tracciare l'intero processo di compilazione, dall'estrazione dei codici sorgente dai repository git di CentOS alla distribuzione di un pacchetto verificato e firmato nel repository pubblico",
+    "Making the build pipeline more secure like ensuring that only trusted sources are used for builds, avoiding attack consequences, etc": "Rendere la pipeline di compilazione più sicura, garantendo che siano utilizzate solo codici sorgente attendibili, evitando conseguenze di attacchi, ecc",
     "Reducing the number of ways of data corruption": "Ridurre il numero di modi in cui i dati possono essere corrotti",
     "How are we doing this?": "Come stiamo facendo questo?",
     "The AlmaLinux Build System stores SBOM data inside of immudb": "Il sistema di build di AlmaLinux memorizza i dati SBOM all'interno di immudb",
@@ -346,7 +346,7 @@
     "Fixing Major Version Upgrades": "Correzione degli upgrade tra versioni principali",
     "Subscribe on LinkedIn": "Iscriviti a LinkedIn",
     "Mailing List": "Lista Mail",
-    "RSS Feed": "RSS Feed",
+    "RSS Feed": "Feed RSS",
     "Stay up to date with the latest AlmaLinux news, releases, and community updates. Subscribe via your preferred channel:": "Rimani aggiornato sulle ultime informazioni di AlmaLinux, aggiornamenti e novità dalla community. Iscriviti al tuo canale preferito:",
     "This demo takes you through upgrading in place from CentOS 7 to AlmaLinux 8": "Questa Demo ti accompagna durante l’aggiornamento da CentoOS7 fino a AlmaLinux8",
     "Upgrade from CentOS 6 to CentOS 7": "Aggiornare da CentOS6 a CentOS7",
@@ -442,5 +442,11 @@
     "Expired": "Scaduto",
     "Expires": "Scade",
     "OSS Evangelist": "OSS Evangelist",
-    "Questions? Ask the Promo SIG": "Domande? Chiedi al Promo SIG"
+    "Questions? Ask the Promo SIG": "Domande? Chiedi al Promo SIG",
+    "Preserve your applications, your data, and your sanity. Run the most recent version of the OS you and software you need. Run a modern and secure operating system, without having to reconfigure or rebuild the software you need.": "Proteggi le tue applicazioni, i tuoi dati e la tua serenità. Utilizza la versione più recente del sistema operativo e dei software di cui hai bisogno. Utilizza un sistema operativo moderno e sicuro, senza dover riconfigurare o ricompilare i software di cui hai bisogno.",
+    "This looks awesome! How do I get involved?": "Sembra fantastico! Come posso partecipare?",
+    "You can find the LEAPP code ": "Puoi trovare il codice sorgente di LEAPP ",
+    "in the AlmaLinux GitHub organization.": "nell'organizzazione GitHub di AlmaLinux.",
+    "We hope that everyone in the community can use and contribute to ELevate, no matter which distro you prefer. That is the open source way.": "Speriamo che tutti i membri della community possano utilizzare e contribuire allo sviluppo di ELevate, a prescindere da quale distro preferiscano. Questo è lo spirito dell'open source.",
+    "Individual Member": "Membro singolo"
 }

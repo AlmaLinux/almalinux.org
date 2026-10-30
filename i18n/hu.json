@@ -89,9 +89,9 @@
     "to provide administrators with authentication, verification and full SBOM visibility.": "hogy a rendszergazdák számára hitelesítést, ellenőrzést és teljes SBOM láthatóságot biztosítson.",
     ", the standard for open source for immutable databases, used by some of the world’s leading companies and governments.": ", a megváltoztathatatlan adatbázisok nyílt forráskódú szabványa, amelyet a világ néhány vezető vállalata és kormánya használ.",
     "immudb is protected against tampering.": "az immudb védett a manipulációval szemben.",
-    "All attestation data is integrity-checked and cryptographically verified by clients.": "",
+    "All attestation data is integrity-checked and cryptographically verified by clients.": "Minden tanúsítási adat sértetlenség-ellenőrzése és kriptográfiai igazolása ügyfél oldalon történik.",
     "No one can change this data, not AlmaLinux or anyone else.": "Senki nem módosíthatja ezeket az adatokat, sem AlmaLinux, sem bárki más.",
-    "immudb is also protected against MITM attacks.": "",
+    "immudb is also protected against MITM attacks.": "Az immudb is védett az MITM támadások ellen.",
     "The encryption key is client-side verified and checked before every communication.": "A titkosítási kulcsot az ügyféloldal ellenőrzi és minden kommunikáció előtt ellenőrzi.",
     "Getting Started": "Elkezdeni",
     "For more information, see the Almalinux wiki:": "További információkért lásd az Almalinux wikit:",
@@ -292,5 +292,12 @@
     "Download .torrent file": ".torrent letöltés",
     "We are so grateful to the All Things Open": "",
     "Get Incus and LXC Images": "Szerezd be az Incus és LXC képfájlokat",
-    "AlmaLinux images are available for Incus and LXC.": "Az AlmaLinux képfájlok elérhetők Incus és LXC számára."
+    "AlmaLinux images are available for Incus and LXC.": "Az AlmaLinux képfájlok elérhetők Incus és LXC számára.",
+    "Newsletters": "Hírlevelek",
+    "AlmaLinux Newsletters": "AlmaLinux hírlevelek",
+    "Stay up to date with the latest AlmaLinux news, releases, and community updates. Subscribe via your preferred channel:": "Legyen naprakész a legújabb AlmaLinux hírekkel, kiadásokkal és közösségi frissítésekkel. Iratkozzon fel az Ön által választott csatornán:",
+    "RSS Feed": "RSS csatorna",
+    "Mailing List": "Levelező lista",
+    "Subscribe on LinkedIn": "Feliratkozás: LinkedIn",
+    "Individual Member": "Egyéni tag"
 }
