@@ -19,55 +19,18 @@
     {{- errorf "header template %q: background assets/header-templates/%s not found" .template $tpl.background -}}
   {{- end -}}
 
-  {{- /* A post can override the template's text options with header.style.title / .subtitle / .caption. */ -}}
-  {{- $styles := dict -}}
-  {{- range $field := slice "title" "subtitle" "caption" -}}
-    {{- $override := index ($header.style | default dict) $field | default dict -}}
-    {{- range $key, $_ := $override -}}
-      {{- if not (isset (index $tpl $field | default dict) $key) -}}
-        {{- errorf "%s: unknown header style option %s.%s (see data/header_templates.yaml)" $page.File.Path $field $key -}}
-      {{- end -}}
-    {{- end -}}
-    {{- with index $tpl $field -}}
-      {{- $styles = merge $styles (dict $field (merge . $override)) -}}
-    {{- end -}}
-  {{- end -}}
-
   {{- $filters := slice -}}
   {{- range $field := slice "title" "subtitle" -}}
     {{- with index $header $field -}}
-      {{- $style := index $styles $field -}}
-      {{- $opts := merge $style (dict "font" (resources.Get $style.font)) -}}
-      {{- $filters = $filters | append (images.Text . $opts) -}}
-    {{- end -}}
-  {{- end -}}
-
-  {{- /* Pictures from static/ (header.images), each with an optional caption centered below it. */ -}}
-  {{- $picHashes := slice -}}
-  {{- range $item := $header.images -}}
-    {{- $file := path.Join "static" .src -}}
-    {{- if not (fileExists $file) -}}
-      {{- errorf "%s: header image %s not found in static/" $page.File.Path .src -}}
-    {{- end -}}
-    {{- $content := os.ReadFile $file -}}
-    {{- $picHashes = $picHashes | append (md5 $content) -}}
-    {{- $pic := (resources.FromString (path.Join "header-images" .src) $content).Fill (printf "%dx%d Lanczos" (int .width) (int .height)) -}}
-    {{- $filters = $filters | append (images.Overlay $pic .x .y) -}}
-    {{- with .caption -}}
-      {{- $style := index $styles "caption" -}}
-      {{- if not $style -}}
-        {{- errorf "%s: header template %q has no caption style for image captions" $page.File.Path $header.template -}}
+      {{- /* A post can override the template's options per line with header.style.title / header.style.subtitle. */ -}}
+      {{- $override := index ($header.style | default dict) $field | default dict -}}
+      {{- range $key, $_ := $override -}}
+        {{- if not (isset (index $tpl $field) $key) -}}
+          {{- errorf "%s: unknown header style option %s.%s (see data/header_templates.yaml)" $page.File.Path $field $key -}}
+        {{- end -}}
       {{- end -}}
-      {{- $opts := dict
-        "font" (resources.Get $style.font)
-        "size" $style.size
-        "color" $style.color
-        "linespacing" $style.linespacing
-        "x" (add $item.x (div $item.width 2))
-        "y" (add $item.y $item.height $style.margin)
-        "alignx" "center"
-        "aligny" "top"
-      -}}
+      {{- $style := merge (index $tpl $field) $override -}}
+      {{- $opts := merge $style (dict "font" (resources.Get $style.font)) -}}
       {{- $filters = $filters | append (images.Text . $opts) -}}
     {{- end -}}
   {{- end -}}
@@ -79,8 +42,8 @@
   {{- end -}}
   {{- $img := ($bg | images.Filter $filters).Process $format -}}
 
-  {{- /* Readable file name; the hash changes with the text and pictures so social media caches refresh. */ -}}
-  {{- $hash := substr (md5 (print (jsonify $header) (delimit $picHashes ""))) 0 8 -}}
+  {{- /* Readable file name; the hash changes with the text so social media caches refresh. */ -}}
+  {{- $hash := substr (md5 (jsonify $header)) 0 8 -}}
   {{- $name := printf "blog-images/generated/%s-%s%s" $page.File.ContentBaseName $hash $img.MediaType.FirstSuffix.FullSuffix -}}
   {{- $url = ($img | resources.Copy $name).RelPermalink -}}
 {{- end -}}

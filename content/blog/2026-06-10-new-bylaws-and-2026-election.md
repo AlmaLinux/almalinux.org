@@ -6,12 +6,11 @@ author:
   bio: "Chair, board of directors"
   image: /users/benny.jpeg
 date: "2026-06-10"
+images:
+  - /blog-images/2026/2026-board-election.png
 post:
   title: "The board has adopted amended bylaws and a new, more predictable election process. Here's what changed — annual cohort-based elections and ranked-choice voting — plus the two dates to mark if you want to vote or run this year."
-header:
-  template: election
-  title: "New bylaws\nNew election process"
-  subtitle: "What to expect in 2026"
+  image: /blog-images/2026/2026-board-election.png
 ---
 
 Last September, [we cancelled an election in progress](/blog/2025-09-30-election-update) because we found inconsistencies in how our own processes, bylaws, and committee guidelines fit together. We wanted to fix that properly, and then to come back to you when the work was done.
