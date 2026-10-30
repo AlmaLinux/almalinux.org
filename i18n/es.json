@@ -909,5 +909,14 @@
     "AlmaLinux OS is built to be transparent, verifiable, and independently certified. From signed packages and public errata to compliance tooling and formal certifications, here is how we help you trust the system underneath your work.": "AlmaLinux OS está diseñado para ser transparente, verificable y certificado de forma independiente. Desde paquetes firmados y erratas públicas hasta herramientas de cumplimiento y certificaciones formales, así es como lo ayudamos a confiar en el sistema que usa en su trabajo.",
     "AlmaLinux supports Secure Boot, with a shim signed by Microsoft, so systems boot only trusted software.": "AlmaLinux admite el arranque seguro, con una cuña firmada por Microsoft, por lo que los sistemas arrancan solo software confiable.",
     "Audit and harden your systems with the OpenSCAP and SCAP Workbench guides and the CIS Benchmark.": "Audite y refuerce sus sistemas con las guías de la mesa de trabajo OpenSCAP y SCAP y el Benchmark CIS.",
-    "View the GPG keys": "Ver las claves GPG"
+    "View the GPG keys": "Ver las claves GPG",
+    "and is signed by Microsoft. The AlmaLinux shim trusts these certificates:": "y lo firma Microsoft. AlmaLinux shim confía en estos certificados:",
+    "on chat.almalinux.org. A few examples of patches we have shipped or provided for testing:": "en chat.almalinux.org. Algunos ejemplos de parches que hemos enviado o proporcionado para la prueba:",
+    "regreSSHion (CVE-2024-6387)": "regreSSHion (CVE-2024-6387)",
+    "vulnerability disclosure policy": "política de divulgación de la vulnerabilidad",
+    "Anything that is not the operating system itself, such as ELevate or this website: open an issue on that project's repository.": "Cualquier cosa que no sea el propio sistema operativo, como ELevate o este sitio web: abrir un problema en el repositorio de ese proyecto.",
+    "Direct reports": "Informes directos",
+    "for full details.": "para detalles completos.",
+    "You can also subscribe to the": "También puede suscribirse al",
+    "to get advisories as soon as they are published.": "para tener informes tan pronto como se publiquen."
 }
