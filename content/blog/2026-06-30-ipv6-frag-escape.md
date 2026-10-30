@@ -6,11 +6,15 @@ author:
   bio: "AlmaLinux Lead Architect"
   image: /users/alukoshko.jpg
 date: "2026-06-30"
-images:
-  - /blog-images/2026/2026-06-30-ipv6-frag-escape.png
 post:
   title: "A newly disclosed Linux kernel flaw in the IPv6 fragmentation path lets an unprivileged user inside a container escape to root on the host. It only affects AlmaLinux 10 and Kitten 10, and there is no CVE yet. A patched kernel for AlmaLinux 10 is in the testing repository now (Kitten's fix is coming in the next update). If you run containers or any multi-tenant workload, help us verify it."
-  image: /blog-images/2026/2026-06-30-ipv6-frag-escape.png
+header:
+  template: vulnerability
+  title: "IPV6_FRAG_ESCAPE: patched"
+  subtitle: "Call for testing"
+  style:
+    title:
+      size: 115
 ---
 
 ## Update: The fix is now in production
