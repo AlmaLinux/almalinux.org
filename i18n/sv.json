@@ -1118,5 +1118,7 @@
     "Open source foundation for the financial services industry.": "Stiftelse för öppen källkod inom finanssektorn.",
     "Get AlmaLinux Vagrant boxes": "Hämta AlmaLinux Vagrant boxar",
     "To use them by name, set the VAGRANT_SERVER_URL environment variable to ": "För att använda dem med ett namn, sätt miljövariabeln VAGRANT_SERVER_URL till ",
-    "You can get AlmaLinux OS Vagrant boxes from the AlmaLinux Vagrant box catalog at the link provided: ": "Du kan hämta AlmaLinux OS Vagran boxar från AlmaLinux Vagrant boxkatalogen via den medföljande länken: "
+    "You can get AlmaLinux OS Vagrant boxes from the AlmaLinux Vagrant box catalog at the link provided: ": "Du kan hämta AlmaLinux OS Vagran boxar från AlmaLinux Vagrant boxkatalogen via den medföljande länken: ",
+    "Find us at SC26": "Hitta oss på SC26",
+    "Nov 16 to 19, booth #1704": "November 16 till 19:e, stånd #1704"
 }
