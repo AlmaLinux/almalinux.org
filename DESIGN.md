@@ -1,6 +1,6 @@
 # AlmaLinux.org Design System
 
-Version 1.0 · Last updated 2026-09-21
+Version 1.0 · Last updated 2026-10-29
 
 Adopted by: Promo SIG 2026-09-24
 
@@ -334,7 +334,7 @@ The following patterns are used site-wide:
 
 **Event schedule** (`al-schedule` / `al-sched-*`, `event-schedule.scss`; shortcode `layouts/shortcodes/event-schedule.html`). A two-column morning/afternoon schedule rendered from a Sessionize JSON export, with collapsible session descriptions. Used on event pages.
 
-**Event body blocks** (`al-event-*`, `event-day.scss`). Content blocks for the markdown body of event pages: `al-event-feature` (a Black Pearl panel with a CTA-blue left border, or `--green` for certification content), `al-event-card` (a Black Pearl card with a top border), `al-event-eyebrow`, `al-event-steps` (a numbered step list), and `al-event-headshot` (a circular portrait, with an `al-event-headshot--sm` modifier for headshots sharing a row with other columns). Use these instead of inline styles in event page content. The same file also styles the "Can't make it?" band (`al-event-stop`), whose heading is an `<h2>` so the page keeps a single `<h1>` (see [§14](#14-accessibility)).
+**Event body blocks** (`al-event-*`, `event-day.scss`). Content blocks for the markdown body of event pages. Sections are separated by color, not boxes: `al-event-band` is a full-width Black Pearl band (it paints past the layout's `.container` with a spread box-shadow trimmed by `clip-path`, so text stays aligned and nothing scrolls sideways), and plain sections sit on the page background between bands. Alternate them, and never put two bands back to back. `al-event-card` is a plain column with no background or border, `al-event-eyebrow` is a date, time, or place shown above a heading (only for that kind of information), `al-event-steps` is a numbered step list with green numbers, and `al-event-headshot` (a circular portrait, with an `al-event-headshot--sm` modifier for headshots sharing a row with other columns). Use these instead of inline styles in event page content. The same file also styles the "Can't make it?" band (`al-event-stop`), whose heading is an `<h2>` so the page keeps a single `<h1>` (see [§14](#14-accessibility)).
 
 **ALESCo RFC cards** (`al-rfc-*`, `alesco.scss`). The proposal-lifecycle UI on the `/alesco` page: status-label pills, a lifecycle stepper, and proposal cards rendered client-side from the GitHub API.
 
@@ -373,6 +373,7 @@ For everything else, use Bootstrap's spacing utilities (`m-*`, `p-*`, `gap-*`, `
 - Never hand-edit `i18n/en.json` (see [§10](#10-i18n-conventions)).
 - Never lowercase "AlmaLinux" in prose (see [§6](#6-typography)).
 - Avoid raw hex colors in page or component SCSS when a `$al-c-*` variable exists for that color (see [§2](#2-brand-colors)). Some legacy raw hex remains and is being migrated; do not add more.
+- Don't decorate content blocks with colored accent stripes (a border on one edge of a card) or uppercase kicker labels above headings. Separate sections with full-width bands instead (see `al-event-band` in [§11](#11-component-patterns)).
 - Always check `layouts/partials/common/` for an existing shared partial before adding markup to a page. Do not duplicate (for example the sponsor logo wall in `foundation-members.html`).
 
 ## 16. Presentations
@@ -433,3 +434,4 @@ The point is big, legible type: these slides are read from the back of a room, s
 - **(2026-07-09):** Added the Presentations section, and required a stable `id` on major page sections.
 - **(2026-07-16):** Promoted the CTA blue to the `$al-c-cta-blue` token, embedded the "Powered by AlmaLinux" badges, clarified the Brand Book relationship and the platinum tier selector, and reworded the palette source-of-truth and free-tier accent notes (review feedback on PR #1101).
 - **(2026-09-21):** Added the event body blocks (`al-event-*`) used by event page content, and moved the "Can't make it?" band off inline styles onto `al-event-stop` in `event-day.scss`. Added the `al-event-headshot--sm` modifier for narrow columns.
+- **(2026-10-29):** Replaced the boxed event body blocks with full-width bands: added `al-event-band`, removed `al-event-feature` and its accent stripes, made `al-event-card` a plain column, limited `al-event-eyebrow` to dates and places, and dropped the row backgrounds from `al-event-steps`. Added the no-accent-stripes rule to [§15](#15-forbidden-patterns).

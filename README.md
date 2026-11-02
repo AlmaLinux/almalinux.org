@@ -70,7 +70,7 @@ speakers_header: "On stage at AlmaLinux Day: City" # optional; overrides default
 
 The markdown body (below `---`) is rendered between the hero and the speakers section. Use it for the event description, schedule embed, venue photos, and any other event-specific content. Raw HTML is supported.
 
-For styled blocks in the body, use the shared classes in `assets/scss/event-day.scss` instead of inline styles: `al-event-feature` (a highlighted panel, with `al-event-feature--green` for certification content), `al-event-card`, `al-event-eyebrow`, `al-event-steps` (a numbered list), and `al-event-headshot`. See `content/ato-2026.md` for an example.
+For styled blocks in the body, use the shared classes in `assets/scss/event-day.scss` instead of inline styles: `al-event-band` (a full-width dark band; alternate bands with plain sections and never stack two), `al-event-card` (a plain column), `al-event-eyebrow` (a date, time, or place above a heading), `al-event-steps` (a numbered list), and `al-event-headshot`. See `content/sc26.md` for an example.
 
 The same layout works for conferences where AlmaLinux has a booth or a talk but isn't the organizer: point `registration_url` at an anchor on the page, leave `speakers` out of the data file, and set `cant_make_it_heading` and `cant_make_it_text`.
 
