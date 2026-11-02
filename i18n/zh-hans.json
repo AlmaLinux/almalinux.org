@@ -809,7 +809,6 @@
     "Submitted by a community member. For hardware it is backed by real certification suite data, the same suite the vendors and the Foundation run. For software it is a confirmation that a product works on a given release. Community validation is just as valuable to us as a vendor listing.": "由社区成员提交。对于硬件，其数据来自由供应商和基金会共同运行的真实认证套件；对于软件，则是确认产品在特定版本上能够正常运行。社区认证对我们而言，与供应商列表同等重要。",
     "Validation is recorded for each AlmaLinux major version separately, so you can see what has been tested on the release you are deploying.": "每个AlmaLinux主要版本的认证结果都是单独记录的，因此您可以查看正在部署的版本中已进行检测的内容。",
     "Validation levels": "认证级别",
-    "Find us at ATO": "在ATO展会上找到我们",
     "Hardware and software certification both live in the same catalog, under the same account.": "硬件和软件认证都位于同一目录中，属于同一个账户。",
     "Certification Catalog": "认证目录",
     "A Common Criteria certificate is recognized across borders, so this independent assurance follows AlmaLinux wherever the community runs it, from personal projects to the most critical systems.": "通用标准(CC)认证具有跨国认可性，因此这种独立的保障可随AlmaLinux社区在任何地方运行而同步提供，无论是个人项目还是最关键的系统。",
@@ -854,7 +853,6 @@
     "The security of the operating system underneath everything else matters to everyone, whether you run AlmaLinux on a home lab, in a university, or across a national institution. Independent verification of that security is something the whole community benefits from.": "底层操作系统的安全性对每个人来说都至关重要，无论你是在家庭实验室、大学还是国家机构中运行AlmaLinux。独立验证这种安全性将使整个社区受益。",
     "Verify the certificate": "验证证书",
     "We did it alongside Cybertrust Inc., a longtime platinum sponsor of the AlmaLinux OS Foundation, and it makes AlmaLinux the first operating system to earn this certification in Japan. Here is what that means, and why it matters for anyone who relies on the software underneath their most important systems.": "我们与长期支持AlmaLinux OS基金会的铂金赞助商Cybertrust公司共同完成了这一成就，使AlmaLinux成为日本首个获得此项认证的操作系统。以下是这一认证的意义，以及它对所有依赖于其核心系统软件的用户的重要性。",
-    "Oct 19 & 20, booth #79": "10月19-20日，#79展位",
     "AlmaLinux Press & Media Kit": "AlmaLinux 新闻媒体资料包",
     "AlmaLinux OS is an open source, community-governed, and forever-free enterprise Linux distribution focused on long-term stability and delivering a robust production-grade platform. Distributed from a network of over 400 mirrors across six continents, AlmaLinux is compatible with RHEL® and pre-Stream CentOS, and powers projects for governments, the defense sector, and scientific research institutions as well as numerous global business sectors and the web hosting industry. Adopted by some of today's foremost open source ecosystem projects such as VMware, GitLab and Tenable, it's available on all major public cloud platforms including AWS, Azure, Google Cloud, and Oracle OCI. The AlmaLinux OS Foundation is a 501(c)(6) non-profit entity created as the central collaboration point for everything to do with AlmaLinux and for the benefit of the AlmaLinux OS community. Visit almalinux.org.": "AlmaLinux OS 是一个开源、由社区治理且永久免费的企业级 Linux 发行版，专注于长期稳定性，并提供稳健的生产级平台。它通过遍布六大洲的 400 多个镜像站点网络分发，与 RHEL® 及 Stream前的CentOS 兼容，为政府、国防领域和科研机构的项目提供支持，也服务于众多全球商业领域和网络托管行业。它已被 VMware、GitLab 和 Tenable 等当今一些最重要的开源生态系统项目采用，并可在包括 AWS、Azure、Google Cloud 和 Oracle OCI 在内的所有主要公有云平台上使用。AlmaLinux OS 基金会是一个 501(c)(6) 非营利实体，作为与 AlmaLinux 相关一切事务的核心协作中心而创建，旨在造福 AlmaLinux OS 社区。请访问 almalinux.org。",
     "Senior Systems and Network Administrator": "高级系统与网络管理员",
@@ -1092,5 +1090,7 @@
     "Open source foundation for the motion picture and media industry, home of projects like OpenEXR and OpenColorIO.": "电影与媒体行业的开源基金会，是OpenEXR和OpenColorIO等项目的发源地。",
     "AlmaLinux is a member of these foundations so that our community is represented in them, and so we can connect with the AlmaLinux users in their communities.": "AlmaLinux 是这些基金会的成员，以便我们的社区能够被代表，并与 AlmaLinux 用户在各自社区中建立联系。",
     "Community for high-performance computing (HPC). OpenHPC publishes install guides for AlmaLinux 9 and AlmaLinux 10.": "高性能计算（HPC）社区。OpenHPC发布了 AlmaLinux 9 和 AlmaLinux 10 的安装指南。",
-    "Open source foundation for the financial services industry.": "金融服务行业的开源基金会。"
+    "Open source foundation for the financial services industry.": "金融服务行业的开源基金会。",
+    "You can get AlmaLinux OS Vagrant boxes from the AlmaLinux Vagrant box catalog at the link provided: ": "您可以通过以下链接从 AlmaLinux 的 Vagrant Boxes 目录中获取 AlmaLinux OS 的 Vagrant 镜像： ",
+    "Get AlmaLinux Vagrant boxes": "获取 AlmaLinux 的 Vagrant Boxes 目录"
 }
