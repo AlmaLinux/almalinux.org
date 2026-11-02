@@ -253,6 +253,8 @@ For smaller contributions, follow this workflow:
 - Add your code, documentation, etc.
 - Submit a pull request (PR). All PRs should target the `master` branch. Once approved, a development site will automatically generate based on the PR.
 
+New pull requests open with a short checklist from [.github/pull_request_template.md](.github/pull_request_template.md). Please work through it before asking for review.
+
 After review and approval, the changes will be merged into the `master` branch and deployed to the live site. See [README.DEPLOY.md](README.DEPLOY.md) for how deployment works.
 
 For design tokens, components, and conventions, see [DESIGN.md](DESIGN.md).
@@ -281,6 +283,7 @@ To use a container-based development environment, install Docker and use an edit
 - `/layouts/partial` — Shared templates (header, footer, etc.)
 - `/i18n/` — Localization and translation files
 - `/static/` — Static files
+- `/static/llms.txt` and `/static/robots.txt`: hand-maintained files for AI agents and crawlers (see [llms.txt and robots.txt](#llmstxt-and-robotstxt))
 - `/content/` — Markdown content for site pages
 - `/data/` — Source data, currently only for the "Get AlmaLinux" page
 - `config.yaml` — Hugo configuration
@@ -378,6 +381,18 @@ Some URLs may allow other variables (like `variant`), or require different patte
 3. Start or restart the Hugo server to see your changes locally.
 
 If you have questions about advanced configuration or variable support, refer to the script or open an issue for help.
+
+#### llms.txt and robots.txt
+
+`static/llms.txt` gives AI agents and large language models (LLMs) a short overview of AlmaLinux OS and links to the pages most worth reading. `static/robots.txt` tells crawlers what they may crawl and points them to the sitemap. It also mentions llms.txt in a comment, which is for human readers since crawlers ignore comments. Both files are written by hand and nothing generates them, so they're only accurate if we keep them updated.
+
+Update `static/llms.txt` in the same pull request whenever you:
+
+- Add, move, rename, or remove a page that llms.txt links to, or a page important enough to be listed there.
+- Change the supported major versions, architectures, or image types.
+- Find that a wiki page or other external link in the file has moved.
+
+There's no settled standard for llms.txt yet. Ours follows the current [llmstxt.org](https://llmstxt.org/) proposal: a title, a short summary, then sections of links with a one-line description each. If a standard emerges, we'll update the file to match it.
 
 #### Prettier errors
 
