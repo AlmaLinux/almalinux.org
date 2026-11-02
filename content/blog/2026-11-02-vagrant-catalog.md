@@ -7,10 +7,10 @@ author:
   image: /users/yuriy-kohut.jpg
 date: 2026-11-02
 images:
-  - /blog-images/2026/2026-11-02-vagrant-catalog.png
+  - /blog-images/2026/2026-11-02-vagrant-catalog-boxes.png
 post:
   title: "HashiCorp is shutting down the HCP Vagrant registry on December 31, 2026. All AlmaLinux Vagrant boxes, old and new, are now served from our own catalog at vagrant.almalinux.org. Here's how to switch."
-  image: /blog-images/2026/2026-11-02-vagrant-catalog.png
+  image: /blog-images/2026/2026-11-02-vagrant-catalog-boxes.png
 ---
 
 HashiCorp is retiring the HCP Vagrant registry (formerly Vagrant Cloud), the service that has hosted the `almalinux/*` Vagrant boxes since 2021. To keep the boxes available, AlmaLinux now runs its own Vagrant box catalog at **[vagrant.almalinux.org](https://vagrant.almalinux.org)**. It has every version that was ever published to HCP, plus all new releases. The box names stay the same: you only need to tell Vagrant where to find them.
