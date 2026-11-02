@@ -1118,5 +1118,7 @@
     "Open source foundation for the financial services industry.": "Фонд відкритого програмного забезпечення для галузі фінансових послуг.",
     "Get AlmaLinux Vagrant boxes": "Отримайте Vagrant-бокси AlmaLinux",
     "To use them by name, set the VAGRANT_SERVER_URL environment variable to ": "Щоб використовувати їх за іменем, встановіть значення змінної середовища VAGRANT_SERVER_URL на ",
-    "You can get AlmaLinux OS Vagrant boxes from the AlmaLinux Vagrant box catalog at the link provided: ": "Ви можете завантажити Vagrant-бокси з ОС AlmaLinux із каталогу Vagrant-боксів AlmaLinux за вказаним посиланням: "
+    "You can get AlmaLinux OS Vagrant boxes from the AlmaLinux Vagrant box catalog at the link provided: ": "Ви можете завантажити Vagrant-бокси з ОС AlmaLinux із каталогу Vagrant-боксів AlmaLinux за вказаним посиланням: ",
+    "Find us at SC26": "Знайдіть нас на виставці SC26",
+    "Nov 16 to 19, booth #1704": "16–19 листопада, стенд №1704"
 }
