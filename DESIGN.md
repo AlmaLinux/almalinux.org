@@ -1,6 +1,6 @@
 # AlmaLinux.org Design System
 
-Version 1.0 · Last updated 2026-10-29
+Version 1.0 · Last updated 2026-11-02
 
 Adopted by: Promo SIG 2026-09-24
 
@@ -336,6 +336,8 @@ The following patterns are used site-wide:
 
 **Event body blocks** (`al-event-*`, `event-day.scss`). Content blocks for the markdown body of event pages. Sections are separated by color, not boxes: `al-event-band` is a full-width Black Pearl band (it paints past the layout's `.container` with a spread box-shadow trimmed by `clip-path`, so text stays aligned and nothing scrolls sideways), and plain sections sit on the page background between bands. Alternate them, and never put two bands back to back. `al-event-card` is a plain column with no background or border, `al-event-eyebrow` is a date, time, or place shown above a heading (only for that kind of information), `al-event-steps` is a numbered step list with green numbers, and `al-event-headshot` (a circular portrait, with an `al-event-headshot--sm` modifier for headshots sharing a row with other columns). Use these instead of inline styles in event page content. The same file also styles the "Can't make it?" band (`al-event-stop`), whose heading is an `<h2>` so the page keeps a single `<h1>` (see [§14](#14-accessibility)).
 
+**Focus Guide landing page** (`al-focus-*`, `focus.scss`; content `content/focus.md`). Builds on the event body blocks and adds four pieces, all scoped under `.al-focus-page`. `al-focus-hero` is an `al-event-band` that sits flush under the navbar and carries the page's `<h1>`, with an `al-focus-kicker` line above it and an `al-focus-lead` paragraph below. `al-focus-articles` is a two-column grid of `al-focus-article` cards (Black Pearl, rounded, a small centered image on top, and an `al-focus-related` block pinned to the bottom edge so cards in a row line up). `al-focus-related` is a ruled-off "Related links" list (`al-focus-related-label` plus a `<ul>` of arrow-icon links) that keeps links to pages an article mentions visibly separate from the article itself, with an `al-focus-article--wide` modifier for a full-row card with its image beside the text. `al-focus-page-badge` is a small pill for a page number or topic, used where `al-event-eyebrow` would be wrong because the label isn't a date or place. `al-focus-stats` holds `al-focus-stat` links whose large numbers take a logo color through the `--blue`, `--green`, and `--yellow` modifiers; keep a comment beside the strip saying where each number came from and when it was checked. `al-focus-card-media` gives a card's image a fixed 3:2 area so side-by-side cards line up when their images differ in shape (photos fill it; the `--contain` modifier fits diagrams without cropping). `al-focus-note` is a signed letter with an `al-event-headshot` beside it, stacked on phones.
+
 **ALESCo RFC cards** (`al-rfc-*`, `alesco.scss`). The proposal-lifecycle UI on the `/alesco` page: status-label pills, a lifecycle stepper, and proposal cards rendered client-side from the GitHub API.
 
 ## 12. Layout & spacing utilities
@@ -435,3 +437,4 @@ The point is big, legible type: these slides are read from the back of a room, s
 - **(2026-07-16):** Promoted the CTA blue to the `$al-c-cta-blue` token, embedded the "Powered by AlmaLinux" badges, clarified the Brand Book relationship and the platinum tier selector, and reworded the palette source-of-truth and free-tier accent notes (review feedback on PR #1101).
 - **(2026-09-21):** Added the event body blocks (`al-event-*`) used by event page content, and moved the "Can't make it?" band off inline styles onto `al-event-stop` in `event-day.scss`. Added the `al-event-headshot--sm` modifier for narrow columns.
 - **(2026-10-29):** Replaced the boxed event body blocks with full-width bands: added `al-event-band`, removed `al-event-feature` and its accent stripes, made `al-event-card` a plain column, limited `al-event-eyebrow` to dates and places, and dropped the row backgrounds from `al-event-steps`. Added the no-accent-stripes rule to [§15](#15-forbidden-patterns).
+- **(2026-11-02):** Added the Focus Guide landing page blocks (`al-focus-*` in `focus.scss`): hero band, article card grid with page badges, fixed-shape card images, stats strip, and signed note.
