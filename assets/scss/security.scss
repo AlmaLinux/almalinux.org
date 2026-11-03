@@ -1,3 +1,5 @@
+@use "variables";
+
 // /security page redesign. Scoped under .al-security.
 // Reuses the foundation design system for bands and section titles.
 .al-security {
@@ -35,7 +37,7 @@
 
   .al-security-card-icon {
     font-size: 1.75rem;
-    color: $al-c-candlelight;
+    color: variables.$al-c-candlelight;
     display: block;
     margin-bottom: 0.75rem;
   }
@@ -59,7 +61,7 @@
   .al-security-step-title {
     font-size: 1.1rem;
     font-weight: 700;
-    color: $al-c-candlelight;
+    color: variables.$al-c-candlelight;
     margin-bottom: 0.5rem;
   }
 
@@ -89,7 +91,7 @@
     summary {
       cursor: pointer;
       font-weight: 700;
-      color: $al-c-candlelight;
+      color: variables.$al-c-candlelight;
     }
   }
 
@@ -97,7 +99,7 @@
   .al-security-subhead {
     font-size: 1.1rem;
     font-weight: 700;
-    color: $al-c-candlelight;
+    color: variables.$al-c-candlelight;
     margin: 1.5rem 0 0.75rem;
   }
 
@@ -125,8 +127,8 @@
       text-transform: uppercase;
       letter-spacing: 0.05em;
       font-size: 0.75rem;
-      color: $al-c-candlelight !important; // beats the global `color !important`
-      border-bottom: 2px solid $al-c-candlelight;
+      color: variables.$al-c-candlelight !important; // beats the global `color !important`
+      border-bottom: 2px solid variables.$al-c-candlelight;
     }
   }
 

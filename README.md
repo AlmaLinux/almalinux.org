@@ -70,7 +70,7 @@ speakers_header: "On stage at AlmaLinux Day: City" # optional; overrides default
 
 The markdown body (below `---`) is rendered between the hero and the speakers section. Use it for the event description, schedule embed, venue photos, and any other event-specific content. Raw HTML is supported.
 
-For styled blocks in the body, use the shared classes in `assets/scss/event-day.scss` instead of inline styles: `al-event-feature` (a highlighted panel, with `al-event-feature--green` for certification content), `al-event-card`, `al-event-eyebrow`, `al-event-steps` (a numbered list), and `al-event-headshot`. See `content/ato-2026.md` for an example.
+For styled blocks in the body, use the shared classes in `assets/scss/event-day.scss` instead of inline styles: `al-event-band` (a full-width dark band; alternate bands with plain sections and never stack two), `al-event-card` (a plain column), `al-event-eyebrow` (a date, time, or place above a heading), `al-event-steps` (a numbered list), and `al-event-headshot`. See `content/sc26.md` for an example.
 
 The same layout works for conferences where AlmaLinux has a booth or a talk but isn't the organizer: point `registration_url` at an anchor on the page, leave `speakers` out of the data file, and set `cant_make_it_heading` and `cant_make_it_text`.
 
@@ -177,13 +177,13 @@ Blog posts live in `content/blog/` and are written in Markdown with Hugo front m
 Use the Hugo archetype to generate a pre-populated file:
 
 ```bash
-hugo new blog/YYYY-MM-DD-your-post-title.md
+npx hugo new blog/YYYY-MM-DD-your-post-title.md
 ```
 
 For example:
 
 ```bash
-hugo new blog/2026-03-01-announcing-new-feature.md
+npx hugo new blog/2026-03-01-announcing-new-feature.md
 ```
 
 This will create a new file in `content/blog/` with the correct front matter already filled in, including the title (derived from the filename) and the current year in the image paths.
@@ -253,6 +253,8 @@ For smaller contributions, follow this workflow:
 - Add your code, documentation, etc.
 - Submit a pull request (PR). All PRs should target the `master` branch. Once approved, a development site will automatically generate based on the PR.
 
+New pull requests open with a short checklist from [.github/pull_request_template.md](.github/pull_request_template.md). Please work through it before asking for review.
+
 After review and approval, the changes will be merged into the `master` branch and deployed to the live site. See [README.DEPLOY.md](README.DEPLOY.md) for how deployment works.
 
 For design tokens, components, and conventions, see [DESIGN.md](DESIGN.md).
@@ -261,13 +263,13 @@ For design tokens, components, and conventions, see [DESIGN.md](DESIGN.md).
 
 #### Local Development
 
-To set up a local development environment, you need the following installed:
+To set up a local development environment, you need Node.js 24 or newer (npm 11 or newer).
 
-- Hugo
+After cloning, run `npm install`. This installs Hugo (extended) and Dart Sass at the versions the site is built with, and sets up the pre-commit hook (via [husky](https://typicode.github.io/husky/)) that automatically runs [Prettier](https://prettier.io/) on staged files before each commit, keeping formatting consistent with CI.
 
-Run `hugo server` to start a near-production local development instance.
+Run `npx hugo server` to start a near-production local development instance.
 
-After cloning, run `npm install` to install dependencies. This sets up the pre-commit hook (via [husky](https://typicode.github.io/husky/)) that automatically runs [Prettier](https://prettier.io/) on staged files before each commit, keeping formatting consistent with CI.
+The Hugo and Dart Sass versions are pinned in `package.json` (`hugo-extended` and `sass-embedded`), and CI and the devcontainer use the same ones. To upgrade either, change its version there and run `npm install`.
 
 Localization is important! Wrap all visible text in templates in `{{ i18n "..." }}` tags, then run `python3 find_missing_i18n_strings.py` and commit the updated `i18n/en.json`. Don't run `setup-pages-for-supported-languages.py` for everyday changes: it's only for adding a language, and the build workflows already run it (see [Adding a new language](#adding-a-new-language-maintainers)). If you encounter issues with these scripts, please open an [issue](https://github.com/AlmaLinux/almalinux.org/issues) with details.
 
@@ -281,6 +283,7 @@ To use a container-based development environment, install Docker and use an edit
 - `/layouts/partial` — Shared templates (header, footer, etc.)
 - `/i18n/` — Localization and translation files
 - `/static/` — Static files
+- `/static/llms.txt` and `/static/robots.txt`: hand-maintained files for AI agents and crawlers (see [llms.txt and robots.txt](#llmstxt-and-robotstxt))
 - `/content/` — Markdown content for site pages
 - `/data/` — Source data, currently only for the "Get AlmaLinux" page
 - `config.yaml` — Hugo configuration
@@ -379,6 +382,18 @@ Some URLs may allow other variables (like `variant`), or require different patte
 
 If you have questions about advanced configuration or variable support, refer to the script or open an issue for help.
 
+#### llms.txt and robots.txt
+
+`static/llms.txt` gives AI agents and large language models (LLMs) a short overview of AlmaLinux OS and links to the pages most worth reading. `static/robots.txt` tells crawlers what they may crawl and points them to the sitemap. It also mentions llms.txt in a comment, which is for human readers since crawlers ignore comments. Both files are written by hand and nothing generates them, so they're only accurate if we keep them updated.
+
+Update `static/llms.txt` in the same pull request whenever you:
+
+- Add, move, rename, or remove a page that llms.txt links to, or a page important enough to be listed there.
+- Change the supported major versions, architectures, or image types.
+- Find that a wiki page or other external link in the file has moved.
+
+There's no settled standard for llms.txt yet. Ours follows the current [llmstxt.org](https://llmstxt.org/) proposal: a title, a short summary, then sections of links with a one-line description each. If a standard emerges, we'll update the file to match it.
+
 #### Prettier errors
 
 Sometimes, prettier will fail with very unhelpful errors, such as:
@@ -456,7 +471,7 @@ When a new language is requested, a project admin needs to enable it on Weblate 
    eo: { weight: 2, label: Esperanto }
    ```
    Existing entries like `pt-br` and `zh-hans` use lowercase, dashed codes to match Weblate's output, so match that style for the new code.
-4. **Build locally** with `hugo` and confirm the new language appears in the language picker and its pages render. Strings that aren't translated yet fall back to English.
+4. **Build locally** with `npx hugo` and confirm the new language appears in the language picker and its pages render. Strings that aren't translated yet fall back to English.
 5. **Open a PR** with the `config.yaml` change. You don't need to generate or commit any content pages: the publish and preview workflows run `setup-pages-for-supported-languages.py` at build time, which creates a `content/<page>.<lang>.md` copy of every page for each language in `config.yaml`.
 
 ### Change Approval Process

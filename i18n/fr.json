@@ -294,8 +294,6 @@
     "AlmaLinux OS provides a set of security features: Errata, GPG keys, Mailing Lists, OpenSCAP, OVAL, SBOM, and Secure Boot": "AlmaLinux OS offre une gamme complète de fonctionnalités de sécurité : Errata, clés GPG, listes de diffusion, OpenSCAP, OVAL, SBOM et Secure Boot",
     "AlmaLinux images are available for Incus and LXC.": "Des images AlmaLinux sont disponibles pour Incus et LXC.",
     "Get Incus and LXC Images": "Obtenir les images d'Incus et de LXC",
-    "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: ": "Vous pouvez obtenir des images du système d'exploitation AlmaLinux sur HCP Vagrant Registry en cliquant sur le lien fourni : ",
-    "Get AlmaLinux on HCP Vagrant Registry": "Obtenez AlmaLinux sur le registre HCP Vagrant",
     "(Tax ID 86-2791864)": "(Tax ID 86-2791864)",
     "Get OCI Image from GitHub": "Ibtenir les images OCI sur GitHub",
     "Signed for:": "Signé pour :",
@@ -571,5 +569,11 @@
     "Defensive patent pool that shields Linux and adjacent open-source projects from patent threats.": "Pool de brevets défensif qui protège Linux et les projets open-source adjacents des menaces de brevets.",
     "Product Description": "Description du produit",
     "Ethics": "Éthiques",
-    "Events on community calendar": "Évènements sur le calendrier communautaire"
+    "Events on community calendar": "Évènements sur le calendrier communautaire",
+    "A US-based non-profit stewarding the AlmaLinux project — and anyone can join. Join as an individual, a mirror host, or a sponsor and own a vote in shaping the future of AlmaLinux.": "Une organisation à but non lucratif basée aux États-Unis, qui assure la gestion du projet AlmaLinux — et à laquelle tout le monde peut adhérer. Rejoignez-nous en tant que membre individuel, hébergeur de miroir ou sponsor, et obtenez un droit de vote pour contribuer à façonner l’avenir d’AlmaLinux.",
+    "By bylaw, no single employer holds more than one voting board seat — regardless of how much they sponsor.": "Conformément aux statuts, aucun employeur ne peut détenir plus d’un siège avec droit de vote au conseil d’administration, quel que soit le montant de sa contribution financière.",
+    "Bylaws": "Statuts",
+    "Companies and projects build on AlmaLinux — from downstream Linux distributions to commercial appliances and management platforms. The list below reflects what we know publicly — confirmed entries only.": "Des entreprises et des projets s’appuient sur AlmaLinux, qu’il s’agisse de distributions Linux dérivées, d’appliances commerciales ou de plateformes de gestion. La liste ci-dessous recense uniquement les acteurs dont l’utilisation est publiquement connue et confirmée.",
+    "Compare all four sponsor tiers": "Comparez les quatres niveaux de sponsoring",
+    "Fujitsu, a Silver Sponsor of the AlmaLinux OS Foundation, provides enterprise-grade support services tailored to the needs of Japanese enterprises. Fujitsu offers “AlmaLinux OS Advanced Longterm Support,” delivering new fixes for specific minor releases for up to 10 years, enabling stable and predictable long-term operation in mission-critical environments.": "Système d'exploitation Almalinux"
 }

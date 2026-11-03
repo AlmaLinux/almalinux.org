@@ -18,11 +18,15 @@
     <li>VirtualBox</li>
     <li>Hyper-V</li>
     <li>VMWare</li>
+    <li>Parallels</li>
   </ul>
-  <p class="mb-0">
-    {{ i18n "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: " }}<a
+  <p>
+    {{ i18n "You can get AlmaLinux OS Vagrant boxes from the AlmaLinux Vagrant box catalog at the link provided: " }}<a
       href="{{ $v.registryUrl }}"
       >{{ $v.registryUrl }}</a
     >.
+  </p>
+  <p class="mb-0">
+    {{ i18n "To use them by name, set the VAGRANT_SERVER_URL environment variable to " }}<code>https://vagrant.almalinux.org</code>.
   </p>
 </div>

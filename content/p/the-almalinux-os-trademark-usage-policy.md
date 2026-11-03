@@ -106,7 +106,7 @@ You may not change any logo except to scale it. This means you may not add eleme
 
 ## Contact Information
 
-If you have any questions about these Guidelines or uses of the AlmaLinux OS Marks not addressed in the Guidelines, or if you encounter any confusing use or misuse of the AlmaLinux OS Marks, please contact AlmaLinux OS Foundation help@AlmaLinux.org.
+If you have any questions about these Guidelines or uses of the AlmaLinux OS Marks not addressed in the Guidelines, or if you encounter any confusing use or misuse of the AlmaLinux OS Marks, please contact the AlmaLinux OS Foundation at hello@almalinux.org.
 
 ## License and Attribution
 

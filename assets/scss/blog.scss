@@ -1,6 +1,8 @@
-@import "./variables";
-@import "./functions";
-@import "./bootstrap-icons.scss";
+@use "sass:color";
+
+@use "variables";
+@use "functions";
+@use "bootstrap-icons.scss";
 
 
 .al-page-blog-index {
@@ -38,7 +40,7 @@
       }
 
       .al-article-excerpt {
-        color: $al-font-color;
+        color: variables.$al-font-color;
       }
 
       .al-article-actions {
@@ -83,7 +85,7 @@
   .pagination {
     .page-item {
       .page-link {
-        background: lighten($al-body-background, 15%);
+        background: color.adjust(variables.$al-body-background, $lightness: 15%, $space: hsl);
         border: none;
 
         &:hover {
@@ -93,13 +95,13 @@
 
       &.active {
         .page-link {
-          background: lighten($al-body-background, 25%);
+          background: color.adjust(variables.$al-body-background, $lightness: 25%, $space: hsl);
         }
       }
 
       &.disabled {
         .page-link {
-          color: darken($al-body-background, 15%);
+          color: color.adjust(variables.$al-body-background, $lightness: -15%, $space: hsl);
         }
       }
     }
@@ -129,7 +131,7 @@
     }
 
     .al-article-content {
-      color: $al-font-color;
+      color: variables.$al-font-color;
 
       img {
         max-width: 100%;
@@ -158,20 +160,20 @@
 
   .al-blog-pagination{
     .al-blog-previous-button {
-      background: $al-c-atlantis;
+      background: variables.$al-c-atlantis;
       color: #222222;
 
       &:hover {
-        background: darken($al-c-atlantis, 5%);
+        background: color.adjust(variables.$al-c-atlantis, $lightness: -5%, $space: hsl);
       }
     }
     .al-blog-next-button {
-      background: $al-c-atlantis;
+      background: variables.$al-c-atlantis;
       color: #222222;
       float: right;
 
       &:hover {
-        background: darken($al-c-atlantis, 5%);
+        background: color.adjust(variables.$al-c-atlantis, $lightness: -5%, $space: hsl);
       }
     }
     a {

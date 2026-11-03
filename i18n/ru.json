@@ -373,8 +373,6 @@
     "Header image by ": "Изображение заголовка ",
     "AlmaLinux images are available for Incus and LXC.": "Образы AlmaLinux доступны для Incus и LXC.",
     "Get Incus and LXC Images": "Получить образы Incus и LXC",
-    "Get AlmaLinux on HCP Vagrant Registry": "Получить AlmaLinux в реестре HCP Vagrant",
-    "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: ": "Получить образы ОС AlmaLinux в реестре HCP Vagrant можно по указанной ссылке: ",
     "SIG and ALESCo meetings": "Заседания SIG и ALESCo",
     "ALD Tokyo 2024": "ALD Токио 2024",
     "ALD Tokyo 2023": "ALD Токио 2023",
@@ -986,8 +984,6 @@
     "Brand Book": "Бренд-бук",
     "Read the Brand Book": "Читать бренд-бук",
     "Keep clear space around the logo of at least the height of the 'A' mark.": "Оставляйте вокруг логотипа свободное пространство не меньше высоты знака «A».",
-    "Find us at ATO": "Найдите нас на ATO",
-    "Oct 19 & 20, booth #79": "19 и 20 октября, стенд №79",
     ", or keep them to yourself. Everything published goes through review before it appears.": ", или оставьте их при себе. Всё опубликованное проходит проверку перед появлением.",
     "A preview of the AlmaLinux Catalog, listing certified hardware and software": "Предпросмотр каталога AlmaLinux со списком сертифицированного оборудования и программного обеспечения",
     "A rack of servers, a tower, a laptop, a mini PC, and a single board computer, each marked as certified for AlmaLinux": "Стойка серверов, башня, ноутбук, мини-ПК и одноплатный компьютер, каждый из которых отмечен как сертифицированный для AlmaLinux",
@@ -1112,5 +1108,12 @@
     "Promo SIG": "Promo SIG",
     "Questions? Ask the Promo SIG": "Вопросы? Спросите Promo SIG",
     "Reach the Promo SIG on chat.almalinux.org, including for the latest presentation template.": "Свяжитесь с Promo SIG на chat.almalinux.org, в том числе для получения последнего шаблона презентации.",
-    "To contribute by writing a blog post, working at an event, designing, translating, or any other non-technical contribution you can think of, the Promo SIG is a great place to start!": "Если вы хотите внести вклад, написав пост в блог, работая на мероприятии, занимаясь дизайном, переводом или любым другим нетехническим вкладом, который сможете придумать, Promo SIG — отличное место для начала!"
+    "To contribute by writing a blog post, working at an event, designing, translating, or any other non-technical contribution you can think of, the Promo SIG is a great place to start!": "Если вы хотите внести вклад, написав пост в блог, работая на мероприятии, занимаясь дизайном, переводом или любым другим нетехническим вкладом, который сможете придумать, Promo SIG — отличное место для начала!",
+    "Home of OpenStack, Kata Containers, StarlingX, and Zuul.": "Дом OpenStack, Kata Containers, StarlingX и Zuul.",
+    "Home of the Linux kernel and many of the open source projects AlmaLinux is built with. AlmaLinux is an associate member.": "Дом ядра Linux и многих открытых проектов, на которых построена AlmaLinux. AlmaLinux является ассоциированным членом.",
+    "Member since": "Член с",
+    "Open source foundation for the motion picture and media industry, home of projects like OpenEXR and OpenColorIO.": "Фонд открытого исходного кода для киноиндустрии и медиаиндустрии, дом таких проектов, как OpenEXR и OpenColorIO.",
+    "AlmaLinux is a member of these foundations so that our community is represented in them, and so we can connect with the AlmaLinux users in their communities.": "AlmaLinux является членом этих фондов, чтобы наше сообщество было в них представлено и чтобы мы могли поддерживать связь с пользователями AlmaLinux в их сообществах.",
+    "Community for high-performance computing (HPC). OpenHPC publishes install guides for AlmaLinux 9 and AlmaLinux 10.": "Сообщество высокопроизводительных вычислений (HPC). OpenHPC публикует руководства по установке для AlmaLinux 9 и AlmaLinux 10.",
+    "Open source foundation for the financial services industry.": "Фонд открытого исходного кода для финансовой отрасли."
 }

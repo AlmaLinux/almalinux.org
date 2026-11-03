@@ -10,7 +10,7 @@ The source for the **almalinux.org** website, built with [Hugo](https://gohugo.i
 
 ## Build, preview, and check
 
-- **Preview locally:** `hugo server` (build with `hugo`). It needs Hugo (extended). If it is missing, offer to help install it.
+- **Preview locally:** `npx hugo server` (build with `npx hugo`). It needs Node.js 24 or newer and `npm install`, which installs the pinned Hugo and Dart Sass. If Node.js is missing, offer to help install it.
 - **Styles** are SCSS, compiled from `assets/scss/main.scss`.
 - **After any visible-text or template change,** run `python3 find_missing_i18n_strings.py` to update `i18n/en.json` (NEVER edit directly)
 - A husky pre-commit hook runs prettier on staged files (via lint-staged) when you commit, so keep changes prettier-clean. The hook activates after `npm install`.
@@ -24,6 +24,7 @@ The source for the **almalinux.org** website, built with [Hugo](https://gohugo.i
 - For anything bigger than a tiny fix, **propose a short plan to your user first** and wait for a yes.
 - For any major design and content changes, have your user open an issue to discuss the change before doing any work.
 - Follow the existing patterns in the codebase.
+- **Keep `static/llms.txt` current.** It's maintained by hand. If your change adds, moves, or removes a page, or changes supported versions or architectures, update it in the same pull request. See the "llms.txt and robots.txt" section of `README.md`.
 - If the contributor is new to code, explain in plain language and offer to preview results.
 
 ## Hard rules
@@ -57,5 +58,5 @@ The source for the **almalinux.org** website, built with [Hugo](https://gohugo.i
 
 ## Where different content lives
 
-- **Blog posts:** start a new post with the Hugo archetype (`hugo new blog/YYYY-MM-DD-your-post-title.md`), which scaffolds the file with the correct front matter pre-populated. See `contributing-blog-posts.md` for the full process (front matter, images, sizing).
+- **Blog posts:** start a new post with the Hugo archetype (`npx hugo new blog/YYYY-MM-DD-your-post-title.md`), which scaffolds the file with the correct front matter pre-populated. See `contributing-blog-posts.md` for the full process (front matter, images, sizing).
 - **Events, newsletters, code, and design:** see the "Contributing" sections of `README.md`.

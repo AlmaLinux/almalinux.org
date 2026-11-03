@@ -1,4 +1,4 @@
-@import "./variables";
+@use "variables";
 
 @function al-shadow($level, $weight: 1, $offset-y: 1) {
   @if $level == 1 {

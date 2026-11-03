@@ -1,9 +1,9 @@
-@import "./variables";
+@use "variables";
 
 .al-press {
   // Deep-band sections, matching the foundation/members banding.
   .al-press-band-deep {
-    background: $al-c-black-pearl;
+    background: variables.$al-c-black-pearl;
   }
 
   .al-press-hero-logo {
@@ -17,7 +17,7 @@
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    color: $al-link-color;
+    color: variables.$al-link-color;
   }
 
   .al-press-boilerplate {
@@ -56,7 +56,7 @@
       align-items: center;
       justify-content: center;
       font-size: 1.15rem;
-      color: $al-c-cta-blue;
+      color: variables.$al-c-cta-blue;
     }
     .body {
       display: flex;
@@ -77,7 +77,7 @@
     transition: border-color 0.15s ease, background 0.15s ease;
 
     &:hover {
-      border-color: $al-link-color;
+      border-color: variables.$al-link-color;
       background: rgba(36, 194, 255, 0.06);
     }
   }
@@ -137,13 +137,13 @@
   .al-press-crosslink {
     display: block;
     padding: 1.25rem 1.4rem;
-    border: 1px solid $al-c-black-pearl-light;
+    border: 1px solid variables.$al-c-black-pearl-light;
     border-radius: 8px;
     text-decoration: none;
     transition: border-color 0.15s ease, background 0.15s ease;
 
     &:hover {
-      border-color: $al-link-color;
+      border-color: variables.$al-link-color;
       background: rgba(36, 194, 255, 0.06);
     }
 
@@ -173,12 +173,12 @@
       align-items: center;
       gap: 0.45rem;
       padding: 0.4rem 0.9rem;
-      border: 1px solid $al-c-black-pearl-light;
+      border: 1px solid variables.$al-c-black-pearl-light;
       border-radius: 999px;
       text-decoration: none;
 
       &:hover {
-        border-color: $al-link-color;
+        border-color: variables.$al-link-color;
         background: rgba(36, 194, 255, 0.06);
       }
     }
@@ -205,7 +205,7 @@
     padding: 1.1rem 1.25rem;
 
     h3 {
-      font-family: $al-font-family-accent;
+      font-family: variables.$al-font-family-accent;
       font-size: 0.82rem;
       font-weight: 700;
       text-transform: uppercase;
@@ -232,23 +232,23 @@
     }
 
     &.is-may {
-      border-top: 3px solid $al-c-atlantis;
+      border-top: 3px solid variables.$al-c-atlantis;
       h3 {
-        color: $al-c-atlantis;
+        color: variables.$al-c-atlantis;
       }
       li::before {
         content: "\2713";
-        color: $al-c-atlantis;
+        color: variables.$al-c-atlantis;
       }
     }
     &.is-maynot {
-      border-top: 3px solid $al-c-sunburnt-cyclops-lighter;
+      border-top: 3px solid variables.$al-c-sunburnt-cyclops-lighter;
       h3 {
-        color: $al-c-sunburnt-cyclops-lighter;
+        color: variables.$al-c-sunburnt-cyclops-lighter;
       }
       li::before {
         content: "\2715";
-        color: $al-c-sunburnt-cyclops-lighter;
+        color: variables.$al-c-sunburnt-cyclops-lighter;
       }
     }
   }
@@ -313,7 +313,7 @@
       content: "\2022";
       position: absolute;
       left: 0;
-      color: $al-c-cta-blue;
+      color: variables.$al-c-cta-blue;
     }
   }
 }

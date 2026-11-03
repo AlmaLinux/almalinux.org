@@ -1,6 +1,8 @@
+@use "variables";
+
 .al-branding {
   .al-branding-hero {
-    background: $al-c-black-pearl;
+    background: variables.$al-c-black-pearl;
   }
 
   h2 {
@@ -20,7 +22,7 @@
   }
 
   .al-branding-asset-card {
-    border: 1px solid $al-c-black-pearl-light;
+    border: 1px solid variables.$al-c-black-pearl-light;
     border-radius: 0.75rem;
     overflow: hidden;
 
@@ -33,11 +35,11 @@
     }
 
     &.is-light img {
-      background: $al-c-soft-peach;
+      background: variables.$al-c-soft-peach;
     }
 
     &.is-dark img {
-      background: $al-c-black-pearl-dark;
+      background: variables.$al-c-black-pearl-dark;
     }
   }
 
@@ -93,101 +95,101 @@
   .al-branding-color-section {
     margin-top: 2rem;
     padding-top: 1.5rem;
-    border-top: 1px solid $al-c-black-pearl-light;
+    border-top: 1px solid variables.$al-c-black-pearl-light;
     font-size: 1rem;
     font-weight: 600;
-    color: rgba($al-c-soft-peach, 0.85);
+    color: rgba(variables.$al-c-soft-peach, 0.85);
   }
 
   .al-branding-colors-note {
-    color: rgba($al-c-soft-peach, 0.75);
+    color: rgba(variables.$al-c-soft-peach, 0.75);
   }
 
   .al-branding-swatch-chip {
     display: block;
     height: 52px;
     border-radius: 0.5rem;
-    border: 1px solid $al-c-black-pearl-light;
+    border: 1px solid variables.$al-c-black-pearl-light;
 
     // Blue family
     &.is-science-blue-dark {
-      background: $al-c-science-blue-dark;
+      background: variables.$al-c-science-blue-dark;
     }
     &.is-science-blue {
-      background: $al-c-science-blue;
+      background: variables.$al-c-science-blue;
     }
     &.is-cta-blue {
-      background: $al-c-cta-blue;
+      background: variables.$al-c-cta-blue;
     }
     &.is-science-blue-lighter {
-      background: $al-c-science-blue-lighter;
+      background: variables.$al-c-science-blue-lighter;
     }
     &.is-science-blue-light {
-      background: $al-c-science-blue-light;
+      background: variables.$al-c-science-blue-light;
     }
 
     // Green family
     &.is-atlantis-dark {
-      background: $al-c-atlantis-dark;
+      background: variables.$al-c-atlantis-dark;
     }
     &.is-atlantis {
-      background: $al-c-atlantis;
+      background: variables.$al-c-atlantis;
     }
     &.is-atlantis-lighter {
-      background: $al-c-atlantis-lighter;
+      background: variables.$al-c-atlantis-lighter;
     }
     &.is-atlantis-light {
-      background: $al-c-atlantis-light;
+      background: variables.$al-c-atlantis-light;
     }
 
     // Yellow family
     &.is-candlelight-dark {
-      background: $al-c-candlelight-dark;
+      background: variables.$al-c-candlelight-dark;
     }
     &.is-candlelight {
-      background: $al-c-candlelight;
+      background: variables.$al-c-candlelight;
     }
     &.is-candlelight-lighter {
-      background: $al-c-candlelight-lighter;
+      background: variables.$al-c-candlelight-lighter;
     }
     &.is-candlelight-light {
-      background: $al-c-candlelight-light;
+      background: variables.$al-c-candlelight-light;
     }
 
     // Red family
     &.is-cyclops-dark {
-      background: $al-c-sunburnt-cyclops-dark;
+      background: variables.$al-c-sunburnt-cyclops-dark;
     }
     &.is-cyclops {
-      background: $al-c-sunburnt-cyclops;
+      background: variables.$al-c-sunburnt-cyclops;
     }
     &.is-cyclops-lighter {
-      background: $al-c-sunburnt-cyclops-lighter;
+      background: variables.$al-c-sunburnt-cyclops-lighter;
     }
     &.is-cyclops-light {
-      background: $al-c-sunburnt-cyclops-light;
+      background: variables.$al-c-sunburnt-cyclops-light;
     }
 
     // Black Pearl family
     &.is-black-pearl-dark {
-      background: $al-c-black-pearl-dark;
+      background: variables.$al-c-black-pearl-dark;
     }
     &.is-black-pearl {
-      background: $al-c-black-pearl;
+      background: variables.$al-c-black-pearl;
     }
     &.is-black-pearl-lighter {
-      background: $al-c-black-pearl-lighter;
+      background: variables.$al-c-black-pearl-lighter;
     }
     &.is-black-pearl-light {
-      background: $al-c-black-pearl-light;
+      background: variables.$al-c-black-pearl-light;
     }
 
     // Surfaces
     &.is-soft-peach {
-      background: $al-c-soft-peach;
+      background: variables.$al-c-soft-peach;
     }
     &.is-body-background {
-      background: $al-body-background;
+      background: variables.$al-body-background;
     }
   }
 
@@ -202,11 +204,11 @@
   }
 
   .al-branding-do {
-    color: $al-c-atlantis;
+    color: variables.$al-c-atlantis;
   }
 
   .al-branding-dont {
-    color: $al-c-sunburnt-cyclops-lighter;
+    color: variables.$al-c-sunburnt-cyclops-lighter;
   }
 
   .al-branding-voice-lead {
@@ -232,22 +234,22 @@
     flex-direction: column;
     gap: 0.4rem;
     padding: 1.25rem;
-    border: 1px solid $al-c-black-pearl-light;
+    border: 1px solid variables.$al-c-black-pearl-light;
     border-radius: 0.75rem;
     text-decoration: none;
 
     &:hover {
-      border-color: $al-link-color;
+      border-color: variables.$al-link-color;
     }
   }
 
   .al-branding-resource-title {
     font-weight: 600;
-    color: $al-link-color;
+    color: variables.$al-link-color;
   }
 
   .al-branding-resource-desc {
     font-size: 0.9rem;
-    color: rgba($al-c-soft-peach, 0.75);
+    color: rgba(variables.$al-c-soft-peach, 0.75);
   }
 }

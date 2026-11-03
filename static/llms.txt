@@ -1,0 +1,87 @@
+# AlmaLinux OS
+
+> AlmaLinux OS is an open source, community owned and governed, forever-free enterprise Linux distribution, focused on long-term stability and providing a robust production-grade platform. AlmaLinux OS is binary compatible with RHEL®. It is guided and built by the community and the AlmaLinux OS Foundation, a non-profit 501(c)(6) organization with no single corporate owner.
+
+Key facts:
+
+- Supported major versions are AlmaLinux OS 10, 9, and 8. The current point releases, download links, and checksums are always on the Get AlmaLinux page.
+- Architectures: x86_64, aarch64, ppc64le, and s390x. AlmaLinux OS 10 also ships an x86_64_v2 build for older x86_64 hardware and, since 10.2, a 32-bit x86 (i686) userspace.
+- i686 on AlmaLinux OS 10 is userspace only: package repositories on vault.almalinux.org and official container images (`docker run --platform linux/386 almalinux:10`). There is no bootable i686 installer ISO and no 32-bit kernel. The i686 userspace is maintained alongside the other AlmaLinux OS 10 architectures through 2035.
+- AlmaLinux OS Kitten is the development version of AlmaLinux OS, built from CentOS Stream. Kitten 10 is also built for i686 and riscv64.
+- Images are available as ISOs, cloud images (AWS, Azure, Google Cloud, OCI, OpenNebula, and generic qcow2), Vagrant boxes, WSL, and container images (`almalinux` on Docker Hub, bootc images on Quay).
+- The name is always written "AlmaLinux" (one word, capital A and L).
+
+Notes for AI agents:
+
+- Technical documentation (installation, migration, repositories, cloud and container images, release notes) lives on the [AlmaLinux Wiki](https://wiki.almalinux.org/), not on this site.
+- Release announcements, security news, and community updates are published on the blog.
+- This site is translated by volunteers into many languages under paths like /de/ and /ja/. English is the source language.
+
+## Get AlmaLinux
+
+- [Get AlmaLinux](https://almalinux.org/get-almalinux/): current releases for every version and architecture, with ISO, cloud, and container image links and SHA256 checksums
+- [Mirrors](https://mirrors.almalinux.org/): the worldwide mirror list for downloads and package repositories
+- [Repository](https://repo.almalinux.org/almalinux/): the main package and ISO repository
+- [Container images on Docker Hub](https://hub.docker.com/_/almalinux): official `almalinux` container images
+- [Release notes](https://wiki.almalinux.org/release-notes/): what changed in each AlmaLinux OS release
+- [i686 packages for AlmaLinux OS 10](https://vault.almalinux.org/10/BaseOS/i686/os/): the 32-bit x86 BaseOS repository, with AppStream, CRB, and the other repositories alongside it
+- [i686 userspace announcement](https://almalinux.org/blog/2026-04-16-almalinux-kitten-10-i686/): why AlmaLinux ships 32-bit x86 packages and how to use them
+- [Introducing AlmaLinux OS Kitten](https://almalinux.org/blog/2024-10-22-introducing-almalinux-os-kitten/): what Kitten is and why it exists
+
+## Documentation
+
+- [AlmaLinux Wiki](https://wiki.almalinux.org/): the main documentation hub
+- [FAQ](https://wiki.almalinux.org/FAQ.html): frequently asked questions about AlmaLinux OS
+- [Migration](https://wiki.almalinux.org/migration/): migrating to AlmaLinux OS from CentOS and other Enterprise Linux distributions
+- [ELevate](https://almalinux.org/elevate/): in-place upgrades between major versions of RHEL-based distributions
+- [Cloud images](https://wiki.almalinux.org/cloud/): using AlmaLinux OS on public and private clouds
+- [Containers](https://wiki.almalinux.org/containers/): using AlmaLinux OS container images
+- [Comparison](https://wiki.almalinux.org/Comparison.html): how AlmaLinux OS compares with other Enterprise Linux distributions
+
+## Security
+
+- [Security](https://almalinux.org/security/): signed packages, public errata, compliance tooling, and certifications
+- [Errata](https://errata.almalinux.org/): security, bug fix, and enhancement advisories
+- [FIPS 140-3 validation](https://almalinux.org/security/fips-certification/): AlmaLinux OS FIPS 140-3 validated modules
+- [Common Criteria certification](https://almalinux.org/security/cc-certification/): AlmaLinux OS Common Criteria certification
+- [SBOM](https://almalinux.org/sbom/): software bills of materials produced by the AlmaLinux Build System
+- [Vulnerability disclosure policy](https://almalinux.org/p/vulnerability-disclosure-policy/): how to report a vulnerability
+- [security.txt](https://almalinux.org/.well-known/security.txt): security contacts
+
+## Community and Support
+
+- [Get support](https://almalinux.org/support/): community and commercial support options
+- [Chat](https://chat.almalinux.org/): the community chat on Mattermost
+- [Forums](https://forums.almalinux.org/): community forums
+- [Bug tracker](https://bugs.almalinux.org/): report bugs in AlmaLinux OS
+- [Mailing lists](https://lists.almalinux.org/): announcements and discussion lists
+- [Special Interest Groups](https://wiki.almalinux.org/sigs/): the SIGs that build and maintain parts of AlmaLinux OS
+- [Contribute](https://almalinux.org/contribute/): ways to get involved
+- [GitHub](https://github.com/AlmaLinux): source code for AlmaLinux tools, infrastructure, and this website
+
+## Foundation
+
+- [AlmaLinux OS Foundation](https://almalinux.org/foundation/): the non-profit that stewards AlmaLinux OS
+- [Membership](https://almalinux.org/members/): individual and organizational Foundation membership
+- [ALESCo](https://almalinux.org/alesco/): the AlmaLinux Engineering Steering Committee
+- [Foundation bylaws](https://almalinux.org/p/foundation-bylaws/): how the Foundation is governed
+- [Press and media kit](https://almalinux.org/press/): press resources
+- [Brand assets](https://almalinux.org/branding/): logos and brand guidelines
+
+## News
+
+- [Blog](https://almalinux.org/blog/): release announcements and project news ([RSS](https://almalinux.org/blog/index.xml))
+- [Newsletters](https://almalinux.org/newsletters/): the monthly AlmaLinux newsletter ([RSS](https://almalinux.org/newsletters/index.xml))
+
+## Optional
+
+- [Hardware and software certification](https://almalinux.org/certification/): the AlmaLinux certification programs
+- [Certification catalog](https://catalog.almalinux.org/): certified hardware and software
+- [Build System](https://build.almalinux.org/): the public AlmaLinux Build System
+- [openQA](https://openqa.almalinux.org/): automated release testing
+- [Status page](https://status.almalinux.org/): service status for AlmaLinux infrastructure
+- [Licensing policy](https://almalinux.org/p/the-almalinux-os-licensing-policy/)
+- [Trademark usage policy](https://almalinux.org/p/the-almalinux-os-trademark-usage-policy/)
+- [Privacy policy](https://almalinux.org/p/privacy-policy/)
+- [Terms of service](https://almalinux.org/p/terms-of-service/)
+- Contact: hello@almalinux.org

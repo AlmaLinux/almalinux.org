@@ -1,6 +1,6 @@
-@import "./variables";
-@import "./functions";
-@import "./bootstrap";
+@use "variables";
+@use "functions";
+@use "bootstrap";
 
 .al-page-contribute-index {
   padding-bottom: 120px;

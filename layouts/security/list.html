@@ -414,11 +414,11 @@
           {{ i18n "AlmaLinux signs all packages with a GPG key, verified by default by dnf and graphical update tools. We recommend verifying a package signature before installing." }}
         </p>
         <div class="row g-4">
-          {{ range where site.Data.security.gpg_keys "expired" false }}
+          {{ range where hugo.Data.security.gpg_keys "expired" false }}
             {{ partial "security/gpg-key-card.html" . }}
           {{ end }}
         </div>
-        {{ with where site.Data.security.gpg_keys "expired" true }}
+        {{ with where hugo.Data.security.gpg_keys "expired" true }}
           <details class="al-security-expired">
             <summary>{{ i18n "Expired but remains a trusted key." }}</summary>
             <div class="row g-4 mt-1">
@@ -455,7 +455,7 @@
             </tr>
           </thead>
           <tbody>
-            {{ partial "security/secure-boot-rows.html" (where site.Data.security.secure_boot "expired" false) }}
+            {{ partial "security/secure-boot-rows.html" (where hugo.Data.security.secure_boot "expired" false) }}
           </tbody>
         </table>
 
@@ -473,7 +473,7 @@
             </tr>
           </thead>
           <tbody>
-            {{ partial "security/secure-boot-rows.html" (where site.Data.security.secure_boot "expired" true) }}
+            {{ partial "security/secure-boot-rows.html" (where hugo.Data.security.secure_boot "expired" true) }}
           </tbody>
         </table>
       </div>

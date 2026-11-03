@@ -1,0 +1,167 @@
+name: Clean Up Preview Deployments
+on:
+  # pull_request_target, not pull_request, so that closing a PR from a fork
+  # still gets the Cloudflare secrets. This job never checks out or runs PR
+  # code, and it does not read anything from the PR it was triggered by: it
+  # sweeps every preview deployment, whichever PR closed.
+  pull_request_target:
+    types: [closed]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only list what would be deleted"
+        type: boolean
+        default: true
+      extra_pattern:
+        description: "Also delete deployments not named after a PR whose alias matches this regex, e.g. ^(old-branch|pr-)$"
+        type: string
+        default: ""
+
+# The sweep covers every PR, so one queued run is as good as several.
+concurrency:
+  group: cleanup-preview
+  cancel-in-progress: false
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
+
+    steps:
+      - name: Delete preview deployments of PRs that are no longer open
+        uses: actions/github-script@v7
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_PROJECT_NAME: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+          EXTRA_PATTERN: ${{ inputs.extra_pattern }}
+        with:
+          script: |
+            const { CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID, CLOUDFLARE_PROJECT_NAME } = process.env;
+            const dryRun = process.env.DRY_RUN === "true";
+            if (!CLOUDFLARE_API_TOKEN || !CLOUDFLARE_ACCOUNT_ID || !CLOUDFLARE_PROJECT_NAME) {
+              core.setFailed("Cloudflare token, account ID or project name is not set.");
+              return;
+            }
+
+            // Only set on a manual run. It never applies to pr-<number> aliases,
+            // so it cannot remove the preview of an open PR.
+            let extra = null;
+            if (process.env.EXTRA_PATTERN) {
+              try {
+                extra = new RegExp(process.env.EXTRA_PATTERN);
+              } catch (err) {
+                core.setFailed(`extra_pattern is not a valid regex: ${err.message}`);
+                return;
+              }
+            }
+
+            const base = `https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/pages/projects/${CLOUDFLARE_PROJECT_NAME}/deployments`;
+            const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+            // The API allows about 1200 requests per 5 minutes, which the first
+            // sweep of an old backlog can exceed. Back off on 429 and 5xx.
+            async function cf(method, url) {
+              for (let attempt = 1; ; attempt++) {
+                const res = await fetch(url, {
+                  method,
+                  headers: { Authorization: `Bearer ${CLOUDFLARE_API_TOKEN}` },
+                });
+                if ((res.status === 429 || res.status >= 500) && attempt < 6) {
+                  const wait = Number(res.headers.get("retry-after")) || 15 * attempt;
+                  core.info(`${method} ${res.status}, retrying in ${wait}s`);
+                  await sleep(wait * 1000);
+                  continue;
+                }
+                const body = await res.json().catch(() => ({}));
+                if (!res.ok || body.success === false) {
+                  throw new Error(`${method} ${url} returned ${res.status}: ${JSON.stringify(body.errors ?? body)}`);
+                }
+                return body;
+              }
+            }
+
+            // List deployments before open PRs. A PR opened after the PR list
+            // is fetched cannot have a deployment in this list yet, so it
+            // cannot be mistaken for a closed one.
+            const deployments = [];
+            for (let page = 1; ; page++) {
+              const body = await cf("GET", `${base}?env=preview&per_page=25&page=${page}`);
+              deployments.push(...body.result);
+              const totalPages = body.result_info?.total_pages;
+              if (body.result.length === 0 || (totalPages && page >= totalPages)) break;
+            }
+
+            const openPrs = await github.paginate(github.rest.pulls.list, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+              per_page: 100,
+            });
+            const open = new Set(openPrs.map((pr) => pr.number));
+
+            // publish-preview.yml deploys to pr-<number>, or pr-<number>-<sha>
+            // on branches that give each commit its own alias. Anything else
+            // (older naming, or the empty pr- from the fork PR bug) has no PR
+            // we can check, so it is only reported unless extra_pattern matches.
+            const toDelete = [];
+            const unmatched = [];
+            for (const d of deployments) {
+              if (d.environment !== "preview") continue;
+              const branch = d.deployment_trigger?.metadata?.branch ?? "";
+              const match = /^pr-([0-9]+)(-[0-9a-f]{7})?$/.exec(branch);
+              if (!match) {
+                if (extra && extra.test(branch)) {
+                  toDelete.push({ d, branch });
+                } else {
+                  unmatched.push({ d, branch });
+                }
+              } else if (!open.has(Number(match[1]))) {
+                toDelete.push({ d, branch });
+              }
+            }
+
+            core.info(
+              `${deployments.length} preview deployments, ${open.size} open PRs, ` +
+                `${toDelete.length} to delete, ${unmatched.length} not named after a PR.`
+            );
+
+            let deleted = 0;
+            const failures = [];
+            for (const { d, branch } of toDelete) {
+              if (dryRun) {
+                core.info(`Would delete ${branch} ${d.url} (${d.created_on})`);
+                continue;
+              }
+              try {
+                // force: the latest deployment of an alias cannot be deleted
+                // without it, and with per-commit aliases that is all of them.
+                await cf("DELETE", `${base}/${d.id}?force=true`);
+                core.info(`Deleted ${branch} ${d.url} (${d.created_on})`);
+                deleted++;
+              } catch (err) {
+                core.warning(`Could not delete ${branch} ${d.url}: ${err.message}`);
+                failures.push(branch);
+              }
+            }
+
+            for (const { d, branch } of unmatched) {
+              core.info(`Kept, not named after a PR: ${JSON.stringify(branch)} ${d.url} (${d.created_on})`);
+            }
+
+            await core.summary
+              .addHeading(dryRun ? "Preview cleanup (dry run)" : "Preview cleanup")
+              .addList([
+                `${deployments.length} preview deployments found`,
+                `${open.size} open PRs`,
+                dryRun ? `${toDelete.length} would be deleted` : `${deleted} deleted`,
+                `${failures.length} failed to delete`,
+                `${unmatched.length} kept because they are not named after a PR`,
+              ])
+              .write();
+
+            if (failures.length) {
+              core.setFailed(`${failures.length} deployments could not be deleted. See the warnings above.`);
+            }

@@ -1,3 +1,5 @@
+@use "variables";
+
 // ALESCo page — layouts/alesco/single.html
 // Scoped under .al-page-alesco so the hero/layout helpers do not leak
 // site-wide. Section bands, titles, and person cards reuse the shared
@@ -177,7 +179,7 @@
     width: 26px;
     height: 26px;
     border-radius: 50%;
-    background: $al-c-atlantis;
+    background: variables.$al-c-atlantis;
     color: #0a2335;
     font-size: 13px;
     font-weight: 700;

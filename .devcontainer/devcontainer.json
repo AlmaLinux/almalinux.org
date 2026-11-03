@@ -3,9 +3,8 @@
   "overrideCommand": false,
   "build": {
     "dockerfile": "Dockerfile",
+    "context": "..",
     "args": {
-      "VARIANT": "hugo_extended",
-      "VERSION": "v0.163.3",
       "WORKSPACE_DIR": "${containerWorkspaceFolder}"
     }
   },

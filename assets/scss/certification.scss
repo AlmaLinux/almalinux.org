@@ -1,3 +1,5 @@
+@use "variables";
+
 // Certification section (/certification and /certification/program).
 // Scoped under .al-certification. Reuses the foundation design system for
 // bands and section titles: use .al-foundation-band-deep for deep bands and
@@ -30,7 +32,7 @@
   // Small line above the hero title, e.g. "Part of the AlmaLinux Certification Program"
   .al-certification-eyebrow {
     font-size: 0.95rem;
-    color: $al-link-color;
+    color: variables.$al-link-color;
 
     i {
       margin-right: 0.35rem;
@@ -50,17 +52,17 @@
   .al-certification-tier {
     background: rgba(8, 35, 54, 0.55);
     border: 1px solid rgba(196, 225, 255, 0.15);
-    border-top: 4px solid $al-c-cta-blue;
+    border-top: 4px solid variables.$al-c-cta-blue;
     border-radius: 8px;
     padding: 1.5rem;
 
     // Each tier carries its own accent so the three read as distinct at a glance.
     &.al-certification-tier-community {
-      border-top-color: $al-c-atlantis;
+      border-top-color: variables.$al-c-atlantis;
     }
 
     &.al-certification-tier-vendor {
-      border-top-color: $al-c-candlelight;
+      border-top-color: variables.$al-c-candlelight;
     }
 
     h3 {
@@ -99,9 +101,9 @@
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        background: $al-c-cta-blue;
-        color: $al-c-black-pearl-dark;
-        font-family: $al-font-family-accent;
+        background: variables.$al-c-cta-blue;
+        color: variables.$al-c-black-pearl-dark;
+        font-family: variables.$al-font-family-accent;
         font-weight: 700;
         font-size: 0.95rem;
       }
@@ -138,7 +140,7 @@
 
     &:hover,
     &:focus {
-      border-color: $al-c-cta-blue;
+      border-color: variables.$al-c-cta-blue;
     }
 
     img {
@@ -154,7 +156,7 @@
 
   // Inline note for the detail worth not burying: running the suite needs no account.
   .al-certification-note {
-    border-left: 3px solid $al-c-candlelight;
+    border-left: 3px solid variables.$al-c-candlelight;
     padding: 0.35rem 0 0.35rem 1rem;
     margin: 1.5rem 0;
   }

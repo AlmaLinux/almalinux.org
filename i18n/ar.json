@@ -384,8 +384,6 @@
     "ALD Tokyo 2024": "يوم ألما لينكس طوكيو 2024",
     "ALD Germany 2024": "يوم ألما لينكس ألمانيا 2024",
     "Get Incus and LXC Images": "احصل على صور Incus وLXC",
-    "Get AlmaLinux on HCP Vagrant Registry": "احصل على AlmaLinux في سجل HCP Vagrant",
-    "You can get AlmaLinux OS images on HCP Vagrant Registry at the link provided: ": "يمكنك الحصول على صور AlmaLinux OS على سجل HCP Vagrant عبر الرابط المقدم: ",
     "ALD Tokyo 2023": "يوم ألما لينكس طوكيو 2023",
     "Get Support": "احصل على الدعم",
     "Community Support": "دعم المجتمع",
@@ -422,5 +420,7 @@
     "Lots of people have shared their experiences and guides for using ELevate to upgrade in place. Take a look at what others think of it!": "شارك الكثير من الأشخاص تجاربهم وأدلتهم لاستخدام ELevate للترقية في الموقع. ألقِ نظرة على ما يعتقده الآخرون!",
     "AlmaLinux images are available for Incus and LXC.": "صور AlmaLinux متاحة لـ Incus وLXC.",
     "Newsletters": "النشرات الإخبارية",
-    "AlmaLinux Newsletters": "نشرات ألما لينكس الإخبارية"
+    "AlmaLinux Newsletters": "نشرات ألما لينكس الإخبارية",
+    "Stay up to date with the latest AlmaLinux news, releases, and community updates. Subscribe via your preferred channel:": "ابقَ على اطلاع بأحدث أخبار AlmaLinux، والإصدارات، وتحديثات المجتمع. اشترك عبر قناتك المفضلة:",
+    "RSS Feed": "خدمة RSS"
 }
