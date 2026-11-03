@@ -21,9 +21,8 @@ description: "Links to everything in the AlmaLinux Focus Guide from ADMIN and Li
       <p class="al-focus-kicker">The AlmaLinux Focus Guide from ADMIN</p>
       <h1>Enterprise Linux, for and by the people who use it.</h1>
       <p class="al-focus-lead mb-3">Thanks for picking up the AlmaLinux Focus Guide from <a href="https://www.admin-it.io/">ADMIN IT Infrastructure &amp; Operations</a>, published by Linux New Media. This page collects the links from every article in the guide, so you can pick up wherever you left off.</p>
-      <p class="al-focus-lead">If you don't have a copy yet, you can download it for free.</p>
-      <!-- TODO: swap in the guide's own download page once Linux New Media publishes it (launch planned for Tuesday, November 3). The shop category below is a stand-in. -->
-      <a href="https://shop.linuxnewmedia.com/shop/category/focus-guides-97" class="btn btn-lg px-4 al-cta-blue"><i class="bi bi-download" aria-hidden="true"></i> Get the Focus Guide</a>
+      <p class="al-focus-lead">If you don't have a copy yet, you can get it free from ADMIN with your email address.</p>
+      <a href="https://mailchi.mp/admin-magazine.com/almalinux-focusguide" class="btn btn-lg px-4 al-cta-blue"><i class="bi bi-download" aria-hidden="true"></i> Get the Focus Guide</a>
     </div>
     <div class="col-lg-5">
       <img src="/landingpages/focus/cover.webp" alt="The cover of the 2026 AlmaLinux Focus Guide, with the table of contents and the AlmaLinux ad behind it" class="img-fluid" width="800" height="616" />
