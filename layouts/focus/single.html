@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <div class="al-body-container">
+    <section class="al-page-page al-focus-page" dir="ltr">
+      <div class="container pb-5">
+        {{/* The hero band at the top of content/focus.md carries the page's h1. */}}
+        <div class="al-page-content pb-5 al-wysiwyg">
+          {{ .Content }}
+        </div>
+      </div>
+    </section>
+  </div>
+{{ end }}
