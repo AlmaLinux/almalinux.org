@@ -61,15 +61,12 @@
           Keeping it in text as well means screen readers and translators get
           it, and it stays correct if the banner is ever redrawn.
 
-          TODO before merge: this time and the wiki (16:00 UTC) disagree. Confirm
-          the real time with the SIG, fix whichever is wrong (and the banner if
-          needed), then delete the warning line below.
+          The SIG meets at noon US Eastern Time year round, so the time in UTC
+          moves with daylight saving. That's why neither the text nor the banner
+          gives a UTC time.
         */}}
-        <p class="mb-1">
-          {{ i18n "The SIG meets on the first Wednesday of every month at 1:00 PM Eastern Time (Montreal), which is 18:00 UTC in winter and 17:00 UTC in summer." }}
-        </p>
-        <p class="mb-3 fw-bold text-warning">
-          {{ i18n "NEED TO CONFIRM THIS BEFORE WE PUBLISH" }}
+        <p class="mb-3">
+          {{ i18n "The SIG meets on the first Wednesday of every month at 12:00 PM Eastern Time." }}
         </p>
         <div class="d-flex flex-wrap gap-3">
           <a

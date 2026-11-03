@@ -1134,7 +1134,6 @@
    "The Creative Installer": "The Creative Installer",
    "The Media & Entertainment SIG": "The Media & Entertainment SIG",
    "The Media & Entertainment SIG builds a ready-to-work Creative ISO with KDE Plasma and a curated set of open source media tools.": "The Media & Entertainment SIG builds a ready-to-work Creative ISO with KDE Plasma and a curated set of open source media tools.",
-   "The SIG meets on the first Wednesday of every month at 1:00 PM Eastern Time (Montreal), which is 18:00 UTC in winter and 17:00 UTC in summer.": "The SIG meets on the first Wednesday of every month at 1:00 PM Eastern Time (Montreal), which is 18:00 UTC in winter and 17:00 UTC in summer.",
    "Trusted by leading studios & production houses": "Trusted by leading studios & production houses",
    "View almalinux-me-ec2": "View almalinux-me-ec2",
    "View the Creative Installer project": "View the Creative Installer project",
@@ -1163,7 +1162,6 @@
    "Long support": "Long support",
    "Looking for something else? The certification catalog shows software people have tested on AlmaLinux, and you can add your own results.": "Looking for something else? The certification catalog shows software people have tested on AlmaLinux, and you can add your own results.",
    "Missing an app you use?": "Missing an app you use?",
-   "NEED TO CONFIRM THIS BEFORE WE PUBLISH": "NEED TO CONFIRM THIS BEFORE WE PUBLISH",
    "Official images for AWS, Azure, Google Cloud, OCI, and OpenNebula, so you can send renders to the cloud on the same OS you run on site.": "Official images for AWS, Azure, Google Cloud, OCI, and OpenNebula, so you can send renders to the cloud on the same OS you run on site.",
    "Open AlmaLinux Creative Installer from your app menu and choose the apps you want. It sets them up for you, including the extra software sources and drivers they need.": "Open AlmaLinux Creative Installer from your app menu and choose the apps you want. It sets them up for you, including the extra software sources and drivers they need.",
    "Open a terminal and run these two commands. You'll get updates to the installer whenever you update the rest of your system.": "Open a terminal and run these two commands. You'll get updates to the installer whenever you update the rest of your system.",
@@ -1199,5 +1197,6 @@
    "almalinux-me-ec2 launches the official AlmaLinux 10 image on Amazon EC2 and sets it up as a creative workstation, with KDE Plasma, the open source creative apps, and a remote desktop over Amazon DCV. You pay AWS for the time it runs, so shut it down when you're done.": "almalinux-me-ec2 launches the official AlmaLinux 10 image on Amazon EC2 and sets it up as a creative workstation, with KDE Plasma, the open source creative apps, and a remote desktop over Amazon DCV. You pay AWS for the time it runs, so shut it down when you're done.",
    "Read about FIPS validation": "Read about FIPS validation",
    "Signed packages, public errata, and FIPS 140-3 validated cryptographic modules for AlmaLinux OS 9.2.": "Signed packages, public errata, and FIPS 140-3 validated cryptographic modules for AlmaLinux OS 9.2.",
-   "The AlmaLinux Creative Installer is a guided setup for more than 40 creative apps, including Blender, DaVinci Resolve, Krita, and OBS Studio. Tristan Theroux built it, after it was requested in the M&E SIG.": "The AlmaLinux Creative Installer is a guided setup for more than 40 creative apps, including Blender, DaVinci Resolve, Krita, and OBS Studio. Tristan Theroux built it, after it was requested in the M&E SIG."
+   "The AlmaLinux Creative Installer is a guided setup for more than 40 creative apps, including Blender, DaVinci Resolve, Krita, and OBS Studio. Tristan Theroux built it, after it was requested in the M&E SIG.": "The AlmaLinux Creative Installer is a guided setup for more than 40 creative apps, including Blender, DaVinci Resolve, Krita, and OBS Studio. Tristan Theroux built it, after it was requested in the M&E SIG.",
+   "The SIG meets on the first Wednesday of every month at 12:00 PM Eastern Time.": "The SIG meets on the first Wednesday of every month at 12:00 PM Eastern Time."
 }
