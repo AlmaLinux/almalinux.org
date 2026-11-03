@@ -77,12 +77,12 @@
     "How are we doing this?": "Ako to robíme?",
     "AlmaLinux is leveraging Codenotary’s open source": "AlmaLinux využíva otvorený zdroj Codenotary",
     "to provide administrators with authentication, verification and full SBOM visibility.": "poskytnúť správcom autentifikáciu, overenie a úplnú viditeľnosť SBOM.",
-    "The AlmaLinux Build System stores SBOM data inside of immudb": "",
+    "The AlmaLinux Build System stores SBOM data inside of immudb": "Systém pre zostavenie AlmaLinuxu ukladá údaje SBOM do databázy immudb",
     ", the standard for open source for immutable databases, used by some of the world’s leading companies and governments.": ", štandard pre open source pre nemenné databázy, ktorý používajú niektoré z popredných svetových spoločností a vlád.",
-    "immudb is protected against tampering.": "",
-    "All attestation data is integrity-checked and cryptographically verified by clients.": "",
+    "immudb is protected against tampering.": "immudb je chránená proti neoprávnenej manipulácii.",
+    "All attestation data is integrity-checked and cryptographically verified by clients.": "Klienti kontrolujú integritu všetkých atestačných údajov a kryptograficky ich overujú.",
     "No one can change this data, not AlmaLinux or anyone else.": "Nikto nemôže zmeniť tieto údaje, ani AlmaLinux ani nikto iný.",
-    "immudb is also protected against MITM attacks.": "",
+    "immudb is also protected against MITM attacks.": "immudb je chránená aj pred útokmi typu MITM.",
     "The encryption key is client-side verified and checked before every communication.": "Šifrovací kľúč je overený a kontrolovaný na strane klienta pred každou komunikáciou.",
     "Getting Started": "Začíname",
     "For more information, see the Almalinux wiki:": "Ďalšie informácie nájdete na wiki Almalinux:",
@@ -297,5 +297,7 @@
     "RSS Feed": "RSS Feed",
     "Subscribe on LinkedIn": "Sledovať na LinkedIn",
     "Individual Member": "Individuálny člen",
-    "Mailing List": "adresár"
+    "Mailing List": "adresár",
+    "AlmaLinux images are available for Incus and LXC.": "Obrazy AlmaLinux sú dostupné pre Incus a LXC.",
+    "Get Incus and LXC Images": "Získať obrazy pre Incus a LXC"
 }
