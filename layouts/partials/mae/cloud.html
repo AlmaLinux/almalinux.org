@@ -1,0 +1,40 @@
+{{/* Try it in the cloud.
+
+  A smaller option for people who want to try the setup without installing
+  anything locally. It sits after the Installer and the ISO because it costs
+  money to run, which matters to this page's audience, and the copy says so.
+*/}}
+
+
+<section id="creative-cloud" class="al-mae-cloud al-py-lg">
+  <div class="container">
+    <div class="al-mae-panel">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-8">
+          <h2 class="h3 mb-3">
+            {{ i18n "Want to try it in the cloud?" }}
+            <a
+              class="al-anchor"
+              href="#creative-cloud"
+              aria-label="{{ i18n `Link to this section` }}"
+              >#</a
+            >
+          </h2>
+          <p class="mb-0">
+            {{ i18n "almalinux-me-ec2 launches the official AlmaLinux 10 image on Amazon EC2 and sets it up as a creative workstation, with KDE Plasma, the open source creative apps, and a remote desktop over Amazon DCV. You pay AWS for the time it runs, so shut it down when you're done." }}
+          </p>
+        </div>
+        <div class="col-12 col-lg-4 text-lg-end">
+          <a
+            href="https://github.com/davdunc/almalinux-me-ec2"
+            class="btn al-cta-blue px-4"
+            target="_blank"
+            rel="noopener">
+            <i class="bi bi-github pe-1" aria-hidden="true"></i>
+            {{ i18n "View almalinux-me-ec2" }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

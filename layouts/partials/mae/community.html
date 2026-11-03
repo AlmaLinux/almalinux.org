@@ -1,114 +1,208 @@
-{{/* The M&E SIG, and where to go next.
+{{/* The M&E SIG, then the studios and facilities strip that closes the page.
 
-  Closes the page: who builds the Creative ISO, then the two follow-on steps.
-  Downloading is handled by mae/creative-iso.html above, so it is not repeated
-  here.
+  The SIG section invites newcomers in: the SIG wants students and freelancers
+  in the conversation so it can hear what breaks for them. Its list only names
+  work that exists today.
+
+  The studios strip is the short technical case for someone choosing what to
+  run on many machines. It points to the pages that hold the detail (support,
+  FIPS, Get AlmaLinux) rather than repeating it. Architectures and cloud images
+  match static/llms.txt; keep the two in step.
 */}}
 
 
 <!-- ═══════════════════════════════════════════════════════
-     CONTENT 2: M&E SIG
+     M&E SIG
 ════════════════════════════════════════════════════════ -->
-<section class="al-mae-sig al-py-lg">
+<section id="me-sig" class="al-mae-sig al-py-lg">
   <div class="container">
-    <div class="row align-items-center g-5">
+    <div class="row align-items-center g-4 g-lg-5">
       <div class="col-12 col-lg-6">
-        <h2 class="mb-3">{{ i18n "The Media & Entertainment SIG" }}</h2>
+        <h2 class="mb-3">
+          {{ i18n "The Media & Entertainment SIG" }}
+          <a
+            class="al-anchor"
+            href="#me-sig"
+            aria-label="{{ i18n `Link to this section` }}"
+            >#</a
+          >
+        </h2>
         <p>
-          {{ i18n "The AlmaLinux Media & Entertainment Special Interest Group (M&E SIG) is a community of VFX artists, pipeline TDs, facility engineers, and open source contributors working together to make AlmaLinux the best platform for creative production." }}
+          {{ i18n "The AlmaLinux Media & Entertainment Special Interest Group (M&E SIG) is a group of artists, pipeline technical directors, studio engineers, and open source contributors who work on making AlmaLinux better for creative work." }}
+        </p>
+        <p>
+          {{ i18n "Students and freelancers are welcome. If something doesn't work on your setup, tell us in the chat so we can work on it with you." }}
+        </p>
+        <p class="fw-semibold mb-2">
+          {{ i18n "What the SIG is working on now:" }}
         </p>
         <ul class="al-mae-sig-list">
           <li>
             <i class="bi bi-check2-circle" aria-hidden="true"></i>
-            {{ i18n "VFX Reference Platform tracking" }}
+            {{ i18n "The Creative Installer" }}
           </li>
           <li>
             <i class="bi bi-check2-circle" aria-hidden="true"></i>
-            {{ i18n "Pipeline-tested package builds" }}
+            {{ i18n "Testing creative apps on AlmaLinux" }}
           </li>
           <li>
             <i class="bi bi-check2-circle" aria-hidden="true"></i>
-            {{ i18n "Studio deployment guides" }}
+            {{ i18n "Packaging Academy Software Foundation (ASWF) projects as RPMs" }}
           </li>
           <li>
             <i class="bi bi-check2-circle" aria-hidden="true"></i>
-            {{ i18n "Direct collaboration with software vendors" }}
+            {{ i18n "The Creative ISO" }}
           </li>
         </ul>
+        <p>
+          {{ i18n "Teaching animation, VFX, or game development? We'd like to hear what your students need. Come talk to us in the SIG chat channel." }}
+        </p>
         {{/* The meeting time is also burned into the banner image beside this.
           Keeping it in text as well means screen readers and translators get
-          it, and it stays correct if the banner is ever redrawn. The time is
-          set on Montreal's clock, which observes daylight saving, so the UTC
-          equivalent moves with the season.
+          it, and it stays correct if the banner is ever redrawn.
+
+          TODO before merge: this time and the wiki (16:00 UTC) disagree. Confirm
+          the real time with the SIG, fix whichever is wrong (and the banner if
+          needed), then delete the warning line below.
         */}}
-        <p class="mb-3">
+        <p class="mb-1">
           {{ i18n "The SIG meets on the first Wednesday of every month at 1:00 PM Eastern Time (Montreal), which is 18:00 UTC in winter and 17:00 UTC in summer." }}
         </p>
-        <a
-          href="https://wiki.almalinux.org/sigs/MediaAndEntertainmentSIG.html"
-          class="btn al-cta-blue btn-lg px-4"
-          target="_blank"
-          rel="noopener">
-          <i class="bi bi-arrow-up-right-square pe-1" aria-hidden="true"></i>
-          {{ i18n "Learn about the M&E SIG" }}
-        </a>
+        <p class="mb-3 fw-bold text-warning">
+          {{ i18n "NEED TO CONFIRM THIS BEFORE WE PUBLISH" }}
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          <a
+            href="https://chat.almalinux.org/almalinux/channels/sig-media-entertainment"
+            class="btn al-cta-blue px-4"
+            target="_blank"
+            rel="noopener">
+            <i class="bi bi-chat-dots pe-1" aria-hidden="true"></i>
+            {{ i18n "Join the chat" }}
+          </a>
+          <a
+            href="https://wiki.almalinux.org/sigs/MediaAndEntertainmentSIG.html"
+            class="btn al-cta-blue px-4"
+            target="_blank"
+            rel="noopener">
+            <i class="bi bi-arrow-up-right-square pe-1" aria-hidden="true"></i>
+            {{ i18n "Learn about the M&E SIG" }}
+          </a>
+        </div>
       </div>
       <div class="col-12 col-lg-6 text-center">
         <img
           src="/landingpages/mae/sig-meeting.png"
           alt="{{ i18n "AlmaLinux Media & Entertainment SIG meeting announcement" }}"
-          class="img-fluid rounded" />
+          class="img-fluid rounded"
+          width="2164"
+          height="1438"
+          loading="lazy" />
       </div>
     </div>
   </div>
 </section>
 
 <!-- ═══════════════════════════════════════════════════════
-     NEXT STEPS
+     STUDIOS AND FACILITIES
 ════════════════════════════════════════════════════════ -->
-<section id="next-steps" class="al-mae-start al-py-lg">
+<section id="studios" class="al-mae-studios al-py-lg">
   <div class="container">
-    <h2 class="text-center mb-2">{{ i18n "Next steps" }}</h2>
-    <p class="text-center al-text-muted mb-5">
-      {{ i18n "Once the ISO is written to a USB stick, these two will get you the rest of the way." }}
+    <h2 class="h3 text-center mb-2">
+      {{ i18n "Running a studio or facility?" }}
+      <a
+        class="al-anchor"
+        href="#studios"
+        aria-label="{{ i18n `Link to this section` }}"
+        >#</a
+      >
+    </h2>
+    <p class="text-center al-text-muted mb-4 mx-auto al-mae-measure">
+      {{ i18n "If you're choosing what to run on a room full of workstations or a render farm, here's the short version." }}
     </p>
-    <div
-      class="row row-cols-1 row-cols-md-2 g-4 text-center justify-content-center">
-      <div class="col col-lg-4">
-        <div class="al-mae-step">
-          <div class="al-mae-step-number">1</div>
-          <h3 class="h4">{{ i18n "Follow the M&E SIG setup guide" }}</h3>
-          <p>
-            {{ i18n "The M&E SIG wiki covers GPU drivers, VFX Reference Platform libraries, and software installation for common DCC tools." }}
-          </p>
-          <a
-            href="https://wiki.almalinux.org/sigs/MediaAndEntertainmentSIG.html"
-            class="btn al-cta-blue px-4 mt-2"
-            target="_blank"
-            rel="noopener">
-            <i class="bi bi-book pe-1" aria-hidden="true"></i>
-            {{ i18n "Read the wiki" }}
-          </a>
-        </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
+      <div class="col">
+        <h3 class="h6">
+          <i
+            class="bi bi-calendar-check al-mae-studios-icon pe-2"
+            aria-hidden="true"></i>
+          {{ i18n "Long support" }}
+        </h3>
+        <p class="mb-0">
+          {{ i18n "AlmaLinux 9 gets security updates through May 2032, and AlmaLinux 10 through May 2035." }}
+        </p>
       </div>
-
-      <div class="col col-lg-4">
-        <div class="al-mae-step">
-          <div class="al-mae-step-number">2</div>
-          <h3 class="h4">{{ i18n "Join the community" }}</h3>
-          <p>
-            {{ i18n "Chat with M&E users and contributors in the AlmaLinux community forums and the M&E SIG chat channel." }}
-          </p>
-          <a
-            href="https://chat.almalinux.org/almalinux/channels/sig-media-entertainment"
-            class="btn al-cta-blue px-4 mt-2"
-            target="_blank"
-            rel="noopener">
-            <i class="bi bi-chat-dots pe-1" aria-hidden="true"></i>
-            {{ i18n "Join the chat" }}
-          </a>
-        </div>
+      <div class="col">
+        <h3 class="h6">
+          <i
+            class="bi bi-box-seam al-mae-studios-icon pe-2"
+            aria-hidden="true"></i>
+          {{ i18n "RHEL compatible" }}
+        </h3>
+        <p class="mb-0">
+          {{ i18n "AlmaLinux is binary compatible with Red Hat Enterprise Linux (RHEL), so software built for RHEL runs on it. Each vendor sets its own support policy, so check with them." }}
+        </p>
+      </div>
+      <div class="col">
+        <h3 class="h6">
+          <i
+            class="bi bi-life-preserver al-mae-studios-icon pe-2"
+            aria-hidden="true"></i>
+          {{ i18n "Support for your team" }}
+        </h3>
+        <p class="mb-0">
+          {{ i18n "Community help is free, and commercial support is available from companies in the AlmaLinux ecosystem." }}
+          <a href="{{ "/support/" | relLangURL }}"
+            >{{ i18n "See support options" }}</a
+          >
+        </p>
+      </div>
+      <div class="col">
+        <h3 class="h6">
+          <i
+            class="bi bi-motherboard al-mae-studios-icon pe-2"
+            aria-hidden="true"></i>
+          {{ i18n "Hardware choice" }}
+        </h3>
+        <p class="mb-0">
+          {{ i18n "Builds for x86_64, aarch64, ppc64le, and s390x, plus an x86_64_v2 build of AlmaLinux 10 for older x86 hardware." }}
+        </p>
+      </div>
+      <div class="col">
+        <h3 class="h6">
+          <i
+            class="bi bi-cloud al-mae-studios-icon pe-2"
+            aria-hidden="true"></i>
+          {{ i18n "Cloud and hybrid" }}
+        </h3>
+        <p class="mb-0">
+          {{ i18n "Official images for AWS, Azure, Google Cloud, OCI, and OpenNebula, so you can send renders to the cloud on the same OS you run on site." }}
+        </p>
+      </div>
+      <div class="col">
+        <h3 class="h6">
+          <i
+            class="bi bi-shield-lock al-mae-studios-icon pe-2"
+            aria-hidden="true"></i>
+          {{ i18n "Security and compliance" }}
+        </h3>
+        <p class="mb-0">
+          {{ i18n "Signed packages, public errata, and FIPS 140-3 validated cryptographic modules for AlmaLinux OS 9.2." }}
+          <a href="{{ "/security/fips-certification/" | relLangURL }}"
+            >{{ i18n "Read about FIPS validation" }}</a
+          >
+        </p>
       </div>
     </div>
+    <p class="text-center mb-0">
+      {{ i18n "Planning a deployment? The M&E SIG includes people who run AlmaLinux in studios, and you can compare notes with them in the chat." }}
+      <a
+        href="https://chat.almalinux.org/almalinux/channels/sig-media-entertainment"
+        target="_blank"
+        rel="noopener"
+        class="fw-semibold">
+        {{ i18n "Talk to the SIG" }}
+      </a>
+    </p>
   </div>
 </section>

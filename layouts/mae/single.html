@@ -4,35 +4,37 @@
     One long-scroll page in the deep-band pattern used by /foundation and
     /members (DESIGN.md section 11).
 
-    The page serves two audiences that pull in opposite directions: a
-    freelancer who wants to be working today, and a facility that provisions
-    its own machines. mae/ways-in.html names that split, which is what lets the
-    M&E SIG's Creative ISO sit on the same page as the render-farm argument.
+    The page is written for artists, freelancers, and students: people who
+    want to learn and work on the same platform the studios run. That's the
+    audience the M&E SIG asked for. Studios and facilities get one compact
+    strip at the end, so a sysadmin who lands here still finds the short
+    technical case.
 
     Reading order:
-    1-2  hero, trusted by            mae/hero.html, mae/ways-in.html
-    3    two ways in                 mae/ways-in.html
-    4-5  why AlmaLinux, works with   mae/platform.html
-    6    the Creative ISO (light)    mae/creative-iso.html
-    7    the Creative Installer      mae/installer.html
-    8-9  what's on it, EC2           mae/iso-details.html
-    10-11 the M&E SIG, next steps    mae/community.html
+    1   hero                         mae/hero.html
+    2   trusted by                   mae/trusted.html
+    3   why AlmaLinux                mae/platform.html
+    4   the Creative Installer       mae/installer.html (light band)
+    5   works with your tools        mae/software.html
+    6   the Creative ISO, coming     mae/creative-iso.html
+    7   try it in the cloud          mae/cloud.html
+    8   the M&E SIG                  mae/community.html
+    9   studios and facilities       mae/community.html
 
-    Section 3 offers the two ways in, the ISO and the Installer, and both cards
-    jump to their section further down. The argument comes before either, so
-    readers who already know what they want skip it in one click, the same way
-    the hero CTA does.
-
-    Only section 6 uses the light band, so the one moment where a visitor
-    downloads something is the one moment that inverts.
+    The Creative Installer is the way to get started today, so it carries the
+    page's only light band: the one moment where a visitor does something is
+    the one moment that inverts. The Creative ISO isn't published yet, so it
+    gets a short "coming" section until it ships. When it does, it can take
+    the light band back (see the note in mae/creative-iso.html).
   */}}
   <div class="al-body-container al-page-mae">
     {{ partial "mae/hero.html" . }}
-    {{ partial "mae/ways-in.html" . }}
+    {{ partial "mae/trusted.html" . }}
     {{ partial "mae/platform.html" . }}
-    {{ partial "mae/creative-iso.html" . }}
     {{ partial "mae/installer.html" . }}
-    {{ partial "mae/iso-details.html" . }}
+    {{ partial "mae/software.html" . }}
+    {{ partial "mae/creative-iso.html" . }}
+    {{ partial "mae/cloud.html" . }}
     {{ partial "mae/community.html" . }}
   </div>
 {{ end }}

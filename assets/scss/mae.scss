@@ -1,11 +1,11 @@
 // AlmaLinux for Media and Entertainment (/for/media-and-entertainment)
 //
 // One long-scroll page in the deep-band pattern (DESIGN.md section 11). The
-// page runs dark throughout, with a single light band on the Creative ISO
-// download so that one moment reads as the thing to do. Everything else, the
-// Installer, the box contents, and the EC2 card included, uses the same dark
-// card surface, so the SIG's material sits in the page rather than on top of
-// it. Everything is scoped to .al-page-mae.
+// page runs dark throughout, with a single light band on the Creative
+// Installer so that one moment reads as the thing to do. Everything else, the
+// Creative ISO and EC2 panels included, uses the same dark card surface, so the
+// SIG's material sits in the page rather than on top of it. Everything is
+// scoped to .al-page-mae.
 
 @use "variables";
 
@@ -17,26 +17,28 @@ $al-mae-radius-sm: 8px;
 .al-page-mae {
   // ─── Band alternation ──────────────────────────────────────────────────────
   //
-  // Reading order is hero, trusted, ways in, why, works with, ISO (light),
-  // Installer, what's on it, cloud, SIG, next steps. These take the deep
-  // surface; the rest sit on the page background so no two neighbours share a
-  // colour.
+  // Reading order is hero, trusted, why, Installer (light), works with, ISO,
+  // cloud, SIG, studios. These take the deep surface; trusted has its own
+  // faint tint (as does the studios strip), and the rest sit on the page
+  // background, so no two neighbours share a colour.
 
   .al-mae-hero,
   .al-mae-why,
-  .al-mae-installer,
-  .al-mae-cloud,
-  .al-mae-start {
+  .al-mae-iso,
+  .al-mae-sig {
     background: variables.$al-c-black-pearl;
+  }
+
+  // Line-length limit for centred prose under a heading
+  .al-mae-measure {
+    max-width: 45rem;
   }
 
   // ─── Shared dark card surface ──────────────────────────────────────────────
   //
-  // Used by the routing cards, the numbered steps, and the wide panels. Keeping
-  // them on one rule is what stops a second visual vocabulary appearing.
+  // Used by the wide panels (the Creative ISO and the EC2 card). Keeping them
+  // on one rule is what stops a second visual vocabulary appearing.
 
-  .al-mae-way,
-  .al-mae-step,
   .al-mae-panel {
     background: rgba(variables.$al-c-soft-peach-lighter, 0.05);
     border: 1px solid rgba(variables.$al-c-soft-peach-lighter, 0.1);
@@ -55,22 +57,23 @@ $al-mae-radius-sm: 8px;
     box-shadow: 0 8px 32px rgba(variables.$al-c-black-pearl-dark, 0.4);
   }
 
-  // The Installer screenshot is detail-dense and overpowers the copy beside it
-  // at full column width. Only capped once the panel is actually two columns;
-  // on narrow screens it stacks and should fill the width.
-  @media (min-width: 992px) {
-    .al-mae-installer .al-mae-frame {
-      max-width: 70%;
-      margin-inline: auto;
-    }
-  }
+  // ─── Trusted by, and the studios strip ─────────────────────────────────────
+  //
+  // Both get a faint tint with hairline borders. The studios strip closes the
+  // page, and the tint keeps it apart from the site's newsletter block, which
+  // sits on the same page background right after it.
 
-  // ─── Trusted by ────────────────────────────────────────────────────────────
-
-  .al-mae-trusted {
+  .al-mae-trusted,
+  .al-mae-studios {
     background: rgba(variables.$al-c-soft-peach-lighter, 0.03);
     border-top: 1px solid rgba(variables.$al-c-soft-peach-lighter, 0.07);
     border-bottom: 1px solid rgba(variables.$al-c-soft-peach-lighter, 0.07);
+  }
+
+  // Inline icons on the studios strip's small headings, in the same blue as
+  // the larger feature icons in "What you get with AlmaLinux".
+  .al-mae-studios-icon {
+    color: variables.$al-c-science-blue-lighter;
   }
 
   .al-mae-logo-strip {
@@ -92,27 +95,6 @@ $al-mae-radius-sm: 8px;
     width: auto;
     height: auto;
     object-fit: contain;
-  }
-
-  // ─── Two ways in ───────────────────────────────────────────────────────────
-
-  .al-mae-way {
-    padding: 2rem 1.75rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.75rem;
-  }
-
-  .al-mae-way-icon {
-    font-size: 1.75rem;
-    color: variables.$al-c-cta-blue;
-    line-height: 1;
-  }
-
-  .al-mae-way-cta {
-    margin-top: auto;
-    padding-top: 0.75rem;
   }
 
   // ─── Feature grid ──────────────────────────────────────────────────────────
@@ -201,18 +183,10 @@ $al-mae-radius-sm: 8px;
     color: rgba(variables.$al-c-soft-peach-lighter, 0.6);
   }
 
-  // ─── Wide panels: what's on it, the Installer, the EC2 card ────────────────
+  // ─── Wide panels: the Creative ISO and the EC2 card ────────────────────────
 
   .al-mae-panel {
     padding: 2.25rem;
-  }
-
-  .al-mae-panel-eyebrow {
-    color: variables.$al-c-cta-blue;
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
   }
 
   // ─── M&E SIG ───────────────────────────────────────────────────────────────
@@ -237,42 +211,19 @@ $al-mae-radius-sm: 8px;
     }
   }
 
-  // ─── Next steps ────────────────────────────────────────────────────────────
-
-  .al-mae-step {
-    padding: 2rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .al-mae-step-number {
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    background: variables.$al-c-science-blue-lighter;
-    color: variables.$al-c-soft-peach-lighter;
-    font-size: 1.4rem;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-    flex-shrink: 0;
-  }
-
-  // ─── The Creative ISO: the page's single light band ────────────────────────
+  // ─── The Creative Installer: the page's single light band ──────────────────
   //
-  // Only the download moment lives here. It inverts the page, so text colors
+  // The getting-started moment lives here. It inverts the page, so text colors
   // are set explicitly against the site default of light-on-dark.
 
-  .al-mae-iso {
+  .al-mae-light {
     background: variables.$al-c-soft-peach;
     color: variables.$al-font-color-light;
 
     h2,
     h3,
-    h4 {
+    h4,
+    h5 {
       color: variables.$al-font-color-light;
     }
 
@@ -289,85 +240,65 @@ $al-mae-radius-sm: 8px;
     }
   }
 
-  // Attribution pill above the heading, the one eyebrow on the page
-  .al-mae-iso-eyebrow {
-    display: inline-block;
-    background: rgba(variables.$al-c-science-blue, 0.1);
-    color: variables.$al-c-science-blue-dark;
-    padding: 0.45rem 1rem;
-    border-radius: 999px;
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-  }
-
-  // Line-length limit for prose centred on the wide light surface
-  .al-mae-iso-measure {
-    max-width: 45rem;
-  }
-
-  .al-mae-iso-card {
-    background: variables.$al-c-soft-peach-lighter;
-    border: 1px solid variables.$al-c-soft-peach-dark;
-    border-radius: $al-mae-radius;
-    padding: 2rem;
-    height: 100%;
+  // Numbered setup steps: a number beside each step's heading and copy
+  .al-mae-steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.75rem;
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    // Lets a long command scroll inside its box instead of widening the page
+    li > div {
+      min-width: 0;
+      flex: 1;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+    }
   }
 
-  // Which GPU this build is for. Kept because it carries real meaning.
-  .al-mae-iso-badge {
-    align-self: flex-start;
-    padding: 0.3rem 0.8rem;
-    border-radius: 999px;
-    font-size: 0.75rem;
+  .al-mae-step-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: variables.$al-c-science-blue-lighter;
+    color: variables.$al-c-soft-peach-lighter;
+    font-size: 1.1rem;
     font-weight: 700;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    &.is-accent {
-      background: rgba(variables.$al-c-science-blue, 0.12);
-      color: variables.$al-c-science-blue-dark;
-    }
-
-    &.is-neutral {
-      background: rgba(variables.$al-c-black-pearl, 0.08);
-      color: variables.$al-c-black-pearl;
-    }
-  }
-
-  // The "wrong build will not boot" warning, and the quieter default hint
-  .al-mae-iso-note {
-    border-radius: $al-mae-radius-sm;
-    padding: 0.75rem 0.9rem;
-    font-size: 0.9rem;
-    line-height: 1.5;
     display: flex;
-    gap: 0.55rem;
-
-    i {
-      flex-shrink: 0;
-      line-height: 1.5;
-    }
-
-    &.is-warning {
-      background: rgba(variables.$al-c-candlelight, 0.16);
-      border: 1px solid rgba(variables.$al-c-candlelight-dark, 0.5);
-      color: variables.$al-font-color-light;
-    }
-
-    &.is-muted {
-      background: rgba(variables.$al-c-black-pearl, 0.05);
-      border: 1px solid variables.$al-c-soft-peach-dark;
-      color: rgba(variables.$al-c-black-pearl, 0.78);
-    }
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
   }
 
-  // Buttons sit at the card foot regardless of copy length
-  .al-mae-iso-card-cta {
-    margin-top: auto;
+  // The install commands. Dark on the light band so they read as terminal
+  // input, and scrollable so a long line never forces sideways page scroll.
+  .al-mae-code {
+    background: variables.$al-c-black-pearl;
+    color: variables.$al-c-soft-peach-lighter;
+    font-family: variables.$al-font-family-mono;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    padding: 0.9rem 1rem;
+    border-radius: $al-mae-radius-sm;
+    overflow-x: auto;
+    white-space: pre;
+    margin: 0.5rem 0 0;
+
+    code {
+      color: inherit;
+      background: none;
+      padding: 0;
+      font-size: inherit;
+    }
   }
 }
