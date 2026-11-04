@@ -1,294 +1,73 @@
-<nav
-  id="al-primary-navbar"
-  class="al-primary-navbar navbar p-0 sticky-top navbar-expand-xl navbar-dark flex-column with-motd">
-  <div class="container  my-3">
-    <a class="navbar-brand" href="{{ "" | relLangURL }}">
-      <img
-        src="/images/logo.svg"
-        alt="AlmaLinux OS logo"
-        width="165.93"
-        height="32" />
-    </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#main-navbar"
-      aria-controls="main-navbar"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="main-navbar">
-      <ul class="navbar-nav  mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link mt-1" href="{{ "/blog" | relLangURL }}">
-            {{ i18n "Blog" }}
-          </a>
+{{/* Site header: a thin top bar of quick links, the main bar with four menus, and the announcement strip. The structure was agreed in https://github.com/AlmaLinux/almalinux.org/issues/1176. Only link to pages that exist; new pages get a menu link when they ship.
+
+  Every label is written out as a literal i18n call on a single line, because find_missing_i18n_strings.py only finds strings written that way. That's why the menu isn't generated from a data file.
+*/}}
+<div class="al-site-header">
+  <div class="al-topbar">
+    <div class="container al-topbar-inner">
+      <a class="al-topbar-guide" href="{{ "/focus/" | relLangURL }}"
+        >{{ i18n "New to AlmaLinux? Check out the ADMIN guide" }}</a
+      >
+      <ul class="al-topbar-links">
+        <li>
+          <a href="https://wiki.almalinux.org">{{ i18n "Wiki" }}</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link mt-1" href="https://wiki.almalinux.org">
-            {{ i18n "Wiki" }}
-          </a>
+        <li>
+          <a href="{{ "/blog" | relLangURL }}">{{ i18n "Blog" }}</a>
         </li>
-        {{/* Industry landing pages. Each lives at /for/<industry> and is
-          titled "AlmaLinux for <Industry>", so the menu label is the stem and
-          the items complete it.
-        */}}
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle mt-1"
-            id="navbarDropIndustries"
-            data-bs-toggle="dropdown"
-            aria-expanded="false">
-            {{ i18n "AlmaLinux for..." }}
-          </a>
-          <ul
-            class="dropdown-menu dropdown-menu-dark dropdown-menu-xl-start"
-            aria-labelledby="navbarDropIndustries">
-            <li>
-              <a
-                class="dropdown-item"
-                href="{{ "/for/media-and-entertainment" | relLangURL }}">
-                {{ i18n "AlmaLinux for Media and Entertainment" }}
-              </a>
-            </li>
-          </ul>
+        <li>
+          <a href="{{ "/contribute" | relLangURL }}">{{ i18n "Contribute" }}</a>
         </li>
-        <li class="nav-item dropdown ">
-          <a
-            class="nav-link dropdown-toggle mt-1"
-            id="navbarDropResources"
-            data-bs-toggle="dropdown"
-            aria-expanded="false">
-            {{ i18n "Resources" }}
-          </a>
-          <ul
-            class="dropdown-menu dropdown-menu-dark dropdown-menu-xl-start"
-            aria-labelledby="navbarDropResources">
-            <li>
-              <a
-                class="dropdown-item"
-                href="https://wiki.almalinux.org/documentation/migration-guide">
-                {{ i18n "Migrate from CentOS 8" }}
-              </a>
-            </li>
-            <li>
-              <a
-                class="dropdown-item"
-                href="{{ "/certification" | relLangURL }}">
-                {{ i18n "Certification" }}
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="https://catalog.almalinux.org">
-                {{ i18n "Certification Catalog" }}
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="https://bugs.almalinux.org">
-                {{ i18n "Report Bugs" }}
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="{{ "/elevate" | relLangURL }}">
-                ELevate
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="{{ "/newsletters" | relLangURL }}">
-                {{ i18n "Newsletters" }}
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="https://lists.almalinux.org/">
-                {{ i18n "Mailing Lists" }}
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="https://openqa.almalinux.org/">
-                {{ i18n "openQA" }}
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="https://build.almalinux.org/">
-                {{ i18n "Build System" }}
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="{{ "/security" | relLangURL }}">
-                {{ i18n "Security" }}
-              </a>
-              <ul>
-                <li>
-                  <a
-                    class="dropdown-item dropdown-nested"
-                    href="{{ "/security/fips-certification" | relLangURL }}">
-                    {{ i18n "FIPS Certification" }}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item dropdown-nested"
-                    href="{{ "/security/cc-certification" | relLangURL }}">
-                    {{ i18n "Common Criteria Certification" }}
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a class="dropdown-item" href="{{ "/branding/" | relLangURL }}">
-                {{ i18n "Brand Assets" }}
-              </a>
-            </li>
-          </ul>
+        <li>
+          <a href="https://chat.almalinux.org/">{{ i18n "Chat" }}</a>
         </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle mt-1"
-            id="navbarDropEvents"
-            data-bs-toggle="dropdown"
-            aria-expanded="false">
-            {{ i18n "Events" }}
-          </a>
-          <ul
-            class="dropdown-menu dropdown-menu-dark dropdown-menu-xl-start"
-            aria-labelledby="navbarDropEvents">
-            <li>
-              <a
-                class="dropdown-item"
-                href="https://events.almalinux.org/category/1/">
-                {{ i18n "SIG Meetings" }}
-              </a>
-            </li>
-            <li>
-              <a
-                class="dropdown-item"
-                href="https://events.almalinux.org/category/7/">
-                {{ i18n "ALESCo Meetings" }}
-              </a>
-            </li>
-            <li><hr class="dropdown-divider" /></li>
-            <li>
-              <h6 class="dropdown-header text-white">
-                {{ i18n "Past Events" }}
-              </h6>
-            </li>
-            <li>
-              <a
-                class="dropdown-item"
-                href="{{ "/almalinux-day-los-angeles-2026/" | relLangURL }}">
-                {{ i18n "ALD Los Angeles 2026" }}
-              </a>
-            </li>
-            <li>
-              <a
-                class="dropdown-item"
-                href="{{ "/almalinux-day-germany-2026/" | relLangURL }}">
-                {{ i18n "ALD Germany 2026" }}
-              </a>
-            </li>
-            <li>
-              <a
-                class="dropdown-item"
-                href="{{ "/almalinux-day-tokyo-2026/" | relLangURL }}">
-                {{ i18n "ALD Tokyo 2026" }}
-              </a>
-            </li>
-            <li>
-              <a
-                class="dropdown-item"
-                href="{{ "/almalinux-day-vancouver-2025/" | relLangURL }}">
-                {{ i18n "ALD Vancouver 2025" }}
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="{{ "/aldt-2024" | relLangURL }}">
-                {{ i18n "ALD Tokyo 2024" }}
-              </a>
-            </li>
-            <li>
-              <a
-                class="dropdown-item"
-                href="{{ "/almalinux-day-germany-2024/" | relLangURL }}">
-                {{ i18n "ALD Germany 2024" }}
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="{{ "/aldt-2023" | relLangURL }}">
-                {{ i18n "ALD Tokyo 2023" }}
-              </a>
-            </li>
-          </ul>
+        <li>
+          <a href="https://shop.almalinux.org/">{{ i18n "Shop" }}</a>
         </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle mt-1"
-            id="navbarDropFoundation"
-            data-bs-toggle="dropdown"
-            aria-expanded="false">
-            {{ i18n "Foundation" }}
-          </a>
-          <ul
-            class="dropdown-menu dropdown-menu-dark dropdown-menu-xl-start"
-            aria-labelledby="navbarDropFoundation">
-            <li>
-              <a class="dropdown-item" href="{{ "/foundation" | relLangURL }}">
-                {{ i18n "About the Foundation" }}
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="{{ "/members" | relLangURL }}">
-                {{ i18n "Membership" }}
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="{{ "/alesco" | relLangURL }}">
-                {{ i18n "ALESCo" }}
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="{{ "/press/" | relLangURL }}">
-                {{ i18n "Press & Media Kit" }}
-              </a>
-            </li>
-            <li>
-              <a
-                class="dropdown-item"
-                href="{{ "/p/foundation-bylaws" | relLangURL }}">
-                {{ i18n "Bylaws" }}
-              </a>
-            </li>
-            <li>
-              <a
-                class="dropdown-item"
-                href="{{ "/p/foundation-board-operations-and-ethics" | relLangURL }}">
-                {{ i18n "Board operations & ethics" }}
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mt-1" href="https://shop.almalinux.org/">
-            {{ i18n "Shop" }}
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mt-1" href="{{ "/support" | relLangURL }}">
-            {{ i18n "Get Support" }}
-          </a>
-        </li>
-        <li class="nav-item dropdown ps-md-2">
+        <li class="dropdown">
           <button
-            class="btn nav-link dropdown-toggle al-language-switch mt-1"
-            id="navbarDropLanguages"
+            class="al-topbar-toggle dropdown-toggle"
+            type="button"
+            id="al-topbar-donate"
             data-bs-toggle="dropdown"
             aria-expanded="false">
-            <img src="/images/lang.svg" alt="Language" width="24" height="24" />
+            {{ i18n "Donate" }}
           </button>
           <ul
-            class="dropdown-menu dropdown-menu-dark dropdown-menu-xl-start"
-            aria-labelledby="navbarDropLanguages">
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="al-topbar-donate">
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://github.com/sponsors/AlmaLinux">
+                <i class="bi bi-github" aria-hidden="true"></i>
+                {{ i18n "GitHub Sponsors" }}
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://opencollective.com/almalinux-os-foundation">
+                <i class="bi bi-cash-coin" aria-hidden="true"></i>
+                {{ i18n "Open Collective" }}
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <button
+            class="al-topbar-toggle dropdown-toggle"
+            type="button"
+            id="al-topbar-language"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-globe" aria-hidden="true"></i>
+            <span class="visually-hidden">{{ i18n "Language" }}:</span>
+            <span class="al-language-current">{{ $.Language.Label }}</span>
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="al-topbar-language">
             {{ range $.AllTranslations }}
               <li>
                 <a
@@ -306,51 +85,613 @@
             </li>
             <li class="al-translate-callout">
               <a
-                class="dropdown-item al-language-link"
+                class="dropdown-item"
                 href="https://hosted.weblate.org/engage/almalinux/">
-                <i class="bi bi-pencil"></i>
+                <i class="bi bi-pencil" aria-hidden="true"></i>
                 {{ i18n "Translate" }}
               </a>
             </li>
           </ul>
         </li>
-        <li class="nav-item ps-md-2">
-          <a
-            class="nav-link btn btn al-download-button"
-            href="{{ "/get-almalinux" | relLangURL }}">
-            <i class="bi bi-download pe-1 d-none d-xl-inline"></i>
-            {{ i18n "Download" }}
-          </a>
-        </li>
       </ul>
     </div>
   </div>
-</nav>
 
-<div id="al-motd" dir="ltr" data-nosnippet="">
-  <div class="container ps-3">
-    <div class="text">
-      <i class="bi bi-box-seam"></i>
-      <a href="{{ "/blog/2026-09-17-announcing-99-beta/" | relLangURL }}"
-        >{{ i18n "AlmaLinux OS 9.9 Beta" }}</a
-      >
-      {{ i18n "now available!" }} &nbsp;|&nbsp;
-      <i class="bi bi-box-seam"></i>
-      <a href="{{ "/blog/2026-09-10-announcing-103-beta/" | relLangURL }}"
-        >{{ i18n "AlmaLinux OS 10.3 Beta" }}</a
-      >
-      {{ i18n "now available!" }} &nbsp;|&nbsp;
-      <i class="bi bi-geo-alt"></i>
-      <a class="al-motd-event" href="{{ "/sc26/" | relLangURL }}"
-        >{{ i18n "Find us at SC26" }}</a
-      >
-      {{ i18n "Nov 16 to 19, booth #1704" }} &nbsp;|&nbsp;
-      <i class="bi bi-chat-dots"></i>
-      <a
-        class="al-motd-election"
-        href="{{ "/blog/2026-10-14-what-should-almalinux-do-next/" | relLangURL }}"
-        >{{ i18n "Tell us what AlmaLinux should do next" }}</a
-      >
+  <nav
+    id="al-primary-navbar"
+    class="al-primary-navbar navbar navbar-expand-xl navbar-dark"
+    aria-label="{{ i18n "Main menu" }}">
+    <div class="container">
+      <a class="navbar-brand" href="{{ "" | relLangURL }}">
+        <img
+          src="/images/logo.svg"
+          alt="AlmaLinux OS logo"
+          width="165.93"
+          height="32" />
+      </a>
+
+      {{/* Below xl, the actions sit beside the toggler and the menus wrap onto their own row underneath, so the order classes move them. */}}
+      <div class="al-nav-actions order-1 order-xl-2">
+        <a
+          class="btn al-nav-support d-none d-xl-inline-flex"
+          href="{{ "/support" | relLangURL }}">
+          <i class="bi bi-life-preserver" aria-hidden="true"></i>
+          {{ i18n "Get support" }}
+        </a>
+        <a
+          class="btn al-cta-blue al-nav-download"
+          href="{{ "/get-almalinux" | relLangURL }}">
+          <i class="bi bi-download" aria-hidden="true"></i>
+          {{ i18n "Download" }}
+        </a>
+      </div>
+
+      <button
+        class="navbar-toggler order-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#main-navbar"
+        aria-controls="main-navbar"
+        aria-expanded="false"
+        aria-label="{{ i18n "Toggle navigation" }}">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse order-3 order-xl-1" id="main-navbar">
+        <a
+          class="btn al-nav-support al-nav-support-mobile d-xl-none"
+          href="{{ "/support" | relLangURL }}">
+          <i class="bi bi-life-preserver" aria-hidden="true"></i>
+          {{ i18n "Get support" }}
+        </a>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown al-nav-menu">
+            <button
+              class="nav-link dropdown-toggle"
+              type="button"
+              id="al-nav-why"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              {{ i18n "Why AlmaLinux" }}
+            </button>
+            <div
+              class="dropdown-menu al-nav-panel"
+              aria-labelledby="al-nav-why">
+              <div class="container al-nav-columns">
+                <div class="al-nav-group">
+                  <p class="al-nav-heading" id="al-nav-why-project">
+                    {{ i18n "The project" }}
+                  </p>
+                  <ul aria-labelledby="al-nav-why-project">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/foundation" | relLangURL }}">
+                        <i class="bi bi-bank" aria-hidden="true"></i>
+                        {{ i18n "Community-owned" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="{{ "/for" | relLangURL }}">
+                        <i class="bi bi-globe2" aria-hidden="true"></i>
+                        {{ i18n "AlmaLinux for your industry" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/press/" | relLangURL }}">
+                        <i class="bi bi-megaphone" aria-hidden="true"></i>
+                        {{ i18n "Press and media kit" }}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="al-nav-group">
+                  <p class="al-nav-heading" id="al-nav-why-security">
+                    {{ i18n "Security and compliance" }}
+                  </p>
+                  <ul aria-labelledby="al-nav-why-security">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/security" | relLangURL }}">
+                        <i class="bi bi-shield" aria-hidden="true"></i>
+                        {{ i18n "Security" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/security/fips-certification" | relLangURL }}">
+                        <i class="bi bi-shield-check" aria-hidden="true"></i>
+                        {{ i18n "FIPS certification" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/security/cc-certification" | relLangURL }}">
+                        <i class="bi bi-award" aria-hidden="true"></i>
+                        {{ i18n "Common Criteria" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/sbom" | relLangURL }}">
+                        <i
+                          class="bi bi-file-earmark-text"
+                          aria-hidden="true"></i>
+                        {{ i18n "SBOM" }}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="al-nav-group">
+                  <p class="al-nav-heading" id="al-nav-why-business">
+                    {{ i18n "For your business" }}
+                  </p>
+                  <ul aria-labelledby="al-nav-why-business">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/support" | relLangURL }}">
+                        <i class="bi bi-life-preserver" aria-hidden="true"></i>
+                        {{ i18n "Get support" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/certification" | relLangURL }}">
+                        <i class="bi bi-patch-check" aria-hidden="true"></i>
+                        {{ i18n "Get certified" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://catalog.almalinux.org">
+                        <i class="bi bi-card-checklist" aria-hidden="true"></i>
+                        {{ i18n "Certification catalog" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://wiki.almalinux.org/">
+                        <i class="bi bi-book" aria-hidden="true"></i>
+                        {{ i18n "Documentation" }}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown al-nav-menu">
+            <button
+              class="nav-link dropdown-toggle"
+              type="button"
+              id="al-nav-use"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              {{ i18n "Use cases" }}
+            </button>
+            <div
+              class="dropdown-menu al-nav-panel"
+              aria-labelledby="al-nav-use">
+              <div class="container al-nav-columns">
+                <div class="al-nav-group">
+                  <p class="al-nav-heading" id="al-nav-use-built">
+                    {{ i18n "Built for" }}
+                  </p>
+                  <ul aria-labelledby="al-nav-use-built">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/for/media-and-entertainment" | relLangURL }}">
+                        <i class="bi bi-film" aria-hidden="true"></i>
+                        {{ i18n "Media and entertainment" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="{{ "/for" | relLangURL }}">
+                        <i class="bi bi-grid" aria-hidden="true"></i>
+                        {{ i18n "All industries" }}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="al-nav-group">
+                  <p class="al-nav-heading" id="al-nav-use-moving">
+                    {{ i18n "Moving to AlmaLinux" }}
+                  </p>
+                  <ul aria-labelledby="al-nav-use-moving">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://wiki.almalinux.org/documentation/migration-guide">
+                        <i
+                          class="bi bi-arrow-left-right"
+                          aria-hidden="true"></i>
+                        {{ i18n "Migrate from CentOS" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/elevate" | relLangURL }}">
+                        <i class="bi bi-arrow-up-circle" aria-hidden="true"></i>
+                        {{ i18n "ELevate" }}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="al-nav-group">
+                  <p class="al-nav-heading" id="al-nav-use-anywhere">
+                    {{ i18n "Run it anywhere" }}
+                  </p>
+                  <ul aria-labelledby="al-nav-use-anywhere">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/get-almalinux" | relLangURL }}">
+                        <i class="bi bi-disc" aria-hidden="true"></i>
+                        {{ i18n "ISOs" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/get-almalinux" | relLangURL }}">
+                        <i class="bi bi-cloud" aria-hidden="true"></i>
+                        {{ i18n "Cloud images" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/get-almalinux" | relLangURL }}">
+                        <i class="bi bi-box-seam" aria-hidden="true"></i>
+                        {{ i18n "Containers" }}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown al-nav-menu">
+            <button
+              class="nav-link dropdown-toggle"
+              type="button"
+              id="al-nav-community"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              {{ i18n "Community" }}
+            </button>
+            <div
+              class="dropdown-menu al-nav-panel"
+              aria-labelledby="al-nav-community">
+              <div class="container al-nav-columns al-nav-columns--four">
+                <div class="al-nav-group">
+                  <p class="al-nav-heading" id="al-nav-community-involved">
+                    {{ i18n "Get involved" }}
+                  </p>
+                  <ul aria-labelledby="al-nav-community-involved">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/contribute" | relLangURL }}">
+                        <i class="bi bi-heart" aria-hidden="true"></i>
+                        {{ i18n "Contribute" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://chat.almalinux.org/">
+                        <i class="bi bi-chat-dots" aria-hidden="true"></i>
+                        {{ i18n "Chat" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://forums.almalinux.org/">
+                        <i
+                          class="bi bi-chat-square-text"
+                          aria-hidden="true"></i>
+                        {{ i18n "Forums" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://lists.almalinux.org/">
+                        <i class="bi bi-envelope" aria-hidden="true"></i>
+                        {{ i18n "Mailing lists" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://hosted.weblate.org/engage/almalinux/">
+                        <i class="bi bi-translate" aria-hidden="true"></i>
+                        {{ i18n "Translate" }}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="al-nav-group">
+                  <p class="al-nav-heading" id="al-nav-community-meet">
+                    {{ i18n "Meet up" }}
+                  </p>
+                  <ul aria-labelledby="al-nav-community-meet">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://wiki.almalinux.org/sigs/">
+                        <i class="bi bi-people" aria-hidden="true"></i>
+                        {{ i18n "SIGs" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://events.almalinux.org/">
+                        <i class="bi bi-calendar-event" aria-hidden="true"></i>
+                        {{ i18n "Meetings" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/newsletters" | relLangURL }}">
+                        <i class="bi bi-newspaper" aria-hidden="true"></i>
+                        {{ i18n "Newsletters" }}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="al-nav-group">
+                  <p class="al-nav-heading" id="al-nav-community-build">
+                    {{ i18n "Build and test" }}
+                  </p>
+                  <ul aria-labelledby="al-nav-community-build">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://bugs.almalinux.org">
+                        <i class="bi bi-bug" aria-hidden="true"></i>
+                        {{ i18n "Report a bug" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://build.almalinux.org/">
+                        <i class="bi bi-gear" aria-hidden="true"></i>
+                        {{ i18n "Build system" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://openqa.almalinux.org/">
+                        <i class="bi bi-check2-square" aria-hidden="true"></i>
+                        {{ i18n "openQA" }}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                {{/* AlmaLinux Day events only (not conferences we attend), newest first. When an event is announced, add an "Upcoming events" block above "Past events" (README, "Contributing - Events", Step 4), and move the event down to "Past events" once it is over. This list goes away when the single Events page (issue #61) ships. */}}
+                <div class="al-nav-group">
+                  <p class="al-nav-heading">{{ i18n "Events" }}</p>
+                  <p class="al-nav-subheading" id="al-nav-events-past">
+                    {{ i18n "Past events" }}
+                  </p>
+                  <ul
+                    class="al-nav-events-past"
+                    aria-labelledby="al-nav-events-past">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/almalinux-day-los-angeles-2026/" | relLangURL }}">
+                        {{ i18n "AlmaLinux Day: Los Angeles 2026" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/almalinux-day-germany-2026/" | relLangURL }}">
+                        {{ i18n "AlmaLinux Day: Germany 2026" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/almalinux-day-tokyo-2026/" | relLangURL }}">
+                        {{ i18n "AlmaLinux Day: Tokyo 2026" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/almalinux-day-vancouver-2025/" | relLangURL }}">
+                        {{ i18n "AlmaLinux Day: Vancouver 2025" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/aldt-2024/" | relLangURL }}">
+                        {{ i18n "AlmaLinux Day: Tokyo 2024" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/almalinux-day-germany-2024/" | relLangURL }}">
+                        {{ i18n "AlmaLinux Day: Germany 2024" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/aldt-2023/" | relLangURL }}">
+                        {{ i18n "AlmaLinux Day: Tokyo 2023" }}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown al-nav-menu">
+            <button
+              class="nav-link dropdown-toggle"
+              type="button"
+              id="al-nav-foundation"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              {{ i18n "Foundation" }}
+            </button>
+            <div
+              class="dropdown-menu al-nav-panel"
+              aria-labelledby="al-nav-foundation">
+              <div class="container al-nav-columns">
+                <div class="al-nav-group">
+                  <p class="al-nav-heading" id="al-nav-foundation-about">
+                    {{ i18n "About us" }}
+                  </p>
+                  <ul aria-labelledby="al-nav-foundation-about">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/foundation" | relLangURL }}">
+                        <i class="bi bi-info-circle" aria-hidden="true"></i>
+                        {{ i18n "About the Foundation" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/alesco" | relLangURL }}">
+                        <i class="bi bi-diagram-3" aria-hidden="true"></i>
+                        {{ i18n "ALESCo" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/press/" | relLangURL }}">
+                        <i class="bi bi-megaphone" aria-hidden="true"></i>
+                        {{ i18n "Press and media kit" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/branding/" | relLangURL }}">
+                        <i class="bi bi-palette" aria-hidden="true"></i>
+                        {{ i18n "Brand assets" }}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="al-nav-group">
+                  <p class="al-nav-heading" id="al-nav-foundation-governance">
+                    {{ i18n "Governance" }}
+                  </p>
+                  <ul aria-labelledby="al-nav-foundation-governance">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/p/foundation-bylaws" | relLangURL }}">
+                        <i class="bi bi-journal-text" aria-hidden="true"></i>
+                        {{ i18n "Bylaws" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/p/foundation-board-operations-and-ethics" | relLangURL }}">
+                        <i class="bi bi-clipboard-check" aria-hidden="true"></i>
+                        {{ i18n "Board operations & ethics" }}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="al-nav-group">
+                  <p class="al-nav-heading" id="al-nav-foundation-give">
+                    {{ i18n "Give back" }}
+                  </p>
+                  <ul aria-labelledby="al-nav-foundation-give">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/members" | relLangURL }}">
+                        <i class="bi bi-person-plus" aria-hidden="true"></i>
+                        {{ i18n "Membership" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://github.com/sponsors/AlmaLinux">
+                        <i class="bi bi-github" aria-hidden="true"></i>
+                        {{ i18n "Donate on GitHub Sponsors" }}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://opencollective.com/almalinux-os-foundation">
+                        <i class="bi bi-cash-coin" aria-hidden="true"></i>
+                        {{ i18n "Donate on Open Collective" }}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="al-motd" dir="ltr" data-nosnippet="">
+    <div class="container ps-3">
+      <div class="text">
+        <i class="bi bi-box-seam"></i>
+        <a href="{{ "/blog/2026-09-17-announcing-99-beta/" | relLangURL }}"
+          >{{ i18n "AlmaLinux OS 9.9 Beta" }}</a
+        >
+        {{ i18n "now available!" }} &nbsp;|&nbsp;
+        <i class="bi bi-box-seam"></i>
+        <a href="{{ "/blog/2026-09-10-announcing-103-beta/" | relLangURL }}"
+          >{{ i18n "AlmaLinux OS 10.3 Beta" }}</a
+        >
+        {{ i18n "now available!" }} &nbsp;|&nbsp;
+        <i class="bi bi-geo-alt"></i>
+        <a class="al-motd-event" href="{{ "/sc26/" | relLangURL }}"
+          >{{ i18n "Find us at SC26" }}</a
+        >
+        {{ i18n "Nov 16 to 19, booth #1704" }} &nbsp;|&nbsp;
+        <i class="bi bi-chat-dots"></i>
+        <a
+          class="al-motd-election"
+          href="{{ "/blog/2026-10-14-what-should-almalinux-do-next/" | relLangURL }}"
+          >{{ i18n "Tell us what AlmaLinux should do next" }}</a
+        >
+      </div>
     </div>
   </div>
 </div>
