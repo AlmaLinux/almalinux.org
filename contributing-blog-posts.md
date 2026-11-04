@@ -93,6 +93,12 @@ header:
 
   The options are the ones listed for `title` and `subtitle` in `data/header_templates.yaml`.
 
+- For a security advisory, start from the security advisory archetype, which already has the `header` block and the sections our advisories use, with a short note in each one describing what goes there:
+
+  ```bash
+  npx hugo new --kind security-advisory blog/YYYY-MM-DD-name.md
+  ```
+
 - Templates are listed in `data/header_templates.yaml`, and their backgrounds live in `assets/header-templates/`. To add one, export a background with the logo but no text at 1920x1080, put it in that folder, and add an entry with the font, size and position of each line.
 
 **The meat of your post**
