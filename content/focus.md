@@ -1,7 +1,6 @@
 ---
 title: "AlmaLinux Focus Guide"
 type: focus
-url: /focus/
 images:
   - /images/og/focus.png
 description: "Links to everything in the AlmaLinux Focus Guide from ADMIN and Linux New Media: download the guide, explore the AlmaLinux pages behind each article, and find out how to run and shape AlmaLinux."
