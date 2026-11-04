@@ -38,6 +38,11 @@ Notes for AI agents:
 - [Containers](https://wiki.almalinux.org/containers/): using AlmaLinux OS container images
 - [Comparison](https://wiki.almalinux.org/Comparison.html): how AlmaLinux OS compares with other Enterprise Linux distributions
 
+## AlmaLinux for your industry
+
+- [AlmaLinux for your industry](https://almalinux.org/for/): how AlmaLinux is used in different industries
+- [AlmaLinux for Media and Entertainment](https://almalinux.org/for/media-and-entertainment/): AlmaLinux for VFX, animation, and other creative work, the Creative Installer, and the Media & Entertainment SIG
+
 ## Security
 
 - [Security](https://almalinux.org/security/): signed packages, public errata, compliance tooling, and certifications

@@ -1,0 +1,47 @@
+{{/* The Creative ISO, while it's still being built.
+
+  The M&E SIG's Creative ISO isn't published yet, so it gets one short panel
+  that says what it will be and where to follow its progress, with no download
+  buttons and no hardware warnings for builds nobody can get. The id stays
+  "creative-iso" so links shared before this change still land here.
+
+  When the builds ship: bring back the two build cards (NVIDIA drivers and
+  open source drivers) and their "pick the right build" warnings from git
+  history (they were in this file before November 2026), give each card a
+  download link, and consider moving the light band here from the Installer.
+  Update the header comment in layouts/mae/single.html to match.
+*/}}
+
+
+<section id="creative-iso" class="al-mae-iso al-py-lg">
+  <div class="container">
+    <div class="al-mae-panel">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-8">
+          <h2 class="h3 mb-3">
+            {{ i18n "Coming later: the Creative ISO" }}
+            <a
+              class="al-anchor"
+              href="#creative-iso"
+              aria-label="{{ i18n `Link to this section` }}"
+              >#</a
+            >
+          </h2>
+          <p class="mb-0">
+            {{ i18n "The M&E SIG is building a Creative ISO, a ready-made install image with AlmaLinux 10, the KDE Plasma desktop, and the creative apps already on it. It will come in two builds, one with NVIDIA drivers and one with open source drivers. It isn't published yet, and you can follow its progress in the SIG chat channel." }}
+          </p>
+        </div>
+        <div class="col-12 col-lg-4 text-lg-end">
+          <a
+            href="https://chat.almalinux.org/almalinux/channels/sig-media-entertainment"
+            class="btn al-cta-blue px-4"
+            target="_blank"
+            rel="noopener">
+            <i class="bi bi-chat-dots pe-1" aria-hidden="true"></i>
+            {{ i18n "Follow its progress" }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

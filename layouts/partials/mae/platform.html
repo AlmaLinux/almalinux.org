@@ -1,0 +1,81 @@
+{{/* Why AlmaLinux, for someone setting up their own machine.
+
+  Written for artists, freelancers, and students, so every card answers a
+  question a person at a desk would ask. The facility arguments (architectures,
+  compliance, cloud images) live in the studios strip at the end of the page in
+  mae/community.html, not here.
+
+  The support date is the AlmaLinux 10 security end date from the release notes
+  (wiki.almalinux.org/release-notes/). Update it if that ever changes.
+*/}}
+
+
+<section id="why-almalinux" class="al-mae-why al-py-lg">
+  <div class="container">
+    <h2 class="text-center mb-2">
+      {{ i18n "What you get with AlmaLinux" }}
+      <a
+        class="al-anchor"
+        href="#why-almalinux"
+        aria-label="{{ i18n `Link to this section` }}"
+        >#</a
+      >
+    </h2>
+    <p class="text-center al-text-muted mb-5 mx-auto al-mae-measure">
+      {{ i18n "Here's what AlmaLinux gives you on a machine you make things with." }}
+    </p>
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4">
+        <i class="bi bi-building al-mae-feature-icon" aria-hidden="true"></i>
+        <h3 class="h4">{{ i18n "The platform studios use" }}</h3>
+        <p>
+          {{ i18n "VFX and animation studios standardize on this family of Linux. What you learn on AlmaLinux at home carries over to studio work." }}
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <i class="bi bi-unlock al-mae-feature-icon" aria-hidden="true"></i>
+        <h3 class="h4">{{ i18n "Free, with no account" }}</h3>
+        <p>
+          {{ i18n "There's no license to buy and no account to create. You download AlmaLinux and install it." }}
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <i
+          class="bi bi-shield-check al-mae-feature-icon"
+          aria-hidden="true"></i>
+        <h3 class="h4">{{ i18n "Supported until 2035" }}</h3>
+        <p>
+          {{ i18n "AlmaLinux 10 gets security updates through May 2035. You can set your machine up once and keep working on it for years." }}
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <i
+          class="bi bi-arrow-repeat al-mae-feature-icon"
+          aria-hidden="true"></i>
+        <h3 class="h4">{{ i18n "You decide when to update" }}</h3>
+        <p>
+          {{ i18n "Updates install when you choose to run them, so your machine won't restart itself in the middle of a render." }}
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <i class="bi bi-cpu al-mae-feature-icon" aria-hidden="true"></i>
+        <h3 class="h4">{{ i18n "Your graphics card, handled" }}</h3>
+        <p>
+          {{ i18n "AMD and Intel graphics work with the drivers AlmaLinux already includes. If you have an NVIDIA card, the Creative Installer sets up the NVIDIA driver for you." }}
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <i class="bi bi-people al-mae-feature-icon" aria-hidden="true"></i>
+        <h3 class="h4">{{ i18n "Built by a community" }}</h3>
+        <p>
+          {{ i18n "AlmaLinux belongs to its community through the AlmaLinux OS Foundation, a nonprofit. Artists are part of that community, and you're welcome to join them." }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
