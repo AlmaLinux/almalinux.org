@@ -456,6 +456,8 @@ AlmaLinux.org translations are managed on [Weblate](https://hosted.weblate.org/e
 
 **File ownership:** `i18n/en.json` is the source-of-truth and is managed in this repo — use `find_missing_i18n_strings.py` to keep it in sync with template usage. All other locale files (`es.json`, `de.json`, etc.) are owned by Weblate. Do not edit them directly or run any script that modifies them; doing so causes merge conflicts when Weblate pushes its translator commits back. Stale-key cleanup for non-English locales is handled automatically by Weblate's "Cleanup translation files" add-on (`weblate.cleanup.generic`).
 
+**Don't set `url:` in a page's front matter.** The build copies every page into each language (`content/<page>.<lang>.md`), and each copy keeps the same front matter. A fixed `url:` makes all of those copies write to the same address, so whichever language builds last replaces the English page. That's what happened to `/focus/`, which served the Chinese version. Let the filename set the path, and use `aliases:` if you need an extra address that redirects to it.
+
 If you'd like to **contribute translations**, see the [translation guide on our Wiki](https://wiki.almalinux.org/Help-translating-site.html) — that page walks you through creating a Weblate account and translating strings.
 
 To **request a new language**, open an issue in [GitHub issues](https://github.com/AlmaLinux/almalinux.org/issues).
