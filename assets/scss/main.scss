@@ -128,6 +128,12 @@ button:focus, .btn:focus{
   font-family: variables.$al-font-family;
   font-size: 0.85rem;
 
+  // Below xl the header wrapper is display: contents, so the top bar needs its own stacking layer or its dropdowns open behind the sticky main bar.
+  @media (max-width: 1199.98px) {
+    position: relative;
+    z-index: 1031;
+  }
+
   .al-topbar-inner {
     display: flex;
     flex-wrap: wrap;
@@ -245,6 +251,10 @@ button:focus, .btn:focus{
 
   .navbar-brand {
     margin-inline-end: 2rem;
+
+    @media (max-width: 1199.98px) {
+      margin-inline-end: 1rem;
+    }
   }
 
   .al-nav-actions {
@@ -263,6 +273,25 @@ button:focus, .btn:focus{
     padding: 0.5rem 1.25rem;
     font-weight: 600;
     white-space: nowrap;
+  }
+
+  // Phones show the download icon only, so the logo, button, and toggler fit on one line. The label stays available to screen readers.
+  @media (max-width: 575.98px) {
+    .al-nav-download {
+      padding: 0.5rem 0.85rem;
+    }
+
+    .al-nav-download-label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
   }
 
   .al-nav-support {
