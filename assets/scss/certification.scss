@@ -71,6 +71,17 @@
       margin-bottom: 0.5rem;
     }
 
+    // Links to vendor certifications that aren't in the catalog yet.
+    .al-certification-vendor-label {
+      margin: 1rem 0 0.25rem;
+      font-weight: 600;
+    }
+
+    .al-certification-vendor-list {
+      margin: 0;
+      padding-inline-start: 1.1rem;
+    }
+
     p {
       margin-bottom: 0;
       font-size: 0.95rem;
