@@ -105,20 +105,29 @@ Media sponsors render in their own small section at the bottom of the page under
 - Speaker photos → `static/landingpages/your-event/` (or anywhere under `static/`)
 - OG/social preview image → `static/images/og/`
 
-### Step 4: Add to the navigation menu
+### Step 4: Add it to the menu
 
-Add the new event to `layouts/partials/common/nav.html`, inside the Events dropdown under the "Upcoming Events" header. Events are listed newest-first. Once the event has passed, move it under the "Past Events" header. Add a new `<li>`:
+The Events column in the Community menu (`layouts/partials/common/nav.html`, search for `al-nav-events-past`) lists AlmaLinux Day events only. Conferences where AlmaLinux has a booth or a talk go in the announcement strip instead (see below).
+
+When an AlmaLinux Day is announced, add an "Upcoming events" block directly above the "Past events" subheading. Upcoming events get a green icon at the normal menu size, so they stand out from the smaller, text-only list of past events. Keep each `{{ i18n }}` tag on one line:
 
 ```html
-<li>
-  <a
-    class="dropdown-item"
-    href="{{ "/your-event-slug/" | relLangURL }}"
-    style="color:aliceblue">
-    {{ i18n "ALD City YYYY" }}
-  </a>
-</li>
+<p class="al-nav-subheading" id="al-nav-events-upcoming">
+  {{ i18n "Upcoming events" }}
+</p>
+<ul class="al-nav-events-upcoming" aria-labelledby="al-nav-events-upcoming">
+  <li>
+    <a class="dropdown-item" href="{{ "/your-event-slug/" | relLangURL }}">
+      <i class="bi bi-calendar-event" aria-hidden="true"></i>
+      {{ i18n "AlmaLinux Day: City YYYY" }}
+    </a>
+  </li>
+</ul>
 ```
+
+Once the event is over, move its `<li>` to the top of the "Past events" list, remove its `<i>` icon (past events are a compact text list), and delete the "Upcoming events" block if it's empty. Run `python3 find_missing_i18n_strings.py` after either change.
+
+To promote any event more widely, including conferences we're attending, add it to the announcement strip (`#al-motd`, at the bottom of the same file) with the `al-motd-event` class, and remove it from the strip once the event is over. A single Events page is planned (see [#61](https://github.com/AlmaLinux/almalinux.org/issues/61)) and will replace the menu list when it ships.
 
 ### Toggling post-event state
 
