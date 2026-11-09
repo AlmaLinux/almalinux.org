@@ -14,10 +14,10 @@ versions:
       cloud:
         genericCloud:
           fullVersion: "10.2"
-          sha256: cbee4726fc0f5a60694bb4f289003cc221e715dfbacebcce76b54daf386d8eca
+          sha256: 0c3261d2b2d6ac47b4786bb4f0e96706b885caad760e653aac11276de283f3e3
         openNebula:
           fullVersion: "10.2"
-          sha256: 370f0ec00ba23082f09f29e4a0d4762d5a5c8aaecfca16d1c6e6b30bc5b48e65
+          sha256: 3d0625119acbb3ba1150c0d06e9d438fb0ac6bda4d2bcf00e6707716b8ae3b79
     x86_64_v2:
       iso:
         boot:
@@ -32,10 +32,10 @@ versions:
       cloud:
         genericCloud:
           fullVersion: "10.2"
-          sha256: bf441cb90a56ee08ec8a3c38d920996e217e79cfdf6e33561afd3408bed5a337
+          sha256: 6418337094ffc31874f775f5da1aca8989d29ad66cfe3824ab0047cdc5e45c09
         openNebula:
           fullVersion: "10.2"
-          sha256: ae8ffc373d7dff8f9c8c2ad18f60aceb7db6e742347096eb071e5d933d2e13ee
+          sha256: 5aa84d02d56171f4eebd2c0f09438ab05873cbe9b95615429fc8566edc48af14
     aarch64:
       iso:
         boot:
