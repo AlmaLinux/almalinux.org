@@ -50,10 +50,10 @@ versions:
       cloud:
         genericCloud:
           fullVersion: "10.2"
-          sha256: ca65d1c32430acd84e9126c2e48f3b4110cd649a592712bfb570a6650e7e19e7
+          sha256: b8f04aa367f91956ce9d1221d9d0f05406117eb59e737d09ce58b58ce375c4d8
         openNebula:
           fullVersion: "10.2"
-          sha256: 0d90572cc658e0c14cb45beae94bc0bb12926062711f49fd18580b1ec33ad7bf
+          sha256: 5ab25570f7a418c163004e083847376fbf5b87b28f2c5269cac867a2edd276f1
     s390x:
       iso:
         boot:
@@ -68,7 +68,7 @@ versions:
       cloud:
         genericCloud:
           fullVersion: "10.2"
-          sha256: 73f6648eb789eea7a53300c6a7c654fa3c0d8967670173a9ed384eab5a05799a
+          sha256: 52b84ddbc53c1ba642d90ab4f32c8ee5c4b2e47f3d2a0fea6670204ca7d31f72
     ppc64le:
       iso:
         boot:
