@@ -206,8 +206,8 @@ button:focus, .btn:focus{
 
   @media (min-width: 1200px) {
     .dropdown-menu[aria-labelledby="al-topbar-language"] {
-      max-height: 70vh;
-      max-height: 70dvh;
+      max-height: calc(100vh - 2rem);
+      max-height: calc(100dvh - 2rem);
       overflow-y: auto;
       overscroll-behavior-y: contain;
       scrollbar-width: thin;
