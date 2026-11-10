@@ -36,9 +36,11 @@ languages:
   ko: { weight: 2, label: 한국어 }
   lt: { weight: 2, label: Lietuvių }
   lv: { weight: 2, label: latviešu }
+  nl: { weight: 2, label: Nederlands }
   pl: { weight: 2, label: Polski }
   pt: { weight: 2, label: Português }
   pt-br: { weight: 2, label: Português Brasileiro }
+  ro: { weight: 2, label: Română }
   ru: { weight: 2, label: Русский }
   sk: { weight: 2, label: Slovensky }
   sr: { weight: 2, label: Српски }
@@ -47,6 +49,7 @@ languages:
   ta: { weight: 2, label: தமிழ் }
   tr: { weight: 2, label: Türkçe }
   uk: { weight: 2, label: Українська }
+  vi: { weight: 2, label: Tiếng Việt }
   zh-hans: { weight: 2, label: 简体中文 }
   zh-hant: { weight: 2, label: 正體中文 }
 
