@@ -1,5 +1,4 @@
 public/
-static/pagefind/
 .hugo_build.lock
 .DS_Store
 node_modules/
