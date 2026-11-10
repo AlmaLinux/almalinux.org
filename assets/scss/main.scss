@@ -204,6 +204,17 @@ button:focus, .btn:focus{
     font-size: 0.9rem;
   }
 
+  @media (min-width: 1200px) {
+    .dropdown-menu[aria-labelledby="al-topbar-language"] {
+      max-height: calc(100vh - 2rem);
+      max-height: calc(100dvh - 2rem);
+      overflow-y: auto;
+      overscroll-behavior-y: contain;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(variables.$al-font-color, 0.4) transparent;
+    }
+  }
+
   .dropdown-divider {
     border-color: variables.$al-c-black-pearl-light;
   }
