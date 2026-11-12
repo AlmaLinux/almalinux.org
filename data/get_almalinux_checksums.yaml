@@ -169,10 +169,10 @@ versions:
       cloud:
         genericCloud:
           fullVersion: "9.8"
-          sha256: 6f94881458dfe966474544b12e86d078d81a600457188045d317b0ce3c3bdca7
+          sha256: bf9088375c94dd5df7c22ab78f6183eea007a1c66076224e115d4e2c26205fa4
         openNebula:
           fullVersion: "9.8"
-          sha256: 1d5705b29d5be232370685b652c164f9f4324fc2a0701b7bf540c3333d270518
+          sha256: a2cb286ead017c39695490424dec300123d5aebcdf3c5b73f930b9e9907c31c4
     aarch64:
       iso:
         boot:
