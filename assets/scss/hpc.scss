@@ -126,11 +126,23 @@
     object-fit: contain;
   }
 
+  // Icon beside the card heading (PR #1229 review), with the paragraph below.
+  .al-hpc-feature-head {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+
+    h4 {
+      margin-bottom: 0;
+    }
+  }
+
   .al-hpc-feature-icon {
     font-size: 2rem;
+    line-height: 1;
     color: variables.$al-c-science-blue-lighter;
-    display: block;
-    margin-bottom: 1rem;
+    flex-shrink: 0;
   }
 
   // HPC SIG section

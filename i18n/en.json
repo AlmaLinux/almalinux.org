@@ -1249,7 +1249,6 @@
    "Three paths, depending on where you are today.": "Three paths, depending on where you are today.",
    "every repository, free to everyone": "every repository, free to everyone",
    "of support for every major release": "of support for every major release",
-   "x86_64, aarch64, ppc64le, and s390x. AlmaLinux 10 adds early riscv64 work, and AlmaLinux 9 still ships an x86_64_v2 variant for older hardware that RHEL 10 drops.": "x86_64, aarch64, ppc64le, and s390x. AlmaLinux 10 adds early riscv64 work, and AlmaLinux 9 still ships an x86_64_v2 variant for older hardware that RHEL 10 drops.",
    "AlmaLinux 9 is supported through 2032, and AlmaLinux 10 through 2035. A cluster you build today can run for its whole hardware life without a forced OS migration partway through a grant.": "AlmaLinux 9 is supported through 2032, and AlmaLinux 10 through 2035. A cluster you build today can run for its whole hardware life without a forced OS migration partway through a grant.",
    "Get the latest images for your architecture. Bare-metal installers, cloud images for AWS, Azure, and GCP, and container base images are all available.": "Get the latest images for your architecture. Bare-metal installers, cloud images for AWS, Azure, and GCP, and container base images are all available.",
    "Governed by its community": "Governed by its community",
@@ -1289,5 +1288,7 @@
    "See our SC26 plans": "See our SC26 plans",
    "Come say hi at booth #1704, or catch benny's talk on Tuesday, November 17.": "Come say hi at booth #1704, or catch benny's talk on Tuesday, November 17.",
    "Coming to SC26 in Chicago?": "Coming to SC26 in Chicago?",
-   "Jonathan Wright giving two thumbs up behind the AlmaLinux booth table at SC": "Jonathan Wright giving two thumbs up behind the AlmaLinux booth table at SC"
+   "Jonathan Wright giving two thumbs up behind the AlmaLinux booth table at SC": "Jonathan Wright giving two thumbs up behind the AlmaLinux booth table at SC",
+   "AlmaLinux 10.1 and later support Btrfs, so EL10 systems running Btrfs, including Oracle Linux, can switch without changing filesystems.": "AlmaLinux 10.1 and later support Btrfs, so EL10 systems running Btrfs, including Oracle Linux, can switch without changing filesystems.",
+   "x86_64, aarch64, ppc64le, and s390x. AlmaLinux 10 adds early riscv64 work and ships an x86_64_v2 build for older hardware that RHEL 10 drops.": "x86_64, aarch64, ppc64le, and s390x. AlmaLinux 10 adds early riscv64 work and ships an x86_64_v2 build for older hardware that RHEL 10 drops."
 }

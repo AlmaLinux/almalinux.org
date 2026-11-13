@@ -86,13 +86,15 @@
         <h2 class="text-center mb-4">
           {{ i18n "Running at research institutions and HPC integrators" }}
         </h2>
-        {{/* All white-on-transparent marks. CERN, Colorado State, and UCL are shared with the home page's trusted-by strip, and MEGWARE and SIE LADÓN with the foundation members page. Biogipuzkoa is the BIOGIPUZKOA negative logo cropped from the BIO brand manual (the white panel is part of their design). Research institutions first, then integrators. */}}
+        {{/* All white-on-transparent marks. CERN, Colorado State, UCL, Biogipuzkoa, and IQF Blas Cabrera are shared with the home page's trusted-by strip, and MEGWARE and SIE LADÓN with the foundation members page. Duke is the white wordmark from brand.duke.edu, and Fermilab is the white logo from the fnal.gov site header; both are used with permission. Research institutions first, then integrators. */}}
         <div class="al-hpc-logo-strip">
           <img src="/brands/cern.svg" alt="CERN" loading="lazy" />
           <img
             src="/usedby/coloradostateuniversity.svg"
             alt="Colorado State University"
             loading="lazy" />
+          <img src="/usedby/duke.svg" alt="Duke University" loading="lazy" />
+          <img src="/usedby/fermilab.png" alt="Fermilab" loading="lazy" />
           <img src="/usedby/ucl.png" alt="UCL" loading="lazy" />
           <img
             src="/usedby/biogipuzkoa.png"
@@ -121,34 +123,48 @@
         </p>
         <div class="row g-4">
           <div class="col-12 col-md-6 col-lg-4">
-            <i class="bi bi-shield-check al-hpc-feature-icon"></i>
-            <h4>{{ i18n "A lifecycle that matches research timelines" }}</h4>
+            <div class="al-hpc-feature-head">
+              <i
+                class="bi bi-shield-check al-hpc-feature-icon"
+                aria-hidden="true"></i>
+              <h4>{{ i18n "A lifecycle that matches research timelines" }}</h4>
+            </div>
             <p>
               {{ i18n "AlmaLinux 9 is supported through 2032, and AlmaLinux 10 through 2035. A cluster you build today can run for its whole hardware life without a forced OS migration partway through a grant." }}
             </p>
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <i class="bi bi-box-seam al-hpc-feature-icon"></i>
-            <h4>{{ i18n "Binary-compatible with RHEL" }}</h4>
+            <div class="al-hpc-feature-head">
+              <i
+                class="bi bi-box-seam al-hpc-feature-icon"
+                aria-hidden="true"></i>
+              <h4>{{ i18n "Binary-compatible with RHEL" }}</h4>
+            </div>
             <p>
               {{ i18n "Schedulers, parallel filesystems, vendor drivers, and ISV codes that list RHEL as supported run on AlmaLinux unchanged. You get the ecosystem without the subscription." }}
             </p>
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <i class="bi bi-wrench-adjustable al-hpc-feature-icon"></i>
-            <h4>{{ i18n "Current compilers alongside a stable base" }}</h4>
+            <div class="al-hpc-feature-head">
+              <i
+                class="bi bi-wrench-adjustable al-hpc-feature-icon"
+                aria-hidden="true"></i>
+              <h4>{{ i18n "Current compilers alongside a stable base" }}</h4>
+            </div>
             <p>
               {{ i18n "The system GCC stays steady so the ABI doesn't break, and current GCC ships alongside it in parallel gcc-toolset-N packages. You can run production codes against a stable runtime and compile with GCC 15 when you need newer optimizations. If you build your own toolchains, Spack publishes official AlmaLinux 8 and 9 images to build them on." }}
             </p>
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <i class="bi bi-cpu al-hpc-feature-icon"></i>
-            <h4>{{ i18n "The architectures and GPUs that matter" }}</h4>
+            <div class="al-hpc-feature-head">
+              <i class="bi bi-cpu al-hpc-feature-icon" aria-hidden="true"></i>
+              <h4>{{ i18n "The architectures and GPUs that matter" }}</h4>
+            </div>
             <p>
-              {{ i18n "x86_64, aarch64, ppc64le, and s390x. AlmaLinux 10 adds early riscv64 work, and AlmaLinux 9 still ships an x86_64_v2 variant for older hardware that RHEL 10 drops." }}
+              {{ i18n "x86_64, aarch64, ppc64le, and s390x. AlmaLinux 10 adds early riscv64 work and ships an x86_64_v2 build for older hardware that RHEL 10 drops." }}
             </p>
             <p>
               {{ i18n "For GPUs, we build and ship NVIDIA driver packages for AlmaLinux 9 and 10, and one package sets up NVIDIA's CUDA repository alongside them." }}
@@ -162,16 +178,24 @@
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <i class="bi bi-unlock al-hpc-feature-icon"></i>
-            <h4>{{ i18n "No subscription gating" }}</h4>
+            <div class="al-hpc-feature-head">
+              <i
+                class="bi bi-unlock al-hpc-feature-icon"
+                aria-hidden="true"></i>
+              <h4>{{ i18n "No subscription gating" }}</h4>
+            </div>
             <p>
               {{ i18n "There's no subscription manager, no entitlement server, and no limit on developer seats. You can deploy to a hundred compute nodes or start a thousand VMs for a parameter sweep without tracking licenses." }}
             </p>
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <i class="bi bi-people al-hpc-feature-icon"></i>
-            <h4>{{ i18n "Governed by its community" }}</h4>
+            <div class="al-hpc-feature-head">
+              <i
+                class="bi bi-people al-hpc-feature-icon"
+                aria-hidden="true"></i>
+              <h4>{{ i18n "Governed by its community" }}</h4>
+            </div>
             <p>
               {{ i18n "AlmaLinux is governed by its members, including people from the research community. Roadmap discussions happen in public, and HPC users are encouraged to show up and influence them." }}
             </p>
@@ -366,6 +390,9 @@
               </h4>
               <p>
                 {{ i18n "To switch to AlmaLinux on the same major version, almalinux-deploy converts a running CentOS, RHEL, Rocky Linux, or Oracle Linux 8, 9, or 10 system in place, with no reinstall." }}
+              </p>
+              <p>
+                {{ i18n "AlmaLinux 10.1 and later support Btrfs, so EL10 systems running Btrfs, including Oracle Linux, can switch without changing filesystems." }}
               </p>
               <p>
                 {{ i18n "To move to a newer major version, ELevate handles in-place upgrades, including the AlmaLinux 9 to 10 x86_64_v2 path for older hardware." }}
