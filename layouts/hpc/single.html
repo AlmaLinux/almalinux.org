@@ -119,13 +119,13 @@
           {{ i18n "Built for the demands of research" }}
         </h2>
         <p class="text-center al-text-muted mb-5">
-          {{ i18n "What HPC teams need from a base OS: stability, current compilers, the right architectures, and no surprises." }}
+          {{ i18n "What HPC teams need from a base OS: a long lifecycle, compatibility, fast fixes, and current tools." }}
         </p>
         <div class="row g-4">
           <div class="col-12 col-md-6 col-lg-4">
             <div class="al-hpc-feature-head">
               <i
-                class="bi bi-shield-check al-hpc-feature-icon"
+                class="bi bi-calendar-check al-hpc-feature-icon"
                 aria-hidden="true"></i>
               <h4>{{ i18n "A lifecycle that matches research timelines" }}</h4>
             </div>
@@ -139,10 +139,22 @@
               <i
                 class="bi bi-box-seam al-hpc-feature-icon"
                 aria-hidden="true"></i>
-              <h4>{{ i18n "Binary-compatible with RHEL" }}</h4>
+              <h4>{{ i18n "Compatible with RHEL and the HPC stack" }}</h4>
             </div>
             <p>
-              {{ i18n "Schedulers, parallel filesystems, vendor drivers, and ISV codes that list RHEL as supported run on AlmaLinux unchanged. You get the ecosystem without the subscription." }}
+              {{ i18n "Schedulers, parallel filesystems, vendor drivers, and ISV codes that list RHEL as supported run on AlmaLinux unchanged. OpenHPC's 3.x and 4.x releases target Enterprise Linux 9 and 10." }}
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="al-hpc-feature-head">
+              <i
+                class="bi bi-shield-check al-hpc-feature-icon"
+                aria-hidden="true"></i>
+              <h4>{{ i18n "Fast, open security patching" }}</h4>
+            </div>
+            <p>
+              {{ i18n "We build and ship security fixes quickly, and the work happens in public, so you can see and engage with the volunteers working on the problem. Research teams at CERN, UCL, and CSIC all named this as a reason they run AlmaLinux." }}
             </p>
           </div>
 
@@ -151,20 +163,10 @@
               <i
                 class="bi bi-wrench-adjustable al-hpc-feature-icon"
                 aria-hidden="true"></i>
-              <h4>{{ i18n "Current compilers alongside a stable base" }}</h4>
+              <h4>{{ i18n "Current compilers and GPUs" }}</h4>
             </div>
             <p>
-              {{ i18n "The system GCC stays steady so the ABI doesn't break, and current GCC ships alongside it in parallel gcc-toolset-N packages. You can run production codes against a stable runtime and compile with GCC 15 when you need newer optimizations. If you build your own toolchains, Spack publishes official AlmaLinux 8 and 9 images to build them on." }}
-            </p>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="al-hpc-feature-head">
-              <i class="bi bi-cpu al-hpc-feature-icon" aria-hidden="true"></i>
-              <h4>{{ i18n "The architectures and GPUs that matter" }}</h4>
-            </div>
-            <p>
-              {{ i18n "x86_64, aarch64, ppc64le, and s390x. AlmaLinux 10 adds early riscv64 work and ships an x86_64_v2 build for older hardware that RHEL 10 drops." }}
+              {{ i18n "The system GCC stays steady so the ABI doesn't break, and current GCC ships alongside it in gcc-toolset packages, so you can compile with GCC 15 against a stable runtime. If you build your own toolchains, Spack publishes official AlmaLinux 8 and 9 images to build them on." }}
             </p>
             <p>
               {{ i18n "For GPUs, we build and ship NVIDIA driver packages for AlmaLinux 9 and 10, and one package sets up NVIDIA's CUDA repository alongside them." }}
@@ -179,13 +181,11 @@
 
           <div class="col-12 col-md-6 col-lg-4">
             <div class="al-hpc-feature-head">
-              <i
-                class="bi bi-unlock al-hpc-feature-icon"
-                aria-hidden="true"></i>
-              <h4>{{ i18n "No subscription gating" }}</h4>
+              <i class="bi bi-cpu al-hpc-feature-icon" aria-hidden="true"></i>
+              <h4>{{ i18n "Benefits specifically for our community" }}</h4>
             </div>
             <p>
-              {{ i18n "There's no subscription manager, no entitlement server, and no limit on developer seats. You can deploy to a hundred compute nodes or start a thousand VMs for a parameter sweep without tracking licenses." }}
+              {{ i18n "AlmaLinux 10 adds a few things on top of RHEL compatibility: an x86_64_v2 build for older hardware that RHEL 10 drops, and Btrfs support, including booting from a Btrfs volume. It runs on x86_64, aarch64, ppc64le, and s390x." }}
             </p>
           </div>
 
@@ -194,10 +194,10 @@
               <i
                 class="bi bi-people al-hpc-feature-icon"
                 aria-hidden="true"></i>
-              <h4>{{ i18n "Governed by its community" }}</h4>
+              <h4>{{ i18n "For the community, by the community" }}</h4>
             </div>
             <p>
-              {{ i18n "AlmaLinux is governed by its members, including people from the research community. Roadmap discussions happen in public, and HPC users are encouraged to show up and influence them." }}
+              {{ i18n "AlmaLinux is free for anyone to download and run, on one workstation or a thousand compute nodes, with no subscription manager or license tracking. It's just as free and easy to get involved: the project is governed by its members, roadmap discussions happen in public, and HPC users are welcome to help shape them." }}
             </p>
           </div>
         </div>
