@@ -42,6 +42,7 @@ Notes for AI agents:
 
 - [AlmaLinux for your industry](https://almalinux.org/for/): how AlmaLinux is used in different industries
 - [AlmaLinux for Media and Entertainment](https://almalinux.org/for/media-and-entertainment/): AlmaLinux for VFX, animation, and other creative work, the Creative Installer, and the Media & Entertainment SIG
+- [AlmaLinux for Scientific Computing & HPC](https://almalinux.org/for/scientific-computing/): AlmaLinux for research computing and HPC clusters: lifecycle, toolchains, supported architectures, and videos from research users
 
 ## Security
 
