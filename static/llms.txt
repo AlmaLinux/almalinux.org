@@ -79,6 +79,19 @@ Notes for AI agents:
 - [Blog](https://almalinux.org/blog/): release announcements and project news ([RSS](https://almalinux.org/blog/index.xml))
 - [Newsletters](https://almalinux.org/newsletters/): the monthly AlmaLinux newsletter ([RSS](https://almalinux.org/newsletters/index.xml))
 
+## Events
+
+AlmaLinux Day is the community event series hosted by the AlmaLinux OS Foundation. Each event page has the date, venue, and registration link, and past events link to recordings and slides where they're available.
+
+- [AlmaLinux Day: Tokyo 2027](https://almalinux.org/almalinux-day-tokyo-2027/): upcoming, January 20, 2027 in Shibuya, Tokyo, co-organized with the Japan AlmaLinux User Group; register on connpass to attend in person or online
+- [AlmaLinux Day: Los Angeles 2026](https://almalinux.org/almalinux-day-los-angeles-2026/): July 18, 2026, focused on Media & Entertainment
+- [AlmaLinux Day: Germany 2026](https://almalinux.org/almalinux-day-germany-2026/)
+- [AlmaLinux Day: Tokyo 2026](https://almalinux.org/almalinux-day-tokyo-2026/): January 23, 2026 in Kawasaki
+- [AlmaLinux Day: Vancouver 2025](https://almalinux.org/almalinux-day-vancouver-2025/)
+- [AlmaLinux Day: Tokyo 2024](https://almalinux.org/aldt-2024/)
+- [AlmaLinux Day: Germany 2024](https://almalinux.org/almalinux-day-germany-2024/)
+- [AlmaLinux Day: Tokyo 2023](https://almalinux.org/aldt-2023/)
+
 ## Optional
 
 - [Hardware and software certification](https://almalinux.org/certification/): the AlmaLinux certification programs

@@ -1290,5 +1290,7 @@
    "The system GCC stays steady so the ABI doesn't break, and current GCC ships alongside it in gcc-toolset packages, so you can compile with GCC 15 against a stable runtime. If you build your own toolchains, Spack publishes official AlmaLinux 8 and 9 images to build them on.": "The system GCC stays steady so the ABI doesn't break, and current GCC ships alongside it in gcc-toolset packages, so you can compile with GCC 15 against a stable runtime. If you build your own toolchains, Spack publishes official AlmaLinux 8 and 9 images to build them on.",
    "What HPC teams need from a base OS: a long lifecycle, compatibility, fast fixes, and current tools.": "What HPC teams need from a base OS: a long lifecycle, compatibility, fast fixes, and current tools.",
    "We build and ship security fixes quickly, and the work happens in public, so you can see and engage with the volunteers working on the problem. Research teams at CERN, UCL, and CSIC all named this as a reason they run AlmaLinux.": "We build and ship security fixes quickly, and the work happens in public, so you can see and engage with the volunteers working on the problem. Research teams at CERN, UCL, and CSIC all named this as a reason they run AlmaLinux.",
-   "Benefits specifically for our community": "Benefits specifically for our community"
+   "Benefits specifically for our community": "Benefits specifically for our community",
+   "AlmaLinux Day: Tokyo 2027": "AlmaLinux Day: Tokyo 2027",
+   "Upcoming events": "Upcoming events"
 }
