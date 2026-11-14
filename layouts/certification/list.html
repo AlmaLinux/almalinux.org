@@ -208,6 +208,24 @@
             <p>
               {{ i18n "Published by the vendor and backed by their own testing data. This is the path for hardware and software providers who want to state compatibility officially." }}
             </p>
+            {{/* Vendor certifications that predate the catalog and aren't listed there yet. Remove each link once its catalog entry exists. */}}
+            <p class="al-certification-vendor-label" id="vendor-certifications">
+              {{ i18n "Vendor certifications:" }}
+            </p>
+            <ul
+              class="al-certification-vendor-list"
+              aria-labelledby="vendor-certifications">
+              <li>
+                <a href="{{ "/amd-epyc-june2024/" | relLangURL }}">
+                  {{ i18n "AMD EPYC 4004 Series (2024)" }}
+                </a>
+              </li>
+              <li>
+                <a href="{{ "/amd-ryzen-may2022/" | relLangURL }}">
+                  {{ i18n "AMD Ryzen 3000 and 5000 Series (2022)" }}
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
         <p class="pt-4">
