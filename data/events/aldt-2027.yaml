@@ -1,0 +1,13 @@
+event_sponsors:
+  - name: "CloudLinux"
+    url: "https://www.cloudlinux.com"
+    logo: "/brands/cloudlinux.svg"
+    size: "large"
+  - name: "TuxCare"
+    url: "https://tuxcare.com/"
+    logo: "/brands/TuxCare_Horizontal_Logo_NoTagLine_White.svg"
+    size: "large"
+  - name: "Cybertrust Japan"
+    url: "https://www.cybertrust.co.jp/almalinux/"
+    logo: "/brands/cybertrust-japan.svg"
+    size: "large"
