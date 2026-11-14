@@ -1166,5 +1166,14 @@
     "Signed packages, public errata, and FIPS 140-3 validated cryptographic modules for AlmaLinux OS 9.2.": "Paquets signés, errata publics et modules cryptographiques validés FIPS 140-3 pour AlmaLinux OS 9.2.",
     "The AlmaLinux Creative Installer is a guided setup for more than 40 creative apps, including Blender, DaVinci Resolve, Krita, and OBS Studio. Tristan Theroux built it, after it was requested in the M&E SIG.": "AlmaLinux Creative Installer est une configuration guidée pour plus de 40 applications créatives, dont Blender, DaVinci Resolve, Krita et OBS Studio. Tristan Theroux l'a construit, après qu'il a été demandé dans le SIG M&E.",
     "The SIG meets on the first Wednesday of every month at 12:00 PM Eastern Time.": "Le SIG se réunit le premier mercredi de chaque mois à midi, heure de l'Est.",
-    "AlmaLinux Media & Entertainment SIG meetings: the first Wednesday of every month at 12:00 PM Eastern (17:00 UTC in winter, 16:00 UTC in summer)": "Réunions du SIG Media & Entertainment d'AlmaLinux : le premier mercredi de chaque mois à 12 h 00 heure de l'Est (17 h 00 UTC en hiver, 16 h 00 UTC en été)"
+    "AlmaLinux Media & Entertainment SIG meetings: the first Wednesday of every month at 12:00 PM Eastern (17:00 UTC in winter, 16:00 UTC in summer)": "Réunions du SIG Media & Entertainment d'AlmaLinux : le premier mercredi de chaque mois à 12 h 00 heure de l'Est (17 h 00 UTC en hiver, 16 h 00 UTC en été)",
+    "About us": "À propos de nous",
+    "AlmaLinux Day: Germany 2024": "Journée AlmaLinux : Allemagne 2024",
+    "AlmaLinux Day: Germany 2026": "Journée AlmaLinux : Allemagne 2026",
+    "AlmaLinux Day: Los Angeles 2026": "Journée AlmaLinux : Los Angeles 2026",
+    "AlmaLinux Day: Tokyo 2023": "Journée AlmaLinux : Tokyo 2023",
+    "AlmaLinux Day: Tokyo 2024": "Journée AlmaLinux : Tokyo 2024",
+    "AlmaLinux Day: Tokyo 2026": "Journée AlmaLinux : Tokyo 2026",
+    "AlmaLinux Day: Vancouver 2025": "Journée AlmaLinux : Vancouver 2025",
+    "AlmaLinux OS": "AlmaLinux OS"
 }
