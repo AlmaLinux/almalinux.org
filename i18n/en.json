@@ -663,8 +663,6 @@
    "Watch Joe Brockmeier's talk 'Open source is not a spectator sport' from Ohio LinuxFest 2023": "Watch Joe Brockmeier's talk 'Open source is not a spectator sport' from Ohio LinuxFest 2023",
    "“Open source is not a spectator sport” — Joe Brockmeier, Ohio LinuxFest, September 2023.": "“Open source is not a spectator sport” — Joe Brockmeier, Ohio LinuxFest, September 2023.",
    "Become a member — Help sustain and steer AlmaLinux": "Become a member — Help sustain and steer AlmaLinux",
-   "AlmaLinux OS 9.9 Beta": "AlmaLinux OS 9.9 Beta",
-   "AlmaLinux OS 10.3 Beta": "AlmaLinux OS 10.3 Beta",
    "now available!": "now available!",
    "Trusted by": "Trusted by",
    "Afternoon": "Afternoon",
@@ -1290,5 +1288,6 @@
    "The system GCC stays steady so the ABI doesn't break, and current GCC ships alongside it in gcc-toolset packages, so you can compile with GCC 15 against a stable runtime. If you build your own toolchains, Spack publishes official AlmaLinux 8 and 9 images to build them on.": "The system GCC stays steady so the ABI doesn't break, and current GCC ships alongside it in gcc-toolset packages, so you can compile with GCC 15 against a stable runtime. If you build your own toolchains, Spack publishes official AlmaLinux 8 and 9 images to build them on.",
    "What HPC teams need from a base OS: a long lifecycle, compatibility, fast fixes, and current tools.": "What HPC teams need from a base OS: a long lifecycle, compatibility, fast fixes, and current tools.",
    "We build and ship security fixes quickly, and the work happens in public, so you can see and engage with the volunteers working on the problem. Research teams at CERN, UCL, and CSIC all named this as a reason they run AlmaLinux.": "We build and ship security fixes quickly, and the work happens in public, so you can see and engage with the volunteers working on the problem. Research teams at CERN, UCL, and CSIC all named this as a reason they run AlmaLinux.",
-   "Benefits specifically for our community": "Benefits specifically for our community"
+   "Benefits specifically for our community": "Benefits specifically for our community",
+   "AlmaLinux OS 10.3 and 9.9": "AlmaLinux OS 10.3 and 9.9"
 }
