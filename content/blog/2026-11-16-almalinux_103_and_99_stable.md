@@ -3,7 +3,7 @@ title: "AlmaLinux OS 10.3 and 9.9 are now available"
 type: blog
 author:
   name: "Andrew Lukoshko"
-  bio: "AlmaLinux Lead Architect and ALESCo Chairman"
+  bio: "AlmaLinux Lead Architect and ALESCo Member"
   image: /users/alukoshko.jpg
 date: "2026-11-16"
 images:
