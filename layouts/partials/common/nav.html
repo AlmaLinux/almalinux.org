@@ -500,6 +500,21 @@
                 {{/* AlmaLinux Day events only (not conferences we attend), newest first. When an event is announced, add an "Upcoming events" block above "Past events" (README, "Contributing - Events", Step 4), and move the event down to "Past events" once it is over. This list goes away when the single Events page (issue #61) ships. */}}
                 <div class="al-nav-group">
                   <p class="al-nav-heading">{{ i18n "Events" }}</p>
+                  <p class="al-nav-subheading" id="al-nav-events-upcoming">
+                    {{ i18n "Upcoming events" }}
+                  </p>
+                  <ul
+                    class="al-nav-events-upcoming"
+                    aria-labelledby="al-nav-events-upcoming">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/almalinux-day-tokyo-2027/" | relLangURL }}">
+                        <i class="bi bi-calendar-event" aria-hidden="true"></i>
+                        {{ i18n "AlmaLinux Day: Tokyo 2027" }}
+                      </a>
+                    </li>
+                  </ul>
                   <p class="al-nav-subheading" id="al-nav-events-past">
                     {{ i18n "Past events" }}
                   </p>

@@ -105,6 +105,18 @@
   }
 }
 
+// Sponsor sections (layouts/partials/event-day/sponsors.html and
+// media-sponsors.html). A color of their own, distinct from the page
+// background and the Black Pearl bands, so the thank-you never blends into
+// the last section of the page body. The sponsor logos are white versions
+// made for dark backgrounds, so this has to stay a dark surface. The inner
+// container's top padding is removed in event-day/styles.html, so the top
+// spacing lives here.
+.al-event-sponsors {
+  background: variables.$al-c-black-pearl-lighter;
+  padding-top: 3rem;
+}
+
 // "Can't make it?" band (layouts/partials/event-day/cant-make-it.html).
 // These rules replace the inline styles the partial used to carry; the
 // background is the CTA blue token rather than the old hand-written #22C2FF.

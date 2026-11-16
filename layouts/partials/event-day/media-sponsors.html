@@ -1,6 +1,6 @@
 {{ $data := index hugo.Data.events .Params.event_data_key }}
 {{ if and $data $data.media_sponsors }}
-  <div class="al-index-sponsors">
+  <div class="al-index-sponsors al-event-sponsors">
     <div class="container al-py-md px-5">
       <h2 class="h4">
         {{ i18n "Media sponsors for " }}{{ .Params.event_name }}
