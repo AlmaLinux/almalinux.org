@@ -9,23 +9,23 @@ date: "2026-11-16"
 images:
   - /blog-images/2026/almalinux99and103stable.png
 post:
-  title: 'AlmaLinux OS 10.3 "Mauve Lion" and 9.9 "Chartreuse Bobcat" are out today. ModSecurity returns to AlmaLinux 10, Podman 6 arrives with a new configuration layout, and GCC Toolset 16 lands on both versions. Here are the changes to check before you upgrade.'
+  title: 'AlmaLinux OS 10.3 "Mauve Lion" and 9.9 "Chartreuse Bobcat" are out today. AlmaLinux 10 gets ModSecurity back and moves to Podman 6. Both versions add GCC Toolset 16, and both kernels include security fixes that would otherwise have been lost on upgrade. Here are the changes to check before you upgrade.'
   image: /blog-images/2026/almalinux99and103stable.png
 ---
 
 Hello Community! The AlmaLinux OS Foundation is announcing the general availability of [AlmaLinux OS 10.3](https://mirrors.almalinux.org/isos.html) codenamed "Mauve Lion" and [AlmaLinux OS 9.9](https://mirrors.almalinux.org/isos.html) codenamed "Chartreuse Bobcat"!
 
-This is the second time we've shipped both versions on the same day. Thank you to everyone who installed the betas in September and told us what broke. Your reports on the forums, the bug tracker, and in the ~testing channel shaped what ships today.
+Thank you to everyone who tested the [10.3 beta](/blog/2026-09-10-announcing-103-beta) and [9.9 beta](/blog/2026-09-17-announcing-99-beta).
 
 ## AlmaLinux OS 10.3 "Mauve Lion"
 
-AlmaLinux 10.3 (kernel `6.12.0-264.7.1.el10_3`) brings new compiler toolsets, post-quantum cryptography updates, and a major new version of the container tools. It adds GCC Toolset 16, LLVM Toolset 22, Rust 1.97, Go 1.27, and GDB 17.2, and Node.js 26 is available as a preview. Security updates include fapolicyd 2.0, Keylime 7.14, audit 4.2 with post-quantum TLS for remote logging, and libreswan 5.4 with ML-KEM post-quantum key exchange.
+AlmaLinux 10.3 (kernel `6.12.0-264.16.1.el10_3`) adds GCC Toolset 16, LLVM Toolset 22, Rust 1.97, Go 1.27, GDB 17.2, and Node.js 26. Security updates include fapolicyd 2.0, Keylime 7.14, audit 4.2 with post-quantum TLS for remote logging, and libreswan 5.4 with ML-KEM post-quantum key exchange.
 
 ### ModSecurity is back
 
-The `mod_security` web application firewall and the OWASP Core Rule Set (CRS) are back in AlmaLinux 10. They shipped in AlmaLinux 8 and 9 but were missing from 10.0 through 10.2.
+The `mod_security` web application firewall and the OWASP Core Rule Set (CRS) are back in AlmaLinux 10. They shipped in AlmaLinux 8 and 9 but were not included in 10.0 through 10.2.
 
-It's a big version jump. AlmaLinux 9 carries ModSecurity 2.9.6 with CRS 3.3, and 10.3 ships ModSecurity 2.9.14 with CRS 4.22. CRS 4 reorganized the rule set, so if you're bringing rules or tuning over from an AlmaLinux 9 server, plan to review them before you put 10.3 in front of production traffic.
+This release is a big version bump. AlmaLinux 9 ships ModSecurity 2.9.6 with CRS 3.3, and 10.3 ships ModSecurity 2.9.14 with CRS 4.22. CRS 4 reorganized the rule set, so if you're bringing rules or tuning over from an AlmaLinux 9 server, plan to review them before you put 10.3 in front of production traffic.
 
 ### Podman 6
 
@@ -41,7 +41,14 @@ Podman 6 also removes several older components, so check these before you upgrad
 
 ### Still here from earlier 10.x releases
 
-10.3 keeps the things that make AlmaLinux 10 different from upstream: [Btrfs support](/blog/2025-10-21-announcing-btrfs-support-in-almalinux-10-1) including booting from a Btrfs volume, the [CRB repository enabled by default](/blog/2025-09-08-enabling-crb-by-default-for-almalinux10), a parallel [x86_64_v2 build with matching EPEL coverage](/blog/2025-06-26-epel-v2-now-covers-almalinux-10-stable) for older hardware, [i686 userspace packages](/blog/2026-04-16-almalinux-kitten-10-i686) for 32-bit software and CI pipelines, KVM for IBM POWER, frame pointers enabled by default, SPICE support, and the re-enabled storage and network drivers listed in the [Extended hardware support](https://wiki.almalinux.org/release-notes/10.3.html#extended-hardware-support) section of the release notes.
+These AlmaLinux 10 features from earlier releases are still in 10.3:
+
+- [Btrfs support](/blog/2025-10-21-announcing-btrfs-support-in-almalinux-10-1), including booting from a Btrfs volume
+- The [CRB repository enabled by default](/blog/2025-09-08-enabling-crb-by-default-for-almalinux10)
+- A parallel [x86_64_v2 build with matching EPEL coverage](/blog/2025-06-26-epel-v2-now-covers-almalinux-10-stable) for older hardware
+- [i686 userspace packages](/blog/2026-04-16-almalinux-kitten-10-i686) for 32-bit software and CI pipelines
+- KVM for IBM POWER, frame pointers enabled by default, and SPICE support
+- Storage and network drivers that upstream disabled, listed in the [Extended hardware support](https://wiki.almalinux.org/release-notes/10.3.html#extended-hardware-support) section of the release notes
 
 Installation ISOs are available on the mirrors now for all supported architectures:
 
@@ -63,7 +70,7 @@ You can read the full release notes on the wiki: [AlmaLinux OS 10.3 Release Note
 
 ## AlmaLinux OS 9.9 "Chartreuse Bobcat"
 
-AlmaLinux 9.9 (kernel `5.14.0-741.11.1.el9_9`) brings GCC Toolset 16 to AlmaLinux 9 alongside the existing GCC Toolset 15, with LLVM Toolset 22, Rust 1.97, Go 1.27, and GDB 17.2. PHP 8.4 arrives as a new module stream, and Node.js 26 is available as a preview module stream. Security updates include fapolicyd 2.0, Keylime 7.14, and opencryptoki 3.27 with ML-DSA and ML-KEM post-quantum key types.
+AlmaLinux 9.9 (kernel `5.14.0-741.22.1.el9_9`) adds GCC Toolset 16, LLVM Toolset 22, Rust 1.97, Go 1.27, and GDB 17.2. GCC Toolset 15 is still available. PHP 8.4 and Node.js 26 are new module streams. Security updates include fapolicyd 2.0, Keylime 7.14, and opencryptoki 3.27 with ML-DSA and ML-KEM post-quantum key types.
 
 AlmaLinux 9.9 also keeps the [ALESCo](/blog/2024-05-21-introducing-alesco)-approved kernel fix we first shipped in 9.8, which stops `systemd` and `ps` from using excessive CPU during task cleanup. Upstream hasn't picked it up for 9.9, so we're continuing to carry it.
 
@@ -85,7 +92,7 @@ You can read the full release notes on the wiki: [AlmaLinux OS 9.9 Release Notes
 
 ## Changes to check before you upgrade either version
 
-Three changes land in both 10.3 and 9.9, and each one can change how an existing system behaves.
+These changes apply to both 10.3 and 9.9.
 
 **authselect no longer merges groups by default.** If your systems combine group records from more than one source, such as local files and SSSD, enable it again after upgrading with `authselect enable-feature with-group-merging`. Turning it off by default speeds up group lookups on systems that don't need it.
 
@@ -95,7 +102,7 @@ Three changes land in both 10.3 and 9.9, and each one can change how an existing
 
 ## Cloud, container, and live images
 
-We also build cloud, container, and live images for both 10.3 and 9.9. Those builds start as soon as the public repositories are ready, so they'll show up over the next few days.
+Live Media, Generic Cloud, and OpenNebula images for 10.3 and 9.9 are available now, and the rest of the images below will be out later today. The Raspberry Pi images will follow shortly.
 
 - [Container](https://wiki.almalinux.org/containers/) images, including Platform and UBI alternatives
 - [LXC/LXD](https://images.linuxcontainers.org/images/almalinux/)
@@ -107,13 +114,13 @@ We also build cloud, container, and live images for both 10.3 and 9.9. Those bui
   - [Generic Cloud/Cloud-init](https://wiki.almalinux.org/cloud/Generic-cloud-on-local.html) for all supported architectures including x86_64_v2
   - [OpenNebula](https://wiki.almalinux.org/cloud/OpenNebula.html) for x86_64 and AArch64
   - [Oracle Cloud Infrastructure](https://wiki.almalinux.org/cloud/OCI.html) for x86_64 and AArch64 instances
-- [Vagrant boxes](https://app.vagrantup.com/almalinux) for Libvirt, VirtualBox, Hyper-V, VMware (x86_64 and AArch64), and Parallels (AArch64)
+- [Vagrant boxes](https://vagrant.almalinux.org) for libvirt, VirtualBox, VMware, and Hyper-V on x86_64 (plus an x86_64_v2 box for 10.3), and VirtualBox, VMware, and Parallels on AArch64, now served from [our own catalog](/blog/2026-11-02-vagrant-catalog)
 - [Raspberry Pi](https://wiki.almalinux.org/documentation/raspberry-pi.html)
 - [Windows Subsystem for Linux](https://wiki.almalinux.org/documentation/wsl.html) for x86_64 and AArch64
 
-## Recent security fixes included
+## Security fixes included
 
-Both releases include the fixes for the vulnerabilities we've covered on the blog since the betas, so a fresh install of 10.3 or 9.9 is already patched for:
+Both releases include the fixes for the vulnerabilities we've covered on the blog since the betas:
 
 - [PwnEscape (CVE-2026-99999)](/blog/2026-10-16-pwnescape-cve-2026-99999)
 - [php2shell (CVE-2026-109618, CVE-2026-109619)](/blog/2026-10-21-php2shell-cve-2026-109618-cve-2026-109619)
@@ -121,8 +128,14 @@ Both releases include the fixes for the vulnerabilities we've covered on the blo
 - [CVE-2026-98432](/blog/2026-10-30-cve-2026-98432)
 - [CVE-2026-98276](/blog/2026-11-06-cve-2026-98276)
 
+When we compared the new kernels with the last 9.8 and 10.2 kernels, we found security patches included in 9.8 and 10.2, but missing in these releases. The last RHEL 9.8 kernel had fixes for 43 CVEs that aren't in the RHEL 9.9 kernel, and the last RHEL 10.2 kernel had fixes for 30 CVEs that aren't in the RHEL 10.3 kernel. We don't know why they were left out, and we didn't want updating to bring those vulnerabilities back, so we added the fixes back into both AlmaLinux kernels.
+
+Both kernels also include fixes that the community asked us for and that have never been in RHEL, including the CVE-2026-98276 fix listed above. That's 1 additional CVE on 9.9 and 6 on 10.3. In total, the AlmaLinux 9.9 kernel carries fixes for 44 CVEs that RHEL 9.9 doesn't have yet, and the AlmaLinux 10.3 kernel carries fixes for 36.
+
+Every CVE is listed with its score and a short description in the release notes for [9.9](https://wiki.almalinux.org/release-notes/9.9.html#kernel-security-fixes-not-available-in-rhel-9-9) and [10.3](https://wiki.almalinux.org/release-notes/10.3.html#kernel-security-fixes-not-available-in-rhel-10-3).
+
 ## Tell us how it goes
 
-Please install it, upgrade a test machine, and tell us what you find. Report bugs on the [Bug Tracker](https://bugs.almalinux.org/), join us in the ~testing channel on the [AlmaLinux Community Chat](https://chat.almalinux.org), or post on the [10.3 Forum](https://forums.almalinux.org/c/devel/10/) or [9.9 Forum](https://forums.almalinux.org/c/devel/9/36). You can also find us on [Reddit](https://reddit.com/r/almalinux) and [X](https://x.com/almalinux).
+Please install it, upgrade a test machine, and tell us what you find. Report bugs on the [Bug Tracker](https://bugs.almalinux.org/), talk to us in [AlmaLinux Community Chat](https://chat.almalinux.org), or post on the [10.3 Forum](https://forums.almalinux.org/c/devel/10-beta/42) or [9.9 Forum](https://forums.almalinux.org/c/devel/9-stable/36). You can also find us on [Reddit](https://reddit.com/r/almalinux) and [X](https://x.com/almalinux).
 
 **Enjoy the releases!**
