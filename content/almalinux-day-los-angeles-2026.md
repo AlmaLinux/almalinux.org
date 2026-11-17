@@ -23,7 +23,7 @@ registration_button: "al-cta-blue"
 post_event: true
 thankyou_city: "Los Angeles"
 thankyou_quote: "You filled the room with the studios and the people who keep them running, and you made it clear that AlmaLinux belongs in creative infrastructure. Thank you for giving us your Saturday."
-thankyou_youtube_url: ""
+thankyou_youtube_url: "https://youtube.com/playlist?list=PLDwjMHdfYpnI&si=JYadgNQ8iloq86hW"
 
 # Footer bars — omit either field to hide that bar
 coc_url: "/p/aldv-code-of-conduct/"
