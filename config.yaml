@@ -4,6 +4,10 @@ title: AlmaLinux
 disableKinds:
   - taxonomy
 
+params:
+  # Default meta and Open Graph description, used when a page has no `description` and no blog `post.title`.
+  description: "An Open Source, community owned and governed, forever-free enterprise Linux distribution."
+
 pagination:
   pagerSize: 15
 

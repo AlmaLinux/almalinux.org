@@ -24,8 +24,11 @@
   <meta property="og:site_name" content="AlmaLinux OS" />
   <meta
     name="description"
-    content="
-    An Open Source, community owned and governed, forever-free enterprise Linux distribution." />
+    content="{{- with partial "common/page-description.html" . -}}
+      {{- . -}}
+    {{- else -}}
+      {{- site.Params.description -}}
+    {{- end }}" />
   <meta
     name="robots"
     content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />

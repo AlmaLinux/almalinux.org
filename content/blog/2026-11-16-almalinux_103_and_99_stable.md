@@ -6,6 +6,7 @@ author:
   bio: "AlmaLinux Lead Architect and ALESCo Member"
   image: /users/alukoshko.jpg
 date: "2026-11-16"
+description: 'AlmaLinux OS 10.3 "Mauve Lion" and 9.9 "Chartreuse Bobcat" were released on November 16, 2026, with ModSecurity, Podman 6, and GCC Toolset 16.'
 images:
   - /blog-images/2026/almalinux99and103stable.png
 post:
@@ -17,7 +18,35 @@ Hello Community! The AlmaLinux OS Foundation is announcing the general availabil
 
 Thank you to everyone who tested the [10.3 beta](/blog/2026-09-10-announcing-103-beta) and [9.9 beta](/blog/2026-09-17-announcing-99-beta).
 
-## AlmaLinux OS 10.3 "Mauve Lion"
+## Release highlights
+
+AlmaLinux OS 10.3 "Mauve Lion":
+
+- Released: November 16, 2026
+- Kernel: `6.12.0-264.16.1.el10_3`
+- Compatible with: Red Hat Enterprise Linux (RHEL) 10.3
+- Architectures: x86_64, x86_64_v2, aarch64, ppc64le, s390x, i686 userspace
+- What's new:
+  - ModSecurity returns (2.9.14 with OWASP CRS 4.22.0)
+  - Podman 6.1.1, with container configuration moved to /usr/share/containers
+  - GCC Toolset 16
+  - Node.js 26.12.1
+  - .NET 11 (preview)
+
+AlmaLinux OS 9.9 "Chartreuse Bobcat":
+
+- Released: November 16, 2026
+- Kernel: `5.14.0-741.22.1.el9_9`
+- Compatible with: Red Hat Enterprise Linux (RHEL) 9.9
+- Architectures: x86_64, aarch64, ppc64le, s390x
+- What's new:
+  - GCC Toolset 16
+  - fapolicyd 2.0.1
+  - authselect group merging is now opt-in
+  - .NET 11
+  - Node.js 26
+
+## AlmaLinux OS 10.3 "Mauve Lion" {#10-3}
 
 AlmaLinux 10.3 (kernel `6.12.0-264.16.1.el10_3`) adds GCC Toolset 16, LLVM Toolset 22, Rust 1.97, Go 1.27, GDB 17.2, and Node.js 26. Security updates include fapolicyd 2.0, Keylime 7.14, audit 4.2 with post-quantum TLS for remote logging, and libreswan 5.4 with ML-KEM post-quantum key exchange.
 
@@ -68,7 +97,7 @@ Torrents are available as well:
 
 You can read the full release notes on the wiki: [AlmaLinux OS 10.3 Release Notes](https://wiki.almalinux.org/release-notes/10.3.html).
 
-## AlmaLinux OS 9.9 "Chartreuse Bobcat"
+## AlmaLinux OS 9.9 "Chartreuse Bobcat" {#9-9}
 
 AlmaLinux 9.9 (kernel `5.14.0-741.22.1.el9_9`) adds GCC Toolset 16, LLVM Toolset 22, Rust 1.97, Go 1.27, and GDB 17.2. GCC Toolset 15 is still available. PHP 8.4 and Node.js 26 are new module streams. Security updates include fapolicyd 2.0, Keylime 7.14, and opencryptoki 3.27 with ML-DSA and ML-KEM post-quantum key types.
 

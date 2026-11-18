@@ -1,5 +1,5 @@
 ---
-title: "AlmaLinux 9 Beta--Now Available"
+title: "AlmaLinux 9 Beta Now Available"
 type: blog
 author:
   name: "Jack Aboutboul"

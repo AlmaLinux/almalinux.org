@@ -6,12 +6,28 @@ author:
   bio: "-"
   image: /users/jack.jpg
 date: "2021-05-26"
+description: 'AlmaLinux OS 8.4 "Electric Cheetah" was released on May 26, 2021 with kernel 4.18.0-305. It adds full Secure Boot support and Python 3.9.'
 post:
   title: "Hey, what are you doing for Memorial Day? Heading out of town? Having a few friends over (that used to be a thing once upon a time)? How about havi..."
   image:
 ---
 
 Hey, what are you doing for Memorial Day? Heading out of town? Having a few friends over (that used to be a thing once upon a time)? How about having yourself a good old fashioned installfest? That's right! The AlmaLinux OS Foundation is proud to announce the release of AlmaLinux OS 8.4 Stable. Available now on a mirror near you! Download a fresh copy and then join us to talk about it.
+
+## Release highlights
+
+AlmaLinux OS 8.4 "Electric Cheetah":
+
+- Released: May 26, 2021
+- Kernel: `4.18.0-305`
+- Compatible with: Red Hat Enterprise Linux (RHEL) 8.4
+- Architectures: x86_64
+- What's new:
+  - Secure Boot fully supported
+  - OpenSCAP security profiles ready for production
+  - New devel repository
+  - Python 3.9
+  - PostgreSQL 13
 
 [![Tenor](/images/tenor.gif)]
 

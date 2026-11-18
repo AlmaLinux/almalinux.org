@@ -6,6 +6,7 @@ author:
   bio: "AlmaLinux Community Manager"
   image: /users/jack.jpg
 date: "2023-11-13"
+description: 'AlmaLinux OS 9.3 "Shamrock Pampas Cat" was released on November 13, 2023 with kernel 5.14.0-362.8.1.el9_3. It adds GCC Toolset 13, Node.js 20, and Redis 7.'
 images:
   - /blog-images/23.11.13.93stable.jpg
 post:
@@ -16,6 +17,20 @@ post:
 # AlmaLinux 9.3 Stable Now Available
 
 Hello Сommunity. The AlmaLinux OS Foundation is proud to announce the general availability of [AlmaLinux OS 9.3](https://mirrors.almalinux.org/isos.html) codenamed "Shamrock Pampas Cat"!
+
+## Release highlights
+
+AlmaLinux OS 9.3 "Shamrock Pampas Cat":
+
+- Released: November 13, 2023
+- Kernel: `5.14.0-362.8.1.el9_3`
+- Compatible with: Red Hat Enterprise Linux (RHEL) 9.3
+- Architectures: x86_64, aarch64, ppc64le, s390x
+- What's new:
+  - GCC Toolset 13
+  - Node.js 20
+  - Redis 7
+  - Keylime 7.3.0
 
 Installation ISOs are available on the mirrors now for all 4 architectures:
 

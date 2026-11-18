@@ -6,12 +6,28 @@ author:
   bio: "-"
   image: /users/jack.jpg
 date: "2021-11-12"
+description: 'AlmaLinux OS 8.5 "Arctic Sphynx" was released on November 12, 2021 with kernel 4.18.0-348. It adds Node.js 16, Ruby 3.0, and nginx 1.20.'
 post:
   title: "The latest version of AlmaLinux OS is Now Available to Download. Read more about the updates and enhancements included in this release."
   image: /blog-images/Almalinux-logo-white-v2.png
 ---
 
 Hi, Community! The AlmaLinux OS Foundation is thrilled to announce that AlmaLinux OS 8.5 Stable is now available. This stable release for x86_64 and ARM architectures is ready for production installations and to power all your computing needs and workloads. So grab it from the nearest [mirror](https://mirrors.almalinux.org/isos) and join us on the [AlmaLinux Community Chat](https://chat.almalinux.org/) to discuss.
+
+## Release highlights
+
+AlmaLinux OS 8.5 "Arctic Sphynx":
+
+- Released: November 12, 2021
+- Kernel: `4.18.0-348`
+- Compatible with: Red Hat Enterprise Linux (RHEL) 8.5
+- Architectures: x86_64, aarch64
+- What's new:
+  - Node.js 16
+  - Ruby 3.0
+  - nginx 1.20
+  - GCC Toolset 11
+  - New Plus and ResilientStorage repositories
 
 The [Raspberry Pi image](https://github.com/AlmaLinux/raspberry-pi/) is also updated to the newest version.
 

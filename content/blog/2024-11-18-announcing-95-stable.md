@@ -6,6 +6,7 @@ author:
   bio: "The Release and Automation Engineer."
   image: /users/eduard-abdullin.jpg
 date: "2024-11-18"
+description: 'AlmaLinux OS 9.5 "Teal Serval" was released on November 18, 2024 with kernel 5.14.0-503.11.1.el9_5. It adds GCC Toolset 14, .NET 9.0, and OpenSSL 3.2.2.'
 images:
   - /blog-images/2024/2024-11-18-almalinux-9-5-stable.png
 post:
@@ -16,6 +17,21 @@ post:
 # AlmaLinux 9.5 Stable Now Available
 
 Hello Community! The AlmaLinux OS Foundation is announcing the general availability of [AlmaLinux OS 9.5](https://mirrors.almalinux.org/isos.html) codenamed "Teal Serval"!
+
+## Release highlights
+
+AlmaLinux OS 9.5 "Teal Serval":
+
+- Released: November 18, 2024
+- Kernel: `5.14.0-503.11.1.el9_5`
+- Compatible with: Red Hat Enterprise Linux (RHEL) 9.5
+- Architectures: x86_64, aarch64, ppc64le, s390x
+- What's new:
+  - GCC Toolset 14
+  - .NET 9.0
+  - OpenSSL 3.2.2
+  - Node.js 22
+  - BIND 9.18
 
 Installation ISOs are available on the mirrors now for all 4 architectures:
 

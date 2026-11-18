@@ -197,6 +197,8 @@ For example:
 npx hugo new blog/2026-03-01-announcing-new-feature.md
 ```
 
+Release announcements and security advisories have their own archetypes (`--kind release` and `--kind security-advisory`). See [contributing-blog-posts.md](contributing-blog-posts.md) for how to use them.
+
 This will create a new file in `content/blog/` with the correct front matter already filled in, including the title (derived from the filename) and the current year in the image paths.
 
 For a security advisory, use `npx hugo new --kind security-advisory blog/YYYY-MM-DD-name.md` instead. It scaffolds the generated `vulnerability` header and the section structure our advisories use; see "Generated header images" in [contributing-blog-posts.md](contributing-blog-posts.md).

@@ -1,17 +1,32 @@
 ---
-title: "Almalinux 8.7 Now Available"
+title: "AlmaLinux 8.7 Now Available"
 type: blog
 author:
   name: "Jack Aboutboul"
   bio: "-"
   image: /users/jack.jpg
 date: "2022-11-10"
+description: 'AlmaLinux OS 8.7 "Stone Smilodon" was released on November 10, 2022 with kernel 4.18.0-425.3.1.el8. It adds Node.js 18, Ruby 3.1, and GCC Toolset 12.'
 post:
   title: AlmaLinux 8.7 for x86_64, aarch64, ppc64le and s390x is now available!
   image: /blog-images/8.7_release.png
 ---
 
 Hello Community! The AlmaLinux OS Foundation is proud to announce general availability of AlmaLinux OS 8.7 codenamed "Stone Smilodon."
+
+## Release highlights
+
+AlmaLinux OS 8.7 "Stone Smilodon":
+
+- Released: November 10, 2022
+- Kernel: `4.18.0-425.3.1.el8`
+- Compatible with: Red Hat Enterprise Linux (RHEL) 8.7
+- Architectures: x86_64, aarch64, ppc64le, s390x
+- What's new:
+  - Node.js 18
+  - Ruby 3.1
+  - GCC Toolset 12
+  - New SAP and SAPHANA repositories
 
 Installation ISOs are available on mirrors now for 4 architectures:
 

@@ -62,6 +62,7 @@ post:
 - The **date** is the date (in YYYY-MM-DD format) you want to see the blog post published, but we cannot always guarantee a publishing timeline.
 - The **images** image is the social image that's used, and should be put in `./static/blog-images/`
 - The post **title** is the short summary of your post (one or two sentences) shown on the [almalinux.org/blog/](almalinux.org/blog/) listing page, as the excerpt beneath the post image. Despite the field name, this is **not** a copy of the title above — write a real summary that entices readers to click through.
+- The post **title** is also used as the page's description for search engines and social link previews, unless you set a `description` field. Add `description: ""` to the front matter when your summary runs longer than about 155 characters, since search results cut off anything past that.
 - A post **image** should be included, and will be displayed both on the [almalinux.org/blog/](almalinux.org/blog/) feed, and as the header image on the full-page blog post. Use this template to get started: `./static/blog-images/blog_images_template.svg`
   - Your image should not violate any trademarks or copyrights, and should be relevant to blog content. Once created, a PNG version of your image should be placed in `./static/blog-images/` The file will serve from `/blog-images/`, so do not change the beginning of this path.
 
@@ -98,6 +99,14 @@ header:
   ```bash
   npx hugo new --kind security-advisory blog/YYYY-MM-DD-name.md
   ```
+
+- For a release announcement, start from the release archetype:
+
+  ```bash
+  npx hugo new --kind release blog/YYYY-MM-DD-almalinux_XY_and_AB_stable.md
+  ```
+
+  It has a `description` field, a "Release highlights" list for each version (release date, kernel, RHEL compatibility, architectures, and what's new), and a heading for each version with a short anchor such as `{#10-3}`. Keep those anchors: the wiki release notes link to them, for example `/blog/2026-11-16-almalinux_103_and_99_stable/#10-3`. Copy the codename, date, and kernel exactly as they appear in the [wiki release notes](https://wiki.almalinux.org/release-notes/), so search engines see the same facts in both places.
 
 - Templates are listed in `data/header_templates.yaml`, and their backgrounds live in `assets/header-templates/`. To add one, export a background with the logo but no text at 1920x1080, put it in that folder, and add an entry with the font, size and position of each line.
 

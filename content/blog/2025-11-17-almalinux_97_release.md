@@ -6,6 +6,7 @@ author:
   bio: "The Release and Automation Engineer."
   image: /users/eduard-abdullin.jpg
 date: "2025-11-17"
+description: 'AlmaLinux OS 9.7 "Moss Jungle Cat" was released on November 17, 2025 with kernel 5.14.0-611.5.1.el9_7. It adds GCC Toolset 15 and .NET 10.0.'
 images:
   - /blog-images/2025/almalinux97stable.png
 post:
@@ -16,6 +17,20 @@ post:
 # AlmaLinux OS 9.7 Stable Now Available
 
 Hello Community! The AlmaLinux OS Foundation is announcing the general availability of [AlmaLinux OS 9.7](https://mirrors.almalinux.org/isos.html) codenamed "Moss Jungle Cat"!
+
+## Release highlights
+
+AlmaLinux OS 9.7 "Moss Jungle Cat":
+
+- Released: November 17, 2025
+- Kernel: `5.14.0-611.5.1.el9_7`
+- Compatible with: Red Hat Enterprise Linux (RHEL) 9.7
+- Architectures: x86_64, aarch64, ppc64le, s390x
+- What's new:
+  - GCC Toolset 15
+  - .NET 10.0
+  - OpenSSL 3.5 with ML-KEM, ML-DSA, and SLH-DSA post-quantum algorithms
+  - Node.js 24
 
 Installation ISOs are available on the mirrors now for all 4 architectures:
 

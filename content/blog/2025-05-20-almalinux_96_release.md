@@ -6,6 +6,7 @@ author:
   bio: "The Release and Automation Engineer."
   image: /users/eduard-abdullin.jpg
 date: "2025-05-20"
+description: 'AlmaLinux OS 9.6 "Sage Margay" was released on May 20, 2025 with kernel 5.14.0-570.12.1.el9_6. It adds Node.js 22, MySQL 8.4, and PHP 8.3.'
 images:
   - /blog-images/20225/almalinux96stable.png
 post:
@@ -16,6 +17,21 @@ post:
 # AlmaLinux 9.6 Stable Now Available
 
 Hello Community! The AlmaLinux OS Foundation is announcing the general availability of [AlmaLinux OS 9.6](https://mirrors.almalinux.org/isos.html) codenamed "Sage Margay"!
+
+## Release highlights
+
+AlmaLinux OS 9.6 "Sage Margay":
+
+- Released: May 20, 2025
+- Kernel: `5.14.0-570.12.1.el9_6`
+- Compatible with: Red Hat Enterprise Linux (RHEL) 9.6
+- Architectures: x86_64, aarch64, ppc64le, s390x
+- What's new:
+  - Node.js 22
+  - MySQL 8.4
+  - PHP 8.3
+  - nginx 1.26
+  - Re-added PCI IDs for hardware disabled upstream
 
 Installation ISOs are available on the mirrors now for all 4 architectures:
 
