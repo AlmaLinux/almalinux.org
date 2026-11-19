@@ -514,5 +514,7 @@
     "File a bug": "Reportar um bug",
     "On this page": "Nesta página",
     "Back to top": "Retornar ao topo",
-    "Silver Sponsor": "Patrocinador Prata"
+    "Silver Sponsor": "Patrocinador Prata",
+    "we have the ELevate contribution guide.": "temos o guia de contribuição ELevate.",
+    "To date, the migration data required for Rocky Linux support has not been contributed.": "Até o momento, os dados de migração necessários para o suporte ao Rocky Linux não foram contribuídos."
 }
