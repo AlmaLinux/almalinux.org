@@ -34,7 +34,7 @@ languages:
   it: { weight: 2, label: Italiano }
   ja: { weight: 2, label: 日本語 }
   kk: { weight: 2, label: Қазақша }
-  kmr: { weight: 2, label: Kurdî }
+  kmr: { weight: 2, label: Kurdî (Kurmancî) }
   ko: { weight: 2, label: 한국어 }
   lt: { weight: 2, label: Lietuvių }
   lv: { weight: 2, label: latviešu }
