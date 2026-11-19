@@ -1288,5 +1288,8 @@
     "The system GCC stays steady so the ABI doesn't break, and current GCC ships alongside it in gcc-toolset packages, so you can compile with GCC 15 against a stable runtime. If you build your own toolchains, Spack publishes official AlmaLinux 8 and 9 images to build them on.": "Система GCC залишається стабільною, тому ABI не порушується, а поточна версія GCC поставляється разом із нею в пакетах gcc-toolset, тож ви можете компілювати за допомогою GCC 15 із використанням стабільного середовища виконання. Якщо ви створюєте власні набори інструментів, Spack публікує офіційні образи AlmaLinux 8 та 9, на основі яких їх можна зібрати.",
     "What HPC teams need from a base OS: a long lifecycle, compatibility, fast fixes, and current tools.": "Що потрібно командам HPC від базової ОС: тривалий життєвий цикл, сумісність, швидке виправлення помилок та сучасні інструменти.",
     "We build and ship security fixes quickly, and the work happens in public, so you can see and engage with the volunteers working on the problem. Research teams at CERN, UCL, and CSIC all named this as a reason they run AlmaLinux.": "Ми швидко розробляємо та випускаємо виправлення з безпеки, а ця робота відбувається відкрито, тож ви можете бачити волонтерів, які працюють над вирішенням проблеми, та взаємодіяти з ними. Дослідницькі команди в CERN, UCL та CSIC назвали саме це причиною, чому вони використовують AlmaLinux.",
-    "Benefits specifically for our community": "Переваги саме для нашої спільноти"
+    "Benefits specifically for our community": "Переваги саме для нашої спільноти",
+    "AlmaLinux OS 10.3 and 9.9": "ОС AlmaLinux 10.3 та 9.9",
+    "AlmaLinux Day: Tokyo 2027": "День AlmaLinux: Токіо 2027",
+    "Upcoming events": "Майбутні події"
 }
