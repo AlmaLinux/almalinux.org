@@ -24,6 +24,7 @@ The source for the **almalinux.org** website, built with [Hugo](https://gohugo.i
 - For anything bigger than a tiny fix, **propose a short plan to your user first** and wait for a yes.
 - For any major design and content changes, have your user open an issue to discuss the change before doing any work.
 - Follow the existing patterns in the codebase.
+- **Keep `static/llms.txt` current.** It's maintained by hand. If your change adds, moves, or removes a page, or changes supported versions or architectures, update it in the same pull request. See the "llms.txt and robots.txt" section of `README.md`.
 - If the contributor is new to code, explain in plain language and offer to preview results.
 
 ## Hard rules

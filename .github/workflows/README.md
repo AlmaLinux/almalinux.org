@@ -6,13 +6,14 @@ The preview system broke twice in a row in 2026, both times silently, because th
 
 ## The workflows
 
-| File                    | Name                       | Trigger                         | What it does                                                                                                                          |
-| ----------------------- | -------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `build-preview.yml`     | Build Preview              | `pull_request`                  | Builds the site for a PR and uploads two artifacts: `preview-site` (the built site) and `pr-number` (the PR number). Deploys nothing. |
-| `publish-preview.yml`   | Publish Preview Deployment | `workflow_run` on Build Preview | Downloads those artifacts, deploys to a Cloudflare Pages preview alias, and comments the URL on the PR.                               |
-| `publish.yml`           | (unnamed)                  | `push` to `master`              | Builds and deploys the live site. Also opens an automatic PR if `find_missing_i18n_strings.py` changed `i18n/en.json`.                |
-| `prettier.yml`          | autofix.ci                 | `pull_request`, `push`          | Runs `npx prettier --write .` and pushes formatting fixes back to the branch.                                                         |
-| `update-checksums.yaml` | Update Checksums YAML      | schedule, every 4 hours         | Regenerates `data/get_almalinux_checksums.yaml` and opens or updates a PR when it changes.                                            |
+| File                    | Name                         | Trigger                         | What it does                                                                                                                          |
+| ----------------------- | ---------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| `build-preview.yml`     | Build Preview                | `pull_request`                  | Builds the site for a PR and uploads two artifacts: `preview-site` (the built site) and `pr-number` (the PR number). Deploys nothing. |
+| `publish-preview.yml`   | Publish Preview Deployment   | `workflow_run` on Build Preview | Downloads those artifacts, deploys to a Cloudflare Pages preview alias, and comments the URL on the PR.                               |
+| `cleanup-preview.yml`   | Clean Up Preview Deployments | PR closed, or manual            | Deletes the Cloudflare preview deployments of every PR that is no longer open. See "Cleaning up old previews" below.                  |
+| `publish.yml`           | (unnamed)                    | `push` to `master`              | Builds and deploys the live site. Also opens an automatic PR if `find_missing_i18n_strings.py` changed `i18n/en.json`.                |
+| `prettier.yml`          | autofix.ci                   | `pull_request`, `push`          | Runs `npx prettier --write .` and pushes formatting fixes back to the branch.                                                         |
+| `update-checksums.yaml` | Update Checksums YAML        | schedule, every 4 hours         | Regenerates `data/get_almalinux_checksums.yaml` and opens or updates a PR when it changes.                                            |
 
 ## How the two preview workflows fit together
 
@@ -47,21 +48,46 @@ This is why `build-preview.yml` writes the number into a `pr-number` artifact an
 
 Because the build workflow runs from the pull request head, a fork controls the contents of that artifact. The "Resolve and verify PR number" step therefore checks that the number is numeric and that the head SHA of the PR it names matches the SHA this run actually built. Do not remove that check.
 
-### The preview base URL is predicted, not read back
+### The build picks the preview alias, and the deploy follows it
 
-`build-preview.yml` builds with `--baseURL https://pr-<number>.<project>.pages.dev/` so that absolute links resolve against the preview rather than production. Without it, `og:image`, the canonical tag, the RSS feed, and every sitemap entry on a preview point at almalinux.org, which makes link previews impossible to check before merging.
+`build-preview.yml` builds with `--baseURL https://pr-<number>-<sha>.<project>.pages.dev/`, where `<sha>` is the first 7 characters of the PR head commit, so that absolute links resolve against the preview rather than production. Without it, `og:image`, the canonical tag, the RSS feed, and every sitemap entry on a preview point at almalinux.org, which makes link previews impossible to check before merging.
 
-The build cannot ask Cloudflare what the URL will be, because the deploy happens later, in a different workflow. It predicts it instead, and the prediction is only correct as long as `publish-preview.yml` keeps deploying with `--branch=pr-<number>`. **If you change that `--branch` value, change the formula in `build-preview.yml` in the same commit.** Nothing enforces this. A mismatch produces a preview whose pages all claim to live at a hostname that does not exist, and no step fails.
+The build cannot ask Cloudflare what the URL will be, because the deploy happens later, in a different workflow. So the build chooses the alias and writes it to `preview-alias.txt` in the `pr-number` artifact, and `publish-preview.yml` deploys with `--branch=` set to that value. Like the PR number, the file is untrusted, so the deploy refuses anything other than exactly `pr-<number>-<sha>` for the PR and commit it has already verified. **If you change the alias format, change the `expected` check in `publish-preview.yml` in the same commit.**
 
-If `CLOUDFLARE_PROJECT_NAME` or the PR number is empty, the build falls back to the `baseURL` in `config.yaml` rather than assembling a broken hostname. A fork pull request that cannot read the variable therefore still builds, just with production URLs.
+The alias travels in the artifact, rather than each workflow working it out on its own, because the two workflows do not run the same version of their files. Build Preview runs from the PR branch and Publish Preview from `master` (see above), so a PR opened before a change to the format still builds the old way. If `preview-alias.txt` is missing, the deploy assumes such a build and uses the old `pr-<number>` alias, which is what that build used for its base URL. Once no open PR is based on a `master` from before October 2026, that fallback can be removed.
+
+A pull request that changes how the alias is built is the one exception. Its own preview is built by the new `build-preview.yml` but deployed by the old `publish-preview.yml` on `master`, so its absolute links may point at a hostname that does not exist until it merges.
+
+If `CLOUDFLARE_PROJECT_NAME`, the PR number or the head SHA is empty, the build falls back to the `baseURL` in `config.yaml` rather than assembling a broken hostname. A fork pull request that cannot read the variable therefore still builds, just with production URLs.
+
+### Each push gets its own preview alias
+
+Previews used to deploy every push of a PR to the same `pr-<number>` alias. Cloudflare Pages keeps assets from earlier deployments in each data center's cache for up to a week ([docs](https://developers.cloudflare.com/pages/configuration/serving-pages/)), so on a reused alias a file deleted in the PR kept being served with a `200` and `cf-cache-status: HIT`. The current deployment correctly returned `404` for it. This was seen in October 2026 with an image removed from `static/blog-images/`. Nothing can be purged on `pages.dev`, because that zone belongs to Cloudflare.
+
+Adding the commit to the alias means every push deploys to a hostname that has never been requested, so nothing stale can be cached for it. The trade-off is that the preview URL changes on every push. Each deploy posts a new comment on the PR with the current URL, and old URLs keep pointing at the build they were made from.
 
 ## Secrets and variables
 
-| Name                      | Kind     | Used by                                                   |
-| ------------------------- | -------- | --------------------------------------------------------- |
-| `CLOUDFLARE_API_TOKEN`    | secret   | `publish.yml`, `publish-preview.yml`                      |
-| `CLOUDFLARE_ACCOUNT_ID`   | variable | `publish.yml`, `publish-preview.yml`                      |
-| `CLOUDFLARE_PROJECT_NAME` | variable | `publish.yml`, `publish-preview.yml`, `build-preview.yml` |
+| Name                      | Kind     | Used by                                                                          |
+| ------------------------- | -------- | -------------------------------------------------------------------------------- |
+| `CLOUDFLARE_API_TOKEN`    | secret   | `publish.yml`, `publish-preview.yml`, `cleanup-preview.yml`                      |
+| `CLOUDFLARE_ACCOUNT_ID`   | variable | `publish.yml`, `publish-preview.yml`, `cleanup-preview.yml`                      |
+| `CLOUDFLARE_PROJECT_NAME` | variable | `publish.yml`, `publish-preview.yml`, `build-preview.yml`, `cleanup-preview.yml` |
+
+The cleanup workflow needs the token to have Pages Write, which deploying already requires.
+
+## Cleaning up old previews
+
+Cloudflare never deletes Pages deployments by itself, so every preview ever deployed stays public until someone removes it. `cleanup-preview.yml` lists all preview deployments, lists the open PRs, and deletes every deployment named `pr-<number>` or `pr-<number>-<sha>` whose PR is not open. It does not look at which PR triggered it, so any run also catches leftovers, such as a preview that finished deploying just after its PR closed.
+
+It runs when any PR is closed, merged or not, and from the Actions tab with "Run workflow". A manual run is a dry run by default, which only lists what it would delete. Untick "Only list what would be deleted" to actually delete.
+
+Deployments whose alias is not named after a PR, for example from before the `pr-<number>` naming, or the bare `pr-` aliases left by the fork PR bug described above, are not deleted automatically. Each run lists them in its log. To remove them, run the workflow by hand and set "extra_pattern" to a JavaScript regex matched against the alias, for example `^(autoimage|pr-)$`, or `.*` for all of them. Do a dry run with the pattern first and check the list. The pattern never applies to `pr-<number>` aliases, so it cannot delete the preview of an open PR.
+
+Two things to know:
+
+- It uses `pull_request_target`, so that a PR closed from a fork still gets the Cloudflare secrets. That is only safe because the job never checks out or runs anything from the PR. Keep it that way. Like `workflow_run`, this trigger is read from `master`, so changes to it cannot be tested on their own PR.
+- Deletes pass `force=true`, because Cloudflare refuses to delete the latest deployment of an alias without it.
 
 ## Who can trigger what
 
@@ -95,13 +121,14 @@ gh run list --workflow=build-preview.yml --limit 3
 gh run list --workflow=publish-preview.yml --limit 3
 ```
 
-You want a Publish Preview Deployment run that appeared within a minute or two of the Build Preview run finishing, and a comment on the PR with a `pr-<number>` URL.
+You want a Publish Preview Deployment run that appeared within a minute or two of the Build Preview run finishing, and a comment on the PR with a `pr-<number>-<sha>` URL whose SHA matches the commit you pushed.
 
-Watch for these three failure signatures, all of which look like success at a glance:
+Watch for these four failure signatures, all of which look like success at a glance:
 
 - **No Publish Preview run at all.** The `workflow_run` trigger did not match. Check the workflow name reference.
 - **A run where every step is green but no comment appeared.** A step returned early. Check the "Resolve and verify PR number" step output.
 - **A deploy whose Cloudflare branch is `pr-` with no number.** The PR number did not survive the handoff. Check that `build-preview.yml` still uploads the `pr-number` artifact.
+- **A deploy to plain `pr-<number>` from a PR that includes the current `master`.** The deploy did not find `preview-alias.txt` and used the fallback. Check that `build-preview.yml` still writes that file and uploads it with `pr-number.txt`.
 
 ## Two oddities worth knowing
 

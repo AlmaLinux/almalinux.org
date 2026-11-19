@@ -1,0 +1,324 @@
+// AlmaLinux for Scientific Computing & HPC (/for/scientific-computing)
+//
+// Scoped to .al-page-hpc. Lifted out of _bundle-extras.scss so the page's
+// styles live with the page, matching how every other landing page is
+// organised.
+
+@use "variables";
+
+.al-page-hpc {
+
+  // SC26 callout. A thin band under the hero, tinted with the brand
+  // green that the header's event announcement uses (al-motd-event), so it
+  // reads as an event notice. Remove it (and its markup) after SC26.
+  .al-hpc-sc-callout {
+    background: rgba(variables.$al-c-atlantis, 0.12);
+    border-top: 1px solid rgba(variables.$al-c-atlantis, 0.3);
+    padding: 1.5rem 0;
+    font-size: 1rem;
+
+    i {
+      color: variables.$al-c-atlantis;
+    }
+
+    a {
+      color: variables.$al-c-atlantis;
+      font-weight: 600;
+      margin-left: 0.25rem;
+
+      &:hover,
+      &:focus-visible {
+        color: variables.$al-c-atlantis-lighter;
+      }
+    }
+  }
+
+  // Photo beside the text on wider screens, stacked above it on phones.
+  .al-hpc-sc-callout-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    img {
+      width: 220px;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 575.98px) {
+      flex-direction: column;
+      text-align: center;
+
+      img {
+        width: 100%;
+        max-width: 320px;
+      }
+    }
+  }
+
+  .al-hpc-sc-callout-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  // Hero
+  .al-hpc-hero {
+    background: variables.$al-c-black-pearl;
+  }
+
+  // Hero panel. Carries the page's headline facts as type on the shared dark
+  // card surface, so the hero needs no photography to feel finished.
+  .al-hpc-hero-stats {
+    background: rgba(variables.$al-c-soft-peach-lighter, 0.05);
+    border: 1px solid rgba(variables.$al-c-soft-peach-lighter, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 0;
+
+    > div + div {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(variables.$al-c-soft-peach-lighter, 0.08);
+    }
+
+    dt {
+      font-family: variables.$al-font-family-accent;
+      font-size: 1.75rem;
+      font-weight: 700;
+      line-height: 1.1;
+      color: variables.$al-c-science-blue-lighter;
+    }
+
+    dd {
+      margin: 0.35rem 0 0;
+      font-size: 0.95rem;
+      color: rgba(variables.$al-c-soft-peach-lighter, 0.75);
+    }
+  }
+
+  // Trusted-by logo strip
+  .al-hpc-trusted {
+    background: rgba(variables.$al-c-soft-peach-lighter, 0.03);
+    border-top: 1px solid rgba(variables.$al-c-soft-peach-lighter, 0.07);
+    border-bottom: 1px solid rgba(variables.$al-c-soft-peach-lighter, 0.07);
+  }
+
+  .al-hpc-logo-strip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  // Same sizing as the media and entertainment strip, so a shared rule can
+  // replace both when these pages are consolidated.
+  .al-hpc-logo-strip img {
+    max-width: 140px;
+    max-height: 56px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  // Icon beside the card heading (PR #1229 review), with the paragraph below.
+  .al-hpc-feature-head {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+
+    h4 {
+      margin-bottom: 0;
+    }
+  }
+
+  .al-hpc-feature-icon {
+    font-size: 2rem;
+    line-height: 1;
+    color: variables.$al-c-science-blue-lighter;
+    flex-shrink: 0;
+  }
+
+  // HPC SIG section
+  .al-hpc-sig-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.25rem 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.35rem 0;
+      font-size: 1rem;
+    }
+
+    i {
+      color: variables.$al-c-atlantis;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+  }
+
+  // Pull quote beside the SIG text. Same dark card surface as the hero panel.
+  // No edge stripe: DESIGN.md rules out colored accent borders on cards.
+  .al-hpc-quote {
+    background: rgba(variables.$al-c-soft-peach-lighter, 0.04);
+    border: 1px solid rgba(variables.$al-c-soft-peach-lighter, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+
+    blockquote p {
+      font-size: 1.15rem;
+      line-height: 1.6;
+    }
+
+    figcaption {
+      margin-top: 1.25rem;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .al-hpc-quote-name {
+    font-family: variables.$al-font-family-accent;
+    font-weight: 600;
+  }
+
+  .al-hpc-quote-role {
+    font-size: 0.9rem;
+    color: rgba(variables.$al-c-soft-peach-lighter, 0.65);
+  }
+
+  .al-hpc-quote-note {
+    margin-top: 0.25rem;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: rgba(variables.$al-c-soft-peach-lighter, 0.5);
+  }
+
+  // Videos. Sits between the "built for" cards and the SIG section, so it takes the
+  // same tinted band as the trusted-by strip. Each card is the video, a short
+  // quote from it, and who said it, reusing the pull quote's name and role
+  // styles.
+  .al-hpc-videos {
+    background: rgba(variables.$al-c-soft-peach-lighter, 0.03);
+    border-top: 1px solid rgba(variables.$al-c-soft-peach-lighter, 0.07);
+    border-bottom: 1px solid rgba(variables.$al-c-soft-peach-lighter, 0.07);
+  }
+
+  .al-hpc-videos-credit {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: rgba(variables.$al-c-soft-peach-lighter, 0.65);
+  }
+
+  .al-hpc-video-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(variables.$al-c-soft-peach-lighter, 0.04);
+    border: 1px solid rgba(variables.$al-c-soft-peach-lighter, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+
+    iframe {
+      border: 0;
+    }
+
+    blockquote {
+      padding: 1.5rem 1.5rem 0;
+      flex-grow: 1;
+
+      p {
+        margin-bottom: 0;
+        line-height: 1.6;
+      }
+    }
+
+    figcaption {
+      padding: 1rem 1.5rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  // Get started steps
+  .al-hpc-start {
+    background: variables.$al-c-black-pearl;
+  }
+
+  .al-hpc-step {
+    background: rgba(variables.$al-c-soft-peach-lighter, 0.05);
+    border: 1px solid rgba(variables.$al-c-soft-peach-lighter, 0.1);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .al-hpc-step-number {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: variables.$al-c-science-blue-lighter;
+    color: variables.$al-c-soft-peach-lighter;
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+  }
+
+  // Secondary links under a step's button: quieter than the button so the
+  // button stays the main action.
+  .al-hpc-step-links {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    text-align: center;
+    font-size: 0.9rem;
+
+    li + li {
+      margin-top: 0.35rem;
+    }
+
+    a {
+      color: variables.$al-c-science-blue-lighter;
+    }
+  }
+
+  // Link at the foot of a "built for" card, for the one card that points to
+  // documentation.
+  .al-hpc-card-link {
+    color: variables.$al-c-science-blue-lighter;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      text-decoration: underline;
+    }
+  }
+
+  // Member invitation under the get-started steps.
+  .al-hpc-support {
+    margin-top: 3rem;
+    color: rgba(variables.$al-c-soft-peach-lighter, 0.75);
+
+    a {
+      color: variables.$al-c-science-blue-lighter;
+      font-weight: 600;
+    }
+  }
+}

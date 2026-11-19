@@ -1,0 +1,228 @@
+@use "variables";
+
+// The /focus landing page (content/focus.md, layouts/focus/single.html), the
+// target of the QR code in the AlmaLinux Focus Guide. It builds on the event
+// body blocks in event-day.scss (al-event-band, al-event-card,
+// al-event-headshot) and adds the hero, the article card grid, the stats strip,
+// and the chair's note. Everything is scoped under .al-focus-page, and the
+// selectors are specific enough to win over .al-wysiwyg's `all: revert`.
+
+.al-focus-page {
+  // The hero band sits flush under the navbar and carries the page's h1.
+  .al-focus-hero {
+    margin-top: 0;
+    padding: 4rem 0;
+
+    h1 {
+      font-family: variables.$al-font-family-accent;
+      font-size: clamp(2rem, 4.5vw, 3.25rem);
+      font-weight: 600;
+      line-height: 1.15;
+      margin: 0 0 1.5rem;
+    }
+  }
+
+  .al-focus-kicker {
+    font-family: variables.$al-font-family-accent;
+    font-weight: 600;
+    color: variables.$al-c-cta-blue;
+    margin: 0 0 0.75rem;
+  }
+
+  .al-focus-lead {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin: 0 0 2rem;
+  }
+
+  // Article cards: the spread image on top, then the badge, title, summary,
+  // and links. The links line sits on the bottom edge so cards in the same row
+  // line up.
+  .al-focus-articles {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .al-focus-article {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: variables.$al-c-black-pearl;
+    border-radius: 0.6rem;
+    padding: 1.5rem;
+
+    // Article spreads stay small and centered so the text leads the card.
+    > img {
+      align-self: center;
+      max-width: min(100%, 320px);
+      margin-bottom: 1.25rem;
+    }
+
+    h3 {
+      font-family: variables.$al-font-family-accent;
+      font-size: 1.35rem;
+      margin: 0.75rem 0 0.5rem;
+    }
+
+    p {
+      margin: 0 0 1rem;
+    }
+
+    // "Related links": AlmaLinux pages the article mentions, set apart from
+    // the summary by a rule and a label so nobody mistakes them for the
+    // article itself. Pinned to the bottom so cards in a row line up.
+    .al-focus-related {
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid variables.$al-c-black-pearl-light;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        margin: 0.3rem 0;
+      }
+
+      a {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 0.25rem;
+      }
+    }
+
+    .al-focus-related-label {
+      font-family: variables.$al-font-family-accent;
+      font-size: 0.8rem;
+      font-weight: 600;
+      opacity: 0.75;
+      margin: 0 0 0.25rem;
+    }
+
+    // Run it / Shape it cards end in a button instead of a links line.
+    > .btn {
+      align-self: flex-start;
+      margin-top: auto;
+    }
+
+    // The interview spans the full row, with its image beside the text.
+    &--wide {
+      display: block;
+    }
+  }
+
+  // Run it / Shape it: two cards on the page background (they follow the stats
+  // band, and bands never sit back to back).
+  .al-focus-actions {
+    margin-bottom: 3.5rem;
+  }
+
+  // A fixed-shape image area so side-by-side cards line up even when their
+  // images have different proportions. Photos fill it; diagrams use --contain
+  // so nothing gets cropped.
+  .al-focus-card-media {
+    aspect-ratio: 3 / 2;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    margin-bottom: 1.25rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &--contain img {
+      object-fit: contain;
+    }
+  }
+
+  .al-focus-page-badge {
+    align-self: flex-start;
+    display: inline-block;
+    font-family: variables.$al-font-family-accent;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: variables.$al-c-cta-blue;
+    background: variables.$al-c-black-pearl-lighter;
+    border-radius: 1rem;
+    padding: 0.25rem 0.75rem;
+  }
+
+  // Stats strip: large numbers in the logo colors, each linking to its source.
+  .al-focus-stats {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .al-focus-stat {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+
+    b {
+      display: block;
+      font-family: variables.$al-font-family-accent;
+      font-size: clamp(2.5rem, 6vw, 3.5rem);
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    span {
+      display: block;
+      margin-top: 0.5rem;
+    }
+
+    &:hover span,
+    &:focus-visible span {
+      text-decoration: underline;
+    }
+
+    &--blue b {
+      color: variables.$al-c-cta-blue;
+    }
+
+    &--green b {
+      color: variables.$al-c-atlantis;
+    }
+
+    &--yellow b {
+      color: variables.$al-c-candlelight;
+    }
+  }
+
+  // The closing thank-you from benny (her note from page 2 of the guide plus
+  // the thanks to Linux New Media): headshot beside the letter, stacked on
+  // phones.
+  .al-focus-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 1.5rem 0 0;
+
+    .al-event-headshot {
+      flex: none;
+    }
+
+    blockquote {
+      margin: 0 0 1rem;
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin: 0 0 1rem;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}

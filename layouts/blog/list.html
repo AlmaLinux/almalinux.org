@@ -46,7 +46,15 @@
               </div>
 
               <div class="al-article-feature mb-4">
-                {{ with .Params.post.image }}
+                {{ $post := . }}
+                {{ with partial "blog/header-image.html" $post }}
+                  <div class="mx-auto" style="max-width: 850px">
+                    <img
+                      class="d-block mx-lg-auto img-fluid"
+                      src="{{ . }}"
+                      alt="{{ partial "blog/header-alt.html" $post }}" />
+                  </div>
+                {{ else with .Params.post.image }}
                   <div class="mx-auto" style="max-width: 850px">
                     <img class="d-block mx-lg-auto img-fluid" src="{{ . }}" />
                   </div>

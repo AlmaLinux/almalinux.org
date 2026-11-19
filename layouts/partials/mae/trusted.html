@@ -1,0 +1,39 @@
+{{/* Trusted by: the studios that run AlmaLinux.
+
+  For this page's audience the logos are the argument, not just credibility:
+  if you want to work at a studio like these, you can learn on the same
+  platform at home. The sub-line says that so the strip isn't only decoration.
+*/}}
+
+
+<section id="trusted-by" class="al-mae-trusted al-py-lg">
+  <div class="container">
+    <h2 class="text-center mb-2">
+      {{ i18n "Trusted by leading studios & production houses" }}
+      <a
+        class="al-anchor"
+        href="#trusted-by"
+        aria-label="{{ i18n `Link to this section` }}"
+        >#</a
+      >
+    </h2>
+    <p class="text-center al-text-muted mb-4 mx-auto al-mae-measure">
+      {{ i18n "These studios run AlmaLinux. If you want to work somewhere like them, you can learn on the same platform on your own machine." }}
+    </p>
+    {{/* Studios using AlmaLinux. Logos live in /static/usedby/ alongside the
+      homepage set, so the same file serves both. They need to be white on
+      transparent: nothing recolours them here. Add a line to grow the strip.
+    */}}
+    {{ $studios := slice
+      (dict "src" "/usedby/cinesite.png" "alt" "Cinesite")
+      (dict "src" "/usedby/ilm.png" "alt" "Industrial Light & Magic")
+      (dict "src" "/usedby/nox.svg" "alt" "Nox")
+      (dict "src" "/usedby/wefx.png" "alt" "WeFX")
+    }}
+    <div class="al-mae-logo-strip">
+      {{ range $studios }}
+        <img src="{{ .src }}" alt="{{ .alt }}" loading="lazy" />
+      {{ end }}
+    </div>
+  </div>
+</section>

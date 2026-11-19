@@ -1,0 +1,304 @@
+// AlmaLinux for Media and Entertainment (/for/media-and-entertainment)
+//
+// One long-scroll page in the deep-band pattern (DESIGN.md section 11). The
+// page runs dark throughout, with a single light band on the Creative
+// Installer so that one moment reads as the thing to do. Everything else, the
+// Creative ISO and EC2 panels included, uses the same dark card surface, so the
+// SIG's material sits in the page rather than on top of it. Everything is
+// scoped to .al-page-mae.
+
+@use "variables";
+
+// One radius scale for the whole page. Cards take the larger value, small
+// inner elements the smaller, and nothing else invents its own.
+$al-mae-radius: 12px;
+$al-mae-radius-sm: 8px;
+
+.al-page-mae {
+  // ─── Band alternation ──────────────────────────────────────────────────────
+  //
+  // Reading order is hero, trusted, why, Installer (light), works with, ISO,
+  // cloud, SIG, studios. These take the deep surface; trusted has its own
+  // faint tint (as does the studios strip), and the rest sit on the page
+  // background, so no two neighbours share a colour.
+
+  .al-mae-hero,
+  .al-mae-why,
+  .al-mae-iso,
+  .al-mae-sig {
+    background: variables.$al-c-black-pearl;
+  }
+
+  // Line-length limit for centred prose under a heading
+  .al-mae-measure {
+    max-width: 45rem;
+  }
+
+  // ─── Shared dark card surface ──────────────────────────────────────────────
+  //
+  // Used by the wide panels (the Creative ISO and the EC2 card). Keeping them
+  // on one rule is what stops a second visual vocabulary appearing.
+
+  .al-mae-panel {
+    background: rgba(variables.$al-c-soft-peach-lighter, 0.05);
+    border: 1px solid rgba(variables.$al-c-soft-peach-lighter, 0.1);
+    border-radius: $al-mae-radius;
+    height: 100%;
+  }
+
+  // ─── Hero ──────────────────────────────────────────────────────────────────
+
+  // Framed media. Used by the hero image and the Installer screenshot.
+  .al-mae-frame {
+    display: block;
+    border-radius: $al-mae-radius;
+    overflow: hidden;
+    line-height: 0;
+    box-shadow: 0 8px 32px rgba(variables.$al-c-black-pearl-dark, 0.4);
+  }
+
+  // ─── Trusted by, and the studios strip ─────────────────────────────────────
+  //
+  // Both get a faint tint with hairline borders. The studios strip closes the
+  // page, and the tint keeps it apart from the site's newsletter block, which
+  // sits on the same page background right after it.
+
+  .al-mae-trusted,
+  .al-mae-studios {
+    background: rgba(variables.$al-c-soft-peach-lighter, 0.03);
+    border-top: 1px solid rgba(variables.$al-c-soft-peach-lighter, 0.07);
+    border-bottom: 1px solid rgba(variables.$al-c-soft-peach-lighter, 0.07);
+  }
+
+  // Inline icons on the studios strip's small headings, in the same blue as
+  // the larger feature icons in "What you get with AlmaLinux".
+  .al-mae-studios-icon {
+    color: variables.$al-c-science-blue-lighter;
+  }
+
+  .al-mae-logo-strip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  // Real studio logos, capped to the homepage marquee size so the same asset
+  // reads consistently in both places. Width is a maximum rather than a fixed
+  // slot: wide wordmarks still stop at 140px, but a squarer mark takes only the
+  // width it needs instead of floating in the middle of a 140px gap. The flex
+  // gap above does the spacing.
+  .al-mae-logo-strip img {
+    max-width: 140px;
+    max-height: 56px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  // ─── Feature grid ──────────────────────────────────────────────────────────
+
+  .al-mae-feature-icon {
+    font-size: 2rem;
+    color: variables.$al-c-science-blue-lighter;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  // ─── Software grid ─────────────────────────────────────────────────────────
+
+  .al-mae-software-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+
+  .al-mae-software-item {
+    background: rgba(variables.$al-c-soft-peach-lighter, 0.07);
+    border: 1px solid rgba(variables.$al-c-soft-peach-lighter, 0.12);
+    border-radius: $al-mae-radius-sm;
+    padding: 1rem 1.5rem;
+    width: 180px;
+    height: 88px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    // The tile itself links to the project, so strip the link defaults and
+    // lift it on hover instead.
+    text-decoration: none;
+    color: inherit;
+    transition:
+      background 0.2s ease,
+      border-color 0.2s ease,
+      transform 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+      background: rgba(variables.$al-c-soft-peach-lighter, 0.12);
+      border-color: rgba(variables.$al-c-soft-peach-lighter, 0.3);
+      transform: translateY(-2px);
+      text-decoration: none;
+
+      img {
+        opacity: 1;
+      }
+    }
+
+    // Wordmarks ship as pure white on transparent, so nothing recolours them.
+    // Their aspect ratios vary wildly, from a wide "OpenColorIO" to a compact
+    // "GIMP", so the tile is a fixed box and each mark is contained inside it.
+    // That keeps optical weight even instead of letting wide marks dominate.
+    img {
+      max-width: 100%;
+      max-height: 40px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      opacity: 0.85;
+    }
+
+    span {
+      font-size: 0.85rem;
+      color: rgba(variables.$al-c-soft-peach-lighter, 0.7);
+    }
+  }
+
+  // The name under each software tile. Permanent: several of these marks are
+  // symbols rather than wordmarks, so the label is what tells you which
+  // application a tile is for.
+  .al-mae-software-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .al-mae-software-label {
+    font-size: 0.8rem;
+    color: rgba(variables.$al-c-soft-peach-lighter, 0.6);
+  }
+
+  // ─── Wide panels: the Creative ISO and the EC2 card ────────────────────────
+
+  .al-mae-panel {
+    padding: 2.25rem;
+  }
+
+  // ─── M&E SIG ───────────────────────────────────────────────────────────────
+
+  .al-mae-sig-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.25rem 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.35rem 0;
+      font-size: 1rem;
+    }
+
+    i {
+      color: variables.$al-c-atlantis;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+  }
+
+  // ─── The Creative Installer: the page's single light band ──────────────────
+  //
+  // The getting-started moment lives here. It inverts the page, so text colors
+  // are set explicitly against the site default of light-on-dark.
+
+  .al-mae-light {
+    background: variables.$al-c-soft-peach;
+    color: variables.$al-font-color-light;
+
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: variables.$al-font-color-light;
+    }
+
+    p {
+      color: rgba(variables.$al-c-black-pearl, 0.78);
+    }
+
+    a:not(.btn) {
+      color: variables.$al-c-science-blue-dark;
+
+      &:hover {
+        color: variables.$al-c-science-blue;
+      }
+    }
+  }
+
+  // Numbered setup steps: a number beside each step's heading and copy
+  .al-mae-steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    // Lets a long command scroll inside its box instead of widening the page
+    li > div {
+      min-width: 0;
+      flex: 1;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .al-mae-step-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: variables.$al-c-science-blue-lighter;
+    color: variables.$al-c-soft-peach-lighter;
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  // The install commands. Dark on the light band so they read as terminal
+  // input, and scrollable so a long line never forces sideways page scroll.
+  .al-mae-code {
+    background: variables.$al-c-black-pearl;
+    color: variables.$al-c-soft-peach-lighter;
+    font-family: variables.$al-font-family-mono;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    padding: 0.9rem 1rem;
+    border-radius: $al-mae-radius-sm;
+    overflow-x: auto;
+    white-space: pre;
+    margin: 0.5rem 0 0;
+
+    code {
+      color: inherit;
+      background: none;
+      padding: 0;
+      font-size: inherit;
+    }
+  }
+}

@@ -70,7 +70,7 @@ speakers_header: "On stage at AlmaLinux Day: City" # optional; overrides default
 
 The markdown body (below `---`) is rendered between the hero and the speakers section. Use it for the event description, schedule embed, venue photos, and any other event-specific content. Raw HTML is supported.
 
-For styled blocks in the body, use the shared classes in `assets/scss/event-day.scss` instead of inline styles: `al-event-feature` (a highlighted panel, with `al-event-feature--green` for certification content), `al-event-card`, `al-event-eyebrow`, `al-event-steps` (a numbered list), and `al-event-headshot`. See `content/ato-2026.md` for an example.
+For styled blocks in the body, use the shared classes in `assets/scss/event-day.scss` instead of inline styles: `al-event-band` (a full-width dark band; alternate bands with plain sections and never stack two), `al-event-card` (a plain column), `al-event-eyebrow` (a date, time, or place above a heading), `al-event-steps` (a numbered list), and `al-event-headshot`. See `content/sc26.md` for an example.
 
 The same layout works for conferences where AlmaLinux has a booth or a talk but isn't the organizer: point `registration_url` at an anchor on the page, leave `speakers` out of the data file, and set `cant_make_it_heading` and `cant_make_it_text`.
 
@@ -105,20 +105,31 @@ Media sponsors render in their own small section at the bottom of the page under
 - Speaker photos → `static/landingpages/your-event/` (or anywhere under `static/`)
 - OG/social preview image → `static/images/og/`
 
-### Step 4: Add to the navigation menu
+### Step 4: Add it to the menu
 
-Add the new event to `layouts/partials/common/nav.html`, inside the Events dropdown under the "Upcoming Events" header. Events are listed newest-first. Once the event has passed, move it under the "Past Events" header. Add a new `<li>`:
+The Events column in the Community menu (`layouts/partials/common/nav.html`, search for `al-nav-events-past`) lists AlmaLinux Day events only. Conferences where AlmaLinux has a booth or a talk go in the announcement strip instead (see below).
+
+When an AlmaLinux Day is announced, add an "Upcoming events" block directly above the "Past events" subheading. Upcoming events get a green icon at the normal menu size, so they stand out from the smaller, text-only list of past events. Keep each `{{ i18n }}` tag on one line:
 
 ```html
-<li>
-  <a
-    class="dropdown-item"
-    href="{{ "/your-event-slug/" | relLangURL }}"
-    style="color:aliceblue">
-    {{ i18n "ALD City YYYY" }}
-  </a>
-</li>
+<p class="al-nav-subheading" id="al-nav-events-upcoming">
+  {{ i18n "Upcoming events" }}
+</p>
+<ul class="al-nav-events-upcoming" aria-labelledby="al-nav-events-upcoming">
+  <li>
+    <a class="dropdown-item" href="{{ "/your-event-slug/" | relLangURL }}">
+      <i class="bi bi-calendar-event" aria-hidden="true"></i>
+      {{ i18n "AlmaLinux Day: City YYYY" }}
+    </a>
+  </li>
+</ul>
 ```
+
+Once the event is over, move its `<li>` to the top of the "Past events" list, remove its `<i>` icon (past events are a compact text list), and delete the "Upcoming events" block if it's empty. Run `python3 find_missing_i18n_strings.py` after either change.
+
+Add AlmaLinux Day events to the "Events" section of `static/llms.txt` too: new events go at the top marked "upcoming", and once the event is over, drop the "upcoming" note.
+
+To promote any event more widely, including conferences we're attending, add it to the announcement strip (`#al-motd`, at the bottom of the same file) with the `al-motd-event` class, and remove it from the strip once the event is over. A single Events page is planned (see [#61](https://github.com/AlmaLinux/almalinux.org/issues/61)) and will replace the menu list when it ships.
 
 ### Toggling post-event state
 
@@ -188,6 +199,8 @@ npx hugo new blog/2026-03-01-announcing-new-feature.md
 
 This will create a new file in `content/blog/` with the correct front matter already filled in, including the title (derived from the filename) and the current year in the image paths.
 
+For a security advisory, use `npx hugo new --kind security-advisory blog/YYYY-MM-DD-name.md` instead. It scaffolds the generated `vulnerability` header and the section structure our advisories use; see "Generated header images" in [contributing-blog-posts.md](contributing-blog-posts.md).
+
 ### Filling in the Front Matter
 
 Open the generated file and update the following fields:
@@ -253,6 +266,8 @@ For smaller contributions, follow this workflow:
 - Add your code, documentation, etc.
 - Submit a pull request (PR). All PRs should target the `master` branch. Once approved, a development site will automatically generate based on the PR.
 
+New pull requests open with a short checklist from [.github/pull_request_template.md](.github/pull_request_template.md). Please work through it before asking for review.
+
 After review and approval, the changes will be merged into the `master` branch and deployed to the live site. See [README.DEPLOY.md](README.DEPLOY.md) for how deployment works.
 
 For design tokens, components, and conventions, see [DESIGN.md](DESIGN.md).
@@ -281,6 +296,7 @@ To use a container-based development environment, install Docker and use an edit
 - `/layouts/partial` — Shared templates (header, footer, etc.)
 - `/i18n/` — Localization and translation files
 - `/static/` — Static files
+- `/static/llms.txt` and `/static/robots.txt`: hand-maintained files for AI agents and crawlers (see [llms.txt and robots.txt](#llmstxt-and-robotstxt))
 - `/content/` — Markdown content for site pages
 - `/data/` — Source data, currently only for the "Get AlmaLinux" page
 - `config.yaml` — Hugo configuration
@@ -379,6 +395,18 @@ Some URLs may allow other variables (like `variant`), or require different patte
 
 If you have questions about advanced configuration or variable support, refer to the script or open an issue for help.
 
+#### llms.txt and robots.txt
+
+`static/llms.txt` gives AI agents and large language models (LLMs) a short overview of AlmaLinux OS and links to the pages most worth reading. `static/robots.txt` tells crawlers what they may crawl and points them to the sitemap. It also mentions llms.txt in a comment, which is for human readers since crawlers ignore comments. Both files are written by hand and nothing generates them, so they're only accurate if we keep them updated.
+
+Update `static/llms.txt` in the same pull request whenever you:
+
+- Add, move, rename, or remove a page that llms.txt links to, or a page important enough to be listed there.
+- Change the supported major versions, architectures, or image types.
+- Find that a wiki page or other external link in the file has moved.
+
+There's no settled standard for llms.txt yet. Ours follows the current [llmstxt.org](https://llmstxt.org/) proposal: a title, a short summary, then sections of links with a one-line description each. If a standard emerges, we'll update the file to match it.
+
 #### Prettier errors
 
 Sometimes, prettier will fail with very unhelpful errors, such as:
@@ -438,6 +466,8 @@ Once you figure out the issue and fix it, undo your changes to `.prettierrc` and
 AlmaLinux.org translations are managed on [Weblate](https://hosted.weblate.org/engage/almalinux/). Submissions through Weblate generate automated PRs to this repo, which are reviewed and merged by the Promo SIG or another team lead.
 
 **File ownership:** `i18n/en.json` is the source-of-truth and is managed in this repo — use `find_missing_i18n_strings.py` to keep it in sync with template usage. All other locale files (`es.json`, `de.json`, etc.) are owned by Weblate. Do not edit them directly or run any script that modifies them; doing so causes merge conflicts when Weblate pushes its translator commits back. Stale-key cleanup for non-English locales is handled automatically by Weblate's "Cleanup translation files" add-on (`weblate.cleanup.generic`).
+
+**Don't set `url:` in a page's front matter.** The build copies every page into each language (`content/<page>.<lang>.md`), and each copy keeps the same front matter. A fixed `url:` makes all of those copies write to the same address, so whichever language builds last replaces the English page. That's what happened to `/focus/`, which served the Chinese version. Let the filename set the path, and use `aliases:` if you need an extra address that redirects to it.
 
 If you'd like to **contribute translations**, see the [translation guide on our Wiki](https://wiki.almalinux.org/Help-translating-site.html) — that page walks you through creating a Weblate account and translating strings.
 

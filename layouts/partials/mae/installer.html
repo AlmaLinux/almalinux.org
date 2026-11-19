@@ -1,0 +1,109 @@
+{{/* The Creative Installer: the page's one light band.
+
+  This is how the page's audience gets started today, so it's the single
+  moment where a visitor does something, and the only section that inverts the
+  page. It works on an AlmaLinux 9 or 10 machine someone already has, and it
+  will also ship on the Creative ISO once that's published.
+
+  The two commands come from the project's README (the COPR method it
+  recommends). If the project changes its install steps, change them here too.
+  App requests go through issues, because the project's CONTRIBUTING.md asks
+  for an issue first.
+*/}}
+
+
+<section id="creative-installer" class="al-mae-light al-py-lg">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="mb-3">
+        {{ i18n "Get started with the Creative Installer" }}
+        <a
+          class="al-anchor"
+          href="#creative-installer"
+          aria-label="{{ i18n `Link to this section` }}"
+          >#</a
+        >
+      </h2>
+      <p class="lead mx-auto mb-5 al-mae-measure">
+        {{ i18n "The AlmaLinux Creative Installer is a guided setup for more than 40 creative apps, including Blender, DaVinci Resolve, Krita, and OBS Studio. Tristan Theroux built it, after it was requested in the M&E SIG." }}
+      </p>
+    </div>
+
+    <div class="row align-items-center g-4 g-lg-5">
+      <div class="col-12 col-lg-6">
+        <ol class="al-mae-steps">
+          <li>
+            <span class="al-mae-step-number" aria-hidden="true">1</span>
+            <div>
+              <h3 class="h5">{{ i18n "Install AlmaLinux" }}</h3>
+              <p>
+                {{ i18n "Download AlmaLinux 10 and install it with a desktop, or use an AlmaLinux 9 or 10 machine you already have." }}
+              </p>
+              <a
+                href="{{ "/get-almalinux/" | relLangURL }}"
+                class="fw-semibold">
+                {{ i18n "Get AlmaLinux" }}
+              </a>
+            </div>
+          </li>
+          <li>
+            <span class="al-mae-step-number" aria-hidden="true">2</span>
+            <div>
+              <h3 class="h5">{{ i18n "Add the Creative Installer" }}</h3>
+              <p>
+                {{ i18n "Open a terminal and run these two commands. You'll get updates to the installer whenever you update the rest of your system." }}
+              </p>
+              <pre
+                class="al-mae-code"><code>sudo dnf copr enable tristantheroux/AlmaLinux-Creative-Installer
+sudo dnf install almalinux-creative-installer</code></pre>
+            </div>
+          </li>
+          <li>
+            <span class="al-mae-step-number" aria-hidden="true">3</span>
+            <div>
+              <h3 class="h5">{{ i18n "Pick your apps" }}</h3>
+              <p>
+                {{ i18n "Open AlmaLinux Creative Installer from your app menu and choose the apps you want. It sets them up for you, including the extra software sources and drivers they need." }}
+              </p>
+            </div>
+          </li>
+        </ol>
+        <p class="mt-4 mb-2">
+          <a
+            href="https://kernelchief.github.io/almalinux-creative-installer/"
+            target="_blank"
+            rel="noopener"
+            class="fw-semibold">
+            {{ i18n "View the Creative Installer project" }}
+            <i class="bi bi-arrow-up-right-square ps-1" aria-hidden="true"></i>
+          </a>
+        </p>
+        <p class="mb-0">
+          {{ i18n "Missing an app you use?" }}
+          <a
+            href="https://github.com/KernelChief/almalinux-creative-installer/issues"
+            target="_blank"
+            rel="noopener"
+            class="fw-semibold">
+            {{ i18n "Open an issue to ask for it" }}
+          </a>
+        </p>
+      </div>
+      <div class="col-12 col-lg-6">
+        <a
+          class="al-mae-frame d-block"
+          href="https://kernelchief.github.io/almalinux-creative-installer/"
+          target="_blank"
+          rel="noopener">
+          <img
+            src="/landingpages/aldla-2026/creative-installer.png"
+            alt="{{ i18n "The AlmaLinux Creative Installer, showing its catalogue of creative applications" }}"
+            class="img-fluid"
+            width="2166"
+            height="1562"
+            loading="lazy" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

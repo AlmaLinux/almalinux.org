@@ -1,0 +1,8 @@
+{{- /* Alt text for a generated header image: "Title. Subtitle". */ -}}
+{{- with .Params.header -}}
+  {{- $alt := replace .title "\n" " " -}}
+  {{- with replace .subtitle "\n" " " -}}
+    {{- $alt = printf "%s. %s" $alt . -}}
+  {{- end -}}
+  {{- $alt -}}
+{{- end -}}

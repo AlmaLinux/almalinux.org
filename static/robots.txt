@@ -1,0 +1,12 @@
+# robots.txt for https://almalinux.org
+#
+# AlmaLinux OS is open source. All crawlers, including search engines
+# and AI agents, are welcome to crawl this site.
+# A short overview of the site for AI agents and LLMs is at /llms.txt.
+#
+# Source: https://github.com/AlmaLinux/almalinux.org
+
+User-agent: *
+Allow: /
+
+Sitemap: https://almalinux.org/sitemap.xml

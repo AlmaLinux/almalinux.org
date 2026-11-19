@@ -67,6 +67,8 @@ git.almalinux.org was originally setup with only GitHub as an authentication sou
 
 If you wish to recover your previous git.almalinux.org account send an email to account-merge@almalinux.org from the address tied to your GitHub and AlmaLinux accounts and we can tie them together for you.
 
+_Note: The account-merge@almalinux.org address is no longer in use. If you need help recovering your previous git.almalinux.org account, please send us a message on [Mattermost](https://chat.almalinux.org)._
+
 ### lists.almalinux.org
 
 lists.almalinux.org has been tied into [AlmaLinux Accounts](https://accounts.almalinux.org) for a few weeks now. Existing lists accounts can be linked to AlmaLinux Accounts seamlessly.
