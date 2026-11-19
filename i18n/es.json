@@ -1212,5 +1212,14 @@
     "Trademark usage policy": "Política de uso comercial",
     "Use cases": "Casos de uso",
     "Why AlmaLinux": "Por qué AlmaLinux",
-    "10 years": "10 años"
+    "10 years": "10 años",
+    "MPI stacks and scientific libraries": "Pilas MPI y bibliotecas científicas",
+    "Migrating from CentOS, RHEL, Rocky, or Oracle?": "¿Migrando desde CentOS, RHEL, Rocky o Oracle?",
+    "No subscription": "Sin suscripción",
+    "OpenHPC alignment and testing": "Adaptación y pruebas OpenHPC",
+    "Running at research institutions and HPC integrators": "Funcionamiento de instituciones de investigación e integradores de HPC",
+    "Scientific computing and HPC": "Computación científica y HPC",
+    "Scientific computing runs on AlmaLinux": "La computación científica funciona en AlmaLinux",
+    "Three paths, depending on where you are today.": "Tres caminos, dependiendo de dónde estés hoy.",
+    "every repository, free to everyone": "cada repositorio, libre para todos"
 }
