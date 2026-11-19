@@ -28,11 +28,13 @@ languages:
   fi: { weight: 2, label: Suomi }
   fr: { weight: 2, label: Français }
   he: { weight: 2, label: עברית, direction: rtl }
+  hi: { weight: 2, label: हिन्दी }
   hu: { weight: 2, label: magyar }
   id: { weight: 2, label: Bahasa Indonesia }
   it: { weight: 2, label: Italiano }
   ja: { weight: 2, label: 日本語 }
   kk: { weight: 2, label: Қазақша }
+  kmr: { weight: 2, label: Kurdî }
   ko: { weight: 2, label: 한국어 }
   lt: { weight: 2, label: Lietuvių }
   lv: { weight: 2, label: latviešu }
