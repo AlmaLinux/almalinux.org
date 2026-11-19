@@ -88,7 +88,7 @@ If you run into anything with the updated packages, please let us know in [AlmaL
 
 ## Thanks
 
-Thanks to **[TuxCare Inc](https://tuxcare.com/almalinux-enterprise-support/)** for providing the patches for this update, and for all the work they do to support our project. 
+Thanks to **[TuxCare Inc](https://tuxcare.com/almalinux-enterprise-support/)** for providing the patches for this update, and for all the work they do to support our project.
 
 Thanks to the researchers who found and reported these flaws (credited in PHP's advisories), to the PHP developers who wrote the fixes, and to the PHP security team for coordinating the release.
 
