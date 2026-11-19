@@ -3,7 +3,11 @@ on: pull_request
 
 jobs:
   build-preview:
-    runs-on: ubuntu-latest
+    # RunsOn in the AlmaLinux org, GitHub-hosted runners in forks. The Hugo
+    # build is CPU-bound, so this asks for the fastest instance types first,
+    # on-demand so RunsOn tries them in order. See "Runners" in
+    # .github/workflows/README.md.
+    runs-on: ${{ github.repository_owner == 'AlmaLinux' && format('runs-on={0}/family=m8azn.3xlarge+c8a.4xlarge+c8i.4xlarge/spot=false/image=ubuntu26-full-x64', github.run_id) || 'ubuntu-latest' }}
     permissions:
       contents: read
       actions: read
