@@ -66,6 +66,29 @@ Previews used to deploy every push of a PR to the same `pr-<number>` alias. Clou
 
 Adding the commit to the alias means every push deploys to a hostname that has never been requested, so nothing stale can be cached for it. The trade-off is that the preview URL changes on every push. Each deploy posts a new comment on the PR with the current URL, and old URLs keep pointing at the build they were made from.
 
+## Runners
+
+In the AlmaLinux organization, every job here runs on [RunsOn](https://runs-on.com/), which starts a fresh EC2 instance in our AWS account for each job and terminates it afterwards. Anywhere else, such as a contributor's fork, the same job runs on GitHub's `ubuntu-latest`. Each job chooses with the same expression:
+
+```yaml
+runs-on: ${{ github.repository_owner == 'AlmaLinux' && format('runs-on={0}/image=ubuntu26-full-x64', github.run_id) || 'ubuntu-latest' }}
+```
+
+- Most jobs have no `runner=` label, so RunsOn uses its default size, `2cpu-linux-x64` (2 vCPUs), on a spot instance. RunsOn tries spot first and falls back to on-demand if AWS has no spot capacity.
+- Build Preview and Publish, which run the Hugo build, add `/family=m8azn.3xlarge+c8a.4xlarge+c8i.4xlarge/spot=false`. The build is CPU-bound and benefits most from a fast clock, so the list starts with the fastest type: `m8azn.3xlarge` (12 vCPUs, up to 5 GHz), then `c8a.4xlarge` (16 vCPUs, 4.5 GHz), then `c8i.4xlarge` (16 vCPUs, 3.9 GHz). These jobs run on-demand because for on-demand RunsOn tries exact instance types in list order. For spot, AWS treats the list as unordered.
+  - When this was set up in November 2026, the Hugo build took 69s on the default 2 vCPUs, 32 to 52s on GitHub's 4-vCPU runners, 27s on an 8-vCPU `c8i-flex.2xlarge`, 21s on a 4-vCPU `m8azn.xlarge` and 14s on `m8azn.3xlarge`.
+- To resize a job, change the `runner=` or `family=` label in the format string and compare the charts described below before and after.
+- `image=ubuntu26-full-x64` is RunsOn's image built to match GitHub's Ubuntu 26.04 runner image. Forks use `ubuntu-latest`, which may be an older Ubuntu release, so a step that relies on something new in 26.04 can pass here and fail in a fork.
+- `github.repository_owner` is the repository the workflow runs in, not where the code came from. A pull request from a fork runs in this repository, so its Build Preview runs on RunsOn too, once a maintainer approves it (see "Who can trigger what"). Only workflows running inside a fork, such as Prettier on a push to the fork's own branch, fall back to `ubuntu-latest`.
+- If the RunsOn GitHub App is not enabled for this repository, RunsOn jobs wait in the queue with no error until GitHub drops them after 24 hours.
+- `publish-preview.yml` and `cleanup-preview.yml` always run the copy on `master` (see "Gotchas"), so a change to their runner only takes effect once merged.
+
+### Resource usage charts
+
+At the end of every RunsOn job, the "Complete runner" step prints charts of CPU load, CPU use per core, memory, disk I/O, network and filesystem use, followed by summary statistics and the job's estimated cost next to what a GitHub-hosted runner would have cost. RunsOn draws these itself, so the workflows need no extra step for them.
+
+Use the charts to decide whether a job needs a different runner. CPU near 100% across all cores for most of the build means more vCPUs would help. One core busy while the others idle means a faster clock would help more than extra cores. Low averages everywhere mean a bigger instance would only cost more.
+
 ## Secrets and variables
 
 | Name                      | Kind     | Used by                                                                          |
@@ -91,7 +114,7 @@ Two things to know:
 
 ## Who can trigger what
 
-The repository requires workflow approval for all external contributors, so a pull request from someone without write access sits at "action required" until a maintainer approves it. Nothing builds and nothing deploys before that click.
+The repository requires workflow approval for all external contributors, so a pull request from someone without write access sits at "action required" until a maintainer approves it. Nothing builds and nothing deploys before that click. Once approved, the build runs on our RunsOn instances in AWS rather than on GitHub's machines (see "Runners").
 
 Once the build is approved and succeeds, the deploy runs automatically. There is no second approval. That is intentional: the maintainer's approval of the build is the trust decision, and the deploy publishes only to a per-PR preview alias, never to the live site.
 
