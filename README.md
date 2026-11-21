@@ -127,6 +127,8 @@ When an AlmaLinux Day is announced, add an "Upcoming events" block directly abov
 
 Once the event is over, move its `<li>` to the top of the "Past events" list, remove its `<i>` icon (past events are a compact text list), and delete the "Upcoming events" block if it's empty. Run `python3 find_missing_i18n_strings.py` after either change.
 
+Add AlmaLinux Day events to the "Events" section of `static/llms.txt` too: new events go at the top marked "upcoming", and once the event is over, drop the "upcoming" note.
+
 To promote any event more widely, including conferences we're attending, add it to the announcement strip (`#al-motd`, at the bottom of the same file) with the `al-motd-event` class, and remove it from the strip once the event is over. A single Events page is planned (see [#61](https://github.com/AlmaLinux/almalinux.org/issues/61)) and will replace the menu list when it ships.
 
 ### Toggling post-event state

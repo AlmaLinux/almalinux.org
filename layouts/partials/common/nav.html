@@ -66,7 +66,7 @@
             <span class="al-language-current">{{ $.Language.Label }}</span>
           </button>
           <ul
-            class="dropdown-menu dropdown-menu-end"
+            class="dropdown-menu dropdown-menu-end al-language-menu"
             aria-labelledby="al-topbar-language">
             {{ range $.AllTranslations }}
               <li>
@@ -500,6 +500,21 @@
                 {{/* AlmaLinux Day events only (not conferences we attend), newest first. When an event is announced, add an "Upcoming events" block above "Past events" (README, "Contributing - Events", Step 4), and move the event down to "Past events" once it is over. This list goes away when the single Events page (issue #61) ships. */}}
                 <div class="al-nav-group">
                   <p class="al-nav-heading">{{ i18n "Events" }}</p>
+                  <p class="al-nav-subheading" id="al-nav-events-upcoming">
+                    {{ i18n "Upcoming events" }}
+                  </p>
+                  <ul
+                    class="al-nav-events-upcoming"
+                    aria-labelledby="al-nav-events-upcoming">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="{{ "/almalinux-day-tokyo-2027/" | relLangURL }}">
+                        <i class="bi bi-calendar-event" aria-hidden="true"></i>
+                        {{ i18n "AlmaLinux Day: Tokyo 2027" }}
+                      </a>
+                    </li>
+                  </ul>
                   <p class="al-nav-subheading" id="al-nav-events-past">
                     {{ i18n "Past events" }}
                   </p>
@@ -679,13 +694,9 @@
     <div class="container ps-3">
       <div class="text">
         <i class="bi bi-box-seam"></i>
-        <a href="{{ "/blog/2026-09-17-announcing-99-beta/" | relLangURL }}"
-          >{{ i18n "AlmaLinux OS 9.9 Beta" }}</a
-        >
-        {{ i18n "now available!" }} &nbsp;|&nbsp;
-        <i class="bi bi-box-seam"></i>
-        <a href="{{ "/blog/2026-09-10-announcing-103-beta/" | relLangURL }}"
-          >{{ i18n "AlmaLinux OS 10.3 Beta" }}</a
+        <a
+          href="{{ "/blog/2026-11-16-almalinux_103_and_99_stable/" | relLangURL }}"
+          >{{ i18n "AlmaLinux OS 10.3 and 9.9" }}</a
         >
         {{ i18n "now available!" }} &nbsp;|&nbsp;
         <i class="bi bi-geo-alt"></i>

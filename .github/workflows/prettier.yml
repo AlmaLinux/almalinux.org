@@ -5,10 +5,12 @@ on:
 permissions: {}
 jobs:
   prettier:
-    runs-on: ubuntu-latest
+    # RunsOn in the AlmaLinux org, GitHub-hosted runners in forks.
+    # See "Runners" in .github/workflows/README.md.
+    runs-on: ${{ github.repository_owner == 'AlmaLinux' && format('runs-on={0}/image=ubuntu26-full-x64', github.run_id) || 'ubuntu-latest' }}
     steps:
       - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: lts/*
       - run: |
@@ -16,6 +18,6 @@ jobs:
           npx prettier --write .
         env:
           HUGO_SKIP_DOWNLOAD: 1
-      - uses: autofix-ci/action@635ffb0c9798bd160680f18fd73371e355b85f27 # v1.3.2
+      - uses: autofix-ci/action@c5b2d67aa2274e7b5a18224e8171550871fc7e4a # v1.3.4
         with:
           commit-message: "Apply Prettier format"

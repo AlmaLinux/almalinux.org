@@ -12,7 +12,9 @@ jobs:
     if: >
       github.event.workflow_run.conclusion == 'success' &&
       github.event.workflow_run.event == 'pull_request'
-    runs-on: ubuntu-latest
+    # RunsOn in the AlmaLinux org, GitHub-hosted runners in forks.
+    # See "Runners" in .github/workflows/README.md.
+    runs-on: ${{ github.repository_owner == 'AlmaLinux' && format('runs-on={0}/image=ubuntu26-full-x64', github.run_id) || 'ubuntu-latest' }}
     permissions:
       contents: read
       deployments: write
@@ -21,7 +23,7 @@ jobs:
 
     steps:
       - name: Download artifacts from triggering workflow
-        uses: actions/github-script@v7
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           script: |
             const run_id = context.payload.workflow_run.id;
@@ -59,7 +61,7 @@ jobs:
 
       - name: Resolve and verify PR number
         id: pr
-        uses: actions/github-script@v7
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           script: |
             const fs = require("fs");
@@ -124,7 +126,7 @@ jobs:
           command: pages deploy public --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }} --branch=${{ steps.pr.outputs.alias }}
 
       - name: Comment deployment URL on PR
-        uses: actions/github-script@v7
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           script: |
             const aliasUrl = `${{ steps.deploy.outputs.pages-deployment-alias-url }}`;

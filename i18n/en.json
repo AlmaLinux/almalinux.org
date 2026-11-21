@@ -663,8 +663,6 @@
    "Watch Joe Brockmeier's talk 'Open source is not a spectator sport' from Ohio LinuxFest 2023": "Watch Joe Brockmeier's talk 'Open source is not a spectator sport' from Ohio LinuxFest 2023",
    "“Open source is not a spectator sport” — Joe Brockmeier, Ohio LinuxFest, September 2023.": "“Open source is not a spectator sport” — Joe Brockmeier, Ohio LinuxFest, September 2023.",
    "Become a member — Help sustain and steer AlmaLinux": "Become a member — Help sustain and steer AlmaLinux",
-   "AlmaLinux OS 9.9 Beta": "AlmaLinux OS 9.9 Beta",
-   "AlmaLinux OS 10.3 Beta": "AlmaLinux OS 10.3 Beta",
    "now available!": "now available!",
    "Trusted by": "Trusted by",
    "Afternoon": "Afternoon",
@@ -1293,5 +1291,8 @@
    "Benefits specifically for our community": "Benefits specifically for our community",
    "AMD EPYC 4004 Series (2024)": "AMD EPYC 4004 Series (2024)",
    "AMD Ryzen 3000 and 5000 Series (2022)": "AMD Ryzen 3000 and 5000 Series (2022)",
-   "Vendor certifications:": "Vendor certifications:"
+   "Vendor certifications:": "Vendor certifications:",
+   "AlmaLinux OS 10.3 and 9.9": "AlmaLinux OS 10.3 and 9.9",
+   "AlmaLinux Day: Tokyo 2027": "AlmaLinux Day: Tokyo 2027",
+   "Upcoming events": "Upcoming events"
 }

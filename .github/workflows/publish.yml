@@ -5,7 +5,11 @@ on:
 
 jobs:
   publish:
-    runs-on: ubuntu-latest
+    # RunsOn in the AlmaLinux org, GitHub-hosted runners in forks. The Hugo
+    # build is CPU-bound, so this asks for the fastest instance types first,
+    # on-demand so RunsOn tries them in order. See "Runners" in
+    # .github/workflows/README.md.
+    runs-on: ${{ github.repository_owner == 'AlmaLinux' && format('runs-on={0}/family=m8azn.3xlarge+c8a.4xlarge+c8i.4xlarge/spot=false/image=ubuntu26-full-x64', github.run_id) || 'ubuntu-latest' }}
     permissions:
       pull-requests: write
       contents: write
@@ -19,10 +23,9 @@ jobs:
         run: python3 find_missing_i18n_strings.py
 
       - name: Setup Node
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: lts/*
-          cache: npm
 
       # Installs Hugo and Dart Sass at the versions pinned in package.json
       - name: Install npm dependencies
@@ -65,9 +68,6 @@ jobs:
 
       - name: move headers file into place
         run: cp _headers public/
-
-      - name: build search index
-        run: npx --no-install pagefind --site "public"
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/wrangler-action@v4
