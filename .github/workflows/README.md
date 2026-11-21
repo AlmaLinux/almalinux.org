@@ -80,6 +80,7 @@ runs-on: ${{ github.repository_owner == 'AlmaLinux' && format('runs-on={0}/image
 - To resize a job, change the `runner=` or `family=` label in the format string and compare the charts described below before and after.
 - `image=ubuntu26-full-x64` is RunsOn's image built to match GitHub's Ubuntu 26.04 runner image. Forks use `ubuntu-latest`, which may be an older Ubuntu release, so a step that relies on something new in 26.04 can pass here and fail in a fork.
 - `github.repository_owner` is the repository the workflow runs in, not where the code came from. A pull request from a fork runs in this repository, so its Build Preview runs on RunsOn too, once a maintainer approves it (see "Who can trigger what"). Only workflows running inside a fork, such as Prettier on a push to the fork's own branch, fall back to `ubuntu-latest`.
+- Build Preview and autofix.ci run code from pull requests, including approved forks, so both set `timeout-minutes: 10`. Without it, GitHub lets a job run for 6 hours, which a stuck build or a malicious pull request could spend on our instances. A normal run of either takes about 2 minutes or less, so raise the limit only if the build itself grows.
 - If the RunsOn GitHub App is not enabled for this repository, RunsOn jobs wait in the queue with no error until GitHub drops them after 24 hours.
 - `publish-preview.yml` and `cleanup-preview.yml` always run the copy on `master` (see "Gotchas"), so a change to their runner only takes effect once merged.
 
