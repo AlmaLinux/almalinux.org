@@ -8,6 +8,9 @@ jobs:
     # on-demand so RunsOn tries them in order. See "Runners" in
     # .github/workflows/README.md.
     runs-on: ${{ github.repository_owner == 'AlmaLinux' && format('runs-on={0}/family=m8azn.3xlarge+c8a.4xlarge+c8i.4xlarge/spot=false/image=ubuntu26-full-x64', github.run_id) || 'ubuntu-latest' }}
+    # Runs code from pull requests, including approved forks. A normal run
+    # takes about 2 minutes. See "Runners" in .github/workflows/README.md.
+    timeout-minutes: 10
     permissions:
       contents: read
       actions: read
