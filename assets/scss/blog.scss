@@ -4,6 +4,22 @@
 @use "functions";
 @use "bootstrap-icons.scss";
 
+// Blog post and blog index reading styles
+$al-blog-text: rgba(variables.$al-c-soft-peach-lighter, 0.9);
+$al-blog-muted: rgba(variables.$al-c-soft-peach-lighter, 0.7);
+$al-blog-line: rgba(variables.$al-c-soft-peach-lighter, 0.14);
+
+// Bootstrap 5.3 heading sizes (as on the Media and Entertainment page):
+// fluid below Bootstrap's xl breakpoint (1200px), fixed from xl up.
+@mixin al-blog-heading-size($fluid, $max) {
+  font-size: $fluid;
+  line-height: 1.2;
+
+  @media (min-width: 1200px) {
+    font-size: $max;
+  }
+}
+
 
 .al-page-blog-index {
  
@@ -112,14 +128,26 @@
 
   .container{
     padding: 3rem 15px !important;
-  
+    max-width: 990px; // 960px column for text and images
+
+  // Same style as the post titles on the blog index
+  h1.al-section-title {
+    @include al-blog-heading-size(calc(1.325rem + 0.9vw), 2rem);
+    font-weight: 500;
+  }
+
+  .al-article-back {
+    color: variables.$al-link-color;
+  }
+
   article {
     .al-article-date {
-      color: #efefef;
-      font-size: 0.82rem;
+      color: $al-blog-muted;
+      font-size: 14px;
 
       i {
-        font-size: 0.8rem;
+        font-size: 13px;
+        margin-right: 0.35rem;
 
         @at-root {
           [dir=rtl] & {
@@ -139,21 +167,22 @@
     }
     .al-page-blog-author{
         img{
-          width: 40px;
-          height: 40px;
+          width: 56px;
+          height: 56px;
+          object-fit: cover;
         }
         .al-page-blog-author-name{
-          font-style: italic;
-          font-size: 14px;
-          margin: 0px;
-          margin-bottom: 5px;
-          color: #C4E1FF;
+          font-size: 15px;
+          font-weight: 600;
+          line-height: 1.3;
+          margin: 0.4rem 0 0.15rem;
+          color: variables.$al-c-soft-peach-lighter;
         }
         .al-page-blog-author-bio{
-          font-style: italic;
-          font-size: 12px;
+          font-size: 13.5px;
+          line-height: 1.4;
           margin: 0px;
-          color: #C4E1FF;
+          color: $al-blog-muted;
         }
       }
   }
@@ -276,5 +305,191 @@
   figure.al-blog-portrait + h3 {
     clear: none;
     margin-top: 0;
+  }
+}
+
+// Article body (blog posts)
+.al-page-blog-post .al-article-content.al-wysiwyg {
+  color: $al-blog-text;
+
+  &,
+  p,
+  ul,
+  ol,
+  li {
+    font-size: variables.$al-font-base-size;
+    line-height: 1.5;
+  }
+
+  p {
+    margin: 0 0 1.1em;
+  }
+
+  li {
+    margin: 0.25em 0;
+  }
+
+  h2 {
+    @include al-blog-heading-size(calc(1.3rem + 0.6vw), 1.75rem);
+    font-weight: 500;
+    margin: 2em 0 0.6em;
+  }
+
+  h3 {
+    @include al-blog-heading-size(calc(1.275rem + 0.3vw), 1.5rem);
+    font-weight: 500;
+    margin: 1.8em 0 0.5em;
+  }
+
+  h2,
+  h3,
+  h4,
+  strong {
+    color: variables.$al-c-soft-peach-lighter;
+  }
+
+  a {
+    color: variables.$al-link-color;
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 1px;
+
+    &:hover {
+      color: variables.$al-c-soft-peach-lighter;
+    }
+  }
+
+  // Header image at full column width (the template caps it at 850px inline)
+  > .mx-auto:first-child {
+    max-width: none !important;
+    margin-bottom: 2rem;
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
+
+  code {
+    font-family: variables.$al-font-family-mono;
+    font-size: 0.88em;
+    padding: 0.15em 0.4em;
+    border-radius: 5px;
+    overflow-wrap: anywhere;
+    color: variables.$al-c-soft-peach-lighter;
+    background: rgba(variables.$al-c-black-pearl-dark, 0.3);
+    border: 1px solid $al-blog-line;
+  }
+
+  .highlight {
+    margin: 1.4em 0 1.6em;
+  }
+
+  // Code blocks. Chroma sets the background inline, hence !important.
+  pre {
+    font-family: variables.$al-font-family-mono;
+    font-size: 14px;
+    line-height: 1.65;
+    padding: 1rem 1.25rem;
+    margin: 0;
+    border-radius: 10px;
+    overflow-x: auto;
+    white-space: pre;
+    background-color: variables.$al-c-black-pearl !important;
+    border: 1px solid rgba(variables.$al-c-soft-peach-lighter, 0.08);
+
+    code {
+      all: unset;
+      font-family: inherit;
+    }
+  }
+
+  // Tables (also overrides the global `th, td` rule in _bundle-extras.scss)
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    margin: 1.4em 0 1.6em;
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  th,
+  td {
+    padding: 0.6rem 0.8rem;
+    vertical-align: top;
+    text-align: left;
+    color: $al-blog-text !important;
+    border: none;
+    border-bottom: 1px solid $al-blog-line;
+  }
+
+  th {
+    font-weight: 700;
+    color: variables.$al-c-soft-peach-lighter !important;
+    background: variables.$al-c-black-pearl; // same as code blocks
+  }
+
+  // Keep identifiers (CVE links, inline code) on one line
+  td a,
+  td code {
+    white-space: nowrap;
+  }
+
+  // Below Bootstrap's md breakpoint, wide tables scroll sideways
+  @media (max-width: 767.98px) {
+    table {
+      display: block;
+      overflow-x: auto;
+    }
+  }
+}
+
+// Blog index: clear separation between posts
+.al-page-blog-post.custom-blog-page-section {
+  a.al-article-title-link h3 {
+    @include al-blog-heading-size(calc(1.325rem + 0.9vw), 2rem);
+    font-weight: 500;
+    margin: 0;
+    color: variables.$al-c-soft-peach-lighter;
+  }
+
+  a.al-article-title-link:hover h3 {
+    color: variables.$al-link-color;
+  }
+
+  .al-article-feature {
+    padding-bottom: 3rem;
+    margin-bottom: 3rem !important;
+    border-bottom: 1px solid $al-blog-line;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    > .mx-auto {
+      max-width: none !important;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
+
+  .al-article-excerpt {
+    font-size: variables.$al-font-base-size;
+    line-height: 1.65;
+    color: $al-blog-text;
+  }
+
+  a.al-article-continue {
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: variables.$al-link-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
