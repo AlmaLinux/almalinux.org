@@ -372,7 +372,6 @@
    "AlmaLinux Wiki": "AlmaLinux Wiki",
    "Join Mailing Lists": "Join Mailing Lists",
    "Platinum Sponsor + Founder": "Platinum Sponsor + Founder",
-   "TuxCare, a division of CloudLinux Inc., the founding sponsor of the AlmaLinux OS Project, provides tailored support to enhance the performance, security, and reliability of your AlmaLinux workloads.": "TuxCare, a division of CloudLinux Inc., the founding sponsor of the AlmaLinux OS Project, provides tailored support to enhance the performance, security, and reliability of your AlmaLinux workloads.",
    "TuxCare’s Enterprise Support for AlmaLinux": "TuxCare’s Enterprise Support for AlmaLinux",
    "Get Technical Support": "Get Technical Support",
    "Get Help with Certification": "Get Help with Certification",
@@ -800,7 +799,6 @@
    "The AlmaLinux OS 9 kernel and OpenSSL modules are added to NIST's Implementation Under Test list.": "The AlmaLinux OS 9 kernel and OpenSSL modules are added to NIST's Implementation Under Test list.",
    "The AlmaLinux OS 9.2 kernel is FIPS 140-3 validated on the NIST CMVP Active list (certificate #4750), the first FIPS 140-3 kernel certificate for an EL9 distribution.": "The AlmaLinux OS 9.2 kernel is FIPS 140-3 validated on the NIST CMVP Active list (certificate #4750), the first FIPS 140-3 kernel certificate for an EL9 distribution.",
    "The OpenSSL FIPS provider is added to the Active list (certificate #4823).": "The OpenSSL FIPS provider is added to the Active list (certificate #4823).",
-   "TuxCare (CloudLinux)": "TuxCare (CloudLinux)",
    "and the": "and the",
    "A terminal on AlmaLinux 9 showing the OpenSSL FIPS provider active and FIPS mode enabled": "A terminal on AlmaLinux 9 showing the OpenSSL FIPS provider active and FIPS mode enabled",
    "ALESCo brings together the maintainers, packagers, and SIG leads who build and sustain AlmaLinux OS. It is not a closed body. Anyone working on or using AlmaLinux is welcome to bring proposals, raise concerns, and help shape technical direction in the open.": "ALESCo brings together the maintainers, packagers, and SIG leads who build and sustain AlmaLinux OS. It is not a closed body. Anyone working on or using AlmaLinux is welcome to bring proposals, raise concerns, and help shape technical direction in the open.",
@@ -839,7 +837,6 @@
    "Free for non-commercial use": "Free for non-commercial use",
    "That makes AlmaLinux the first EL9 distribution with a FIPS 140-3 validated kernel, and the validated packages are free for non-commercial use. Here is what FIPS is, why it matters, and how to turn it on.": "That makes AlmaLinux the first EL9 distribution with a FIPS 140-3 validated kernel, and the validated packages are free for non-commercial use. Here is what FIPS is, why it matters, and how to turn it on.",
    "Validation and compliance are not the same thing. A module earns validation by passing independent lab testing and joining the Active list. A system is compliant only when it runs a validated module in FIPS mode within its certified operational environment, and routine changes to the validated cryptography, such as an ordinary patch or kernel update, can move it outside that boundary. Keeping a system compliant over time therefore depends on updates that preserve the validated modules. Those packages are free for non-commercial use; ongoing FIPS-compliant patching and commercial use are offered through TuxCare's Enterprise Support. See": "Validation and compliance are not the same thing. A module earns validation by passing independent lab testing and joining the Active list. A system is compliant only when it runs a validated module in FIPS mode within its certified operational environment, and routine changes to the validated cryptography, such as an ordinary patch or kernel update, can move it outside that boundary. Keeping a system compliant over time therefore depends on updates that preserve the validated modules. Those packages are free for non-commercial use; ongoing FIPS-compliant patching and commercial use are offered through TuxCare's Enterprise Support. See",
-   "The validation was sponsored by TuxCare, the enterprise support division of CloudLinux and a founding AlmaLinux platinum sponsor. TuxCare covered the considerable cost and engineering effort, and makes the validated packages available to the community for non-commercial use.": "The validation was sponsored by TuxCare, the enterprise support division of CloudLinux and a founding AlmaLinux platinum sponsor. TuxCare covered the considerable cost and engineering effort, and makes the validated packages available to the community for non-commercial use.",
    ", the international standard (ISO/IEC 15408) for independently evaluating the security of IT products. For a free, community-built OS to meet that bar is a milestone for everyone who uses and contributes to AlmaLinux.": ", the international standard (ISO/IEC 15408) for independently evaluating the security of IT products. For a free, community-built OS to meet that bar is a milestone for everyone who uses and contributes to AlmaLinux.",
    "A Common Criteria certificate is recognized across borders, so this independent assurance follows AlmaLinux wherever the community runs it, from personal projects to the most critical systems.": "A Common Criteria certificate is recognized across borders, so this independent assurance follows AlmaLinux wherever the community runs it, from personal projects to the most critical systems.",
    "A community OS, independently certified": "A community OS, independently certified",
@@ -1291,5 +1288,8 @@
    "Benefits specifically for our community": "Benefits specifically for our community",
    "AlmaLinux OS 10.3 and 9.9": "AlmaLinux OS 10.3 and 9.9",
    "AlmaLinux Day: Tokyo 2027": "AlmaLinux Day: Tokyo 2027",
-   "Upcoming events": "Upcoming events"
+   "Upcoming events": "Upcoming events",
+   "The validation was sponsored by TuxCare, a founding AlmaLinux platinum sponsor. TuxCare covered the considerable cost and engineering effort, and makes the validated packages available to the community for non-commercial use.": "The validation was sponsored by TuxCare, a founding AlmaLinux platinum sponsor. TuxCare covered the considerable cost and engineering effort, and makes the validated packages available to the community for non-commercial use.",
+   "TuxCare": "TuxCare",
+   "TuxCare, the founding sponsor of the AlmaLinux OS Project, provides tailored support to enhance the performance, security, and reliability of your AlmaLinux workloads.": "TuxCare, the founding sponsor of the AlmaLinux OS Project, provides tailored support to enhance the performance, security, and reliability of your AlmaLinux workloads."
 }
