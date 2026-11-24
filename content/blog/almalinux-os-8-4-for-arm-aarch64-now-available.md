@@ -12,22 +12,17 @@ post:
   image:
 ---
 
+{{< release-highlights version="8.4" codename="Electric Cheetah" released="June 30, 2021" kernel="4.18.0-305" rhel="8.4" arches="aarch64" notes="https://wiki.almalinux.org/release-notes/8.4-arm.html" >}}
+
+- Stable release for ARM (aarch64)
+- Fastest mirror selected automatically in network install mode
+- OpenSCAP security profiles ready for production
+- Python 3.9
+- PostgreSQL 13
+
+{{< /release-highlights >}}
+
 The AlmaLinux OS Foundation is proud to announce the release of the only 100% community owned and governed CentOS alternative, AlmaLinux OS 8.4 Stable for the Arm/AArch64 architecture. Available now on a [mirror](https://mirrors.almalinux.org/isos/aarch64/8.4.html) near you! Download a fresh copy and then [join us](https://chat.almalinux.org/) to talk about it. Container images are also available on [Docker Hub](https://hub.docker.com/_/almalinux) and Quay.io.
-
-## Release highlights
-
-AlmaLinux OS 8.4 "Electric Cheetah":
-
-- Released: June 30, 2021
-- Kernel: `4.18.0-305`
-- Compatible with: Red Hat Enterprise Linux (RHEL) 8.4
-- Architectures: aarch64
-- What's new:
-  - Stable release for ARM (aarch64)
-  - Fastest mirror selected automatically in network install mode
-  - OpenSCAP security profiles ready for production
-  - Python 3.9
-  - PostgreSQL 13
 
 ## A Community Collaboration
 

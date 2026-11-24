@@ -106,7 +106,20 @@ header:
   npx hugo new --kind release blog/YYYY-MM-DD-almalinux_XY_and_AB_stable.md
   ```
 
-  It has a `description` field, a "Release highlights" list for each version (release date, kernel, RHEL compatibility, architectures, and what's new), and a heading for each version with a short anchor such as `{#10-3}`. Keep those anchors: the wiki release notes link to them, for example `/blog/2026-11-16-almalinux_103_and_99_stable/#10-3`. Copy the codename, date, and kernel exactly as they appear in the [wiki release notes](https://wiki.almalinux.org/release-notes/), so search engines see the same facts in both places.
+  It has a `description` field and a heading for each version with a short anchor such as `{#10-3}`. Keep those anchors: the wiki release notes link to them, for example `/blog/2026-11-16-almalinux_103_and_99_stable/#10-3`.
+
+  Right under each version heading is a Release highlights box, made with the `release-highlights` shortcode. In a post about a single version, put the box at the very top of the body, before the intro, so the intro wraps beside it. It floats beside that version's section on wide screens and sits above it on phones:
+
+  ```
+  {{< release-highlights version="10.3" codename="Mauve Lion" released="November 16, 2026" kernel="6.12.0-264.16.1.el10_3" rhel="10.3" arches="x86_64, x86_64_v2, aarch64, ppc64le, s390x, i686 userspace" >}}
+
+  - ModSecurity returns (2.9.14 with OWASP CRS 4.22.0)
+  - Podman 6.1.1
+
+  {{< /release-highlights >}}
+  ```
+
+  The list inside is "What's new": 3 to 5 headline changes. Keep the blank lines around the list, or Prettier (which runs when you commit) indents the closing tag into the last list item and breaks the box. The box links to the wiki release notes for `version` automatically. For a release whose wiki page isn't named after the version alone (such as `8.4-arm`), add `notes="https://wiki.almalinux.org/release-notes/8.4-arm.html"`. Leave out any parameter you don't have, and its row is left out of the box. Copy the codename, date, kernel, architectures, and "What's new" exactly as they appear in the [wiki release notes](https://wiki.almalinux.org/release-notes/) box for the same version, so readers and search engines see the same facts in both places.
 
 - Templates are listed in `data/header_templates.yaml`, and their backgrounds live in `assets/header-templates/`. To add one, export a background with the logo but no text at 1920x1080, put it in that folder, and add an entry with the font, size and position of each line.
 

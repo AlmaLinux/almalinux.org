@@ -12,22 +12,17 @@ post:
   image: /brands/AlmaLinux_9.1.png
 ---
 
+{{< release-highlights version="9.1" codename="Lime Lynx" released="November 16, 2022" kernel="5.14.0-162.6.1.el9_1" rhel="9.1" arches="x86_64, aarch64, ppc64le, s390x, i686 userspace" >}}
+
+- Keylime remote attestation tool
+- PHP 8.1
+- Ruby 3.1
+- Node.js 18
+- GCC Toolset 12
+
+{{< /release-highlights >}}
+
 Hello Community! The AlmaLinux OS Foundation is proud to announce general availability of [AlmaLinux OS 9.1](https://mirrors.almalinux.org/isos.html) codenomaded "Lime Lynx".
-
-## Release highlights
-
-AlmaLinux OS 9.1 "Lime Lynx":
-
-- Released: November 16, 2022
-- Kernel: `5.14.0-162.6.1.el9_1`
-- Compatible with: Red Hat Enterprise Linux (RHEL) 9.1
-- Architectures: x86_64, aarch64, ppc64le, s390x
-- What's new:
-  - Keylime remote attestation tool
-  - PHP 8.1
-  - Ruby 3.1
-  - Node.js 18
-  - GCC Toolset 12
 
 Installation ISOs are available on mirrors now for 4 architectures:
 

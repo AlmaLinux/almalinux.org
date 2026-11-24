@@ -1294,5 +1294,12 @@
    "The validation was sponsored by TuxCare, a founding AlmaLinux platinum sponsor. TuxCare covered the considerable cost and engineering effort, and makes the validated packages available to the community for non-commercial use.": "The validation was sponsored by TuxCare, a founding AlmaLinux platinum sponsor. TuxCare covered the considerable cost and engineering effort, and makes the validated packages available to the community for non-commercial use.",
    "TuxCare": "TuxCare",
    "TuxCare, the founding sponsor of the AlmaLinux OS Project, provides tailored support to enhance the performance, security, and reliability of your AlmaLinux workloads.": "TuxCare, the founding sponsor of the AlmaLinux OS Project, provides tailored support to enhance the performance, security, and reliability of your AlmaLinux workloads.",
-   "For more information, see the AlmaLinux wiki:": "For more information, see the AlmaLinux wiki:"
+   "For more information, see the AlmaLinux wiki:": "For more information, see the AlmaLinux wiki:",
+   "Arches": "Arches",
+   "Compatible": "Compatible",
+   "Full release notes on the wiki": "Full release notes on the wiki",
+   "Kernel": "Kernel",
+   "Release highlights": "Release highlights",
+   "Released": "Released",
+   "What's new": "What's new"
 }

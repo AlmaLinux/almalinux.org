@@ -12,21 +12,16 @@ post:
   image: /blog-images/8.8release.png
 ---
 
+{{< release-highlights version="8.8" codename="Sapphire Caracal" released="May 18, 2023" kernel="4.18.0-477.10.1.el8_8" rhel="8.8" arches="x86_64, aarch64, ppc64le, s390x, i686 userspace" >}}
+
+- Python 3.11
+- PostgreSQL 15
+- GCC Toolset 12
+- Kernel FIPS mode settings adjusted for FIPS 140-3
+
+{{< /release-highlights >}}
+
 Hello Сommunity! The AlmaLinux OS Foundation is proud to announce the general availability of [AlmaLinux OS 8.8](https://mirrors.almalinux.org/isos.html) codenamed "Sapphire Caracal"!
-
-## Release highlights
-
-AlmaLinux OS 8.8 "Sapphire Caracal":
-
-- Released: May 18, 2023
-- Kernel: `4.18.0-477.10.1.el8_8`
-- Compatible with: Red Hat Enterprise Linux (RHEL) 8.8
-- Architectures: x86_64, aarch64, ppc64le, s390x
-- What's new:
-  - Python 3.11
-  - PostgreSQL 15
-  - GCC Toolset 12
-  - Kernel FIPS mode settings adjusted for FIPS 140-3
 
 Installation ISOs are available on the mirrors now for all 4 architectures:
 

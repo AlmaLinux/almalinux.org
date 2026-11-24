@@ -12,22 +12,17 @@ post:
   image: /blog-images/9-release-graphic.png
 ---
 
+{{< release-highlights version="9.0" codename="Emerald Puma" released="May 26, 2022" kernel="5.14.0-70.13.1.el9_0" rhel="9.0" arches="x86_64, aarch64, ppc64le, s390x, i686 userspace" >}}
+
+- New RPM-GPG-KEY-AlmaLinux-9 signing key
+- SHA-1 signatures restricted in the default crypto policy
+- New SAP and SAPHANA repositories
+- GCC 11.2.1
+- PHP 8.0
+
+{{< /release-highlights >}}
+
 Hello Community! The AlmaLinux OS Foundation is proud to announce general availability of AlmaLinux OS 9.0. AlmaLinux 9 supports the following 4 architectures providing full parity with upstream:
-
-## Release highlights
-
-AlmaLinux OS 9.0 "Emerald Puma":
-
-- Released: May 26, 2022
-- Kernel: `5.14.0-70.13.1.el9_0`
-- Compatible with: Red Hat Enterprise Linux (RHEL) 9.0
-- Architectures: x86_64, aarch64, ppc64le, s390x
-- What's new:
-  - New RPM-GPG-KEY-AlmaLinux-9 signing key
-  - SHA-1 signatures restricted in the default crypto policy
-  - New SAP and SAPHANA repositories
-  - GCC 11.2.1
-  - PHP 8.0
 
 - Intel/AMD (x86_64)
 - ARM64 (aarch64)

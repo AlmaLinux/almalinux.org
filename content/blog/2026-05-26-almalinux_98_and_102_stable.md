@@ -22,35 +22,17 @@ This is the first time we have ever shipped two AlmaLinux releases on the same d
 
 Shipping both versions is made possible by [the goals we set for 2026](/blog/2026-03-10-almalinux-in-2026), and seeing it land is the proof that the work paid off. The payoff lands with you, too. As a user, you no longer have to wait another week for the second version to be released. Same day, same quality, both versions.
 
-## Release highlights
-
-AlmaLinux OS 9.8 "Olive Jaguar":
-
-- Released: May 26, 2026
-- Kernel: `5.14.0-687.5.3.el9_8`
-- Compatible with: Red Hat Enterprise Linux (RHEL) 9.8
-- Architectures: x86_64, aarch64, ppc64le, s390x
-- What's new:
-  - Python 3.14
-  - PostgreSQL 18
-  - MariaDB 11.8
-  - Shim 16.1 dual-signed with the Microsoft 2011 and 2023 UEFI Secure Boot certificates
-  - GCC Toolset 15
-
-AlmaLinux OS 10.2 "Lavender Lion":
-
-- Released: May 26, 2026
-- Kernel: `6.12.0-211.7.3.el10_2`
-- Compatible with: Red Hat Enterprise Linux (RHEL) 10.2
-- Architectures: x86_64, x86_64_v2, aarch64, ppc64le, s390x, i686 userspace
-- What's new:
-  - 32-bit (i686) userspace packages
-  - Python 3.14
-  - PostgreSQL 18
-  - Shim 16.1 dual-signed with the Microsoft 2011 and 2023 UEFI Secure Boot certificates
-  - GCC Toolset 15 (gcc 15.2.1)
-
 ## AlmaLinux OS 9.8 "Olive Jaguar" {#9-8}
+
+{{< release-highlights version="9.8" codename="Olive Jaguar" released="May 26, 2026" kernel="5.14.0-687.5.3.el9_8" rhel="9.8" arches="x86_64, aarch64, ppc64le, s390x, i686 userspace" >}}
+
+- Python 3.14
+- PostgreSQL 18
+- MariaDB 11.8
+- Shim 16.1 dual-signed with the Microsoft 2011 and 2023 UEFI Secure Boot certificates
+- GCC Toolset 15
+
+{{< /release-highlights >}}
 
 AlmaLinux 9.8 (kernel `5.14.0-687.5.3.el9_8`) introduces new compiler toolsets, updated module streams, and improved security. This release adds Python 3.14 as a new package, brings new streams for MariaDB, PostgreSQL, and Ruby, and ships an updated Node.js 24 module stream. Container and virtualization support is updated with the latest versions of Podman, Buildah, libvirt, QEMU-KVM, and skopeo. Security is improved with updates to OpenSSL, OpenSSH, GnuTLS, SELinux policies, and crypto-policies.
 
@@ -73,6 +55,16 @@ Torrents are available as well at:
 You can read the full release notes for this version on the wiki: [AlmaLinux OS 9.8 Release Notes](https://wiki.almalinux.org/release-notes/9.8.html).
 
 ## AlmaLinux OS 10.2 "Lavender Lion" {#10-2}
+
+{{< release-highlights version="10.2" codename="Lavender Lion" released="May 26, 2026" kernel="6.12.0-211.7.3.el10_2" rhel="10.2" arches="x86_64, x86_64_v2, aarch64, ppc64le, s390x, i686 userspace" >}}
+
+- 32-bit (i686) userspace packages
+- Python 3.14
+- PostgreSQL 18
+- Shim 16.1 dual-signed with the Microsoft 2011 and 2023 UEFI Secure Boot certificates
+- GCC Toolset 15 (gcc 15.2.1)
+
+{{< /release-highlights >}}
 
 AlmaLinux 10.2 (kernel `6.12.0-211.7.3.el10_2`) introduces updated compiler toolsets, new language and database packages, and improved security. This release adds Python 3.14, PostgreSQL 18, MariaDB 11.8, Ruby 4.0, and PHP 8.4 as new packages, alongside SDL3, libkrun, trustee, and FIDO Device Onboard tooling. The desktop sees GNOME 49. Container and virtualization support is updated with the latest versions of Podman, Buildah, libvirt, QEMU-KVM, and skopeo. Security is improved with updates to OpenSSL, OpenSSH, SSSD, SELinux policies, crypto-policies, and Keylime.
 

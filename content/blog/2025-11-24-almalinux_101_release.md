@@ -14,24 +14,19 @@ post:
   image: /blog-images/2025/almalinux101stable.png
 ---
 
+{{< release-highlights version="10.1" codename="Heliotrope Lion" released="November 24, 2025" kernel="6.12.0-124.8.1.el10_1" rhel="10.1" arches="x86_64, x86_64_v2, aarch64, ppc64le, s390x" >}}
+
+- Btrfs support, including booting from a Btrfs volume
+- GCC Toolset 15
+- OpenSSL 3.5 with ML-KEM, ML-DSA, and SLH-DSA post-quantum algorithms
+- RPMv6 signatures
+- Node.js 24
+
+{{< /release-highlights >}}
+
 # AlmaLinux OS 10.1 Stable Now Available
 
 Hello Community! The AlmaLinux OS Foundation is announcing the general availability of [AlmaLinux OS 10.1](https://mirrors.almalinux.org/isos.html) codenamed "Heliotrope Lion"!
-
-## Release highlights
-
-AlmaLinux OS 10.1 "Heliotrope Lion":
-
-- Released: November 24, 2025
-- Kernel: `6.12.0-124.8.1.el10_1`
-- Compatible with: Red Hat Enterprise Linux (RHEL) 10.1
-- Architectures: x86_64, x86_64_v2, aarch64, ppc64le, s390x
-- What's new:
-  - Btrfs support, including booting from a Btrfs volume
-  - GCC Toolset 15
-  - OpenSSL 3.5 with ML-KEM, ML-DSA, and SLH-DSA post-quantum algorithms
-  - RPMv6 signatures
-  - Node.js 24
 
 Installation ISOs are available on the mirrors now for all architectures:
 

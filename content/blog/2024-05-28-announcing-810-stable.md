@@ -14,24 +14,19 @@ post:
   image: /blog-images/2024/2024-05-28-almalinux-8-10-stable.png
 ---
 
+{{< release-highlights version="8.10" codename="Cerulean Leopard" released="May 28, 2024" kernel="4.18.0-553.el8_10" rhel="8.10" arches="x86_64, aarch64, ppc64le, s390x, i686 userspace" >}}
+
+- Python 3.12
+- PostgreSQL 16
+- Ruby 3.3
+- PHP 8.2
+- Re-added PCI IDs for hardware disabled upstream
+
+{{< /release-highlights >}}
+
 # AlmaLinux 8.10 Stable Now Available
 
 Hello Community! The AlmaLinux OS Foundation is announcing the general availability of [AlmaLinux OS 8.10](https://mirrors.almalinux.org/isos.html) codenamed "Cerulean Leopard"!
-
-## Release highlights
-
-AlmaLinux OS 8.10 "Cerulean Leopard":
-
-- Released: May 28, 2024
-- Kernel: `4.18.0-553.el8_10`
-- Compatible with: Red Hat Enterprise Linux (RHEL) 8.10
-- Architectures: x86_64, aarch64, ppc64le, s390x
-- What's new:
-  - Python 3.12
-  - PostgreSQL 16
-  - Ruby 3.3
-  - PHP 8.2
-  - Re-added PCI IDs for hardware disabled upstream
 
 Installation ISOs are available on the mirrors now for all 4 architectures:
 

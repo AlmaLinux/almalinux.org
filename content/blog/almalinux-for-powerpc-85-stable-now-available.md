@@ -12,19 +12,14 @@ post:
   image: /blog-images/ibm-power-systems.png
 ---
 
+{{< release-highlights version="8.5" codename="Arctic Sphynx" released="February 25, 2022" kernel="4.18.0-348" rhel="8.5" arches="ppc64le" notes="https://wiki.almalinux.org/release-notes/8.5-ppc.html" >}}
+
+- Stable release for IBM PowerPC (ppc64le)
+- Added the maven:3.6 module
+
+{{< /release-highlights >}}
+
 Hello Сommunity and PowerPC enthusiasts around the world! The AlmaLinux Foundation is proud to announce that the general availability of AlmaLinux OS 8.5 Stable for ppc64le is live.
-
-## Release highlights
-
-AlmaLinux OS 8.5 "Arctic Sphynx":
-
-- Released: February 25, 2022
-- Kernel: `4.18.0-348`
-- Compatible with: Red Hat Enterprise Linux (RHEL) 8.5
-- Architectures: ppc64le
-- What's new:
-  - Stable release for IBM PowerPC (ppc64le)
-  - Added the maven:3.6 module
 
 ## Images and Release Notes
 

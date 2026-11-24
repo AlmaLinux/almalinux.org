@@ -14,23 +14,18 @@ post:
   image: /blog-images/23.11.21.89stable.jpg
 ---
 
+{{< release-highlights version="8.9" codename="Midnight Oncilla" released="November 21, 2023" kernel="4.18.0-513.5.1.el8" rhel="8.9" arches="x86_64, aarch64, ppc64le, s390x, i686 userspace" >}}
+
+- Node.js 20
+- GCC Toolset 13
+- LLVM Toolset 16.0.6
+- OpenSCAP 1.3.8
+
+{{< /release-highlights >}}
+
 # AlmaLinux 8.9 Stable Now Available
 
 Hello Сommunity! The AlmaLinux OS Foundation is proud to announce the general availability of [AlmaLinux OS 8.9](https://mirrors.almalinux.org/isos.html) codenamed "Midnight Oncilla"!
-
-## Release highlights
-
-AlmaLinux OS 8.9 "Midnight Oncilla":
-
-- Released: November 21, 2023
-- Kernel: `4.18.0-513.5.1.el8`
-- Compatible with: Red Hat Enterprise Linux (RHEL) 8.9
-- Architectures: x86_64, aarch64, ppc64le, s390x
-- What's new:
-  - Node.js 20
-  - GCC Toolset 13
-  - LLVM Toolset 16.0.6
-  - OpenSCAP 1.3.8
 
 Installation ISOs are available on the mirrors now for all 4 architectures:
 

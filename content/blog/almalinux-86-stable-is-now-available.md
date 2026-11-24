@@ -12,22 +12,17 @@ post:
   image: /blog-images/8.6stable.png
 ---
 
+{{< release-highlights version="8.6" codename="Sky Tiger" released="May 12, 2022" kernel="4.18.0-372.9.1.el8" rhel="8.6" arches="x86_64, aarch64, ppc64le, s390x, i686 userspace" >}}
+
+- PHP 8.0
+- Perl 5.32
+- GCC Toolset 11
+- New Real Time and Real Time for NFV repositories
+- OpenSSH drop-in configuration support
+
+{{< /release-highlights >}}
+
 Hi, Community! The AlmaLinux OS Foundation is excited to announce that AlmaLinux OS 8.6 Stable is now available. Just like a flash after the beta release. This stable release is for the x86_64, aarch64 and ppc64le architectures and is ready for production installations and to power all your computing needs and workloads. Grab it from the nearest [mirror](https://mirrors.almalinux.org/isos) and join us on the [AlmaLinux Community Chat](https://chat.almalinux.org/) to discuss.
-
-## Release highlights
-
-AlmaLinux OS 8.6 "Sky Tiger":
-
-- Released: May 12, 2022
-- Kernel: `4.18.0-372.9.1.el8`
-- Compatible with: Red Hat Enterprise Linux (RHEL) 8.6
-- Architectures: x86_64, aarch64, ppc64le, s390x
-- What's new:
-  - PHP 8.0
-  - Perl 5.32
-  - GCC Toolset 11
-  - New Real Time and Real Time for NFV repositories
-  - OpenSSH drop-in configuration support
 
 Our Live Images, Raspberry Pi, Cloud and Container images updates are in process too, so stay tuned to catch the updates. Don't blink, you might miss them.
 

@@ -14,24 +14,19 @@ post:
   image: /blog-images/2024/2024-05-06-almalinux-9-4-stable.png
 ---
 
+{{< release-highlights version="9.4" codename="Seafoam Ocelot" released="May 6, 2024" kernel="5.14.0-427.13.1.el9_4" rhel="9.4" arches="x86_64, aarch64, ppc64le, s390x, i686 userspace" >}}
+
+- Python 3.12
+- PostgreSQL 16
+- Ruby 3.3
+- GCC Toolset 13
+- Re-added PCI IDs for hardware disabled upstream
+
+{{< /release-highlights >}}
+
 # AlmaLinux 9.4 Stable Now Available
 
 Hello Community! The AlmaLinux OS Foundation is announcing the general availability of [AlmaLinux OS 9.4](https://mirrors.almalinux.org/isos.html) codenamed "Seafoam Ocelot"!
-
-## Release highlights
-
-AlmaLinux OS 9.4 "Seafoam Ocelot":
-
-- Released: May 6, 2024
-- Kernel: `5.14.0-427.13.1.el9_4`
-- Compatible with: Red Hat Enterprise Linux (RHEL) 9.4
-- Architectures: x86_64, aarch64, ppc64le, s390x
-- What's new:
-  - Python 3.12
-  - PostgreSQL 16
-  - Ruby 3.3
-  - GCC Toolset 13
-  - Re-added PCI IDs for hardware disabled upstream
 
 Installation ISOs are available on the mirrors now for all 4 architectures:
 

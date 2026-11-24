@@ -20,25 +20,13 @@ Hello Community! The AlmaLinux OS Foundation is announcing the general availabil
 
 Thank you to everyone who tested the [X.Y beta](/blog/YYYY-MM-DD-announcing-xy-beta) and [A.B beta](/blog/YYYY-MM-DD-announcing-ab-beta).
 
-## Release highlights
-
-AlmaLinux OS X.Y "Codename":
-
-- Released: Month DD, YYYY
-- Kernel: `X.Y.Z-NNN.N.N.elX_Y`
-- Compatible with: Red Hat Enterprise Linux (RHEL) X.Y
-- Architectures: x86_64, x86_64_v2, aarch64, ppc64le, s390x, and i686 userspace
-- What's new: 3 to 5 headline changes, copied from the release notes
-
-AlmaLinux OS A.B "Codename":
-
-- Released: Month DD, YYYY
-- Kernel: `X.Y.Z-NNN.N.N.elA_B`
-- Compatible with: Red Hat Enterprise Linux (RHEL) A.B
-- Architectures: x86_64, aarch64, ppc64le, s390x, and i686 userspace
-- What's new: 3 to 5 headline changes, copied from the release notes
-
 ## AlmaLinux OS X.Y "Codename" {#X-Y}
+
+{{ "{{<" }} release-highlights version="X.Y" codename="Codename" released="Month D, YYYY" kernel="X.Y.Z-NNN.N.N.elX_Y" rhel="X.Y" arches="x86_64, x86_64_v2, aarch64, ppc64le, s390x, i686 userspace" {{ ">}}" }}
+
+- 3 to 5 headline changes, copied from the release notes
+
+{{ "{{<" }} /release-highlights {{ ">}}" }}
 
 Start with one sentence that stands on its own: the version, its kernel, and what's new. Then the details, in their own sections.
 
@@ -53,6 +41,12 @@ Installation ISOs are available on the mirrors now for all supported architectur
 You can read the full release notes on the wiki: [AlmaLinux OS X.Y Release Notes](https://wiki.almalinux.org/release-notes/X.Y.html).
 
 ## AlmaLinux OS A.B "Codename" {#A-B}
+
+{{ "{{<" }} release-highlights version="A.B" codename="Codename" released="Month D, YYYY" kernel="X.Y.Z-NNN.N.N.elA_B" rhel="A.B" arches="x86_64, aarch64, ppc64le, s390x" {{ ">}}" }}
+
+- 3 to 5 headline changes, copied from the release notes
+
+{{ "{{<" }} /release-highlights {{ ">}}" }}
 
 Start with one sentence that stands on its own: the version, its kernel, and what's new.
 
