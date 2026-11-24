@@ -50,7 +50,6 @@
     "Test": "Teste",
     "Network": "Rede",
     "Making the build pipeline more secure like ensuring that only trusted sources are used for builds, avoiding attack consequences, etc": "Tornando a build da pipeline mais segura garantindo que somente fontes confiáveis serão usados, evitando consequências de um ataque, etc",
-    "For more information, see the Almalinux wiki:": "Para mais informação, veja a wiki AlmaLinux:",
     "immudb is also protected against MITM attacks.": "Immudb também é protegido contra ataques MITM.",
     "Who is AlmaLinux OS for?": "Para quem é o AlmaLinux OS?",
     "Why did we call it AlmaLinux OS?": "Por que é chamado AlmaLinux OS?",
