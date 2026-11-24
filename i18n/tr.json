@@ -114,7 +114,6 @@
     "No one can change this data, not AlmaLinux or anyone else.": "Bu verileri AlmaLinux veya başka biri değiştiremez.",
     "immudb is also protected against MITM attacks.": "immudb, MITM saldırılarına karşı da dayanıklıdır.",
     "Getting Started": "Başlarken",
-    "For more information, see the Almalinux wiki:": "Daha fazla bilgi için Almalinux wiki'sine bakın:",
     "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux.": "ELevate, dağıtımdan bağımsız bir şekilde geliştirildi ve yalnızca AlmaLinux için değil, tüm ekosistem için bir araç olarak oluşturuldu.",
     "Tests details": "Test detayları",
     "Test": "Ölçek",
