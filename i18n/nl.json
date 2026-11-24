@@ -112,7 +112,6 @@
     ", the standard for open source for immutable databases, used by some of the world’s leading companies and governments.": ", de open-source-standaard voor onveranderlijke databases, die wordt gebruikt door enkele van ’s werelds toonaangevende bedrijven en overheden.",
     "AlmaLinux is leveraging Codenotary’s open source": "AlmaLinux maakt gebruik van Codenotarys open-source",
     "No one can change this data, not AlmaLinux or anyone else.": "Niemand kan deze gegevens wijzigen, niet AlmaLinux en niemand anders.",
-    "For more information, see the Almalinux wiki:": "Voor meer informatie raadpleeg de AlmaLinux-wiki:",
     "The encryption key is client-side verified and checked before every communication.": "De encryptiesleutel wordt aan clientzijde geverifieerd en gecontroleerd vóór elke communicatie.",
     "immudb is also protected against MITM attacks.": "immudb is ook beschermd tegen MITM-aanvallen.",
     "certified with AlmaLinux OS": "gecertificeerd met AlmaLinux OS",
