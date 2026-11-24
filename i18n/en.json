@@ -115,7 +115,6 @@
    "immudb is also protected against MITM attacks.": "immudb is also protected against MITM attacks.",
    "The encryption key is client-side verified and checked before every communication.": "The encryption key is client-side verified and checked before every communication.",
    "Getting Started": "Getting Started",
-   "For more information, see the Almalinux wiki:": "For more information, see the Almalinux wiki:",
    "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux.": "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux.",
    "certified with AlmaLinux OS": "certified with AlmaLinux OS",
    "Compatibility you can trust": "Compatibility you can trust",
@@ -1294,5 +1293,6 @@
    "Upcoming events": "Upcoming events",
    "The validation was sponsored by TuxCare, a founding AlmaLinux platinum sponsor. TuxCare covered the considerable cost and engineering effort, and makes the validated packages available to the community for non-commercial use.": "The validation was sponsored by TuxCare, a founding AlmaLinux platinum sponsor. TuxCare covered the considerable cost and engineering effort, and makes the validated packages available to the community for non-commercial use.",
    "TuxCare": "TuxCare",
-   "TuxCare, the founding sponsor of the AlmaLinux OS Project, provides tailored support to enhance the performance, security, and reliability of your AlmaLinux workloads.": "TuxCare, the founding sponsor of the AlmaLinux OS Project, provides tailored support to enhance the performance, security, and reliability of your AlmaLinux workloads."
+   "TuxCare, the founding sponsor of the AlmaLinux OS Project, provides tailored support to enhance the performance, security, and reliability of your AlmaLinux workloads.": "TuxCare, the founding sponsor of the AlmaLinux OS Project, provides tailored support to enhance the performance, security, and reliability of your AlmaLinux workloads.",
+   "For more information, see the AlmaLinux wiki:": "For more information, see the AlmaLinux wiki:"
 }
