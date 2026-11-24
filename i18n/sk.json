@@ -74,7 +74,6 @@
     "immudb is also protected against MITM attacks.": "immudb je chránená aj pred útokmi typu MITM.",
     "The encryption key is client-side verified and checked before every communication.": "Šifrovací kľúč je overený a kontrolovaný na strane klienta pred každou komunikáciou.",
     "Getting Started": "Začíname",
-    "For more information, see the Almalinux wiki:": "Ďalšie informácie nájdete na wiki Almalinux:",
     "certified with AlmaLinux OS": "certifikovaný OS AlmaLinux",
     "Compatibility you can trust": "Kompatibilita, ktorej môžete dôverovať",
     "The conducted tests ensure that AMD Ryzen™ 3000 and 5000 series CPUs and, generally for any servers based on Ryzen processors, AlmaLinux OS work properly guaranteeing stability, security, and high performance.": "Vykonané testy zaisťujú, že procesory AMD Ryzen™ série 3000 a 5000 a vo všeobecnosti pre všetky servery založené na procesoroch Ryzen fungujú správne aj operačný systém AlmaLinux, ktorý zaručuje stabilitu, bezpečnosť a vysoký výkon.",
