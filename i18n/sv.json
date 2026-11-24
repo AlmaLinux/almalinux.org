@@ -76,7 +76,6 @@
     "No one can change this data, not AlmaLinux or anyone else.": "Ingen kan ändra denna data, inte AlmaLinux eller någon annan.",
     "The encryption key is client-side verified and checked before every communication.": "Krypteringsnyckeln verifieras på klientsidan och kontrolleras före varje kommunikation.",
     "Getting Started": "Kom igång",
-    "For more information, see the Almalinux wiki:": "För mer information, se AlmaLinux-wikin:",
     "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux.": "ELevate är utvecklat på ett distributionsagnostiskt sätt och är byggt som ett verktyg för hela ekosystemet, inte bara AlmaLinux.",
     "certified with AlmaLinux OS": "certifierad med AlmaLinux OS",
     "Compatibility you can trust": "Kompatibilitet du kan lita på",
@@ -1288,5 +1287,11 @@
     "The system GCC stays steady so the ABI doesn't break, and current GCC ships alongside it in gcc-toolset packages, so you can compile with GCC 15 against a stable runtime. If you build your own toolchains, Spack publishes official AlmaLinux 8 and 9 images to build them on.": "Systemets GCC förblir stabil så att ABI inte går sönder, och nuvarande GCC levereras tillsammans med den i gcc-toolset paketen, så att du kan kompilera med GCC 15 mot en stabil körtid. Om du bygger dina egna verktygskedjor (toolchains) erbjuder Spack officiella avbildningar för AlmaLinux 8 och 9 som kan användas för detta ändamål.",
     "What HPC teams need from a base OS: a long lifecycle, compatibility, fast fixes, and current tools.": "Vad HPC-team behöver från ett bas OS: en lång livscykel, kompatibilitet, snabba lösningar och aktuella verktyg.",
     "We build and ship security fixes quickly, and the work happens in public, so you can see and engage with the volunteers working on the problem. Research teams at CERN, UCL, and CSIC all named this as a reason they run AlmaLinux.": "Vi bygger och levererar säkerhetsåtgärder snabbt, och arbetet sker offentligt, så att du kan se och interagera med volontärerna som arbetar med problemet. Forskarteam vid CERN, UCL och CSIC har alla angett detta som en anledning till att de använder AlmaLinux.",
-    "Benefits specifically for our community": "Fördelar specifikt för vår gemenskap"
+    "Benefits specifically for our community": "Fördelar specifikt för vår gemenskap",
+    "AMD EPYC 4004 Series (2024)": "AMD EPYC 4004 Series (2024)",
+    "AMD Ryzen 3000 and 5000 Series (2022)": "AMD Ryzen 3000 och 5000 Series (2022)",
+    "Vendor certifications:": "Leverantörscertifieringar:",
+    "The validation was sponsored by TuxCare, a founding AlmaLinux platinum sponsor. TuxCare covered the considerable cost and engineering effort, and makes the validated packages available to the community for non-commercial use.": "Valideringen sponsrades av TuxCare, en av de ursprungliga platinasponsorerna för AlmaLinux. TuxCare stod för den betydande kostnaden och det tekniska arbetet, och gör de validerade paketen tillgängliga för gemenskapen för icke-kommersiellt bruk.",
+    "TuxCare": "TuxCare",
+    "TuxCare, the founding sponsor of the AlmaLinux OS Project, provides tailored support to enhance the performance, security, and reliability of your AlmaLinux workloads.": "TuxCare, grundande sponsor för AlmaLinux OS projektet, erbjuder skräddarsyd support för att förbättra prestanda, säkerhet och tillförlitlighet för dina arbetslaster i AlmaLinux."
 }
