@@ -86,7 +86,6 @@
     "No one can change this data, not AlmaLinux or anyone else.": "Ніхто не може змінити ці дані, ні AlmaLinux, ні будь-хто інший.",
     "immudb is also protected against MITM attacks.": "immudb також захищений від MITM-атак.",
     "The encryption key is client-side verified and checked before every communication.": "Ключ шифрування перевіряється на стороні клієнта і перевіряється перед кожною передачею даних.",
-    "For more information, see the Almalinux wiki:": "Для отримання додаткової інформації зверніться до вікі Almalinux:",
     "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux.": "ELevate розробляється в дистрибутивно-агностичний спосіб і побудований як інструмент для всієї екосистеми, а не тільки для AlmaLinux.",
     "certified with AlmaLinux OS": "сертифікований з ОС AlmaLinux",
     "Compatibility you can trust": "Сумісність, якій ви можете довіряти",
@@ -1288,5 +1287,11 @@
     "Benefits specifically for our community": "Переваги саме для нашої спільноти",
     "AlmaLinux OS 10.3 and 9.9": "ОС AlmaLinux 10.3 та 9.9",
     "AlmaLinux Day: Tokyo 2027": "День AlmaLinux: Токіо 2027",
-    "Upcoming events": "Майбутні події"
+    "Upcoming events": "Майбутні події",
+    "AMD EPYC 4004 Series (2024)": "Серія AMD EPYC 4004 (2024)",
+    "AMD Ryzen 3000 and 5000 Series (2022)": "Серії AMD Ryzen 3000 та 5000 (2022)",
+    "Vendor certifications:": "Сертифікати постачальників:",
+    "The validation was sponsored by TuxCare, a founding AlmaLinux platinum sponsor. TuxCare covered the considerable cost and engineering effort, and makes the validated packages available to the community for non-commercial use.": "Проведення валідації відбулося за підтримки компанії TuxCare — одного з засновників та платинового спонсора AlmaLinux. TuxCare покрила значні витрати та забезпечила необхідні технічні ресурси, а також надає валідовані пакети спільноті для некомерційного використання.",
+    "TuxCare": "TuxCare",
+    "TuxCare, the founding sponsor of the AlmaLinux OS Project, provides tailored support to enhance the performance, security, and reliability of your AlmaLinux workloads.": "Компанія TuxCare, спонсор-засновник проєкту операційної системи AlmaLinux, надає індивідуальну підтримку для підвищення продуктивності, безпеки та надійності ваших робочих навантажень на AlmaLinux."
 }
