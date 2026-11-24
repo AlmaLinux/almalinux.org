@@ -101,7 +101,6 @@
     "immudb is also protected against MITM attacks.": "immudb MITM हमलों से भी सुरक्षित है।",
     "The encryption key is client-side verified and checked before every communication.": "एन्क्रिप्शन कुंजी को हर संचार से पहले क्लाइंट-साइड पर सत्यापित और जाँचा जाता है।",
     "Getting Started": "शुरुआत करें",
-    "For more information, see the Almalinux wiki:": "और जानकारी के लिए AlmaLinux विकी देखें:",
     "Wiki": "विकी",
     "Membership": "सदस्यता",
     "Newsletters": "न्यूज़लेटर",
