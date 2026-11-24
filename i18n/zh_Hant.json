@@ -115,7 +115,6 @@
     "immudb is also protected against MITM attacks.": "immudb 也能防範中間人（MITM）攻擊。",
     "The encryption key is client-side verified and checked before every communication.": "每次通訊前，用戶端都會驗證並檢查加密金鑰。",
     "Getting Started": "開始使用",
-    "For more information, see the Almalinux wiki:": "如需更多資訊，請參閱 Almalinux Wiki：",
     "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux.": "ELevate 的開發不綁定特定發行版，是為整個生態系打造的工具，而不只服務 AlmaLinux。",
     "certified with AlmaLinux OS": "通過 AlmaLinux OS 認證",
     "Compatibility you can trust": "值得信賴的相容性",
