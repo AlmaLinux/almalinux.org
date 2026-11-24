@@ -60,7 +60,6 @@
     "to provide administrators with authentication, verification and full SBOM visibility.": "لتزويد المسؤولين بالمصادقة والتحقق والرؤية الكاملة لـ SBOM.",
     "immudb is protected against tampering.": "immudb محمي ضد العبث.",
     "Getting Started": "ابدء",
-    "For more information, see the Almalinux wiki:": "لمزيد من المعلومات، راجع ويكي Almalinux:",
     "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux.": "تم تطوير Elevate بطريقة محايدة للتوزيع وتم تصميمه كأداة للنظام البيئي بأكمله، وليس فقط لـ AlmaLinux.",
     "Vendor": "المورّد",
     "Server specification": "مواصفات الخادم",
