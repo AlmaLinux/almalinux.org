@@ -115,7 +115,6 @@
     "immudb is also protected against MITM attacks.": "immudb ankaŭ estas protektita kontraŭ MITM-atakoj.",
     "The encryption key is client-side verified and checked before every communication.": "La ĉifra ŝlosilo estas verifikita kaj kontrolita ĉe klientflanke antaŭ ĉiu komunikado.",
     "Getting Started": "Komencado",
-    "For more information, see the Almalinux wiki:": "Por pli da informoj, vidu la Almalinux-vikion:",
     "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux.": "ELevate estas evoluigita sendepende de la distribuo kaj konstruita kiel ilo por la tuta ekosistemo, ne nur por AlmaLinux.",
     "certified with AlmaLinux OS": "certifikita kun AlmaLinux OS",
     "Compatibility you can trust": "Kongruco en kiun vi povas fidi",
