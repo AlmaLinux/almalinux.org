@@ -23,7 +23,7 @@ registration_button: "al-cta-blue"
 post_event: true
 thankyou_city: "Los Angeles"
 thankyou_quote: "You filled the room with the studios and the people who keep them running, and you made it clear that AlmaLinux belongs in creative infrastructure. Thank you for giving us your Saturday."
-thankyou_youtube_url: ""
+thankyou_youtube_url: "https://youtube.com/playlist?list=PLDwjMHdfYpnI&si=JYadgNQ8iloq86hW"
 
 # Footer bars — omit either field to hide that bar
 coc_url: "/p/aldv-code-of-conduct/"
@@ -44,24 +44,34 @@ schedule_data_key: "aldla-2026-schedule"
 session_links:
   "1266409":
     slides: "/files/2026/aldla/aldla-2026-foundation-creative-pipelines-vasquez.pdf"
+    video: "https://youtu.be/eQYWKx53DTQ?si=EiZ_JUcrYaMNsjRh"
   "1237960":
     slides: "/files/2026/aldla/aldla-2026-me-sig-overview-theroux.pdf"
+    video: "https://youtu.be/sycf1X5llQY?si=Ma9FBQXSsl0cUMWk"
   "1265780":
     slides: "/files/2026/aldla/aldla-2026-creative-installer-theroux.pdf"
+    video: "https://youtu.be/P4pohdvq-aU?si=6hzTpoV3nr6b7YnK"
   "1174497":
     slides: "/files/2026/aldla/aldla-2026-edr-taylor.pdf"
+    video: "https://youtu.be/4dR76uGJZ5M?si=G9qsYzSOgJwu0xuv"
   "1177727":
     slides: "/files/2026/aldla/aldla-2026-log-analysis-ahmad.pdf"
+    video: "https://youtu.be/sEwsgal0b7g?si=-3ZHAwCgU-QCk0Ru"
   "1263836":
     slides: "/files/2026/aldla/aldla-2026-wayland-for-artists-cannon-panisset.pdf"
+    video: "https://youtu.be/slTcmkXqIw0?si=bgwfGiWF1yqJlSIE"
   "1231443":
     slides: "/files/2026/aldla/aldla-2026-me-workshop-gompa-theroux-duncan.pdf"
+    video: "https://youtu.be/eLBDAPkpmUU?si=dGFZ6XBx46HImbtr"
   "1238083":
     slides: "/files/2026/aldla/aldla-2026-dcv-next-display-layer-theroux-gaier.pdf"
+    video: "https://youtu.be/5Oz2Q1iEv5k?si=i5Cib7Xc1wN0TghD"
   "1281840":
     slides: "/files/2026/aldla/aldla-2026-trust-but-verify-winters.pdf"
+    video: "https://youtu.be/dMvQJ0rePlw?si=LBQmQxjlglKFXhvh"
   "1266442":
     slides: "/files/2026/aldla/aldla-2026-jedi-vasquez.pdf"
+    video: "https://youtu.be/hyxlRyPylhk?si=Zy4FUZ0SsN_EYB6t"
 
 # Short intro shown above the speaker grid
 speakers_intro: "The relationship between AlmaLinux and Media & Entertainment runs both ways: the industry runs on it, and through the Media & Entertainment SIG it's molding AlmaLinux into the perfect fit. These are some of the people doing that work."
@@ -161,7 +171,7 @@ AlmaLinux Day: LA is not just a conference; it is a convergence. As the industry
     <h3>A full room, the day before SIGGRAPH</h3>
     <p>Ahead of the lights going up at SIGGRAPH, the AlmaLinux OS Foundation spent a day on the OS that powers the world's most demanding visual effects, rendering, and simulation pipelines.</p>
     <p>Los Angeles turned out to be exactly the right home for that conversation. The films, the shows, the games, and the immersive experiences shaping global culture this year are being rendered, simulated, and finished on Linux, and increasingly on AlmaLinux. On July 18, a lot of the people behind that work were in the same room.</p>
-    <p>The day ran on technical deep-dives, candid conversations with the engineers building AlmaLinux, and the work coming out of the Media &amp; Entertainment SIG. Recordings of every session are being edited now and will be linked here when they're ready.</p>
+    <p>The day ran on technical deep-dives, candid conversations with the engineers building AlmaLinux, and the work coming out of the Media &amp; Entertainment SIG. Recordings of every session are now available: look for the "Watch the talk" links in the schedule above.</p>
   </div>
 </div>
 

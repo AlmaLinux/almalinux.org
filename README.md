@@ -145,7 +145,13 @@ Newsletter issues are published by the [Promo SIG](https://wiki.almalinux.org/si
 
 ### Step 1: Create the content file
 
-Create a new file in `content/newsletters/` named `YYYY-MM-DD-almalinux-news-month-YY.md`, where the date is the publish date:
+Name the file `YYYY-MM-DD-almalinux-news-<month>-<YYYY>.md`, where the date is the publish date and the month is the issue's month spelled out in lowercase (for example, `2026-11-11-almalinux-news-november-2026.md`). Start it with the Hugo archetype, which fills in the front matter from the file name:
+
+```bash
+npx hugo new newsletters/2026-11-11-almalinux-news-november-2026.md
+```
+
+That produces front matter in this shape. Fill in `summary`, then add the issue's content in Markdown:
 
 ```markdown
 ---
@@ -162,18 +168,22 @@ Your newsletter content here in Markdown.
 
 **Front matter fields:**
 
-| Field     | Description                                                                   |
-| --------- | ----------------------------------------------------------------------------- |
-| `title`   | Displayed as the issue heading. Format: `AlmaLinux News for Month 'YY`        |
-| `type`    | Must be `newsletters`                                                         |
-| `date`    | Publish date in `YYYY-MM-DD` format — controls sort order on the listing page |
-| `summary` | Short description shown on the listing page under the title                   |
-| `image`   | Path to the newsletter header image (see Step 2)                              |
-| `draft`   | Set to `false` to publish, `true` to hide                                     |
+| Field     | Description                                                                  |
+| --------- | ---------------------------------------------------------------------------- |
+| `title`   | Displayed as the issue heading. Format: `AlmaLinux News for Month 'YY`       |
+| `type`    | Must be `newsletters`                                                        |
+| `date`    | Publish date in `YYYY-MM-DD` format. Controls sort order on the listing page |
+| `summary` | Short description shown on the listing page under the title                  |
+| `image`   | Path to the newsletter header image (see Step 2)                             |
+| `draft`   | Set to `false` to publish, `true` to hide                                    |
+
+Use sentence case for headings in new issues (for example, `## Quick notes` and `## New on the AlmaLinux blog`). Older issues use Title Case and can stay as they are.
+
+To embed a YouTube video, use `{{< youtube id="<video id>" title="<video title>" >}}`. To embed a playlist, use `{{< youtube list="<playlist id>" title="<playlist title>" >}}`. The title is read by screen readers, so always include it.
 
 ### Step 2: Add a header image
 
-Add a header image at `static/newsletter-images/mon-yy.png` (e.g. `jan-26.png`). The image should be 1200×630px.
+Add a header image at `static/newsletter-images/mon-yy.png`, using the three-letter month and two-digit year in lowercase (for example, `nov-26.png`). The archetype sets this path for you. Use a PNG about 1080 to 1200 px wide and under 500 KB. Recent images are 1080×615.
 
 ### Step 3: Open a pull request
 

@@ -3,13 +3,17 @@ on: pull_request
 
 jobs:
   build-preview:
-    runs-on: ubuntu-latest
+    # RunsOn in the AlmaLinux org, GitHub-hosted runners in forks. The Hugo
+    # build is CPU-bound, so this asks for the fastest instance types first,
+    # on-demand so RunsOn tries them in order. See "Runners" in
+    # .github/workflows/README.md.
+    runs-on: ${{ github.repository_owner == 'AlmaLinux' && format('runs-on={0}/family=m8azn.3xlarge+c8a.4xlarge+c8i.4xlarge/spot=false/image=ubuntu26-full-x64', github.run_id) || 'ubuntu-latest' }}
     permissions:
       contents: read
       actions: read
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
@@ -17,7 +21,7 @@ jobs:
         run: python3 find_missing_i18n_strings.py
 
       - name: Setup Node
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: lts/*
           cache: npm
@@ -74,11 +78,8 @@ jobs:
       - name: Move headers file into place
         run: cp _headers public/
 
-      - name: Build search index
-        run: npx --no-install pagefind --site "public"
-
       - name: Upload preview artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: preview-site
           path: public
@@ -96,7 +97,7 @@ jobs:
           echo "$ALIAS" > preview-alias.txt
 
       - name: Upload PR number and preview alias
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: pr-number
           path: |

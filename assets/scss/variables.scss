@@ -4,7 +4,9 @@ $al-font-color-light: #000518;
 $al-font-base-size: 16px;
 $al-font-family: -apple-system, BlinkMacSystemFont, 'segoe ui', roboto, oxygen-sans, ubuntu, cantarell, 'helvetica neue', 'arial', sans-serif, 'apple color emoji', 'segoe ui emoji', 'segoe ui symbol';
 $al-font-family-accent: 'Montserrat', -apple-system, BlinkMacSystemFont, 'segoe ui', roboto, oxygen-sans, ubuntu, cantarell, 'helvetica neue', 'arial', sans-serif, 'apple color emoji', 'segoe ui emoji', 'segoe ui symbol';
-$al-font-family-mono: 'SF Mono', 'source code pro', consolas, 'courier new', courier, monospace;
+// System monospace first: browsers on macOS can't load 'SF Mono' by name,
+// so a list starting with it fell back to Courier New.
+$al-font-family-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco, consolas, 'Liberation Mono', 'source code pro', 'courier new', courier, monospace;
 
 // Base colors
 $al-body-background: #0f4266; // @usage Default page background

@@ -6,7 +6,8 @@
   @param {string} [class] The class attribute of the wrapping div element. When specified, removes the style attributes from the iframe element and its wrapping div element.
   @param {bool} [controls=true] Whether to display the video controls.
   @param {int} [end] The time, measured in seconds from the start of the video, when the player should stop playing the video.
-  @param {string} [id] The video id. Optional if the id is provided as first positional argument.
+  @param {string} [id] The video id. Optional if the id is provided as first positional argument, or if list is set.
+  @param {string} [list] A playlist id. When set, embeds the playlist instead of a single video, and id is not needed.
   @param {string} [loading=eager] The loading attribute of the iframe element.
   @param {bool} [loop=false] Whether to indefinitely repeat the video. Ignores the start and end arguments after the first play.
   @param {bool} [mute=false] Whether to mute the video. Always true when autoplay is true.
@@ -23,11 +24,15 @@
 >}}
 @example
 {{< youtube id=0RKpf3rK57I loading=lazy start=30 >}}
+@example
+{{< youtube list="PLDwjMHdfYpnI" title="AlmaLinux Day: LA 2026" >}}
 */}}
 {{- $pc := .Page.Site.Config.Privacy.YouTube }}
 {{- $remoteErrID := "err-youtube-remote" }}
+{{- $list := .Get "list" }}
 {{- if not $pc.Disable }}
-  {{- with $id := or (.Get "id") (.Get 0) }}
+  {{- /* YouTube embeds a playlist at /embed/videoseries?list=<id>. */}}
+  {{- with $id := or (.Get "id") (.Get 0) (and $list "videoseries") }}
     {{/* Set defaults. */}}
     {{- $allowFullScreen := "allowfullscreen" }}
     {{- $autoplay := 0 }}
@@ -102,8 +107,12 @@
       "start" $start
       "loop" $loop
     }}
-    {{- if $loop }}
-      {{- $params = merge $params (dict "playlist" $id) }}
+    {{- with $list }}
+      {{- $params = merge $params (dict "list" .) }}
+    {{- else }}
+      {{- if $loop }}
+        {{- $params = merge $params (dict "playlist" $id) }}
+      {{- end }}
     {{- end }}
     {{- $s := slice }}
     {{- range $k, $v := $params }}
@@ -135,7 +144,7 @@
         {{- end }}></iframe>
     </div>
   {{- else }}
-    {{- errorf "The %q shortcode requires an id argument. See %s" .Name .Position }}
+    {{- errorf "The %q shortcode requires an id or list argument. See %s" .Name .Position }}
   {{- end }}
 {{- end }}
 

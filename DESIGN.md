@@ -1,6 +1,6 @@
 # AlmaLinux.org Design System
 
-Version 1.0 · Last updated 2026-11-04
+Version 1.0 · Last updated 2026-11-21
 
 Adopted by: Promo SIG 2026-09-24
 
@@ -214,7 +214,7 @@ Font stacks are defined in `assets/scss/variables.scss`:
 
 - `$al-font-family` is a system-UI stack used for body text.
 - `$al-font-family-accent` is a Montserrat-led stack used for headings and display type. `main.scss` applies it to every heading level, `h1` to `h6`.
-- `$al-font-family-mono` is the monospace stack for code.
+- `$al-font-family-mono` is the monospace stack for code. It starts with the system monospace font (`ui-monospace`, `SFMono-Regular`, Menlo, Consolas), because browsers on macOS can't load `'SF Mono'` by name and would fall back to Courier New.
 
 Base size: `$al-font-base-size` is `16px`. Text colors: `$al-font-color` (`#fefefe`) for text on the dark site background, and `$al-font-color-light` (`#000518`) for text on light surfaces.
 
@@ -342,6 +342,8 @@ The following patterns are used site-wide:
 
 **Focus Guide landing page** (`al-focus-*`, `focus.scss`; content `content/focus.md`). Builds on the event body blocks and adds four pieces, all scoped under `.al-focus-page`. `al-focus-hero` is an `al-event-band` that sits flush under the navbar and carries the page's `<h1>`, with an `al-focus-kicker` line above it and an `al-focus-lead` paragraph below. `al-focus-articles` is a two-column grid of `al-focus-article` cards (Black Pearl, rounded, a small centered image on top, and an `al-focus-related` block pinned to the bottom edge so cards in a row line up). `al-focus-related` is a ruled-off "Related links" list (`al-focus-related-label` plus a `<ul>` of arrow-icon links) that keeps links to pages an article mentions visibly separate from the article itself, with an `al-focus-article--wide` modifier for a full-row card with its image beside the text. `al-focus-page-badge` is a small pill for a page number or topic, used where `al-event-eyebrow` would be wrong because the label isn't a date or place. `al-focus-stats` holds `al-focus-stat` links whose large numbers take a logo color through the `--blue`, `--green`, and `--yellow` modifiers; keep a comment beside the strip saying where each number came from and when it was checked. `al-focus-card-media` gives a card's image a fixed 3:2 area so side-by-side cards line up when their images differ in shape (photos fill it; the `--contain` modifier fits diagrams without cropping). `al-focus-note` is a signed letter with an `al-event-headshot` beside it, stacked on phones.
 
+**Blog posts and blog index** (`blog.scss`; templates `layouts/blog/single.html` and `layouts/blog/list.html`). Both pages sit on the default page background in a 960px column, so text, header images, code blocks, and tables share the same edges. Body text uses `$al-font-base-size` with a 1.5 line height. Headings use Bootstrap's sizes and the accent font at weight 500, as on the Media and Entertainment page: the post title and the index titles at the `h2` size, `##` sections at the `h3` size, and `###` subsections at the `h4` size. Code blocks and table header rows share `$al-c-black-pearl`, and inline code is a dark chip with white text. Muted text (author role, date) is white at 70% opacity. Because Chroma sets the code block background inline, and the templates cap header images at 850px inline, `blog.scss` overrides both with `!important`. The newsletter index, newsletter issues, and `/sbom` (`layouts/newsletters/` and `layouts/sbom/single.html`) reuse the `.al-page-blog-post` and `al-wysiwyg` classes, so they pick up these styles too until they get classes of their own.
+
 **ALESCo RFC cards** (`al-rfc-*`, `alesco.scss`). The proposal-lifecycle UI on the `/alesco` page: status-label pills, a lifecycle stepper, and proposal cards rendered client-side from the GitHub API.
 
 ## 12. Layout & spacing utilities
@@ -443,3 +445,4 @@ The point is big, legible type: these slides are read from the back of a room, s
 - **(2026-10-29):** Replaced the boxed event body blocks with full-width bands: added `al-event-band`, removed `al-event-feature` and its accent stripes, made `al-event-card` a plain column, limited `al-event-eyebrow` to dates and places, and dropped the row backgrounds from `al-event-steps`. Added the no-accent-stripes rule to [§15](#15-forbidden-patterns).
 - **(2026-11-02):** Added the Focus Guide landing page blocks (`al-focus-*` in `focus.scss`): hero band, article card grid with page badges, fixed-shape card images, stats strip, and signed note.
 - **(2026-11-04):** Replaced the single-row navbar with the site header from issue #1176 (`al-site-header`: top bar, main bar with four full-width menus, brand stripe, and the announcement strip). Download moved from green to `al-cta-blue`, the `.with-motd` modifier and `al-download-button` were removed, and the `--al-header-offset` property now drives anchor and table-of-contents offsets. Regrouped the footer to match the header's menus (`al-footer-*`), translated its headings, and gave the social links icons.
+- **(2026-11-21):** Restyled blog posts and the blog index for technical articles (960px column, roomier line spacing, Bootstrap heading sizes, Black Pearl code blocks and table headers, full-width header images), documented in [§11](#11-component-patterns). Fixed `$al-font-family-mono` so code renders in the system monospace font on macOS instead of Courier New.
