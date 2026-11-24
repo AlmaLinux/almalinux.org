@@ -103,7 +103,6 @@
     "All attestation data is integrity-checked and cryptographically verified by clients.": "Totes les dades d'atestació es comproven quant a la integritat i es verifiquen criptogràficament pels clients.",
     "No one can change this data, not AlmaLinux or anyone else.": "Ningú pot canviar aquestes dades, ni AlmaLinux ni ningú més.",
     "Getting Started": "Primers passos",
-    "For more information, see the Almalinux wiki:": "Per obtenir més informació, vegi la wiki d'AlmaLinux:",
     "certified with AlmaLinux OS": "certificat amb AlmaLinux OS",
     "Passed": "Superat",
     "Storage": "Emmagatzematge",
