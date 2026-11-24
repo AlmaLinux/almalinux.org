@@ -115,7 +115,6 @@
     "immudb is also protected against MITM attacks.": "immudb on kaitstud ka MITM-rünnakute eest.",
     "The encryption key is client-side verified and checked before every communication.": "Krüptovõtit kontrollib ja vaatab klient enne iga suhtlust üle.",
     "Getting Started": "Alustamine",
-    "For more information, see the Almalinux wiki:": "Lisateabe saamiseks vaata AlmaLinuxi wikot:",
     "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux.": "ELevate on arendatud distributsioonist sõltumatul viisil ja loodud tööriistana kogu ökosüsteemile, mitte ainult AlmaLinuxile.",
     "certified with AlmaLinux OS": "sertifitseeritud AlmaLinux OS-iga",
     "Compatibility you can trust": "Ühilduvus, millele võid usaldada",
