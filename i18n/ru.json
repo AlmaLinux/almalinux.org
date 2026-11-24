@@ -78,7 +78,6 @@
     "immudb is also protected against MITM attacks.": "immudb также защищён от MITM-атак.",
     "The encryption key is client-side verified and checked before every communication.": "Ключ шифрования проверяется на стороне клиента перед каждым обменом данными.",
     "Getting Started": "Начало работы",
-    "For more information, see the Almalinux wiki:": "Подробнее см. в вики AlmaLinux:",
     "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux.": "ELevate разработан независимо от дистрибутива и создан как инструмент для всей экосистемы, а не только для AlmaLinux.",
     "certified with AlmaLinux OS": "сертифицирована для работы с ОС AlmaLinux",
     "The conducted tests ensure that AMD Ryzen™ 3000 and 5000 series CPUs and, generally for any servers based on Ryzen processors, AlmaLinux OS work properly guaranteeing stability, security, and high performance.": "Проведенные тесты подтверждают корректную работу ОС AlmaLinux на процессорах AMD серий Ryzen™ 3000 и 5000, а также в целом на любых серверах на базе процессоров Ryzen, гарантируя стабильность, безопасность и высокую производительность.",
