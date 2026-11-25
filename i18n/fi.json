@@ -79,7 +79,6 @@
     "All attestation data is integrity-checked and cryptographically verified by clients.": "Kaikki todistustiedot ovat eheystarkastettuja ja asiakkaiden varmentamia kryptografisesti.",
     "No one can change this data, not AlmaLinux or anyone else.": "Kukaan ei voi muuttaa näitä tietoja – ei edes AlmaLinux.",
     "The encryption key is client-side verified and checked before every communication.": "Salausavain varmistetaan ja tarkistetaan asiakaspuolelta ennen jokaista viestintää.",
-    "For more information, see the Almalinux wiki:": "Lisätietoja on Almalinuxin Wikissä:",
     "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux.": "ELevate on kehitetty jakeluagnostisella tavalla ja se on rakennettu työkaluksi koko ekosysteemille, ei vain AlmaLinuxille.",
     "The conducted tests ensure that AMD Ryzen™ 3000 and 5000 series CPUs and, generally for any servers based on Ryzen processors, AlmaLinux OS work properly guaranteeing stability, security, and high performance.": "Suoritetut testit varmistavat, että AMD Ryzen™ 3000- ja 5000-sarjan prosessorit ja yleensä kaikissa Ryzen-prosessoreihin perustuvissa palvelimissa AlmaLinux OS:t toimivat oikein, mikä takaa vakauden, turvallisuuden ja korkean suorituskyvyn.",
     "Vendor": "Toimittaja",

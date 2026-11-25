@@ -73,7 +73,6 @@
     "immudb is also protected against MITM attacks.": "immudb taip pat apsaugotas nuo MITM atakų.",
     "The encryption key is client-side verified and checked before every communication.": "Šifravimo raktas tikrinamas kliento pusėje prieš kiekvieną ryšį.",
     "Getting Started": "Pradžia",
-    "For more information, see the Almalinux wiki:": "Norėdami daugiau informacijos, žiūrėkite Almalinux wiki:",
     "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux.": "ELevate kuriamas nepriklausomai nuo distribucijos ir sukurtas kaip įrankis visai ekosistemai, ne tik AlmaLinux.",
     "certified with AlmaLinux OS": "sertifikuota su AlmaLinux OS",
     "Compatibility you can trust": "Suderinamumas, kuriuo galite pasitikėti",

@@ -116,7 +116,6 @@
     "All attestation data is integrity-checked and cryptographically verified by clients.": "Toàn bộ dữ liệu chứng thực được kiểm tra toàn vẹn và xác minh bằng mật mã bởi máy khách.",
     "No one can change this data, not AlmaLinux or anyone else.": "Không ai có thể thay đổi dữ liệu này, dù là AlmaLinux hay bất kỳ ai khác.",
     "immudb is also protected against MITM attacks.": "immudb cũng được bảo vệ chống tấn công MITM.",
-    "For more information, see the Almalinux wiki:": "Để biết thêm, xem wiki AlmaLinux:",
     "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux.": "ELevate được phát triển theo cách không phụ thuộc bản phân phối và được xây dựng như một công cụ cho toàn bộ hệ sinh thái, không chỉ AlmaLinux.",
     "certified with AlmaLinux OS": "được chứng nhận với AlmaLinux OS",
     "Compatibility you can trust": "Tương thích đáng tin cậy",

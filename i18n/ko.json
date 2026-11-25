@@ -70,7 +70,6 @@
     "No one can change this data, not AlmaLinux or anyone else.": "AlmaLinux나 다른 누구도 이 데이터를 변경할 수 없습니다.",
     "immudb is also protected against MITM attacks.": "immudb는 MITM 공격으로부터도 보호됩니다.",
     "Getting Started": "시작하기",
-    "For more information, see the Almalinux wiki:": "자세한 내용은 Almalinux 위키를 참조하십시오:",
     "certified with AlmaLinux OS": "AlmaLinux OS 인증",
     "Compatibility you can trust": "신뢰할 수 있는 호환성",
     "The conducted tests ensure that AMD Ryzen™ 3000 and 5000 series CPUs and, generally for any servers based on Ryzen processors, AlmaLinux OS work properly guaranteeing stability, security, and high performance.": "수행된 테스트는 AMD Ryzen™ 3000 및 5000 시리즈 CPU와 일반적으로 Ryzen 프로세서를 기반으로 하는 모든 서버의 경우 AlmaLinux OS가 제대로 작동하여 안정성, 보안 및 고성능을 보장하는지 확인합니다.",

@@ -115,7 +115,6 @@
     "immudb is also protected against MITM attacks.": "immudb MITM தாக்குதல்களுக்கு எதிராகவும் பாதுகாக்கப்படுகிறது.",
     "The encryption key is client-side verified and checked before every communication.": "குறியாக்க விசையானது கிளையன்ட்-பக்கம் சரிபார்க்கப்பட்டு, ஒவ்வொரு தகவல்தொடர்புக்கும் முன் சரிபார்க்கப்பட்டது.",
     "Getting Started": "தொடங்குதல்",
-    "For more information, see the Almalinux wiki:": "மேலும் தகவலுக்கு, Almalinux விக்கியைப் பார்க்கவும்:",
     "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux.": "ELevate ஒரு விநியோக அஞ்ஞான வழியில் உருவாக்கப்பட்டது மற்றும் AlmaLinux மட்டுமின்றி, முழு சுற்றுச்சூழலுக்கான ஒரு கருவியாக உருவாக்கப்பட்டுள்ளது.",
     "certified with AlmaLinux OS": "AlmaLinux OS உடன் சான்றளிக்கப்பட்டது",
     "Compatibility you can trust": "நீங்கள் நம்பக்கூடிய இணக்கத்தன்மை",

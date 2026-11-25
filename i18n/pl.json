@@ -69,7 +69,6 @@
     "No one can change this data, not AlmaLinux or anyone else.": "Nikt nie może zmienić tych danych, ani AlmaLinux, ani nikt inny.",
     "immudb is also protected against MITM attacks.": "immudb jest również chroniony przed atakami MITM.",
     "The encryption key is client-side verified and checked before every communication.": "Klucz szyfrujący jest weryfikowany po stronie klienta i sprawdzany przed każdą komunikacją.",
-    "For more information, see the Almalinux wiki:": "Aby uzyskać więcej informacji, sprawdź wiki AlmaLinux:",
     "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux.": "ELevate jest rozwijany w sposób niezależny od dystrybucji i jest budowany jako narzędzie dla całego ekosystemu, a nie tylko dla AlmaLinux.",
     "Compatibility you can trust": "Kompatybilność, której możesz zaufać",
     "The conducted tests ensure that AMD Ryzen™ 3000 and 5000 series CPUs and, generally for any servers based on Ryzen processors, AlmaLinux OS work properly guaranteeing stability, security, and high performance.": "Przeprowadzone testy gwarantują, że CPU serii AMD Ryzen™ 3000 i 5000 oraz generalnie każdy serwer bazujący na procesorach serii Ryzen działa prawidłowo wraz z AlmaLinux OS zapewniając stabilność, bezpieczeństwo i wysokie osiągi.",

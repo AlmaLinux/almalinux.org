@@ -111,7 +111,6 @@
     "How are we doing this?": "Comment faisons-nous cela ?",
     "tests cover benchmarking of OS features. The result of benchmarking can be found below": "les tests couvrent l'évaluation comparative des fonctionnalités du système d'exploitation. Le résultat de l'évaluation comparative se trouve ci-dessous",
     "which calls for industry action to develop software component frameworks, including SBOMs, to expedite discovery of and response to future vulnerabilities like Log4j.": "qui appelle l'industrie à développer des cadres de composants logiciels, y compris les SBOM, pour accélérer la découverte et la réponse aux vulnérabilités futures comme Log4j.",
-    "For more information, see the Almalinux wiki:": "Pour plus d'informations, consultez le wiki Almalinux :",
     "Storage": "Stockage",
     "The LTP testsuite contains a collection of tools for testing the Linux kernel and related features.": "La suite de tests LTP contient une collection d'outils pour tester le noyau Linux et les fonctionnalités associées.",
     "certified with AlmaLinux OS": "certifié avec AlmaLinux OS",
@@ -1288,5 +1287,6 @@
     "Benefits specifically for our community": "Avantages spécifiquement pour notre communauté",
     "AlmaLinux Day: Tokyo 2027": "AlmaLinux Day: Tokyo 2027",
     "AlmaLinux OS 10.3 and 9.9": "AlmaLinux OS 10.3 et 9.9",
-    "Upcoming events": "Événements à venir"
+    "Upcoming events": "Événements à venir",
+    "The validation was sponsored by TuxCare, a founding AlmaLinux platinum sponsor. TuxCare covered the considerable cost and engineering effort, and makes the validated packages available to the community for non-commercial use.": "La validation a été sponsorisée par TuxCare, sponsor fondateur d'AlmaLinux Platinum. TuxCare a couvert les coûts considérables et les efforts d’ingénierie et met les packages validés à la disposition de la communauté pour une utilisation non commerciale."
 }

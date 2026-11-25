@@ -93,7 +93,6 @@
     "immudb is also protected against MITM attacks.": "Az immudb is védett az MITM támadások ellen.",
     "The encryption key is client-side verified and checked before every communication.": "A titkosítási kulcsot az ügyféloldal ellenőrzi és minden kommunikáció előtt ellenőrzi.",
     "Getting Started": "Elkezdeni",
-    "For more information, see the Almalinux wiki:": "További információkért lásd az Almalinux wikit:",
     "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux.": "Az ELevate terjesztési agnosztikus módon lett kifejlesztve, és az egész ökoszisztéma eszközeként készült, nem csak az AlmaLinux számára.",
     "certified with AlmaLinux OS": "AlmaLinux OS tanúsítvánnyal rendelkezik",
     "Compatibility you can trust": "Megbízható kompatibilitás",

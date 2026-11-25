@@ -76,7 +76,6 @@
     "No one can change this data, not AlmaLinux or anyone else.": "没有人可以更改此数据，包括 AlmaLinux 或其他任何人。",
     "immudb is also protected against MITM attacks.": "immudb 还受到 MITM 攻击的保护。",
     "The encryption key is client-side verified and checked before every communication.": "每次通信之前，客户端都会验证并检查加密密钥。",
-    "For more information, see the Almalinux wiki:": "有关更多信息，请参阅 Almalinux wiki：",
     "ELevate is developed in a distribution agnostic way and is built as a tool for the whole ecosystem, not just AlmaLinux.": "ELevate 以与分布无关的方式开发，并且是作为整个生态系统（而不仅仅是 AlmaLinux）的工具而构建的。",
     "certified with AlmaLinux OS": "已通过 AlmaLinux OS 认证",
     "Compatibility you can trust": "值得信赖的兼容性",

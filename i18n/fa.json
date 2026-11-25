@@ -151,7 +151,6 @@
     "maintaining compatibility with RHEL": "حفظ سازگاری با RHEL",
     "Mirrors": "آینه‌ها",
     "has implemented SBOM into the pipeline for the reasons listed above, to enable:": "SBOM را به دلایل فوق در خط لوله پیاده‌سازی کرده است تا این امکانات فراهم شود:",
-    "For more information, see the Almalinux wiki:": "برای اطلاعات بیشتر، ویکی آلما لینوکس را ببینید:",
     "errata.full.json for AlmaLinux OS 8": "errata.full.json برای سیستم عامل آلما لینوکس 8",
     "AlmaLinux offers images for Oracle Cloud Infrastructure across all OCI regions via the ": "آلما لینوکس تصاویری برای Oracle Cloud Infrastructure را در همه مناطق OCI از طریق ",
     "compatible.": "سازگار.",

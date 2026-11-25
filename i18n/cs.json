@@ -108,7 +108,6 @@
     "Vendor": "Dodavatel",
     "The SBOM is the “ingredient list”, the code are the ingredients, the build system is the “kitchen” where those ingredients get built into the final piece of software which you consume.": "SBOM je \"seznam ingrediencí\", kód představuje ingredience, a systém sestavení je \"kuchyně\", kde se tyto ingredience sestavují do finálního kusu softwaru, který konzumujete.",
     "What motivated us?": "Co nás motivovalo?",
-    "For more information, see the Almalinux wiki:": "Pro více informací navštivte AlmaLinux wiki:",
     "Who is AlmaLinux OS for?": "Pro koho je AlmaLinux OS určený?",
     "That's the open source way.": "To je způsob open source.",
     "Security device": "Bezpečnostní zařízení",
