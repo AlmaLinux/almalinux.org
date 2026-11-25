@@ -1,0 +1,41 @@
+{{- /* Release highlights box for GA release posts. Floats beside the section it sits in. Usage and params are documented in contributing-blog-posts.md and DESIGN.md. */ -}}
+{{- $version := .Get "version" -}}
+{{- $codename := .Get "codename" -}}
+{{- $title := printf "AlmaLinux OS %s" $version -}}
+{{- with $codename }}{{ $title = printf "%s “%s”" $title . }}{{ end -}}
+{{- $notes := .Get "notes" | default (printf "https://wiki.almalinux.org/release-notes/%s.html" $version) -}}
+<aside
+  class="al-release-highlights"
+  aria-label="{{ i18n "Release highlights" }}: {{ $title }}">
+  <div class="al-release-highlights-eyebrow">
+    {{ i18n "Release highlights" }}
+  </div>
+  <div class="al-release-highlights-version">{{ $title }}</div>
+  <dl>
+    {{- with .Get "released" }}
+      <dt>{{ i18n "Released" }}</dt>
+      <dd>{{ . }}</dd>
+    {{- end }}
+    {{- with .Get "kernel" }}
+      <dt>{{ i18n "Kernel" }}</dt>
+      <dd><code>{{ . }}</code></dd>
+    {{- end }}
+    {{- with .Get "rhel" }}
+      <dt>{{ i18n "Compatible" }}</dt>
+      <dd><abbr title="Red Hat Enterprise Linux">RHEL</abbr> {{ . }}</dd>
+    {{- end }}
+    {{- with .Get "arches" }}
+      <dt>{{ i18n "Arches" }}</dt>
+      <dd>{{ . }}</dd>
+    {{- end }}
+  </dl>
+  {{- with .Inner }}
+    <div class="al-release-highlights-new">
+      <div class="al-release-highlights-new-label">{{ i18n "What's new" }}</div>
+      {{ $.Page.RenderString (dict "display" "block") . }}
+    </div>
+  {{- end }}
+  <a class="al-release-highlights-notes" href="{{ $notes }}"
+    >{{ i18n "Full release notes on the wiki" }}</a
+  >
+</aside>

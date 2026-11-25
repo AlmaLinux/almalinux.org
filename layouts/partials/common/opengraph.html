@@ -1,7 +1,7 @@
 <meta property="og:title" content="{{ .Title }}" />
 <meta
   property="og:description"
-  content="{{ with .Description }}
+  content="{{ with partial "common/page-description.html" . }}
     {{ . }}
   {{ else }}
     {{ if .IsPage }}

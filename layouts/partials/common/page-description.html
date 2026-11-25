@@ -1,0 +1,12 @@
+{{- /* Returns the page's own description for search and social meta tags, or an empty string. Order: front matter `description`, then the blog excerpt in `post.title` (which every blog post already has). Callers supply their own fallback when this is empty. */ -}}
+{{- $desc := "" -}}
+{{- with .Description -}}
+  {{- $desc = . -}}
+{{- else -}}
+  {{- with .Params.post -}}
+    {{- with .title -}}
+      {{- $desc = . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return ($desc | plainify | htmlUnescape | strings.TrimSpace) -}}

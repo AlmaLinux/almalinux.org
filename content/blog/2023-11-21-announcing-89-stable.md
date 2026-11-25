@@ -6,12 +6,22 @@ author:
   bio: "AlmaLinux Community Manager"
   image: /users/jack.jpg
 date: "2023-11-21"
+description: 'AlmaLinux OS 8.9 "Midnight Oncilla" was released on November 21, 2023 with kernel 4.18.0-513.5.1.el8. It adds Node.js 20 and GCC Toolset 13.'
 images:
   - /blog-images/23.11.21.89stable.jpg
 post:
   title: "Announcing AlmaLinux 8.9 Stable!"
   image: /blog-images/23.11.21.89stable.jpg
 ---
+
+{{< release-highlights version="8.9" codename="Midnight Oncilla" released="November 21, 2023" kernel="4.18.0-513.5.1.el8" rhel="8.9" arches="x86_64, aarch64, ppc64le, s390x, i686 userspace" >}}
+
+- Node.js 20
+- GCC Toolset 13
+- LLVM Toolset 16.0.6
+- OpenSCAP 1.3.8
+
+{{< /release-highlights >}}
 
 # AlmaLinux 8.9 Stable Now Available
 

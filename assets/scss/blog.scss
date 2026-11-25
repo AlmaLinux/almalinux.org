@@ -306,6 +306,115 @@ $al-blog-line: rgba(variables.$al-c-soft-peach-lighter, 0.14);
     clear: none;
     margin-top: 0;
   }
+
+  // Release highlights box (shortcode release-highlights). It floats beside the section it opens, and headings wrap beside it so it never leaves an empty gap. Only an h2 that opens another box clears it. Code blocks and tables drop below it instead of shrinking.
+  aside.al-release-highlights {
+    margin: 0 0 1rem;
+    padding: 0.875rem 1rem;
+    background: variables.$al-c-black-pearl;
+    border: 1px solid variables.$al-c-black-pearl-light;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    line-height: 1.45;
+
+    @media (min-width: 768px) {
+      float: right;
+      width: 340px;
+      margin: 0.25rem 0 1rem 1.5rem;
+
+      @at-root [dir="rtl"] & {
+        float: left;
+        margin: 0.25rem 1.5rem 1rem 0;
+      }
+    }
+
+    .al-release-highlights-eyebrow {
+      font-family: variables.$al-font-family-accent;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: variables.$al-c-brand-secondary;
+    }
+
+    .al-release-highlights-version {
+      font-family: variables.$al-font-family-accent;
+      font-weight: 600;
+      margin-top: 0.125rem;
+    }
+
+    dl {
+      display: grid;
+      grid-template-columns: 92px 1fr;
+      gap: 0.2rem 0.625rem;
+      margin: 0.625rem 0 0;
+    }
+
+    dt {
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      opacity: 0.7;
+      padding-top: 0.125rem;
+    }
+
+    dd {
+      margin: 0;
+    }
+
+    abbr {
+      text-decoration: none;
+      cursor: help;
+    }
+
+    .al-release-highlights-new {
+      margin-top: 0.625rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid variables.$al-c-black-pearl-light;
+
+      ul {
+        margin: 0.25rem 0 0;
+        padding-inline-start: 1.125rem;
+      }
+
+      // The article body sets an explicit 16px on lists and paragraphs.
+      ul,
+      li,
+      p {
+        font-size: inherit;
+        line-height: inherit;
+      }
+
+      li {
+        margin: 0.125rem 0;
+      }
+    }
+
+    .al-release-highlights-new-label {
+      font-weight: 600;
+    }
+
+    .al-release-highlights-notes {
+      display: block;
+      margin-top: 0.625rem;
+      font-weight: 600;
+    }
+  }
+
+  aside.al-release-highlights ~ h2,
+  aside.al-release-highlights ~ h3 {
+    clear: none;
+  }
+
+  h2:has(+ aside.al-release-highlights) {
+    clear: both;
+  }
+
+  aside.al-release-highlights ~ .highlight,
+  aside.al-release-highlights ~ table:not(.al-table-card) {
+    clear: both;
+  }
 }
 
 // Article body (blog posts)

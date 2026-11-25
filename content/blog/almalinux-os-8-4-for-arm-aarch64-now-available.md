@@ -6,10 +6,21 @@ author:
   bio: "-"
   image: /users/jack.jpg
 date: "2021-06-30"
+description: 'AlmaLinux OS 8.4 "Electric Cheetah" for ARM (aarch64) was released on June 30, 2021 with kernel 4.18.0-305.'
 post:
   title: "The AlmaLinux OS Foundation is proud to announce the release of the only 100% community owned and governed CentOS alternative, AlmaLinux OS 8.4 Stable for the Arm/AArch64 architecture. Available now on a mirror near you! Download a fresh copy and then join us to talk about it. Container images are also available on Docker Hub and Quay.io."
   image:
 ---
+
+{{< release-highlights version="8.4" codename="Electric Cheetah" released="June 30, 2021" kernel="4.18.0-305" rhel="8.4" arches="aarch64" notes="https://wiki.almalinux.org/release-notes/8.4-arm.html" >}}
+
+- Stable release for ARM (aarch64)
+- Fastest mirror selected automatically in network install mode
+- OpenSCAP security profiles ready for production
+- Python 3.9
+- PostgreSQL 13
+
+{{< /release-highlights >}}
 
 The AlmaLinux OS Foundation is proud to announce the release of the only 100% community owned and governed CentOS alternative, AlmaLinux OS 8.4 Stable for the Arm/AArch64 architecture. Available now on a [mirror](https://mirrors.almalinux.org/isos/aarch64/8.4.html) near you! Download a fresh copy and then [join us](https://chat.almalinux.org/) to talk about it. Container images are also available on [Docker Hub](https://hub.docker.com/_/almalinux) and Quay.io.
 

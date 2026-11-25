@@ -6,12 +6,23 @@ author:
   bio: "Release and Automation Engineer"
   image: /users/eduard-abdullin.jpg
 date: "2025-05-27"
+description: 'AlmaLinux OS 10.0 "Purple Lion" was released on May 27, 2025 with kernel 6.12.0-55.9.1.el10_0. It adds an x86_64_v2 build and post-quantum algorithms.'
 images:
   - /blog-images/2025/almalinux10.png
 post:
   title: "Read more about how AlmaLinux OS 10 is the perfect marriage of maintaining compatibility and serving our community!"
   image: /blog-images/2025/almalinux10.png
 ---
+
+{{< release-highlights version="10.0" codename="Purple Lion" released="May 27, 2025" kernel="6.12.0-55.9.1.el10_0" rhel="10.0" arches="x86_64, x86_64_v2, aarch64, ppc64le, s390x" >}}
+
+- New x86_64_v2 architecture for older hardware
+- Post-quantum algorithms in crypto-policies, OpenSSL, and OpenSSH
+- Frame pointers enabled by default
+- Python 3.12
+- GCC 14.2
+
+{{< /release-highlights >}}
 
 # AlmaLinux OS 10.0 Stable Now Available
 

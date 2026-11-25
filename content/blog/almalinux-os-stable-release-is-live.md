@@ -6,12 +6,20 @@ author:
   bio: "Community Manager"
   image: /users/jack.jpg
 date: "2021-03-30"
+description: 'AlmaLinux OS 8.3 "Purple Manul", the first stable release of AlmaLinux OS, was released on March 30, 2021 with kernel 4.18.0-240.'
 images:
   - /blog-images/almalinux83stable.png
 post:
   title: "We are very happy to announce the first AlmaLinux OS is live!"
   image: /blog-images/almalinux83stable.png
 ---
+
+{{< release-highlights version="8.3" codename="Purple Manul" released="March 30, 2021" kernel="4.18.0-240" rhel="8.3" arches="x86_64" >}}
+
+- First stable release of AlmaLinux OS
+- Minimal ISO only offers environments it can install
+
+{{< /release-highlights >}}
 
 We are very happy to announce that today we are releasing the first AlmaLinux OS stable version. That's right, you can go right ahead and download the stable version and use it everywhere you need a stable, reliable, Linux distribution. For some time now we also have the conversion script in our GitHub repository, so you can also convert your system to AlmaLinux OS stable using it if you don't feel like reinstalling from scratch.
 

@@ -6,12 +6,23 @@ author:
   bio: "The Release and Automation Engineer."
   image: /users/eduard-abdullin.jpg
 date: "2025-11-24"
+description: 'AlmaLinux OS 10.1 "Heliotrope Lion" was released on November 24, 2025 with kernel 6.12.0-124.8.1.el10_1. It adds Btrfs support and GCC Toolset 15.'
 images:
   - /blog-images/2025/almalinux101stable.png
 post:
   title: "General Availability of AlmaLinux OS 10.1 Stable!"
   image: /blog-images/2025/almalinux101stable.png
 ---
+
+{{< release-highlights version="10.1" codename="Heliotrope Lion" released="November 24, 2025" kernel="6.12.0-124.8.1.el10_1" rhel="10.1" arches="x86_64, x86_64_v2, aarch64, ppc64le, s390x" >}}
+
+- Btrfs support, including booting from a Btrfs volume
+- GCC Toolset 15
+- OpenSSL 3.5 with ML-KEM, ML-DSA, and SLH-DSA post-quantum algorithms
+- RPMv6 signatures
+- Node.js 24
+
+{{< /release-highlights >}}
 
 # AlmaLinux OS 10.1 Stable Now Available
 

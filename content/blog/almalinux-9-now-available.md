@@ -6,10 +6,21 @@ author:
   bio: "-"
   image: /users/jack.jpg
 date: "2022-05-26"
+description: 'AlmaLinux OS 9.0 "Emerald Puma" was released on May 26, 2022 with kernel 5.14.0-70.13.1.el9_0. It adds GCC 11.2.1, PHP 8.0, and SAP repositories.'
 post:
   title: 'Say "Hello" to AlmaLinux 9. Peak inside for more information.'
   image: /blog-images/9-release-graphic.png
 ---
+
+{{< release-highlights version="9.0" codename="Emerald Puma" released="May 26, 2022" kernel="5.14.0-70.13.1.el9_0" rhel="9.0" arches="x86_64, aarch64, ppc64le, s390x, i686 userspace" >}}
+
+- New RPM-GPG-KEY-AlmaLinux-9 signing key
+- SHA-1 signatures restricted in the default crypto policy
+- New SAP and SAPHANA repositories
+- GCC 11.2.1
+- PHP 8.0
+
+{{< /release-highlights >}}
 
 Hello Community! The AlmaLinux OS Foundation is proud to announce general availability of AlmaLinux OS 9.0. AlmaLinux 9 supports the following 4 architectures providing full parity with upstream:
 

@@ -6,10 +6,20 @@ author:
   bio: "-"
   image: /users/jack.jpg
 date: "2023-05-18"
+description: 'AlmaLinux OS 8.8 "Sapphire Caracal" was released on May 18, 2023 with kernel 4.18.0-477.10.1.el8_8. It adds Python 3.11, PostgreSQL 15, and GCC Toolset 12.'
 post:
   title: "AlmaLinux 8.8 is now available. All the details inside."
   image: /blog-images/8.8release.png
 ---
+
+{{< release-highlights version="8.8" codename="Sapphire Caracal" released="May 18, 2023" kernel="4.18.0-477.10.1.el8_8" rhel="8.8" arches="x86_64, aarch64, ppc64le, s390x, i686 userspace" >}}
+
+- Python 3.11
+- PostgreSQL 15
+- GCC Toolset 12
+- Kernel FIPS mode settings adjusted for FIPS 140-3
+
+{{< /release-highlights >}}
 
 Hello Сommunity! The AlmaLinux OS Foundation is proud to announce the general availability of [AlmaLinux OS 8.8](https://mirrors.almalinux.org/isos.html) codenamed "Sapphire Caracal"!
 

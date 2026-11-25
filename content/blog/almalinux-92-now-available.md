@@ -6,10 +6,21 @@ author:
   bio: "-"
   image: /users/jack.jpg
 date: "2023-05-10"
+description: 'AlmaLinux OS 9.2 "Turquoise Kodkod" was released on May 10, 2023 with kernel 5.14.0-284.11.1.el9_2. It adds Python 3.11, PostgreSQL 15, and nginx 1.22.'
 post:
   title: "Well that was quick. AlmaLinux 9.2 is out! Get the details."
   image: /blog-images/9.2release.png
 ---
+
+{{< release-highlights version="9.2" codename="Turquoise Kodkod" released="May 10, 2023" kernel="5.14.0-284.11.1.el9_2" rhel="9.2" arches="x86_64, aarch64, ppc64le, s390x, i686 userspace" >}}
+
+- Python 3.11
+- PostgreSQL 15
+- nginx 1.22
+- GCC Toolset 12
+- OpenSSL 3.0.7
+
+{{< /release-highlights >}}
 
 Hello Сommunity. The AlmaLinux OS Foundation is proud to announce the general availability of [AlmaLinux OS 9.2](https://mirrors.almalinux.org/isos.html) codenamed "Turquoise Kodkod"!
 

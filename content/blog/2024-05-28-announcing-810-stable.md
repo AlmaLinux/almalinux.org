@@ -6,12 +6,23 @@ author:
   bio: "Release and Automation Engineer."
   image: /users/eduard-abdullin.jpg
 date: "2024-05-28"
+description: 'AlmaLinux OS 8.10 "Cerulean Leopard" was released on May 28, 2024 with kernel 4.18.0-553.el8_10. It adds Python 3.12, PostgreSQL 16, and Ruby 3.3.'
 images:
   - /blog-images/2024/2024-05-28-almalinux-8-10-stable.png
 post:
   title: "AlmaLinux 8.10 Stable Now Available!"
   image: /blog-images/2024/2024-05-28-almalinux-8-10-stable.png
 ---
+
+{{< release-highlights version="8.10" codename="Cerulean Leopard" released="May 28, 2024" kernel="4.18.0-553.el8_10" rhel="8.10" arches="x86_64, aarch64, ppc64le, s390x, i686 userspace" >}}
+
+- Python 3.12
+- PostgreSQL 16
+- Ruby 3.3
+- PHP 8.2
+- Re-added PCI IDs for hardware disabled upstream
+
+{{< /release-highlights >}}
 
 # AlmaLinux 8.10 Stable Now Available
 

@@ -1,15 +1,26 @@
 ---
-title: "Almalinux 9.1 Now Available"
+title: "AlmaLinux 9.1 Now Available"
 type: blog
 author:
   name: "Jack Aboutboul"
   bio: "-"
   image: /users/jack.jpg
 date: "2022-11-16"
+description: 'AlmaLinux OS 9.1 "Lime Lynx" was released on November 16, 2022 with kernel 5.14.0-162.6.1.el9_1. It adds Keylime remote attestation tool, PHP 8.1, and Ruby 3.1.'
 post:
   title: " AlmaLinux 9.1 for x86_64, aarch64, ppc64le and s390x is now available! "
   image: /brands/AlmaLinux_9.1.png
 ---
+
+{{< release-highlights version="9.1" codename="Lime Lynx" released="November 16, 2022" kernel="5.14.0-162.6.1.el9_1" rhel="9.1" arches="x86_64, aarch64, ppc64le, s390x, i686 userspace" >}}
+
+- Keylime remote attestation tool
+- PHP 8.1
+- Ruby 3.1
+- Node.js 18
+- GCC Toolset 12
+
+{{< /release-highlights >}}
 
 Hello Community! The AlmaLinux OS Foundation is proud to announce general availability of [AlmaLinux OS 9.1](https://mirrors.almalinux.org/isos.html) codenomaded "Lime Lynx".
 

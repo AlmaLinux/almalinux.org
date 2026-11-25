@@ -6,12 +6,23 @@ author:
   bio: "The Release and Automation Engineer."
   image: /users/eduard-abdullin.jpg
 date: "2025-05-20"
+description: 'AlmaLinux OS 9.6 "Sage Margay" was released on May 20, 2025 with kernel 5.14.0-570.12.1.el9_6. It adds Node.js 22, MySQL 8.4, and PHP 8.3.'
 images:
   - /blog-images/20225/almalinux96stable.png
 post:
   title: "General Availability of AlmaLinux 9.6 Stable!"
   image: /blog-images/2025/almalinux96stable.png
 ---
+
+{{< release-highlights version="9.6" codename="Sage Margay" released="May 20, 2025" kernel="5.14.0-570.12.1.el9_6" rhel="9.6" arches="x86_64, aarch64, ppc64le, s390x, i686 userspace" >}}
+
+- Node.js 22
+- MySQL 8.4
+- PHP 8.3
+- nginx 1.26
+- Re-added PCI IDs for hardware disabled upstream
+
+{{< /release-highlights >}}
 
 # AlmaLinux 9.6 Stable Now Available
 
