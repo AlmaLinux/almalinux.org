@@ -975,7 +975,7 @@
     "Ask in the Japan user group": "Pregunte en el grupo de usuarios de Japón",
     "Ask in the security room": "Pregunte en el canal de seguridad",
     "Assurance level": "Nivel de aseguramiento",
-    "Common Criteria": "Common Criteria",
+    "Common Criteria": "Criterios Comunes",
     "Common Criteria (ISO/IEC 15408) is an international standard for evaluating the security of IT products. Under it, an independent, accredited third party verifies that a product's security features are correctly designed, built, and actually do what they claim to do.": "Common Criteria (ISO/IEC 15408) es un estándar internacional para evaluar la seguridad de los productos de TI. Bajo él, un tercero independiente y acreditado verifica que las funciones de seguridad de un producto estén correctamente diseñadas y construidas, y que realmente hagan lo que dicen hacer.",
     "FIPS 140-3 validated and Common Criteria certified, with more underway.": "Validado FIPS 140-3 y certificado por Common Criteria, con más en camino.",
     "First operating system to obtain this certification in Japan": "Primer sistema operativo en obtener esta certificación en Japón",
@@ -1287,5 +1287,12 @@
     "We build and ship security fixes quickly, and the work happens in public, so you can see and engage with the volunteers working on the problem. Research teams at CERN, UCL, and CSIC all named this as a reason they run AlmaLinux.": "Creamos y distribuimos rápidamente correcciones de seguridad, y el trabajo se realiza en público, para que pueda ver e interactuar con los voluntarios que trabajan en el problema. Los equipos de investigación del CERN, la UCL y el CSIC nombraron todos esto como un motivo por el que ejecutan AlmaLinux.",
     "Upcoming events": "Próximos eventos",
     "AlmaLinux Day: Tokyo 2027": "AlmaLinux Day: Tokyo 2027",
-    "AlmaLinux OS 10.3 and 9.9": "AlmaLinux OS 10.3 y 9.9"
+    "AlmaLinux OS 10.3 and 9.9": "AlmaLinux OS 10.3 y 9.9",
+    "AMD EPYC 4004 Series (2024)": "Series (2024) AMD EPYC 4004",
+    "AMD Ryzen 3000 and 5000 Series (2022)": "Series (2022) AMD Ryzen 3000 y 5000",
+    "Vendor certifications:": "Certificaciones de proveedores:",
+    "The validation was sponsored by TuxCare, a founding AlmaLinux platinum sponsor. TuxCare covered the considerable cost and engineering effort, and makes the validated packages available to the community for non-commercial use.": "La validación fue patrocinada por TuxCare, un patrocinador fundador de AlmaLinux platino. TuxCare cubrió el considerable costo y esfuerzo de ingeniería, y pone los paquetes validados a disposición de la comunidad para uso no comercial.",
+    "TuxCare": "TuxCare",
+    "TuxCare, the founding sponsor of the AlmaLinux OS Project, provides tailored support to enhance the performance, security, and reliability of your AlmaLinux workloads.": "TuxCare, el patrocinador fundador del Proyecto AlmaLinux OS, proporciona apoyo personalizado para mejorar el rendimiento, la seguridad y la fiabilidad de sus cargas de trabajo en AlmaLinux.",
+    "For more information, see the AlmaLinux wiki:": "Ver la wiki AlmaLinux para más información :"
 }
